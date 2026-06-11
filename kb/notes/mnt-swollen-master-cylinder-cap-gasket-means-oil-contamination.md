@@ -3,7 +3,7 @@ title: "A swollen master-cylinder cap gasket means oil contamination and forces 
 kind: troubleshooting
 source: "[[sources/mnt-brake-fluid|Brake Fluid — Specification, Boiling Point, and Inspection (FSM)]]"
 related:
-  - "[[notes/mnt-truck-uses-dot-3-brake-fluid|The 1994 F-150 uses DOT 3 brake fluid and boiling point is the key quality measure]]"
+  - "[[notes/brk-brake-fluid-is-dot-3-and-its-boiling-point-drops-as-it-absorbs-moisture|Brake fluid is DOT 3 and its boiling point drops as it absorbs moisture]]"
 tags:
   - brakes
   - brake-fluid
@@ -23,7 +23,7 @@ service. The reasoning: the contaminant has already begun swelling every seal, c
 
 ## Related Concepts
 
-- [[notes/mnt-truck-uses-dot-3-brake-fluid|The 1994 F-150 uses DOT 3 brake fluid and boiling point is the key quality measure]]
+- [[notes/brk-brake-fluid-is-dot-3-and-its-boiling-point-drops-as-it-absorbs-moisture|Brake fluid is DOT 3 and its boiling point drops as it absorbs moisture]]
 
 ## Source
 

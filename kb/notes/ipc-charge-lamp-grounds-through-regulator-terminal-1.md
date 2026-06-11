@@ -32,6 +32,7 @@ circuit lives in the `electrical-body` and `interior` cluster domains.
 - [[notes/ipc-charge-lamp-jumper-test-from-terminal-1-to-battery-negative|A jumper from regulator terminal 1 to battery negative proves the charge lamp bulb and circuit]]
 - [[notes/charge-light-staying-on-points-to-regulator-or-stator-circuit|A charge light that stays on points to the regulator or stator circuit, not always a dead alternator]]
 - [[notes/charging-system-works-through-three-circuits|The charging system works through three circuits: A (sense), B+ (output), and S (feedback)]]
+- [[notes/ipc-voltmeter-normal-range-is-13-5-to-14-volts|A normal voltmeter reading on the F-150 is 13.5 to 14.0 volts]]
 
 ## Source
 

@@ -27,6 +27,7 @@ network.
 - [[notes/eec-pcm-learns-an-adaptive-strategy-stored-in-kam|The PCM learns an adaptive strategy in Keep Alive Memory to compensate for component wear]]
 - [[notes/rly-pcm-retainer-and-connector-torque-specs|PCM retainer screw and connector bolt have specific in-lb torque values]]
 - [[notes/eec-clear-kam-and-drive-10-miles-after-replacing-an-eec-part|After replacing an EEC component, clear Keep Alive Memory and drive ~10 miles to relearn]]
+- [[notes/chg-disconnecting-the-battery-erases-the-pcm-adaptive-strategy|Disconnecting the battery erases the PCM adaptive strategy and may need 10+ miles to relearn]]
 
 ## Source
 

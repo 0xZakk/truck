@@ -34,6 +34,7 @@ wire, not the whole servo.
 - [[notes/crz-cruise-pinpoint-tests-are-organized-by-symptom-letter|Cruise control pinpoint tests are organized by lettered symptom from A through K]]
 - [[notes/crz-cruise-has-multiple-independent-deactivation-paths|Cruise control has several independent deactivation paths so braking always disengages it]]
 - [[notes/crz-cruise-engages-only-above-about-30-mph|Cruise control will only engage above about 30 mph]]
+- [[notes/crz-clutch-switch-deactivates-cruise-when-pedal-depressed|On manual trucks the clutch switch deactivates cruise the moment the pedal is depressed]]
 
 ## Source
 

@@ -27,6 +27,7 @@ When Brakes Applied" — exists to catch.
 ## Related Concepts
 
 - [[notes/crz-cruise-has-multiple-independent-deactivation-paths|Cruise control has several independent deactivation paths so braking always disengages it]]
+- [[notes/lgt-brake-light-switch-feeds-pcm-cruise-shift-lock-and-abs|The brake light switch feeds the PCM, cruise control, shift lock and ABS, not just the stop lamps]]
 
 ## Source
 

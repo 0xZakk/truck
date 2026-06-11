@@ -3,7 +3,7 @@ title: "The KOER self-test deliberately advances timing to provoke knock and con
 kind: troubleshooting
 source: "[[sources/sen-knock-sensor|Knock Sensor (KS) — Description, Operation, and DTC (FSM)]]"
 related:
-  - "[[notes/sen-knock-sensor-is-self-generating-and-tuned-to-5-6khz|The knock sensor generates its own voltage by resonating at engine-knock frequency, so it needs only a ground]]"
+  - "[[notes/eec-knock-sensor-is-self-generating-and-tuned-to-knock-frequency|The knock sensor is a self-generating piezo element tuned to the 5-6 kHz knock frequency]]"
 tags:
   - knock-sensor
   - ignition
@@ -28,9 +28,8 @@ wiring before condemning the sensor itself.
 
 ## Related Concepts
 
-- [[notes/sen-knock-sensor-is-self-generating-and-tuned-to-5-6khz|The knock sensor generates its own voltage by resonating at engine-knock frequency, so it needs only a ground]]
-- [[notes/dtc-225-confirms-the-knock-sensor-during-the-koer-dynamic-test|DTC 225 means knock was not sensed during the KOER dynamic response test, a knock-sensor check]]
 - [[notes/eec-knock-sensor-is-self-generating-and-tuned-to-knock-frequency|The knock sensor is a self-generating piezo element tuned to the 5-6 kHz knock frequency]]
+- [[notes/dtc-225-confirms-the-knock-sensor-during-the-koer-dynamic-test|DTC 225 means knock was not sensed during the KOER dynamic response test, a knock-sensor check]]
 - [[notes/dtc-self-test-runs-in-koeo-and-koer-modes|The EEC self-test runs in two modes — Key On Engine Off and Key On Engine Running — and each finds different faults]]
 
 ## Source

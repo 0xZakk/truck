@@ -35,11 +35,9 @@ wiring rather than at an actual overheat or freeze condition.
 
 - [[notes/dtc-rationality-codes-flag-readings-that-disagree-with-other-sensors|Rationality DTCs flag a sensor reading that disagrees with the rest of the engine picture rather than a broken circuit]]
 - [[notes/dtc-hard-codes-vs-memory-codes-mean-present-vs-stored|A hard code is a fault present during the test, while a memory code was stored from earlier driving]]
-- [[notes/eng-a-bad-ect-connection-reads-colder-than-actual|A bad ECT connection or added resistance reads colder than actual]]
+- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition]]
 - [[notes/eec-ect-and-iat-are-ntc-thermistors-on-a-5v-reference|The ECT and IAT are negative-coefficient thermistors whose voltage drop falls as temperature rises]]
-- [[notes/sen-ect-resistance-falls-as-coolant-warms|The ECT is a negative-coefficient thermistor whose voltage drops as the engine warms, and a bad ground reads falsely cold]]
-- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or corroded connection makes the ECT and IAT read falsely cold]]
-- [[notes/sen-iat-shares-the-ect-thermistor-design|The IAT sensor is the same negative-coefficient thermistor as the ECT but measures incoming air rather than coolant]]
+- [[notes/drv-m5od-tot-sensor-is-part-of-solenoid-body|The transmission temperature (TOT) sensor is a thermistor in the solenoid body, replaced only as an assembly]]
 
 ## Source
 

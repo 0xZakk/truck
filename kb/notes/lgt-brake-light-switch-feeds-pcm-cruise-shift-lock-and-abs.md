@@ -30,6 +30,7 @@ the truck's `electrical-body` system.
 - [[notes/lgt-a-failed-brake-light-switch-can-disable-cruise-and-torque-converter-unlock|A failed brake light switch shows up as cruise or torque-converter symptoms, not just dark stop lamps]]
 - [[notes/crz-cruise-has-multiple-independent-deactivation-paths|Cruise control has several independent deactivation paths so braking always disengages it]]
 - [[notes/crz-clutch-switch-deactivates-cruise-when-pedal-depressed|On manual trucks the clutch switch deactivates cruise the moment the pedal is depressed]]
+- [[notes/crz-brake-pressure-switch-opens-at-5-to-10-pounds|The brake pressure switch is a redundant deactivator that opens at 5-10 lbs of pedal pressure]]
 
 ## Source
 

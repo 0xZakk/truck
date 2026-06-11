@@ -32,6 +32,7 @@ This relates to truck inventory systems `electrical-starting` and `electrical-ch
 - [[notes/bdy-battery-disconnect-forces-the-pcm-to-relearn-over-ten-miles|Any cab battery disconnect forces the PCM to relearn its adaptive strategy over about ten miles]]
 - [[notes/eec-clear-kam-and-drive-10-miles-after-replacing-an-eec-part|After replacing an EEC component, clear Keep Alive Memory and drive ~10 miles to relearn]]
 - [[notes/eec-pcm-learns-an-adaptive-strategy-stored-in-kam|The PCM learns an adaptive strategy in Keep Alive Memory to compensate for component wear]]
+- [[notes/rly-pcm-calibration-assembly-is-integral-and-not-replaceable|The PCM's calibration assembly is matched to vehicle weight, axle ratio, and transmission and is not replaceable]]
 
 ## Source
 

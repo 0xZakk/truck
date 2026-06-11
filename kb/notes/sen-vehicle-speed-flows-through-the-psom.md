@@ -30,9 +30,8 @@ PSOM-to-PCM output. Pinpoint tests live in the system-level DS routine.
 - [[notes/sen-pcm-reads-throttle-mode-and-rate-from-tps|The PCM derives idle, cruise, WOT, and acceleration-pump action from TP angle and its rate of change]]
 - [[notes/ipc-speedometer-is-electronic-psom-fed-by-the-abs-sensor|The 1994 F-150 speedometer is an electronic PSOM fed by the ABS/differential speed sensor, not a cable]]
 - [[notes/crz-speed-reference-comes-from-the-psom-or-vss|Cruise control regulates against the speed signal from the PSOM or VSS]]
-- [[notes/rly-psom-converts-the-abs-speed-sensor-signal-to-8000-pulses-per-mile|The PSOM converts the ABS differential speed sensor input to a standard 8000 pulses-per-mile signal]]
 - [[notes/ipc-reprogram-the-psom-conversion-constant-when-tire-size-changes|Reprogram the PSOM conversion constant whenever tire size changes]]
-- [[notes/sen-tps-is-a-voltage-divider-06-to-45-volts|The TP sensor is a potentiometer that outputs about 0.6 V at closed throttle and 4.5 V at wide open throttle]]
+- [[notes/eec-tps-is-a-potentiometer-reading-06v-closed-to-45v-wot|The TP sensor is a potentiometer reading about 0.6 V closed to 4.5 V at wide-open throttle]]
 
 ## Source
 

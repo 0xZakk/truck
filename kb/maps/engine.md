@@ -19,8 +19,6 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 - [[notes/mnt-base-timing-is-10-degrees-btdc-firing-order-1-5-3-6-2-4|Base ignition timing is 10° BTDC and the 4.9L firing order is 1-5-3-6-2-4]]  ·  _spec_
 - [[notes/spc-camshaft-and-lifter-overhaul-clearances-for-the-49l|Camshaft and lifter overhaul clearances for the 4.9L]]  ·  _spec_
 - [[notes/change-oil-and-filter-every-6-months-or-5000-miles|Change the engine oil and filter every 6 months or 5,000 miles under normal service]]  ·  _procedure_
-- [[notes/eec-valve-clearance-allowable-limits-are-0100-0200-in|Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length]]  ·  _spec_
-- [[notes/eng-compression-passes-if-lowest-cylinder-within-25-percent|Compression is acceptable if the lowest cylinder is within 25% of the highest]]  ·  _procedure_
 - [[notes/eec-compression-is-acceptable-if-lowest-cylinder-is-within-25-percent|Compression is acceptable if the lowest cylinder reads within 25% of the highest]]  ·  _procedure_
 - [[notes/mnt-compression-passes-if-lowest-cylinder-within-25-percent-of-highest|Compression is acceptable when the lowest cylinder reads within 25% of the highest]]  ·  _spec_
 - [[notes/spc-cylinder-bore-standard-is-40000-40048-in-with-a-0005-in-out-of-round-limit|Cylinder bore (std.) is 4.0000–4.0048 in with a 0.005 in out-of-round limit]]  ·  _spec_
@@ -30,7 +28,6 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 - [[notes/eng-energize-the-fuel-pump-at-the-diagnostic-connector-to-test-pressure|Energize the fuel pump at the diagnostic connector to test pressure at the Schrader port]]  ·  _procedure_
 - [[notes/eng-fuel-pressure-is-50-60-psi-koeo-and-45-60-running|Fuel pressure is 50-60 PSI key-on/engine-off and 45-60 PSI running at idle]]  ·  _spec_
 - [[notes/spc-fuel-tank-capacity-depends-on-cab-and-tank-location|Fuel tank capacity depends on cab and wheelbase, with an aft-of-axle tank at 18.2 gal]]  ·  _spec_
-- [[notes/mnt-grounding-the-fuel-pump-lead-runs-the-pump-key-on-engine-off|Grounding the diagnostic-connector fuel-pump lead runs the pump with the key on and engine off]]  ·  _procedure_
 - [[notes/mnt-ignition-cables-are-resistive-suppression-wires-by-design|Ignition cables are resistive carbon-core suppression wires by design]]
 - [[notes/eng-key-engine-torque-values|Key 4.9L torque values: main caps 60-70, rod caps 40-45, flywheel 75-85 ft-lb]]  ·  _spec_
 - [[notes/spc-crankshaft-and-rod-bearing-clearance-is-0008-0015-in|Main and rod bearing clearance on the 4.9L is 0.0008–0.0015 in, with crank endplay of 0.0040–0.0080 in]]  ·  _spec_
@@ -45,24 +42,22 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 - [[notes/mnt-spark-plug-gap-is-042-046-inch-torque-10-15-ftlb|Spark plugs are gapped 0.042-0.046 in and torqued to 10-15 ft lb]]  ·  _spec_
 - [[notes/1994-f150-49l-is-the-efi-300-variant|The 1994 F-150's 4.9L is the EFI 300 variant]]
 - [[notes/eng-49l-makes-150-hp-and-260-ftlb-with-88-compression|The 4.9L I6 makes 150 hp and 260 ft-lb on an 8.8:1 compression ratio, varying with axle ratio]]  ·  _spec_
-- [[notes/mnt-distributor-has-no-mechanical-advance-uses-pip-and-spout|The 4.9L distributor has no mechanical advance and relies on PIP and SPOUT signals]]
+- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The 4.9L distributor uses a Hall-effect PIP signal and has no mechanical advance]]
 - [[notes/mnt-engine-oil-refill-is-5-quarts-with-filter|The 4.9L engine oil refill is 5.0 quarts including the filter]]  ·  _spec_
 - [[notes/eng-49l-firing-order-is-1-5-3-6-2-4|The 4.9L firing order is 1-5-3-6-2-4 with a 10-degree BTDC base timing and 0.042-0.046 in plug gap]]  ·  _spec_
 - [[notes/mnt-fuel-pressure-spec-is-50-60-psi-key-on-engine-off|The 4.9L fuel pressure spec is 50-60 PSI key-on-engine-off and 45-60 PSI at idle]]  ·  _spec_
 - [[notes/49l-uses-5w30-oil-meeting-ford-spec-ese-m2c153-e|The 4.9L takes SAE 5W-30 oil meeting Ford spec ESE-M2C153-E]]  ·  _spec_
 - [[notes/dtc-transmission-codes-apply-only-to-the-e4od-automatic|The 600-series and 998 DTCs apply only to the E4OD automatic, not the standard M5OD manual]]
-- [[notes/eec-ect-and-iat-are-ntc-thermistors-on-a-5v-reference|The ECT and IAT are negative-coefficient thermistors whose voltage drop falls as temperature rises]]
-- [[notes/eng-ect-sensor-is-an-ntc-thermistor-the-pcm-reads-as-voltage|The ECT sensor is an NTC thermistor whose voltage the PCM reads as coolant temperature]]
+- [[notes/eec-ect-and-iat-are-ntc-thermistors-on-a-5v-reference|The ECT and IAT are identical two-lead NTC thermistors on a 5.0 V reference whose voltage drops as temperature rises]]
 - [[notes/dtc-self-test-runs-in-koeo-and-koer-modes|The EEC self-test runs in two modes — Key On Engine Off and Key On Engine Running — and each finds different faults]]
+- [[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]  ·  _spec_
 - [[notes/ford-300-makes-peak-torque-at-low-rpm-by-design|The Ford 300 makes peak torque at low RPM by design]]
 - [[notes/eec-iac-meters-air-around-the-throttle-plate-via-pcm-duty-cycle|The IAC valve sets idle by metering air around the throttle plate via a PCM-controlled duty cycle]]
-- [[notes/spc-manual-transmission-takes-76-pints-of-mercon-v|The M5OD manual transmission takes 7.6 pints of Mercon V fluid]]  ·  _spec_
 - [[notes/eec-map-sensor-outputs-a-frequency-and-doubles-as-a-baro-sensor|The MAP sensor outputs a frequency proportional to load and doubles as a barometric sensor]]
 - [[notes/eec-pcm-learns-an-adaptive-strategy-stored-in-kam|The PCM learns an adaptive strategy in Keep Alive Memory to compensate for component wear]]
 - [[notes/eec-tps-is-a-potentiometer-reading-06v-closed-to-45v-wot|The TP sensor is a potentiometer reading about 0.6 V closed to 4.5 V at wide-open throttle]]
 - [[notes/eng-the-accessory-belt-self-tensions-check-the-indicator-not-the-deflection|The accessory belt self-tensions — check the tensioner indicator, not deflection]]
 - [[notes/mnt-compression-check-procedure-warms-engine-then-cranks-five-strokes|The compression-check procedure warms the engine, pulls all plugs, and cranks five strokes per cylinder]]  ·  _procedure_
-- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The distributor uses a Hall-effect PIP signal and has no mechanical advance]]
 - [[notes/mnt-fuel-filter-is-a-high-pressure-canister-protecting-injector-orifices|The fuel filter is a high-pressure paper-element canister protecting the injector orifices]]
 - [[notes/eec-knock-sensor-is-self-generating-and-tuned-to-knock-frequency|The knock sensor is a self-generating piezo element tuned to the 5-6 kHz knock frequency]]
 - [[notes/mnt-low-oil-indicator-trips-at-1-5-quarts-low-with-drain-back-delay|The low-oil indicator trips when oil is about 1.5 quarts low and waits five minutes for drain-back]]
@@ -72,8 +67,7 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 
 ## Common Issues
 
-- [[notes/eng-a-bad-ect-connection-reads-colder-than-actual|A bad ECT connection or added resistance reads colder than actual]]  ·  _troubleshooting_
-- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or corroded connection makes the ECT and IAT read falsely cold]]  ·  _troubleshooting_
+- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition]]  ·  _troubleshooting_
 - [[notes/tst-clunk-noise-traces-to-driveline-backlash-u-joints-or-engine-mounts|A clunk noise traces to driveline backlash, worn u-joints, or loose engine mounts]]  ·  _troubleshooting_
 - [[notes/dtc-hard-codes-vs-memory-codes-mean-present-vs-stored|A hard code is a fault present during the test, while a memory code was stored from earlier driving]]  ·  _troubleshooting_
 - [[notes/tst-low-frequency-boom-at-idle-means-bound-up-engine-or-exhaust-mounts|A low-frequency boom at or just above idle means bound-up engine or exhaust mounts]]  ·  _troubleshooting_
@@ -95,6 +89,7 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 
 ## Sources
 
+- [[sources/drv-transmission-fluid-and-capacities|Manual Transmission Fluid Type & Refill Capacity (FSM)]]
 - [[sources/dtc-air-fuel-sensor-codes|EEC DTCs 112-195 — Air, Fuel, and Sensor Input Codes (FSM)]]
 - [[sources/dtc-emissions-egr-codes|EEC DTCs 311-341, 558-572 — EGR and Emissions Codes (FSM)]]
 - [[sources/dtc-idle-speed-input-codes|EEC DTCs 411-539 — Idle Speed, Vehicle Speed, and Switch Input Codes (FSM)]]
@@ -107,7 +102,6 @@ This map is the entry point for the **engine (4.9l i6)** system of the truck. As
 - [[sources/eec-temperature-sensors-ect-iat|ECT and IAT Temperature Sensors — Operation, DTCs, and Specs (FSM)]]
 - [[sources/eec-throttle-position-sensor|Throttle Position Sensor (TP) — Operation, DTCs, Service, and Specs (FSM)]]
 - [[sources/eec-tune-up-and-engine-checks|Tune-up and Engine Performance Checks — Timing, Firing Order, Compression, Valve Clearance, Spark Plugs (FSM)]]
-- [[sources/eng-coolant-temperature-sensor|Engine Coolant Temperature (ECT) Sensor — Operation, Values & DTCs (FSM)]]
 - [[sources/eng-engine-general-and-torque-specs|Engine — General Specifications, Torque & Rebuilding Specs (FSM)]]
 - [[sources/eng-exhaust-and-accessory-drive|Catalytic Converter, Drive Belt & Air Filter — Operation and Checks (FSM)]]
 - [[sources/eng-fuel-pressure|Fuel Pressure — Test Procedure and Specifications (FSM)]]

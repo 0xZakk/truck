@@ -14,7 +14,7 @@ This map is the entry point for the **steering** system of the truck. As notes a
 ## Key Notes
 
 - [[notes/sus-cii-pump-relief-is-1300-1530-psi-and-min-flow-1-4-gpm|CII pump relief pressure is 1300-1530 psi with min flow around 1.4 GPM]]  ·  _spec_
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]  ·  _procedure_
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]  ·  _procedure_
 - [[notes/sus-power-steering-is-bled-by-cranking-with-ignition-disabled|Power steering is bled by cranking with the ignition disabled while cycling the wheel]]  ·  _procedure_
 - [[notes/sus-xr50-rotary-valve-has-no-centering-shims-or-adjustment|The XR-50 one-piece rotary valve has no centering shims and cannot be adjusted]]
 - [[notes/sus-xr50-gear-uses-a-torsion-bar-and-rotary-valve-for-hydraulic-assist|The XR-50 steering gear uses a torsion bar twisting a rotary valve to meter hydraulic assist]]
@@ -30,6 +30,7 @@ _None yet._
 
 ## Sources
 
+- [[sources/chg-service-precautions|Starting and Charging — Service Precautions (FSM)]]
 - [[sources/sus-power-steering-gear|Ford XR-50 Integral Power Steering Gear (FSM)]]
 - [[sources/sus-power-steering-pump|Power Steering Pump (Ford CII) (FSM)]]
 - [[sources/sus-steering-column|Energy-Absorbing Steering Column and Air Bag Service (FSM)]]

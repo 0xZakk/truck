@@ -27,6 +27,7 @@ in the linkage.
 - [[notes/wpr-wiper-motor-magnets-can-shatter-from-physical-shock|The wiper motor's ceramic magnets can shatter from a physical shock and kill the motor]]
 - [[notes/wpr-washer-pump-current-draw-window-is-1-7-to-4-amps|The washer pump must draw between 1.7 and 4 amps while pumping]]
 - [[notes/wpr-circuit-breaker-needs-two-bench-tests-to-pass|A wiper circuit breaker passes only if it survives the rated-hold test and trips within 20 seconds at double current]]
+- [[notes/wpr-wiper-circuit-breaker-is-rated-8-25-amps|The wiper/washer system is protected by an 8.25-amp circuit breaker in the fuse junction panel]]
 
 ## Source
 

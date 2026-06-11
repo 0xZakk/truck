@@ -15,7 +15,7 @@ This map is the entry point for the **charging system** system of the truck. As 
 
 - [[notes/chg-all-f150-alternators-use-an-internal-regulator-at-15-volts|All F-150 alternators use an internal regulator set near 15 volts]]  ·  _spec_
 - [[notes/chg-alternator-brush-and-slip-ring-wear-limits|Alternator brush and slip-ring wear limits depend on the unit's amperage rating]]  ·  _spec_
-- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system before disconnecting the battery for starting/charging work]]  ·  _procedure_
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]  ·  _procedure_
 - [[notes/chg-alternator-no-load-test-should-read-12-to-14-volts|The alternator No-Load Test should read about 12-14 volts at 1500 RPM]]  ·  _procedure_
 - [[notes/chg-charging-output-test-loads-the-system-at-2000-rpm|The charging Output Test loads the system at 2000 RPM and expects at least 1/2 volt above resting]]  ·  _procedure_
 - [[notes/charging-system-works-through-three-circuits|The charging system works through three circuits: A (sense), B+ (output), and S (feedback)]]

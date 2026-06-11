@@ -3,7 +3,7 @@ title: "The 8.8-inch rear axle holds about 5.5 pints and Traction-Lok needs fric
 kind: spec
 source: "[[sources/mnt-driveline-fluids|Driveline Fluids — M5OD-R2 Manual Transmission and 8.8-Inch Rear Axle (FSM)]]"
 related:
-  - "[[notes/mnt-m5od-r2-uses-mercon-v-atf-not-gear-oil|The M5OD-R2 5-speed takes Mercon V ATF, not gear oil]]"
+  - "[[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]"
 tags:
   - driveline
   - differential
@@ -23,7 +23,7 @@ axle causes the clutch packs to chatter and shudder in tight turns.
 
 ## Related Concepts
 
-- [[notes/mnt-m5od-r2-uses-mercon-v-atf-not-gear-oil|The M5OD-R2 5-speed takes Mercon V ATF, not gear oil]]
+- [[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]
 - [[notes/drv-traction-lok-needs-friction-modifier-additive|A Traction-Lok 8.8 needs 4 oz of friction modifier or it will chatter on turns]]
 - [[notes/drv-8.8-axle-fastener-torque-values|Ford 8.8 axle fastener torques: bearing caps and ring gear at 70-85 ft·lb]]
 

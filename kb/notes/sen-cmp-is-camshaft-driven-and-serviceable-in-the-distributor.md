@@ -29,9 +29,7 @@ uses for both spark timing (advance and dwell) and injector timing.
 
 - [[notes/sen-pip-is-a-hall-switch-driven-by-a-6-vane-shutter|The PIP signal is a 0–12 V square wave a distributor Hall switch makes as a 6-vane shutter passes through it]]
 - [[notes/sen-narrow-1-shutter-gives-cylinder-identification|A narrower number-1 shutter creates a signature PIP pulse that tells the PCM which cylinder is which]]
-- [[notes/eec-cmp-in-distributor-produces-the-pip-signal-for-spark-and-injection|The distributor-mounted CMP sensor produces the PIP signal that times both spark and injection]]
-- [[notes/mnt-distributor-has-no-mechanical-advance-uses-pip-and-spout|The 4.9L distributor has no mechanical advance and relies on PIP and SPOUT signals]]
-- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The distributor uses a Hall-effect PIP signal and has no mechanical advance]]
+- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The 4.9L distributor uses a Hall-effect PIP signal and has no mechanical advance]]
 
 ## Source
 

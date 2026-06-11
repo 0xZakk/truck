@@ -19,6 +19,7 @@ first, reseal second — avoids needlessly tearing into the joint.
 ## Related Concepts
 
 - [[notes/hvc-shaft-seal-leak-vs-center-joint-leak|A compressor shaft-seal leak is reseal-able, but a center-joint leak means a new compressor]]
+- [[notes/hvc-halogen-leak-detector-probe-under-the-line|Use a halogen leak detector by sweeping under the line at one inch per second]]
 
 ## Source
 

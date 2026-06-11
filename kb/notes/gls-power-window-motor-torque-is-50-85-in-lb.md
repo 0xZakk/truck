@@ -3,7 +3,7 @@ title: "The power window motor retaining screws torque to 50-85 in-lb (5.6-9.6 N
 kind: spec
 source: "[[sources/gls-power-window-motor|Power Window Motor — Service and Repair (FSM)]]"
 related:
-  - "[[notes/gls-power-window-motor-hides-two-screws-behind-sheet-metal|Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal]]"
+  - "[[notes/bdy-power-window-motor-replacement-requires-drilling-inner-panel-access-holes|Replacing the front power window motor requires drilling two access holes in the door inner panel]]"
 tags:
   - power-window
   - window-motor
@@ -21,8 +21,8 @@ holes used to reach the screws are separately sealed with 1-inch-square waterpro
 
 ## Related Concepts
 
-- [[notes/gls-power-window-motor-hides-two-screws-behind-sheet-metal|Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal]]
 - [[notes/bdy-power-window-motor-replacement-requires-drilling-inner-panel-access-holes|Replacing the front power window motor requires drilling two access holes in the door inner panel]]
+- [[notes/bdy-window-regulator-rivets-are-drilled-out-and-re-riveted|The front door window regulator is held by rivets that are drilled out and re-riveted on install]]
 
 ## Source
 

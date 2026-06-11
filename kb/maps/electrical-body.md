@@ -28,6 +28,7 @@ This map is the entry point for the **body electrical & lighting** system of the
 - [[notes/lgt-headlamp-bulbs-9004-and-9007-look-alike-but-are-not-interchangeable|Headlamp bulbs No. 9004 and No. 9007 look alike but are not interchangeable]]  ·  _spec_
 - [[notes/ipc-instrument-panel-fastener-torque-values|Instrument-panel mounting fasteners torque to between 12 and 53 in-lbs depending on location]]  ·  _spec_
 - [[notes/ipc-magnetic-gauges-need-tester-021-00055|Magnetic dash gauges are diagnosed with tester tool 021-00055 and per-symptom pinpoint tests]]  ·  _procedure_
+- [[notes/chg-park-neutral-switch-both-closes-the-relay-and-lights-backup-lamps|On automatics, the park/neutral switch both closes the starter relay and lights the backup lamps]]
 - [[notes/crz-clutch-switch-deactivates-cruise-when-pedal-depressed|On manual trucks the clutch switch deactivates cruise the moment the pedal is depressed]]
 - [[notes/rly-pcm-retainer-and-connector-torque-specs|PCM retainer screw and connector bolt have specific in-lb torque values]]  ·  _spec_
 - [[notes/rly-eec-power-relay-feeds-the-fuel-pump-relay-coil|Power to the fuel pump relay comes from the EEC power relay through the PCM and the inertia switch]]
@@ -36,20 +37,16 @@ This map is the entry point for the **body electrical & lighting** system of the
 - [[notes/ipc-speedometer-is-electronic-psom-fed-by-the-abs-sensor|The 1994 F-150 speedometer is an electronic PSOM fed by the ABS/differential speed sensor, not a cable]]
 - [[notes/ipc-check-engine-message-signals-eec-iv-fmem-mode|The CHECK ENGINE message signals the EEC-IV has entered a backup (FMEM) operating strategy]]
 - [[notes/ipc-oil-level-warning-is-separate-from-oil-pressure-warning|The Check Oil low-level warning is a separate system from the oil pressure warning lamp]]
-- [[notes/rly-drl-module-runs-high-beams-at-reduced-intensity-with-a-brake-fluid-diode|The DRL module pulses the high beams at reduced intensity and uses a diode so low brake fluid cannot disable it]]
-- [[notes/lgt-drl-module-runs-high-beams-dimly-only-with-park-brake-off|The DRL module runs the high beams dimly only with ignition in RUN, park brake off, and headlamps off]]
+- [[notes/lgt-drl-module-runs-high-beams-dimly-only-with-park-brake-off|The DRL module runs the high beams at reduced intensity only with ignition in RUN, park brake released, and headlamps off]]
 - [[notes/rly-pcm-power-relay-uses-a-separate-external-diode-not-an-internal-one|The PCM power relay is an SPDT relay with no internal diode and relies on a separate external diode]]  ·  _spec_
 - [[notes/rly-pcm-power-relay-supplies-bplus-and-gives-reverse-battery-protection|The PCM power relay supplies B+ to the PCM and protects it against reverse battery polarity]]
 - [[notes/rly-pcm-calibration-assembly-is-integral-and-not-replaceable|The PCM's calibration assembly is matched to vehicle weight, axle ratio, and transmission and is not replaceable]]
-- [[notes/rly-psom-converts-the-abs-speed-sensor-signal-to-8000-pulses-per-mile|The PSOM converts the ABS differential speed sensor input to a standard 8000 pulses-per-mile signal]]
-- [[notes/rly-wot-ac-relay-cuts-the-compressor-at-wide-open-throttle|The WOT A/C relay drops the compressor at wide open throttle to free up power]]
-- [[notes/rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag|The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag]]
+- [[notes/hvc-the-wot-relay-cuts-ac-at-wide-open-throttle|The WOT A/C relay drops the compressor clutch at wide-open throttle]]
 - [[notes/rly-alarm-module-disables-starting-and-flashes-lamps-at-80-cycles-per-minute|The alarm module disables the starting system and flashes the lamps at 80 cycles per minute when triggered]]
 - [[notes/acc-anti-theft-module-monitors-switches-and-flashes-lamps-at-80-cpm|The anti-theft controller module monitors vehicle switches and, when triggered, sounds the horn and flashes the lamps at 80 cycles per minute]]
 - [[notes/lgt-brake-light-switch-feeds-pcm-cruise-shift-lock-and-abs|The brake light switch feeds the PCM, cruise control, shift lock and ABS, not just the stop lamps]]
 - [[notes/crz-brake-pressure-switch-opens-at-5-to-10-pounds|The brake pressure switch is a redundant deactivator that opens at 5-10 lbs of pedal pressure]]  ·  _spec_
 - [[notes/ipc-charge-lamp-grounds-through-regulator-terminal-1|The charge lamp lights because the regulator grounds it through terminal 1 until the S-circuit voltage is reached]]
-- [[notes/ipc-chime-module-handles-key-in-ignition-lamps-on-and-belt-reminders|The chime module drives key-in-ignition, lamps-on, and seat-belt reminders from separate inputs]]
 - [[notes/lgt-multifunction-switch-removal-and-screw-torque|The column multi-function switch comes off after the shroud and torques to 18-27 inch-lbs]]  ·  _procedure_
 - [[notes/lgt-headlamp-assembly-fastener-torque-and-removal|The composite headlamp assembly is freed by backing the horizontal aim screw fully out]]  ·  _procedure_
 - [[notes/lgt-courtesy-lamp-pillar-switch-uses-three-rotating-locking-tabs|The courtesy/dome lamp pillar switch retains to the wiring with three tabs you can rotate to when one breaks]]  ·  _procedure_
@@ -58,11 +55,12 @@ This map is the entry point for the **body electrical & lighting** system of the
 - [[notes/rly-fuel-pump-relay-is-grounded-by-the-pcm-not-a-simple-switch|The fuel pump relay is grounded by the PCM, so its ground circuit is the real no-start clue]]
 - [[notes/ipc-fuel-sender-resistance-spans-22-5-to-145-ohms|The fuel sender resistance spans 22.5 ohms empty to 145 ohms full]]  ·  _spec_
 - [[notes/lgt-halogen-headlamp-bulb-must-be-handled-only-by-its-plastic-base|The halogen headlamp bulb is pressurized and must be handled only by its plastic base]]  ·  _procedure_
+- [[notes/mnt-low-oil-indicator-trips-at-1-5-quarts-low-with-drain-back-delay|The low-oil indicator trips when oil is about 1.5 quarts low and waits five minutes for drain-back]]
 - [[notes/wpr-multi-function-switch-screws-torque-to-18-27-inch-lbs|The multi-function switch attaching screws torque to 18–27 inch-lbs]]  ·  _spec_
-- [[notes/ipc-oil-level-module-has-a-five-minute-reset-delay|The oil level module waits about five minutes after key-off to allow oil drain-back before re-reading]]
 - [[notes/ipc-oil-pressure-lamp-is-ground-switched-by-the-engine-unit|The oil pressure warning lamp is ground-switched by an engine-mounted pressure switch]]
 - [[notes/wpr-park-test-confirms-the-motor-stops-in-park|The park test confirms the wiper motor cycles once and stops in the Park position]]  ·  _procedure_
 - [[notes/ipc-seat-belt-reminder-runs-4-to-8-seconds-at-key-on|The seat belt reminder lamp runs for 4 to 8 seconds at key-on regardless of belt state]]
+- [[notes/chg-clutch-switch-is-an-in-series-interlock-to-the-starter-relay|The starting interlock switch sits in series between the start signal and the starter relay]]
 - [[notes/crz-control-switch-sends-set-coast-accel-resume-to-amplifier|The steering-wheel speed control switch tells the amplifier to set, hold, coast, or accelerate]]
 - [[notes/ipc-dash-gauges-share-a-three-coil-magnetic-movement|The temperature, oil pressure, and fuel gauges all use the same three-coil magnetic movement with no voltage regulator]]
 - [[notes/lgt-turn-signal-flasher-lives-on-the-front-of-the-fuse-panel|The turn signal flasher is a separate plug-in on the front of the fuse panel]]  ·  _spec_
@@ -81,21 +79,21 @@ This map is the entry point for the **body electrical & lighting** system of the
 - [[notes/ipc-charge-lamp-jumper-test-from-terminal-1-to-battery-negative|A jumper from regulator terminal 1 to battery negative proves the charge lamp bulb and circuit]]  ·  _troubleshooting_
 - [[notes/crz-cruise-pinpoint-tests-are-organized-by-symptom-letter|Cruise control pinpoint tests are organized by lettered symptom from A through K]]  ·  _troubleshooting_
 - [[notes/ipc-grounding-the-oil-lamp-wire-isolates-bulb-from-sender|Grounding the oil-lamp sender wire isolates a bad bulb from a bad pressure switch]]  ·  _troubleshooting_
-- [[notes/lgt-on-automatics-the-range-switch-shares-backup-lamps-and-starter-relay|On automatics the same range switch lights the backup lamps and closes the starter relay]]  ·  _troubleshooting_
-- [[notes/sen-clutch-switch-is-the-manual-start-interlock|On the manual F-150 the clutch pedal switch is the start interlock and feeds the starter relay only when the pedal is down]]  ·  _troubleshooting_
 - [[notes/crz-servo-test-is-a-connector-and-wiring-inspection|Testing the cruise servo is mostly a connector-pin and broken-wire inspection]]  ·  _troubleshooting_
-- [[notes/rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead|The air bag monitor flashes two-digit trouble codes on the indicator, or beeps five sets of five if the lamp is dead]]  ·  _troubleshooting_
+- [[notes/rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead|The air bag monitor self-tests the indicator for six seconds and flashes two-digit trouble codes within 30 seconds, or beeps five sets of five if the lamp is dead]]  ·  _troubleshooting_
 - [[notes/acc-anti-theft-disables-the-starting-system-until-disarmed|The anti-theft system disables the starting system until it is disarmed]]  ·  _troubleshooting_
 - [[notes/wpr-wiper-motor-magnets-can-shatter-from-physical-shock|The wiper motor's ceramic magnets can shatter from a physical shock and kill the motor]]  ·  _troubleshooting_
 
 ## Sources
 
 - [[sources/acc-anti-theft-alarm-system|Anti-Theft / Alarm System — Alarm Module and Arm/Disarm Switch (FSM)]]
+- [[sources/chg-starting-interlock-switches|Starting Interlock Switches (Clutch / Neutral Safety) — Description and Operation (FSM)]]
 - [[sources/crz-brake-deactivation-switches|Cruise Control Brake Switches — Brake On/Off Switch and Brake Pressure (Deactivator) Switch (FSM)]]
 - [[sources/crz-control-switch-and-clutch-switch|Speed Control Switch and Clutch Switch — Description and Operation (FSM)]]
 - [[sources/crz-diagnosis-and-vacuum-vent-valve|Cruise Control Diagnosis Overview and Vacuum Vent (Dump) Valve Adjustment (FSM)]]
 - [[sources/crz-speed-control-servo-and-cable|Speed Control Servo and Actuator Cable — Description, Testing, Adjustment (FSM)]]
 - [[sources/crz-speed-control-system-overview|Cruise Control (Speed Control) System — Description, Operation, Service Precautions (FSM)]]
+- [[sources/hvc-compressor-clutch-controls|A/C Compressor Clutch Controls — Relay and Pressure Switch (FSM)]]
 - [[sources/ipc-charge-lamp-indicator|Charge Lamp / Indicator — Description, Operation and Testing (FSM)]]
 - [[sources/ipc-fuel-gauge-and-sender|Fuel Gauge and Fuel Gauge Sender — Description, Operation and Testing (FSM)]]
 - [[sources/ipc-magnetic-gauge-movement|Magnetic Gauge Movement / Instrument Cluster — Description, Operation and Specifications (FSM)]]
@@ -112,14 +110,12 @@ This map is the entry point for the **body electrical & lighting** system of the
 - [[sources/lgt-headlamp|Headlamp, Headlamp Bulb, Headlamp Switch and Dimmer Switch (FSM)]]
 - [[sources/lgt-interior-lamp-switch|Interior / Courtesy / Dome Lamp Pillar Switch — Service and Repair (FSM)]]
 - [[sources/lgt-multifunction-switch|Steering-Column Multi-Function Switch — Turn Signal, Hazard and Dimmer (FSM)]]
+- [[sources/mnt-engine-oil|Engine Oil Capacity and the Low Oil Level Indicator (FSM)]]
 - [[sources/rly-air-bag-diagnostic-monitor|Air Bag Control Module (Air Bag Diagnostic Monitor) — Description and Testing (FSM)]]
 - [[sources/rly-body-control-modules|Body Control Modules — Warning Chime, Alarm, Keyless Entry, Wiper, PSOM, Starter Relay (FSM)]]
-- [[sources/rly-daytime-running-lamp-module|Daytime Running Lamp (DRL) Control Unit — Description and Operation (FSM)]]
 - [[sources/rly-fuel-pump-relay|Fuel Pump Relay — Description, Operation and Testing (FSM)]]
 - [[sources/rly-pcm-power-main-relay|Main Relay (Computer/Fuel System) / PCM Power Relay — Description and Operation (FSM)]]
 - [[sources/rly-powertrain-control-module|Powertrain Control Module (PCM/ECM) — Description, Reset, Service and Specs (FSM)]]
-- [[sources/rly-wot-ac-compressor-clutch-relay|Compressor Clutch Relay (WOT A/C Relay) — Description and Operation (FSM)]]
-- [[sources/sen-clutch-pedal-position-switch|Clutch Pedal Position Switch (Manual Transmission Start Interlock) — Description and Operation (FSM)]]
 - [[sources/sen-vehicle-speed-sensor|Vehicle Speed Sensor / PSOM and Differential Speed Sensor — Description and Operation (FSM)]]
 - [[sources/wpr-circuit-breaker|Wiper Circuit Breaker — Rating and Two-Part Test (FSM)]]
 - [[sources/wpr-diagnostics-and-precautions|Wiper/Washer Diagnostics, Park Test, and Air Bag Service Precautions (FSM)]]

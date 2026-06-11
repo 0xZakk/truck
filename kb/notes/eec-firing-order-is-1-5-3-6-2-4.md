@@ -4,7 +4,7 @@ kind: spec
 source: "[[sources/eec-tune-up-and-engine-checks|Tune-up and Engine Performance Checks — Timing, Firing Order, Compression, Valve Clearance, Spark Plugs (FSM)]]"
 related:
   - "[[notes/eec-base-timing-is-10-btdc-set-with-spout-disconnected|Base ignition timing is 10 deg BTDC, set with the SPOUT connector disconnected]]"
-  - "[[notes/eec-valve-clearance-allowable-limits-are-0100-0200-in|Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length]]"
+  - "[[notes/eng-adjust-valve-clearance-by-changing-pushrod-length|Adjust 4.9L valve clearance by changing pushrod length, in firing order]]"
 tags:
   - firing-order
   - spark-plug
@@ -24,7 +24,7 @@ misfire that no sensor or PCM adjustment will fix.
 ## Related Concepts
 
 - [[notes/eec-base-timing-is-10-btdc-set-with-spout-disconnected|Base ignition timing is 10 deg BTDC, set with the SPOUT connector disconnected]]
-- [[notes/eec-valve-clearance-allowable-limits-are-0100-0200-in|Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length]]
+- [[notes/eng-adjust-valve-clearance-by-changing-pushrod-length|Adjust 4.9L valve clearance by changing pushrod length, in firing order]]
 - [[notes/eng-49l-firing-order-is-1-5-3-6-2-4|The 4.9L firing order is 1-5-3-6-2-4 with a 10-degree BTDC base timing and 0.042-0.046 in plug gap]]
 - [[notes/mnt-base-timing-is-10-degrees-btdc-firing-order-1-5-3-6-2-4|Base ignition timing is 10° BTDC and the 4.9L firing order is 1-5-3-6-2-4]]
 - [[notes/mnt-spark-plug-gap-is-042-046-inch-torque-10-15-ftlb|Spark plugs are gapped 0.042-0.046 in and torqued to 10-15 ft lb]]

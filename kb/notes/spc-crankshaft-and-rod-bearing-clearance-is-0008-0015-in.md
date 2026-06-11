@@ -31,6 +31,7 @@ engine torque table.
 - [[notes/spc-cylinder-bore-standard-is-40000-40048-in-with-a-0005-in-out-of-round-limit|Cylinder bore (std.) is 4.0000–4.0048 in with a 0.005 in out-of-round limit]]
 - [[notes/spc-piston-clearance-is-0010-0018-in-and-compression-ring-end-gap-is-0010-0020-in|Piston clearance is 0.0010–0.0018 in and compression ring end gap is 0.010–0.020 in]]
 - [[notes/spc-camshaft-and-lifter-overhaul-clearances-for-the-49l|Camshaft and lifter overhaul clearances for the 4.9L]]
+- [[notes/spc-valvetrain-overhaul-specs-cover-springs-guides-and-seats|Valve-train overhaul specs set 45° seats, 0.001–0.0027 in stem clearance, and 66–74 lb closed spring pressure]]
 
 ## Source
 

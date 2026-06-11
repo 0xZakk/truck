@@ -3,7 +3,7 @@ title: "The MAP sensor doubles as a barometric pressure sensor to correct fuelin
 kind: how-it-works
 source: "[[sources/sen-manifold-absolute-pressure-sensor|Manifold Absolute Pressure (MAP) Sensor — Description, Operation, and DTCs (FSM)]]"
 related:
-  - "[[notes/sen-map-converts-manifold-vacuum-to-a-frequency|The MAP sensor reports engine load as a frequency that falls as manifold vacuum rises]]"
+  - "[[notes/eec-map-sensor-outputs-a-frequency-and-doubles-as-a-baro-sensor|The MAP sensor outputs a frequency proportional to load and doubles as a barometric sensor]]"
 tags:
   - map-sensor
   - barometric-pressure
@@ -27,7 +27,6 @@ than a constant symptom.
 
 ## Related Concepts
 
-- [[notes/sen-map-converts-manifold-vacuum-to-a-frequency|The MAP sensor reports engine load as a frequency that falls as manifold vacuum rises]]
 - [[notes/eec-map-sensor-outputs-a-frequency-and-doubles-as-a-baro-sensor|The MAP sensor outputs a frequency proportional to load and doubles as a barometric sensor]]
 
 ## Source

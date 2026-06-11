@@ -23,6 +23,7 @@ reservoir has fluid and the pump is primed before judging a low reading.
 ## Related Concepts
 
 - [[notes/wpr-wiper-motor-current-draw-under-3-5-amps|A healthy wiper motor draws no more than 3.5 amps at either low or high speed]]
+- [[notes/wpr-circuit-breaker-needs-two-bench-tests-to-pass|A wiper circuit breaker passes only if it survives the rated-hold test and trips within 20 seconds at double current]]
 
 ## Source
 

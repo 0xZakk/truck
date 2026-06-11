@@ -29,10 +29,9 @@ This map is the entry point for the **interior** system of the truck. As notes a
 - [[notes/rst-backup-power-supply-depletes-one-minute-after-disconnect|The SRS backup power supply depletes about one minute after the positive cable is disconnected]]
 - [[notes/rst-srs-supplements-belts-and-runs-from-battery-in-any-key-position|The air bag SRS supplements the belts and runs straight from the battery in any key position]]
 - [[notes/rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second|The air bag deploys in four steps in a fraction of a second]]
-- [[notes/rst-diagnostic-monitor-does-not-deploy-the-bag|The air bag diagnostic monitor never deploys the bag — the hard-wired sensors do]]
+- [[notes/rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag|The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag]]
 - [[notes/rst-sliding-contact-relays-srs-signals-through-the-rotating-wheel|The air bag sliding contact (clockspring) relays SRS signals through the rotating steering wheel]]
 - [[notes/ipc-charge-lamp-grounds-through-regulator-terminal-1|The charge lamp lights because the regulator grounds it through terminal 1 until the S-circuit voltage is reached]]
-- [[notes/ipc-chime-module-handles-key-in-ignition-lamps-on-and-belt-reminders|The chime module drives key-in-ignition, lamps-on, and seat-belt reminders from separate inputs]]
 - [[notes/rst-continuous-loop-retractor-locks-at-5-mph|The continuous-loop belt retractor lets webbing move freely but locks at impacts of 5 mph or more]]
 - [[notes/rst-thermal-fuse-disables-deployment-and-must-not-be-jumpered|The diagnostic monitor's thermal fuse disables deployment and must never be jumpered]]
 - [[notes/rst-driver-air-bag-fills-to-2-3-cu-ft-in-about-40-ms|The driver air bag is a 28-inch neoprene-coated nylon bag that fills to 2.3 cu ft in about 40 milliseconds]]  ·  _spec_
@@ -41,12 +40,12 @@ This map is the entry point for the **interior** system of the truck. As notes a
 - [[notes/ipc-fuel-sender-resistance-spans-22-5-to-145-ohms|The fuel sender resistance spans 22.5 ohms empty to 145 ohms full]]  ·  _spec_
 - [[notes/ipc-seat-belt-reminder-runs-4-to-8-seconds-at-key-on|The seat belt reminder lamp runs for 4 to 8 seconds at key-on regardless of belt state]]
 - [[notes/ipc-dash-gauges-share-a-three-coil-magnetic-movement|The temperature, oil pressure, and fuel gauges all use the same three-coil magnetic movement with no voltage regulator]]
+- [[notes/rly-warning-chime-module-sounds-for-key-in-lights-on-and-unbuckled-belt|The warning chime module sounds for key-in-ignition, lights-on-with-door-open, and unbuckled belt]]
 
 ## Common Issues
 
 - [[notes/rst-five-sets-of-five-beeps-means-a-dead-indicator-not-code-55|Five sets of five beeps means a dead air bag indicator with a fault present, not code 55]]  ·  _troubleshooting_
 - [[notes/rst-replace-belts-after-any-collision-including-unused-ones|Inspect and replace belt assemblies after any collision, including belts not in use]]  ·  _troubleshooting_
-- [[notes/rst-air-bag-indicator-self-test-and-flash-codes|The air bag indicator self-tests for six seconds and flashes two-digit fault codes within 30 seconds]]  ·  _troubleshooting_
 - [[notes/rst-undamaged-srs-sensors-reset-and-can-be-reused|Undamaged SRS sensors reset automatically after a crash and can be reused]]  ·  _troubleshooting_
 
 ## Sources
@@ -61,6 +60,8 @@ This map is the entry point for the **interior** system of the truck. As notes a
 - [[sources/ipc-seat-belt-and-audible-warning|Seat Belt Reminder and Audible Warning (Chime) Module — Description and Operation (FSM)]]
 - [[sources/ipc-speedometer-psom|Speedometer / Programmable Speedometer-Odometer Module (PSOM) — Description and Operation (FSM)]]
 - [[sources/ipc-voltmeter-gauge|Voltmeter Gauge — Description and Operation (FSM)]]
+- [[sources/rly-air-bag-diagnostic-monitor|Air Bag Control Module (Air Bag Diagnostic Monitor) — Description and Testing (FSM)]]
+- [[sources/rly-body-control-modules|Body Control Modules — Warning Chime, Alarm, Keyless Entry, Wiper, PSOM, Starter Relay (FSM)]]
 - [[sources/rst-air-bag-diagnostic-monitor|Air Bag Diagnostic Monitor and Trouble Codes — Description, Operation, and Diagnostics (FSM)]]
 - [[sources/rst-air-bag-impact-and-safing-sensors|Air Bag Impact (Crash) Sensors and Safing Sensor — Description, Operation, Specs (FSM)]]
 - [[sources/rst-driver-air-bag-module-and-sliding-contact|Driver Air Bag Module, Inflator, and Air Bag Sliding Contact (Clockspring) — Description, Operation, Specs (FSM)]]

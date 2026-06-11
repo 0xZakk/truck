@@ -24,7 +24,6 @@ leak-down can then separate.
 
 - [[notes/mnt-compression-check-procedure-warms-engine-then-cranks-five-strokes|The compression-check procedure warms the engine, pulls all plugs, and cranks five strokes per cylinder]]
 - [[notes/eec-compression-is-acceptable-if-lowest-cylinder-is-within-25-percent|Compression is acceptable if the lowest cylinder reads within 25% of the highest]]
-- [[notes/eng-compression-passes-if-lowest-cylinder-within-25-percent|Compression is acceptable if the lowest cylinder is within 25% of the highest]]
 
 ## Source
 

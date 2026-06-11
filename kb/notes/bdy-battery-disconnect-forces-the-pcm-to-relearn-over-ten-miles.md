@@ -31,7 +31,7 @@ lands in the powertrain.
 - [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system before disconnecting the battery for starting/charging work]]
 - [[notes/crz-disarm-the-air-bag-before-working-on-the-cruise-switches|Disarm the air bag before servicing the steering-wheel cruise switches]]
 - [[notes/eec-clear-kam-and-drive-10-miles-after-replacing-an-eec-part|After replacing an EEC component, clear Keep Alive Memory and drive ~10 miles to relearn]]
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]
+- [[notes/wpr-disarm-the-air-bag-before-working-on-the-column-switch|Disarm the air bag before removing the column-mounted wiper/washer switch]]
 
 ## Source
 

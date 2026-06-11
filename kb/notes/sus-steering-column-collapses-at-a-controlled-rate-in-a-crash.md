@@ -3,7 +3,7 @@ title: "The steering column collapses at a controlled rate so the wheel is not d
 kind: how-it-works
 source: "[[sources/sus-steering-column|Energy-Absorbing Steering Column and Air Bag Service (FSM)]]"
 related:
-  - "[[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]"
+  - "[[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]"
 tags:
   - steering
   - steering-column
@@ -27,7 +27,7 @@ the `steering` system.
 
 ## Related Concepts
 
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]
 
 ## Source
 

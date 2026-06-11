@@ -3,7 +3,7 @@ title: "Five sets of five beeps means a dead air bag indicator with a fault pres
 kind: troubleshooting
 source: "[[sources/rst-air-bag-diagnostic-monitor|Air Bag Diagnostic Monitor and Trouble Codes — Description, Operation, and Diagnostics (FSM)]]"
 related:
-  - "[[notes/rst-air-bag-indicator-self-test-and-flash-codes|The air bag indicator self-tests for six seconds and flashes two-digit fault codes]]"
+  - "[[notes/rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead|The air bag monitor self-tests the indicator for six seconds and flashes two-digit trouble codes within 30 seconds, or beeps five sets of five if the lamp is dead]]"
 tags:
   - air-bag
   - warning-chime
@@ -26,8 +26,8 @@ one, the system can still signal trouble in the `interior` cabin even with a bur
 
 ## Related Concepts
 
-- [[notes/rst-air-bag-indicator-self-test-and-flash-codes|The air bag indicator self-tests for six seconds and flashes two-digit fault codes]]
-- [[notes/rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead|The air bag monitor flashes two-digit trouble codes on the indicator, or beeps five sets of five if the lamp is dead]]
+- [[notes/rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead|The air bag monitor self-tests the indicator for six seconds and flashes two-digit trouble codes within 30 seconds, or beeps five sets of five if the lamp is dead]]
+- [[notes/rst-thermal-fuse-disables-deployment-and-must-not-be-jumpered|The diagnostic monitor's thermal fuse disables deployment and must never be jumpered]]
 
 ## Source
 

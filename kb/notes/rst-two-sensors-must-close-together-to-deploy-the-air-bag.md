@@ -30,7 +30,9 @@ sensors sit at the boundary of the `body-cab` structure and the `interior` SRS.
 
 - [[notes/rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second|The air bag deploys in four steps in a fraction of a second]]
 - [[notes/rst-undamaged-srs-sensors-reset-and-can-be-reused|Undamaged SRS sensors reset automatically and can be reused]]
-- [[notes/rst-diagnostic-monitor-does-not-deploy-the-bag|The air bag diagnostic monitor never deploys the bag — the hard-wired sensors do]]
+- [[notes/rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag|The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag]]
+- [[notes/rst-srs-supplements-belts-and-runs-from-battery-in-any-key-position|The air bag SRS supplements the belts and runs straight from the battery in any key position]]
+- [[notes/rst-use-the-2-ohm-air-bag-simulator-not-a-zero-ohm-jumper|Diagnose the SRS with a 2-ohm air bag simulator, never a zero-ohm jumper]]
 
 ## Source
 

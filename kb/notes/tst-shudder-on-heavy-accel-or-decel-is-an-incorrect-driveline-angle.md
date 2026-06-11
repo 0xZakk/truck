@@ -33,6 +33,7 @@ misaligned center bearing on a two-piece driveshaft as a related geometry fault.
 - [[notes/tst-highway-speed-shake-points-to-wheel-tire-axle-or-brake-imbalance|A visible highway-speed shake points to wheel, tire, axle, or brake imbalance or run-out]]
 - [[notes/tst-clunk-noise-traces-to-driveline-backlash-u-joints-or-engine-mounts|A clunk noise traces to driveline backlash, worn u-joints, or loose engine mounts]]
 - [[notes/tst-neutral-coast-separates-wheel-end-vibration-from-engine-vibration|A neutral-coast test separates wheel-end vibration from engine-driven vibration]]
+- [[notes/tst-engine-rpm-vibration-that-survives-neutral-coast-is-an-accessory-or-mount|An engine-rpm vibration that returns in standstill run-up is an accessory or mount fault]]
 
 ## Source
 

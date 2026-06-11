@@ -3,7 +3,7 @@ title: "Fuel tank capacity depends on cab and wheelbase, with an aft-of-axle tan
 kind: spec
 source: "[[sources/spc-capacities-and-fluids|Capacities and Fluid Types — Fuel Tank, Cooling, Engine Oil, M/T (FSM)]]"
 related:
-  - "[[notes/spc-manual-transmission-takes-76-pints-of-mercon-v|The M5OD manual transmission takes 7.6 pints of Mercon V fluid]]"
+  - "[[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]"
 tags:
   - fuel-tank
   - capacities
@@ -23,7 +23,7 @@ the baseline for diagnosing fuel-gauge and sender complaints.
 
 ## Related Concepts
 
-- [[notes/spc-manual-transmission-takes-76-pints-of-mercon-v|The M5OD manual transmission takes 7.6 pints of Mercon V fluid]]
+- [[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]
 
 ## Source
 

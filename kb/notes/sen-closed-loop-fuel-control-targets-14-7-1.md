@@ -4,7 +4,7 @@ kind: how-it-works
 source: "[[sources/sen-oxygen-sensor|Heated Oxygen Sensor (HO2S) — Description, Operation, and Testing (FSM)]]"
 related:
   - "[[notes/sen-ho2s-voltage-tells-pcm-rich-vs-lean|The HO2S reports rich vs. lean by generating a high voltage when exhaust oxygen is low and a low voltage when it is high]]"
-  - "[[notes/sen-ect-resistance-falls-as-coolant-warms|The ECT is a negative-coefficient thermistor whose voltage drops as the engine warms, and a bad ground reads falsely cold]]"
+  - "[[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition]]"
 tags:
   - fuel
   - closed-loop
@@ -29,7 +29,7 @@ fuel calculation, and the HO2S is the feedback that closes the loop around it.
 ## Related Concepts
 
 - [[notes/sen-ho2s-voltage-tells-pcm-rich-vs-lean|The HO2S reports rich vs. lean by generating a high voltage when exhaust oxygen is low and a low voltage when it is high]]
-- [[notes/sen-ect-resistance-falls-as-coolant-warms|The ECT is a negative-coefficient thermistor whose voltage drops as the engine warms, and a bad ground reads falsely cold]]
+- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition]]
 - [[notes/eec-ho2s-must-exceed-600f-so-it-has-a-built-in-heater|The HO2S needs 600 deg F to work, so a built-in heater shortens warm-up before closed loop]]
 - [[notes/sen-ho2s-must-reach-600f-and-uses-a-heater|The HO2S only reads accurately above 600°F, which is why it carries an internal heater]]
 - [[notes/eec-injector-fuel-quantity-is-governed-by-pulse-width|Injector fuel quantity is governed only by pulse width because lift and rail pressure are constant]]

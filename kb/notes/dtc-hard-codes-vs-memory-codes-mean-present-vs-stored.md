@@ -33,6 +33,7 @@ the EEC self-test.
 
 - [[notes/dtc-self-test-runs-in-koeo-and-koer-modes|The EEC self-test runs in two modes — Key On Engine Off and Key On Engine Running — and each finds different faults]]
 - [[notes/dtc-111-is-system-pass-not-a-fault|DTC 111 means System Pass — the self-test found no faults]]
+- [[notes/dtc-511-and-513-call-for-pcm-replacement|DTCs 511 and 513 are internal PCM failures that the chart resolves by replacing the PCM]]
 
 ## Source
 

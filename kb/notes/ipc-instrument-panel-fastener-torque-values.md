@@ -27,6 +27,7 @@ the `interior` / `electrical-body` systems.
 ## Related Concepts
 
 - [[notes/ipc-dash-gauges-share-a-three-coil-magnetic-movement|The temperature, oil pressure, and fuel gauges all use the same three-coil magnetic movement with no voltage regulator]]
+- [[notes/bdy-bench-seat-track-fastener-torques|Bench seat fasteners torque to 25-34 ft-lb at the floor pan and 13-17 ft-lb at the seat track]]
 
 ## Source
 

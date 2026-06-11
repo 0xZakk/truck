@@ -32,6 +32,7 @@ This sits in the `electrical-body` wiring and engine `lubrication` warning domai
 - [[notes/ipc-oil-level-warning-is-separate-from-oil-pressure-warning|The Check Oil low-level warning is a separate system from the oil pressure warning lamp]]
 - [[notes/mnt-low-oil-indicator-trips-at-1-5-quarts-low-with-drain-back-delay|The low-oil indicator trips when oil is about 1.5 quarts low and waits five minutes for drain-back]]
 - [[notes/ipc-check-engine-message-signals-eec-iv-fmem-mode|The CHECK ENGINE message signals the EEC-IV has entered a backup (FMEM) operating strategy]]
+- [[notes/ipc-functional-test-of-the-oil-level-warning-by-draining-two-quarts|Functional-test the oil level warning by draining two quarts and waiting five minutes]]
 
 ## Source
 

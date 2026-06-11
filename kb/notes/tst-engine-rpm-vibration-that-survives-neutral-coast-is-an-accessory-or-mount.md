@@ -34,6 +34,7 @@ which first rules out the rotating wheel-end components.
 - [[notes/tst-neutral-coast-separates-wheel-end-vibration-from-engine-vibration|A neutral-coast test separates wheel-end vibration from engine-driven vibration]]
 - [[notes/tst-low-frequency-boom-at-idle-means-bound-up-engine-or-exhaust-mounts|A low-frequency boom at or just above idle means bound-up engine or exhaust mounts]]
 - [[notes/tst-highway-speed-shake-points-to-wheel-tire-axle-or-brake-imbalance|A visible highway-speed shake points to wheel, tire, axle, or brake imbalance or run-out]]
+- [[notes/tst-shudder-on-heavy-accel-or-decel-is-an-incorrect-driveline-angle|A shudder or rumble on heavy accel or decel is an incorrect driveline angle]]
 
 ## Source
 

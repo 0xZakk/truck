@@ -3,7 +3,7 @@ title: "5-lug wheel nuts torque to 100 ft lb on clean, dry threads — never oil
 kind: spec
 source: "[[sources/mnt-wheels-and-bearings|Wheels, Lug Nuts, Wheel Bearings, and Alignment (FSM)]]"
 related:
-  - "[[notes/mnt-front-wheel-bearings-set-to-near-zero-end-play|Front wheel bearings are adjusted to near-zero end play with a backed-off, lightly torqued nut]]"
+  - "[[notes/drv-front-wheel-bearing-adjustment-sequence|Front wheel bearings are set by seating at 17-25 ft·lb then backing off and re-torquing to 18-20 in·lb]]"
 tags:
   - brakes
   - wheels
@@ -22,9 +22,10 @@ the rotor from being clamped distorted, which would show up as pedal pulsation.
 
 ## Related Concepts
 
-- [[notes/mnt-front-wheel-bearings-set-to-near-zero-end-play|Front wheel bearings are adjusted to near-zero end play with a backed-off, lightly torqued nut]]
+- [[notes/drv-front-wheel-bearing-adjustment-sequence|Front wheel bearings are set by seating at 17-25 ft·lb then backing off and re-torquing to 18-20 in·lb]]
 - [[notes/sus-lug-nuts-torque-to-100-ft-lb-dry-on-the-5-lug-wheel|5-lug wheel lug nuts torque to 100 ft lb on clean dry threads]]
 - [[notes/sus-rear-suspension-fastener-torques|Rear suspension fastener torques (leaf spring, shock, stabilizer)]]
+- [[notes/drv-8.8-axle-fastener-torque-values|Ford 8.8 axle fastener torques: bearing caps and ring gear at 70-85 ft·lb]]
 
 ## Source
 

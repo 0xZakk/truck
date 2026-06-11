@@ -18,7 +18,6 @@ Critically, if dirt is found anywhere in the hydraulic system, the entire system
 
 - [[notes/brk-brake-fluid-is-dot-3-and-its-boiling-point-drops-as-it-absorbs-moisture|Brake fluid is DOT 3 and its boiling point drops as it absorbs moisture]]
 - [[notes/brk-wheel-cylinders-and-calipers-are-inspected-for-leaks-rust-and-scored-bores|Wheel cylinders and calipers are inspected for leaks, rust, and scored bores]]
-- [[notes/mnt-truck-uses-dot-3-brake-fluid|The 1994 F-150 uses DOT 3 brake fluid and boiling point is the key quality measure]]
 
 ## Source
 

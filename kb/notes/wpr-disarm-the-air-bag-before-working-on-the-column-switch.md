@@ -30,10 +30,10 @@ drive feel returns to normal. This precaution applies to any wiper/washer column
 
 - [[notes/wpr-multi-function-switch-screws-torque-to-18-27-inch-lbs|The multi-function switch attaching screws torque to 18–27 inch-lbs]]
 - [[notes/wpr-wiper-and-washer-switch-are-one-multi-function-switch|The wiper switch and washer switch are a single multi-function switch on the steering column]]
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]
 - [[notes/crz-disarm-the-air-bag-before-working-on-the-cruise-switches|Disarm the air bag before servicing the steering-wheel cruise switches]]
-- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system before disconnecting the battery for starting/charging work]]
 - [[notes/gls-glass-work-near-the-column-requires-disarming-the-air-bag|Glass or window work that touches the steering column requires disarming the air bag and waiting one minute]]
+- [[notes/bdy-battery-disconnect-forces-the-pcm-to-relearn-over-ten-miles|Any cab battery disconnect forces the PCM to relearn its adaptive strategy over about ten miles]]
 
 ## Source
 

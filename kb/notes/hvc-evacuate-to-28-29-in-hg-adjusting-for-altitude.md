@@ -24,6 +24,7 @@ minutes. If it can't hold vacuum, find and fix the leak before charging.
 - [[notes/hvc-charging-from-14-oz-cans-jumper-the-pressure-switch|Charge from cans by jumpering the pressure switch and running the A/C to 2.0 lb]]
 - [[notes/hvc-vacuum-reservoir-leak-down-test|Leak-test the HVAC vacuum reservoir: under 0.5 in Hg loss in 60 seconds]]
 - [[notes/hvc-oil-charge-meters-replacement-oil-from-drained-amount|Oil charge meters new refrigerant oil from how much drained from the compressor]]
+- [[notes/hvc-vacuum-reservoir-holds-air-door-position-under-load|The vacuum reservoir keeps the air doors in position when manifold vacuum drops]]
 
 ## Source
 

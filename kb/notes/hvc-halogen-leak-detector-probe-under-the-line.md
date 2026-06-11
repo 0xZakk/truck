@@ -23,6 +23,7 @@ after a repair.
 - [[notes/hvc-a-refrigerant-leak-shows-as-oily-residue|A refrigerant leak usually shows up as oily residue at the leak point]]
 - [[notes/hvc-r-134a-handling-safety-rules|R-134a is non-flammable but combustible with air under pressure]]
 - [[notes/hvc-recover-refrigerant-until-vacuum-holds-two-minutes|Recover refrigerant until the system holds vacuum for two minutes]]
+- [[notes/hvc-manifold-bolt-torque-and-o-ring-leak-test|Torque the compressor manifold bolt to 13–17 ft lb before condemning the O-rings]]
 
 ## Source
 

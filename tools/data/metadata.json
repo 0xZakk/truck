@@ -185,7 +185,7 @@
   },
   {
     "slug": "chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging",
-    "title": "Disarm the air bag system before disconnecting the battery for starting/charging work"
+    "title": "Disarm the air bag system and wait one minute before any battery, steering column, or wheel work"
   },
   {
     "slug": "chg-disconnecting-the-battery-erases-the-pcm-adaptive-strategy",
@@ -416,16 +416,12 @@
     "title": "After replacing an EEC component, clear Keep Alive Memory and drive ~10 miles to relearn"
   },
   {
-    "slug": "eec-cmp-in-distributor-produces-the-pip-signal-for-spark-and-injection",
-    "title": "The distributor-mounted CMP sensor produces the PIP signal that times both spark and injection"
-  },
-  {
     "slug": "eec-compression-is-acceptable-if-lowest-cylinder-is-within-25-percent",
     "title": "Compression is acceptable if the lowest cylinder reads within 25% of the highest"
   },
   {
     "slug": "eec-ect-and-iat-are-ntc-thermistors-on-a-5v-reference",
-    "title": "The ECT and IAT are negative-coefficient thermistors whose voltage drop falls as temperature rises"
+    "title": "The ECT and IAT are identical two-lead NTC thermistors on a 5.0 V reference whose voltage drops as temperature rises"
   },
   {
     "slug": "eec-firing-order-is-1-5-3-6-2-4",
@@ -469,7 +465,7 @@
   },
   {
     "slug": "eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds",
-    "title": "A bad ground or corroded connection makes the ECT and IAT read falsely cold"
+    "title": "A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition"
   },
   {
     "slug": "eec-pcm-cross-checks-tps-map-and-pulse-width-for-in-range-failures",
@@ -488,10 +484,6 @@
     "title": "The TP sensor is a potentiometer reading about 0.6 V closed to 4.5 V at wide-open throttle"
   },
   {
-    "slug": "eec-valve-clearance-allowable-limits-are-0100-0200-in",
-    "title": "Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length"
-  },
-  {
     "slug": "eng-49l-firing-order-is-1-5-3-6-2-4",
     "title": "The 4.9L firing order is 1-5-3-6-2-4 with a 10-degree BTDC base timing and 0.042-0.046 in plug gap"
   },
@@ -500,20 +492,12 @@
     "title": "The 4.9L I6 makes 150 hp and 260 ft-lb on an 8.8:1 compression ratio, varying with axle ratio"
   },
   {
-    "slug": "eng-a-bad-ect-connection-reads-colder-than-actual",
-    "title": "A bad ECT connection or added resistance reads colder than actual"
-  },
-  {
     "slug": "eng-a-failed-fan-clutch-causes-overheating-or-continuous-roar",
     "title": "A failed fan clutch shows up as overheating or a continuous fan roar"
   },
   {
     "slug": "eng-adjust-valve-clearance-by-changing-pushrod-length",
     "title": "Adjust 4.9L valve clearance by changing pushrod length, in firing order"
-  },
-  {
-    "slug": "eng-compression-passes-if-lowest-cylinder-within-25-percent",
-    "title": "Compression is acceptable if the lowest cylinder is within 25% of the highest"
   },
   {
     "slug": "eng-cooling-system-holds-13-to-15-quarts-of-5050-coolant",
@@ -525,15 +509,11 @@
   },
   {
     "slug": "eng-distributor-uses-hall-effect-pip-no-mechanical-advance",
-    "title": "The distributor uses a Hall-effect PIP signal and has no mechanical advance"
+    "title": "The 4.9L distributor uses a Hall-effect PIP signal and has no mechanical advance"
   },
   {
     "slug": "eng-dual-catalytic-converter-combines-three-way-and-oxidation-catalysts",
     "title": "The dual catalytic converter combines a three-way and an oxidation catalyst"
-  },
-  {
-    "slug": "eng-ect-sensor-is-an-ntc-thermistor-the-pcm-reads-as-voltage",
-    "title": "The ECT sensor is an NTC thermistor whose voltage the PCM reads as coolant temperature"
   },
   {
     "slug": "eng-energize-the-fuel-pump-at-the-diagnostic-connector-to-test-pressure",
@@ -616,10 +596,6 @@
     "title": "Open the windows before setting a bonded windshield so a closed door cannot blow it out"
   },
   {
-    "slug": "gls-power-window-motor-hides-two-screws-behind-sheet-metal",
-    "title": "Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal"
-  },
-  {
     "slug": "gls-power-window-motor-torque-is-50-85-in-lb",
     "title": "The power window motor retaining screws torque to 50-85 in-lb (5.6-9.6 N\u00b7m)"
   },
@@ -630,10 +606,6 @@
   {
     "slug": "gls-sticking-window-switch-is-caused-by-bezel-flash",
     "title": "A power window or lock switch that sticks depressed is usually plastic flash in the switch bezel"
-  },
-  {
-    "slug": "gls-window-regulator-is-riveted-not-bolted",
-    "title": "The front door window regulator is riveted, not bolted, so it must be drilled out"
   },
   {
     "slug": "gls-windshield-is-structural-urethane-bonded-glass",
@@ -744,10 +716,6 @@
     "title": "The CHECK ENGINE message signals the EEC-IV has entered a backup (FMEM) operating strategy"
   },
   {
-    "slug": "ipc-chime-module-handles-key-in-ignition-lamps-on-and-belt-reminders",
-    "title": "The chime module drives key-in-ignition, lamps-on, and seat-belt reminders from separate inputs"
-  },
-  {
     "slug": "ipc-dash-gauges-share-a-three-coil-magnetic-movement",
     "title": "The temperature, oil pressure, and fuel gauges all use the same three-coil magnetic movement with no voltage regulator"
   },
@@ -770,10 +738,6 @@
   {
     "slug": "ipc-magnetic-gauges-need-tester-021-00055",
     "title": "Magnetic dash gauges are diagnosed with tester tool 021-00055 and per-symptom pinpoint tests"
-  },
-  {
-    "slug": "ipc-oil-level-module-has-a-five-minute-reset-delay",
-    "title": "The oil level module waits about five minutes after key-off to allow oil drain-back before re-reading"
   },
   {
     "slug": "ipc-oil-level-warning-is-separate-from-oil-pressure-warning",
@@ -817,7 +781,7 @@
   },
   {
     "slug": "lgt-drl-module-runs-high-beams-dimly-only-with-park-brake-off",
-    "title": "The DRL module runs the high beams dimly only with ignition in RUN, park brake off, and headlamps off"
+    "title": "The DRL module runs the high beams at reduced intensity only with ignition in RUN, park brake released, and headlamps off"
   },
   {
     "slug": "lgt-halogen-headlamp-bulb-must-be-handled-only-by-its-plastic-base",
@@ -834,10 +798,6 @@
   {
     "slug": "lgt-multifunction-switch-removal-and-screw-torque",
     "title": "The column multi-function switch comes off after the shroud and torques to 18-27 inch-lbs"
-  },
-  {
-    "slug": "lgt-on-automatics-the-range-switch-shares-backup-lamps-and-starter-relay",
-    "title": "On automatics the same range switch lights the backup lamps and closes the starter relay"
   },
   {
     "slug": "lgt-turn-signal-flasher-lives-on-the-front-of-the-fuse-panel",
@@ -868,14 +828,6 @@
     "title": "Coolant is Ford Premium at a 50/50 mix and types must not be mixed"
   },
   {
-    "slug": "mnt-cooling-capacity-is-13-to-15-quarts-by-equipment",
-    "title": "Cooling system capacity is 13-15 quarts depending on A/C and Super Cooling"
-  },
-  {
-    "slug": "mnt-distributor-has-no-mechanical-advance-uses-pip-and-spout",
-    "title": "The 4.9L distributor has no mechanical advance and relies on PIP and SPOUT signals"
-  },
-  {
     "slug": "mnt-engine-oil-refill-is-5-quarts-with-filter",
     "title": "The 4.9L engine oil refill is 5.0 quarts including the filter"
   },
@@ -884,20 +836,12 @@
     "title": "Front alignment targets camber 0.25\u00b0, total toe 0.06\u00b0, with caster 2.0\u00b0-6.0\u00b0"
   },
   {
-    "slug": "mnt-front-wheel-bearings-set-to-near-zero-end-play",
-    "title": "Front wheel bearings are adjusted to near-zero end play with a backed-off, lightly torqued nut"
-  },
-  {
     "slug": "mnt-fuel-filter-is-a-high-pressure-canister-protecting-injector-orifices",
     "title": "The fuel filter is a high-pressure paper-element canister protecting the injector orifices"
   },
   {
     "slug": "mnt-fuel-pressure-spec-is-50-60-psi-key-on-engine-off",
     "title": "The 4.9L fuel pressure spec is 50-60 PSI key-on-engine-off and 45-60 PSI at idle"
-  },
-  {
-    "slug": "mnt-grounding-the-fuel-pump-lead-runs-the-pump-key-on-engine-off",
-    "title": "Grounding the diagnostic-connector fuel-pump lead runs the pump with the key on and engine off"
   },
   {
     "slug": "mnt-ignition-cables-are-resistive-suppression-wires-by-design",
@@ -910,10 +854,6 @@
   {
     "slug": "mnt-lug-nut-torque-is-100-ftlb-on-clean-dry-threads",
     "title": "5-lug wheel nuts torque to 100 ft lb on clean, dry threads \u2014 never oiled"
-  },
-  {
-    "slug": "mnt-m5od-r2-uses-mercon-v-atf-not-gear-oil",
-    "title": "The M5OD-R2 5-speed takes Mercon V ATF, not gear oil"
   },
   {
     "slug": "mnt-manual-trucks-with-gray-icm-can-be-push-started",
@@ -932,24 +872,16 @@
     "title": "A swollen master-cylinder cap gasket means oil contamination and forces a full rubber replacement"
   },
   {
-    "slug": "mnt-truck-uses-dot-3-brake-fluid",
-    "title": "The 1994 F-150 uses DOT 3 brake fluid and boiling point is the key quality measure"
-  },
-  {
     "slug": "rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag",
     "title": "The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag"
   },
   {
     "slug": "rly-air-bag-monitor-flashes-two-digit-codes-and-beeps-if-the-lamp-is-dead",
-    "title": "The air bag monitor flashes two-digit trouble codes on the indicator, or beeps five sets of five if the lamp is dead"
+    "title": "The air bag monitor self-tests the indicator for six seconds and flashes two-digit trouble codes within 30 seconds, or beeps five sets of five if the lamp is dead"
   },
   {
     "slug": "rly-alarm-module-disables-starting-and-flashes-lamps-at-80-cycles-per-minute",
     "title": "The alarm module disables the starting system and flashes the lamps at 80 cycles per minute when triggered"
-  },
-  {
-    "slug": "rly-drl-module-runs-high-beams-at-reduced-intensity-with-a-brake-fluid-diode",
-    "title": "The DRL module pulses the high beams at reduced intensity and uses a diode so low brake fluid cannot disable it"
   },
   {
     "slug": "rly-eec-power-relay-feeds-the-fuel-pump-relay-coil",
@@ -984,10 +916,6 @@
     "title": "PCM retainer screw and connector bolt have specific in-lb torque values"
   },
   {
-    "slug": "rly-psom-converts-the-abs-speed-sensor-signal-to-8000-pulses-per-mile",
-    "title": "The PSOM converts the ABS differential speed sensor input to a standard 8000 pulses-per-mile signal"
-  },
-  {
     "slug": "rly-spout-falling-edge-only-controls-coil-on-time-on-the-ccd-system",
     "title": "On the CCD (black ICM) system the SPOUT falling edge controls when the coil turns on"
   },
@@ -996,16 +924,8 @@
     "title": "The warning chime module sounds for key-in-ignition, lights-on-with-door-open, and unbuckled belt"
   },
   {
-    "slug": "rly-wot-ac-relay-cuts-the-compressor-at-wide-open-throttle",
-    "title": "The WOT A/C relay drops the compressor at wide open throttle to free up power"
-  },
-  {
     "slug": "rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second",
     "title": "The air bag deploys in four steps in a fraction of a second"
-  },
-  {
-    "slug": "rst-air-bag-indicator-self-test-and-flash-codes",
-    "title": "The air bag indicator self-tests for six seconds and flashes two-digit fault codes within 30 seconds"
   },
   {
     "slug": "rst-air-bag-module-is-serviced-only-as-a-complete-assembly",
@@ -1018,10 +938,6 @@
   {
     "slug": "rst-continuous-loop-retractor-locks-at-5-mph",
     "title": "The continuous-loop belt retractor lets webbing move freely but locks at impacts of 5 mph or more"
-  },
-  {
-    "slug": "rst-diagnostic-monitor-does-not-deploy-the-bag",
-    "title": "The air bag diagnostic monitor never deploys the bag \u2014 the hard-wired sensors do"
   },
   {
     "slug": "rst-driver-air-bag-fills-to-2-3-cu-ft-in-about-40-ms",
@@ -1080,16 +996,8 @@
     "title": "Closed-loop fuel control on the 4.9L trims injector pulse width toward 14.7:1 using the HO2S feedback"
   },
   {
-    "slug": "sen-clutch-switch-is-the-manual-start-interlock",
-    "title": "On the manual F-150 the clutch pedal switch is the start interlock and feeds the starter relay only when the pedal is down"
-  },
-  {
     "slug": "sen-cmp-is-camshaft-driven-and-serviceable-in-the-distributor",
     "title": "The camshaft position / cylinder ID sensor lives inside the distributor and is camshaft-driven, so it can be serviced separately"
-  },
-  {
-    "slug": "sen-ect-resistance-falls-as-coolant-warms",
-    "title": "The ECT is a negative-coefficient thermistor whose voltage drops as the engine warms, and a bad ground reads falsely cold"
   },
   {
     "slug": "sen-eec-iv-sensors-share-vref-and-sig-rtn",
@@ -1104,24 +1012,12 @@
     "title": "The HO2S reports rich vs. lean by generating a high voltage when exhaust oxygen is low and a low voltage when it is high"
   },
   {
-    "slug": "sen-iat-shares-the-ect-thermistor-design",
-    "title": "The IAT sensor is the same negative-coefficient thermistor as the ECT but measures incoming air rather than coolant"
-  },
-  {
     "slug": "sen-inertia-switch-uses-a-magnet-held-ball",
     "title": "The inertia switch cuts fuel-pump power in a crash using a magnet-held ball that breaks loose on impact"
   },
   {
-    "slug": "sen-knock-sensor-is-self-generating-and-tuned-to-5-6khz",
-    "title": "The knock sensor generates its own voltage by resonating at engine-knock frequency, so it needs only a ground"
-  },
-  {
     "slug": "sen-koer-self-test-provokes-knock-to-check-the-ks",
     "title": "The KOER self-test deliberately advances timing to provoke knock and confirm the knock sensor responds"
-  },
-  {
-    "slug": "sen-map-converts-manifold-vacuum-to-a-frequency",
-    "title": "The MAP sensor reports engine load as a frequency that falls as manifold vacuum rises"
   },
   {
     "slug": "sen-map-doubles-as-a-barometric-pressure-sensor",
@@ -1137,11 +1033,7 @@
   },
   {
     "slug": "sen-pip-is-a-hall-switch-driven-by-a-6-vane-shutter",
-    "title": "The PIP signal is a 0\u201312 V square wave a distributor Hall switch makes as a 6-vane shutter passes through it"
-  },
-  {
-    "slug": "sen-tps-is-a-voltage-divider-06-to-45-volts",
-    "title": "The TP sensor is a potentiometer that outputs about 0.6 V at closed throttle and 4.5 V at wide open throttle"
+    "title": "The PIP signal is a 0\u201312 V square wave a distributor Hall switch makes as a camshaft-driven 6-vane shutter passes through it"
   },
   {
     "slug": "sen-tripped-inertia-switch-causes-crank-no-start",
@@ -1168,10 +1060,6 @@
     "title": "Fuel tank capacity depends on cab and wheelbase, with an aft-of-axle tank at 18.2 gal"
   },
   {
-    "slug": "spc-manual-transmission-takes-76-pints-of-mercon-v",
-    "title": "The M5OD manual transmission takes 7.6 pints of Mercon V fluid"
-  },
-  {
     "slug": "spc-oil-pump-internal-clearances-and-relief-spring-spec",
     "title": "Oil pump rotor and relief-spring clearances for the 4.9L"
   },
@@ -1192,10 +1080,6 @@
     "title": "Adjust wheel bearings before checking ball joints to avoid false play"
   },
   {
-    "slug": "sus-alignment-targets-are-caster-2-to-6-degrees-camber-0-25-degree-toe-0-06-degree",
-    "title": "Alignment targets: caster 2-6 deg, camber .25 deg, total toe .06 deg"
-  },
-  {
     "slug": "sus-ball-joint-wear-limit-is-1-32-inch-of-tire-rock",
     "title": "Front ball joints are condemned at 1/32 inch of tire rock"
   },
@@ -1206,18 +1090,6 @@
   {
     "slug": "sus-cii-pump-relief-is-1300-1530-psi-and-min-flow-1-4-gpm",
     "title": "CII pump relief pressure is 1300-1530 psi with min flow around 1.4 GPM"
-  },
-  {
-    "slug": "sus-disarm-the-air-bag-and-wait-one-minute-before-column-work",
-    "title": "Disarm the air bag and wait one minute before steering column or wheel work"
-  },
-  {
-    "slug": "sus-front-wheel-bearing-end-play-window-is-0-00025-to-0-005-inch",
-    "title": "Correct front wheel bearing end play is 0.00025-0.005 inch"
-  },
-  {
-    "slug": "sus-front-wheel-bearing-preload-is-set-by-seat-back-off-snug",
-    "title": "Front wheel bearing preload is set by a seat, back-off, then light-snug sequence"
   },
   {
     "slug": "sus-lug-nuts-torque-to-100-ft-lb-dry-on-the-5-lug-wheel",

@@ -31,6 +31,7 @@ control and a primary no-start diagnostic path.
 - [[notes/rly-fuel-pump-relay-is-grounded-by-the-pcm-not-a-simple-switch|The fuel pump relay is grounded by the PCM, so its ground circuit is the real no-start clue]]
 - [[notes/sen-tripped-inertia-switch-causes-crank-no-start|A tripped inertia switch is a common crank-no-start cause and must be manually reset]]
 - [[notes/sen-inertia-switch-uses-a-magnet-held-ball|The inertia switch cuts fuel-pump power in a crash using a magnet-held ball that breaks loose on impact]]
+- [[notes/dtc-fuel-pump-codes-distinguish-relay-from-secondary-circuit|Fuel pump DTCs distinguish a relay primary-circuit fault from a pump secondary-circuit fault]]
 
 ## Source
 

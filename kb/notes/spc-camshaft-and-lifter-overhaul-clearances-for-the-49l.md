@@ -30,7 +30,7 @@ rocker-shaft torque used at reassembly.
 - [[notes/spc-valvetrain-overhaul-specs-cover-springs-guides-and-seats|Valve-train overhaul specs set 45° seats, 0.001–0.0027 in stem clearance, and 66–74 lb closed spring pressure]]
 - [[notes/spc-oil-pump-internal-clearances-and-relief-spring-spec|Oil pump rotor and relief-spring clearances for the 4.9L]]
 - [[notes/spc-crankshaft-and-rod-bearing-clearance-is-0008-0015-in|Main and rod bearing clearance on the 4.9L is 0.0008–0.0015 in, with crank endplay of 0.0040–0.0080 in]]
-- [[notes/eec-valve-clearance-allowable-limits-are-0100-0200-in|Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length]]
+- [[notes/eng-adjust-valve-clearance-by-changing-pushrod-length|Adjust 4.9L valve clearance by changing pushrod length, in firing order]]
 
 ## Source
 

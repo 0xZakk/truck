@@ -29,7 +29,6 @@ a stuck or failed regulator.
 
 - [[notes/eng-energize-the-fuel-pump-at-the-diagnostic-connector-to-test-pressure|Energize the fuel pump at the diagnostic connector to test pressure at the Schrader port]]
 - [[notes/mnt-fuel-pressure-spec-is-50-60-psi-key-on-engine-off|The 4.9L fuel pressure spec is 50-60 PSI key-on-engine-off and 45-60 PSI at idle]]
-- [[notes/mnt-grounding-the-fuel-pump-lead-runs-the-pump-key-on-engine-off|Grounding the diagnostic-connector fuel-pump lead runs the pump with the key on and engine off]]
 - [[notes/eec-regulator-references-manifold-vacuum-to-hold-a-constant-injector-pressure-drop|The fuel pressure regulator references manifold vacuum to hold a constant pressure drop across the injectors]]
 - [[notes/eng-normal-oil-pressure-is-40-60-psi-hot-at-2000-rpm|Normal oil pressure is 40-60 PSI hot at 2000 rpm]]
 

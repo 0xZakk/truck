@@ -39,6 +39,7 @@ systems, since all three report through the same EEC self-test.
 - [[notes/sen-koer-self-test-provokes-knock-to-check-the-ks|The KOER self-test deliberately advances timing to provoke knock and confirm the knock sensor responds]]
 - [[notes/dtc-egr-codes-split-by-pressure-sensor-vs-position-sensor|EGR DTCs split into two families depending on whether the truck uses a pressure (PFE) or position (EVP) feedback sensor]]
 - [[notes/dtc-switch-input-codes-fail-when-the-truck-is-not-staged-for-self-test|Switch-input DTCs often just mean the truck was not staged correctly — in gear, A/C on, or brake not pressed]]
+- [[notes/dtc-511-and-513-call-for-pcm-replacement|DTCs 511 and 513 are internal PCM failures that the chart resolves by replacing the PCM]]
 
 ## Source
 

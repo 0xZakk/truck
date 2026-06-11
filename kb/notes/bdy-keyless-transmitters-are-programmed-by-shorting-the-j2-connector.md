@@ -26,6 +26,7 @@ gathering every fob the truck should answer to. This is a `body-cab` locks proce
 ## Related Concepts
 
 - [[notes/bdy-keyless-module-coordinates-locks-anti-theft-lamps-and-panic|The keyless entry module coordinates door locks, anti-theft arming, interior lamps, and the panic alarm]]
+- [[notes/acc-door-disarm-switch-grounds-the-controller-when-the-door-is-key-unlocked|A door disarm switch grounds the controller when its door is unlocked with the key, disabling the anti-theft system]]
 
 ## Source
 

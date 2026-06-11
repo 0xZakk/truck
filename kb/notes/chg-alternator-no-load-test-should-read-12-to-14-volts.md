@@ -30,6 +30,7 @@ This relates to truck inventory system `electrical-charging`.
 ## Related Concepts
 
 - [[notes/chg-charging-output-test-loads-the-system-at-2000-rpm|The charging Output Test loads the system at 2000 RPM and expects at least 1/2 volt above resting]]
+- [[notes/ipc-voltmeter-normal-range-is-13-5-to-14-volts|A normal voltmeter reading on the F-150 is 13.5 to 14.0 volts]]
 
 ## Source
 

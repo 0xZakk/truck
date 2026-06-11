@@ -25,7 +25,7 @@ system is often this switch correctly doing its protective job.
 - [[notes/hvc-pcm-trims-idle-air-when-the-ac-clutch-engages|The PCM raises idle air when the A/C clutch engages]]
 - [[notes/hvc-charging-from-14-oz-cans-jumper-the-pressure-switch|Charge from cans by jumpering the pressure switch and running the A/C to 2.0 lb]]
 - [[notes/hvc-compressor-clutch-air-gap-spec|The A/C compressor clutch air gap must be 0.018–0.033 in]]
-- [[notes/rly-wot-ac-relay-cuts-the-compressor-at-wide-open-throttle|The WOT A/C relay drops the compressor at wide open throttle to free up power]]
+- [[notes/hvc-diagnose-ac-by-pressures-and-clutch-cycle-time|Diagnose A/C performance by comparing pressures and clutch cycle time to the FSM charts]]
 
 ## Source
 

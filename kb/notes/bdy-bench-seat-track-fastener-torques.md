@@ -28,6 +28,7 @@ values apply to the `body-cab` seat system.
 
 - [[notes/bdy-seat-track-mounting-locations-must-be-sealed-with-caulking-cord|Seal the seat-track-to-floor-pan mounting locations with caulking cord on reassembly]]
 - [[notes/rst-seat-belt-anchor-bolts-torque-to-22-30-ft-lb|All seat belt and anchor bolts torque to 30-40 Nm (22-30 ft lbs)]]
+- [[notes/ipc-instrument-panel-fastener-torque-values|Instrument-panel mounting fasteners torque to between 12 and 53 in-lbs depending on location]]
 
 ## Source
 

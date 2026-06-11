@@ -21,6 +21,7 @@ their stored vacuum just when the engine stops supplying it.
 
 - [[notes/hvc-vacuum-reservoir-leak-down-test|Leak-test the HVAC vacuum reservoir: under 0.5 in Hg loss in 60 seconds]]
 - [[notes/hvc-control-assembly-runs-blower-air-doors-and-clutch|The dash control assembly runs the blower, air-door vacuum, and (with the PCM) the A/C clutch]]
+- [[notes/hvc-evacuate-to-28-29-in-hg-adjusting-for-altitude|Evacuate the A/C system to 28–29.5 in Hg at sea level, minus 1 in Hg per 1000 ft of altitude]]
 
 ## Source
 

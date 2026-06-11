@@ -14,7 +14,7 @@ This map is the entry point for the **starting system** system of the truck. As 
 ## Key Notes
 
 - [[notes/rly-icm-color-gray-vs-black-tells-you-the-dwell-strategy|A gray ICM controls its own dwell while a black ICM lets the SPOUT signal set dwell]]
-- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system before disconnecting the battery for starting/charging work]]  ·  _procedure_
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]  ·  _procedure_
 - [[notes/chg-park-neutral-switch-both-closes-the-relay-and-lights-backup-lamps|On automatics, the park/neutral switch both closes the starter relay and lights the backup lamps]]
 - [[notes/rly-spout-falling-edge-only-controls-coil-on-time-on-the-ccd-system|On the CCD (black ICM) system the SPOUT falling edge controls when the coil turns on]]
 - [[notes/rly-eec-power-relay-feeds-the-fuel-pump-relay-coil|Power to the fuel pump relay comes from the EEC power relay through the PCM and the inertia switch]]

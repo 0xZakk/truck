@@ -3,7 +3,7 @@ title: "Manual-transmission trucks with a gray push-start ICM can be push starte
 kind: how-it-works
 source: "[[sources/mnt-distributor|Distributor and Distributor Ignition (DI) System (FSM)]]"
 related:
-  - "[[notes/mnt-distributor-has-no-mechanical-advance-uses-pip-and-spout|The 4.9L distributor has no mechanical advance and relies on PIP and SPOUT signals]]"
+  - "[[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The 4.9L distributor uses a Hall-effect PIP signal and has no mechanical advance]]"
 tags:
   - engine
   - ignition
@@ -23,9 +23,8 @@ color is also a quick way to identify which ignition strategy a given truck runs
 
 ## Related Concepts
 
-- [[notes/mnt-distributor-has-no-mechanical-advance-uses-pip-and-spout|The 4.9L distributor has no mechanical advance and relies on PIP and SPOUT signals]]
+- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The 4.9L distributor uses a Hall-effect PIP signal and has no mechanical advance]]
 - [[notes/rly-icm-color-gray-vs-black-tells-you-the-dwell-strategy|A gray ICM controls its own dwell while a black ICM lets the SPOUT signal set dwell]]
-- [[notes/eng-distributor-uses-hall-effect-pip-no-mechanical-advance|The distributor uses a Hall-effect PIP signal and has no mechanical advance]]
 
 ## Source
 

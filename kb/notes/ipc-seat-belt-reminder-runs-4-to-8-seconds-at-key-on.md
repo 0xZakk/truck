@@ -3,7 +3,7 @@ title: "The seat belt reminder lamp runs for 4 to 8 seconds at key-on regardless
 kind: how-it-works
 source: "[[sources/ipc-seat-belt-and-audible-warning|Seat Belt Reminder and Audible Warning (Chime) Module — Description and Operation (FSM)]]"
 related:
-  - "[[notes/ipc-chime-module-handles-key-in-ignition-lamps-on-and-belt-reminders|The chime module drives key-in-ignition, lamps-on, and seat-belt reminders from separate inputs]]"
+  - "[[notes/rly-warning-chime-module-sounds-for-key-in-lights-on-and-unbuckled-belt|The warning chime module sounds for key-in-ignition, lights-on-with-door-open, and unbuckled belt]]"
 tags:
   - seat-belt-reminder
   - warning-indicators
@@ -25,7 +25,6 @@ systems.
 
 ## Related Concepts
 
-- [[notes/ipc-chime-module-handles-key-in-ignition-lamps-on-and-belt-reminders|The chime module drives key-in-ignition, lamps-on, and seat-belt reminders from separate inputs]]
 - [[notes/rly-warning-chime-module-sounds-for-key-in-lights-on-and-unbuckled-belt|The warning chime module sounds for key-in-ignition, lights-on-with-door-open, and unbuckled belt]]
 
 ## Source

@@ -4,7 +4,7 @@ kind: how-it-works
 source: "[[sources/rst-supplemental-air-bag-restraint-system|Supplemental Air Bag Restraint System (SRS) — Description and Operation (FSM)]]"
 related:
   - "[[notes/rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second|The air bag deploys in four steps in a fraction of a second]]"
-  - "[[notes/rst-diagnostic-monitor-does-not-deploy-the-bag|The air bag diagnostic monitor never deploys the bag — the hard-wired sensors do]]"
+  - "[[notes/rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag|The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag]]"
 tags:
   - air-bag
   - srs
@@ -31,7 +31,8 @@ This system lives in the `interior` and `body-cab` inventory areas.
 ## Related Concepts
 
 - [[notes/rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second|The air bag deploys in four steps in a fraction of a second]]
-- [[notes/rst-diagnostic-monitor-does-not-deploy-the-bag|The air bag diagnostic monitor never deploys the bag — the hard-wired sensors do]]
+- [[notes/rly-air-bag-monitor-diagnoses-but-does-not-deploy-the-air-bag|The air bag diagnostic monitor only diagnoses the SRS; hard-wired sensors deploy the air bag]]
+- [[notes/rst-two-sensors-must-close-together-to-deploy-the-air-bag|At least two sensors — one primary plus the safing sensor — must close together to deploy the air bag]]
 
 ## Source
 

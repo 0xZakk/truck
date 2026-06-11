@@ -31,7 +31,7 @@ controlled collapse) at the `interior`/steering boundary.
 
 - [[notes/rst-air-bag-module-is-serviced-only-as-a-complete-assembly|The driver air bag module is serviced only as a complete assembly]]
 - [[notes/rst-srs-fastener-torque-values|SRS fastener torque values for the module, sliding contact, and sensors]]
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]
 
 ## Source
 

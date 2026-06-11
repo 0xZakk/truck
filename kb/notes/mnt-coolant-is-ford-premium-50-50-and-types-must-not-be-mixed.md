@@ -3,7 +3,7 @@ title: "Coolant is Ford Premium at a 50/50 mix and types must not be mixed"
 kind: spec
 source: "[[sources/mnt-coolant|Coolant — Capacity and Fluid Type (FSM)]]"
 related:
-  - "[[notes/mnt-cooling-capacity-is-13-to-15-quarts-by-equipment|Cooling system capacity is 13-15 quarts depending on A/C and Super Cooling]]"
+  - "[[notes/eng-cooling-system-holds-13-to-15-quarts-of-5050-coolant|The manual-trans cooling system holds 13-15 quarts of 50/50 coolant depending on A/C]]"
 tags:
   - cooling
   - coolant
@@ -21,7 +21,6 @@ refilling, stick to one compatible coolant type at the 50/50 ratio.
 
 ## Related Concepts
 
-- [[notes/mnt-cooling-capacity-is-13-to-15-quarts-by-equipment|Cooling system capacity is 13-15 quarts depending on A/C and Super Cooling]]
 - [[notes/eng-cooling-system-holds-13-to-15-quarts-of-5050-coolant|The manual-trans cooling system holds 13-15 quarts of 50/50 coolant depending on A/C]]
 
 ## Source

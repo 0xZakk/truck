@@ -24,10 +24,8 @@ This map is the entry point for the **ignition system** system of the truck. As 
 - [[notes/ford-300-firing-order-is-1-5-3-6-2-4|The Ford 300 inline-six firing order is 1-5-3-6-2-4]]  ·  _spec_
 - [[notes/eec-map-sensor-outputs-a-frequency-and-doubles-as-a-baro-sensor|The MAP sensor outputs a frequency proportional to load and doubles as a barometric sensor]]
 - [[notes/eec-pcm-learns-an-adaptive-strategy-stored-in-kam|The PCM learns an adaptive strategy in Keep Alive Memory to compensate for component wear]]
-- [[notes/sen-pip-is-a-hall-switch-driven-by-a-6-vane-shutter|The PIP signal is a 0–12 V square wave a distributor Hall switch makes as a 6-vane shutter passes through it]]
+- [[notes/sen-pip-is-a-hall-switch-driven-by-a-6-vane-shutter|The PIP signal is a 0–12 V square wave a distributor Hall switch makes as a camshaft-driven 6-vane shutter passes through it]]
 - [[notes/sen-cmp-is-camshaft-driven-and-serviceable-in-the-distributor|The camshaft position / cylinder ID sensor lives inside the distributor and is camshaft-driven, so it can be serviced separately]]  ·  _spec_
-- [[notes/eec-cmp-in-distributor-produces-the-pip-signal-for-spark-and-injection|The distributor-mounted CMP sensor produces the PIP signal that times both spark and injection]]
-- [[notes/sen-knock-sensor-is-self-generating-and-tuned-to-5-6khz|The knock sensor generates its own voltage by resonating at engine-knock frequency, so it needs only a ground]]
 - [[notes/eec-knock-sensor-is-self-generating-and-tuned-to-knock-frequency|The knock sensor is a self-generating piezo element tuned to the 5-6 kHz knock frequency]]
 
 ## Common Issues
@@ -44,7 +42,6 @@ This map is the entry point for the **ignition system** system of the truck. As 
 - [[sources/dtc-idle-speed-input-codes|EEC DTCs 411-539 — Idle Speed, Vehicle Speed, and Switch Input Codes (FSM)]]
 - [[sources/dtc-ignition-codes|EEC DTCs 211-244 — Ignition and Spark Codes (FSM)]]
 - [[sources/dtc-self-test-overview|EEC Diagnostic Trouble Codes — Self-Test Overview and Code Conventions (FSM)]]
-- [[sources/eec-camshaft-position-sensor|Camshaft Position (CMP) Sensor and PIP Signal — Operation and Specs (FSM)]]
 - [[sources/eec-engine-control-module|Engine Control Module (PCM / EEC-IV) — Description, Operation, and Reset (FSM)]]
 - [[sources/eec-knock-sensor|Knock Sensor (KS) — Operation, DTC, and Specs (FSM)]]
 - [[sources/eec-map-sensor|Manifold Absolute Pressure (MAP) Sensor — Operation, DTCs, and Range (FSM)]]

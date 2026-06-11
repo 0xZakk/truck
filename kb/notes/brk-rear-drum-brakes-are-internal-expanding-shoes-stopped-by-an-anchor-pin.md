@@ -20,6 +20,7 @@ This is a single-anchor, dual-servo style drum (primary and secondary shoes have
 - [[notes/brk-drum-and-shoe-service-limits|Drum and shoe service limits for the rear brakes]]
 - [[notes/brk-parking-brake-is-cable-actuated-through-the-rear-drums-and-self-adjusting|The parking brake is cable-actuated through the rear drums and self-adjusting]]
 - [[notes/brk-grooved-backing-plate-contact-pads-make-rear-brakes-drag-or-grab|Grooved backing-plate contact pads make the rear brakes drag or grab]]
+- [[notes/brk-dual-split-hydraulic-system-keeps-half-the-brakes-after-a-leak|The dual split hydraulic system keeps half the brakes working after a single-circuit leak]]
 
 ## Source
 

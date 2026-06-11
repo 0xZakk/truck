@@ -30,7 +30,7 @@ remove-and-replace of the entire `interior` steering-wheel module.
 
 - [[notes/rst-driver-air-bag-fills-to-2-3-cu-ft-in-about-40-ms|The driver air bag fills to 2.3 cu ft in about 40 milliseconds]]
 - [[notes/rst-use-the-2-ohm-air-bag-simulator-not-a-zero-ohm-jumper|Diagnose the SRS with a 2-ohm air bag simulator, never a zero-ohm jumper]]
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before steering column or wheel work]]
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]
 - [[notes/rst-air-bag-deploys-in-four-steps-in-a-fraction-of-a-second|The air bag deploys in four steps in a fraction of a second]]
 
 ## Source

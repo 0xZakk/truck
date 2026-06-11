@@ -24,7 +24,6 @@ per cylinder is what feeds the within-25% pass/fail comparison.
 ## Related Concepts
 
 - [[notes/mnt-compression-passes-if-lowest-cylinder-within-25-percent-of-highest|Compression is acceptable when the lowest cylinder reads within 25% of the highest]]
-- [[notes/eng-compression-passes-if-lowest-cylinder-within-25-percent|Compression is acceptable if the lowest cylinder is within 25% of the highest]]
 - [[notes/eec-compression-is-acceptable-if-lowest-cylinder-is-within-25-percent|Compression is acceptable if the lowest cylinder reads within 25% of the highest]]
 
 ## Source

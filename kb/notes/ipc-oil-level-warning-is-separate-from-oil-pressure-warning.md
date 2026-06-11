@@ -4,7 +4,7 @@ kind: how-it-works
 source: "[[sources/ipc-oil-level-warning-indicator|Oil Level Warning Indicator — Description, Operation and Testing (FSM)]]"
 related:
   - "[[notes/ipc-oil-pressure-lamp-is-ground-switched-by-the-engine-unit|The oil pressure warning lamp is ground-switched by an engine-mounted pressure switch]]"
-  - "[[notes/ipc-oil-level-module-has-a-five-minute-reset-delay|The oil level module waits about five minutes after key-off to allow oil drain-back before re-reading]]"
+  - "[[notes/mnt-low-oil-indicator-trips-at-1-5-quarts-low-with-drain-back-delay|The low-oil indicator trips when oil is about 1.5 quarts low and waits five minutes for drain-back]]"
 tags:
   - oil-level-warning-indicator
   - warning-indicators
@@ -28,7 +28,6 @@ systems.
 ## Related Concepts
 
 - [[notes/ipc-oil-pressure-lamp-is-ground-switched-by-the-engine-unit|The oil pressure warning lamp is ground-switched by an engine-mounted pressure switch]]
-- [[notes/ipc-oil-level-module-has-a-five-minute-reset-delay|The oil level module waits about five minutes after key-off to allow oil drain-back before re-reading]]
 - [[notes/mnt-low-oil-indicator-trips-at-1-5-quarts-low-with-drain-back-delay|The low-oil indicator trips when oil is about 1.5 quarts low and waits five minutes for drain-back]]
 - [[notes/ipc-grounding-the-oil-lamp-wire-isolates-bulb-from-sender|Grounding the oil-lamp sender wire isolates a bad bulb from a bad pressure switch]]
 - [[notes/ipc-functional-test-of-the-oil-level-warning-by-draining-two-quarts|Functional-test the oil level warning by draining two quarts and waiting five minutes]]

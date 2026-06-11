@@ -28,6 +28,7 @@ charge warning lamp in the `interior` cluster / `electrical-body` charging syste
 - [[notes/chg-charging-output-test-loads-the-system-at-2000-rpm|The charging Output Test loads the system at 2000 RPM and expects at least 1/2 volt above resting]]
 - [[notes/charge-light-staying-on-points-to-regulator-or-stator-circuit|A charge light that stays on points to the regulator or stator circuit, not always a dead alternator]]
 - [[notes/ipc-charge-lamp-jumper-test-from-terminal-1-to-battery-negative|A jumper from regulator terminal 1 to battery negative proves the charge lamp bulb and circuit]]
+- [[notes/chg-alternator-no-load-test-should-read-12-to-14-volts|The alternator No-Load Test should read about 12-14 volts at 1500 RPM]]
 
 ## Source
 

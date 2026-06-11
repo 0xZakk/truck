@@ -23,7 +23,6 @@ This map is the entry point for the **transmission & driveline** system of the t
 - [[notes/mnt-88-rear-axle-holds-5-5-pints-traction-lok-needs-friction-modifier|The 8.8-inch rear axle holds about 5.5 pints and Traction-Lok needs friction modifier]]  ·  _spec_
 - [[notes/drv-m5od-takes-mercon-v-not-gear-oil|The F-150's M5OD 5-speed is filled with Mercon V ATF, not gear oil, and holds 7.6 pints]]  ·  _spec_
 - [[notes/drv-hydraulic-clutch-uses-dot-3-brake-fluid|The F-150's hydraulic clutch is a closed DOT 3 brake-fluid circuit with a concentric slave cylinder]]
-- [[notes/mnt-m5od-r2-uses-mercon-v-atf-not-gear-oil|The M5OD-R2 5-speed takes Mercon V ATF, not gear oil]]  ·  _spec_
 - [[notes/clutch-pedal-position-switch-is-the-start-interlock-on-manual-f150|The clutch pedal position switch is the start interlock on a manual F-150]]
 - [[notes/drv-m5od-tot-sensor-is-part-of-solenoid-body|The transmission temperature (TOT) sensor is a thermistor in the solenoid body, replaced only as an assembly]]
 

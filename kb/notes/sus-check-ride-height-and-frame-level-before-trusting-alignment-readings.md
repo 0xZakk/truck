@@ -3,7 +3,7 @@ title: "Check ride height and frame level before trusting alignment readings"
 kind: troubleshooting
 source: "[[sources/sus-wheel-alignment|Front Wheel Alignment (FSM)]]"
 related:
-  - "[[notes/sus-alignment-targets-are-caster-2-to-6-degrees-camber-0-25-degree-toe-0-06-degree|Alignment targets: caster 2-6 deg, camber .25 deg, total toe .06 deg]]"
+  - "[[notes/mnt-front-alignment-optimum-camber-toe-and-caster-range|Front alignment targets camber 0.25°, total toe 0.06°, with caster 2.0°-6.0°]]"
   - "[[notes/sus-one-adjuster-sleeve-sets-both-caster-and-camber|A single adjuster sleeve sets both caster and camber]]"
 tags:
   - suspension
@@ -28,9 +28,8 @@ was never out of alignment, a classic `suspension` diagnostic error.
 
 ## Related Concepts
 
-- [[notes/sus-alignment-targets-are-caster-2-to-6-degrees-camber-0-25-degree-toe-0-06-degree|Alignment targets: caster 2-6 deg, camber .25 deg, total toe .06 deg]]
-- [[notes/sus-one-adjuster-sleeve-sets-both-caster-and-camber|A single adjuster sleeve sets both caster and camber]]
 - [[notes/mnt-front-alignment-optimum-camber-toe-and-caster-range|Front alignment targets camber 0.25°, total toe 0.06°, with caster 2.0°-6.0°]]
+- [[notes/sus-one-adjuster-sleeve-sets-both-caster-and-camber|A single adjuster sleeve sets both caster and camber]]
 
 ## Source
 

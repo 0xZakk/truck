@@ -3,7 +3,7 @@ title: "What powers the backup lamps depends on which transmission the truck has
 kind: how-it-works
 source: "[[sources/lgt-backup-lamp-switch|Backup Lamp Switch / Park-Neutral Position Switch by Transmission (FSM)]]"
 related:
-  - "[[notes/lgt-on-automatics-the-range-switch-shares-backup-lamps-and-starter-relay|On automatics the same range switch lights the backup lamps and closes the starter relay]]"
+  - "[[notes/chg-park-neutral-switch-both-closes-the-relay-and-lights-backup-lamps|On automatics, the park/neutral switch both closes the starter relay and lights the backup lamps]]"
 tags:
   - backup-lamp
   - reverse-lights
@@ -24,7 +24,6 @@ the starting and transmission-control systems also rely on. This is part of the 
 
 ## Related Concepts
 
-- [[notes/lgt-on-automatics-the-range-switch-shares-backup-lamps-and-starter-relay|On automatics the same range switch lights the backup lamps and closes the starter relay]]
 - [[notes/chg-park-neutral-switch-both-closes-the-relay-and-lights-backup-lamps|On automatics, the park/neutral switch both closes the starter relay and lights the backup lamps]]
 
 ## Source

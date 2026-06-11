@@ -27,6 +27,7 @@ it. A breaker must pass both tests to be considered good (`electrical-body`).
 
 - [[notes/wpr-wiper-circuit-breaker-is-rated-8-25-amps|The wiper/washer system is protected by an 8.25-amp circuit breaker in the fuse junction panel]]
 - [[notes/wpr-wiper-motor-current-draw-under-3-5-amps|A healthy wiper motor draws no more than 3.5 amps at either low or high speed]]
+- [[notes/wpr-washer-pump-current-draw-window-is-1-7-to-4-amps|The washer pump must draw between 1.7 and 4 amps while pumping]]
 
 ## Source
 

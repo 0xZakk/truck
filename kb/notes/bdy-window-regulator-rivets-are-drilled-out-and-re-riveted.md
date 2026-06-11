@@ -7,6 +7,7 @@ related:
 tags:
   - doors
   - window-regulator
+  - rivets
   - procedure
 ---
 
@@ -27,10 +28,10 @@ procedure that pairs with the power-window motor replacement.
 ## Related Concepts
 
 - [[notes/bdy-power-window-motor-replacement-requires-drilling-inner-panel-access-holes|Replacing the front power window motor requires drilling two access holes in the door inner panel]]
-- [[notes/gls-window-regulator-is-riveted-not-bolted|The front door window regulator is riveted, not bolted, so it must be drilled out]]
 - [[notes/gls-prop-the-window-full-up-before-removing-motor-or-regulator|Prop the window full-up before removing the power window motor or regulator]]
-- [[notes/gls-power-window-motor-hides-two-screws-behind-sheet-metal|Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal]]
+- [[notes/gls-power-window-motor-torque-is-50-85-in-lb|The power window motor retaining screws torque to 50-85 in-lb (5.6-9.6 N·m)]]
 
 ## Source
 
 - [[sources/bdy-front-door|Front Door Panel, Window Motor and Regulator — Service and Repair (FSM)]]
+- [[sources/gls-front-door-window-regulator|Front Door Window Regulator — Service and Repair (FSM)]]

@@ -30,7 +30,7 @@ limits.
 
 - [[notes/spc-cylinder-bore-standard-is-40000-40048-in-with-a-0005-in-out-of-round-limit|Cylinder bore (std.) is 4.0000–4.0048 in with a 0.005 in out-of-round limit]]
 - [[notes/spc-crankshaft-and-rod-bearing-clearance-is-0008-0015-in|Main and rod bearing clearance on the 4.9L is 0.0008–0.0015 in, with crank endplay of 0.0040–0.0080 in]]
-- [[notes/eec-valve-clearance-allowable-limits-are-0100-0200-in|Collapsed-tappet valve clearance is 0.100-0.200 in allowable, adjusted via pushrod length]]
+- [[notes/eng-adjust-valve-clearance-by-changing-pushrod-length|Adjust 4.9L valve clearance by changing pushrod length, in firing order]]
 
 ## Source
 

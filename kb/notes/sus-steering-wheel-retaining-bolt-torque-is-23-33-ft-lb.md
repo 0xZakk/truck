@@ -3,7 +3,7 @@ title: "The steering wheel retaining bolt torques to 23-33 ft lb"
 kind: spec
 source: "[[sources/sus-steering-column|Energy-Absorbing Steering Column and Air Bag Service (FSM)]]"
 related:
-  - "[[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before column or wheel work]]"
+  - "[[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]"
 tags:
   - steering
   - steering-wheel
@@ -18,7 +18,7 @@ servicing the `steering` system.
 
 ## Related Concepts
 
-- [[notes/sus-disarm-the-air-bag-and-wait-one-minute-before-column-work|Disarm the air bag and wait one minute before column or wheel work]]
+- [[notes/chg-disarm-the-air-bag-before-battery-work-on-starting-and-charging|Disarm the air bag system and wait one minute before any battery, steering column, or wheel work]]
 - [[notes/rst-srs-fastener-torque-values|SRS fastener torque values for the air bag module, sliding contact, and crash sensors]]
 
 ## Source

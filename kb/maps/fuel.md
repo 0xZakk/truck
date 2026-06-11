@@ -29,15 +29,12 @@ This map is the entry point for the **fuel system** system of the truck. As note
 - [[notes/sen-ho2s-must-reach-600f-and-uses-a-heater|The HO2S only reads accurately above 600°F, which is why it carries an internal heater]]
 - [[notes/sen-ho2s-voltage-tells-pcm-rich-vs-lean|The HO2S reports rich vs. lean by generating a high voltage when exhaust oxygen is low and a low voltage when it is high]]
 - [[notes/eec-iac-meters-air-around-the-throttle-plate-via-pcm-duty-cycle|The IAC valve sets idle by metering air around the throttle plate via a PCM-controlled duty cycle]]
-- [[notes/sen-iat-shares-the-ect-thermistor-design|The IAT sensor is the same negative-coefficient thermistor as the ECT but measures incoming air rather than coolant]]
 - [[notes/sen-map-doubles-as-a-barometric-pressure-sensor|The MAP sensor doubles as a barometric pressure sensor to correct fueling for altitude]]
 - [[notes/eec-map-sensor-outputs-a-frequency-and-doubles-as-a-baro-sensor|The MAP sensor outputs a frequency proportional to load and doubles as a barometric sensor]]
-- [[notes/sen-map-converts-manifold-vacuum-to-a-frequency|The MAP sensor reports engine load as a frequency that falls as manifold vacuum rises]]
 - [[notes/sen-pcm-reads-throttle-mode-and-rate-from-tps|The PCM derives idle, cruise, WOT, and acceleration-pump action from TP angle and its rate of change]]
 - [[notes/eec-pcm-learns-an-adaptive-strategy-stored-in-kam|The PCM learns an adaptive strategy in Keep Alive Memory to compensate for component wear]]
+- [[notes/sen-pip-is-a-hall-switch-driven-by-a-6-vane-shutter|The PIP signal is a 0–12 V square wave a distributor Hall switch makes as a camshaft-driven 6-vane shutter passes through it]]
 - [[notes/eec-tps-is-a-potentiometer-reading-06v-closed-to-45v-wot|The TP sensor is a potentiometer reading about 0.6 V closed to 4.5 V at wide-open throttle]]
-- [[notes/sen-tps-is-a-voltage-divider-06-to-45-volts|The TP sensor is a potentiometer that outputs about 0.6 V at closed throttle and 4.5 V at wide open throttle]]  ·  _spec_
-- [[notes/eec-cmp-in-distributor-produces-the-pip-signal-for-spark-and-injection|The distributor-mounted CMP sensor produces the PIP signal that times both spark and injection]]
 - [[notes/eec-regulator-references-manifold-vacuum-to-hold-a-constant-injector-pressure-drop|The fuel pressure regulator references manifold vacuum to hold a constant pressure drop across the injectors]]
 - [[notes/eec-fuel-pump-runs-12s-at-key-on-then-needs-an-rpm-signal|The fuel pump runs 1-2 s at key-on, then the PCM keeps it running only with an rpm signal above 120]]
 - [[notes/sen-inertia-switch-uses-a-magnet-held-ball|The inertia switch cuts fuel-pump power in a crash using a magnet-held ball that breaks loose on impact]]
@@ -45,6 +42,7 @@ This map is the entry point for the **fuel system** system of the truck. As note
 
 ## Common Issues
 
+- [[notes/eec-ntc-temp-sensors-read-falsely-cold-with-bad-grounds|A bad ground or added resistance makes the NTC ECT and IAT read falsely cold, driving a needless rich condition]]  ·  _troubleshooting_
 - [[notes/failed-throttle-body-gasket-causes-rough-idle-vacuum-leak|A failed throttle-body-to-manifold gasket is a known vacuum-leak cause of rough idle on the 4.9L]]  ·  _troubleshooting_
 - [[notes/dtc-hard-codes-vs-memory-codes-mean-present-vs-stored|A hard code is a fault present during the test, while a memory code was stored from earlier driving]]  ·  _troubleshooting_
 - [[notes/sen-tripped-inertia-switch-causes-crank-no-start|A tripped inertia switch is a common crank-no-start cause and must be manually reset]]  ·  _troubleshooting_
@@ -52,7 +50,6 @@ This map is the entry point for the **fuel system** system of the truck. As note
 - [[notes/dtc-511-and-513-call-for-pcm-replacement|DTCs 511 and 513 are internal PCM failures that the chart resolves by replacing the PCM]]  ·  _troubleshooting_
 - [[notes/dtc-fuel-pump-codes-distinguish-relay-from-secondary-circuit|Fuel pump DTCs distinguish a relay primary-circuit fault from a pump secondary-circuit fault]]  ·  _troubleshooting_
 - [[notes/sen-eec-iv-sensors-share-vref-and-sig-rtn|Most EEC-IV sensors share a common 5.0 V VREF and SIG RTN ground, so one bad reference skews many readings]]  ·  _troubleshooting_
-- [[notes/sen-ect-resistance-falls-as-coolant-warms|The ECT is a negative-coefficient thermistor whose voltage drops as the engine warms, and a bad ground reads falsely cold]]  ·  _troubleshooting_
 - [[notes/eec-iac-is-part-of-adaptive-strategy-and-surges-at-its-limits|The IAC is part of adaptive strategy and surges when it reaches its learning limits]]  ·  _troubleshooting_
 - [[notes/eec-pcm-cross-checks-tps-map-and-pulse-width-for-in-range-failures|The PCM cross-checks TP, MAP, and injector pulse width to catch in-range sensor failures]]  ·  _troubleshooting_
 - [[notes/dtc-vcrm-codes-report-over-current-and-open-faults-on-high-load-outputs|VCRM DTCs report over-current and open-circuit faults on the high-current loads the relay module manages]]  ·  _troubleshooting_
@@ -63,20 +60,18 @@ This map is the entry point for the **fuel system** system of the truck. As note
 - [[sources/dtc-air-fuel-sensor-codes|EEC DTCs 112-195 — Air, Fuel, and Sensor Input Codes (FSM)]]
 - [[sources/dtc-idle-speed-input-codes|EEC DTCs 411-539 — Idle Speed, Vehicle Speed, and Switch Input Codes (FSM)]]
 - [[sources/dtc-self-test-overview|EEC Diagnostic Trouble Codes — Self-Test Overview and Code Conventions (FSM)]]
-- [[sources/eec-camshaft-position-sensor|Camshaft Position (CMP) Sensor and PIP Signal — Operation and Specs (FSM)]]
 - [[sources/eec-engine-control-module|Engine Control Module (PCM / EEC-IV) — Description, Operation, and Reset (FSM)]]
 - [[sources/eec-fuel-pressure-regulator-and-pump-control|Fuel Delivery — Injectors, Pressure Regulator, and Pump Control (FSM)]]
 - [[sources/eec-idle-air-control-valve|Idle Air Control (IAC) Valve — Operation, DTCs, Service, and Specs (FSM)]]
 - [[sources/eec-map-sensor|Manifold Absolute Pressure (MAP) Sensor — Operation, DTCs, and Range (FSM)]]
 - [[sources/eec-oxygen-sensor|Heated Oxygen Sensor (HO2S) — EEC-IV Description, Operation, and Specs (FSM)]]
+- [[sources/eec-temperature-sensors-ect-iat|ECT and IAT Temperature Sensors — Operation, DTCs, and Specs (FSM)]]
 - [[sources/eec-throttle-position-sensor|Throttle Position Sensor (TP) — Operation, DTCs, Service, and Specs (FSM)]]
 - [[sources/eec-tune-up-and-engine-checks|Tune-up and Engine Performance Checks — Timing, Firing Order, Compression, Valve Clearance, Spark Plugs (FSM)]]
 - [[sources/ford-300-inline-six-bulletproof-engine|Ford 300 Inline Six — What You Need to Know About Ford's Bulletproof Engine (4.9L)]]
 - [[sources/rough-idle-94-f-150-49l-ford-truck-enthusiasts-forums|Rough idle — '94 F-150 4.9L (Ford Truck Enthusiasts)]]
 - [[sources/sen-distributor-hall-effect-pip-cmp-sensor|Distributor Hall-Effect Sensor — PIP, Camshaft Position, and Cylinder Identification (FSM)]]
-- [[sources/sen-engine-coolant-temperature-sensor|Engine Coolant Temperature (ECT) Sensor — Description, Operation, and DTCs (FSM)]]
 - [[sources/sen-inertia-fuel-shutoff-switch|Inertia Fuel Shutoff (IFS) Switch — Description and Operation (FSM)]]
-- [[sources/sen-intake-air-temperature-sensor|Intake Air Temperature (IAT) Sensor — Description, Operation, and DTCs (FSM)]]
 - [[sources/sen-manifold-absolute-pressure-sensor|Manifold Absolute Pressure (MAP) Sensor — Description, Operation, and DTCs (FSM)]]
 - [[sources/sen-oxygen-sensor|Heated Oxygen Sensor (HO2S) — Description, Operation, and Testing (FSM)]]
 - [[sources/sen-throttle-position-sensor|Throttle Position (TP) Sensor — Description, Operation, and DTCs (FSM)]]

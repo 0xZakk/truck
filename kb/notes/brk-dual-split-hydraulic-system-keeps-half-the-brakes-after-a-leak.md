@@ -20,6 +20,7 @@ The point of the split is fault tolerance. Because the two circuits are hydrauli
 - [[notes/brk-low-fluid-grounds-the-warning-switch-disabling-abs-and-lighting-the-indicator|Low master-cylinder fluid grounds the warning switch, disabling ABS and lighting the indicator]]
 - [[notes/brk-front-caliper-is-a-pin-sliding-single-piston-design-that-reacts-torque-into-the-spindle|The front caliper is a pin-sliding single-piston design that reacts brake torque into the spindle]]
 - [[notes/brk-rabs-modulates-only-the-rear-wheels-above-5-mph|RABS prevents only rear-wheel lockup, modulating rear pressure above ~5 mph]]
+- [[notes/brk-rear-drum-brakes-are-internal-expanding-shoes-stopped-by-an-anchor-pin|Rear drum brakes use internal expanding shoes held against rotation by an anchor pin]]
 
 ## Source
 

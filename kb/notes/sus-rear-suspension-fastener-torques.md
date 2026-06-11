@@ -34,6 +34,7 @@ truck. Use these whenever reassembling the rear of the `suspension` system.
 - [[notes/sus-rear-axle-rides-on-leaf-springs-with-shackle-and-u-bolts|The rear axle rides on leaf springs with U-bolts, a front bracket, and a rear shackle]]
 - [[notes/sus-lug-nuts-torque-to-100-ft-lb-dry-on-the-5-lug-wheel|5-lug wheel lug nuts torque to 100 ft lb on clean dry threads]]
 - [[notes/mnt-lug-nut-torque-is-100-ftlb-on-clean-dry-threads|5-lug wheel nuts torque to 100 ft lb on clean, dry threads — never oiled]]
+- [[notes/drv-8.8-axle-fastener-torque-values|Ford 8.8 axle fastener torques: bearing caps and ring gear at 70-85 ft·lb]]
 
 ## Source
 

@@ -3,8 +3,8 @@ title: "Prop the window full-up before removing the power window motor or regula
 kind: procedure
 source: "[[sources/gls-power-window-motor|Power Window Motor — Service and Repair (FSM)]]"
 related:
-  - "[[notes/gls-power-window-motor-hides-two-screws-behind-sheet-metal|Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal]]"
-  - "[[notes/gls-window-regulator-is-riveted-not-bolted|The front door window regulator is riveted, not bolted, so it must be drilled out]]"
+  - "[[notes/bdy-power-window-motor-replacement-requires-drilling-inner-panel-access-holes|Replacing the front power window motor requires drilling two access holes in the door inner panel]]"
+  - "[[notes/bdy-window-regulator-rivets-are-drilled-out-and-re-riveted|The front door window regulator is held by rivets that are drilled out and re-riveted on install]]"
 tags:
   - power-window
   - window-motor
@@ -26,10 +26,8 @@ service procedures.
 
 ## Related Concepts
 
-- [[notes/gls-power-window-motor-hides-two-screws-behind-sheet-metal|Replacing the power window motor requires drilling two access holes because two of its three screws sit behind solid sheet metal]]
-- [[notes/gls-window-regulator-is-riveted-not-bolted|The front door window regulator is riveted, not bolted, so it must be drilled out]]
-- [[notes/bdy-window-regulator-rivets-are-drilled-out-and-re-riveted|The front door window regulator is held by rivets that are drilled out and re-riveted on install]]
 - [[notes/bdy-power-window-motor-replacement-requires-drilling-inner-panel-access-holes|Replacing the front power window motor requires drilling two access holes in the door inner panel]]
+- [[notes/bdy-window-regulator-rivets-are-drilled-out-and-re-riveted|The front door window regulator is held by rivets that are drilled out and re-riveted on install]]
 
 ## Source
 

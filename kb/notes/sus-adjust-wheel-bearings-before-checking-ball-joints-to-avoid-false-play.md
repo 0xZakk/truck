@@ -4,7 +4,7 @@ kind: troubleshooting
 source: "[[sources/sus-ball-joints|Front Ball Joints — Inspection (FSM)]]"
 related:
   - "[[notes/sus-ball-joint-wear-limit-is-1-32-inch-of-tire-rock|Front ball joints are condemned at 1/32 inch of tire rock]]"
-  - "[[notes/sus-front-wheel-bearing-preload-is-set-by-seat-back-off-snug|Front wheel bearing preload is set by a seat, back-off, then light-snug sequence]]"
+  - "[[notes/drv-front-wheel-bearing-adjustment-sequence|Front wheel bearings are set by seating at 17-25 ft·lb then backing off and re-torquing to 18-20 in·lb]]"
 tags:
   - suspension
   - ball-joint
@@ -26,7 +26,8 @@ counts against the joints. This sequencing keeps `suspension` diagnosis honest.
 ## Related Concepts
 
 - [[notes/sus-ball-joint-wear-limit-is-1-32-inch-of-tire-rock|Front ball joints are condemned at 1/32 inch of tire rock]]
-- [[notes/sus-front-wheel-bearing-preload-is-set-by-seat-back-off-snug|Front wheel bearing preload is set by a seat, back-off, then light-snug sequence]]
+- [[notes/drv-front-wheel-bearing-adjustment-sequence|Front wheel bearings are set by seating at 17-25 ft·lb then backing off and re-torquing to 18-20 in·lb]]
+- [[notes/drv-front-wheel-bearing-end-play-and-rolling-torque|Correctly adjusted front wheel bearings have 0.00025-0.005 in end play and 10-25 in·lb rolling torque]]
 
 ## Source
 
