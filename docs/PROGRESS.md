@@ -2,6 +2,20 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop WRAP) — Stop condition met
+- Multi-angle review (iso/side/side2/front/top): no visible interpenetrations,
+  proportions read correct everywhere. Exact-geometry checker CLEAN.
+- Night's arc (6 loop iterations + setup): exact intersection checking (found 2
+  pre-existing checker bugs + 45 real issues) -> body proportions (full-height
+  doors, beltline, glass) -> engine-bay vertical packaging (block was 5" too
+  tall) + front-end drop -> Blender front clip -> factory width (76.8" cab,
+  70" box, real tread) -> HDRI environment -> crowned hood/roof + glass.
+- **LOOP PAUSED: next accuracy tier needs the owner's photos** (wheel style,
+  trim/colors, engine-bay layout verification incl. oil-filter side + air-box
+  position, interior). Photo-independent queue when the loop resumes: wiper
+  arms, drip rails, door handles detail, interior dash depth, exhaust tip,
+  McMaster fastener importer + InstancedMesh, SSAO post pass.
+
 ### 2026-06-11 (loop it.6) — Crowned hood + roof, tinted glass
 - `scripts/blender/body_panels.py` -> hood.glb + cab-roof.glb: displaced-grid
   panels with real center crown (~1.1"), hood slopes and rolls down at the nose,
