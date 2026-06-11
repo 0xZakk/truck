@@ -5983,7 +5983,8 @@
    "location": "Front of the truck.",
    "ford_part_number": "",
    "model": {
-    "builder": "grilleAssembly",
+    "kind": "gltf",
+    "src": "/models/front-panel.glb",
     "position": [
      104,
      36.5,
@@ -6393,11 +6394,12 @@
    "location": "Front driver corner.",
    "ford_part_number": "F2TZ-13007-A",
    "model": {
-    "builder": "headlamp",
+    "kind": "gltf",
+    "src": "/models/headlamp.glb",
     "position": [
-     103,
-     36,
-     -24
+     104.2,
+     39.5,
+     -23.25
     ]
    },
    "fidelity": "refined",
@@ -6415,11 +6417,12 @@
    "location": "Front passenger corner.",
    "ford_part_number": "F2TZ-13007-A",
    "model": {
-    "builder": "headlamp",
+    "kind": "gltf",
+    "src": "/models/headlamp.glb",
     "position": [
-     103,
-     36,
-     24
+     104.2,
+     39.5,
+     23.25
     ]
    },
    "fidelity": "refined",
@@ -6437,16 +6440,12 @@
    "location": "Front driver, beside headlamp.",
    "ford_part_number": "",
    "model": {
-    "kind": "box",
-    "size": [
-     1.6,
-     2.4,
-     4
-    ],
+    "kind": "gltf",
+    "src": "/models/corner-lamp.glb",
     "position": [
-     104,
-     31,
-     -28
+     104.2,
+     31.75,
+     -23
     ]
    },
    "fidelity": "refined",
@@ -6464,16 +6463,12 @@
    "location": "Front passenger, beside headlamp.",
    "ford_part_number": "",
    "model": {
-    "kind": "box",
-    "size": [
-     1.6,
-     2.4,
-     4
-    ],
+    "kind": "gltf",
+    "src": "/models/corner-lamp.glb",
     "position": [
-     104,
-     31,
-     28
+     104.2,
+     31.75,
+     23
     ]
    },
    "fidelity": "refined",

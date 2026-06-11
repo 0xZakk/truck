@@ -2,6 +2,20 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop it.3) — Blender front clip
+- `scripts/blender/front_clip.py` -> 3 new .glbs replacing the box approximations:
+  **front-panel.glb** (one argent header/grille molding with boolean openings for
+  both headlamps, parking lamps + grille — the real 9th-gen construction — with
+  bar insert + chrome-ringed Ford oval), **headlamp.glb** (flush composite lamp:
+  housing, chrome bezel, fluted lens; symmetric so one glb serves both sides),
+  **corner-lamp.glb** (ribbed amber parking/turn lamp).
+- Records: grille -> front-panel; headlamp-l/r + parking-light-l/r -> lamp glbs,
+  seated in the panel openings. Front view now reads as an OBS F-150 face.
+- checker CLEAN. **Found next offender (it.4): body is ~5-7" too NARROW (72" vs
+  real ~79") and front track slightly wide (+-33.5 vs brochure 65.7" tread =
+  +-32.85) — tires visibly poke past the fenders in the front view.** Also noted:
+  chrome reads dark from the front (env lighting) — HDRI/lighting pass queued.
+
 ### 2026-06-11 (loop it.2) — Engine-bay vertical packaging + front-end drop
 - **Key discovery:** the engine CANNOT be lowered — the Twin I-beams legitimately pass
   under the oil pan and the pan already rides just above them. The real error was the
