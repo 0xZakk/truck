@@ -3,7 +3,9 @@ manuals/factory-service-manual/
 manuals/owners-manual/*.pdf
 manuals/brochures/*.pdf
 
-# Sourced 3D meshes can be large; add selectively.
+# 3D meshes: our own Blender-generated parts (scripts/blender/*.py) are small and
+# load-bearing for the viewer, so they're committed (force-added past this rule).
+# This rule still ignores any large *sourced/AI-generated* meshes dropped in later.
 models/**/*.glb
 models/**/*.gltf
 
