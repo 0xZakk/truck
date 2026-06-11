@@ -2,6 +2,16 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop it.5) — Real HDRI environment
+- Vendored a CC0 Poly Haven studio HDRI (`viewer/assets/studio_small_08_1k.hdr`,
+  1.5MB) loaded via RGBELoader -> PMREM; RoomEnvironment stays as the sync
+  fallback. Added a warm front fill light.
+- Chrome now reads as CHROME from every angle (bumper was rendering black from
+  the front), headlamp lenses catch light, clearcoat paint shows studio sheen.
+- No geometry changes (checker state unchanged from it.4 clean).
+- Next: crowned hood/roof surfaces in Blender (the last big "extruded box" tell),
+  glass material tint, wiper arms, door cut lines.
+
 ### 2026-06-11 (loop it.4) — Body width to factory spec
 - Body was 72" wide vs the real ~77-79 — tires visibly poked past the fenders.
   Widened EVERYTHING coordinated: cab skins to 76.8" (doors/glass/mirrors/trim/

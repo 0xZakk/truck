@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { BUILDERS } from './builders.js';
 
@@ -29,9 +30,15 @@ function gradientTexture(top, bottom) {
 const scene = new THREE.Scene();
 scene.background = gradientTexture('#e9eef3', '#c2ccd6');
 
-// image-based lighting for realistic metals
+// image-based lighting for realistic metals — real studio HDRI (CC0, Poly Haven),
+// RoomEnvironment as the synchronous fallback until/unless it loads
 const pmrem = new THREE.PMREMGenerator(renderer);
 scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+new RGBELoader().load('./assets/studio_small_08_1k.hdr', tex => {
+  tex.mapping = THREE.EquirectangularReflectionMapping;
+  scene.environment = pmrem.fromEquirectangular(tex).texture;
+  tex.dispose();
+}, undefined, () => console.warn('HDRI load failed — keeping RoomEnvironment'));
 
 const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 1, 4000);
 camera.position.set(175, 120, 230);
@@ -53,6 +60,7 @@ key.shadow.camera.top = 170; key.shadow.camera.bottom = -170;
 key.shadow.camera.near = 40; key.shadow.camera.far = 700;
 key.shadow.bias = -0.0006; key.shadow.normalBias = 0.5;
 const fill = new THREE.DirectionalLight('#dce8ff', 0.7); fill.position.set(-160, 90, -120); scene.add(fill);
+const front = new THREE.DirectionalLight('#fff6e8', 0.55); front.position.set(240, 70, 30); scene.add(front);
 
 // ground shadow catcher — contact shadow grounds the truck without hiding the grid
 const ground = new THREE.Mesh(
