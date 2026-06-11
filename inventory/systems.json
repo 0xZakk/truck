@@ -1,0 +1,26 @@
+{
+  "_comment": "Systems are tags that let the viewer isolate a subset of parts. A part may belong to several. color drives default massing color + highlight.",
+  "systems": [
+    { "id": "frame-chassis",      "name": "Frame & chassis",          "color": "#6b7785", "blurb": "Ladder frame, crossmembers, and mounts that everything bolts to." },
+    { "id": "body-cab",           "name": "Cab & body",               "color": "#8a93a0", "blurb": "SuperCab shell, doors, floor, firewall, glass." },
+    { "id": "body-bed",           "name": "Bed & box",                "color": "#8a93a0", "blurb": "Cargo box, tailgate, bedsides, floor." },
+    { "id": "exterior-trim",      "name": "Exterior trim & hardware", "color": "#9aa3ad", "blurb": "Bumpers, grille, moldings, emblems, mirrors, fasteners." },
+    { "id": "engine",             "name": "Engine (4.9L I6)",         "color": "#c25b3f", "blurb": "300 cu in inline-six long block and accessories." },
+    { "id": "cooling",            "name": "Cooling",                  "color": "#4f9bd4", "blurb": "Radiator, water pump, fan, hoses, thermostat." },
+    { "id": "fuel",               "name": "Fuel system",              "color": "#caa14a", "blurb": "Tank, pump, lines, injection, EVAP." },
+    { "id": "intake-exhaust",     "name": "Intake & exhaust",         "color": "#7d7f86", "blurb": "Air intake, manifolds, exhaust pipes, muffler, catalytic converter." },
+    { "id": "driveline",          "name": "Transmission & driveline", "color": "#b07d3a", "blurb": "M5OD-R2 5-speed, clutch, driveshaft, U-joints." },
+    { "id": "rear-axle",          "name": "Rear axle & differential", "color": "#8f6a3e", "blurb": "Solid axle, differential, axle shafts, bearings." },
+    { "id": "suspension",         "name": "Suspension",               "color": "#5e8d6a", "blurb": "Twin-I-beam front, leaf-sprung rear, shocks, bushings." },
+    { "id": "steering",           "name": "Steering",                 "color": "#5fa08f", "blurb": "Box/column, pitman & drag link, tie rods, pump." },
+    { "id": "brakes",             "name": "Brakes",                   "color": "#cf5d5d", "blurb": "Front disc, rear drum, master cylinder, lines, booster." },
+    { "id": "wheels-tires",       "name": "Wheels & tires",           "color": "#3a3f47", "blurb": "Rims, tires, lug nuts, hubs." },
+    { "id": "electrical-starting","name": "Starting system",          "color": "#e0a32e", "blurb": "Battery, cables, relay, solenoid, starter, interlocks." },
+    { "id": "electrical-charging","name": "Charging system",          "color": "#e0c12e", "blurb": "Alternator, regulator, charging wiring." },
+    { "id": "ignition",           "name": "Ignition system",          "color": "#d98cff", "blurb": "Distributor, coil, plugs, wires, EEC control." },
+    { "id": "electrical-body",    "name": "Body electrical & lighting","color": "#e8d44a", "blurb": "Harnesses, fuses, lamps, switches, gauges." },
+    { "id": "hvac",               "name": "Heating & A/C",            "color": "#79c0d0", "blurb": "Heater core, blower, A/C, ducts, controls." },
+    { "id": "interior",           "name": "Interior",                 "color": "#9c8f7e", "blurb": "Seats, dash, trim panels, carpet, console." },
+    { "id": "glass",              "name": "Glass",                    "color": "#bcdfe8", "blurb": "Windshield, door glass, back glass, regulators." }
+  ]
+}

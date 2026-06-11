@@ -1,0 +1,18 @@
+# Large research assets — reproducible via scripts/fetch-manuals.sh, not committed.
+manuals/factory-service-manual/
+manuals/owners-manual/*.pdf
+manuals/brochures/*.pdf
+
+# Sourced 3D meshes can be large; add selectively.
+models/**/*.glb
+models/**/*.gltf
+
+# OS / editor cruft
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+
+# Owner reference photos (large, local only)
+reference/photos/*
+!reference/photos/README.txt

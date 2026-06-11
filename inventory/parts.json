@@ -1,0 +1,7490 @@
+{
+ "_comment": "Seed inventory: major masses + full starting system. Coordinates in inches per inventory/schema.md (origin = wheelbase center, ground, centerline; +X fwd, +Y up, +Z right). The viewer builds the 3D truck from this file. Grow it = grow the truck.",
+ "vehicle": "1994 Ford F-150 XLT SuperCab, 2WD, 6.5' short bed, 4.9L (300) I6, M5OD-R2 5-speed",
+ "parts": [
+  {
+   "id": "frame-rail-l",
+   "name": "Frame rail \u2014 left",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Main longitudinal structural member; everything mounts to it.",
+   "location": "Driver-side full length.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "frameRail",
+    "position": [
+     -5,
+     22,
+     -17
+    ]
+   },
+   "fidelity": "refined",
+   "status": "placed"
+  },
+  {
+   "id": "frame-rail-r",
+   "name": "Frame rail \u2014 right",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Main longitudinal structural member; everything mounts to it.",
+   "location": "Passenger-side full length.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "frameRail",
+    "position": [
+     -5,
+     22,
+     17
+    ]
+   },
+   "fidelity": "refined",
+   "status": "placed"
+  },
+  {
+   "id": "crossmember-front",
+   "name": "Front crossmember",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Ties the frame rails together at the front.",
+   "location": "Under the engine bay.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     4,
+     6,
+     38
+    ],
+    "position": [
+     60,
+     22,
+     0
+    ]
+   },
+   "fidelity": "massing",
+   "status": "placed"
+  },
+  {
+   "id": "crossmember-rear",
+   "name": "Rear crossmember",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Ties the frame rails together at the rear.",
+   "location": "Behind the rear axle.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     4,
+     6,
+     38
+    ],
+    "position": [
+     -60,
+     22,
+     0
+    ]
+   },
+   "fidelity": "massing",
+   "status": "placed"
+  },
+  {
+   "id": "crossmember-mid",
+   "name": "Center crossmember",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Ties the frame rails together mid-span.",
+   "location": "Mid-chassis, under the cab/bed joint.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     4,
+     5,
+     38
+    ],
+    "position": [
+     0,
+     22,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "crossmember-trans",
+   "name": "Transmission crossmember",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Supports the transmission tailshaft mount.",
+   "location": "Under the transmission.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     3.5,
+     4,
+     38
+    ],
+    "position": [
+     35,
+     22,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "crossmember-rearmost",
+   "name": "Rear crossmember (bumper)",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rear frame closure / bumper support.",
+   "location": "Very rear of the frame.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     3.5,
+     5,
+     38
+    ],
+    "position": [
+     -104,
+     22,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "trailer-hitch",
+   "name": "Trailer hitch & receiver",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Class-III receiver hitch bolted to the rear frame.",
+   "location": "Rear of the frame, below the bumper.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "trailerHitch",
+    "position": [
+     -106,
+     17,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tow-hook-l",
+   "name": "Tow hook \u2014 left",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Front recovery hook bolted to the frame.",
+   "location": "Front driver frame horn.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "towHook",
+    "position": [
+     100,
+     18,
+     -12
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tow-hook-r",
+   "name": "Tow hook \u2014 right",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Front recovery hook bolted to the frame.",
+   "location": "Front passenger frame horn.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "towHook",
+    "position": [
+     100,
+     18,
+     12
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-0-l",
+   "name": "Body mount \u2014 cab front L",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab front, driver rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     42,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-0-r",
+   "name": "Body mount \u2014 cab front R",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab front, passenger rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     42,
+     26,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-1-l",
+   "name": "Body mount \u2014 cab center L",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab center, driver rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     8,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-1-r",
+   "name": "Body mount \u2014 cab center R",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab center, passenger rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     8,
+     26,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-2-l",
+   "name": "Body mount \u2014 cab rear L",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab rear, driver rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -22,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-2-r",
+   "name": "Body mount \u2014 cab rear R",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "cab rear, passenger rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -22,
+     26,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-3-l",
+   "name": "Body mount \u2014 bed front L",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "bed front, driver rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -55,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-3-r",
+   "name": "Body mount \u2014 bed front R",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "bed front, passenger rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -55,
+     26,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-4-l",
+   "name": "Body mount \u2014 bed rear L",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "bed rear, driver rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -95,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "body-mount-4-r",
+   "name": "Body mount \u2014 bed rear R",
+   "systems": [
+    "frame-chassis"
+   ],
+   "assembly": "Ladder frame",
+   "qty": 1,
+   "function": "Rubber isolator tying the body to the frame.",
+   "location": "bed rear, passenger rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bodyMount",
+    "position": [
+     -95,
+     26,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tire-fl",
+   "name": "Wheel & tire \u2014 front left",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 1,
+   "function": "Styled steel wheel with a P235/75R15 tire, center cap, and five lug nuts.",
+   "location": "Front driver side.",
+   "ford_part_number": "",
+   "specs": [
+    "P235/75R15 \u2248 28.8 in dia",
+    "15 in steel wheel"
+   ],
+   "model": {
+    "builder": "wheelTire",
+    "position": [
+     69,
+     14.4,
+     -33
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tire-fr",
+   "name": "Wheel & tire \u2014 front right",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 1,
+   "function": "Styled steel wheel with a P235/75R15 tire, center cap, and five lug nuts.",
+   "location": "Front passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelTire",
+    "position": [
+     69,
+     14.4,
+     33
+    ],
+    "rotation": [
+     0,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented",
+   "specs": [
+    "P235/75R15 \u2248 28.8 in dia",
+    "15 in steel wheel"
+   ]
+  },
+  {
+   "id": "tire-rl",
+   "name": "Wheel & tire \u2014 rear left",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 1,
+   "function": "Styled steel wheel with a P235/75R15 tire, center cap, and five lug nuts.",
+   "location": "Rear driver side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelTire",
+    "position": [
+     -69,
+     14.4,
+     -33
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented",
+   "specs": [
+    "P235/75R15 \u2248 28.8 in dia",
+    "15 in steel wheel"
+   ]
+  },
+  {
+   "id": "tire-rr",
+   "name": "Wheel & tire \u2014 rear right",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 1,
+   "function": "Styled steel wheel with a P235/75R15 tire, center cap, and five lug nuts.",
+   "location": "Rear passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelTire",
+    "position": [
+     -69,
+     14.4,
+     33
+    ],
+    "rotation": [
+     0,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented",
+   "specs": [
+    "P235/75R15 \u2248 28.8 in dia",
+    "15 in steel wheel"
+   ]
+  },
+  {
+   "id": "spare-tire",
+   "name": "Spare wheel & tire",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 1,
+   "function": "Full-size spare stowed under the rear of the bed.",
+   "location": "Under the bed, behind the axle.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelTire",
+    "position": [
+     -95,
+     9,
+     -8
+    ],
+    "rotation": [
+     90,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "lug-nuts",
+   "name": "Lug nuts",
+   "systems": [
+    "wheels-tires"
+   ],
+   "assembly": "Wheels & tires",
+   "qty": 20,
+   "function": "Clamp each wheel to its hub.",
+   "location": "Five per wheel.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "front-ibeam-l",
+   "name": "Front axle I-beam \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Independent twin-I-beam axle; pivots from the RIGHT frame and carries the LEFT wheel.",
+   "location": "Front, crossing from the right frame to the left wheel.",
+   "ford_part_number": "E7TZ-3006-A",
+   "model": {
+    "builder": "iBeam",
+    "position": [
+     70,
+     13.5,
+     -6
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-ibeam-r",
+   "name": "Front axle I-beam \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Independent twin-I-beam axle; pivots from the LEFT frame and carries the RIGHT wheel.",
+   "location": "Front, crossing from the left frame to the right wheel.",
+   "ford_part_number": "E7TZ-3006-A",
+   "model": {
+    "builder": "iBeam",
+    "position": [
+     68,
+     13.5,
+     6
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-coil-l",
+   "name": "Front coil spring \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Coil spring between the left I-beam and the frame.",
+   "location": "Front left, over the beam.",
+   "ford_part_number": "F1TZ-5560-E",
+   "model": {
+    "builder": "coilSpring",
+    "position": [
+     69,
+     19,
+     -13
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-coil-r",
+   "name": "Front coil spring \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Coil spring between the right I-beam and the frame.",
+   "location": "Front right, over the beam.",
+   "ford_part_number": "F1TZ-5560-E",
+   "model": {
+    "builder": "coilSpring",
+    "position": [
+     69,
+     19,
+     13
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-shock-l",
+   "name": "Front shock absorber \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Damps front-left suspension motion.",
+   "location": "Front left.",
+   "ford_part_number": "E7TZ-18124-B",
+   "model": {
+    "builder": "shockAbsorber",
+    "position": [
+     72,
+     22,
+     -20
+    ],
+    "rotation": [
+     8,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-shock-r",
+   "name": "Front shock absorber \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Damps front-right suspension motion.",
+   "location": "Front right.",
+   "ford_part_number": "E7TZ-18124-B",
+   "model": {
+    "builder": "shockAbsorber",
+    "position": [
+     72,
+     22,
+     20
+    ],
+    "rotation": [
+     -8,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "radius-arm-l",
+   "name": "Radius arm \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Locates the left I-beam fore/aft against braking and acceleration.",
+   "location": "Left beam back to the frame.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     30,
+     2,
+     2.4
+    ],
+    "position": [
+     54,
+     11.5,
+     -19
+    ],
+    "rotation": [
+     0,
+     8,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "radius-arm-r",
+   "name": "Radius arm \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Locates the right I-beam fore/aft.",
+   "location": "Right beam back to the frame.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     30,
+     2,
+     2.4
+    ],
+    "position": [
+     54,
+     11.5,
+     19
+    ],
+    "rotation": [
+     0,
+     -8,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "stabilizer-bar",
+   "name": "Front stabilizer (sway) bar",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 1,
+   "function": "Resists body roll by tying the two front beams together.",
+   "location": "Across the front of the frame.",
+   "ford_part_number": "E9TZ-5482-C",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.5,
+    "connects": [
+     "front-ibeam-l",
+     "front-ibeam-r"
+    ],
+    "path": [
+     [
+      68,
+      11,
+      -22
+     ],
+     [
+      62,
+      9,
+      -12
+     ],
+     [
+      62,
+      9,
+      12
+     ],
+     [
+      68,
+      11,
+      22
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "leaf-spring-l",
+   "name": "Rear leaf spring \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 1,
+   "function": "Multi-leaf spring locating and suspending the rear axle (driver side).",
+   "location": "Under the driver-side frame, axle on top.",
+   "ford_part_number": "F1TZ-5560-E",
+   "model": {
+    "builder": "leafSpring",
+    "position": [
+     -69,
+     10.5,
+     -23
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "leaf-spring-r",
+   "name": "Rear leaf spring \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 1,
+   "function": "Multi-leaf spring locating and suspending the rear axle (passenger side).",
+   "location": "Under the passenger-side frame, axle on top.",
+   "ford_part_number": "F1TZ-5560-E",
+   "model": {
+    "builder": "leafSpring",
+    "position": [
+     -69,
+     10.5,
+     23
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-shock-l",
+   "name": "Rear shock absorber \u2014 left",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 1,
+   "function": "Damps rear-left axle motion.",
+   "location": "Driver-side, behind the axle.",
+   "ford_part_number": "E7TZ-18124-B",
+   "model": {
+    "builder": "shockAbsorber",
+    "position": [
+     -79,
+     16,
+     -22
+    ],
+    "rotation": [
+     10,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-shock-r",
+   "name": "Rear shock absorber \u2014 right",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 1,
+   "function": "Damps rear-right axle motion.",
+   "location": "Passenger-side, behind the axle.",
+   "ford_part_number": "E7TZ-18124-B",
+   "model": {
+    "builder": "shockAbsorber",
+    "position": [
+     -79,
+     16,
+     22
+    ],
+    "rotation": [
+     -10,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ball-joint",
+   "name": "Front ball joints",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 4,
+   "function": "Pivot joints connecting the I-beam spindle to the steering knuckle.",
+   "location": "See assembly.",
+   "ford_part_number": "F6TZ-3050-AB",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "radius-arm-bushing",
+   "name": "Radius arm bushings",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 2,
+   "function": "Rubber bushings isolating the radius arms at the frame.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "stabilizer-bushing",
+   "name": "Stabilizer bar bushings",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Front suspension",
+   "qty": 2,
+   "function": "Rubber bushings mounting the sway bar.",
+   "location": "See assembly.",
+   "ford_part_number": "F2TZ-5493-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "rear-u-bolts",
+   "name": "Rear spring U-bolts",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 4,
+   "function": "Clamp the rear axle to the leaf springs.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "rear-shackle",
+   "name": "Rear spring shackles",
+   "systems": [
+    "suspension"
+   ],
+   "assembly": "Rear suspension",
+   "qty": 2,
+   "function": "Pivoting links at the rear of each leaf spring.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "rear-axle",
+   "name": "Rear axle housing",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Solid drive axle: housing tubes, center differential carrier (pumpkin), and pinion yoke that takes the driveshaft.",
+   "location": "Under the bed, leaf-sprung.",
+   "ford_part_number": "E7UZ-4010-C",
+   "model": {
+    "builder": "rearAxle",
+    "position": [
+     -69,
+     14.4,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "differential-cover",
+   "name": "Differential cover",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Stamped cover sealing the back of the axle housing; holds the gear oil.",
+   "location": "Rear face of the axle pumpkin.",
+   "ford_part_number": "F4TZ-4033-A",
+   "model": {
+    "builder": "diffCover",
+    "position": [
+     -73.6,
+     14.9,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-brake-drum-l",
+   "name": "Rear brake drum \u2014 left",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Rear brakes",
+   "qty": 1,
+   "function": "Drum and backing plate the rear shoes act against.",
+   "location": "Driver-side rear wheel.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "brakeDrum",
+    "position": [
+     -69,
+     14.4,
+     -30.5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-brake-drum-r",
+   "name": "Rear brake drum \u2014 right",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Rear brakes",
+   "qty": 1,
+   "function": "Drum and backing plate the rear shoes act against.",
+   "location": "Passenger-side rear wheel.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "brakeDrum",
+    "position": [
+     -69,
+     14.4,
+     30.5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ring-gear",
+   "name": "Ring gear",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Large bevel gear bolted to the carrier; driven by the pinion.",
+   "location": "Inside the axle housing.",
+   "ford_part_number": "E5TZ-4209-A",
+   "model": {
+    "builder": "ringGear",
+    "position": [
+     -69,
+     14,
+     3
+    ],
+    "explode": [
+     -7,
+     0,
+     2
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "pinion-gear",
+   "name": "Drive pinion",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Drives the ring gear; the driveshaft turns it via the yoke.",
+   "location": "Front nose of the pumpkin.",
+   "ford_part_number": "E5TZ-4209-A",
+   "model": {
+    "builder": "pinionGear",
+    "position": [
+     -65,
+     14,
+     0
+    ],
+    "explode": [
+     9,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "differential-case",
+   "name": "Differential carrier (case)",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Carrier holding the side and spider gears.",
+   "location": "Inside the axle housing.",
+   "ford_part_number": "E3TZ-4026-A",
+   "model": {
+    "builder": "diffCarrier",
+    "position": [
+     -69,
+     14,
+     1
+    ],
+    "explode": [
+     0,
+     7,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "axle-side-gears",
+   "name": "Side & spider gears",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Allow the two rear wheels to turn at different speeds.",
+   "location": "Inside the axle housing.",
+   "ford_part_number": "E3TZ-4236-B",
+   "model": {
+    "builder": "sideGearSet",
+    "position": [
+     -69,
+     14,
+     0
+    ],
+    "explode": [
+     0,
+     4,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "pinion-bearing",
+   "name": "Pinion bearing",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Supports the pinion gear in the housing.",
+   "location": "Inside the axle housing.",
+   "ford_part_number": "C7AZ-4628-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "carrier-bearings",
+   "name": "Carrier bearings",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 2,
+   "function": "Support the differential case in the housing.",
+   "location": "Inside the axle housing.",
+   "ford_part_number": "D9AZ-4222-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "engine-block",
+   "name": "Cylinder block \u2014 4.9L (300) I6",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "The 300 cu in inline-six cast-iron block: cylinders, crankcase, oil pan, and bellhousing flange. The truck's power source.",
+   "location": "Longitudinal, front engine bay, over the front axle.",
+   "ford_part_number": "F6TZ-6010-TB",
+   "specs": [
+    "300 cu in / 4.9 L",
+    "inline-6, OHV",
+    "~150 hp, ~260 lb-ft"
+   ],
+   "model": {
+    "builder": "engineLongBlock",
+    "position": [
+     79,
+     30,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cylinder-head",
+   "name": "Cylinder head",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Cast-iron head: combustion chambers, valves, and intake/exhaust ports on the passenger side.",
+   "location": "Bolts to the top deck of the block.",
+   "ford_part_number": "F1TZ-6049-B",
+   "model": {
+    "builder": "cylinderHead",
+    "position": [
+     79,
+     40.5,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "valve-cover",
+   "name": "Valve (rocker) cover",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Seals the top of the head over the rocker arms; has the oil filler cap.",
+   "location": "On top of the cylinder head.",
+   "ford_part_number": "F3TZ-6582-H",
+   "model": {
+    "builder": "valveCover",
+    "position": [
+     79,
+     44.3,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "intake-manifold",
+   "name": "Intake manifold",
+   "systems": [
+    "engine",
+    "fuel"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Distributes the air/fuel charge to the six intake ports; carries the throttle body.",
+   "location": "Passenger side of the head (upper).",
+   "ford_part_number": "E7TZ-9424-A",
+   "model": {
+    "builder": "intakeManifold",
+    "position": [
+     79,
+     41,
+     8.5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "exhaust-manifold",
+   "name": "Exhaust manifold",
+   "systems": [
+    "engine",
+    "intake-exhaust"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Collects exhaust from the six cylinders into the exhaust pipe.",
+   "location": "Passenger side of the head (lower).",
+   "ford_part_number": "F5TZ-9430-F",
+   "model": {
+    "builder": "exhaustManifold",
+    "position": [
+     79,
+     36.5,
+     8.5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "harmonic-balancer",
+   "name": "Harmonic balancer & crank pulley",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Damps crankshaft vibration and drives the accessory belt.",
+   "location": "Front end of the crankshaft.",
+   "ford_part_number": "E7TZ-6312-A",
+   "model": {
+    "builder": "harmonicBalancer",
+    "position": [
+     95.6,
+     23,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "oil-filter",
+   "name": "Oil filter",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Filters the engine oil; spin-on canister.",
+   "location": "Lower passenger side of the block.",
+   "ford_part_number": "D9AZ-6731-A",
+   "model": {
+    "builder": "oilFilter",
+    "position": [
+     86,
+     25,
+     8
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "engine-mount-l",
+   "name": "Engine mount \u2014 left",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Rubber-isolated mount tying the block to the frame.",
+   "location": "Driver side of the block to the frame.",
+   "ford_part_number": "F3UZ-6038-B",
+   "model": {
+    "builder": "motorMount",
+    "position": [
+     76,
+     20.5,
+     -9
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "engine-mount-r",
+   "name": "Engine mount \u2014 right",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine",
+   "qty": 1,
+   "function": "Rubber-isolated mount tying the block to the frame.",
+   "location": "Passenger side of the block to the frame.",
+   "ford_part_number": "F3UZ-6038-B",
+   "model": {
+    "builder": "motorMount",
+    "position": [
+     76,
+     20.5,
+     9
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "crankshaft",
+   "name": "Crankshaft",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 1,
+   "function": "Converts piston motion into rotation; drives the flywheel.",
+   "location": "Inside the block, lower crankcase.",
+   "ford_part_number": "E3TZ-6303-C",
+   "model": {
+    "builder": "crankshaft",
+    "position": [
+     79,
+     23,
+     0
+    ],
+    "explode": [
+     0,
+     -11,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "camshaft",
+   "name": "Camshaft",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 1,
+   "function": "Operates the valves via lifters and pushrods.",
+   "location": "Inside the block.",
+   "ford_part_number": "F2TZ-6250-A",
+   "model": {
+    "builder": "camshaft",
+    "position": [
+     79,
+     33,
+     -3
+    ],
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "explode": [
+     0,
+     9,
+     -9
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "piston",
+   "name": "Piston",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 6,
+   "function": "Compresses the charge and transmits combustion force to the crank.",
+   "location": "In the six cylinders.",
+   "ford_part_number": "F5TZ-6108-AC",
+   "model": {
+    "builder": "pistonSet",
+    "position": [
+     79,
+     31,
+     0
+    ],
+    "explode": [
+     0,
+     15,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "connecting-rod",
+   "name": "Connecting rod",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 6,
+   "function": "Links each piston to the crankshaft.",
+   "location": "In the six cylinders.",
+   "ford_part_number": "E3TZ-6200-ERM",
+   "model": {
+    "builder": "conrodSet",
+    "position": [
+     79,
+     27,
+     0
+    ],
+    "explode": [
+     0,
+     12,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "oil-pump",
+   "name": "Oil pump",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 1,
+   "function": "Pressurizes engine oil through the galleries.",
+   "location": "Lower front of the block.",
+   "ford_part_number": "C5AZ-6600-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "timing-gears",
+   "name": "Timing gears",
+   "systems": [
+    "engine"
+   ],
+   "assembly": "Engine internals",
+   "qty": 1,
+   "function": "Crank and cam gears that keep valve timing synchronized.",
+   "location": "Behind the front timing cover.",
+   "ford_part_number": "D3TZ-6256-C",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "transmission",
+   "name": "Transmission \u2014 M5OD-R2 5-speed",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Mazda M5OD-R2 manual 5-speed: integral bellhousing, gearsets, and tailshaft output.",
+   "location": "Behind the engine, under the cab.",
+   "ford_part_number": "F2TA-7003-KA",
+   "model": {
+    "builder": "transmission",
+    "position": [
+     50,
+     23,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "input-shaft",
+   "name": "Transmission input shaft",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Takes drive from the clutch; meshes the cluster gear.",
+   "location": "Inside the transmission case.",
+   "ford_part_number": "D2AZ-7017-A",
+   "model": {
+    "builder": "inputShaft",
+    "position": [
+     59,
+     24,
+     0
+    ],
+    "explode": [
+     10,
+     4,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "mainshaft-assembly",
+   "name": "Mainshaft & gear stack",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Output shaft carrying 1st\u20135th gears and the synchronizers.",
+   "location": "Inside the transmission case.",
+   "ford_part_number": "F2TZ-7061-E",
+   "model": {
+    "builder": "mainshaftAssembly",
+    "position": [
+     46,
+     24,
+     0
+    ],
+    "explode": [
+     0,
+     10,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "countershaft-cluster",
+   "name": "Countershaft cluster",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Cluster gear set driving the mainshaft gears.",
+   "location": "Inside the transmission case.",
+   "ford_part_number": "E8TZ-7113-B",
+   "model": {
+    "builder": "countershaftCluster",
+    "position": [
+     49,
+     20,
+     0
+    ],
+    "explode": [
+     0,
+     -10,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "shift-forks",
+   "name": "Shift forks & rails",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Slide the synchronizers to select gears.",
+   "location": "Inside the transmission case.",
+   "ford_part_number": "F1TZ-7230-A",
+   "model": {
+    "builder": "shiftForks",
+    "position": [
+     48,
+     28,
+     0
+    ],
+    "explode": [
+     0,
+     9,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "output-shaft",
+   "name": "Output shaft",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Delivers torque to the driveshaft yoke.",
+   "location": "Inside the transmission case.",
+   "ford_part_number": "D6TZ-7060-C",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "driveshaft",
+   "name": "Driveshaft",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Two-piece driveshaft carrying torque from the transmission to the rear axle, with a center support bearing.",
+   "location": "Runs down the center of the chassis.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 1.4,
+    "connects": [
+     "transmission",
+     "rear-axle",
+     "differential"
+    ],
+    "path": [
+     [
+      33,
+      22.5,
+      0
+     ],
+     [
+      -16,
+      18,
+      0
+     ],
+     [
+      -62,
+      15.5,
+      0
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "shifter",
+   "name": "Gearshift lever",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Floor shifter that selects gears in the transmission.",
+   "location": "Through the cab floor onto the transmission.",
+   "ford_part_number": "F1TZ-7230-A",
+   "model": {
+    "builder": "shifter",
+    "position": [
+     48,
+     28,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "driveshaft-center-bearing",
+   "name": "Driveshaft center support bearing",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Rubber-isolated bearing supporting the two-piece driveshaft mid-span.",
+   "location": "Mid-chassis crossmember.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     3,
+     3,
+     4
+    ],
+    "position": [
+     -16,
+     18,
+     2
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "u-joint-front",
+   "name": "Universal joint \u2014 front",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Cross-and-bearing joint allowing driveshaft angle at the transmission.",
+   "location": "At the driveshaft yoke junction.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "u-joint-rear",
+   "name": "Universal joint \u2014 rear",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Cross-and-bearing joint allowing driveshaft angle at the axle.",
+   "location": "At the driveshaft yoke junction.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-slave-cylinder",
+   "name": "Clutch slave cylinder",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Hydraulically pushes the release fork to disengage the clutch.",
+   "location": "Concentric slave inside the bellhousing.",
+   "ford_part_number": "F2TZ-7560-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-master-cylinder",
+   "name": "Clutch master cylinder",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Pedal-driven cylinder generating clutch hydraulic pressure.",
+   "location": "Driver-side firewall.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "hydraulicCylinder",
+    "position": [
+     66,
+     40,
+     -15
+    ],
+    "rotation": [
+     0,
+     0,
+     180
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-hydraulic-line",
+   "name": "Clutch hydraulic line",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Carries pressure from the master to the slave cylinder.",
+   "location": "Firewall to bellhousing, driver side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.3,
+    "connects": [
+     "clutch-master-cylinder"
+    ],
+    "path": [
+     [
+      65,
+      40,
+      -15
+     ],
+     [
+      63,
+      32,
+      -10
+     ],
+     [
+      62,
+      26,
+      -7
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "flywheel",
+   "name": "Flywheel & ring gear",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Stores rotational inertia; the ring gear is what the starter cranks.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "C5AZ-6384-D",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-disc",
+   "name": "Clutch disc",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Friction disc that couples the engine to the transmission.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "E8TZ-7550-D",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "pressure-plate",
+   "name": "Clutch pressure plate",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Clamps the disc to the flywheel.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-release-bearing",
+   "name": "Clutch release (throwout) bearing",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Rides the diaphragm fingers to release the clutch.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "pilot-bearing",
+   "name": "Pilot bearing",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Supports the input shaft nose in the crankshaft.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "D8TZ-7600-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-release-fork",
+   "name": "Clutch release fork",
+   "systems": [
+    "driveline"
+   ],
+   "assembly": "Driveline",
+   "qty": 1,
+   "function": "Lever that the slave cylinder pushes to release the clutch.",
+   "location": "In/at the bellhousing.",
+   "ford_part_number": "E4TZ-7515-C",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-tank",
+   "name": "Fuel tank",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Steel midship tank; holds fuel and houses the in-tank pump and sending unit.",
+   "location": "Under the cab/bed, mid-chassis.",
+   "ford_part_number": "F6TZ-9002-A",
+   "model": {
+    "builder": "fuelTank",
+    "position": [
+     -30,
+     11,
+     -13
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-filter",
+   "name": "Fuel filter",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Inline filter cleaning fuel on the way to the engine.",
+   "location": "Driver-side frame rail, ahead of the tank.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "fuelFilter",
+    "position": [
+     22,
+     12,
+     -14
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-feed-line",
+   "name": "Fuel feed line (tank\u2192filter)",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Carries fuel from the in-tank pump to the filter.",
+   "location": "Along the frame between tank and engine.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.4,
+    "connects": [
+     "fuel-tank",
+     "fuel-filter"
+    ],
+    "path": [
+     [
+      -24,
+      18,
+      -19
+     ],
+     [
+      -4,
+      13,
+      -16
+     ],
+     [
+      19,
+      12,
+      -14
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-supply-line",
+   "name": "Fuel supply line (filter\u2192engine)",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Pressurized fuel from the filter up to the engine fuel rail.",
+   "location": "Along the frame between tank and engine.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.4,
+    "connects": [
+     "fuel-filter",
+     "intake-manifold",
+     "hood",
+     "ignition-coil"
+    ],
+    "path": [
+     [
+      25,
+      12,
+      -14
+     ],
+     [
+      50,
+      15,
+      -13
+     ],
+     [
+      72,
+      30,
+      -12
+     ],
+     [
+      79,
+      48,
+      -4
+     ],
+     [
+      81,
+      47,
+      4
+     ],
+     [
+      80,
+      42,
+      7
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-return-line",
+   "name": "Fuel return line",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Returns excess fuel from the regulator back to the tank.",
+   "location": "Along the frame between tank and engine.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.4,
+    "connects": [
+     "intake-manifold",
+     "fuel-tank",
+     "hood"
+    ],
+    "path": [
+     [
+      80,
+      40,
+      6
+     ],
+     [
+      80,
+      47,
+      3
+     ],
+     [
+      76,
+      48,
+      -4
+     ],
+     [
+      55,
+      26,
+      -12
+     ],
+     [
+      15,
+      13,
+      -14
+     ],
+     [
+      -22,
+      18,
+      -18
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-filler-neck",
+   "name": "Fuel filler neck",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Pipe from the fuel door to the tank.",
+   "location": "Along the frame between tank and engine.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 1.4,
+    "connects": [
+     "fuel-tank"
+    ],
+    "path": [
+     [
+      -14,
+      14,
+      -6
+     ],
+     [
+      -18,
+      17,
+      -15
+     ],
+     [
+      -22,
+      21,
+      -21
+     ],
+     [
+      -28,
+      32,
+      -31
+     ],
+     [
+      -30,
+      38,
+      -33
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-pump",
+   "name": "Fuel pump (in-tank)",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Electric pump delivering pressurized fuel.",
+   "location": "Inside the fuel tank.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-gauge-sender",
+   "name": "Fuel gauge sending unit",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Float sensor reporting tank level.",
+   "location": "Inside the fuel tank.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "throttle-body",
+   "name": "Throttle body",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Controls air entering the intake; carries the TPS and idle actuator.",
+   "location": "On the intake manifold.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-pressure-regulator",
+   "name": "Fuel pressure regulator",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 1,
+   "function": "Maintains constant fuel-rail pressure.",
+   "location": "On the fuel rail.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-injector",
+   "name": "Fuel injector",
+   "systems": [
+    "fuel"
+   ],
+   "assembly": "Fuel system",
+   "qty": 6,
+   "function": "Sprays metered fuel into each intake port.",
+   "location": "At the six intake ports.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "radiator",
+   "name": "Radiator",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Sheds engine heat to the air; core with top/bottom tanks, filler neck and cap.",
+   "location": "Front of the engine bay, behind the grille.",
+   "ford_part_number": "F2TZ-8005-BA",
+   "model": {
+    "builder": "radiator",
+    "position": [
+     101,
+     34,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "radiator-cap",
+   "name": "Radiator cap",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Pressurizes the cooling system and seals the filler neck.",
+   "location": "On the radiator filler neck.",
+   "ford_part_number": "E5TZ-8100-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cooling-fan",
+   "name": "Cooling fan & clutch",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Engine-driven fan with thermal clutch; pulls air through the radiator.",
+   "location": "On the water-pump shaft, behind the radiator.",
+   "ford_part_number": "F2UZ-8600-A",
+   "model": {
+    "builder": "fanBlade",
+    "position": [
+     99,
+     34,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "water-pump",
+   "name": "Water pump",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Belt-driven pump circulating coolant through the block and radiator.",
+   "location": "Front of the engine block.",
+   "ford_part_number": "F6TZ-8501-KB",
+   "model": {
+    "builder": "waterPump",
+    "position": [
+     97,
+     33,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "thermostat-housing",
+   "name": "Thermostat housing",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Houses the thermostat; the upper radiator hose connects here.",
+   "location": "Front top of the cylinder head.",
+   "ford_part_number": "F5TZ-8592-BC",
+   "model": {
+    "builder": "thermostatHousing",
+    "position": [
+     94,
+     43,
+     1
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "thermostat",
+   "name": "Thermostat",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Temperature valve that regulates coolant flow to the radiator.",
+   "location": "Inside the thermostat housing.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "upper-radiator-hose",
+   "name": "Upper radiator hose",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Carries hot coolant from the thermostat housing to the radiator top tank.",
+   "location": "Thermostat housing to radiator (upper).",
+   "ford_part_number": "F2TZ-8260-E",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#1b1d20",
+    "cableRadius": 0.9,
+    "connects": [
+     "thermostat-housing",
+     "radiator"
+    ],
+    "path": [
+     [
+      95,
+      43.5,
+      1
+     ],
+     [
+      97,
+      44,
+      5
+     ],
+     [
+      98.5,
+      43.5,
+      9
+     ],
+     [
+      99,
+      44,
+      10
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "lower-radiator-hose",
+   "name": "Lower radiator hose",
+   "systems": [
+    "cooling"
+   ],
+   "assembly": "Cooling",
+   "qty": 1,
+   "function": "Returns cooled coolant from the radiator bottom to the water pump.",
+   "location": "Radiator (lower) to water pump.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#1b1d20",
+    "cableRadius": 0.95,
+    "connects": [
+     "water-pump",
+     "radiator"
+    ],
+    "path": [
+     [
+      97,
+      30.2,
+      0
+     ],
+     [
+      97,
+      27,
+      -4
+     ],
+     [
+      98,
+      24,
+      -7
+     ],
+     [
+      99.5,
+      23,
+      -10
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "air-cleaner",
+   "name": "Air cleaner & filter",
+   "systems": [
+    "intake-exhaust",
+    "fuel"
+   ],
+   "assembly": "Intake",
+   "qty": 1,
+   "function": "Houses the air filter element and ducts filtered air to the throttle body.",
+   "location": "Above the intake/throttle body, passenger side.",
+   "ford_part_number": "E7TZ-9601-B",
+   "model": {
+    "builder": "airCleaner",
+    "position": [
+     85,
+     48,
+     7
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "exhaust-headpipe",
+   "name": "Exhaust head pipe",
+   "systems": [
+    "intake-exhaust"
+   ],
+   "assembly": "Exhaust",
+   "qty": 1,
+   "function": "Carries exhaust from the manifold collector down to the catalytic converter.",
+   "location": "Passenger side, manifold to converter.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 1.1,
+    "connects": [
+     "exhaust-manifold",
+     "catalytic-converter",
+     "front-ibeam-l"
+    ],
+    "path": [
+     [
+      87,
+      32,
+      8.5
+     ],
+     [
+      84.5,
+      26,
+      11.5
+     ],
+     [
+      82,
+      17,
+      12.5
+     ],
+     [
+      60,
+      13,
+      13.5
+     ],
+     [
+      46,
+      12.5,
+      14
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "catalytic-converter",
+   "name": "Catalytic converter",
+   "systems": [
+    "intake-exhaust"
+   ],
+   "assembly": "Exhaust",
+   "qty": 1,
+   "function": "Reduces exhaust emissions via a catalyst substrate.",
+   "location": "Under the cab, passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "catalyticConverter",
+    "position": [
+     38,
+     12,
+     14
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "exhaust-midpipe",
+   "name": "Exhaust mid/intermediate pipe",
+   "systems": [
+    "intake-exhaust"
+   ],
+   "assembly": "Exhaust",
+   "qty": 1,
+   "function": "Connects the catalytic converter to the muffler.",
+   "location": "Along the passenger frame rail.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 1.05,
+    "connects": [
+     "catalytic-converter",
+     "muffler",
+     "rear-axle"
+    ],
+    "path": [
+     [
+      31,
+      12,
+      14
+     ],
+     [
+      0,
+      11.5,
+      14
+     ],
+     [
+      -50,
+      11,
+      14
+     ],
+     [
+      -74,
+      11,
+      14
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "muffler",
+   "name": "Muffler",
+   "systems": [
+    "intake-exhaust"
+   ],
+   "assembly": "Exhaust",
+   "qty": 1,
+   "function": "Quiets exhaust pulses.",
+   "location": "Under the bed, passenger side.",
+   "ford_part_number": "F5TZ-5230-AXA",
+   "model": {
+    "builder": "muffler",
+    "position": [
+     -84,
+     11,
+     14
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tailpipe",
+   "name": "Tailpipe",
+   "systems": [
+    "intake-exhaust"
+   ],
+   "assembly": "Exhaust",
+   "qty": 1,
+   "function": "Routes exhaust from the muffler out the rear of the truck.",
+   "location": "Behind the rear axle, passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 1.0,
+    "connects": [
+     "muffler"
+    ],
+    "path": [
+     [
+      -94,
+      11,
+      14
+     ],
+     [
+      -104,
+      13,
+      12
+     ],
+     [
+      -111,
+      15,
+      9
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "steering-box",
+   "name": "Steering gearbox",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Recirculating-ball steering gear: turns the steering shaft into pitman-arm motion.",
+   "location": "Driver-side frame rail, front.",
+   "ford_part_number": "F6AZ-3575-AA",
+   "model": {
+    "builder": "steeringGear",
+    "position": [
+     70,
+     26,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "pitman-arm",
+   "name": "Pitman arm",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Arm on the gearbox sector shaft that drives the drag link.",
+   "location": "Below the steering gearbox.",
+   "ford_part_number": "E7TZ-3590-B",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.8,
+    "connects": [
+     "steering-box",
+     "frame-rail-l",
+     "front-ibeam-r"
+    ],
+    "path": [
+     [
+      70,
+      21,
+      -16
+     ],
+     [
+      68.5,
+      17,
+      -16
+     ],
+     [
+      67,
+      15.5,
+      -16
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "drag-link",
+   "name": "Drag link",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Connects the pitman arm to the left steering knuckle.",
+   "location": "Front steering linkage.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.6,
+    "connects": [
+     "pitman-arm",
+     "front-ibeam-l"
+    ],
+    "path": [
+     [
+      67,
+      15.5,
+      -16
+     ],
+     [
+      65.5,
+      14,
+      -23
+     ],
+     [
+      65,
+      13.5,
+      -28
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tie-rod",
+   "name": "Tie rod",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Ties the two front knuckles together so both wheels steer.",
+   "location": "Front steering linkage.",
+   "ford_part_number": "E7TZ-3281-B",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.55,
+    "connects": [
+     "tie-rod-adjusting-tube",
+     "front-ibeam-l",
+     "front-ibeam-r"
+    ],
+    "path": [
+     [
+      65,
+      13.5,
+      -28
+     ],
+     [
+      65,
+      14,
+      0
+     ],
+     [
+      65,
+      13.5,
+      28
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tie-rod-adjusting-tube",
+   "name": "Tie rod adjusting sleeve",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Threaded sleeve that sets front toe.",
+   "location": "Center of the tie rod.",
+   "ford_part_number": "E7TZ-3281-B",
+   "model": {
+    "kind": "cylinder",
+    "radius": 1,
+    "length": 9,
+    "axis": "z",
+    "position": [
+     65,
+     14,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "steering-column",
+   "name": "Steering column & shaft",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Carries steering input from the wheel down to the gearbox.",
+   "location": "Front steering linkage.",
+   "ford_part_number": "F2UZ-3542-A",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.8,
+    "connects": [
+     "steering-box",
+     "dashboard",
+     "firewall",
+     "instrument-cluster"
+    ],
+    "path": [
+     [
+      70,
+      30,
+      -16
+     ],
+     [
+      60,
+      36,
+      -18
+     ],
+     [
+      48,
+      41,
+      -20
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "steering-wheel",
+   "name": "Steering wheel",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Driver input to the steering system.",
+   "location": "In the cab on the column.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "steeringWheel",
+    "position": [
+     46,
+     41,
+     -20
+    ],
+    "rotation": [
+     0,
+     0,
+     18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ps-pump",
+   "name": "Power steering pump",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Belt-driven pump providing hydraulic steering assist.",
+   "location": "Front of the engine, driver side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "psPump",
+    "position": [
+     92,
+     39,
+     -9
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ps-pressure-hose",
+   "name": "Power steering pressure hose",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "High-pressure feed from the pump to the gearbox.",
+   "location": "Front steering linkage.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.3,
+    "connects": [
+     "ps-pump",
+     "steering-box"
+    ],
+    "path": [
+     [
+      91,
+      38,
+      -9
+     ],
+     [
+      84,
+      30,
+      -12
+     ],
+     [
+      73,
+      28,
+      -15
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ps-return-hose",
+   "name": "Power steering return hose",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Low-pressure return from the gearbox to the pump reservoir.",
+   "location": "Front steering linkage.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.3,
+    "connects": [
+     "steering-box",
+     "ps-pump"
+    ],
+    "path": [
+     [
+      72,
+      29,
+      -16
+     ],
+     [
+      83,
+      33,
+      -11
+     ],
+     [
+      91,
+      40,
+      -9
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "steering-knuckle",
+   "name": "Front steering knuckles",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 2,
+   "function": "Pivoting hub carriers steered by the linkage.",
+   "location": "See assembly.",
+   "ford_part_number": "F4TZ-3105-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "tie-rod-end",
+   "name": "Tie rod ends",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 4,
+   "function": "Ball-jointed ends connecting the tie rod/drag link to the knuckles.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "front-wheel-bearing",
+   "name": "Front wheel bearings",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 2,
+   "function": "Support the front hubs on the spindles.",
+   "location": "See assembly.",
+   "ford_part_number": "E3TZ-1225-AA",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "steering-column-bearing",
+   "name": "Steering column bearing",
+   "systems": [
+    "steering"
+   ],
+   "assembly": "Steering",
+   "qty": 1,
+   "function": "Supports the steering shaft in the column.",
+   "location": "See assembly.",
+   "ford_part_number": "C7SZ-3517-D",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "brake-master",
+   "name": "Brake master cylinder & booster",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Vacuum-assisted master cylinder generating hydraulic brake pressure to all four wheels.",
+   "location": "Driver-side firewall, engine bay.",
+   "ford_part_number": "F4TZ-2140-E",
+   "model": {
+    "builder": "masterBooster",
+    "position": [
+     74,
+     40,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-rotor-l",
+   "name": "Front brake rotor \u2014 left",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 1,
+   "function": "Disc the caliper clamps to slow the left front wheel.",
+   "location": "Front-left wheel hub.",
+   "ford_part_number": "F4UZ-1102-A",
+   "model": {
+    "builder": "brakeRotor",
+    "position": [
+     69,
+     14.4,
+     -30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-rotor-r",
+   "name": "Front brake rotor \u2014 right",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 1,
+   "function": "Disc the caliper clamps to slow the right front wheel.",
+   "location": "Front-right wheel hub.",
+   "ford_part_number": "F4UZ-1102-A",
+   "model": {
+    "builder": "brakeRotor",
+    "position": [
+     69,
+     14.4,
+     30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-caliper-l",
+   "name": "Front brake caliper \u2014 left",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 1,
+   "function": "Hydraulic caliper squeezing the pads against the left rotor.",
+   "location": "Top of the front-left rotor.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "brakeCaliper",
+    "position": [
+     69,
+     20,
+     -30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-caliper-r",
+   "name": "Front brake caliper \u2014 right",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 1,
+   "function": "Hydraulic caliper squeezing the pads against the right rotor.",
+   "location": "Top of the front-right rotor.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "brakeCaliper",
+    "position": [
+     69,
+     20,
+     30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "proportioning-valve",
+   "name": "Brake proportioning / combination valve",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Balances front/rear brake pressure and warns of pressure loss.",
+   "location": "Below the master cylinder.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     2.5,
+     2,
+     3
+    ],
+    "position": [
+     72,
+     33,
+     -15
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "brake-line-front-l",
+   "name": "Brake line \u2014 front left",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Hydraulic line from the master to the left front caliper.",
+   "location": "Brake hydraulic line.",
+   "ford_part_number": "F2TZ-2282-C",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.28,
+    "connects": [
+     "brake-master",
+     "front-caliper-l",
+     "tire-fl",
+     "fender-l"
+    ],
+    "path": [
+     [
+      73,
+      38,
+      -17
+     ],
+     [
+      72,
+      30,
+      -24
+     ],
+     [
+      70,
+      22,
+      -28
+     ],
+     [
+      69,
+      21,
+      -29.5
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "brake-line-front-r",
+   "name": "Brake line \u2014 front right",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Hydraulic line from the master to the right front caliper.",
+   "location": "Brake hydraulic line.",
+   "ford_part_number": "F2TZ-2282-C",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.28,
+    "connects": [
+     "brake-master",
+     "front-caliper-r",
+     "tire-fr",
+     "front-coil-r",
+     "front-ibeam-r"
+    ],
+    "path": [
+     [
+      73,
+      38,
+      -13
+     ],
+     [
+      71,
+      27,
+      -10
+     ],
+     [
+      64,
+      17,
+      -9
+     ],
+     [
+      60,
+      16,
+      0
+     ],
+     [
+      63,
+      13,
+      12
+     ],
+     [
+      67,
+      13.5,
+      22
+     ],
+     [
+      69,
+      19,
+      29.5
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "brake-line-rear",
+   "name": "Brake line \u2014 rear",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Hydraulic line from the master down to the rear axle junction.",
+   "location": "Brake hydraulic line.",
+   "ford_part_number": "F2TZ-2282-C",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.28,
+    "connects": [
+     "brake-master",
+     "rear-axle",
+     "steering-box"
+    ],
+    "path": [
+     [
+      72,
+      35,
+      -15
+     ],
+     [
+      64,
+      22,
+      -15
+     ],
+     [
+      0,
+      20,
+      -14
+     ],
+     [
+      -50,
+      19,
+      -13
+     ],
+     [
+      -66,
+      16,
+      -8
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "brake-pads",
+   "name": "Front brake pads",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 4,
+   "function": "Friction pads pressed against the rotors.",
+   "location": "See assembly.",
+   "ford_part_number": "F5TZ-2001-BC",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "caliper-piston",
+   "name": "Caliper pistons",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Front brakes",
+   "qty": 2,
+   "function": "Hydraulic pistons that push the pads.",
+   "location": "See assembly.",
+   "ford_part_number": "F2TZ-2196-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "rear-brake-shoes",
+   "name": "Rear brake shoes",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Rear brakes",
+   "qty": 4,
+   "function": "Friction shoes that expand against the drums.",
+   "location": "See assembly.",
+   "ford_part_number": "F3UZ-2200-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "rear-wheel-cylinder",
+   "name": "Rear wheel cylinders",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Rear brakes",
+   "qty": 2,
+   "function": "Hydraulic cylinders that push the rear shoes out.",
+   "location": "See assembly.",
+   "ford_part_number": "D1AZ-2261-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "parking-brake-cable",
+   "name": "Parking brake cables",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 2,
+   "function": "Cables that mechanically apply the rear brakes.",
+   "location": "See assembly.",
+   "ford_part_number": "F2TZ-2853-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "parking-brake-control",
+   "name": "Parking brake control",
+   "systems": [
+    "brakes"
+   ],
+   "assembly": "Brakes",
+   "qty": 1,
+   "function": "Pedal/lever that tensions the parking-brake cables.",
+   "location": "See assembly.",
+   "ford_part_number": "E4TZ-2780-D",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "alternator",
+   "name": "Alternator",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 1,
+   "function": "Belt-driven alternator that charges the battery and powers the truck with the engine running.",
+   "location": "Front passenger side of the engine, belt-driven.",
+   "ford_part_number": "F6UZ-10346-VA",
+   "model": {
+    "builder": "alternator",
+    "position": [
+     92,
+     43,
+     13
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "charging-wire",
+   "name": "Alternator output (B+) cable",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 1,
+   "function": "Carries charging current from the alternator to the starter relay/battery.",
+   "location": "Alternator to starter relay.",
+   "ford_part_number": "E9TZ-14431-A",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#7a1f1f",
+    "cableRadius": 0.35,
+    "connects": [
+     "alternator",
+     "starter-relay"
+    ],
+    "path": [
+     [
+      89,
+      44,
+      13
+     ],
+     [
+      89,
+      43,
+      18
+     ],
+     [
+      89,
+      42.5,
+      23
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "drive-belt",
+   "name": "Accessory drive belt",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 1,
+   "function": "V-belt looping the crank, water pump, alternator, and power-steering pulleys.",
+   "location": "Front of the engine.",
+   "ford_part_number": "E8TZ-8620-T",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.35,
+    "connects": [
+     "harmonic-balancer",
+     "water-pump",
+     "alternator",
+     "ps-pump",
+     "crankshaft",
+     "distributor"
+    ],
+    "path": [
+     [
+      95.6,
+      20,
+      0
+     ],
+     [
+      93.5,
+      33,
+      8
+     ],
+     [
+      95,
+      42,
+      12
+     ],
+     [
+      96.5,
+      39,
+      6
+     ],
+     [
+      96.8,
+      31,
+      1
+     ],
+     [
+      96,
+      23,
+      0
+     ],
+     [
+      95.6,
+      20,
+      0
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "voltage-regulator",
+   "name": "Voltage regulator",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 1,
+   "function": "Regulates alternator output voltage (integral to the alternator on this era).",
+   "location": "Integral with the alternator.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "alternator-bearing",
+   "name": "Alternator bearings",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 2,
+   "function": "Internal alternator component.",
+   "location": "Inside the alternator.",
+   "ford_part_number": "C9ZZ-10094-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "alternator-brush",
+   "name": "Alternator brushes",
+   "systems": [
+    "electrical-charging"
+   ],
+   "assembly": "Charging system",
+   "qty": 2,
+   "function": "Internal alternator component.",
+   "location": "Inside the alternator.",
+   "ford_part_number": "D2OZ-10347-B",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "distributor",
+   "name": "Distributor",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Routes high-voltage spark to each cylinder in firing order; carries the cap, rotor, and pickup.",
+   "location": "Front of the engine (gear-driven off the camshaft).",
+   "ford_part_number": "F2TZ-12127-D",
+   "model": {
+    "builder": "distributor",
+    "position": [
+     95,
+     36,
+     4
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "distributor-rotor",
+   "name": "Distributor rotor",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Spins inside the cap, sending spark to each tower in turn.",
+   "location": "Inside the distributor cap.",
+   "ford_part_number": "E6FZ-12200-A",
+   "model": {
+    "builder": "distributorRotor",
+    "position": [
+     95,
+     39.2,
+     4
+    ],
+    "explode": [
+     0,
+     7,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "distributor-cap",
+   "name": "Distributor cap",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Caps the distributor; six towers feed the plug wires.",
+   "location": "On top of the distributor.",
+   "ford_part_number": "E6AZ-12106-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ignition-coil",
+   "name": "Ignition coil",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Steps 12 V up to the tens-of-kV spark voltage.",
+   "location": "On the intake/valve cover, passenger side.",
+   "ford_part_number": "F7PZ-12029-AA",
+   "model": {
+    "builder": "ignitionCoil",
+    "position": [
+     80,
+     46,
+     6
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "spark-plugs",
+   "name": "Spark plugs",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 6,
+   "function": "Ignite the air/fuel charge in each cylinder.",
+   "location": "Threaded into the head, passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "sparkPlugSet",
+    "position": [
+     79,
+     42.5,
+     6.2
+    ],
+    "explode": [
+     0,
+     5,
+     7
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ignition-control-module",
+   "name": "Ignition control module (TFI)",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Switches the coil primary to fire the spark.",
+   "location": "On the distributor / driver fender.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     2.5,
+     1.2,
+     3
+    ],
+    "position": [
+     88,
+     40,
+     -6
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "engine-control-module",
+   "name": "EEC-IV engine control module",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "The engine computer; controls spark timing and fuel.",
+   "location": "Behind the driver kick panel.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     2,
+     6,
+     5
+    ],
+    "position": [
+     44,
+     33,
+     -22
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-1",
+   "name": "Spark plug wire #1",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      80.75,
+      42,
+      6
+     ],
+     [
+      66.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-2",
+   "name": "Spark plug wire #2",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      83.25,
+      42,
+      6
+     ],
+     [
+      71.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-3",
+   "name": "Spark plug wire #3",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      85.75,
+      42,
+      6
+     ],
+     [
+      76.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-4",
+   "name": "Spark plug wire #4",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      88.25,
+      42,
+      6
+     ],
+     [
+      81.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-5",
+   "name": "Spark plug wire #5",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      90.75,
+      42,
+      6
+     ],
+     [
+      86.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "plug-wire-6",
+   "name": "Spark plug wire #6",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Carries high-voltage spark from the cap tower to the plug.",
+   "location": "Distributor cap to spark plug.",
+   "ford_part_number": "E9PZ-12259-J",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "cableRadius": 0.22,
+    "connects": [
+     "distributor",
+     "spark-plugs",
+     "intake-manifold",
+     "ignition-coil",
+     "cylinder-head"
+    ],
+    "path": [
+     [
+      95,
+      40.5,
+      4
+     ],
+     [
+      93.25,
+      42,
+      6
+     ],
+     [
+      91.5,
+      43.2,
+      6.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ignition-pickup",
+   "name": "Ignition pickup / reluctor",
+   "systems": [
+    "ignition"
+   ],
+   "assembly": "Ignition",
+   "qty": 1,
+   "function": "Magnetic pickup that triggers the spark timing.",
+   "location": "Inside the distributor.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "battery",
+   "name": "Battery (12 V)",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting system",
+   "qty": 1,
+   "function": "Energy source for cranking; feeds the starter circuit through heavy cables. Weak batteries and corroded cable ends are the #1 cause of no-crank/slow-crank.",
+   "location": "Engine bay, front passenger side.",
+   "ford_part_number": "",
+   "specs": [
+    "Cranking draw 150\u2013220 A",
+    "12 V, group-size tray, front RH"
+   ],
+   "fsm_sources": [
+    {
+     "label": "Starting & Charging: Service Precautions",
+     "path": "Repair%20and%20Diagnosis/Starting%20and%20Charging/Service%20Precautions/index.html"
+    }
+   ],
+   "issues": [
+    "No crank, no click",
+    "Slow crank",
+    "One click no crank"
+   ],
+   "model": {
+    "builder": "battery",
+    "position": [
+     96,
+     33,
+     22
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cable-ground",
+   "name": "Battery ground cable (negative)",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting system",
+   "qty": 1,
+   "function": "Completes the return path for all starter current; bolts battery negative to the engine block.",
+   "location": "Battery negative post to engine block.",
+   "ford_part_number": "F2TZ-14301-A",
+   "issues": [
+    "Slow crank",
+    "No crank, no click"
+   ],
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#16181c",
+    "connects": [
+     "battery",
+     "engine-block"
+    ],
+    "path": [
+     [
+      92.6,
+      37.4,
+      19.6
+     ],
+     [
+      90,
+      33,
+      16
+     ],
+     [
+      85,
+      28,
+      11
+     ],
+     [
+      80,
+      24.5,
+      8.5
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cable-pos-battery-relay",
+   "name": "Positive cable \u2014 battery to relay",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting system",
+   "qty": 1,
+   "function": "Carries full battery current from the positive post to the starter relay just behind it.",
+   "location": "Battery to starter relay, passenger fender.",
+   "ford_part_number": "F4TZ-14300-A",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#3a1414",
+    "connects": [
+     "battery",
+     "starter-relay"
+    ],
+    "path": [
+     [
+      92.6,
+      37.6,
+      24.4
+     ],
+     [
+      91,
+      40,
+      24
+     ],
+     [
+      89.8,
+      41.6,
+      23.6
+     ],
+     [
+      89,
+      42,
+      23.3
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cable-relay-starter",
+   "name": "Cable \u2014 relay to starter solenoid",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting system",
+   "qty": 1,
+   "function": "Switched battery current from the relay to the starter solenoid 'S' terminal.",
+   "location": "Relay down to the starter on the engine.",
+   "ford_part_number": "E9TZ-14431-A",
+   "issues": [
+    "One click no crank"
+   ],
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#16181c",
+    "connects": [
+     "starter-relay",
+     "starter-motor",
+     "front-coil-r"
+    ],
+    "path": [
+     [
+      89,
+      41,
+      24.7
+     ],
+     [
+      82,
+      33,
+      19
+     ],
+     [
+      73,
+      26,
+      13
+     ],
+     [
+      66,
+      23,
+      10
+     ],
+     [
+      63.5,
+      22,
+      9.5
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-relay",
+   "name": "Starter relay",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting system",
+   "qty": 1,
+   "function": "Electrically-operated switch: the small key signal energizes its coil, which passes full battery current toward the starter. A failed relay classically gives a single loud click.",
+   "location": "Front of the RH fender apron, behind the battery.",
+   "ford_part_number": "E9TZ-11450-B",
+   "fsm_sources": [
+    {
+     "label": "Starter Relay: Locations",
+     "path": "Repair%20and%20Diagnosis/Relays%20and%20Modules/Relays%20and%20Modules%20-%20Starting%20and%20Charging/Starter%20Relay/Locations/index.html"
+    }
+   ],
+   "issues": [
+    "One click no crank"
+   ],
+   "model": {
+    "builder": "relay",
+    "position": [
+     89,
+     40.5,
+     24
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-motor",
+   "name": "Starter motor",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 1,
+   "function": "Permanent-magnet gear-reduction motor; cranks the engine via the drive pinion. The solenoid on top shoves the pinion into the flywheel and dumps full current into the motor.",
+   "location": "Low on the passenger side of the engine, at the bellhousing.",
+   "ford_part_number": "F2TZ-11002-ARM",
+   "specs": [
+    "4\u00bd in dia",
+    "150\u2013180 A under load",
+    "~80 A no-load @ 12 V",
+    "150\u2013290 RPM cranking"
+   ],
+   "fsm_sources": [
+    {
+     "label": "Starter Motor: Description and Operation",
+     "path": "Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Description%20and%20Operation/index.html"
+    }
+   ],
+   "issues": [
+    "No crank",
+    "Slow crank",
+    "Spins but engine won't turn"
+   ],
+   "model": {
+    "builder": "starterMotor",
+    "position": [
+     62,
+     18,
+     9
+    ],
+    "rotation": [
+     0,
+     180,
+     -8
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-solenoid",
+   "name": "Starter solenoid",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 1,
+   "function": "Electromagnetic switch on the starter that engages the drive and closes the high-current motor contacts.",
+   "location": "On top of the starter motor.",
+   "ford_part_number": "F6VZ-11390-AA",
+   "model": {
+    "builder": "starterSolenoid",
+    "position": [
+     62,
+     21,
+     9
+    ],
+    "rotation": [
+     0,
+     180,
+     -8
+    ],
+    "explode": [
+     0,
+     5,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-armature",
+   "name": "Starter armature",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 1,
+   "function": "Rotating winding that produces cranking torque.",
+   "location": "Inside the starter motor case.",
+   "ford_part_number": "F2TZ-11005-A",
+   "model": {
+    "builder": "starterArmature",
+    "position": [
+     62,
+     18,
+     9
+    ],
+    "rotation": [
+     0,
+     180,
+     -8
+    ],
+    "explode": [
+     0,
+     7,
+     2
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-brushes",
+   "name": "Starter brushes",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 4,
+   "function": "Conduct current to the spinning commutator.",
+   "location": "Commutator end of the starter.",
+   "ford_part_number": "E9OZ-11061-C",
+   "specs": [
+    "0.50 in new",
+    "0.25 in wear limit",
+    "40 oz spring tension"
+   ],
+   "model": {
+    "builder": "starterBrushes",
+    "position": [
+     66,
+     18.6,
+     9
+    ],
+    "rotation": [
+     0,
+     180,
+     -8
+    ],
+    "explode": [
+     3,
+     4,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-drive",
+   "name": "Starter drive (Bendix)",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 1,
+   "function": "Overrunning-clutch pinion that meshes the flywheel ring gear, then frees when the engine starts.",
+   "location": "Drive end of the starter.",
+   "ford_part_number": "F5HZ-17508-A",
+   "issues": [
+    "Spins but engine won't turn"
+   ],
+   "model": {
+    "builder": "starterDrive",
+    "position": [
+     57,
+     18.6,
+     9
+    ],
+    "rotation": [
+     0,
+     180,
+     -8
+    ],
+    "explode": [
+     -6,
+     -1,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "starter-bearings",
+   "name": "Starter bushings/bearings",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starter motor",
+   "qty": 2,
+   "function": "Support and align the armature shaft.",
+   "location": "Front and rear of the armature.",
+   "ford_part_number": "E9OZ-11135-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "ignition-switch",
+   "name": "Ignition switch",
+   "systems": [
+    "electrical-starting",
+    "ignition"
+   ],
+   "assembly": "Starting controls",
+   "qty": 1,
+   "function": "Turning the key to START closes the start contacts, sending the control signal to the relay.",
+   "location": "On the steering column.",
+   "ford_part_number": "F4DZ-11572-B",
+   "issues": [
+    "No crank with good battery"
+   ],
+   "model": {
+    "builder": "ignitionSwitch",
+    "position": [
+     52,
+     38,
+     -20
+    ],
+    "rotation": [
+     0,
+     0,
+     18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ignition-lock-cylinder",
+   "name": "Ignition lock cylinder",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting controls",
+   "qty": 1,
+   "function": "Keyed lock that mechanically actuates the ignition switch.",
+   "location": "Steering column lock housing.",
+   "ford_part_number": "F4TZ-1522050-B",
+   "model": {
+    "builder": "ignitionLock",
+    "position": [
+     55,
+     38,
+     -20
+    ],
+    "rotation": [
+     0,
+     0,
+     18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "clutch-switch",
+   "name": "Clutch pedal position (CPP) switch",
+   "systems": [
+    "electrical-starting"
+   ],
+   "assembly": "Starting controls",
+   "qty": 1,
+   "function": "Safety interlock \u2014 the start signal only passes when the clutch is fully depressed.",
+   "location": "At the clutch pedal linkage, driver footwell.",
+   "ford_part_number": "11A152 (basic)",
+   "fsm_sources": [
+    {
+     "label": "Clutch Switch: Description and Operation",
+     "path": "Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Clutch%20Switch/Description%20and%20Operation/index.html"
+    }
+   ],
+   "issues": [
+    "Won't crank with clutch down"
+   ],
+   "model": {
+    "builder": "cppSwitch",
+    "position": [
+     58,
+     27,
+     -19
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cab",
+   "name": "Cab shell (SuperCab)",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Extended passenger compartment shell.",
+   "location": "Middle of the truck, on the frame.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "cabShell",
+    "position": [
+     12,
+     49,
+     0
+    ],
+    "context": true
+   },
+   "fidelity": "massing",
+   "status": "placed"
+  },
+  {
+   "id": "windshield",
+   "name": "Windshield",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Laminated front glass.",
+   "location": "Front of the cab, between the A-pillars.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     1.2,
+     18,
+     64
+    ],
+    "position": [
+     49,
+     58,
+     0
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8",
+    "rotation": [
+     0,
+     0,
+     28
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "window-door-fl",
+   "name": "Door glass \u2014 front left",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Driver front door window.",
+   "location": "Driver front door.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     30,
+     13,
+     0.8
+    ],
+    "position": [
+     20,
+     57,
+     -35.5
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "window-door-fr",
+   "name": "Door glass \u2014 front right",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Passenger front door window.",
+   "location": "Passenger front door.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     30,
+     13,
+     0.8
+    ],
+    "position": [
+     20,
+     57,
+     35.5
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "window-rear-sl",
+   "name": "Side glass \u2014 rear left",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Driver SuperCab side window.",
+   "location": "Driver rear, behind the B-pillar.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     22,
+     13,
+     0.8
+    ],
+    "position": [
+     -16,
+     57,
+     -35.5
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "window-rear-sr",
+   "name": "Side glass \u2014 rear right",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Passenger SuperCab side window.",
+   "location": "Passenger rear, behind the B-pillar.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     22,
+     13,
+     0.8
+    ],
+    "position": [
+     -16,
+     57,
+     35.5
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "back-glass",
+   "name": "Rear cab window",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Fixed back glass.",
+   "location": "Rear wall of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     0.8,
+     13,
+     56
+    ],
+    "position": [
+     -37,
+     57,
+     0
+    ],
+    "opacity": 0.3,
+    "color": "#bcdfe8"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "window-regulator-fl",
+   "name": "Window regulator \u2014 front left",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Raises/lowers the door glass.",
+   "location": "Inside the front left door.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "window-regulator-fr",
+   "name": "Window regulator \u2014 front right",
+   "systems": [
+    "glass"
+   ],
+   "assembly": "Glass",
+   "qty": 1,
+   "function": "Raises/lowers the door glass.",
+   "location": "Inside the front right door.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "cab-roof",
+   "name": "Cab roof panel",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "The roof skin of the SuperCab.",
+   "location": "Top of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "firewall",
+   "name": "Firewall",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Bulkhead between the engine bay and the cab.",
+   "location": "Front of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cab-floor",
+   "name": "Cab floor pan",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Stamped floor of the cab.",
+   "location": "Bottom of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-cab-wall",
+   "name": "Rear cab wall",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Back wall of the cab behind the rear seat.",
+   "location": "Rear of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "cowl",
+   "name": "Cowl panel",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Base of the windshield; houses the wiper/HVAC intake.",
+   "location": "Front of the cab, base of windshield.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "door-front-l",
+   "name": "Door \u2014 left",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Driver front door.",
+   "location": "Driver side, front.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "doorPanel",
+    "position": [
+     24,
+     42,
+     -36
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "door-front-r",
+   "name": "Door \u2014 right",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Passenger front door.",
+   "location": "Passenger side, front.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "doorPanel",
+    "position": [
+     24,
+     42,
+     36
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "mirror-l",
+   "name": "Side mirror \u2014 left",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Driver exterior mirror.",
+   "location": "Driver door.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "sideMirror",
+    "position": [
+     43,
+     47,
+     -37.5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "mirror-r",
+   "name": "Side mirror \u2014 right",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Passenger exterior mirror.",
+   "location": "Passenger door.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "sideMirror",
+    "position": [
+     43,
+     47,
+     37.5
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "a-pillar-l",
+   "name": "A-pillar \u2014 L",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "a-pillar-r",
+   "name": "A-pillar \u2014 R",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "b-pillar-l",
+   "name": "B-pillar \u2014 L",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "b-pillar-r",
+   "name": "B-pillar \u2014 R",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "c-pillar-l",
+   "name": "C-pillar \u2014 L",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "c-pillar-r",
+   "name": "C-pillar \u2014 R",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Roof support post of the cab.",
+   "location": "Cab greenhouse.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rocker-l",
+   "name": "Rocker panel \u2014 L",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Lower sill panel below the doors.",
+   "location": "Cab bottom side.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rocker-r",
+   "name": "Rocker panel \u2014 R",
+   "systems": [
+    "body-cab"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Lower sill panel below the doors.",
+   "location": "Cab bottom side.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "cab"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "bed",
+   "name": "Cargo box shell (Styleside)",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Styleside cargo box.",
+   "location": "Rear of the truck.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bedShell",
+    "position": [
+     -72,
+     36,
+     0
+    ],
+    "context": true
+   },
+   "fidelity": "massing",
+   "status": "placed"
+  },
+  {
+   "id": "bed-floor",
+   "name": "Bed floor",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Stamped cargo floor with ribs.",
+   "location": "Bottom of the box.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "bed"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "bedside-l",
+   "name": "Bedside panel \u2014 left",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Driver-side outer bed panel.",
+   "location": "Driver side of the box.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "bed"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "bedside-r",
+   "name": "Bedside panel \u2014 right",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Passenger-side outer bed panel.",
+   "location": "Passenger side of the box.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "bed"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "bed-headboard",
+   "name": "Bed front wall (headboard)",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Front wall of the box behind the cab.",
+   "location": "Front of the box.",
+   "ford_part_number": "",
+   "model": {
+    "render": false,
+    "subsumedBy": "bed"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tailgate",
+   "name": "Tailgate",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Drop-down rear gate with the FORD stamping.",
+   "location": "Rear of the box.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "tailgate",
+    "position": [
+     -110,
+     38,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "wheel-well-l",
+   "name": "Bed wheel well \u2014 left",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Inner fender housing over the driver rear tire.",
+   "location": "Inside the box, driver rear.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelWell",
+    "position": [
+     -69,
+     33,
+     -29
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "wheel-well-r",
+   "name": "Bed wheel well \u2014 right",
+   "systems": [
+    "body-bed"
+   ],
+   "assembly": "Body",
+   "qty": 1,
+   "function": "Inner fender housing over the passenger rear tire.",
+   "location": "Inside the box, passenger rear.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "wheelWell",
+    "position": [
+     -69,
+     33,
+     29
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "hood",
+   "name": "Hood",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Engine-bay closure panel.",
+   "location": "Over the engine bay.",
+   "ford_part_number": "F2TZ-16700-A",
+   "model": {
+    "builder": "hoodPanel",
+    "position": [
+     80,
+     48.5,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fender-l",
+   "name": "Front fender \u2014 left",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Front body panel over the driver wheel.",
+   "location": "Driver front, beside the hood.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "fender",
+    "position": [
+     69,
+     24,
+     -32
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fender-r",
+   "name": "Front fender \u2014 right",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Front body panel over the passenger wheel.",
+   "location": "Passenger front, beside the hood.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "fender",
+    "position": [
+     69,
+     24,
+     32
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "front-valance",
+   "name": "Front valance / air dam",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Lower front panel below the bumper.",
+   "location": "Below the front bumper.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     2,
+     5,
+     60
+    ],
+    "position": [
+     105,
+     15,
+     0
+    ],
+    "opacity": 0.6,
+    "color": "#cfd4da"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "molding-l",
+   "name": "Body side molding \u2014 left",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Protective trim strip along the driver side.",
+   "location": "Driver doors + bedside.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     150,
+     1.5,
+     0.6
+    ],
+    "position": [
+     -20,
+     38,
+     -36.6
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "molding-r",
+   "name": "Body side molding \u2014 right",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Protective trim strip along the passenger side.",
+   "location": "Passenger doors + bedside.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     150,
+     1.5,
+     0.6
+    ],
+    "position": [
+     -20,
+     38,
+     36.6
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "emblem-l",
+   "name": "XLT fender badge \u2014 left",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Trim-level nameplate.",
+   "location": "Driver front fender.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     0.5,
+     1,
+     4
+    ],
+    "position": [
+     60,
+     30,
+     -33.5
+    ],
+    "color": "#9aa3ad"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "emblem-r",
+   "name": "XLT fender badge \u2014 right",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Trim-level nameplate.",
+   "location": "Passenger front fender.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     0.5,
+     1,
+     4
+    ],
+    "position": [
+     60,
+     30,
+     33.5
+    ],
+    "color": "#9aa3ad"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "antenna",
+   "name": "Radio antenna",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Fender-mounted radio mast.",
+   "location": "Passenger front fender.",
+   "ford_part_number": "F2TZ-18813-A",
+   "model": {
+    "kind": "cylinder",
+    "radius": 0.18,
+    "length": 26,
+    "axis": "y",
+    "position": [
+     86,
+     46,
+     31
+    ],
+    "rotation": [
+     0,
+     0,
+     -12
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "mud-flap-rl",
+   "name": "Mud flap \u2014 rear left",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Splash guard behind the driver rear wheel.",
+   "location": "Behind the driver rear tire.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     1,
+     8,
+     8
+    ],
+    "position": [
+     -82,
+     18,
+     -34
+    ],
+    "color": "#16181c"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "mud-flap-rr",
+   "name": "Mud flap \u2014 rear right",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Splash guard behind the passenger rear wheel.",
+   "location": "Behind the passenger rear tire.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     1,
+     8,
+     8
+    ],
+    "position": [
+     -82,
+     18,
+     34
+    ],
+    "color": "#16181c"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "grille",
+   "name": "Grille (argent + Ford oval)",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Front fascia opening for airflow.",
+   "location": "Front of the truck.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "grilleAssembly",
+    "position": [
+     104,
+     38,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "placed"
+  },
+  {
+   "id": "front-bumper",
+   "name": "Front bumper (chrome)",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Front impact bar.",
+   "location": "Front of the truck.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "gltf",
+    "src": "/models/front-bumper.glb",
+    "position": [
+     106,
+     20,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "placed"
+  },
+  {
+   "id": "rear-bumper",
+   "name": "Rear step bumper (chrome)",
+   "systems": [
+    "exterior-trim"
+   ],
+   "assembly": "Exterior",
+   "qty": 1,
+   "function": "Rear impact bar / step.",
+   "location": "Rear of the truck.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "bumperBar",
+    "position": [
+     -112,
+     22,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "placed"
+  },
+  {
+   "id": "bench-seat",
+   "name": "Front bench seat",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Front seating.",
+   "location": "Front of the cab.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "seat",
+    "seatW": 60,
+    "position": [
+     8,
+     32,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-jump-seat-l",
+   "name": "Rear jump seat \u2014 left",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Fold-down side jump seat in the SuperCab extended-cab area.",
+   "location": "Driver side, behind the front bench.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "seat",
+    "seatW": 14,
+    "position": [
+     -20,
+     31,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "rear-jump-seat-r",
+   "name": "Rear jump seat \u2014 right",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Fold-down side jump seat in the SuperCab extended-cab area.",
+   "location": "Passenger side, behind the front bench.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "seat",
+    "seatW": 14,
+    "position": [
+     -20,
+     31,
+     16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "pedals",
+   "name": "Pedal assembly",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Clutch, brake, and accelerator pedals.",
+   "location": "Driver footwell.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pedalSet",
+    "position": [
+     58,
+     30,
+     -20
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "carpet",
+   "name": "Carpet / floor covering",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Molded cabin carpet.",
+   "location": "Cab floor.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     88,
+     0.6,
+     64
+    ],
+    "position": [
+     10,
+     28.8,
+     0
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "door-trim-fl",
+   "name": "Door trim panel \u2014 front left",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Interior trim on the driver front door.",
+   "location": "Inboard of the front-left door.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     34,
+     20,
+     1
+    ],
+    "position": [
+     24,
+     40,
+     -34
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "door-trim-fr",
+   "name": "Door trim panel \u2014 front right",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Interior trim on the passenger front door.",
+   "location": "Inboard of the front-right door.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     34,
+     20,
+     1
+    ],
+    "position": [
+     24,
+     40,
+     34
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "headliner",
+   "name": "Headliner",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Cabin ceiling trim.",
+   "location": "Underside of the roof.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     84,
+     0.6,
+     64
+    ],
+    "position": [
+     4,
+     65,
+     0
+    ],
+    "color": "#cfd4da",
+    "opacity": 0.7
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "sun-visor-l",
+   "name": "Sun visor \u2014 left",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Driver sun visor.",
+   "location": "Above the windshield, driver.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     10,
+     0.6,
+     16
+    ],
+    "position": [
+     52,
+     62,
+     -15
+    ],
+    "rotation": [
+     0,
+     0,
+     20
+    ],
+    "color": "#cfd4da"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "sun-visor-r",
+   "name": "Sun visor \u2014 right",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Passenger sun visor.",
+   "location": "Above the windshield, passenger.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     10,
+     0.6,
+     16
+    ],
+    "position": [
+     52,
+     62,
+     15
+    ],
+    "rotation": [
+     0,
+     0,
+     20
+    ],
+    "color": "#cfd4da"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "kick-panel-l",
+   "name": "Kick panel \u2014 left",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Lower interior panel, driver footwell.",
+   "location": "Driver footwell.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     10,
+     12,
+     1
+    ],
+    "position": [
+     55,
+     34,
+     -33
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "kick-panel-r",
+   "name": "Kick panel \u2014 right",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Lower interior panel, passenger footwell.",
+   "location": "Passenger footwell.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     10,
+     12,
+     1
+    ],
+    "position": [
+     55,
+     34,
+     33
+    ],
+    "color": "#3a3f47"
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "seat-belts",
+   "name": "Seat belts",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Three-point belts for the occupants.",
+   "location": "At the seats / B-pillars.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "headlamp-l",
+   "name": "Headlamp \u2014 left",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Sealed-beam headlight, driver side.",
+   "location": "Front driver corner.",
+   "ford_part_number": "F2TZ-13007-A",
+   "model": {
+    "builder": "headlamp",
+    "position": [
+     103,
+     36,
+     -24
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "headlamp-r",
+   "name": "Headlamp \u2014 right",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Sealed-beam headlight, passenger side.",
+   "location": "Front passenger corner.",
+   "ford_part_number": "F2TZ-13007-A",
+   "model": {
+    "builder": "headlamp",
+    "position": [
+     103,
+     36,
+     24
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "parking-light-l",
+   "name": "Park/turn light \u2014 left",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Front park & turn-signal lamp, driver side.",
+   "location": "Front driver, beside headlamp.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     1.6,
+     2.4,
+     4
+    ],
+    "position": [
+     104,
+     31,
+     -28
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "parking-light-r",
+   "name": "Park/turn light \u2014 right",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Front park & turn-signal lamp, passenger side.",
+   "location": "Front passenger, beside headlamp.",
+   "ford_part_number": "",
+   "model": {
+    "kind": "box",
+    "size": [
+     1.6,
+     2.4,
+     4
+    ],
+    "position": [
+     104,
+     31,
+     28
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tail-light-l",
+   "name": "Tail light \u2014 left",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Brake/tail/turn lamp, driver side.",
+   "location": "Rear driver corner.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "tailLight",
+    "position": [
+     -112,
+     32,
+     -30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "tail-light-r",
+   "name": "Tail light \u2014 right",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Brake/tail/turn lamp, passenger side.",
+   "location": "Rear passenger corner.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "tailLight",
+    "position": [
+     -112,
+     32,
+     30
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "horn",
+   "name": "Horn",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Lighting",
+   "qty": 1,
+   "function": "Electric horn behind the grille.",
+   "location": "Front of the engine bay.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "horn",
+    "position": [
+     92,
+     42,
+     -16
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "instrument-cluster",
+   "name": "Instrument cluster",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Instrument panel",
+   "qty": 1,
+   "function": "Speedometer, fuel, temperature, and oil-pressure gauges.",
+   "location": "In the dash ahead of the driver.",
+   "ford_part_number": "F4TZ-10849-B",
+   "model": {
+    "builder": "instrumentCluster",
+    "position": [
+     51,
+     40,
+     -18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuse-box",
+   "name": "Fuse / junction box",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Central fuses and relays for the body circuits.",
+   "location": "Driver kick panel / firewall.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "fuseBox",
+    "position": [
+     60,
+     34,
+     -22
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "wiper-motor",
+   "name": "Windshield wiper motor",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Wiper/washer",
+   "qty": 1,
+   "function": "Drives the wiper arms across the windshield.",
+   "location": "At the cowl, base of the windshield.",
+   "ford_part_number": "F5HZ-17508-A",
+   "model": {
+    "builder": "wiperMotor",
+    "position": [
+     58,
+     46,
+     -6
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "harness-rear",
+   "name": "Rear body harness",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Wiring",
+   "qty": 1,
+   "function": "Powers the tail lights, fuel sender, and rear circuits.",
+   "location": "Body wiring run.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#23262b",
+    "cableRadius": 0.4,
+    "connects": [
+     "fuse-box",
+     "tail-light-l",
+     "frame-rail-l",
+     "bed-floor",
+     "tailgate"
+    ],
+    "path": [
+     [
+      60,
+      32,
+      -20
+     ],
+     [
+      20,
+      22,
+      -15
+     ],
+     [
+      -60,
+      24,
+      -15
+     ],
+     [
+      -100,
+      29,
+      -24
+     ],
+     [
+      -110,
+      31,
+      -29
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "harness-front",
+   "name": "Front lighting harness",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Wiring",
+   "qty": 1,
+   "function": "Powers the headlamps, park lights, and horn.",
+   "location": "Body wiring run.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "color": "#23262b",
+    "cableRadius": 0.4,
+    "connects": [
+     "fuse-box",
+     "headlamp-l"
+    ],
+    "path": [
+     [
+      60,
+      35,
+      -20
+     ],
+     [
+      80,
+      34,
+      -18
+     ],
+     [
+      98,
+      35,
+      -20
+     ],
+     [
+      103,
+      36,
+      -23
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "fuel-gauge",
+   "name": "Fuel gauge",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "F2TZ-9280-E",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "temp-gauge",
+   "name": "Temperature gauge",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "F8TZ-10883-AA",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "oil-pressure-gauge",
+   "name": "Oil pressure gauge",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "speedometer-cable",
+   "name": "Speedometer cable",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "C5AZ-17262-B",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "headlamp-switch",
+   "name": "Headlamp switch",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "turn-signal-switch",
+   "name": "Turn signal switch",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "turn-flasher",
+   "name": "Turn signal flasher",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "C5AZ-13350-B",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "hazard-flasher",
+   "name": "Hazard flasher",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "D1FZ-13350-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "brake-light-switch",
+   "name": "Brake light switch",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "E9AZ-13480-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "washer-pump",
+   "name": "Windshield washer pump",
+   "systems": [
+    "electrical-body"
+   ],
+   "assembly": "Body electrical",
+   "qty": 1,
+   "function": "Body electrical component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "heater-box",
+   "name": "Heater / A-C plenum box",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "The HVAC case behind the dash holding the heater core, evaporator, and blend doors.",
+   "location": "Behind the dash, passenger side.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "heaterBox",
+    "position": [
+     44,
+     38,
+     12
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "heater-core",
+   "name": "Heater core",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Small radiator that warms cabin air using engine coolant.",
+   "location": "Inside the HVAC box.",
+   "ford_part_number": "E9TZ-18476-B",
+   "model": {
+    "builder": "finnedCore",
+    "position": [
+     44,
+     38,
+     13
+    ],
+    "explode": [
+     0,
+     0,
+     13
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "evaporator-core",
+   "name": "Evaporator core",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Cools/dehumidifies cabin air as refrigerant boils inside it.",
+   "location": "Inside the HVAC box.",
+   "ford_part_number": "F8TZ-19860-BA",
+   "model": {
+    "builder": "finnedCore",
+    "position": [
+     46,
+     37,
+     11
+    ],
+    "rotation": [
+     0,
+     90,
+     0
+    ],
+    "explode": [
+     0,
+     -13,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "blower-motor",
+   "name": "Blower motor & fan",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Squirrel-cage fan that pushes air through the HVAC box.",
+   "location": "On the HVAC box, passenger side.",
+   "ford_part_number": "F2TZ-18527-A",
+   "model": {
+    "builder": "blowerMotor",
+    "position": [
+     42,
+     33,
+     18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-compressor",
+   "name": "A/C compressor",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Belt-driven pump that compresses the refrigerant.",
+   "location": "Front passenger side of the engine, low.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "acCompressor",
+    "position": [
+     88,
+     24,
+     12
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-condenser",
+   "name": "A/C condenser",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Sheds refrigerant heat; mounted ahead of the radiator.",
+   "location": "In front of the radiator.",
+   "ford_part_number": "F4TZ-19712-B",
+   "model": {
+    "builder": "acCondenser",
+    "position": [
+     103.5,
+     34,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "accumulator",
+   "name": "Accumulator / drier",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Stores refrigerant and removes moisture.",
+   "location": "Passenger inner fender.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "accumulator",
+    "position": [
+     97,
+     37,
+     18
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "hvac-control",
+   "name": "HVAC control head",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Dash controls for temperature, mode, and fan.",
+   "location": "Center of the dash.",
+   "ford_part_number": "F2TZ-18549-A",
+   "model": {
+    "kind": "box",
+    "size": [
+     2,
+     3,
+     6
+    ],
+    "position": [
+     50,
+     38,
+     5
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-line-comp-cond",
+   "name": "A/C discharge line (compressor\u2192condenser)",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Hot high-pressure refrigerant to the condenser.",
+   "location": "A/C / heater plumbing.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.4,
+    "cableRadius": 0.4,
+    "connects": [
+     "ac-compressor",
+     "ac-condenser",
+     "radiator",
+     "cooling-fan",
+     "grille"
+    ],
+    "path": [
+     [
+      88,
+      26,
+      13
+     ],
+     [
+      96,
+      30,
+      15
+     ],
+     [
+      103,
+      32,
+      11
+     ],
+     [
+      103.5,
+      33,
+      9
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-line-cond-accum",
+   "name": "A/C liquid line (condenser\u2192accumulator)",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Liquid refrigerant to the accumulator.",
+   "location": "A/C / heater plumbing.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "cable",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.35,
+    "cableRadius": 0.35,
+    "connects": [
+     "ac-condenser",
+     "accumulator",
+     "radiator"
+    ],
+    "path": [
+     [
+      103,
+      38,
+      4
+     ],
+     [
+      100,
+      38,
+      12
+     ],
+     [
+      97,
+      38,
+      17
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-line-accum-evap",
+   "name": "A/C suction line (accumulator\u2192evaporator)",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Refrigerant to the evaporator in the cab.",
+   "location": "A/C / heater plumbing.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.4,
+    "cableRadius": 0.4,
+    "connects": [
+     "accumulator",
+     "evaporator-core",
+     "dashboard",
+     "heater-box"
+    ],
+    "path": [
+     [
+      97,
+      36,
+      18
+     ],
+     [
+      70,
+      33,
+      16
+     ],
+     [
+      48,
+      37,
+      12
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "heater-hose-supply",
+   "name": "Heater hose (supply)",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Hot coolant from the engine to the heater core.",
+   "location": "A/C / heater plumbing.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.45,
+    "cableRadius": 0.45,
+    "connects": [
+     "intake-manifold",
+     "heater-core",
+     "dashboard",
+     "heater-box"
+    ],
+    "path": [
+     [
+      80,
+      41,
+      5
+     ],
+     [
+      62,
+      39,
+      10
+     ],
+     [
+      46,
+      38,
+      13
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "heater-hose-return",
+   "name": "Heater hose (return)",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "Coolant return from the heater core to the water pump.",
+   "location": "A/C / heater plumbing.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "pipe",
+    "position": [
+     0,
+     0,
+     0
+    ],
+    "pipeRadius": 0.45,
+    "cableRadius": 0.45,
+    "connects": [
+     "heater-core",
+     "water-pump",
+     "dashboard",
+     "heater-box",
+     "engine-block",
+     "exhaust-manifold",
+     "intake-manifold"
+    ],
+    "path": [
+     [
+      45,
+      37,
+      13
+     ],
+     [
+      64,
+      40,
+      9
+     ],
+     [
+      86,
+      37,
+      5
+     ],
+     [
+      93,
+      34,
+      4
+     ]
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "ac-expansion-valve",
+   "name": "A/C expansion/orifice",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "HVAC component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "heater-control-valve",
+   "name": "Heater control valve",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "HVAC component.",
+   "location": "See assembly.",
+   "ford_part_number": "D4AZ-18495-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "blower-switch",
+   "name": "Blower motor switch",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "HVAC component.",
+   "location": "See assembly.",
+   "ford_part_number": "F4DZ-19986-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "evap-temp-sensor",
+   "name": "Evaporator temp sensor",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "HVAC component.",
+   "location": "See assembly.",
+   "ford_part_number": "E2FZ-19618-A",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "compressor-clutch",
+   "name": "Compressor clutch & coil",
+   "systems": [
+    "hvac"
+   ],
+   "assembly": "HVAC",
+   "qty": 1,
+   "function": "HVAC component.",
+   "location": "See assembly.",
+   "ford_part_number": "",
+   "model": {
+    "placement": "internal"
+   },
+   "fidelity": "massing",
+   "status": "documented"
+  },
+  {
+   "id": "dashboard",
+   "name": "Dashboard / instrument panel",
+   "systems": [
+    "interior"
+   ],
+   "assembly": "Interior",
+   "qty": 1,
+   "function": "Houses gauges, controls, HVAC, glovebox.",
+   "location": "Front of the cab at the firewall.",
+   "ford_part_number": "",
+   "model": {
+    "builder": "dashPanel",
+    "position": [
+     50,
+     40,
+     0
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "axle-shaft-l",
+   "name": "Axle shaft \u2014 left",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Transmits torque from the differential to the rear wheel.",
+   "location": "Driver axle tube.",
+   "ford_part_number": "E5TZ-4234-E",
+   "model": {
+    "builder": "axleShaft",
+    "position": [
+     -69,
+     14,
+     -14
+    ],
+    "rotation": [
+     0,
+     180,
+     0
+    ],
+    "explode": [
+     0,
+     0,
+     -14
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  },
+  {
+   "id": "axle-shaft-r",
+   "name": "Axle shaft \u2014 right",
+   "systems": [
+    "rear-axle"
+   ],
+   "assembly": "Rear axle",
+   "qty": 1,
+   "function": "Transmits torque from the differential to the rear wheel.",
+   "location": "Passenger axle tube.",
+   "ford_part_number": "E5TZ-4234-E",
+   "model": {
+    "builder": "axleShaft",
+    "position": [
+     -69,
+     14,
+     14
+    ],
+    "rotation": [
+     0,
+     0,
+     0
+    ],
+    "explode": [
+     0,
+     0,
+     14
+    ]
+   },
+   "fidelity": "refined",
+   "status": "documented"
+  }
+ ]
+}

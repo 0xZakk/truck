@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.ford.com)",
+      "WebFetch(domain:charm.li)",
+      "Bash(git init *)",
+      "Bash(mkdir -p manuals/factory-service-manual manuals/owners-manual manuals/engine-300-i6 manuals/wiring-electrical docs)",
+      "Bash(curl -sL --max-time 60 \"https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/\" -o /tmp/charm_page.html -w \"HTTP %{http_code}, %{size_download} bytes\\\\n\")",
+      "Read(//tmp/**)",
+      "Bash(curl -L --max-time 300 \"https://charm.li/bundle/long-names/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/\" -o fsm-bundle.zip -w \"HTTP %{http_code}, %{size_download} bytes, type=%{content_type}\\\\n\")",
+      "Bash(unzip -q fsm-bundle.zip)",
+      "Bash(rm fsm-bundle.zip)",
+      "Bash(curl -sIL --max-time 60 \"https://xr793.com/wp-content/uploads/2022/12/1994-Ford-Pickups-Chassis.pdf\")",
+      "Bash(curl -sL --max-time 60 \"https://archive.org/advancedsearch.php?q=ford+f-150+owner+guide+1994&fl[]=identifier&fl[]=title&fl[]=year&rows=15&output=json\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\)['response']['docs']; [print\\(f\\\\\"{r.get\\('year','????'\\)} | {r['identifier']} | {r.get\\('title',''\\)[:65]}\\\\\"\\) for r in d]\")",
+      "Bash(curl -sL --max-time 60 \"https://archive.org/metadata/chiltonsfordfull0000unse_s7g2\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); m=d.get\\('metadata',{}\\); print\\('access-restricted:', m.get\\('access-restricted-item'\\)\\); print\\('collection:', m.get\\('collection'\\)\\); print\\('downloadable PDFs:', [f['name'] for f in d.get\\('files',[]\\) if f['name'].lower\\(\\).endswith\\('.pdf'\\)][:5]\\)\")"
+    ]
+  }
+}
