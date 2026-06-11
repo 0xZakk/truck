@@ -48,7 +48,13 @@ controls.target.set(0, 36, 0);
 controls.enableDamping = true;
 controls.dampingFactor = 0.08;
 controls.maxDistance = 900;
-controls.minDistance = 40;
+controls.minDistance = 12;
+// free movement: right-drag / two-finger pans, arrow keys walk the truck,
+// double-click recenters the orbit on whatever you hit
+controls.screenSpacePanning = true;
+controls.keyPanSpeed = 22;
+controls.keys = { LEFT: 'ArrowLeft', UP: 'ArrowUp', RIGHT: 'ArrowRight', BOTTOM: 'ArrowDown' };
+controls.listenToKeyEvents(window);
 
 // lighting — studio key + fill
 scene.add(new THREE.HemisphereLight('#ffffff', '#aeb9c6', 0.6));
@@ -81,7 +87,9 @@ scene.add(grid);
 let SYSTEMS = {};            // id -> {name,color,...}
 const meshes = [];           // all part meshes
 let selected = null;
-let activeSystem = null;
+const activeSet = new Set(); // selected systems (empty = whole truck)
+let bodyHidden = false;      // body-panels toggle (see the engine without the shell)
+const BODY_SYSTEMS = new Set(['body-cab', 'body-bed', 'exterior-trim', 'glass']);
 let camPosGoal = null, camTgtGoal = null;   // camera tween targets
 
 const colorOf = (part) =>
@@ -238,7 +246,7 @@ function applyExplode() {
 
 function applyAppearance(top) {
   const sel = top === selected;
-  const ghost = top.userData.context && !!activeSystem;  // body → faint cage when a system is isolated
+  const ghost = top.userData.context && activeSet.size > 0 && !partInSet(top.userData.part);
   top.traverse(o => { if (o.isMesh) o.castShadow = ghost ? false : !!o.userData.cast; });
   top.userData.tint.forEach(t => {
     if (t.edge) {
@@ -269,7 +277,7 @@ function pick(ev) {
   ptr.y = -((ev.clientY - r.top) / r.height) * 2 + 1;
   ray.setFromCamera(ptr, camera);
   const hits = ray.intersectObjects(clickTargets(), true);
-  for (const h of hits) { const t = resolveTop(h.object); if (t) return t; }
+  for (const h of hits) { const t = resolveTop(h.object); if (t) return { top: t, point: h.point.clone() }; }
   return null;
 }
 
@@ -280,10 +288,19 @@ renderer.domElement.addEventListener('pointerup', e => {
   const moved = Math.hypot(e.clientX - downXY[0], e.clientY - downXY[1]);
   downXY = null;
   if (moved > 5) return;               // was a drag, not a click
-  select(pick(e));
+  const h = pick(e);
+  select(h && h.top);
 });
 renderer.domElement.addEventListener('pointermove', e => {
   renderer.domElement.style.cursor = pick(e) ? 'pointer' : 'grab';
+});
+// double-click: recenter the orbit on whatever was hit and ease partway toward it
+renderer.domElement.addEventListener('dblclick', e => {
+  const h = pick(e);
+  if (!h) return;
+  const delta = h.point.clone().sub(controls.target);
+  camTgtGoal = h.point;
+  camPosGoal = camera.position.clone().add(delta.multiplyScalar(0.55));
 });
 
 function select(mesh) {
@@ -334,13 +351,13 @@ function frameActive() {
   _box.makeEmpty();
   meshes.forEach(m => {
     if (!m.visible) return;
-    if (activeSystem && m.userData.context) return;  // frame the system, not the whole body shell
+    if (activeSet.size && m.userData.context && !partInSet(m.userData.part)) return;  // frame the selection, not the ghost cage
     _box.expandByObject(m);
   });
   if (_box.isEmpty()) return;
   const center = _box.getCenter(new THREE.Vector3());
   const maxDim = Math.max(..._box.getSize(_sz).toArray());
-  const dist = (maxDim * (activeSystem ? 1.05 : 1.3)) / (2 * Math.tan((camera.fov * DEG) / 2)) + maxDim * 0.15;
+  const dist = (maxDim * (activeSet.size ? 1.05 : 1.3)) / (2 * Math.tan((camera.fov * DEG) / 2)) + maxDim * 0.15;
   let dir = camera.position.clone().sub(controls.target);
   if (dir.lengthSq() < 1) dir.set(1.4, 0.9, 1.4);
   dir.normalize();
@@ -348,18 +365,46 @@ function frameActive() {
   camTgtGoal = center;
 }
 
-function setSystem(id) {
-  activeSystem = id;
+const partInSet = part => part.systems.some(s => activeSet.has(s));
+const isBodyPart = part => part.systems.some(s => BODY_SYSTEMS.has(s));
+
+function applyVisibility() {
   meshes.forEach(m => {
-    const inSys = !id || m.userData.part.systems.includes(id);
-    // keep the body shell visible as context; hide other systems' parts entirely
-    m.visible = !id || inSys || m.userData.context;
+    const part = m.userData.part;
+    let vis;
+    if (activeSet.size) {
+      // explicitly selected systems always show (even body ones);
+      // the body shell stays as a ghost cage unless it's toggled off
+      vis = partInSet(part) || (m.userData.context && !bodyHidden);
+    } else {
+      vis = !(bodyHidden && (m.userData.context || isBodyPart(part)));
+    }
+    m.visible = vis;
     m.userData.dim = false;
   });
   if (selected && !selected.visible) { selected = null; hideInfo(); }
   refreshAll();
-  frameActive();   // fly the camera to the isolated system (or whole truck)
-  document.querySelectorAll('.sysbtn').forEach(b => b.classList.toggle('active', b.dataset.sys === (id || '__all')));
+  document.querySelectorAll('.sysbtn[data-sys]').forEach(b =>
+    b.classList.toggle('active', b.dataset.sys === '__all' ? activeSet.size === 0 : activeSet.has(b.dataset.sys)));
+  const bb = document.getElementById('bodybtn');
+  if (bb) {
+    bb.classList.toggle('active', !bodyHidden);
+    bb.textContent = bodyHidden ? '🫥 Body panels hidden' : '🚚 Body panels shown';
+  }
+}
+
+// click a system to ADD it to the view; click again to REMOVE it. Empty = whole truck.
+function toggleSystem(id) {
+  if (!id) activeSet.clear();
+  else if (activeSet.has(id)) activeSet.delete(id);
+  else activeSet.add(id);
+  applyVisibility();
+  frameActive();   // fly the camera to the visible selection (or whole truck)
+}
+
+function toggleBody() {
+  bodyHidden = !bodyHidden;
+  applyVisibility();
 }
 
 function buildRail() {
@@ -372,8 +417,10 @@ function buildRail() {
         <span class="sw" style="background:${SYSTEMS[id].color}"></span>${esc(SYSTEMS[id].name)}
         <span class="ct">${counts[id]}</span></button>`).join('');
   document.getElementById('allbtn').dataset.sys = '__all';
-  document.getElementById('allbtn').onclick = () => setSystem(null);
-  list.querySelectorAll('.sysbtn').forEach(b => b.onclick = () => setSystem(b.dataset.sys));
+  document.getElementById('allbtn').onclick = () => toggleSystem(null);
+  list.querySelectorAll('.sysbtn').forEach(b => b.onclick = () => toggleSystem(b.dataset.sys));
+  const bb = document.getElementById('bodybtn');
+  if (bb) bb.onclick = toggleBody;
 }
 
 // ---------- diagnostic views (URL params: ?iso=<sys>&view=side|side2|top|front|iso&snap&axes&explode=0..1) ----------
@@ -383,12 +430,12 @@ function setView(name, only) {
   meshes.forEach(m => {
     if (!m.visible) return;
     if (only && m !== only) return;
-    if (!only && activeSystem && m.userData.context) return;  // frame the system, not the cage
+    if (!only && activeSet.size && m.userData.context && !partInSet(m.userData.part)) return;  // frame the selection, not the cage
     _box.expandByObject(m);
   });
   if (_box.isEmpty()) return;
   const c = _box.getCenter(new THREE.Vector3());
-  const d = Math.max(..._box.getSize(_sz).toArray()) * (activeSystem ? 1.15 : 1.5) + 14;
+  const d = Math.max(..._box.getSize(_sz).toArray()) * (activeSet.size ? 1.15 : 1.5) + 14;
   let pos, up = new THREE.Vector3(0, 1, 0);
   if (name === 'side') pos = c.clone().add(new THREE.Vector3(0, 0, d));        // passenger side
   else if (name === 'side2') pos = c.clone().add(new THREE.Vector3(0, 0, -d)); // driver side
@@ -402,7 +449,10 @@ function setView(name, only) {
 function applyDebug() {
   const q = new URLSearchParams(location.search);
   if (q.has('axes')) scene.add(new THREE.AxesHelper(80));   // red=+X(fwd) green=+Y(up) blue=+Z(right)
-  const iso = q.get('iso'); if (iso) setSystem(iso);
+  if (q.has('hidebody')) bodyHidden = true;
+  const iso = q.get('iso');                                  // comma list, e.g. ?iso=engine,cooling
+  if (iso) iso.split(',').forEach(s => activeSet.add(s.trim()));
+  if (iso || q.has('hidebody')) { applyVisibility(); frameActive(); }
   const sel = q.get('sel'); let selMesh = null;
   if (sel) { selMesh = meshes.find(x => x.userData.part.id === sel); if (selMesh) select(selMesh); }
   const view = q.get('view'); if (view) setView(view, q.has('zoom') ? selMesh : null);

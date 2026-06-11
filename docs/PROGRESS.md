@@ -2,6 +2,17 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 — Viewer controls (owner request)
+- **Body-panels toggle** (`🚚` button / `?hidebody`): hides shells + body-cab/
+  body-bed/exterior-trim/glass so the running gear and engine are unobstructed.
+- **Multi-system view**: system buttons now TOGGLE — click to add a system to
+  the view, click again to remove; any combination composes (`?iso=engine,
+  cooling,...`). "Whole truck" clears. Ghost cage shows whenever a selection
+  is active (unless body is hidden); explicitly selected body systems still show.
+- **Free camera**: right-drag/two-finger pan, arrow keys walk along the truck,
+  double-click recenters the orbit on the clicked point, min zoom distance
+  lowered (12"). Hint bar updated.
+
 ### 2026-06-11 (loop WRAP) — Stop condition met
 - Multi-angle review (iso/side/side2/front/top): no visible interpenetrations,
   proportions read correct everywhere. Exact-geometry checker CLEAN.
