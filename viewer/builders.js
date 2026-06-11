@@ -803,8 +803,8 @@ function cabShell() {
 function bedShell() {
   const g = new THREE.Group();
   const side = new THREE.Shape();
-  side.moveTo(-39, -17); side.lineTo(-13.7, -17);
-  side.absarc(3, -21.6, 17.5, 2.879, 0.263, true);   // wheel arch over the rear tire
+  side.moveTo(-39, -17); side.lineTo(-14.2, -17);
+  side.absarc(2.5, -21.6, 17.5, 2.879, 0.263, true);   // wheel arch over the rear tire (axle at world x=-69.5)
   side.lineTo(39, -17); side.lineTo(39, 12); side.lineTo(-39, 12); side.closePath();
   for (const s of [-1, 1]) g.add(at(panel(side, 1.2, paintWhite()), 0, 0, s < 0 ? -34 : 32.8));
   g.add(at(box(78, 1.5, 66, paintWhite()), 0, -11.2, 0));      // bed floor

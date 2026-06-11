@@ -2,6 +2,27 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-10 (night) — Factory dims mined + Blender wheels
+- **Mined the 1994 Pickups & Chassis brochure** (Read the PDF directly — it has
+  the full F-Series spec tables). Facts locked for THIS truck (SuperCab Styleside
+  6¾' box 4x2): **WB 139"** · OAL 219.1" · box inside width 70" · load height
+  30.7" · wheels 5-hole 15×6 · tires P215/75R15SL std / P235/75R15XL opt ·
+  4.9L: 4.00×3.98 bore/stroke, 8.8 CR, 150 hp @ 3400 / 260 lb-ft @ 2000.
+- **Wheelbase corrected 138 → 139** (axles now ±69.5): shifted only axle-centered
+  running gear (tires, I-beams, coils, front shocks, rotors/calipers, fenders,
+  leafs, axle+diff internals, drums, axle shafts, wheel wells); steering/brake
+  lines left (flexible, within tolerance). bedShell arch center followed.
+  Vehicle subtitle fixed (6.75' box, 139" WB).
+- **Blender wheel/tire** (`scripts/blender/wheel_tire.py` → `models/wheel-tire.glb`):
+  P235/75R15 lathe-profile tire w/ grooved tread, 15×6 argent steel wheel w/
+  punched vent slots, 5 lugs on the correct 5.5" bolt circle, dog-dish cap.
+  All 5 records (4 corners + spare) now use the .glb. Confirm actual tire size
+  + wheel style from owner photos (tomorrow).
+- checker ✅ clean. Owner shooting reference photos tomorrow → `reference/photos/`.
+- **Next:** Blender body-shell rebuild using brochure dims + FSM body drawings
+  (cab/bed/hood/fenders with crowned surfaces, real panel lines); then front
+  clip details (grille/headlights/turn signals), then McMaster fastener importer.
+
 ### 2026-06-10 (later still) — PIPELINE PIVOT: Blender-authored geometry (owner decision)
 - Owner re-set the bar: **every part, maximum accuracy/realism, down to fasteners.**
   Old "parametric Three.js only" rule is dead — it can't reach that bar.
