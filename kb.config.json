@@ -17,9 +17,13 @@
   },
   "semantic": {
     "model": "BAAI/bge-base-en-v1.5",
-    "threshold": 0.78,
+    "threshold": 0.8,
     "top_n": 5
   },
-  "feeds": [],
+  "feeds": [
+    { "type": "youtube", "channel_id": "UCmHk0v-ac7UET0L3lnBmhDg", "label": "BullnoseGarage (YouTube)" },
+    { "type": "youtube", "channel_id": "UCN467fmgLLlk98JddJLL51w", "label": "FordTechMakuloco (YouTube)" },
+    { "type": "rss", "url": "https://www.ford-trucks.com/forums/external.php?type=RSS2&forumids=38", "label": "Ford Truck Enthusiasts — 1987-1996 F-Series" }
+  ],
   "frontend": null
 }

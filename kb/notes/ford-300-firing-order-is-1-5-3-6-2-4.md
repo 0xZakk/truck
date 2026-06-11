@@ -25,6 +25,8 @@ This relates to truck inventory system `ignition`.
 ## Related Concepts
 
 - [[notes/ford-300-makes-peak-torque-at-low-rpm-by-design|The Ford 300 makes peak torque at low RPM by design]]
+- [[notes/eng-49l-firing-order-is-1-5-3-6-2-4|The 4.9L firing order is 1-5-3-6-2-4 with a 10-degree BTDC base timing and 0.042-0.046 in plug gap]]
+- [[notes/eec-firing-order-is-1-5-3-6-2-4|The 4.9L I6 firing order is 1-5-3-6-2-4]]
 
 ## Source
 

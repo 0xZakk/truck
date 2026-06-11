@@ -13,12 +13,27 @@ This map is the entry point for the **suspension** system of the truck. As notes
 
 ## Key Notes
 
-_None yet — add `how-it-works` notes here as they're written._
+- [[notes/sus-lug-nuts-torque-to-100-ft-lb-dry-on-the-5-lug-wheel|5-lug wheel lug nuts torque to 100 ft lb on clean dry threads]]  ·  _spec_
+- [[notes/sus-one-adjuster-sleeve-sets-both-caster-and-camber|A single adjuster sleeve sets both caster and camber on the Twin I-Beam front end]]
+- [[notes/sus-alignment-targets-are-caster-2-to-6-degrees-camber-0-25-degree-toe-0-06-degree|Alignment targets: caster 2-6 deg, camber .25 deg, total toe .06 deg]]  ·  _spec_
+- [[notes/sus-front-wheel-bearing-end-play-window-is-0-00025-to-0-005-inch|Correct front wheel bearing end play is 0.00025-0.005 inch]]  ·  _spec_
+- [[notes/sus-ball-joint-wear-limit-is-1-32-inch-of-tire-rock|Front ball joints are condemned at 1/32 inch of tire rock]]  ·  _procedure_
+- [[notes/sus-front-wheel-bearing-preload-is-set-by-seat-back-off-snug|Front wheel bearing preload is set by a seat, back-off, then light-snug sequence]]  ·  _procedure_
+- [[notes/sus-rear-suspension-fastener-torques|Rear suspension fastener torques (leaf spring, shock, stabilizer)]]  ·  _spec_
+- [[notes/sus-twin-i-beam-axles-cross-the-vehicle-to-pivot-on-the-opposite-frame-bracket|The Twin I-Beam front axles cross the vehicle so each beam pivots on the opposite-side frame bracket]]
+- [[notes/sus-radius-arm-locates-the-i-beam-fore-and-aft-and-removal-needs-the-coil-spring-out|The radius arm locates the I-beam fore-and-aft, so removing it requires removing the coil spring first]]
+- [[notes/sus-rear-axle-rides-on-leaf-springs-with-shackle-and-u-bolts|The rear axle rides on semi-elliptic leaf springs anchored by U-bolts, a front bracket, and a rear shackle]]
 
 ## Common Issues
 
-_None yet — add `troubleshooting` notes here as they're written._
+- [[notes/sus-adjust-wheel-bearings-before-checking-ball-joints-to-avoid-false-play|Adjust wheel bearings before checking ball joints to avoid false play]]  ·  _troubleshooting_
+- [[notes/sus-check-ride-height-and-frame-level-before-trusting-alignment-readings|Check ride height and frame level before trusting alignment readings]]  ·  _troubleshooting_
 
 ## Sources
 
-_None yet._
+- [[sources/sus-ball-joints|Front Ball Joints — Inspection (FSM)]]
+- [[sources/sus-front-wheel-bearings|Front Wheel Bearing Adjustment (FSM)]]
+- [[sources/sus-rear-leaf-spring-suspension|Rear Leaf-Spring Suspension and Torque Specs (FSM)]]
+- [[sources/sus-twin-i-beam-front-suspension|Twin I-Beam Front Suspension (FSM)]]
+- [[sources/sus-wheel-alignment|Front Wheel Alignment (FSM)]]
+- [[sources/sus-wheels-and-lug-nuts|Wheels and Lug Nut Torque (FSM)]]

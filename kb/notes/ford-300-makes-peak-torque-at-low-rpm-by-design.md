@@ -31,6 +31,7 @@ This relates to truck inventory system `engine`.
 
 - [[notes/1994-f150-49l-is-the-efi-300-variant|The 1994 F-150's 4.9L is the EFI 300 variant]]
 - [[notes/ford-300-firing-order-is-1-5-3-6-2-4|The Ford 300 inline-six firing order is 1-5-3-6-2-4]]
+- [[notes/eng-49l-makes-150-hp-and-260-ftlb-with-88-compression|The 4.9L I6 makes 150 hp and 260 ft-lb on an 8.8:1 compression ratio, varying with axle ratio]]
 
 ## Source
 

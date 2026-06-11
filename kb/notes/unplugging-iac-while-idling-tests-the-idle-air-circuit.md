@@ -28,6 +28,7 @@ where to look next. It relates to truck inventory systems `fuel` and `intake-exh
 
 - [[notes/failed-throttle-body-gasket-causes-rough-idle-vacuum-leak|A failed throttle-body-to-manifold gasket is a known vacuum-leak cause of rough idle on the 4.9L]]
 - [[notes/1994-f150-49l-is-the-efi-300-variant|The 1994 F-150's 4.9L is the EFI 300 variant]]
+- [[notes/eng-idle-speed-is-pcm-controlled-dont-back-off-the-throttle-stop|Idle speed is PCM-controlled — don't back off the throttle-plate stop screw]]
 
 ## Source
 

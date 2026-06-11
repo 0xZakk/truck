@@ -13,12 +13,12 @@ This map is the entry point for the **frame & chassis** system of the truck. As 
 
 ## Key Notes
 
-_None yet — add `how-it-works` notes here as they're written._
+- [[notes/bdy-seat-track-mounting-locations-must-be-sealed-with-caulking-cord|Seal the seat-track-to-floor-pan mounting locations with caulking cord on reassembly]]  ·  _procedure_
 
 ## Common Issues
 
-_None yet — add `troubleshooting` notes here as they're written._
+_None yet._
 
 ## Sources
 
-_None yet._
+- [[sources/bdy-seats|Seats — Bench Removal, Seat Track and Seat-Back Adjuster Service (FSM)]]

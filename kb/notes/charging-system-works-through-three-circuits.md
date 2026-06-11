@@ -31,6 +31,8 @@ This relates to truck inventory system `electrical-charging`.
 ## Related Concepts
 
 - [[notes/charge-light-staying-on-points-to-regulator-or-stator-circuit|A charge light that stays on points to the regulator or stator circuit, not always a dead alternator]]
+- [[notes/ipc-charge-lamp-grounds-through-regulator-terminal-1|The charge lamp lights because the regulator grounds it through terminal 1 until the S-circuit voltage is reached]]
+- [[notes/chg-all-f150-alternators-use-an-internal-regulator-at-15-volts|All F-150 alternators use an internal regulator set near 15 volts]]
 
 ## Source
 

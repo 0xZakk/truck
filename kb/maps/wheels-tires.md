@@ -13,11 +13,11 @@ This map is the entry point for the **wheels & tires** system of the truck. As n
 
 ## Key Notes
 
-_None yet — add `how-it-works` notes here as they're written._
+_None yet._
 
 ## Common Issues
 
-_None yet — add `troubleshooting` notes here as they're written._
+_None yet._
 
 ## Sources
 

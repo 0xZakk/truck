@@ -13,12 +13,12 @@ This map is the entry point for the **exterior trim & hardware** system of the t
 
 ## Key Notes
 
-_None yet — add `how-it-works` notes here as they're written._
+- [[notes/bdy-keyless-module-coordinates-locks-anti-theft-lamps-and-panic|The keyless entry module coordinates door locks, anti-theft arming, interior lamps, and the panic alarm]]
 
 ## Common Issues
 
-_None yet — add `troubleshooting` notes here as they're written._
+_None yet._
 
 ## Sources
 
-_None yet._
+- [[sources/bdy-keyless-entry-system|Keyless Entry System (Module + Transmitter) — Description, Operation and Programming (FSM)]]
