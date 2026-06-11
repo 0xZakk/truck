@@ -424,6 +424,7 @@ function dumpGeometry() {
       rec.samples = curve.getPoints(34).map(r3);
       rec.connects = mo.connects || [];
     }
+    rec.penChecked = !mo.context && !rec.samples;   // tells the checker exact tests ran
     tops.push({ rec, m, box: new THREE.Box3().expandByObject(m) });
     return rec;
   });
@@ -446,6 +447,69 @@ function dumpGeometry() {
     top.traverse(o => { if (o.isMesh) n += rayc.intersectObject(o, false).length; });
     return n % 2 === 1;
   };
+  // Exact solid-solid penetration: raycast sampled mesh EDGES of part A against
+  // part B's surface — an edge crossing a surface means the parts truly intersect.
+  // (Vertex-in-volume misses thin panels: a part poking through 1/8" sheet metal has
+  // no vertices inside the sheet itself.) Skips context shells (wrap everything by
+  // design), same-assembly pairs (internals nest; explode view pulls them apart),
+  // and routed parts (covered by the cable check above).
+  const edgesOf = (top, max = 90) => {
+    const segs = [];
+    top.traverse(o => {
+      if (!o.isMesh || segs.length >= max) return;
+      const pos = o.geometry.attributes.position;
+      const idx = o.geometry.index;
+      const triCount = (idx ? idx.count : pos.count) / 3;
+      const step = Math.max(1, Math.floor(triCount / 30));
+      for (let t = 0; t < triCount && segs.length < max; t += step) {
+        const i0 = idx ? idx.getX(t * 3) : t * 3, i1 = idx ? idx.getX(t * 3 + 1) : t * 3 + 1;
+        segs.push([new THREE.Vector3().fromBufferAttribute(pos, i0).applyMatrix4(o.matrixWorld),
+                   new THREE.Vector3().fromBufferAttribute(pos, i1).applyMatrix4(o.matrixWorld)]);
+      }
+    });
+    return segs;
+  };
+  const _dir = new THREE.Vector3();
+  const crossings = (segs, top, box) => {
+    let n = 0;
+    for (const [a, b] of segs) {
+      if (!box.containsPoint(a) && !box.containsPoint(b)) continue;
+      _dir.subVectors(b, a);
+      const len = _dir.length();
+      if (len < 1e-4) continue;
+      rayc.set(a, _dir.divideScalar(len));
+      rayc.far = len;
+      let hit = false;
+      top.traverse(o => { if (!hit && o.isMesh && rayc.intersectObject(o, false).length) hit = true; });
+      if (hit) n++;
+    }
+    rayc.far = Infinity;
+    return n;
+  };
+  const _sz2 = new THREE.Vector3();
+  const vol = b => { b.getSize(_sz2); return _sz2.x * _sz2.y * _sz2.z; };
+  for (let i = 0; i < tops.length; i++) {
+    const A = tops[i];
+    if (A.rec.context || A.rec.samples) continue;
+    for (let j = i + 1; j < tops.length; j++) {
+      const B = tops[j];
+      if (B.rec.context || B.rec.samples) continue;
+      if (A.rec.assembly && A.rec.assembly === B.rec.assembly) continue;
+      const ov = A.box.clone().intersect(B.box);
+      if (ov.isEmpty()) continue;
+      ov.getSize(_sz2);
+      if (_sz2.x * _sz2.y * _sz2.z < 8) continue;
+      let n = crossings(edgesOf(A.m), B.m, B.box) + crossings(edgesOf(B.m), A.m, A.box);
+      if (n < 3) {
+        // no surface crossings — catch full containment (small part swallowed whole)
+        const small = vol(A.box) < vol(B.box) ? A : B, big = small === A ? B : A;
+        const vs = edgesOf(small.m, 8).map(s => s[0]);
+        if (vs.length && vs.every(p => big.box.containsPoint(p) && inPart(p, big.m))) n = 99;
+      }
+      if (n >= 3) (A.rec.pen = A.rec.pen || {})[B.rec.id] = n;
+    }
+  }
+
   const _p = new THREE.Vector3();
   tops.forEach(({ rec }) => {
     if (!rec.samples) return;

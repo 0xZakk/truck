@@ -2,6 +2,28 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-10 (loop it.1) — Exact intersection checking + 45 fixes + body proportions
+- **Checker overhaul:** found TWO pre-existing bugs that made it blind — a string-vs-
+  tuple bug in legit_interface (every pair matched, so ALL overlaps were blessed) and
+  AABB-only testing. Now: exact edge-vs-surface crossing tests (raycast) + full-
+  containment fallback in the viewer dump; AABB OVERLAP heuristic auto-disabled when
+  exact data present; BOLTED whitelist for real interfaces (balancer-on-crank,
+  bellhousing, drums-on-axle, shifter-through-carpet, etc.).
+- **45 real issues found and fixed**, incl.: 1994-EFI air cleaner relocated to the RH
+  fender apron (was a carb-era housing poking through the hood — verify vs photos);
+  coil off the hood line; steering box to the LH rail ahead of the axle (+ pitman/
+  drag-link/column reroutes); engine crossmember under the mounts (was in the
+  bellhousing); trans crossmember below the mainshaft; fuel tank rebuilt 12" wide
+  (was 25" — through driveshaft AND rail); spare clear of muffler/leafs; taillights
+  rebuilt VERTICAL (were 9"-wide horizontal, through the tailgate); tailgate 61"
+  (was 64" — wider than the opening); tow hooks under the bumper; mud flaps behind
+  the tires; visors/headliner clear of the windshield; wheel/AC plumbing reroutes.
+- **Body proportions:** full-height door openings (rocker to roof rail; doors were
+  stopping 12" short), beltline dropped 50.5 -> 47.5, side glass 13" -> 16" tall,
+  full-height door cards, fender bottom aligned with the door bottom.
+- checker CLEAN (exact mode). Next iteration: engine-bay vertical packaging (engine
+  sits high vs. real ~46" hood line) + hood/cowl drop, from FSM engine dims + photos.
+
 ### 2026-06-10 (night) — Factory dims mined + Blender wheels
 - **Mined the 1994 Pickups & Chassis brochure** (Read the PDF directly — it has
   the full F-Series spec tables). Facts locked for THIS truck (SuperCab Styleside

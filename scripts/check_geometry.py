@@ -56,8 +56,22 @@ def legit_interface(a, b):
     internal = ("crankshaft", "camshaft", "piston", "connecting-rod", "conrod", "timing-gear",
                 "oil-pump", "synchro", "valve", "armature", "brush", "pinion", "carrier",
                 "side-gear", "ring-and-pinion", "axle-shaft", "clutch", "fuel-pump", "sender",
-                "spark-plug", "distributor", "ignition-switch", "ignition-pickup",
+                "spark-plug", "distributor", "ignition-switch", "ignition-pickup", "water-pump",
                 "input-shaft", "mainshaft", "countershaft", "output-shaft", "synchro", "shift-fork")
+    # bolted/mating interfaces — parts genuinely in contact by design
+    BOLTED = [({"harmonic-balancer"}, {"crankshaft"}),     # balancer on the crank snout
+              ({"engine-block"}, {"transmission"}),        # bellhousing face
+              ({"crankshaft"}, {"transmission", "input-shaft"}),  # flywheel/pilot inside bellhousing
+              ({"shifter"}, {"carpet"}),                   # shifter boot through the floor
+              ({"steering-box"}, {"frame-rail"}),          # box bolts to the left rail
+              ({"ibeam"}, {"rotor", "drum", "hub"}),       # spindle into the hub/rotor
+              ({"rear-axle"}, {"drum", "hub"}),            # drums on the axle flanges
+              ({"dashboard"}, {"heater-box", "evaporator", "steering-column", "blower"}),
+              ({"engine-mount"}, {"crossmember"}),         # mounts bolt to the engine crossmember
+              ({"front-bumper", "rear-bumper"}, {"frame-rail"})]  # bumper brackets bolt to the rail horns
+    for left, right in BOLTED:
+        if (has(a, left) and has(b, right)) or (has(b, left) and has(a, right)):
+            return True
     if (has(a, housing) and has(b, internal)) or (has(b, housing) and has(a, internal)):
         return True
     # exterior lamps mount in the grille/fascia; gauges/cluster in the dash
@@ -67,7 +81,7 @@ def legit_interface(a, b):
         return True
     dash = ("dashboard", "instrument-panel")
     indash = ("instrument-cluster", "cluster", "gauge", "radio", "hvac-control", "glovebox")
-    if (has(a, "condenser") and has(b, "radiator")) or (has(b, "condenser") and has(a, "radiator")):
+    if (has(a, ("condenser",)) and has(b, ("radiator",))) or (has(b, ("condenser",)) and has(a, ("radiator",))):
         return True  # A/C condenser stacks in front of the radiator
     glass = ("windshield", "window", "glass", "back-glass")
     greenhouse = ("pillar", "roof", "door", "cab", "header", "cowl", "rear-cab-wall")
@@ -112,8 +126,11 @@ def main():
                 flags.append(("CABLE-THROUGH", f'{c["id"]} passes through {s["id"]} ({hits} interior pts)'))
 
     # 2) significant interpenetration between solids of different assemblies
+    # (AABB heuristic — superseded by the exact mesh test in 2b whenever the dump
+    #  carries `pen` data; AABBs false-positive badly on concave parts)
     scope_ids = {p["id"] for p in scope}
-    for i in range(len(solids)):
+    pen_capable = any(p.get("penChecked") for p in parts)
+    for i in range(len(solids) if not pen_capable else 0):
         for j in range(i + 1, len(solids)):
             a, b = solids[i], solids[j]
             if a["id"] not in scope_ids and b["id"] not in scope_ids:
@@ -125,6 +142,19 @@ def main():
             frac = overlap_vol(a, b) / min(vol(a), vol(b))
             if frac > 0.35:
                 flags.append(("OVERLAP", f'{a["id"]} ∩ {b["id"]} = {frac*100:.0f}% of the smaller part'))
+
+    # 2b) exact mesh penetration (viewer raycast parity: real geometry, not AABBs)
+    flagged_pairs = {tuple(sorted(f[1].split(" ∩ ")[0:1] + [f[1].split(" ∩ ")[1].split(" =")[0]]))
+                     for f in flags if f[0] == "OVERLAP"}
+    for p in parts:
+        for other, n in (p.get("pen") or {}).items():
+            if p["id"] not in scope_ids and other not in scope_ids:
+                continue
+            if tuple(sorted([p["id"], other])) in flagged_pairs:
+                continue
+            if legit_interface(p["id"], other):
+                continue
+            flags.append(("PENETRATE", f'{p["id"]} ⟂ {other} ({n} mesh verts inside the other part)'))
 
     # 3) orphaned parts: nearest neighbor (any solid or body shell) is >6" away in every direction
     for p in scope:

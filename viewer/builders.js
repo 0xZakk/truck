@@ -389,13 +389,13 @@ function airCleaner() {
 // ============================ FUEL ============================
 function fuelTank() {
   const g = new THREE.Group();
-  g.add(box(32, 12, 24, M.steel()));                                  // tank body
-  g.add(at(box(32.4, 1, 24.4, M.darkSteel()), 0, 0, 0));              // crimp seam
-  for (const x of [-9, 9]) g.add(at(box(1.4, 13, 25, M.darkSteel()), x, 0, 0)); // mounting straps
+  g.add(box(32, 12, 12, M.steel()));                                  // tank body (midship, fits rail-to-driveshaft)
+  g.add(at(box(32.4, 1, 12.4, M.darkSteel()), 0, 0, 0));              // crimp seam
+  for (const x of [-9, 9]) g.add(at(box(1.4, 13, 13, M.darkSteel()), x, 0, 0)); // mounting straps
   g.add(at(cyl(2.4, 2.4, 1.2, M.darkSteel(), 'y', 18), 6, 6.2, -6));  // sender/pump module
   g.add(at(cyl(0.45, 0.45, 1.6, M.steel(), 'y', 8), 6, 7.6, -6));     // supply fitting
   g.add(at(cyl(0.45, 0.45, 1.6, M.steel(), 'y', 8), 7.6, 7.4, -6));   // return fitting
-  g.add(at(cyl(1.6, 1.6, 2, M.steel(), 'x', 12), 16, 3, 7));          // filler inlet
+  g.add(at(cyl(1.6, 1.6, 2, M.steel(), 'x', 12), 16, 3, 4));          // filler inlet
   return g;
 }
 function fuelFilter() {
@@ -710,9 +710,9 @@ function fender(model) {
   const g = new THREE.Group();
   const s = (model && model.position && model.position[2] < 0) ? -1 : 1;
   const skin = new THREE.Shape();                      // X-Y profile, door to grille
-  skin.moveTo(-25, -3); skin.lineTo(-16.21, -3);
-  skin.absarc(0, -9.6, 17.5, 2.755, 0.387, true);      // arch over the front tire
-  skin.lineTo(30, -3); skin.lineTo(30, 26); skin.lineTo(-25, 26); skin.closePath();
+  skin.moveTo(-25, -5); skin.lineTo(-16.88, -5);       // bottom edge aligns with the door bottom (y≈19)
+  skin.absarc(0, -9.6, 17.5, 2.875, 0.266, true);      // arch over the front tire
+  skin.lineTo(30, -5); skin.lineTo(30, 26); skin.lineTo(-25, 26); skin.closePath();
   g.add(at(panel(skin, 1.2, paintWhite()), 0, 0, s < 0 ? -4.3 : 3.1));  // proud of the door skin
   g.add(at(box(55, 1.2, 4.5, paintWhite()), 2.5, 25.4, s * 2));   // top strip in to the hood opening
   return g;
@@ -721,7 +721,7 @@ function fender(model) {
 // ============================ BODY — BED PANELS ============================
 function tailgate() {
   const g = new THREE.Group();
-  g.add(box(2, 20, 64, paintWhite()));                                // tailgate panel
+  g.add(box(2, 20, 61, paintWhite()));                                // tailgate panel
   g.add(at(box(0.6, 7, 38, M.caseTop()), -1.1, 2, 0));                // FORD stamping recess
   g.add(at(box(1.2, 2, 6, M.darkSteel()), -1.3, 8, 0));               // latch handle
   for (const z of [-30, 30]) g.add(at(cyl(0.6, 0.6, 2, M.darkSteel(), 'z', 8), 9.5, -9, z)); // hinge pivots
@@ -766,10 +766,10 @@ function cabShell() {
   const prof = new THREE.Shape();
   prof.moveTo(-50, -30); prof.lineTo(50, -30); prof.lineTo(50, 1);
   prof.lineTo(41, 1.5); prof.lineTo(33, 17.5); prof.lineTo(-50, 17.5); prof.closePath();
-  const door = new THREE.Path();
-  door.moveTo(-6, -18); door.lineTo(30, -18); door.lineTo(30, 15.5); door.lineTo(-6, 15.5); door.closePath();
-  const qwin = new THREE.Path();
-  qwin.moveTo(-39, 1.5); qwin.lineTo(-17, 1.5); qwin.lineTo(-17, 14.5); qwin.lineTo(-39, 14.5); qwin.closePath();
+  const door = new THREE.Path();   // full-height opening: rocker (y≈22) to roof rail
+  door.moveTo(-6, -27); door.lineTo(30, -27); door.lineTo(30, 15.5); door.lineTo(-6, 15.5); door.closePath();
+  const qwin = new THREE.Path();   // quarter window down to the 47.5" beltline
+  qwin.moveTo(-39, -1.5); qwin.lineTo(-17, -1.5); qwin.lineTo(-17, 14.5); qwin.lineTo(-39, 14.5); qwin.closePath();
   prof.holes.push(door, qwin);
   for (const s of [-1, 1]) g.add(at(panel(prof, 1.2, paintWhite()), 0, 0, s < 0 ? -36 : 34.8));
 
@@ -829,12 +829,14 @@ function hoodPanel() {
 function doorPanel(model) {
   const g = new THREE.Group();
   const w = (model && model.doorW) || 34;
-  g.add(box(w, 22, 1, paintWhite()));                                 // door skin (lower)
-  g.add(at(box(w - 2, 1, 1, paintWhite()), 0, 11.5, 0));              // beltline
-  g.add(at(box(1.2, 12, 1, paintWhite()), w / 2 - 1, 17, 0));         // front window frame
-  g.add(at(box(1.2, 12, 1, paintWhite()), -w / 2 + 1, 17, 0));        // rear window frame
-  g.add(at(box(w - 2, 1.2, 1, paintWhite()), 0, 23, 0));              // top frame
-  g.add(at(box(3, 0.8, 0.7, M.darkSteel()), w / 4, 4, 0.8));          // handle
+  // full-height door: skin from the rocker (world ~22) to the 47.5" beltline,
+  // window frame up to the 64.5" roof rail. Record origin sits at y=42.
+  g.add(at(box(w, 25.5, 1, paintWhite()), 0, -7.25, 0));              // outer skin
+  g.add(at(box(w - 2, 1, 1, paintWhite()), 0, 5.8, 0));               // beltline trim
+  g.add(at(box(1.2, 17, 1, paintWhite()), w / 2 - 0.6, 14, 0));       // front window frame
+  g.add(at(box(1.2, 17, 1, paintWhite()), -w / 2 + 0.6, 14, 0));      // rear window frame
+  g.add(at(box(w - 2, 1.2, 1, paintWhite()), 0, 22.4, 0));            // top frame
+  g.add(at(box(3, 0.8, 0.7, M.darkSteel()), w / 4, 3, 0.8));          // handle (~45" real height)
   return g;
 }
 function sideMirror() {
@@ -933,10 +935,13 @@ function headlamp() {
   return g;
 }
 function tailLight() {
+  // OBS taillight: VERTICAL rectangle in the bedside end cap (~8" tall x 5.5" wide)
   const g = new THREE.Group();
-  g.add(box(2, 5, 9, M.darkSteel()));                                 // housing
-  g.add(at(box(0.5, 4.4, 4.5, M.rubberRed()), -1.1, 0, -2));          // red lens (faces -X rear)
-  g.add(at(box(0.5, 4.4, 2.5, M.caseTop()), -1.1, 0, 2.5));           // backup/amber
+  g.add(box(2, 8, 5.5, M.darkSteel()));                               // housing
+  g.add(at(box(0.5, 7.4, 4.9, M.rubberRed()), -1.1, 0, 0));           // red lens (faces -X rear)
+  const backup = new THREE.Mesh(new THREE.BoxGeometry(0.4, 2.2, 2.2),
+    new THREE.MeshStandardMaterial({ color: 0xe8e8e8, metalness: 0.1, roughness: 0.4 }));
+  g.add(at(backup, -1.3, -2.2, 0));                                   // backup lens, lower section
   return g;
 }
 function instrumentCluster() {

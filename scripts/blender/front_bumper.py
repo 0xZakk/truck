@@ -75,9 +75,9 @@ bpy.ops.object.shade_smooth_by_angle(angle=0.6)
 
 # ---- mounting brackets (dark steel, behind the bar)
 for y in (-20, 20):
-    bpy.ops.mesh.primitive_cube_add(location=(-4.5, y, -0.5))
+    bpy.ops.mesh.primitive_cube_add(location=(-3.4, y, -0.5))
     b = bpy.context.view_layer.objects.active
-    b.scale = (3.5, 1.5, 2.2)
+    b.scale = (2.6, 1.5, 2.2)
     bpy.ops.object.transform_apply(scale=True)
     b.data.materials.append(dark)
 

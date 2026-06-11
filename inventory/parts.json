@@ -65,7 +65,7 @@
      38
     ],
     "position": [
-     60,
+     76,
      22,
      0
     ]
@@ -147,7 +147,7 @@
     ],
     "position": [
      35,
-     22,
+     19.5,
      0
     ]
    },
@@ -217,8 +217,8 @@
    "model": {
     "builder": "towHook",
     "position": [
-     100,
-     18,
+     98,
+     13,
      -12
     ]
    },
@@ -239,8 +239,8 @@
    "model": {
     "builder": "towHook",
     "position": [
-     100,
-     18,
+     98,
+     13,
      12
     ]
    },
@@ -611,8 +611,8 @@
     "src": "/models/wheel-tire.glb",
     "position": [
      -95,
-     9,
-     -8
+     9.5,
+     -4
     ],
     "rotation": [
      90,
@@ -1377,7 +1377,7 @@
     "builder": "valveCover",
     "position": [
      79,
-     44.3,
+     43.6,
      0
     ]
    },
@@ -1564,7 +1564,7 @@
    "model": {
     "builder": "camshaft",
     "position": [
-     79,
+     77.0,
      33,
      -3
     ],
@@ -1876,7 +1876,7 @@
    "model": {
     "builder": "shifter",
     "position": [
-     48,
+     38,
      28,
      0
     ]
@@ -2150,7 +2150,7 @@
     "position": [
      -30,
      11,
-     -13
+     -8.5
     ]
    },
    "fidelity": "refined",
@@ -2718,13 +2718,16 @@
    "model": {
     "builder": "airCleaner",
     "position": [
-     85,
-     48,
-     7
+     80,
+     40,
+     25
     ]
    },
    "fidelity": "refined",
-   "status": "documented"
+   "status": "documented",
+   "notes": [
+    "VERIFY vs photos: 1994 EFI air box on RH fender apron (was floating on-engine, poked through hood)"
+   ]
   },
   {
    "id": "exhaust-headpipe",
@@ -2932,13 +2935,16 @@
    "model": {
     "builder": "steeringGear",
     "position": [
-     70,
-     26,
-     -16
+     83,
+     24,
+     -19
     ]
    },
    "fidelity": "refined",
-   "status": "documented"
+   "status": "documented",
+   "notes": [
+    "box ahead of the axle on the LH rail web"
+   ]
   },
   {
    "id": "pitman-arm",
@@ -2966,19 +2972,19 @@
     ],
     "path": [
      [
-      70,
-      21,
-      -16
+      83,
+      19,
+      -19
      ],
      [
-      68.5,
-      17,
-      -16
+      79,
+      16,
+      -19
      ],
      [
-      67,
-      15.5,
-      -16
+      75,
+      14.5,
+      -19
      ]
     ]
    },
@@ -3010,17 +3016,17 @@
     ],
     "path": [
      [
-      67,
-      15.5,
-      -16
+      75,
+      14.5,
+      -19
      ],
      [
-      65.5,
+      69.5,
       14,
-      -23
+      -24
      ],
      [
-      65,
+      66,
       13.5,
       -28
      ]
@@ -3122,22 +3128,23 @@
      "steering-box",
      "dashboard",
      "firewall",
-     "instrument-cluster"
+     "instrument-cluster",
+     "ignition-lock-cylinder"
     ],
     "path": [
      [
-      70,
-      30,
-      -16
+      81,
+      28,
+      -19
      ],
      [
-      60,
+      62,
       36,
-      -18
+      -19
      ],
      [
-      48,
-      41,
+      42.5,
+      40.5,
       -20
      ]
     ]
@@ -3159,7 +3166,7 @@
    "model": {
     "builder": "steeringWheel",
     "position": [
-     46,
+     40.5,
      41,
      -20
     ],
@@ -4028,13 +4035,16 @@
    "model": {
     "builder": "ignitionCoil",
     "position": [
-     80,
-     46,
-     6
+     72,
+     40,
+     -7
     ]
    },
    "fidelity": "refined",
-   "status": "documented"
+   "status": "documented",
+   "notes": [
+    "VERIFY vs photos: coil bracket position"
+   ]
   },
   {
    "id": "spark-plugs",
@@ -4865,9 +4875,9 @@
    "model": {
     "builder": "ignitionSwitch",
     "position": [
-     52,
-     38,
-     -20
+     45,
+     37.5,
+     -18
     ],
     "rotation": [
      0,
@@ -5008,12 +5018,12 @@
     "kind": "box",
     "size": [
      30,
-     13,
+     16,
      0.8
     ],
     "position": [
      20,
-     57,
+     55.8,
      -35.5
     ],
     "opacity": 0.3,
@@ -5037,12 +5047,12 @@
     "kind": "box",
     "size": [
      30,
-     13,
+     16,
      0.8
     ],
     "position": [
      20,
-     57,
+     55.8,
      35.5
     ],
     "opacity": 0.3,
@@ -5066,12 +5076,12 @@
     "kind": "box",
     "size": [
      22,
-     13,
+     15.5,
      0.8
     ],
     "position": [
      -16,
-     57,
+     55.5,
      -35.5
     ],
     "opacity": 0.3,
@@ -5095,12 +5105,12 @@
     "kind": "box",
     "size": [
      22,
-     13,
+     15.5,
      0.8
     ],
     "position": [
      -16,
-     57,
+     55.5,
      35.5
     ],
     "opacity": 0.3,
@@ -5921,8 +5931,8 @@
      8
     ],
     "position": [
-     -82,
-     18,
+     -86,
+     14,
      -34
     ],
     "color": "#16181c"
@@ -5949,8 +5959,8 @@
      8
     ],
     "position": [
-     -82,
-     18,
+     -86,
+     14,
      34
     ],
     "color": "#16181c"
@@ -6159,12 +6169,12 @@
     "kind": "box",
     "size": [
      34,
-     20,
+     24,
      1
     ],
     "position": [
      24,
-     40,
+     35.5,
      -34
     ],
     "color": "#3a3f47"
@@ -6187,12 +6197,12 @@
     "kind": "box",
     "size": [
      34,
-     20,
+     24,
      1
     ],
     "position": [
      24,
-     40,
+     35.5,
      34
     ],
     "color": "#3a3f47"
@@ -6214,12 +6224,12 @@
    "model": {
     "kind": "box",
     "size": [
-     84,
+     80,
      0.6,
      64
     ],
     "position": [
-     4,
+     2,
      65,
      0
     ],
@@ -6248,7 +6258,7 @@
      16
     ],
     "position": [
-     52,
+     40,
      62,
      -15
     ],
@@ -6281,7 +6291,7 @@
      16
     ],
     "position": [
-     52,
+     40,
      62,
      15
     ],
@@ -6480,9 +6490,9 @@
    "model": {
     "builder": "tailLight",
     "position": [
-     -112,
+     -110.5,
      32,
-     -30
+     -33.3
     ]
    },
    "fidelity": "refined",
@@ -6502,9 +6512,9 @@
    "model": {
     "builder": "tailLight",
     "position": [
-     -112,
+     -110.5,
      32,
-     30
+     33.3
     ]
    },
    "fidelity": "refined",
@@ -7015,7 +7025,7 @@
    "model": {
     "builder": "acCondenser",
     "position": [
-     103.5,
+     101.5,
      34,
      0
     ]
@@ -7037,13 +7047,16 @@
    "model": {
     "builder": "accumulator",
     "position": [
-     97,
-     37,
-     18
+     64,
+     38,
+     22
     ]
    },
    "fidelity": "refined",
-   "status": "documented"
+   "status": "documented",
+   "notes": [
+    "accumulator on the evap case at the firewall (CCOT system)"
+   ]
   },
   {
    "id": "hvac-control",
@@ -7152,19 +7165,24 @@
     ],
     "path": [
      [
-      103,
-      38,
-      4
-     ],
-     [
       100,
-      38,
+      36,
       12
      ],
      [
-      97,
-      38,
-      17
+      90,
+      34,
+      19
+     ],
+     [
+      78,
+      33,
+      19
+     ],
+     [
+      66,
+      37,
+      21
      ]
     ]
    },
@@ -7199,19 +7217,19 @@
     ],
     "path": [
      [
-      97,
-      36,
-      18
-     ],
-     [
-      70,
-      33,
-      16
-     ],
-     [
-      48,
+      64,
       37,
-      12
+      22
+     ],
+     [
+      61.5,
+      36,
+      20
+     ],
+     [
+      59,
+      35.5,
+      18
      ]
     ]
    },
