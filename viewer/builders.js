@@ -197,13 +197,13 @@ function cppSwitch() {
 // Built local: X = crankshaft axis (+X toward front of truck), longitudinal inline-six.
 function engineLongBlock() {
   const g = new THREE.Group();
-  g.add(box(30, 16, 11, M.cast()));                                   // cylinder block
-  g.add(at(box(30.4, 1.2, 11.4, M.cast()), 0, 8.2, 0));               // deck
+  g.add(at(box(30, 10.5, 11, M.cast()), 0, -2.75, 0));                // cylinder block (real ~10.3" deck height)
+  g.add(at(box(30.4, 1.2, 11.4, M.cast()), 0, 3.35, 0));              // deck
   g.add(at(box(24, 5, 9.5, M.darkSteel()), -1, -10.5, 0));            // oil pan
   g.add(at(box(9, 2.5, 9, M.darkSteel()), -7, -13, 0));               // sump (deeper at rear)
-  g.add(at(box(2.5, 15, 10.6, M.cast()), 15.6, -0.5, 0));             // front timing cover
-  g.add(at(box(2, 17, 13, M.cast()), -15.6, 0, 0));                   // bellhousing flange
-  for (const x of [-9, -3, 3, 9]) g.add(at(cyl(1, 1, 0.4, M.steel(), 'z', 12), x, 2, -5.7)); // freeze plugs
+  g.add(at(box(2.5, 11, 10.6, M.cast()), 15.6, -2.5, 0));             // front timing cover
+  g.add(at(box(2, 14, 13, M.cast()), -15.6, -1.5, 0));                // bellhousing flange
+  for (const x of [-9, -3, 3, 9]) g.add(at(cyl(1, 1, 0.4, M.steel(), 'z', 12), x, -1, -5.7)); // freeze plugs
   return g;
 }
 function cylinderHead() {
@@ -691,8 +691,8 @@ function pedalSet() {
 // ============================ EXTERIOR TRIM ============================
 function grilleAssembly() {
   const g = new THREE.Group();
-  g.add(box(1.5, 16, 58, M.darkSteel()));                             // grille backing
-  for (let y = -6; y <= 6; y += 3) g.add(at(box(2, 1, 56, M.steel()), 0.6, y, 0)); // argent crossbars
+  g.add(box(1.5, 13, 58, M.darkSteel()));                             // grille backing
+  for (let y = -4.5; y <= 4.5; y += 3) g.add(at(box(2, 1, 56, M.steel()), 0.6, y, 0)); // argent crossbars
   const oval = new THREE.Mesh(new THREE.SphereGeometry(3, 18, 12), new THREE.MeshStandardMaterial({ color: 0x123f86, metalness: 0.5, roughness: 0.35 }));
   oval.scale.set(0.5, 1, 1.7); at(oval, 1.4, 0, 0); g.add(oval);      // Ford blue oval
   return g;
@@ -712,9 +712,11 @@ function fender(model) {
   const skin = new THREE.Shape();                      // X-Y profile, door to grille
   skin.moveTo(-25, -5); skin.lineTo(-16.88, -5);       // bottom edge aligns with the door bottom (y≈19)
   skin.absarc(0, -9.6, 17.5, 2.875, 0.266, true);      // arch over the front tire
-  skin.lineTo(30, -5); skin.lineTo(30, 26); skin.lineTo(-25, 26); skin.closePath();
+  skin.lineTo(30, -5); skin.lineTo(30, 22); skin.lineTo(-25, 24.2); skin.closePath();
   g.add(at(panel(skin, 1.2, paintWhite()), 0, 0, s < 0 ? -4.3 : 3.1));  // proud of the door skin
-  g.add(at(box(55, 1.2, 4.5, paintWhite()), 2.5, 25.4, s * 2));   // top strip in to the hood opening
+  const strip = at(box(55, 1.2, 4.5, paintWhite()), 2.5, 22.5, s * 2);   // top strip in to the hood opening
+  strip.rotation.z = -2.3 * DEG;                                          // follows the hood-line slope
+  g.add(strip);
   return g;
 }
 

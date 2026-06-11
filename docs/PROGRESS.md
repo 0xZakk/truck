@@ -2,6 +2,25 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop it.2) — Engine-bay vertical packaging + front-end drop
+- **Key discovery:** the engine CANNOT be lowered — the Twin I-beams legitimately pass
+  under the oil pan and the pan already rides just above them. The real error was the
+  BLOCK: 15.5" crank-to-deck vs the 300's actual ~10.3". Shortened the block box
+  (pan/crank/bellhousing stay), then re-seated the entire top stack on the new 34"
+  deck: head, valve cover (top 47.6 -> 44.5), intake/exhaust manifolds, plugs+wires,
+  distributor, t-stat, coil, cam/pistons/rods.
+- **Front-end drop to match:** hood 48.5 -> 47 (nose ~45), fender top edge now SLOPES
+  with the hood line (48.2 rear -> 46 at the nose), grille rebuilt 13" tall (was 16,
+  top is now below the hood nose), radiator at real height (cap was poking ABOVE the
+  hood line; now 41.4" w/ bottom tank at ~12.6"), condenser/fan/water pump follow.
+- Re-routed to suit: fuel lines now climb BEHIND the block to the rail (real EFI
+  routing), head pipe threads under the compressor, belt path on the new pulley
+  heights, both radiator hoses, heater hoses, PS hoses, charging wire, plug wires.
+- Oil filter moved to the LEFT of the block (VERIFY vs photos — right side was
+  physically impossible vs exhaust + compressor).
+- checker CLEAN (exact mode). Next: front clip detail in Blender (grille insert,
+  headlight bezels, corner lights, header panel) or crowned roof/hood surfaces.
+
 ### 2026-06-10 (loop it.1) — Exact intersection checking + 45 fixes + body proportions
 - **Checker overhaul:** found TWO pre-existing bugs that made it blind — a string-vs-
   tuple bug in legit_interface (every pair matched, so ALL overlaps were blessed) and
