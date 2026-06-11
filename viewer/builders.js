@@ -699,8 +699,8 @@ function grilleAssembly() {
 }
 function bumperBar() {
   const g = new THREE.Group();
-  g.add(box(3, 4, 70, M.steel()));                                    // chrome face bar
-  g.add(at(box(2, 2, 70, M.darkSteel()), -1, -2.5, 0));              // lower roll
+  g.add(box(3, 4, 74, M.steel()));                                    // chrome face bar
+  g.add(at(box(2, 2, 74, M.darkSteel()), -1, -2.5, 0));              // lower roll
   for (const z of [-22, 22]) g.add(at(box(3.2, 4.4, 3, M.steel()), 0, 0, z)); // ends
   return g;
 }
@@ -723,10 +723,10 @@ function fender(model) {
 // ============================ BODY — BED PANELS ============================
 function tailgate() {
   const g = new THREE.Group();
-  g.add(box(2, 20, 61, paintWhite()));                                // tailgate panel
+  g.add(box(2, 20, 62, paintWhite()));                                // tailgate panel (between the end caps)
   g.add(at(box(0.6, 7, 38, M.caseTop()), -1.1, 2, 0));                // FORD stamping recess
   g.add(at(box(1.2, 2, 6, M.darkSteel()), -1.3, 8, 0));               // latch handle
-  for (const z of [-30, 30]) g.add(at(cyl(0.6, 0.6, 2, M.darkSteel(), 'z', 8), 9.5, -9, z)); // hinge pivots
+  for (const z of [-30.5, 30.5]) g.add(at(cyl(0.6, 0.6, 2, M.darkSteel(), 'z', 8), 9.5, -9, z)); // hinge pivots
   return g;
 }
 function wheelWell() {
@@ -773,30 +773,30 @@ function cabShell() {
   const qwin = new THREE.Path();   // quarter window down to the 47.5" beltline
   qwin.moveTo(-39, -1.5); qwin.lineTo(-17, -1.5); qwin.lineTo(-17, 14.5); qwin.lineTo(-39, 14.5); qwin.closePath();
   prof.holes.push(door, qwin);
-  for (const s of [-1, 1]) g.add(at(panel(prof, 1.2, paintWhite()), 0, 0, s < 0 ? -36 : 34.8));
+  for (const s of [-1, 1]) g.add(at(panel(prof, 1.2, paintWhite()), 0, 0, s < 0 ? -38.4 : 37.2));
 
   // roof (overhangs the sides slightly) + windshield header
-  g.add(at(box(83, 2.5, 71.5, paintWhite()), -8.5, 18.75, 0));
-  g.add(at(box(3, 2, 66, paintWhite()), 34, 16.6, 0));
+  g.add(at(box(83, 2.5, 76.3, paintWhite()), -8.5, 18.75, 0));
+  g.add(at(box(3, 2, 73, paintWhite()), 34, 16.6, 0));
 
   // raked A-pillars (match windshield 28° rake)
   for (const s of [-1, 1]) {
     const bar = box(2.5, 18.5, 2.5, paintWhite());
-    bar.position.set(37, 9.5, s * 34.5); bar.rotation.z = 26.6 * DEG;
+    bar.position.set(37, 9.5, s * 36.9); bar.rotation.z = 26.6 * DEG;
     g.add(bar);
   }
 
   // cowl + firewall
-  g.add(at(box(8, 1.5, 66, paintWhite()), 45, 0.75, 0));
-  g.add(at(box(2, 20, 66, paintWhite()), 49, -10, 0));
+  g.add(at(box(8, 1.5, 73, paintWhite()), 45, 0.75, 0));
+  g.add(at(box(2, 20, 73, paintWhite()), 49, -10, 0));
 
   // rear wall with back-glass opening
-  g.add(at(box(1.5, 22, 68, paintWhite()), -49.4, -9.5, 0));   // below glass
-  g.add(at(box(1.5, 3, 68, paintWhite()), -49.4, 16, 0));      // above glass
-  for (const s of [-1, 1]) g.add(at(box(1.5, 13, 7, paintWhite()), -49.4, 8, s * 31.5));
+  g.add(at(box(1.5, 22, 74.6, paintWhite()), -49.4, -9.5, 0));   // below glass
+  g.add(at(box(1.5, 3, 74.6, paintWhite()), -49.4, 16, 0));      // above glass
+  for (const s of [-1, 1]) g.add(at(box(1.5, 13, 7, paintWhite()), -49.4, 8, s * 34.6));
 
   // floor pan
-  g.add(at(box(100, 1.5, 68, paintWhite()), 0, -19.75, 0));
+  g.add(at(box(100, 1.5, 74.8, paintWhite()), 0, -19.75, 0));
   return g;
 }
 
@@ -808,10 +808,10 @@ function bedShell() {
   side.moveTo(-39, -17); side.lineTo(-14.2, -17);
   side.absarc(2.5, -21.6, 17.5, 2.879, 0.263, true);   // wheel arch over the rear tire (axle at world x=-69.5)
   side.lineTo(39, -17); side.lineTo(39, 12); side.lineTo(-39, 12); side.closePath();
-  for (const s of [-1, 1]) g.add(at(panel(side, 1.2, paintWhite()), 0, 0, s < 0 ? -34 : 32.8));
-  g.add(at(box(78, 1.5, 66, paintWhite()), 0, -11.2, 0));      // bed floor
-  g.add(at(box(1.5, 24, 66, paintWhite()), 38.2, 0, 0));       // headboard (front wall)
-  for (const s of [-1, 1]) g.add(at(box(78, 1.8, 3, paintWhite()), 0, 12.5, s * 33)); // top rails
+  for (const s of [-1, 1]) g.add(at(panel(side, 1.2, paintWhite()), 0, 0, s < 0 ? -36.2 : 35));
+  g.add(at(box(78, 1.5, 70, paintWhite()), 0, -11.2, 0));      // bed floor
+  g.add(at(box(1.5, 24, 70, paintWhite()), 38.2, 0, 0));       // headboard (front wall)
+  for (const s of [-1, 1]) g.add(at(box(78, 1.8, 3, paintWhite()), 0, 12.5, s * 35.5)); // top rails
   return g;
 }
 
@@ -825,7 +825,7 @@ function hoodPanel() {
   p.lineTo(17.8, -3);
   p.quadraticCurveTo(17.8, -1.6, 15, -1.4);
   p.lineTo(-19, 0.5); p.closePath();
-  g.add(at(panel(p, 64, paintWhite(), 0.15), 0, 0, -32));
+  g.add(at(panel(p, 68, paintWhite(), 0.15), 0, 0, -34));
   return g;
 }
 function doorPanel(model) {

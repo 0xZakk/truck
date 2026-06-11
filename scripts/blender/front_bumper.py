@@ -37,7 +37,7 @@ path.resolution_u = 24
 sp = path.splines.new('BEZIER')
 sp.bezier_points.add(3)
 # (x fwd, y left, z up) — ends at y ±34 swept back 7"
-coords = [(-7, -34, 0), (0, -27, 0), (0, 27, 0), (-7, 34, 0)]
+coords = [(-7.5, -37.5, 0), (0, -30.5, 0), (0, 30.5, 0), (-7.5, 37.5, 0)]
 for bp, c in zip(sp.bezier_points, coords):
     bp.co = c
     bp.handle_left_type = bp.handle_right_type = 'AUTO'
@@ -74,7 +74,7 @@ bumper.data.materials.append(chrome)
 bpy.ops.object.shade_smooth_by_angle(angle=0.6)
 
 # ---- mounting brackets (dark steel, behind the bar)
-for y in (-20, 20):
+for y in (-22, 22):
     bpy.ops.mesh.primitive_cube_add(location=(-3.4, y, -0.5))
     b = bpy.context.view_layer.objects.active
     b.scale = (2.6, 1.5, 2.2)

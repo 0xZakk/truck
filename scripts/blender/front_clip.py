@@ -69,21 +69,21 @@ dark = material('darkPl', (0.06, 0.065, 0.07), 0.1, 0.75)
 chrome = material('chrome', (0.92, 0.93, 0.94), 1.0, 0.09)
 blue = material('fordBlue', (0.03, 0.12, 0.42), 0.4, 0.3)
 
-panel = cube('front-panel', (1.2, 62, 14), (0, 0, 0), argent)
+panel = cube('front-panel', (1.2, 66, 14), (0, 0, 0), argent)
 # openings (panel local: z up around world 36.5, y across, x fwd)
-carve(panel, cube('cutHL_L', (3, 12.5, 5.0), (0, 23.25, 3.0)))      # headlamp L (world z -23.25... mirrored by symmetry)
-carve(panel, cube('cutHL_R', (3, 12.5, 5.0), (0, -23.25, 3.0)))     # headlamp R
-carve(panel, cube('cutGrille', (3, 31, 10), (0, 0, 0.5)))           # grille opening
-carve(panel, cube('cutPk_L', (3, 9, 3.5), (0, 23, -4.75)))          # parking lamp L
-carve(panel, cube('cutPk_R', (3, 9, 3.5), (0, -23, -4.75)))         # parking lamp R
+carve(panel, cube('cutHL_L', (3, 12.5, 5.0), (0, 25, 3.0)))      # headlamp L (world z -23.25... mirrored by symmetry)
+carve(panel, cube('cutHL_R', (3, 12.5, 5.0), (0, -25, 3.0)))     # headlamp R
+carve(panel, cube('cutGrille', (3, 34, 10), (0, 0, 0.5)))           # grille opening
+carve(panel, cube('cutPk_L', (3, 9, 3.5), (0, 24.8, -4.75)))          # parking lamp L
+carve(panel, cube('cutPk_R', (3, 9, 3.5), (0, -24.8, -4.75)))         # parking lamp R
 bevel(panel)
 
 # grille insert: dark recess + argent bars
-cube('recess', (0.5, 31, 10), (-0.8, 0, 0.5), dark)
+cube('recess', (0.5, 34, 10), (-0.8, 0, 0.5), dark)
 for z in (-2.4, 0.5, 3.4):
-    b = cube('barH', (0.8, 30.6, 0.9), (-0.1, 0, z), argent)
+    b = cube('barH', (0.8, 33.6, 0.9), (-0.1, 0, z), argent)
     bevel(b, 0.08)
-for y in (-10.3, -5.15, 5.15, 10.3):
+for y in (-11.3, -5.65, 5.65, 11.3):
     b = cube('barV', (0.7, 0.7, 9.6), (-0.2, y, 0.5), argent)
     bevel(b, 0.08)
 

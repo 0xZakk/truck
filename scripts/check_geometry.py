@@ -65,7 +65,7 @@ def legit_interface(a, b):
               ({"shifter"}, {"carpet"}),                   # shifter boot through the floor
               ({"steering-box"}, {"frame-rail"}),          # box bolts to the left rail
               ({"ibeam"}, {"rotor", "drum", "hub"}),       # spindle into the hub/rotor
-              ({"rear-axle"}, {"drum", "hub"}),            # drums on the axle flanges
+              ({"rear-axle", "axle-shaft"}, {"drum", "hub"}),  # drums on the axle-shaft flanges
               ({"dashboard"}, {"heater-box", "evaporator", "steering-column", "blower"}),
               ({"engine-mount"}, {"crossmember"}),         # mounts bolt to the engine crossmember
               ({"front-bumper", "rear-bumper"}, {"frame-rail"})]  # bumper brackets bolt to the rail horns

@@ -2,6 +2,22 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop it.4) — Body width to factory spec
+- Body was 72" wide vs the real ~77-79 — tires visibly poked past the fenders.
+  Widened EVERYTHING coordinated: cab skins to 76.8" (doors/glass/mirrors/trim/
+  kick panels follow), bed inner walls to the brochure's 70" box width (floor/
+  headboard/rails follow), hood to 68", roof/cowl/firewall/header to match,
+  fenders out to ~77.6" skins, front panel + lamps rebuilt 66" wide (lamps at
+  +-25), front bumper rebuilt 75" with wrapped ends, rear bumper 74".
+- Wheels pulled IN to brochure tread: front +-32.7 (65.4"), rear +-32.2 (64.4");
+  rotors/calipers/drums/tubs/steering-linkage ends follow.
+- Tailgate corrected to ~62" between the bedside end caps (it was spanning the
+  full box width); taillights seated at the corners; drum-on-axle-shaft-flange
+  added to the checker's BOLTED whitelist (real interface).
+- checker CLEAN. Stance now reads correct (body wider than track, tires tucked).
+  Next: LIGHTING pass — chrome reads black from the front with RoomEnvironment;
+  vendored HDRI + fill light + post (SSAO) is the biggest remaining global lever.
+
 ### 2026-06-11 (loop it.3) — Blender front clip
 - `scripts/blender/front_clip.py` -> 3 new .glbs replacing the box approximations:
   **front-panel.glb** (one argent header/grille molding with boolean openings for
