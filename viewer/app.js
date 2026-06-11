@@ -89,7 +89,7 @@ const meshes = [];           // all part meshes
 let selected = null;
 const activeSet = new Set(); // selected systems (empty = whole truck)
 let bodyHidden = false;      // body-panels toggle (see the engine without the shell)
-const BODY_SYSTEMS = new Set(['body-cab', 'body-bed', 'exterior-trim', 'glass']);
+const BODY_SYSTEMS = new Set(['body-cab', 'body-bed', 'exterior-trim', 'glass', 'interior']);
 let camPosGoal = null, camTgtGoal = null;   // camera tween targets
 
 const colorOf = (part) =>
