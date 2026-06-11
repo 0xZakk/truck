@@ -102,13 +102,21 @@ function buildGeometry(m) {
 // Build a massing primitive (box/cyl/sphere) with a system-colored material + edges.
 function buildPrimitive(prim, part) {
   const g = buildGeometry(prim);
-  const baseOpacity = prim.opacity != null ? prim.opacity : 1;
-  const mat = new THREE.MeshStandardMaterial({
-    color: new THREE.Color(prim.color || colorOf(part)),
-    metalness: 0.25, roughness: 0.62,
-    transparent: baseOpacity < 1, opacity: baseOpacity,
-    emissive: new THREE.Color('#000000'), emissiveIntensity: 0,
-  });
+  const isGlass = part.systems && part.systems.includes('glass');
+  const baseOpacity = prim.opacity != null ? prim.opacity : (isGlass ? 0.32 : 1);
+  const mat = isGlass
+    ? new THREE.MeshPhysicalMaterial({          // automotive glass: smooth, faint green
+        color: new THREE.Color(prim.color || '#a8c4bc'),
+        metalness: 0, roughness: 0.05, clearcoat: 1, clearcoatRoughness: 0.04,
+        transparent: true, opacity: baseOpacity,
+        emissive: new THREE.Color('#000000'), emissiveIntensity: 0,
+      })
+    : new THREE.MeshStandardMaterial({
+        color: new THREE.Color(prim.color || colorOf(part)),
+        metalness: 0.25, roughness: 0.62,
+        transparent: baseOpacity < 1, opacity: baseOpacity,
+        emissive: new THREE.Color('#000000'), emissiveIntensity: 0,
+      });
   const mesh = new THREE.Mesh(g, mat);
   if (prim.position) mesh.position.set(prim.position[0], prim.position[1], prim.position[2]);
   if (prim.rotation) mesh.rotation.set(prim.rotation[0] * DEG, prim.rotation[1] * DEG, prim.rotation[2] * DEG);

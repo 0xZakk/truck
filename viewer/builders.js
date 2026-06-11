@@ -775,8 +775,7 @@ function cabShell() {
   prof.holes.push(door, qwin);
   for (const s of [-1, 1]) g.add(at(panel(prof, 1.2, paintWhite()), 0, 0, s < 0 ? -38.4 : 37.2));
 
-  // roof (overhangs the sides slightly) + windshield header
-  g.add(at(box(83, 2.5, 76.3, paintWhite()), -8.5, 18.75, 0));
+  // windshield header (the roof itself is a separate crowned .glb part)
   g.add(at(box(3, 2, 73, paintWhite()), 34, 16.6, 0));
 
   // raked A-pillars (match windshield 28° rake)

@@ -2,6 +2,20 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-11 (loop it.6) — Crowned hood + roof, tinted glass
+- `scripts/blender/body_panels.py` -> hood.glb + cab-roof.glb: displaced-grid
+  panels with real center crown (~1.1"), hood slopes and rolls down at the nose,
+  roof doubly crowned. Roof re-enabled as its own part record (gltf, context),
+  removed from the cabShell builder. GOTCHA logged: Blender `primitive_grid_add`
+  size=1 spans +-0.5 (cubes span +-1) — first export came out HALF size and
+  rendered as the 6x6x6 load-fallback boxes; debugged via glb accessor extents.
+- Glass primitives now use MeshPhysicalMaterial (faint green, clearcoat,
+  roughness 0.05) instead of flat transparent boxes.
+- checker CLEAN. Truck now: factory proportions, crowned panels, HDRI chrome,
+  real front clip, Blender wheels. Remaining queue: door cut lines + handles
+  detail, wiper arms, drip rails, interior dash detail, exhaust tip, paint-code
+  color check vs photos, McMaster fastener importer, SSAO post pass.
+
 ### 2026-06-11 (loop it.5) — Real HDRI environment
 - Vendored a CC0 Poly Haven studio HDRI (`viewer/assets/studio_small_08_1k.hdr`,
   1.5MB) loaded via RGBELoader -> PMREM; RoomEnvironment stays as the sync
