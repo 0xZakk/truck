@@ -1,0 +1,25 @@
+{
+  "name": "1994 Ford F-150 Knowledge Base",
+  "domain": "1994 Ford F-150 XLT SuperCab, 2WD, 4.9L (300 cu in) I6, M5OD-R2 5-speed — how every system works, plus maintenance, diagnosis, and repair. Used to learn the truck, build learning tools/apps on top of it, and debug real issues.",
+  "paths": {
+    "root": "kb",
+    "sources": "kb/sources",
+    "notes": "kb/notes",
+    "maps": "kb/maps",
+    "raw": "kb/.raw",
+    "data": "tools/data"
+  },
+  "note_kinds": ["concept", "how-it-works", "troubleshooting", "procedure", "spec"],
+  "link_prefixes": {
+    "sources": "sources",
+    "notes": "notes",
+    "maps": "maps"
+  },
+  "semantic": {
+    "model": "BAAI/bge-base-en-v1.5",
+    "threshold": 0.78,
+    "top_n": 5
+  },
+  "feeds": [],
+  "frontend": null
+}

@@ -18,3 +18,10 @@ __pycache__/
 # Owner reference photos (large, local only)
 reference/photos/*
 !reference/photos/README.txt
+
+# Knowledge base: regenerable artifacts (re-create with the kb-toolkit tools).
+# The kb/ markdown (sources, notes, maps) IS committed — it's the knowledge base.
+# normalized source captures (re-fetch via tools/ingest.py):
+kb/.raw/
+# semantic index (regenerate via tools/semantic_links.py embed):
+tools/data/embeddings.npz
