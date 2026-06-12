@@ -2503,14 +2503,16 @@
    "location": "Front of the engine bay, behind the grille.",
    "ford_part_number": "F2TZ-8005-BA",
    "model": {
-    "builder": "radiator",
+    "kind": "gltf",
+    "src": "../models/radiator.glb",
+    "glbScale": 1000,
     "position": [
      101,
      26,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
