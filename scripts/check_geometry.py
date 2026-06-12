@@ -21,7 +21,7 @@ URL = "http://127.0.0.1:8080/viewer/?dump=1"
 def fetch_geometry():
     out = subprocess.run(
         [CHROME, "--headless=new", "--use-gl=angle", "--use-angle=swiftshader",
-         "--enable-unsafe-swiftshader", "--virtual-time-budget=12000", "--dump-dom", URL],
+         "--enable-unsafe-swiftshader", "--virtual-time-budget=45000", "--dump-dom", URL],
         capture_output=True, text=True, timeout=90).stdout
     m = re.search(r'<pre id="geomdump"[^>]*>(.*?)</pre>', out, re.S)
     if not m:
@@ -52,12 +52,17 @@ def legit_interface(a, b):
         return True
     housing = ("engine-block", "cylinder-head", "valve-cover", "intake-manifold", "transmission",
                "rear-axle", "starter-motor", "alternator", "differential", "oil-filter", "fuel-tank",
-               "dashboard")
+               "dashboard", "heater-box", "distributor")
     internal = ("crankshaft", "camshaft", "piston", "connecting-rod", "conrod", "timing-gear",
                 "oil-pump", "synchro", "valve", "armature", "brush", "pinion", "carrier",
-                "side-gear", "ring-and-pinion", "axle-shaft", "clutch", "fuel-pump", "sender",
-                "spark-plug", "distributor", "ignition-switch", "ignition-pickup", "water-pump",
+                "side-gear", "ring-and-pinion", "ring-gear", "differential-case", "axle-shaft",
+                "clutch", "fuel-pump", "sender", "spark-plug", "ignition-switch", "ignition-pickup",
+                "starter-drive", "heater-core", "evaporator-core", "distributor-rotor",
                 "input-shaft", "mainshaft", "countershaft", "output-shaft", "synchro", "shift-fork")
+    # NOTE: distributor + water pump are NOT internals — they mount externally
+    # (only the dist. shank inserts); listing them here hid a half-sunk distributor.
+    if has(a, internal) and has(b, internal):
+        return True          # interlocking internals (piston-rod-crank-cam trains)
     # bolted/mating interfaces — parts genuinely in contact by design
     BOLTED = [({"harmonic-balancer"}, {"crankshaft"}),     # balancer on the crank snout
               ({"engine-block"}, {"transmission"}),        # bellhousing face
@@ -70,7 +75,18 @@ def legit_interface(a, b):
               ({"engine-mount"}, {"crossmember"}),         # mounts bolt to the engine crossmember
               ({"front-bumper", "rear-bumper"}, {"frame-rail"}),  # bumper brackets bolt to the rail horns
               ({"water-pump"}, {"cooling-fan"}),           # fan clutch hub bolts to the pump pulley
-              ({"ac-condenser"}, {"grille"})]              # condenser brackets bolt to the core support / header panel
+              ({"ac-condenser"}, {"grille"}),              # condenser brackets bolt to the core support / header panel
+              # engine top-end bolted chain (same-assembly pairs are now tested):
+              ({"cylinder-head"}, {"engine-block"}),
+              ({"valve-cover"}, {"cylinder-head"}),
+              ({"intake-manifold", "exhaust-manifold"}, {"cylinder-head"}),
+              ({"intake-manifold"}, {"exhaust-manifold"}), # bolted together on the 300
+              ({"distributor"}, {"engine-block"}),         # shank inserts at the front of the block
+              ({"water-pump"}, {"engine-block"}),          # pump bolts to the block front / timing cover
+              ({"starter-solenoid"}, {"starter-motor"}),   # solenoid rides on the starter
+              ({"ibeam"}, {"radius-arm"}),                 # radius arm bolts to its beam
+              ({"molding"}, {"fender", "bedside", "door"}),  # body side trim screws to the panels
+              ({"thermostat-housing"}, {"cylinder-head"})]  # water outlet bolts to the head front
     for left, right in BOLTED:
         if (has(a, left) and has(b, right)) or (has(b, left) and has(a, right)):
             return True

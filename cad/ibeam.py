@@ -6,7 +6,7 @@ from build123d import *
 
 LEN = 44.0
 H = 2.9        # section height
-FW = 3.8       # flange width (fore-aft)
+FW = 3.0       # flange width (fore-aft)
 FT = 0.6       # flange thickness
 WT = 1.1       # web thickness
 

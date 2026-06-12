@@ -15,7 +15,7 @@ def gen_step():
     with BuildPart() as body:
         # block-mounting plate
         with Locations(AX * Pos(0, 0, -1.6)):
-            Box(5.2, 5.2, 0.6)
+            Box(4.6, 4.6, 0.6)
         # volute
         with Locations(AX * Pos(0, 0, -0.4)):
             Cylinder(2.5, 1.8)
@@ -23,14 +23,15 @@ def gen_step():
         # scroll bump toward the lower outlet
         with Locations(AX * Pos(-1.2, -1.2, -0.4)):
             Cylinder(1.6, 1.7)
-        # vertical lower-hose inlet under the volute
-        with Locations((-0.5, 0, -2.6)):
-            Cylinder(1.05, 2.4)
+        # vertical lower-hose inlet under the volute, offset to the passenger
+        # side so the crank pulley rim clears it
+        with Locations((-0.5, -1.2, -2.35)):
+            Cylinder(1.05, 1.9)
         # heater hose nipple, upper left
         with Locations(Pos(0.2, 2.4, 1.4) * Rot(90, 0, 0)):
             Cylinder(0.34, 1.6)
         # bolt bosses on the plate
-        for dy, dz in ((2.2, 2.2), (-2.2, 2.2), (2.2, -2.2), (-2.2, -2.2)):
+        for dy, dz in ((1.9, 1.9), (-1.9, 1.9), (1.9, -1.9), (-1.9, -1.9)):
             with Locations(AX * Pos(dy, dz, -1.75)):
                 Cylinder(0.32, 0.35)
     body.part.label = "water pump casting"

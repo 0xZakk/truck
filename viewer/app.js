@@ -561,17 +561,31 @@ function dumpGeometry() {
     for (let j = i + 1; j < tops.length; j++) {
       const B = tops[j];
       if (B.rec.context || B.rec.samples) continue;
-      if (A.rec.assembly && A.rec.assembly === B.rec.assembly) continue;
+      // Same-assembly pairs ARE tested (containment-only, cheap) — skipping
+      // them entirely hid e.g. the distributor sunk into the block;
+      // check_geometry.py's legit_interface whitelists the real interfaces.
+      const sameAsm = A.rec.assembly && A.rec.assembly === B.rec.assembly;
       const ov = A.box.clone().intersect(B.box);
       if (ov.isEmpty()) continue;
       ov.getSize(_sz2);
-      if (_sz2.x * _sz2.y * _sz2.z < 8) continue;
-      let n = crossings(edgesOf(A.m), B.m, B.box) + crossings(edgesOf(B.m), A.m, A.box);
-      if (n < 3) {
-        // no surface crossings — catch full containment (small part swallowed whole)
-        const small = vol(A.box) < vol(B.box) ? A : B, big = small === A ? B : A;
-        const vs = edgesOf(small.m, 8).map(s => s[0]);
-        if (vs.length && vs.every(p => big.box.containsPoint(p) && inPart(p, big.m))) n = 99;
+      if (_sz2.x * _sz2.y * _sz2.z < 1.5) continue;
+      let n = 0;
+      try {
+        if (!sameAsm) {
+          // edge-crossing test, rays gated to the overlap box
+          ov.expandByScalar(0.3);
+          n = crossings(edgesOf(A.m, 60), B.m, ov) + crossings(edgesOf(B.m, 60), A.m, ov);
+        }
+        if (n < 3) {
+          // catch buried geometry — PARTIAL burial counts (.every() here used
+          // to let half-sunken parts pass silently)
+          const small = vol(A.box) < vol(B.box) ? A : B, big = small === A ? B : A;
+          const vs = edgesOf(small.m, 16).map(s => s[0]);
+          const inside = vs.filter(p => ov.containsPoint(p) && inPart(p, big.m)).length;
+          if (inside >= 2) n = 90 + inside;
+        }
+      } catch (e) {
+        console.warn('pen test failed for', A.rec.id, 'vs', B.rec.id, e.message);
       }
       if (n >= 3) (A.rec.pen = A.rec.pen || {})[B.rec.id] = n;
     }
