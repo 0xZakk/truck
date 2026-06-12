@@ -2,6 +2,30 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-06-12 — text-to-cad pipeline + per-part CAD loop (20 parts)
+- **New pipeline**: `cad@text-to-cad` plugin (build123d on OpenCASCADE).
+  Sources in `cad/<part-id>.py` (1 unit = 1 INCH, +X fwd +Z up +Y left);
+  `scripts/cad_export.sh` -> STEP + `models/<id>.glb`; records use
+  `model.glbScale: 1000` (cadpy GLBs are meter-scaled). Conventions +
+  verify loop in `cad/README.md`. Venv: `.venv-cad/` (py3.11).
+  GOTCHA: cadpy DROPS a parent Compound's location on GLB export — bake
+  axis rotations into every child location (see cooling-fan.py `AX`).
+- **Parts converted to CAD so far (20)**: valve cover, air cleaner,
+  radiator, cooling fan + clutch, A/C condenser, battery, alternator,
+  intake manifold, exhaust manifold, water pump, thermostat housing,
+  harmonic balancer, oil filter, distributor (TFI), PS pump, brake
+  booster + MC, fuel tank, catalytic converter, muffler, fuel filter.
+- **Packaging fixes the loop surfaced**: radiator->101.4 / condenser->
+  102.95 (pump pulley | fan | tanks/core | condenser | grille now stack
+  physically); lower rad hose rerouted around the bigger crank pulley;
+  cat moved 1.5" inboard off the RH radius arm; new BOLTED whitelist
+  pairs (fan<->pump, condenser<->core support).
+- **Queue (engine bay/underbody remaining)**: steering gear, horn, wiper
+  motor, relays/ignition coil, motor mounts, shocks, springs, steering
+  column/wheel, seats/dash interior pass, engine long block (LAST — many
+  mating parts + explode internals). Starter intentionally skipped
+  (already hero-detailed w/ internals + explode).
+
 ### 2026-06-11 — Viewer controls (owner request)
 - **Body-panels toggle** (`🚚` button / `?hidebody`): hides shells + body-cab/
   body-bed/exterior-trim/glass so the running gear and engine are unobstructed.
