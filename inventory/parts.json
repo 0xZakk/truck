@@ -1448,7 +1448,9 @@
    "location": "Front end of the crankshaft.",
    "ford_part_number": "E7TZ-6312-A",
    "model": {
-    "builder": "harmonicBalancer",
+    "kind": "gltf",
+    "src": "../models/harmonic-balancer.glb",
+    "glbScale": 1000,
     "position": [
      95.6,
      23,
@@ -1460,7 +1462,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -2572,14 +2574,16 @@
    "location": "Front of the engine block.",
    "ford_part_number": "F6TZ-8501-KB",
    "model": {
-    "builder": "waterPump",
+    "kind": "gltf",
+    "src": "../models/water-pump.glb",
+    "glbScale": 1000,
     "position": [
      97,
      30,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -2594,14 +2598,16 @@
    "location": "Front top of the cylinder head.",
    "ford_part_number": "F5TZ-8592-BC",
    "model": {
-    "builder": "thermostatHousing",
+    "kind": "gltf",
+    "src": "../models/thermostat-housing.glb",
+    "glbScale": 1000,
     "position": [
      94,
      38.5,
      1
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -2702,9 +2708,14 @@
       0
      ],
      [
+      96.8,
+      24.5,
+      -5
+     ],
+     [
       97,
-      21,
-      -4
+      20,
+      -5.5
      ],
      [
       98,
