@@ -2159,14 +2159,16 @@
    "location": "Under the cab/bed, mid-chassis.",
    "ford_part_number": "F6TZ-9002-A",
    "model": {
-    "builder": "fuelTank",
+    "kind": "gltf",
+    "src": "../models/fuel-tank.glb",
+    "glbScale": 1000,
     "position": [
      -30,
      11,
      -8.5
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3404,14 +3406,16 @@
    "location": "Driver-side firewall, engine bay.",
    "ford_part_number": "F4TZ-2140-E",
    "model": {
-    "builder": "masterBooster",
+    "kind": "gltf",
+    "src": "../models/brake-master.glb",
+    "glbScale": 1000,
     "position": [
      74,
      40,
      -16
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
