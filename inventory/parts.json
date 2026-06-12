@@ -2183,14 +2183,16 @@
    "location": "Driver-side frame rail, ahead of the tank.",
    "ford_part_number": "",
    "model": {
-    "builder": "fuelFilter",
+    "kind": "gltf",
+    "src": "../models/fuel-filter.glb",
+    "glbScale": 1000,
     "position": [
      22,
      12,
      -14
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -2812,7 +2814,7 @@
      [
       46,
       12.5,
-      14
+      12.5
      ]
     ]
    },
@@ -2831,14 +2833,16 @@
    "location": "Under the cab, passenger side.",
    "ford_part_number": "",
    "model": {
-    "builder": "catalyticConverter",
+    "kind": "gltf",
+    "src": "../models/catalytic-converter.glb",
+    "glbScale": 1000,
     "position": [
      38,
      12,
-     14
+     12.5
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -2869,7 +2873,7 @@
      [
       31,
       12,
-      14
+      12.5
      ],
      [
       0,
@@ -2903,14 +2907,16 @@
    "location": "Under the bed, passenger side.",
    "ford_part_number": "F5TZ-5230-AXA",
    "model": {
-    "builder": "muffler",
+    "kind": "gltf",
+    "src": "../models/muffler.glb",
+    "glbScale": 1000,
     "position": [
      -84,
      11,
      14
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
