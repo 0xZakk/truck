@@ -1477,14 +1477,16 @@
    "location": "Lower passenger side of the block.",
    "ford_part_number": "D9AZ-6731-A",
    "model": {
-    "builder": "oilFilter",
+    "kind": "gltf",
+    "src": "../models/oil-filter.glb",
+    "glbScale": 1000,
     "position": [
      86,
      25,
      -8
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented",
    "notes": [
     "VERIFY vs photos: 300 I6 oil filter side (moved L to clear exhaust/compressor)"
@@ -3222,14 +3224,16 @@
    "location": "Front of the engine, driver side.",
    "ford_part_number": "",
    "model": {
-    "builder": "psPump",
+    "kind": "gltf",
+    "src": "../models/ps-pump.glb",
+    "glbScale": 1000,
     "position": [
      92,
      35.5,
      -9
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3995,14 +3999,16 @@
    "location": "Front of the engine (gear-driven off the camshaft).",
    "ford_part_number": "F2TZ-12127-D",
    "model": {
-    "builder": "distributor",
+    "kind": "gltf",
+    "src": "../models/distributor.glb",
+    "glbScale": 1000,
     "position": [
      95,
      33,
      4
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
