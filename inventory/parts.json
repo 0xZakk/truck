@@ -2726,14 +2726,16 @@
    "location": "Above the intake/throttle body, passenger side.",
    "ford_part_number": "E7TZ-9601-B",
    "model": {
-    "builder": "airCleaner",
+    "kind": "gltf",
+    "src": "../models/air-cleaner.glb",
+    "glbScale": 1000,
     "position": [
      80,
      40,
      25
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented",
    "notes": [
     "VERIFY vs photos: 1994 EFI air box on RH fender apron (was floating on-engine, poked through hood)"
