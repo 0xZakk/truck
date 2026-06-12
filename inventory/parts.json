@@ -1374,14 +1374,16 @@
    "location": "On top of the cylinder head.",
    "ford_part_number": "F3TZ-6582-H",
    "model": {
-    "builder": "valveCover",
+    "kind": "gltf",
+    "src": "../models/valve-cover.glb",
+    "glbScale": 1000,
     "position": [
      79,
      40.5,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
