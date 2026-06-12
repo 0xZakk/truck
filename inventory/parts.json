@@ -1516,14 +1516,16 @@
    "location": "Driver side of the block to the frame.",
    "ford_part_number": "F3UZ-6038-B",
    "model": {
-    "builder": "motorMount",
+    "kind": "gltf",
+    "src": "../models/engine-mount.glb",
+    "glbScale": 1000,
     "position": [
      76,
      20.5,
      -9
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -1538,14 +1540,16 @@
    "location": "Passenger side of the block to the frame.",
    "ford_part_number": "F3UZ-6038-B",
    "model": {
-    "builder": "motorMount",
+    "kind": "gltf",
+    "src": "../models/engine-mount.glb",
+    "glbScale": 1000,
     "position": [
      76,
      20.5,
      9
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -4091,14 +4095,16 @@
    "location": "On the intake/valve cover, passenger side.",
    "ford_part_number": "F7PZ-12029-AA",
    "model": {
-    "builder": "ignitionCoil",
+    "kind": "gltf",
+    "src": "../models/ignition-coil.glb",
+    "glbScale": 1000,
     "position": [
      72,
      35,
      -7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented",
    "notes": [
     "VERIFY vs photos: coil bracket position"
@@ -4710,14 +4716,16 @@
     "One click no crank"
    ],
    "model": {
-    "builder": "relay",
+    "kind": "gltf",
+    "src": "../models/starter-relay.glb",
+    "glbScale": 1000,
     "position": [
      89,
      40.5,
      24
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
