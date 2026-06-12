@@ -1137,14 +1137,16 @@
    "location": "Rear face of the axle pumpkin.",
    "ford_part_number": "F4TZ-4033-A",
    "model": {
-    "builder": "diffCover",
+    "kind": "gltf",
+    "src": "../models/differential-cover.glb",
+    "glbScale": 1000,
     "position": [
      -73.6,
      14.9,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -1159,14 +1161,16 @@
    "location": "Driver-side rear wheel.",
    "ford_part_number": "",
    "model": {
-    "builder": "brakeDrum",
+    "kind": "gltf",
+    "src": "../models/brake-drum.glb",
+    "glbScale": 1000,
     "position": [
      -69.5,
      14.4,
      -29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -1181,14 +1185,16 @@
    "location": "Passenger-side rear wheel.",
    "ford_part_number": "",
    "model": {
-    "builder": "brakeDrum",
+    "kind": "gltf",
+    "src": "../models/brake-drum.glb",
+    "glbScale": 1000,
     "position": [
      -69.5,
      14.4,
      29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3462,14 +3468,16 @@
    "location": "Front-left wheel hub.",
    "ford_part_number": "F4UZ-1102-A",
    "model": {
-    "builder": "brakeRotor",
+    "kind": "gltf",
+    "src": "../models/brake-rotor.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      14.4,
      -29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3484,14 +3492,16 @@
    "location": "Front-right wheel hub.",
    "ford_part_number": "F4UZ-1102-A",
    "model": {
-    "builder": "brakeRotor",
+    "kind": "gltf",
+    "src": "../models/brake-rotor.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      14.4,
      29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3506,14 +3516,16 @@
    "location": "Top of the front-left rotor.",
    "ford_part_number": "",
    "model": {
-    "builder": "brakeCaliper",
+    "kind": "gltf",
+    "src": "../models/brake-caliper.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      20,
      -29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -3528,14 +3540,16 @@
    "location": "Top of the front-right rotor.",
    "ford_part_number": "",
    "model": {
-    "builder": "brakeCaliper",
+    "kind": "gltf",
+    "src": "../models/brake-caliper.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      20,
      29.7
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
