@@ -138,10 +138,11 @@ function buildPrimitive(prim, part) {
 // Load a real mesh (.glb from AI-gen or sourced CAD) into a part's group, async.
 const gltfLoader = new GLTFLoader();
 let pendingGltf = 0;   // geometry dump waits for these so AABBs are real
-function loadGltf(src, top, part) {
+function loadGltf(src, top, part, scale) {
   pendingGltf++;
   gltfLoader.load(src, (gltf) => {
     pendingGltf--;
+    if (scale && scale !== 1) gltf.scene.scale.setScalar(scale);
     gltf.scene.traverse(o => {
       o.userData.part = part;
       if (o.isMesh) { o.userData.cast = true; o.castShadow = true; o.receiveShadow = true; }
@@ -169,7 +170,7 @@ function addPart(part) {
   try {
     if (m.kind === 'gltf' && m.src) {
       top = new THREE.Group();                  // real mesh (AI-generated / sourced .glb), loaded async
-      loadGltf(m.src, top, part);
+      loadGltf(m.src, top, part, m.glbScale);   // glbScale: cadpy GLBs are meters (inches/1000) → 1000
     } else if (m.builder && BUILDERS[m.builder]) {
       top = BUILDERS[m.builder](m, part);       // refined geometry
     } else if (m.kind === 'group') {

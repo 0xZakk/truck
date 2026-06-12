@@ -9,6 +9,12 @@ manuals/brochures/*.pdf
 models/**/*.glb
 models/**/*.gltf
 
+# CAD pipeline (text-to-cad skill): cad/*.py sources are truth; STEP + hidden
+# topology sidecars regenerate via scripts/cad_export.sh. Venv is local.
+cad/*.step
+cad/.*.step.glb
+.venv-cad/
+
 # OS / editor cruft
 .DS_Store
 *.swp
