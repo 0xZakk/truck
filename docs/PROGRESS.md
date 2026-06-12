@@ -2,7 +2,7 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
-### 2026-06-12 — text-to-cad pipeline + per-part CAD loop (20 parts)
+### 2026-06-12 — text-to-cad pipeline + per-part CAD loop (34 parts)
 - **New pipeline**: `cad@text-to-cad` plugin (build123d on OpenCASCADE).
   Sources in `cad/<part-id>.py` (1 unit = 1 INCH, +X fwd +Z up +Y left);
   `scripts/cad_export.sh` -> STEP + `models/<id>.glb`; records use
@@ -20,11 +20,15 @@ Newest first. Each session: log what was catalogued and what's next.
   physically); lower rad hose rerouted around the bigger crank pulley;
   cat moved 1.5" inboard off the RH radius arm; new BOLTED whitelist
   pairs (fan<->pump, condenser<->core support).
-- **Queue (engine bay/underbody remaining)**: steering gear, horn, wiper
-  motor, relays/ignition coil, motor mounts, shocks, springs, steering
-  column/wheel, seats/dash interior pass, engine long block (LAST — many
-  mating parts + explode internals). Starter intentionally skipped
-  (already hero-detailed w/ internals + explode).
+- **Batch 2 (21-34)**: steering box, horn, wiper motor, coil springs
+  (true swept helix), shocks x4, engine mounts, ignition coil, starter
+  relay, cambered leaf springs, Twin I-Beams, vented rotors, calipers,
+  drums, 8.8 diff cover. All shared-instance records point at one glb.
+- **Queue**: radius arms, drag link/tie rods, driveshaft, steering
+  column/wheel, transmission case detail, rear axle housing, grille-area
+  lamps OK (Blender), interior pass (dash/seats/column), engine long
+  block (LAST — many mating parts + explode internals). Starter
+  intentionally skipped (already hero-detailed w/ internals + explode).
 
 ### 2026-06-11 — Viewer controls (owner request)
 - **Body-panels toggle** (`🚚` button / `?hidebody`): hides shells + body-cab/
