@@ -701,14 +701,16 @@
    "location": "Front left, over the beam.",
    "ford_part_number": "F1TZ-5560-E",
    "model": {
-    "builder": "coilSpring",
+    "kind": "gltf",
+    "src": "../models/coil-spring.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      19,
      -13
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -723,14 +725,16 @@
    "location": "Front right, over the beam.",
    "ford_part_number": "F1TZ-5560-E",
    "model": {
-    "builder": "coilSpring",
+    "kind": "gltf",
+    "src": "../models/coil-spring.glb",
+    "glbScale": 1000,
     "position": [
      69.5,
      19,
      13
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -745,7 +749,9 @@
    "location": "Front left.",
    "ford_part_number": "E7TZ-18124-B",
    "model": {
-    "builder": "shockAbsorber",
+    "kind": "gltf",
+    "src": "../models/shock-absorber.glb",
+    "glbScale": 1000,
     "position": [
      72.5,
      22,
@@ -757,7 +763,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -772,7 +778,9 @@
    "location": "Front right.",
    "ford_part_number": "E7TZ-18124-B",
    "model": {
-    "builder": "shockAbsorber",
+    "kind": "gltf",
+    "src": "../models/shock-absorber.glb",
+    "glbScale": 1000,
     "position": [
      72.5,
      22,
@@ -784,7 +792,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -956,7 +964,9 @@
    "location": "Driver-side, behind the axle.",
    "ford_part_number": "E7TZ-18124-B",
    "model": {
-    "builder": "shockAbsorber",
+    "kind": "gltf",
+    "src": "../models/shock-absorber.glb",
+    "glbScale": 1000,
     "position": [
      -79,
      16,
@@ -968,7 +978,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -983,7 +993,9 @@
    "location": "Passenger-side, behind the axle.",
    "ford_part_number": "E7TZ-18124-B",
    "model": {
-    "builder": "shockAbsorber",
+    "kind": "gltf",
+    "src": "../models/shock-absorber.glb",
+    "glbScale": 1000,
     "position": [
      -79,
      16,
@@ -995,7 +1007,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
