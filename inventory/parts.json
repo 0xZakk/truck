@@ -2974,14 +2974,16 @@
    "location": "Driver-side frame rail, front.",
    "ford_part_number": "F6AZ-3575-AA",
    "model": {
-    "builder": "steeringGear",
+    "kind": "gltf",
+    "src": "../models/steering-box.glb",
+    "glbScale": 1000,
     "position": [
      83,
      24,
      -19
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented",
    "notes": [
     "box ahead of the axle on the LH rail web"
@@ -6580,14 +6582,16 @@
    "location": "Front of the engine bay.",
    "ford_part_number": "",
    "model": {
-    "builder": "horn",
+    "kind": "gltf",
+    "src": "../models/horn.glb",
+    "glbScale": 1000,
     "position": [
      92,
      42,
      -16
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -6646,14 +6650,16 @@
    "location": "At the cowl, base of the windshield.",
    "ford_part_number": "F5HZ-17508-A",
    "model": {
-    "builder": "wiperMotor",
+    "kind": "gltf",
+    "src": "../models/wiper-motor.glb",
+    "glbScale": 1000,
     "position": [
      58,
      46,
      -6
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
