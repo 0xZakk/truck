@@ -3797,14 +3797,16 @@
    "location": "Front passenger side of the engine, belt-driven.",
    "ford_part_number": "F6UZ-10346-VA",
    "model": {
-    "builder": "alternator",
+    "kind": "gltf",
+    "src": "../models/alternator.glb",
+    "glbScale": 1000,
     "position": [
      92,
      38.5,
      13
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -4470,14 +4472,16 @@
     "One click no crank"
    ],
    "model": {
-    "builder": "battery",
+    "kind": "gltf",
+    "src": "../models/battery.glb",
+    "glbScale": 1000,
     "position": [
      96,
      33,
      22
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
