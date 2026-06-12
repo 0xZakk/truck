@@ -652,14 +652,16 @@
    "location": "Front, crossing from the right frame to the left wheel.",
    "ford_part_number": "E7TZ-3006-A",
    "model": {
-    "builder": "iBeam",
+    "kind": "gltf",
+    "src": "../models/ibeam.glb",
+    "glbScale": 1000,
     "position": [
      70.5,
      13.5,
      -6
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -674,7 +676,9 @@
    "location": "Front, crossing from the left frame to the right wheel.",
    "ford_part_number": "E7TZ-3006-A",
    "model": {
-    "builder": "iBeam",
+    "kind": "gltf",
+    "src": "../models/ibeam.glb",
+    "glbScale": 1000,
     "position": [
      68.5,
      13.5,
@@ -686,7 +690,7 @@
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -920,14 +924,16 @@
    "location": "Under the driver-side frame, axle on top.",
    "ford_part_number": "F1TZ-5560-E",
    "model": {
-    "builder": "leafSpring",
+    "kind": "gltf",
+    "src": "../models/leaf-spring.glb",
+    "glbScale": 1000,
     "position": [
      -69.5,
      10.5,
      -23
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -942,14 +948,16 @@
    "location": "Under the passenger-side frame, axle on top.",
    "ford_part_number": "F1TZ-5560-E",
    "model": {
-    "builder": "leafSpring",
+    "kind": "gltf",
+    "src": "../models/leaf-spring.glb",
+    "glbScale": 1000,
     "position": [
      -69.5,
      10.5,
      23
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
