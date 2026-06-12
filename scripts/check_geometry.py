@@ -86,7 +86,8 @@ def legit_interface(a, b):
               ({"starter-solenoid"}, {"starter-motor"}),   # solenoid rides on the starter
               ({"ibeam"}, {"radius-arm"}),                 # radius arm bolts to its beam
               ({"molding"}, {"fender", "bedside", "door"}),  # body side trim screws to the panels
-              ({"thermostat-housing"}, {"cylinder-head"})]  # water outlet bolts to the head front
+              ({"thermostat-housing"}, {"cylinder-head"}),  # water outlet bolts to the head front
+              ({"engine-control-module"}, {"dashboard", "kick-panel", "carpet"})]  # PCM brackets to the firewall behind the dash
     for left, right in BOLTED:
         if (has(a, left) and has(b, right)) or (has(b, left) and has(a, right)):
             return True

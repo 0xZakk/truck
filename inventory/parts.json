@@ -4171,20 +4171,20 @@
    "location": "On the distributor / driver fender.",
    "ford_part_number": "",
    "model": {
-    "kind": "box",
-    "size": [
-     2.5,
-     1.2,
-     3
-    ],
+    "kind": "gltf",
+    "src": "../models/ignition-control-module.glb",
+    "glbScale": 1000,
     "position": [
-     88,
-     40,
-     -6
+     102.3,
+     38,
+     -18
     ]
    },
-   "fidelity": "refined",
-   "status": "documented"
+   "fidelity": "cad",
+   "status": "documented",
+   "notes": [
+    "Moved to the radiator core support (remote TFI on 94s); was floating mid-bay at [88,40,-6]. Verify exact spot vs photos."
+   ]
   },
   {
    "id": "engine-control-module",
@@ -4198,19 +4198,16 @@
    "location": "Behind the driver kick panel.",
    "ford_part_number": "",
    "model": {
-    "kind": "box",
-    "size": [
-     2,
-     6,
-     5
-    ],
+    "kind": "gltf",
+    "src": "../models/engine-control-module.glb",
+    "glbScale": 1000,
     "position": [
-     44,
-     33,
+     44.5,
+     32,
      -22
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
