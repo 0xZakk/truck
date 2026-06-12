@@ -1399,14 +1399,16 @@
    "location": "Passenger side of the head (upper).",
    "ford_part_number": "E7TZ-9424-A",
    "model": {
-    "builder": "intakeManifold",
+    "kind": "gltf",
+    "src": "../models/intake-manifold.glb",
+    "glbScale": 1000,
     "position": [
      79,
      36,
      8.5
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -1422,14 +1424,16 @@
    "location": "Passenger side of the head (lower).",
    "ford_part_number": "F5TZ-9430-F",
    "model": {
-    "builder": "exhaustManifold",
+    "kind": "gltf",
+    "src": "../models/exhaust-manifold.glb",
+    "glbScale": 1000,
     "position": [
      79,
      31.5,
      8.5
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
