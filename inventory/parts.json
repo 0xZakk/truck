@@ -2507,7 +2507,7 @@
     "src": "../models/radiator.glb",
     "glbScale": 1000,
     "position": [
-     101,
+     101.4,
      26,
      0
     ]
@@ -2544,14 +2544,16 @@
    "location": "On the water-pump shaft, behind the radiator.",
    "ford_part_number": "F2UZ-8600-A",
    "model": {
-    "builder": "fanBlade",
+    "kind": "gltf",
+    "src": "../models/cooling-fan.glb",
+    "glbScale": 1000,
     "position": [
      99,
      30,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {
@@ -7034,14 +7036,16 @@
    "location": "In front of the radiator.",
    "ford_part_number": "F4TZ-19712-B",
    "model": {
-    "builder": "acCondenser",
+    "kind": "gltf",
+    "src": "../models/ac-condenser.glb",
+    "glbScale": 1000,
     "position": [
-     101.5,
+     102.95,
      27,
      0
     ]
    },
-   "fidelity": "refined",
+   "fidelity": "cad",
    "status": "documented"
   },
   {

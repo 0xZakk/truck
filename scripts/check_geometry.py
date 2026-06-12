@@ -68,7 +68,9 @@ def legit_interface(a, b):
               ({"rear-axle", "axle-shaft"}, {"drum", "hub"}),  # drums on the axle-shaft flanges
               ({"dashboard"}, {"heater-box", "evaporator", "steering-column", "blower"}),
               ({"engine-mount"}, {"crossmember"}),         # mounts bolt to the engine crossmember
-              ({"front-bumper", "rear-bumper"}, {"frame-rail"})]  # bumper brackets bolt to the rail horns
+              ({"front-bumper", "rear-bumper"}, {"frame-rail"}),  # bumper brackets bolt to the rail horns
+              ({"water-pump"}, {"cooling-fan"}),           # fan clutch hub bolts to the pump pulley
+              ({"ac-condenser"}, {"grille"})]              # condenser brackets bolt to the core support / header panel
     for left, right in BOLTED:
         if (has(a, left) and has(b, right)) or (has(b, left) and has(a, right)):
             return True
