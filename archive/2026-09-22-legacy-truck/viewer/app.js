@@ -618,8 +618,8 @@ function dumpGeometry() {
 async function boot() {
   const bust = '?t=' + Date.now();   // cache-bust so a refresh always loads the latest model
   const [sysRes, partRes] = await Promise.all([
-    fetch('/inventory/systems.json' + bust, { cache: 'no-store' }),
-    fetch('/inventory/parts.json' + bust, { cache: 'no-store' }),
+    fetch('../inventory/systems.json' + bust, { cache: 'no-store' }),
+    fetch('../inventory/parts.json' + bust, { cache: 'no-store' }),
   ]);
   const sysData = await sysRes.json();
   const partData = await partRes.json();

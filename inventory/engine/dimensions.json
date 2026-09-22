@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "sources": {
+    "fsm-a8f67760e68f": {
+      "title": "Engine / Cylinder Block Assembly / Connecting Rod / Service and Repair",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Connecting%20Rod/Service%20and%20Repair/index.html",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Connecting%20Rod/Service%20and%20Repair/",
+      "sha256": "3993438c4a5f133d35ab7fe5741ae9dbc2ec95cce9a9c4396e9680355f772329"
+    },
+    "fsm-2e5473b2bf99": {
+      "title": "Engine / Specifications / Engine Rebuilding Specifications",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Engine%20Rebuilding%20Specifications/index.html",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Engine%20Rebuilding%20Specifications/",
+      "sha256": "727cdfb04dde6c1ea59416151ff21d98d6fc82dd2fd48e74ca41ed5918a3cbbe"
+    },
+    "fsm-ed8704e3446e": {
+      "title": "Engine / Specifications / General Engine Specifications",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/General%20Engine%20Specifications/index.html",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/General%20Engine%20Specifications/",
+      "sha256": "a2a01ccdbdd6dd49be34d3ac4a9442821538ce9da73411e354b8df888f30a59a"
+    },
+    "silvolite-1186": {
+      "title": "silvolite-2020.pdf",
+      "path": "reference/engine/silvolite-2020.pdf",
+      "url": "https://www.uempistons.com/themes/UEM/images/Silv-O-Lite%2012.20.20.pdf",
+      "pdf_page": 40,
+      "printed_page": 38,
+      "sha256": "e4cae4c7b6aefacf612ac24318686da51e4a803d4ca3ca2a126ed4468baab114",
+      "review": "Table rendered and visually inspected."
+    },
+    "hastings-592": {
+      "title": "hastings-2022.pdf",
+      "path": "reference/engine/hastings-2022.pdf",
+      "url": "https://hastingspistonrings.com/wp-content/uploads/2023/05/2022-AMERICAS-MASTER-CATALOG.pdf",
+      "pdf_page": 182,
+      "printed_page": 181,
+      "sha256": "367beb9d91471b860874b153499d0d953a301ab7fd126c0d0bfe767f9c837f8e",
+      "review": "Table rendered and visually inspected."
+    }
+  },
+  "claims": [
+    {
+      "id": "bore",
+      "value": 101.6,
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-ed8704e3446e",
+        "hastings-592"
+      ],
+      "note": "Nominal standard bore, not measured on this truck.",
+      "original": "4.000 in"
+    },
+    {
+      "id": "stroke",
+      "value": 101.092,
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-ed8704e3446e"
+      ],
+      "note": "Nominal stroke.",
+      "original": "3.98 in"
+    },
+    {
+      "id": "compression_height",
+      "value": 45.1104,
+      "unit": "mm",
+      "status": "replacement-reference",
+      "source_ids": [
+        "silvolite-1186"
+      ],
+      "note": "1186/1186H EFI replacement piston; original installed piston identity unconfirmed.",
+      "original": "1.776 in"
+    },
+    {
+      "id": "pin_diameter",
+      "value": 24.77008,
+      "unit": "mm",
+      "status": "replacement-reference",
+      "source_ids": [
+        "silvolite-1186"
+      ],
+      "note": "Replacement pin nominal; does not repair the malformed factory range.",
+      "original": ".9752 in"
+    },
+    {
+      "id": "dish_depth",
+      "value": 7.874,
+      "unit": "mm",
+      "status": "replacement-reference",
+      "source_ids": [
+        "silvolite-1186"
+      ],
+      "note": "D-shaped recess depth; plan outline not dimensioned.",
+      "original": ".310 in"
+    },
+    {
+      "id": "compression_ring_width",
+      "value": 1.984375,
+      "unit": "mm",
+      "status": "published-application",
+      "source_ids": [
+        "hastings-592",
+        "silvolite-1186"
+      ],
+      "note": "Catalog nominal ring-pack width for application; ring running clearance modeled separately.",
+      "original": "5/64 in"
+    },
+    {
+      "id": "oil_ring_pack_width",
+      "value": 4.7625,
+      "unit": "mm",
+      "status": "published-application",
+      "source_ids": [
+        "hastings-592",
+        "silvolite-1186"
+      ],
+      "note": "Nominal complete oil-ring pack; individual rail/expander dimensions unknown.",
+      "original": "3/16 in"
+    },
+    {
+      "id": "rod_journal_diameter_range",
+      "value": [
+        53.91912,
+        53.93944
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "note": "Factory rod-journal service specification.",
+      "original": "2.1228\u20132.1236 in"
+    },
+    {
+      "id": "main_journal_diameter_range",
+      "value": [
+        60.91428,
+        60.9346
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "note": "Factory main-journal service specification.",
+      "original": "2.3982\u20132.3990 in"
+    },
+    {
+      "id": "piston_clearance_range",
+      "value": [
+        0.0254,
+        0.04572
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "note": "Nominal piston-to-bore clearance range.",
+      "original": "0.0010\u20130.0018 in"
+    },
+    {
+      "id": "rod_length",
+      "value": 157.7,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional center distance solely for pipeline/motion demonstration; obtain applicable primary drawing.",
+      "original": null
+    },
+    {
+      "id": "pin_offset",
+      "value": 0,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [
+        "silvolite-1186"
+      ],
+      "note": "Catalog specifies offset but not amount/direction. Current zero-offset mechanism is explicitly idealized.",
+      "original": null
+    },
+    {
+      "id": "piston_diameter",
+      "value": 101.56,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Chosen within nominal factory piston clearance; no taper/ovality.",
+      "original": null
+    },
+    {
+      "id": "skirt_below_pin",
+      "value": 24,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Undimensioned provisional skirt length.",
+      "original": null
+    },
+    {
+      "id": "pin_length",
+      "value": 76,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Undimensioned provisional pin length.",
+      "original": null
+    },
+    {
+      "id": "pin_wall",
+      "value": 4,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Undimensioned provisional hollow pin wall.",
+      "original": null
+    },
+    {
+      "id": "crown_wall",
+      "value": 6,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional crown wall.",
+      "original": null
+    },
+    {
+      "id": "skirt_wall",
+      "value": 4,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional skirt wall.",
+      "original": null
+    },
+    {
+      "id": "dish_radius",
+      "value": 35,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Inferred D outline size, not a catalog dimension.",
+      "original": null
+    },
+    {
+      "id": "rod_width",
+      "value": 23,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional big-end axial width.",
+      "original": null
+    },
+    {
+      "id": "rod_outer_radius",
+      "value": 39,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional forging envelope.",
+      "original": null
+    },
+    {
+      "id": "bearing_thickness",
+      "value": 1.5,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional bearing shell thickness.",
+      "original": null
+    },
+    {
+      "id": "rod_bearing_clearance",
+      "value": 0.03,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Chosen running clearance inside published 0.0008\u20130.0015 in range.",
+      "original": null
+    },
+    {
+      "id": "bolt_diameter",
+      "value": 8,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Illustrative smooth-shank hardware; thread pitch/type not verified.",
+      "original": null
+    },
+    {
+      "id": "bolt_spacing_half",
+      "value": 34.5,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional hardware placement.",
+      "original": null
+    },
+    {
+      "id": "ring_radial_depth",
+      "value": 3,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional radial depth.",
+      "original": null
+    },
+    {
+      "id": "ring_end_gap",
+      "value": 0.38,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Chosen gap within factory compression ring range, not measured.",
+      "original": null
+    },
+    {
+      "id": "ring_groove_clearance",
+      "value": 0.06,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Chosen axial groove clearance in factory top/second range.",
+      "original": null
+    },
+    {
+      "id": "top_ring_z",
+      "value": 37,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional groove station relative to pin center.",
+      "original": null
+    },
+    {
+      "id": "second_ring_z",
+      "value": 32,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional groove station relative to pin center.",
+      "original": null
+    },
+    {
+      "id": "oil_ring_z",
+      "value": 25,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional groove station relative to pin center.",
+      "original": null
+    },
+    {
+      "id": "oil_rail_width",
+      "value": 0.5,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional rail width; expander rendered as a simple split band.",
+      "original": null
+    }
+  ],
+  "blocked_claims": [
+    {
+      "id": "factory-pin-range",
+      "source_id": "fsm-2e5473b2bf99",
+      "verbatim": "0.9749-0.0754 in",
+      "reason": "Descending range, apparent transcription error; do not use."
+    },
+    {
+      "id": "factory-pin-bore-labels",
+      "source_id": "fsm-2e5473b2bf99",
+      "reason": "Two Piston Pin Bore Diameter labels, different ranges; application/meaning unresolved."
+    },
+    {
+      "id": "pin-retainers",
+      "source_id": "fsm-a8f67760e68f",
+      "reason": "Retainers described as when used; not included without configuration proof."
+    },
+    {
+      "id": "ring-year-split",
+      "source_ids": [
+        "hastings-592",
+        "silvolite-1186"
+      ],
+      "reason": "Catalogs differ on later transition years. Both cover 1994 with the inch ring pack; installed piston still unverified."
+    }
+  ]
+}

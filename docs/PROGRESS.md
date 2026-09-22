@@ -2,6 +2,69 @@
 
 Newest first. Each session: log what was catalogued and what's next.
 
+### 2026-09-22 — engine atlas and component pages
+- Expanded to 53 valid CAD definitions and 399 individually addressable occurrences;
+  added an assembled STEP export and nested assembly exploration.
+- Preserved the piston study and added per-occurrence pages with explanations,
+  source links, model measurements, limitations and STEP downloads.
+- Built six-cylinder rotating geometry, block/main supports, head and valve gear,
+  nine-piece hydraulic lifters, timing gears and preliminary covers/seals.
+- Corrected piston boss protrusion, crankcase/cheek clashes, valve seats, keeper
+  grooves, pushrod interfaces, cover fit and gasket interference through CAD audits.
+- Static all-pair audit passes at the reference pose; sampled rotating/core checks
+  and 720-degree idealized linkage checks are distinct, limited verification scopes.
+- Browser verification covered individual-part navigation and return-to-engine
+  highlighting, nested assembly filtering/search, exploded lifter layout, section
+  view and responsive layout. Captured browser warning/error log is empty.
+- Added two Ford industrial comparison PDFs, two archived exploded drawings and
+  two KB source pages. Industrial specifications remain separate from verified
+  1994 truck applicability. The low-resolution full-engine image is not a reliable
+  source for its unreadable part-number table.
+- The engine is not finished. Full remaining scope and evidence needs are tracked
+  in ENGINE-COMPLETION.md. Do not equate occurrence count or CAD validity with OEM accuracy.
+
+### 2026-09-22 — sourced engine audit and first working component study
+- Indexed 413 engine manual pages and 72 unique illustrations; extracted 52
+  parts-information categories. These are research coverage, not complete BOM counts.
+- Downloaded and visually reviewed UEM Silvolite and Hastings catalog application
+  tables; captured three new KB sources with processed:false. Added 32 dimensional
+  claims/assumptions, five hashed source references and four blocked claims.
+- Built a repository-owned build123d pipeline with 12 reusable CAD definitions,
+  15 physical part occurrences and one explicitly schematic crank throw.
+- Added /viewer/engine.html: individual selection, isolation, hiding, explosion,
+  section, piston transparency and slider-crank animation, plus evidence/limitations.
+- Validated saved STEP topology/volume, GLB units/axes/bounds, all pairwise solid
+  intersections at four crank positions, and linkage closure/stroke at 1,441 angles.
+  Corrected bolt/bearing and crank-context clashes found by the checks.
+- Visually reviewed assembled, exploded, isolated and sectioned browser views;
+  playback/reset works and captured browser error/warning log is empty.
+- Remaining: exact rod geometry/length, pin offset/retention, actual piston identity,
+  hardware specifications, full rotating assembly, and the rest of the engine.
+  This study is provisional and is not counted as completion of the engine.
+- Reproduce via cad/engine/README.md; research and gap sheet: docs/ENGINE-AUDIT.md.
+
+### 2026-09-22 — owner confirms component-level scope and engine first
+- Reviewed the four reference posts in the browser and the public text-to-cad
+  repository. Fan still image inspected; embedded videos could not play.
+- Confirmed existing engine builders combine pistons, rods and closures into
+  coarse selectable groups. These do not satisfy the newly explicit requirement.
+- Added COMPONENT-MODEL.md: separate part definitions/occurrences, nested
+  assemblies, mechanical and functional relationships, motion, evidence and
+  acceptance criteria. Engine first is confirmed, not pending.
+- This pass defines architecture and reviews tooling; no new geometry or runtime
+  installation is claimed.
+
+### 2026-09-22 — restart audit and accuracy direction
+- Audited 281 inventory records, 37 CAD Python sources, 44 model files, and
+  163 source pages / 354 notes / 21 maps. All 61 GLB references resolve locally.
+- Found missing CAD runtime/plugin dependencies; only four inventory records
+  contain factory-manual source references. Accuracy needs evidence tracking.
+- Added docs/RESTART.md with research acquisition, CAD/Blender/browser roles,
+  nested assemblies, dimensional provenance, and proposed engine milestone.
+- Marked NEXT-SESSION.md as historical; its removed app is not the current viewer.
+- Restored the factory-manual archive from CHARM; ZIP CRC verified and extracted.
+- No geometry changes or visual certification in this audit.
+
 ### 2026-06-12 — text-to-cad pipeline + per-part CAD loop (34 parts)
 - **New pipeline**: `cad@text-to-cad` plugin (build123d on OpenCASCADE).
   Sources in `cad/<part-id>.py` (1 unit = 1 INCH, +X fwd +Z up +Y left);
@@ -603,3 +666,31 @@ parts catalogued; `deep` = down to fasteners/trim; `—` = not started.
 - **Next:** confirm fidelity target & cataloging order with owner, then start the
   first deep catalog pass (candidate: engine accessories or front suspension)
   by mining the FSM exploded views for part numbers + quantities.
+
+## 2026-09-22 — Engine navigation redesign
+
+Replaced the competing system dropdown, isolate state, and expandable full tree with
+one assembly-to-part browsing hierarchy. Start with five major assemblies, drill
+into their immediate contents, and return through breadcrumbs, Up, or Whole engine.
+Global search includes each result's ancestry; individual parts show neighboring
+parts and a link to their parent assembly. Every scope has a bookmarkable URL and
+browser Back/Forward support. Legacy part.html?id links remain supported.
+
+The browsing hierarchy is independent of CAD transforms; no geometry was changed.
+Explode, cutaway, transparency and motion are view controls; Reset keeps the current
+location. Sources and geometry qualifications remain available in part details.
+
+Validation: scripts/check-engine-navigation.mjs confirms all 399 occurrences are
+reachable exactly once and all 481 navigation URLs round-trip. Browser checks
+covered engine → cylinder → piston assembly → piston, parent return, cross-branch
+lifter search, empty search, deep-link reload, Back/Forward and Reset; no browser
+console errors were observed.
+
+## 2026-09-22 — Archived the legacy whole-truck prototype
+
+Moved 95 legacy viewer, CAD, mesh, inventory and helper files into
+`archive/2026-09-22-legacy-truck/`, with original hashes and a runnable archived
+viewer. Replaced `/viewer/` with a current project home linking the engine explorer.
+Manuals, reference material, extracted BOM, KB and current engine work remain in
+place. Verified preserved-file hashes, archive-relative mesh paths, and
+home/archive browser loading.

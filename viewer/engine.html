@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explore the engine · 1994 F-150</title>
+<link rel="stylesheet" href="./atlas.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body>
+<header><div><span class="kicker">1994 F-150 · 4.9L inline six</span><strong>Engine explorer</strong></div><a href="/viewer/">Whole truck ↗</a></header>
+<nav id="breadcrumbs" aria-label="Your location in the engine"><span>Engine</span></nav>
+<main class="layout">
+<aside aria-label="Engine navigation">
+  <div class="search-row"><label for="part-search">Find anything in the engine</label><div><input id="part-search" type="search" placeholder="Piston, lifter, bearing…" autocomplete="off"><button id="clear-search" hidden aria-label="Clear search">Clear</button></div></div>
+  <section id="search-results" hidden><h2 id="search-count" aria-live="polite"></h2><div id="results"></div></section>
+  <section id="browse">
+    <a id="up" class="up" hidden></a>
+    <span class="kicker" id="level-label">Start here</span><h1 id="nav-title">Explore the engine</h1>
+    <p id="nav-description">Choose an assembly to see what’s inside.</p>
+    <div id="selection" hidden><p id="description"></p><a id="part-page" class="primary-link"></a><div class="siblings"><a id="previous-part"></a><a id="next-part"></a></div>
+      <details><summary>Part details & sources</summary><div id="part-evidence"></div><div id="part-sources"></div><a id="step-download">Download this part’s CAD ↗</a></details>
+    </div>
+    <h2 id="contents-title">Assemblies</h2><nav id="parts" aria-label="Contents of this assembly"></nav>
+  </section>
+  <details class="project-details"><summary>About this reconstruction</summary><p id="coverage"></p><p>Castings and many dimensions remain provisional. Only crank motion and the gear ratio animate.</p><p><a href="/viewer/piston-study.html">Original piston study ↗</a></p><p><a href="/cad/engine/generated/full-assembly.step">Download assembled CAD ↗</a></p><h3>Still to resolve</h3><ul id="omissions"></ul></details>
+</aside>
+<section id="stage" aria-label="Interactive engine model">
+  <div class="view-heading"><div><span class="kicker" id="view-kind">Whole engine</span><h2 id="view-title">Engine</h2></div><a id="home" href="/viewer/engine.html">← Whole engine</a></div>
+  <div class="toolbar" aria-label="Model view controls"><button id="section" aria-pressed="false">Cutaway</button><button id="ghost" aria-pressed="false">See through covers</button><button id="reset">Reset this view</button></div>
+  <div id="status" role="status">Loading component geometry…</div><div id="error" role="alert" hidden></div>
+  <div class="controls" id="assembly-controls"><div><label for="explode">Explode this assembly <output id="explode-value">0%</output></label><input id="explode" type="range" min="0" max="1" step="0.01" value="0"><small>Exploration view · not a removal sequence.</small></div><div id="motion-controls" title="Idealized crank linkage; rod length and pin offset remain provisional. Valve motion is not simulated."><label for="angle">Crank position <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="360" step="1" value="0"><button id="play" aria-pressed="false">Play crank motion</button></div></div>
+  <p class="model-note">Provisional model · drag to orbit · scroll to zoom</p>
+</section>
+</main>
+<script type="module" src="./atlas.js"></script>
+</body></html>

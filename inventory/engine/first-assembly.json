@@ -1,0 +1,442 @@
+{
+  "schema_version": 1,
+  "title": "Ford 4.9L \u00b7 piston and rod study",
+  "status": "Provisional component study \u2014 not a complete or verified OEM engine",
+  "coordinate_system": {
+    "source": "mm, +Z cylinder, +X pin axis",
+    "gltf": "metres, Y-up",
+    "display_scale": 1000
+  },
+  "evidence": "/inventory/engine/dimensions.json",
+  "definitions": [
+    {
+      "id": "piston",
+      "glb": "/models/engine/piston.glb",
+      "step": "/cad/engine/generated/piston.step",
+      "color": "#c4cbd3",
+      "volume_mm3": 163475.34190213488,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 4586
+    },
+    {
+      "id": "pin",
+      "glb": "/models/engine/pin.glb",
+      "step": "/cad/engine/generated/pin.step",
+      "color": "#a1b4c4",
+      "volume_mm3": 19836.34374571157,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 672
+    },
+    {
+      "id": "compression-ring",
+      "glb": "/models/engine/compression-ring.glb",
+      "step": "/cad/engine/generated/compression-ring.step",
+      "color": "#586b78",
+      "volume_mm3": 1841.7839722126523,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 676
+    },
+    {
+      "id": "oil-rail",
+      "glb": "/models/engine/oil-rail.glb",
+      "step": "/cad/engine/generated/oil-rail.step",
+      "color": "#bcaa76",
+      "volume_mm3": 464.07155205358276,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 676
+    },
+    {
+      "id": "oil-expander",
+      "glb": "/models/engine/oil-expander.glb",
+      "step": "/cad/engine/generated/oil-expander.step",
+      "color": "#917449",
+      "volume_mm3": 2582.4008336534434,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 676
+    },
+    {
+      "id": "rod",
+      "glb": "/models/engine/rod.glb",
+      "step": "/cad/engine/generated/rod.step",
+      "color": "#8c9ba5",
+      "volume_mm3": 95719.29179728494,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 1556
+    },
+    {
+      "id": "rod-cap",
+      "glb": "/models/engine/rod-cap.glb",
+      "step": "/cad/engine/generated/rod-cap.step",
+      "color": "#71848e",
+      "volume_mm3": 27282.308557051605,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 960
+    },
+    {
+      "id": "upper-bearing",
+      "glb": "/models/engine/upper-bearing.glb",
+      "step": "/cad/engine/generated/upper-bearing.step",
+      "color": "#c9ad7a",
+      "volume_mm3": 2951.850409114726,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 340
+    },
+    {
+      "id": "lower-bearing",
+      "glb": "/models/engine/lower-bearing.glb",
+      "step": "/cad/engine/generated/lower-bearing.step",
+      "color": "#c9ad7a",
+      "volume_mm3": 2951.8504091147406,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 340
+    },
+    {
+      "id": "rod-bolt",
+      "glb": "/models/engine/rod-bolt.glb",
+      "step": "/cad/engine/generated/rod-bolt.step",
+      "color": "#526671",
+      "volume_mm3": 3300.599242025706,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 356
+    },
+    {
+      "id": "rod-nut",
+      "glb": "/models/engine/rod-nut.glb",
+      "step": "/cad/engine/generated/rod-nut.step",
+      "color": "#526671",
+      "volume_mm3": 462.24151139325477,
+      "solid_count": 1,
+      "geometry_status": "provisional",
+      "triangle_count": 360
+    },
+    {
+      "id": "crank-throw-demo",
+      "glb": "/models/engine/crank-throw-demo.glb",
+      "step": "/cad/engine/generated/crank-throw-demo.step",
+      "color": "#407c83",
+      "volume_mm3": 192180.95596023835,
+      "solid_count": 1,
+      "geometry_status": "schematic",
+      "triangle_count": 688
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "study",
+      "parent": null
+    },
+    {
+      "id": "piston-group",
+      "parent": "study"
+    },
+    {
+      "id": "rod-group",
+      "parent": "study"
+    },
+    {
+      "id": "crank-group",
+      "parent": "study"
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "piston-1",
+      "definition": "piston",
+      "parent": "piston-group",
+      "name": "Piston",
+      "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        65
+      ]
+    },
+    {
+      "id": "top-ring-1",
+      "definition": "compression-ring",
+      "parent": "piston-group",
+      "name": "Top compression ring",
+      "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+      "position_cad_mm": [
+        0,
+        0,
+        37
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        110
+      ]
+    },
+    {
+      "id": "second-ring-1",
+      "definition": "compression-ring",
+      "parent": "piston-group",
+      "name": "Second compression ring",
+      "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+      "position_cad_mm": [
+        0,
+        0,
+        32
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "oil-rail-1",
+      "definition": "oil-rail",
+      "parent": "piston-group",
+      "name": "Oil-control rail 1",
+      "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+      "position_cad_mm": [
+        0,
+        0,
+        27.13125
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        75
+      ]
+    },
+    {
+      "id": "oil-rail-2",
+      "definition": "oil-rail",
+      "parent": "piston-group",
+      "name": "Oil-control rail 2",
+      "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+      "position_cad_mm": [
+        0,
+        0,
+        22.86875
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        55
+      ]
+    },
+    {
+      "id": "oil-expander-1",
+      "definition": "oil-expander",
+      "parent": "piston-group",
+      "name": "Oil-ring expander",
+      "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+      "position_cad_mm": [
+        0,
+        0,
+        25
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        65
+      ]
+    },
+    {
+      "id": "wrist-pin-1",
+      "definition": "pin",
+      "parent": "piston-group",
+      "name": "Wrist pin",
+      "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "connecting-rod-1",
+      "definition": "rod",
+      "parent": "rod-group",
+      "name": "Connecting rod",
+      "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "rod-cap-1",
+      "definition": "rod-cap",
+      "parent": "rod-group",
+      "name": "Rod cap",
+      "function": "Closes the big end around the crank journal and lower bearing shell.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        -80
+      ]
+    },
+    {
+      "id": "rod-bearing-upper-1",
+      "definition": "upper-bearing",
+      "parent": "rod-group",
+      "name": "Upper bearing shell",
+      "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        65,
+        0,
+        20
+      ]
+    },
+    {
+      "id": "rod-bearing-lower-1",
+      "definition": "lower-bearing",
+      "parent": "rod-group",
+      "name": "Lower bearing shell",
+      "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        65,
+        0,
+        -40
+      ]
+    },
+    {
+      "id": "rod-bolt-1",
+      "definition": "rod-bolt",
+      "parent": "rod-group",
+      "name": "Rod bolt 1",
+      "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+      "position_cad_mm": [
+        0,
+        -34.5,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -34.5,
+        65
+      ]
+    },
+    {
+      "id": "rod-nut-1",
+      "definition": "rod-nut",
+      "parent": "rod-group",
+      "name": "Rod nut 1",
+      "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+      "position_cad_mm": [
+        0,
+        -34.5,
+        -28
+      ],
+      "explode_cad_mm": [
+        0,
+        -34.5,
+        -100
+      ]
+    },
+    {
+      "id": "rod-bolt-2",
+      "definition": "rod-bolt",
+      "parent": "rod-group",
+      "name": "Rod bolt 2",
+      "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+      "position_cad_mm": [
+        0,
+        34.5,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        34.5,
+        65
+      ]
+    },
+    {
+      "id": "rod-nut-2",
+      "definition": "rod-nut",
+      "parent": "rod-group",
+      "name": "Rod nut 2",
+      "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+      "position_cad_mm": [
+        0,
+        34.5,
+        -28
+      ],
+      "explode_cad_mm": [
+        0,
+        34.5,
+        -100
+      ]
+    },
+    {
+      "id": "crank-throw-context",
+      "definition": "crank-throw-demo",
+      "parent": "crank-group",
+      "name": "Crank throw \u00b7 schematic",
+      "function": "Demonstrates the sourced stroke and journal diameter. This is a mechanism fixture, not a replica of the six-cylinder crankshaft.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        0
+      ]
+    }
+  ],
+  "mechanism": {
+    "stroke_mm": 101.092,
+    "rod_length_mm": 157.7,
+    "pin_offset_mm": 0,
+    "model": "idealized zero-offset slider crank",
+    "rod_length_verified": false
+  },
+  "omissions": [
+    "Unconfirmed pin retainers",
+    "Exact pin offset",
+    "Exact rod forging and cap geometry",
+    "Fastener threads and specifications",
+    "Oil expander corrugations",
+    "Piston taper and ovality",
+    "Full crankshaft",
+    "Cylinder/block/head and remaining engine"
+  ]
+}

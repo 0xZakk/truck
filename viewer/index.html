@@ -1,83 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>F-150 — 3D parts explorer</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1994 F-150 · Truck explorer</title>
 <style>
-  :root{ --bg:#0e151d; --panel:#141d28; --line:#243140; --ink:#e7eef6; --muted:#8b9bad; --accent:#33e0ff; }
-  *{box-sizing:border-box}
-  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
-    font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;overflow:hidden}
-  #scene{position:fixed;inset:0}
-  .hud{position:fixed;z-index:5;pointer-events:none}
-  .hud *{pointer-events:auto}
-
-  /* title */
-  #title{top:0;left:0;padding:14px 18px}
-  #title h1{margin:0;font-size:15px;font-weight:700;letter-spacing:.01em}
-  #title p{margin:2px 0 0;font-size:12px;color:var(--muted)}
-
-  /* systems rail (left) */
-  #rail{top:64px;left:0;bottom:0;width:230px;padding:10px 12px 18px;overflow:auto}
-  #rail .grp{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:6px 4px}
-  .sysbtn{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:transparent;color:var(--ink);
-    border:1px solid transparent;border-radius:8px;padding:7px 9px;cursor:pointer;font-size:13px}
-  .sysbtn:hover{background:#1a2532}
-  .sysbtn.active{background:#1c2a3a;border-color:var(--accent)}
-  .sw{width:11px;height:11px;border-radius:3px;flex:0 0 auto;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
-  .sysbtn .ct{margin-left:auto;color:var(--muted);font-size:11px}
-  #allbtn{margin-bottom:6px;font-weight:600}
-
-  /* info panel (right) */
-  #info{top:64px;right:0;bottom:0;width:330px;padding:0 14px 18px;overflow:auto;display:none}
-  #info.show{display:block}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:10px}
-  .card h2{margin:0 0 2px;font-size:18px}
-  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
-  .chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:#cfe; background:#10212c;border:1px solid var(--line);
-    border-radius:20px;padding:2px 9px}
-  .kv{margin:10px 0 0}
-  .kv .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:1px}
-  .kv .v{font-size:13.5px}
-  ul.tl{margin:4px 0 0;padding-left:18px}
-  ul.tl li{margin:1px 0}
-  .muted{color:var(--muted)}
-  .closex{float:right;background:transparent;border:0;color:var(--muted);font-size:18px;cursor:pointer;line-height:1}
-  .fade{color:var(--muted);font-size:12px}
-
-  /* hint */
-  #hint{bottom:0;left:0;padding:10px 18px;font-size:12px;color:var(--muted)}
-  @media(max-width:720px){ #rail{width:170px} #info{width:84vw} }
+:root{font:16px/1.6 system-ui,sans-serif;color:#dce7ed;background:#101a23;color-scheme:dark}*{box-sizing:border-box}body{margin:0}main{max-width:880px;margin:auto;padding:70px 24px}small{color:#83bfc6;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(32px,6vw,54px);line-height:1.1;letter-spacing:-1.5px;margin:16px 0}p{color:#a9c1ce;max-width:640px}a{color:#a2dddd;text-underline-offset:4px}a:focus-visible{outline:3px solid #d49d55;outline-offset:5px}.card{display:block;margin:38px 0;padding:28px;border:1px solid #4b7883;border-radius:14px;background:#1a303d;text-decoration:none;color:inherit}.card:hover{background:#23414d}.card h2{font-size:26px;margin:6px 0}.card p{margin:8px 0}.action{display:inline-block;margin-top:12px;color:#aff0ed;font-weight:650}.later{padding:20px 0;border-top:1px solid #314550}.later h2{font-size:18px}footer{margin-top:45px;font-size:13px;color:#8aa5b2}
 </style>
 </head>
-<body>
-  <div id="scene"></div>
-
-  <div class="hud" id="title">
-    <h1>🛻 1994 F-150 — 3D parts explorer</h1>
-    <p id="subtitle">loading…</p>
-  </div>
-
-  <div class="hud" id="rail">
-    <button class="sysbtn active" id="allbtn">◧ Whole truck</button>
-    <button class="sysbtn active" id="bodybtn">🚚 Body panels shown</button>
-    <div class="grp">Systems — click to add, click again to remove</div>
-    <div id="syslist"></div>
-  </div>
-
-  <div class="hud" id="info">
-    <div class="card" id="infocard"></div>
-  </div>
-
-  <div class="hud" id="hint">Drag to orbit · right-drag or arrow keys to move · double-click to recenter · scroll to zoom · click a part for details</div>
-
-<script type="importmap">
-{ "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-}}
-</script>
-<script type="module" src="./app.js?v=3"></script>
-</body>
-</html>
+<body><main>
+<small>1994 F-150 XLT · SuperCab · 2WD</small>
+<h1>Your truck, part by part.</h1>
+<p>Explore how the truck is assembled, what each component does, and how the parts work together. We’re building the reconstruction one system at a time.</p>
+<a class="card" href="./engine.html"><small>In progress · 4.9L inline six</small><h2>Explore the engine</h2><p>Browse assemblies, inspect individual components, and explode them to see how they fit.</p><p>The engine is still incomplete. Many shapes and dimensions remain provisional.</p><span class="action">Open engine explorer →</span></a>
+<section class="later"><h2>The rest of the truck comes next</h2><p>Transmission, ignition, starting, cooling, brakes, steering, suspension, body, and other systems will join this explorer as their components are built and assembled.</p></section>
+<footer>The previous whole-truck prototype is preserved in the <a href="/archive/2026-09-22-legacy-truck/viewer/">archive</a>.</footer>
+</main></body></html>

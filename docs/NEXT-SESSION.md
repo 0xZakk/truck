@@ -1,3 +1,16 @@
+Legacy whole-truck prototype archived at `archive/2026-09-22-legacy-truck/`.
+`/viewer/` is now the current project home; engine development remains active.
+Do not resume the archived modeling pipeline. Manuals, BOM and KB remain available.
+
+Latest implementation (2026-09-22): engine atlas at /viewer/engine.html, individual
+pages at /viewer/part.html?id=<occurrence-id>, original study at /viewer/piston-study.html.
+53 definitions / 399 occurrences. Engine remains unfinished and provisional.
+Read [ENGINE-COMPLETION.md](ENGINE-COMPLETION.md),
+[cad/engine/README.md](../cad/engine/README.md) and [ENGINE-AUDIT.md](ENGINE-AUDIT.md) first.
+
+Current restart guidance (2026-09-22): see [RESTART.md](RESTART.md).
+The following is historical and describes the removed 2D app.
+
  Resume note — Phase 2 (FSM → app)
 
 ## The actual vision (clarified by user)

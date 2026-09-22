@@ -8,6 +8,12 @@ manuals/brochures/*.pdf
 # This rule still ignores any large *sourced/AI-generated* meshes dropped in later.
 models/**/*.glb
 models/**/*.gltf
+!models/engine/*.glb
+
+# Downloaded engine catalogs and regenerated STEP intermediates.
+reference/engine/*.pdf
+reference/engine/*.jpg
+cad/engine/generated/
 
 # CAD pipeline (text-to-cad skill): cad/*.py sources are truth; STEP + hidden
 # topology sidecars regenerate via scripts/cad_export.sh. Venv is local.

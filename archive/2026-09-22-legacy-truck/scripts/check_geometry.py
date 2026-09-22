@@ -15,7 +15,7 @@ Requires the static server running on 127.0.0.1:8080 and Google Chrome installed
 import json, re, subprocess, sys, html
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-URL = "http://127.0.0.1:8080/viewer/?dump=1"
+URL = "http://127.0.0.1:8080/archive/2026-09-22-legacy-truck/viewer/?dump=1"
 
 
 def fetch_geometry():

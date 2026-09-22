@@ -3,6 +3,16 @@
 **Vehicle:** 1994 Ford F-150 XLT SuperCab · 2WD · 4.9L (300 cu in) inline-six ·
 M5OD-R2 5-speed manual · white.
 
+## Current scope clarification (2026-09-22)
+
+The owner selected **engine first** and requires individually modeled physical
+components assembled into nested, working mechanisms across the entire truck.
+See [COMPONENT-MODEL.md](COMPONENT-MODEL.md) for the component architecture and
+acceptance criteria, and [RESTART.md](RESTART.md) for the restart audit. This
+supersedes older suggestions to leave the engine until last or treat detailed
+exterior meshes as completed systems. Rendering fidelity and verified accuracy
+are separate measures; a sourced mesh is not automatically accurate.
+
 ## The end goal
 An assembled, interactive 3D model of the **entire truck**, renderable in the
 browser (WebGL), built from a 3D model of **every individual part**. With it you can:

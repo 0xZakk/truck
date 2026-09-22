@@ -16,7 +16,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 SKILL="$HOME/.claude/plugins/cache/text-to-cad/cad/0.3.0/skills/cad"
-PY=".venv-cad/bin/python"
+PY="../../.venv-cad/bin/python"
 
 for src in "$@"; do
   name="$(basename "$src" .py)"
