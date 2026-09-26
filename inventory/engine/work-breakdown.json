@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
-  "definition_count": 705,
-  "occurrence_count": 1310,
+  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "definition_count": 718,
+  "occurrence_count": 1322,
   "group_count": 70,
   "verified_production_bom": false,
   "groups": [
@@ -1038,7 +1038,7 @@
           "name": "Cylinder block",
           "modeled_quantity": 1,
           "geometry_status": "provisional",
-          "function": "Holds six cylinder bores, seven crankshaft supports and the cam-side structure. The visible water space is a simplified cast cavity, not a traced coolant network.",
+          "function": "Holds the cylinders and crankshaft supports. An estimated rear-side dipstick boss and passage connect the guide to the crankcase without cutting the protected main/cylinder regions.",
           "sources": [
             "fsm-ed8704e3446e",
             "fsm-2e5473b2bf99",
@@ -1060,7 +1060,10 @@
             "fel-pro-vin-y-gaskets",
             "felpro-os34601r-topology",
             "water-pump-mounting-topology",
-            "gates-water-pumps-2011"
+            "gates-water-pumps-2011",
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
           ],
           "unresolved": [
             "Bore pitch 113.792 mm, deck height 254 mm and casting envelope are assumptions. The side-cover opening, perimeter rail and six fastener webs are provisional fit-study geometry. The rear cam plug seat and support boss are provisional. Water jackets, oil drillings, other bosses/plugs and deck passages need reconstruction.",
@@ -1100,7 +1103,12 @@
             "The receiver cuts only the demonstrated front opening into the existing modeled cavity while retaining the front cylinder wall. Deeper coolant jacket, fifth-opening function, circulation and hydraulic performance remain unresolved.",
             "The larger gasket opening is retained as an unidentified passage with a provisional short pump-chamber connection; its actual cast routing is unverified. Radiator inlet neck remains a separate missing reconstruction.",
             "Impeller, mechanical seal, bearing cartridge and internal shaft geometry remain simplified. Existing belt plane and pumpY\u221232/Z170 coordinates are not factory dimensions.",
-            "The provisional Thermactor upper support foot and blind socket move together to Y-125/Z140; casting, load capacity and production coordinates remain unverified."
+            "The provisional Thermactor upper support foot and blind socket move together to Y-125/Z140; casting, load capacity and production coordinates remain unverified.",
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
           ],
           "glb": "/models/engine/block.glb",
           "step": "/cad/engine/generated/block.step",
@@ -1370,7 +1378,7 @@
       "id": "side-cover",
       "title": "Pushrod side cover, gasket and hardware",
       "patterns": [
-        "pushrod-cover.*"
+        "pushrod-cover(?!-dipstick-retainer-estimated$).*"
       ],
       "remaining": [
         "Production contour, sealing compression and bolt engagement"
@@ -1487,7 +1495,7 @@
         {
           "id": "pushrod-cover-bolt",
           "name": "Pushrod cover bolt \u00b7 industrial comparison",
-          "modeled_quantity": 6,
+          "modeled_quantity": 5,
           "geometry_status": "provisional",
           "function": "Clamps through the grommet toward a blind block mounting bore. Thread pitch is modeled; clamp load and female threads are not.",
           "sources": [
@@ -1504,11 +1512,6 @@
           "glb": "/models/engine/pushrod-cover-bolt.glb",
           "step": "/cad/engine/generated/pushrod-cover-bolt.step",
           "occurrences": [
-            {
-              "id": "pushrod-cover-bolt-1",
-              "parent": "pushrod-cover-assembly",
-              "name": "Cover bolt 1"
-            },
             {
               "id": "pushrod-cover-bolt-2",
               "parent": "pushrod-cover-assembly",
@@ -1541,7 +1544,7 @@
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 14
+      "modeled_quantity": 13
     },
     {
       "id": "valves",
@@ -6205,10 +6208,10 @@
         "throttle-(?!bracket-stud-estimated$).*"
       ],
       "remaining": [
-        "Throttle lever/cam and return spring",
+        "Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing",
         "Plate retaining screws and shaft bushings/seals as applicable",
-        "Speed-control cable attachment and linkage shield if fitted",
-        "Verify stops, return action and installed geometry"
+        "Actual throttle/speed-control cables and sockets, pin locking and production shield construction",
+        "Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts"
       ],
       "related_system_issues": [],
       "existing_issue": null,
@@ -6260,31 +6263,6 @@
               "id": "throttle-gasket",
               "parent": "throttle-assembly",
               "name": "Throttle body gasket"
-            }
-          ]
-        },
-        {
-          "id": "throttle-shaft",
-          "name": "Throttle shaft",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Rotates both butterfly plates together. Slots keep the modeled plates distinct from the shaft; exact slot, screw and linkage geometry is not established.",
-          "sources": [
-            "truck-throttle-operation",
-            "truck-throttle-service",
-            "truck-throttle-catalog"
-          ],
-          "unresolved": [
-            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
-            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration."
-          ],
-          "glb": "/models/engine/throttle-shaft.glb",
-          "step": "/cad/engine/generated/throttle-shaft.step",
-          "occurrences": [
-            {
-              "id": "throttle-shaft",
-              "parent": "throttle-moving",
-              "name": "Throttle shaft"
             }
           ]
         },
@@ -6387,13 +6365,192 @@
               "name": "Throttle retaining nut 4"
             }
           ]
+        },
+        {
+          "id": "throttle-cable-ball-stud-estimated",
+          "name": "Throttle cable ball stud \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Provides the spherical attachment for a cable socket; cable and socket are not yet reconstructed.",
+          "sources": [
+            "throttle-1994-linkage-study"
+          ],
+          "unresolved": [
+            "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+            "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+            "Spring, shield, cable/socket, plate screws and preset stops absent;0\u201390 degrees is inherited educational travel.",
+            "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-cable-ball-stud-estimated.glb",
+          "step": "/cad/engine/generated/throttle-cable-ball-stud-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-cable-ball-stud-estimated",
+              "parent": "throttle-moving",
+              "name": "Throttle cable ball stud \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "throttle-lever-retaining-pin-estimated",
+          "name": "Throttle lever retaining pin \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Captures the hub axially against a shaft shoulder. This fitted-pin study does not establish Ford retention or pin locking.",
+          "sources": [
+            "throttle-1994-linkage-study"
+          ],
+          "unresolved": [
+            "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+            "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+            "Spring, shield, cable/socket, plate screws and preset stops absent;0\u201390 degrees is inherited educational travel.",
+            "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-lever-retaining-pin-estimated.glb",
+          "step": "/cad/engine/generated/throttle-lever-retaining-pin-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-lever-retaining-pin-estimated",
+              "parent": "throttle-moving",
+              "name": "Throttle lever retaining pin \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "throttle-shaft",
+          "name": "Throttle shaft \u00b7 estimated keyed end",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Turns both butterfly plates and the external lever. Its proposed D end, shoulder and transverse pin bore provide a teaching torque path.",
+          "sources": [
+            "truck-throttle-operation",
+            "truck-throttle-service",
+            "truck-throttle-catalog",
+            "throttle-1994-linkage-study"
+          ],
+          "unresolved": [
+            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration.",
+            "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+            "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+            "Spring, shield, cable/socket, plate screws and preset stops absent;0\u201390 degrees is inherited educational travel.",
+            "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-shaft.glb",
+          "step": "/cad/engine/generated/throttle-shaft.step",
+          "occurrences": [
+            {
+              "id": "throttle-shaft",
+              "parent": "throttle-moving",
+              "name": "Throttle shaft \u00b7 estimated keyed end"
+            }
+          ]
+        },
+        {
+          "id": "throttle-linkage-shield-estimated",
+          "name": "Throttle linkage splash shield \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Covers the external linkage while leaving its travel path open. Factory illustrations identify the shield; its current contour and dimensions are estimates.",
+          "sources": [
+            "throttle-1994-linkage-study"
+          ],
+          "unresolved": [
+            "All dimensions, mounting coordinate, barb and relief slots are inferred educational geometry; Ford production details unverified.",
+            "Angular hood approximates factory viewY. Pushpin insertion flexure/material/strength and full cable sheath/connector envelopes are unvalidated.",
+            "Spring and its tangs, stops and production calibration remain unresolved; not invented here."
+          ],
+          "glb": "/models/engine/throttle-linkage-shield-estimated.glb",
+          "step": "/cad/engine/generated/throttle-linkage-shield-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-linkage-shield-estimated",
+              "parent": "throttle-assembly",
+              "name": "Throttle linkage splash shield \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "throttle-shield-pushpin-estimated",
+          "name": "Throttle shield pushpin \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "The modeled head and split barb capture the shield ear against the bracket. Actual Ford pin shape, material and flexure remain unverified.",
+          "sources": [
+            "throttle-1994-linkage-study"
+          ],
+          "unresolved": [
+            "All dimensions, mounting coordinate, barb and relief slots are inferred educational geometry; Ford production details unverified.",
+            "Angular hood approximates factory viewY. Pushpin insertion flexure/material/strength and full cable sheath/connector envelopes are unvalidated.",
+            "Spring and its tangs, stops and production calibration remain unresolved; not invented here."
+          ],
+          "glb": "/models/engine/throttle-shield-pushpin-estimated.glb",
+          "step": "/cad/engine/generated/throttle-shield-pushpin-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-shield-pushpin-estimated",
+              "parent": "throttle-assembly",
+              "name": "Throttle shield pushpin \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "throttle-lever-estimated",
+          "name": "Throttle lever \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Converts cable pull at the ball stud into shaft rotation through a modeled D-shaped hub.",
+          "sources": [
+            "throttle-1994-linkage-study",
+            "throttle-return-spring-study"
+          ],
+          "unresolved": [
+            "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
+            "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
+            "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
+            "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified."
+          ],
+          "glb": "/models/engine/throttle-lever-estimated.glb",
+          "step": "/cad/engine/generated/throttle-lever-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-lever-estimated",
+              "parent": "throttle-moving",
+              "name": "Throttle lever \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "throttle-return-spring-illustrative",
+          "name": "Throttle return spring \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Shows a torsion spring winding between a fixed bracket hook and a rotating lever hook as the throttle opens.",
+          "sources": [
+            "throttle-return-spring-study"
+          ],
+          "unresolved": [
+            "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
+            "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
+            "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
+            "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified."
+          ],
+          "glb": "/models/engine/throttle-return-spring-illustrative.glb",
+          "step": "/cad/engine/generated/throttle-return-spring-illustrative.step",
+          "occurrences": [
+            {
+              "id": "throttle-return-spring-illustrative",
+              "parent": "throttle-assembly",
+              "name": "Throttle return spring \u00b7 illustrative"
+            }
+          ]
         }
       ],
       "issue": 43,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 11
+      "modeled_quantity": 17
     },
     {
       "id": "throttle-bracket",
@@ -6410,31 +6567,6 @@
       "related_system_issues": [],
       "existing_issue": 16,
       "parts": [
-        {
-          "id": "accelerator-cable-bracket",
-          "name": "Accelerator cable mounting bracket",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Holds the cable outer housing so cable pull rotates the throttle linkage. Photo-informed provisional mounting study.",
-          "sources": [
-            "pilot-throttle-bracket-factory",
-            "pilot-throttle-bracket-photo"
-          ],
-          "unresolved": [
-            "Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.",
-            "Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.",
-            "Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated."
-          ],
-          "glb": "/models/engine/accelerator-cable-bracket.glb",
-          "step": "/cad/engine/generated/accelerator-cable-bracket.step",
-          "occurrences": [
-            {
-              "id": "accelerator-cable-bracket",
-              "parent": "throttle-assembly",
-              "name": "Accelerator cable mounting bracket"
-            }
-          ]
-        },
         {
           "id": "throttle-bracket-stud-estimated",
           "name": "Throttle bracket mounting stud \u00b7 estimated envelope",
@@ -6462,6 +6594,34 @@
               "id": "throttle-stud-4",
               "parent": "throttle-hardware",
               "name": "Bracket mounting stud \u00b7 estimated envelope"
+            }
+          ]
+        },
+        {
+          "id": "accelerator-cable-bracket",
+          "name": "Accelerator cable bracket \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Supports the cable housing on the throttle mounting studs. Its revised web and opening clear the modeled outward-facing lever and direct cable path.",
+          "sources": [
+            "pilot-throttle-bracket-factory",
+            "pilot-throttle-bracket-photo",
+            "throttle-1994-linkage-study",
+            "throttle-return-spring-study"
+          ],
+          "unresolved": [
+            "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
+            "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
+            "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
+            "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified."
+          ],
+          "glb": "/models/engine/accelerator-cable-bracket.glb",
+          "step": "/cad/engine/generated/accelerator-cable-bracket.step",
+          "occurrences": [
+            {
+              "id": "accelerator-cable-bracket",
+              "parent": "throttle-assembly",
+              "name": "Accelerator cable bracket \u00b7 estimated"
             }
           ]
         }
@@ -26398,45 +26558,242 @@
     {
       "id": "dipstick",
       "title": "Engine oil dipstick",
-      "patterns": [],
+      "patterns": [
+        "engine-oil-dipstick-(blade|handle)"
+      ],
       "remaining": [
-        "Candidate blade/handle exists",
-        "Trial installed routing intersects block",
-        "Oil-level markings/calibration and matched tube remain unresolved"
+        "Exact1994 indicator identity, section/waves and dimensions; current inserted specimen-informed study is installed",
+        "Oil-level markings and calibration with the matched sump/guide; no ADD/FULL marks claimed",
+        "Elastic insertion, withdrawal and handle retention force; inserted pose is a rigid geometry study"
       ],
       "related_system_issues": [],
       "existing_issue": 17,
-      "candidate_parts": [
+      "candidate_parts": [],
+      "parts": [
         {
-          "id": "engine-oil-dipstick",
-          "name": "Dipstick blade and handle/stop",
-          "artifact": "cad/engine/pilot/dipstick/dipstick.py",
-          "status": "Candidate only; fit/identity not accepted"
+          "id": "engine-oil-dipstick-blade",
+          "name": "Engine oil dipstick blade \u00b7 flexed study",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "A continuous specimen-informed strip follows the guide and extends into the sump. Approximate axial length is preserved; oil-level marks remain unknown.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-blade.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-blade.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-blade",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Engine oil dipstick blade \u00b7 flexed study"
+            }
+          ]
+        },
+        {
+          "id": "engine-oil-dipstick-handle",
+          "name": "Engine oil dipstick handle and stop \u00b7 study",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "The original pilot handle and stop seat on the guide mouth. The stop supplies a modeled axial reference; friction retention and calibration remain unverified.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-handle.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-handle.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-handle",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Engine oil dipstick handle and stop \u00b7 study"
+            }
+          ]
         }
       ],
-      "parts": [],
       "issue": 17,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 0
+      "modeled_quantity": 2
     },
     {
       "id": "dipstick-tube",
       "title": "Dipstick guide tube, seat and retaining hardware",
-      "patterns": [],
+      "patterns": [
+        "engine-oil-dipstick-tube.*",
+        "pushrod-cover-dipstick-retainer-estimated"
+      ],
       "remaining": [
-        "Guide tube path, stop/seat, block entry seal and retaining bracket/hardware",
-        "Determine matched indicator/tube identity and quantities"
+        "Exact1994 guide/indicator identity and routing; current estimated guide, receiver, bracket and hardware are installed",
+        "Production threads, seals, clamp load and attachment strength; modeled nut/receiver threads are clearance envelopes",
+        "Support bracket manufacturing joint and actual upper mounting station; adjacent1995 architecture remains applicability-limited"
       ],
       "related_system_issues": [],
       "existing_issue": null,
-      "parts": [],
+      "parts": [
+        {
+          "id": "engine-oil-dipstick-tube",
+          "name": "Engine oil dipstick guide \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Routes the flexible indicator from the seated mouth through an estimated block receiver to the rear sump.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-tube.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-tube.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-tube",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Engine oil dipstick guide \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "engine-oil-dipstick-tube-retaining-nut",
+          "name": "Dipstick lower retaining nut \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Its shoulder bears on the tube shoulder at the proposed block receiver. Threads and sealing construction remain unverified.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-tube-retaining-nut.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-tube-retaining-nut.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-tube-retaining-nut",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Dipstick lower retaining nut \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "engine-oil-dipstick-tube-bracket",
+          "name": "Dipstick tube support bracket \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Connects the guide tube collar to the rear pushrod-cover retainer. Actual manufactured joint and bracket station remain unverified.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-tube-bracket.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-tube-bracket.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-tube-bracket",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Dipstick tube support bracket \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "engine-oil-dipstick-tube-support-nut",
+          "name": "Dipstick support nut \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Bears on the upper bracket beside the exposed cover-retainer stud. Thread surfaces and retention strength are not established.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/engine-oil-dipstick-tube-support-nut.glb",
+          "step": "/cad/engine/generated/engine-oil-dipstick-tube-support-nut.step",
+          "occurrences": [
+            {
+              "id": "engine-oil-dipstick-tube-support-nut",
+              "parent": "engine-oil-dipstick-assembly",
+              "name": "Dipstick support nut \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "pushrod-cover-dipstick-retainer-estimated",
+          "name": "Dipstick support / cover retainer \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Replaces only the rear cover bolt with a cover-clamping envelope and exposed support stud. Upper thread engagement and factory identity remain unverified.",
+          "sources": [
+            "dipstick-specimen-e9te",
+            "dipstick-service-catalog",
+            "dipstick-tube-1995-adjacent-study"
+          ],
+          "unresolved": [
+            "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+            "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+            "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+            "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+            "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+          ],
+          "glb": "/models/engine/pushrod-cover-dipstick-retainer-estimated.glb",
+          "step": "/cad/engine/generated/pushrod-cover-dipstick-retainer-estimated.step",
+          "occurrences": [
+            {
+              "id": "pushrod-cover-bolt-1",
+              "parent": "pushrod-cover-assembly",
+              "name": "Dipstick support / cover retainer \u00b7 estimated"
+            }
+          ]
+        }
+      ],
       "issue": 78,
-      "status": "Backlog",
-      "status_reason": "Known scope not delivered as a complete modeled/installed package; applicability and quantity may need research.",
+      "status": "In review",
+      "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 0
+      "modeled_quantity": 5
     },
     {
       "id": "engine-mounts",

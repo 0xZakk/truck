@@ -1,0 +1,123 @@
+{
+  "throttle-lever-estimated": {
+    "summary": "The accelerator cable pulls on a lever attached to the throttle shaft. The lever turns the two butterfly plates together.",
+    "limits": "Factory references establish an external lever and cable ball stud. The dimensions, D-shaped shaft end, pin and bracket revision are educational estimates. A single illustrative return spring is present; actual Ford spring construction, cable/socket, real stops and plate fasteners remain unresolved. This model does not predict return force or establish repair specifications.",
+    "steps": [
+      {
+        "title": "Pull becomes rotation",
+        "text": "The cable attachment sits away from the shaft axis, so a pull produces a turning moment. Move the throttle control to follow the ball around its arc.",
+        "part": "throttle-cable-ball-stud-estimated"
+      },
+      {
+        "title": "Keep the lever and shaft together",
+        "text": "This study uses a D-shaped connection to transmit rotation. A shoulder and transverse pin keep the lever on the shaft. Ford\u2019s actual retention details remain unverified.",
+        "part": "throttle-shaft"
+      },
+      {
+        "title": "What brings it back?",
+        "text": "A spring reacts between the stationary bracket and moving lever. The reconstructed spring winds as the throttle opens; the control sets its angle directly. It shows the geometry of return action without calculating force or friction.",
+        "part": "throttle-return-spring-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate the cable from the body",
+        "text": "Ford\u2019s accelerator-cable service guidance distinguishes pedal/cable restriction from throttle-body restriction. A sticking mechanism needs both paths checked; a free-moving animation cannot diagnose the truck."
+      }
+    ],
+    "sources": [
+      "throttle-1994-linkage-study"
+    ]
+  },
+  "throttle-cable-ball-stud-estimated": {
+    "summary": "The ball gives the cable socket an attachment that can change angle while the lever rotates.",
+    "limits": "Factory references establish an external lever and cable ball stud. The dimensions, D-shaped shaft end, pin and bracket revision are educational estimates. A single illustrative return spring is present; actual Ford spring construction, cable/socket, real stops and plate fasteners remain unresolved. This model does not predict return force or establish repair specifications.",
+    "steps": [
+      {
+        "title": "A moving end and a fixed end",
+        "text": "The ball follows the lever. The bracket holds the cable housing while the inner cable transmits the pull. The physical cable and socket have not yet been modeled.",
+        "part": "accelerator-cable-bracket"
+      }
+    ],
+    "sources": [
+      "throttle-1994-linkage-study"
+    ]
+  },
+  "throttle-lever-retaining-pin-estimated": {
+    "summary": "The modeled pin prevents the lever hub from sliding outward off the keyed shaft.",
+    "limits": "This is an inferred fitted-pin arrangement, not an identified Ford fastener. Pin locking, material, tolerances and strength remain unknown. It is not a repair or replacement specification.",
+    "steps": [
+      {
+        "title": "Axial capture",
+        "text": "The shaft shoulder is on one side of the hub; the pin is on the other. The D-shaped connection transmits rotation, while this pair limits sliding along the shaft.",
+        "part": "throttle-shaft"
+      }
+    ],
+    "sources": [
+      "throttle-1994-linkage-study"
+    ]
+  },
+  "throttle-linkage-shield-estimated": {
+    "summary": "A stationary hood covers the external throttle linkage while leaving space for its motion.",
+    "limits": "Factory diagrams identify shield9E766. The modeled shape, mounting coordinate and clearances are estimates; complete cable/sheath routing and spring return remain unfinished.",
+    "steps": [
+      {
+        "title": "Stationary cover, moving lever",
+        "text": "Open the throttle to see the lever move beneath the hood. The hood stays with the bracket rather than rotating with the shaft.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Held by a pushpin",
+        "text": "The pin head bears on the shield ear and its modeled barb catches behind the bracket. Insertion flexure and the actual Ford pin profile remain unverified.",
+        "part": "throttle-shield-pushpin-estimated"
+      }
+    ],
+    "sources": [
+      "throttle-1994-linkage-study"
+    ]
+  },
+  "throttle-shield-pushpin-estimated": {
+    "summary": "The pushpin holds the splash shield to its bracket through a shared hole.",
+    "limits": "Factory legend identifiesN804527-S; dimensions and split-barb construction are illustrative. The exploded view separates rigid parts and does not simulate barb compression.",
+    "steps": [
+      {
+        "title": "Head and barb",
+        "text": "The head limits inward travel. The expanded barb limits withdrawal after passing the bracket. Real removal depends on the actual fastener design, not this rigid animation.",
+        "part": "throttle-linkage-shield-estimated"
+      }
+    ],
+    "sources": [
+      "throttle-1994-linkage-study"
+    ]
+  },
+  "throttle-return-spring-illustrative": {
+    "summary": "A torsion spring reacts against a fixed support and a rotating lever. Opening the throttle winds the spring; its tendency to unwind supplies closing torque in the real mechanism.",
+    "limits": "This is one illustrative spring, with inferred wire size, turns and captured hooks. Actual Ford spring count, construction and preload are not established. The animation preserves geometric wire length but does not predict torque, stress, friction, failure or guaranteed closure. Ford\u2019s cable-end compression spring is a separate component.",
+    "steps": [
+      {
+        "title": "One end stays put",
+        "text": "The outer hook passes through an estimated hole in the stationary cable bracket. It stays fixed when you move the throttle control.",
+        "part": "accelerator-cable-bracket"
+      },
+      {
+        "title": "The other end follows the lever",
+        "text": "The inner hook follows the lever. The coil winds tighter between the two ends instead of rotating as one rigid piece. Use See through covers to reveal it beneath the shield.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Geometry is only part of return action",
+        "text": "Real return behavior also depends on preload, material, friction, stops and the cable. Those quantities are not calibrated here."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "A model cannot prove that a throttle returns safely",
+        "text": "A visually connected spring can still have inadequate force or incorrect installation. Use the applicable Ford inspection procedure for an actual sticking throttle; this animation does not validate the truck\u2019s return action."
+      }
+    ],
+    "sources": [
+      "throttle-return-spring-study",
+      "throttle-1994-linkage-study"
+    ]
+  }
+}

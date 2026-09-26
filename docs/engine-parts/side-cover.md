@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -30,8 +30,8 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Cover envelope, hole stations, stamped ribs, gasket section and casting interface are provisional.
   - Open: Grommet dimensions are a retailer replacement envelope; hidden section and compression are unverified.
   - Open: 5/16-18 x1-inch bolt is an industrial comparison. The present uncompressed stack gives only3.908mm engagement; installed bolt identity and adequacy remain unverified.
-- [ ] **Pushrod cover bolt · industrial comparison** — `pushrod-cover-bolt`; modeled quantity **6**; provisional.
-  - Instances: `pushrod-cover-bolt-1`, `pushrod-cover-bolt-2`, `pushrod-cover-bolt-3`, `pushrod-cover-bolt-4`, `pushrod-cover-bolt-5`, `pushrod-cover-bolt-6`
+- [ ] **Pushrod cover bolt · industrial comparison** — `pushrod-cover-bolt`; modeled quantity **5**; provisional.
+  - Instances: `pushrod-cover-bolt-2`, `pushrod-cover-bolt-3`, `pushrod-cover-bolt-4`, `pushrod-cover-bolt-5`, `pushrod-cover-bolt-6`
   - Source IDs: enginequest-fsp300n, fel-pro-vin-y-gaskets, ford-industrial-parts, fel-pro-10740-retailer. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Cover envelope, hole stations, stamped ribs, gasket section and casting interface are provisional.
   - Open: Grommet dimensions are a retailer replacement envelope; hidden section and compression are unverified.

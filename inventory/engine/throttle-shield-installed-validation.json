@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "330b2c5f10534fd1298f350ee94f30cd2b2a3c39f958a4e0a0b68a767f455f8d",
+  "candidate_report_sha256": "47e5421126ed4be86b06d3fb7bb766831a5452914de2293a9939fa86f7799aa5",
+  "parts": [
+    {
+      "id": "accelerator-cable-bracket",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 3383.5407433993773,
+      "mesh_bounds_error_mm": 1.1205673217773438e-05
+    },
+    {
+      "id": "throttle-linkage-shield-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 605.6851444251802,
+      "mesh_bounds_error_mm": 3.361701965332031e-05
+    },
+    {
+      "id": "throttle-shield-pushpin-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 86.05098582926793,
+      "mesh_bounds_error_mm": 0.011785507202148438
+    }
+  ],
+  "artifact_hashes": {
+    "cad/engine/generated/throttle-shield-candidate/accelerator-bracket-shield-hole-estimated.step": "8b4aa53b6db5e3a35ca9b63c58ad28e97ba4761bc83dd17a0a88cf6c78ade964",
+    "cad/engine/generated/accelerator-cable-bracket.step": "17c7b3ae8666ba258b6f824ecb702a5bb84ca65ff6f5711f2728e7dd768101d3",
+    "models/engine/accelerator-cable-bracket.glb": "80a84d47d00487855d94667c0e10542358d7382fd6e05815402c4273ee2714a5",
+    "cad/engine/generated/throttle-shield-candidate/throttle-linkage-shield-estimated.step": "0c800276a9186e495445a1863176c2465964c8fc1982675ef5292f770afe42ef",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "models/engine/throttle-linkage-shield-estimated.glb": "9ea4aab8d07f3a394ddd696904337638be51a6ae9d9d469cb975c8ba17b794c2",
+    "cad/engine/generated/throttle-shield-candidate/throttle-shield-pushpin-estimated.step": "61dcd9b966b641758022d8964cb4feb445db2dfc9c861b9d215acf683814a91c",
+    "cad/engine/generated/throttle-shield-pushpin-estimated.step": "dc9f04af0c0e833d39ab0728bd079d51ce783d05d01e7246b959c434f26f5d30",
+    "models/engine/throttle-shield-pushpin-estimated.glb": "b18f5b52b64b84d7443a4ed2a3420e6423bb416e3052332df5e54fd3993e6381"
+  },
+  "scope": "Installed geometry/frames match the candidate checked across 46 local motion poses. Whole-engine static, browser and production-fidelity acceptance remain separate."
+}

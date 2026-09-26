@@ -1,0 +1,103 @@
+{
+  "status": "INSTALLED; installed checks/browser acceptance pending",
+  "before_manifest_sha256": "ed9e4927a22c1a22fa1b5fb3e98dd63a7e45d595ed54070db8fb792f86f51863",
+  "staged_manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "candidate_evidence": {
+    "tube_report_sha256": "0025aa07e968800ce24d5f3290b91dde4ed2f31299936bd68b02fe9c137d3709",
+    "blade_report_sha256": "c9cecca9ec2f5ed5ac971a533dccf944c9899e6dc15b4c30c7c5bfff73896523"
+  },
+  "changed_definitions": [
+    "block",
+    "engine-oil-dipstick-blade",
+    "engine-oil-dipstick-handle",
+    "engine-oil-dipstick-tube",
+    "engine-oil-dipstick-tube-bracket",
+    "engine-oil-dipstick-tube-retaining-nut",
+    "engine-oil-dipstick-tube-support-nut",
+    "pushrod-cover-dipstick-retainer-estimated"
+  ],
+  "changed_occurrences": [
+    "engine-oil-dipstick-blade",
+    "engine-oil-dipstick-handle",
+    "engine-oil-dipstick-tube",
+    "engine-oil-dipstick-tube-bracket",
+    "engine-oil-dipstick-tube-retaining-nut",
+    "engine-oil-dipstick-tube-support-nut",
+    "pushrod-cover-bolt-1"
+  ],
+  "new_material_occurrences": [
+    "engine-oil-dipstick-blade",
+    "engine-oil-dipstick-handle"
+  ],
+  "changed_assemblies": [
+    "engine-oil-dipstick-assembly"
+  ],
+  "before_occurrences": [
+    {
+      "id": "pushrod-cover-bolt-1",
+      "definition": "pushrod-cover-bolt",
+      "parent": "pushrod-cover-assembly",
+      "name": "Cover bolt 1",
+      "function": "Clamps through the grommet toward a blind block mounting bore. Thread pitch is modeled; clamp load and female threads are not.",
+      "position_cad_mm": [
+        -285.0,
+        113.59199999999998,
+        185
+      ],
+      "rotation_cad_deg": [
+        -90,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        285,
+        0
+      ]
+    }
+  ],
+  "unrelated_inventory_unchanged": true,
+  "canonical_modified": true,
+  "installer_sha256": "b4b2bde9074dfc40a6f43ccbaf21ee2170668eb1b57d0fc4ed348833cde0fe1a",
+  "checker_sha256": "d1c6a66be108ee559018a1845ad59196541c700ac249d34fbeab3ec82abb8dde",
+  "adapter_sha256": "1b7f2ff715578bc286cca9ab0cdd9692aab75a7c9f7c37a71ae1fb8307ed8ae2",
+  "learning_sha256": "6c15de4732fed13c0ead5d638634b2c9326b0bd8baa94776c228b98081b60a70",
+  "staged_artifact_sha256": {
+    "step/engine-oil-dipstick-handle.step": "bfc120fba2c7ff88b4e9558b7be87e098aebf4dc9c9032b3216de12bc34ff9fd",
+    "step/pushrod-cover-dipstick-retainer-estimated.step": "1a10bcd17c4809d142101c6e5b1125a0af8e684ad554ab5344235e2b67faaa5c",
+    "step/engine-oil-dipstick-tube-support-nut.step": "5781c115e4e9a40491b3594089847540138e461ba637c208386116a353ae5ae1",
+    "step/engine-oil-dipstick-tube-bracket.step": "72ac604f53ed1752fe69a00dfb917b833715950b9f9e7d793e4de561cf444ded",
+    "step/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
+    "step/engine-oil-dipstick-tube-retaining-nut.step": "9de33615c64355486ffe039a500a210297f583efaf678261e1fb309bcaa560d0",
+    "step/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "step/engine-oil-dipstick-blade.step": "c2774cb94dfe4c405868d559d109ea30da3b99639c5752162bc5d327fcfe04b3",
+    "models/block.glb": "82d7456865309cf2d5f5f85db64731245b41191bd10cfbe61fe99fd352918b87",
+    "models/engine-oil-dipstick-blade.glb": "3f75d69a78eace8be5d19f3e337baea3db078a2086e3222ed2cd45efc6812302",
+    "models/engine-oil-dipstick-handle.glb": "8bc66fc8a2394d5d500017f24035919472388399849b7fefa54959a28e88a2a6",
+    "models/engine-oil-dipstick-tube-retaining-nut.glb": "81629f37172fdbcffb28d5cac382f842f906a607f9e10676aed0dd109f8fbc1e",
+    "models/engine-oil-dipstick-tube.glb": "5bb7ded792223b81724d84ab33c7c953bab29081d1864b589f4b1d4d46ac28ce",
+    "models/engine-oil-dipstick-tube-bracket.glb": "4f85da655cad7d60801e6fa618b3c424ee51f28fb2d3c13a861345554493d676",
+    "models/engine-oil-dipstick-tube-support-nut.glb": "f935a12e63c664869e110644156e6ee614f8d9fdcbc3aed61bf94c3c9bb77957",
+    "models/pushrod-cover-dipstick-retainer-estimated.glb": "f076f537f576f31640c29017e49a2ba92344368193cb8e0d67f876b22f4bd52d"
+  },
+  "stage_validation_sha256": "bcb953616c6b3cd1f663bf300baa1729c7979451df661d57f818c37ec070406f",
+  "after_manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "canonical_artifact_sha256": {
+    "cad/engine/generated/pushrod-cover-dipstick-retainer-estimated.step": "1a10bcd17c4809d142101c6e5b1125a0af8e684ad554ab5344235e2b67faaa5c",
+    "models/engine/pushrod-cover-dipstick-retainer-estimated.glb": "f076f537f576f31640c29017e49a2ba92344368193cb8e0d67f876b22f4bd52d",
+    "cad/engine/generated/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
+    "models/engine/engine-oil-dipstick-tube.glb": "5bb7ded792223b81724d84ab33c7c953bab29081d1864b589f4b1d4d46ac28ce",
+    "cad/engine/generated/engine-oil-dipstick-blade.step": "c2774cb94dfe4c405868d559d109ea30da3b99639c5752162bc5d327fcfe04b3",
+    "models/engine/engine-oil-dipstick-blade.glb": "3f75d69a78eace8be5d19f3e337baea3db078a2086e3222ed2cd45efc6812302",
+    "cad/engine/generated/engine-oil-dipstick-tube-retaining-nut.step": "9de33615c64355486ffe039a500a210297f583efaf678261e1fb309bcaa560d0",
+    "models/engine/engine-oil-dipstick-tube-retaining-nut.glb": "81629f37172fdbcffb28d5cac382f842f906a607f9e10676aed0dd109f8fbc1e",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "models/engine/block.glb": "82d7456865309cf2d5f5f85db64731245b41191bd10cfbe61fe99fd352918b87",
+    "cad/engine/generated/engine-oil-dipstick-handle.step": "bfc120fba2c7ff88b4e9558b7be87e098aebf4dc9c9032b3216de12bc34ff9fd",
+    "models/engine/engine-oil-dipstick-handle.glb": "8bc66fc8a2394d5d500017f24035919472388399849b7fefa54959a28e88a2a6",
+    "cad/engine/generated/engine-oil-dipstick-tube-support-nut.step": "5781c115e4e9a40491b3594089847540138e461ba637c208386116a353ae5ae1",
+    "models/engine/engine-oil-dipstick-tube-support-nut.glb": "f935a12e63c664869e110644156e6ee614f8d9fdcbc3aed61bf94c3c9bb77957",
+    "cad/engine/generated/engine-oil-dipstick-tube-bracket.step": "72ac604f53ed1752fe69a00dfb917b833715950b9f9e7d793e4de561cf444ded",
+    "models/engine/engine-oil-dipstick-tube-bracket.glb": "4f85da655cad7d60801e6fa618b3c424ee51f28fb2d3c13a861345554493d676"
+  }
+}

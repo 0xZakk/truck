@@ -1,0 +1,4016 @@
+{
+  "schema_version": 1,
+  "issue": 17,
+  "interface_issue": 78,
+  "baseline_commit": "5567d751abcf6a9bfac84bdf87ce0d7f0d4dac5c",
+  "readiness": "isolated flexed educational pose; not installed or Done",
+  "status": "PASS bounded geometry",
+  "snapshot_manifest_sha256": "346868405171519391ae3780913a07ea321cf8fed7e187669b5963421779dcd1",
+  "manifest_hash_method": "canonical sorted JSON; snapshot context only; unrelated edits allowed",
+  "frozen_relevant_inputs_sha256": {
+    "cad/engine/dipstick_inserted_candidate.py": "79f00416d0160e5f84f7c10c5c06699536ede4a6b0e9b0257f53b679a0cc52c6",
+    "scripts/check-dipstick-inserted-candidate.py": "99c2948bf392cd71e16c57ee16fbe7b0fd0988227cda45f46cd08bc9f8b11e03",
+    "cad/engine/dipstick_tube_candidate.py": "ffc840477ea647c3b85ed33dc5d55f1df3f4817c4d45a09a467644295452e7ca",
+    "cad/engine/pilot/dipstick/dipstick.py": "56c714db3e18b71c7917f1fe295a0be537610c8d0669fc4223fc6c9318d4102e",
+    "docs/pilot/dipstick.md": "b2d03b2e06007e7353f7f59952ebda303b7f4bc2b410a2f98713533a79d95073",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "inventory/engine/dipstick-tube-candidate-validation.json": "0025aa07e968800ce24d5f3290b91dde4ed2f31299936bd68b02fe9c137d3709",
+    "cad/engine/generated/dipstick-tube-feasibility/block-candidate.step": "bf66b006f33e31cbbda8f04c87f8152701354c4e9031699ae7758f7d63e587a5",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube.step": "3b7ba968c9d89432c06318a6dd50eea310ae87b181466c65720405fa25383124",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-retaining-nut.step": "bb6459ae9a105f55eaee7d339157cee80152ef17b5fcddb9345292eaf9ca50bb",
+    "cad/engine/generated/dipstick-tube-feasibility/pushrod-cover-retainer-candidate.step": "3a01132f03e2c40720be4f57664bd82210c53a6b8bdaf66014eb34b837f96e18",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-bracket.step": "a3b59a34c3fa61c9661189bf89520e9beab040c14e9ed721bbdb46fe3c7abb15",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-support-nut.step": "29798ea04f02c54ba5034c9ff74de2cbd17be6004c3bc3bbde46564341a55f0c",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "cad/engine/generated/rod-bolt.step": "ff61f3d3f3b6c6f55f7b6643dc7ed2bd8268a38827b8fd850f73f64c1d8ea5c8",
+    "cad/engine/generated/upper-bearing.step": "5f1ce383e543913936394cd4f2a350f6d5fd9033858725ce3cbf14fcdfa87c79",
+    "cad/engine/generated/rod-nut.step": "6756d6777261d2490d4e89af5801e3b89d8fdee3044a0ca772ed1c85640db69f",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/generated/lower-bearing.step": "d834330456513bc9b1edde4c710495cd15b8df5c9978be1fabb96d884e70e343",
+    "cad/engine/generated/compression-ring.step": "b02db59c68c38c257a780235049ea3dce673520acef55974c0609e364afa04aa",
+    "cad/engine/generated/pin.step": "12d1a53f03ba93754e9587246cdb275d1da000549b34d22e401759f39ebdd9d3",
+    "cad/engine/generated/valve-cover-gasket.step": "161b44cf0c8181190ab200e10b423383e91a9633a3db87c6fab8e29c05dc0f0a",
+    "cad/engine/generated/rod.step": "a6ce2bf5a478b0c70406f102f1d4d6863faef6d82d60c87fc1a413a50a94b48f",
+    "cad/engine/generated/egr-exhaust-tube.step": "6f8e76f78873d2a556a168aaaec94f9836dd481a4c56bee323535e9f4c72d63d",
+    "cad/engine/generated/oil-rail.step": "5f1219bb90feeba66fbe128ebee020cd0d444229163dc84cb7d4ed6bb0302970",
+    "cad/engine/generated/oil-pan-molded-gasket.step": "958b6ed42e670333e3420bac2aeeeab9d633430a075cb98f7616701330e7488a",
+    "cad/engine/generated/rod-cap.step": "1c4f8d8a0ed80a0e403639004526b057c00d65383033a012cc82ad111ec5dd4e",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "cad/engine/generated/valve-cover.step": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+    "cad/engine/generated/lifter-pushrod-cup.step": "e7e39eeac754ff25c1fd9ec6e9bb35a5108ac82a8299667af520570747304869",
+    "cad/engine/generated/lifter-plunger.step": "77b115498bad2b90b703def022941f3ebbffffcb42f76c53452cd77457951cd7",
+    "cad/engine/generated/spark-plug-insulator.step": "25fba8183e7bde6447b05b650c22de77c7994cd31773f402b21671c627e96703",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/pushrod-cover-gasket.step": "bac644d90d65300f97ebd90df4bd6f896ce3af94d00ef722ece20616dae97db6",
+    "cad/engine/generated/spark-plug-resistor.step": "dfb277a258209a9e05de8b71ae47aba6833c6d922d7ba2960ef6e1cd6d836b56",
+    "cad/engine/generated/oil-expander.step": "58421ad3f8dd05c273f8b5fcb67243fc1c36b490d2dbf60cfe4fcce9d4fcdd8f",
+    "cad/engine/generated/ignition-lead-6-plug-contact.step": "45c3bc466093c86f7036d323fa3142d8b7c8a65e8e9ba2aa39ad7f749f3f20ec",
+    "cad/engine/generated/rocker-guide.step": "ae058fd3703833663e82cab0533e60b1fb980e60a6a8d14100b24b22e18d8800",
+    "cad/engine/generated/lifter-lock-ring.step": "f6bdbc8ab3661043d5c609eda09167dd21cc76e7ae52afa1a1209391d958643b",
+    "cad/engine/generated/lifter-check-retainer.step": "cda47ec2bef7aed7cf4bf09f5933eadc65d384383f0b8030a55c349ff060f2cd",
+    "cad/engine/generated/spark-plug-upper-seal.step": "a6593e7d553e64138f539936809892c07a28bb1b4faf4379d882441b9643eaed",
+    "cad/engine/generated/spark-plug-shell.step": "609b6fe911174a57817d2e547eb9d3cd461c8266bf911cb8dfc2585e995769a0",
+    "cad/engine/generated/rocker-bolt.step": "9fa2d2d5e76b61501ec24ee0b7a86328b0820c3038c9d075e4cd980880096c95",
+    "cad/engine/generated/spark-plug-ground-electrode.step": "a2ea56aefba971c761afe288e6503f6bc8f03f88d73a0f67fd1cf235bd6d0dc3",
+    "cad/engine/generated/spark-plug-copper-core.step": "b1675acc2a16301b4cc805c6ca66ce9afaddafd766863f0edbf19a8cec71ed91",
+    "cad/engine/generated/camshaft.step": "5d79eb1ae93440e08ae33077d2c51cba29dfedbf5f6816f076b927003fd5924f",
+    "cad/engine/generated/lifter-metering-disc.step": "e382265f91fd45b97f8d31981e00d541a50ed05fed9cfdd873ffbcb2bc01f874",
+    "cad/engine/generated/head-gasket.step": "1494c3c0f8c2c32b5734534b4ec5edc295677548c8d20b116add0c377224dc15",
+    "cad/engine/generated/ignition-lead-6-jacket.step": "60a73b9cfefbf1f1995a83465ed640303adb27a87d7db302582091e1a00f933d",
+    "cad/engine/generated/cylinder-head.step": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "cad/engine/generated/spark-plug-center-electrode.step": "0e4e707c1be2e3f3fafb3352bcdc58c8fe0777d253903586c7dc5f04e1a8d1c1",
+    "cad/engine/generated/lifter-plunger-spring.step": "e33cc8c6d9915d6753bf3a5d49207958c6aa822bcbc6a163d3335c8928388fdf",
+    "cad/engine/generated/spark-plug-lower-seal.step": "ebaaf5d6cacb6169e88fc5aa3e03a58c46a7c10c660a97063e9b9476e969044d",
+    "cad/engine/generated/oil-pan.step": "57a1eea73d09075fb159afd633675f483793b2eb32aa079fc0e0399dbcb9e6ea",
+    "cad/engine/generated/ignition-lead-6-plug-boot.step": "00f9376e5b7059e94b82d5c09e628d2d90cce1c6401244073a7e7cd99bd8adc7",
+    "cad/engine/generated/ignition-lead-6-carbon-core.step": "2ab8228b3cef27266a0931befe114415c72e94c75b95698d3a4f0bcf14d88912",
+    "cad/engine/generated/lifter-body.step": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "cad/engine/generated/spark-plug-terminal.step": "d0fe8cc055bf79bfddd4565687f2e88306c06ee865f214bdfc3c0e005a72b6ec",
+    "cad/engine/generated/crank-timing-gear.step": "eeb03418443d08710253d68b50baa672b15c2b692aadc481829bb7919fadda1e",
+    "cad/engine/generated/efi-upper-intake.step": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+    "cad/engine/generated/pushrod-cover-grommet.step": "aa288464d1ecae8f66be0be9bfc8ec749366d7eacbc550a1d2969841e7d94468",
+    "cad/engine/generated/pushrod-cover.step": "b2ba5f81ff3cc214bd6295eb2c84354fff88dd0632a14b7e28d7e15772a1e1b1",
+    "cad/engine/generated/lifter-check-ball.step": "6c0f4fc519f21f2ffdbdcc3627e756436743f0053e1ed810bcdedd051f21f4a0",
+    "cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0",
+    "cad/engine/generated/lifter-check-spring.step": "88845c456bc7f0f11d87109fb18ec66b05000d61c26a01ad6248615545dae006"
+  },
+  "relevant_manifest_subset": {
+    "occurrences": {
+      "c1-connecting-rod-1": {
+        "id": "c1-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-1",
+        "name": "Connecting rod \u00b7 cylinder 1",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c1-oil-expander-1": {
+        "id": "c1-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-1",
+        "name": "Oil-ring expander \u00b7 cylinder 1",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c1-oil-rail-1": {
+        "id": "c1-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-1",
+        "name": "Oil-control rail 1 \u00b7 cylinder 1",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c1-oil-rail-2": {
+        "id": "c1-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-1",
+        "name": "Oil-control rail 2 \u00b7 cylinder 1",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c1-piston-1": {
+        "id": "c1-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-1",
+        "name": "Piston \u00b7 cylinder 1",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c1-rod-bearing-lower-1": {
+        "id": "c1-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-1",
+        "name": "Lower bearing shell \u00b7 cylinder 1",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c1-rod-bearing-upper-1": {
+        "id": "c1-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-1",
+        "name": "Upper bearing shell \u00b7 cylinder 1",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c1-rod-bolt-1": {
+        "id": "c1-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-1",
+        "name": "Rod bolt 1 \u00b7 cylinder 1",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c1-rod-bolt-2": {
+        "id": "c1-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-1",
+        "name": "Rod bolt 2 \u00b7 cylinder 1",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c1-rod-cap-1": {
+        "id": "c1-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-1",
+        "name": "Rod cap \u00b7 cylinder 1",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c1-rod-nut-1": {
+        "id": "c1-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-1",
+        "name": "Rod nut 1 \u00b7 cylinder 1",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c1-rod-nut-2": {
+        "id": "c1-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-1",
+        "name": "Rod nut 2 \u00b7 cylinder 1",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c1-second-ring-1": {
+        "id": "c1-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-1",
+        "name": "Second compression ring \u00b7 cylinder 1",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c1-top-ring-1": {
+        "id": "c1-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-1",
+        "name": "Top compression ring \u00b7 cylinder 1",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c1-wrist-pin-1": {
+        "id": "c1-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-1",
+        "name": "Wrist pin \u00b7 cylinder 1",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "c2-connecting-rod-1": {
+        "id": "c2-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-2",
+        "name": "Connecting rod \u00b7 cylinder 2",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c2-oil-expander-1": {
+        "id": "c2-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-2",
+        "name": "Oil-ring expander \u00b7 cylinder 2",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c2-oil-rail-1": {
+        "id": "c2-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-2",
+        "name": "Oil-control rail 1 \u00b7 cylinder 2",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c2-oil-rail-2": {
+        "id": "c2-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-2",
+        "name": "Oil-control rail 2 \u00b7 cylinder 2",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c2-piston-1": {
+        "id": "c2-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-2",
+        "name": "Piston \u00b7 cylinder 2",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c2-rod-bearing-lower-1": {
+        "id": "c2-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-2",
+        "name": "Lower bearing shell \u00b7 cylinder 2",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c2-rod-bearing-upper-1": {
+        "id": "c2-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-2",
+        "name": "Upper bearing shell \u00b7 cylinder 2",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c2-rod-bolt-1": {
+        "id": "c2-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-2",
+        "name": "Rod bolt 1 \u00b7 cylinder 2",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c2-rod-bolt-2": {
+        "id": "c2-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-2",
+        "name": "Rod bolt 2 \u00b7 cylinder 2",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c2-rod-cap-1": {
+        "id": "c2-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-2",
+        "name": "Rod cap \u00b7 cylinder 2",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c2-rod-nut-1": {
+        "id": "c2-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-2",
+        "name": "Rod nut 1 \u00b7 cylinder 2",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c2-rod-nut-2": {
+        "id": "c2-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-2",
+        "name": "Rod nut 2 \u00b7 cylinder 2",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c2-second-ring-1": {
+        "id": "c2-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-2",
+        "name": "Second compression ring \u00b7 cylinder 2",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c2-top-ring-1": {
+        "id": "c2-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-2",
+        "name": "Top compression ring \u00b7 cylinder 2",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c2-wrist-pin-1": {
+        "id": "c2-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-2",
+        "name": "Wrist pin \u00b7 cylinder 2",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "c3-connecting-rod-1": {
+        "id": "c3-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-3",
+        "name": "Connecting rod \u00b7 cylinder 3",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c3-oil-expander-1": {
+        "id": "c3-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-3",
+        "name": "Oil-ring expander \u00b7 cylinder 3",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c3-oil-rail-1": {
+        "id": "c3-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-3",
+        "name": "Oil-control rail 1 \u00b7 cylinder 3",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c3-oil-rail-2": {
+        "id": "c3-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-3",
+        "name": "Oil-control rail 2 \u00b7 cylinder 3",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c3-piston-1": {
+        "id": "c3-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-3",
+        "name": "Piston \u00b7 cylinder 3",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c3-rod-bearing-lower-1": {
+        "id": "c3-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-3",
+        "name": "Lower bearing shell \u00b7 cylinder 3",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c3-rod-bearing-upper-1": {
+        "id": "c3-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-3",
+        "name": "Upper bearing shell \u00b7 cylinder 3",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c3-rod-bolt-1": {
+        "id": "c3-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-3",
+        "name": "Rod bolt 1 \u00b7 cylinder 3",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c3-rod-bolt-2": {
+        "id": "c3-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-3",
+        "name": "Rod bolt 2 \u00b7 cylinder 3",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c3-rod-cap-1": {
+        "id": "c3-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-3",
+        "name": "Rod cap \u00b7 cylinder 3",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c3-rod-nut-1": {
+        "id": "c3-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-3",
+        "name": "Rod nut 1 \u00b7 cylinder 3",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c3-rod-nut-2": {
+        "id": "c3-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-3",
+        "name": "Rod nut 2 \u00b7 cylinder 3",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c3-second-ring-1": {
+        "id": "c3-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-3",
+        "name": "Second compression ring \u00b7 cylinder 3",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c3-top-ring-1": {
+        "id": "c3-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-3",
+        "name": "Top compression ring \u00b7 cylinder 3",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c3-wrist-pin-1": {
+        "id": "c3-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-3",
+        "name": "Wrist pin \u00b7 cylinder 3",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "c4-connecting-rod-1": {
+        "id": "c4-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-4",
+        "name": "Connecting rod \u00b7 cylinder 4",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c4-oil-expander-1": {
+        "id": "c4-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-4",
+        "name": "Oil-ring expander \u00b7 cylinder 4",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c4-oil-rail-1": {
+        "id": "c4-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-4",
+        "name": "Oil-control rail 1 \u00b7 cylinder 4",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c4-oil-rail-2": {
+        "id": "c4-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-4",
+        "name": "Oil-control rail 2 \u00b7 cylinder 4",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c4-piston-1": {
+        "id": "c4-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-4",
+        "name": "Piston \u00b7 cylinder 4",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c4-rod-bearing-lower-1": {
+        "id": "c4-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-4",
+        "name": "Lower bearing shell \u00b7 cylinder 4",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c4-rod-bearing-upper-1": {
+        "id": "c4-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-4",
+        "name": "Upper bearing shell \u00b7 cylinder 4",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c4-rod-bolt-1": {
+        "id": "c4-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-4",
+        "name": "Rod bolt 1 \u00b7 cylinder 4",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c4-rod-bolt-2": {
+        "id": "c4-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-4",
+        "name": "Rod bolt 2 \u00b7 cylinder 4",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c4-rod-cap-1": {
+        "id": "c4-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-4",
+        "name": "Rod cap \u00b7 cylinder 4",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c4-rod-nut-1": {
+        "id": "c4-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-4",
+        "name": "Rod nut 1 \u00b7 cylinder 4",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c4-rod-nut-2": {
+        "id": "c4-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-4",
+        "name": "Rod nut 2 \u00b7 cylinder 4",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c4-second-ring-1": {
+        "id": "c4-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-4",
+        "name": "Second compression ring \u00b7 cylinder 4",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c4-top-ring-1": {
+        "id": "c4-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-4",
+        "name": "Top compression ring \u00b7 cylinder 4",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c4-wrist-pin-1": {
+        "id": "c4-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-4",
+        "name": "Wrist pin \u00b7 cylinder 4",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "c5-connecting-rod-1": {
+        "id": "c5-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-5",
+        "name": "Connecting rod \u00b7 cylinder 5",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c5-oil-expander-1": {
+        "id": "c5-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-5",
+        "name": "Oil-ring expander \u00b7 cylinder 5",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c5-oil-rail-1": {
+        "id": "c5-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-5",
+        "name": "Oil-control rail 1 \u00b7 cylinder 5",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c5-oil-rail-2": {
+        "id": "c5-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-5",
+        "name": "Oil-control rail 2 \u00b7 cylinder 5",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c5-piston-1": {
+        "id": "c5-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-5",
+        "name": "Piston \u00b7 cylinder 5",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c5-rod-bearing-lower-1": {
+        "id": "c5-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-5",
+        "name": "Lower bearing shell \u00b7 cylinder 5",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c5-rod-bearing-upper-1": {
+        "id": "c5-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-5",
+        "name": "Upper bearing shell \u00b7 cylinder 5",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c5-rod-bolt-1": {
+        "id": "c5-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-5",
+        "name": "Rod bolt 1 \u00b7 cylinder 5",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c5-rod-bolt-2": {
+        "id": "c5-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-5",
+        "name": "Rod bolt 2 \u00b7 cylinder 5",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c5-rod-cap-1": {
+        "id": "c5-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-5",
+        "name": "Rod cap \u00b7 cylinder 5",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c5-rod-nut-1": {
+        "id": "c5-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-5",
+        "name": "Rod nut 1 \u00b7 cylinder 5",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c5-rod-nut-2": {
+        "id": "c5-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-5",
+        "name": "Rod nut 2 \u00b7 cylinder 5",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c5-second-ring-1": {
+        "id": "c5-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-5",
+        "name": "Second compression ring \u00b7 cylinder 5",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c5-top-ring-1": {
+        "id": "c5-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-5",
+        "name": "Top compression ring \u00b7 cylinder 5",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c5-wrist-pin-1": {
+        "id": "c5-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-5",
+        "name": "Wrist pin \u00b7 cylinder 5",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "c6-connecting-rod-1": {
+        "id": "c6-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-6",
+        "name": "Connecting rod \u00b7 cylinder 6",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c6-intake-fulcrum": {
+        "id": "c6-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "parent": "c6-intake-actuation",
+        "name": "Rocker fulcrum",
+        "function": "Provides the pivot bearing under the rocker attachment bolt.",
+        "position_cad_mm": [
+          -309.48,
+          51.0718402496357,
+          395.1246
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -70,
+          300
+        ]
+      },
+      "c6-intake-guide": {
+        "id": "c6-intake-guide",
+        "definition": "rocker-guide",
+        "parent": "c6-intake-actuation",
+        "name": "Fulcrum guide",
+        "function": "Locates the fulcrum on its head pedestal; the factory diagram identifies it as a separate component.",
+        "position_cad_mm": [
+          -309.48,
+          51.0718402496357,
+          377.1246
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -70,
+          250
+        ]
+      },
+      "c6-intake-lifter-body": {
+        "id": "c6-intake-lifter-body",
+        "definition": "lifter-body",
+        "parent": "c6-intake-lifter",
+        "name": "Hydraulic lifter body",
+        "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          114.8
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          0
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-check-ball": {
+        "id": "c6-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter check valve",
+        "function": "Closes the oil chamber during lift so the lifter transmits force.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          108.39999999999999
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          120
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-check-retainer": {
+        "id": "c6-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter check-valve retainer",
+        "function": "Retains the check-valve spring at the plunger base.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          102.3
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          85
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-check-spring": {
+        "id": "c6-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter check-valve spring",
+        "function": "Biases the check valve toward its seat.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          103.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          100
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-lock-ring": {
+        "id": "c6-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter retaining ring",
+        "function": "Keeps the internal parts inside the lifter body.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          138.8
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          215
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-metering-disc": {
+        "id": "c6-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter metering disc",
+        "function": "Meters the oil delivered toward the pushrod cup.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          132.7
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          185
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-plunger": {
+        "id": "c6-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter plunger",
+        "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          120.8
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          155
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-plunger-spring": {
+        "id": "c6-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter plunger spring",
+        "function": "Biases the plunger outward during lash adjustment.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          94.44999999999999
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          55
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-lifter-pushrod-cup": {
+        "id": "c6-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "parent": "c6-intake-lifter",
+        "name": "Lifter pushrod cup",
+        "function": "Supports the spherical pushrod end and admits lubricating oil.",
+        "position_cad_mm": [
+          -309.48,
+          90,
+          135.7
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -140,
+          200
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "lifter",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-pushrod": {
+        "id": "c6-intake-pushrod",
+        "definition": "pushrod",
+        "parent": "c6-intake-actuation",
+        "name": "Hollow pushrod",
+        "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+        "position_cad_mm": [
+          -309.48,
+          90.0,
+          264.701677217186
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -110,
+          160
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "pushrod",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-rocker": {
+        "id": "c6-intake-rocker",
+        "definition": "rocker-arm",
+        "parent": "c6-intake-actuation",
+        "name": "Rocker arm",
+        "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+        "position_cad_mm": [
+          -309.48,
+          51.0718402496357,
+          395.1246
+        ],
+        "rotation_cad_deg": [
+          -4.183193630790627e-14,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -70,
+          270
+        ],
+        "valvetrain": {
+          "cylinder": 6,
+          "kind": "intake",
+          "role": "rocker",
+          "model": "source-sized-v2"
+        }
+      },
+      "c6-intake-rocker-bolt": {
+        "id": "c6-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "parent": "c6-intake-actuation",
+        "name": "Rocker attachment bolt",
+        "function": "Retains the fulcrum on the threaded head pedestal.",
+        "position_cad_mm": [
+          -309.48,
+          51.0718402496357,
+          395.1246
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -70,
+          350
+        ]
+      },
+      "c6-oil-expander-1": {
+        "id": "c6-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-6",
+        "name": "Oil-ring expander \u00b7 cylinder 6",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c6-oil-rail-1": {
+        "id": "c6-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-6",
+        "name": "Oil-control rail 1 \u00b7 cylinder 6",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      },
+      "c6-oil-rail-2": {
+        "id": "c6-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-6",
+        "name": "Oil-control rail 2 \u00b7 cylinder 6",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      },
+      "c6-piston-1": {
+        "id": "c6-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-6",
+        "name": "Piston \u00b7 cylinder 6",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      },
+      "c6-rod-bearing-lower-1": {
+        "id": "c6-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-6",
+        "name": "Lower bearing shell \u00b7 cylinder 6",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      },
+      "c6-rod-bearing-upper-1": {
+        "id": "c6-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-6",
+        "name": "Upper bearing shell \u00b7 cylinder 6",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      },
+      "c6-rod-bolt-1": {
+        "id": "c6-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-6",
+        "name": "Rod bolt 1 \u00b7 cylinder 6",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      },
+      "c6-rod-bolt-2": {
+        "id": "c6-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-6",
+        "name": "Rod bolt 2 \u00b7 cylinder 6",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      },
+      "c6-rod-cap-1": {
+        "id": "c6-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-6",
+        "name": "Rod cap \u00b7 cylinder 6",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      },
+      "c6-rod-nut-1": {
+        "id": "c6-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-6",
+        "name": "Rod nut 1 \u00b7 cylinder 6",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      },
+      "c6-rod-nut-2": {
+        "id": "c6-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-6",
+        "name": "Rod nut 2 \u00b7 cylinder 6",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      },
+      "c6-second-ring-1": {
+        "id": "c6-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-6",
+        "name": "Second compression ring \u00b7 cylinder 6",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      },
+      "c6-top-ring-1": {
+        "id": "c6-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-6",
+        "name": "Top compression ring \u00b7 cylinder 6",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      },
+      "c6-wrist-pin-1": {
+        "id": "c6-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-6",
+        "name": "Wrist pin \u00b7 cylinder 6",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      },
+      "camshaft": {
+        "id": "camshaft",
+        "definition": "camshaft",
+        "parent": "cam-motion",
+        "name": "Camshaft",
+        "function": "Twelve lobes time the intake and exhaust valves. Four bearing journals locate the shaft; the timing gears turn it once per two crankshaft revolutions.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          -100,
+          0
+        ]
+      },
+      "crank-timing-gear": {
+        "id": "crank-timing-gear",
+        "definition": "crank-timing-gear",
+        "parent": "crank-motion",
+        "name": "Crank Timing Gear",
+        "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+        "position_cad_mm": [
+          385.259375,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          160,
+          0,
+          0
+        ]
+      },
+      "crankshaft": {
+        "id": "crankshaft",
+        "definition": "crankshaft",
+        "parent": "crank-motion",
+        "name": "Crankshaft",
+        "function": "Six throws turn reciprocating piston force into rotation. The seven main journals support the shaft; paired throws follow the 1\u20135\u20133\u20136\u20132\u20134 firing order.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -170
+        ]
+      },
+      "cylinder-head": {
+        "id": "cylinder-head",
+        "definition": "cylinder-head",
+        "parent": "head",
+        "name": "Cylinder head",
+        "function": "Closes the cylinders and carries the valves, intake and exhaust passages and rocker supports. Port and chamber shapes here are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          255.5
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          220
+        ]
+      },
+      "efi-upper-intake": {
+        "id": "efi-upper-intake",
+        "definition": "efi-upper-intake",
+        "parent": "intake-castings",
+        "name": "Upper EFI intake manifold",
+        "function": "A common plenum distributes air into six curved runners feeding the lower manifold. The catalog lists E7TZ9424A. This is one casting, not six removable runner tubes. The throttle-body interface is open; a separate throttle mechanism mounts at this interface.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -150,
+          310
+        ]
+      },
+      "egr-exhaust-tube": {
+        "id": "egr-exhaust-tube",
+        "definition": "egr-exhaust-tube",
+        "parent": "egr-exhaust-line",
+        "name": "EGR exhaust tube",
+        "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -70,
+          -50,
+          0
+        ]
+      },
+      "head-gasket": {
+        "id": "head-gasket",
+        "definition": "head-gasket",
+        "parent": "head",
+        "name": "Head gasket",
+        "function": "Seals combustion, coolant and oil interfaces between block and head. Fire rings and passage pattern need further evidence.",
+        "position_cad_mm": [
+          0,
+          0,
+          254.75
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          160
+        ]
+      },
+      "ignition-lead-6-carbon-core": {
+        "id": "ignition-lead-6-carbon-core",
+        "definition": "ignition-lead-6-carbon-core",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "ignition-lead-6-jacket": {
+        "id": "ignition-lead-6-jacket",
+        "definition": "ignition-lead-6-jacket",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "ignition-lead-6-plug-boot": {
+        "id": "ignition-lead-6-plug-boot",
+        "definition": "ignition-lead-6-plug-boot",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 plug boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          -100
+        ]
+      },
+      "ignition-lead-6-plug-contact": {
+        "id": "ignition-lead-6-plug-contact",
+        "definition": "ignition-lead-6-plug-contact",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 plug contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          -170
+        ]
+      },
+      "oil-pan": {
+        "id": "oil-pan",
+        "definition": "oil-pan",
+        "parent": "oil-pan-assembly",
+        "name": "Oil pan",
+        "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+        "position_cad_mm": [
+          0,
+          -12,
+          -96
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -320
+        ]
+      },
+      "oil-pan-molded-gasket": {
+        "id": "oil-pan-molded-gasket",
+        "definition": "oil-pan-molded-gasket",
+        "parent": "oil-pan-assembly",
+        "name": "Continuous molded pan gasket study",
+        "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -210
+        ]
+      },
+      "pushrod-cover": {
+        "id": "pushrod-cover",
+        "definition": "pushrod-cover",
+        "parent": "pushrod-cover-assembly",
+        "name": "Pushrod side cover",
+        "function": "Closes the block-side access opening beside the pushrods and lifters. Stamped ribs stiffen the thin cover.",
+        "position_cad_mm": [
+          0,
+          119,
+          185
+        ],
+        "rotation_cad_deg": [
+          -90,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          0
+        ]
+      },
+      "pushrod-cover-gasket": {
+        "id": "pushrod-cover-gasket",
+        "definition": "pushrod-cover-gasket",
+        "parent": "pushrod-cover-assembly",
+        "name": "Pushrod cover perimeter gasket",
+        "function": "Seals the perimeter where the cover meets the block. This is separate from the six fastener grommets.",
+        "position_cad_mm": [
+          0,
+          119,
+          185
+        ],
+        "rotation_cad_deg": [
+          -90,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          100,
+          0
+        ]
+      },
+      "pushrod-cover-grommet-1": {
+        "id": "pushrod-cover-grommet-1",
+        "definition": "pushrod-cover-grommet",
+        "parent": "pushrod-cover-assembly",
+        "name": "Cover bolt grommet 1",
+        "function": "Seals around one cover fastener. The modeled rubber section is an uncompressed replacement-envelope study.",
+        "position_cad_mm": [
+          -285.0,
+          119,
+          185
+        ],
+        "rotation_cad_deg": [
+          -90,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          235,
+          0
+        ]
+      },
+      "spark-plug-6-center-electrode": {
+        "id": "spark-plug-6-center-electrode",
+        "definition": "spark-plug-center-electrode",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug center electrode \u00b7 cylinder 6",
+        "function": "The firing end faces the ground strap across the specified application gap. Electrode construction is illustrative.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -42.286167935365874,
+          -15.390906449655096
+        ]
+      },
+      "spark-plug-6-copper-core": {
+        "id": "spark-plug-6-copper-core",
+        "definition": "spark-plug-copper-core",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug electrode core \u00b7 illustrative \u00b7 cylinder 6",
+        "function": "Illustrates a separate heat-conducting electrode core; WR4-1 internal dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -14.941811936505987,
+          -32.04281910278943
+        ]
+      },
+      "spark-plug-6-ground-electrode": {
+        "id": "spark-plug-6-ground-electrode",
+        "definition": "spark-plug-ground-electrode",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug ground electrode \u00b7 cylinder 6",
+        "function": "The ground strap returns spark current through the shell to the cylinder head. Its gap is modeled at .044 inch.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          20,
+          -42.286167935365874,
+          -15.390906449655096
+        ]
+      },
+      "spark-plug-6-insulator": {
+        "id": "spark-plug-6-insulator",
+        "definition": "spark-plug-insulator",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug ceramic insulator \u00b7 cylinder 6",
+        "function": "Isolates the center conductor from the grounded shell. Nose and corrugation dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -35,
+          0.0,
+          0.0
+        ]
+      },
+      "spark-plug-6-lower-seal": {
+        "id": "spark-plug-6-lower-seal",
+        "definition": "spark-plug-lower-seal",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug lower conductive seal \u00b7 illustrative \u00b7 cylinder 6",
+        "function": "Illustrates an internal conducting seal between electrode and resistor.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -22.645892894930345,
+          18.362013369762675
+        ]
+      },
+      "spark-plug-6-resistor": {
+        "id": "spark-plug-6-resistor",
+        "definition": "spark-plug-resistor",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug suppressor resistor \u00b7 illustrative \u00b7 cylinder 6",
+        "function": "Represents the internal interference-suppression element; resistance and construction are not specified by this model.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          10.260604299770065,
+          -28.19077862357725
+        ]
+      },
+      "spark-plug-6-shell": {
+        "id": "spark-plug-6-shell",
+        "definition": "spark-plug-shell",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug threaded metal shell \u00b7 cylinder 6",
+        "function": "Seats in the head and carries the ground electrode. A helical thread replaces the smooth envelope; pitch is family-derived and production thread tolerances remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          35,
+          0.0,
+          0.0
+        ]
+      },
+      "spark-plug-6-terminal": {
+        "id": "spark-plug-6-terminal",
+        "definition": "spark-plug-terminal",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug terminal and stem \u00b7 cylinder 6",
+        "function": "Receives the plug-wire connection and carries voltage toward the internal resistor.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          46.984631039295415,
+          17.10100716628344
+        ]
+      },
+      "spark-plug-6-upper-seal": {
+        "id": "spark-plug-6-upper-seal",
+        "definition": "spark-plug-upper-seal",
+        "parent": "spark-plug-6",
+        "name": "Spark-plug upper conductive seal \u00b7 illustrative \u00b7 cylinder 6",
+        "function": "Illustrates an internal conducting seal between resistor and terminal stem.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          -70.0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          5.5448857286469035,
+          28.62261766953274
+        ]
+      },
+      "valve-cover": {
+        "id": "valve-cover",
+        "definition": "valve-cover",
+        "parent": "closures",
+        "name": "Valve cover",
+        "function": "Contains oil around the rocker gear. Sloped shoulders and separate oil-fill/ventilation openings replace the box envelope. Exact stamping contours, mounting holes, baffles and opening stations remain provisional.",
+        "position_cad_mm": [
+          0,
+          -12,
+          375.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          460
+        ]
+      },
+      "valve-cover-gasket": {
+        "id": "valve-cover-gasket",
+        "definition": "valve-cover-gasket",
+        "parent": "closures",
+        "name": "Valve cover gasket",
+        "function": "Seals the rocker cover to the head. Bolt-hole pattern and corner radii are pending.",
+        "position_cad_mm": [
+          0,
+          -12,
+          335.5
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          390
+        ]
+      }
+    },
+    "assemblies": {
+      "c6-intake-actuation": {
+        "id": "c6-intake-actuation",
+        "name": "Cylinder 6 \u00b7 intake actuation",
+        "parent": "valvetrain",
+        "motion": {
+          "type": "valvetrain",
+          "cylinder": 6,
+          "kind": "intake",
+          "model": "source-sized-v2"
+        },
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "c6-intake-lifter": {
+        "id": "c6-intake-lifter",
+        "name": "Cylinder 6 \u00b7 intake hydraulic lifter",
+        "parent": "c6-intake-actuation",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "cam-motion": {
+        "id": "cam-motion",
+        "name": "Camshaft",
+        "parent": "valvetrain",
+        "motion": {
+          "type": "cam"
+        },
+        "position_cad_mm": [
+          0,
+          90,
+          72
+        ]
+      },
+      "closures": {
+        "id": "closures",
+        "name": "Timing drive, covers, pan & seals",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "crank-motion": {
+        "id": "crank-motion",
+        "name": "Crankshaft",
+        "parent": "rotating",
+        "motion": {
+          "type": "crank"
+        },
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr": {
+        "id": "egr",
+        "name": "Exhaust gas recirculation",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-exhaust-line": {
+        "id": "egr-exhaust-line",
+        "name": "EGR exhaust tube & connections",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engine": {
+        "id": "engine",
+        "name": "Ford 4.9L engine",
+        "parent": null,
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "head": {
+        "id": "head",
+        "name": "Head, valves & springs",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ignition": {
+        "id": "ignition",
+        "name": "Ignition system",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ignition-lead-6-assembly": {
+        "id": "ignition-lead-6-assembly",
+        "name": "Cylinder 6 ignition lead",
+        "parent": "ignition-leads",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      "ignition-leads": {
+        "id": "ignition-leads",
+        "name": "Secondary ignition leads \u00b7 routed study",
+        "parent": "ignition",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      "induction": {
+        "id": "induction",
+        "name": "EFI intake",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "intake-castings": {
+        "id": "intake-castings",
+        "name": "Manifolds & gaskets",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "oil-pan-assembly": {
+        "id": "oil-pan-assembly",
+        "name": "Oil pan & seals",
+        "parent": "closures",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "piston-group-1": {
+        "id": "piston-group-1",
+        "name": "Cylinder 1 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "piston-group-2": {
+        "id": "piston-group-2",
+        "name": "Cylinder 2 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "piston-group-3": {
+        "id": "piston-group-3",
+        "name": "Cylinder 3 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "piston-group-4": {
+        "id": "piston-group-4",
+        "name": "Cylinder 4 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "piston-group-5": {
+        "id": "piston-group-5",
+        "name": "Cylinder 5 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "piston-group-6": {
+        "id": "piston-group-6",
+        "name": "Cylinder 6 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "pushrod-cover-assembly": {
+        "id": "pushrod-cover-assembly",
+        "name": "Pushrod side cover & seals",
+        "parent": "structure",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "rod-group-1": {
+        "id": "rod-group-1",
+        "name": "Cylinder 1 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "rod-group-2": {
+        "id": "rod-group-2",
+        "name": "Cylinder 2 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "rod-group-3": {
+        "id": "rod-group-3",
+        "name": "Cylinder 3 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "rod-group-4": {
+        "id": "rod-group-4",
+        "name": "Cylinder 4 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "rod-group-5": {
+        "id": "rod-group-5",
+        "name": "Cylinder 5 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "rod-group-6": {
+        "id": "rod-group-6",
+        "name": "Cylinder 6 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "rotating": {
+        "id": "rotating",
+        "name": "Crankshaft & six piston assemblies",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "spark-plug-6": {
+        "id": "spark-plug-6",
+        "name": "Cylinder 6 \u00b7 spark plug",
+        "parent": "spark-plugs",
+        "motion": null,
+        "position_cad_mm": [
+          -284.48,
+          58.0,
+          270.5
+        ]
+      },
+      "spark-plugs": {
+        "id": "spark-plugs",
+        "name": "Six spark plugs",
+        "parent": "ignition",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "structure": {
+        "id": "structure",
+        "name": "Block, bearings & main caps",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "valvetrain": {
+        "id": "valvetrain",
+        "name": "Camshaft, lifters, pushrods & rockers",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "mechanism": {
+      "stroke_mm": 101.092,
+      "rod_length_mm": 157.7
+    }
+  },
+  "environment": {
+    "python": "3.13.12",
+    "build123d": "0.10.0",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O"
+  },
+  "lengths_and_pose": {
+    "guide_centerline_length_mm": 558.476126147352,
+    "free_axial_route_length_mm": 133.67387385264794,
+    "route_sum_mm": 692.15,
+    "pilot_axial_length_mm": 692.15,
+    "wave_axial_length_mm": 53,
+    "wave_polyline_material_length_mm": 59.57280372721314,
+    "blade_material_centerline_length_mm": 698.7228037272131,
+    "mouth_mm": [
+      -285.0,
+      170.0,
+      500.0
+    ],
+    "tip_mm": [
+      -315.0,
+      24.163063073676028,
+      -150.4059867300471
+    ],
+    "stem_end_mm": [
+      -315.0,
+      76.66306307367603,
+      -59.47331933268103
+    ],
+    "stop_bottom_correction_mm": 0.5,
+    "reading_marks": "UNKNOWN; no ADD/FULL/oil-level marks added",
+    "stamp": "E9TE-6750-DA M specimen comparison; not owner identification"
+  },
+  "shape_checks": {
+    "engine-oil-dipstick-blade-inserted": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 1546.5397738240506,
+      "step_roundtrip_error_mm3": 1.9646222426672466e-08,
+      "cad_mesh_bounds_error_mm": 0.0012996035169976494
+    },
+    "engine-oil-dipstick-handle-inserted": {
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4159.9688098883735,
+      "step_roundtrip_error_mm3": 1.418811734765768e-10,
+      "cad_mesh_bounds_error_mm": 0.03266228847871844
+    }
+  },
+  "glb_roundtrip_bounds_error_mm": 1.1238146080394529e-05,
+  "seating": {
+    "stop_tube_gap_mm": 0.0,
+    "stop_tube_contact_mm2": 29.845130209103033,
+    "stop_tube_overlap_mm3": 0.0,
+    "blade_handle_gap_mm": 0.0,
+    "blade_handle_contact_mm2": 1.7600000000000002,
+    "blade_handle_overlap_mm3": 0.0,
+    "blade_tube_min_clearance_mm": 0.2322612366484403
+  },
+  "sump": {
+    "blade_pan_min_distance_mm": 12.073288853764495
+  },
+  "static_comparisons": [
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "block-candidate",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "block-candidate",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "engine-oil-dipstick-tube",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "engine-oil-dipstick-tube",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "engine-oil-dipstick-tube-retaining-nut",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "engine-oil-dipstick-tube-retaining-nut",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "pushrod-cover-retainer-candidate",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "pushrod-cover-retainer-candidate",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "engine-oil-dipstick-tube-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "engine-oil-dipstick-tube-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "engine-oil-dipstick-tube-support-nut",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "engine-oil-dipstick-tube-support-nut",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-piston-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-top-ring-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-second-ring-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-rail-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-rail-2",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-expander-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-connecting-rod-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-cap-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bearing-upper-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bearing-lower-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bolt-2",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-nut-2",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "pushrod-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "pushrod-cover-gasket",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "pushrod-cover-grommet-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "cylinder-head",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "head-gasket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-pushrod",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-rocker",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-fulcrum",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-rocker-bolt",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-guide",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-body",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-plunger-spring",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-check-retainer",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-check-spring",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-check-ball",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-plunger",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-metering-disc",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-pushrod-cup",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-intake-lifter-lock-ring",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "camshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "oil-pan",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "valve-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "valve-cover-gasket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "efi-upper-intake",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-shell",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-insulator",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-center-electrode",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-copper-core",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-resistor",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-lower-seal",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-upper-seal",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-terminal",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "spark-plug-6-ground-electrode",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "egr-exhaust-tube",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "ignition-lead-6-jacket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "ignition-lead-6-carbon-core",
+      "overlap_mm3": 0.0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "ignition-lead-6-plug-boot",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "ignition-lead-6-plug-contact",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "oil-pan-molded-gasket",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "static_failures": [],
+  "motion_degrees": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550,
+    560,
+    570,
+    580,
+    590,
+    600,
+    610,
+    620,
+    630,
+    640,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720
+  ],
+  "motion_checks": 797,
+  "motion_failures": [],
+  "continuous_bounds": [
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "crankshaft-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-handle-inserted",
+      "neighbor": "crankshaft-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-piston-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-top-ring-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-second-ring-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-rail-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-rail-2-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-oil-expander-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-connecting-rod-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-cap-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bearing-upper-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bearing-lower-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bolt-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-nut-1-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-bolt-2-envelope",
+      "overlap_mm3": 0
+    },
+    {
+      "part": "engine-oil-dipstick-blade-inserted",
+      "neighbor": "c6-rod-nut-2-envelope",
+      "overlap_mm3": 0
+    }
+  ],
+  "negative_controls": {
+    "oversize_8mm_section_tube_overlap_mm3": 8.122144716947377,
+    "short_guide_25mm_stop_gap_mm": 25.0,
+    "short_guide_unchanged_free_route_sum_mm": 667.15,
+    "raised_stop_2mm_gap_mm": 2.0
+  },
+  "limits": [
+    "Rigid flexed display pose, not elastic insertion/withdrawal simulation.",
+    "692.15mm is an approximate seller axial comparison; physical material centerline grows with inherited estimated waves.",
+    "Original section, wave, handle and stamp-position dimensions are estimates. No ADD/FULL calibration or owner identity claim.",
+    "Stop seats on tube mouth and blade touches handle; friction fit, attachment strength and retention force unvalidated.",
+    "Whole-engine scan is a snapshot; only named relevant geometry/occurrence dependencies are frozen."
+  ],
+  "outputs_sha256": {
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-inserted.step": "866a8c2b0f98b2df5a13a070675547b1389ed988248fc4a61945db71d609b07e",
+    "cad/engine/generated/dipstick-inserted-feasibility/inserted-review.png": "598f6cacc3ff43aec0dfbf19c7b8742a537f1cab369899e16d2fd88f308e0bf5",
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-handle-inserted.step": "88c037e89a2c91909b752238115b9216548a890fad9788a0c58033e0fea78b44",
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-inserted.glb": "d92193f7f33570a222f26486598000383068d8c12513fd9b0c43700219ba7e38",
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-blade-inserted.step": "39e87154b09adf7dfb1c7fab157f8aa0307f03ea958670ce730b7bbc641f2ad7"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "scope": "Stage/installed artifact and pose binding; not browser or factory acceptance",
+  "installed": true,
+  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "candidate_evidence": {
+    "tube_report_sha256": "0025aa07e968800ce24d5f3290b91dde4ed2f31299936bd68b02fe9c137d3709",
+    "blade_report_sha256": "c9cecca9ec2f5ed5ac971a533dccf944c9899e6dc15b4c30c7c5bfff73896523"
+  },
+  "parts": [
+    {
+      "id": "block",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 918874.3739146965,
+      "mesh_bounds_error_mm": 0.014996151788409406
+    },
+    {
+      "id": "engine-oil-dipstick-blade",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 1536.380266068168,
+      "mesh_bounds_error_mm": 0.0033960308350060586
+    },
+    {
+      "id": "engine-oil-dipstick-handle",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 4442.438665592783,
+      "mesh_bounds_error_mm": 0.02955160880424046
+    },
+    {
+      "id": "engine-oil-dipstick-tube",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 18034.940703956498,
+      "mesh_bounds_error_mm": 0.0020128296447978755
+    },
+    {
+      "id": "engine-oil-dipstick-tube-bracket",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 276.25740792824945,
+      "mesh_bounds_error_mm": 0.011452849388120967
+    },
+    {
+      "id": "engine-oil-dipstick-tube-retaining-nut",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 879.3897959139608,
+      "mesh_bounds_error_mm": 6.214503571300156e-06
+    },
+    {
+      "id": "engine-oil-dipstick-tube-support-nut",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 203.0398486538012,
+      "mesh_bounds_error_mm": 4.76837158203125e-06
+    },
+    {
+      "id": "pushrod-cover-dipstick-retainer-estimated",
+      "symmetric_difference_mm3": 0,
+      "shift_negative_control_mm3": 4862.840141597467,
+      "mesh_bounds_error_mm": 3.079923658333428e-07
+    }
+  ],
+  "replay_symmetric_difference_mm3": {
+    "engine-oil-dipstick-tube": 0,
+    "engine-oil-dipstick-tube-retaining-nut": 0,
+    "engine-oil-dipstick-tube-bracket": 0,
+    "engine-oil-dipstick-tube-support-nut": 0,
+    "block": 0,
+    "pushrod-cover-dipstick-retainer-estimated": 0,
+    "engine-oil-dipstick-blade": 0,
+    "engine-oil-dipstick-handle": 0
+  },
+  "adapter_metadata_replay_identical": true,
+  "replay_method": "Definition callback arguments and occurrence/group inventories checked; numeric export fields reused, regenerated shapes compared independently",
+  "legacy_pilot_pose_reset": true,
+  "learning_references_valid": true,
+  "artifact_sha256": {
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "models/engine/block.glb": "82d7456865309cf2d5f5f85db64731245b41191bd10cfbe61fe99fd352918b87",
+    "cad/engine/generated/dipstick-tube-feasibility/block-candidate.step": "bf66b006f33e31cbbda8f04c87f8152701354c4e9031699ae7758f7d63e587a5",
+    "cad/engine/generated/engine-oil-dipstick-blade.step": "c2774cb94dfe4c405868d559d109ea30da3b99639c5752162bc5d327fcfe04b3",
+    "models/engine/engine-oil-dipstick-blade.glb": "3f75d69a78eace8be5d19f3e337baea3db078a2086e3222ed2cd45efc6812302",
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-blade-inserted.step": "39e87154b09adf7dfb1c7fab157f8aa0307f03ea958670ce730b7bbc641f2ad7",
+    "cad/engine/generated/engine-oil-dipstick-handle.step": "bfc120fba2c7ff88b4e9558b7be87e098aebf4dc9c9032b3216de12bc34ff9fd",
+    "models/engine/engine-oil-dipstick-handle.glb": "8bc66fc8a2394d5d500017f24035919472388399849b7fefa54959a28e88a2a6",
+    "cad/engine/generated/dipstick-inserted-feasibility/engine-oil-dipstick-handle-inserted.step": "88c037e89a2c91909b752238115b9216548a890fad9788a0c58033e0fea78b44",
+    "cad/engine/generated/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
+    "models/engine/engine-oil-dipstick-tube.glb": "5bb7ded792223b81724d84ab33c7c953bab29081d1864b589f4b1d4d46ac28ce",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube.step": "3b7ba968c9d89432c06318a6dd50eea310ae87b181466c65720405fa25383124",
+    "cad/engine/generated/engine-oil-dipstick-tube-bracket.step": "72ac604f53ed1752fe69a00dfb917b833715950b9f9e7d793e4de561cf444ded",
+    "models/engine/engine-oil-dipstick-tube-bracket.glb": "4f85da655cad7d60801e6fa618b3c424ee51f28fb2d3c13a861345554493d676",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-bracket.step": "a3b59a34c3fa61c9661189bf89520e9beab040c14e9ed721bbdb46fe3c7abb15",
+    "cad/engine/generated/engine-oil-dipstick-tube-retaining-nut.step": "9de33615c64355486ffe039a500a210297f583efaf678261e1fb309bcaa560d0",
+    "models/engine/engine-oil-dipstick-tube-retaining-nut.glb": "81629f37172fdbcffb28d5cac382f842f906a607f9e10676aed0dd109f8fbc1e",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-retaining-nut.step": "bb6459ae9a105f55eaee7d339157cee80152ef17b5fcddb9345292eaf9ca50bb",
+    "cad/engine/generated/engine-oil-dipstick-tube-support-nut.step": "5781c115e4e9a40491b3594089847540138e461ba637c208386116a353ae5ae1",
+    "models/engine/engine-oil-dipstick-tube-support-nut.glb": "f935a12e63c664869e110644156e6ee614f8d9fdcbc3aed61bf94c3c9bb77957",
+    "cad/engine/generated/dipstick-tube-feasibility/engine-oil-dipstick-tube-support-nut.step": "29798ea04f02c54ba5034c9ff74de2cbd17be6004c3bc3bbde46564341a55f0c",
+    "cad/engine/generated/pushrod-cover-dipstick-retainer-estimated.step": "1a10bcd17c4809d142101c6e5b1125a0af8e684ad554ab5344235e2b67faaa5c",
+    "models/engine/pushrod-cover-dipstick-retainer-estimated.glb": "f076f537f576f31640c29017e49a2ba92344368193cb8e0d67f876b22f4bd52d",
+    "cad/engine/generated/dipstick-tube-feasibility/pushrod-cover-retainer-candidate.step": "3a01132f03e2c40720be4f57664bd82210c53a6b8bdaf66014eb34b837f96e18"
+  },
+  "limits": "Threads, elastic insertion, retention strength, exact owner identity and oil calibration remain unresolved."
+}

@@ -1,0 +1,559 @@
+{
+  "status": "PASS",
+  "readiness": "candidate only",
+  "scope": "Estimated splash hood and compliant-barb pushpin on final coordinated linkage/bracket candidate. Static local neighbors and46 travel/cable samples; no factory dimensions, elasticity or strength certification.",
+  "input_hashes": {
+    "inventory/engine/full-assembly.json": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+    "scripts/check-throttle-shield-candidate.py": "55718af18e5cf51e4d6849785113b7843614f1a0f8a82b4ad7b6a0dfae4a5a48",
+    "cad/engine/throttle_shield_candidate.py": "bcb84f8d452b8c3f88769b44db391d9cf8585d71c35ae4f6bd1dd4d0e4115de8",
+    "cad/engine/throttle_linkage_candidate.py": "9e6149128e65e903fe27e667cf0016ba9fe80af4d1083f917ddf3b8baf9f4b78",
+    "cad/engine/pilot/throttle-bracket/candidate.py": "fd3753c695a02a19dbe2a5ec3abe10dea47ab66b4478cc45ec91eb5bfa1697c0",
+    "reference/engine/throttle-linkage-review.json": "8e59eae527b73f83eb16a1f3c8366cb4a979cbf493b6c1ee4841e5df2487c984",
+    "cad/engine/generated/throttle-shaft.step": "2d32bf78af35cb78b5fb73648629c3cf314623785c3925b816baae7b3cdff164",
+    "cad/engine/generated/efi-upper-intake.step": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+    "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+    "cad/engine/generated/throttle-gasket.step": "a6de7b0985d2ae30c92abe131a1609f6ddcc6ab2b04055280a44b830c6aca18f",
+    "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "cad/engine/generated/throttle-mount-stud.step": "f81c6143c4b75966eea3335737aec772fd95d9842cdede7faa92e6d0285eda5c",
+    "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+    "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d",
+    "cad/engine/generated/iac-valve-body.step": "ae9b42c24b6d30f55f47b327534ef8bbd0633a43aade539af9e1c1dcf7d80f8c",
+    "cad/engine/generated/iac-gasket.step": "4e0d027784e62bd99c8ef6007cdce1306bbf61d63798eeb76fc059c55771ba72",
+    "cad/engine/generated/iac-end-plug.step": "1b17a5ea46e62042515de08f03dd24d915733c3cda4716528890f5a5e8bda9a3",
+    "cad/engine/generated/iac-solenoid-can.step": "4282bcd6eff8fa7acb0f7974a3524e7a399a29a7305278de810c2df7b1c8ab4b",
+    "cad/engine/generated/iac-coil.step": "e8bc49b3a38992173e4e61e646ad91fe974d030048ded8846d2667c2e63d7216",
+    "cad/engine/generated/iac-armature.step": "acebcf514b6932e1b59d63a2ddcaf92518dbca8c14417af261af9cdbe9db27d3",
+    "cad/engine/generated/iac-pintle.step": "1d2edf63fb000c6a097970852d4e9a55bbb52bff1ba55d10485cbd0b0444faa6",
+    "cad/engine/generated/iac-connector-cap.step": "2a062b3b961a3e4b02cfeca2f9baf6f72c1f595dfdd898f95eaa53d2e48bbbe7",
+    "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+    "cad/engine/generated/tps-cover.step": "599c3f3120d3023a1ca725ad60bd098e1f51a064205e93b4c731d9051dd449a8",
+    "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+    "cad/engine/generated/tps-resistance-track.step": "41760977026789a80df6a374fcbd4944ff394aa9c38e919cfbdc715dc937024a",
+    "cad/engine/generated/tps-wiper.step": "be4d3a3a15be2838c662787250b08cae5ab63fc3bbc6b63b78e85e7a0a4eea93",
+    "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695"
+  },
+  "manifest_unchanged_during_check": true,
+  "output_hashes": {
+    "cad/engine/generated/throttle-shield-candidate/throttle-linkage-shield-estimated.step": "0c800276a9186e495445a1863176c2465964c8fc1982675ef5292f770afe42ef",
+    "cad/engine/generated/throttle-shield-candidate/throttle-linkage-shield-estimated.glb": "5a2b35038a621238bae0e48f38ba2be96a4b8fdd20001a23e65067765fe1b56f",
+    "cad/engine/generated/throttle-shield-candidate/throttle-shield-pushpin-estimated.step": "61dcd9b966b641758022d8964cb4feb445db2dfc9c861b9d215acf683814a91c",
+    "cad/engine/generated/throttle-shield-candidate/throttle-shield-pushpin-estimated.glb": "c5aa51d55ea3a1b37186a97b161c01ecd66dcf5c809a1ef1fc6fdfeca6114c31",
+    "cad/engine/generated/throttle-shield-candidate/accelerator-bracket-shield-hole-estimated.step": "8b4aa53b6db5e3a35ca9b63c58ad28e97ba4761bc83dd17a0a88cf6c78ade964",
+    "cad/engine/generated/throttle-shield-candidate/accelerator-bracket-shield-hole-estimated.glb": "82d0c6a6395902c750ead1524c602f1befa0bb261734fcb688ed72308ac0799d"
+  },
+  "parameters": {
+    "mount_x": 389.0,
+    "mount_z": 514.0,
+    "hole_radius": 2.4,
+    "shank_radius": 2.2,
+    "barb_radius": 2.9,
+    "head_radius": 4.0,
+    "ear_front_y": 106.5,
+    "bracket_back_y": 103.0
+  },
+  "export_checks": {
+    "throttle-linkage-shield-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 2.288818359375e-05,
+      "volume_mm3": 7790.421639472988
+    },
+    "throttle-shield-pushpin-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 9.5367431640625e-06,
+      "volume_mm3": 154.39862083399393
+    },
+    "accelerator-bracket-shield-hole-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 1.4543533325195312e-05,
+      "volume_mm3": 10545.263990107265
+    }
+  },
+  "contacts_mm2": {
+    "shield_bracket": 125.30230685482188,
+    "pin_head_shield": 32.16990877275947,
+    "pin_barb_bracket": 7.122618974753668
+  },
+  "detached_pin_negative_control": {
+    "head_shield_contact_mm2": 0,
+    "barb_bracket_contact_mm2": 0
+  },
+  "axial_withdrawal_barb_interference_mm3": 1.7806547436865015,
+  "mount_contacts_mm2": {
+    "throttle-housing": 369.7314775237985,
+    "throttle-nut-3": 36.64296159304475,
+    "throttle-nut-4": 36.64296159304475
+  },
+  "neighbor_ids": [
+    "efi-upper-intake",
+    "throttle-housing",
+    "throttle-gasket",
+    "throttle-plate-1",
+    "throttle-plate-2",
+    "throttle-stud-1",
+    "throttle-nut-1",
+    "throttle-stud-2",
+    "throttle-nut-2",
+    "throttle-stud-3",
+    "throttle-nut-3",
+    "throttle-stud-4",
+    "throttle-nut-4",
+    "iac-valve-body",
+    "iac-gasket",
+    "iac-end-plug",
+    "iac-solenoid-can",
+    "iac-coil",
+    "iac-armature",
+    "iac-pintle",
+    "iac-connector-cap",
+    "tps-housing",
+    "tps-cover",
+    "tps-rotor",
+    "tps-resistance-track",
+    "tps-wiper",
+    "tps-screw-1",
+    "tps-screw-2"
+  ],
+  "exact_static_and_moving_pairs": 190,
+  "sweep": [
+    {
+      "angle_deg": 0,
+      "minimum_linkage_clearance_mm": 3.636678784022675,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 2,
+      "minimum_linkage_clearance_mm": 4.033023430262009,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 4,
+      "minimum_linkage_clearance_mm": 4.5007147214321686,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 6,
+      "minimum_linkage_clearance_mm": 5.026775946855007,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 8,
+      "minimum_linkage_clearance_mm": 5.59992435585586,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 10,
+      "minimum_linkage_clearance_mm": 6.210744350992963,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 12,
+      "minimum_linkage_clearance_mm": 6.851559028745382,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 14,
+      "minimum_linkage_clearance_mm": 7.516179331443209,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 16,
+      "minimum_linkage_clearance_mm": 7.9297192974803465,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 18,
+      "minimum_linkage_clearance_mm": 8.174643608916313,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 20,
+      "minimum_linkage_clearance_mm": 8.447377101138159,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 22,
+      "minimum_linkage_clearance_mm": 8.747587490397109,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 24,
+      "minimum_linkage_clearance_mm": 9.074909016577521,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 26,
+      "minimum_linkage_clearance_mm": 9.428942888819961,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 28,
+      "minimum_linkage_clearance_mm": 9.809257771385774,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 30,
+      "minimum_linkage_clearance_mm": 10.215390309173472,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 32,
+      "minimum_linkage_clearance_mm": 10.646845692245734,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 34,
+      "minimum_linkage_clearance_mm": 11.103098258678983,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 36,
+      "minimum_linkage_clearance_mm": 11.583592135001254,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 38,
+      "minimum_linkage_clearance_mm": 12.087741913438663,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 40,
+      "minimum_linkage_clearance_mm": 12.614933365144509,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 42,
+      "minimum_linkage_clearance_mm": 13.164524188542543,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 44,
+      "minimum_linkage_clearance_mm": 13.735844791872353,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 46,
+      "minimum_linkage_clearance_mm": 14.328199108984052,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 48,
+      "minimum_linkage_clearance_mm": 14.94086544738741,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 50,
+      "minimum_linkage_clearance_mm": 15.50000000000314,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 52,
+      "minimum_linkage_clearance_mm": 15.50000000000001,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 54,
+      "minimum_linkage_clearance_mm": 15.5,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 56,
+      "minimum_linkage_clearance_mm": 15.5,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 58,
+      "minimum_linkage_clearance_mm": 15.500000000000002,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 60,
+      "minimum_linkage_clearance_mm": 15.5,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 62,
+      "minimum_linkage_clearance_mm": 15.500000000000004,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 64,
+      "minimum_linkage_clearance_mm": 15.5,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 66,
+      "minimum_linkage_clearance_mm": 15.500000000004258,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 68,
+      "minimum_linkage_clearance_mm": 15.500000000000197,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 70,
+      "minimum_linkage_clearance_mm": 15.500000000000563,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 72,
+      "minimum_linkage_clearance_mm": 15.500000000000021,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 74,
+      "minimum_linkage_clearance_mm": 15.500000000000108,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 76,
+      "minimum_linkage_clearance_mm": 15.500000000000016,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 78,
+      "minimum_linkage_clearance_mm": 15.500000000000002,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 80,
+      "minimum_linkage_clearance_mm": 15.500000000000078,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 82,
+      "minimum_linkage_clearance_mm": 15.500000000000014,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 84,
+      "minimum_linkage_clearance_mm": 15.50000000000005,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 86,
+      "minimum_linkage_clearance_mm": 15.500000000000272,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 88,
+      "minimum_linkage_clearance_mm": 15.500000000000009,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    },
+    {
+      "angle_deg": 90,
+      "minimum_linkage_clearance_mm": 15.500000000000234,
+      "cable_overlaps_mm3": {
+        "shield": 0.0,
+        "pushpin": 0.0,
+        "bracket": 0.0
+      }
+    }
+  ],
+  "collisions": [],
+  "integration": {
+    "parent": "throttle-assembly",
+    "position_cad_mm": [
+      0,
+      0,
+      0
+    ],
+    "rotation_cad_deg": [
+      0,
+      0,
+      0
+    ],
+    "bracket_delta": "Y-axis hole radius2.4 atX389,Z514 through final proposed webY103\u2013105; no mounting/cable datums moved"
+  },
+  "limitations": [
+    "All dimensions, mounting coordinate, barb and relief slots are inferred educational geometry; Ford production details unverified.",
+    "Angular hood approximates factory viewY. Pushpin insertion flexure/material/strength and full cable sheath/connector envelopes are unvalidated.",
+    "Spring and its tangs, stops and production calibration remain unresolved; not invented here."
+  ]
+}

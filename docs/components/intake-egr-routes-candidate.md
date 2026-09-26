@@ -1,0 +1,9 @@
+# Compact-intake EGR connection study
+
+Isolated candidate, not installed or accepted as Ford production routing. It accompanies the proposed `(167, 0, 25)` mm EGR/EVP frame shift; the fixed rear-exhaust fitting and EVR outlet remain in place. The exhaust tube ends at `(-245, 25, 459)` mm and the controlled-vacuum hose at `(-245, 85, 562)` mm. All coordinates and bends are inferred.
+
+The replacement catalog supplies a 0.74-inch tube OD; the inherited 1.4 mm wall and fittings remain estimates. The proposed centerline measures 440.931 mm; the old route measured 363.879 mm. Dorman's 17.9-inch length has no established measurement convention and is not used as a centerline specification. The initial long rectilinear route was rejected as implausibly indirect despite local clearance.
+
+`cad/engine/intake_egr_routes_candidate.py` builds the tube, separate protective sleeve, relocated valve union nut and fixed-to-moving vacuum hose. The manifold fitting is preserved. `scripts/check-intake-egr-routes-candidate.py` checks valid single solids, STEP roundtrips, watertight meshes/bounds, an open swept gas-path probe and an oversized-probe fault control, plus contact without overlap at the fixed exhaust fitting. It uses roundtripped world geometry to avoid nested-placement Boolean anomalies found in the related cap study.
+
+Recorded result: `LOCAL_CHECKS_PASS_NEIGHBOR_REVIEW_PENDING`. Full coordinated intake/cover/EGR neighborhood checks, valve-end contact/seal interpretation, hose fit and actual source-image comparison remain separate gates. No heat-transfer, hose compression, spring clamp, thread seal or structural claim is established. Do not install only these routes without the matching manifold and EGR geometry. Report: `inventory/engine/intake-egr-routes-candidate-validation.json`.

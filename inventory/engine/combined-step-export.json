@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
   "part_step_hashes": {
     "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
     "cad/engine/generated/pin.step": "12d1a53f03ba93754e9587246cdb275d1da000549b34d22e401759f39ebdd9d3",
@@ -98,7 +98,6 @@
     "cad/engine/generated/fuel-return-coupling-tether.step": "40f73d302e87f42d25e79ffedf4f0477a9d15eae4930967ebfedd975b397605a",
     "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
     "cad/engine/generated/throttle-gasket.step": "a6de7b0985d2ae30c92abe131a1609f6ddcc6ab2b04055280a44b830c6aca18f",
-    "cad/engine/generated/throttle-shaft.step": "2d32bf78af35cb78b5fb73648629c3cf314623785c3925b816baae7b3cdff164",
     "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
     "cad/engine/generated/throttle-mount-stud.step": "f81c6143c4b75966eea3335737aec772fd95d9842cdede7faa92e6d0285eda5c",
     "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
@@ -674,7 +673,6 @@
     "cad/engine/generated/oil-pan-mounting-screw.step": "eb151db3bef2ea33016c242c7893ea66e470677183aa61720d2fbf74542211b0",
     "cad/engine/generated/oil-pan-mounting-washer.step": "89dfd958fc84025474dfd159c2f7ee3c167ec0e8abc2e904f383357916ee2c17",
     "cad/engine/generated/oil-pan-molded-gasket.step": "958b6ed42e670333e3420bac2aeeeab9d633430a075cb98f7616701330e7488a",
-    "cad/engine/generated/block.step": "fe81742dd879c3a4dbd6d4066c37d76f24a68c157f972943df2692a6261d3f55",
     "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
     "cad/engine/generated/water-pump-shaft.step": "5448c0838592e5699583e2cdc4834b78e8573c2e5411c12c865041f87816f72a",
     "cad/engine/generated/water-pump-impeller.step": "c3cf2546d1adf027545ae20cc0aca3cba9e46ca9ae17c8f6f266033e17aded80",
@@ -704,13 +702,34 @@
     "cad/engine/generated/water-pump-seal-shaft-collar.step": "1e78ae6952427d52a476413b8bca83731fa39bd15049fa4abb0bea0f292f2928",
     "cad/engine/generated/water-pump-seal-bellows.step": "aed880a28ca0deb61e3f78c917aba099fa39fc4240206bd1159201028d584ea0",
     "cad/engine/generated/water-pump-seal-spring.step": "2c9f1bccc3a4851c7e3ff6a3afb7b7067c3f0ca7e8625ac40b7df92565a34183",
-    "cad/engine/generated/accelerator-cable-bracket.step": "4f70dc35c7bb59e91a1ffd8dbda24a3fbdbc95775173a4c55708049c174369ed",
-    "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d"
+    "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d",
+    "cad/engine/generated/throttle-cable-ball-stud-estimated.step": "60dfa0e31bd42e2f99ce5caa06a4ee8780358e567e8c3f8a9d0107e7fd0c0d82",
+    "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+    "cad/engine/generated/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "cad/engine/generated/throttle-shield-pushpin-estimated.step": "dc9f04af0c0e833d39ab0728bd079d51ce783d05d01e7246b959c434f26f5d30",
+    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+    "cad/engine/generated/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
+    "cad/engine/generated/engine-oil-dipstick-tube-retaining-nut.step": "9de33615c64355486ffe039a500a210297f583efaf678261e1fb309bcaa560d0",
+    "cad/engine/generated/engine-oil-dipstick-tube-bracket.step": "72ac604f53ed1752fe69a00dfb917b833715950b9f9e7d793e4de561cf444ded",
+    "cad/engine/generated/engine-oil-dipstick-tube-support-nut.step": "5781c115e4e9a40491b3594089847540138e461ba637c208386116a353ae5ae1",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/pushrod-cover-dipstick-retainer-estimated.step": "1a10bcd17c4809d142101c6e5b1125a0af8e684ad554ab5344235e2b67faaa5c",
+    "cad/engine/generated/engine-oil-dipstick-blade.step": "c2774cb94dfe4c405868d559d109ea30da3b99639c5752162bc5d327fcfe04b3",
+    "cad/engine/generated/engine-oil-dipstick-handle.step": "bfc120fba2c7ff88b4e9558b7be87e098aebf4dc9c9032b3216de12bc34ff9fd"
   },
-  "assembly_step_sha256": "fc9b2e5cda1e371b86082a2160e4219ab7857781e8a961c020f65c631e6ad4c7",
-  "occurrences": 1310,
+  "export_dependency_hashes": {
+    "scripts/export-engine-assembly-step.py": "ac0a645ba0c67ed89a6e6f56e097856933025373423bba5e1402dd2edb5517ff",
+    "cad/engine/assembly_step.py": "992abe19b73da9074aebca430ab23cc3a4990477c8432db05b1296d80bc17cb1",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c"
+  },
+  "assembly_step_sha256": "28f9e1418f2563d2f50617834385326d0e593c3226ea6ec9512ecadfd4b45763",
+  "occurrences": 1322,
   "roundtrip": {
-    "unique_occurrence_labels": 1310,
+    "unique_occurrence_labels": 1322,
     "max_roundtrip_bounds_delta_mm": 0.00035065968842218354,
     "bounds_tolerance_mm": 0.01,
     "scope": "Occurrence identity, solid validity and world bounding boxes; not exact geometric equivalence or manufacturing fit"

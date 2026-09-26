@@ -1,0 +1,63 @@
+{
+  "before_manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+  "after_manifest_sha256": "7f8f78f877c10e136c71b90476d05db0e48e12221c826bb00f2ef69b5755ddc8",
+  "candidate_report_sha256": "2f36c09d537d527181969ee4e470391228a0aaa3099f8601203425853530c77f",
+  "changed_definitions": [
+    "accelerator-cable-bracket",
+    "throttle-cable-ball-stud-estimated",
+    "throttle-lever-estimated",
+    "throttle-lever-retaining-pin-estimated",
+    "throttle-shaft"
+  ],
+  "definitions": 708,
+  "occurrences": 1313,
+  "unrelated_inventory_unchanged": true,
+  "assembly_frames_sha256": "220883382d68afb0e4c98721ff8f3b51d207f513633ceca0cf2b079b7e383dc0",
+  "baseline_existing_occurrences": [
+    {
+      "id": "throttle-shaft",
+      "definition": "throttle-shaft",
+      "parent": "throttle-moving",
+      "name": "Throttle shaft",
+      "function": "Rotates both butterfly plates together. Slots keep the modeled plates distinct from the shaft; exact slot, screw and linkage geometry is not established.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        180,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "accelerator-cable-bracket",
+      "definition": "accelerator-cable-bracket",
+      "parent": "throttle-assembly",
+      "name": "Accelerator cable mounting bracket",
+      "function": "Holds the cable outer housing so cable pull rotates the throttle linkage. Photo-informed provisional mounting study.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        130,
+        100,
+        0
+      ]
+    }
+  ],
+  "scope": "Provisional educational linkage; installed checks pending; combined STEP needs regeneration"
+}

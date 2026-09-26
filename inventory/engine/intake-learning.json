@@ -3,11 +3,22 @@
     "summary": "The regulator references intake manifold pressure through a vacuum hose. This lets it regulate the pressure difference across the injectors rather than fuel pressure relative to outside air alone.",
     "limits": "Ford confirms the vacuum connection. The dedicated plenum fitting, hose route, dimensions and sealing geometry are assumptions; the actual truck may route this through a shared vacuum harness. No pressure or leak-rate simulation is implemented.",
     "steps": [
-      {"title": "Communicate manifold pressure", "text": "An open plenum port and fitting lead into the hose. The modeled port is an illustrative location, not a production drilling specification.", "part": "regulator-vacuum-fitting"},
-      {"title": "Reference the diaphragm chamber", "text": "The hose fits around the regulator nipple and reaches the spring side of the diaphragm. This connection is distinct from the fuel supply and return passages.", "part": "regulator-vacuum-hose"}
+      {
+        "title": "Communicate manifold pressure",
+        "text": "An open plenum port and fitting lead into the hose. The modeled port is an illustrative location, not a production drilling specification.",
+        "part": "regulator-vacuum-fitting"
+      },
+      {
+        "title": "Reference the diaphragm chamber",
+        "text": "The hose fits around the regulator nipple and reaches the spring side of the diaphragm. This connection is distinct from the fuel supply and return passages.",
+        "part": "regulator-vacuum-hose"
+      }
     ],
     "troubleshooting": [],
-    "sources": ["system-750bd1047639", "system-73d3dd2d32e7"]
+    "sources": [
+      "system-750bd1047639",
+      "system-73d3dd2d32e7"
+    ]
   },
   "induction": {
     "summary": "The EFI intake is built from two castings. Air passes from the throttle interface into a shared plenum, through six curved runners, and down to the cylinder-head intake ports.",
@@ -48,7 +59,7 @@
   },
   "throttle-assembly": {
     "summary": "Two butterfly plates share a shaft. Moving the throttle-opening slider turns them together, changing how much of each bore is obstructed.",
-    "limits": "Factory references support twin bores, a separate gasket, four mounting studs/nuts, an IAC valve and a TPS. Dimensions and internal packaging remain provisional. A photo-informed bracket with an estimated mounting stack is installed. Linkage, return spring, plate screws, IAC fasteners and harness are still missing.",
+    "limits": "Factory references support twin bores, four mounting studs/nuts, an IAC, TPS, external lever and shield. A coordinated educational lever, D-shaped shaft end, retaining pin, bracket and shield are installed; their dimensions and retention details are inferred. One illustrative shaft-return spring is installed; actual Ford spring construction, separate cable-end spring, cable/socket, plate screws, production stops, IAC fasteners and harness remain unresolved.",
     "steps": [
       {
         "title": "Air passages",
@@ -64,6 +75,11 @@
         "title": "Idle uses another path",
         "text": "The IAC-controlled bypass is a separate passage around the plates. The model now includes two passages and an unvented IAC study; the installed valve variant is unverified.",
         "part": "idle-air"
+      },
+      {
+        "title": "Cable pull becomes shaft rotation",
+        "text": "The outward ball stud moves with the lever and twin plates. The bracket and splash shield stay fixed. This is a commanded-motion study; spring return is not yet modeled.",
+        "part": "throttle-lever-estimated"
       }
     ],
     "troubleshooting": [
