@@ -1,0 +1,22 @@
+{
+  "status": "PASS scoped browser review",
+  "manifest_sha256": "967fad5db68ca51f5e3556845120e4e55dcb97f4ad15b476a1fc7e7080cfc229",
+  "checks": [
+    "Throttle assembly lists42parts; moving group lists10 including four individual screw links.",
+    "At45degrees with transparent housing, plates rotate together and linkage remains connected.",
+    "Moving group renders at0degrees;90degrees and50percent explosion separate shaft,plates,lever and screws.",
+    "Updated assembly lesson distinguishes illustrative plate-screw count from source-supported IAC fastener count.",
+    "Two visible controls share a desktop row instead of stacking over the model."
+  ],
+  "limitations": [
+    "Explosion is an exploration offset, not a manufacturing or service-removal sequence.",
+    "No force, preload, plate locking or Ford production-count claim."
+  ],
+  "review_files_sha256": {
+    "viewer/atlas.js": "188413ab9e397041a0fcde2fb6aeba01c47ca7a9cf361e573caf59a55863ce5e",
+    "viewer/atlas.css": "74ec4c5c792e6bc5a9c8fa61b0b213227619a394627b5c622eab2565a563b73e",
+    "viewer/engine.html": "0b85e3284a1712b090666186b55238334c06868f00668a94f7f36eb0669709dd",
+    "viewer/engine-learning-modules.js": "d965b768438e0ebc3e276eab16acc4a96c63d0d6c4f4986dea4827c39a5cf9e3",
+    "inventory/engine/throttle-plate-fasteners-learning.json": "01c3795bf8d5fe2b99546a55a5224b41afbb926d48c9b85adf0465b603879d3e"
+  }
+}

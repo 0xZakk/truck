@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
-  "definition_count": 718,
-  "occurrence_count": 1322,
+  "manifest_sha256": "f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70",
+  "definition_count": 722,
+  "occurrence_count": 1330,
   "group_count": 70,
   "verified_production_bom": false,
   "groups": [
@@ -4096,13 +4096,18 @@
           "name": "Valve cover",
           "modeled_quantity": 1,
           "geometry_status": "provisional",
-          "function": "Contains oil around the rocker gear. Sloped shoulders and separate oil-fill/ventilation openings replace the box envelope. Exact stamping contours, mounting holes, baffles and opening stations remain provisional.",
+          "function": "Contains rocker oil with one relocated fill opening and a continuous illustrative threaded neck. The previous provisional opening is regenerated closed.",
           "sources": [
             "engine-exploded-drawing",
-            "ford-engine-side-layout"
+            "ford-engine-side-layout",
+            "upper-intake-topology-study"
           ],
           "unresolved": [
-            "Profile lofts are visual approximations. Upper profiles lean22mm toward the cam side to clear the corrected rocker placement; this is a fit-study assumption. The base envelope and fill/ventilation locations require measurements of the installed truck cover."
+            "Profile lofts are visual approximations. Upper profiles lean22mm toward the cam side to clear the corrected rocker placement; this is a fit-study assumption. The base envelope and fill/ventilation locations require measurements of the installed truck cover.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
           ],
           "glb": "/models/engine/valve-cover.glb",
           "step": "/cad/engine/generated/valve-cover.step",
@@ -4125,29 +4130,14 @@
       "id": "oil-cap",
       "title": "Oil filler cap and seal",
       "patterns": [
-        "oil-filler-cap"
+        "oil-filler-cap(?:-seal)?"
       ],
       "remaining": [
-        "Candidate male thread and separate seal exist",
-        "Matching female neck retention is missing",
-        "Dynamic rocker clearance and production cap dimensions unverified"
+        "Cap, separate seal and continuous matching threaded neck are installed as an educational study; production identity, pitch, dimensions and neck construction remain unverified",
+        "Installed cap removal and12-rocker interference studies pass at their recorded hashes; actual material deformation, seal compression and leak tightness remain unknown"
       ],
       "related_system_issues": [],
       "existing_issue": 15,
-      "candidate_parts": [
-        {
-          "id": "oil-filler-cap",
-          "name": "Replacement cap body",
-          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
-          "status": "Candidate only; fit/identity not accepted"
-        },
-        {
-          "id": "oil-filler-cap-seal",
-          "name": "Separate filler-cap seal",
-          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
-          "status": "Candidate only; fit/identity not accepted"
-        }
-      ],
       "parts": [
         {
           "id": "oil-filler-cap",
@@ -4155,9 +4145,15 @@
           "modeled_quantity": 1,
           "geometry_status": "provisional",
           "function": "Closes the oil-fill opening in the valve cover. Retention features are provisional.",
-          "sources": [],
+          "sources": [
+            "upper-intake-topology-study"
+          ],
           "unresolved": [
-            "Exact production contours, dimensions and tolerances need applicable drawings or measurements."
+            "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
           ],
           "glb": "/models/engine/oil-filler-cap.glb",
           "step": "/cad/engine/generated/oil-filler-cap.step",
@@ -4168,13 +4164,38 @@
               "name": "Oil filler cap"
             }
           ]
+        },
+        {
+          "id": "oil-filler-cap-seal",
+          "name": "Oil filler cap seal \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Illustrates an annular sealing land between the screw cap and cover neck; compression and production section remain unknown.",
+          "sources": [
+            "upper-intake-topology-study"
+          ],
+          "unresolved": [
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
+          ],
+          "glb": "/models/engine/oil-filler-cap-seal.glb",
+          "step": "/cad/engine/generated/oil-filler-cap-seal.step",
+          "occurrences": [
+            {
+              "id": "oil-filler-cap-seal",
+              "parent": "closures",
+              "name": "Oil filler cap seal \u00b7 estimated"
+            }
+          ]
         }
       ],
       "issue": 15,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 1
+      "modeled_quantity": 2
     },
     {
       "id": "intake",
@@ -4184,7 +4205,7 @@
       ],
       "remaining": [
         "Verify all upper/lower manifold fasteners and support brackets",
-        "Verify casting contours, runner geometry, bosses and gasket seats"
+        "Compact plenum and balanced six-runner spread are installed from image comparison; production casting dimensions, ribs/bosses and exact wall distribution remain unfinished"
       ],
       "related_system_issues": [],
       "existing_issue": null,
@@ -4266,36 +4287,6 @@
               "id": "efi-upper-stud-7",
               "parent": "intake-studs",
               "name": "Upper manifold retaining stud 7"
-            }
-          ]
-        },
-        {
-          "id": "efi-upper-intake",
-          "name": "Upper EFI intake manifold",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "A common plenum distributes air into six curved runners feeding the lower manifold. The catalog lists E7TZ9424A. This is one casting, not six removable runner tubes. The throttle-body interface is open; a separate throttle mechanism mounts at this interface.",
-          "sources": [
-            "fsm-212bf152ff88",
-            "fsm-9e1b0b719d0e",
-            "efi-intake-drawing",
-            "system-750bd1047639",
-            "system-73d3dd2d32e7"
-          ],
-          "unresolved": [
-            "Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.",
-            "Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.",
-            "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
-            "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
-            "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated."
-          ],
-          "glb": "/models/engine/efi-upper-intake.glb",
-          "step": "/cad/engine/generated/efi-upper-intake.step",
-          "occurrences": [
-            {
-              "id": "efi-upper-intake",
-              "parent": "intake-castings",
-              "name": "Upper EFI intake manifold"
             }
           ]
         },
@@ -4413,6 +4404,41 @@
               "id": "efi-head-intake-gasket",
               "parent": "intake-castings",
               "name": "Intake-to-head gasket"
+            }
+          ]
+        },
+        {
+          "id": "efi-upper-intake",
+          "name": "Upper EFI intake manifold",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "A compact estimated plenum distributes air through six curved runners; direct twin-port throttle flange and two-ended runner spread follow Ford comparison images.",
+          "sources": [
+            "fsm-212bf152ff88",
+            "fsm-9e1b0b719d0e",
+            "efi-intake-drawing",
+            "system-750bd1047639",
+            "system-73d3dd2d32e7",
+            "upper-intake-topology-study"
+          ],
+          "unresolved": [
+            "Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.",
+            "Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.",
+            "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
+            "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
+            "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
+          ],
+          "glb": "/models/engine/efi-upper-intake.glb",
+          "step": "/cad/engine/generated/efi-upper-intake.step",
+          "occurrences": [
+            {
+              "id": "efi-upper-intake",
+              "parent": "intake-castings",
+              "name": "Upper EFI intake manifold"
             }
           ]
         }
@@ -6209,38 +6235,13 @@
       ],
       "remaining": [
         "Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing",
-        "Plate retaining screws and shaft bushings/seals as applicable",
+        "Four illustrative plate screws are installed; verify actual Ford count, thread/locking construction and shaft bushings/seals as applicable",
         "Actual throttle/speed-control cables and sockets, pin locking and production shield construction",
         "Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts"
       ],
       "related_system_issues": [],
       "existing_issue": null,
       "parts": [
-        {
-          "id": "throttle-housing",
-          "name": "Twin-bore throttle housing",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Two passages carry inlet air into the plenum. The manual-transmission catalog lists F6PZ9E926GA for the complete service assembly. A provisional two-port bypass connects the separate IAC study; other controls remain incomplete.",
-          "sources": [
-            "truck-throttle-operation",
-            "truck-throttle-service",
-            "truck-throttle-catalog"
-          ],
-          "unresolved": [
-            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
-            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration."
-          ],
-          "glb": "/models/engine/throttle-housing.glb",
-          "step": "/cad/engine/generated/throttle-housing.step",
-          "occurrences": [
-            {
-              "id": "throttle-housing",
-              "parent": "throttle-assembly",
-              "name": "Twin-bore throttle housing"
-            }
-          ]
-        },
         {
           "id": "throttle-gasket",
           "name": "Throttle body gasket",
@@ -6263,36 +6264,6 @@
               "id": "throttle-gasket",
               "parent": "throttle-assembly",
               "name": "Throttle body gasket"
-            }
-          ]
-        },
-        {
-          "id": "throttle-plate",
-          "name": "Throttle butterfly plate",
-          "modeled_quantity": 2,
-          "geometry_status": "provisional",
-          "function": "A rotating disc restricts its air passage when closed and turns edge-on when open. This idealized disc omits production bevels, idle orifice and retaining screws.",
-          "sources": [
-            "truck-throttle-operation",
-            "truck-throttle-service",
-            "truck-throttle-catalog"
-          ],
-          "unresolved": [
-            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
-            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration."
-          ],
-          "glb": "/models/engine/throttle-plate.glb",
-          "step": "/cad/engine/generated/throttle-plate.step",
-          "occurrences": [
-            {
-              "id": "throttle-plate-1",
-              "parent": "throttle-moving",
-              "name": "Throttle butterfly plate 1"
-            },
-            {
-              "id": "throttle-plate-2",
-              "parent": "throttle-moving",
-              "name": "Throttle butterfly plate 2"
             }
           ]
         },
@@ -6417,36 +6388,6 @@
           ]
         },
         {
-          "id": "throttle-shaft",
-          "name": "Throttle shaft \u00b7 estimated keyed end",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Turns both butterfly plates and the external lever. Its proposed D end, shoulder and transverse pin bore provide a teaching torque path.",
-          "sources": [
-            "truck-throttle-operation",
-            "truck-throttle-service",
-            "truck-throttle-catalog",
-            "throttle-1994-linkage-study"
-          ],
-          "unresolved": [
-            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
-            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration.",
-            "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
-            "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
-            "Spring, shield, cable/socket, plate screws and preset stops absent;0\u201390 degrees is inherited educational travel.",
-            "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved."
-          ],
-          "glb": "/models/engine/throttle-shaft.glb",
-          "step": "/cad/engine/generated/throttle-shaft.step",
-          "occurrences": [
-            {
-              "id": "throttle-shaft",
-              "parent": "throttle-moving",
-              "name": "Throttle shaft \u00b7 estimated keyed end"
-            }
-          ]
-        },
-        {
           "id": "throttle-linkage-shield-estimated",
           "name": "Throttle linkage splash shield \u00b7 estimated",
           "modeled_quantity": 1,
@@ -6544,13 +6485,150 @@
               "name": "Throttle return spring \u00b7 illustrative"
             }
           ]
+        },
+        {
+          "id": "throttle-housing",
+          "name": "Twin-bore throttle housing",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Two main air bores and separate bypass passages remain open. Estimated blind receivers mate to the IAC flange screws.",
+          "sources": [
+            "truck-throttle-operation",
+            "truck-throttle-service",
+            "truck-throttle-catalog",
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+            "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration.",
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/throttle-housing.glb",
+          "step": "/cad/engine/generated/throttle-housing.step",
+          "occurrences": [
+            {
+              "id": "throttle-housing",
+              "parent": "throttle-assembly",
+              "name": "Twin-bore throttle housing"
+            }
+          ]
+        },
+        {
+          "id": "throttle-plate",
+          "name": "Throttle butterfly plate \u00b7 retention study",
+          "modeled_quantity": 2,
+          "geometry_status": "provisional",
+          "function": "Restricts one air passage and is captured by two explicitly illustrative screws through estimated clearance holes.",
+          "sources": [
+            "truck-throttle-operation",
+            "truck-throttle-service",
+            "truck-throttle-catalog",
+            "throttle-plate-retention-illustrative-study"
+          ],
+          "unresolved": [
+            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+            "IAC/TPS, linkage, spring, bracket and plate retention have illustrative studies; exact variants and production details remain unresolved. Purge ports remain unmodeled. Idealized 0\u201390 degree motion is not production stop calibration.",
+            "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+            "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+            "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-plate.glb",
+          "step": "/cad/engine/generated/throttle-plate.step",
+          "occurrences": [
+            {
+              "id": "throttle-plate-1",
+              "parent": "throttle-moving",
+              "name": "Throttle butterfly plate \u00b7 retention study"
+            },
+            {
+              "id": "throttle-plate-2",
+              "parent": "throttle-moving",
+              "name": "Throttle butterfly plate \u00b7 retention study"
+            }
+          ]
+        },
+        {
+          "id": "throttle-plate-screw-illustrative",
+          "name": "Throttle plate screw \u00b7 illustrative",
+          "modeled_quantity": 4,
+          "geometry_status": "provisional",
+          "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+          "sources": [
+            "throttle-plate-retention-illustrative-study"
+          ],
+          "unresolved": [
+            "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+            "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+            "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-plate-screw-illustrative.glb",
+          "step": "/cad/engine/generated/throttle-plate-screw-illustrative.step",
+          "occurrences": [
+            {
+              "id": "throttle-plate-screw-1-1-illustrative",
+              "parent": "throttle-moving",
+              "name": "Throttle plate screw \u00b7 illustrative"
+            },
+            {
+              "id": "throttle-plate-screw-1-2-illustrative",
+              "parent": "throttle-moving",
+              "name": "Throttle plate screw \u00b7 illustrative"
+            },
+            {
+              "id": "throttle-plate-screw-2-1-illustrative",
+              "parent": "throttle-moving",
+              "name": "Throttle plate screw \u00b7 illustrative"
+            },
+            {
+              "id": "throttle-plate-screw-2-2-illustrative",
+              "parent": "throttle-moving",
+              "name": "Throttle plate screw \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "throttle-shaft",
+          "name": "Throttle shaft \u00b7 keyed and plate-retention study",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Preserves the keyed linkage end and adds local head pockets, supporting pads and estimated helical receivers for the plates.",
+          "sources": [
+            "truck-throttle-operation",
+            "truck-throttle-service",
+            "truck-throttle-catalog",
+            "throttle-1994-linkage-study",
+            "throttle-plate-retention-illustrative-study"
+          ],
+          "unresolved": [
+            "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+            "IAC/TPS, linkage, spring, bracket and plate retention have illustrative studies; exact variants and production details remain unresolved. Purge ports remain unmodeled. Idealized 0\u201390 degree motion is not production stop calibration.",
+            "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+            "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+            "Spring, shield and plate screws now have illustrative studies. Actual cable/socket and production stops remain unresolved; 0\u201390 degrees is educational travel.",
+            "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved.",
+            "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+            "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+            "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+          ],
+          "glb": "/models/engine/throttle-shaft.glb",
+          "step": "/cad/engine/generated/throttle-shaft.step",
+          "occurrences": [
+            {
+              "id": "throttle-shaft",
+              "parent": "throttle-moving",
+              "name": "Throttle shaft \u00b7 keyed and plate-retention study"
+            }
+          ]
         }
       ],
       "issue": 43,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 17
+      "modeled_quantity": 21
     },
     {
       "id": "throttle-bracket",
@@ -6639,60 +6717,12 @@
         "iac-.*"
       ],
       "remaining": [
-        "Mounting bolts and terminals: verify complete inventory",
-        "Verify restoring mechanism, installed valve identity and internal passages"
+        "Two modeled mounting screws and an illustrative restoring spring are installed; actual screw dimensions and restoring mechanism remain unverified",
+        "End closure retention/sealing and electrical terminals remain unfinished; verify installed valve variant and internal passages"
       ],
       "related_system_issues": [],
       "existing_issue": null,
       "parts": [
-        {
-          "id": "iac-valve-body",
-          "name": "IAC valve body",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Connects upstream and downstream bypass passages through a pintle-controlled opening. The divider and routing illustrate the factory diagram.",
-          "sources": [
-            "system-1cf529afa81d",
-            "truck-throttle-operation"
-          ],
-          "unresolved": [
-            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-          ],
-          "glb": "/models/engine/iac-valve-body.glb",
-          "step": "/cad/engine/generated/iac-valve-body.step",
-          "occurrences": [
-            {
-              "id": "iac-valve-body",
-              "parent": "idle-air",
-              "name": "IAC valve body"
-            }
-          ]
-        },
-        {
-          "id": "iac-gasket",
-          "name": "IAC mounting gasket",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Separates and seals the two bypass openings at the throttle housing.",
-          "sources": [
-            "system-1cf529afa81d",
-            "truck-throttle-operation"
-          ],
-          "unresolved": [
-            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-          ],
-          "glb": "/models/engine/iac-gasket.glb",
-          "step": "/cad/engine/generated/iac-gasket.step",
-          "occurrences": [
-            {
-              "id": "iac-gasket",
-              "parent": "idle-air",
-              "name": "IAC mounting gasket"
-            }
-          ]
-        },
         {
           "id": "iac-end-plug",
           "name": "IAC chamber end closure",
@@ -6766,30 +6796,6 @@
           ]
         },
         {
-          "id": "iac-armature",
-          "name": "IAC armature",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Receives magnetic force and transfers movement to the valve stem.",
-          "sources": [
-            "system-1cf529afa81d",
-            "truck-throttle-operation"
-          ],
-          "unresolved": [
-            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-          ],
-          "glb": "/models/engine/iac-armature.glb",
-          "step": "/cad/engine/generated/iac-armature.step",
-          "occurrences": [
-            {
-              "id": "iac-armature",
-              "parent": "idle-air",
-              "name": "IAC armature"
-            }
-          ]
-        },
-        {
           "id": "iac-pintle",
           "name": "IAC stem and reverse-seated pintle",
           "modeled_quantity": 1,
@@ -6836,13 +6842,155 @@
               "name": "IAC electrical connector cap"
             }
           ]
+        },
+        {
+          "id": "iac-armature",
+          "name": "IAC armature and contact sleeve \u00b7 study",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "A contact sleeve links the armature to the stem in this educational construction. Actual swage, press fit or other production joint remains unknown.",
+          "sources": [
+            "system-1cf529afa81d",
+            "truck-throttle-operation",
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/iac-armature.glb",
+          "step": "/cad/engine/generated/iac-armature.step",
+          "occurrences": [
+            {
+              "id": "iac-armature",
+              "parent": "idle-air",
+              "name": "IAC armature and contact sleeve \u00b7 study"
+            }
+          ]
+        },
+        {
+          "id": "iac-gasket",
+          "name": "IAC mounting gasket \u00b7 estimated",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Seals the modeled two-port flange against the throttle pad, with two diagonal fastener clearances.",
+          "sources": [
+            "system-1cf529afa81d",
+            "truck-throttle-operation",
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/iac-gasket.glb",
+          "step": "/cad/engine/generated/iac-gasket.step",
+          "occurrences": [
+            {
+              "id": "iac-gasket",
+              "parent": "idle-air",
+              "name": "IAC mounting gasket \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "iac-mount-screw-estimated",
+          "name": "IAC retaining screw \u00b7 estimated",
+          "modeled_quantity": 2,
+          "geometry_status": "provisional",
+          "function": "One of two fasteners clamping the valve and gasket to the throttle pad. Smooth shank and receiver are thread envelopes; tightening capacity is not established.",
+          "sources": [
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/iac-mount-screw-estimated.glb",
+          "step": "/cad/engine/generated/iac-mount-screw-estimated.step",
+          "occurrences": [
+            {
+              "id": "iac-mount-screw-1-estimated",
+              "parent": "idle-air",
+              "name": "IAC retaining screw 1 \u00b7 estimated"
+            },
+            {
+              "id": "iac-mount-screw-2-estimated",
+              "parent": "idle-air",
+              "name": "IAC retaining screw 2 \u00b7 estimated"
+            }
+          ]
+        },
+        {
+          "id": "iac-return-spring-estimated",
+          "name": "IAC restoring spring \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "An illustrative compression spring remains seated between the chamber closure and reverse-seated pintle. It explains a possible restoring load path without claiming a production rate or construction.",
+          "sources": [
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/iac-return-spring-estimated.glb",
+          "step": "/cad/engine/generated/iac-return-spring-estimated.step",
+          "occurrences": [
+            {
+              "id": "iac-return-spring-estimated",
+              "parent": "idle-air",
+              "name": "IAC restoring spring \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "iac-valve-body",
+          "name": "IAC valve body \u00b7 attachment study",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Two estimated flange ears retain the body over a separate gasket. The inherited bypass chambers and reverse-pintle seat remain open.",
+          "sources": [
+            "system-1cf529afa81d",
+            "truck-throttle-operation",
+            "iac-attachment-factory-1994",
+            "iac-attachment-estimated-study"
+          ],
+          "unresolved": [
+            "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+            "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+            "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+            "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+            "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+          ],
+          "glb": "/models/engine/iac-valve-body.glb",
+          "step": "/cad/engine/generated/iac-valve-body.step",
+          "occurrences": [
+            {
+              "id": "iac-valve-body",
+              "parent": "idle-air",
+              "name": "IAC valve body \u00b7 attachment study"
+            }
+          ]
         }
       ],
       "issue": 44,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 8
+      "modeled_quantity": 11
     },
     {
       "id": "tps",
@@ -11800,7 +11948,8 @@
         "egr-(exhaust-tube|tube-.*)"
       ],
       "remaining": [
-        "Verify takeoff location, seats/threads, hot routing and heat sleeve"
+        "Fixed exhaust fitting and moved valve now have a connected estimated tube and sleeve route; verify production bends, fitting threads and catalog length convention",
+        "Nominal contact checks are geometric only; hot behavior, sealing and assembly procedure remain unverified"
       ],
       "related_system_issues": [
         7,
@@ -11808,81 +11957,6 @@
       ],
       "existing_issue": null,
       "parts": [
-        {
-          "id": "egr-exhaust-tube",
-          "name": "EGR exhaust tube",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
-          "sources": [
-            "dorman-598-105",
-            "efi-intake-drawing"
-          ],
-          "unresolved": [
-            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
-            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
-            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing."
-          ],
-          "glb": "/models/engine/egr-exhaust-tube.glb",
-          "step": "/cad/engine/generated/egr-exhaust-tube.step",
-          "occurrences": [
-            {
-              "id": "egr-exhaust-tube",
-              "parent": "egr-exhaust-line",
-              "name": "EGR exhaust tube"
-            }
-          ]
-        },
-        {
-          "id": "egr-tube-heat-sleeve",
-          "name": "EGR tube protective sleeve",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
-          "sources": [
-            "dorman-598-105",
-            "efi-intake-drawing"
-          ],
-          "unresolved": [
-            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
-            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
-            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing."
-          ],
-          "glb": "/models/engine/egr-tube-heat-sleeve.glb",
-          "step": "/cad/engine/generated/egr-tube-heat-sleeve.step",
-          "occurrences": [
-            {
-              "id": "egr-tube-heat-sleeve",
-              "parent": "egr-exhaust-line",
-              "name": "EGR tube protective sleeve"
-            }
-          ]
-        },
-        {
-          "id": "egr-tube-valve-nut",
-          "name": "EGR tube valve union nut",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Captures the tube end at the externally threaded EGR valve inlet. Thread and seat geometry are simplified, not production verified.",
-          "sources": [
-            "dorman-598-105",
-            "efi-intake-drawing"
-          ],
-          "unresolved": [
-            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
-            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
-            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing."
-          ],
-          "glb": "/models/engine/egr-tube-valve-nut.glb",
-          "step": "/cad/engine/generated/egr-tube-valve-nut.step",
-          "occurrences": [
-            {
-              "id": "egr-tube-valve-nut",
-              "parent": "egr-exhaust-line",
-              "name": "EGR tube valve union nut"
-            }
-          ]
-        },
         {
           "id": "egr-tube-manifold-fitting",
           "name": "EGR tube manifold fitting",
@@ -11917,6 +11991,96 @@
               "name": "EGR tube manifold fitting"
             }
           ]
+        },
+        {
+          "id": "egr-exhaust-tube",
+          "name": "EGR exhaust tube",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+          "sources": [
+            "dorman-598-105",
+            "efi-intake-drawing",
+            "upper-intake-topology-study"
+          ],
+          "unresolved": [
+            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
+          ],
+          "glb": "/models/engine/egr-exhaust-tube.glb",
+          "step": "/cad/engine/generated/egr-exhaust-tube.step",
+          "occurrences": [
+            {
+              "id": "egr-exhaust-tube",
+              "parent": "egr-exhaust-line",
+              "name": "EGR exhaust tube"
+            }
+          ]
+        },
+        {
+          "id": "egr-tube-heat-sleeve",
+          "name": "EGR tube protective sleeve",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
+          "sources": [
+            "dorman-598-105",
+            "efi-intake-drawing",
+            "upper-intake-topology-study"
+          ],
+          "unresolved": [
+            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
+          ],
+          "glb": "/models/engine/egr-tube-heat-sleeve.glb",
+          "step": "/cad/engine/generated/egr-tube-heat-sleeve.step",
+          "occurrences": [
+            {
+              "id": "egr-tube-heat-sleeve",
+              "parent": "egr-exhaust-line",
+              "name": "EGR tube protective sleeve"
+            }
+          ]
+        },
+        {
+          "id": "egr-tube-valve-nut",
+          "name": "EGR tube valve union nut",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Captures the tube end at the externally threaded EGR valve inlet. Thread and seat geometry are simplified, not production verified.",
+          "sources": [
+            "dorman-598-105",
+            "efi-intake-drawing",
+            "upper-intake-topology-study"
+          ],
+          "unresolved": [
+            "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+            "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+            "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
+          ],
+          "glb": "/models/engine/egr-tube-valve-nut.glb",
+          "step": "/cad/engine/generated/egr-tube-valve-nut.step",
+          "occurrences": [
+            {
+              "id": "egr-tube-valve-nut",
+              "parent": "egr-exhaust-line",
+              "name": "EGR tube valve union nut"
+            }
+          ]
         }
       ],
       "issue": 59,
@@ -11948,11 +12112,16 @@
           "function": "Carries the regulator output vacuum from its upper nipple to the EGR diaphragm chamber. Shape and reducing ends are provisional.",
           "sources": [
             "ford-evr-factory",
-            "truck-egr-evtm"
+            "truck-egr-evtm",
+            "upper-intake-topology-study"
           ],
           "unresolved": [
             "Routing, hose material, wall thickness and diameters are provisional; this smooth reducing envelope connects the current provisional nipples.",
-            "No production hose identity, molded end geometry, hose compression or vacuum-flow simulation is established. Source-vacuum plumbing and retainers remain unfinished."
+            "No production hose identity, molded end geometry, hose compression or vacuum-flow simulation is established. Source-vacuum plumbing and retainers remain unfinished.",
+            "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+            "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+            "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+            "Casting ribs, bosses and detailed wall distribution remain incomplete."
           ],
           "glb": "/models/engine/egr-control-vacuum-hose.glb",
           "step": "/cad/engine/generated/egr-control-vacuum-hose.step",

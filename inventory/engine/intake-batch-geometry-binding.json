@@ -1,0 +1,14 @@
+{
+  "status": "PASS geometry binding across source-only registration",
+  "current_manifest_sha256": "f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70",
+  "audited_manifest_sha256": "62dcb37f469b21a93a74baa1fb81e44b2c7d69c8344d1cf18c667ce72a4fdff7",
+  "source_registration_report_sha256": "3140103472eb61f17d8b651e64d505cd6781c412d67b2224de840d5e49279372",
+  "registration_script_sha256": "691168e7b09fb570e459ac37ede56978f5e767114dca2dfeb8416db2a061c840",
+  "static_report_sha256": "4865bfb62be06d2598b88c66bcb9c72cd3d097733f24a125321bf37f177e1904",
+  "combined_report_sha256": "d355c5e8c5c71b442bcc9a96316f339625a07f103209b67e85ae23a88bf00aba",
+  "part_steps_verified": 722,
+  "combined_step_verified": true,
+  "exact_static_pairs": 5191,
+  "static_overlaps": 0,
+  "scope": "Retains original report hashes. Source registration asserted every non-source manifest field unchanged; all part STEP files and combined STEP still match the audited export. No CAD or motion checks rerun or relabeled as fresh. Source-record audit separately covers the final registry."
+}

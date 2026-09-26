@@ -1,0 +1,38 @@
+{
+  "status": "PASS isolated promotion and installed-checker controls",
+  "canonical_modified": false,
+  "cases": [
+    {
+      "case": "mid-write failure",
+      "status": "PASS rollback restores old bytes and removes new files"
+    },
+    {
+      "case": "postcheck failure",
+      "status": "PASS rollback restores old bytes and removes new files"
+    },
+    {
+      "case": "successful transaction",
+      "status": "PASS"
+    },
+    {
+      "case": "staged assets as installed mirror",
+      "status": "PASS eight valid solids and67 frame bindings"
+    },
+    {
+      "case": "corrupted installed asset",
+      "status": "PASS rejected",
+      "reason": "Installed asset differs: models/engine/oil-filler-cap-seal.glb"
+    },
+    {
+      "case": "shifted installed cap frame",
+      "status": "PASS rejected",
+      "reason": "Canonical manifest differs from reviewed installation"
+    }
+  ],
+  "source_sha256": {
+    "scripts/check-intake-cap-promotion-controls.py": "7936fb44aad12a20459a4ffcfa9e890cc99bb9589376908a650194da58709e1e",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "scripts/check-intake-cap-coordination-installed.py": "23116e09c03a3fa5e6477e5b70ba758b4670e00a1077a72595a1f72606fb626f"
+  },
+  "stage_validation_sha256": "90b8fad1ef445e68d172f017a29c579c7d76a59adfa5612c4138952424fc5767"
+}

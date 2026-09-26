@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. **718 definitions / 1322 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. **722 definitions / 1330 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
@@ -29,7 +29,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Rear crankshaft seal and sealing interface](rear-seal.md) | 1 | 1 | In review | [#33](https://github.com/0xZakk/truck/issues/33) |
 | [Oil pan, gasket, drain plug and fasteners](oil-pan.md) | 6 | 54 | In review | [#34](https://github.com/0xZakk/truck/issues/34) |
 | [Valve cover, gasket and attachment hardware](valve-cover.md) | 2 | 2 | In review | [#35](https://github.com/0xZakk/truck/issues/35) |
-| [Oil filler cap and seal](oil-cap.md) | 1 | 1 | In review | [#15](https://github.com/0xZakk/truck/issues/15) |
+| [Oil filler cap and seal](oil-cap.md) | 2 | 2 | In review | [#15](https://github.com/0xZakk/truck/issues/15) |
 | [Upper/lower intake manifolds, gaskets and locating hardware](intake.md) | 6 | 12 | In review | [#36](https://github.com/0xZakk/truck/issues/36) |
 | [Six fuel injectors and their internal components](injectors.md) | 11 | 78 | In review | [#37](https://github.com/0xZakk/truck/issues/37) |
 | [Fuel pressure test valve and cap](fuel-test.md) | 8 | 8 | In review | [#38](https://github.com/0xZakk/truck/issues/38) |
@@ -37,9 +37,9 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Fuel rails, return tube and retaining hardware](fuel-rail.md) | 4 | 8 | In review | [#40](https://github.com/0xZakk/truck/issues/40) |
 | [Fuel regulator vacuum hose and fitting](regulator-vacuum.md) | 2 | 2 | In review | [#41](https://github.com/0xZakk/truck/issues/41) |
 | [Fuel pressure regulator and internals](fuel-regulator.md) | 11 | 13 | In review | [#42](https://github.com/0xZakk/truck/issues/42) |
-| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 12 | 17 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
+| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 13 | 21 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
 | [Throttle cable bracket](throttle-bracket.md) | 2 | 3 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
-| [Idle-air control valve and internals](iac.md) | 8 | 8 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
+| [Idle-air control valve and internals](iac.md) | 10 | 11 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
 | [Throttle-position sensor and internals](tps.md) | 6 | 7 | In review | [#45](https://github.com/0xZakk/truck/issues/45) |
 | [Front/rear exhaust manifolds, mounting and outlet joints](exhaust.md) | 7 | 7 | In review | [#46](https://github.com/0xZakk/truck/issues/46) |
 | [Water pump, impeller, shaft, seal, bearing and pulley](water-pump.md) | 16 | 22 | In review | [#47](https://github.com/0xZakk/truck/issues/47) |

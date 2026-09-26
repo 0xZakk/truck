@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "scope": "Reviewed inferred intake/cap frame normalization; unknown states fail closed. Required baseline solids follow CAD artifact policy.",
+  "frames": {
+    "throttle-assembly": {
+      "kind": "assemblies",
+      "parent": "induction",
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "target_position_cad_mm": [
+        -167.0,
+        0.0,
+        0.0
+      ]
+    },
+    "egr-valve-assembly": {
+      "kind": "assemblies",
+      "parent": "egr",
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "target_position_cad_mm": [
+        167.0,
+        0.0,
+        25.0
+      ]
+    },
+    "egr-position-sensor": {
+      "kind": "assemblies",
+      "parent": "egr",
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "target_position_cad_mm": [
+        167.0,
+        0.0,
+        25.0
+      ]
+    },
+    "oil-filler-cap": {
+      "kind": "occurrences",
+      "parent": "closures",
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        240,
+        -12,
+        419.0
+      ],
+      "target_position_cad_mm": [
+        300.0,
+        -12.0,
+        419.0
+      ]
+    },
+    "egr-intake-gasket": {
+      "kind": "occurrences",
+      "parent": "egr",
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        -412,
+        25,
+        460
+      ],
+      "target_position_cad_mm": [
+        -245.0,
+        25.0,
+        485.0
+      ]
+    },
+    "egr-mount-bolt-1": {
+      "kind": "occurrences",
+      "parent": "egr",
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        -374.5,
+        3,
+        489
+      ],
+      "target_position_cad_mm": [
+        -207.5,
+        3.0,
+        514.0
+      ]
+    },
+    "egr-mount-bolt-2": {
+      "kind": "occurrences",
+      "parent": "egr",
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "baseline_position_cad_mm": [
+        -374.5,
+        47,
+        489
+      ],
+      "target_position_cad_mm": [
+        -207.5,
+        47.0,
+        514.0
+      ]
+    }
+  },
+  "cover_occurrence": {
+    "id": "valve-cover",
+    "definition": "valve-cover",
+    "parent": "closures",
+    "name": "Valve cover",
+    "function": "Contains oil around the rocker gear. Sloped shoulders and separate oil-fill/ventilation openings replace the box envelope. Exact stamping contours, mounting holes, baffles and opening stations remain provisional.",
+    "position_cad_mm": [
+      0,
+      -12,
+      375.0
+    ],
+    "rotation_cad_deg": [
+      0,
+      0,
+      0
+    ],
+    "explode_cad_mm": [
+      0,
+      0,
+      460
+    ]
+  },
+  "artifacts_sha256": {
+    "cad/engine/generated/intake-cap-contract/legacy-valve-cover.step": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+    "cad/engine/generated/intake-cap-contract/coordinated-valve-cover.step": "4abcc6af8a50dcb768955656900d95f3fd3847dcb42c2dfe870d720a00d03c10"
+  },
+  "geometry_sources_sha256": {
+    "cad/engine/upper_intake_clearance_candidate.py": "18fb70f90ab97a441be204f494b8d23585b6fd061e59c731b785ca75a34b9add",
+    "cad/engine/oil_fill_neck_candidate.py": "34bb481d78ebe363f406d065bf1491a35c390fb24bb30bbe77ed6ebf1a619572",
+    "cad/engine/pilot/oil-cap/oil_cap.py": "a10d4d07e102024e7b1193b463cc63c02e75e5798e66c30a3f609da65ba62c5f",
+    "cad/engine/intake_egr_routes_candidate.py": "aa64ffa8f13a75be6a3c1d4d2fc62258de3827e102430e7c065b952392db5478"
+  },
+  "ancestor_frames": {
+    "induction": {
+      "parent": "engine",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "motion": null
+    },
+    "engine": {
+      "parent": null,
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "motion": null
+    },
+    "egr": {
+      "parent": "induction",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "motion": null
+    },
+    "closures": {
+      "parent": "engine",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "motion": null
+    }
+  }
+}

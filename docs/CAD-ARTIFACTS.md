@@ -2,7 +2,24 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Current linkage and dipstick checkpoint
+## Current intake and attachment checkpoint
+
+The [intake/attachment release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-intake-attachments) records **722 definitions / 1,330 occurrences**. It includes the compact intake, coordinated cap/EGR interfaces, IAC mounting and internal return study, and illustrative plate retention. The engine remains unfinished and dimensions remain provisional.
+
+```sh
+gh release download checkpoint-2026-09-26-intake-attachments --repo 0xZakk/truck --pattern truck-active-cad-20260926-intake-attachments.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260926-intake-attachments.tar.gz
+```
+
+Compare against `docs/cad-intake-attachments-checkpoint.json`. Preserve newer local work before extracting from the repository root:
+
+```sh
+tar -xzf /tmp/truck-active-cad-20260926-intake-attachments.tar.gz
+```
+
+This archive includes prior frozen fixtures plus the new candidate/staging outputs and intake frame-contract solids. It excludes the in-progress intake exterior, IAC closure and accelerator-cable studies, purchased manuals and owner photographs. Restricted reference captures must be obtained separately with appropriate access.
+
+## Previous linkage and dipstick checkpoint
 
 The [linkage/dipstick release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-linkage-dipstick) records **718 definitions /1,322 occurrences**, still provisional and unfinished. Download with an account that can access the repository:
 
@@ -35,4 +52,4 @@ After reviewed part/manifest changes, rebuild the combined STEP without rebuildi
 XDG_CACHE_HOME=/tmp/truck-cache .venv-cad/bin/python scripts/export-engine-assembly-step.py
 ```
 
-Installers default to dry-run/staging and preserve unrelated inventory: `install-engine-component-interfaces.py`, `install-throttle-linkage.py` (linkage/shield/spring stages), and `install-dipstick.py` under `scripts/`. Read their candidate/input guards before applying; a saved report is evidence for its recorded inputs, not a fresh validation of a changed engine. Use a new branch/worktree for further changes and retain explicit provisional labels.
+Installers default to dry-run/staging and preserve unrelated inventory: `install-engine-component-interfaces.py`, `install-throttle-linkage.py` (linkage/shield/spring stages), `install-dipstick.py`, `install-intake-cap-coordination.py`, `install-iac-attachment.py`, and `install-throttle-plate-fasteners.py` under `scripts/`. Read their candidate/input guards before applying; a saved report is evidence for its recorded inputs, not a fresh validation of a changed engine. Use a new branch/worktree for further changes and retain explicit provisional labels.

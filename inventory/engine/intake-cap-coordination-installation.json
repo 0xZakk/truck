@@ -1,0 +1,720 @@
+{
+  "status": "INSTALLED; independent browser acceptance pending",
+  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "stage_validation_sha256": "90b8fad1ef445e68d172f017a29c579c7d76a59adfa5612c4138952424fc5767",
+  "solids": [
+    {
+      "id": "egr-control-vacuum-hose",
+      "world_symmetric_difference_mm3": 0.0,
+      "mesh_bounds_error_mm": 0.02834110147091451,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 8319,
+      "welded_vertices": 8083,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "oil-filler-cap",
+      "world_symmetric_difference_mm3": 0,
+      "mesh_bounds_error_mm": 5.425380678047986e-07,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 3950,
+      "welded_vertices": 1580,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "valve-cover",
+      "world_symmetric_difference_mm3": 0.0,
+      "mesh_bounds_error_mm": 1.348985898630417e-05,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 3366,
+      "welded_vertices": 1624,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "egr-tube-heat-sleeve",
+      "world_symmetric_difference_mm3": 0.0,
+      "mesh_bounds_error_mm": 0.0364653944018869,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 4491,
+      "welded_vertices": 4251,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "egr-tube-valve-nut",
+      "world_symmetric_difference_mm3": 0,
+      "mesh_bounds_error_mm": 1.0251998901367188e-05,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 732,
+      "welded_vertices": 360,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "oil-filler-cap-seal",
+      "world_symmetric_difference_mm3": 0,
+      "mesh_bounds_error_mm": 0.03226485848426819,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 468,
+      "welded_vertices": 232,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "efi-upper-intake",
+      "world_symmetric_difference_mm3": 0.0,
+      "mesh_bounds_error_mm": 2.6126043735530402e-05,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 21792,
+      "welded_vertices": 17474,
+      "weld_grid_mm": 1e-05
+    },
+    {
+      "id": "egr-exhaust-tube",
+      "world_symmetric_difference_mm3": 0.0,
+      "mesh_bounds_error_mm": 0.01929818126814098,
+      "watertight_after_coincident_vertex_weld": true,
+      "raw_watertight": false,
+      "raw_vertices": 6999,
+      "welded_vertices": 6598,
+      "weld_grid_mm": 1e-05
+    }
+  ],
+  "bound_moved_frames": [
+    {
+      "id": "oil-filler-cap",
+      "delta_mm": [
+        60,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-housing",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-gasket",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-shaft",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-plate-1",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-plate-2",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-stud-1",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-nut-1",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-stud-2",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-nut-2",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-stud-3",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-nut-3",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-stud-4",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-nut-4",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-valve-body",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-gasket",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-end-plug",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-solenoid-can",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-coil",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-armature",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-pintle",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "iac-connector-cap",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-housing",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-cover",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-rotor",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-resistance-track",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-wiper",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-screw-1",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "tps-screw-2",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-body",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-stem-guide",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-pintle",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-lower-shell",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-diaphragm",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-diaphragm-lower-plate",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-diaphragm-upper-plate",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-stem-retainer",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-return-spring",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-spring-seat",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-upper-shell",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-vacuum-nipple",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-intake-gasket",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-mount-bolt-1",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "egr-mount-bolt-2",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-body",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-lid",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-flange-seal",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-follower",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-follower-spring",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-spring-stop",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-resistor-carrier",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-resistance-track",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-collector-track",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-wiper",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-terminal-1",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-terminal-2",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-terminal-3",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-screw-1",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-screw-2",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "evp-screw-3",
+      "delta_mm": [
+        167,
+        0,
+        25
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "accelerator-cable-bracket",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-lever-estimated",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-cable-ball-stud-estimated",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-lever-retaining-pin-estimated",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-linkage-shield-estimated",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-shield-pushpin-estimated",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    },
+    {
+      "id": "throttle-return-spring-illustrative",
+      "delta_mm": [
+        -167,
+        0,
+        0
+      ],
+      "frame_error_mm": 0.0
+    }
+  ],
+  "frame_contract_sha256": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+  "source_ledger_sha256": "9142a9e635792c497c3f08fef434c0d5d9d04893041b16fe903d449255d25848",
+  "candidate_report_sha256": "dff419c93d029e5c5c04b8cd42704f36d31f1dd02e9454dc48725028741167e9",
+  "replay_report_sha256": "316ebf989b7029c28eb77c37a679099fa2d54c15c87894c9c850102805bc70d5",
+  "before_manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "after_manifest_sha256": "36e05dfee7ea0ee12761295851c8fbe804ea0d3a516502e069f1059e77bc131b",
+  "promotion_source_sha256": {
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "scripts/check-intake-cap-coordination-installed.py": "23116e09c03a3fa5e6477e5b70ba758b4670e00a1077a72595a1f72606fb626f"
+  },
+  "canonical_artifact_sha256": {
+    "cad/engine/generated/efi-upper-intake.step": "294ed430dd14a91e9ebf87104fa2fd8c7a903d278e8835c5d2ef342865790f75",
+    "models/engine/efi-upper-intake.glb": "bef67f90afec94074248f8370255f3f278f675dd88bfe5352f8eff26db47af31",
+    "cad/engine/generated/egr-control-vacuum-hose.step": "250baa7d2f26700aba296c883ddb4a5712b1a3657ca2512e939a5e5338315df1",
+    "models/engine/egr-control-vacuum-hose.glb": "e8012fb8347cff05403e9f2f74e509517553ae61ee3bb6563a76a59eabb09872",
+    "cad/engine/generated/egr-exhaust-tube.step": "5e8b92d1cc3b8ba635f8406f2d849b7098e086a38050f9cdf3245ef92cd2720d",
+    "models/engine/egr-exhaust-tube.glb": "b35b30e5ae5834d391e8258b795cb0ec7053ed9d38a90e771683fff6c97e95b9",
+    "cad/engine/generated/egr-tube-heat-sleeve.step": "de598c5266fc0034d962415645c9ac2ec48e5c683cd109b19f8842c70339c0c5",
+    "models/engine/egr-tube-heat-sleeve.glb": "13f159af6226d736ece278947f49337a65a02fe1a73af7cfad83c82c52232e4c",
+    "cad/engine/generated/egr-tube-valve-nut.step": "d6ff9d2b45b8c67bb50c9087b097df2f59d48852bedb99793aed71b82f44edd4",
+    "models/engine/egr-tube-valve-nut.glb": "4fd2218213f780a28e29214a5a00c5a0915c2b7daf719dd5163002a7f45c484d",
+    "cad/engine/generated/oil-filler-cap.step": "0b8797a35364598e0cb599386e05ef1938978e47a9d7cf2eb012eb0f7c96ced1",
+    "models/engine/oil-filler-cap.glb": "da76a9c797ef739238c11956b14777edd9b1c454d1c5c59a05364b5bf4e4d433",
+    "cad/engine/generated/oil-filler-cap-seal.step": "2bb1565eef921afa77174d2547d1f9b904f7dd467bfbbbe7802720392b441614",
+    "models/engine/oil-filler-cap-seal.glb": "d5af029165a03b8e79f08e7e86c3211a0150fa28c9aa808a9eddf9996b152d15",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "models/engine/valve-cover.glb": "4d48f38bf633850bd31c29b91079d66ce9b858626846b9b9ed75c29f192095d8"
+  }
+}

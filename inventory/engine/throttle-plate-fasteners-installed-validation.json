@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "scope": "Four-screw educational hypothesis; no Ford count, pitch, locking, preload or strength claim.",
+  "full_sweep": false,
+  "angles_deg": [
+    0,
+    45,
+    90
+  ],
+  "manifest_sha256": "967fad5db68ca51f5e3556845120e4e55dcb97f4ad15b476a1fc7e7080cfc229",
+  "input_hashes": {
+    "inventory/engine/full-assembly.json": "967fad5db68ca51f5e3556845120e4e55dcb97f4ad15b476a1fc7e7080cfc229",
+    "inventory/engine/throttle-plate-fasteners-installation.json": "146699fdb5036ed9694aac018410818cee8cb9753a405f0d3b1cf561a8054423",
+    "scripts/check-throttle-plate-fasteners-installed.py": "3209662fafb78c2ae6d467c7ac4c93812e0eb0cb6155677cc9e83413a75e3982",
+    "cad/engine/throttle_plate_fasteners_candidate.py": "28aa421d88d2ead303ba368fb801008c948f89aa9918abcc18f186208a13ee8c",
+    "cad/engine/throttle_plate_fasteners_integration.py": "70e3fc3b57d2cacf658c79b70d841646502bbbb289f2ddff9d2fb89304e1dd79",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+    "cad/engine/generated/throttle-plate.step": "02e1bfbc64ed2c14c9d69584522a461d8204adee92ed728a83c6f950ed2f3286",
+    "cad/engine/generated/throttle-plate-screw-illustrative.step": "7d2f27d085be037232c52a6902051bf59987840cf1f4130558900add8b498896",
+    "models/engine/throttle-plate-screw-illustrative.glb": "b8f9df1e58c1fbf784656986fa4fc8d8633370ff7965bf68689eb3bdf0a6aee4",
+    "models/engine/throttle-plate.glb": "855f162f489403cb6ff457fe5d681db01364eebafd4daf029ce0aaf35323615a",
+    "models/engine/throttle-shaft.glb": "77b008f75c8a3b283899036277f57419c2fa3452b5b23b68e7dc6d667f0fc0b0",
+    "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297",
+    "cad/engine/generated/throttle-housing.step": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+    "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+    "cad/engine/generated/efi-upper-intake.step": "294ed430dd14a91e9ebf87104fa2fd8c7a903d278e8835c5d2ef342865790f75"
+  },
+  "local_parent": "throttle-moving",
+  "global_parent_rigid_shift_permitted": true,
+  "broad_phase_occurrences": 1330,
+  "exact_neighbors": [
+    "accelerator-cable-bracket",
+    "efi-upper-intake",
+    "throttle-housing",
+    "throttle-lever-estimated",
+    "throttle-lever-retaining-pin-estimated",
+    "throttle-linkage-shield-estimated",
+    "throttle-return-spring-illustrative",
+    "tps-housing"
+  ],
+  "exact_pairs": 60,
+  "collisions": [],
+  "exports": {
+    "throttle-plate-screw-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "position_weld_precision_m": 1e-08,
+      "export_vertex_count": 4948,
+      "welded_vertex_count": 2452,
+      "glb_bounds_error_mm": 0.0005595229566097704
+    },
+    "throttle-plate": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "position_weld_precision_m": 1e-08,
+      "export_vertex_count": 1518,
+      "welded_vertex_count": 756,
+      "glb_bounds_error_mm": 0.0060924798250212575
+    },
+    "throttle-shaft": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "position_weld_precision_m": 1e-08,
+      "export_vertex_count": 24520,
+      "welded_vertex_count": 12200,
+      "glb_bounds_error_mm": 3.5954879820110364e-06
+    }
+  },
+  "idempotent_symmetric_difference_mm3": {
+    "shaft": 0.0,
+    "plate": 0.0
+  },
+  "keyed_shaft_change_outside_seats_mm3": 0.0,
+  "head_plate_contact_mm2": {
+    "throttle-plate-screw-1-1-illustrative": 6.024003913258431,
+    "throttle-plate-screw-1-2-illustrative": 6.024003913258431,
+    "throttle-plate-screw-2-1-illustrative": 6.024003913258431,
+    "throttle-plate-screw-2-2-illustrative": 6.024003913258431
+  },
+  "rear_plate_support_mm2": {
+    "-27": 16.823228659973335,
+    "27": 16.823228659973335
+  },
+  "axial_withdrawal_capture_mm3": {
+    "throttle-plate-screw-1-1-illustrative": 0.5619439075390267,
+    "throttle-plate-screw-1-2-illustrative": 0.5619439063170762,
+    "throttle-plate-screw-2-1-illustrative": 0.5619439063203188,
+    "throttle-plate-screw-2-2-illustrative": 0.5619439075423571
+  },
+  "displaced_head_negative_contact_mm2": {
+    "throttle-plate-screw-1-1-illustrative": 0.0,
+    "throttle-plate-screw-1-2-illustrative": 0.0,
+    "throttle-plate-screw-2-1-illustrative": 0.0,
+    "throttle-plate-screw-2-2-illustrative": 0.0
+  },
+  "wrong_local_frame_rejected": true
+}

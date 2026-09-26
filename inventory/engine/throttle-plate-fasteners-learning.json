@@ -1,0 +1,134 @@
+{
+  "throttle-shaft": {
+    "summary": "The common shaft turns both butterfly plates. Estimated support pads and helical receivers connect the plates to the preserved keyed linkage.",
+    "limits": "Four screws, two per plate, are an explicit educational hypothesis. Ford screw count, shaft construction, dimensions, thread fit, locking, tightening torque, preload and strength remain unverified. This is not a repair specification.",
+    "steps": [
+      {
+        "title": "Follow the torque path",
+        "text": "The lever drives the keyed shaft end; four illustrative screws and two plate seats connect the discs to the shaft.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Support both sides",
+        "text": "Each plate bears on two shaft pads while the screw heads seat against the opposite face.",
+        "part": "throttle-plate-1"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Retention is more than visible contact",
+        "text": "The model checks seated heads, rear support and a helical path that blocks straight withdrawal. It does not simulate clamp force or prove resistance to loosening in service."
+      }
+    ],
+    "sources": [
+      "throttle-plate-retention-illustrative-study"
+    ]
+  },
+  "throttle-plate": {
+    "summary": "Each disc restricts one air passage. Two estimated clearance holes receive its illustrative retaining screws.",
+    "limits": "Four screws, two per plate, are an explicit educational hypothesis. Ford screw count, shaft construction, dimensions, thread fit, locking, tightening torque, preload and strength remain unverified. This is not a repair specification. Plate bevel, idle leakage and production closed/full-open stop positions remain unknown.",
+    "steps": [
+      {
+        "title": "Turn together",
+        "text": "Both plates retain their original locations and share the moving shaft. The slider commands their angle directly.",
+        "part": "throttle-moving"
+      },
+      {
+        "title": "Distinguish three kinds of fastener",
+        "text": "These internal retaining screws differ from the four throttle-body mounting nuts and from the factory-labeled external throttle plate set screw.",
+        "part": "throttle-plate-screw-1-1-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Retention is more than visible contact",
+        "text": "The model checks seated heads, rear support and a helical path that blocks straight withdrawal. It does not simulate clamp force or prove resistance to loosening in service."
+      }
+    ],
+    "sources": [
+      "throttle-plate-retention-illustrative-study"
+    ]
+  },
+  "throttle-plate-screw-illustrative": {
+    "summary": "The screw head seats on the manifold-facing plate surface. Its modeled helix resists straight withdrawal from the shaft receiver.",
+    "limits": "Four screws, two per plate, are an explicit educational hypothesis. Ford screw count, shaft construction, dimensions, thread fit, locking, tightening torque, preload and strength remain unverified. This is not a repair specification.",
+    "steps": [
+      {
+        "title": "Head, plate, shaft",
+        "text": "The head bears on the plate while the shaft pad supports its other side. The screw passes through a clearance hole into an estimated threaded receiver.",
+        "part": "throttle-plate-1"
+      },
+      {
+        "title": "Rotation permits withdrawal",
+        "text": "A matched turn and axial movement follows the modeled helical passage. A straight pull interferes with its flanks. This illustrates thread capture without claiming a production thread specification.",
+        "part": "throttle-shaft"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Retention is more than visible contact",
+        "text": "The model checks seated heads, rear support and a helical path that blocks straight withdrawal. It does not simulate clamp force or prove resistance to loosening in service."
+      }
+    ],
+    "sources": [
+      "throttle-plate-retention-illustrative-study"
+    ]
+  },
+  "throttle-assembly": {
+    "summary": "Two butterfly plates share a shaft. Moving the throttle-opening slider turns them together, changing how much of each bore is obstructed.",
+    "limits": "Factory references support twin bores, four body mounting studs/nuts, IAC attachment by two bolts, TPS, an external lever and shield. The installed lever, D-shaped shaft end, retaining pin, bracket, shield and single return spring are educational constructions with inferred dimensions. Four internal plate screws are an explicit hypothesis, not a verified Ford count. The two IAC screws have source-supported count but estimated dimensions and thread envelopes. Actual Ford return-spring construction, cable-end spring, cable/socket, production stops, plate locking and preload, IAC variant, sealing, calibration and harness remain unresolved.",
+    "steps": [
+      {
+        "title": "Air passages",
+        "text": "The twin bores lead into the shared upper plenum. Use See through covers to watch the plates inside.",
+        "part": "throttle-housing"
+      },
+      {
+        "title": "Paired plates",
+        "text": "A common shaft coordinates the two discs. At 90 degrees the idealized discs are edge-on to the incoming air. Production closed and full-open stops still need verification.",
+        "part": "throttle-moving"
+      },
+      {
+        "title": "Idle uses another path",
+        "text": "The IAC-controlled bypass is separate from the plates. Two illustrative screws attach the valve and separate gasket to the throttle pad; the exact installed valve variant and internal dimensions remain unverified.",
+        "part": "idle-air"
+      },
+      {
+        "title": "Cable pull becomes shaft rotation",
+        "text": "The outward ball follows the lever and twin plates while the bracket and shield stay fixed. An illustrative spring winds between captured fixed and moving hooks. The control commands the angle; return force and friction are not calculated.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Keep the plates on the shaft",
+        "text": "Four illustrative screws seat against the two plates and enter helical shaft receivers. The mounting nuts outside the body do not establish this internal screw count.",
+        "part": "throttle-plate-screw-1-1-illustrative"
+      },
+      {
+        "title": "Separate the IAC joint",
+        "text": "Two diagonal IAC screws pass through the valve flange and gasket into the throttle pad. Their count is supported by the service diagrams; estimated smooth receivers do not establish production thread engagement or clamp strength.",
+        "part": "iac-mount-screw-1-estimated"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate throttle opening from idle control",
+        "text": "Closed butterfly plates do not mean the real engine has no air supply: the IAC meters a separate bypass path. The viewer does not simulate idle speed or air flow."
+      },
+      {
+        "title": "Sealing interface",
+        "text": "The separate gasket seals the body to the upper manifold. Inspect its position in the exploded view.",
+        "part": "throttle-gasket"
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "truck-throttle-service",
+      "truck-throttle-catalog",
+      "throttle-1994-linkage-study",
+      "throttle-return-spring-study",
+      "throttle-plate-retention-illustrative-study",
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ]
+  }
+}

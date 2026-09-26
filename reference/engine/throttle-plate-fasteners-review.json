@@ -1,0 +1,71 @@
+{
+  "issue": 43,
+  "parent_issue": 1,
+  "baseline_commit": "5567d751abcf6a9bfac84bdf87ce0d7f0d4dac5c",
+  "scope": "Illustrative four-fastener retention candidate, explicitly not verified Ford count/construction.",
+  "factory_images_reinspected": [
+    {
+      "id": "690365451",
+      "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690365451.png",
+      "sha256": "a016502163071f6953ad7b28e5ddbde982d1133eed07df1e2a817bb1e63761c4",
+      "url": "https://charm.li/images/DM05Q313/ford10/690365451/",
+      "visually_inspected": true,
+      "observed": "V5652-D separates throttle body9E926, gasket9E936 and upper intake9424; explicitly four retaining nuts. Cable-side lever and coil bank visible. Four refers to mounting nuts, not butterfly screws."
+    },
+    {
+      "id": "689805816",
+      "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/689805816.png",
+      "sha256": "b612aefd74b61e1650d4d9778e1ee18bff981455def3f66d6152bceb3cfab1c2",
+      "url": "https://charm.li/images/DM05Q313/ford10/689805816/",
+      "visually_inspected": true,
+      "observed": "V4752-G labels throttle plate set screw on cable side, TPS9B989 opposite, IAC9F715 and two canister purge ports. No butterfly screw count; set screw is not a plate retaining screw."
+    }
+  ],
+  "factory_html_read": [
+    {
+      "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/index.html",
+      "sha256": "8f98ec60d8bcbf3de4baeead501efd32363b84aea46555152061e52f97b719bb"
+    },
+    {
+      "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Description%20and%20Operation/index.html",
+      "sha256": "b9ecb1fe444d841d8d0aa482c3a794ea930fa2178372cff7fd6df05107f46b41"
+    },
+    {
+      "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Testing%20and%20Inspection/Check%20Throttle%20Valves/index.html",
+      "sha256": "eddc5839bbc1820746fa8af7fe5aa451a76e5b78c5b52f7fc507feb3e5229360"
+    }
+  ],
+  "comparison_specimen_reinspected": {
+    "id": "throttle-ma-rear-comparison",
+    "url": "https://www.ebay.com/itm/256430005933",
+    "image_url": "https://i.ebayimg.com/images/g/FdUAAOSwtF1l9dRD/s-l960.jpg",
+    "image_sha256": "cd412f5d33ba91d83a000eab310ed88f9266b63cd568fd62a677c0259158c759",
+    "class": "visually inspected comparison specimen only",
+    "observed": [
+      "Rear flange view: twin plates, cable lever/coil at photo left and sensor at right.",
+      "Two screw-head-like features are visible across the right-hand plate; one clearly visible near inner edge of left plate. Remaining left plate area is too dark for a reliable total."
+    ],
+    "limits": "Seller broadly groups1987\u201393 and4.9/5.0/5.8 with F2TE-MA; not an exact1994 manual specimen. Do not report3 as production count or silently promote4 total."
+  },
+  "findings": [
+    "Factory four-nut callout concerns body mounting only.",
+    "External throttle plate set screw label is a stop, not internal plate retention.",
+    "Applicable check-throttle-valves procedure requires smooth travel and inspection for loose/bent/damaged valves; no internal screw count or thread specification.",
+    "Comparison rear photo shows two screw-like heads on one plate and one clear on the other; remaining region too dark to establish total. Exact1994 manual applicability unverified."
+  ],
+  "educational_scope_decision": "Task authorizes an explicitly bounded educational choice when production topology is unknown. Choose two screws per plate, four total, inferred symmetric positions\u00b18 mm along each plate shaft line.",
+  "architecture": "Estimated screw heads seat directly on negative-X/manifold plate faces, following visible heads in the rear-flange comparison photo (not verified1994). Existing negative-X shaft rails gain head pockets; positive-X rails gain0.2 mm pads to meet plates. Screw threads and matching female helical cuts supply a physical educational retention path. No Ford thread standard or anti-loosening method claimed.",
+  "parameters_source_class": "All fastener dimensions, thread pitch/profile, count and shaft pockets/pads are inferred.",
+  "excluded_sources": [
+    "Australian E-series DIY forum is different application; not count evidence.",
+    "Older carburetor screw catalogs and other-engine forum claims are not this1994 EFI throttle."
+  ],
+  "gaps": [
+    "Exact count and head orientation",
+    "Production shaft slot/flat construction",
+    "Thread diameter/pitch/class, seating torque and strength",
+    "Staking/locking and replacement/service policy",
+    "Plate bevels and idle calibration remain inherited omissions"
+  ],
+  "asset_policy": "Manual images remain in ignored authorized archive. Comparison photo reviewed from its public URL/hash, not redistributed. No dependency on temporary image paths for reproduction."
+}

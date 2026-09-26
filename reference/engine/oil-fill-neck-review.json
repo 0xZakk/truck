@@ -271,5 +271,18 @@
     "additional_viewed_image": "images/DM05Q313/ford10/619932413.png (PCV valve internal section, not neck)",
     "local_originals_redistributed": false,
     "result": "Exact cover part identity improved; service assembly representation supported; production neck joint/thread/depth/baffle still open."
+  },
+  "cap_projection_followup": {
+    "source": "reference/engine/pilot/oil-cap/ford-bottom.jpg",
+    "method": "Manual perspective-aware proportion estimate on original1500px photo; not calibrated metrology. End-face apparent ellipse ratio roughly0.4, center-to-seal-plane offset390\u2013480px, shellwidth1440\u20131480px. Ambiguous recessed seal reference dominates uncertainty.",
+    "loose_stem_to_shell_ratio_range": [
+      0.28,
+      0.37
+    ],
+    "existing_candidate_shell_to_tip_projection_mm": 22,
+    "existing_ratio": 0.3184252424374005,
+    "interpretation": "Current substantial stem agrees with loose visual proportion. Shortening projection to about12.5mm solely to clear currentplenum would give ratio0.18 and lacks source support. Source shows about4 prominent raised ridges, not one short latch.",
+    "owner_photo_layout": "Both ownerbay photos show cap exposed forward of commonplenum body. Neither supplies orthographic coordinates; rear-positioned shorterplenum is a supported qualitative correction, exact frontdatum remains inferred.",
+    "upstream_model_conflict": "Current efi_intake.py assumes734mm full-lengthplenum centeredx0,y25,z490 withbottom445, directly above capx240. Service withdrawal hits thisplenum before stemexit. No cap dimension is changed."
   }
 }

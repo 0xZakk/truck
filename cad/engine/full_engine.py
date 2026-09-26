@@ -857,6 +857,13 @@ def main():
     throttle_spring.install(define,add,defs,occurrences,shapes)
     import dipstick_integration
     dipstick_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import intake_cap_coordination
+    intake_cap_coordination.install(define,add,group,defs,occurrences,assemblies,shapes,
+        {**BASE['mechanism'],'firing_order':[1,5,3,6,2,4],'cylinder_phases_deg':PHASES,'bore_pitch_mm':PITCH,'deck_height_mm':DECK})
+    import iac_attachment_integration
+    iac_attachment_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import throttle_plate_fasteners_integration as throttle_plate_retention
+    throttle_plate_retention.install(define,add,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -887,6 +894,10 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/component-interface-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/throttle-linkage-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/dipstick-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/dipstick-assembly-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/intake-cap-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/iac-attachment-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/throttle-plate-fasteners-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -904,6 +915,11 @@ def main():
     sources.update(throttle_linkage.sources())
     sources.update(throttle_spring.sources())
     sources.update(dipstick_integration.sources())
+    sources.update(intake_cap_coordination.sources())
+    sources.update(iac_attachment_integration.sources())
+    sources.update(throttle_plate_retention.source())
+    for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
+        sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
     for occurrence in occurrences:
         if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS | rear_mounts.ADAPTERS):

@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -12,16 +12,6 @@ Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c
 
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
-- [ ] **IAC valve body** — `iac-valve-body`; modeled quantity **1**; provisional.
-  - Instances: `iac-valve-body`
-  - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
-  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
-- [ ] **IAC mounting gasket** — `iac-gasket`; modeled quantity **1**; provisional.
-  - Instances: `iac-gasket`
-  - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
-  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
 - [ ] **IAC chamber end closure** — `iac-end-plug`; modeled quantity **1**; provisional.
   - Instances: `iac-end-plug`
   - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -37,11 +27,6 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
   - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
-- [ ] **IAC armature** — `iac-armature`; modeled quantity **1**; provisional.
-  - Instances: `iac-armature`
-  - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
-  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
 - [ ] **IAC stem and reverse-seated pintle** — `iac-pintle`; modeled quantity **1**; provisional.
   - Instances: `iac-pintle`
   - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -52,11 +37,47 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Source IDs: system-1cf529afa81d, truck-throttle-operation. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
   - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
+- [ ] **IAC armature and contact sleeve · study** — `iac-armature`; modeled quantity **1**; provisional.
+  - Instances: `iac-armature`
+  - Source IDs: system-1cf529afa81d, truck-throttle-operation, iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
+  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
+  - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
+  - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
+  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
+- [ ] **IAC mounting gasket · estimated** — `iac-gasket`; modeled quantity **1**; provisional.
+  - Instances: `iac-gasket`
+  - Source IDs: system-1cf529afa81d, truck-throttle-operation, iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
+  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
+  - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
+  - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
+  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
+- [ ] **IAC retaining screw · estimated** — `iac-mount-screw-estimated`; modeled quantity **2**; provisional.
+  - Instances: `iac-mount-screw-1-estimated`, `iac-mount-screw-2-estimated`
+  - Source IDs: iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
+  - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
+  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
+- [ ] **IAC restoring spring · illustrative** — `iac-return-spring-estimated`; modeled quantity **1**; provisional.
+  - Instances: `iac-return-spring-estimated`
+  - Source IDs: iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
+  - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
+  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
+- [ ] **IAC valve body · attachment study** — `iac-valve-body`; modeled quantity **1**; provisional.
+  - Instances: `iac-valve-body`
+  - Source IDs: system-1cf529afa81d, truck-throttle-operation, iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.
+  - Open: All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.
+  - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
+  - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
+  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
 
 ## Additional known scope and reconciliation
 
-- [ ] Mounting bolts and terminals: verify complete inventory
-- [ ] Verify restoring mechanism, installed valve identity and internal passages
+- [ ] Two modeled mounting screws and an illustrative restoring spring are installed; actual screw dimensions and restoring mechanism remain unverified
+- [ ] End closure retention/sealing and electrical terminals remain unfinished; verify installed valve variant and internal passages
 
 ## Acceptance and handoff
 

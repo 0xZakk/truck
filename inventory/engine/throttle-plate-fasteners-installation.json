@@ -1,0 +1,440 @@
+{
+  "status": "INSTALLED; browser/factory acceptance pending",
+  "before_manifest_sha256": "af0f6b5da21483ac6a71bba33ba20cf8e54130383a5f530d92374cb8f7307f07",
+  "staged_manifest_sha256": "967fad5db68ca51f5e3556845120e4e55dcb97f4ad15b476a1fc7e7080cfc229",
+  "baseline_commit": "fb2a1e756cf5e0d6ed925975312231406fce18ed",
+  "candidate_evidence": {
+    "candidate_report_sha256": "7bd6987bd213c18d1377825370e536ad9b7c4809af7717dab109a75b052d2468",
+    "candidate_source_sha256": "28aa421d88d2ead303ba368fb801008c948f89aa9918abcc18f186208a13ee8c",
+    "review_sha256": "271bc00cf811cd8c99775f0d7a12db86b10b1cc7cdf73cf56b29ae9783ec459f"
+  },
+  "changed_definitions": [
+    "throttle-plate",
+    "throttle-plate-screw-illustrative",
+    "throttle-shaft"
+  ],
+  "changed_occurrences": [
+    "throttle-plate-1",
+    "throttle-plate-2",
+    "throttle-plate-screw-1-1-illustrative",
+    "throttle-plate-screw-1-2-illustrative",
+    "throttle-plate-screw-2-1-illustrative",
+    "throttle-plate-screw-2-2-illustrative",
+    "throttle-shaft"
+  ],
+  "new_definitions": [
+    "throttle-plate-screw-illustrative"
+  ],
+  "new_occurrences": [
+    "throttle-plate-screw-1-1-illustrative",
+    "throttle-plate-screw-1-2-illustrative",
+    "throttle-plate-screw-2-1-illustrative",
+    "throttle-plate-screw-2-2-illustrative"
+  ],
+  "installed_scope": {
+    "definitions": {
+      "throttle-plate": {
+        "id": "throttle-plate",
+        "name": "Throttle butterfly plate \u00b7 retention study",
+        "function": "Restricts one air passage and is captured by two explicitly illustrative screws through estimated clearance holes.",
+        "system": "induction",
+        "color": "#c5a56b",
+        "glb": "/models/engine/throttle-plate.glb",
+        "step": "/cad/engine/generated/throttle-plate.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-throttle-operation",
+          "truck-throttle-service",
+          "truck-throttle-catalog",
+          "throttle-plate-retention-illustrative-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+          "IAC/TPS, linkage, spring, bracket and plate retention have illustrative studies; exact variants and production details remain unresolved. Purge ports remain unmodeled. Idealized 0\u201390 degree motion is not production stop calibration.",
+          "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+          "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+          "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+        ],
+        "volume_mm3": 1198.5647212343436,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1516,
+        "model_bounds_mm": [
+          1.0000000000000087,
+          39.2,
+          39.2
+        ]
+      },
+      "throttle-plate-screw-illustrative": {
+        "id": "throttle-plate-screw-illustrative",
+        "name": "Throttle plate screw \u00b7 illustrative",
+        "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+        "system": "induction",
+        "color": "#b6bec1",
+        "glb": "/models/engine/throttle-plate-screw-illustrative.glb",
+        "step": "/cad/engine/generated/throttle-plate-screw-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "throttle-plate-retention-illustrative-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+          "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+          "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+        ],
+        "volume_mm3": 19.178811588873067,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 4900,
+        "model_bounds_mm": [
+          4.700000100000001,
+          3.6,
+          3.6000000000000005
+        ]
+      },
+      "throttle-shaft": {
+        "id": "throttle-shaft",
+        "name": "Throttle shaft \u00b7 keyed and plate-retention study",
+        "function": "Preserves the keyed linkage end and adds local head pockets, supporting pads and estimated helical receivers for the plates.",
+        "system": "induction",
+        "color": "#657981",
+        "glb": "/models/engine/throttle-shaft.glb",
+        "step": "/cad/engine/generated/throttle-shaft.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-throttle-operation",
+          "truck-throttle-service",
+          "truck-throttle-catalog",
+          "throttle-1994-linkage-study",
+          "throttle-plate-retention-illustrative-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.",
+          "IAC/TPS, linkage, spring, bracket and plate retention have illustrative studies; exact variants and production details remain unresolved. Purge ports remain unmodeled. Idealized 0\u201390 degree motion is not production stop calibration.",
+          "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+          "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+          "Spring, shield and plate screws now have illustrative studies. Actual cable/socket and production stops remain unresolved; 0\u201390 degrees is educational travel.",
+          "Pin locking, load capacity, spring return, shield, actual cable/socket, plate hardware and production stops remain unresolved.",
+          "Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.",
+          "Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.",
+          "Plate bevels, airflow/idle calibration and production stops remain unresolved."
+        ],
+        "volume_mm3": 2847.349624305249,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 24440,
+        "model_bounds_mm": [
+          6.0000002051682255,
+          130.0000002,
+          6.000000200000024
+        ]
+      }
+    },
+    "occurrences": {
+      "throttle-plate-1": {
+        "id": "throttle-plate-1",
+        "definition": "throttle-plate",
+        "parent": "throttle-moving",
+        "name": "Throttle butterfly plate \u00b7 retention study",
+        "function": "Restricts one air passage and is captured by two explicitly illustrative screws through estimated clearance holes.",
+        "position_cad_mm": [
+          0,
+          -27,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          260,
+          0,
+          90
+        ]
+      },
+      "throttle-plate-2": {
+        "id": "throttle-plate-2",
+        "definition": "throttle-plate",
+        "parent": "throttle-moving",
+        "name": "Throttle butterfly plate \u00b7 retention study",
+        "function": "Restricts one air passage and is captured by two explicitly illustrative screws through estimated clearance holes.",
+        "position_cad_mm": [
+          0,
+          27,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          260,
+          0,
+          90
+        ]
+      },
+      "throttle-plate-screw-1-1-illustrative": {
+        "id": "throttle-plate-screw-1-1-illustrative",
+        "definition": "throttle-plate-screw-illustrative",
+        "parent": "throttle-moving",
+        "name": "Throttle plate screw \u00b7 illustrative",
+        "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+        "position_cad_mm": [
+          0,
+          -35,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -80,
+          0,
+          0
+        ]
+      },
+      "throttle-plate-screw-1-2-illustrative": {
+        "id": "throttle-plate-screw-1-2-illustrative",
+        "definition": "throttle-plate-screw-illustrative",
+        "parent": "throttle-moving",
+        "name": "Throttle plate screw \u00b7 illustrative",
+        "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+        "position_cad_mm": [
+          0,
+          -19,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -80,
+          0,
+          0
+        ]
+      },
+      "throttle-plate-screw-2-1-illustrative": {
+        "id": "throttle-plate-screw-2-1-illustrative",
+        "definition": "throttle-plate-screw-illustrative",
+        "parent": "throttle-moving",
+        "name": "Throttle plate screw \u00b7 illustrative",
+        "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+        "position_cad_mm": [
+          0,
+          19,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -80,
+          0,
+          0
+        ]
+      },
+      "throttle-plate-screw-2-2-illustrative": {
+        "id": "throttle-plate-screw-2-2-illustrative",
+        "definition": "throttle-plate-screw-illustrative",
+        "parent": "throttle-moving",
+        "name": "Throttle plate screw \u00b7 illustrative",
+        "function": "One of four hypothesized plate screws; its head seats on the manifold-facing plate surface and a modeled helix captures the shaft receiver.",
+        "position_cad_mm": [
+          0,
+          35,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -80,
+          0,
+          0
+        ]
+      },
+      "throttle-shaft": {
+        "id": "throttle-shaft",
+        "definition": "throttle-shaft",
+        "parent": "throttle-moving",
+        "name": "Throttle shaft \u00b7 keyed and plate-retention study",
+        "function": "Preserves the keyed linkage end and adds local head pockets, supporting pads and estimated helical receivers for the plates.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          180,
+          0,
+          90
+        ]
+      }
+    },
+    "assemblies": {
+      "engine": {
+        "id": "engine",
+        "name": "Ford 4.9L engine",
+        "parent": null,
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "induction": {
+        "id": "induction",
+        "name": "EFI intake",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "throttle-assembly": {
+        "id": "throttle-assembly",
+        "name": "Throttle body",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          -167.0,
+          0.0,
+          0.0
+        ],
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772"
+      },
+      "throttle-moving": {
+        "id": "throttle-moving",
+        "name": "Shaft & butterfly plates",
+        "parent": "throttle-assembly",
+        "motion": {
+          "type": "throttle"
+        },
+        "position_cad_mm": [
+          394,
+          25,
+          490
+        ]
+      }
+    }
+  },
+  "before_occurrences": [
+    {
+      "id": "throttle-shaft",
+      "definition": "throttle-shaft",
+      "parent": "throttle-moving",
+      "name": "Throttle shaft \u00b7 estimated keyed end",
+      "function": "Turns both butterfly plates and the external lever. Its proposed D end, shoulder and transverse pin bore provide a teaching torque path.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        180,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "throttle-plate-1",
+      "definition": "throttle-plate",
+      "parent": "throttle-moving",
+      "name": "Throttle butterfly plate 1",
+      "function": "A rotating disc restricts its air passage when closed and turns edge-on when open. This idealized disc omits production bevels, idle orifice and retaining screws.",
+      "position_cad_mm": [
+        0,
+        -27,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        260,
+        0,
+        90
+      ]
+    },
+    {
+      "id": "throttle-plate-2",
+      "definition": "throttle-plate",
+      "parent": "throttle-moving",
+      "name": "Throttle butterfly plate 2",
+      "function": "A rotating disc restricts its air passage when closed and turns edge-on when open. This idealized disc omits production bevels, idle orifice and retaining screws.",
+      "position_cad_mm": [
+        0,
+        27,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        260,
+        0,
+        90
+      ]
+    }
+  ],
+  "baseline_step_sha256": {
+    "baseline-step/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "baseline-step/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f"
+  },
+  "stage_directory": "cad/engine/generated/throttle-plate-fasteners-integration-stage",
+  "canonical_modified": true,
+  "unrelated_inventory_unchanged": true,
+  "installer_sha256": "fc1b8a5569086898a3d1393acfd6c6abd10dcbf5c2a46bd93f8798086ea3ed2e",
+  "checker_sha256": "3209662fafb78c2ae6d467c7ac4c93812e0eb0cb6155677cc9e83413a75e3982",
+  "adapter_sha256": "70e3fc3b57d2cacf658c79b70d841646502bbbb289f2ddff9d2fb89304e1dd79",
+  "learning_sha256": "01c3795bf8d5fe2b99546a55a5224b41afbb926d48c9b85adf0465b603879d3e",
+  "exporter_sha256": "20b07a9e8191933f1b0127737acc3777183f0bb061770504257762a7605699c2",
+  "staged_artifact_sha256": {
+    "step/throttle-plate.step": "02e1bfbc64ed2c14c9d69584522a461d8204adee92ed728a83c6f950ed2f3286",
+    "step/throttle-plate-screw-illustrative.step": "7d2f27d085be037232c52a6902051bf59987840cf1f4130558900add8b498896",
+    "step/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+    "models/throttle-plate.glb": "855f162f489403cb6ff457fe5d681db01364eebafd4daf029ce0aaf35323615a",
+    "models/throttle-plate-screw-illustrative.glb": "b8f9df1e58c1fbf784656986fa4fc8d8633370ff7965bf68689eb3bdf0a6aee4",
+    "models/throttle-shaft.glb": "77b008f75c8a3b283899036277f57419c2fa3452b5b23b68e7dc6d667f0fc0b0"
+  },
+  "after_manifest_sha256": "967fad5db68ca51f5e3556845120e4e55dcb97f4ad15b476a1fc7e7080cfc229",
+  "stage_validation_sha256": "4e90247670fad3428e05ef03a9e8a67d700ce1bd1d1d9503dd1af0fb3087f497",
+  "canonical_artifact_sha256": {
+    "cad/engine/generated/throttle-plate-screw-illustrative.step": "7d2f27d085be037232c52a6902051bf59987840cf1f4130558900add8b498896",
+    "models/engine/throttle-plate-screw-illustrative.glb": "b8f9df1e58c1fbf784656986fa4fc8d8633370ff7965bf68689eb3bdf0a6aee4",
+    "cad/engine/generated/throttle-plate.step": "02e1bfbc64ed2c14c9d69584522a461d8204adee92ed728a83c6f950ed2f3286",
+    "models/engine/throttle-plate.glb": "855f162f489403cb6ff457fe5d681db01364eebafd4daf029ce0aaf35323615a",
+    "cad/engine/generated/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+    "models/engine/throttle-shaft.glb": "77b008f75c8a3b283899036277f57419c2fa3452b5b23b68e7dc6d667f0fc0b0"
+  }
+}

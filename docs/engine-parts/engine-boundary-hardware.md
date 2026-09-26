@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **Backlog** — Known scope not delivered as a complete modeled/installed package; applicability and quantity may need research.
 
-Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 

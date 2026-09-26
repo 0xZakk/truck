@@ -1,0 +1,484 @@
+{
+  "status": "PASS",
+  "scope": "Isolated four-screw educational retention; real Ford count, dimensions, threads, locking and strength unresolved.",
+  "manifest_snapshot_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "input_hashes": {
+    "scripts/check-throttle-plate-fasteners-candidate.py": "c258da501e3c64bc919022f902a6251ee3add92507826410eb1cb9d798d8f468",
+    "cad/engine/throttle_plate_fasteners_candidate.py": "28aa421d88d2ead303ba368fb801008c948f89aa9918abcc18f186208a13ee8c",
+    "reference/engine/throttle-plate-fasteners-review.json": "271bc00cf811cd8c99775f0d7a12db86b10b1cc7cdf73cf56b29ae9783ec459f",
+    "cad/engine/generated/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f",
+    "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+    "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+    "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+    "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+    "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695",
+    "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc",
+    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+    "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297"
+  },
+  "output_hashes": {
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.step": "f94c1890a4e1daa5a55ae50c67165def215c437f7ecc73d84ad1e1528526e28e",
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.glb": "64b057035d04129077f679783164c047effad8b8c65e35c2eb061408657d801a",
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.step": "31fba7b73a955b916740a0bb40c31122568771465d7d8a95db4d1a7e6bccd3ca",
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.glb": "367248a3d0ccc754acc4ce5db823fcbfeb34d6c954780f9536e837a1d2cd6920",
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.step": "9c18f62600a7902388e077c2c47655416ce7c94fc2c903a3409d87977e87f2b7",
+    "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.glb": "b9cb6d4100d3a3359e3ea7418bad7d8a1109cc54d5638b9955edba2725f8cd33"
+  },
+  "parameters": {
+    "head_side_x": -1,
+    "screws_per_plate": 2,
+    "offset_y": 8.0,
+    "plate_hole_radius": 1.15,
+    "head_radius": 1.8,
+    "head_height": 1.0,
+    "front_pocket_radius": 1.9,
+    "back_pad_radius": 2.0,
+    "core_radius": 0.85,
+    "thread_major_radius": 1.1,
+    "thread_pitch": 0.5,
+    "thread_length": 2.7,
+    "thread_start_x": -3.2,
+    "tap_radial_clearance": 0.02,
+    "tap_axial_clearance": 0.02
+  },
+  "shaft_change_outside_four_seat_regions_mm3": 0.0,
+  "plate_pose_preservation": "PASS: localY\u00b127 unchanged",
+  "exports": {
+    "throttle-shaft-plate-retention-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 6.603972906304989e-07,
+      "glb_bounds_error_mm": 2.4526308777694794e-05
+    },
+    "throttle-plate-drilled-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 0.0,
+      "glb_bounds_error_mm": 0.008772826194764605
+    },
+    "throttle-plate-screw-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 9.098474862412331e-09,
+      "glb_bounds_error_mm": 0.0008056249469521326
+    }
+  },
+  "broad_phase_occurrences": 1322,
+  "exact_neighbor_ids": [
+    "throttle-housing",
+    "throttle-nut-1",
+    "throttle-nut-2",
+    "throttle-nut-3",
+    "throttle-nut-4",
+    "tps-housing",
+    "tps-rotor",
+    "tps-screw-1",
+    "tps-screw-2",
+    "ps-ac-support-bracket",
+    "accelerator-cable-bracket",
+    "throttle-lever-estimated",
+    "throttle-lever-retaining-pin-estimated",
+    "throttle-linkage-shield-estimated",
+    "throttle-return-spring-illustrative"
+  ],
+  "exact_sweep_pairs": 658,
+  "sweep_proof": {
+    "method": "Prior47 exact poses plus regenerated finite-thread baseline and current-shaft subset proof; no added matter can introduce a collision.",
+    "prior_report_sha256": "f57453dbf95e026f7b41adc7ef77a40436924b3ffb5acdd3a5f99eaa15ee4b37",
+    "prior_candidate_sha256": "28aa421d88d2ead303ba368fb801008c948f89aa9918abcc18f186208a13ee8c",
+    "prior_input_hashes": {
+      "scripts/check-throttle-plate-fasteners-candidate.py": "cf04e287d89dfac4a9c553e8540a686f25390a0bb939e4fb9bd71e27b136a895",
+      "cad/engine/throttle_plate_fasteners_candidate.py": "28aa421d88d2ead303ba368fb801008c948f89aa9918abcc18f186208a13ee8c",
+      "reference/engine/throttle-plate-fasteners-review.json": "271bc00cf811cd8c99775f0d7a12db86b10b1cc7cdf73cf56b29ae9783ec459f",
+      "cad/engine/generated/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f",
+      "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+      "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+      "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+      "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+      "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+      "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695",
+      "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc",
+      "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+      "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+      "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+      "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+      "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+      "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297"
+    },
+    "prior_output_hashes": {
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.step": "fb22d381049ef14d44d6b4e8888fe00b2fce23e92422af6d465f8c4bddf3df37",
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.glb": "64b057035d04129077f679783164c047effad8b8c65e35c2eb061408657d801a",
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.step": "fc9314202d1c204721d26ae01fa8ca5f5c8be9c7cb80aa8e83715d9f6be1761a",
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.glb": "367248a3d0ccc754acc4ce5db823fcbfeb34d6c954780f9536e837a1d2cd6920",
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.step": "a01bf6cc655c80d32c5857378c09e556d2ce59edd4b0f04aefe1382d834a544a",
+      "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.glb": "b9cb6d4100d3a3359e3ea7418bad7d8a1109cc54d5638b9955edba2725f8cd33"
+    },
+    "new_shaft_outside_prior_mm3": 0.0,
+    "plate_symmetric_difference_mm3": 0.0,
+    "screw_symmetric_difference_mm3": 0.0,
+    "prior_collision_count": 0,
+    "prior_sweep_proof": {
+      "method": "Prior47 exact poses plus regenerated finite-thread baseline and current-shaft subset proof; no added matter can introduce a collision.",
+      "prior_report_sha256": "5fb7e707515196b93e680efeb4efb55ac82bedf9fd9a7eb2fb9378801221a455",
+      "prior_candidate_sha256": "e0b04151984cf6dd2f0997d677795e726933c67b2c7a7d1e91bb720aa6d8bc2a",
+      "prior_input_hashes": {
+        "scripts/check-throttle-plate-fasteners-candidate.py": "5b86d3bcd6ea3c5fd3c08ffa1a2d2a6d0d8109dce58f5f7955cdb224517a6832",
+        "cad/engine/throttle_plate_fasteners_candidate.py": "e0b04151984cf6dd2f0997d677795e726933c67b2c7a7d1e91bb720aa6d8bc2a",
+        "reference/engine/throttle-plate-fasteners-review.json": "271bc00cf811cd8c99775f0d7a12db86b10b1cc7cdf73cf56b29ae9783ec459f",
+        "cad/engine/generated/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f",
+        "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+        "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+        "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+        "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+        "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+        "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695",
+        "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc",
+        "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+        "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+        "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+        "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+        "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+        "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297"
+      },
+      "prior_output_hashes": {
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.step": "f3df86ee423181dff0c41ee9c58ed0f2741300ea2fce68a9ff1b69409642f39f",
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-shaft-plate-retention-illustrative.glb": "674a886947bd4da4884aaca126e250e1a63a8ca4f839ecd10c58bf98855fecfa",
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.step": "22a1b4cd9d20a60a7d6ab290e622f87f36f7f7064f6f8b88b0c6bde8103e5e5d",
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-drilled-illustrative.glb": "367248a3d0ccc754acc4ce5db823fcbfeb34d6c954780f9536e837a1d2cd6920",
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.step": "029cfc55484a0adc8fbc3f5e93490a3998f6522e8cb13337ffbb67dc7b64112c",
+        "cad/engine/generated/throttle-plate-fasteners-candidate/throttle-plate-screw-illustrative.glb": "b9cb6d4100d3a3359e3ea7418bad7d8a1109cc54d5638b9955edba2725f8cd33"
+      },
+      "new_shaft_outside_prior_mm3": 0.0,
+      "plate_symmetric_difference_mm3": 0.0,
+      "screw_symmetric_difference_mm3": 0.0,
+      "prior_collision_count": 0
+    }
+  },
+  "internal_pairs": [
+    {
+      "a": "shaft",
+      "b": "plate-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "shaft",
+      "b": "plate-2",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "shaft",
+      "b": "throttle-plate-screw-1-1-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "shaft",
+      "b": "throttle-plate-screw-1-2-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "shaft",
+      "b": "throttle-plate-screw-2-1-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "shaft",
+      "b": "throttle-plate-screw-2-2-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "plate-1",
+      "b": "throttle-plate-screw-1-1-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "plate-1",
+      "b": "throttle-plate-screw-1-2-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "plate-2",
+      "b": "throttle-plate-screw-2-1-illustrative",
+      "overlap_mm3": 0.0
+    },
+    {
+      "a": "plate-2",
+      "b": "throttle-plate-screw-2-2-illustrative",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "sweep": [
+    {
+      "angle_deg": 0,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 2,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 4,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 6,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 8,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 10,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 12,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 14,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 16,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 18,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 20,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 22,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 24,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 26,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 28,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 30,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 32,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 34,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 36,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 38,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 40,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 42,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 44,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 45,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 46,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 48,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 50,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 52,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 54,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 56,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 58,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 60,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 62,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 64,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 66,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 68,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 70,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 72,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 74,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 76,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 78,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 80,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 82,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 84,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 86,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 88,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    },
+    {
+      "angle_deg": 90,
+      "minimum_nearby_distance_lower_bound_mm": 0.0
+    }
+  ],
+  "collisions": [],
+  "contacts": {
+    "throttle-plate-screw-1-1-illustrative": {
+      "head_plate_mm2": 6.024003913258431,
+      "thread_shaft_mm2": 0.0,
+      "nominal_thread_clearance_mm": 0.010533225733823759
+    },
+    "throttle-plate-screw-1-2-illustrative": {
+      "head_plate_mm2": 6.024003913258431,
+      "thread_shaft_mm2": 0.0,
+      "nominal_thread_clearance_mm": 0.010533225733824573
+    },
+    "throttle-plate-screw-2-1-illustrative": {
+      "head_plate_mm2": 6.024003913258431,
+      "thread_shaft_mm2": 0.0,
+      "nominal_thread_clearance_mm": 0.010533225733824411
+    },
+    "throttle-plate-screw-2-2-illustrative": {
+      "head_plate_mm2": 6.024003913258431,
+      "thread_shaft_mm2": 0.0,
+      "nominal_thread_clearance_mm": 0.010533225733823955
+    }
+  },
+  "retention": {
+    "throttle-plate-screw-1-1-illustrative": {
+      "coupled_quarter_turn_withdrawal_interference_mm3": {
+        "-1": 0.0,
+        "1": 0.8389687975701927
+      },
+      "axial_thread_withdrawal_interference_mm3": 0.5619439942745941,
+      "detached_head_plate_contact_mm2": 0.0
+    },
+    "throttle-plate-screw-1-2-illustrative": {
+      "coupled_quarter_turn_withdrawal_interference_mm3": {
+        "-1": 0.0,
+        "1": 0.838968797570163
+      },
+      "axial_thread_withdrawal_interference_mm3": 0.5619438751179866,
+      "detached_head_plate_contact_mm2": 0.0
+    },
+    "throttle-plate-screw-2-1-illustrative": {
+      "coupled_quarter_turn_withdrawal_interference_mm3": {
+        "-1": 0.0,
+        "1": 0.8389687974424651
+      },
+      "axial_thread_withdrawal_interference_mm3": 0.5619438751179487,
+      "detached_head_plate_contact_mm2": 0.0
+    },
+    "throttle-plate-screw-2-2-illustrative": {
+      "coupled_quarter_turn_withdrawal_interference_mm3": {
+        "-1": 0.0,
+        "1": 0.8389687974424803
+      },
+      "axial_thread_withdrawal_interference_mm3": 0.5619439942746373,
+      "detached_head_plate_contact_mm2": 0.0
+    }
+  },
+  "plate_clamps": {
+    "1": {
+      "rear_support_contact_mm2": 16.82322865997333,
+      "forward_escape_interference_mm3": 3.0120019566292124,
+      "backward_escape_interference_mm3": 14.318353120710746,
+      "sideways_escape_interference_mm3": 2.14540448742959
+    },
+    "2": {
+      "rear_support_contact_mm2": 16.82322865997333,
+      "forward_escape_interference_mm3": 3.0120019566292124,
+      "backward_escape_interference_mm3": 14.31835312071063,
+      "sideways_escape_interference_mm3": 2.1454044874295906
+    }
+  },
+  "smooth_bore_negative_control": {
+    "throttle-plate-screw-1-1-illustrative": 0.0,
+    "throttle-plate-screw-1-2-illustrative": 0.0,
+    "throttle-plate-screw-2-1-illustrative": 0.0,
+    "throttle-plate-screw-2-2-illustrative": 0.0
+  }
+}

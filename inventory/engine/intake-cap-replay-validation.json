@@ -1,0 +1,103 @@
+{
+  "status": "PASS explicit state replay and negative controls",
+  "cases": [
+    {
+      "case": "repeat coordinated metadata",
+      "status": "PASS",
+      "duplicate_seals": 0
+    },
+    {
+      "case": "target replay",
+      "status": "PASS",
+      "geometry": [
+        {
+          "id": "oil-filler-cap",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "valve-cover",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-tube-heat-sleeve",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-exhaust-tube",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "oil-filler-cap-seal",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-control-vacuum-hose",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-tube-valve-nut",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "efi-upper-intake",
+          "world_difference_mm3": 0
+        }
+      ]
+    },
+    {
+      "case": "legacy cover and cap partial refresh",
+      "status": "PASS",
+      "geometry": [
+        {
+          "id": "oil-filler-cap",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "valve-cover",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-tube-heat-sleeve",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-exhaust-tube",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "oil-filler-cap-seal",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-control-vacuum-hose",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "egr-tube-valve-nut",
+          "world_difference_mm3": 0
+        },
+        {
+          "id": "efi-upper-intake",
+          "world_difference_mm3": 0
+        }
+      ]
+    },
+    {
+      "case": "unknown cap station",
+      "status": "PASS rejected",
+      "reason": "Unknown coordinated frame position: oil-filler-cap"
+    },
+    {
+      "case": "unreviewed cover solid",
+      "status": "PASS rejected",
+      "reason": "Cover does not match reviewed legacy or coordinated geometry; refusing to cut/fuse it"
+    }
+  ],
+  "canonical_modified": false,
+  "input_sha256": {
+    "scripts/check-intake-cap-replay.py": "4bdb6ef99bcfec6dd18f38ef3dea377fc34bfa6732fb40cdfab22d40c8908863",
+    "cad/engine/intake_cap_coordination.py": "d915eef8d603883f5f6978f6e6e3abc3cb80c8e2cc131064073ab2e7c89dfec4",
+    "reference/engine/intake-cap-frame-contract.json": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+    "cad/engine/generated/intake-cap-integration-stage/full-assembly.json": "d31d2b8c8e55f73a5570217e1b24bd7ed263e180f2d00af9670e258ef5c9870e"
+  }
+}
