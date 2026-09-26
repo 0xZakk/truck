@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+  "step_hashes": {
+    "cad/engine/generated/water-pump-seal-carrier.step": "f9ae39cfee9069c7e17a86c16537acff05c8d6ae5d3cd743edc31015e77d3a52",
+    "cad/engine/generated/water-pump-seal-stationary-face.step": "edcab064f78e42818a8409e5a0dae2e83022b42e8e0625c4aaf82eda85ca8d56",
+    "cad/engine/generated/water-pump-seal-rotating-face.step": "9599c357e8cfaa062648cd7cface97ca7f3d374483406c0bbe50e8e38f46ab51",
+    "cad/engine/generated/water-pump-seal-shaft-collar.step": "1e78ae6952427d52a476413b8bca83731fa39bd15049fa4abb0bea0f292f2928",
+    "cad/engine/generated/water-pump-seal-bellows.step": "aed880a28ca0deb61e3f78c917aba099fa39fc4240206bd1159201028d584ea0",
+    "cad/engine/generated/water-pump-seal-spring.step": "2c9f1bccc3a4851c7e3ff6a3afb7b7067c3f0ca7e8625ac40b7df92565a34183"
+  },
+  "step_symmetric_difference_mm3": {
+    "water-pump-seal-carrier": 0,
+    "water-pump-seal-stationary-face": 0,
+    "water-pump-seal-rotating-face": 0,
+    "water-pump-seal-shaft-collar": 0,
+    "water-pump-seal-bellows": 0,
+    "water-pump-seal-spring": 0
+  },
+  "rigid_poses_checked": 6,
+  "scope": "Installed shape/pose/display-offset comparison only. Root must run current full-engine and browser checks."
+}

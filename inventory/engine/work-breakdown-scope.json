@@ -357,7 +357,7 @@
       "id": "throttle",
       "title": "Throttle body, shaft, plates and mounting hardware",
       "patterns": [
-        "throttle-.*"
+        "throttle-(?!bracket-stud-estimated$).*"
       ],
       "remaining": [
         "Throttle lever/cam and return spring",
@@ -371,22 +371,17 @@
     {
       "id": "throttle-bracket",
       "title": "Throttle cable bracket",
-      "patterns": [],
+      "patterns": [
+        "accelerator-cable-bracket",
+        "throttle-bracket-stud-estimated"
+      ],
       "remaining": [
-        "Candidate exists",
-        "Mounting nuts interfere and proposed shift leaves engagement unresolved",
-        "Cable retainers/attachment fit require review"
+        "Bracket and two longer smooth stud envelopes are provisionally installed with seated nuts; factory bracket variant, shape and stud dimensions remain unverified",
+        "Resolve actual threads, engagement strength and intake anchorage; nominal nut coverage is not thread verification",
+        "Cable retainers/attachment fit, cable routing, return spring and complete linkage motion require reconstruction"
       ],
       "related_system_issues": [],
-      "existing_issue": 16,
-      "candidate_parts": [
-        {
-          "id": "accelerator-cable-bracket",
-          "name": "Throttle cable bracket",
-          "artifact": "cad/engine/pilot/throttle-bracket/candidate.py",
-          "status": "Candidate only; fit/identity not accepted"
-        }
-      ]
+      "existing_issue": 16
     },
     {
       "id": "iac",
@@ -437,7 +432,7 @@
         "water-pump-.*"
       ],
       "remaining": [
-        "Six-part mechanical-seal candidate: identify seat, rotating seal, elastomer and retention pieces from candidate ledger",
+        "Six illustrative mechanical-seal pieces are integrated; identify the actual seal variant, dimensions, materials and production component count before claiming truck-specific completeness",
         "Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence",
         "Cast inlet exists: verify production contour and coolant path",
         "Verify impeller, hub, pulley, fasteners and gland interfaces"
@@ -445,45 +440,7 @@
       "related_system_issues": [
         8
       ],
-      "existing_issue": null,
-      "candidate_parts": [
-        {
-          "id": "water-pump-seal-carrier",
-          "name": "Mechanical-seal carrier",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-stationary-face",
-          "name": "Stationary sealing face",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-rotating-face",
-          "name": "Rotating sealing face",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-shaft-collar",
-          "name": "Rotating seal collar",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-bellows",
-          "name": "Stationary seal bellows",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-spring",
-          "name": "Seal face-loading spring",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        }
-      ]
+      "existing_issue": null
     },
     {
       "id": "thermostat",

@@ -4,24 +4,32 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
-- No accepted installed definitions are mapped to this package; candidate artifacts may exist as noted below.
+- [x] Provisional geometry is present in the integrated engine manifest.
 
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
-
-## Separate candidate parts (not installed)
-
-- [ ] **Throttle cable bracket** — `accelerator-cable-bracket`; Candidate only; fit/identity not accepted. Source: `cad/engine/pilot/throttle-bracket/candidate.py`.
+- [ ] **Accelerator cable mounting bracket** — `accelerator-cable-bracket`; modeled quantity **1**; provisional.
+  - Instances: `accelerator-cable-bracket`
+  - Source IDs: pilot-throttle-bracket-factory, pilot-throttle-bracket-photo. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.
+  - Open: Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.
+  - Open: Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated.
+- [ ] **Throttle bracket mounting stud · estimated envelope** — `throttle-bracket-stud-estimated`; modeled quantity **2**; provisional.
+  - Instances: `throttle-stud-3`, `throttle-stud-4`
+  - Source IDs: pilot-throttle-bracket-factory, pilot-throttle-bracket-photo. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.
+  - Open: Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.
+  - Open: Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated.
 
 ## Additional known scope and reconciliation
 
-- [ ] Candidate exists
-- [ ] Mounting nuts interfere and proposed shift leaves engagement unresolved
-- [ ] Cable retainers/attachment fit require review
+- [ ] Bracket and two longer smooth stud envelopes are provisionally installed with seated nuts; factory bracket variant, shape and stud dimensions remain unverified
+- [ ] Resolve actual threads, engagement strength and intake anchorage; nominal nut coverage is not thread verification
+- [ ] Cable retainers/attachment fit, cable routing, return spring and complete linkage motion require reconstruction
 
 ## Acceptance and handoff
 

@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. **698 definitions / 1304 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. **705 definitions / 1310 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
@@ -37,12 +37,12 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Fuel rails, return tube and retaining hardware](fuel-rail.md) | 4 | 8 | In review | [#40](https://github.com/0xZakk/truck/issues/40) |
 | [Fuel regulator vacuum hose and fitting](regulator-vacuum.md) | 2 | 2 | In review | [#41](https://github.com/0xZakk/truck/issues/41) |
 | [Fuel pressure regulator and internals](fuel-regulator.md) | 11 | 13 | In review | [#42](https://github.com/0xZakk/truck/issues/42) |
-| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 6 | 13 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
-| [Throttle cable bracket](throttle-bracket.md) | 0 | 0 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
+| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 6 | 11 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
+| [Throttle cable bracket](throttle-bracket.md) | 2 | 3 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
 | [Idle-air control valve and internals](iac.md) | 8 | 8 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
 | [Throttle-position sensor and internals](tps.md) | 6 | 7 | In review | [#45](https://github.com/0xZakk/truck/issues/45) |
 | [Front/rear exhaust manifolds, mounting and outlet joints](exhaust.md) | 7 | 7 | In review | [#46](https://github.com/0xZakk/truck/issues/46) |
-| [Water pump, impeller, shaft, seal, bearing and pulley](water-pump.md) | 11 | 17 | In review | [#47](https://github.com/0xZakk/truck/issues/47) |
+| [Water pump, impeller, shaft, seal, bearing and pulley](water-pump.md) | 16 | 22 | In review | [#47](https://github.com/0xZakk/truck/issues/47) |
 | [Thermostat, coolant outlet and fasteners](thermostat.md) | 12 | 13 | In review | [#48](https://github.com/0xZakk/truck/issues/48) |
 | [Heater fittings and two-wire ECT sensor](heater-ect.md) | 6 | 7 | In review | [#49](https://github.com/0xZakk/truck/issues/49) |
 | [Ignition coil mounting bracket and fasteners](coil-bracket.md) | 7 | 7 | In review | [#50](https://github.com/0xZakk/truck/issues/50) |

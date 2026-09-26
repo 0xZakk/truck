@@ -8,7 +8,7 @@ independent identities. Passing CAD checks does not verify Ford manufacturing ge
 
 ## Available now
 
-The current checkpoint contains 698 definitions and 1,304 occurrences. See
+The current checkpoint contains 705 definitions and 1,310 occurrences. See
 [the complete tracking inventory](engine-parts/README.md) and [current state](CURRENT-STATE.md)
 for the authoritative import status. The detailed build notes below describe historical
 checkpoints and must not override current manifest/report hashes. Added

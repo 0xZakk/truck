@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "688da3d08839e7dfa1a4484b0098ff30445d37102bfac6e3fdf9115d1cdecc94",
+  "step_hashes": {
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-carrier.step": "6507008cf797578c2f2f213d295719135c01437db19f1699e595480831cd728b",
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-stationary-face.step": "e9ca3ed9bfce71b25b7bf08f5069682a3f8a3caae7c9804f3c558a1240e1f154",
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-rotating-face.step": "526668260813ab1bcd1de756185a1f7d771e5fe779f861f8753f7ef4b130b0cb",
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-shaft-collar.step": "b92c5836167a09db1dd1ba723f0ffe792382fcf7404721836ddb6494452b1a43",
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-bellows.step": "ce943dfb33a6b00b1f167dc127443370b27112299c7488ca2c65698d4fe10c9a",
+    "cad/engine/candidates/mechanical-seal/harness/water-pump-seal-spring.step": "0de2117e87dddbf05b21e71df9c8b8e13f50cbf6e2c7cafdbb87b760df7be749"
+  },
+  "step_symmetric_difference_mm3": {
+    "water-pump-seal-carrier": 0,
+    "water-pump-seal-stationary-face": 0,
+    "water-pump-seal-rotating-face": 0,
+    "water-pump-seal-shaft-collar": 0,
+    "water-pump-seal-bellows": 0,
+    "water-pump-seal-spring": 0
+  },
+  "rigid_poses_checked": 6,
+  "scope": "Installed shape/pose/display-offset comparison only. Root must run current full-engine and browser checks."
+}

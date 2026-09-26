@@ -1,0 +1,50 @@
+{
+  "date": "2026-09-26",
+  "status": "BLOCKED_PRODUCTION_RETENTION",
+  "sources_rechecked": [
+    {
+      "publisher": "Ford Motor Company",
+      "url": "https://www.ford.com/product/engine-oil-filler-cap-p4000083484",
+      "finding": "EC743 / F3AZ6766B identity; no published mating thread dimensions found."
+    },
+    {
+      "publisher": "MotoRad",
+      "url": "https://motorad.com/part/MO100/",
+      "finding": "MO100 cross-references F3AZ6766B and EC743; male screw retention, 31.24 mm neck, rubber seal, nonvented. No pitch/profile/engagement dimensions provided."
+    }
+  ],
+  "known_interface": {
+    "candidate_major_diameter_mm": 31.24,
+    "cover_smooth_bore_diameter_mm": 34,
+    "radial_gap_mm": 1.38,
+    "retention_load_path": "absent"
+  },
+  "unknown_required_measurements": [
+    "Actual truck cap and cover neck identity",
+    "Thread major and minor diameters, lead/pitch, starts, flank/profile and handedness",
+    "Thread axial start/stop and usable engagement when seal is compressed",
+    "Neck height and wall thickness, sealing-land dimensions and gasket groove",
+    "Seal free/compressed thickness and material; production dimensional tolerances"
+  ],
+  "neighbor_change_proposal": {
+    "owner": "integration owner",
+    "component": "valve-cover",
+    "status": "NO_GEOMETRY_CHANGE_AUTHORIZED_BY_EVIDENCE",
+    "datum_to_preserve_cad_mm": [
+      240,
+      -12,
+      413
+    ],
+    "instructions": "Measure cap/neck pair or obtain applicable dimensioned drawing before reconstructing female screw seat. Replace the current smooth 34 mm bore with measured neck and female retention; reconcile cap male thread and gasket to the same evidence. Do not use candidate pitch4.5 mm or root28.84 mm as factory dimensions. Do not move cap to hide interference. Recheck screw engagement, compressed seal seat, cover wall and rocker sweep, removal trajectory and full installed collision audit."
+  },
+  "evidence_classes": {
+    "cap_identity": "verified applicable catalog identity; owner-installed identity unknown",
+    "neck_dimension": "replacement comparison",
+    "candidate_thread_pitch_profile": "inferred",
+    "cover_retention": "absent modeled interface"
+  },
+  "existing_capture_hashes": {
+    "reference/engine/pilot/oil-cap/ford.html": "0a980564533a211f8f6b9ab767309ccc59521fb026738244306592e79a779a7c",
+    "reference/engine/pilot/oil-cap/motorad-web-extract.json": "48a0eab6e5649df5a18c5f802fda2a15a477c103c083745b94c49fb018156b55"
+  }
+}

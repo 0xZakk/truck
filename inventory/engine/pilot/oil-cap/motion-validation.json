@@ -1,0 +1,2416 @@
+{
+  "status": "PASS_SAMPLED_CLEARANCE",
+  "retention_status": "FAIL: smooth cover bore cannot retain male screw cap",
+  "environment": {
+    "python": "3.13.12",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "build123d": "0.10.0"
+  },
+  "thresholds": {
+    "overlap_mm3": 0.1,
+    "clearance_numerical_floor_mm": 0.002,
+    "broadphase_distance_mm": 15,
+    "maximum_crank_step_deg": 5
+  },
+  "crank_degrees": [
+    0,
+    3,
+    5,
+    6,
+    10,
+    15,
+    20,
+    21,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    93,
+    95,
+    100,
+    105,
+    108,
+    110,
+    111,
+    115,
+    120,
+    123,
+    125,
+    126,
+    130,
+    135,
+    140,
+    141,
+    145,
+    150,
+    155,
+    160,
+    165,
+    170,
+    175,
+    180,
+    185,
+    190,
+    195,
+    200,
+    205,
+    210,
+    213,
+    215,
+    220,
+    225,
+    228,
+    230,
+    231,
+    235,
+    240,
+    243,
+    245,
+    246,
+    250,
+    255,
+    260,
+    261,
+    265,
+    270,
+    275,
+    280,
+    285,
+    290,
+    295,
+    300,
+    305,
+    310,
+    315,
+    320,
+    325,
+    330,
+    333,
+    335,
+    340,
+    345,
+    348,
+    350,
+    351,
+    355,
+    360,
+    363,
+    365,
+    366,
+    370,
+    375,
+    380,
+    381,
+    385,
+    390,
+    395,
+    400,
+    405,
+    410,
+    415,
+    420,
+    425,
+    430,
+    435,
+    440,
+    445,
+    450,
+    453,
+    455,
+    460,
+    465,
+    468,
+    470,
+    471,
+    475,
+    480,
+    483,
+    485,
+    486,
+    490,
+    495,
+    500,
+    501,
+    505,
+    510,
+    515,
+    520,
+    525,
+    530,
+    535,
+    540,
+    545,
+    550,
+    555,
+    560,
+    565,
+    570,
+    573,
+    575,
+    580,
+    585,
+    588,
+    590,
+    591,
+    595,
+    600,
+    603,
+    605,
+    606,
+    610,
+    615,
+    620,
+    621,
+    625,
+    630,
+    635,
+    640,
+    645,
+    650,
+    655,
+    660,
+    665,
+    670,
+    675,
+    680,
+    685,
+    690,
+    693,
+    695,
+    700,
+    705,
+    708,
+    710,
+    711,
+    715,
+    720
+  ],
+  "rocker_count": 12,
+  "exact_pairs": 362,
+  "aabb_separated_pairs": 1810,
+  "closest": {
+    "crank_deg": 0,
+    "rocker": "c1-intake-rocker",
+    "distance_mm": 1.3753999999999564,
+    "overlap_mm3": 0.0
+  },
+  "negative_control": {
+    "cap_offset_cad_mm": [
+      0,
+      0,
+      -10
+    ],
+    "rocker": "c1-intake-rocker",
+    "crank_deg": 0,
+    "overlap_mm3": 352.67084687750867,
+    "distance_mm": 0.0,
+    "detected": true
+  },
+  "failures": [],
+  "limits": [
+    "Sampled sweep only; not a continuous clearance proof or production tolerance stack.",
+    "Reuses installed educational motion law, not a measured factory cam curve.",
+    "Cap kept fixed; retention, seal compression and threaded disassembly remain unvalidated.",
+    "Tests cap body vs all rockers; other moving hardware and whole assembly require integration review."
+  ],
+  "hashes": {
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "cad/engine/pilot/oil-cap/oil-filler-cap.step": "a4c22afaaab4c5049fea96a7f956dd32fcd2324107ebc6f09e4caa85f643c5d6",
+    "cad/engine/pilot/oil-cap/oil_cap.py": "a10d4d07e102024e7b1193b463cc63c02e75e5798e66c30a3f609da65ba62c5f",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "inventory/engine/full-assembly.json": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
+    "scripts/pilot/oil-cap/check_motion.py": "53c906ec47ebd3326e99cd3a7f43af39907e78df9a8b18760e1de0a5f9fccabe"
+  },
+  "samples": [
+    {
+      "crank_deg": 0,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 0,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.188975523456943,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 3,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 3,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.199465467321485,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 5,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 5,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.202575091954667,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 6,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 6,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.20296384280437,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 10,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 10,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.196745104243718,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 15,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 15,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.171509739634153,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 20,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 20,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.126976474149906,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 21,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 21,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.11576993604277,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 25,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 25,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.063346319068145,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 30,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 30,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.980932379668918,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 35,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 35,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.88018744579461,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 40,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 40,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.76174155645117,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 45,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 45,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.62645058446592,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 50,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 50,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.475456751378772,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 55,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 55,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.3102614169471,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 60,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 60,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.13280918478391,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 65,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 65,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.945579854811484,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 70,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 70,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.7516803597815,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 75,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 75,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.55492168032893,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 80,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 80,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.359854953760077,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 85,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 85,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.17172623462644,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 90,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 90,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.99629224126683,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 93,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 93,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.871612610064247,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 95,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 95,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.763360822246234,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 100,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 100,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.50907933161795,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 105,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 105,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.285654721835208,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 108,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 108,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.170124498725936,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 110,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 110,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.101868967527064,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 111,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 111,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.070527728242755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 115,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 115,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.964641870820223,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 120,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 120,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.877214545842936,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 123,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 123,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.847569945283542,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 125,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 125,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.8359099286339,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 126,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 126,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.832077776107585,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 130,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 130,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.825665870938945,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 135,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 135,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.825123659786478,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 140,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 140,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 141,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 141,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 145,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 145,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 150,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 150,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 155,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 155,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 160,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 160,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 165,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 165,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 170,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 170,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 175,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 175,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 180,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 180,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 185,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 185,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 190,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 190,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 195,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 195,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 200,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 200,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 205,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 205,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 210,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 210,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 213,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 213,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 215,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 215,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 220,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 220,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 225,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 225,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 228,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 228,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 230,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 230,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 231,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 231,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 235,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 235,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 240,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 240,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 243,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 243,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 245,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 245,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 246,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 246,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 250,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 250,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 255,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 255,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 260,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 260,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 261,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 261,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 265,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 265,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 270,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 270,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 275,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 275,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 280,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 280,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 285,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 285,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 290,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 290,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 295,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 295,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 300,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 300,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 305,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 305,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 310,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 310,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 315,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 315,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 320,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 320,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 325,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 325,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 330,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 330,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 333,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 333,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 335,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 335,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 340,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3754079850399783,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 340,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 345,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3796033146488154,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 345,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 348,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3996328886077234,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 348,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 350,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.430605751065835,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 350,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 351,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.4531754639003343,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 351,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 355,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.5993688078166715,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 355,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 360,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.9142600498075826,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 360,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 363,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.1669241705138877,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 363,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 365,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.357309953499193,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 365,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 366,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.4581374611563267,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 366,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 370,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.8916874968481663,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 370,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 375,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 3.480042428267642,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 375,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 380,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 4.091597242311711,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 380,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 381,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 4.214542365666135,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 381,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 385,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 4.703398995038777,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 385,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 390,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 5.299351970994021,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 390,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 395,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 5.868700817041634,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 395,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 400,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 6.404601665504888,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 400,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 405,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 6.902967512134112,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 405,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 410,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 7.361598822922007,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 410,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 415,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 7.779553483279917,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 415,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 420,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.156700402788575,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 420,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 425,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.493407709354905,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 425,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 430,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.79032704581538,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 430,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 435,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.048245436646837,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 435,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 440,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.267984211599199,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 440,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 445,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.45033049665607,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 445,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 450,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.595991148134386,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 450,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 453,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.666031620032516,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 453,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 455,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.705562112653503,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 455,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 460,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.779508392413891,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 460,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 465,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.81815135382655,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 465,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 468,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.824468776936376,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 468,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 470,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.82166124096992,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 470,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 471,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.81815135382655,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 471,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 475,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.790053593199888,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 475,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 480,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.723188930711293,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 480,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 483,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.666031620032516,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 483,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 485,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.620775651707373,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 485,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 486,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.595991148134386,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 486,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 490,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.482376657203286,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 490,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 495,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.307420860471554,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 495,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 500,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.095221533270703,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 500,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 501,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 9.048245436646837,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 501,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 505,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.845004496762298,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 505,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 510,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.555950622307122,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 510,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 515,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 8.227259157060532,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 515,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 520,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 7.858241288688449,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 520,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 525,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 7.448457446081858,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 525,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 530,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 6.997917493071738,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 530,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 535,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 6.507370576536591,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 535,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 540,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 5.978721003740524,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 540,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 545,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 5.415617196054484,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 545,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 550,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 4.824268824461668,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 550,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 555,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 4.214542365666135,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 555,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 560,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 3.6013418005232034,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 560,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 565,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 3.0061385260705307,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 565,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 570,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.4581374611563267,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 570,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 573,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 2.1669241705138877,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 573,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 575,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.993682283811135,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 575,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 580,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.650739926121584,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 580,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 585,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.4531754639003343,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 585,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 588,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3996328886077234,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 588,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 590,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3836475923308387,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 590,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 591,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3796033146488154,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 591,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347366755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 595,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3754523624440567,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 595,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82512347369615,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 600,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 600,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.82518816592648,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 603,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 603,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.826327168655542,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 605,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 605,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.829336032364466,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 606,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 606,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.832077776107585,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 610,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 610,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.85570953296017,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 615,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 615,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 20.923696985981284,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 620,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 620,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.041102168430385,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 621,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 621,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.070527728242755,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 625,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 625,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.206938518730265,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 630,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 630,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.415489740492752,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 635,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 635,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.658544034734376,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 640,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 640,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 21.926840855870353,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 645,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 645,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.099697179619284,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 650,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 650,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.28345687658622,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 655,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 655,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.476412560697874,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 660,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 660,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.6730817113915,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 665,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 665,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 22.868623485557013,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 670,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 670,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.058931706408654,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 675,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 675,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.240625485046856,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 680,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 680,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.410984792907247,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 685,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 685,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.567862219228594,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 690,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 690,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.709589753191963,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 693,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 693,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.786809432472005,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 695,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 695,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.834890927947246,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 700,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 700,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 23.942803282332957,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 705,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 705,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.032612925205058,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 708,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 708,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.077586880741872,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 710,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 710,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.103801268509876,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 711,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 711,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.11576993604277,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 715,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 715,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.15600317954936,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 720,
+      "rocker": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_deg": 720,
+      "rocker": "c2-exhaust-rocker",
+      "distance_mm": 24.188975523456943,
+      "overlap_mm3": 0.0
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -32,8 +32,8 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.
   - Open: IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0–90 degree motion is not the production stop calibration.
-- [ ] **Throttle mounting stud** — `throttle-mount-stud`; modeled quantity **4**; provisional.
-  - Instances: `throttle-stud-1`, `throttle-stud-2`, `throttle-stud-3`, `throttle-stud-4`
+- [ ] **Throttle mounting stud** — `throttle-mount-stud`; modeled quantity **2**; provisional.
+  - Instances: `throttle-stud-1`, `throttle-stud-2`
   - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.
   - Open: IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0–90 degree motion is not the production stop calibration.

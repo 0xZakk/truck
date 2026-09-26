@@ -1,3 +1,4 @@
+import { engineLearningModules } from './engine-learning-modules.js';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -268,7 +269,7 @@ renderer.domElement.addEventListener('pointerup',e=>{
 try{
   const response=await fetch('/inventory/engine/full-assembly.json',{cache:'no-store'});if(!response.ok)throw new Error(`Manifest: ${response.status}`);const manifestText=await response.text();data=JSON.parse(manifestText);nav=buildNavigation(data);
   const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(manifestText))),byte=>byte.toString(16).padStart(2,'0')).join('');
-  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts','carrier-1994','common-carrier','oil-pan-joint','valvetrain-motion','water-pump-joint'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
+  const lessons=await Promise.all(engineLearningModules.map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
   const loader=new GLTFLoader();

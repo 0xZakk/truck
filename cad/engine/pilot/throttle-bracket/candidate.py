@@ -2,7 +2,7 @@
 import build123d as b
 PARAMS=dict(thickness=2.0,mount_x=378.5,mount_y=74.,mount_z=(464.,516.),hole_r=4.4,web_y=93.,tip_x=465.,cable_y=110.)
 SOURCES=['pilot-throttle-bracket-factory','pilot-throttle-bracket-photo']
-GAPS=['Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.','Preserves accepted stud axes. Mounting requires both positive-Y nuts shifted +2 mm X, exposing a baseline stud-length/engagement question.','Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated.']
+GAPS=['Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.','Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.','Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated.']
 def shape(p=None):
  p=PARAMS| (p or {});t=p['thickness'];x=p['mount_x'];y=p['mount_y'];wy=p['web_y'];tip=p['tip_x']
  s=None
@@ -27,3 +27,10 @@ def build(api):
  define,add,group,rounded_box,cx=api
  define('accelerator-cable-bracket',shape(),'Accelerator cable mounting bracket','Holds the cable outer housing so cable pull rotates the throttle linkage. Photo-informed provisional mounting study.','induction','#879297',SOURCES,GAPS)
  add('accelerator-cable-bracket','accelerator-cable-bracket','throttle-assembly',explode=(130,100,0))
+
+# Estimated mounting envelope only: not a verified Ford service part or thread model.
+STACK = dict(stud_length_mm=34., stud_radius_mm=4., stud_center_x_mm=373.,
+             inward_end_x_mm=356., nut_center_x_mm=383.5, nut_height_mm=6.,
+             assumed_pitch_mm=1.25, minimum_protrusion_mm=2.5)
+def mounting_stud_shape():
+ return b.Rot(0,90,0)*b.Cylinder(STACK['stud_radius_mm'], STACK['stud_length_mm'])

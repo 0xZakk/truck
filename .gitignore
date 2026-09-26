@@ -48,3 +48,7 @@ manuals/evtm/*.pdf
 .codex/
 tmp/
 !cad/engine/pilot/**/*.glb
+
+# Reproducible mechanical-seal test harness and render intermediates.
+cad/engine/candidates/mechanical-seal/harness/
+cad/engine/candidates/mechanical-seal/*.npz

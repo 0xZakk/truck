@@ -4,7 +4,7 @@ import numpy as np
 import build123d as b
 import trimesh
 ROOT=Path(__file__).resolve().parents[3]
-BASE=Path('/private/tmp/truck-desktop-integration-20260925')
+BASE=ROOT
 sys.path.insert(0,str(ROOT/'cad/engine/pilot/oil-cap'))
 sys.path.insert(0,str(BASE/'cad/engine'))
 from oil_cap import parts,Parameters,POSITION
@@ -12,7 +12,7 @@ from assembly_math import transforms
 from dataclasses import asdict
 OUT=ROOT/'cad/engine/pilot/oil-cap'
 REPORT=ROOT/'inventory/engine/pilot/oil-cap'
-shapes=parts(); report={'status':'candidate_only','parameters':asdict(Parameters()),'checks':{},'baseline':str(BASE),'hashes':{}}
+shapes=parts(); report={'status':'candidate_only','parameters':asdict(Parameters()),'checks':{},'baseline':'.','hashes':{}}
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def vol(s):return sum(v.volume for v in s.solids()) if s else 0
 meshes={}
@@ -47,7 +47,7 @@ for o in data['occurrences']:
     if np.all(pts.max(0)>=lo-15) and np.all(pts.min(0)<=hi+15):
         sf=BASE/defs[o['definition']]['step'].lstrip('/');s=l*b.import_step(sf)
         near.append({'id':o['id'],'distance_mm':cap.distance_to(s),'overlap_mm3':vol(cap&s)})
-        report['hashes'][str(sf)]=sha(sf)
+        report['hashes'][str(sf.relative_to(ROOT))]=sha(sf)
 report['checks']['neighbors_within_15mm_broadphase']=near
 report['checks']['service_motion']={'status':'illustrative_only','reason':'Pitch is assumed; smooth cover cannot validate unscrewing engagement. No operational rotation when installed.'}
 report['hashes']['builder']=sha(ROOT/'cad/engine/pilot/oil-cap/oil_cap.py')

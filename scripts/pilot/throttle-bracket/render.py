@@ -4,12 +4,12 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-R=Path(__file__).resolve().parents[3];D=R/'reference/engine/pilot/throttle-bracket';a=np.load(D/'preview.npz');names=json.loads(str(a['metadata']))
+R=Path(__file__).resolve().parents[3];D=R/'inventory/engine/pilot/throttle-bracket';a=np.load(D/'preview.npz');names=json.loads(str(a['metadata']))
 fig=plt.figure(figsize=(14,6))
 for col,(el,az) in enumerate([(25,-45),(20,130)],1):
  ax=fig.add_subplot(1,2,col,projection='3d')
  for i,name in enumerate(names):
-  if name not in ['bracket','throttle-housing','candidate-shifted-nut-464.0','candidate-shifted-nut-516.0']:continue
+  if name not in ['bracket','throttle-housing','candidate-shifted-nut-464.0','candidate-shifted-nut-516.0','stud-464.0','stud-516.0']:continue
   tri=a[f'v{i}'][a[f'f{i}']];ax.add_collection3d(Poly3DCollection(tri,facecolor='#cd9b38' if name=='bracket' else '#8b9ba3',edgecolor='#333333',alpha=1 if name=='bracket' else .18,linewidth=.12))
  ax.set(xlim=(360,475),ylim=(-45,130),zlim=(450,530),xlabel='X mm',ylabel='Y mm',zlabel='Z mm');ax.set_box_aspect((115,175,80));ax.view_init(el,az)
 fig.suptitle('Photo-informed bracket candidate (gold), accepted throttle context (gray)');fig.tight_layout();fig.savefig(D/'candidate-context.png',dpi=160)

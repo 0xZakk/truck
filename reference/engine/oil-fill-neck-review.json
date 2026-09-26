@@ -1,0 +1,189 @@
+{
+  "date": "2026-09-26",
+  "scope": "Research-only oil-fill neck interface for 1994 Ford F-150 4.9L EFI; no geometry changes",
+  "baseline_commit": "aa3b3ed488ade3c4462e1bb530db5ec8b575e152",
+  "issue": 15,
+  "status": "RESEARCH_COMPLETE_TO_AVAILABLE_EVIDENCE; PRODUCTION_TOPOLOGY_OPEN",
+  "sources": [
+    {
+      "id": "ford-ec743",
+      "publisher": "Ford Motor Company",
+      "url": "https://www.ford.com/product/engine-oil-filler-cap-p4000083484",
+      "evidence_class": "verified application / primary cap photo",
+      "local_capture": "reference/engine/pilot/oil-cap/ford.html",
+      "capture_sha256": "0a980564533a211f8f6b9ab767309ccc59521fb026738244306592e79a779a7c",
+      "visual_file": "reference/engine/pilot/oil-cap/ford-bottom.jpg",
+      "visual_sha256": "fa94c90518d842cb4f604a8de273a6f861f4493f02bea62ac7e4309d65f36aff",
+      "review": "Existing actual underside image inspected. Closed male stem with rounded screw ridges, surrounding seal and molding relief. Female cover construction cannot be inferred from this cap photograph."
+    },
+    {
+      "id": "enginequest-vc300n",
+      "publisher": "EngineQuest",
+      "url": "https://enginequest.com/product/ford-valve-cover-4-9-300-87-to-98-new/",
+      "evidence_class": "replacement comparison",
+      "part": "EQ-VC300N",
+      "application": {
+        "manufacturer": "Ford",
+        "engine": "L6",
+        "liters": 4.9,
+        "cid": 300,
+        "years": "1987-1998"
+      },
+      "facts": [
+        "Manufacturer describes a tall filler neck.",
+        "OEM interchange fields list C5AZ6582K and F1TZ6582C."
+      ],
+      "limits": [
+        "Not actual-truck cover identification.",
+        "No numerical neck height, female thread dimensions, attachment method or underside baffle details given."
+      ],
+      "retrieval": "Primary web product text read; body bytes not saved; capture hash unavailable."
+    },
+    {
+      "id": "enginequest-2021-catalog",
+      "publisher": "EngineQuest",
+      "url": "https://enginequest.com/wp-content/uploads/2020/08/EQ2021_Catalog.pdf",
+      "evidence_class": "replacement comparison",
+      "locators": [
+        "printed page 20 (PDF index 19): EQ-VC300N tall filler neck",
+        "printed page 39 (PDF index 38): VC300N interchanges C5AZ6582K/F1TZ6582C"
+      ],
+      "retrieval": "Primary PDF text read through web reader; no local byte capture or hash."
+    },
+    {
+      "id": "mishimoto-fitment",
+      "publisher": "Mishimoto",
+      "url": "https://www.mishimoto.com/mwdownloads/download/link/id/2131",
+      "evidence_class": "replacement family application",
+      "locator": "PDF page 4, Ford Mustang Oil Filler Cap 1987-2001 / MMOFC-MUS1-BK and MMOFC-MUS1-RD",
+      "facts": [
+        "F-Series line includes 4.9L among listed engines over 1985-2008."
+      ],
+      "limits": [
+        "Broad family/year span, not an individual 1994 F-150 4.9L measurement or factory engineering record."
+      ],
+      "retrieval": "Primary PDF text read through web reader; no local byte capture or hash."
+    },
+    {
+      "id": "mishimoto-manufacturer-listing",
+      "publisher": "Mishimoto as marketplace seller",
+      "url": "https://www.walmart.com/ip/125860720",
+      "part": "MMOFC-MUS1-BK",
+      "evidence_class": "replacement comparison lead",
+      "published_values": {
+        "thread_label": "M32 x 3.5",
+        "overall_height_in": 1.35,
+        "overall_od_in": 2.32
+      },
+      "limits": [
+        "Page identifies sold/shipped by Mishimoto, but includes mixed Mustang and Powerstroke wording.",
+        "Do not use as Ford production metrology or silently substitute for MotoRad/EC743 dimensions."
+      ],
+      "retrieval": "Manufacturer-sold indexed product description read; no local byte capture or hash."
+    },
+    {
+      "id": "motorad-mo100",
+      "publisher": "MotoRad",
+      "url": "https://motorad.com/part/MO100/",
+      "evidence_class": "replacement comparison",
+      "local_capture": "reference/engine/pilot/oil-cap/motorad-web-extract.json",
+      "capture_sha256": "48a0eab6e5649df5a18c5f802fda2a15a477c103c083745b94c49fb018156b55",
+      "facts": [
+        "Male screw cap, nonvented, rubber seal, 31.24 mm neck comparison dimension."
+      ],
+      "limits": [
+        "Female neck construction and thread lead/profile not supplied.",
+        "31.24 mm catalog dimension and M32 nominal thread label are not interchangeable measurements."
+      ]
+    }
+  ],
+  "owner_photo_review": [
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "reviewed": true,
+      "distribution": "Private owner image excluded from Git; hash/path only.",
+      "observations": [
+        "Cap is on forward exposed cover area.",
+        "No long remote filler tube visible.",
+        "Installed cap obscures neck interior and cover-to-neck joint; no underside/baffle view or metric scale."
+      ]
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "reviewed": true,
+      "distribution": "Private owner image excluded from Git; hash/path only.",
+      "observations": [
+        "Cap is on forward exposed cover area.",
+        "No long remote filler tube visible.",
+        "Installed cap obscures neck interior and cover-to-neck joint; no underside/baffle view or metric scale."
+      ]
+    }
+  ],
+  "decisions": {
+    "female_screw_retention": "Supported by applicable cap construction.",
+    "formed_vs_insert": "Unknown. No accepted seam/weld/press-fit/section evidence distinguishes integral formed neck from permanently attached collar.",
+    "neck_height_mm": null,
+    "neck_depth_mm": null,
+    "shoulder_dimensions_mm": null,
+    "baffle_presence_and_geometry": "Unknown; do not invent a plate or copy unrelated PCV/V8 baffle.",
+    "factory_thread_pitch_mm": null,
+    "illustrative_candidate_feasible": true,
+    "illustrative_candidate_limit": "A parameter-matched threaded neck continuously attached to cover can be mechanically coherent. It remains an educational geometry assumption, not production/factory acceptance.",
+    "recommended_geometry_representation": "Model a continuous cover-neck region while marking manufacturing joint unresolved; do not invent a separately identified factory insert."
+  },
+  "candidate_variants": [
+    {
+      "id": "existing-assumed-pair",
+      "basis": "Current cap 31.24 mm major / 4.5 mm pitch retained only as declared assumptions/replacement comparison; mate from same complete parameter set.",
+      "status": "proposal only; no CAD authored"
+    },
+    {
+      "id": "mishimoto-comparison-pair",
+      "basis": "Separate M32 x 3.5 replacement-comparison study; validate applicability and a complete profile/clearance convention before use.",
+      "status": "proposal only; not a production thread specification"
+    }
+  ],
+  "required_measurements": [
+    "Identified cover engineering code and cap markings",
+    "Cap-off opening top/grazing views and cover underside with in-plane scale",
+    "Neck-to-cover seam/flange/weld or continuous formed wall evidence",
+    "Seal-land height from roof, OD/ID/width and wall thickness",
+    "Thread major/minor, pitch/lead, starts, handedness, profile and axial endpoints",
+    "Cap installed insertion depth, engaged span and angular phase",
+    "Seal free/compressed size and seat/groove details",
+    "Any oil-fill baffle attachment, offset, drain openings and rocker clearance"
+  ],
+  "required_candidate_gates": [
+    "Connected material/load path from female flank to cover",
+    "Engagement and straight-pull restraint plus collision-free screw release; oversized-bore negative control",
+    "Finite seal seat/contact with declared compression, without pressure/leak guarantee",
+    "Connected fill/drain passage",
+    "Cap and new neck/baffle versus rocker full sampled travel and affected static neighbors",
+    "Browser integration and independent review, preserving factory evidence gap"
+  ],
+  "rejected_or_unresolved_leads": [
+    {
+      "url": "https://www.ebay.com/itm/124825584473",
+      "reason": "Image-search hit resolved to Renault 821 valve cover; rejected unrelated specimen."
+    },
+    {
+      "url": "https://www.ebay.com/itm/252386541615",
+      "reason": "4.9 replacement listing found; raw image URL fetch failed. Search caption not treated as a inspected photograph."
+    },
+    {
+      "url": "https://www.ford-trucks.com/forums/1476750-1994-ford-4-9-fixing-gaskets-oil-pan-pushrod-cover-valve-cover-etc-5.html",
+      "reason": "Potential matching-year teardown; reader Unicode decoding failure; no underside neck claim extracted."
+    },
+    {
+      "reason": "IAB and Chrome computer-browser surfaces unavailable; no UI photo inspection completed."
+    },
+    {
+      "reason": "V8/Powerstroke/industrial neck construction not transferred to owner 4.9L cover. E7TZ6582 catalog variants not accepted as exact target identity."
+    }
+  ],
+  "handoff": "docs/components/oil-fill-neck-research.md",
+  "geometry_modified": false,
+  "posts_or_commits": false
+}
