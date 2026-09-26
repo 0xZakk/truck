@@ -1,0 +1,1148 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": "pistons",
+      "title": "Pistons, wrist pins and ring packs",
+      "patterns": [
+        "piston|pin|compression-ring|oil-rail|oil-expander"
+      ],
+      "remaining": [
+        "Verify second compression-ring section and identity",
+        "Verify pin retention construction and offset",
+        "Verify piston skirt, dish and ring profiles"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "rods",
+      "title": "Connecting rods, caps, bearings and hardware",
+      "patterns": [
+        "rod.*|upper-bearing|lower-bearing"
+      ],
+      "remaining": [
+        "Verify rod length and production forging",
+        "Verify bearing tangs, crush, oil clearances and fastener threads"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "crank-main",
+      "title": "Crankshaft, main bearings and caps",
+      "patterns": [
+        "crankshaft|main-.*"
+      ],
+      "remaining": [
+        "Resolve thrust-bearing construction and thrust faces",
+        "Verify counterweights, fillets, oil drillings and journal interfaces"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "legacy_artifacts": [
+        {
+          "id": "crank-throw-demo",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        }
+      ]
+    },
+    {
+      "id": "block",
+      "title": "Cylinder block, plugs and dowels",
+      "patterns": [
+        "block|rear-cam-plug"
+      ],
+      "remaining": [
+        "Core/freeze plugs and all oil-gallery plugs: identify locations and quantities",
+        "Head/block and rear engine locating dowels: verify inventory",
+        "Block coolant jackets and oil galleries",
+        "Casting identification, dimensions and mounting bosses"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "head",
+      "title": "Cylinder head, gasket and bolts",
+      "patterns": [
+        "cylinder-head|head-gasket|head-bolt"
+      ],
+      "remaining": [
+        "Valve guides and seats: establish integral versus replaceable construction",
+        "Verify ports, water jacket, oil feeds and plug seats",
+        "Verify head bolt variants and gasket passages"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "side-cover",
+      "title": "Pushrod side cover, gasket and hardware",
+      "patterns": [
+        "pushrod-cover.*"
+      ],
+      "remaining": [
+        "Production contour, sealing compression and bolt engagement"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "valves",
+      "title": "Intake/exhaust valves, springs, retainers and keepers",
+      "patterns": [
+        "intake-valve|exhaust-valve|intake-spring|exhaust-spring|spring-retainer|valve-keeper|valve-seal"
+      ],
+      "remaining": [
+        "Verify seats, keeper grooves and spring interfaces",
+        "Source-supported envelopes and coordinated motion exist: verify installed variant and production profiles"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "legacy_artifacts": [
+        {
+          "id": "valve-spring",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "spring-seat",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        }
+      ]
+    },
+    {
+      "id": "rockers",
+      "title": "Rocker arms, fulcrums, guides and bolts",
+      "patterns": [
+        "rocker-.*"
+      ],
+      "remaining": [
+        "Verify production contact contours, ratio, mounting and oil path"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "pushrods",
+      "title": "Pushrods",
+      "patterns": [
+        "pushrod"
+      ],
+      "remaining": [
+        "Verify length, end seats, hollowness and full-travel clearances"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "lifters",
+      "title": "Hydraulic lifters and internal components",
+      "patterns": [
+        "lifter-.*"
+      ],
+      "remaining": [
+        "Verify internal construction and oil metering",
+        "Hydraulic lash behavior remains unsimulated"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "camshaft",
+      "title": "Camshaft and cam bearings",
+      "patterns": [
+        "camshaft|cam-bearing"
+      ],
+      "remaining": [
+        "Verify actual cam identity, lobe law, journals, oil feeds and phase"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "timing",
+      "title": "Timing gears, cam retention and front cover",
+      "patterns": [
+        "cam-.*|crank-timing-gear|timing-cover|front-seal"
+      ],
+      "remaining": [
+        "Timing-cover gasket and attachment hardware: reconcile separate parts",
+        "Timing pointer/marks and attachment: verify configuration",
+        "Gear teeth, helix, keys, thrust clearance and production retention"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "rear-seal",
+      "title": "Rear crankshaft seal and sealing interface",
+      "patterns": [
+        "rear-seal"
+      ],
+      "remaining": [
+        "Verify seal construction, lip orientation and mating crank/block surfaces"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "oil-pan",
+      "title": "Oil pan, gasket, drain plug and fasteners",
+      "patterns": [
+        "oil-pan.*"
+      ],
+      "remaining": [
+        "Verify stamped contours, capacity, hole pattern and end orientation",
+        "Verify seal compression and timing-cover junction"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "legacy_artifacts": [
+        {
+          "id": "pan-gasket",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "pan-side-gasket-1",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "pan-side-gasket-2",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        }
+      ]
+    },
+    {
+      "id": "valve-cover",
+      "title": "Valve cover, gasket and attachment hardware",
+      "patterns": [
+        "valve-cover.*"
+      ],
+      "remaining": [
+        "Cover bolts, load spreaders and grommets if applicable: identify and separate",
+        "Oil baffle/breather interfaces and filler-neck thread",
+        "Verify production cover and gasket geometry"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "oil-cap",
+      "title": "Oil filler cap and seal",
+      "patterns": [
+        "oil-filler-cap"
+      ],
+      "remaining": [
+        "Candidate male thread and separate seal exist",
+        "Matching female neck retention is missing",
+        "Dynamic rocker clearance and production cap dimensions unverified"
+      ],
+      "related_system_issues": [],
+      "existing_issue": 15,
+      "candidate_parts": [
+        {
+          "id": "oil-filler-cap",
+          "name": "Replacement cap body",
+          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
+          "status": "Candidate only; fit/identity not accepted"
+        },
+        {
+          "id": "oil-filler-cap-seal",
+          "name": "Separate filler-cap seal",
+          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
+          "status": "Candidate only; fit/identity not accepted"
+        }
+      ]
+    },
+    {
+      "id": "intake",
+      "title": "Upper/lower intake manifolds, gaskets and locating hardware",
+      "patterns": [
+        "efi-.*|intake-head-locating-dowel"
+      ],
+      "remaining": [
+        "Verify all upper/lower manifold fasteners and support brackets",
+        "Verify casting contours, runner geometry, bosses and gasket seats"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "injectors",
+      "title": "Six fuel injectors and their internal components",
+      "patterns": [
+        "injector-.*"
+      ],
+      "remaining": [
+        "Verify installed injector type, nozzle/internal geometry and flow calibration"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "fuel-test",
+      "title": "Fuel pressure test valve and cap",
+      "patterns": [
+        "fuel-test-.*"
+      ],
+      "remaining": [
+        "Verify core identity, sealing and actuation"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "fuel-couplings",
+      "title": "Fuel supply/return spring-lock couplings",
+      "patterns": [
+        "fuel-(supply|return)-coupling-.*"
+      ],
+      "remaining": [
+        "Verify seal compression, spring construction and coupling retention",
+        "Vehicle-side hoses are owned by Fuel and emissions"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "fuel-rail",
+      "title": "Fuel rails, return tube and retaining hardware",
+      "patterns": [
+        "fuel-.*"
+      ],
+      "remaining": [
+        "Verify mounting stations, joints and flow passages"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "regulator-vacuum",
+      "title": "Fuel regulator vacuum hose and fitting",
+      "patterns": [
+        "regulator-vacuum-.*"
+      ],
+      "remaining": [
+        "Verify hose routing, end connections and manifold vacuum passage"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "fuel-regulator",
+      "title": "Fuel pressure regulator and internals",
+      "patterns": [
+        "regulator-.*"
+      ],
+      "remaining": [
+        "Verify installed identity, diaphragm construction, spring and pressure behavior"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "throttle",
+      "title": "Throttle body, shaft, plates and mounting hardware",
+      "patterns": [
+        "throttle-.*"
+      ],
+      "remaining": [
+        "Throttle lever/cam and return spring",
+        "Plate retaining screws and shaft bushings/seals as applicable",
+        "Speed-control cable attachment and linkage shield if fitted",
+        "Verify stops, return action and installed geometry"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "throttle-bracket",
+      "title": "Throttle cable bracket",
+      "patterns": [],
+      "remaining": [
+        "Candidate exists",
+        "Mounting nuts interfere and proposed shift leaves engagement unresolved",
+        "Cable retainers/attachment fit require review"
+      ],
+      "related_system_issues": [],
+      "existing_issue": 16,
+      "candidate_parts": [
+        {
+          "id": "accelerator-cable-bracket",
+          "name": "Throttle cable bracket",
+          "artifact": "cad/engine/pilot/throttle-bracket/candidate.py",
+          "status": "Candidate only; fit/identity not accepted"
+        }
+      ]
+    },
+    {
+      "id": "iac",
+      "title": "Idle-air control valve and internals",
+      "patterns": [
+        "iac-.*"
+      ],
+      "remaining": [
+        "Mounting bolts and terminals: verify complete inventory",
+        "Verify restoring mechanism, installed valve identity and internal passages"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "tps",
+      "title": "Throttle-position sensor and internals",
+      "patterns": [
+        "tps-.*"
+      ],
+      "remaining": [
+        "Connector contacts/seals and calibration",
+        "Verify coupling, track and wiper construction"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "exhaust",
+      "title": "Front/rear exhaust manifolds, mounting and outlet joints",
+      "patterns": [
+        "exhaust-.*|front-manifold-.*|rear-manifold-.*"
+      ],
+      "remaining": [
+        "Reconcile every manifold attachment/clamp station and shared intake/exhaust hardware",
+        "Outlet flanges/seals/springs/studs/nuts: candidate artifacts exist, reconcile installed publication",
+        "Verify rear collector contour, auxiliary bosses and EGR takeoff location"
+      ],
+      "related_system_issues": [
+        9
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "water-pump",
+      "title": "Water pump, impeller, shaft, seal, bearing and pulley",
+      "patterns": [
+        "water-pump-.*"
+      ],
+      "remaining": [
+        "Six-part mechanical-seal candidate: identify seat, rotating seal, elastomer and retention pieces from candidate ledger",
+        "Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence",
+        "Cast inlet exists: verify production contour and coolant path",
+        "Verify impeller, hub, pulley, fasteners and gland interfaces"
+      ],
+      "related_system_issues": [
+        8
+      ],
+      "existing_issue": null,
+      "candidate_parts": [
+        {
+          "id": "water-pump-seal-carrier",
+          "name": "Mechanical-seal carrier",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        },
+        {
+          "id": "water-pump-seal-stationary-face",
+          "name": "Stationary sealing face",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        },
+        {
+          "id": "water-pump-seal-rotating-face",
+          "name": "Rotating sealing face",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        },
+        {
+          "id": "water-pump-seal-shaft-collar",
+          "name": "Rotating seal collar",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        },
+        {
+          "id": "water-pump-seal-bellows",
+          "name": "Stationary seal bellows",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        },
+        {
+          "id": "water-pump-seal-spring",
+          "name": "Seal face-loading spring",
+          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
+          "status": "Candidate only; six-part generic construction, not installed or accepted"
+        }
+      ]
+    },
+    {
+      "id": "thermostat",
+      "title": "Thermostat, coolant outlet and fasteners",
+      "patterns": [
+        "thermostat-.*|coolant-outlet-.*"
+      ],
+      "remaining": [
+        "Verify production contours, seats, bleed arrangement and thermostat calibration"
+      ],
+      "related_system_issues": [
+        8
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "heater-ect",
+      "title": "Heater fittings and two-wire ECT sensor",
+      "patterns": [
+        "heater-.*|engine-coolant-temperature-.*"
+      ],
+      "remaining": [
+        "Verify wet passages, fittings and sensor construction",
+        "Harness mating connector belongs to engine harness",
+        "Vehicle heater hoses/clamps are cross-system interfaces"
+      ],
+      "related_system_issues": [
+        8,
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "coil-bracket",
+      "title": "Ignition coil mounting bracket and fasteners",
+      "patterns": [
+        "ignition-coil-bracket.*"
+      ],
+      "remaining": [
+        "Verify bracket/head stations, attachment hardware and production shape"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "ignition-leads",
+      "title": "Spark-plug leads and coil-to-distributor lead",
+      "patterns": [
+        "ignition-lead-.*|ignition-coil-lead-.*"
+      ],
+      "remaining": [
+        "Wire separators, clips and brackets",
+        "Verify routing, boots, contacts and conductor construction"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "coil",
+      "title": "Ignition coil and internals",
+      "patterns": [
+        "ignition-coil-.*"
+      ],
+      "remaining": [
+        "Primary connector, terminals and suppression capacitor: reconcile vehicle configuration",
+        "Verify winding construction and production envelope"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "ignition-module",
+      "title": "Remote ignition module, heat sink and connector",
+      "patterns": [
+        "ignition-(heat-sink.*|module-.*)"
+      ],
+      "remaining": [
+        "Verify installed module variant and circuit detail appropriate to scope",
+        "Harness contacts, fender mounting and thermal interface"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark plugs and internal construction",
+      "patterns": [
+        "spark-plug-.*"
+      ],
+      "remaining": [
+        "Verify installed plug specification, gap and source-supported internal construction"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "pcv",
+      "title": "PCV valve, grommet and crankcase ventilation",
+      "patterns": [
+        "pcv-.*"
+      ],
+      "remaining": [
+        "PCV hose and intake connector",
+        "Fresh-air breather hose, fittings and clips",
+        "Cover baffle and unused outlet closure if applicable",
+        "Verify valve identity, flow behavior and plumbing"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "oil-pressure",
+      "title": "Oil-pressure switch and electrical connection",
+      "patterns": [
+        "oil-pressure-.*"
+      ],
+      "remaining": [
+        "Verify switch versus sender identity, boss, oil passage and calibration",
+        "Connector and engine harness interface"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "evp",
+      "title": "EGR valve-position sensor and internals",
+      "patterns": [
+        "evp-.*"
+      ],
+      "remaining": [
+        "Verify follower/contact construction, calibration and connector"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "evr",
+      "title": "EGR vacuum regulator and internals",
+      "patterns": [
+        "evr-.*"
+      ],
+      "remaining": [
+        "Coil, valve, seat, filter/vent and internal connections: applicability/decomposition pending",
+        "Mounting bracket, hardware, vacuum and electrical connectors"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "egr-tube",
+      "title": "EGR exhaust tube and connections",
+      "patterns": [
+        "egr-(exhaust-tube|tube-.*)"
+      ],
+      "remaining": [
+        "Verify takeoff location, seats/threads, hot routing and heat sleeve"
+      ],
+      "related_system_issues": [
+        7,
+        9
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "egr-vacuum",
+      "title": "EGR vacuum hoses and supports",
+      "patterns": [
+        "egr-control-vacuum-hose"
+      ],
+      "remaining": [
+        "Complete manifold supply/regulator/actuator vacuum route",
+        "Hose ends, clips and routing supports"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "egr-valve",
+      "title": "EGR valve and vacuum actuator",
+      "patterns": [
+        "egr-.*"
+      ],
+      "remaining": [
+        "Verify valve/diaphragm construction, travel, seats and attachment interfaces"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "flywheel",
+      "title": "Flywheel, ring gear and crankshaft bolts",
+      "patterns": [
+        "flywheel-.*"
+      ],
+      "remaining": [
+        "Verify production profile, indexing, ring fit and threads",
+        "Clutch disc/pressure plate belong to Transmission and clutch"
+      ],
+      "related_system_issues": [
+        2
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "pilot-bearing",
+      "title": "Clutch pilot bearing and internals",
+      "patterns": [
+        "pilot-bearing-.*"
+      ],
+      "remaining": [
+        "Resolve conflicting catalog dimensions, crank bore fit and internal geometry"
+      ],
+      "related_system_issues": [
+        2
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "damper",
+      "title": "Crankshaft damper, pulley, key and retaining hardware",
+      "patterns": [
+        "damper-.*"
+      ],
+      "remaining": [
+        "Verify integrated pulley construction and belt plane",
+        "Separate bolt-on pulley not established"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "tensioner",
+      "title": "Belt tensioner, pulley and internals",
+      "patterns": [
+        "tensioner-.*"
+      ],
+      "remaining": [
+        "Tensioner spring/damper, pivot and bearing internals require decomposition",
+        "Verify mount, travel and retention"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "candidate_parts": [
+        {
+          "id": "tensioner-engine-bracket",
+          "name": "Tensioner engine bracket",
+          "artifact": "cad/engine/tensioner_engine_support.py",
+          "status": "Candidate mounting study; production identity and belt datums unresolved"
+        },
+        {
+          "id": "tensioner-bracket-block-bolt",
+          "name": "Tensioner bracket block bolt",
+          "artifact": "cad/engine/tensioner_engine_support.py",
+          "status": "Candidate mounting study; production identity and belt datums unresolved"
+        },
+        {
+          "id": "tensioner-bracket-head-bolt",
+          "name": "Tensioner bracket head bolt",
+          "artifact": "cad/engine/tensioner_engine_support.py",
+          "status": "Candidate mounting study; production identity and belt datums unresolved"
+        }
+      ]
+    },
+    {
+      "id": "carriers",
+      "title": "Accessory support castings and mounting hardware",
+      "patterns": [
+        "alternator-thermactor-common-carrier|ps-ac-support-bracket|carrier-.*|ps-bracket-.*|ac-bracket-.*|alt-.*|thermactor-engine-.*"
+      ],
+      "remaining": [
+        "One-piece alternator/Thermactor carrier is now installed",
+        "Broader cast-surface candidate is not accepted",
+        "Verify casting hole mapping, sections and engine/accessory stations",
+        "Reconcile all bracket bolts, spacers, washers and nuts"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "legacy_artifacts": [
+        {
+          "id": "alternator-support-bracket",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "thermactor-support-bracket",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "ps-ac-engine-bracket-bolt-1",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        },
+        {
+          "id": "ps-ac-engine-bracket-bolt-2",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        }
+      ]
+    },
+    {
+      "id": "alternator",
+      "title": "Alternator, pulley and internal components",
+      "patterns": [
+        "alternator-.*"
+      ],
+      "remaining": [
+        "Verify installed alternator variant, bearings, terminal hardware, rectifier/regulator electronics and wiring"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "steering-pump",
+      "title": "Power-steering pump, reservoir, pulley and internals",
+      "patterns": [
+        "ps-pump-.*"
+      ],
+      "remaining": [
+        "Relief valve internals, baffle, shaft splines and retention",
+        "Resolve pulley groove evidence conflict",
+        "Steering hoses are owned by Steering"
+      ],
+      "related_system_issues": [
+        5
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "thermactor",
+      "title": "Thermactor air pump, pulley and internal components",
+      "patterns": [
+        "thermactor-.*"
+      ],
+      "remaining": [
+        "Pumping cartridge needs applicable rotor/vanes/pivots/cam and seal decomposition",
+        "Verify installed pump and air-control routing"
+      ],
+      "related_system_issues": [
+        7
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "fan-clutch",
+      "title": "Fan clutch and cooling fan",
+      "patterns": [
+        "fan-clutch-.*|cooling-fan-.*"
+      ],
+      "remaining": [
+        "Verify fan/clutch variant, blade pitch, internal fluid coupling, bearings and seals"
+      ],
+      "related_system_issues": [
+        8
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "distributor",
+      "title": "Distributor, drive, cap and rotor",
+      "patterns": [
+        "distributor-.*"
+      ],
+      "remaining": [
+        "Center brush and spring construction",
+        "Verify drive mesh, gear construction, indexing and pickup electronics"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "oil-drive",
+      "title": "Oil-pump intermediate shaft and retainer",
+      "patterns": [
+        "oil-pump-intermediate-shaft|oil-pump-drive-retainer"
+      ],
+      "remaining": [
+        "Verify shaft/retainer construction, tilted installed axis and drive interfaces"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "oil-pump",
+      "title": "Oil pump, gerotor, relief valve and mounting",
+      "patterns": [
+        "oil-pump-.*"
+      ],
+      "remaining": [
+        "Verify actual rotor profile/count, clearances and pump-to-block outlet gallery",
+        "Pressure relief operation and production mounting"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "pickup",
+      "title": "Oil pickup, strainer and support",
+      "patterns": [
+        "oil-pickup-.*"
+      ],
+      "remaining": [
+        "Pickup support bracket and fasteners",
+        "Verify tube route, inlet clearance and seals"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "filter",
+      "title": "Oil filter, mounting insert and gallery interface",
+      "patterns": [
+        "oil-filter-.*"
+      ],
+      "remaining": [
+        "E4TZ anti-drainback service insert: identify construction and applicability",
+        "Verify separate inlet/return galleries and internal filter construction"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "ac-compressor",
+      "title": "FS10 A/C compressor, clutch and internal components",
+      "patterns": [
+        "ac-compressor-.*"
+      ],
+      "remaining": [
+        "Clutch and radial bearing internals remain cartridges",
+        "Verify seals, clutch shims/air gap and mounting hardware",
+        "Pressure-actuated reed/clutch behavior and production identity remain unresolved"
+      ],
+      "related_system_issues": [
+        10
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "starter",
+      "title": "Starter motor, reduction, drive and solenoid",
+      "patterns": [
+        "starter-.*"
+      ],
+      "remaining": [
+        "Overrunning clutch internals and output carrier decomposition",
+        "Verify commutator/armature connections",
+        "Bellhousing/index plate, starter mounting bolts and locating interfaces",
+        "Vehicle battery cables belong to Electrical"
+      ],
+      "related_system_issues": [
+        2,
+        11
+      ],
+      "existing_issue": null,
+      "legacy_artifacts": [
+        {
+          "id": "starter-solenoid-coil-envelope",
+          "status": "Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part"
+        }
+      ]
+    },
+    {
+      "id": "dipstick",
+      "title": "Engine oil dipstick",
+      "patterns": [],
+      "remaining": [
+        "Candidate blade/handle exists",
+        "Trial installed routing intersects block",
+        "Oil-level markings/calibration and matched tube remain unresolved"
+      ],
+      "related_system_issues": [],
+      "existing_issue": 17,
+      "candidate_parts": [
+        {
+          "id": "engine-oil-dipstick",
+          "name": "Dipstick blade and handle/stop",
+          "artifact": "cad/engine/pilot/dipstick/dipstick.py",
+          "status": "Candidate only; fit/identity not accepted"
+        }
+      ]
+    },
+    {
+      "id": "dipstick-tube",
+      "title": "Dipstick guide tube, seat and retaining hardware",
+      "patterns": [],
+      "remaining": [
+        "Guide tube path, stop/seat, block entry seal and retaining bracket/hardware",
+        "Determine matched indicator/tube identity and quantities"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    },
+    {
+      "id": "engine-mounts",
+      "title": "Engine mounting brackets, isolators and hardware",
+      "patterns": [],
+      "remaining": [
+        "Left/right engine-side brackets and bolts",
+        "Isolators, through-bolts, washers/nuts and locating features",
+        "Frame-side support interfaces: coordinate with Body/frame"
+      ],
+      "related_system_issues": [
+        12
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "air-cleaner",
+      "title": "Air cleaner, filter and intake ducts",
+      "patterns": [],
+      "remaining": [
+        "Air-cleaner housing, lid, filter element and retaining clips/fasteners",
+        "Twin intake ducts/bellows, clamps and throttle connections visible in owner photos",
+        "Inlet snorkel and body mounts: verify routing and variant"
+      ],
+      "related_system_issues": [
+        7,
+        12
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "vacuum-network",
+      "title": "Vacuum tree, hoses, caps and retainers",
+      "patterns": [],
+      "remaining": [
+        "Manifold vacuum tree and port plugs/caps",
+        "Brake-booster vacuum hose/check-valve interface",
+        "MAP/BARO sensor configuration and hose if applicable: calibration unresolved",
+        "HVAC/evaporative vacuum boundaries, clips and fittings"
+      ],
+      "related_system_issues": [
+        4,
+        7,
+        10,
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "engine-harness",
+      "title": "Engine wiring harness, connectors and grounds",
+      "patterns": [],
+      "remaining": [
+        "Injector connectors, terminals, seals and retaining clips",
+        "ECT/TPS/IAC/EVP/EVR/distributor/coil/switch mating connectors",
+        "Engine harness branches, loom, splices, clips, grounds and bonding straps",
+        "Intake-air sensor and separate gauge-temperature sender: verify exact location/applicability",
+        "PCM and body-side wiring remain Electrical scope"
+      ],
+      "related_system_issues": [
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "air-injection",
+      "title": "Thermactor hoses, valves and manifold plumbing",
+      "patterns": [],
+      "remaining": [
+        "Pump outlet hose and clamps",
+        "Air bypass/diverter/control/check valves and brackets: confirm installed emissions variant",
+        "Air distribution tubes/manifold fittings and vacuum/electrical controls if fitted"
+      ],
+      "related_system_issues": [
+        7,
+        9
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "coolant-hoses",
+      "title": "Engine coolant hoses, clamps and sender interfaces",
+      "patterns": [],
+      "remaining": [
+        "Upper radiator hose and outlet connection",
+        "Lower radiator hose and water-pump inlet connection",
+        "Heater supply/return hoses, clamps and routing supports",
+        "Separate gauge sender wet port and mounting: verify identity",
+        "Any bypass connection only if applicable sources establish it"
+      ],
+      "related_system_issues": [
+        8,
+        10,
+        11
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "engine-boundary-hardware",
+      "title": "Engine rear plate, lifting and boundary hardware",
+      "patterns": [],
+      "remaining": [
+        "Engine-to-bellhousing dowels and fastener allocation",
+        "Rear separator/index plate and starter support interfaces",
+        "Remaining lifting eyes/brackets and mounts if fitted",
+        "Reconcile any omitted shields, plugs, retainers, spacers and sealing pieces against service drawings"
+      ],
+      "related_system_issues": [
+        2,
+        12
+      ],
+      "existing_issue": null
+    },
+    {
+      "id": "accessory-belt",
+      "title": "Accessory drive belt and installed routing",
+      "patterns": [],
+      "remaining": [
+        "Serpentine belt exists as rejected/diagnostic candidate, not an accepted installed part",
+        "Reconcile catalog effective length with accessory datums",
+        "Verify routing, tensioner travel, wrap, grooves and clearances"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null,
+      "candidate_parts": [
+        {
+          "id": "accessory-belt",
+          "name": "Serpentine belt routing study",
+          "artifact": "cad/engine/accessory_belt.py",
+          "status": "Candidate only; fit/identity not accepted"
+        }
+      ]
+    },
+    {
+      "id": "bom-reconciliation",
+      "title": "Engine physical BOM and variant reconciliation",
+      "patterns": [],
+      "remaining": [
+        "Reconcile all service diagrams, owner photos and available catalog item numbers",
+        "Resolve applicable casting, accessory and emissions variants",
+        "Enumerate every remaining nonserviceable internal part rather than leave unexplained cartridges",
+        "Verify actual quantities and distinguish modeled repetitions from verified truck quantities",
+        "Review all completion-plan dependencies and linked cross-system ownership"
+      ],
+      "related_system_issues": [],
+      "existing_issue": null
+    }
+  ]
+}

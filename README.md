@@ -13,6 +13,7 @@ Run `python3 -m http.server 8081` from this directory, then open http://127.0.0.
 **New developer or Codex agent? Start with [the onboarding guide](docs/onboarding/START-HERE.md).** It covers setup, the shared quality rubric, task contracts, tracking and handoff.
 
 - [Truck Kanban](https://github.com/users/0xZakk/projects/2): Backlog → Ready → In progress → In review → Done.
+- [Complete current engine parts backlog](docs/engine-parts/README.md), including known missing scope and acceptance status.
 - [Assignable system workstreams](docs/github-workstreams.json): each parent issue owns a major truck section; component issues belong beneath it.
 - [Contribution and merging workflow](CONTRIBUTING.md).
 - [Efficient modeling workflow](docs/TOKEN-EFFICIENT-BUILD-WORKFLOW.md).

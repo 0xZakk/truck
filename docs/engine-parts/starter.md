@@ -1,0 +1,1685 @@
+# Starter motor, reduction, drive and solenoid
+
+Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket: [#77](https://github.com/0xZakk/truck/issues/77).
+
+**In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
+
+Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+
+## Existing modeled parts
+
+- [x] Provisional geometry is present in the integrated engine manifest.
+
+Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
+
+- [ ] **Starter through bolt 1** — `starter-through-bolt-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-through-bolt-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter through bolt 2** — `starter-through-bolt-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-through-bolt-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter frame** — `starter-frame`; modeled quantity **1**; provisional.
+  - Instances: `starter-frame`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush plate screw 1** — `starter-brush-plate-screw-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-plate-screw-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush plate screw 2** — `starter-brush-plate-screw-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-plate-screw-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush end plate** — `starter-brush-end-plate`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-end-plate`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter drive end housing** — `starter-drive-end-housing`; modeled quantity **1**; provisional.
+  - Instances: `starter-drive-end-housing`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter rear bushing** — `starter-rear-bushing`; modeled quantity **1**; provisional.
+  - Instances: `starter-rear-bushing`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter nose bushing** — `starter-nose-bushing`; modeled quantity **1**; provisional.
+  - Instances: `starter-nose-bushing`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 1** — `starter-magnet-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 1** — `starter-pole-shunt-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 1** — `starter-magnet-retainer-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 2** — `starter-magnet-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 2** — `starter-pole-shunt-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 2** — `starter-magnet-retainer-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 3** — `starter-magnet-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 3** — `starter-pole-shunt-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 3** — `starter-magnet-retainer-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 4** — `starter-magnet-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 4** — `starter-pole-shunt-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 4** — `starter-magnet-retainer-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 5** — `starter-magnet-5`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-5`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 5** — `starter-pole-shunt-5`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-5`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 5** — `starter-magnet-retainer-5`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-5`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet 6** — `starter-magnet-6`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-6`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter pole shunt 6** — `starter-pole-shunt-6`; modeled quantity **1**; provisional.
+  - Instances: `starter-pole-shunt-6`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter magnet retainer 6** — `starter-magnet-retainer-6`; modeled quantity **1**; provisional.
+  - Instances: `starter-magnet-retainer-6`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 1** — `starter-armature-winding-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 2** — `starter-armature-winding-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 3** — `starter-armature-winding-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 4** — `starter-armature-winding-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 5** — `starter-armature-winding-5`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-5`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 6** — `starter-armature-winding-6`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-6`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 7** — `starter-armature-winding-7`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-7`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 8** — `starter-armature-winding-8`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-8`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 9** — `starter-armature-winding-9`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-9`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 10** — `starter-armature-winding-10`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-10`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 11** — `starter-armature-winding-11`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-11`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature winding 12** — `starter-armature-winding-12`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-winding-12`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature core** — `starter-armature-core`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-core`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature shaft** — `starter-armature-shaft`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-shaft`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator insulator** — `starter-commutator-insulator`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-insulator`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 1** — `starter-commutator-segment-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 2** — `starter-commutator-segment-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 3** — `starter-commutator-segment-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 4** — `starter-commutator-segment-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 5** — `starter-commutator-segment-5`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-5`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 6** — `starter-commutator-segment-6`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-6`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 7** — `starter-commutator-segment-7`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-7`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 8** — `starter-commutator-segment-8`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-8`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 9** — `starter-commutator-segment-9`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-9`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 10** — `starter-commutator-segment-10`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-10`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 11** — `starter-commutator-segment-11`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-11`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 12** — `starter-commutator-segment-12`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-12`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 13** — `starter-commutator-segment-13`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-13`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 14** — `starter-commutator-segment-14`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-14`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 15** — `starter-commutator-segment-15`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-15`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 16** — `starter-commutator-segment-16`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-16`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 17** — `starter-commutator-segment-17`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-17`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 18** — `starter-commutator-segment-18`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-18`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 19** — `starter-commutator-segment-19`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-19`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 20** — `starter-commutator-segment-20`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-20`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 21** — `starter-commutator-segment-21`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-21`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 22** — `starter-commutator-segment-22`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-22`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 23** — `starter-commutator-segment-23`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-23`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter commutator segment 24** — `starter-commutator-segment-24`; modeled quantity **1**; provisional.
+  - Instances: `starter-commutator-segment-24`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush carrier** — `starter-brush-carrier`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-carrier`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush 1** — `starter-brush-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush spring 1** — `starter-brush-spring-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-spring-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush holder 1** — `starter-brush-holder-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-holder-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush 2** — `starter-brush-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush spring 2** — `starter-brush-spring-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-spring-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush holder 2** — `starter-brush-holder-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-holder-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush 3** — `starter-brush-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush spring 3** — `starter-brush-spring-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-spring-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush holder 3** — `starter-brush-holder-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-holder-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush 4** — `starter-brush-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush spring 4** — `starter-brush-spring-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-spring-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush holder 4** — `starter-brush-holder-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-holder-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature thrust ball** — `starter-armature-thrust-ball`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-thrust-ball`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter gear retainer** — `starter-gear-retainer`; modeled quantity **1**; provisional.
+  - Instances: `starter-gear-retainer`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter stationary gear** — `starter-stationary-gear`; modeled quantity **1**; provisional.
+  - Instances: `starter-stationary-gear`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter planet gear 1** — `starter-planet-gear-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-planet-gear-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter planet gear 2** — `starter-planet-gear-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-planet-gear-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter planet gear 3** — `starter-planet-gear-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-planet-gear-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter output shaft assembly** — `starter-output-shaft-assembly`; modeled quantity **1**; provisional.
+  - Instances: `starter-output-shaft-assembly`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter armature thrust washer** — `starter-armature-thrust-washer`; modeled quantity **1**; provisional.
+  - Instances: `starter-armature-thrust-washer`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter shaft e ring** — `starter-shaft-e-ring`; modeled quantity **1**; provisional.
+  - Instances: `starter-shaft-e-ring`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter drive clutch** — `starter-drive-clutch`; modeled quantity **1**; provisional.
+  - Instances: `starter-drive-clutch`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter drive pinion** — `starter-drive-pinion`; modeled quantity **1**; provisional.
+  - Instances: `starter-drive-pinion`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter stop ring** — `starter-stop-ring`; modeled quantity **1**; provisional.
+  - Instances: `starter-stop-ring`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter stop ring retainer** — `starter-stop-ring-retainer`; modeled quantity **1**; provisional.
+  - Instances: `starter-stop-ring-retainer`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter drive lever** — `starter-drive-lever`; modeled quantity **1**; provisional.
+  - Instances: `starter-drive-lever`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid clevis pin** — `starter-solenoid-clevis-pin`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-clevis-pin`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-starter-solenoid-test, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter lever pivot** — `starter-lever-pivot`; modeled quantity **1**; provisional.
+  - Instances: `starter-lever-pivot`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter housing seal** — `starter-housing-seal`; modeled quantity **1**; provisional.
+  - Instances: `starter-housing-seal`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid shell** — `starter-solenoid-shell`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-shell`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid plunger** — `starter-solenoid-plunger`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-plunger`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-starter-solenoid-test, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid return spring** — `starter-solenoid-return-spring`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-return-spring`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid B battery terminal** — `starter-solenoid-terminal-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-terminal-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid terminal nut 1** — `starter-solenoid-terminal-nut-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-terminal-nut-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid M motor terminal** — `starter-solenoid-terminal-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-terminal-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid terminal nut 2** — `starter-solenoid-terminal-nut-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-terminal-nut-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid screw 1** — `starter-solenoid-screw-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-screw-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid screw 2** — `starter-solenoid-screw-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-screw-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid end cap** — `starter-solenoid-end-cap`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-end-cap`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid front seat** — `starter-solenoid-front-seat`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-front-seat`
+  - Source IDs: ford-pmgr-starter-exploded, ford-manual-starter-parts, jn-410-14033-starter, tuffstuff-ford-starter-boundaries, ford-pmgr-conventional-circuit, ford-starter-solenoid-test, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory PMGR architecture/counts and manual F2TZ11002ARM identity are supported; J&N replacement cross-reference supplies ten pinion teeth,27.7mm OD and11mm mounting-hole diameter. Remaining dimensions are provisional.
+  - Open: Starter center distance, clocking, axial station,12mm travel and housing envelope are fit-study assumptions. No bellhousing, index-plate bore or mounting bolt support is reconstructed or claimed.
+  - Open: The9.525mm ring-face setback is a manual164-tooth Ford V8 comparison, not a verified4.9L mounting datum. Existing flywheel tooth module/pressure angle are also assumptions; sampled mesh is not production certification.
+  - Open: Internal12/18/48 tooth reducer counts,5:1 ratio, winding/commutator subdivision and clearances are assumptions. Electromagnetics, current, insulation performance, overrunning-clutch internals and solenoid contact switching are not simulated.
+  - Open: Six straight drive splines form a sliding noncircular coupling in this study. Production spline count, tooth form, helix and fit are not established by the exploded drawing.
+  - Open: Factory drawing supports a fork lever and drive assembly, not these arm lengths, groove or slotted-clevis dimensions. All linkage detail and travel are provisional engineering geometry.
+  - Open: A 30mm upper arm and32mm lower arm connect11.25mm solenoid stroke to12mm pinion travel. A transverse slot in the plunger clevis accommodates the upper pin arc; this is not a verified production joint design.
+  - Open: Spherical fork pads engage a3mm-wide annular clutch shift groove. Force, compliance, wear, friction, clutch internals, gear-tooth blocking and real starter sequencing are not simulated.
+  - Open: Housing, front-seat and seal clearances are candidate interface modifications only, not production machining guidance. Default viewer remains static/retracted.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid pull winding** — `starter-solenoid-pull-winding`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-pull-winding`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid hold winding** — `starter-solenoid-hold-winding`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-hold-winding`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid winding bobbin** — `starter-solenoid-winding-bobbin`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-winding-bobbin`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid fixed pole** — `starter-solenoid-fixed-pole`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-fixed-pole`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid contact rod** — `starter-solenoid-contact-rod`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-contact-rod`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid bridge insulator** — `starter-solenoid-bridge-insulator`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-bridge-insulator`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid contact bridge** — `starter-solenoid-contact-bridge`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-contact-bridge`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid s terminal** — `starter-solenoid-s-terminal`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-s-terminal`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid s terminal insulator** — `starter-solenoid-s-terminal-insulator`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-s-terminal-insulator`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford test identifies S, M and frame continuity. Ford patent Figure 1 supports conventional pull/hold and normally-open power-contact topology, not this 1994 part geometry or production adoption of the patent invention.
+  - Open: All added dimensions, radial winding allocation, contact position and 11.25mm stroke are provisional packaging assumptions. Coils are aggregate winding envelopes, not individual turns.
+  - Open: This isolated magnetic-switch stroke does not animate or validate the existing lever/clevis, return linkage, fork or pinion engagement. Default installed pose remains open and retracted.
+  - Open: Contact pressure, bounce, arcing, insulation, spring force, magnetic force and loaded starter performance are not simulated.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead pull s** — `starter-solenoid-lead-pull-s`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-pull-s`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead insulation pull s** — `starter-solenoid-lead-insulation-pull-s`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-insulation-pull-s`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead pull m** — `starter-solenoid-lead-pull-m`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-pull-m`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead insulation pull m** — `starter-solenoid-lead-insulation-pull-m`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-insulation-pull-m`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead hold s** — `starter-solenoid-lead-hold-s`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-hold-s`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead insulation hold s** — `starter-solenoid-lead-insulation-hold-s`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-insulation-hold-s`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead hold frame** — `starter-solenoid-lead-hold-frame`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-hold-frame`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter solenoid lead insulation hold frame** — `starter-solenoid-lead-insulation-hold-frame`; modeled quantity **1**; provisional.
+  - Instances: `starter-solenoid-lead-insulation-hold-frame`
+  - Source IDs: ford-pmgr-starter-exploded, ford-starter-solenoid-test, ford-pmgr-conventional-circuit, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Circuit endpoints follow the Ford conventional PM starter diagram and applicable S/M/frame continuity description. Every route, lead diameter, sleeve and feedthrough is a packaging assumption.
+  - Open: Aggregate winding envelopes represent insulated windings; they are not solid copper electrical nodes. Four modeled ends specify attachment interfaces, not winding turns or an electrical resistance simulation.
+  - Open: The shell attachment is a provisional ground interface. Joint processes, dielectric strength, current capacity, thermal behavior and production wire routing are unresolved.
+  - Open: The four coil-end conductors terminate at nonpenetrating face interfaces. Separate S routes and insulating sleeves meet separate patches of the same S terminal; no interpenetrating conductor or sleeve union is required.
+  - Open: Zero-distance CAD interfaces and directional contact-area witnesses establish geometric attachment only. Production solder, crimp or weld construction, contact resistance, preload, ampacity and dielectric strength remain unresolved.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter motor positive feed** — `starter-motor-positive-feed`; modeled quantity **1**; provisional.
+  - Instances: `starter-motor-positive-feed`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter motor feed jacket** — `starter-motor-feed-jacket`; modeled quantity **1**; provisional.
+  - Instances: `starter-motor-feed-jacket`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter motor feed grommet** — `starter-motor-feed-grommet`; modeled quantity **1**; provisional.
+  - Instances: `starter-motor-feed-grommet`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter motor ground bridge** — `starter-motor-ground-bridge`; modeled quantity **1**; provisional.
+  - Instances: `starter-motor-ground-bridge`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush pigtail positive 1** — `starter-brush-pigtail-positive-1`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-pigtail-positive-1`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush pigtail positive 4** — `starter-brush-pigtail-positive-4`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-pigtail-positive-4`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush pigtail ground 2** — `starter-brush-pigtail-ground-2`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-pigtail-ground-2`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+- [ ] **Starter brush pigtail ground 3** — `starter-brush-pigtail-ground-3`; modeled quantity **1**; provisional.
+  - Instances: `starter-brush-pigtail-ground-3`
+  - Source IDs: ford-pmgr-starter-exploded, ford-pmgr-brush-connector-comparison, jn-pmgr-brush-holder-comparison, wagner-pmgr-brush-holder-cross-reference. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford family service text identifies the positive brush connector at M and its frame grommet. J&N photographs and Wagner cross-references support a two-feed/two-ground PMGR comparison; this is not a recovered1994F150 brush wiring drawing.
+  - Open: Brushes1and4 are assigned feed and2and3 ground only for this provisional90degree CAD layout. Actual production brush angle, polarity clocking, lead gauge, braid length, joining process and eyelet orientation remain unverified.
+  - Open: Conductors and sleeves are aggregate geometry, not strands or current/thermal/insulation calculations. Flexible braid deformation and brush-wear travel are not modeled.
+  - Open: Commutator-to-armature winding connections, individual winding topology, battery cable and control harness remain open. Complete starter electrical continuity is not claimed.
+
+## Historical artifacts (not current installed inventory)
+
+- `starter-solenoid-coil-envelope` — Historical/superseded or demonstration artifact absent from current manifest; retain as history, not an additional verified truck part.
+
+## Additional known scope and reconciliation
+
+- [ ] Overrunning clutch internals and output carrier decomposition
+- [ ] Verify commutator/armature connections
+- [ ] Bellhousing/index plate, starter mounting bolts and locating interfaces
+- [ ] Vehicle battery cables belong to Electrical
+
+## Cross-system boundaries
+
+Coordinate with [#2](https://github.com/0xZakk/truck/issues/2), [#11](https://github.com/0xZakk/truck/issues/11). Keep the current engine-mounted component here; agree ownership before adding its vehicle-side continuation.
+
+## Acceptance and handoff
+
+Use [the shared rubric](../onboarding/QUALITY-STANDARD.md) and [component handoff](../templates/COMPONENT-HANDOFF.md). Reconcile sources, critical dimensions, interfaces, motion/flow, actual render comparison, individual-part learning and browser behavior. A saved audit is evidence only for its recorded hashes and scope. Current global static/navigation passes do not complete every component.
+
+Evidence starting points: `inventory/engine/full-assembly.json`, component-specific evidence/learning/validation JSON, `docs/CURRENT-STATE.md`, and `inventory/engine/completion-plan.json`. Older completion prose contains superseded missing/pending statements; this package maps the current manifest. Future source/BOM reconciliation may add parts.
