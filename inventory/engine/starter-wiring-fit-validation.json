@@ -1,0 +1,70 @@
+{
+  "installed": false,
+  "source_sha256": "43dc089604f6cfe55104af59bd9e10e62a0ed3a5bf59edaec8b073d457b1d1f2",
+  "candidate_parts": 10,
+  "boolean_checks": 1241,
+  "contacts": [
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "target": "starter-solenoid-pull-winding",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026548245767674
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "target": "starter-solenoid-s-terminal",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.2965237651207242
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "target": "starter-solenoid-pull-winding",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026548245767667
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "target": "starter-solenoid-terminal-2",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026526210380948
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "target": "starter-solenoid-hold-winding",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026548245767665
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "target": "starter-solenoid-s-terminal",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.2731491057824997
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "target": "starter-solenoid-hold-winding",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026548245767675
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "target": "starter-solenoid-shell",
+      "distance_mm": 0.0,
+      "overlap_mm3": 0,
+      "projected_contact_area_mm2": 0.5026569902155987
+    }
+  ],
+  "failures": [],
+  "minimum_unintended_conductor_clearance_mm": 0.34999999999998777,
+  "separate_s_lead_gap_mm": 0.9143941574798577,
+  "separate_s_sleeve_gap_mm": 0.4143941574798649,
+  "contact_area_method": "A 0.001 mm witness translation along each attachment direction estimates projected contact area from common volume divided by travel. Nominal solids themselves have zero-distance interfaces and no positive-volume overlap.",
+  "boundary": "Provisional four coil-end attachment geometry only; no production routing, joint process, ampacity, dielectric strength or complete starter circuit is established."
+}

@@ -1,0 +1,208 @@
+{
+  "passed_geometry_only": false,
+  "accepted_for_installation": false,
+  "verified_nominal_belt_fit": false,
+  "manifest_sha256": "631eded833ee58db78882ee1182c7f732d6dcb5be8205db19c3ac7d9c57903ec",
+  "source_sha256": {
+    "accessory_datum_study.py": "bdc065290e49d4bd761489851ed9357ceb2788bcf7d61cf363344848afbe6f1d",
+    "accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942"
+  },
+  "targets_yz_mm": {
+    "ALT": [
+      -325,
+      350
+    ],
+    "TENS": [
+      -160,
+      410
+    ],
+    "PS": [
+      190,
+      350
+    ],
+    "AC": [
+      220,
+      100
+    ],
+    "AP": [
+      -235,
+      100
+    ]
+  },
+  "moved_component_count": 158,
+  "excluded_dependent_brackets": [
+    "ps-ac-support-bracket",
+    "alternator-support-bracket",
+    "ps-bracket-bolt-1",
+    "ps-bracket-bolt-2",
+    "ps-bracket-bolt-3",
+    "ac-bracket-bolt-1",
+    "ac-bracket-bolt-2",
+    "ac-bracket-bolt-3",
+    "ac-bracket-bolt-4",
+    "alt-bracket-bolt-1",
+    "alt-bracket-bolt-2",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2",
+    "alt-engine-bracket-bolt-1",
+    "alt-engine-bracket-bolt-2",
+    "thermactor-support-bracket",
+    "thermactor-engine-bolt-1",
+    "thermactor-engine-bolt-2"
+  ],
+  "belt_step_round_trips": 3,
+  "narrow_phase_checks": 252,
+  "collisions": [
+    {
+      "angle_degrees": -10,
+      "a": "ac-compressor-front-cylinder",
+      "b": "cam-timing-gear",
+      "volume_mm3": 3848.3176826382696
+    },
+    {
+      "angle_degrees": -10,
+      "a": "ac-compressor-front-cylinder",
+      "b": "timing-cover",
+      "volume_mm3": 7331.52536829117
+    },
+    {
+      "angle_degrees": -10,
+      "a": "ac-compressor-case-bolt-4",
+      "b": "timing-cover",
+      "volume_mm3": 456.5290428325186
+    },
+    {
+      "angle_degrees": -10,
+      "a": "ac-compressor-piston-5",
+      "b": "timing-cover",
+      "volume_mm3": 1192.9957364743511
+    },
+    {
+      "angle_degrees": -10,
+      "a": "ac-compressor-piston-5-front-seal",
+      "b": "timing-cover",
+      "volume_mm3": 35.85466568238977
+    },
+    {
+      "angle_degrees": -10,
+      "a": "candidate-belt",
+      "b": "coolant-outlet-housing",
+      "volume_mm3": 190.3633651838867
+    },
+    {
+      "angle_degrees": 0,
+      "a": "ac-compressor-front-cylinder",
+      "b": "cam-timing-gear",
+      "volume_mm3": 3848.3176826382696
+    },
+    {
+      "angle_degrees": 0,
+      "a": "ac-compressor-front-cylinder",
+      "b": "timing-cover",
+      "volume_mm3": 7331.52536829117
+    },
+    {
+      "angle_degrees": 0,
+      "a": "ac-compressor-case-bolt-4",
+      "b": "timing-cover",
+      "volume_mm3": 456.5290428325186
+    },
+    {
+      "angle_degrees": 0,
+      "a": "ac-compressor-piston-5",
+      "b": "timing-cover",
+      "volume_mm3": 1192.9957364743511
+    },
+    {
+      "angle_degrees": 0,
+      "a": "ac-compressor-piston-5-front-seal",
+      "b": "timing-cover",
+      "volume_mm3": 35.85466568238977
+    },
+    {
+      "angle_degrees": 10,
+      "a": "ac-compressor-front-cylinder",
+      "b": "cam-timing-gear",
+      "volume_mm3": 3848.3176826382696
+    },
+    {
+      "angle_degrees": 10,
+      "a": "ac-compressor-front-cylinder",
+      "b": "timing-cover",
+      "volume_mm3": 7331.52536829117
+    },
+    {
+      "angle_degrees": 10,
+      "a": "ac-compressor-case-bolt-4",
+      "b": "timing-cover",
+      "volume_mm3": 456.5290428325186
+    },
+    {
+      "angle_degrees": 10,
+      "a": "ac-compressor-piston-5",
+      "b": "timing-cover",
+      "volume_mm3": 1192.9957364743511
+    },
+    {
+      "angle_degrees": 10,
+      "a": "ac-compressor-piston-5-front-seal",
+      "b": "timing-cover",
+      "volume_mm3": 35.85466568238977
+    }
+  ],
+  "numerical_sweep": [
+    {
+      "exploratory_arm_angle_degrees": -10,
+      "assumed_effective_length_mm": 2495.7398797847914,
+      "assumed_effective_length_residual_mm": 4.739879784791356,
+      "illustrative_cord_path_length_mm": 2515.488897622115,
+      "wrap_degrees": {
+        "ALT": 115.02501046634981,
+        "TENS": 23.7348245347481,
+        "PS": 92.53981092397308,
+        "AC": 156.43995496005928,
+        "WP": 216.97020081001375,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 0,
+      "assumed_effective_length_mm": 2491.429372663175,
+      "assumed_effective_length_residual_mm": 0.42937266317494505,
+      "illustrative_cord_path_length_mm": 2510.920497898872,
+      "wrap_degrees": {
+        "ALT": 110.12634309551153,
+        "TENS": 16.683137903058103,
+        "PS": 90.38679166312131,
+        "AC": 156.43995496005928,
+        "WP": 216.97020081001375,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 10,
+      "assumed_effective_length_mm": 2488.6770121575855,
+      "assumed_effective_length_residual_mm": -2.322987842414477,
+      "illustrative_cord_path_length_mm": 2507.916019390579,
+      "wrap_degrees": {
+        "ALT": 105.44518935671681,
+        "TENS": 9.792053846657666,
+        "PS": 88.17686134551563,
+        "AC": 156.43995496005928,
+        "WP": 216.97020081001375,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    }
+  ],
+  "limits": [
+    "This is a non-unique analytical layout hypothesis, not measured Ford accessory coordinates or an accepted installation.",
+    "The root engine, water pump, crankshaft and pulley diameters are fixed. Translated accessory bodies preserve all internal geometry; brackets and engine attachments must be redesigned before installation.",
+    "Current outside radii are only an assumed effective-radius diagnostic. A near-zero nominal length residual does not prove actual Gates belt fit.",
+    "The exploratory plus/minus ten-degree tensioner sweep is not a sourced working-angle range. Factory stops, spring preload, arm force, available take-up and installed index remain unknown.",
+    "Low air-pump and tensioner wraps require traction, load and travel review. No minimum safe wrap, belt tension or accessory-power capacity is established.",
+    "Oblique owner photographs support component identity and broad topology but are not calibrated front-view center measurements."
+  ]
+}

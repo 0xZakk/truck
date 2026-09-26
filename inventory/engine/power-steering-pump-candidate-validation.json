@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "installed": false,
+  "verified_production_fit": false,
+  "scope": "internal-and-installed-neighbors",
+  "manifest_sha256": "95236469efc7b11aab9423bc2426fb7a94143fa8f2bab152e05e0e1620e199f1",
+  "source_sha256": "72dd3dc063fedbd15deb5381542a827c9bb59f100bc77814b28b553ee1097d89",
+  "replacement_source_sha256": {
+    "power_steering_pump.py": "72dd3dc063fedbd15deb5381542a827c9bb59f100bc77814b28b553ee1097d89",
+    "tensioner_arm.py": "6bf5aa5539ce2fbc4cfa848bc8a0a435e865b02fce4ae63fa9917c2b0c0060cb",
+    "tensioner_pulley.py": "7126080e234a6420cf5473b761888eb25d45fbfde4ec2ea65e7f2afc38524e92"
+  },
+  "solid_step_round_trips": 54,
+  "step_volume_tolerance": "0.01 mm3 or 1 ppm of volume, whichever is larger",
+  "maximum_step_volume_delta_mm3": 0.037457434576936066,
+  "maximum_step_relative_volume_delta": 2.1039289430955937e-07,
+  "narrow_phase_checks": 183,
+  "collisions": [],
+  "limits": [
+    "Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.",
+    "Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.",
+    "Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.",
+    "The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.",
+    "Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.",
+    "Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.",
+    "Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved."
+  ]
+}

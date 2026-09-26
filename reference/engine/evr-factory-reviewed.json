@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-24",
+  "records": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Exhaust%20Gas%20Recirculation/EGR%20Electronic%20Vacuum%20Regulator%20Solenoid/Description%20and%20Operation/index.html",
+      "sha256": "99b2e6577d5e8ff077454658194d594272934458765bce6079c2624d50436279",
+      "text": "EGR Electronic Vacuum Regulator Solenoid: Description and Operation EGR Vacuum Regulator (EVR) Solenoid: PURPOSE The EGR Vacuum Regulator ( EVR ) solenoid is an electromagnetic device which controls vacuum output to the EGR valve . OPERATION The Powertrain Control Module (PCM) outputs a duty cycle to the EVR which regulates the vacuum level to the EGR valve .  As the duty cycle is increased, so is the vacuum signal to the EGR valve.  The vacuum source is manifold vacuum."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Emission%20Control%20Systems/EGR%20Control%20Solenoid/Parts%20Information/index.html",
+      "sha256": "9e262d3ffe48b78b31c3522b3df63c67d9392158648a1fcf68e8ef3f680884e6",
+      "text": "Parts Information Part Manufacturer OEM Part # Price Notes Vacuum Regulator FOR FOTZ9J459A 67.23"
+    }
+  ],
+  "reviewed_image": "615919167.png",
+  "image_findings": [
+    "Upper hose nipple labeled to EGR valve",
+    "Lower hose nipple labeled to source vacuum",
+    "Electrical connector projects to side",
+    "Round upper cap and side mounting ear shown"
+  ],
+  "limits": [
+    "No dimensional scale or internal section in this illustration",
+    "Service number printed FOTZ9J459A; likely zero/O typography must be preserved in transcription",
+    "Standard VS52 is a retailer cross-reference lead, not yet manufacturer verified"
+  ],
+  "evtm_location": {
+    "pdf": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+    "pdf_page": 312,
+    "printed_page": "151-1",
+    "visually_reviewed": true,
+    "finding": "C180 EGR control solenoid is below EVP at left rear of 4.9L engine; illustration not dimensioned."
+  }
+}

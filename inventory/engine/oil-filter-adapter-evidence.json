@@ -1,0 +1,51 @@
+{
+  "status": "Provisional mounting and open gallery-boundary study; not a complete lubrication circuit",
+  "factory": {
+    "id": "fsm-d975f341ee63",
+    "article": "Ford95-8-8,1995-04-24",
+    "applicability": "1984–1995 Bronco,Econoline,F-150–350 with4.9L",
+    "service_insert": "E4TZ-6890-A",
+    "insert_torque_Nm": [20,48],
+    "filter": "D9AZ-6731-A / FL-1A",
+    "instruction": "Replace original insert with the anti-drainback service insert; filter gasket contacts the cylinder-block sealing surface before an additional half turn.",
+    "limit": "No insert drawing, internal valve mechanism, dimensions or bore layout is provided. The modeled hollow comparison insert is not claimed to reproduce the E4TZ service remedy. Torque is a source fact, not a strength validation."
+  },
+  "comparison": {
+    "id": "enginequest-oil-filter-adapter",
+    "url": "https://enginequest.com/wp-content/uploads/2024/10/EQ2025_Catalog_web.pdf",
+    "path": "manuals/manufacturer-catalogs/enginequest-2025.pdf",
+    "sha256": "2430145f8dd29b4d158a25684dd84a4f73773ff9160811a0f36575a3bd64f1e4",
+    "page": 23,
+    "visual_review": "Page rendered and inspected. EQ-OFA302 photo shows hollow stepped externally threaded ends, intermediate shoulder, and an internal drive recess. Table lists Ford4.9L/300 in1970–1996 engine group, D7AZ6890A cross-reference.",
+    "limit": "Not established as E4TZ6890A equivalent. Photograph does not dimension threads, lengths, bore or drive recess."
+  },
+  "mounting_reference": {
+    "id": "ford-industrial-csg649",
+    "page": 33,
+    "printed_page": "1-29",
+    "figure": 60,
+    "visual_review": "Rendered and inspected typical inclined filter mount with central projecting stud and surrounding block sealing face. Architecture only; not a dimensioned1994truck drawing."
+  },
+  "circuit_reference": {
+    "id": "fsm-6f023139b5f8",
+    "image": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/354634388.png",
+    "visual_review": "Factory lubrication schematic inspected directly; filter on the cam/main-gallery side, pump delivery to filter, and central longitudinal gallery supplying cam/main bearings and hydraulic tappets. Pressure-switch branch and gallery end plugs are shown. No dimensions are inferred from this schematic.",
+    "boundary_rationale": "The factory describes a complete pressurized circuit. This candidate stops visibly at two separate boss-side openings instead of implying that blind holes already reach that still-unmodeled network."
+  },
+  "dimensional_provenance": {
+    "filter_side_thread": "Existing WIX51515 manufacturer comparison:3/4-16. Represented by coincident9.525mm-radius cylindrical envelopes, not helical threads.",
+    "retained_filter_position_mm": [70,160,65],
+    "retained_filter_rotation_deg": [-120,0,0],
+    "insert": "Provisional: block endR12,Z-22..-3; shoulderR14,Z-3..0; filter endR9.525,Z0..12; through boreR6.4; hex drive circumradius7.7,Z7..13.",
+    "boss": "Provisional tiltedR39 cylinder,Z-70..0 cropped to globalY>=117.4 andZ<=128, so it joins the existing cam-side casting skin without filling the cam bore or side-cover opening.",
+    "inlet": "AnnularR22..30,Z-4..0 pocket feeds all eight baseplate inlets;R4 gallery at localY27 turns to an exposed left-side boundary atZ-12.",
+    "outlet": "Separate centralR6.4 bore extends toZ-34 and turns to exposed right-side boundary atZ-29. Insert shoulder and coincident nominal filter thread envelope separate the dirty and clean passages."
+  },
+  "explicit_limits": [
+    "Two open side bores are sectional-study interfaces, not production external ports. Their coordinates are emitted by gallery_boundaries(). They must not be mistaken for a complete or oil-tight engine.",
+    "Pump discharge and main-gallery connections beyond those boundaries remain absent, rather than terminating in hidden dry block material.",
+    "No invented service-insert check ball, spring, flap, standpipe or extra bypass mechanism is installed.",
+    "Existing disposable-filter anti-drainback flap and illustrative bypass remain distinct. Their presence does not establish the service insert remedy or pressure/flow behavior.",
+    "No separate adapter gasket is inferred. The existing filter mounting gasket seats on the continuous boss land; metal insert shoulder/contact details remain provisional."
+  ]
+}

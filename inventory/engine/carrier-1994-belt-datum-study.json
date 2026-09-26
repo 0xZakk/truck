@@ -1,0 +1,153 @@
+{
+  "status": "diagnostic-only; no belt or layout accepted",
+  "carrier_source_sha256": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951",
+  "baseline": {
+    "outside_radius_loop_mm": 2908.0714719446896,
+    "assumed_cord_loop_mm": 2930.3612160221546,
+    "wrap_degrees": {
+      "ALT": 108.33179296613922,
+      "TENS": 106.25825714060221,
+      "PS": 178.50623416395294,
+      "AC": 136.52125197767492,
+      "WP": 204.18664541501968,
+      "CS": 180.80694394786164,
+      "AP": 66.27867949999319
+    },
+    "signed_winding_degrees": -360.0
+  },
+  "pulley_nodes": [
+    {
+      "id": "ALT",
+      "center": [
+        -325,
+        410
+      ],
+      "radius": 35,
+      "side": 1
+    },
+    {
+      "id": "TENS",
+      "center": [
+        167,
+        350
+      ],
+      "radius": 45,
+      "side": -1
+    },
+    {
+      "id": "PS",
+      "center": [
+        280,
+        410
+      ],
+      "radius": 65.65899999999999,
+      "side": 1
+    },
+    {
+      "id": "AC",
+      "center": [
+        280,
+        100
+      ],
+      "radius": 72.5,
+      "side": 1
+    },
+    {
+      "id": "WP",
+      "center": [
+        0,
+        170
+      ],
+      "radius": 75,
+      "side": -1
+    },
+    {
+      "id": "CS",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 81.53399999999999,
+      "side": 1
+    },
+    {
+      "id": "AP",
+      "center": [
+        -280,
+        100
+      ],
+      "radius": 70,
+      "side": 1
+    }
+  ],
+  "radius_sensitivities": [
+    {
+      "id": "ALT",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 1.8890800983926965
+    },
+    {
+      "id": "TENS",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 1.8254550084120638
+    },
+    {
+      "id": "PS",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 3.0913057574903178
+    },
+    {
+      "id": "AC",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 2.37788925610721
+    },
+    {
+      "id": "WP",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 3.5319352363385406
+    },
+    {
+      "id": "CS",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 3.132034916950033
+    },
+    {
+      "id": "AP",
+      "radius_delta_mm": 1,
+      "loop_delta_mm": 1.1600704844759093
+    }
+  ],
+  "unconstrained_75mm_arm_scan": {
+    "sample_count": 2204,
+    "best": {
+      "angle_degrees": 96.0,
+      "center": [
+        159.160365254926,
+        499.5891421526205
+      ],
+      "outside_radius_loop_mm": 2769.406398248943,
+      "assumed_cord_loop_mm": 2788.222757709696,
+      "wrap_degrees": {
+        "ALT": 90.95922191540994,
+        "TENS": 11.117045458027675,
+        "PS": 100.7375935321077,
+        "AC": 136.52125197767492,
+        "WP": 204.18664541501968,
+        "CS": 180.80694394786164,
+        "AP": 66.27867949999319
+      },
+      "signed_winding_degrees": -360.0
+    }
+  },
+  "catalog_comparison_mm": 2491.0,
+  "catalog_comparison_is_not_a_matching_gauge_datum": true,
+  "limits": [
+    "All station coordinates, arm length and most pulley radii remain provisional.",
+    "Dorman damper envelope OD is not an established belt effective diameter.",
+    "TSB94-10-19 identifies E8TZ-8620-T / JK6-984-B for this truck class; it does not supply an effective length.",
+    "The 2491mm comparison belongs to the previous replacement specification and is not silently assigned to every OE belt.",
+    "Current PS and ALT centers share Z410; TENS Z350 lies below both. The reviewed schematic places TENS below PS but above ALT.",
+    "Industrial CSG649 pump data cannot establish the automotive pump hub datum.",
+    "No mesh collision, spring load, traction, effective gauge or production dimensional validation is implied."
+  ]
+}

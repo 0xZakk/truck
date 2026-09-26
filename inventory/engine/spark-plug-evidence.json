@@ -1,0 +1,33 @@
+{
+  "source": "ngk-2019-spark-plugs",
+  "application": "F-150 1994-93 L6 4.9L",
+  "replacement": "WR4-1 / 4652",
+  "dimensions_mm": {
+    "nominal_thread_diameter": 18,
+    "reach": 11.684,
+    "hex_across_flats": 20.6375,
+    "application_gap": 1.1176
+  },
+  "seat": "tapered",
+  "visual_reference": "PDF page 64, profile143 and tipDH reviewed",
+  "unresolved": [
+    "Production thread tolerances and direct WR4-1 pitch confirmation",
+    "Seat angle",
+    "Overall/projection lengths",
+    "Internal material layers, resistance and dimensions",
+    "Head mounting bore position/angle",
+    "Lead routing and terminals"
+  ],
+  "complete": false,
+  "inferred_dimensions_mm": {
+    "thread_pitch": 1.5
+  },
+  "thread_basis": "NGK UK 2017 PDF7 maps A/AB 18mm families to 1.5mm pitch. Inference for WR4-1, not an explicit WR4-1 drawing.",
+  "provisional_mount": {
+    "y_mm": 58,
+    "head_local_z_mm": 15,
+    "x_rotation_deg": -70,
+    "head_world_z_mm": 255.5,
+    "basis": "Visible recessed wells and chamber arrangement in Allied comparison photographs. Dimensions and installed casting unverified."
+  }
+}

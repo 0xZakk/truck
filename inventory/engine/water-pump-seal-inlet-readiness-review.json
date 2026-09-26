@@ -1,0 +1,18 @@
+{
+  "status": "PASS candidate readiness; live integration pending",
+  "manifest_sha256": "2032a3dae31b2ae012752e79ba814e616c5406fb0a940336383358a91f8dc421",
+  "snapshot": "/private/tmp/truck-seal-inlet-baseline-2032a3da",
+  "frozen_hashes": {
+    "scripts/check-water-pump-mechanical-seal-inlet-readiness.py": "6f5f9f7f30e9f4e1c91cfe96c160fdb17f9cc917b5052039e4bbca03a709c150",
+    "scripts/check-water-pump-seal-leak-controls.py": "5995e8512ea5e1dfdd5dde8b4c1b5ff9724480973d0e99cc92c72fbc33262709",
+    "scripts/prepare-water-pump-mechanical-seal-harness.py": "b72542f9c5f5ff8da208fd314ad8a21c45f8325a85310d664777e5b4e3b0ecf7",
+    "cad/engine/water_pump_mechanical_seal_candidate.py": "63bf8b89e98d88112a6976afc768a3906eee8cbdd4ebb70f9a43d9362fcbbb9e",
+    "scripts/check-water-pump-mechanical-seal-installed.py": "93f18f7957a55b5de5a6330b0afd4bb575435d85d06bae2c2c3e9eb7682e1135"
+  },
+  "report_files": [
+    "inventory/engine/water-pump-mechanical-seal-inlet-readiness-validation.json",
+    "inventory/engine/water-pump-seal-leak-controls-validation.json",
+    "inventory/engine/water-pump-seal-inlet-harness-validation.json"
+  ],
+  "no_shared_edits": true
+}

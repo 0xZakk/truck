@@ -1,0 +1,99 @@
+{
+  "oil-filler-cap": {
+    "valid": true,
+    "solids": 1,
+    "step_valid": true,
+    "step_volume_error_mm3": 0.0013403194097918458,
+    "mesh_watertight": true,
+    "bounds_mm": [
+      [
+        -34.545,
+        -34.545,
+        -25.0
+      ],
+      [
+        34.545,
+        34.545,
+        13.100000000000001
+      ]
+    ],
+    "volume_mm3": 61841.58547404023
+  },
+  "oil-filler-cap-seal": {
+    "valid": true,
+    "solids": 1,
+    "step_valid": true,
+    "step_volume_error_mm3": 4.865796654485166e-11,
+    "mesh_watertight": true,
+    "bounds_mm": [
+      [
+        -22.0,
+        -22.0,
+        -6.0
+      ],
+      [
+        22.0,
+        22.0,
+        -3.0
+      ]
+    ],
+    "volume_mm3": 2208.7909628859124
+  },
+  "interfaces": {
+    "cap_cover_overlap_mm3": 0,
+    "seal_cover_overlap_mm3": 0,
+    "seal_cover_distance_mm": 0.0,
+    "cap_seal_overlap_mm3": 0,
+    "cap_seal_distance_mm": 0.0,
+    "radial_thread_to_smooth_hole_gap_mm": 1.3800000000000008,
+    "retention_engagement": "FAIL: frozen cover is smooth diameter 34; no female thread exists",
+    "seal_contact_annular_area_mm2": 612.6105674500096,
+    "contact_area_method": "coplanar circular annulus: cover hole radius17, seal outer22, cap datum419, cover top413"
+  },
+  "neighbors_within_15mm_broadphase": [
+    {
+      "id": "c1-intake-valve",
+      "distance_mm": 12.39613007030819,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c1-intake-keeper-1",
+      "distance_mm": 14.875399999999956,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c1-intake-keeper-2",
+      "distance_mm": 14.875399999999956,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c1-intake-rocker",
+      "distance_mm": 1.3753999999999564,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c1-intake-fulcrum",
+      "distance_mm": 27.82754182319179,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c2-exhaust-rocker",
+      "distance_mm": 24.188975523456943,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "c2-exhaust-fulcrum",
+      "distance_mm": 37.928360486646426,
+      "overlap_mm3": 0
+    },
+    {
+      "id": "efi-upper-intake",
+      "distance_mm": 12.899999999999977,
+      "overlap_mm3": 0
+    }
+  ],
+  "service_motion": {
+    "status": "illustrative_only",
+    "reason": "Pitch is assumed; smooth cover cannot validate unscrewing engagement. No operational rotation when installed."
+  }
+}

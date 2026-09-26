@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-26",
+  "kind": "Low-confidence engineering forecast, not measured usage or fixed quote",
+  "baseline_standard_api_usd": 985.957652,
+  "scope": "Additional work from current state toward the requested whole-truck component-level reconstruction, including unfinished engine. Does not redefine geometry assumptions as verified completion.",
+  "model": "GPT-6 Astra medium",
+  "processing": "Standard",
+  "pricing_url": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "assumptions": [
+    "Reuse current CAD/export/interaction/knowledge-base tools and already-modeled engine accessories.",
+    "Comparable context caching to observed98.1percent; no long-context premium or future rate change.",
+    "Each system includes research, individual CAD parts, explanations, motion where useful, troubleshooting and local verification. Cross-system integration has a separate allowance.",
+    "Per-system ranges are subjective effort estimates expressed in roughly986-dollar engine-work-to-date units, not inferred from part counts or a claimed engine completion percentage.",
+    "Adequate dimensional references or measurements become available. Unavailable production geometry can prevent verified completion regardless of token spend.",
+    "No statistically calibrated confidence interval;25percent reserve is a planning allowance."
+  ],
+  "excludes": [
+    "Already incurred model usage",
+    "Manual purchases, paid CAD assets, physical parts, teardown, scanning, measurement labor, human engineering review",
+    "Hosting, external tool fees, taxes and earlier Fable costs"
+  ],
+  "items": [
+    {
+      "system": "Finish engine and engine-mounted accessories",
+      "low_usd": 1000,
+      "high_usd": 3000,
+      "scope": "Complete remaining decomposition, source reconciliation, exterior fidelity, fluid paths and interfaces; retain existing starter/alternator/compressor work."
+    },
+    {
+      "system": "M5OD-R2 transmission and clutch",
+      "low_usd": 1500,
+      "high_usd": 3500,
+      "scope": "Gears, shafts, synchronizers, bearings, shift mechanism, clutch and hydraulics; interactions and diagnostic pages."
+    },
+    {
+      "system": "Driveshaft, differential and rear axle",
+      "low_usd": 600,
+      "high_usd": 1500,
+      "scope": "Joints, differential mechanism, axle shafts, bearings, seals and attachments."
+    },
+    {
+      "system": "Brakes, steering, suspension and wheels",
+      "low_usd": 1200,
+      "high_usd": 2800,
+      "scope": "Both axle ends, wheel/hub hardware, brake hydraulics/parking brake, steering gear/column/linkage and suspension; reuse engine-mounted pump."
+    },
+    {
+      "system": "Vehicle-side fuel, cooling, exhaust and HVAC",
+      "low_usd": 1000,
+      "high_usd": 2500,
+      "scope": "Tanks and delivery lines, radiator/hoses, downstream exhaust, cabin heater/AC/blower/ducts; do not redo engine-mounted assemblies."
+    },
+    {
+      "system": "Wiring, controls, lighting and instruments",
+      "low_usd": 1200,
+      "high_usd": 3000,
+      "scope": "EVTM circuit mapping, connectors, harness routing, fuse/ground/splice structure, battery and body circuits; EEC-IV diagnostics."
+    },
+    {
+      "system": "Frame, cab, bed and interior mechanisms",
+      "low_usd": 2000,
+      "high_usd": 5000,
+      "scope": "SuperCab short-bed surfaces and structures, mounts, doors/latches/windows/wipers, seats, belts/restraints and trim with individual parts."
+    },
+    {
+      "system": "Whole-truck assembly, interaction and verification",
+      "low_usd": 1000,
+      "high_usd": 2500,
+      "scope": "Common datums, cross-system routing/clearance, whole-truck navigation, browser performance, integration regression checks and cross-system troubleshooting."
+    }
+  ],
+  "subtotal_usd": [
+    9500,
+    23800
+  ],
+  "contingency_fraction": 0.25,
+  "additional_standard_with_reserve_usd": [
+    11875.0,
+    29750.0
+  ],
+  "additional_fast_with_reserve_usd": [
+    23750.0,
+    59500.0
+  ],
+  "total_standard_including_recorded_spend_usd": [
+    12860.957652000001,
+    30735.957652
+  ]
+}

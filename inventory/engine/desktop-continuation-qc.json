@@ -1,0 +1,60 @@
+{
+  "recorded_at": "2026-09-25T16:24:37.810992-05:00",
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "complete": false,
+  "reports": {
+    "atlas-static-validation.json": {
+      "report_sha256": "16574255cd61d90ec7a244081688eecaaf897e4bc23fe0b07a9147c8241e7968",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "All part pairs with overlapping bounding boxes at a single static pose; intentional fit interfaces may be included."
+    },
+    "atlas-validation.json": {
+      "report_sha256": "d2dc4867e5845cb28b37f50c70fec9e7cb424ae5c650386a597f3a4bb4da4179",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "Rotating core against block/crank, plus lubrication components against rotating core, block and oil pan; sampled poses, not continuous motion."
+    },
+    "exhaust-rear-entries-installed-validation.json": {
+      "report_sha256": "7e98a97da713748ba3622f87c18a9e9dd5f928c052d1a4fdf58350f30a8f70c8",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "Three-definition rear entry/head/fitting correction against saved neighbors, with retained provisional collector/EGR flow regression. Not the finished rear casting or verified EGR routing."
+    },
+    "exhaust-front-profile-installed-validation.json": {
+      "report_sha256": "e71f9fb96923fdabe32f1ce048310d6920e7b9f2f690847734f9948b678ecabf",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "Isolated two-definition candidate versus all saved neighbors. Shape-class corner controls, open entry/runner probes and nominal contacts; not production dimensions, pressure performance or finished casting detail."
+    },
+    "manifold-lifting-eye-installed-validation.json": {
+      "report_sha256": "23883270acd3988dc503324cbaa554f182fbf035ba68d24e9e0b5da569fe1665",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "Candidate validity, STEP roundtrip, interference, nominal shoulder/foot contact and front exhaust bore preservation. No production fit, threaded retention, preload or lifting strength certification."
+    },
+    "intake-locating-dowel-installed-validation.json": {
+      "report_sha256": "76b3426c74a152de786a5c2c7ac434745149529c262535c555accd58fe60443e",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": null
+    },
+    "manifold-eye-explosion-validation.json": {
+      "report_sha256": "fa4b85b3aec0195de7b086e21ea7f277ec2202b90389111f20ff6dd1c222ae19",
+      "manifest_matches": true,
+      "passed": true,
+      "scope": "Two sampled exploded display states, not an assembly-removal trajectory or production fit proof."
+    }
+  },
+  "browser_qc": [
+    "Refreshed stale679-part engine view and verified1244parts.",
+    "Navigated exhaust assembly to rear part and inspected mesh.",
+    "Standalone valve study:468degree intake peak6.27mm lifter/10.04mm valve; play,pause,cylinder5 selection verified."
+  ],
+  "pending": [
+    "Main viewer does not yet include candidate valve motion.",
+    "Pan13/12side-rail pattern rejected after exactpart photo shows10+10+3+2; revisedpatternpending.",
+    "Numerical belt layouts rejected on collision and Forddiagram ordering; constrainedstudyongoing.",
+    "Earlier CLI activewriter blocks safe sharedintegration; user ownership resolution pending."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "shape_checks": {
+    "engine-oil-dipstick-blade": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1546.5743191938902,
+      "bounds_mm": [
+        [
+          -3.9977775788672054,
+          -0.4000001,
+          -692.1500000999999
+        ],
+        [
+          3.997777578867205,
+          0.4,
+          1e-07
+        ]
+      ]
+    },
+    "engine-oil-dipstick-handle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4159.9688098883735,
+      "bounds_mm": [
+        [
+          -20.66345402173598,
+          -7.0000001,
+          -0.5
+        ],
+        [
+          14.890288331674782,
+          7.0000001,
+          75.58003653740542
+        ]
+      ]
+    }
+  },
+  "neighbor_checks": {
+    "block": {
+      "intersection_mm3": 163.6697241477513,
+      "distance_mm": 0.0,
+      "baseline_step_sha256": "fe81742dd879c3a4dbd6d4066c37d76f24a68c157f972943df2692a6261d3f55",
+      "interpretation": "unresolved passage/interface"
+    },
+    "oil-pan": {
+      "intersection_mm3": 0,
+      "distance_mm": 7.103692675920815,
+      "baseline_step_sha256": "57a1eea73d09075fb159afd633675f483793b2eb32aa079fc0e0399dbcb9e6ea",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "efi-upper-intake": {
+      "intersection_mm3": 0,
+      "distance_mm": 65.50298425090179,
+      "baseline_step_sha256": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "efi-lower-intake": {
+      "intersection_mm3": 0,
+      "distance_mm": 274.87980458731164,
+      "baseline_step_sha256": "2f12556c1254b98914428b0f4b65330ad2336cbab116b10e2d9ced1802655066",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "valve-cover": {
+      "intersection_mm3": 0,
+      "distance_mm": 48.911630579888566,
+      "baseline_step_sha256": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "cylinder-head": {
+      "intersection_mm3": 0,
+      "distance_mm": 31.920084256015738,
+      "baseline_step_sha256": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+      "interpretation": "no static solid interference in hypothesized pose"
+    }
+  },
+  "tip": [
+    -120.0,
+    67.69371608664001,
+    -239.54732982595067
+  ]
+}

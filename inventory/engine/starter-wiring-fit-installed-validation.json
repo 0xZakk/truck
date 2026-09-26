@@ -1,0 +1,133 @@
+{
+  "installed": true,
+  "manifest_sha256": "04c782593eefbea5a6b43ad68eceac6df87ab77186e2ad68899ab8c48c6e5a81",
+  "source_sha256": "43dc089604f6cfe55104af59bd9e10e62a0ed3a5bf59edaec8b073d457b1d1f2",
+  "candidate_parts": 10,
+  "canonical_step_expected": true,
+  "shape_checks": [
+    {
+      "id": "starter-solenoid-fixed-pole",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-winding-bobbin",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-pull-s",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-pull-s",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-pull-m",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-pull-m",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-hold-s",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-hold-s",
+      "symmetric_difference_mm3": 1.4210854715202004e-14
+    },
+    {
+      "id": "starter-solenoid-lead-hold-frame",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-hold-frame",
+      "symmetric_difference_mm3": 0.0
+    }
+  ],
+  "directed_boolean_checks": 146,
+  "contacts": [
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "target": "starter-solenoid-pull-winding",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "target": "starter-solenoid-s-terminal",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "target": "starter-solenoid-pull-winding",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "target": "starter-solenoid-terminal-2",
+      "distance_mm": 6.521915363565902e-14,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "target": "starter-solenoid-hold-winding",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "target": "starter-solenoid-s-terminal",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "target": "starter-solenoid-hold-winding",
+      "distance_mm": 0.0,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "target": "starter-solenoid-shell",
+      "distance_mm": 1.0987711194326157e-12,
+      "forward_overlap_mm3": 0,
+      "reverse_overlap_mm3": 0
+    }
+  ],
+  "clearance_checks": 171,
+  "clearances": [
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "nearest": "starter-solenoid-fixed-pole",
+      "distance_mm": 0.34999999999997455
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "nearest": "starter-solenoid-fixed-pole",
+      "distance_mm": 0.34999999999998405
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "nearest": "starter-solenoid-fixed-pole",
+      "distance_mm": 0.34999999999998294
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "nearest": "starter-solenoid-fixed-pole",
+      "distance_mm": 0.3499999999999852
+    }
+  ],
+  "failures": [],
+  "boundary": "No volume-overlap exemptions, including intended attachments and the two separate S paths. Known dielectric parts excluded only from conductor-to-conductor clearance; all physical overlap pairs checked in both Boolean operand orders."
+}

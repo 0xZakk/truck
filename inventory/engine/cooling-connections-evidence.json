@@ -1,0 +1,82 @@
+{
+  "scope": "Engine-side heater takeoffs and PCM ECT construction; full vehicle hoses and gauge-sender mounting remain incomplete",
+  "sources": [
+    {
+      "id": "ford-cooling-connections",
+      "title": "Ford 1994 4.9L ECT location and heater-elbow illustration A20800-A",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Coolant%20Temperature%20Sensor%2FSwitch%20%28For%20Computer%29/Locations/",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Coolant%20Temperature%20Sensor%2FSwitch%20%28For%20Computer%29/Locations/index.html",
+      "image_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/101426950.png",
+      "image_sha256": "aedee157a8710c18e738163e74e679d8c3654e2496511f9f3caf64983c931caa",
+      "review": "Image visually reviewed: ECT screws into the metal heater elbow at the thermostat outlet. Separate bent heater-return tube enters the pump. Drawing is not dimensioned."
+    },
+    {
+      "id": "ford-ect-construction",
+      "title": "Ford ECT description, operation and dry-seal thread illustration",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Coolant%20Temperature%20Sensor%2FSwitch%20%28For%20Computer%29/Description%20and%20Operation/",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Coolant%20Temperature%20Sensor%2FSwitch%20%28For%20Computer%29/Description%20and%20Operation/index.html",
+      "image_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/101196213.png",
+      "image_sha256": "4adfa65ae1c4aff9f940c05285ac906aa03126ada4ff098a1d50d190e66e4f48",
+      "review": "Two-lead negative-temperature-coefficient thermistor; PCM uses its input for fueling, EGR and ignition. Thread image visually specifies 3/8-18 NPTF-SPL. Saved parts page lists E1AZ12A648A; no production dimensions taken from that listing."
+    },
+    {
+      "id": "ford-cooling-sensor-circuits",
+      "title": "1994 Ford EVTM: separate ECT and gauge sender circuits and locations",
+      "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+      "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+      "reviewed_pages": [{"pdf": 78, "printed": "23-5"}, {"pdf": 183, "printed": "60-2"}, {"pdf": 312, "printed": "151-1"}],
+      "review": "C183 is the two-wire ECT at the thermostat housing. C150 is the separate RH-side engine gauge sender; circuit 39 R/W and body ground feed the gauge. Gauge diagram marks 74 ohms cold and 9.7 ohms hot without assigning temperatures. Location drawing is schematic, not a coordinate reference."
+    },
+    {
+      "id": "truck-cooling-hose-photos",
+      "title": "Owner engine-bay photos: paired heater hoses",
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "additional_path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "additional_sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "review": "Both photos visually reviewed. Two red-orange hoses run between firewall/heater region and front engine. Exact endpoints and dimensions are partly occluded; photos do not justify an installed hose centerline or a bleed tee."
+    },
+    {
+      "id": "gates-1994-drive",
+      "review": "Existing saved catalog review lists 18767 for heater-to-thermostat and heater-to-water-pump in the five-speed manual branch. It establishes replacement application, not these tube dimensions."
+    }
+  ],
+  "manual_branch_exclusion": {
+    "article": "Ford TSB 94-9-13",
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Heating%20and%20Air%20Conditioning/Heater%20Hose/Technical%20Service%20Bulletins/Customer%20Interest/Heater%20Core%20-%20Gurgling%20Sound%20When%20Cold/index.html",
+    "reason": "The radiator bleed tee routing procedure explicitly applies to E4OD transmission vehicles; not applied to this manual truck."
+  },
+  "distinct_sensors": {
+    "ect": {"connector": "C183", "leads": 2, "signal": "Circuit 354 LG/R to PCM pin 7", "sensor_return": "Circuit 359 GY/R", "construction": "NTC thermistor", "location": "Center front, thermostat housing/heater elbow", "oem_service_part": "E1AZ12A648A", "modeled": true},
+    "gauge_sender": {"connector": "C150", "leads": 1, "return": "Metal body ground", "circuit": "39 R/W", "location": "RH side of engine", "oem_service_part": "F1SZ10884A", "modeled": false, "reason": "Existing cylinder head has no verified wet jacket or sender bore; mounting deferred instead of placing sender in a dry/combustion/oil passage."}
+  },
+  "provisional_geometry_mm": {
+    "ect_seat": [464, 34, 285],
+    "heater_supply_engine_endpoint": [488, -57, 335],
+    "heater_return_engine_endpoint": [438, -100, 270],
+    "tube_outside_diameter": 16,
+    "tube_bore": 13,
+    "hose_bead_diameter": 17,
+    "outlet_insert_outside_diameter": 21.6,
+    "pump_entry_bore": 16.2,
+    "ect_thread_smooth_envelope_diameter": 17,
+    "ect_thread_socket_clearance_diameter": 17.2,
+    "limits": "All dimensions and orientation are current-CAD fit choices. Only ECT thread designation and two-terminal architecture are sourced."
+  },
+  "connectivity": {
+    "supply": "Existing coolant outlet secondary bore to attached metal elbow to open heater-supply interface",
+    "return": "Open heater-return interface through attached metal elbow and drilled pump-housing port into existing coolant chamber",
+    "wet_sensor": "ECT probe projects into elbow fluid cavity; no water passes through the sealed electrical interior",
+    "checks": "Four swept/straight bore probes tested for obstructions against candidate and installed solids. These prove geometric open paths, not coolant flow rate or factory routing.",
+    "unfinished": ["Pump-to-block coolant connection", "Head-to-outlet jacket connection", "Gauge sender wet mounting", "Radiator and heater-core endpoints", "Actual vehicle hoses, clamps and harness"]
+  },
+  "integration": {
+    "new_definitions": 6,
+    "new_occurrences": 7,
+    "parent": "cooling",
+    "build": "cooling_connections.build((define, add, group))",
+    "replacement": "water-pump-housing = cooling_connections.pump_housing_interface(local_shape)",
+    "no_outlet_replacement": "Elbow inserts in existing open secondary bore; original outlet remains unchanged."
+  },
+  "complete": false
+}

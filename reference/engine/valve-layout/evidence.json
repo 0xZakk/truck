@@ -1,0 +1,62 @@
+{
+  "reviewed": "2026-09-25",
+  "photo": {
+    "url": "https://www.alliedmotorparts.com/cdn/shop/files/ALL12952-2_800x532_a2d2f628-5519-429b-acfe-6186a2aaed8c.jpg?v=1787584230",
+    "product": "https://www.alliedmotorparts.com/products/87-96-ford-300-fi-w-o-smog-heart-shaped-chamber-cylinder-head",
+    "path": "reference/engine/valve-layout/allied12952-underside.jpg",
+    "sha256": "298e4b39621e986bf51c1d6844c91a27cf3f99a00db3586a6204821eb9cfd05a",
+    "observations": [
+      "Six heart-shaped chambers with two valve faces in each.",
+      "Valve pairs run along the head length.",
+      "No scale or dimensioned axis stations; perspective and unverified installed casting prevent dimensional tracing."
+    ],
+    "limits": [
+      "Without-smog comparison head; not established as owner truck casting.",
+      "Marketing crossflow claim is not adopted."
+    ]
+  },
+  "replacement_head_diameter_mm": {
+    "intake": 45.288199999999996,
+    "exhaust": 39.5986
+  },
+  "replacement_source": "kb/sources/melling-stock-valve-specifications.md",
+  "replacement_caveat": "Manufacturer vehicle lookup has anomalous injection-pump gear-tower exception; treat sizes as comparison data until Ford applicability reconciled.",
+  "factory_seat_source": "kb/sources/spc-engine-rebuilding-specifications.md",
+  "factory_seat_angle_deg": 45,
+  "selected_seat_width_mm": 1.8,
+  "factory_seat_width_ranges_mm": {
+    "intake": [
+      1.5239999999999998,
+      2.032
+    ],
+    "exhaust": [
+      1.778,
+      2.2859999999999996
+    ]
+  },
+  "assumed_datums_mm": {
+    "valve_y": -12,
+    "axial_offset_from_cylinder_center": 25,
+    "bore_radius": 50.8,
+    "rocker_pivot_y": 51.62143599494969
+  },
+  "radial_envelope_clearance_mm": {
+    "intake": 0.4250507522759044,
+    "exhaust": 3.2698507522759037
+  },
+  "not_verified": [
+    "Installed casting and valve identities",
+    "Actual valve station or angle",
+    "Valve stem diameter/length, groove/keeper/retainer contacts",
+    "Spring free and installed heights; existing teaching helix differs from known factory service dimensions",
+    "Production rocker stampings and contact radii",
+    "Head water jackets and complete port surfaces"
+  ],
+  "pivot_constraint": {
+    "cam_lift_mm": 6.2738,
+    "net_valve_lift_mm": 10.033,
+    "rest_arm_ratio": 1.6577336240766494,
+    "nominal_catalog_ratio": 1.6,
+    "basis": "Assumed pivot calibrated to rounded catalog net peak, with varying instantaneous leverage. Not a measured Ford rocker."
+  }
+}

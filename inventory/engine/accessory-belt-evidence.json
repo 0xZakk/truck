@@ -1,0 +1,26 @@
+{
+  "complete": false,
+  "verified_nominal_belt_fit": false,
+  "verified_production_fit": false,
+  "routing_source": "reference/engine/ford-accessory-routing-reviewed.json",
+  "profile_source": "reference/engine/pk-belt-profile-reviewed.json",
+  "catalog_part": "Gates K060980 / 6PK2491",
+  "catalog_effective_length_mm": 2491,
+  "rib_count": 6,
+  "rib_pitch_mm": 3.56,
+  "belt_plane_x_mm": 473.56,
+  "loop": ["ALT", "TENS", "PS", "AC", "WP", "CS", "AP", "ALT"],
+  "backside_contacts": ["TENS", "WP"],
+  "analytic_method": "Common tangents between signed circles, clockwise rib-side wraps and counterclockwise backside wraps, joined as a closed planar wire. One swept section contains backing and all six ribs.",
+  "outside_radius_as_effective_assumption_length_mm": 2785.4014651345833,
+  "assumed_effective_length_residual_mm": 294.4014651345833,
+  "illustrative_cord_path_length_mm": 2804.8745428414577,
+  "normalization": "Five grooved pulley candidates repair their outer bands and receive common PK comparison grooves. Outside diameters, stations, internal webs and mounting interfaces are preserved. Smooth tensioner/water-pump wheels are not grooved.",
+  "limits": [
+    "Current outside radii are not verified effective radii; the diagnostic residual is not a production belt sizing result.",
+    "The CAD cord path and catalog effective length use different reference conventions and are not asserted equal.",
+    "No accessory center is moved merely to fit the nominal catalog length.",
+    "Traction, tension, spring travel, belt elasticity, speed ratios and dynamic bending remain unvalidated.",
+    "A coherent solid routing study is not completion of the installed belt fit."
+  ]
+}

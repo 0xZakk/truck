@@ -1,0 +1,30 @@
+{
+  "experiment": "three-component-focused-context-v1",
+  "started_at": "2026-09-26T14:44:35.118375+00:00",
+  "status": "round_complete_candidates_not_installed",
+  "workers": [
+    "/root/pilot_oil_cap",
+    "/root/pilot_throttle_bracket",
+    "/root/pilot_dipstick"
+  ],
+  "scope": [
+    "oil filler cap",
+    "throttle cable bracket",
+    "engine oil dipstick"
+  ],
+  "model_policy": "Inherited GPT-6 Astra medium; fresh context with focused briefs, unchanged quality gates",
+  "baseline_manifest": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
+  "measurement": "Sum distinct per-request usage increments for each new worker after creation; root experiment review/integration overhead separately attributed. Concurrent GitHub setup excluded from component benchmark. Report worker failures/incomplete parts, never count them as low-cost completions. Historical comparison is descriptive, not a matched randomized quality trial.",
+  "acceptance": [
+    "source provenance and explicit unknowns",
+    "parametric STEP/GLB",
+    "individual explanation/troubleshooting",
+    "visual review",
+    "relevant dimension/interface/neighbor checks",
+    "root integration review"
+  ],
+  "historical_baseline": "docs/cost-estimates/2026-09-26-astra-api-usage.json",
+  "accepted_installed_parts": 0,
+  "worker_cost_usd": 10.697696,
+  "results": "docs/pilot/RESULTS.md"
+}

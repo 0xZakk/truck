@@ -1,0 +1,54 @@
+{
+  "status": "Two-cartridge radial support study is installed and passes actual STEP interface checks; production dimensions and bearing internals remain unverified",
+  "sources": [
+    {
+      "id": "summit-fs10-shaft-supports",
+      "title": "Summit Industries FS10 exploded construction: two shaft bearings",
+      "url": "https://www.summitseal.com/products/sumcat2006.pdf",
+      "path": "reference/engine/summit-mobile-ac-2006.pdf",
+      "sha256": "a2bb07ec145ff65101f2b011385d82052af790e5663188ca7630d8430178fda8",
+      "pages_visually_reviewed": [121],
+      "verified": "The manufacturer FS10 exploded diagram separately labels two shaft bearings, one on each side of the swashplate beside the respective thrust-bearing/race stacks. These are not the clutch pulley bearing or the thrust rollers.",
+      "limits": "No radial bearing part number, nominal envelope, manufacturing dimensions, rolling-element count, cage construction, installed-unit identity or production bore fit is established. The schematic is not scaled for measurements."
+    }
+  ],
+  "research_limits": [
+    "Targeted searches for FS10 radial and needle shaft-bearing dimensions did not yield an identified manufacturer dimensional table.",
+    "A text preview of the 2008 Holger Christiansen AC-components catalog lists needle bearing dimensions for FS6, not FS10. Those values were not transferred to this candidate. Its FS10 thrust bearing and shaft dimensions were not applied without visual original-page review and complete interface reconciliation.",
+    "Generic HK bearings fitting a 20 mm shaft are not evidence of an FS10 application and are not identified as the installed bearing."
+  ],
+  "candidate": {
+    "module": "cad/engine/ac_compressor_shaft_support.py",
+    "composition": "Wraps ac_compressor_manifold.build, preserving corrected pulley-bearing seats and the rear manifold. Adds two occurrences and replaces the front and rear cylinder-half definitions; total compressor count becomes 67.",
+    "added_parts": ["ac-compressor-front-shaft-bearing", "ac-compressor-rear-shaft-bearing"],
+    "replaced_parts": ["ac-compressor-front-cylinder", "ac-compressor-rear-cylinder"],
+    "assumed_envelope_mm": {"bore": 20, "outside_diameter": 28, "width": 12, "front_local_x": 42, "rear_local_x": -42},
+    "interface": "The original study shaft is 20 mm diameter. Two nominal cartridge envelopes contact that shaft and matching 28 mm cylinder-half seats. Axial shoulders delimit each 12 mm seat; surrounding original 20.4 mm center bores remain unchanged. These nominal contacts are not a tolerance or load calculation.",
+    "unresolved_internals": "Each bearing remains a single cartridge, not invented rollers, cage or raceway construction.",
+    "completion_limit": "This resolves an omitted comparison support interface at study scale but does not verify production dimensions or complete the bearing internals."
+  },
+  "validation": {
+    "candidate_sha256": "6ebafd9312c300ecbcedb35e41c99e75424c0b82a3d6112a2e8b1368859d3630",
+    "manifest_sha256": "70ad7d96946fbb9b053f4b52314e2246778a75f03fd8510f3c2a130892ca5a02",
+    "report": "inventory/engine/ac-compressor-shaft-support-validation.json",
+    "step_roundtrips": 4,
+    "exact_checks": 451,
+    "collisions": [],
+    "api_shape_pose_checks": 201,
+    "nominal_contacts": 32,
+    "scope": "Four changed/new shapes checked against all composed compressor shapes in eight sampled phases, both existing refrigerant networks and frozen external installed neighbors. Two support-to-shaft and two support-to-cylinder contacts checked at each phase. All 67 API shapes compared at reference, 90 degree engaged and 173 degree disengaged poses. Manifest and loaded neighbor STEP/dependency hashes remained unchanged.",
+    "visual_review": "Offline support-stack render /private/tmp/shaft-support-qc.png completed and visually inspected in assembled and separated modes. Cylinder halves intentionally hidden to expose the two support cartridges. No live browser or production fit verification is claimed."
+  },
+  "installed_validation": {
+    "manifest_sha256": "04c782593eefbea5a6b43ad68eceac6df87ab77186e2ad68899ab8c48c6e5a81",
+    "report": "inventory/engine/ac-compressor-shaft-support-installed-validation.json",
+    "actual_saved_step_shapes": 4,
+    "exact_checks": 451,
+    "collisions": [],
+    "api_shape_pose_checks": 201,
+    "nominal_support_contacts": 32,
+    "scope": "Actual saved front/rear cylinder and support STEP shapes are imported in installed poses, compared with generated target shapes and checked against composed compressor geometry, passage probes and frozen external installed neighbors. Manifest, dependencies and loaded STEP files remain stable. This validates nominal study interfaces, not production bearing fit or loaded motion."
+  },
+  "production_dimensions_verified": false,
+  "bearing_internals_complete": false
+}

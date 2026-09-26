@@ -1,0 +1,22 @@
+{
+  "cooling-connections": {
+    "summary": "The heater circuit takes coolant from the thermostat-side elbow and returns it to the water pump. The two attached metal takeoffs end at explicitly unfinished vehicle-hose interfaces.",
+    "limits": "Tube routes and dimensions are provisional. Head/block coolant connections and vehicle hoses remain unfinished. The automatic-transmission bleed-tee procedure does not establish this manual truck's routing.",
+    "steps": [
+      {"title": "Supply the heater", "text": "The outlet's secondary passage opens into an elbow that also carries the ECT sensor. The exposed nipple marks the future heater supply hose connection.", "part": "heater-supply-ect-elbow", "source": "ford-cooling-connections"},
+      {"title": "Return coolant to the pump", "text": "The separate return tube opens through the pump housing into its coolant chamber. Its upper end is the heater return interface, not a completed hose run.", "part": "heater-pump-return-elbow", "source": "gates-1994-drive"},
+      {"title": "Keep the two temperature circuits distinct", "text": "The PCM ECT uses two leads and a sensor-return circuit. The separate gauge sender uses one wire and its metal body as ground; its wet head mounting remains unresolved.", "source": "ford-cooling-sensor-circuits"}
+    ],
+    "sources": ["ford-cooling-connections", "gates-1994-drive", "ford-cooling-sensor-circuits", "truck-cooling-hose-photos"]
+  },
+  "engine-coolant-temperature-assembly": {
+    "summary": "The two-lead ECT measures coolant temperature for the PCM. Its negative-temperature-coefficient thermistor loses resistance as it warms.",
+    "limits": "Metal-body envelope, internal sensing element, leads and connector are educational geometry. Thread designation is sourced; no temperature calibration, wiring harness or manufacturing section is reconstructed.",
+    "steps": [
+      {"title": "Expose the probe to coolant", "text": "The metal tip extends into the heater elbow's fluid cavity, while its electrical parts stay inside a closed probe body.", "part": "engine-coolant-temperature-body"},
+      {"title": "Change electrical resistance", "text": "The sensing element changes resistance with temperature. Ford identifies it as an NTC thermistor.", "part": "engine-coolant-temperature-thermistor", "source": "ford-ect-construction"},
+      {"title": "Return a separate PCM signal", "text": "The two terminals carry signal and sensor return. They are distinct from the single-wire dash gauge sender.", "part": "engine-coolant-temperature-terminal-1", "source": "ford-cooling-sensor-circuits"}
+    ],
+    "sources": ["ford-ect-construction", "ford-cooling-sensor-circuits"]
+  }
+}

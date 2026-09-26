@@ -1,0 +1,42 @@
+{
+  "status": "candidate geometry generated; validation separate",
+  "input_hashes": {
+    "cad/engine/candidates/valve-layout/cylinder-head.step": "a5f7c0a4e4cd0a67670286e235e2eb6ded9213ca391ea607b6240068416caedd",
+    "cad/engine/candidates/valve-layout/intake-valve.step": "461fc6ff1e4109889d2ef625e43d8a13e6820d90c5b8f6b1005f926c06f04327",
+    "cad/engine/candidates/valve-layout/exhaust-valve.step": "c412403b972aab3a8b08ea18a8de450577ba46757e43dea7d0170f2d9405a226"
+  },
+  "source_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Specifications/Mechanical%20Specifications/Engine/System%20Specifications/Engine%20Rebuilding%20Specifications/index.html",
+  "source_sha256": "ec1ea803c3b031483097dfd9cf996b8ec92c1c51f6dab92d221cebf541f02daa",
+  "source_reference": "kb/sources/spc-engine-rebuilding-specifications.md",
+  "dimensions": {
+    "installed_height_mm": {
+      "intake": 41.65599999999999,
+      "exhaust": 37.337999999999994
+    },
+    "free_length_mm": {
+      "intake": 49.784,
+      "exhaust": 45.211999999999996
+    },
+    "guide_diameter_mm": 8.73252,
+    "stem_diameter_mm": 8.68553,
+    "diametral_clearance_mm": 0.04699
+  },
+  "derivations": [
+    "Installed heights use factory closed-load test heights, within installed ranges.",
+    "Guide uses factory bore midpoint; stem derived from midpoint of permitted diametral clearance. Not a catalog stem dimension."
+  ],
+  "assumptions": [
+    "Six turns,4mm wire,26mm mean diameter and constant-pitch ground end shape unverified. No force/rate claim.",
+    "Head floor/retainer absolute datums inherited; added boss heights enforce sourced installed spring heights, not a factory casting replica.",
+    "Seal lip is illustrative noninterfering fit; no elastic sealing simulation.",
+    "Valve head/groove/length and keeper construction retained from prior teaching study."
+  ],
+  "shape_hashes": {
+    "cylinder-head": "18ecf0252186090c1927e387e587b719f7a5c4efd62f7f1d075470d9eecea246",
+    "valve-seal": "e8116baf27017d82c86656031173edd70b242c2ba1aa14ec933df16ab8d72048",
+    "intake-valve": "1c7a042beaedc8d43e167cb53a828d66a5702420ec050e52ffbf5153aa33e78a",
+    "intake-spring": "9d7d39e88e69c00eb632a0c18afd7993af6d6cf87984bafbd8f5b31464ef0dc5",
+    "exhaust-valve": "b852174a5e5374c4e5d4fe7805b4c7ca6dbeac55b337d3df3d7010de48b9d309",
+    "exhaust-spring": "f63d0aa4adaaeb114f7298a3b1994c4dddade87a3033134dbe67c38b074cf825"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "status": "Connected-passage and rigid-motion candidate validated against frozen1101-occurrence assembly; ready for replacement integration",
+  "accepted_base": {
+    "path": "cad/engine/ac_compressor.py",
+    "sha256": "a642b8c9e89de926db61f3515bf4eee31743bb599c280318f05c7c88f0931799",
+    "evidence": "inventory/engine/ac-compressor-evidence.json",
+    "unchanged": true
+  },
+  "source_entries": [
+    {
+      "id": "fs10-cylinder-passage-comparison",
+      "title": "Ford FS10 inter-head passages and comparison cylinder/valve photographs",
+      "url": "https://charm.li/Ford/1997/F%20150%204WD%20Pickup%20V8-4.6L%20SOHC%20VIN%206/Repair%20and%20Diagnosis/Heating%20and%20Air%20Conditioning/Compressor%20HVAC/Description%20and%20Operation/",
+      "review": "Ford explicitly describes gas-tight passages through the cylinder connecting both heads to rear suction/discharge ports. This supports connectivity, not the number, location or section of this candidate's drilled galleries. Later FS10-family evidence is not 1994 truck dimensional evidence.",
+      "comparison_url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/index.html",
+      "photos": [
+        {"path": "reference/engine/fs10-comparison-cylinder-closeup.jpg", "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/part2/PICT7563-vi.jpg", "sha256": "7929342cc5475b9fdf0364890b4c7515bb6a6e29fe6b07e301a499cde5c8a3df", "review": "Visually inspected five cylinder openings, peripheral passage spaces and inner openings. No photo scaling or positive suction/discharge assignment."},
+        {"path": "reference/engine/fs10-comparison-cylinder-passages.jpg", "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/part2/PICT7612-vi.jpg", "sha256": "a1fb4aa42f16de3e794bcd65dd30d00a56d4deef7e9bfc2c33a9504d3f8d8dbc", "review": "Visually inspected two five-bore blocks, case halves and separate valve/reed sheets. Construction comparison only."},
+        {"path": "reference/engine/fs10-comparison-valve-plates.jpg", "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/part2/PICT7617-vi.jpg", "sha256": "575f4d9e733eadc5c795bbe591804a75fe7b89237efdb4c54a602bc4e26f46a0", "review": "Visually inspected full reed sheets and valve plates. Slots, holes, plenums and gasket profiles in the model are still assumed."}
+      ]
+    }
+  ],
+  "geometry_revision": {
+    "part_count": 61,
+    "unchanged_ids": true,
+    "unchanged_application_constraints": "FS10 factory-A/C comparison branch, 145 mm clutch outside envelope, six grooves, selected 0.6 mm clutch gap; no verified installed unit identity or pitch diameter.",
+    "rigid_cups": "Two sphere centers are fixed on each piston axis at +/-3.2/cos(18deg) mm. Pistons and rings now only translate; hemispherical shoes rotate around their sphere centers. This removes the prior phase-dependent socket shape reconstruction.",
+    "gallery_topology": "Two assumed 4 mm diameter axial galleries at local (0,+59) and (0,-59) connect both heads. Each head cap contains assumed radial and axial drillings reaching its assigned concentric plenum without crossing the other. Local Z is the shaft direction before rotation to global X.",
+    "face_sealing": "Full-sheet U-slotted suction and discharge reeds meet the cylinder and valve faces. Expanded outer and divider gasket envelopes meet head faces. The mid-case gasket contains gallery and bolt openings. Exact production gasket profiles and leakage performance are not claimed.",
+    "grooves": "Shared accessory_belt_profile.regroove_x repairs the old rectangular groove band and applies six centered 3.56 mm-pitch, 40-degree V grooves, depth3.45 mm. These are Optibelt PK comparison constraints, not a traced Ford pulley.",
+    "profile_dependency": "cad/engine/accessory_belt_profile.py",
+    "profile_dependency_sha256": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942"
+  },
+  "motion_contract": {
+    "generator": "cad/engine/ac_compressor_motion.py",
+    "integration": "Replace the baseline ac_compressor.build call with ac_compressor_motion.build((define,add,group)); do not call both. Existing61definition/occurrenceIDs remain unchanged.",
+    "root_group": "ac-compressor",
+    "root_position_mm": [373.56, 280, 100],
+    "motion_groups": 17,
+    "descriptor": "type=fs10; role=pulley|shaft|piston|shoe; piston/shoe descriptors carry cylinder_phase_deg and stroke_amplitude_mm.",
+    "controls": "Independent compressor_degrees and compressor_engaged. No crank-angle or belt-speed ratio. Disengaged pulley still follows independent angle, while shaft/pistons/shoes reset to the reference pose.",
+    "translation": "A*(cos(theta)-cos(theta-phase)) along global X, where A=37*tan(18deg).",
+    "rotation": "Shaft/pulley rotate around local X at the compressor origin. Each shoe group is based at its phase-zero ball center; translation then X rotation acts about that center. Piston groups translate without rotating.",
+    "clutch_limit": "Engagement is a teaching control, not a transient clutch simulation. The combined armature/hub is not translated and its static air gap is not closed.",
+    "explode": "Front/rear head, reed, plate and cylinder stacks separate axially by role; pistons and shoes separate radially; clutch pieces separate individually toward the front. Explode is not an assembly procedure."
+  },
+  "flow_check_scope": {
+    "positive": "Two connected reduced-radius probe volumes link rear ports to both assigned head plenums without occupying any modeled part or intersecting each other.",
+    "negative": "Twenty small probes cross the ten suction and ten discharge windows. Each intersects only its assigned seated reed; clearing that reed window leaves the selected route open. This does not prescribe actual reed lift or deformation.",
+    "limit": "These are selected geometric connectivity/obstruction checks, not an exhaustive void flood-fill or pressure simulation. Running clearances, oil films, pressure-actuated reed bending and refrigerant properties remain unresolved."
+  },
+  "validation": {
+    "frozen_manifest_sha256": "97f41f9a5eb4c64f201e60be03b982d95415780d62922e01b447b97f0f05d1a3",
+    "candidate_sha256": "39e8664e75ea47536ecb6222a18367179fc6c4a289a00133c362e3828fae8740",
+    "assembly_math_sha256": "b323903193babcc542b6bb9bc57fcd0160208212cd57575451c4224cafeb6b4b",
+    "step_roundtrips": 61,
+    "exact_intersection_checks": 1625,
+    "collisions": [],
+    "internal_shaft_phases_degrees": [0, 45, 90, 135, 180, 225, 270, 315],
+    "connected_disjoint_probe_networks": ["suction", "discharge"],
+    "seated_and_cleared_reed_window_tests": 20,
+    "api_shape_pose_checks": 412,
+    "analytic_shoe_plane_checks": 120,
+    "api_phases_degrees": [0, 37, 90, 173, 271, 360],
+    "api_engagement_states": [true, false],
+    "api_unrelated_crank_degrees": 123,
+    "reports": ["inventory/engine/ac-compressor-motion-validation.json", "inventory/engine/ac-compressor-motion-api-validation.json"]
+  },
+  "validators": ["scripts/check-ac-compressor-motion.py", "scripts/check-ac-compressor-motion-api.py"],
+  "production_fit": false
+}

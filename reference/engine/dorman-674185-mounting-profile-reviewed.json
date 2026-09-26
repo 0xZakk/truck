@@ -1,0 +1,54 @@
+{
+  "status": "Front rectangular-entry/head-transition and blended-collector study integrated; detailed production contours and dimensions remain unverified",
+  "implementation": {
+    "module": "cad/engine/exhaust_front_profile.py",
+    "installed_manifest_sha256": "da6f293a5c09498513ef4453a0fcba38b0b7ec4a11aa9a511c954269d0e4ee0a",
+    "installed_report": "inventory/engine/exhaust-front-profile-installed-validation.json",
+    "verification": "Two actual STEP matches,225 neighbor checks,35 passage checks,24 circular-control/rectangular-corner tests and six positive rim bands pass. Eye/dowel interfaces and exploded views pass; installed exhaust and whole-engine offline renders were inspected. Current whole-static audit passes 4542 exact intersection checks with zero overlaps above 0.1 mm3.",
+    "limits": "A capsule collector and28x28mm entries are provisional constructions, not scaled production drawings. Outlet flange, other mounting stations and actual casting dimensions remain unresolved."
+  },
+  "page": {
+    "url": "https://www.dormanhdsolutions.com/p-7661-674-185.aspx",
+    "path": "reference/engine/dorman-674185-head-flange.html",
+    "sha256": "aecc5620afd581c987275c4891e5baebfe7fc39693c8d6fd9fd05407c4fd6131",
+    "supported": "Manufacturer specifications identify cast iron and rectangular ports; direct OE cross references include F5TZ9430-A and F5TZ9430-F."
+  },
+  "application": {
+    "url": "https://www.dormanhdsolutions.com/itemdetailapp.aspx?ProductID=7661&PartType=Exhaust%20Manifold&SkinID=21",
+    "path": "reference/engine/dorman-674185-applications.html",
+    "sha256": "242c12d728935423c52f76fe7b9b48fd77b0398879c31f2462522eb6ce8c5906",
+    "reviewed_row": "1994 Ford F-150 L6 300 4.9L (4917cc), Front",
+    "limit": "Manufacturer replacement application is established; installed truck part identity and production dimensions remain unverified."
+  },
+  "images": [
+    {
+      "url": "https://static.dormanproducts.com/images/product/medium/674-185-001.jpg",
+      "path": "reference/engine/dorman-674185-front.jpg",
+      "sha256": "456e646aead8367db7f3780d1ec039b7b2e36b06c6231bbe86ea55499f08df11",
+      "reviewed": true,
+      "observation": "Three head-facing rounded-rectangular port openings have separate surrounding flange pads. Two end wings contain enclosed mounting holes; other pad edges have projecting/scalloped lands. A curved common collector joins the three branches rather than the current rectangular box collector."
+    },
+    {
+      "url": "https://static.dormanproducts.com/images/product/medium/674-185-002.jpg",
+      "path": "reference/engine/dorman-674185-back.jpg",
+      "sha256": "e540d722b17182c8bc9deaadf178e4a92cf448eeb14eafdef170731e2300d234",
+      "reviewed": true,
+      "observation": "Opposite view exposes a round outlet inside a two-hole flange and the three blended branches. It does not expose the head-clamp stack or quantify the walls."
+    }
+  ],
+  "historical_model_contradictions": [
+    "The base cad/engine/exhaust.py used circular15mm-radius head entry bores. The integrated profile override now replaces front entries with rounded rectangles and changes the matching head entries. The base rear casting is intentionally untouched without its own evidence review.",
+    "The earlier box collector and cylindrical front inlet pads were inconsistent with visible construction. Their replacements improve the shape class but do not reproduce all production contours. Existing lifting-eye lugs and head sockets remain explicitly assumed interface studies."
+  ],
+  "next_geometry_constraints": [
+    "Reconcile a rounded-rectangular entry and open transition into each curved runner together with the head and intake gasket boundaries; do not merely place a rectangular cosmetic flange over a circular opening.",
+    "Retain separated front and rear castings, existing outlet/EGR boundaries and the checked lifting-eye attachment while refining actual casting connectivity.",
+    "Do not infer fourteen remaining bolt or washer counts, clamp cross-sections, thread engagement or production stations from these unscaled photographs.",
+    "Keep nominal port width, height, corner radius, wall thickness and bolt coordinates provisional until a dimensional reference or measured part is available."
+  ],
+  "additional_research_limits": [
+    "The public1995 manual preview HTML downloaded successfully after increasing a bounded transfer limit from6MB to30MB. Its text repeats the A24051-A locator, but no target figure was visually recovered. No authentication, paywall or protected download was bypassed.",
+    "Searches surfaced retailer descriptions of390530 with a1.25inch length, unlike the later factory table1.31inch label. This is an unresolved locator-level discrepancy, not authority to change the model.",
+    "The factory table's390754 screw label3/8-18 remains unresolved; no thread designation was silently corrected."
+  ]
+}

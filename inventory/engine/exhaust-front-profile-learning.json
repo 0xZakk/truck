@@ -1,0 +1,16 @@
+{
+  "exhaust-front": {
+    "summary": "Three rounded-rectangular entries connect the front cylinder-head exhaust ports to curved runners and a shared cast collector.",
+    "limits": "The Dorman674-185 replacement application and rectangular port form are manufacturer-supported. The28×28mm mouths, corner radii, wall sections, transition length, collector shape and outlet station are provisional. A capsule-shaped collector improves the former box abstraction but is not a traced production casting. Remaining clamping hardware, pipe joint, thermal stress and flow performance are unresolved.",
+    "steps": [
+      {"title": "Match the opening class", "text": "Manufacturer specifications and the head-facing photograph establish rectangular rather than circular entries. Separate surrounding pads remain material around the openings, not decorative covers on top of round holes.", "source": "dorman-674185-head-facing-photo"},
+      {"title": "Keep the head transition open", "text": "The head entry changes with the manifold mouth. The provisional rectangular opening transitions into the existing round internal head passage; it does not certify a production head-port profile.", "part": "cylinder-head"},
+      {"title": "Merge the three runners", "text": "Continuous internal passages join the shared collector and retained outlet. Connected-volume and obstruction checks establish geometric openness, not exhaust pulse behavior or backpressure."},
+      {"title": "Retain the mounting study", "text": "The separate lifting eye and its stud/bolt remain attached to provisional casting pads. The other fourteen attachment stations and shared intake/exhaust clamping details remain unfinished.", "part": "front-manifold-lifting-eye"}
+    ],
+    "troubleshooting": [
+      {"title": "Distinguish CAD openness from leak integrity", "text": "An unobstructed modeled passage does not establish a flat flange, correct clamp load, leak-free joint or safe exhaust installation. No production repair specification is inferred from the rendering."}
+    ],
+    "sources": ["dorman-674185-profile-specification", "dorman-674185-head-facing-photo", "dorman-674185-opposite-photo", "dorman-674185-application", "ford-manifold-fastener-topology"]
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "ignition-leads": {
+    "summary": "The coil lead carries secondary voltage to the distributor center. Six separate leads connect cap towers to their spark plugs in the 1-5-3-6-2-4 firing sequence.",
+    "limits": "The model uses Ford's clockwise distributor sequence but not surveyed absolute cap clocking. Cable lengths, routing, seven-millimeter jackets, clips and boots are illustrative. No ignition voltage, resistance, timing or dielectric simulation is running.",
+    "steps": [
+      {"title": "Feed the distributor", "text": "A separate cable joins the coil high-voltage terminal to the central cap contact.", "part": "ignition-coil-lead-assembly", "source": "system-f1571449160a"},
+      {"title": "Follow the firing sequence", "text": "The chosen tower map follows the documented firing order clockwise. Its number-one tower is an explicit model phase, not an installation reference.", "part": "ignition-lead-1-assembly", "source": "fsm-2f144bda5e08"},
+      {"title": "Insulate the resistive conductor", "text": "Ford describes a carbon-impregnated synthetic-fiber conductor inside heat-resistant rubber. The model separates an aggregate core, hollow jacket, terminal contacts and boots without inventing copper strands.", "part": "ignition-lead-1-carbon-core", "source": "fsm-be886ffa4807"}
+    ],
+    "troubleshooting": [],
+    "sources": ["fsm-be886ffa4807", "fsm-2f144bda5e08", "system-f1571449160a", "system-2ea2c28d7cca"]
+  },
+  "ignition-coil-mount": {
+    "summary": "A separate bracket supports the coil on two modeled head bosses, using the coil's existing provisional mounting holes.",
+    "limits": "The bracket shape, four coil screws, two head fasteners and boss geometry are fit-study assumptions, not a recovered Ford bracket drawing.",
+    "steps": [{"title": "Support the coil", "text": "The bracket connects the coil mounting holes to the head-side support bosses. Fasteners and seats are individually represented.", "part": "ignition-coil-bracket"}],
+    "troubleshooting": [],
+    "sources": ["system-f1571449160a"]
+  },
+  "ignition": {
+    "summary": "The distributor has two linked jobs: its vane passes a Hall sensor to provide engine-position information, and its rotor directs the ignition coil output toward the cap terminals. The PCM and remote ignition module control spark timing and coil switching.",
+    "limits": "Factory architecture is represented; all dimensions, terminal indexing and installed placement remain provisional. The half-speed rotation is a teaching relationship, not verified gear engagement or timing setup. Drive-gear dimensions and mesh, block mounting, wiring, spark-plug leads and module electronics remain unfinished.",
+    "steps": [
+      {
+        "title": "The cam drives the shaft",
+        "text": "The shaft and rotor turn once for two crankshaft revolutions, clockwise viewed from the cap as shown in the factory firing-order diagram. Initial timing and installed cap orientation remain unverified.",
+        "part": "distributor-shaft",
+        "source": "fsm-2f144bda5e08"
+      },
+      {
+        "title": "The gear and pin carry the drive",
+        "text": "The camshaft engages the distributor drive gear. A transverse pin couples the gear hub to the shaft; a separate washer sits above the gear. This model separates those pieces, but its teeth and running clearances are provisional.",
+        "part": "distributor-drive-gear",
+        "source": "ford-1996-distributor-drive"
+      },
+      {
+        "title": "The vane passes the Hall sensor",
+        "text": "The sensor produces Profile Ignition Pickup information for engine control. The factory system uses no centrifugal or vacuum advance mechanism.",
+        "part": "distributor-hall-sensor"
+      },
+      {
+        "title": "Electronic controls switch the coil",
+        "text": "The PCM supplies Spark Output information to the remote ignition module, which switches coil primary current. The coil and fender-mounted module have separate component studies.",
+        "source": "system-4fe310c18acd",
+        "part": "ignition-coil-primary"
+      },
+      {
+        "title": "The rotor distributes the high voltage",
+        "text": "The cap center connection feeds the rotor contact. Its tip approaches successive peripheral contacts as the shaft turns. The displayed terminal numbers are not cylinder assignments.",
+        "part": "distributor-rotor-contact"
+      },
+      {
+        "title": "The clamp holds the timing position",
+        "text": "A separate forked clamp bears on the distributor housing flange. Its bolt retains the housing after the timing adjustment. The model shows the parts separately; block mounting geometry and fastener dimensions remain provisional.",
+        "part": "distributor-hold-down-clamp",
+        "source": "system-2ea2c28d7cca"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Disturbed distributor position",
+        "text": "Ford installation distinguishes number-one compression TDC from the other TDC. Marking, alignment and final timing steps matter; the current animation is not an installation guide.",
+        "source": "system-2ea2c28d7cca"
+      },
+      {
+        "title": "Shaft binding or damaged seal",
+        "text": "The factory procedure calls for checking free shaft rotation, O-ring condition and gear damage. The modeled gear illustrates this connection; tooth geometry and engine engagement remain unverified.",
+        "source": "system-2ea2c28d7cca"
+      }
+    ],
+    "sources": [
+      "system-4fe310c18acd",
+      "system-2ea2c28d7cca",
+      "system-0452beae4961",
+      "fsm-2f144bda5e08",
+      "ford-1996-distributor-drive"
+    ]
+  },
+  "distributor-assembly": {
+    "summary": "The distributor has two linked jobs: its vane passes a Hall sensor to provide engine-position information, and its rotor directs the ignition coil output toward the cap terminals. The PCM and remote ignition module control spark timing and coil switching.",
+    "limits": "Factory architecture is represented; all dimensions, terminal indexing and installed placement remain provisional. The half-speed rotation is a teaching relationship, not verified gear engagement or timing setup. Drive-gear dimensions and mesh, block mounting, wiring, spark-plug leads and module electronics remain unfinished.",
+    "steps": [
+      {
+        "title": "The cam drives the shaft",
+        "text": "The shaft and rotor turn once for two crankshaft revolutions, clockwise viewed from the cap as shown in the factory firing-order diagram. Initial timing and installed cap orientation remain unverified.",
+        "part": "distributor-shaft",
+        "source": "fsm-2f144bda5e08"
+      },
+      {
+        "title": "The gear and pin carry the drive",
+        "text": "The camshaft engages the distributor drive gear. A transverse pin couples the gear hub to the shaft; a separate washer sits above the gear. This model separates those pieces, but its teeth and running clearances are provisional.",
+        "part": "distributor-drive-gear",
+        "source": "ford-1996-distributor-drive"
+      },
+      {
+        "title": "The vane passes the Hall sensor",
+        "text": "The sensor produces Profile Ignition Pickup information for engine control. The factory system uses no centrifugal or vacuum advance mechanism.",
+        "part": "distributor-hall-sensor"
+      },
+      {
+        "title": "Electronic controls switch the coil",
+        "text": "The PCM supplies Spark Output information to the remote ignition module, which switches coil primary current. The coil and fender-mounted module have separate component studies.",
+        "source": "system-4fe310c18acd",
+        "part": "ignition-coil-primary"
+      },
+      {
+        "title": "The rotor distributes the high voltage",
+        "text": "The cap center connection feeds the rotor contact. Its tip approaches successive peripheral contacts as the shaft turns. The displayed terminal numbers are not cylinder assignments.",
+        "part": "distributor-rotor-contact"
+      },
+      {
+        "title": "The clamp holds the timing position",
+        "text": "A separate forked clamp bears on the distributor housing flange. Its bolt retains the housing after the timing adjustment. The model shows the parts separately; block mounting geometry and fastener dimensions remain provisional.",
+        "part": "distributor-hold-down-clamp",
+        "source": "system-2ea2c28d7cca"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Disturbed distributor position",
+        "text": "Ford installation distinguishes number-one compression TDC from the other TDC. Marking, alignment and final timing steps matter; the current animation is not an installation guide.",
+        "source": "system-2ea2c28d7cca"
+      },
+      {
+        "title": "Shaft binding or damaged seal",
+        "text": "The factory procedure calls for checking free shaft rotation, O-ring condition and gear damage. The modeled gear illustrates this connection; tooth geometry and engine engagement remain unverified.",
+        "source": "system-2ea2c28d7cca"
+      }
+    ],
+    "sources": [
+      "system-4fe310c18acd",
+      "system-2ea2c28d7cca",
+      "system-0452beae4961",
+      "fsm-2f144bda5e08",
+      "ford-1996-distributor-drive"
+    ]
+  },
+  "ignition-coil-assembly": {
+    "summary": "The ignition coil stores energy in a magnetic field while primary current flows. When the module switches that current off, the changing field induces the secondary voltage sent to the distributor. The DG470 exterior study separates the core, winding packs, insulation and terminals.",
+    "limits": "The factory service part matches Ford DG470, but dimensions, installed position and internal construction remain illustrative. Winding packs and lamination stacks are aggregate volumes; this is not a literal wire-by-wire replica or a service-disassembly procedure. Bracket, capacitor and harness are unfinished.",
+    "steps": [
+      {
+        "title": "Primary current builds the field",
+        "text": "The ignition module controls current through the primary winding. Dwell is the time the coil is held on.",
+        "part": "ignition-coil-primary",
+        "source": "system-75dcdb21ac74"
+      },
+      {
+        "title": "The steel core guides magnetic flux",
+        "text": "The manufacturer identifies a steel lamination stack. Its exact sheet count and internal joints are not documented in the reviewed sources.",
+        "part": "ignition-coil-core-e",
+        "source": "ford-dg470"
+      },
+      {
+        "title": "Switching off induces secondary voltage",
+        "text": "The changing field induces voltage in the secondary winding. Its output feeds the distributor center through the coil lead. The number and arrangement of turns shown here are not a measured specification.",
+        "part": "ignition-coil-secondary",
+        "source": "system-4fe310c18acd"
+      },
+      {
+        "title": "Insulation separates electrical paths",
+        "text": "The molded case and internal insulation prevent unwanted discharge between the windings, core and terminals.",
+        "part": "ignition-coil-case",
+        "source": "ford-dg470"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Distinguish coil, wiring and control faults",
+        "text": "The coil alone does not determine spark timing or dwell. Primary power, module control and the secondary lead belong to the same ignition path. Follow the factory diagnosis rather than treating this model as a test specification.",
+        "source": "system-4fe310c18acd"
+      },
+      {
+        "title": "Do not omit the interference capacitor connection",
+        "text": "The factory coil procedure separately identifies the radio ignition interference capacitor and secondary lead. Those connections are not yet routed in this reconstruction.",
+        "source": "system-f1571449160a"
+      }
+    ],
+    "sources": [
+      "system-f015ea2ab18c",
+      "system-f1571449160a",
+      "system-4fe310c18acd",
+      "system-75dcdb21ac74",
+      "ford-dg470"
+    ]
+  },
+  "ignition-module-assembly": {
+    "summary": "Ford places this ignition module on a separate finned heat sink on the fender. The distributor supplies position information, and the module switches the ignition coil primary circuit in response to the control signals.",
+    "limits": "The mounting architecture and fastener counts follow the factory service illustration. Dimensions, fin count, connector contacts, wiring route and fender position remain provisional. The electronic package has not been reconstructed internally, and its display color does not establish push-start or CCD identity.",
+    "steps": [
+      {
+        "title": "Position and timing are separate signals",
+        "text": "PIP provides engine-position information; the PCM sends SPOUT timing information to the ignition module.",
+        "source": "system-4fe310c18acd"
+      },
+      {
+        "title": "Dwell control depends on module type",
+        "text": "Ford describes two arrangements: push-start controls coil-on time internally using engine speed; CCD responds to both SPOUT edges for coil-on and coil-off timing. The installed variant still needs confirmation.",
+        "part": "ignition-module-package",
+        "source": "system-75dcdb21ac74"
+      },
+      {
+        "title": "The heat sink carries heat away",
+        "text": "The factory procedure specifies cleaning the mating surfaces and applying the specified silicone compound before fastening the module to its heat sink. The thermal interface is not a separate modeled gasket.",
+        "part": "ignition-heat-sink",
+        "source": "system-0538e7de7e9d"
+      },
+      {
+        "title": "Two sets of screws have different jobs",
+        "text": "Two screws hold the module to the heat sink; another two retain that assembly on the fender. The viewer keeps those occurrences separate.",
+        "part": "ignition-module-screw-1",
+        "source": "system-0538e7de7e9d"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Do not select a replacement by rendered color",
+        "text": "The generic factory description covers gray push-start and black CCD arrangements. This neutral model does not identify which module is installed, and the service replacement number alone is not a dimensional or calibration survey.",
+        "source": "system-75dcdb21ac74"
+      },
+      {
+        "title": "Inspect the mounting interface when servicing",
+        "text": "Ford treats the heat-sink mating surfaces, specified interface compound and connector latch as part of the service procedure. Follow the linked procedure; exploded spacing is for exploration.",
+        "source": "system-0538e7de7e9d"
+      }
+    ],
+    "sources": [
+      "system-4fe310c18acd",
+      "system-75dcdb21ac74",
+      "system-0538e7de7e9d",
+      "system-6d43f4508d79"
+    ]
+  },
+  "spark-plugs": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-1-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-1-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-1-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-1": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-1-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-1-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-1-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-2": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-2-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-2-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-2-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-3": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-3-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-3-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-3-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-4": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-4-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-4-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-4-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-5": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-5-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-5-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-5-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  },
+  "spark-plug-6": {
+    "summary": "Each plug carries coil voltage through an insulated center path to the firing gap. This nine-component study uses the catalog envelope of NGK WR4-1, an explicitly listed replacement for the 1994 4.9L F-150.",
+    "limits": "Thread diameter, reach, hex size, tapered seat and nominal application gap are sourced. The modeled 1.5 mm thread pitch is family-derived; production tolerances, overall length, internal geometry, head installation angle and leads remain unfinished. The six plugs now share matching head bores and recessed wells. Their angle and mounting coordinates are provisional, not a verified production fit.",
+    "steps": [
+      {
+        "title": "A replacement envelope tied to the truck",
+        "text": "The catalog lists 18 mm thread diameter, .460 inch reach, 13/16 inch hex and a tapered seat. No separate flat-seat gasket is added.",
+        "part": "spark-plug-6-shell",
+        "source": "ngk-2019-spark-plugs"
+      },
+      {
+        "title": "The insulator separates the center path",
+        "text": "The ceramic isolates the center conductor from the grounded shell. The internal suppressor element is represented separately.",
+        "part": "spark-plug-6-insulator",
+        "source": "ngk-plug-construction"
+      },
+      {
+        "title": "The firing gap remains open",
+        "text": "This study uses the catalog application gap of .044 inch, or 1.1176 mm. The ground strap and center electrode are separate solids.",
+        "part": "spark-plug-6-ground-electrode",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Match seat and reach before installation",
+        "text": "A generic spark-plug shape is not proof of head compatibility. This replacement uses a tapered seat; actual installed identity and head bore fit remain unresolved.",
+        "source": "ngk-2019-spark-plugs"
+      }
+    ],
+    "sources": [
+      "ngk-2019-spark-plugs",
+      "ngk-plug-construction"
+    ]
+  }
+}

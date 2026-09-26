@@ -1,0 +1,48 @@
+{
+  "source_id": "ford-alt-thermactor-shared-carrier",
+  "review_date": "2026-09-26",
+  "status": "photographic-topology-evidence; dimensions-unverified",
+  "casting": "F4TE-10239-AC",
+  "images": [
+    {
+      "path": "reference/engine/f4te-10239-ac-seller-front.webp",
+      "sha256": "6033281888b70832d734fbe7ff263adc4ac3ff064d22e4eb5b65a1e54ebf3119",
+      "visually_reviewed": true
+    },
+    {
+      "path": "reference/engine/f4te-10239-ac-seller-rear.webp",
+      "sha256": "1d7e68ec33423a3982c5bfdec220944e5b85b920299e2e5834c76f7c3dcd2b61",
+      "visually_reviewed": true
+    },
+    {
+      "path": "reference/engine/f4te-10239-ac-seller-stamp.webp",
+      "sha256": "796ca8dea084d29d34d3e410ce01d5bf9fc72f443854c1a0c149c1a14b4d64b2",
+      "visually_reviewed": true
+    },
+    {
+      "path": "reference/engine/ford-49-exploded-accessory-bracket.jpg",
+      "sha256": "dfc9f5f35b23161c43c4a670aa1adb2dc22c487c30e4486f486e1b9d5518e4c7",
+      "visually_reviewed": true
+    }
+  ],
+  "photographer_seller_url": "https://www.socaminhonetes.com.br/produtos/suporte-bomba-direcao-hidraulica-ford-f1000-f4te10239ac/",
+  "US_identity_records": [
+    "https://www.ebay.com/p/1174076237",
+    "https://www.ebay.com/itm/165706681312",
+    "https://www.ebay.com/itm/257288146715"
+  ],
+  "diagram_url": "https://www.supermotors.net/registry/media/790004_1",
+  "observations": [
+    "Third seller photograph visibly bears Ford logo and F4TE-10239-AC casting identifier.",
+    "One connected ribbed cast carrier has a broad arched cradle, multiple mounting bosses and a narrower extended arm.",
+    "US seller records independently identify F4TE10239AC/AB as Ford4.9 alternator/Thermactor bracket; this is seller evidence, not a dimensional factory drawing.",
+    "Exploded-engine diagram caption names an alternator/Thermactor pump bracket; saved raster is too low resolution to confidently read all callouts."
+  ],
+  "limits": [
+    "Brazilian seller labels F1000 power steering; this conflicting application label is not accepted as USF150 fitment evidence.",
+    "No calibrated dimensions, installed orientation, exact hole functions, pulley stations or bolt sizes are established by these perspective photographs.",
+    "AB versus AC interchange remains unverified by Ford catalog; no claim that all 1987\u201396 brackets are identical.",
+    "Excluded misindexed E7TZ10A313C/7.5L and V8/4.2L images."
+  ],
+  "next_cad_action": "Replace separate ALT/AP supports with a common photographed-topology carrier candidate; maintain explicit approximate stations and audit all affected interfaces before integration."
+}

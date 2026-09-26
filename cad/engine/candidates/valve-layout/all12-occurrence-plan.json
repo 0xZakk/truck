@@ -1,0 +1,5239 @@
+{
+  "warning": "Rest/motion metadata only; does not regenerate all12 geometry or establish all-engine clearance.",
+  "stations": [
+    {
+      "cylinder": 1,
+      "firing_deg": 0,
+      "stations": [
+        259.48,
+        309.48
+      ]
+    },
+    {
+      "cylinder": 2,
+      "firing_deg": 480,
+      "stations": [
+        145.688,
+        195.688
+      ]
+    },
+    {
+      "cylinder": 3,
+      "firing_deg": 240,
+      "stations": [
+        31.896,
+        81.896
+      ]
+    },
+    {
+      "cylinder": 4,
+      "firing_deg": 600,
+      "stations": [
+        -81.896,
+        -31.896
+      ]
+    },
+    {
+      "cylinder": 5,
+      "firing_deg": 120,
+      "stations": [
+        -195.688,
+        -145.688
+      ]
+    },
+    {
+      "cylinder": 6,
+      "firing_deg": 360,
+      "stations": [
+        -309.48,
+        -259.48
+      ]
+    }
+  ],
+  "moving_occurrences": [
+    {
+      "id": "c1-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c1-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c1-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c1-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c1-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c1-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c1-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c1-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c1-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c1-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        259.48,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c1-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c1-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        259.48,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c1-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c1-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c1-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c1-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c1-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c1-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c1-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c1-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c1-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c1-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        309.48,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c1-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c1-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c1-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        309.48,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c2-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        145.688,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c2-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        145.688,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c2-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c2-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c2-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c2-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c2-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c2-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c2-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        145.688,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c2-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c2-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        145.688,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c2-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        195.688,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c2-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        195.688,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c2-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c2-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c2-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c2-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c2-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c2-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c2-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c2-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        195.688,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c2-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c2-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c2-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        195.688,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 2,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c3-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        31.896,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c3-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        31.896,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c3-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c3-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c3-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c3-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c3-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c3-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c3-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        31.896,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c3-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c3-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        31.896,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c3-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        81.896,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c3-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        81.896,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c3-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c3-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c3-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c3-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c3-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c3-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c3-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c3-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        81.896,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c3-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c3-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c3-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        81.896,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 3,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c4-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -81.896,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c4-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -81.896,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c4-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c4-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c4-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c4-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -81.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c4-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c4-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c4-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -81.896,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c4-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c4-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -81.896,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c4-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -31.896,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c4-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -31.896,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c4-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c4-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c4-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c4-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -31.896,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c4-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c4-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c4-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c4-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -31.896,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c4-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c4-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c4-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -31.896,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 4,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c5-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -195.688,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c5-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -195.688,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c5-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c5-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c5-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c5-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -195.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c5-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c5-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c5-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -195.688,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c5-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c5-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -195.688,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c5-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -145.688,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c5-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -145.688,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c5-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c5-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c5-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c5-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -145.688,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c5-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c5-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c5-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c5-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -145.688,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c5-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c5-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c5-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -145.688,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 5,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-valve",
+      "definition": "intake-valve",
+      "parent": "c6-intake-valve-assembly",
+      "name": "Intake Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -309.48,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-intake-spring",
+      "definition": "valve-spring",
+      "parent": "c6-intake-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -309.48,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c6-intake-retainer",
+      "definition": "spring-retainer",
+      "parent": "c6-intake-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-intake-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c6-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-intake-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c6-intake-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -309.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-intake-pushrod",
+      "definition": "pushrod",
+      "parent": "c6-intake-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c6-intake-rocker",
+      "definition": "rocker-arm",
+      "parent": "c6-intake-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -309.48,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c6-intake-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-intake-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c6-intake-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -309.48,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "intake",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-valve",
+      "definition": "exhaust-valve",
+      "parent": "c6-exhaust-valve-assembly",
+      "name": "Exhaust Valve",
+      "function": "Opens its port at the appropriate part of the four-stroke cycle and seals against the head when closed. Stem, face and keeper groove are separate features in one valve.",
+      "position_cad_mm": [
+        -259.48,
+        -12.0,
+        261.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        140
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-exhaust-spring",
+      "definition": "valve-spring",
+      "parent": "c6-exhaust-valve-assembly",
+      "name": "Valve spring",
+      "function": "Returns the valve to its seat and keeps the valvetrain in contact with the cam profile. Coil count, rate and installed height are provisional.",
+      "position_cad_mm": [
+        -259.48,
+        -12.0,
+        310.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        210
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "spring"
+      }
+    },
+    {
+      "id": "c6-exhaust-retainer",
+      "definition": "spring-retainer",
+      "parent": "c6-exhaust-valve-assembly",
+      "name": "Valve spring retainer",
+      "function": "Captures the top of the spring; paired keepers lock it to the valve stem.",
+      "position_cad_mm": [
+        -259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        240
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-exhaust-keeper-1",
+      "definition": "valve-keeper",
+      "parent": "c6-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-exhaust-keeper-2",
+      "definition": "valve-keeper",
+      "parent": "c6-exhaust-valve-assembly",
+      "name": "Valve keeper half",
+      "function": "One half of the split lock connecting the spring retainer to the valve stem. Taper and lock profile are provisional.",
+      "position_cad_mm": [
+        -259.48,
+        -12.0,
+        365.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        180
+      ],
+      "explode_cad_mm": [
+        0,
+        25,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "valve"
+      }
+    },
+    {
+      "id": "c6-exhaust-pushrod",
+      "definition": "pushrod",
+      "parent": "c6-exhaust-actuation",
+      "name": "Hollow pushrod",
+      "function": "Transfers lifter motion to the rocker and provides an oil route to the rocker interface. Length and end geometry are provisional.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        254.2
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -110,
+        160
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "pushrod"
+      }
+    },
+    {
+      "id": "c6-exhaust-rocker",
+      "definition": "rocker-arm",
+      "parent": "c6-exhaust-actuation",
+      "name": "Rocker arm",
+      "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+      "position_cad_mm": [
+        -259.48,
+        51.62143599494969,
+        383.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -70,
+        270
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "rocker"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-body",
+      "definition": "lifter-body",
+      "parent": "c6-exhaust-lifter",
+      "name": "Hydraulic lifter body",
+      "function": "Rides the cam lobe and houses the hydraulic lash-adjusting components. Separate retaining-ring groove, annular oil-feed groove and radial oil port are modeled; their dimensions are provisional.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        116.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-plunger-spring",
+      "definition": "lifter-plunger-spring",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter plunger spring",
+      "function": "Biases the plunger outward during lash adjustment.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        95.65
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        55
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-check-retainer",
+      "definition": "lifter-check-retainer",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter check-valve retainer",
+      "function": "Retains the check-valve spring at the plunger base.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        103.5
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        85
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-check-spring",
+      "definition": "lifter-check-spring",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter check-valve spring",
+      "function": "Biases the check valve toward its seat.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        104.3
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        100
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-check-ball",
+      "definition": "lifter-check-ball",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter check valve",
+      "function": "Closes the oil chamber during lift so the lifter transmits force.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        109.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        120
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-plunger",
+      "definition": "lifter-plunger",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter plunger",
+      "function": "Moves inside the body to take up valve-train clearance. Its bottom closes the hydraulic chamber around the small check-valve port.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        122.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        155
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-metering-disc",
+      "definition": "lifter-metering-disc",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter metering disc",
+      "function": "Meters the oil delivered toward the pushrod cup.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        133.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        185
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-pushrod-cup",
+      "definition": "lifter-pushrod-cup",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter pushrod cup",
+      "function": "Supports the spherical pushrod end and admits lubricating oil.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        136.9
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        200
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    },
+    {
+      "id": "c6-exhaust-lifter-lock-ring",
+      "definition": "lifter-lock-ring",
+      "parent": "c6-exhaust-lifter",
+      "name": "Lifter retaining ring",
+      "function": "Keeps the internal parts inside the lifter body.",
+      "position_cad_mm": [
+        -259.48,
+        90,
+        140.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -140,
+        215
+      ],
+      "valvetrain": {
+        "cylinder": 6,
+        "kind": "exhaust",
+        "role": "lifter"
+      }
+    }
+  ]
+}

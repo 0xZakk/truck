@@ -1,0 +1,101 @@
+{
+  "status": "61-piece construction candidate passes sampled geometry and frozen-neighbor checks; production identity and fit not established",
+  "application": {
+    "comparison": "DENSO catalog page 42 lists FS10 replacement 471-8130 for 1990-1995 F-150 L6-4.9 with factory A/C.",
+    "limit": "This does not identify the compressor currently installed on the owner's truck or establish dimensions. Owner photographs show A/C equipment; factory versus dealer installation remains unconfirmed."
+  },
+  "sources": [
+    {
+      "id": "fs10-piston-ring-photo",
+      "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/part2/PICT7541-vi.jpg",
+      "path": "reference/engine/fs10-comparison-piston-rings.jpg",
+      "sha256": "b6ca34d1e7135a86f7028b4831d7c17380e780c7c6bd76415d9cad8bc725c68b",
+      "review": "Visually reviewed: one circumferential sealing band at each end of each double-ended piston. Author calls these Teflon compressor seal rings. Tan/brown appearance, not a scale or material analysis. The 1998 Crown Victoria comparison does not identify truck dimensions."
+    },
+    {
+      "id": "uac-fs10-101220c",
+      "url": "https://www.uacparts.com/legacy/Search/Co/CO_FS10_Replacement.html",
+      "path": "reference/engine/uac-fs10-replacement.html",
+      "sha256": "136c9f0ab37b4004e4db427eee8ccad21025f305437f0bb16b0dbf76b2c10079",
+      "review": "Manufacturer CO101220C table lists 1990–95 F-series 4.9/7.5, 145 mm clutch diameter, six grooves, spline hub, 12 o'clock coil and 93 mm tangent mount width. Crosses Four Seasons 58122/57122. Diameter is applied as outside envelope, not proven belt pitch diameter. The mount-width datum is not diagrammed and is NOT claimed by the provisional ear geometry."
+    },
+    {
+      "id": "ford-ac-clutch-gap",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Heating%20and%20Air%20Conditioning/Compressor%20HVAC/Compressor%20Clutch/Specifications/index.html",
+      "sha256": "ed5c0283f2817ff7632b05c15c060cdfd94698847a2c22c677552994027fcfcc",
+      "review": "Ford 1994 clutch air gap specification is 0.018–0.033 inch; the static candidate uses 0.6 mm."
+    },
+    {
+      "id": "denso-fs10-application",
+      "url": "https://images.carid.com/denso/air-conditioning-heating/denso-ac-compressor-components-catalog.pdf",
+      "path": "reference/engine/denso-compressor-catalog.pdf",
+      "sha256": "c9c77c0359c17a8b8d6cb697d27a899039a212f145f9c5cc20b3e5b434991080",
+      "page": 42,
+      "review": "Application table visually reviewed. Manufacturer catalog hosted by distributor."
+    },
+    {
+      "id": "ford-fs10-construction-comparison",
+      "url": "https://charm.li/Ford/1997/F%20150%204WD%20Pickup%20V8-4.6L%20SOHC%20VIN%206/Repair%20and%20Diagnosis/Heating%20and%20Air%20Conditioning/Compressor%20HVAC/Description%20and%20Operation/",
+      "review": "Later Ford FS10 family description, not 1994 mounting evidence. Five double-ended pistons form ten chambers. Shaft-mounted swashplate acts through shoes. Suction/discharge reeds and valve plates close both cylinder ends. Front shaft seal and electromagnetic clutch are separate interfaces."
+    },
+    {
+      "id": "fs10-dissection-comparison",
+      "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/index.html",
+      "path": "reference/engine/fs10-comparison-disassembly.html",
+      "sha256": "b8173a9a8e38f5aafdc3de857e89fde3f7cc5cc3ed3ce6f2b782e179821c94ac",
+      "review": "First-hand dissection of a 1998 Crown Victoria FS10; construction comparison only, not truck interchange proof. The separated-parts photograph shows five pistons, ten shoes, two cylinder halves, swashplate/shaft and thrust-bearing/race stacks."
+    },
+    {
+      "id": "fs10-separated-parts-photo",
+      "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/part2/PICT7608-vi.jpg",
+      "path": "reference/engine/fs10-comparison-parts.jpg",
+      "sha256": "152a39ef47eeee9355e90d6120db91d0bfbd19171758addf2b70babb8f956173",
+      "review": "Visually reviewed; no image scaling used for dimensions."
+    }
+  ],
+  "vehicle_service_constraints": {
+    "clutch_air_gap_inches": [0.018, 0.033],
+    "clutch_air_gap_mm": [0.4572, 0.8382],
+    "source_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Heating%20and%20Air%20Conditioning/Compressor%20HVAC/Compressor%20Clutch/Specifications/index.html",
+    "parts_catalog_service_number": "4R3Z19703A",
+    "catalog_limit": "Archive service number may be superseded; not an original installed identity."
+  },
+  "candidate": {
+    "module": "cad/engine/ac_compressor.py",
+    "build_api": "build((define, add, group))",
+    "group": "ac-compressor",
+    "parent": "accessory-drive",
+    "world_origin_mm": [373.56, 280, 100],
+    "pulley_center_mm": [473.56, 280, 100],
+    "shaft_axis": "Global +X toward radiator; local +Z transformed by Y+90 degrees",
+    "mounting": "Four provisional front ear faces X432.56; holes Y210/350, Z60/140, radius5.5, 12 mm rearward thickness. Shared support study is owned by accessory_brackets.py.",
+    "sourced_constraints": "Five double-ended pistons, ten shoes, ten PTFE sealing rings by comparison teardown; 145 mm clutch envelope and six grooves from UAC; 0.6 mm selected gap within Ford range.",
+    "provisional_dimensions": "130 mm body OD, 26 mm bores, 37 mm piston-axis pitch radius, 18 degree swash inclination, 24.044 mm piston stroke, cases/heads/ports, all shaft, seal, bearing, reed, bolt and mounting details.",
+    "kinematics": "Each piston axial offset is -tan(18deg)*37*cos(pistonAngle-shaftPhase). Shoes follow the tilted swash plane with a 0.2 mm illustrative face gap and 0.1 mm spherical cup clearance. No refrigerant or contact-force solver.",
+    "refrigerant_limit": "Rear head ports reach separate annular suction/discharge plenums and matching valve holes/reeds. Longitudinal passages joining the two heads remain absent, so no complete closed refrigerant network is claimed.",
+    "bearing_limit": "Two three-piece thrust stacks are decomposed into two races and one rolling-element envelope cartridge each. Pulley bearing is one cartridge; individual balls/rollers, cages and real counts are unresolved.",
+    "scope": "Static illustrative component reconstruction and eight sampled shaft poses, not a production fit, pressure-tight compressor, continuously verified motion, or servicing instructions.",
+    "checks": ["scripts/check-ac-compressor-candidate.py", "scripts/check-ac-compressor-interfaces.py"]
+  },
+  "validation": {
+    "frozen_manifest_sha256": "9c2a4d13a70d0bbc9343598dc09c56286de7e25b60351d1cfaea7e2b061d6c71",
+    "frozen_manifest_occurrences": 1005,
+    "geometry_checked_source_sha256": "065cea2c7cb47e5514f7c70ce702be7ff796e23bac99a5cf9ed7a43bd71fa720",
+    "final_source_sha256": "a642b8c9e89de926db61f3515bf4eee31743bb599c280318f05c7c88f0931799",
+    "metadata_only_change": "After full exact QC, added per-role descriptions and passed those descriptions to define(). No solid generation, placement, parameter or appearance changed. Final API/bracket check uses the final source hash.",
+    "step_roundtrips": 61,
+    "exact_checks_including_eight_internal_poses_and_installed_neighbors": 1257,
+    "collisions": [],
+    "sampled_shaft_degrees": [0, 45, 90, 135, 180, 225, 270, 315],
+    "candidate_report": "inventory/engine/ac-compressor-candidate-validation.json",
+    "interface_report": "inventory/engine/ac-compressor-interface-validation.json",
+    "installed": false,
+    "verified_production_fit": false
+  },
+  "modeling_requirements": [
+    "Reserve the lower vehicle-LH accessory station beneath power steering, following reviewed with-A/C belt routing; coordinates remain provisional.",
+    "Separate clutch coil, pulley, pulley bearing, retention, hub/plate, shaft seal, cases, cylinder halves, pistons, shoes, reeds, valve plates, seals and fasteners.",
+    "Verify double-acting piston and shoe kinematics before claiming compressor motion.",
+    "Resolve pulley diameter, grooves, mount geometry, manifold orientation and physical dimensions independently; no dimensional scale from photographs."
+  ]
+}

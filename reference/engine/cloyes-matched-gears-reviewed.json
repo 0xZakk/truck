@@ -1,0 +1,33 @@
+{
+  "source_id": "cloyes-performance-matched-gears",
+  "url": "https://images.carid.com/cloyes/engine-components/pdf/high-performance-catalog.pdf",
+  "path": "reference/engine/cloyes-performance-matched-gear-catalog.pdf",
+  "sha256": "5cceafb9ed04c2158fa76683d94ce3a00cc6bfebfc8415c178e600b1cc964534",
+  "author": "Cloyes",
+  "host": "CARiD",
+  "pdf_page": 13,
+  "visually_reviewed": true,
+  "application_row": {
+    "engine_family": "Ford I-6",
+    "years": "1965-1996",
+    "set": "8-1014",
+    "crank_material": "steel",
+    "cam_material": "aluminum"
+  },
+  "limits": [
+    "Manufacturer catalog hosted by retailer; page does not specify displacement or installed part identity.",
+    "Page does not state tooth counts, helix angle, center distance or dimensional tolerances.",
+    "The two generic product photos are not individually labelled with a Ford part number. Do not infer exact Ford geometry by counting the pictured teeth.",
+    "Current model24/48 tooth counts remain illustrative; industrial92-tooth reference is not yet tied to installed1994camgear."
+  ],
+  "research_failures": [
+    {
+      "url": "https://www.melling.com/wp-content/uploads/2017/04/2015-Mell-Gear-Catalog-PDF.pdf",
+      "result": "404 on direct retrieval; search indexing alone is not accepted evidence"
+    },
+    {
+      "url": "https://melling.com/wp-content/uploads/2025/05/Ford-Modular-Mini-Cat_website.pdf",
+      "result": "Current Ford guide covers late-model V6/V8, not this inline-six"
+    }
+  ]
+}

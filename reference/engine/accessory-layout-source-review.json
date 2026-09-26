@@ -1,0 +1,42 @@
+{
+  "review_date": "2026-09-25",
+  "sources": [
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "visually_reviewed": true
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "visually_reviewed": true
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/212084317.png",
+      "sha256": "cb47b6d8dd2899cd32f86f62dc86d264182f417888b65ec568517bb2a1be5216",
+      "visually_reviewed": true
+    }
+  ],
+  "schematic_observations": [
+    "P/S above tensioner; tensioner above alternator.",
+    "Tensioner is on P/S side of water-pump/crank centerline.",
+    "A/C below water-pump center and below P/S.",
+    "Thermactor below alternator and above crank center."
+  ],
+  "owner_photo_observations": [
+    "A/C and belt hardware are present. Angled views contain obscured pulley centers and are unsuitable for extracting calibrated center distances.",
+    "The numerical +115 mm compressor relocation is not established by these photos."
+  ],
+  "scope": "Qualitative schematic constraints for candidate screening, not pixel-derived production datums. Photo perspective prevents validating exact heights or lateral shifts.",
+  "rejections": [
+    {
+      "candidate": "accessory_layout_candidate",
+      "reason": "Exact engine/inter-accessory collisions."
+    },
+    {
+      "candidate": "accessory_layout_constrained",
+      "reason": "Nominal-length match violates schematic ordering: tensioner above P/S; A/C above W/P. Old supports also overlap."
+    }
+  ],
+  "next_candidate": "accessory_layout_evidence; geometry, catalog-length and dimensional-evidence acceptance remain separate."
+}

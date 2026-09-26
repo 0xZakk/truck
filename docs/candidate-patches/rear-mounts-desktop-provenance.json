@@ -1,0 +1,39 @@
+{
+  "baseline_manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "isolated_manifest_sha256": "4854f35279369536482b43256affe4d3053f7ee5232b484649d6a544f3738c74",
+  "paths": {
+    "cad/engine/full_engine.py": {
+      "live_base_sha256": "32ab6a16e7b83c4dd54ee01036aadf620f951fd21eda2a53936b65ff4d5baa00",
+      "candidate_sha256": "d385e22332b0817d203c825b7c3a5961d1a19479f216816bd3609cba1e9e0096"
+    },
+    "viewer/atlas.js": {
+      "live_base_sha256": "381427405ac0f1dd9d4c21530ddb704f91eb4969ed0cddce457e5d4b5c0a9432",
+      "candidate_sha256": "bd2d1ff81fa1545abacda77d0b9f37d5eb9bda6dd27ba0664697546c7ba361a4"
+    },
+    "scripts/check-engine-navigation.mjs": {
+      "live_base_sha256": "f9740bcdc62167b43a57d51d7d77bb92e5e51f459f259f8413c6e18ecba84de5",
+      "candidate_sha256": "c10c5cdf23444e76e64da236f850c206456d19d8c0a5ed5a10beb528c550fb52"
+    },
+    "scripts/check-rear-manifold-mounts-desktop.py": {
+      "live_base_sha256": "7247361aeb94681ae95affb28f54491f15f000b1ffbfa974682b058d684eb03b",
+      "candidate_sha256": "4486c923f6fbf4d83a9a41350f4ef1fff062cd15a185d3142d254099130d6f5e"
+    },
+    "inventory/engine/rear-manifold-mounts-learning.json": {
+      "live_base_sha256": null,
+      "candidate_sha256": "f106e52a38e435f943e85cc9739b30c98843da65fdea8ef198598c12b70d4cf5"
+    }
+  },
+  "status": "Accepted only in isolated build: installed336neighbor/54passage checks, whole-static4558checks withzerooverlaps above0.1mm3, sampled explodedposes, navigation1246parts/1441links and162sourcehashes passed. Browserassembled/explodedmesh and hierarchy reviewed. Live publication held for ownership resolution.",
+  "saved_acceptance_directory": "cad/engine/candidates/rear-mounts-desktop/accepted",
+  "artifacts": {
+    "atlas-static-validation.json": "048777b176f430c3f9d99ee49161387b67b6b88646f83195002baff9552fc0b4",
+    "exhaust-rear.step": "e4a6f16ef5534cfbd9431c614104e2109923f25b1a25068dc9a605bd59e71461",
+    "rear-manifold-bolt16.step": "499e119bef3ed464706a2e0649d9be33a20acb0b5becdc61a22f74938ec116d9",
+    "cylinder-head.step": "46b64761329e133938f6a11ec3d023f90e3c659db99aeabab0674525ec14ff98",
+    "rear-manifold-mounts-desktop-installed-validation.json": "c04130d57cbebddf4571c42f34c8814c26141dd8202e8a3fa49ca2ed189167b8",
+    "efi-head-intake-gasket.step": "ba3e45fac23e508ad13cfe47440fd3cb34d58a7ee41bfd8d8da5252956142212",
+    "rear-manifold-bolt15.step": "63586b3e24b8d607605404c5a9b185cecc2c63b1394353151527a77927dcb056",
+    "efi-lower-intake.step": "2f12556c1254b98914428b0f4b65330ad2336cbab116b10e2d9ced1802655066",
+    "manifold-all-mounts-explosion-validation.json": "6998ae809cad46452fd85936ec60bc49be939b6b52f897c2035ef3e7f303367f"
+  }
+}

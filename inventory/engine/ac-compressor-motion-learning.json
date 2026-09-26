@@ -1,0 +1,30 @@
+{
+  "ac-compressor": {
+    "summary": "Five double-ended pistons create ten chambers. A shaft-mounted swashplate drives them through ten spherical shoes, while separate reed-controlled passages connect each end to rear suction and discharge ports.",
+    "limits": "The connected passage layout, dimensions, gasket details and stroke geometry are illustrative. Independent compressor controls are not a belt-speed calculation. Geometric probes do not establish pressure sealing, refrigerant performance or production fit.",
+    "steps": [
+      {"title": "Separate clutch control from engine speed", "text": "The independent compressor-angle control turns the pulley. Enabling engagement also moves the shaft, pistons and shoes; disabling it resets those parts to the reference pose rather than simulating coast-down. The simplified armature does not translate or flex.", "part": "ac-compressor-clutch-pulley", "source": "ford-fs10-construction-comparison"},
+      {"title": "Keep every moving piece rigid", "text": "Each piston and its two rings translate along a fixed cylinder axis. Each spherical shoe changes orientation about a fixed socket center on that piston, rather than changing the piston shape as the swashplate turns.", "part": "ac-compressor-piston-1", "source": "fs10-dissection-comparison"},
+      {"title": "Supply both head plenums", "text": "One assumed longitudinal gallery connects the rear suction port to suction plenums at both ends. Cap drillings reach the inner plenum without opening into the separate discharge annulus.", "part": "ac-compressor-rear-head", "source": "fs10-cylinder-passage-comparison"},
+      {"title": "Seat the suction reeds", "text": "The full suction sheet closes ten selected inlet windows, five at each end. The diagnostic probes are blocked by the seated reed and clear when its window alone is removed; actual elastic lift is not simulated.", "part": "ac-compressor-front-suction-reed", "source": "ford-fs10-construction-comparison"},
+      {"title": "Collect discharge separately", "text": "The other longitudinal gallery connects both discharge plenums to the rear discharge port. Closed discharge reeds separate those plenums from the compression chambers. The two diagnostic channel networks are connected individually and do not intersect.", "part": "ac-compressor-rear-discharge-reed", "source": "fs10-cylinder-passage-comparison"},
+      {"title": "Distinguish connectivity from pumping performance", "text": "Separate geometric routes are only one requirement. Piston-ring sealing, oil films, pressure-dependent reed motion and refrigerant thermodynamics are not reconstructed, so the model does not claim a functioning or pressure-tight compressor."}
+    ],
+    "troubleshooting": [
+      {"title": "Locate the leak before choosing a repair", "text": "The 1994 factory test distinguishes leakage at the shaft seal from leakage at the center case joint. It specifies a shaft-seal replacement for the former and compressor-assembly replacement for the latter. The model's separate seal and joint illustrate those locations; its geometric checks cannot establish a refrigerant-tight seal.", "part": "ac-compressor-shaft-seal", "source": "ford-compressor-leak-diagnosis"},
+      {"title": "Keep manifold seals distinct from case seals", "text": "The factory procedure checks the rear manifold O-ring joint separately and calls for replacement O-rings if leakage persists with the attachment correctly tightened. The engine-side manifold, its seals and its retaining bolt are not yet reconstructed, so the displayed ports are an incomplete interface.", "part": "ac-compressor-rear-head", "source": "ford-compressor-manifold-diagnosis"},
+      {"title": "Treat the explorer as an explanation, not a service test", "text": "Do not open or vent a charged refrigerant circuit to reproduce the animation. Physical leak testing and refrigerant handling require suitable recovery/service equipment and a qualified technician; this page intentionally does not reproduce the historical charging or discharge steps."}
+    ],
+    "sources": ["denso-fs10-application", "uac-fs10-101220c", "ford-fs10-construction-comparison", "fs10-dissection-comparison", "fs10-cylinder-passage-comparison", "fs10-piston-ring-photo", "ford-ac-clutch-gap", "optibelt-pk-profile", "ford-compressor-leak-diagnosis", "ford-compressor-manifold-diagnosis"]
+  },
+  "ac-compressor-shaft-motion": {
+    "summary": "The compressor shaft, swashplate and simplified armature hub rotate together only when the independent engagement control is enabled.",
+    "limits": "This control is not coupled to crankshaft speed and does not model clutch slip, armature flexure, air-gap closure or physical coast-down.",
+    "sources": ["ford-fs10-construction-comparison"]
+  },
+  "ac-compressor-pulley-motion": {
+    "summary": "The belt-side pulley turns independently on its bearing; the teaching angle remains available with the shaft disengaged.",
+    "limits": "145 mm is the catalog clutch-diameter envelope, not a proven belt pitch diameter. The shared PK groove section is a comparison and no engine-to-compressor speed ratio is claimed.",
+    "sources": ["uac-fs10-101220c", "optibelt-pk-profile"]
+  }
+}

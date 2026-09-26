@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "installed": false,
+  "installed_matches": [],
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "source_sha256": "725105651f569a137e84ecb41e6c3a653fb2c72808ba830bf841cea27bfbeb9e",
+  "step_roundtrips": [
+    "front-manifold-lifting-eye",
+    "front-manifold-stud13",
+    "front-manifold-bolt14",
+    "cylinder-head",
+    "efi-lower-intake",
+    "efi-head-intake-gasket",
+    "exhaust-front"
+  ],
+  "rectangular_ports": true,
+  "profile_sha256": "45747ee7653a6cc7ca569fb87fcf1cce300b71d838bf0bef484b3c388bf94449",
+  "exact_checks": 12,
+  "failures": [],
+  "contacts": [
+    {
+      "first": "front-manifold-lifting-eye",
+      "second": "exhaust-front",
+      "distance_mm": 0.0
+    },
+    {
+      "first": "front-manifold-lifting-eye",
+      "second": "front-manifold-stud13",
+      "distance_mm": 8.526512829121202e-14
+    },
+    {
+      "first": "front-manifold-lifting-eye",
+      "second": "front-manifold-bolt14",
+      "distance_mm": 8.526512829121202e-14
+    }
+  ],
+  "exhaust_port_probes": [
+    {
+      "port_x_mm": 309.48,
+      "obstruction_mm3": 0
+    },
+    {
+      "port_x_mm": 195.688,
+      "obstruction_mm3": 0
+    },
+    {
+      "port_x_mm": 81.896,
+      "obstruction_mm3": 0
+    }
+  ],
+  "mounting_interface_probes": [
+    {
+      "station": "stud13",
+      "role": "individual-foot-pad",
+      "distance_mm": 8.526512829121202e-14
+    },
+    {
+      "station": "stud13",
+      "role": "individual-foot-shoulder",
+      "distance_mm": 5.684341886080802e-14
+    },
+    {
+      "station": "stud13",
+      "role": "individual-pad-head",
+      "distance_mm": 0.0
+    },
+    {
+      "station": "stud13",
+      "role": "eye-foot",
+      "occupied": true,
+      "probe_mm3": 78.14711725804688,
+      "material_mm3": 78.14711725804688
+    },
+    {
+      "station": "stud13",
+      "role": "casting-pad",
+      "occupied": true,
+      "probe_mm3": 195.9568417676644,
+      "material_mm3": 195.9568417676644
+    },
+    {
+      "station": "stud13",
+      "role": "fastener-shoulder",
+      "occupied": true,
+      "probe_mm3": 117.41702542791944,
+      "material_mm3": 117.41702542791944
+    },
+    {
+      "station": "stud13",
+      "role": "socket-wall",
+      "occupied": true,
+      "probe_mm3": 355.6188636084032,
+      "material_mm3": 355.6188636084032
+    },
+    {
+      "station": "stud13",
+      "role": "blind-floor",
+      "occupied": true,
+      "probe_mm3": 34.69889085889927,
+      "material_mm3": 34.69889085889927
+    },
+    {
+      "station": "stud13",
+      "role": "clear-socket",
+      "occupied": false,
+      "probe_mm3": 1590.9628383568188,
+      "material_mm3": 0
+    },
+    {
+      "station": "stud13",
+      "role": "original-head-material-before-boss",
+      "probe_mm3": 1590.9628383568188,
+      "material_mm3": 0
+    },
+    {
+      "station": "bolt14",
+      "role": "individual-foot-pad",
+      "distance_mm": 8.526512829121202e-14
+    },
+    {
+      "station": "bolt14",
+      "role": "individual-foot-shoulder",
+      "distance_mm": 5.684341886080802e-14
+    },
+    {
+      "station": "bolt14",
+      "role": "individual-pad-head",
+      "distance_mm": 0.0
+    },
+    {
+      "station": "bolt14",
+      "role": "eye-foot",
+      "occupied": true,
+      "probe_mm3": 78.14711725804648,
+      "material_mm3": 78.14711725804648
+    },
+    {
+      "station": "bolt14",
+      "role": "casting-pad",
+      "occupied": true,
+      "probe_mm3": 195.9568417676636,
+      "material_mm3": 195.9568417676636
+    },
+    {
+      "station": "bolt14",
+      "role": "fastener-shoulder",
+      "occupied": true,
+      "probe_mm3": 117.41702542791887,
+      "material_mm3": 117.41702542791887
+    },
+    {
+      "station": "bolt14",
+      "role": "socket-wall",
+      "occupied": true,
+      "probe_mm3": 355.618863608403,
+      "material_mm3": 355.618863608403
+    },
+    {
+      "station": "bolt14",
+      "role": "blind-floor",
+      "occupied": true,
+      "probe_mm3": 34.69889085889927,
+      "material_mm3": 34.69889085889927
+    },
+    {
+      "station": "bolt14",
+      "role": "clear-socket",
+      "occupied": false,
+      "probe_mm3": 1590.9628383568197,
+      "material_mm3": 0
+    },
+    {
+      "station": "bolt14",
+      "role": "original-head-material-before-boss",
+      "probe_mm3": 1590.9628383568197,
+      "material_mm3": 0
+    }
+  ],
+  "whole_engine_neighbors": false,
+  "step_hashes": {
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/generated/cylinder-head.step": "6549221b5566ccff4210a12ec779f9595395da18d5bb3315626e8a409647f66a",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/generated/efi-lower-intake.step": "70910e17752afd71cb09d2ea3215865169c8beb8dc7843e591a9d384b6a2d473",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/generated/efi-head-intake-gasket.step": "f744bcf678f40c0b226843fb72141d084f3c09dea1254706bdbf5650cc82c4e3",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/generated/exhaust-front.step": "2ff3009f3beb32e5a667cf67a452b61c6214f9bf5090cb45b00d7ff7401860b6"
+  },
+  "scope": "Candidate validity, STEP roundtrip, interference, nominal shoulder/foot contact and front exhaust bore preservation. No production fit, threaded retention, preload or lifting strength certification."
+}

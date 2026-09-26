@@ -1,0 +1,29 @@
+{
+  "source_id": "ford-thermactor-study",
+  "description_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Air%20Injection/Air%20Injection%20Pump/Description%20and%20Operation/index.html",
+  "description_sha256": "b1e7a4b71195b7b77d111fb5a14cb130907c32e76e16b553c94dc7a9f52ba947",
+  "pump_image_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/606482312.png",
+  "pump_image_sha256": "5c92087d9bcb0c7f50183b20efe00e9a4ced4cb35893e3eb3bd3792d043689b9",
+  "pump_image_visually_reviewed": true,
+  "routing_image_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/608167874.png",
+  "routing_image_visually_reviewed": true,
+  "ford_findings": [
+    "Belt-driven positive-displacement vane-type air pump.",
+    "The generic truck description names both 19 and 22 cubic-inch variants but does not assign one to the installed 4.9L engine.",
+    "Ford identifies multiple possible inlet filtration arrangements; exact installed remote filter/hose endpoints remain unresolved.",
+    "Reviewed exterior image shows separate inlet and outlet, cast pump body/end plate and a three-hole pulley hub.",
+    "Vehicle archive parts page lists E5TZ9A486J, but installed identity and supersession remain unverified.",
+    "Labeled drive diagram places A/P below alternator on vehicle RH side with A/C present. Diagram scale is not dimensional evidence."
+  ],
+  "comparison_only": {
+    "url": "https://www.cardone.com/product/smog-air-pump-32-303",
+    "manufacturer": "CARDONE",
+    "findings": "Manufacturer describes replacement carbon shoes/vanes, greased bearings, aluminum housing and two hose connectors. Page does not establish 1994 4.9L fitment in its exposed application data.",
+    "limits": "No exact CARDONE part identity or dimensions are promoted into Ford installed geometry without application evidence."
+  },
+  "rejected_geometry_source": {
+    "url": "https://www.dormanproducts.com/p-7471-300-921.aspx",
+    "reason": "Broad truck application summary does not establish 4.9L fit. Published single V-belt groove conflicts with current six-rib topology; do not borrow this pulley as confirmed 4.9L geometry."
+  },
+  "limits": ["No assigned 19/22 cubic-inch displacement", "No supported vane count, rotor contour, timing, seals or port plate detail", "No measured pulley diameter or center spacing", "No verified pump casting or bracket dimensions"]
+}

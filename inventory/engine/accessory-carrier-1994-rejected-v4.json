@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "verified_production_fit": false,
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "source_sha256": {
+    "cad/engine/accessory_carrier_1994.py": "a4195472850012a09e0e37e0594b743a23803d3993a44de4bf46ffaa3ab38f20",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/tensioner_arm.py": "6bf5aa5539ce2fbc4cfa848bc8a0a435e865b02fce4ae63fa9917c2b0c0060cb",
+    "cad/engine/tensioner_pulley.py": "7126080e234a6420cf5473b761888eb25d45fbfde4ec2ea65e7f2afc38524e92",
+    "cad/engine/tensioner_engine_support.py": "d80e819d2c72425f2d39bd6ec0050823a1d79ad2f6b5b7ff4667eed01c745e8a",
+    "scripts/check-accessory-carrier-1994.py": "c94f1b1d2546d45ae7d915dcf1a370431adea7144ff16a6583b9478cc340ecfc"
+  },
+  "part_count": 17,
+  "step_round_trips": 19,
+  "exact_intersections": 196,
+  "overlaps": [
+    {
+      "a": "block-added-bosses",
+      "b": "camshaft",
+      "volume_mm3": 28.940954930358142
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "cam-bearing-4",
+      "volume_mm3": 21.90547820340665
+    }
+  ],
+  "replaces_existing_occurrences": [
+    "ps-ac-support-bracket",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2"
+  ],
+  "topology": "One shared P/S\u2013A/C\u2013tensioner casting; front head bolt, side head bolt, two block studs/nuts.",
+  "limits": [
+    "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+    "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,167,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+    "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+    "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+    "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+    "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length."
+  ]
+}

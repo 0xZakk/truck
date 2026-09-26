@@ -1,0 +1,17 @@
+{
+  "starter-solenoid-assembly": {
+    "summary": "Distinct control and power terminals, pull/hold winding envelopes and an insulated contact bridge explain the starter-mounted magnetic switch.",
+    "limits": "Ford identifies the S/M/frame test nodes; the conventional topology follows the background circuit in a Ford patent, not its proposed single-terminal invention. Shapes, terminal clocking, winding allocation and 11.25 mm stroke are provisional. Coil leads, brush feed and vehicle cables remain absent, so the logical circuit is not complete physical wiring. The viewer remains static. A separate slotted-linkage study supplements the isolated switch checks with sampled fork/clevis closure; loaded return and production construction remain unvalidated.",
+    "steps": [
+      {"title": "Identify three terminals", "text": "The small S terminal is distinct from the heavy B battery and M motor terminals. Their candidate locations do not establish production clocking; external cable and control-harness boundaries remain open.", "part": "starter-solenoid-s-terminal"},
+      {"title": "Pull and hold separately", "text": "The declared circuit connects the pull winding between S and M, and the hold winding between S and frame. Separate copper envelopes display those roles without implying recovered turn count or complete lead conductors.", "part": "starter-solenoid-pull-winding"},
+      {"title": "Close the power contacts", "text": "A captured insulating collar separates the movable copper bridge from its rod. The isolated stroke study reduces both power-contact gaps from 11.25 mm to contact; it does not simulate current, arcing or contact pressure.", "part": "starter-solenoid-contact-bridge"},
+      {"title": "Maintain attraction", "text": "In the conventional circuit, closed B-to-M contacts bring M near battery potential and shunt the pull winding. The hold winding remains energized while the control input is supplied. This is a logical explanation, not a solved electrical model.", "part": "starter-solenoid-hold-winding"},
+      {"title": "Return the mechanism", "text": "The separate return spring fits between the fixed pole and moving plunger. Geometric coil spacing and candidate linkage reset are checked at sampled positions; preload, return force and loaded drive disengagement are not established.", "part": "starter-solenoid-return-spring"}
+    ],
+    "troubleshooting": [
+      {"title": "Use the factory test nodes", "text": "The applicable solenoid test names continuity paths S-to-M and S-to-frame and mentions contamination when investigating faults. No resistance values or live high-current test are implemented by this model.", "part": "starter-solenoid-s-terminal"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-starter-solenoid-test", "ford-pmgr-conventional-circuit"]
+  }
+}

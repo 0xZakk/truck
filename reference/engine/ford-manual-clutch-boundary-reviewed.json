@@ -1,0 +1,60 @@
+{
+  "source_id": "ford-manual-clutch-boundary",
+  "complete": false,
+  "installed_variant_verified": false,
+  "branch_selection": {
+    "preferred_baseline": "10-inch-R2",
+    "basis": "docs/RESTART.md records owner confirmation on2026-09-22 of M5OD-R2 with no reported swaps. Ford993757487.png labels10-inch(R2). This supports the10-inch factory-baseline study but is not a measurement of the installed friction disc.",
+    "owner_transmission_identification": "M5OD-R2, confirmed in project record",
+    "door_photo": "reference/photos/2026-09-23/door-certification-label.jpeg",
+    "door_photo_sha256": "4626c15ef0c0788720b457ce13d1cac48cfd687846d465036440f00595b7cf76",
+    "visually_read_transmission_code": "M",
+    "year_specific_code_decoder_verified": true,
+    "decoder_path_from_manual_root": "Repair%20and%20Diagnosis/Powertrain%20Management/Application%20and%20ID/Transmission%20ID/Manual/index.html",
+    "decoder_content": "ID code M, model M5OD, five-speed manual; identifies the certification-label transmission field. R2 specificity is also supported by owner confirmation and this full-size truck application.",
+    "alternative": "11-inch retained as catalog/upgrade comparison, not equal installed default. T-18 external-fork hardware is outside the owner-confirmed baseline.",
+    "luk_additional_visual_review": "LuK2012 PDF102, printed100: note55 requires six grade8,3/8-16 by1-inch bolts and lock washers when upgrading to11-inch. The existing4 mm-radius study shanks and assumed flywheel holes do not satisfy that upgrade; no11-inch installation claim is allowed."
+  },
+  "manual_root": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L",
+  "reviewed_page": "Repair%20and%20Diagnosis/Transmission%20and%20Drivetrain/Clutch/Clutch%20Disc/Service%20and%20Repair/index.html",
+  "visually_reviewed_images": [
+    {
+      "path_from_manual_root": "images/DM05Q313/ford10/993757487.png",
+      "caption": "Bronco/F-150-350 with4.9L,5.0L,5.8L",
+      "construction": ["Flywheel", "Pilot bearing7120", "Sprung clutch disc7550", "Diaphragm pressure plate and cover7563", "Concentric slave cylinder7A508"],
+      "variants_printed": ["10-inch clutch(R2)", "11-inch clutch(2F)"],
+      "limits": "Exploded view establishes architecture and named variants, not section thicknesses, damper-spring count, diaphragm-finger count, release stroke or installed identity."
+    },
+    {
+      "path_from_manual_root": "images/DM05Q313/ford10/993774386.png",
+      "caption": "T-18 transmission, Bronco/F-150-250 with4.9L/5.0L",
+      "construction": ["Separate release hub/bearing7548", "Release lever7515", "Lever stud7B602", "Rear engine cover plate6A373", "Clutch housing7500"],
+      "limits": "External-fork variant must not be combined with the concentric-slave variant without installed transmission evidence."
+    }
+  ],
+  "existing_replacement_evidence": {
+    "luk_source": "reference/engine/luk-flywheel-reviewed.json",
+    "catalog_variants": ["07-098:1994,10-inch", "07-128:1993-94,5-speed,11-inch"],
+    "spline_nominal_diameter_inches": 1.0625,
+    "spline_teeth": 10,
+    "flywheel_source": "reference/engine/hicengine-ffm68-reviewed.json",
+    "cover_pcd_mm": 295,
+    "qualification": "Replacement comparison only. Cover hole count/phase, thread, recess and axial interface remain assumptions in the accepted flywheel model."
+  },
+  "cad_boundary": {
+    "module": "cad/engine/flywheel.py",
+    "local_axis": "Local+Z points rearward, global-X",
+    "mount_world": [-393, 0, 0],
+    "friction_face_local_z_mm": 25,
+    "friction_face_world_x_mm": -418,
+    "cover_holes": "Accepted study uses six radius4.2 mm blind holes at radius147.5 mm and30-degree phase, local Z15..25; count, phase and thread are not sourced.",
+    "requested_extension": "Engine-side cover, pressure ring, diaphragm and sprung-disc functional decomposition. Keep pilot/release interfaces unresolved until dimensions and transmission variant are established."
+  },
+  "prohibited_inferences": [
+    "Do not select11-inch simply because it is larger or treat the10-inch option as an error;10-inch is the owner-configuration baseline inference, not an inspected installed disc.",
+    "Do not import7.3L diesel or7.5L clutch fastener dimensions from the adjacent mixed-application service text.",
+    "Do not infer real diaphragm-finger or damper-spring counts from an oblique schematic.",
+    "Do not infer pilot bearing identity from a matching shaft bore or unrelated Dodge/Jeep catalog item.",
+    "Do not claim release travel, clamp force, torque rating or physical installed fit from static decomposition."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "complete": false,
+  "applicable_internal_geometry_recovered": false,
+  "accepted_geometry_changed": false,
+  "sources": [
+    {
+      "url": "https://www.gates.com/us/en/power-transmission/power-transmission-components/idler-pulleys.p.7803-000000-000426.v.7803-01022.html",
+      "manufacturer": "Gates",
+      "part": "38022",
+      "supported": "Steel smooth pulley; outside diameter90 mm, width37.5 mm, bearing bore17 mm.",
+      "not_supported": "Bearing outside diameter, width, part number, ball count, race section, cage and seals."
+    },
+    {
+      "url": "https://www.gatesaustralia.com.au/~/media/files/gates-au/automotive/catalogues/drive-belt--components-catalogue-aus--nz-november-2009.pdf",
+      "manufacturer": "Gates",
+      "local_path": "reference/engine/gates-australia-drive-components-2009.pdf",
+      "sha256": "7cb1901502bafd5b17c053ca8e1dbe63b046c1f6cc9c806ee93479c269c2a040",
+      "scope": "2009 product-family technical comparison; PDF pages14/15, printed11/12 visually reviewed after root downloaded the file.",
+      "supported": "Generic exploded view separates base, composite damper, preloaded spring, arm, pulley/bearing, sealing disc and retaining bolt. Adjacent cutaway shows round-wire torsion spring and labyrinth contamination protection at Gates automatic-tensioner family level.",
+      "not_supported": "38131 spring turns, wire diameter, anchors, preload, rate, damping geometry, material or pivot dimensions. No exact38131 cutaway identity established."
+    },
+    {
+      "url": "https://www.gatestechzone.com/en/news/2018-02-oil-contamination-tensioner",
+      "manufacturer": "Gates",
+      "scope": "Synchronous timing-belt tensioner, not established as accessory tensioner38131.",
+      "rejected_use": "Its sleeve/bushing friction-damping exploded architecture cannot be silently substituted for38131."
+    },
+    {
+      "url": "https://bearingfinder.ntnamericas.com/item/deep-groove-ball-bearings/single-row-radial-ball-bearings/6203/",
+      "manufacturer": "NTN",
+      "part": "6203 open single-row deep-groove bearing",
+      "dimensions_mm": {"bore": 17, "outside_diameter": 40, "width": 12},
+      "rejected_use": "Matching the17 mm bore does not identify the Gates bearing. Its12 mm width differs from the accepted illustrative17 mm cartridge. No substitution or internal ball-count inference is authorized by this source."
+    }
+  ],
+  "retained_model_limits": [
+    "The pulley bearing remains an unresolved envelope with only its17 mm bore sourced.",
+    "The spring/pivot cartridge remains unresolved; no arbitrary race, ball, cage, spring-turn or damping-element count is introduced.",
+    "Manufacturer-authored38131 installation instructions establish an enclosed preloaded spring, arm, stops, mounting bolt and locating-pin option, not dimensions of internal parts.",
+    "Application-specific disassembly measurements, a verified cutaway or manufacturer engineering drawing are required to resolve these internals."
+  ],
+  "research_disposition": "Pause generic bearing searches and continue manual-clutch boundary evidence."
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "meshes": 578,
+  "maxPositionError": 5.377642775528102e-17,
+  "maxNormalError": 6.161737786669619e-15,
+  "cacheStats": [
+    {
+      "N": 96,
+      "R": 12,
+      "hits": 279,
+      "misses": 10,
+      "templates": 10,
+      "maxTemplates": 32
+    },
+    {
+      "N": 192,
+      "R": 16,
+      "hits": 270,
+      "misses": 19,
+      "templates": 19,
+      "maxTemplates": 32
+    }
+  ],
+  "benchmarks": [
+    {
+      "N": 96,
+      "R": 12,
+      "warmMs": 113.14479200000005,
+      "meanMs": 0.8706524666666647,
+      "p50Ms": 0.6961670000000595,
+      "p95Ms": 1.357332999999926,
+      "maxMs": 8.053165999999692,
+      "cache": {
+        "hits": 3159,
+        "misses": 10,
+        "templates": 10,
+        "maxTemplates": 32
+      }
+    },
+    {
+      "N": 192,
+      "R": 16,
+      "warmMs": 483.0816249999998,
+      "meanMs": 2.1384862083333513,
+      "p50Ms": 1.579541000000063,
+      "p95Ms": 7.21533399999953,
+      "maxMs": 25.96691699999974,
+      "cache": {
+        "hits": 3149,
+        "misses": 20,
+        "templates": 20,
+        "maxTemplates": 32
+      }
+    }
+  ],
+  "scope": "Accelerated connectivity templates compared to canonical clipped meshes at289 heights per resolution; benchmark regenerates all12 springs at exact arbitrary crank phases. Node CPU geometry only, excludes THREE/GPU upload."
+}

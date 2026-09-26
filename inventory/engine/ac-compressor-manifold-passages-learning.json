@@ -1,0 +1,13 @@
+{
+  "ac-compressor-rear-head": {
+    "summary": "The rear head keeps suction and discharge routes separate while providing sealed manifold ports and a blind retaining-bolt socket.",
+    "limits": "All internal drilling locations, gland details and bolt-seat dimensions are illustrative. A nominal 2 mm wall between the blind socket and suction cap drill is not a production pressure-strength or thread-engagement specification.",
+    "steps": [
+      {"title": "Preserve the internal cap branches", "text": "The two separate longitudinal galleries communicate with their assigned head plenums through cap drillings. Adding a mounting boss must not fill those existing passages.", "source": "fs10-cylinder-passage-comparison"},
+      {"title": "Seal two external ports independently", "text": "Two separate O-rings surround the manifold ports. Their nominal toroidal seats remain distinct from the internal gallery passages and case seals.", "part": "ac-compressor-manifold-suction-seal", "source": "summit-fs10-port-seals"},
+      {"title": "Keep the bolt socket blind", "text": "The retaining-bolt socket ends before the adjacent suction drilling. The model verifies a material floor rather than allowing that fastener hole to become an unintended refrigerant outlet.", "part": "ac-compressor-manifold-bolt", "source": "ford-compressor-manifold-diagnosis"},
+      {"title": "Check more than the visible ports", "text": "Straight port probes alone miss obstructions deeper in the cap. The corrected study checks the entire accepted suction and discharge diagnostic networks against the composed compressor, while still making no pressure-tightness claim."}
+    ],
+    "sources": ["fs10-cylinder-passage-comparison", "summit-fs10-port-seals", "ford-compressor-manifold-diagnosis"]
+  }
+}

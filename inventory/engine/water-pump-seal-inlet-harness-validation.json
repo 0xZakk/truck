@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "b78b4a3ad1c0f26c57ed570266d4cfda5baf0f6f53fb866ec93d2ccec29448f0",
+  "step_hashes": {
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-carrier.step": "acb096287961d18c9805f2e77dbc815f1f7d40fe2339bcf82731daccd706e43b",
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-stationary-face.step": "1c9995ba19a75c7446411961b07ff513c54cb3abdb29d6591fe4825494da21ce",
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-rotating-face.step": "c5fe3d1293dcf1127114bd41c880080ab14129bc6e815c4fe3440c9b50445112",
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-shaft-collar.step": "2a9ac849bcacc1d4bd4b5019e5a07c42c09cd8c0ed0022590ad51bbc2fb387eb",
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-bellows.step": "4ec98f17de75c995478094029d8364984a7ffb9a6f4b26652a58e4944dd36470",
+    "/private/tmp/truck-seal-inlet-install-harness/candidate-step/water-pump-seal-spring.step": "367251e6e596016d1363108f0fc0e157ebb7efb6cc8535e8b560dc530544e4bf"
+  },
+  "step_symmetric_difference_mm3": {
+    "water-pump-seal-carrier": 0,
+    "water-pump-seal-stationary-face": 0,
+    "water-pump-seal-rotating-face": 0,
+    "water-pump-seal-shaft-collar": 0,
+    "water-pump-seal-bellows": 0,
+    "water-pump-seal-spring": 0
+  },
+  "rigid_poses_checked": 6,
+  "scope": "Private temporary preparation harness only. The composable build API generated a candidate manifest and reused audited STEP exports; no live builder or published model was changed.",
+  "harness_root": "/private/tmp/truck-seal-inlet-install-harness",
+  "preparation_script_sha256": "b72542f9c5f5ff8da208fd314ad8a21c45f8325a85310d664777e5b4e3b0ecf7"
+}

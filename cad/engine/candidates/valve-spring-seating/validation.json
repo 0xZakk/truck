@@ -1,0 +1,375 @@
+{
+  "status": "PASS",
+  "lifts_mm": [
+    0,
+    2.5,
+    5,
+    7.5,
+    10.033
+  ],
+  "source_step_hashes": {
+    "cad/engine/candidates/valve-station/baseline/block.step": "c3aeed637053e2a0973b1a3115fb8988d7a327937dc1d757f3ecf04b606cb043",
+    "cad/engine/candidates/valve-station/baseline/valve-cover.step": "99c0f4af1d9f57c0c7baeeeaa6367adde721b382e2f2d36d0651557a8bca8398",
+    "cad/engine/candidates/valve-spring-seating/cylinder-head.step": "18ecf0252186090c1927e387e587b719f7a5c4efd62f7f1d075470d9eecea246",
+    "cad/engine/candidates/valve-layout/camshaft.step": "ed821c2c4d9e9efa2b7e097f5ac049bbece52a2e04e06b9b080a3b730df08c45",
+    "cad/engine/candidates/valve-station/baseline/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-shell.step": "609b6fe911174a57817d2e547eb9d3cd461c8266bf911cb8dfc2585e995769a0",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-insulator.step": "25fba8183e7bde6447b05b650c22de77c7994cd31773f402b21671c627e96703",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-center-electrode.step": "0e4e707c1be2e3f3fafb3352bcdc58c8fe0777d253903586c7dc5f04e1a8d1c1",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-copper-core.step": "b1675acc2a16301b4cc805c6ca66ce9afaddafd766863f0edbf19a8cec71ed91",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-resistor.step": "dfb277a258209a9e05de8b71ae47aba6833c6d922d7ba2960ef6e1cd6d836b56",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-lower-seal.step": "ebaaf5d6cacb6169e88fc5aa3e03a58c46a7c10c660a97063e9b9476e969044d",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-upper-seal.step": "a6593e7d553e64138f539936809892c07a28bb1b4faf4379d882441b9643eaed",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-terminal.step": "d0fe8cc055bf79bfddd4565687f2e88306c06ee865f214bdfc3c0e005a72b6ec",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-ground-electrode.step": "a2ea56aefba971c761afe288e6503f6bc8f03f88d73a0f67fd1cf235bd6d0dc3",
+    "cad/engine/candidates/valve-spring-seating/intake-valve.step": "1c7a042beaedc8d43e167cb53a828d66a5702420ec050e52ffbf5153aa33e78a",
+    "cad/engine/candidates/valve-station/baseline/valve-spring.step": "d2b7f558f6cee180115a201a3f1df15647a94f70bed500e3cba3400f4d86ab14",
+    "cad/engine/candidates/valve-station/baseline/spring-retainer.step": "bab8c35d7411a40df217a2e75bb6454a8f1efb15a1af66f8e49869445d6f096b",
+    "cad/engine/candidates/valve-station/baseline/valve-keeper.step": "9ed1ad6ba50e8fc3ddc37d752b55136289baac6649f86f36d1890eead0f7228f",
+    "cad/engine/candidates/valve-spring-seating/valve-seal.step": "e8116baf27017d82c86656031173edd70b242c2ba1aa14ec933df16ab8d72048",
+    "cad/engine/candidates/valve-layout/pushrod.step": "ec7c37271bee110ce26c7682fb7301595a3235c43a246de53e8a6175bfc7e760",
+    "cad/engine/candidates/valve-layout/rocker-arm.step": "a9355a286cb05fb68505f1e35ab92be9dbb40e62195fe8e6d4cd5e277581f863",
+    "cad/engine/candidates/valve-layout/rocker-fulcrum.step": "593004a55f957057483a735c1a9ef9f59c481d9098b3ecef94ee9d90e7f5012e",
+    "cad/engine/candidates/valve-station/baseline/rocker-bolt.step": "9fa2d2d5e76b61501ec24ee0b7a86328b0820c3038c9d075e4cd980880096c95",
+    "cad/engine/candidates/valve-station/baseline/rocker-guide.step": "ae058fd3703833663e82cab0533e60b1fb980e60a6a8d14100b24b22e18d8800",
+    "cad/engine/candidates/valve-station/baseline/lifter-body.step": "a6673c82f3af180e285eb5e7584884a52a0fa4971397ac153355fe6def52e167",
+    "cad/engine/candidates/valve-station/baseline/lifter-plunger-spring.step": "e33cc8c6d9915d6753bf3a5d49207958c6aa822bcbc6a163d3335c8928388fdf",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-retainer.step": "cda47ec2bef7aed7cf4bf09f5933eadc65d384383f0b8030a55c349ff060f2cd",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-spring.step": "88845c456bc7f0f11d87109fb18ec66b05000d61c26a01ad6248615545dae006",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-ball.step": "6c0f4fc519f21f2ffdbdcc3627e756436743f0053e1ed810bcdedd051f21f4a0",
+    "cad/engine/candidates/valve-station/baseline/lifter-plunger.step": "77b115498bad2b90b703def022941f3ebbffffcb42f76c53452cd77457951cd7",
+    "cad/engine/candidates/valve-station/baseline/lifter-metering-disc.step": "e382265f91fd45b97f8d31981e00d541a50ed05fed9cfdd873ffbcb2bc01f874",
+    "cad/engine/candidates/valve-layout/lifter-pushrod-cup.step": "f6440afc05c58b63549d118412d213d90a72ff7eae9ef697b76af5d0ae449dfe",
+    "cad/engine/candidates/valve-station/baseline/lifter-lock-ring.step": "f6bdbc8ab3661043d5c609eda09167dd21cc76e7ae52afa1a1209391d958643b",
+    "cad/engine/candidates/valve-spring-seating/exhaust-valve.step": "b852174a5e5374c4e5d4fe7805b4c7ca6dbeac55b337d3df3d7010de48b9d309"
+  },
+  "exact_intersections": 257,
+  "contacts": [
+    {
+      "lift": 0,
+      "a": "c1-intake-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 0,
+      "a": "c1-intake-spring",
+      "b": "c1-intake-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 0,
+      "a": "c1-intake-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 0,
+      "a": "c1-exhaust-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 0,
+      "a": "c1-exhaust-spring",
+      "b": "c1-exhaust-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 0,
+      "a": "c1-exhaust-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-intake-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-intake-spring",
+      "b": "c1-intake-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-intake-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-exhaust-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-exhaust-spring",
+      "b": "c1-exhaust-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 2.5,
+      "a": "c1-exhaust-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-intake-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-intake-spring",
+      "b": "c1-intake-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-intake-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-exhaust-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-exhaust-spring",
+      "b": "c1-exhaust-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 5,
+      "a": "c1-exhaust-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-intake-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-intake-spring",
+      "b": "c1-intake-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-intake-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-exhaust-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-exhaust-spring",
+      "b": "c1-exhaust-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 7.5,
+      "a": "c1-exhaust-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-intake-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-intake-spring",
+      "b": "c1-intake-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-intake-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-exhaust-spring",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-exhaust-spring",
+      "b": "c1-exhaust-retainer",
+      "gap_mm": 0.0
+    },
+    {
+      "lift": 10.033,
+      "a": "c1-exhaust-seal",
+      "b": "cylinder-head",
+      "gap_mm": 0.0
+    }
+  ],
+  "ground_faces": [
+    {
+      "kind": "intake",
+      "lift": 0,
+      "z": 321.344,
+      "area_mm2": 74.205092534389,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 0,
+      "z": 363.0,
+      "area_mm2": 74.20174016506283,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 0,
+      "z": 325.66200000000003,
+      "area_mm2": 82.70179560790159,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 0,
+      "z": 363.0,
+      "area_mm2": 82.70523454849501,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 2.5,
+      "z": 321.344,
+      "area_mm2": 78.8766328814411,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 2.5,
+      "z": 360.5,
+      "area_mm2": 78.87692244685519,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 2.5,
+      "z": 325.66200000000003,
+      "area_mm2": 88.59086098989053,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 2.5,
+      "z": 360.5,
+      "area_mm2": 88.58442462970707,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 5,
+      "z": 321.344,
+      "area_mm2": 84.28995289081995,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 5,
+      "z": 358.0,
+      "area_mm2": 84.29412401156684,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 5,
+      "z": 325.66200000000003,
+      "area_mm2": 95.45836557049022,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 5,
+      "z": 358.0,
+      "area_mm2": 95.5309709104255,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 7.5,
+      "z": 321.344,
+      "area_mm2": 90.33983182056811,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 7.5,
+      "z": 355.5,
+      "area_mm2": 90.34298885603829,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 7.5,
+      "z": 325.66200000000003,
+      "area_mm2": 103.34852786042967,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 7.5,
+      "z": 355.5,
+      "area_mm2": 103.35230093645004,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 10.033,
+      "z": 321.344,
+      "area_mm2": 97.61497143355679,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "intake",
+      "lift": 10.033,
+      "z": 352.967,
+      "area_mm2": 97.61112035802915,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 10.033,
+      "z": 325.66200000000003,
+      "area_mm2": 113.01949854536356,
+      "outside_volume_mm3": 0
+    },
+    {
+      "kind": "exhaust",
+      "lift": 10.033,
+      "z": 352.967,
+      "area_mm2": 113.04983818704316,
+      "outside_volume_mm3": 0
+    }
+  ],
+  "min_pitch_minus_wire_mm": 0.5508333333333324,
+  "diametral_stem_clearance_mm": 0.0469899999999992,
+  "failures": [],
+  "scope": "Two stations spring,seal,valve,head vs saved first-stage neighbors; spring end contact and source-based height/guide dimensions. Piston excluded because independent lift samples are not crank phases; phase-specific piston checks remain first-stage/root integration responsibility. Five lift samples; no calibrated force or production spring end geometry."
+}

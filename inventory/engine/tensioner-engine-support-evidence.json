@@ -1,0 +1,28 @@
+{
+  "source_id": "tensioner-engine-support",
+  "complete": false,
+  "verified_production_fit": false,
+  "architecture_source": "gates-38131-instructions",
+  "routing_source": "ford-accessory-routing",
+  "sourced_interface": "Central mounting bolt, rear locating pin and optional bushing for 1/2 inch versus 5/16 inch bracket hole options.",
+  "provisional_geometry_mm": {
+    "cartridge_seat_x": 400.56,
+    "rear_pad_width": 20,
+    "pivot_axis_yz": [-75, 435],
+    "mounting_bolt_tip_x": 386.56,
+    "central_blind_bore_bottom_x": 384.56,
+    "central_blind_bore_radius": 5.8,
+    "engagement_length": 14,
+    "locating_bushing_axis_yz": [-75, 455],
+    "locating_bushing_bracket_bore_diameter": 12.7,
+    "block_seat_xyz": [373, -65, 220],
+    "head_seat_xyz": [373, -65, 285]
+  },
+  "integration": "Build three new bracket/engine-bolt objects; replace the existing tensioner-mounting-bolt definition with mount_bolt_local() in its existing frame; apply both block_interface and head_interface adapters.",
+  "limits": [
+    "Engine load-path topology and bracket geometry are assumed, not identified Ford casting detail.",
+    "Blind dry bosses deliberately avoid invented coolant/oil connections.",
+    "Threads, grade, preload, mounting stiffness, spring behavior and working travel are unresolved.",
+    "Wheel center and spring-pivot station are unchanged; this bracket does not resolve the nominal belt-length mismatch."
+  ]
+}

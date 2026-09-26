@@ -1,0 +1,19 @@
+{
+  "starter-solenoid-assembly": {
+    "summary": "Separate insulated coil-end routes connect aggregate pull/hold windings to S, M and frame through nonpenetrating attachment faces.",
+    "limits": "Ford's conventional circuit and applicable continuity description support the winding endpoints. Lead paths, terminal clocking, feedthroughs, sleeves and joint surfaces are provisional. The winding envelopes represent insulated coils, not solid copper nodes. Motor brush feed, brush pigtails, commutator-to-armature connections and vehicle cables remain absent; complete starter electrical continuity is not claimed. Contact patches and clearances establish geometry, not production joining processes, resistance, current capacity or dielectric strength.",
+    "steps": [
+      {"title": "Identify three terminals", "text": "The small S terminal is distinct from the heavy B battery and M motor terminals. External battery and control cables remain open boundaries.", "part": "starter-solenoid-s-terminal"},
+      {"title": "Attach the pull winding", "text": "Two provisional conductors join the pull-winding envelope to S and M at face interfaces. Individual winding turns, wire gauge and resistance remain unresolved.", "part": "starter-solenoid-lead-pull-m"},
+      {"title": "Attach the hold winding", "text": "A separate S conductor reaches the hold-winding envelope; another conductor meets the shell's inner surface. The ground joint is a geometric study rather than a verified factory joining process.", "part": "starter-solenoid-lead-hold-frame"},
+      {"title": "Keep the S routes separate", "text": "The two S conductors meet separate patches of the same terminal. Their sleeves remain separated and terminate against the existing terminal insulator without occupying the same material.", "part": "starter-solenoid-lead-insulation-hold-s"},
+      {"title": "Close the power contacts", "text": "The insulated moving bridge joins B to M at the prescribed closure pose. This shunts the pull winding in the declared conventional circuit while the hold winding remains supplied through S. Arcing, pressure and current are not simulated.", "part": "starter-solenoid-contact-bridge"},
+      {"title": "Return the mechanism", "text": "The spring and constrained linkage restore the prescribed resting geometry. Actual spring preload, electromagnetic release, loaded disengagement and production construction remain unresolved.", "part": "starter-solenoid-return-spring"},
+      {"title": "Retain the motor-feed boundary", "text": "M receives the pull-winding attachment, but no conductor yet reaches the motor brushes. Brush pigtails, commutator winding connections and the vehicle supply remain absent.", "part": "starter-solenoid-terminal-2"}
+    ],
+    "troubleshooting": [
+      {"title": "Distinguish geometry from current flow", "text": "Zero-distance attachment faces and sampled insulation clearances cannot establish electrical resistance, current capacity or production reliability. The model does not provide a live high-current testing procedure.", "part": "starter-solenoid-s-terminal"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-starter-solenoid-test", "ford-pmgr-conventional-circuit"]
+  }
+}

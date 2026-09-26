@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "verified_production_fit": false,
+  "scope": "internal-candidates-and-installed",
+  "manifest_sha256": "9c2a4d13a70d0bbc9343598dc09c56286de7e25b60351d1cfaea7e2b061d6c71",
+  "source_sha256": {
+    "accessory_brackets": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "power_steering_pump": "72dd3dc063fedbd15deb5381542a827c9bb59f100bc77814b28b553ee1097d89",
+    "alternator": "0a2c7f396fffd5a1b917713f186b34ef48189777743f47c455704a506a9e00b4"
+  },
+  "step_round_trips": 17,
+  "narrow_phase_checks": 97,
+  "collisions": [],
+  "limits": [
+    "Ford identifies a shared power-steering/A/C bracket attached to block and head and a separate alternator bracket. These castings reconstruct that load-path topology, not a measured production casting.",
+    "All boss coordinates, bolt counts, web sections, material colors, hole sizes and mounting-face locations are illustrative interfaces to the current component studies. Casting ribs, part numbers, dowels and factory contours remain unknown.",
+    "Engine feet touch provisional front-face seats. Explicit interface adapters add isolated blind support bosses and 16 mm deep smooth thread-envelope bores; 14 mm bolt engagement is illustrative, not a verified thread specification. These are dry blind attachments, not coolant or oil passages.",
+    "Accessory bolt shanks use clearance through the candidate mounting ears. Threads, grades, preload, bracket stiffness and belt-load deflection are not simulated.",
+    "The Thermactor and tensioner engine brackets remain separate unresolved load paths. No unsupported air-pump attachment is added to these castings."
+  ]
+}

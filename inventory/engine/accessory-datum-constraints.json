@@ -1,0 +1,79 @@
+{
+  "status": "all tested relocated layouts rejected; installed datum reconciliation remains open",
+  "accepted_for_installation": false,
+  "verified_nominal_belt_fit": false,
+  "closest_feasible_layout_established": false,
+  "coordinate_convention": "Millimeters; shaft axes parallel to global X; shared provisional belt plane X473.56; reported pulley centers are Y,Z.",
+  "evidence": {
+    "routing": "reference/engine/ford-accessory-routing-reviewed.json",
+    "application": "reference/engine/gates-1994-drive-reviewed.json",
+    "profile_and_length": "reference/engine/pk-belt-profile-reviewed.json",
+    "owner_photo": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+    "qualification": "Factory routing establishes component order and contact side, not scaled center coordinates. The oblique owner photograph supports installed component identity and broad arrangement, not calibrated pulley centers. No dimensioned factory bracket datum drawing was recovered."
+  },
+  "fixed_constraints": {
+    "loop": ["ALT", "TENS", "PS", "AC", "WP", "CS", "AP", "ALT"],
+    "backside_contacts": ["TENS", "WP"],
+    "fixed_pulley_centers_yz": {"WP": [0, 170], "CS": [0, 0]},
+    "preserved": ["Existing engine-core geometry", "Pulley outside diameters", "Accessory internal geometry", "Common provisional axial belt plane"],
+    "model_derived_screening_bounds": [
+      "At AC Z100, the current timing-cover bounding box reaches Y178 and the assumed compressor body radius is 65. AC Y245 gives a conservative two-millimeter bounding-box gap; this is a current-model screening condition, not a Ford mounting dimension or a complete compressor clearance proof.",
+      "The current alternator housing radius is approximately 64 and intake envelope reaches Y-256. ALT Y-325 provides approximately five millimeters of lateral envelope separation. Moving it inward requires exact core checks, not merely a shorter belt.",
+      "The curved coolant outlet occupies the belt neighborhood. A bounding-box clearance surrogate is insufficient; all tested belt poses must undergo exact intersection checks."
+    ]
+  },
+  "test_scope": {
+    "moved_accessory_components": 158,
+    "exploratory_tensioner_angles_degrees": [-10, 0, 10],
+    "arm_radius_mm": 75,
+    "arm_radius_and_angles_are_assumed": true,
+    "dependent_brackets_excluded": true,
+    "bracket_requirement": "All relocated attachment paths and their blind mounting interfaces require redesign and installed-neighbor validation before any translated accessory could be accepted.",
+    "sampling_limit": "Three separately swept belts test geometry at three arm positions. They do not establish continuous motion clearance, actual spring travel, elastic behavior or fit of a single inextensible belt through that travel."
+  },
+  "cases": [
+    {
+      "name": "initial near-length hypothesis",
+      "report": "inventory/engine/accessory-datum-study-validation.json",
+      "centers_yz": {"ALT": [-325, 340], "TENS": [-100, 405], "PS": [190, 350], "AC": [260, 100], "AP": [-195, 100]},
+      "neutral_outside_as_effective_residual_mm": 1.1093,
+      "rejection": "Thermactor mounting bolt intersects belt at every sampled angle; coolant outlet intersects belt at -10 and 0 degrees."
+    },
+    {
+      "name": "refined near-length hypothesis",
+      "report": "inventory/engine/accessory-datum-refined-validation.json",
+      "centers_yz": {"ALT": [-325, 350], "TENS": [-160, 410], "PS": [190, 350], "AC": [220, 100], "AP": [-235, 100]},
+      "neutral_outside_as_effective_residual_mm": 0.4294,
+      "rejection": "Compressor front cylinder intersects timing cover and cam gear; additional compressor components intersect timing cover. Belt intersects coolant outlet at -10 degrees."
+    },
+    {
+      "name": "clearance-constrained hypothesis",
+      "report": "inventory/engine/accessory-datum-clearance-constrained-validation.json",
+      "manifest_sha256": "631eded833ee58db78882ee1182c7f732d6dcb5be8205db19c3ac7d9c57903ec",
+      "study_source_sha256": "210030824424c889f3e38c14ce7f1be7a727805a9dc2f6dfb1c15461481f5041",
+      "centers_yz": {"ALT": [-325, 350], "TENS": [-160, 420], "PS": [190, 350], "AC": [245, 100], "AP": [-235, 100]},
+      "exact_intersection_checks": 209,
+      "valid_belt_step_round_trips": 3,
+      "neutral_outside_as_effective_residual_mm": 17.639735778713202,
+      "neutral_modeled_rib_root_residual_mm": 26.660480224239564,
+      "neutral_tensioner_wrap_degrees": 11.379187049565227,
+      "minimum_sampled_tensioner_wrap_degrees": 4.585122545212624,
+      "air_pump_wrap_degrees": 52.130592674509685,
+      "rejection": "Belt intersects coolant outlet by 0.7643122358827874 cubic millimeters at -10 degrees. Neutral and +10-degree samples show no tested overlaps, but do not establish an acceptable working envelope or nominal belt fit."
+    }
+  ],
+  "length_reference_limits": [
+    "The catalog Gates K060980 / 6PK2491 effective length is 2491 mm. Current pulley outside radii are not verified effective radii.",
+    "The modeled cord path, modeled rib-root reference curve, and manufacturer-gauged effective length are not interchangeable. The rib-root diagnostic subtracts 2*pi*1.6 mm from the closed cord path using its signed full-turn winding; it remains an illustrative model reference, not a verified catalog gauge line.",
+    "Low wraps are reported without inventing a minimum safe wrap. Accessory torque, belt tension, friction, spring preload and operational margins remain unknown.",
+    "No tested case is a certified nearest feasible solution. Reducing numerical length residual alone is not a valid acceptance objective."
+  ],
+  "required_acceptance_evidence": [
+    "Calibrated frontal pulley centers or dimensioned application-specific bracket datums, including axial offsets.",
+    "Verified pulley effective or gauging diameters, especially currently assumed alternator, water-pump and Thermactor sizes.",
+    "Application-correct tensioner pivot position, installed index, stop locations, working travel and preload.",
+    "Validated support castings and actual fastener engagement for any changed station.",
+    "Exact full-installed clearance across an appropriately sampled working envelope, followed by continuous-path or conservative swept-envelope checks.",
+    "Load, wrap and take-up assessment using applicable manufacturer data before asserting operational fit."
+  ]
+}

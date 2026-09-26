@@ -1,0 +1,49 @@
+{
+  "complete": false,
+  "installed_identity_verified": false,
+  "study_identity": "Integral-regulator alternator; 95-amp-oriented construction study, generation and installed rating unresolved",
+  "application_archive": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Starting%20and%20Charging/Charging%20System/Alternator/Parts%20Information/index.html",
+    "sha256": "768b6587e08ec454560bf6f3914907e4b7c52828c73c9cc20c15dc8345f65ea0",
+    "listed_variants": {"95_amp": "F6PZ10346LARM1", "130_amp": "F6UZ10346VA", "75_amp": "E8PZ10346CRM1"},
+    "limits": "Catalog scope and supersessions do not establish the installed alternator. The 130 amp row contains an unrelated 'For Two Pistons' note, retained as evidence of archive metadata uncertainty rather than interpreted as alternator data."
+  },
+  "ford_operation_source": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Charging%20System/Alternator/Description%20and%20Operation/index.html",
+    "sha256": "ad666c17b66e7cdf54a090646444c4863799d794add41357e0c3c36760b5ca19",
+    "supports": ["Regulated field current", "Stator AC output", "Internal rectifier producing DC", "A sensing, S stator and B+ output functions"]
+  },
+  "ford_service_sources": [
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Charging%20System/Alternator/Service%20and%20Repair/index.html",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Charging%20System/Alternator/Testing%20and%20Inspection/Field%20Open%20or%20Short%20Circuit%20Test/index.html"
+  ],
+  "ford_service_findings": ["Two engine mounting bolts", "Rotor, brushes and brush holder", "Integral-regulator rear-housing architecture visible in visually reviewed test drawing images/DM05Q313/ford10/1167437725.png"],
+  "evtm_location": {
+    "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+    "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+    "visually_reviewed_pdf_page": 313,
+    "printed_page": "151-2",
+    "finding": "4.9L RH-front integral alternator regulator; C153/C154 callout at F4/F5. Diagram is not dimensioned."
+  },
+  "comparison_source": {
+    "id": "denso-alternator-construction",
+    "path": "reference/engine/alternator-denso-technical-manual.pdf",
+    "url": "https://assets.denso-am.eu/production/attachments/Starter-Alternator-Manual-English.pdf",
+    "sha256": "fb1fca26e8c4d4197a95de5db598f4fee3389ec706ef9a52d884104e7ae5fe53",
+    "visually_reviewed_pdf_page": 45,
+    "finding": "Conventional alternator cutaway shows external fan, interleaved claw rotor around field coil, stator winding, slip rings and brushes. General functional comparison only; neither DENSO brand nor exact geometry is assigned to the Ford installation."
+  },
+  "provisional_geometry_mm": {
+    "pulley_center": [473.56, -325, 410],
+    "lateral_station_basis": "Clears current provisional intake envelope with Y minimum -256 mm; not a measured engine station.",
+    "pulley_diameter": 70,
+    "pulley_width": 24,
+    "housing_diameter": 128,
+    "shaft_diameter": 19.6,
+    "claw_count_per_half": 6,
+    "external_fan_blades": 10,
+    "pulley_grooves": 6,
+    "housing_through_bolts": 4
+  },
+  "unresolved": ["Installed 75/95/130 amp identity and 2G/3G generation", "Fan variant", "Engine bracket and measured mounting positions", "Case shape, dimensions and bolt pattern", "Exact winding layout and turns", "Semiconductors, circuit topology, connectors and wiring", "Bearing internals, fits and identities", "Threaded joints and production axial clamping stack", "Belt routing, ratio and operating animation"]
+}

@@ -1,0 +1,24 @@
+{
+  "source_id": "luk-clutch-load-path",
+  "author": "LuK Aftermarket-Service",
+  "url": "https://www.truckspares365.co.uk/hub/wp-content/uploads/2022/07/LuK-Clutch-Course.pdf",
+  "hosting": "Manufacturer-authored training document mirrored by Truckspares365",
+  "path": "reference/engine/luk-clutch-course.pdf",
+  "sha256": "04916b05ff269b4385c3830d47bf08af8639644ecf8e5d5b1ece8a8db968b565",
+  "visually_reviewed_pdf_pages": [12, 18],
+  "supported_architecture": [
+    "Conventional diaphragm cover reacts spring load through fulcrum supports; tangential straps locate, retract and drive the pressure plate.",
+    "Disc torque flows through carrier/retainer, spring windows and hub flange to the splined hub; friction elements damp relative motion."
+  ],
+  "application_limits": [
+    "These are generic training examples, not identified Ford07-098 drawings.",
+    "The illustrated standard cover has three strap lugs; that count is not verified for this truck.",
+    "Several distinct damper arrangements appear. None establishes this truck's spring count, preload, travel, friction stack or diaphragm-finger count.",
+    "Do not import self-adjusting-clutch parts into the1994 baseline."
+  ],
+  "implementation": {
+    "module": "cad/engine/manual_clutch_load_path.py",
+    "effect": "Explicitly tracks unresolved physical connections and prevents ordinary installation of the incomplete boundary study.",
+    "geometry_disposition": "No generic spring/finger counts or rigid surrogate torque connections added. Existing comparison geometry remains isolated until applicable interfaces can be reconstructed."
+  }
+}

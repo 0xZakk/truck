@@ -16,8 +16,12 @@ from free/legitimate locations. Copyrighted manuals that cannot be freely downlo
 
 ## What's here
 
+The factory-service archive is present. Owner-guide and brochure entries below
+are historical acquisition records; their PDF files were not present in this
+checkout during the 2026-09-23 review.
+
 ### 1. `factory-service-manual/` — ⭐ THE primary mechanic-grade resource
-**Complete digitized Ford factory service manual for the exact vehicle:**
+**Vehicle-specific digitized service-information archive:**
 `1994 Ford F 150 2WD Pickup L6-300 4.9L`.
 Source: [Operation CHARM](https://charm.li) (`charm.li`), free offline bundle.
 
@@ -41,9 +45,10 @@ in a browser to read it. It is split into **Repair and Diagnosis** and
 | Windows and Glass | 55 | Wiper and Washer Systems | 48 |
 | Locations | 16 | All Diagnostic Trouble Codes (DTC) | 15 |
 
-**This single resource covers engine, wiring/electrical (EVTM-equivalent),
-diagnostic trouble codes, torque specs, fluid specs, and TSBs** — which is why
-there are no separate `engine/` or `wiring/` folders; it would be duplication.
+This archive contains substantial engine, wiring, diagnostics, specifications and
+TSB material. Its completeness against the separately published Ford EVTM and
+PC/ED books has **not** been verified; it should not be called EVTM-equivalent.
+Those publications remain useful additions. See the [2026-09-23 research round](../docs/ENGINE-RESEARCH-2026-09-23.md) for exact publication identifiers, public samples and acquisition leads.
 
 ### 2. `owners-manual/` — glovebox owner guide
 `1996-Ford-F-Series-Owner-Guide-(same-gen-as-1994).pdf` — official Ford owner
@@ -94,3 +99,18 @@ ideal raw material for that app:
 - Torque/fluid specs → `.../Specifications/`
 
 See the repo-root `README.md` for the build plan.
+
+## Purchased EVTM acquired — 2026-09-23
+
+The complete 379-page PDF is now stored locally at
+[1994-Bronco-F-Series-EVTM.pdf](evtm/1994-Bronco-F-Series-EVTM.pdf).
+Copied from the user’s downloaded purchase; original bytes and SHA-256 are
+recorded in `evtm/manifest.json`. The PDF is excluded from Git.
+
+## Fel-Pro manufacturer gasket catalog — 2026-09-24
+
+Saved [master catalog 900-16](manufacturer-catalogs/fel-pro-master-gasket-900-16.pdf).
+PDF pages 353–354, application 42, cover the gasoline 4.9L VIN-Y engine.
+The reviewed part identities, application limits and SHA-256 are recorded in
+`reference/engine/fel-pro-vin-y-gaskets-reviewed.json`. This supplies replacement
+search targets and selected material/quantity evidence, not dimensioned drawings.

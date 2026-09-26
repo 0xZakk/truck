@@ -1,0 +1,17 @@
+{
+  "intake-head-locating-dowel": {
+    "title": "The intake dowel locates the joint but does not clamp it",
+    "sources": ["ford-intake-manifold-dowel", "ford-1996-manifold-fastener-table"],
+    "summary": "The factory installation sequence puts the gasket and lower intake over a locating dowel. This reconstruction separates that positioning function from the still-unfinished manifold fasteners.",
+    "steps": [
+      {"title": "Locate the intake gasket", "text": "The applicable1994 installation sequence places the gasket over a locating dowel. Its clearance hole follows the pin datum without being a clamping feature.", "part": "efi-head-intake-gasket", "source": "ford-intake-manifold-dowel"},
+      {"title": "Locate the lower intake", "text": "The manifold socket receives the projecting pin. This candidate assumes13mm head engagement,9.9mm intake engagement and separate blind bottoms; those depths are not Ford manufacturing dimensions.", "part": "efi-lower-intake"},
+      {"title": "Keep the dimensional comparison explicit", "text": "The1996 factory table lists a5/16 by1inch pin as part of the cylinder head. The7.9375 by25.4mm study replaces the earlier arbitrary envelope, but does not prove identical1994 hardware.", "source": "ford-1996-manifold-fastener-table"},
+      {"title": "Separate location from clamping", "text": "A locating dowel cannot replace the manifold fasteners. The front lifting-eye attachment study and the fourteen other unresolved attachment stations are a separate scope.", "part": "front-manifold-lifting-eye"}
+    ],
+    "troubleshooting": [
+      {"title": "Do not confuse alignment with sealing", "text": "A modeled aligned gasket does not demonstrate gasket compression or an airtight joint. The geometric checks cannot diagnose an actual intake leak or establish the correct replacement pin."}
+    ],
+    "limits": "Provisional comparison study. Pin diameter and length use an explicitly1996 comparison; station, socket fits and casting pads remain assumed. Clearance probes and connected solids do not establish1994 applicability, interference retention, production coolant-gallery compatibility, clamp load or sealing."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Opening the diagnostic valve separates the moving seal from its seat",
+  "parts": ["fuel-test-pin", "fuel-test-seat-seal", "fuel-test-spring", "fuel-test-core", "fuel-test-cap"],
+  "sources": ["fsm-4840fb38c793", "schrader-core-construction"],
+  "per_part_functions": {
+    "fuel-test-body": "Connects the existing open rail branch to the diagnostic cartridge and provides the cap interface. Thread and installed dimensions remain provisional.",
+    "fuel-test-core": "Supports the annular valve seat and guides the actuating pin. With the cap removed and pin depressed, the intended path crosses the opened seat and exits through the upper bore.",
+    "fuel-test-static-seal": "Intended to prevent flow around the outside of the cartridge. The current uncompressed study leaves0.01 mm radial clearance at its inner interface, so leak-tight bypass isolation is not established.",
+    "fuel-test-pin": "Moves inward together with the seating washer to open the intended diagnostic passage. The isolated adapter samples0..0.12 mm only; actual stroke is unknown and no viewer animation is integrated by this module alone.",
+    "fuel-test-seat-seal": "The washer travels with the poppet. Its closed face blocks the tested seat-crossing path; depressing it opens that path. Elastomer compression and leakage are not simulated.",
+    "fuel-test-spring": "Shortens as the pin is depressed and would supply the return force. The existing four-turn envelope retains non-intersecting pitch over the illustrative interval; no real force or preload is assigned.",
+    "fuel-test-cap": "Covers the valve and provides a secondary protective/sealing boundary in the installed state. It is excluded, together with its seal, before the isolated opening state is constructed. Gauge attachment is not modeled.",
+    "fuel-test-cap-seal": "Illustrative annular insert at the body lip beneath the cap. It accompanies cap removal; its material, compression and actual installed construction remain unresolved."
+  },
+  "mechanism": "The actuating pin carries its sealing washer away from the core seat. The spring shortens while the intended passage opens around the poppet. The closed-state control blocks that same passage. The cap is removed from the geometric working state; no servicing procedure or tool attachment is simulated.",
+  "what_is_tested": "Sampled geometric clearance and intended-passage connectivity using the existing rail datum and installed neighboring parts.",
+  "what_is_not_tested": "Actual stroke, pressure, discharge, seal compression, fuel compatibility, leakage, spring calibration and safe servicing. The existing static-seal clearance remains unresolved."
+}

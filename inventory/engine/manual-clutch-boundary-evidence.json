@@ -1,0 +1,39 @@
+{
+  "complete": false,
+  "accepted_for_installation": false,
+  "installed_variant_verified": false,
+  "module": "cad/engine/manual_clutch_boundary.py",
+  "source": "reference/engine/ford-manual-clutch-boundary-reviewed.json",
+  "validation": "inventory/engine/manual-clutch-boundary-validation.json",
+  "preferred_baseline": "10-inch-R2, inferred from owner-confirmed M5OD-R2 and Ford application drawing; installed disc remains unmeasured.",
+  "api": "components(variant), parts(variant), build(api, variant, comparison_only=True); variant must explicitly be10-inch-R2 or11-inch-2F. Ordinary build rejects unresolved load paths. Never build both branches into one installed clutch.",
+  "load_path_acceptance_module": "cad/engine/manual_clutch_load_path.py",
+  "isolated_validation": {
+    "variants": 2,
+    "parts_per_variant": 14,
+    "total_step_round_trips": 28,
+    "total_exact_intersection_checks": 378,
+    "overlaps": 0,
+    "fixture": "Current flywheel body and six crank fasteners only; no full installed-manifest audit."
+  },
+  "provisional_local_stack_mm": {
+    "front_facing": [25, 28],
+    "carrier": [28, 30],
+    "rear_facing": [30, 33],
+    "pressure_ring": [33, 43],
+    "diaphragm_envelope": [43, 55],
+    "cover_flange": [25, 28],
+    "cover_rear_face": 60,
+    "cover_bolt_tip": 17,
+    "existing_cover_hole_bottom": 15
+  },
+  "interface_limits": [
+    "Cover fasteners engage the existing assumed blind holes by8 mm and retain2 mm bottom clearance. Threads, grades, preload and true mounting pattern are unresolved.",
+    "Damper envelope pockets clear current flywheel bolt heads by0.5 mm axially. These pockets are a study accommodation, not measured production features.",
+    "Diaphragm is unslotted and has no reconstructed fulcrum/retention system. Its envelope does not complete the pressure-plate spring load path.",
+    "Carrier-to-hub damper torque transfer remains an unresolved cartridge, not a claimed rigid functional clutch.",
+    "The ten-spline designation is recorded but the bore is only its nominal diameter envelope. No involute tooth form is asserted.",
+    "Disc outer diameter varies between branches; shared cover/pressure-ring envelopes are explicit comparison assumptions, not proof of interchangeable production assemblies.",
+    "Pilot bearing, input shaft, release bearing, concentric slave or external fork, diaphragm fingers, straps and rivets remain open."
+  ]
+}

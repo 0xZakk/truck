@@ -1,0 +1,15 @@
+{
+  "oil-pan-fastener-assembly": {
+    "summary": "Twenty-five screw-and-washer assemblies clamp the pan flange against a continuous molded gasket. The replacement-part photograph shows ten holes along each long rail, plus three at one end and two at the other.",
+    "limits": "The factory supports the screw count, nominal 5/16-18 thread and .87-inch length. The exact OS34601R photograph supports the continuous seal and hole distribution. Coordinates, compressed thickness, end radii, pad/socket geometry, washer construction and the photographed ends' orientation remain assumptions. This is not a production hole-pattern drawing or a leak/torque simulation.",
+    "steps": [
+      {"title": "Distribute clamp load", "text": "The screw head pushes against its washer, which spreads the force onto the thin pan flange. Each screw and washer can be inspected separately.", "part": "oil-pan-mounting-screw-1"},
+      {"title": "Follow the complete seal loop", "text": "The molded seal joins both long rails across its two differently shaped end bridges. Its curved ends are distinct from the rotating crankshaft's front and rear oil seals.", "part": "oil-pan-molded-gasket"},
+      {"title": "Close the end joints", "text": "The end hardware attaches through matching pan and gasket holes into provisional blind lands. The precise timing-cover junction, local sealant and production mounting pattern still need reconciliation.", "part": "oil-pan-mounting-screw-23"}
+    ],
+    "troubleshooting": [
+      {"title": "Oil at a corner", "text": "Inspect the entire sealing path and adjoining joints. The end transitions are separate interfaces from the rear crankshaft oil seal, and oil on the outside does not alone establish the source.", "part": "oil-pan-molded-gasket"}
+    ],
+    "sources": ["truck-oil-pan-hardware", "fel-pro-vin-y-gaskets", "felpro-os34601r-topology"]
+  }
+}

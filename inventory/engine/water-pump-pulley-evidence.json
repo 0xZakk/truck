@@ -1,0 +1,37 @@
+{
+  "sources": ["system-7b01cf423275", "gates-1994-drive"],
+  "source_review": {
+    "factory": "Saved Ford water-pump removal procedure distinguishes water-pump pulley, fan clutch, and blade; clutch nut is right-hand thread. No pulley dimensions or pulley-bolt count established.",
+    "gates": "Saved Gates 2008 catalog PDF page 163, printed 79, S7004 visually reviewed. Central wheel above CS has backside belt contact. Wheel identity is inferred; drawing only labels crankshaft CS. The schematic supplies no measured centers or diameters."
+  },
+  "verified_production_geometry": false,
+  "provisional_geometry_mm": {
+    "outside_diameter": 150,
+    "rim_width": 28,
+    "sheet_thickness_nominal": 2.5,
+    "center_bore": 16.2,
+    "hole_count": 4,
+    "hole_diameter": 7,
+    "hole_circle": 50,
+    "bolt_shank_diameter": 6,
+    "bolt_under_head_length": 10.5,
+    "bolt_head_circumradius": 5.5,
+    "bolt_head_height": 4
+  },
+  "placement": {
+    "pump_parent_origin": [440, 0, 170],
+    "hub_front_x": 522,
+    "pulley_web_rear_x": 522,
+    "pulley_web_front_x": 524.5,
+    "smooth_belt_center_x": 473.56,
+    "existing_damper_rim_center_x": 474.56,
+    "existing_damper_six_groove_center_mean_x": 473.56,
+    "axial_web_to_belt_center_offset": 48.44,
+    "status": "Dish offset chosen to reconcile current provisional hub and damper without moving existing parts. This is not evidence of production fit. Existing pump staging datums and its block interface remain unresolved.",
+    "parallel_tensioner_envelope_center_x": 473.56,
+    "parallel_tensioner_center_delta": 0,
+    "belt_alignment_limit": "Tensioner station was revised from X465 to X473.56 to align its illustrative center with the pump and damper groove mean. Its 37.5 mm overall width gives 8.75 mm nominal margin on each side of an assumed 20 mm centered belt. This is a modeling reconciliation, not measured production alignment. Actual belt tracking, usable pulley face width, wrap and vehicle datums remain unresolved."
+  },
+  "complete": false,
+  "remaining": ["Identified OE pulley photograph and dimensions", "Production fastener count and specifications", "Fan-clutch threaded nose", "Actual vehicle belt plane and water-pump installed datum", "Belt path and rotation"]
+}

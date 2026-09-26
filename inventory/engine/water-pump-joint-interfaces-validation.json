@@ -1,0 +1,45 @@
+{
+  "input_hashes": {
+    "scripts/check-water-pump-joint-interfaces.py": "1cb969b33c780040bd02cce0d737e9544610f8bd58c9f677495ff710238d9087",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/water_pump_thermactor_foot_candidate.py": "734c9e2b43202b385a5353ecba5538d40c6486ee14b97215523895fb38ac85d2",
+    "cad/engine/generated/block.step": "cb50acc741a3a27b30f56fad4ff0557b1d0a04b9d96663cb5b63eaae36fc23e1",
+    "cad/engine/generated/water-pump-housing.step": "ed86d0450efbb31af3b551553eba5c2f5e1ba798ceffa0be05344e7166d3d72f"
+  },
+  "inputs_unchanged": true,
+  "cylinder1_region_difference_mm3": 0,
+  "full_gasket_support": {
+    "block": {
+      "gasket_mm3": 5805.499544567386,
+      "supported_mm3": 5805.499544570494
+    },
+    "pump": {
+      "gasket_mm3": 5805.499544567386,
+      "supported_mm3": 5805.4995445371405
+    }
+  },
+  "front_aperture_probes_mm3": [
+    0,
+    0
+  ],
+  "four_mounting_socket_controls": [
+    {
+      "open_socket_mm3": 0,
+      "retained_floor_mm3": 47.78362426110074
+    },
+    {
+      "open_socket_mm3": 0,
+      "retained_floor_mm3": 47.78362426110075
+    },
+    {
+      "open_socket_mm3": 0,
+      "retained_floor_mm3": 47.78362426110074
+    },
+    {
+      "open_socket_mm3": 0,
+      "retained_floor_mm3": 47.783624261100755
+    }
+  ],
+  "new_accessory_dry_socket_pass": true,
+  "scope": "Local joint boundaries and cylinder preservation only; deeper coolant jacket, pressure sealing, actual aperture function and manufacturing dimensions remain unverified."
+}

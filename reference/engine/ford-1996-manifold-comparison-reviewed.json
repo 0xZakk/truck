@@ -1,0 +1,44 @@
+{
+  "id": "ford-1996-manifold-comparison",
+  "url": "https://www.diesel-dave.com/vehic/manual/stj/stj31a27.htm",
+  "image_url": "https://www.diesel-dave.com/vehic/manual/stj/images/a24051b.gif",
+  "image_recovery": {
+    "original_download": "Root bounded download returned 404; no image reviewed.",
+    "alternate_primary_page": "https://www.diesel-dave.com/vehic/manual/stj/stj31a44.htm",
+    "alternate_image_url": "https://www.diesel-dave.com/vehic/manual/stj/images/a24051a.gif",
+    "alternate_basis": "Actual linked figure on the factory Subassemblies page, not a guessed filename. Root bounded capture also returned 404; neither linked figure was recovered.",
+    "earlier_scan_locator": "1995 factory Powertrain/Drivetrain scan, printed page 03-01A-28, figure A24051-A. Indexed text is a locator only, not visual evidence.",
+    "public_folder_locator": "https://drive.google.com/drive/mobile/folders/1M0M9m9vtiOxwy5wkJ203tlSTjwuWzcew?usp=drive_open",
+    "folder_provenance": "Actual 1995 factory-manual folder link in post 18 of https://www.broncozone.com/threads/new-owner-96-bronco.29008/ . Forum used only to locate primary scans, not as technical evidence.",
+    "recovery_limits": "Scribd document 720481789 exceeded the web tool response limit. Computer-use browser inventory is empty. Root captured the public folder HTML; its engine section is 03-01B for 5.0/5.8/Lightning only, with no 03-01A/4.9 file. This Bronco subset cannot supply the required figure. No authentication or paywall bypass attempted.",
+    "attachment_locator": "https://www.ford-trucks.com/forums/1559623-4-9l-exhaust-manifold-to-egr-tube.html advertises Exploded top engine.pdf; search locator only, actual attachment URL and image not yet recovered. Web fetch returned 403."
+  },
+  "scope": "1996 Ford 4.9L SFI factory workshop manual comparison; not direct proof of identical 1994 fasteners or installed truck hardware.",
+  "recovered_primary_figure": {
+    "path": "reference/engine/ford-manifold-exploded-forum-attachment.pdf",
+    "sha256": "8dcb3da9c002df9ec8dcb944d62cf38091d869063e2f6eff52549d52ede50ef3",
+    "url": "https://www.ford-trucks.com/forums/attachment.php?attachmentid=262284&d=1540217192&download=1",
+    "identity": "Factory 1996 Engine, 4.9L SFI page 03-01A-7, Engine Components, Upper, figure A10700-E. One scanned page, not missing figure A24051-A.",
+    "visually_reviewed": true,
+    "observations": [
+      "Item 66 is a spanning lifting-eye bracket with two feet and a lifting opening above the manifold. The front manifold is item 65; rear manifold is item 67.",
+      "Two separate fasteners are drawn at the eye feet: a projecting stud at one end and a headed bolt at the other. Their leader paths terminate at front-manifold end mounting regions.",
+      "The bracket is not a miniature annular eye retained at only a single station. Combined with the 1994 installation text, this supports a stud-13 and bolt-14 retained front-eye comparison topology.",
+      "The view does not expose every shared intake/exhaust clamping contact or define a washer stack, clamp thickness, production hole coordinates or section dimensions."
+    ],
+    "limits": "Year-specific continuity is an inference; dimensional table and visual figure remain 1996 comparison evidence. No figure pixel dimensions are scaled into model geometry."
+  },
+  "text_review": {
+    "dowel": "5/16 x 1.00, part of head",
+    "stud": "391402, 3/8-16 x 3.57",
+    "bolt": "390530, 3/8-16 x 1.31",
+    "eye": "17A084",
+    "screw": "390754, source displays 3/8-18 x 1.25; unresolved unusual thread designation, not silently corrected"
+  },
+  "limits": [
+    "No accepted 1994 model dimensions changed on this comparison alone.",
+    "Dowel comparison dimensions are 7.9375 mm diameter and 25.4 mm length, unlike the existing explicitly assumed 6 by 23.5 mm candidate. Any revision requires its own interfaces and clearance audit.",
+    "Exploded figure requested for visual review; no station-to-part association inferred from table order alone.",
+    "The sequence independently repeats rear bolts 15/16 and front stud 13/bolt 14 before installation of the lower intake."
+  ]
+}

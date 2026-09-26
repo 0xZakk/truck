@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "installed": false,
+  "verified_production_fit": false,
+  "manifest_sha256": "261cbceefc6fa042178ae0b9393aa2c9e2451bd1a33a6c0cf14cdd0c4551d6fe",
+  "source_sha256": "b90890dfac093c3d2aa47377ef1fe98f818cbd412f5978894bc937bb3185da49",
+  "pulley_source_sha256": "e1195de0b49f99c78e74733ac92e9489450a8bfd90549a1a33725a43d2f70fa6",
+  "solid_step_round_trips": 8,
+  "narrow_phase_checks": 12,
+  "collisions": [],
+  "limits": [
+    "Gates 38131 instructions establish an enclosed preloaded spring, moving arm, mounting bolt, locating pin and optional locating-pin bushing. They do not establish internal spring geometry.",
+    "The sealed spring/pivot cartridge is an unresolved envelope: spring, damping element, seals, stops and internal retainers are not separately reconstructed.",
+    "75 mm arm length, 64 mm cartridge diameter, axial stack, arm contour, fastener dimensions and pivot sleeve are illustrative construction assumptions, not measured Gates or Ford geometry.",
+    "Pulley station (473.56,-180,220), pivot station (433.56,-180,295) and arm angle are provisional; the axial datum matches the illustrative pump/damper belt plane, not a measured installation. The engine mounting bracket, its load path and operating travel remain unresolved.",
+    "The removable bushing depicts the large-hole bracket option. Gates specifies 1/2 inch and 5/16 inch bracket holes, not the modeled pin/bushing clearances or installed bracket choice.",
+    "Smooth fastener shanks omit threads, grades and tightening specifications. Collision-free geometry does not verify production fit or spring behavior."
+  ]
+}

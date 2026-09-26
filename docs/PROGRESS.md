@@ -1,6 +1,195 @@
+## Pan drain connection — 2026-09-24
+
+Added a replacement-style M14×1.5 threaded plug, separate sealing washer, flat seat and open drain passage to the rear-sump study. Thread diameter and pitch follow the Dorman pan listing; other dimensions and boss construction remain provisional. Solid/clearance checks and the removed-plug passage probe pass. Navigation reaches 731 occurrences through 862 links; full static audit is running. End seals require coordinated changes to the bearing-cap and timing-cover interfaces, documented in `inventory/engine/pan-interface-evidence.json`.
+
+## Rear-sump pan and pickup — 2026-09-24
+
+Replaced the uniform pan with a rear-sump study, using the published replacement depth. Added a pan assembly page and revised the pickup route and strainer position together. A first clearance check caught the tube crossing the pan transition; the revised route clears it. Focused validation passes with 11.95 mm of modeled screen-to-floor clearance, which is an assumption rather than a Ford specification. Navigation passes; whole-engine audit remains running. Flange dimensions, end seals, fasteners, drain hardware and installed geometry remain unfinished.
+
+## Oil-pressure switch study — 2026-09-24
+
+Added nine separate components and individual pages for the metal body, diaphragm, carrier, moving contact, fixed contact/terminal, insulator, retaining rim, spring and illustrative ground bridge. The manufacturer photograph informs the exterior; the internal arrangement is explicitly hypothetical teaching geometry. EVTM-based lessons explain switch behavior and the fixed cluster resistor. Installed dimensions, pressure threshold and block interface remain unresolved.
+
+The focused check passes inlet access, diaphragm separation, open/closed contact geometry, terminal isolation and internal clearances. Navigation reaches all 729 current occurrences through 859 links; the exploded/transparent browser view was inspected. Full static audit is running. These checks do not establish production fidelity or engine completion.
+
+## Filter placement and flow-path correction — 2026-09-24
+
+Moved the staged filter onto the camshaft side using the factory lubrication schematic; numerical station and inclination remain provisional. The lubrication overview now includes filter exploration. Added a central separating standpipe to the illustrative bypass housing, closing an unintended dirty-oil shortcut to the outlet. Three wall probes and a seated/lifted bypass-disc check pass alongside existing solid and internal-clearance checks. Whole static validation is running; navigation passes 849 links. Adapter and block galleries still require reconstruction.
+
+## Oil filter construction increment — 2026-09-24
+
+Added a thirteen-component filter study with published WIX replacement envelope and explicitly provisional Motorcraft-inspired internals. Individual pages, explanation and troubleshooting links, ghosted shell and exploded navigation are available. Filter placement is staged: block boss, galleries and adapter are still unresolved.
+
+Validation: 13 valid single-solid STEP components; no internal overlaps; inlet, outlet and perforation probes pass. Full engine audit passes 2363 broad-phase pairs with no positive-volume overlaps at the static pose. Navigation passes 720 occurrences and 849 deep links. Browser verified 40% exploded and see-through-shell views. These results establish model consistency, not production fidelity.
+
+Saved filter references and the EngineQuest 2025 catalog. Page 23 lists EQ-OFA302 against D7AZ6890A for the Ford application group including 4.9L. It does not prove equivalence to Ford's E4TZ6890A anti-drainback insert; do not substitute it silently.
+
 # Progress ledger
 
 Newest first. Each session: log what was catalogued and what's next.
+
+### 2026-09-24 — PCV valve and grommet
+
+- Added six separate parts under Crankcase ventilation: metal body, angled outlet
+  head, plunger, spring, orifice washer and mounting grommet. Internal architecture
+  follows the factory typical cutaway; exterior follows the live Standard V219
+  catalog photograph, saved with its hash and reviewed specifications.
+- Direct checks pass internal clearances, both outlet passages, and interfaces
+  with the cover and upper intake. Navigation reaches707parts through835links;
+  exploded/transparent view visually checked. All dimensions and calibration are
+  provisional; hoses, unused outlet treatment and installed identity remain open.
+-211definitions/707occurrences. Whole-engine static audit passes2,301candidate
+  pairs with zero overlaps; artifact integrity and scale checks pass.
+- Prior fuel-coupling final audit passed2,282candidate pairs with zero overlaps
+  after rotating the return clip/tether to clear the intake flange.
+
+### 2026-09-23 — fuel spring-lock connections
+
+- Added 14 reusable definitions / 16 occurrences for the supply and return
+  connections: male fitting, female fitting, cage, two seals, coiled garter spring,
+  retaining clip and tether. Factory construction and service identifiers are
+  saved with local source hashes. Dimensions and stations remain provisional.
+- Fixed clip/tether overlap by adding an attachment recess. Both connections pass
+  solid-validity, open-passage and pairwise-clearance checks. Navigation passes
+  827 deep links / 701 parts. Assembled and exploded transparent views checked.
+- Current total: 205 definitions / 701 occurrences. Whole-engine static audit
+  is running; no completion or verified production fit claim.
+- Captured five factory PCV pages and reviewed the valve and ventilation diagrams
+  for the next assembly. Installed PCV identity and hose routing remain open.
+
+### 2026-09-23 — source-dimensioned fuel-rail fasteners
+
+- Factory exploded drawing establishes three1/4-20x.90in bolts with washers.
+  Added separate threaded bolts/washers and provisional lower-intake support bosses.
+- Corrected center-mount/regulator and mounting-tab/return-tube interferences.
+  Shared mount coordinates keep the rail, bolts and casting support consistent.
+- Direct checks pass sourced diameter/pitch/length and all mount/return-tube
+  clearances. Navigation809links passes; bolt part page visually checked.
+-191 definitions/685 occurrences. Full static audit passes2,219 candidate pairs with no overlaps;
+  casting contours, station measurements and female thread fit remain unverified.
+
+### 2026-09-23 — connected fuel pressure test valve
+
+- Added eight separate diagnostic-valve components and a drilled branch into the
+  fuel rail. Ford establishes the fitting; generic internal construction follows
+  Schrader's catalog, saved locally. Installed dimensions/identity remain unknown.
+- Direct checks find no internal collisions and no blocked rail branch. Navigation
+  passes803 links. Whole-engine static audit remains running at this entry.
+- Added targeted fuel refresh and duplicate-ID publication guard. Transparent
+  housings expose the core, seating washer, spring and pin. Browser assembled and
+  35% exploded/transparent views checked.
+
+### 2026-09-23 — drive-layout reconciliation evidence
+
+- Full static audit completed:2,166 candidate pairs, zero overlaps;181 definitions
+  and671 occurrences pass artifact and scale checks.
+- Visually reviewed Ford industrial manual PDF6–7, including the sectional engine
+  drawing. Saved source/capture and an explicit drive-layout evidence record.
+- Confirmed drive architecture; documented why current distributor/cam/pump staging
+  cannot be treated as installed alignment. Neck/bowl geometry, block bosses and
+  pump mount need coordinated reconstruction before the intermediate shaft.
+
+### 2026-09-23 — distributor hold-down hardware
+
+- Added separate forked clamp and retaining bolt on the housing flange, with
+  individual pages and service-procedure context. Dimensions and block attachment
+  remain provisional; existence/function follows the applicable Ford procedure.
+- Distributor motion audit passes546 candidate pairs over13 poses;794 navigation
+  links pass. Clamp part page visually checked.181 definitions/671 occurrences.
+- Location-diagram review identified a larger integration issue: the distributor,
+  cam and pump studies do not share a verified drive station. Reconcile these
+  against source drawings before adding a supposedly installed intermediate shaft.
+
+### 2026-09-23 — separate distributor drive components
+
+- Added helical gear, slotted retaining pin and thrust washer; the shaft and gear
+  hub have matching transverse pin bores. These are separate selectable parts,
+  rotating with the shaft. Geometry is provisional, not a verified gear pair.
+- Rechecked the local factory exploded drawing and a photographed 1996 Ford
+  comparison page identifying the roll pin and 4.9L washer. Saved source evidence
+  and a KB page; tooth count/profile and installed dimensions remain unverified.
+- 179 definitions /669 occurrences. STEP roundtrip and scale checks pass; static
+  audit checks2,162 candidate pairs without overlaps. Distributor motion checks
+  494 pairs over13 poses, with correct clockwise half-speed rotation and no overlaps.
+- Added source/lesson metadata after the geometry audit; navigation passes792links.
+  Clamp, block mounting and cam/oil-pump engagement remain unfinished.
+- Browser review found lower exploded parts behind the control panel. Camera framing
+  now reserves the title/control areas; assembled and35% exploded views checked.
+
+### 2026-09-23 — head/plug integration and sourced rotation direction
+
+- Added six recessed plug wells and photo-informed chamber outlines from Allied's
+  EFI-head comparison photos. Shared provisional mounting datums replace staged
+  plug placements. Saved the source capture, KB page and interface evidence.
+- Corrected a 0.28 mm³ ground-electrode/head overlap at each cylinder. All 54 plug
+  components now clear the head, and axial probes reach all six firing pockets.
+  Full static audit passes 2,158 candidate pairs, with 176 definitions/666 parts.
+- Visually checked the head's manifold and plug sides in the browser. Casting
+  dimensions, female threads, chamber volume and coolant passages remain unresolved.
+- Reviewed the saved factory firing-order diagram: clockwise distributor rotation
+  viewed from the cap. Corrected CAD and browser animation signs; initial clocking,
+  drive-gear engagement, timing and plug-lead routing remain unfinished.
+- Navigation passes 789 links. Whole-engine completion remains in progress.
+
+### 2026-09-23 — threaded plug geometry and export reliability
+
+- Replaced smooth plug thread envelopes with helical geometry. NGK's 18 mm family
+  chart supports inferred 1.5 mm pitch; direct WR4-1 tolerances remain unresolved.
+- Corrected a sweep that failed STEP roundtrip validation by orienting its section
+  normal to the helix tangent. Added an immediate export topology/volume guard.
+- Direct tests verify pitch periodicity, alternating thread metal/void and unchanged
+  catalog envelope/firing gap. Full static audit and 789 navigation links pass;
+  threaded silhouette inspected in the browser. Counts remain 176/666.
+- Head mounting interfaces and leads remain unfinished; no installed-fit claim.
+
+### 2026-09-23 — six spark-plug component studies
+
+- Added nine reusable plug definitions, each instantiated for six cylinders with
+  independent component pages and explosion/transparent-shell exploration.
+- Used the explicit NGK WR4-1 application and dimensional table; inspected the
+  catalog's profile143 and tipDH photographs. General internal construction remains
+  an illustration, separately sourced and labeled.
+- Direct CAD checks confirm nominal 18 mm thread envelope, 11.684 mm reach,
+  20.6375 mm hex and 1.1176 mm firing gap. No internal solid overlaps.
+- Full static assembly audit passes 2,074 candidate pairs; 176 definitions and
+  666 occurrences pass STEP integrity and GLB scale/bounds checks. Navigation passes
+  789 links. Assembled and transparent/exploded plug views inspected in the browser.
+- Threads, head bores, orientation and leads remain unfinished; plugs are staged
+  next to the head pending integration. The engine is not complete.
+
+### 2026-09-23 — remote ignition module and spark-plug evidence
+
+- Added the factory-illustrated fender heat-sink/module mounting architecture with
+  seven independent occurrences, including both pairs of retaining screws.
+- Kept electronics, installed dwell variant, dimensions and fender datum unresolved.
+- Corrected screw-head interference. Full static audit passes 1,972 candidate pairs;
+  167 definitions / 612 occurrences have valid solids and matching GLB scale/bounds.
+  Navigation passes 728 links; assembled module view inspected in the browser.
+- Acquired NGK's 2019 catalog and visually verified the explicit F-150 application
+  and WR4-1 dimensional table. Saved PDF, source page, review text and checksum.
+  Next: sourced spark-plug envelope, internals and head/lead integration.
+
+### 2026-09-23 — distributor and ignition-coil component studies
+
+- Added a 23-component closed-bowl distributor with shaft, shutter, Hall package,
+  rotor/contact, cap and seven terminals, bushings, O-ring and retaining screws.
+- Linked the rotor/shutter to half crankshaft speed in CAD and viewer. Playback
+  now wraps at 720 degrees to avoid resetting half-speed parts after one revolution.
+- Added a ten-component DG470 coil study with core-stack envelopes, winding packs,
+  bobbin, insulation, case, high-voltage terminal and two primary terminals.
+  Ford's DG470/F7PZ12029AA identity matches the archived service part; exterior
+  photographs were reviewed and captured in the evidence ledger and KB source.
+- Distinct ignition lessons describe PIP/SPOUT, primary switching and distribution;
+  individual parts and local source links are reachable. Current total: 162 CAD
+  definitions / 605 occurrences. Counts include teaching aggregates, not every wire
+  or core sheet, and do not imply engine completion.
+- Distributor sampled motion passes 13 crank poses with zero internal overlaps;
+  coil's ten solids pass mutual-clearance checks after tower/shroud corrections.
+  Full-engine static audit: 1,963 candidate pairs with zero >0.1 mm3 overlaps;
+  STEP integrity and GLB scale/bounds checks pass.
+  Navigation passes 720 links; browser assembled and exploded coil views inspected.
+- All distributor/coil dimensions and mounting datums remain provisional. Gear
+  engagement, bracket, capacitor, plugs, leads, module and harness remain unfinished.
 
 ### 2026-09-22 — engine atlas and component pages
 - Expanded to 53 valid CAD definitions and 399 individually addressable occurrences;
@@ -694,3 +883,295 @@ viewer. Replaced `/viewer/` with a current project home linking the engine explo
 Manuals, reference material, extracted BOM, KB and current engine work remain in
 place. Verified preserved-file hashes, archive-relative mesh paths, and
 home/archive browser loading.
+
+## 2026-09-22 — Lubrication component study
+
+Added 12 CAD definitions / 15 occurrences for the oil pump and pickup, bringing
+this reconstruction to 65 definitions / 414 occurrences. The new lubrication
+branch includes the rotor set, housing, cover and four bolts, relief plunger,
+spring and closure, pickup tube, shell and perforated screen representation.
+Assembly explanations link to the relevant components and factory references;
+inspection notes distinguish pump wear from the documented filter-drainback issue.
+
+The 1994 catalog and industrial parts book both list C5AZ-6600-A. The industrial
+comparison supports four cover bolts and the relief plunger/spring envelope
+sizes. It lists a different pickup, so its tube cannot be copied as truck geometry.
+`inventory/engine/oil-pump-evidence.json` records this distinction and unresolved
+mounting, rotor, drive and passage details. The model remains a provisional study,
+including its installed transforms; the large block/head/cover shapes were not
+changed without stronger references.
+
+Validation: all 65 saved STEP definitions and GLB scale/bounds passed; assembled
+STEP has 414 solids. All-pair static CAD checks found no overlaps above 0.1 mm³;
+rotating-core and lubrication clearance checks passed at 0/90/180/270 degrees.
+The 1,441-sample idealized crank test passed. Navigation tests cover all 501 scope
+URLs, educational links/sources, and comparison-derived relief-part envelopes.
+Browser review covered the pump, exploded view, rotor set and explanation links;
+no console errors were observed. STEP round-trip volume tolerance is explicitly
+10 ppm, accommodating a measured 1.35 ppm trimmed-surface integration difference
+in the housing; scale and solid-validity checks remain independent.
+
+## 2026-09-22 — EFI intake and cover refinement
+
+Added five definitions / eleven occurrences: hollow upper and lower EFI intake
+castings, two gaskets and seven retaining studs. Total: 70 definitions / 425
+occurrences. The intake has its own navigation branch, individual part pages,
+linked explanations, sources and explicit dimensional uncertainties. Factory
+references support architecture and stud count; runner profiles, mounting
+positions and casting envelopes remain provisional.
+
+Refined the valve cover with sloped shoulders and a rear ventilation opening.
+Extended the existing head ports to the manifold face after probes found their
+cuts ended 5.5 mm short. Added crease-aware smooth shading to intake castings.
+Throttle body, fuel hardware, EGR, exhaust and exact production interfaces remain
+unfinished; this is not a verified complete engine.
+
+Validation: all 70 saved CAD definitions and GLB bounds passed, assembled STEP
+contains 425 solids, all-pair static checks found no overlaps above 0.1 mm³,
+and sampled core/lubrication motion checks passed. Eighteen intake interface
+probes pass. Navigation verifies 425 reachable parts and 515 deep links; the
+1,441-sample crank mechanism test passes. Browser review covered intake assembly,
+exploded view, individual upper casting and cutaway, with no captured errors.
+
+## 2026-09-22 — Interactive throttle mechanism
+
+Added six definitions / thirteen occurrences for the twin-bore housing, gasket,
+shaft, two plates and four mounting studs/nuts. Total: 76 definitions / 438 parts.
+A separate throttle slider rotates the shaft and both plates; ghosting the housing
+exposes the mechanism. Navigation, individual pages, exploded view, explanation
+and evidence links include the new assembly. Added a provisional mounting pad and
+stud bores to the upper intake to connect the throttle assembly.
+
+Reviewed the local 1994 factory operation, service and parts pages and their
+illustrations. The manual/C6 catalog entry differs from the E4OD entry. Factory
+layout and mounting counts are supported; dimensions, shaft construction and
+0–90 degree stop range remain illustrative. IAC/bypass, TPS, linkage/return spring,
+accelerator bracket, purge ports and plate screws remain unmodeled. Fuel and
+exhaust were not added in this increment.
+
+Validation: 76 saved definitions and 438 assembled solids passed CAD/scale checks;
+all-pair static audit and sampled core/lubrication audit passed. Seven throttle
+angles produced 637 passing pair checks; both open inlet probes and all 18 prior
+intake probes passed. Navigation covers 531 deep links and all 438 occurrences.
+The 1,441-sample crank test passed. Browser review confirmed closed/open plates,
+transparent housing, reset, exploded state and no captured console errors.
+
+
+## 2026-09-22 — Fuel, throttle controls and split exhaust
+
+Added 40 CAD definitions / 110 occurrences, for 116 definitions / 548 occurrences.
+Six injectors each have thirteen separate components, including coil, armature,
+needle, spring, filter, seat, body, insulator, two terminals and two seals. Added
+supply/return rail, thirteen-piece regulator, eight-piece unvented IAC and
+seven-piece TPS. The TPS rotor/wiper follow the independent throttle slider.
+Separate hollow front/rear exhaust castings connect to the six modeled head ports.
+All new definitions have source links, explanation, unresolved details and stable
+part pages. The IAC installed variant and all new dimensions remain provisional.
+
+Indexed 53 factory pages in twelve engine-mounted component families beyond the
+original Engine chapter. Completion is tracked as a physical-component work
+breakdown, not a percentage based on modeled counts. Cooling, ignition, accessory
+drive, interfaces, hardware and foundational geometry remain unresolved. The user
+requested review only after the entire engine is finished; this is not that point.
+Read ENGINE-GEOMETRY-EVIDENCE.md for the drawings/scans/measurements required to
+close accuracy. Search results for miniature engines are not production CAD.
+
+Fit checking exposed injector shell/needle interference, fuel return and regulator
+mounting interference, and throttle stud/nut interference after adding the IAC pad.
+Corrected the source geometry and rebuilt. All saved CAD definitions and GLB
+scale/axis bounds pass, with 548 solids in the assembled STEP. Static checking
+covers 1,866 candidate pairs; sampled core/lubrication checking covers four crank
+poses. Seven throttle/TPS positions cover 301 candidate pair checks and two open
+inlet probes. All 25 fuel/IAC/exhaust probes and 18 intake probes pass. Navigation
+reaches all 548 occurrences through 654 links; 1,441 idealized crank samples pass.
+Reports retain explicit scope and manifest hashes; these are internal consistency
+checks, not Ford geometry verification.
+
+Browser checks covered injector explosion, moving TPS, transparent IAC, exhaust
+passages and navigation. Exhaust meshes now retain smooth curved surfaces, and
+their cutaway runs lengthwise so it exposes both collectors instead of removing
+one complete manifold. The floor grid now follows the isolated assembly. No
+browser console errors were captured during these checks.
+
+## Research round — 2026-09-23
+
+Saved 17 source records/pages, public manual samples and manufacturer catalogs,
+27 Melling application entries and 10 reviewed specification groups. Start with
+[the research report](ENGINE-RESEARCH-2026-09-23.md). No geometry was changed in
+this research pass. Apply the strongest dimensions with assembly-datum checks;
+keep valve application anomalies and catalog alternatives explicit. Complete
+EVTM/PC/ED books were identified but not purchased or obtained in full.
+
+## Whole-truck continuation — 2026-09-23
+
+Added a 15-system reference navigator with component search and local manual links;
+3,628 pages indexed after excluding explicit automatic/transfer-case/ZF branches
+from the manual-transmission entry. These remain unreviewed reference candidates,
+not proof of installed fitment or complete physical parts inventories.
+
+Built hub, elastic coupling and inertia ring as separate damper solids. Catalog
+outer envelope verified at 71.12 x 163.068 x 163.068 mm; internal sections and
+axial station remain provisional. Engine: 119 definitions / 551 occurrences.
+Artifact/scale/static checks passed (1,870 candidate pairs, no >0.1 mm³ overlaps).
+Navigation: 658 reachable deep links. Browser checked assembly isolation/explosion
+and transmission component search. EVTM acquisition prepared; payment pending.
+
+## Water-pump increment — 2026-09-23
+
+Current increment — water pump (2026-09-23): 127 definitions / 559 occurrences.
+Added eight-component water-pump internal study, Cooling navigation, individual
+part pages, cover transparency, explosion and factory-linked explanations.
+Build: .venv-cad/bin/python cad/engine/full_engine.py --refresh-cooling.
+All geometry dimensions, production casting/ports and installed datums remain
+provisional. Bearing and coolant seal remain cartridge/envelope representations;
+pulley, fan clutch, mounting hardware and hose/block connections are outstanding.
+Validation: 127 valid STEP definitions, 559 assembled solids, GLB bounds within
+0.5 mm, zero >0.1 mm³ overlaps across 1,881 static candidate pairs, 668 navigation
+links. Browser checked assembled and 65% exploded views. No pump motion/flow claim.
+Owner confirms no more underhood labels; treat VECI as missing, stop requesting
+label searches. This does not block mechanical modeling. Next: pump production
+outline/connections and pulley/fan boundary, then remaining cooling components.
+
+## Thermostat study — 2026-09-23
+
+Active goal continuation — thermostat geometry (2026-09-23):
+136 definitions / 568 occurrences. Added nine-part thermostat study using MotoRad
+244-192 manufacturer envelope, whose interchange list includes factory service
+number XR3Z8575BA. Source record motorad-244-192 and KB page saved. Internal
+geometry and placement remain provisional; no thermal motion claimed. New
+cad/engine/thermostat.py is built by --refresh-cooling. Thermostat envelope test
+passes 53.85 mm flange and 37.85 mm total height; all-static validation passes
+1,899 candidate pairs with zero >0.1 mm³ overlaps; 678 navigation links pass.
+Browser inspected at 50% explosion. Spring/capsule represented independently.
+Next: outlet housing/gasket/fasteners and head coolant interface. Factory archived
+Thermostat Housing parts page has identity to extract. All current pump/thermostat
+placements are staging datums; do not treat collision-free placement as fit proof.
+Completion plan edited after build (omissions prose will refresh next build).
+Goal active; previous turn is progress, not a blocker. Preserve all prior changes.
+
+## Coolant outlet integration — 2026-09-23
+
+Active goal continuation — outlet validated (2026-09-23):
+139 definitions / 572 occurrences. No CAD processes remain live. Supersedes pending
+sessions below. Outlet casting, gasket and two bolts added around nested thermostat.
+Exact-axis Solid.make_cylinder avoids OCCT creating a degree-14 unbounded spline
+surface (control points near 1e100) when rotated coaxial faces are cleaned.
+Hollow sections formed before union. Cleared mutual intrusions at secondary port.
+Current validation: 139 valid STEP definitions / 572 assembly solids; GLB bounds
+within 0.5 mm; zero >0.1 mm³ collisions in 1,910 static candidate pairs. Eight outlet
+probes include a connected six-mm-diameter route through the whole main channel.
+Navigation passes 683 deep links. Browser assembled and 35% exploded views checked.
+Validator now rejects manifest/artifact changes during validation; no concurrent
+builds should run while validating. See coolant-outlet-evidence/validation.json.
+All casting outline/datum/thread/hose/head interfaces remain provisional. Do not
+call accurate fit complete. Source geometry does not yet match photo silhouette
+closely enough; long neck length and orientation need further reconciliation.
+Next: continue substantial missing ignition system (factory sources already indexed
+in system-references.json), or finish cooling hose/fan boundaries with source data.
+Keep whole-engine goal active and work autonomously. Previous turn made progress.
+
+## VIN-Y sealing evidence review — 2026-09-24
+
+Acquired and ingested the Fel-Pro manufacturer master catalog, visually checked
+PDF pages 353–354, and saved twenty catalog-to-model crosswalk entries in
+`inventory/engine/sealing-coverage.json`. Replacement identities now support
+targeted work on missing pushrod-cover gasket/grommets, distinct intake/exhaust
+valve seals, timing-cover joints and the oil-pump-to-block gasket. Kit quantities
+and alternative service options are explicitly distinguished from physical parts.
+
+Corrected the pan lesson and individual side-study pages: an older separate-piece
+illustration does not establish the gasket construction for this truck. The CAD
+geometry remains provisional. Focused pan/pickup/drain checks pass; navigation
+reaches all731occurrences through862links. The refreshed full static audit passes2381broad-phase pairs with0overlaps, valid
+STEP solids and matching GLB bounds at the reference pose. This does not certify
+production fit or continuous motion; completion remains false.
+
+## Corrected cam-side architecture — 2026-09-24
+
+Ford external/internal diagrams exposed that the provisional cam and pushrods
+occupied the manifold side. Rebuilt the block gallery, lifter bores, head pushrod
+passages, rocker supports, valve offsets and timing-drive centers with the cam
+opposite the manifold face. Filter, switch and pump studies now follow that side.
+The pickup is reflected around the pan midplane to preserve its sump clearance;
+production mounting and drive alignment are still unresolved.
+
+The new source-backed side check passes40relationships and24pushrod passage probes.
+Pan/pickup checks show no interference and11.95mmassumed floor clearance;25existing
+fuel/idle/exhaust probes and862navigation links pass. Whole static and sampled
+core interference audits are running; these partial checks do not certify the
+new assembly. Pushrod-cover comparison hardware identities were saved for the
+next component build.
+
+Reflected pump-housing volume checks now use adaptive integration, which agrees
+before/after STEP export within0.000001mm³. Other parts retain the previous volume
+method; validation tolerances were not widened.
+
+## Pushrod-cover construction candidate — 2026-09-24
+
+Reviewed EngineQuest FSP300N manufacturer application and the six-hole photograph
+on catalog page18. Saved the source, interchange and photo observations. Built a
+separate thin-shell candidate with X-shaped pressed ribs and corrected its bolt
+seating lands after visual inspection caught a breakthrough defect. It passes
+STEP round-trip, six circular-hole and eighteen seating-land checks.
+
+The candidate is not installed in the engine and its dimensions remain assumed.
+Block opening, gasket, grommets and hardware integration remain pending. The
+existing whole static audit is still running on its unchanged manifest.
+
+
+Side-cover candidate: added perimeter gasket, six replacement-envelope grommets and six industrial-comparison threaded bolts. Isolated 14-solid STEP assembly passes internal overlap and seat probes; not installed or production-fit verified. Retailer 10740 envelope and its evidence limits saved in reference and KB. Existing full-engine static audit28655 remains running; installed files unchanged while it computes.
+
+
+Isolated side-cover block interface: added a provisional access opening, perimeter rail and six connected fastener webs. Valid one-solid STEP round trip; cover/hardware clear the candidate block, twelve pushrod passages stay open, and four rail support probes pass. Selected head/distributor/filter/pressure-switch neighbor checks pass. Scratch visual inspected. Publisher API prepared but not integrated while whole static audit28655 runs. The uncompressed fastener stack leaves3.908mm engagement, still unverified; this is not a production fit claim. Applicable archived service rows saved in pushrod-cover-evidence.json, including25–35 inch-lb cover torque and lifter access context.
+
+
+Confirmed side-layout follow-up: all twelve relocated rockers intersect the old valve-cover shoulder by roughly544.7mm3 each. Isolated valve_cover.py candidate retains the flange and cap/PCV positions while shifting upper profiles22mm toward the cam side. Valid STEP round trip and53 selected occurrence checks pass without overlap. Geometry remains provisional, and no installed artifact was changed during running static audit28655.
+
+
+Prepared the next full-build source integration for the pushrod side cover and corrected valve-cover shoulders while preserving the live audit's installed artifacts. Factory rebuilding ranges now replace assumed cam-journal, cam-bearing-ID, lifter-OD and lifter-bore diameters. Isolated core generation passes34 valid-solid checks and four STEP round trips; production locations and shell thickness remain provisional.
+
+Reviewed industrial cam-retention pages12–13: dimensional plate/spacer and two bolt references saved. A six-part isolated plate/spacer/bolt/washer study passes internal clearance and STEP checks. It is not installed: nose, key, gear-hub relief and block attachment need coordinated reconstruction. Industrial92-tooth gear and2.199-inch rear plug details remain comparison evidence. Full static audit28655 still computing at the latest observation.
+
+
+Integrated cover/cam increment (244 definitions,752 occurrences): added the14-part side-cover assembly and seven cam-retention components, connected the cam nose/key/hub, and applied factory-range cam/lifter diameters. First static check caught one timing-gear/cover collision; a two-lobe cover cavity corrected it. The rebuilt manifest passes all2,433 static candidate pairs, expanded core/cam/lubrication checks at0/90/180/270, and278 selected retention checks including gear/cover motion across eight crank positions. Reports share the current manifest hash. These checks establish modeled consistency, not completion or production fidelity. Browser verification covers assembly explosion, the individual key page, search, side-cover transparency and the revised timing-cover silhouette.
+
+2026-09-24: Browser verified final whole-engine framing with all752parts and one-row desktop controls. Oil pan remains unobscured. Exact part-name search, cam retention explode/individual pages, and side-cover transparency passed. Temporary review tab34 closed.
+
+2026-09-24: Rear camshaft cup plug integrated with a separate provisional block seat and boss.245definitions/753occurrences. Full static2437pairs zero overlaps, core4angles zero overlaps, extended retention audit zero overlaps; all reports match current manifest. Browser checked both cup faces and individual part breadcrumbs.
+
+2026-09-24: EGR factory cutaway and archived service number E9PZ9H473C reviewed. Dorman911-432 saved as an unverified comparison, not promoted to installed geometry. SMP illustrated-catalog URL returned404 and was not acquired. All CAD audits terminal; temporary browser tab35 closed.
+
+2026-09-24: Integrated31-part EGR/EVP study (12 valve components,16 sensor components, gasket and two mounting bolts). Manufacturer Standard live catalog confirms EGV258 cross to archived FordE9PZ9H473C; four views acquired into reference/engine/standard-egv258. Paid EVTM23-2/23-4 visually reviewed for separate C180 vacuum command and C182 potentiometer feedback. All geometry dimensions and EVP internal construction remain provisional. No EGR flow/calibration simulation.
+Published275definitions784occurrences; manifest60e96bc41e15f9b42e3c3f18c8617afee0e0034eed318ca8b5162faa9d82b72f. Full static2485pairs zero overlaps; four core poses zero overlaps; retention1069checks zero overlaps. All reports match. Browser verified31-part assembly,100%explode,16-part sensor transparency, individual wiper page and intake integration. Projected-box camera fit improves long-assembly visibility; whole-engine controls remain unobscured. Temporary tabs36/37 closed; no live CAD jobs.
+
+## 2026-09-24 — EGR tube application and routing candidate
+
+Verified Dorman 598-105 using the manufacturer's live selector for 1994 Ford F-150 L6 300 4.9L. Saved photo, capture, hashes and KB source. Manufacturer Ford cross is F4TZ9D477C; OD 0.74 in, length 17.9 in, stainless steel with two threaded connectors. Length measurement convention is unspecified. The photographed sleeve and bends do not supply thread sizes or installation coordinates.
+
+Added unpublished `cad/engine/egr_tube.py` tube/sleeve candidate, using sourced OD and explicitly provisional wall/routing. `scripts/check-egr-tube-candidate.py` completed: valid single-solid STEP roundtrips, 108 broad-phase comparisons, zero overlaps with installed engine. Current developed path 390.208 mm is not claimed to reproduce the ambiguous catalog length. Not installed: manifold takeoff, both couplings and valve joint must be resolved first. Existing 275-definition/784-occurrence manifest unchanged. Engine remains unfinished.
+
+## 2026-09-24 — EGR exhaust line integrated
+
+Published four additional definitions/occurrences: tube with end geometry, protective sleeve, valve union nut and manifold fitting. Rear exhaust collector now has a connected takeoff bore. Manufacturer photo confirms externally threaded valve inlet; actual threads, seats and joint construction remain provisional smooth envelopes. Candidate STEP and 86 broad-phase fit comparisons passed without overlap. Full atlas now 279 definitions / 788 occurrences / 926 navigation links. Build40237 terminalPASS; static67040 terminalPASS with2564candidate pairs and0overlaps. ManifestSHA2561e0f829cc17af7a17a257c9c478fe388637aa8d798cf804f5a781a02dd5395da.
+
+Browser39 verified4part assembly,100%explode, individual union-nut page and breadcrumbs; closed. Navigation andJSsyntax pass. Coremotion23193 andretention44283 started against frozeninstalledstate; poll existinghandles to terminal. No geometry edits during audits.
+
+FactoryEVR source reviewed and ingested: upper hose nipple toEGRvalve, lower tovacuumsource; PCM duty cycle regulates vacuum. Factoryparttable printsFOTZ9J459A. Newreference`evr-factory-reviewed.json`, KBsource`ford-evr-port-routing-and-factory-service-identity.md`. StandardVS52 retailercrosslead awaitsmanufacturer verification. Engine remains unfinished.
+
+EGRtube final audit: coremotion23193 andretention44283 terminalPASS0overlaps. All3reports matchcurrentmanifestSHA256. StandardVS52 manufacturerfit confirmed with1994/Ford/F150/6Cyl4.9L selected; specifications and successfulfit saved/ingested. Productimages and internalconstruction next. No liveCADjobs.
+
+## 2026-09-24 — Vacuum regulator and controlled-vacuum hose
+
+Integrated EVR exterior/cap/two terminals and the connected output hose, with assembly and individual pages, source links and diagnostic context. Factory EVTM location and port labels guide placement; dimensions, mounting hardware and hidden regulator internals remain unresolved. Corrected invalid hose sweep geometry and routed clear of the exhaust tube. Final static, motion and retention audits all pass against manifestfce274ec...,284definitions/793occurrences. Navigation933links passes. Browser verified regulator and combined40-partEGR view.
+
+Acquired and ingested LuK2012catalog (applicableLFW132flywheel plus10/11inchclutchvariants) and ATPGraywerkscatalog (applicableoilpan103024exterior). HICENGINEdimensionalcatalog download inprogress for flywheel comparison. Engine NOT complete.
+
+## Flywheel and pilot-bearing construction studies — 2026-09-24
+
+Added the LFW132-family flywheel body, 164-tooth ring and six crank bolts, followed by an FC65662 pilot-bearing construction study with separate case, cage, seal and 16 illustrative needles. Current build has 291 definitions / 820 occurrences / 962 navigation links; these counts are not a completeness or accuracy percentage. Flywheel candidate and installed static/core-motion checks passed. Pilot candidate passed 130 broad-phase checks; installed checks are running. Both have learning pages; flywheel assembled/exploded rendering reviewed.
+
+Saved HICENGINE and Timken application/dimensional catalogs, source pages, and reviewed evidence. Timken pilot versus needle tables disagree: preserve both. Internal pilot construction and flywheel recesses, indexing, ring fit and tooth profile remain provisional. Engine is not complete.
+
+Damper attachment and profile pass: key, center bolt and washer added with matched provisional crank connection; recessed web and integrated pulley grooves refined from Dorman photograph. Gates 2008 belt/hose catalog and S7004 routing evidence acquired. Current count294/823, navigation965. Installed static/motion checks running; engine remains incomplete.
+
+Final checks for the damper increment passed: 2702 static broad-phase pairs with zero overlaps, sampled crank motion0/90/180/270 with zero overlaps, and823parts/965navigationlinks. Both reports match manifest bbf8b19a79b3b0d8517b7055822d741423858b49e8419087075f4397eca56e22. Browser reviewed flywheel assembly/explosion, pilot bearing transparency/explosion, and revised damper assembled view. Production geometry and whole-engine completion remain unverified.

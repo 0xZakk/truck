@@ -1,0 +1,64 @@
+{
+  "status": "Component study; not verified production geometry",
+  "factory_sources": [
+    "fsm-6f023139b5f8",
+    "fsm-59c6d1fb5ae3",
+    "fsm-76412d392bb7",
+    "fsm-3ceaca21ab73",
+    "fsm-00314a45e241"
+  ],
+  "established": [
+    "The 1994 lubrication description specifies a rotor-type pump and spring-loaded bypass returning oil to the intake side.",
+    "The 1994 catalog lists pump C5AZ6600A, pickup E3TZ6622F and intermediate shaft C5AZ6A618A.",
+    "The industrial parts book PDF pages 17\u201318 lists the same C5AZ-6600-A pump and four cover bolts, but a different C5TZ-6622-B pickup.",
+    "The 1994 rotor inspection image shows a four-lobed inner rotor; the five-lobed companion arrangement is interpreted from the drawing. Exact curves are not supplied."
+  ],
+  "service_limits_not_manufacturing_dimensions": [
+    {
+      "claim": "Maximum rotor endplay",
+      "value": 0.005,
+      "unit": "inch",
+      "source": "fsm-59c6d1fb5ae3"
+    },
+    {
+      "claim": "Maximum rotor tip clearance with feeler inserted 13 mm maximum",
+      "value": 0.3,
+      "unit": "mm",
+      "source": "fsm-59c6d1fb5ae3",
+      "image": "353134071.png",
+      "note": "Read from image caption; rounded inch equivalent is 0.012 inch."
+    }
+  ],
+  "model_assumptions": {
+    "units": "mm",
+    "housing_rotor_pocket_radius": 29.5,
+    "rotor_thickness": 24,
+    "rotor_center_offset": 3.5,
+    "cover_thickness": 6,
+    "pump_origin_cad": [
+      210,
+      -80,
+      -112
+    ],
+    "description": "Dimensions chosen for an inspectable component study. No production profile, displacement, opening pressure, flow or clearance is inferred from them."
+  },
+  "blocking_accuracy_gaps": [
+    "Relief plunger and spring envelope dimensions are now comparison-derived. Confirm the truck revision, wire size, coil count, installed compression, end details and relief-bore routing.",
+    "Pump mounting pad, outlet-to-block passage, mounting gasket, dowel and retaining bolts are not yet reconstructed.",
+    "The intermediate shaft, retainer, rotor/shaft torque joint and distributor relationship remain incomplete.",
+    "Pickup tube route, inlet flange and gasket, support bracket, sump clearance and screen weave require truck-specific references.",
+    "Current rotor curves are non-conjugate illustrations. No pump animation or fluid simulation is claimed."
+  ],
+  "comparison_dimensions": {
+    "source": "ford-industrial-parts",
+    "pdf_pages": [
+      17,
+      18
+    ],
+    "plunger_diameter_mm": 19.05,
+    "plunger_length_mm": 57.15,
+    "spring_free_length_mm": 76.99375,
+    "spring_outer_diameter_mm": 19.05,
+    "application": "Same pump service number; internal revision applicability unverified."
+  }
+}

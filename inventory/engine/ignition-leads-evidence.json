@@ -1,0 +1,68 @@
+{
+  "status": "Unpublished routed ignition-lead and coil-bracket candidate; see validation report",
+  "primary_sources": [
+    {
+      "id": "fsm-be886ffa4807",
+      "path": "inventory/engine/research-index.json",
+      "claim": "The applicable Ford cable description specifies a carbon-impregnated multifilament synthetic-fiber core, heat-resistant rubber insulation and resistance for interference suppression.",
+      "limits": "No cable diameter, strand count, resistance value, boot profile or routing dimensions supplied."
+    },
+    {
+      "id": "fsm-2f144bda5e08",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/191786818.png",
+      "claim": "Original factory firing-order diagram visually reviewed: front cylinder is 1; sequence is 1-5-3-6-2-4; cap arrow is clockwise viewed from above.",
+      "limits": "The schematic illustrates a number-1 tower, but the model housing clocking has not been surveyed. The model's chosen local +X number-1 tower is not asserted as the production clocking."
+    },
+    {
+      "id": "system-2ea2c28d7cca",
+      "path": "inventory/engine/system-references.json",
+      "claim": "Ford distributor service procedure preserves the marked number-1 tower position and requires initial timing adjustment after installation."
+    },
+    {
+      "id": "system-f1571449160a",
+      "path": "inventory/engine/system-references.json",
+      "claim": "Ford coil service procedure identifies a separate secondary ignition wire and coil-to-bracket retaining screws.",
+      "limits": "The procedure does not establish this bracket shape, screw count, head boss locations or modeled fastener dimensions."
+    }
+  ],
+  "electrical_topology": {
+    "coil_lead": "coil high-voltage terminal to cap center terminal",
+    "clockwise_cap_towers_in_model": [1, 6, 5, 4, 3, 2],
+    "cylinders_in_that_order": [1, 5, 3, 6, 2, 4],
+    "absolute_ignition_phase_verified": false,
+    "individual_lead_construction": "A continuous carbon-core envelope inside hollow rubber insulation, with separate insulating boots and metal contacts at both ends."
+  },
+  "assumed_dimensions_mm": {
+    "cable_outer_diameter": 7,
+    "carbon_core_diameter": 2,
+    "jacket_inner_diameter": 2.1,
+    "cap_clip_outer_diameter": 7.4,
+    "cap_contact_pocket_diameter": 7.6,
+    "plug_boot_outer_diameter": 16.4,
+    "coil_boot_outer_diameter": 20,
+    "bracket_thickness": 3,
+    "coil_retaining_screw_shank_diameter": 5,
+    "head_mounting_bolt_shank_diameter": 6,
+    "head_mount_boss_diameter": 18,
+    "head_mount_boss_depth": 10
+  },
+  "mounting": {
+    "coil_frame_mm": [-40, 210, 235],
+    "coil_screw_stations_xy_mm": [[-78, 177], [-78, 243], [-1.8, 177], [-1.8, 243]],
+    "head_boss_centers_xz_mm": [[-95, 320], [-20, 320]],
+    "basis": "The frame reuses four pre-existing provisional coil-core holes; two illustrative head bosses establish a connected load path. No surveyed Ford bracket geometry is claimed."
+  },
+  "integration": [
+    "Call cap_interface on the already extended distributor-cap definition, after oil_drive_layout.distributor_definition.",
+    "Call head_interface on the head-local casting before publishing it; it adds matching mounting bosses and bores.",
+    "Call build((define,add,group)) after the ignition system root exists.",
+    "Treat jacket, boot and carbon-core materials as nonmetallic in the viewer.",
+    "Use the candidate validator before publishing; original cap and head STEP assets remain untouched by this module."
+  ],
+  "limits": [
+    "Lead lengths and routes are fit-study outputs, not replacement-cable specifications.",
+    "Boot cavities have visible modeling clearances; seal compression and terminal spring pressure are not simulated.",
+    "The carbon-core envelope does not individually model fiber strands or calculate impedance.",
+    "No operating high-voltage, timing, thermal, vibration or flexibility simulation is claimed."
+  ]
+}

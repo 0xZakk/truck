@@ -1,0 +1,68 @@
+{
+  "status": "Unpublished constrained-fit candidate; inspect candidate-validation report before integration",
+  "sources": [
+    {
+      "id": "ford-industrial-csg649",
+      "path": "reference/engine/ford-csg649.pdf",
+      "url": "https://manuals.chudov.com/Ford-Industrial-300-Engine/194-210-CSG649.pdf",
+      "pages": [6, 7],
+      "review": "Figure 2 on PDF page 7 visually inspected again. Distributor shaft, separate intermediate drive and pump share a straight drive path beside the camshaft. Industrial comparison only; perspective and drawing scale do not establish truck angle, mounting station or dimensions."
+    },
+    {
+      "id": "melling-intermediate-shaft-dimensions",
+      "url": "https://melling.com/wp-content/uploads/2025/05/Intermediate_Shaft_2023-08-08_18-05-35-083123.pdf",
+      "page": 1,
+      "review": "IS-74: 4.520 inch length, .312 inch hex, L & M ends, hardened steel. Exact end details and fit tolerances absent."
+    },
+    {
+      "id": "melling-1994-49-applications",
+      "path": "inventory/engine/melling-1994-49-applications.json",
+      "review": "Previously reviewed manufacturer 1994 F-150 4.9L application lists IS-74."
+    },
+    {
+      "id": "fsm-a3698a10af15",
+      "path": "inventory/engine/research-index.json",
+      "review": "Truck catalog identifies intermediate shaft C5AZ6A618A; no dimensions supplied."
+    }
+  ],
+  "sourced_constraints": {
+    "shaft_length_mm": 114.808,
+    "shaft_hex_across_flats_mm": 7.9248,
+    "drive_sequence": "camshaft to distributor to intermediate shaft to rotor pump"
+  },
+  "provisional_solution": {
+    "axis_lean_degrees_outward_from_vertical": 20,
+    "longitudinal_station_x_mm": 227.584,
+    "cam_axis_yz_mm": [90, 72],
+    "shortest_cam_to_distributor_axis_spacing_mm": 36,
+    "cam_and_distributor_pitch_radii_mm": 18,
+    "gear_teeth_each": 16,
+    "gear_helix_degrees": 45,
+    "gear_hand": "left",
+    "gear_face_width_mm": 12,
+    "gear_normal_pressure_angle_degrees": 20,
+    "gear_tooth_thickness_reduction_mm": 0.25,
+    "distributor_upper_neck_extension_mm": 50,
+    "intermediate_top_relative_to_distributor_gear_center_mm": -53,
+    "intermediate_engagement_mm": {"distributor": 10, "pump": 9},
+    "socket_across_flats_clearance_mm": 0.08,
+    "pump_upper_shaft_diameter_mm": 12,
+    "pump_deck_bore_diameter_mm": 12.3,
+    "pickup_outer_inner_diameter_mm": [12, 9.6],
+    "pump_mount": "Two illustrative block-connected columns and angled mounting feet reuse the outboard provisional housing ears; separate smooth-shank bolts. This is not reconstructed production mounting architecture."
+  },
+  "reasoning": [
+    "X station lies between existing cam lobes and avoids moving the sourced bore/stroke architecture.",
+    "Nearest points on perpendicular cam and tilted distributor axes define the gear centers, rather than arbitrarily bridging the old display datums.",
+    "The provisional distributor upper neck length increases so the full-size bowl clears the existing pushrod cover without cutting a hole through the cover.",
+    "The lower distributor shaft extends into a matching hex socket while the manufacturer-length intermediate shaft remains unchanged.",
+    "Pump upper drive shaft grows locally to retain wall thickness around the larger sourced hex; the housing bore grows with it.",
+    "Pickup bell and screen retain their existing sump locations. A hollow swept tube connects the moved inlet to that bell."
+  ],
+  "limits": [
+    "Collision-free fit and sampled gear motion do not establish OEM dimensions, backlash, tooth contact stress, lubrication, friction or operating durability.",
+    "Retainer remains a separate illustrative split-ring envelope. Exact gripping construction and production seating remain unresolved.",
+    "Pump gerotor curves remain inherited non-conjugate illustrations. Full pumping motion and oil-pressure simulation are not claimed.",
+    "Block mounting supports and socket changes are CAD interface studies, never machining or repair instructions."
+  ]
+}

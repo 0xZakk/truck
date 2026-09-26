@@ -1,0 +1,45 @@
+{
+  "manifest_sha256": "302200fd628564389445450404d1ff463ae4b59e9b82821e288ae487a565cba0",
+  "candidate_sha256": "be9984fa50b1fe7c6a300636fb71792f94d43e7ed4897504c6bf92b7bf999029",
+  "step_roundtrips": [
+    "ac-compressor-manifold-suction-seal",
+    "ac-compressor-manifold-discharge-seal",
+    "ac-compressor-manifold-bolt",
+    "ac-compressor-rear-manifold",
+    "ac-compressor-rear-head"
+  ],
+  "exact_checks": 60,
+  "collisions": [],
+  "contacts": [
+    {
+      "seal": "suction",
+      "target": "head",
+      "distance_mm": 0.0
+    },
+    {
+      "seal": "suction",
+      "target": "manifold",
+      "distance_mm": 0.0
+    },
+    {
+      "seal": "discharge",
+      "target": "head",
+      "distance_mm": 0.0
+    },
+    {
+      "seal": "discharge",
+      "target": "manifold",
+      "distance_mm": 0.0
+    }
+  ],
+  "api_occurrences": 65,
+  "dependency_sha256": {
+    "cad/engine/ac_compressor_manifold.py": "be9984fa50b1fe7c6a300636fb71792f94d43e7ed4897504c6bf92b7bf999029",
+    "cad/engine/ac_compressor_bearing.py": "866055148fc3be861991c00d74e7bf4fd53db545916024b1b633d523c42e27b0",
+    "cad/engine/ac_compressor_motion.py": "39e8664e75ea47536ecb6222a18367179fc6c4a289a00133c362e3828fae8740",
+    "cad/engine/ac_compressor.py": "a642b8c9e89de926db61f3515bf4eee31743bb599c280318f05c7c88f0931799"
+  },
+  "installed_definition_sha256": {},
+  "internal_only": true,
+  "production_fit_verified": false
+}

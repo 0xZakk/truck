@@ -1,0 +1,55 @@
+{
+  "source_id": "ford-industrial-parts",
+  "path": "reference/engine/ford-industrial-parts.pdf",
+  "sha256": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+  "pdf_pages": [
+    12,
+    13
+  ],
+  "printed_pages": [
+    9,
+    10
+  ],
+  "visually_reviewed": true,
+  "scope": "1970-on Ford industrial comparison; not proof of1994installed part identity",
+  "rows": {
+    "C5TZ-6256-A": {
+      "description": "Camshaft gear",
+      "teeth": 92,
+      "material": "Cast iron",
+      "quantity": 1
+    },
+    "C5AZ-6265-A": {
+      "description": "Cam gear spacer",
+      "od_in": 1.5,
+      "id_in": 1.25,
+      "quantity": 1
+    },
+    "C5AZ-6266-A": {
+      "description": "Cam rear bearing plug",
+      "od_in": 2.199,
+      "quantity": 1
+    },
+    "C5AZ-6269-A": {
+      "description": "Cam thrust plate",
+      "id_in": 1.625,
+      "thickness_in": 0.203125,
+      "quantity": 1
+    },
+    "20346-S8": {
+      "description": "Plate-to-block bolt",
+      "thread": "5/16-18",
+      "length_in": 0.75,
+      "quantity": 2
+    }
+  },
+  "diagram_notes": [
+    "PDF12 shows two fasteners with separate34806-S washer callouts. Washer shape and dimensions are not provided.",
+    "Spacer is separate from plate and timing gear. Plate is fixed to block; spacer belongs to rotating nose stack."
+  ],
+  "limits": [
+    "Plate outer contour and mounting centers are not dimensioned.",
+    "Spacer length and installed endplay are not specified in this industrial table.",
+    "No92-tooth promotion to1994gear yet; current teaching gear remains48teeth."
+  ]
+}

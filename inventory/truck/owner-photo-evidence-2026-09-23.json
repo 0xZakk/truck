@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-23",
+  "owner_report": {
+    "bed": "Short bed reported by owner; certification label WB 139 now photographed; exact bed length not measured.",
+    "modifications": "None known; owner sees no obvious engine-bay modifications"
+  },
+  "photos": [
+    {
+      "file": "reference/photos/2026-09-23/front-hood-open.jpg",
+      "sha256": "ecf6acc9a1b01555c2c593d398f2d73ccc029d3f4b57aefb7b5a9c82b6dbaf43"
+    },
+    {
+      "file": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b"
+    },
+    {
+      "file": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474"
+    },
+    {
+      "file": "reference/photos/2026-09-23/door-certification-label.jpeg",
+      "sha256": "4626c15ef0c0788720b457ce13d1cac48cfd687846d465036440f00595b7cf76"
+    },
+    {
+      "file": "reference/photos/2026-09-23/belt-routing-label.jpeg",
+      "sha256": "a9debf37e3c5ce616c5f39f667204358a9815266658e6d2bfe432bfb37b4bb71"
+    },
+    {
+      "file": "reference/photos/2026-09-23/air-conditioning-label.jpeg",
+      "sha256": "ca03de15586d7ad76f6db2749808c18e02b523a486aa589106506498ed6c2d1e"
+    },
+    {
+      "file": "reference/photos/2026-09-23/airbag-warning-label.jpeg",
+      "sha256": "146929ae06927897ec5443caf8ebb9ca3604255da6e2abba8943caa61e69f4f6"
+    },
+    {
+      "file": "reference/photos/2026-09-23/fuel-pump-shutoff-label.jpeg",
+      "sha256": "1e00a5cc1d6092e9838036c8acab2eddf561b2d88d29251b147822cede9f5810"
+    }
+  ],
+  "observations": [
+    "EFI upper intake and paired air-inlet tubes visible; useful for exterior form and routing.",
+    "Air-cleaner box, fan shroud, battery, brake booster/master cylinder and reservoirs visible.",
+    "Several decals visible on upper radiator support; text too small to identify emissions calibration.",
+    "No readable emissions label visible on underside of hood in supplied overview.",
+    "Four radiator-support label close-ups identified; none is the emissions label. See underhood_label_record for evidence and readability limits."
+  ],
+  "limits": [
+    "Photos do not establish original equipment, internal dimensions or absence of modifications."
+  ],
+  "followup": [],
+  "certification_record": "inventory/truck/door-certification-2026-09-23.json",
+  "underhood_label_record": "inventory/truck/underhood-labels-2026-09-23.json",
+  "emissions_label_status": "Owner reports no additional underhood labels. Treat VECI as missing; calibration remains unverified. Do not request further label search."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "Uninstalled illustrative candidate passed frozen-baseline audit",
+  "hashes": {
+    "cad/engine/water_pump_mechanical_seal_candidate.py": "63bf8b89e98d88112a6976afc768a3906eee8cbdd4ebb70f9a43d9362fcbbb9e",
+    "scripts/check-water-pump-mechanical-seal-candidate.py": "6c22bc358d454963cbe5e1608b396cdbee7f9549f747702e18fdc824f01ad8fb",
+    "scripts/check-water-pump-mechanical-seal-installed.py": "93f18f7957a55b5de5a6330b0afd4bb575435d85d06bae2c2c3e9eb7682e1135",
+    "scripts/render-water-pump-mechanical-seal-candidate.py": "c288026b915fc7488d5319ef30774e12461440f6a101ddeb36f2d104a0980000",
+    "reference/engine/water-pump-internal-construction-reviewed.json": "35574f5886079fe2fec4e420b3c7cf4100af309a15dc9b40d97aad99d879e262",
+    "inventory/engine/water-pump-mechanical-seal-learning.json": "79bb9674ef17e1e679ed337840827e29a4ee1e3b677b6d681561cd92b02564ba",
+    "reference/engine/qc/water-pump-mechanical-seal.png": "d8b0fa2b34d433055bcf24093a0475094b5508cee7e3d3fca9d16729a038a70b",
+    "docs/water-pump-mechanical-seal-integration.md": "622cb196ea88bdfbbe103d8a064e77356e44ea3ec338a75a5a0bd42b0603ba3e"
+  },
+  "validation_status": "PASS",
+  "manifest_sha256": "b2495a95b3f994ac7f6a50f53209d8268d94e02287ed3651ec19e0488ef36b5f",
+  "neighbor_checks": 30,
+  "pump_study_explode_checks": 52,
+  "face_contact_area_mm2": 637.7433086787279,
+  "visual_review": "Actual CAD exploded35% and axial section inspected. Component layout and continuous support visible; manufacturer-specific accuracy not established.",
+  "bearing_decision": "No invented row arrangement or exact bearing part number."
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "part": "intake-valve",
+      "axis": "Z",
+      "expected_mm": 120.62459999999999,
+      "actual_mm": 120.6246,
+      "error_mm": 1.4210854715202004e-14,
+      "sha256": "79ec3b98fd2d436538ad415dd798dcf3f86cd8065c87b176abbd3efbc087b9a5"
+    },
+    {
+      "part": "exhaust-valve",
+      "axis": "Z",
+      "expected_mm": 120.64999999999999,
+      "actual_mm": 120.65,
+      "error_mm": 1.4210854715202004e-14,
+      "sha256": "5949d408fcd78a84dae4eb4b9dd07a2740ef790fb925aae3bbfcab7ea122a1fa"
+    },
+    {
+      "part": "pushrod",
+      "axis": "Z",
+      "expected_mm": 257.556,
+      "actual_mm": 257.556,
+      "error_mm": 0.0,
+      "sha256": "0c3e02eefb4c29b3e588ada9b10ef4e371c4d3658af648b5516965fa7561cd0e"
+    },
+    {
+      "part": "pushrod",
+      "axis": "X",
+      "expected_mm": 7.924799999999999,
+      "actual_mm": 7.9248,
+      "error_mm": 8.881784197001252e-16,
+      "sha256": "0c3e02eefb4c29b3e588ada9b10ef4e371c4d3658af648b5516965fa7561cd0e"
+    },
+    {
+      "part": "lifter-body",
+      "axis": "Z",
+      "expected_mm": 50.8,
+      "actual_mm": 50.8,
+      "error_mm": 0.0,
+      "sha256": "63d1b5f2c57c172ede2b5c8e5e1a15b0f91c79158aa14b5ad2923862e131e055"
+    },
+    {
+      "part": "lifter-body",
+      "axis": "X",
+      "expected_mm": 22.1996,
+      "actual_mm": 22.1996,
+      "error_mm": 0.0,
+      "sha256": "63d1b5f2c57c172ede2b5c8e5e1a15b0f91c79158aa14b5ad2923862e131e055"
+    },
+    {
+      "part": "intake-spring",
+      "height_mm": 41.65599999999999,
+      "outside_volume_mm3": 0,
+      "ground_faces": [
+        {
+          "z_mm": -1e-07,
+          "area_mm2": 74.20509253438487
+        },
+        {
+          "z_mm": 41.6559999,
+          "area_mm2": 74.20174016499232
+        }
+      ]
+    },
+    {
+      "part": "exhaust-spring",
+      "height_mm": 37.337999999999994,
+      "outside_volume_mm3": 0,
+      "ground_faces": [
+        {
+          "z_mm": -1.0000000000002592e-07,
+          "area_mm2": 82.70179560788621
+        },
+        {
+          "z_mm": 37.3379999,
+          "area_mm2": 82.70523454858916
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

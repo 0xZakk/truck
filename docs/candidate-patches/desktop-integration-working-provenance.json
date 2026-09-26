@@ -1,0 +1,86 @@
+{
+  "status": "Working checkpoint: panV9 installedPASS; pump b2495a95 installedPASS/rotationPASS; outlet integration running, not accepted. Main unchanged. Requires candidate modules already in repository.",
+  "isolated_root": "/private/tmp/truck-desktop-integration-20260925",
+  "files": [
+    {
+      "path": "cad/engine/assembly_math.py",
+      "main_sha256": "b323903193babcc542b6bb9bc57fcd0160208212cd57575451c4224cafeb6b4b",
+      "isolated_sha256": "980e054b9c36e5b01be90abd8cc5da94b3a10c11c10704558e6a6b68ac56d9d7"
+    },
+    {
+      "path": "cad/engine/full_engine.py",
+      "main_sha256": "32ab6a16e7b83c4dd54ee01036aadf620f951fd21eda2a53936b65ff4d5baa00",
+      "isolated_sha256": "0eeebb4b74566e49151772880fe7c38626581d0358b2f9bcbebdfed87b72dc8d"
+    },
+    {
+      "path": "inventory/engine/carrier-1994-learning.json",
+      "main_sha256": null,
+      "isolated_sha256": "34f3d5dda3525afff0611e988c81ae6956058fce6d3a9bb945d973149cc18cfb"
+    },
+    {
+      "path": "inventory/engine/carrier-1994-sources.json",
+      "main_sha256": null,
+      "isolated_sha256": "8961497b6c4df9fe42df63e31a026739a5c5fa9e37d67c5905ee66ad3b40bb62"
+    },
+    {
+      "path": "inventory/engine/cooling-learning.json",
+      "main_sha256": "cec94bd4c4fd55dbcadb191603116fefb5cf6896d946a14290f4955ed1a7a5d0",
+      "isolated_sha256": "e3b10ce0afa1c8d3c2d91dcd0de30a16d62a147652f915427437ffe238515ca9"
+    },
+    {
+      "path": "inventory/engine/damper-learning.json",
+      "main_sha256": "20455d00d0c580f24b9a1640d03058a04a6d9eb34b7dc20fddee61359eac544d",
+      "isolated_sha256": "b60c025cfd2684018c081dcf21285cf03d3a8c99b82b5d2a27f90dd362af833a"
+    },
+    {
+      "path": "inventory/engine/lubrication-learning.json",
+      "main_sha256": "6d783cc2d42246b9047e8190ffd4410957f2958cbcc17cb30f04dec8bec58483",
+      "isolated_sha256": "2d44fd53a7019b6d6e7340af3078c36735df08f067ef16190dab24d3a4371f1d"
+    },
+    {
+      "path": "inventory/engine/oil-pan-joint-sources.json",
+      "main_sha256": null,
+      "isolated_sha256": "f1a8446e032c9bc8d8f7a06436ab881245b4c55032b1f033461b4d6cdff1d6da"
+    },
+    {
+      "path": "inventory/engine/pump-joint-sources.json",
+      "main_sha256": null,
+      "isolated_sha256": "002506737a703b4ed711685f1d59945d97136f40ea5547fd41cfdfae7d880013"
+    },
+    {
+      "path": "inventory/engine/rear-manifold-mounts-learning.json",
+      "main_sha256": null,
+      "isolated_sha256": "f106e52a38e435f943e85cc9739b30c98843da65fdea8ef198598c12b70d4cf5"
+    },
+    {
+      "path": "inventory/engine/valvetrain-motion-learning.json",
+      "main_sha256": null,
+      "isolated_sha256": "df1c08832ecd9c1cc5655d52532986d3f57978e4390662ea323f2d7ab66b6c7f"
+    },
+    {
+      "path": "scripts/check-engine-atlas.py",
+      "main_sha256": "8ee25f7661a8eb0454d3297633a806d30011261279b1578ad1f21ee5afdb53f9",
+      "isolated_sha256": "f3503f135ea7ef2f3426f0ee3f0d3f1d564ee6d7fab4a8701d036fb17ee4549c"
+    },
+    {
+      "path": "scripts/check-engine-navigation.mjs",
+      "main_sha256": "f9740bcdc62167b43a57d51d7d77bb92e5e51f459f259f8413c6e18ecba84de5",
+      "isolated_sha256": "d34447ac34613fb70fd1f3e6e66e5c3262d865be1f5ae301799a6dd79205dc1f"
+    },
+    {
+      "path": "viewer/atlas.js",
+      "main_sha256": "381427405ac0f1dd9d4c21530ddb704f91eb4969ed0cddce457e5d4b5c0a9432",
+      "isolated_sha256": "f51daa30cb7c189c8bb8a2580017e90c4fe152778b92f9fe00cc7056c36caca2"
+    },
+    {
+      "path": "viewer/engine-navigation.js",
+      "main_sha256": "628e00c729f01b9fb73e7ce907656f9219794011c01c9112e7c148430247ba63",
+      "isolated_sha256": "32f8882ad6f2782e7ec218f2afe9c98083e139ce187488344f79536c2e580673"
+    },
+    {
+      "path": "viewer/engine.html",
+      "main_sha256": "477488554bafb4352f80740b409d0e2aaf397b354f79c374ca9aad94d3da1f0a",
+      "isolated_sha256": "eb3ba683beee0f88aaf1cef64513e124c03fd05981bb336c6aa760a2b84c908d"
+    }
+  ]
+}

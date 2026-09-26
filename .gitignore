@@ -13,6 +13,7 @@ models/**/*.gltf
 # Downloaded engine catalogs and regenerated STEP intermediates.
 reference/engine/*.pdf
 reference/engine/*.jpg
+reference/engine/research-2026-09-23/
 cad/engine/generated/
 
 # CAD pipeline (text-to-cad skill): cad/*.py sources are truth; STEP + hidden
@@ -37,3 +38,13 @@ reference/photos/*
 kb/.raw/
 # semantic index (regenerate via tools/semantic_links.py embed):
 tools/data/embeddings.npz
+
+# Purchased reference originals, retained locally.
+manuals/evtm/*.pdf
+
+# Generated CAD checkpoints are preserved in private release assets.
+*.step
+*.stp
+.codex/
+tmp/
+!cad/engine/pilot/**/*.glb

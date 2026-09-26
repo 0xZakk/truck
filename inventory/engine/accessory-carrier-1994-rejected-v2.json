@@ -1,0 +1,157 @@
+{
+  "passed": false,
+  "verified_production_fit": false,
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "source_sha256": {
+    "cad/engine/accessory_carrier_1994.py": "0d2c9a0cfa563060f9cd746318df233b868e5808e057b8d8eb0bff55f3ce6e33",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/tensioner_arm.py": "6bf5aa5539ce2fbc4cfa848bc8a0a435e865b02fce4ae63fa9917c2b0c0060cb",
+    "cad/engine/tensioner_pulley.py": "7126080e234a6420cf5473b761888eb25d45fbfde4ec2ea65e7f2afc38524e92",
+    "cad/engine/tensioner_engine_support.py": "d80e819d2c72425f2d39bd6ec0050823a1d79ad2f6b5b7ff4667eed01c745e8a",
+    "scripts/check-accessory-carrier-1994.py": "c94f1b1d2546d45ae7d915dcf1a370431adea7144ff16a6583b9478cc340ecfc"
+  },
+  "part_count": 17,
+  "step_round_trips": 19,
+  "exact_intersections": 295,
+  "overlaps": [
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "carrier-side-head-bolt-2",
+      "volume_mm3": 163.39508236791733
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "tensioner-spring-cartridge",
+      "volume_mm3": 1044.2514184212398
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "tensioner-moving-arm",
+      "volume_mm3": 122.64490682341639
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "carrier-block-washer-2",
+      "volume_mm3": 152.39901307702544
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "carrier-block-nut-2",
+      "volume_mm3": 57.50528411561749
+    },
+    {
+      "a": "carrier-block-stud-1",
+      "b": "pushrod-cover",
+      "volume_mm3": 48.48491076239272
+    },
+    {
+      "a": "carrier-block-stud-2",
+      "b": "pushrod-cover",
+      "volume_mm3": 71.15494541202354
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "pushrod-cover",
+      "volume_mm3": 1011.2661682055086
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "pushrod-cover-grommet-5",
+      "volume_mm3": 1001.087108971138
+    },
+    {
+      "a": "carrier-block-stud-1",
+      "b": "pushrod-cover-grommet-5",
+      "volume_mm3": 679.1331605263024
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "pushrod-cover-grommet-5",
+      "volume_mm3": 1906.266669171081
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "pushrod-cover-bolt-5",
+      "volume_mm3": 651.1137756140021
+    },
+    {
+      "a": "carrier-block-stud-1",
+      "b": "pushrod-cover-bolt-5",
+      "volume_mm3": 381.55021671701235
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "pushrod-cover-bolt-5",
+      "volume_mm3": 688.5369046706589
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "pushrod-cover-grommet-6",
+      "volume_mm3": 950.299380411828
+    },
+    {
+      "a": "carrier-block-stud-2",
+      "b": "pushrod-cover-grommet-6",
+      "volume_mm3": 738.4562772029944
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "pushrod-cover-grommet-6",
+      "volume_mm3": 1473.7859511497588
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "pushrod-cover-bolt-6",
+      "volume_mm3": 799.5578118332727
+    },
+    {
+      "a": "carrier-block-stud-2",
+      "b": "pushrod-cover-bolt-6",
+      "volume_mm3": 87.6833371825817
+    },
+    {
+      "a": "block-added-bosses",
+      "b": "pushrod-cover-bolt-6",
+      "volume_mm3": 895.1730330913784
+    },
+    {
+      "a": "cylinder-head-added-bosses",
+      "b": "c1-exhaust-pushrod",
+      "volume_mm3": 808.8546337523019
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "distributor-housing",
+      "volume_mm3": 3390.5070236177808
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "distributor-cap",
+      "volume_mm3": 8.659288328215359
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "ignition-lead-1-jacket",
+      "volume_mm3": 319.40622195562685
+    },
+    {
+      "a": "ps-ac-support-bracket",
+      "b": "ignition-lead-1-carbon-core",
+      "volume_mm3": 31.0054294404818
+    }
+  ],
+  "replaces_existing_occurrences": [
+    "ps-ac-support-bracket",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2"
+  ],
+  "topology": "One shared P/S\u2013A/C\u2013tensioner casting; front head bolt, side head bolt, two block studs/nuts.",
+  "limits": [
+    "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+    "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,175,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+    "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+    "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+    "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+    "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length."
+  ]
+}

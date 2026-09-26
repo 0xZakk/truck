@@ -1,9 +1,13 @@
+import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
-import { buildNavigation } from './engine-navigation.js';
-import { sliderCrank } from './engine-motion.js';
+import { occurrenceValvePose, springMeshData } from './engine-valve-layout.js';
+import {sourceOccurrencePose} from './engine-valve-source.js';
+import {sourceSpringMeshDataFast,prewarmSourceSpringCache} from './engine-valve-source-spring-cache.js';
+import { buildNavigation } from './engine-navigation.js?revision=complete-valve-train-20260925';
+import { sliderCrank, rotaryViewRotation, compressorState } from './engine-motion.js';
 
 const $ = id => document.getElementById(id);
 for(const control of document.querySelectorAll('button,input,select'))control.disabled=true;
@@ -29,16 +33,50 @@ new ResizeObserver(()=>{const w=stage.clientWidth,h=stage.clientHeight;renderer.
 function resetCamera(){camera.position.set(450,315,560);orbit.target.set(0,155,0);orbit.update();}
 resetCamera();
 const groups=new Map(),objects=new Map();
-let data,nav,current='engine',playing=false,ghost=false,section=false,angle=0,explosion=0;
+void prewarmSourceSpringCache(96,12);
+let data,nav,learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
+let compressorAngle=0,compressorEngaged=true,compressorPlaying=false;
 const clip=new THREE.Plane(new THREE.Vector3(-1,0,0),0);
 const toView=a=>new THREE.Vector3(a[0],a[2],-a[1]);
-const covers=['block','cylinder-head','valve-cover','timing-cover','oil-pan'];
+function cadQuaternion(rotation=[0,0,0]){
+  const basis=new THREE.Matrix4().makeRotationX(-Math.PI/2);
+  const matrix=new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(...rotation.map(value=>value*Math.PI/180),'ZYX'));
+  return new THREE.Quaternion().setFromRotationMatrix(basis.clone().multiply(matrix).multiply(basis.clone().invert()));
+}
+const covers=['pilot-bearing-case','pilot-bearing-seal','evr-body','evr-cap','egr-tube-heat-sleeve','egr-tube-valve-nut','egr-body','egr-lower-shell','egr-upper-shell','evp-body','evp-lid','pushrod-cover','oil-pressure-body','oil-pressure-insulator','oil-pressure-rim','oil-filter-case','pcv-body','pcv-outlet-head',...['supply','return'].flatMap(line=>['male','female','cage'].map(part=>`fuel-${line}-coupling-${part}`)),'fuel-test-body','fuel-test-core','fuel-test-cap',...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-shell`),...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-insulator`),'ignition-coil-case','distributor-cap','distributor-housing','coolant-outlet-housing','water-pump-housing','block','cylinder-head','valve-cover','timing-cover','oil-pan','oil-pump-housing','oil-pump-cover','efi-upper-intake','efi-lower-intake','throttle-housing','iac-valve-body','iac-solenoid-can','tps-housing','tps-cover','regulator-upper-housing','regulator-lower-housing','exhaust-front','exhaust-rear',...Array.from({length:6},(_,i)=>`injector-${i+1}-metal-body`),...Array.from({length:6},(_,i)=>`injector-${i+1}-connector-shell`)];
+covers.push('alternator-drive-housing','alternator-rear-housing','fan-clutch-front-cover','fan-clutch-housing');
+covers.push('engine-coolant-temperature-body','engine-coolant-temperature-insulator');
+covers.push('ps-pump-reservoir','ps-pump-housing','ps-pump-valve-cover');
+covers.push('ac-compressor-front-cylinder','ac-compressor-rear-cylinder','ac-compressor-front-head','ac-compressor-rear-head');
+covers.push('thermactor-housing','thermactor-front-plate','thermactor-rear-plate');
+covers.push('starter-frame','starter-brush-end-plate','starter-drive-end-housing','starter-solenoid-shell','starter-solenoid-end-cap');
+const story=document.createElement('section');story.id='assembly-story';$('parts').after(story);
+function lessonSource(id){
+  const source=data.sources[id];if(!source)return null;
+  const a=document.createElement('a');a.className='source';
+  // Encode each on-disk segment: manual directory names contain literal %20.
+  a.href=source.path?'/'+source.path.replace(/^\//,'').split('/').map(encodeURIComponent).join('/'):source.url;
+  a.target='_blank';a.rel='noopener';a.textContent=source.title;
+  return a;
+}
+function explain(id){
+  story.replaceChildren();const entry=learning[id];if(!entry)return;
+  const intro=document.createElement('p');intro.textContent=entry.summary;
+  const limits=document.createElement('p');limits.className='study-limits';limits.textContent=entry.limits;story.append(intro,limits);
+  for(const [title,items] of [['How it works',entry.steps],['Issues to investigate',entry.troubleshooting]]){
+    const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent=title;details.append(summary);
+    for(const item of items||[]){const h=document.createElement('h3');h.textContent=item.title;const p=document.createElement('p');p.textContent=item.text;details.append(h,p);if(item.part){const a=document.createElement('a');linkTo(a,item.part);a.textContent=`Explore ${nav.nodes.get(item.part).name} →`;details.append(a);}if(item.source){const a=lessonSource(item.source);if(a)details.append(a);}}
+    story.append(details);
+  }
+  const refs=document.createElement('details'),summary=document.createElement('summary');summary.textContent='References';refs.append(summary);
+  for(const id of entry.sources||[]){const a=lessonSource(id);if(a)refs.append(a);}story.append(refs);
+}
 function linkTo(a,id){a.href=nav.url(id);a.onclick=e=>{if(e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();navigate(id);};}
 function card(id,search=false){
   const n=nav.nodes.get(id),a=document.createElement('a');a.className='nav-card';a.dataset.node=id;linkTo(a,id);
   if(id===current)a.setAttribute('aria-current','page');
   const title=document.createElement('strong');title.textContent=n.name;
-  const detail=document.createElement('small');detail.textContent=search?nav.ancestors(id).slice(0,-1).map(n=>n.name).join(' › '):n.type==='part'?'Inspect part':`${nav.parts(id).length} parts · Open assembly`;
+  const detail=document.createElement('small');detail.textContent=search?nav.ancestors(id).slice(0,-1).map(n=>n.name).join(' › '):n.type==='part'?'Inspect part':`${nav.parts(id).length} ${nav.parts(id).length===1?'part':'parts'} · Open assembly`;
   const text=document.createElement('div');text.append(title,detail);const arrow=document.createElement('span');arrow.className='arrow';arrow.textContent='›';arrow.setAttribute('aria-hidden','true');a.append(text,arrow);return a;
 }
 function clearSearch(){ $('part-search').value='';$('search-results').hidden=true;$('browse').hidden=false;$('clear-search').hidden=true; }
@@ -67,25 +105,31 @@ function partDetails(n){
 function navigate(id,historyMode='push'){
   if(!nav?.nodes.has(id))return;
   const changed=current!==id;current=id;const n=nav.nodes.get(id),isPart=n.type==='part',visible=new Set(nav.parts(id));
-  togglePlay(false);angle=0;explosion=0;section=false;ghost=false;$('explode').value='0';clearSearch();
+  togglePlay(false);toggleCompressorPlay(false);angle=0;throttleAngle=0;compressorAngle=0;compressorEngaged=true;explosion=0;section=false;ghost=false;$('explode').value='0';clearSearch();
   for(const [key,object] of objects)object.visible=visible.has(key);
-  grid.visible=!isPart;styles();pose();resetCamera();frameAssembly();
+  grid.visible=!isPart;styles();pose();resetCamera();
   const path=nav.ancestors(id);$('breadcrumbs').replaceChildren();
   for(const node of path){if(node!==path[0]){const separator=document.createElement('span');separator.className='crumb-separator';separator.textContent='›';separator.setAttribute('aria-hidden','true');$('breadcrumbs').append(separator);}const el=document.createElement(node.id===id?'span':'a');el.textContent=node.name;if(node.id===id)el.setAttribute('aria-current','page');else linkTo(el,node.id);$('breadcrumbs').append(el);}
   $('up').hidden=!n.parent;if(n.parent){linkTo($('up'),n.parent);$('up').textContent=`← Up to ${nav.nodes.get(n.parent).name}`;}
   linkTo($('home'),'engine');$('home').hidden=id==='engine';
   $('nav-title').textContent=id==='engine'?'Explore the engine':n.name;
   $('view-title').textContent=n.name;$('view-kind').textContent=isPart?'Individual part':id==='engine'?'Whole engine':'Assembly';
+  if(path.some(n=>['lubrication','induction','exhaust','crankcase-ventilation','oil-pan-assembly'].includes(n.id)))$('view-kind').textContent+=' · provisional study';
   $('level-label').textContent=id==='engine'?'Start here':isPart?'Inspect a part':'Explore an assembly';
   $('nav-description').textContent=isPart?'':`${visible.size} parts${id==='engine'?' in this reconstruction':''}. Choose ${id==='engine'?'an assembly to see what’s inside.':'a component below to take a closer look.'}`;
   $('selection').hidden=!isPart;if(isPart)partDetails(n);
+  explain(id);
   $('contents-title').textContent=isPart?`Parts in ${nav.nodes.get(n.parent).name}`:id==='engine'?'Choose an assembly':'Inside this assembly';
   $('parts').replaceChildren(...(isPart?nav.nodes.get(n.parent).children:n.children).map(key=>card(key)));
   document.querySelector('aside').scrollTop=0;
   $('assembly-controls').hidden=isPart;
-  $('motion-controls').hidden=![...visible].some(key=>{let p=data.occurrences.find(o=>o.id===key).parent;while(p){const a=data.assemblies.find(a=>a.id===p);if(a.motion)return true;p=a.parent;}return false;});
+  $('motion-controls').hidden=![...visible].some(key=>{let p=data.occurrences.find(o=>o.id===key).parent;while(p){const a=data.assemblies.find(a=>a.id===p);if(a.motion&&!['throttle','fs10'].includes(a.motion.type))return true;p=a.parent;}return false;});
+  $('compressor-controls').hidden=![...visible].some(key=>{let parent=data.occurrences.find(occurrence=>occurrence.id===key).parent;while(parent){const assembly=data.assemblies.find(item=>item.id===parent);if(assembly.motion?.type==='fs10')return true;parent=assembly.parent;}return false;});
+  $('throttle-controls').hidden=isPart||!(visible.has('throttle-shaft')||visible.has('tps-rotor'));
   $('ghost').hidden=!covers.some(id=>visible.has(id))||isPart;
   $('status').textContent=isPart?'Inspecting one part · Use the path above to return':`Showing ${visible.size} parts · Click a part to inspect it`;
+  // Measure after the controls have reached this scope's actual height.
+  frameAssembly();
   document.title=`${n.name} · Ford 4.9L engine`;
   if(historyMode==='replace')history.replaceState(null,'',nav.url(id));else if(historyMode==='push'&&changed)history.pushState(null,'',nav.url(id));
   if(historyMode==='push'){$('nav-title').tabIndex=-1;$('nav-title').focus({preventScroll:true});}
@@ -96,35 +140,116 @@ function frameAssembly(){
   for(const object of objects.values())if(object.visible)box.expandByObject(object);
   if(box.isEmpty())return;
   const sphere=box.getBoundingSphere(new THREE.Sphere());
-  clip.constant=sphere.center.x;
-  grid.position.y=box.min.y-12;
+  // A transverse cut falls in the gap between the two exhaust castings.
+  // Section these along their length so both hollow collectors stay visible.
+  const longitudinal=nav.ancestors(current).some(n=>n.id==='exhaust');
+  clip.normal.set(longitudinal?0:-1,0,longitudinal?-1:0);
+  clip.constant=longitudinal?sphere.center.z:sphere.center.x;
+  grid.position.set(sphere.center.x,box.min.y-12,sphere.center.z);
   grid.scale.setScalar(Math.max(.02,sphere.radius/400));
   const direction=camera.position.clone().sub(orbit.target).normalize();
-  const halfFov=Math.min(camera.fov*Math.PI/360,Math.atan(Math.tan(camera.fov*Math.PI/360)*camera.aspect));
-  const distance=Math.max(5,sphere.radius/Math.sin(halfFov)*1.35);
-  orbit.target.copy(sphere.center);orbit.target.y-=sphere.radius*0.08;
+  // Frame inside the unobscured canvas, not behind the title and sliders.
+  const stageRect=stage.getBoundingClientRect();
+  const statusRect=$('status').getBoundingClientRect();
+  const controls=$('explode').closest('.controls');
+  const controlsRect=controls.getBoundingClientRect();
+  const topInset=Math.max(0,statusRect.bottom-stageRect.top)+16;
+  const bottomInset=controls.hidden?24:Math.max(0,stageRect.bottom-controlsRect.top)+16;
+  const usableHeight=Math.max(stageRect.height*.25,stageRect.height-topInset-bottomInset);
+  const fullHalfFov=camera.fov*Math.PI/360;
+  const visibleCenterY=(topInset+stageRect.height-bottomInset)/2;
+  const screenUp=new THREE.Vector3(0,1,0).applyQuaternion(camera.quaternion);
+  const screenRight=new THREE.Vector3(1,0,0).applyQuaternion(camera.quaternion);
+  const tanFov=Math.tan(fullHalfFov);
+  const centerNdc=1-2*visibleCenterY/stageRect.height;
+  const halfHeightNdc=usableHeight/stageRect.height;
+  const topNdc=centerNdc+halfHeightNdc,bottomNdc=centerNdc-halfHeightNdc;
+  const halfWidthNdc=Math.max(.5,1-48/stageRect.width);
+  // Fit the projected box, including perspective depth. A bounding sphere
+  // wastes most of the viewport on long, shallow assemblies like the intake.
+  let distance=5;
+  for(const x of [box.min.x,box.max.x])for(const y of [box.min.y,box.max.y])for(const z of [box.min.z,box.max.z]){
+    const corner=new THREE.Vector3(x,y,z).sub(sphere.center);
+    const right=corner.dot(screenRight),up=corner.dot(screenUp),depth=corner.dot(direction);
+    distance=Math.max(distance,
+      depth+Math.abs(right)/(camera.aspect*tanFov*halfWidthNdc),
+      (up/tanFov+topNdc*depth)/halfHeightNdc,
+      (-up/tanFov-bottomNdc*depth)/halfHeightNdc);
+  }
+  distance*=1.08;
+  const targetOffset=-centerNdc*distance*tanFov;
+  orbit.target.copy(sphere.center).addScaledVector(screenUp,targetOffset);
   camera.position.copy(orbit.target).addScaledVector(direction,distance);orbit.update();
+}
+function setValveSpringHeight(object,height,sourceSized=false){
+  const segments=sourceSized&&current==='engine'?96:192;
+  if(Math.abs((object.userData.springHeight??-1)-height)<1e-9 && object.userData.springSegments===segments)return;
+  const meshData=sourceSized?sourceSpringMeshDataFast(height,segments,segments===96?12:16):springMeshData(height);
+  object.traverse(node=>{if(!node.isMesh)return;
+    if(!node.userData.dynamicValveSpring || node.geometry.attributes.position.array.length!==meshData.positions.length || Boolean(node.geometry.index)!==Boolean(meshData.indices)){
+      if(node.userData.dynamicValveSpring)node.geometry.dispose();
+      const geometry=new THREE.BufferGeometry();
+      geometry.setAttribute('position',new THREE.BufferAttribute(meshData.positions,3));
+      geometry.setAttribute('normal',new THREE.BufferAttribute(meshData.normals,3));
+      geometry.setIndex(meshData.indices ? new THREE.BufferAttribute(meshData.indices,1) : null);
+      node.geometry=geometry;node.userData.dynamicValveSpring=true;
+    }else{
+      node.geometry.attributes.position.array.set(meshData.positions);
+      node.geometry.attributes.normal.array.set(meshData.normals);
+      node.geometry.attributes.position.needsUpdate=true;node.geometry.attributes.normal.needsUpdate=true;
+    }
+    node.geometry.computeBoundingBox();node.geometry.computeBoundingSphere();
+  });object.userData.springHeight=height;object.userData.springSegments=segments;
 }
 function pose(){
   if(!data)return;
   const m=data.mechanism;
   for(const a of data.assemblies){
-    const g=groups.get(a.id);g.position.copy(toView(a.position_cad_mm||[0,0,0]));g.rotation.set(0,0,0);
+    const g=groups.get(a.id);g.position.copy(toView(a.position_cad_mm||[0,0,0]));g.quaternion.copy(cadQuaternion(a.rotation_cad_deg));
     if(!a.motion)continue;
+    if(a.motion.type==='throttle'){g.rotateZ(-throttleAngle*Math.PI/180);continue;}
+    if(a.motion.type==='fs10'){
+      const state=compressorState(compressorAngle,a.motion,compressorEngaged);
+      g.position.add(toView([state.translationX,0,0]).applyQuaternion(g.quaternion));
+      g.rotateX(state.rotationX);continue;
+    }
+    if(a.motion.type==='rotary'){
+      const [rotationX,rotationY,rotationZ]=rotaryViewRotation(angle,a.motion);
+      g.rotateX(rotationX);g.rotateY(rotationY);g.rotateZ(rotationZ);continue;
+    }
     const state=sliderCrank(angle+(a.motion.phase_deg||0),m.stroke_mm/2,m.rod_length_mm);
-    if(a.motion.type==='crank')g.rotation.x=angle*Math.PI/180;
-    if(a.motion.type==='cam')g.rotation.x=-angle*Math.PI/360;
-    if(a.motion.type==='rod'){g.position.y+=state.journalY;g.position.z+=state.journalZ;g.rotation.x=state.rodAngle;}
-    if(a.motion.type==='piston')g.position.y+=state.pistonY;
+    if(a.motion.type==='crank')g.rotateX(angle*Math.PI/180);
+    if(a.motion.type==='distributor')g.rotateY(-angle*Math.PI/360);
+    if(a.motion.type==='cam')g.rotateX(-angle*Math.PI/360);
+    if(a.motion.type==='rod'){g.position.add(new THREE.Vector3(0,state.journalY,state.journalZ).applyQuaternion(g.quaternion));g.rotateX(state.rodAngle);}
+    if(a.motion.type==='piston')g.position.add(new THREE.Vector3(0,state.pistonY,0).applyQuaternion(g.quaternion));
   }
   for(const o of data.occurrences){
-    objects.get(o.id).position.copy(toView(o.position_cad_mm)).addScaledVector(toView(o.explode_cad_mm),explosion);
+    const object=objects.get(o.id);
+    object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
+    object.position.copy(toView(o.position_cad_mm)).add(toView(explodeOffset(o,explosion)));
+    if(o.valvetrain){
+      const sourceSized=o.valvetrain.model==='source-sized-v2';
+      const motion=sourceSized?sourceOccurrencePose(angle,o.valvetrain):occurrenceValvePose(angle,o.valvetrain);
+      // Source-sized linkage offsets use engine axes; legacy offsets use part axes.
+      object.position.add(sourceSized?toView(motion.translationEngineCad):toView(motion.translationCad).applyQuaternion(object.quaternion));
+      object.rotateX(sourceSized?motion.rotationXDeltaRad:motion.rotationXRad);
+      if(motion.springHeightMm!==undefined)setValveSpringHeight(object,motion.springHeightMm,sourceSized);
+    }
   }
+  $('throttle-angle').value=String(throttleAngle);$('throttle-value').textContent=`${throttleAngle}°`;
   $('angle').value=String(angle);$('angle-value').textContent=`${Math.round(angle)}°`;
+  $('compressor-angle').value=String(compressorAngle);$('compressor-value').textContent=`${Math.round(compressorAngle)}°`;
+  $('compressor-engaged').checked=compressorEngaged;
   $('explode-value').textContent=`${Math.round(explosion*100)}%`;
 }
-function togglePlay(value){playing=value;$('play').setAttribute('aria-pressed',String(playing));$('play').textContent=playing?'Pause crank motion':'Play crank motion';}
+function togglePlay(value){playing=value;$('play').setAttribute('aria-pressed',String(playing));$('play').textContent=playing?'Pause engine motion':'Play engine motion';}
+function toggleCompressorPlay(value){compressorPlaying=value;$('compressor-play').setAttribute('aria-pressed',String(value));$('compressor-play').textContent=value?'Pause compressor motion':'Play compressor motion';}
 $('play').onclick=()=>togglePlay(!playing);
+$('compressor-play').onclick=()=>toggleCompressorPlay(!compressorPlaying);
+$('compressor-angle').oninput=event=>{toggleCompressorPlay(false);compressorAngle=Number(event.target.value);pose();};
+$('compressor-engaged').onchange=event=>{compressorEngaged=event.target.checked;pose();};
+$('throttle-angle').oninput=e=>{throttleAngle=Number(e.target.value);pose();};
 $('angle').oninput=e=>{togglePlay(false);angle=Number(e.target.value);pose();};
 $('explode').oninput=e=>{explosion=Number(e.target.value);pose();frameAssembly();};
 $('section').onclick=()=>{section=!section;styles();};$('ghost').onclick=()=>{ghost=!ghost;styles();};
@@ -141,19 +266,17 @@ renderer.domElement.addEventListener('pointerup',e=>{
   const hit=hits.find(h=>!section||clip.distanceToPoint(h.point)>=0);if(hit){let o=hit.object;while(o&&!o.userData.occurrence)o=o.parent;if(o&&o.userData.occurrence!==current)navigate(o.userData.occurrence);}
 });
 try{
-  const response=await fetch('/inventory/engine/full-assembly.json');if(!response.ok)throw new Error(`Manifest: ${response.status}`);data=await response.json();nav=buildNavigation(data);
+  const response=await fetch('/inventory/engine/full-assembly.json',{cache:'no-store'});if(!response.ok)throw new Error(`Manifest: ${response.status}`);const manifestText=await response.text();data=JSON.parse(manifestText);nav=buildNavigation(data);
+  const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(manifestText))),byte=>byte.toString(16).padStart(2,'0')).join('');
+  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts','carrier-1994','common-carrier','oil-pan-joint','valvetrain-motion','water-pump-joint'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
   const loader=new GLTFLoader();
-  const models=new Map(await Promise.all(data.definitions.map(async d=>[d.id,(await loader.loadAsync(d.glb)).scene])));
+  const models=new Map(await Promise.all(data.definitions.map(async d=>[d.id,(await loader.loadAsync(`${d.glb}?revision=${revision}`)).scene])));
   for(const o of data.occurrences){
     const object=models.get(o.definition).clone(true);object.scale.setScalar(data.coordinate_system.display_scale);
     object.userData.occurrence=o.id;
-    const r=o.rotation_cad_deg||[0,0,0];
-    // Convert CAD rotation matrix by the fixed CAD-to-view basis.
-    const basis=new THREE.Matrix4().makeRotationX(-Math.PI/2);
-    const cad=new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(...r.map(v=>v*Math.PI/180),'ZYX'));
-    object.quaternion.setFromRotationMatrix(basis.clone().multiply(cad).multiply(basis.clone().invert()));
+    object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
     object.traverse(n=>{if(n.isMesh){n.material=n.material.clone();n.material.side=THREE.DoubleSide;}});
     groups.get(o.parent).add(object);objects.set(o.id,object);
   }
@@ -166,5 +289,5 @@ try{
   document.body.dataset.ready='true';
 }catch(e){$('error').hidden=false;$('error').textContent=`Could not load the assembly: ${e.message}`;$('status').textContent='Assembly unavailable';console.error(e);}
 let last=performance.now();
-function animate(now){const dt=Math.min((now-last)/1000,.1);last=now;if(playing&&data){angle=(angle+dt*30)%360;pose();}orbit.update();renderer.render(scene,camera);requestAnimationFrame(animate);}
+function animate(now){const dt=Math.min((now-last)/1000,.1);last=now;if(data&&(playing||compressorPlaying)){if(playing)angle=(angle+dt*30)%720;if(compressorPlaying)compressorAngle=(compressorAngle+dt*30)%360;pose();}orbit.update();renderer.render(scene,camera);requestAnimationFrame(animate);}
 requestAnimationFrame(animate);

@@ -1,0 +1,216 @@
+{
+  "manifest_sha256": "70ad7d96946fbb9b053f4b52314e2246778a75f03fd8510f3c2a130892ca5a02",
+  "dependency_sha256": {
+    "cad/engine/ac_compressor_shaft_support.py": "6ebafd9312c300ecbcedb35e41c99e75424c0b82a3d6112a2e8b1368859d3630",
+    "cad/engine/ac_compressor_manifold.py": "be9984fa50b1fe7c6a300636fb71792f94d43e7ed4897504c6bf92b7bf999029",
+    "cad/engine/ac_compressor_bearing.py": "866055148fc3be861991c00d74e7bf4fd53db545916024b1b633d523c42e27b0",
+    "cad/engine/ac_compressor_motion.py": "39e8664e75ea47536ecb6222a18367179fc6c4a289a00133c362e3828fae8740"
+  },
+  "step_roundtrips": [
+    "ac-compressor-front-cylinder",
+    "ac-compressor-front-shaft-bearing",
+    "ac-compressor-rear-cylinder",
+    "ac-compressor-rear-shaft-bearing"
+  ],
+  "exact_checks": 451,
+  "collisions": [],
+  "nominal_contacts": [
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 0,
+      "distance_mm": 1.4210854715202004e-14
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 45,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 45,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 45,
+      "distance_mm": 1.4210854715202004e-14
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 45,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 90,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 90,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 90,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 90,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 135,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 135,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 135,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 135,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 180,
+      "distance_mm": 1.4210854715202004e-14
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 180,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 180,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 180,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 225,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 225,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 225,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 225,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 270,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 270,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 270,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 270,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 315,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "front",
+      "target": "ac-compressor-front-cylinder",
+      "phase": 315,
+      "distance_mm": 0.0
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-swashplate-shaft",
+      "phase": 315,
+      "distance_mm": 1.4210854715202004e-14
+    },
+    {
+      "bearing": "rear",
+      "target": "ac-compressor-rear-cylinder",
+      "phase": 315,
+      "distance_mm": 0.0
+    }
+  ],
+  "api_shape_pose_checks": 201,
+  "internal_only": false,
+  "installed_shapes": false,
+  "production_dimensions_verified": false,
+  "bearing_internals_complete": false
+}

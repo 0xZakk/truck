@@ -1,0 +1,142 @@
+{
+  "passed_geometry_only": false,
+  "accepted_for_installation": false,
+  "verified_nominal_belt_fit": false,
+  "manifest_sha256": "3d10eba61c75f68d1c1d7d82e1ebc40b7dde8db00c37db6fb95ab433cd64830e",
+  "source_sha256": {
+    "accessory_datum_study.py": "388ee8cd7c345cfe6836cee65d722897cb75a7a602ee8fba669ba797183814b7",
+    "accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942"
+  },
+  "targets_yz_mm": {
+    "ALT": [
+      -325,
+      340
+    ],
+    "TENS": [
+      -100,
+      405
+    ],
+    "PS": [
+      190,
+      350
+    ],
+    "AC": [
+      260,
+      100
+    ],
+    "AP": [
+      -195,
+      100
+    ]
+  },
+  "moved_component_count": 158,
+  "excluded_dependent_brackets": [
+    "ps-ac-support-bracket",
+    "alternator-support-bracket",
+    "ps-bracket-bolt-1",
+    "ps-bracket-bolt-2",
+    "ps-bracket-bolt-3",
+    "ac-bracket-bolt-1",
+    "ac-bracket-bolt-2",
+    "ac-bracket-bolt-3",
+    "ac-bracket-bolt-4",
+    "alt-bracket-bolt-1",
+    "alt-bracket-bolt-2",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2",
+    "alt-engine-bracket-bolt-1",
+    "alt-engine-bracket-bolt-2",
+    "thermactor-support-bracket",
+    "thermactor-engine-bolt-1",
+    "thermactor-engine-bolt-2"
+  ],
+  "belt_step_round_trips": 3,
+  "narrow_phase_checks": 171,
+  "collisions": [
+    {
+      "angle_degrees": -10,
+      "a": "thermactor-mount-bolt-2",
+      "b": "candidate-belt",
+      "volume_mm3": 10.578300373803334
+    },
+    {
+      "angle_degrees": -10,
+      "a": "candidate-belt",
+      "b": "coolant-outlet-housing",
+      "volume_mm3": 339.0090126530338
+    },
+    {
+      "angle_degrees": 0,
+      "a": "thermactor-mount-bolt-2",
+      "b": "candidate-belt",
+      "volume_mm3": 10.578300373803177
+    },
+    {
+      "angle_degrees": 0,
+      "a": "candidate-belt",
+      "b": "coolant-outlet-housing",
+      "volume_mm3": 294.23690647914947
+    },
+    {
+      "angle_degrees": 10,
+      "a": "thermactor-mount-bolt-2",
+      "b": "candidate-belt",
+      "volume_mm3": 10.578300373803158
+    }
+  ],
+  "numerical_sweep": [
+    {
+      "exploratory_arm_angle_degrees": -10,
+      "assumed_effective_length_mm": 2496.1905303346352,
+      "assumed_effective_length_residual_mm": 5.190530334635241,
+      "illustrative_cord_path_length_mm": 2515.5508051264383,
+      "wrap_degrees": {
+        "ALT": 118.93515151674062,
+        "TENS": 22.195834523333538,
+        "PS": 87.18408797369779,
+        "AC": 155.9727669207476,
+        "WP": 207.75045509315703,
+        "CS": 189.0965266021269,
+        "AP": 38.75775660317778
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 0,
+      "assumed_effective_length_mm": 2492.1093059429763,
+      "assumed_effective_length_residual_mm": 1.1093059429763343,
+      "illustrative_cord_path_length_mm": 2511.2474126788748,
+      "wrap_degrees": {
+        "ALT": 115.48338284841671,
+        "TENS": 16.127404263997036,
+        "PS": 84.56742638268514,
+        "AC": 155.9727669207476,
+        "WP": 207.75045509315703,
+        "CS": 189.0965266021269,
+        "AP": 38.75775660317778
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 10,
+      "assumed_effective_length_mm": 2489.3533145485108,
+      "assumed_effective_length_residual_mm": -1.6466854514892475,
+      "illustrative_cord_path_length_mm": 2508.2690272673626,
+      "wrap_degrees": {
+        "ALT": 112.12231869968508,
+        "TENS": 10.05264147352164,
+        "PS": 81.85372774094135,
+        "AC": 155.9727669207476,
+        "WP": 207.75045509315703,
+        "CS": 189.0965266021269,
+        "AP": 38.75775660317778
+      }
+    }
+  ],
+  "limits": [
+    "This is a non-unique analytical layout hypothesis, not measured Ford accessory coordinates or an accepted installation.",
+    "The root engine, water pump, crankshaft and pulley diameters are fixed. Translated accessory bodies preserve all internal geometry; brackets and engine attachments must be redesigned before installation.",
+    "Current outside radii are only an assumed effective-radius diagnostic. A near-zero nominal length residual does not prove actual Gates belt fit.",
+    "The exploratory plus/minus ten-degree tensioner sweep is not a sourced working-angle range. Factory stops, spring preload, arm force, available take-up and installed index remain unknown.",
+    "Low air-pump and tensioner wraps require traction, load and travel review. No minimum safe wrap, belt tension or accessory-power capacity is established.",
+    "Oblique owner photographs support component identity and broad topology but are not calibrated front-view center measurements."
+  ]
+}

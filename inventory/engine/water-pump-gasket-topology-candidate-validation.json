@@ -1,0 +1,29 @@
+{
+  "status": "PASS isolated topology only; NOT installed",
+  "input_hashes": {
+    "scripts/check-water-pump-gasket-topology-candidate.py": "c72bf321e21d1d7eac503630306bf6c2a34b4b8c95d53004bcf421906ec4d0d1",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5"
+  },
+  "inputs_unchanged": true,
+  "valid_single_solid": true,
+  "step_roundtrip_valid": true,
+  "mounting_apertures": 4,
+  "larger_unidentified_apertures": 1,
+  "planar_face_wire_counts": [
+    7,
+    7
+  ],
+  "five_open_aperture_probe_mm3": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "gaps": [
+    "All millimeter dimensions and installed orientation are provisional; these approximate the exact replacement photo silhouette, not a tracing or measured drawing.",
+    "Four small mounting apertures are distinct from the larger fifth opening; the latter function is unidentified and no fifth bolt is inferred.",
+    "Existing pump rear-face/block datum mismatch remains unresolved. This candidate is intentionally uninstalled and does not complete the engine coolant jacket or pump mounting joint."
+  ]
+}

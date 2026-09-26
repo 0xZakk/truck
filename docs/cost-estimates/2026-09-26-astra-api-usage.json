@@ -1,0 +1,208 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Available local truck project logs: two main tasks and eight worker sessions; excludes guardian sessions, earlier Fable work, hosted tools and unrecorded activity.",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "rates_usd_per_million": {
+    "uncached_input": 10,
+    "cached_input": 1,
+    "cache_write": 12.5,
+    "output_including_reasoning": 50
+  },
+  "method": "Positive cumulative usage increments per session; exclude inherited records before child creation. Cross-check against sum of distinct last_token_usage records. Do not sum cumulative snapshots. No negative resets found. Reasoning output is included in output, not added again.",
+  "tokens": {
+    "input_tokens": 747911674,
+    "cached_input_tokens": 733669632,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2197352,
+    "reasoning_output_tokens": 746215
+  },
+  "uncached_input_tokens": 14242042,
+  "standard_model_tokens_usd": 985.957652,
+  "fast_model_tokens_usd": 1971.915304,
+  "no_cache_standard_counterfactual_usd": 7588.98434,
+  "long_context_requests": 0,
+  "sessions": [
+    {
+      "id": "01a0ca30-ff04-7ba2-93b9-5b8f9144b71c",
+      "usage": {
+        "input_tokens": 361180656,
+        "cached_input_tokens": 354506368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 850988,
+        "reasoning_output_tokens": 274804
+      },
+      "events": 2471,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 244585
+    },
+    {
+      "id": "01a0d922-81ce-7190-986f-e0ef14fb3251",
+      "usage": {
+        "input_tokens": 31625584,
+        "cached_input_tokens": 30873856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 174722,
+        "reasoning_output_tokens": 75330
+      },
+      "events": 310,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 203669
+    },
+    {
+      "id": "01a0d9b0-b03e-7833-ad05-57fc6b75cd82",
+      "usage": {
+        "input_tokens": 16142612,
+        "cached_input_tokens": 15863040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35214,
+        "reasoning_output_tokens": 4006
+      },
+      "events": 126,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 196472
+    },
+    {
+      "id": "01a0d9a8-0519-7811-9c38-12685832b5f9",
+      "usage": {
+        "input_tokens": 13951215,
+        "cached_input_tokens": 13699456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 61546,
+        "reasoning_output_tokens": 15574
+      },
+      "events": 128,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 211041
+    },
+    {
+      "id": "01a0da6c-5238-7d91-a457-af4eaf2c0028",
+      "usage": {
+        "input_tokens": 46351388,
+        "cached_input_tokens": 45388928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 150964,
+        "reasoning_output_tokens": 57360
+      },
+      "events": 378,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 214472
+    },
+    {
+      "id": "01a0d922-446e-7bd0-aff6-ad78a5729140",
+      "usage": {
+        "input_tokens": 52806433,
+        "cached_input_tokens": 51666176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 173929,
+        "reasoning_output_tokens": 60249
+      },
+      "events": 454,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 222908
+    },
+    {
+      "id": "01a0d91a-d6cc-7e02-b515-f0fe10ae1321",
+      "usage": {
+        "input_tokens": 122326979,
+        "cached_input_tokens": 120647168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 336122,
+        "reasoning_output_tokens": 98008
+      },
+      "events": 989,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 242700
+    },
+    {
+      "id": "01a0da6c-84d6-7900-a382-43637e7d91d1",
+      "usage": {
+        "input_tokens": 37360382,
+        "cached_input_tokens": 36489088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 161918,
+        "reasoning_output_tokens": 70261
+      },
+      "events": 314,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 220637
+    },
+    {
+      "id": "01a0da6c-9ca9-7921-9e15-50d43adf86d9",
+      "usage": {
+        "input_tokens": 45824418,
+        "cached_input_tokens": 44986624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 149072,
+        "reasoning_output_tokens": 59981
+      },
+      "events": 359,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 226205
+    },
+    {
+      "id": "01a0d922-63e8-7e31-bfc9-3a26a1b8ee82",
+      "usage": {
+        "input_tokens": 20342007,
+        "cached_input_tokens": 19548928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 102877,
+        "reasoning_output_tokens": 30642
+      },
+      "events": 201,
+      "models": [
+        "gpt-6-astra"
+      ],
+      "efforts": [
+        "medium"
+      ],
+      "max_input_request": 219654
+    }
+  ]
+}

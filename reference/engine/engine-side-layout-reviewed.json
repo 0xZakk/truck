@@ -1,0 +1,43 @@
+{
+  "reviewed": "2026-09-24",
+  "source_ids": [
+    "ford-industrial-parts",
+    "engine-exploded-drawing",
+    "fsm-6f023139b5f8"
+  ],
+  "visual_evidence": [
+    {
+      "path": "reference/engine/ford-industrial-parts.pdf",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "printed_pages": [
+        4,
+        5
+      ],
+      "observation": "External drawing places the pushrod side cover, filter and distributor on the face opposite intake/exhaust manifolds. Internal drawing shows camshaft and pushrods on this cover side. Industrial comparison is not a dimensional or variant-identification source."
+    },
+    {
+      "path": "reference/engine/ford-engine-exploded.jpg",
+      "observation": "Archived 4.9L EFI drawing corroborates opposite manifold and side-cover faces; low resolution prevents fastener-detail transcription."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/354634388.png",
+      "observation": "1994 lubrication schematic places oil filter and pump on cam/gallery side."
+    }
+  ],
+  "coordinate_decision": {
+    "front": "+X",
+    "up": "+Z",
+    "cam_pushrod_distributor_filter_side": "+Y",
+    "intake_exhaust_port_face": "-Y"
+  },
+  "error_found": "Earlier model put cam, pushrods and filter at negativeY with the manifolds, while distributor and spark plugs were positiveY. Prior oil-filter-placement-reviewed.json assigned cam-side correctly relative to a wrongly oriented core.",
+  "correction": "Move cam gallery and lifter bores to+Y; move matching head pushrod holes and rocker supports; reverse valve offset and rocker cup direction; align gear centers/cover, and move lubrication studies to+Y. Preserve existing manifold and spark-plug side assignments.",
+  "limits": [
+    "Lateral distances and casting profiles remain assumed; this corrects relative side relationships, not production coordinates.",
+    "Distributor gear and pump shaft are still not connected.",
+    "Pushrod cover and block window remain missing pending reconstruction."
+  ]
+}

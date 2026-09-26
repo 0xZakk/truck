@@ -1,0 +1,177 @@
+--- a/cad/engine/full_engine.py
++++ b/cad/engine/full_engine.py
+@@ -112,10 +112,11 @@
+ import intake_locating_dowel
+ import exhaust_front_profile
+ import exhaust_rear_entries
++import rear_manifold_mounts_desktop_candidate as rear_mounts
+ 
+ 
+ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(), claims=()):
+-    for interface in (manifold_lifting_eye, intake_locating_dowel, exhaust_front_profile, exhaust_rear_entries):
++    for interface in (manifold_lifting_eye, intake_locating_dowel, exhaust_front_profile, exhaust_rear_entries, rear_mounts):
+         if id in interface.ADAPTERS:
+             shape = interface.ADAPTERS[id](shape)
+             if not isinstance(shape, b.Shape):
+@@ -453,11 +454,13 @@
+         refresh='exhaust-profile'
+     if '--refresh-rear-entries' in sys.argv:
+         refresh='rear-entries'
++    if '--refresh-rear-mounts' in sys.argv:
++        refresh='rear-mounts'
+     if refresh:
+         # Explicit development shortcut: retain the saved long block/lubrication.
+         # Use a full build after changing any core generator or its dimensions.
+         previous=json.loads((ROOT/'inventory/engine/full-assembly.json').read_text())
+-        removed={'rear-entries':set(),'exhaust-profile':set(),'intake-dowel':{'intake-head-locator'},'manifold-eye':{'front-manifold-eye'},'starter':{'starter-assembly'},'ac-compressor':{'ac-compressor'},'peripherals':{'induction','exhaust'},'exhaust':{'exhaust'},'throttle':{'throttle-assembly'},'damper':{'damper-assembly'},'cooling':{'cooling'},'ignition':{'ignition'},'head-interface':{'ignition'},'fuel':{'fuel-system'},'induction':{'induction'},'fuel-couplings':{'fuel-supply-coupling','fuel-return-coupling'},'ventilation':{'crankcase-ventilation'},'oil-filter':{'oil-filter-assembly'},'oil-pressure':{'oil-pressure-switch-assembly'},'oil-pan':{'oil-pan-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'},'timing-cover':set(),'block-plugs':{'block-plugs'},'egr':{'egr'},'egr-tube':{'egr-exhaust-line'},'evr':{'egr-vacuum-regulator'},'egr-hoses':{'egr-vacuum-lines'},'flywheel':{'flywheel-assembly'},'pilot-bearing':{'pilot-bearing-assembly'},'accessory-drive':{'accessory-drive','water-pump-pulley-assembly','fan-clutch-assembly'},'regulator-vacuum':{'regulator-vacuum-line'},'ignition-leads':{'ignition-leads','ignition-coil-mount'},'cooling-connections':{'cooling-connections'},'oil-drive':{'distributor-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'}}[refresh]
++        removed={'rear-mounts':{'rear-manifold-mounts'},'rear-entries':set(),'exhaust-profile':set(),'intake-dowel':{'intake-head-locator'},'manifold-eye':{'front-manifold-eye'},'starter':{'starter-assembly'},'ac-compressor':{'ac-compressor'},'peripherals':{'induction','exhaust'},'exhaust':{'exhaust'},'throttle':{'throttle-assembly'},'damper':{'damper-assembly'},'cooling':{'cooling'},'ignition':{'ignition'},'head-interface':{'ignition'},'fuel':{'fuel-system'},'induction':{'induction'},'fuel-couplings':{'fuel-supply-coupling','fuel-return-coupling'},'ventilation':{'crankcase-ventilation'},'oil-filter':{'oil-filter-assembly'},'oil-pressure':{'oil-pressure-switch-assembly'},'oil-pan':{'oil-pan-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'},'timing-cover':set(),'block-plugs':{'block-plugs'},'egr':{'egr'},'egr-tube':{'egr-exhaust-line'},'evr':{'egr-vacuum-regulator'},'egr-hoses':{'egr-vacuum-lines'},'flywheel':{'flywheel-assembly'},'pilot-bearing':{'pilot-bearing-assembly'},'accessory-drive':{'accessory-drive','water-pump-pulley-assembly','fan-clutch-assembly'},'regulator-vacuum':{'regulator-vacuum-line'},'ignition-leads':{'ignition-leads','ignition-coil-mount'},'cooling-connections':{'cooling-connections'},'oil-drive':{'distributor-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'}}[refresh]
+         if refresh=='oil-filter':removed.add('oil-filter-adapter-assembly')
+         for a in previous['assemblies']:
+             if a['parent'] in removed:removed.add(a['id'])
+@@ -472,12 +475,14 @@
+             used.difference_update(intake_locating_dowel.ADAPTERS)
+         if refresh=='exhaust-profile':
+             used.difference_update(exhaust_front_profile.ADAPTERS)
++        if refresh=='rear-mounts':
++            used.difference_update(rear_mounts.ADAPTERS)
+         if refresh=='rear-entries':
+             used.difference_update(exhaust_rear_entries.ADAPTERS)
+         defs.extend(d for d in previous['definitions'] if not (refresh=='ignition-leads' and d['id'] in ('distributor-cap','cylinder-head')) and not (refresh=='cooling-connections' and d['id']=='water-pump-housing') and d['id'] in used and not (refresh=='oil-drive' and d['id'] in ('block','camshaft')) and not (refresh=='head-interface' and d['id']=='cylinder-head') and not (refresh=='timing-cover' and d['id']=='timing-cover') and not (refresh=='block-plugs' and d['id']=='block') and not (refresh in ('egr','regulator-vacuum') and d['id']=='efi-upper-intake') and not (refresh=='egr-tube' and d['id']=='exhaust-rear') and not (refresh=='accessory-drive' and d['id'] in ('water-pump-drive-hub','block','cylinder-head')) and not (refresh in ('flywheel','pilot-bearing','damper') and d['id']=='crankshaft'))
+-        if refresh in ('manifold-eye', 'intake-dowel', 'exhaust-profile', 'rear-entries'):
++        if refresh in ('manifold-eye', 'intake-dowel', 'exhaust-profile', 'rear-entries', 'rear-mounts'):
+             interface = {'manifold-eye': manifold_lifting_eye, 'intake-dowel': intake_locating_dowel,
+-                         'exhaust-profile': exhaust_front_profile, 'rear-entries': exhaust_rear_entries}[refresh]
++                         'exhaust-profile': exhaust_front_profile, 'rear-entries': exhaust_rear_entries, 'rear-mounts': rear_mounts}[refresh]
+             for identifier in interface.ADAPTERS:
+                 old = next(definition for definition in previous['definitions'] if definition['id'] == identifier)
+                 shape = b.import_step(ROOT / old['step'].lstrip('/'))
+@@ -670,6 +675,9 @@
+     if refresh in (None, 'manifold-eye', 'peripherals', 'exhaust'):
+         manifold_lifting_eye.build((define, add, group))
+         source_ids.update(manifold_lifting_eye.SOURCES)
++    if refresh in (None, 'rear-mounts', 'peripherals', 'exhaust'):
++        rear_mounts.build((define, add, group))
++        source_ids.update(rear_mounts.SOURCES)
+     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
+     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/damper-learning.json').read_text()))
+@@ -691,6 +699,7 @@
+     learning.update(json.loads((ROOT/'inventory/engine/intake-locating-dowel-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/exhaust-front-profile-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/exhaust-rear-entries-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/rear-manifold-mounts-learning.json').read_text()))
+     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
+     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
+     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
+@@ -702,7 +711,7 @@
+             sources[source['id']]['path']=source['local_path']
+     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
+     for occurrence in occurrences:
+-        if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS):
++        if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS | rear_mounts.ADAPTERS):
+             occurrence['function'] = functions_by_definition[occurrence['definition']]
+     manifest=dict(schema_version=2,title='Ford 4.9L · engine atlas',status='In-progress reconstruction; not a complete or verified OEM engine',
+         coordinate_system=BASE['coordinate_system'],definitions=defs,assemblies=assemblies,occurrences=occurrences,sources=sources,
+--- a/viewer/atlas.js
++++ b/viewer/atlas.js
+@@ -232,7 +232,7 @@
+ });
+ try{
+   const response=await fetch('/inventory/engine/full-assembly.json');if(!response.ok)throw new Error(`Manifest: ${response.status}`);data=await response.json();nav=buildNavigation(data);
+-  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`);if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
++  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`);if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
+   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
+   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
+   const loader=new GLTFLoader();
+--- a/scripts/check-engine-navigation.mjs
++++ b/scripts/check-engine-navigation.mjs
+@@ -41,7 +41,7 @@
+ assert.ok(results.some(n=>n.id==='c4-intake-lifter-body'));
+ assert.ok(results.every(n=>nav.ancestors(n.id).some(a=>a.id==='valvetrain-cylinder-4')));
+ assert.equal(nav.search('timing cover')[0].id,'timing-cover','Exact part names outrank broad ancestor matches');
+-const learning=Object.assign({},...await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries'].map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
++const learning=Object.assign({},...await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts'].map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+ for(const [id,entry] of Object.entries(learning)){
+   assert.ok(nav.nodes.has(id));
+   for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.part)assert.ok(nav.nodes.has(step.part),step.part);
+@@ -77,7 +77,7 @@
+ for(let i=1;i<=6;i++)assert.equal(nav.parts(`fuel-injector-${i}`).length,13);
+ assert.equal(nav.parts('idle-air').length,8);
+ assert.equal(nav.parts('throttle-sensor').length,7);
+-assert.equal(nav.parts('exhaust').length,5);
++assert.equal(nav.parts('exhaust').length,7);
+ 
+ assert.equal(nav.parts('damper-assembly').length,6);
+ assert.equal(nav.parts('accessory-drive').length,182);
+@@ -140,3 +140,6 @@
+ assert.equal(nav.parts('egr-vacuum-regulator').length,4);
+ 
+ assert.equal(nav.parts('egr-vacuum-lines').length,1);
++
++assert.equal(nav.parts('rear-manifold-mounts').length,2);
++for(const id of ['rear-manifold-bolt15','rear-manifold-bolt16']) { assert.ok(nav.ancestors(id).some(n=>n.id==='exhaust')); assert.equal(nav.fromUrl(nav.url(id)),id); }
+--- a/scripts/check-rear-manifold-mounts-desktop.py
++++ b/scripts/check-rear-manifold-mounts-desktop.py
+@@ -11,7 +11,7 @@
+ sys.path.insert(0, str(ROOT / 'cad/engine'))
+ import rear_manifold_mounts_desktop_candidate as mounts
+ from assembly_math import transforms
+-from cad_metrics import solid_volume
++from cad_metrics import solid_volume, step_comparison_shape
+ 
+ manifest_path = ROOT / 'inventory/engine/full-assembly.json'
+ manifest_bytes = manifest_path.read_bytes()
+@@ -28,6 +28,18 @@
+ candidates = mounts.parts()
+ for identifier, adapter in mounts.ADAPTERS.items():
+     candidates[identifier] = locations[identifier] * adapter(definitions[identifier])
++installed='--installed' in sys.argv
++installed_matches=[]
++if installed:
++    for identifier,expected in list(candidates.items()):
++        actual=shapes[identifier]
++        normalized=step_comparison_shape(expected)
++        common=actual.intersect(normalized)
++        common_volume=sum(solid_volume(part,'adaptive') for part in common.solids()) if common else 0
++        difference=solid_volume(actual,'adaptive')+solid_volume(normalized,'adaptive')-2*common_volume
++        assert abs(difference)<.01,(identifier,difference)
++        installed_matches.append({'part':identifier,'difference_mm3':difference})
++        candidates[identifier]=actual
+ roundtrips = []
+ with tempfile.TemporaryDirectory(prefix='rear-mounts-') as directory:
+     for identifier, shape in candidates.items():
+@@ -101,11 +113,11 @@
+                 failures.append({'port_x': horizontal, 'role': role, 'part': identifier, 'obstruction_mm3': volume})
+ assert manifest_path.read_bytes() == manifest_bytes
+ assert all(hashlib.sha256(Path(path).read_bytes()).hexdigest() == digest for path, digest in hashes.items())
+-report = {'passed': not failures, 'installed': False, 'manifest_sha256': hashlib.sha256(manifest_bytes).hexdigest(),
++report = {'passed': not failures, 'installed': installed, 'installed_matches':installed_matches, 'manifest_sha256': hashlib.sha256(manifest_bytes).hexdigest(),
+           'dependency_sha256': hashes, 'step_roundtrips': roundtrips, 'neighbor_checks': neighbor_checks,
+           'flow_checks': flow_checks, 'material_checks': material_checks, 'contacts': contacts,
+           'failures': failures, 'limits': mounts.GAPS,
+           'scope': 'Six-definition candidate against all saved neighbors. Nominal bolt seats and positive socket wall/floor material; no production threads, clamp load, gallery compatibility or finished manifold claim.'}
+-(ROOT / 'inventory/engine/rear-manifold-mounts-desktop-validation.json').write_text(json.dumps(report, indent=2) + '\n')
++(ROOT / ('inventory/engine/rear-manifold-mounts-desktop-installed-validation.json' if installed else 'inventory/engine/rear-manifold-mounts-desktop-validation.json')).write_text(json.dumps(report, indent=2) + '\n')
+ print(json.dumps({key: value for key, value in report.items() if key != 'dependency_sha256'}, indent=2), flush=True)
+ assert not failures
+--- /dev/null
++++ b/inventory/engine/rear-manifold-mounts-learning.json
+@@ -0,0 +1,18 @@
++{
++  "rear-manifold-mounts": {
++    "summary": "Two rear bolts hold the exhaust casting against the cylinder head before the intake is installed.",
++    "limits": "Ford identifies installation holes15/16. Station coordinates, supporting webs, blind sockets and3/8-16\u00d71.31in comparison dimensions are provisional; the remaining shared clamps are unfinished.",
++    "steps": [
++      {
++        "title": "Rear casting attaches first",
++        "text": "The bolt head bears on a casting land; the shaft enters the head socket. The smooth thread envelopes illustrate placement, not retention or clamp load.",
++        "part": "rear-manifold-bolt15"
++      }
++    ],
++    "sources": [
++      "ford-manifold-fastener-topology",
++      "ford-1996-manifold-comparison",
++      "ford-1996-manifold-fastener-table"
++    ]
++  }
++}

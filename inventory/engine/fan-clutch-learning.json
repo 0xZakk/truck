@@ -1,0 +1,22 @@
+{
+  "fan-clutch-assembly": {
+    "summary": "A thermal viscous clutch varies fan speed without making the fan rigidly follow the pump shaft. This reconstruction separates a pump-driven input, output housing, bearing and fluid-control pieces inside a published replacement envelope.",
+    "limits": "One of two catalog nut-size branches is shown. Internal geometry is illustrative; the assembly is sealed and is not a rebuild guide. No slip, temperature, fluid flow or airflow simulation is implemented.",
+    "steps": [
+      {"title": "Receive pump drive", "text": "The right-hand threaded nut drives the clutch input shaft. The output housing can rotate at a different speed around its bearing.", "part": "fan-clutch-input-shaft", "source": "imperial-fan-clutch-215161"},
+      {"title": "Sense radiator-exit air", "text": "The front bimetal spring responds to the air coming through the radiator and operates the internal valve.", "part": "fan-clutch-thermal-spring", "source": "hayden-fan-clutch-operation"},
+      {"title": "Meter silicone fluid", "text": "Opening the valve admits fluid from the reservoir into the working region. More fluid coupling increases fan speed; cooling closes the valve while fluid returns to the reservoir.", "part": "fan-clutch-control-valve", "source": "hayden-fan-clutch-operation"},
+      {"title": "Transfer torque through shear", "text": "The illustrated rotor and opposing lands provide a narrow working region. Their clearances are assumptions and do not predict clutch torque.", "part": "fan-clutch-drive-rotor"}
+    ],
+    "sources": ["imperial-fan-clutch-215161", "hayden-fan-clutch-operation", "system-7b01cf423275"]
+  },
+  "cooling-fan-assembly": {
+    "summary": "The seven-blade fan comparison uses Dorman's published 18.9-inch diameter and black stamped-steel construction. Four bolts attach its central spider to the clutch output.",
+    "limits": "Exact installed fan identity, blade pitch, stamping contours and rivet details remain unverified. The model does not establish radiator or shroud clearance.",
+    "steps": [
+      {"title": "Attach the fan to the output", "text": "The clutch specification gives four threaded holes on a three-inch circle. The fan follows the output housing rather than the input shaft directly.", "part": "cooling-fan-spider", "source": "imperial-fan-clutch-215161"},
+      {"title": "Move air through the radiator", "text": "Seven blades reproduce the replacement's published count; their illustrative pitch represents a pulling fan. Actual airflow depends on geometry, speed and the surrounding shroud.", "part": "cooling-fan-blade-1", "source": "dorman-620-151"}
+    ],
+    "sources": ["dorman-620-151", "imperial-fan-clutch-215161"]
+  }
+}

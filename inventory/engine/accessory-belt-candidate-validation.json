@@ -1,0 +1,371 @@
+{
+  "passed": true,
+  "verified_production_fit": false,
+  "verified_nominal_belt_fit": false,
+  "manifest_sha256": "97f41f9a5eb4c64f201e60be03b982d95415780d62922e01b447b97f0f05d1a3",
+  "source_sha256": {
+    "accessory_belt": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "accessory_belt_profile": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "tensioner_engine_support": "d80e819d2c72425f2d39bd6ec0050823a1d79ad2f6b5b7ff4667eed01c745e8a"
+  },
+  "step_round_trips": 12,
+  "analytic_tangency_closed_wire_and_winding": true,
+  "narrow_phase_checks": 88,
+  "collisions": [],
+  "routing": {
+    "verified_nominal_belt_fit": false,
+    "catalog_effective_length_mm": 2491.0,
+    "outside_radius_as_effective_assumption_length_mm": 2785.4014651345833,
+    "assumed_effective_length_residual_mm": 294.4014651345833,
+    "illustrative_cord_path_length_mm": 2804.8745428414577,
+    "cord_path_not_directly_equal_to_catalog_effective_length": true,
+    "solution": {
+      "nodes": [
+        {
+          "id": "ALT",
+          "center": [
+            -325,
+            410
+          ],
+          "radius": 35,
+          "side": 1,
+          "path_radius": 36.75
+        },
+        {
+          "id": "TENS",
+          "center": [
+            0,
+            435
+          ],
+          "radius": 45,
+          "side": -1,
+          "path_radius": 45.35
+        },
+        {
+          "id": "PS",
+          "center": [
+            280,
+            410
+          ],
+          "radius": 65.65899999999999,
+          "side": 1,
+          "path_radius": 67.40899999999999
+        },
+        {
+          "id": "AC",
+          "center": [
+            280,
+            100
+          ],
+          "radius": 72.5,
+          "side": 1,
+          "path_radius": 74.25
+        },
+        {
+          "id": "WP",
+          "center": [
+            0,
+            170
+          ],
+          "radius": 75,
+          "side": -1,
+          "path_radius": 75.35
+        },
+        {
+          "id": "CS",
+          "center": [
+            0,
+            0
+          ],
+          "radius": 81.53399999999999,
+          "side": 1,
+          "path_radius": 83.28399999999999
+        },
+        {
+          "id": "AP",
+          "center": [
+            -280,
+            100
+          ],
+          "radius": 70,
+          "side": 1,
+          "path_radius": 71.75
+        }
+      ],
+      "spans": [
+        {
+          "from": "ALT",
+          "to": "TENS",
+          "start": [
+            -318.4987209874977,
+            446.17037283747015
+          ],
+          "end": [
+            -8.022666754203515,
+            390.3652678046457
+          ],
+          "normal": [
+            0.17690555136060673,
+            0.9842278323121124
+          ],
+          "length": 315.4514067174214
+        },
+        {
+          "from": "TENS",
+          "to": "PS",
+          "start": [
+            14.42409368764913,
+            392.00502330167024
+          ],
+          "end": [
+            258.5597854158602,
+            473.9084538976342
+          ],
+          "normal": [
+            -0.31806160281475476,
+            0.9480700484747473
+          ],
+          "length": 257.50807350256025
+        },
+        {
+          "from": "PS",
+          "to": "AC",
+          "start": [
+            347.392584407395,
+            411.48756441612903
+          ],
+          "end": [
+            354.23191847155545,
+            101.63852983870967
+          ],
+          "normal": [
+            0.9997564777313868,
+            0.022067741935483897
+          ],
+          "length": 309.92450809672994
+        },
+        {
+          "from": "AC",
+          "to": "WP",
+          "start": [
+            227.2625680442159,
+            47.7331293197207
+          ],
+          "end": [
+            53.51872724401794,
+            223.04119469035751
+          ],
+          "normal": [
+            -0.7102684438489442,
+            -0.7039309182529199
+          ],
+          "length": 246.8194481802437
+        },
+        {
+          "from": "WP",
+          "to": "CS",
+          "start": [
+            -27.08908946946703,
+            99.6878123529412
+          ],
+          "end": [
+            29.941442964500226,
+            77.71572974117646
+          ],
+          "normal": [
+            0.35951014558018624,
+            0.9331411764705881
+          ],
+          "length": 61.116724748631654
+        },
+        {
+          "from": "CS",
+          "to": "AP",
+          "start": [
+            -31.03297235404342,
+            -77.28634603132159
+          ],
+          "end": [
+            -306.7352164449668,
+            33.41703895409293
+          ],
+          "normal": [
+            -0.3726162570727081,
+            -0.9279855198035829
+          ],
+          "length": 297.09757125227395
+        },
+        {
+          "from": "AP",
+          "to": "ALT",
+          "start": [
+            -351.7128333032276,
+            97.69087903662825
+          ],
+          "end": [
+            -361.73096339921415,
+            408.8172795065657
+          ],
+          "normal": [
+            -0.9994819972575282,
+            -0.032182870569641184
+          ],
+          "length": 311.2876483254676
+        }
+      ],
+      "arcs": [
+        {
+          "pulley": "ALT",
+          "start": [
+            -361.73096339921415,
+            408.8172795065657
+          ],
+          "middle": [
+            -349.02648226180577,
+            437.8081040368295
+          ],
+          "end": [
+            -318.4987209874977,
+            446.17037283747015
+          ],
+          "wrap_degrees": 102.03382964539884,
+          "length": 65.4453656331219,
+          "side": 1,
+          "path_radius": 36.75
+        },
+        {
+          "pulley": "TENS",
+          "start": [
+            -8.022666754203515,
+            390.3652678046457
+          ],
+          "middle": [
+            3.3040529987526375,
+            389.770521407146
+          ],
+          "end": [
+            14.42409368764913,
+            392.00502330167024
+          ],
+          "wrap_degrees": 28.735307804533875,
+          "length": 22.744191980808367,
+          "side": -1,
+          "path_radius": 45.35
+        },
+        {
+          "pulley": "PS",
+          "start": [
+            258.5597854158602,
+            473.9084538976342
+          ],
+          "middle": [
+            318.75560519471827,
+            465.1541145064548
+          ],
+          "end": [
+            347.392584407395,
+            411.48756441612903
+          ],
+          "wrap_degrees": 107.28124814862501,
+          "length": 126.21735349284228,
+          "side": 1,
+          "path_radius": 67.40899999999999
+        },
+        {
+          "pulley": "AC",
+          "start": [
+            354.23191847155545,
+            101.63852983870967
+          ],
+          "middle": [
+            309.0163968976564,
+            31.65447190139156
+          ],
+          "end": [
+            227.2625680442159,
+            47.7331293197207
+          ],
+          "wrap_degrees": 136.52125197767492,
+          "length": 176.91884193717712,
+          "side": 1,
+          "path_radius": 74.25
+        },
+        {
+          "pulley": "WP",
+          "start": [
+            53.51872724401794,
+            223.04119469035751
+          ],
+          "middle": [
+            -63.07650649602985,
+            211.21864660874132
+          ],
+          "end": [
+            -27.08908946946703,
+            99.6878123529412
+          ],
+          "wrap_degrees": 204.18664541501968,
+          "length": 268.5269990699537,
+          "side": -1,
+          "path_radius": 75.35
+        },
+        {
+          "pulley": "CS",
+          "start": [
+            29.941442964500226,
+            77.71572974117646
+          ],
+          "middle": [
+            77.50295950831726,
+            -30.48796358322632
+          ],
+          "end": [
+            -31.03297235404342,
+            -77.28634603132159
+          ],
+          "wrap_degrees": 180.80694394786164,
+          "length": 262.81736015678865,
+          "side": 1,
+          "path_radius": 83.28399999999999
+        },
+        {
+          "pulley": "AP",
+          "start": [
+            -306.7352164449668,
+            33.41703895409293
+          ],
+          "middle": [
+            -338.78593585667045,
+            58.862714656221804
+          ],
+          "end": [
+            -351.7128333032276,
+            97.69087903662825
+          ],
+          "wrap_degrees": 66.27867949999319,
+          "length": 82.99904974743717,
+          "side": 1,
+          "path_radius": 71.75
+        }
+      ],
+      "length": 2804.8745428414577
+    },
+    "limits": [
+      "Six ribs and nominal 2491 mm effective length follow Gates K060980/6PK2491. The fitted construction-study loop is not asserted to have this catalog length.",
+      "PK comparison pitch 3.56 mm, 40 degree groove angle and 3.45 mm minimum depth follow the Optibelt technical manual. Sharp groove roots, crest shape, belt width, backing, rib truncation and clearance remain study approximations, not full standard compliance.",
+      "Optibelt distinguishes effective diameter from tension-cord pitch diameter. Treating current pulley outside radii as effective radii is an explicit diagnostic assumption; installed gauge diameters and neutral-axis position remain unmeasured.",
+      "A 1.6 mm cord offset is a PK comparison value; 0.2 mm back cover, 2.7 mm rib height and 0.15 mm display clearance are assumed. Ribs and backing are one belt solid, not separately counted physical parts.",
+      "Normalization repairs only the outer groove band before recutting a common profile. Pulley diameters, centers, webs, bearings and mounting interfaces are not moved.",
+      "Loop order ALT, TENS, P/S, A/C, W/P, C/S, A/P follows the reviewed Ford with-A/C diagram. Tensioner and water pump contact the smooth belt back; all other wheels engage the ribbed face.",
+      "Analytic common tangents and signed wrap arcs use current provisional pulley stations. A closed collision-free loop does not prove correct catalog length, tensioner working range, belt traction, accessory speed or load capacity.",
+      "No center is moved to force the nominal belt length. The geometric path and residual expose the unresolved engine accessory layout rather than concealing it."
+    ]
+  },
+  "support_limits": [
+    "Gates supports the central mounting fastener and locating-pin/bushing architecture. This rear bracket, engine attachment topology, casting contour and every dimension are provisional construction geometry, not a sourced factory bracket.",
+    "A 20 mm rear pad seats the existing cartridge back at X400.56. Its central blind bore receives an extended smooth fastener with 14 mm engagement and 2 mm tip clearance; helical threads and production fit remain unmodeled.",
+    "The modeled optional locating bushing enters a 12.7 mm bracket bore, corresponding to Gates large-hole option. Exact installed bracket option is unverified; the 5/16 inch option is not simultaneously modeled.",
+    "Separate dry blind block/head bosses provide an explicit mechanical path. Hole positions, bolt counts, grade, preload, stiffness, belt force and spring travel have not been verified.",
+    "No pulley center or spring pivot moves in this adapter. The belt-length residual is not disguised by repositioning the tensioner."
+  ]
+}

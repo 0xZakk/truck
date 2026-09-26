@@ -1,0 +1,30 @@
+{
+  "input_hashes": {
+    "scripts/export-check-water-pump-joint.py": "83ba4dc2a677eb15c7a42bf9e9b12c0d8d953dfbd43a86e5dce556c4cb585091",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/water_pump_thermactor_foot_candidate.py": "734c9e2b43202b385a5353ecba5538d40c6486ee14b97215523895fb38ac85d2",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5"
+  },
+  "step_hashes": {
+    "cad/engine/generated/block.step": "c3aeed637053e2a0973b1a3115fb8988d7a327937dc1d757f3ecf04b606cb043",
+    "cad/engine/generated/water-pump-housing.step": "ed86d0450efbb31af3b551553eba5c2f5e1ba798ceffa0be05344e7166d3d72f",
+    "cad/engine/generated/water-pump-impeller.step": "b1a2a3219fb68be8ad03c918d38f65e76dfd89d1ea163ad9c0dbf901b91e34ef",
+    "cad/engine/generated/water-pump-seal.step": "8a225fd6b2f006c20af03e011eabfd86768f9ec70d79f743d778b9554932c72a",
+    "cad/engine/generated/water-pump-slinger.step": "aa131297221ea0107faa0e6b69dd2cb9c746641039b17e548d0f2906ca79fb52",
+    "cad/engine/generated/water-pump-bearing.step": "03d3d6be74a7daf1726020fbee170f28a24d5d5330b00d3a22b44be8d877372c",
+    "cad/engine/generated/water-pump-drive-hub.step": "cfb89c5448c502135bd2d7b79d09a102739ae2fae70cacbff8d0c3327e20ba03"
+  },
+  "inputs_unchanged": true,
+  "step_volume_delta_mm3": {
+    "block": 3.3527612686157227e-08,
+    "water-pump-housing": 0.00035933154867962003,
+    "water-pump-gasket": 4.057792466483079e-07,
+    "water-pump-shaft": 0.0,
+    "water-pump-impeller": 0.0,
+    "water-pump-mounting-screw": -2.2282620193436742e-11,
+    "thermactor-support-bracket": -0.00013855975703336298,
+    "thermactor-engine-bolt-2": 6.537902663694695e-09
+  },
+  "scope": "Eight valid single-solid STEP roundtrips and actual mesh export; no production fit or complete coolant network claim."
+}

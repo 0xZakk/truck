@@ -1,0 +1,5 @@
+Pilot rework record, 2026-09-26
+1. Direct non-escalated curl could not fetch remote evidence. Authorized escalated read-only requests captured Ford and Dorman pages. MotoRad direct HTTP returned a denial (103-byte motorad.html); manufacturer's indexed primary specifications were read with web retrieval and saved as motorad-web-extract.json.
+2. First neighbor-check pass raised ValueError because build123d Location does not multiply Vector. Fixed by transforming Vertex then taking its center. Body and seal topology checks had passed before the error.
+3. First rendering attempt raised ModuleNotFoundError: matplotlib in CAD environment; bundled Python also lacks matplotlib. No environment modification made. Used bundled Pillow/NumPy for deterministic shaded triangle rendering.
+4. First installed render selected cover triangles by centroid; large planar triangles protruded from the crop. Replaced selection with an exact CAD Boolean crop of the frozen cover before tessellation. Re-ran build/check to update checker hash and render data.

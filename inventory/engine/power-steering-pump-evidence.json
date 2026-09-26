@@ -1,0 +1,57 @@
+{
+  "complete": false,
+  "installed_identity_verified": false,
+  "application": "1994 Ford F150 4.9L; Ford CII slipper-pump construction study",
+  "ford_description": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Steering%20and%20Suspension/Steering/Power%20Steering/Power%20Steering%20Pump/Description%20and%20Operation/index.html",
+    "sha256": "aae93a85e1ba21fc20e6354f7f5d75dcb72c2a10af36b79fb9cc87d9d9193ee8",
+    "findings": ["Ford CII belt-driven slipper pump", "Fiberglass-reinforced nylon reservoir enclosing pump housing", "Swiveling quick-connect pressure-hose fitting below filler neck"]
+  },
+  "ford_overhaul": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Steering%20and%20Suspension/Steering/Power%20Steering/Power%20Steering%20Pump/Service%20and%20Repair/index.html",
+    "sha256": "e1e1bed8e1b77c0525348c126c8e946bb1f862565e0e939c45dce281c1d163ad",
+    "visually_reviewed_images": ["images/DM05Q313/ford10/1238457622.png", "images/DM05Q313/ford10/1238326659.png"],
+    "counts": {"rotor_pockets": 10, "slippers": 10, "slipper_springs": 10, "cartridge_dowels": 2},
+    "architecture": ["Housing/front plate and rotor shaft", "Shaft seal and retainer", "Dished spring", "Lower pressure plate with inner and outer seals", "Cam ring and ten-pocket rotor", "Rotor retaining clip", "Upper pressure plate", "Valve cover, O-ring and cover retaining ring", "Flow-control valve and separate spring", "Outlet fitting and seals", "Reservoir, seal and cap/dipstick"],
+    "not_yet_modeled": ["Plastic valve-cover baffle", "Exact internal relief-valve pieces", "Quick-connect internal retention", "Production hydraulic passages and shaft splines"]
+  },
+  "ford_parts_archive": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Steering%20and%20Suspension/Steering/Power%20Steering%20Pump/Parts%20Information/index.html",
+    "replacement_part": "E7TZ3A674BBRM"
+  },
+  "owner_photo": {
+    "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+    "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+    "also_reviewed": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+    "findings": "Yellowed translucent reservoir, black cap and pump/pulley at LH front below upper radiator hose. Photograph establishes appearance and general location, not measured centers or internal geometry."
+  },
+  "pulley_comparison": {
+    "source_id": "dorman-300-029",
+    "url": "https://www.dormanproducts.com/p-7117-300-029.aspx",
+    "oe_cross": "E9TZ3A733A",
+    "manufacturer_application_summary": "Ford F150/F250/F350 1990-1996; Bronco 1990-1992",
+    "material": "steel",
+    "mount_type": "press-fit",
+    "outside_diameter_inches": 5.17,
+    "outside_diameter_mm": 131.318,
+    "groove_quantity_as_published": 5,
+    "bore_as_published": "0.6854 (unit not displayed)",
+    "modeled_bore_mm": 17.40916,
+    "bore_basis": "Inferred inches, explicitly not a verified dimension with sourced units",
+    "modeled_groove_count": 6,
+    "conflict": "Manufacturer five-groove metadata conflicts with Ford instructions to seat all six belt ribs and Gates K060980 six-rib belt application. The model uses six illustrative grooves for the Ford belt; the Dorman metadata conflict is retained rather than silently corrected.",
+    "photo_path": "reference/engine/power-steering-dorman-300-029.jpg",
+    "photo_sha256": "4dbfbaf1c8a87bbe87c17515a36fa03a6fada9746f8e5f4f40a552239e1c4865",
+    "photo_review": "Black dished steel pulley with raised press-fit hub; no separate center bolt. Photo was visually reviewed, but used neither as a scale drawing nor as resolution of groove-count metadata conflict."
+  },
+  "provisional_geometry_mm": {
+    "pulley_center": [473.56, 280, 410],
+    "reservoir_outer_diameter": 112,
+    "cam_track_ellipse_semiaxes": [30, 26],
+    "rotor_outer_diameter": 46,
+    "shaft_diameter": 17.2,
+    "pulley_width": 27
+  },
+  "routing_source": "reference/engine/ford-accessory-routing-reviewed.json",
+  "limits": ["All pump dimensions and working clearances are illustrative", "No verified production fit, contact motion, pressure, displacement or hydraulic circuit", "Engine bracket and hoses remain unfinished", "Installed pump part number and exact replacement-pulley groove compatibility remain unverified"]
+}

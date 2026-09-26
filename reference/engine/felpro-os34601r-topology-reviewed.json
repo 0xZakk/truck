@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-25",
+  "part": "Fel-Pro OS34601R",
+  "product_page": "https://www.autozone.com/p/fel-pro-engine-oil-pan-gasket-set-os34601r/67494",
+  "image_url": "https://contentassets.autozone.com/product_image/USA/10396/BCWV/OS34601R/OS34601R-01.jpg",
+  "local_image": "reference/engine/felpro-os34601r-product.jpg",
+  "image_provenance": "Exact part-number product asset hosted by AutoZone under its Fel-Pro product listing; not a dimensioned manufacturer drawing.",
+  "visual_observations": [
+    "Continuous blue molded gasket loop, with four detached installation aids shown outside it.",
+    "Ten holes along each long rail, three on one end bridge, two on the other; total25.",
+    "One long rail is offset around a central region; the opposite rail is nearly straight.",
+    "The two end bridges have different projected widths; their formed section and curvature are not recoverable from this single top-oriented image."
+  ],
+  "application_basis": "Saved manufacturer Fel-Pro VIN-Y master catalog already lists OS34601R for this engine. The image is topology evidence, not proof of the owner's installed replacement brand or exact dimensions.",
+  "rejected_candidate": "cad/engine/oil_pan_fasteners.py uses13/12rail stations and must not be integrated. Its nominal thread/length/count and reusable screw/washer shapes remain useful.",
+  "unresolved": [
+    "Precise hole coordinates, compressed thickness and metallic inserts",
+    "Which photo end corresponds to the timing-cover end: the factory illustration's three final-tightened bolts are a topology lead, not a dimensioned orientation mapping",
+    "Front/rear sealing sections and their mating casting geometry",
+    "Installed gasket identity and production fit"
+  ],
+  "image_sha256": "cbc47048da6409764c28db39de28fcd7cde18433e364c5a12f950b64621f9b36"
+}

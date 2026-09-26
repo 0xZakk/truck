@@ -1,0 +1,16 @@
+{
+  "ac-compressor": {
+    "summary": "The FS10 uses five double-ended pistons to create ten compression chambers. A tilted swashplate turns shaft rotation into piston strokes through ten spherical shoes.",
+    "limits": "This is a manufacturer-application comparison and construction study, not an identification of the installed compressor. Most geometry remains provisional. Refrigerant passages between heads, individual bearing rollers, reed flexure and pressure/contact physics are unresolved.",
+    "steps": [
+      {"title": "Turn the pulley without necessarily pumping", "text": "The belt drives the pulley on its own bearing. The electromagnetic clutch engages the separate armature hub to drive the compressor shaft; the static 0.6 mm gap lies within the Ford service range.", "part": "ac-compressor-clutch-pulley", "source": "ford-ac-clutch-gap"},
+      {"title": "Keep stationary and rotating clutch pieces distinct", "text": "The carrier and coil remain fixed to the nose. The pulley rotates on its bearing, while the separate armature hub transfers torque to the shaft only when the clutch engages. This is a static mechanism analogy, not an electromagnetic simulation.", "part": "ac-compressor-clutch-coil", "source": "ford-fs10-construction-comparison"},
+      {"title": "Convert rotation into reciprocation", "text": "The shaft-mounted inclined swashplate acts on spherical shoes seated in the pistons. Five pistons slide along fixed cylinder axes rather than orbiting with the shaft.", "part": "ac-compressor-swashplate-shaft", "source": "ford-fs10-construction-comparison"},
+      {"title": "Compress at both ends", "text": "Each piston has a head at both ends, creating ten chambers from five pistons. Separate PTFE seal rings follow the comparison teardown; their profile is illustrative.", "part": "ac-compressor-piston-1", "source": "fs10-piston-ring-photo"},
+      {"title": "Control intake and discharge", "text": "Pressure differences flex suction and discharge reeds against their valve plates. This model separates the plates and reeds but does not simulate their deflection or reconstruct all longitudinal passages.", "part": "ac-compressor-front-valve-plate", "source": "ford-fs10-construction-comparison"},
+      {"title": "React axial loads", "text": "Thrust-bearing stacks at either end of the swash assembly carry axial loads into the case. Races are separate, while the rolling elements remain simplified cartridges.", "part": "ac-compressor-front-thrust-2", "source": "fs10-separated-parts-photo"},
+      {"title": "Recognize the unfinished fluid network", "text": "The modeled rear ports open into separate head annuli, but longitudinal galleries joining the two heads have not been reconstructed. Sampled piston and shoe clearance does not establish complete refrigerant circulation, sealing, pumping performance or production fit.", "part": "ac-compressor-rear-head"}
+    ],
+    "sources": ["denso-fs10-application", "uac-fs10-101220c", "ford-fs10-construction-comparison", "fs10-dissection-comparison", "fs10-separated-parts-photo", "ford-ac-clutch-gap", "fs10-piston-ring-photo"]
+  }
+}

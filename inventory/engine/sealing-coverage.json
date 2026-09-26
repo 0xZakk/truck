@@ -1,0 +1,228 @@
+{
+  "source": "fel-pro-vin-y-gaskets",
+  "review_capture": "reference/engine/fel-pro-vin-y-gaskets-reviewed.json",
+  "status": "incomplete",
+  "policy": "Crosswalk of catalog entries to current study geometry, not a physical BOM or verification of replacement fit. Alternatives and kits are not separate installed occurrences.",
+  "entries": [
+    {
+      "component": "head-gasket",
+      "replacement_numbers": [
+        "525 SD",
+        "8168 PT"
+      ],
+      "notes": "Alternative service gaskets; do not install both.",
+      "current_definitions": [
+        "head-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "head-bolt-set",
+      "replacement_numbers": [
+        "ES 72155-1"
+      ],
+      "notes": "Catalog describes flanged hex head. Exact dimensions not supplied.",
+      "current_definitions": [
+        "head-bolt"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "lower-intake-gasket-set",
+      "replacement_numbers": [
+        "MS 95647"
+      ],
+      "notes": "Includes upper set; kit count is not physical piece count.",
+      "current_definitions": [
+        "efi-head-intake-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "plenum-gasket-set",
+      "replacement_numbers": [
+        "MS 93838"
+      ],
+      "notes": "Upper set.",
+      "current_definitions": [
+        "efi-upper-intake-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "intake-exhaust-gasket-set",
+      "replacement_numbers": [
+        "MS 93837"
+      ],
+      "notes": "Physical decomposition and installed manifold joint require review.",
+      "current_definitions": [],
+      "status": "missing"
+    },
+    {
+      "component": "oil-pan-gasket",
+      "replacement_numbers": [
+        "OS 34601 R"
+      ],
+      "notes": "PermaDry molded rubber. This catalog row does not itself say one-piece.",
+      "current_definitions": [
+        "pan-side-gasket-1",
+        "pan-side-gasket-2"
+      ],
+      "status": "provisional; dimensions and production construction unverified",
+      "next_action": "Replace separate side studies with the verified molded perimeter after resolving end support contours."
+    },
+    {
+      "component": "drain-plug-gasket",
+      "replacement_numbers": [
+        "70822"
+      ],
+      "notes": "Dimensions and compatibility with chosen replacement drain must be verified.",
+      "current_definitions": [
+        "oil-pan-drain-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "rear-main-seal",
+      "replacement_numbers": [
+        "BS 40592",
+        "BS 40645"
+      ],
+      "notes": "Alternative one-piece rubber / PTFE-rubber service seals; not two simultaneous seals.",
+      "current_definitions": [
+        "rear-seal"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "valve-cover-gasket",
+      "replacement_numbers": [
+        "VS 50028 R"
+      ],
+      "notes": "PermaDry molded rubber.",
+      "current_definitions": [
+        "valve-cover-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "pushrod-cover-gasket",
+      "replacement_numbers": [
+        "PS 13809 C",
+        "PS 13809 R"
+      ],
+      "notes": "Cork improved design versus older rubber design; both listed with grommets. Alternatives, not stacked gaskets.",
+      "current_definitions": [],
+      "status": "missing"
+    },
+    {
+      "component": "pushrod-cover-grommet",
+      "replacement_numbers": [
+        "10740"
+      ],
+      "notes": "Quantity six explicitly listed.",
+      "current_definitions": [],
+      "status": "missing",
+      "physical_quantity_evidence": 6
+    },
+    {
+      "component": "intake-valve-stem-seal",
+      "replacement_numbers": [
+        "SS 72623"
+      ],
+      "notes": "1993\u20131997 intake, premium valve stem oil seals.",
+      "current_definitions": [
+        "valve-seal"
+      ],
+      "status": "provisional; dimensions and production construction unverified",
+      "next_action": "Replace shared generic seal definition with distinct sourced intake/exhaust construction; catalog alone does not supply dimensions."
+    },
+    {
+      "component": "exhaust-valve-stem-seal",
+      "replacement_numbers": [
+        "SS 72839-1"
+      ],
+      "notes": "1993\u20131997 exhaust, premium valve stem oil seals.",
+      "current_definitions": [
+        "valve-seal"
+      ],
+      "status": "provisional; dimensions and production construction unverified",
+      "next_action": "Replace shared generic seal definition with distinct sourced intake/exhaust construction; catalog alone does not supply dimensions."
+    },
+    {
+      "component": "water-outlet-gasket",
+      "replacement_numbers": [
+        "35355"
+      ],
+      "notes": "Water outlet.",
+      "current_definitions": [
+        "coolant-outlet-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "water-pump-gasket",
+      "replacement_numbers": [
+        "13816"
+      ],
+      "notes": "Water pump.",
+      "current_definitions": [
+        "water-pump-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "timing-cover-set",
+      "replacement_numbers": [
+        "TCS 45829",
+        "TCS 45830"
+      ],
+      "notes": "Without / with repair sleeve, respectively. Both explicitly must be used with OS 34601 R.",
+      "current_definitions": [
+        "front-seal"
+      ],
+      "status": "provisional; dimensions and production construction unverified",
+      "next_action": "Current front crank seal is only a fraction of this set. Cover-to-block gasket and pan junction still need reconstruction."
+    },
+    {
+      "component": "fuel-injector-oring-set",
+      "replacement_numbers": [
+        "ES 70599"
+      ],
+      "notes": "Catalog quantity two is set quantity; not proof of only two physical O-rings in the engine.",
+      "current_definitions": [
+        "injector-o-ring"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "throttle-body-gasket",
+      "replacement_numbers": [
+        "60846"
+      ],
+      "notes": "Throttle body.",
+      "current_definitions": [
+        "throttle-gasket"
+      ],
+      "status": "provisional; dimensions and production construction unverified"
+    },
+    {
+      "component": "egr-gasket",
+      "replacement_numbers": [
+        "72649"
+      ],
+      "notes": "EGR.",
+      "current_definitions": [],
+      "status": "missing"
+    },
+    {
+      "component": "oil-pump-to-block-gasket",
+      "replacement_numbers": [
+        "70374"
+      ],
+      "notes": "Catalog heading Oil Pump Cover; description explicitly says to block. Do not confuse with pump internal cover seam.",
+      "current_definitions": [],
+      "status": "missing"
+    }
+  ]
+}

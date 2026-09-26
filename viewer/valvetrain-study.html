@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valve timing study · Ford 4.9L</title>
+<style>body{margin:0;background:#101820;color:#e2e8ed;font:16px system-ui;line-height:1.55}main{max-width:1050px;margin:auto;padding:28px}a{color:#8bceef}h1{margin-bottom:6px}p{max-width:850px}.note{background:#293132;border-left:4px solid #d5b97a;padding:12px 18px}.controls{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:24px 0}button,select{background:#243541;color:inherit;border:1px solid #58717d;border-radius:6px;padding:9px}input{width:min(500px,70vw)}svg{width:100%;background:#17242d;border-radius:10px}text{fill:#d7e4eb;font:14px system-ui}.values{font-variant-numeric:tabular-nums}.legend{display:flex;gap:30px}.intake{color:#65d3bf}.exhaust{color:#efaf79}details{margin:24px 0}code{color:#f1cc8d}</style>
+<main><a href="engine.html">← Engine assembly</a><h1>How the cam opens the valves</h1>
+<p>A separate motion study for the inline-six: the cam raises a lifter, the pushrod rocks a lever, and the opposite end opens the valve. Each cylinder repeats once every two crankshaft turns.</p>
+<p class="note"><strong>Teaching candidate, not the installed engine model.</strong> Timing landmarks come from the applicable Melling SYB-38 replacement catalog. The smooth cam curve, base circle and linkage dimensions are assumptions. The truck's actual cam identity is unknown.</p>
+<div class="controls"><button id="play" type="button">Play cycle</button><label>Cylinder <select id="cylinder"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Crank angle <input id="angle" aria-label="Crank angle" type="range" min="0" max="720" value="0" step=".5"></label><output id="readout">0°</output></div>
+<div class="legend"><span class="intake">● Intake</span><span class="exhaust">● Exhaust</span></div>
+<svg id="diagram" viewBox="0 0 1000 410" role="img" aria-label="Two idealized rocker and pushrod linkages linked to valve timing"></svg>
+<p class="values" id="values" aria-live="off"></p>
+<svg id="chart" viewBox="0 0 1000 190" role="img" aria-label="Intake and exhaust lifter lift through the selected cylinder cycle"></svg>
+<details><summary>What is measured, and what remains assumed?</summary><p>The manufacturer lists .247-inch cam lift, .395-inch valve lift, 192° duration at .050-inch lifter lift, 270° advertised duration, a nominal1.6 rocker ratio and intake/exhaust centerlines108°/114°. Rounded catalog valve lift does not exactly equal .247×1.6.</p><p>The advertised duration's checking height is not supplied. This study assumes zero lift at the ends of a270° window and interpolates a smooth curve through the catalog lift landmarks. It does not reproduce a measured Ford lobe or model spring dynamics, lash, piston contact, tappet crown or hydraulic internals.</p><p>The diagram solves a fixed-length pushrod and sliding valve pad. Its joint centers are coplanar at rest. The installed CAD's cup/pad heights and head pedestal must be revised and swept for clearance before this can drive the assembled model.</p><p><a href="https://specsearch.melling.com/PDF/Camshaft2024-03-18_09-48-28.pdf">Melling camshaft catalog, page13</a> · <a href="../inventory/engine/valve-motion-candidate-validation.json">Candidate checks</a></p></details>
+</main>
+<script type="module">
+import {valveStudy as spec,valveState,rockerState} from './engine-valve-motion.js';
+const $=id=>document.getElementById(id),angle=$('angle'),cylinder=$('cylinder');
+let playing=false,last=null;
+const line=(x1,y1,x2,y2,color,width=4)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`;
+function draw(){
+ const degree=Number(angle.value),c=Number(cylinder.value);$('readout').textContent=`${degree.toFixed(1)}°`;
+ let svg='',values=[];
+ for(const [index,kind,color] of [[0,'intake','#65d3bf'],[1,'exhaust','#efaf79']]){
+  const state=valveState(degree,c,kind),r=rockerState(state.liftMm),ox=100+index*480,oy=80,scale=1.1;
+  const coord=([y,z])=>[ox+(y+30)*scale,oy-z*scale];
+  const pivot=coord([r.pivotY,0]),top=coord(r.pushrodTop),bottom=coord(r.pushrodBottom),valve=coord([spec.valveAxisY,-r.valveLiftMm]);
+  const pad=coord([r.pivotY-r.valveArmMm*Math.cos(r.angleRad),-r.valveLiftMm]);
+  svg+=`<text x="${ox}" y="30">Cylinder ${c} ${kind}</text>`;
+  svg+=line(...pivot,...top,color,8)+line(...pivot,...pad,color,8)+line(...top,...bottom,'#cad6dd',5);
+  svg+=`<circle cx="${pivot[0]}" cy="${pivot[1]}" r="7" fill="#101820" stroke="#eef" stroke-width="2"/>`;
+  svg+=line(valve[0],valve[1],valve[0],valve[1]+85,color,5)+line(valve[0]-16,valve[1]+85,valve[0]+16,valve[1]+85,color,8);
+  svg+=`<rect x="${bottom[0]-11}" y="${bottom[1]-3}" width="22" height="30" fill="${color}" rx="3"/><text x="${ox+190}" y="90">rocker</text><text x="${ox+190}" y="220">pushrod</text><text x="${ox+190}" y="335">lifter</text><text x="${ox-40}" y="215">valve</text>`;
+  values.push(`${kind}: lifter ${state.liftMm.toFixed(2)} mm → valve ${r.valveLiftMm.toFixed(2)} mm`);
+ }
+ $('diagram').innerHTML=svg;$('values').textContent=values.join(' · ');
+ let chart='';for(let i=0;i<=4;i++){const x=50+i*225;chart+=line(x,15,x,150,'#354954',1)+`<text x="${x-12}" y="176">${i*180}°</text>`;}
+ for(const [kind,color] of [['intake','#65d3bf'],['exhaust','#efaf79']]){
+  let path='';for(let deg=0;deg<=720;deg+=2){const lift=valveState(deg,c,kind).liftMm;path+=`${deg?'L':'M'}${50+deg/720*900},${150-lift*19} `;}
+  chart+=`<path d="${path}" stroke="${color}" stroke-width="3" fill="none"/>`;
+ }
+ chart+=line(50+degree/720*900,10,50+degree/720*900,150,'#f4e5b1',2);$('chart').innerHTML=chart;
+}
+angle.addEventListener('input',draw);cylinder.addEventListener('change',draw);
+$('play').addEventListener('click',()=>{playing=!playing;$('play').textContent=playing?'Pause cycle':'Play cycle';last=null;});
+function frame(now){if(playing){if(last!==null){angle.value=(Number(angle.value)+(now-last)*.06)%720;draw();}last=now;}requestAnimationFrame(frame);}draw();requestAnimationFrame(frame);
+</script></html>

@@ -1,0 +1,34 @@
+{
+  "gates_source_id": "gates-pk-belt-dimensions",
+  "gates": {
+    "url": "https://www.gates.com.mx/pdf/TRANSMISION%20DE%20POTENCIA%20AUTOMOTRIZ.pdf",
+    "path": "reference/engine/gates-automotive-transmission-2021.pdf",
+    "sha256": "0e655fedc7c4f5ed63e5164002d4df2be7698776ba96dde629ce698ebff95447",
+    "reviewed_pdf_page_1_based": 7,
+    "printed_page": 10,
+    "visually_reviewed": true,
+    "finding": "K060980 cross-reference 6PK2491; length column 2491 mm. Application comes separately from the saved 1994 Gates table, not this dimensional list."
+  },
+  "profile_source_id": "optibelt-pk-profile",
+  "optibelt": {
+    "url": "https://www.optibelt.com/fileadmin/pdf/kataloge/Optibelt-TH-ribbed-belt-drives.pdf",
+    "path": "reference/engine/optibelt-ribbed-belt-manual.pdf",
+    "sha256": "e3d5d47e088111b9edaeb37ecf8180ff9ee83c210ef666a4e382401f44267692",
+    "reviewed_pdf_page_1_based": 38,
+    "printed_page": 36,
+    "visually_reviewed": true,
+    "pk_comparison_values": {
+      "rib_pitch_mm": 3.56,
+      "included_groove_angle_degrees": 40,
+      "minimum_groove_depth_mm": 3.45,
+      "cord_height_hb_mm": 1.6
+    },
+    "diameter_distinction": "The diagram distinguishes pulley effective diameter db and tension-cord pitch diameter dw, with radial offset hb. Neither should silently be replaced by measured outside diameter."
+  },
+  "limits": [
+    "Optibelt is a manufacturer-authored generic PK comparison, not an identified Ford pulley drawing or Gates belt section trace.",
+    "Sharp roots, crest truncation, cover thickness, 21.36 mm belt width and display clearance remain assumed; this does not certify full ISO/DIN conformity.",
+    "No sourced installed effective or pitch diameters, cord location, tensioner working angle, span tension or accessory center distances.",
+    "The CAD loop must retain its length mismatch against catalog nominal data until the provisional layout is reconciled."
+  ]
+}

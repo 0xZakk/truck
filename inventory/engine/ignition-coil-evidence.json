@@ -1,0 +1,29 @@
+{
+  "factory_service_part": "F7PZ12029AA",
+  "manufacturer_part": "DG470",
+  "sources": [
+    "system-f015ea2ab18c",
+    "system-f1571449160a",
+    "system-4fe310c18acd",
+    "ford-dg470"
+  ],
+  "verified": [
+    "Manufacturer identity matches factory service listing",
+    "E-core architecture shown in factory ignition diagram",
+    "Manufacturer lamination stack, rounded case, four corner holes, HV tower and two-pin shroud"
+  ],
+  "unverified": [
+    "All modeled dimensions",
+    "Installed coil identity and mounting datum [-40,210,235] mm",
+    "Core sheet count, joint and air gap",
+    "Winding order, wire count, wire dimensions and connections",
+    "Bobbin, insulation and potting details"
+  ],
+  "omissions": [
+    "Bracket and attachment screws",
+    "Radio ignition interference capacitor",
+    "Harness and coil lead",
+    "Individual winding wires and lamination sheets"
+  ],
+  "complete": false
+}

@@ -1,12 +1,18 @@
 ## Engine component pipeline
 
-### Current atlas (2026-09-22)
+### Current atlas (2026-09-25)
 
-The engine atlas now contains **53 CAD definitions / 399 independent component
+The engine atlas now contains **304 CAD definitions / 836 independent component
 occurrences**. It remains an in-progress reconstruction. Read
 [`docs/ENGINE-COMPLETION.md`](../../docs/ENGINE-COMPLETION.md) for the outstanding
 scope and evidence limits. The original piston study is at
 `/viewer/piston-study.html`; `/viewer/engine.html` now assembles the engine core.
+
+`--refresh-accessory-drive` regenerates the tensioner pulley/support studies and
+water-pump pulley while retaining the core. The tensioner spring and pulley bearing
+remain unresolved cartridges; placement and belt alignment are provisional. The
+oil-pump intermediate-shaft candidate is deliberately uninstalled because its fit
+check exposes incompatible existing drive datums. See its candidate-validation report.
 
 Build and validate the expanded assembly after building the original definitions:
 
@@ -14,8 +20,13 @@ Build and validate the expanded assembly after building the original definitions
 .venv-cad/bin/python cad/engine/first_assembly.py
 .venv-cad/bin/python cad/engine/full_engine.py
 .venv-cad/bin/python scripts/check-engine-atlas.py
-.venv-cad/bin/python scripts/check-engine-atlas.py --all-static
+.venv-cad/bin/python scripts/check-engine-atlas.py --all-static --trace-pairs
+.venv-cad/bin/python scripts/check-engine-retention.py
 node scripts/check-engine-atlas-motion.mjs
+node scripts/check-engine-navigation.mjs
+.venv-cad/bin/python scripts/check-engine-intake.py
+.venv-cad/bin/python scripts/check-engine-throttle.py
+.venv-cad/bin/python scripts/check-engine-flow-interfaces.py
 ```
 
 `viewer/part.html?id=c1-intake-lifter-body` is an example individual component
@@ -25,7 +36,14 @@ System isolation includes nested assemblies, such as the nine-piece lifter.
 The source generators remain authoritative; STEP outputs are ignored and regenerable.
 
 The expanded casting envelopes, cam profiles and many dimensions are provisional.
-Only crank/piston/rod motion and the gear ratio animate. Valve events are not simulated.
+Crank/piston/rod motion, the gear ratio and idealized throttle plates animate. Valve events are not simulated.
+
+For changes confined to induction, controls and exhaust,
+`full_engine.py --refresh-peripherals` reuses saved long-block/lubrication artifacts
+and regenerates those branches. Use the full build whenever a core generator,
+core dimension or source dependency changes. Run the same artifact and interface
+checks after either build. `--refresh-throttle` and `--refresh-exhaust` restrict
+the refresh to those branches; all other saved geometry is retained.
 
 ### Original piston study
 
@@ -65,6 +83,10 @@ dependency installed an incompatible OCP interface in this environment.
 
 - `inventory/engine/research-index.json`: engine manual source index and original
   parts-information tables; catalog categories are not a physical BOM.
+- `inventory/engine/system-references.json`: selected fuel, ignition, cooling and
+  other engine-mounted component pages outside the initial Engine chapter.
+- `inventory/engine/completion-plan.json`: remaining physical-component work and
+  evidence dependencies; deliberately not a completion percentage.
 - `inventory/engine/dimensions.json`: reviewed claims, sources, hashes,
   application limits, blocked claims and named modeling assumptions.
 - `inventory/engine/first-assembly.json`: definitions, hierarchy, individual
@@ -88,6 +110,7 @@ throw is clearly identified as non-production mechanism context.
 ```sh
 python3 scripts/fetch-engine-references.py
 python3 scripts/audit_engine.py
+python3 scripts/index-engine-systems.py
 ```
 
 The first command verifies reference PDF hashes before replacing local copies;
@@ -114,3 +137,37 @@ pin retention, piston taper/ovality and full-crank geometry remain unmodeled.
 Next: establish rod center distance and pin offset from applicable references,
 cross-check installed piston identity, complete the rotating assembly's physical
 BOM and expand to six independent cylinder assemblies plus a sourced crankshaft.
+
+`--refresh-damper` rebuilds only the vibration-damper branch. Its three parts
+use the published Dorman replacement outer envelope; internal sections and
+placement remain provisional. The truck-wide reference index is rebuilt with
+`python3 scripts/index-truck-systems.py`.
+
+`--refresh-cooling` regenerates the provisional water-pump study only. Its eight
+components expose the mechanism, but do not establish production dimensions.
+
+`check-engine-thermostat.py` verifies the sourced replacement outer envelope
+and an open air-bleed bore; it does not validate installed fit or internal profiles.
+
+Outlet generation uses exact-axis cylinders to avoid unbounded spline surfaces
+from nearly coincident rotated cylindrical faces. Check coolant openings with
+`check-engine-coolant-outlet.py`. Avoid running builds during validation; the
+atlas validator now rejects changed manifests or artifacts.
+
+`--refresh-head-interface` replaces the cylinder-head definition and ignition branch
+while retaining the head occurrence and other branches. Shared provisional plug
+mounts live in `plug_mounts.py`. Run `scripts/check-engine-plug-mounts.py` to check
+all 54 plug components against the head and axial access through all six bores.
+These checks do not validate production mounting angles or the coolant jacket.
+
+`--refresh-fuel` rebuilds only the rail/injector/regulator/test-valve branch.
+The generator rejects duplicate definition, assembly or occurrence IDs before
+publishing. Check the diagnostic branch with `check-engine-fuel-test-valve.py`.
+
+`--refresh-induction` rebuilds the intake, fuel and throttle branches together.
+Rail mounting stations are shared in `fuel_mounts.py`; verify bolt dimensions
+and rail/intake/return-tube clearances with `check-engine-fuel-mounts.py`.
+
+Fuel coupling-only refresh: `.venv-cad/bin/python cad/engine/full_engine.py --refresh-fuel-couplings`. Rebuilds both fitting groups while retaining the saved rail and other systems. Run `scripts/check-engine-fuel-couplings.py` for two-seal decomposition, passage and overlap checks. All fitting dimensions and installed stations remain provisional.
+
+PCV refresh: `.venv-cad/bin/python cad/engine/full_engine.py --refresh-ventilation`; direct check: `.venv-cad/bin/python scripts/check-engine-pcv.py`. This is a provisional six-part valve/grommet study; hoses, application verification and calibration remain open.
