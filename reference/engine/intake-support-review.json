@@ -1,0 +1,155 @@
+{
+  "status": "RESEARCH CHECKPOINT: lower anchor unsupported; modeling deferred by integration owner",
+  "issue": "https://github.com/0xZakk/truck/issues/36",
+  "baseline_commit": "fb2a1e756cf5e0d6ed925975312231406fce18ed",
+  "canonical_manifest_sha256": "f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70",
+  "detailed_intake_stage_report_sha256": "260592a09d457b261800bda499b151561a1a667c37d3fd4f248437ee731509f5",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Intake%20Manifold/Service%20and%20Repair/index.html",
+      "sha256": "7ad063d79c908c6a09468759ed9c3498fb6f33864854ab658e970e98e0ca3957",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Intake%20Manifold/Parts%20Information/index.html",
+      "sha256": "495c7c2a38a833486f9b96feba78d673e2445f34b1690cd58c4b502d88c766e5",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/299739995.png",
+      "sha256": "6e4a98ccaef582735f07fe25b33b330f38ad6f7431ed0390425885fff8d95897",
+      "redistribute": false
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "redistribute": false
+    },
+    {
+      "url": "https://www.supermotors.net/getfile/1174826/fullsize/tsb870816intakeinstall49l.jpg",
+      "sha256": "78ff9b9e59f5e9544695a79ff91b6115548ec618b9603c86ca0660fa4dc0906b",
+      "pixels_inspected": true,
+      "local_capture_is_optional": true,
+      "redistribute": false
+    },
+    {
+      "url": "https://www.supermotors.net/getfile/905231/fullsize/1988-ford-f150-4.9l-intake-parts.jpg",
+      "sha256": "bf3b9927b7dfb77c396ee0fbdb5671216f33aa9ef2d89ba54bc5d41cc0fced25",
+      "pixels_inspected": true,
+      "local_capture_is_optional": true,
+      "redistribute": false
+    },
+    {
+      "url": "https://i.ebayimg.com/images/g/-qoAAOSwDTdlcJqH/s-l1200.jpg",
+      "sha256": "d61e6f48716d40a0a7a147b5d7a529fd236e2e8ae1fa9473ca92689773cc6b4d",
+      "pixels_inspected": true,
+      "local_capture_is_optional": true,
+      "redistribute": false
+    },
+    {
+      "path": "reference/engine/ford-engine-exploded.jpg",
+      "sha256": "dfc9f5f35b23161c43c4a670aa1adb2dc22c487c30e4486f486e1b9d5518e4c7",
+      "url": "https://www.supermotors.net/getfile/790004/fullsize/49lexploded.jpg",
+      "pixels_inspected": true,
+      "finding": "Resolution insufficient to establish support anchor or bolt axis."
+    },
+    {
+      "id": "1994-owner-throttle-interface",
+      "url": "https://cimg3.ibsrv.net/gimg/www.ford-trucks.com-vbulletin/2000x1504/img_20181025_141626229_d377dd2734ec821e7510c56770ee138a292fb5b4.jpg",
+      "page_url": "https://www.ford-trucks.com/forums/1556834-1994-f150-4-9l-rough-idle.html",
+      "sha256": "19dfca00f37c772873932bdf9420cd08f64c2906925fc20301e204ea8d2dc7b6",
+      "pixels_inspected": true,
+      "redistribute": false,
+      "applicability": "Different owner1994 F1504.9 teardown, no calibrateddimensions."
+    },
+    {
+      "path": "cad/engine/generated/intake-support-reference/intake-front-support.jpg",
+      "url": "https://cimg9.ibsrv.net/gimg/www.f150forum.com-vbulletin/2000x1504/img_3788_b956b17c4d25e370d0ca4ccea48474c7280534eb.jpg",
+      "page_url": "https://www.f150forum.com/f10/throttle-body-intake-manifold-removal-cleaning-387694/",
+      "sha256": "6e153e9105212b20f1173d06428c10c51d6bce21f0ac819d1a1d36f810b5f933",
+      "pixels_inspected": true,
+      "redistribute": false,
+      "exclude_from_shared_cad_archive": true,
+      "applicability": "Forum author asks about4.9L; pictured individual vehicle identity not independently verified. Comparison only."
+    },
+    {
+      "url": "https://cimg0.ibsrv.net/gimg/www.ford-trucks.com-vbulletin/787x1090/image_cdb93f270ca5e9e5a1158d1fd4bdf6edf6620350.png",
+      "sha256": "b8866b8658db27c850447c3ade5152e7cba1b0737cc27cfcb0869fc82df8a0c0",
+      "pixels_inspected": true,
+      "redistribute": false,
+      "claim": "Ford 4.9L SFI upper-engine exploded figure A10700-E, page03-01A-7: callout11 depicts formed support beside throttle. Exploded projection does not establish lower anchor. Later1996 comparison, not exact1994 dimensional authority."
+    }
+  ],
+  "claims": [
+    {
+      "claim": "1994 service removal step11 names separate support bracket and screw/washer retaining it to manifold",
+      "class": "verified application evidence"
+    },
+    {
+      "claim": "1994 parts page upper E7TZ9424A and lower E7TZ9424D; bracket not separately listed",
+      "class": "verified application evidence"
+    },
+    {
+      "claim": "Ford1987 installation image labels support9J444 near direct front throttle flange and separately shows7/16-14x1.50 and3/8-16x.88 screw/washer callouts",
+      "class": "source-supported earlier-year comparison",
+      "limit": "Not yet sufficient to assign both callouts to exact1994 bracket endpoints."
+    },
+    {
+      "claim": "Earlier Ford parts image shows a formed support body9J444; exact hole axes, thickness and opposite anchor not established",
+      "class": "source-supported topology; dimensions unknown"
+    },
+    {
+      "claim": "E7TZ-9J444-A catalog lead exists alongside E8TZ-9J444-A/E5TZ-9J444-B",
+      "class": "unverified catalog lead",
+      "limit": "Do not assign exact truck application from generic catalog rows."
+    },
+    {
+      "claim": "Actual1994 comparison photo shows a cast mounting pad centered immediately below twin-port throttle flange, with axial screw head and visible large washer clamping a flat vertical support strap; strap continues below image crop.",
+      "class": "source-supported comparison topology",
+      "limit": "Opposite anchor cropped; cannot infer head/block/other connection."
+    },
+    {
+      "claim": "Wider3788 comparison shows below-flange pad and bolted strap continuing downward beside visible cover wall; lower attachment remains obscured by metal pipes/crop.",
+      "class": "source-supported comparison topology",
+      "limit": "Not calibrated. View does not uniquely resolve longitudinal versus lateral station."
+    }
+  ],
+  "decomposition_proposal": [
+    "one formed support9J444",
+    "manifold-end screw and washer assembly, physically separate screw/washer if capture construction supports it",
+    "opposite-anchor fastener(s) and washers after topology confirmation"
+  ],
+  "not_the_same_parts": [
+    "seven upper-to-lower manifold studs",
+    "thermactor bypass valve bracket",
+    "accelerator cable bracket",
+    "intake/exhaust lifting eye"
+  ],
+  "open_interfaces": [
+    "exact non-manifold anchor body and seat",
+    "actual installed bolt axes and spacing",
+    "washer captive versus separate construction",
+    "bracket service/engineering variant and thickness",
+    "whether current detailed intake contains the needed local seat/boss",
+    "Existing detailed intake has no independently verified below-flange support boss; isolated patch required if absent.",
+    "Potential upstream relative datum conflict: current flangeX200,Y25 lies over modeled cover roof, while photographed strap descends beside cover wall. Determine longitudinal/lateral placement from source before forcing a route."
+  ],
+  "plan": "Trace actual full-engine exploded figure and specimen front/underside; then define an explicit proposed seat/boss patch if needed. No arbitrary brace or convenient CAD anchor.",
+  "catalog_search_limit": {
+    "url": "https://www.fordpartsgiant.com/parts-list/1994-ford-f_150--6_cyl_4_9l-5mt/fuel_system_manifolds/fuel_injection_manifold_injectors_valves_wiring.html",
+    "finding": "Exact engine/transmission selector page contains no SUPPORT or9J444 entry; cannot confirm bracket variant from this page.",
+    "date": "2026-09-26"
+  },
+  "pending_visual_sources": [
+    {
+      "url": "https://cimg0.ibsrv.net/gimg/www.ford-trucks.com-vbulletin/787x1090/image_cdb93f270ca5e9e5a1158d1fd4bdf6edf6620350.png",
+      "page": "https://www.ford-trucks.com/forums/1717126-1996-f-150-4-9-air-injection-tube.html",
+      "class": "Unviewed1996 factory upper-engine figure lead; not evidence yet"
+    },
+    {
+      "url": "https://cimg0.ibsrv.net/gimg/www.f150forum.com-vbulletin/2000x1504/img_1643_ace4a6cbc9faab9eb5dc1b95f0b56f863b57ce25.jpg",
+      "page": "https://www.f150forum.com/f10/my-96-4-9l-gaskets-ramble-526069/",
+      "class": "Unviewed1996 teardown lead; not evidence yet"
+    }
+  ]
+}

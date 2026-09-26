@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -69,12 +69,13 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.
 - [ ] **Twin-bore throttle housing** — `throttle-housing`; modeled quantity **1**; provisional.
   - Instances: `throttle-housing`
-  - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, iac-attachment-factory-1994, iac-attachment-estimated-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, iac-attachment-factory-1994, iac-attachment-estimated-study, iac-closure-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.
   - Open: IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0–90 degree motion is not the production stop calibration.
   - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
   - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
-  - Open: The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification.
+  - Open: The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.
+  - Open: The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred.
 - [ ] **Throttle butterfly plate · retention study** — `throttle-plate`; modeled quantity **2**; provisional.
   - Instances: `throttle-plate-1`, `throttle-plate-2`
   - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, throttle-plate-retention-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.

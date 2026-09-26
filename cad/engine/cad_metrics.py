@@ -21,7 +21,10 @@ def step_comparison_shape(shape):
 
 def solid_volume(shape, method="default"):
     if method == "default":
-        return shape.volume
+        # STEP may reopen a located solid as nested compounds. build123d
+        # Compound.volume can report zero despite a valid enclosed solid.
+        # Measure the actual solids; callers still enforce their count/validity.
+        return sum(solid.volume for solid in shape.solids())
     if method != "adaptive":
         raise ValueError(f"Unknown volume method: {method}")
     props = GProp_GProps()

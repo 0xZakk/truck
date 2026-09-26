@@ -1,0 +1,13 @@
+{
+  "status": "PASS promotion actor/source binding",
+  "stage_validation_sha256": "260592a09d457b261800bda499b151561a1a667c37d3fd4f248437ee731509f5",
+  "baseline_actor_sha256": {
+    "cad/engine/generated/efi-upper-intake.step": "294ed430dd14a91e9ebf87104fa2fd8c7a903d278e8835c5d2ef342865790f75",
+    "models/engine/efi-upper-intake.glb": "bef67f90afec94074248f8370255f3f278f675dd88bfe5352f8eff26db47af31"
+  },
+  "source_sha256": {
+    "scripts/check-intake-exterior-promotion.py": "404b506bec679f7c97413d902ce0addbe74a2e5324dcab8192871a9ddd71bc2f",
+    "scripts/install-intake-exterior.py": "d180277f2c4f70031ed06946d4f878ccf0ad8b5040287778ebee60fac06cc98c",
+    "inventory/engine/intake-cap-coordination-installation.json": "fd21eb568a439c3a301e5d9630dcd7a6c63e2cf755d228a3b9103418f13443ed"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "installed": true,
+  "manifest_sha256": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+  "candidate_evidence": {
+    "exterior_adaptation": {
+      "installed_report_sha256": "fdac642f0afcd285f239588ba40f8180a2208ad2c8d6f65460b4392a45093f27",
+      "stage_report_sha256": "260592a09d457b261800bda499b151561a1a667c37d3fd4f248437ee731509f5",
+      "accepted_geometry_sha256": {
+        "step/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+        "models/efi-upper-intake.glb": "32a2c8ff438fbdf5a80ba1f782cbba1a6cf9e8b905dbf5d453cd84f734c89eef"
+      }
+    },
+    "closure_installer_sha256": "38388885b2b60cd3803df5b18af1e9138fb6f81841940a67446264b7637bd3c1",
+    "electrical_report_sha256": "f4fff650057ffff7def5e08e654f17375a04e52f8b64e0e6197ae0b2dd6009a7",
+    "closure_installed_report_sha256": "dad48f22c4801b609b698d3fdd9f9bf9f7c07842600d727b921d473b856f81ae",
+    "closure_source_sha256": "18a469b9aa5ca61046790c835d709cb782ea4ae3d34adf507353b298b1600a36",
+    "attachment_source_sha256": "2827b59ccf637ec8e0ec752387a7cce3a3aa6106f368f261c038c635665a3a27"
+  },
+  "adaptation_chain": [
+    "base IAC/throttle",
+    "iac_attachment_integration.install",
+    "iac_closure_integration.install",
+    "iac_electrical_integration.install"
+  ],
+  "part_bindings": [
+    {
+      "id": "iac-terminal-vpwr-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 11.474689440808223,
+      "reference": "iac-electrical-candidate/iac-terminal-vpwr-estimated.step"
+    },
+    {
+      "id": "iac-connector-cap",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 917.4568993470864,
+      "reference": "iac-electrical-candidate/iac-connector-cap.step"
+    },
+    {
+      "id": "iac-coil",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 421.79022967096546,
+      "reference": "iac-electrical-candidate/iac-coil.step"
+    },
+    {
+      "id": "iac-coil-carrier-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 936.4627331207573,
+      "reference": "iac-electrical-candidate/iac-coil-carrier-estimated.step"
+    },
+    {
+      "id": "iac-terminal-control-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 11.47468944778495,
+      "reference": "iac-electrical-candidate/iac-terminal-control-estimated.step"
+    },
+    {
+      "id": "iac-valve-body",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 1819.7132126198912,
+      "reference": "iac-closure-candidate/iac-valve-body.step"
+    },
+    {
+      "id": "iac-end-plug",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 348.91156329298923,
+      "reference": "iac-closure-candidate/iac-end-plug.step"
+    },
+    {
+      "id": "iac-mount-screw-1-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 191.4818866416635,
+      "reference": "iac-attachment-candidate/iac-mount-screw-1-estimated.step"
+    },
+    {
+      "id": "iac-armature",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 76.59202889451913,
+      "reference": "iac-attachment-candidate/iac-armature.step"
+    },
+    {
+      "id": "iac-gasket",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 174.18978156524162,
+      "reference": "iac-attachment-candidate/iac-gasket.step"
+    },
+    {
+      "id": "throttle-housing",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 15310.226083284178,
+      "reference": "iac-attachment-candidate/throttle-housing.step"
+    },
+    {
+      "id": "iac-return-spring-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "translation_fault_mm3": 158.14189444906967,
+      "reference": "iac-attachment-candidate/iac-return-spring-estimated.step"
+    }
+  ],
+  "exports": {
+    "iac-terminal-vpwr-estimated": {
+      "mesh_bounds_error_mm": 1.9649578468339257e-05,
+      "watertight_after_position_weld": true
+    },
+    "iac-connector-cap": {
+      "mesh_bounds_error_mm": 0.002372074289416659,
+      "watertight_after_position_weld": true
+    },
+    "iac-coil": {
+      "mesh_bounds_error_mm": 0.0018383964896209193,
+      "watertight_after_position_weld": true
+    },
+    "iac-coil-carrier-estimated": {
+      "mesh_bounds_error_mm": 0.0018976794315328505,
+      "watertight_after_position_weld": true
+    },
+    "iac-terminal-control-estimated": {
+      "mesh_bounds_error_mm": 3.635883331298828e-06,
+      "watertight_after_position_weld": true
+    }
+  },
+  "contacts": {
+    "terminal_coil_mm2": [
+      0.28274333886765823,
+      0.28274333886765896
+    ],
+    "carrier_body_mm2": 62.54910973297277,
+    "carrier_cap_mm2": 238.17187708836298,
+    "spring_plug_mm2": 18.84955592153876,
+    "spring_pintle_mm2": 18.84955592153876,
+    "closure_axial_mm2": 77.84866595595486,
+    "closure_radial_mm2": 39.144244463731354
+  },
+  "isolation": {
+    "terminal_separation_mm": 1.8,
+    "case_gaps_mm": [
+      3.375444679663228,
+      3.3754446796632007
+    ]
+  },
+  "terminal_withdrawal_overlap_mm3": [
+    4.129553789885449,
+    4.351814274481134,
+    4.129553779359963,
+    4.351814303627547
+  ],
+  "negative_controls": {
+    "correct_key_overlap_mm3": 0.0,
+    "reversed_key_overlap_mm3": 3.84,
+    "bridge_contact_mm3": [
+      0.6599999999999998,
+      0.6599999999999999
+    ],
+    "open_tail_gap_mm": 0.29999999999998295
+  },
+  "armature_motion_overlap_mm3": {
+    "-1.0": 0.0,
+    "-0.5": 0.0,
+    "0.0": 0.0,
+    "0.5": 0.0,
+    "1.0": 0.0
+  },
+  "internal_and_intake_collisions": [],
+  "existing_envelope_outside_mm3": {
+    "iac-terminal-vpwr-estimated": 0.0,
+    "iac-connector-cap": 0.0,
+    "iac-coil": 0.0,
+    "iac-coil-carrier-estimated": 0.0,
+    "iac-terminal-control-estimated": 0.0
+  },
+  "full_chain_replay_difference_mm3": {
+    "iac-mount-screw-estimated": 0.0,
+    "iac-terminal-control-estimated": 0.0,
+    "iac-terminal-vpwr-estimated": 0.0,
+    "iac-armature": 0.0,
+    "iac-connector-cap": 0.0,
+    "iac-coil": 0.0,
+    "iac-end-plug": 0.0,
+    "iac-gasket": 0.0,
+    "iac-coil-carrier-estimated": 0.0,
+    "iac-return-spring-estimated": 0.0,
+    "throttle-housing": 0.0,
+    "iac-valve-body": 0.0
+  },
+  "standalone_replay_difference_mm3": {
+    "iac-terminal-vpwr-estimated": 0.0,
+    "iac-connector-cap": 0.0,
+    "iac-coil": 0.0,
+    "iac-coil-carrier-estimated": 0.0,
+    "iac-terminal-control-estimated": 0.0
+  },
+  "translated_chain_replay_difference_mm3": {
+    "iac-mount-screw-estimated": 0.0,
+    "iac-terminal-control-estimated": 0.0,
+    "iac-terminal-vpwr-estimated": 0.0,
+    "iac-armature": 0.0,
+    "iac-connector-cap": 0.0,
+    "iac-coil": 0.0,
+    "iac-end-plug": 0.0,
+    "iac-gasket": 0.0,
+    "iac-coil-carrier-estimated": 0.0,
+    "iac-return-spring-estimated": 0.0,
+    "throttle-housing": 0.0,
+    "iac-valve-body": 0.0
+  },
+  "rotated_chain_replay_difference_mm3": {
+    "iac-mount-screw-estimated": 0.0,
+    "iac-terminal-control-estimated": 0.0,
+    "iac-terminal-vpwr-estimated": 0.0,
+    "iac-armature": 0.0,
+    "iac-connector-cap": 0.0,
+    "iac-coil": 0.0,
+    "iac-end-plug": 0.0,
+    "iac-gasket": 0.0,
+    "iac-coil-carrier-estimated": 0.0,
+    "iac-return-spring-estimated": 0.0,
+    "throttle-housing": 0.0,
+    "iac-valve-body": 0.0
+  },
+  "changed_cap_frame_rejected": true,
+  "chain_callback_order": [
+    "iac-armature",
+    "iac-gasket",
+    "iac-mount-screw-estimated",
+    "iac-return-spring-estimated",
+    "iac-valve-body",
+    "throttle-housing",
+    "iac-end-plug",
+    "iac-valve-body",
+    "iac-coil",
+    "iac-coil-carrier-estimated",
+    "iac-connector-cap",
+    "iac-terminal-control-estimated",
+    "iac-terminal-vpwr-estimated"
+  ],
+  "learning_references_valid": true,
+  "relevant_inputs_stable": true,
+  "artifact_sha256": {
+    "cad/engine/generated/iac-valve-body.step": "3b758fab6969e2b490bae40cf8050db32e60601b43d15a6bdae2ee5ff4ac4403",
+    "cad/engine/generated/iac-gasket.step": "b79abdc0499fff0be709737529bb2e1bc42e06ec9e3a745b385e865299699695",
+    "cad/engine/generated/iac-end-plug.step": "f8932e0a0a51b2c998f2c625dc3c10f6458b1f99b7902140b5dff0243ed24d5d",
+    "cad/engine/generated/iac-solenoid-can.step": "4282bcd6eff8fa7acb0f7974a3524e7a399a29a7305278de810c2df7b1c8ab4b",
+    "cad/engine/generated/iac-coil.step": "6fb96c4d98edf83b4a1f1acac44ae4df4ac9b47a55054d4d02149cfd353e6b6f",
+    "cad/engine/generated/iac-armature.step": "3b7140c8b93ed8e04be6a2b533b4d06c730678609e10da2679043957277385f5",
+    "cad/engine/generated/iac-pintle.step": "1d2edf63fb000c6a097970852d4e9a55bbb52bff1ba55d10485cbd0b0444faa6",
+    "cad/engine/generated/iac-connector-cap.step": "bd24a100ffe893f9589164b37e8a40d13085f9cede161f2a31a3bd8553c6b3e1",
+    "cad/engine/generated/iac-mount-screw-estimated.step": "107cc579cb752cfd3acd4aea8e90d325da804d04f8fdb0b941a07a5b2e519293",
+    "cad/engine/generated/iac-return-spring-estimated.step": "9138d80d9ba2b90a9fb2c7e19faaa9981228b26d752cae1377f2622dd3e31be2",
+    "cad/engine/generated/iac-coil-carrier-estimated.step": "a72f5e5a8a35111616591013abcfab52a50d9a5de3b77bc13f43537b2ad9fd87",
+    "cad/engine/generated/iac-terminal-control-estimated.step": "c776e3349b71b02258fa3eae1e99456dddff971dfd548776a1a08b10b0f6ab4a",
+    "cad/engine/generated/iac-terminal-vpwr-estimated.step": "829b7cb5fe5511a9b87620702847611c8f8f2e32a2a2e85b27a88579f79cc91d",
+    "cad/engine/generated/throttle-housing.step": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "cad/engine/generated/iac-electrical-candidate/iac-terminal-vpwr-estimated.step": "edc910149c9a9040bcb8418cfc7c2a134d2e0c25041037354673ce9ca672f772",
+    "cad/engine/generated/iac-electrical-candidate/iac-connector-cap.step": "dfc8f3f69804c54449d0a06c1235aab14355a65084fc618b492e8e19f516d8a8",
+    "cad/engine/generated/iac-electrical-candidate/iac-coil.step": "ecc90729faaac137db0be98284f927c6d72ed4562642884efe3b520a80da4310",
+    "cad/engine/generated/iac-electrical-candidate/iac-coil-carrier-estimated.step": "716cc31f6e47130a34e63afa29f68d64efe0fc27f8e1b2b97c93e07685803a41",
+    "cad/engine/generated/iac-electrical-candidate/iac-terminal-control-estimated.step": "eff228d3d3d7a2ae8949ccf5f45e8ec20aba6183e233098dcc1c13c32c8927f3",
+    "cad/engine/generated/iac-closure-candidate/iac-valve-body.step": "fe5f03edcac006c11bc807d1fad807a3d9eecdf5c507e924a88aa946de1eef0e",
+    "cad/engine/generated/iac-closure-candidate/iac-end-plug.step": "24d3387a66702465a5a05571c9e91179a595d49691acf9deb265ede72dd410d5",
+    "cad/engine/generated/iac-attachment-candidate/iac-mount-screw-1-estimated.step": "4bd0f4dac3d438f9d25953dd6c9c279e872a4caa2d855c7e92152409190beb09",
+    "cad/engine/generated/iac-attachment-candidate/iac-armature.step": "0747110364c97096eec14fd87e698cc8985ed112ca5416db72061ba14b51d0ab",
+    "cad/engine/generated/iac-attachment-candidate/iac-gasket.step": "2dcca922e364ba41299d5fca75c9581147702d87470b1646450ff15aa3d0da57",
+    "cad/engine/generated/iac-attachment-candidate/throttle-housing.step": "d5a81c7662cb9ed0b577a61900f22071a8f1d5175189d56e5d9d88e17eea3357",
+    "cad/engine/generated/iac-attachment-candidate/iac-return-spring-estimated.step": "9285a61a4ab1464a682750b9557423490d7ab21258d6157e1fd15943621903db",
+    "models/engine/iac-terminal-vpwr-estimated.glb": "8081bd963911f0b5d70ecfcd4c42c5028e1290860ca21a5dd6579a449a4789f8",
+    "models/engine/iac-connector-cap.glb": "87df3cb0be3838c73e49cf2268106bc604d966df1ae59dfcbb3252f1e96e7b37",
+    "models/engine/iac-coil.glb": "6e5b45a7e1ba3a8176a020a888e98c7f68deb35fcaaac9ceeb01fc2a86575fae",
+    "models/engine/iac-coil-carrier-estimated.glb": "9de28396ef890488c1be1aafaac8c05af7bef8a2d94dc01c7e8484735996dc66",
+    "models/engine/iac-terminal-control-estimated.glb": "0fa85d80a95cdbb0d07a03db52c8e6500a07a76620690b60fe5db9df4c9bb86e"
+  },
+  "limits": [
+    "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+    "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+    "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+  ]
+}

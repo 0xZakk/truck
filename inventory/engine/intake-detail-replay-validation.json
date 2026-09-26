@@ -1,0 +1,183 @@
+{
+  "status": "PASS installed-input ordered adapter replay; not a clean whole-engine rebuild",
+  "manifest_sha256": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+  "canonical_modified": false,
+  "definitions": 725,
+  "occurrences": 1333,
+  "geometry": [
+    {
+      "definition": "efi-upper-intake",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "egr-control-vacuum-hose",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "egr-exhaust-tube",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "egr-tube-heat-sleeve",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "egr-tube-valve-nut",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-armature",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-coil",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-coil-carrier-estimated",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-connector-cap",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-end-plug",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-gasket",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-mount-screw-estimated",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 2
+    },
+    {
+      "definition": "iac-return-spring-estimated",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-terminal-control-estimated",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-terminal-vpwr-estimated",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "iac-valve-body",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "oil-filler-cap",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "oil-filler-cap-seal",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "throttle-housing",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    },
+    {
+      "definition": "throttle-plate",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 2
+    },
+    {
+      "definition": "throttle-plate-screw-illustrative",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 4
+    },
+    {
+      "definition": "throttle-shaft",
+      "local_symmetric_difference_mm3": 0.0,
+      "occurrences": 1
+    },
+    {
+      "definition": "valve-cover",
+      "local_symmetric_difference_mm3": 0,
+      "occurrences": 1
+    }
+  ],
+  "input_artifact_sha256": {
+    "cad/engine/generated/iac-coil.step": "6fb96c4d98edf83b4a1f1acac44ae4df4ac9b47a55054d4d02149cfd353e6b6f",
+    "cad/engine/generated/throttle-housing.step": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+    "cad/engine/generated/egr-tube-heat-sleeve.step": "de598c5266fc0034d962415645c9ac2ec48e5c683cd109b19f8842c70339c0c5",
+    "models/engine/egr-control-vacuum-hose.glb": "e8012fb8347cff05403e9f2f74e509517553ae61ee3bb6563a76a59eabb09872",
+    "cad/engine/generated/iac-terminal-vpwr-estimated.step": "829b7cb5fe5511a9b87620702847611c8f8f2e32a2a2e85b27a88579f79cc91d",
+    "cad/engine/generated/iac-end-plug.step": "f8932e0a0a51b2c998f2c625dc3c10f6458b1f99b7902140b5dff0243ed24d5d",
+    "cad/engine/generated/iac-connector-cap.step": "bd24a100ffe893f9589164b37e8a40d13085f9cede161f2a31a3bd8553c6b3e1",
+    "cad/engine/generated/throttle-plate.step": "02e1bfbc64ed2c14c9d69584522a461d8204adee92ed728a83c6f950ed2f3286",
+    "models/engine/iac-connector-cap.glb": "87df3cb0be3838c73e49cf2268106bc604d966df1ae59dfcbb3252f1e96e7b37",
+    "models/engine/efi-upper-intake.glb": "32a2c8ff438fbdf5a80ba1f782cbba1a6cf9e8b905dbf5d453cd84f734c89eef",
+    "models/engine/egr-tube-heat-sleeve.glb": "13f159af6226d736ece278947f49337a65a02fe1a73af7cfad83c82c52232e4c",
+    "models/engine/iac-coil.glb": "6e5b45a7e1ba3a8176a020a888e98c7f68deb35fcaaac9ceeb01fc2a86575fae",
+    "models/engine/throttle-plate.glb": "855f162f489403cb6ff457fe5d681db01364eebafd4daf029ce0aaf35323615a",
+    "models/engine/iac-terminal-vpwr-estimated.glb": "8081bd963911f0b5d70ecfcd4c42c5028e1290860ca21a5dd6579a449a4789f8",
+    "cad/engine/generated/egr-control-vacuum-hose.step": "250baa7d2f26700aba296c883ddb4a5712b1a3657ca2512e939a5e5338315df1",
+    "models/engine/egr-exhaust-tube.glb": "b35b30e5ae5834d391e8258b795cb0ec7053ed9d38a90e771683fff6c97e95b9",
+    "models/engine/iac-terminal-control-estimated.glb": "0fa85d80a95cdbb0d07a03db52c8e6500a07a76620690b60fe5db9df4c9bb86e",
+    "models/engine/throttle-housing.glb": "686f03fcede26497c959b00e411cb2590567535bba64b4f1fa5c41db81a3405e",
+    "models/engine/oil-filler-cap.glb": "da76a9c797ef739238c11956b14777edd9b1c454d1c5c59a05364b5bf4e4d433",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "cad/engine/generated/iac-terminal-control-estimated.step": "c776e3349b71b02258fa3eae1e99456dddff971dfd548776a1a08b10b0f6ab4a",
+    "models/engine/throttle-shaft.glb": "77b008f75c8a3b283899036277f57419c2fa3452b5b23b68e7dc6d667f0fc0b0",
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "cad/engine/generated/egr-tube-valve-nut.step": "d6ff9d2b45b8c67bb50c9087b097df2f59d48852bedb99793aed71b82f44edd4",
+    "models/engine/iac-gasket.glb": "ed696d78023ce74dc1556865737c520fa03cffa9c5b2cc8c90a0e2e108209a81",
+    "models/engine/iac-armature.glb": "e8477a0926b23bc2625f3b6d3a6417c441077472b1cde4cf350c3e6bd68c7d2f",
+    "models/engine/iac-mount-screw-estimated.glb": "a718daf652837aba800e3dd4f960b478cc3a6b5c6d5e6157b77632be85d71c7d",
+    "cad/engine/generated/throttle-plate-screw-illustrative.step": "7d2f27d085be037232c52a6902051bf59987840cf1f4130558900add8b498896",
+    "cad/engine/generated/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+    "cad/engine/generated/iac-coil-carrier-estimated.step": "a72f5e5a8a35111616591013abcfab52a50d9a5de3b77bc13f43537b2ad9fd87",
+    "models/engine/iac-end-plug.glb": "cd5926396c60695d488ae3a0cc69ae9b557b980f001e6e04b6989067e8f4103a",
+    "cad/engine/generated/iac-armature.step": "3b7140c8b93ed8e04be6a2b533b4d06c730678609e10da2679043957277385f5",
+    "cad/engine/generated/iac-valve-body.step": "3b758fab6969e2b490bae40cf8050db32e60601b43d15a6bdae2ee5ff4ac4403",
+    "cad/engine/generated/egr-exhaust-tube.step": "5e8b92d1cc3b8ba635f8406f2d849b7098e086a38050f9cdf3245ef92cd2720d",
+    "models/engine/egr-tube-valve-nut.glb": "4fd2218213f780a28e29214a5a00c5a0915c2b7daf719dd5163002a7f45c484d",
+    "models/engine/iac-valve-body.glb": "b7d7a19ea3f721e8986d5297e0b79c0f0dd7241322df5a2e9c6b3b4fbae13a8a",
+    "models/engine/oil-filler-cap-seal.glb": "d5af029165a03b8e79f08e7e86c3211a0150fa28c9aa808a9eddf9996b152d15",
+    "cad/engine/generated/iac-return-spring-estimated.step": "9138d80d9ba2b90a9fb2c7e19faaa9981228b26d752cae1377f2622dd3e31be2",
+    "cad/engine/generated/oil-filler-cap.step": "0b8797a35364598e0cb599386e05ef1938978e47a9d7cf2eb012eb0f7c96ced1",
+    "cad/engine/generated/iac-gasket.step": "b79abdc0499fff0be709737529bb2e1bc42e06ec9e3a745b385e865299699695",
+    "models/engine/throttle-plate-screw-illustrative.glb": "b8f9df1e58c1fbf784656986fa4fc8d8633370ff7965bf68689eb3bdf0a6aee4",
+    "models/engine/iac-coil-carrier-estimated.glb": "9de28396ef890488c1be1aafaac8c05af7bef8a2d94dc01c7e8484735996dc66",
+    "cad/engine/generated/iac-mount-screw-estimated.step": "107cc579cb752cfd3acd4aea8e90d325da804d04f8fdb0b941a07a5b2e519293",
+    "models/engine/valve-cover.glb": "4d48f38bf633850bd31c29b91079d66ce9b858626846b9b9ed75c29f192095d8",
+    "cad/engine/generated/oil-filler-cap-seal.step": "2bb1565eef921afa77174d2547d1f9b904f7dd467bfbbbe7802720392b441614",
+    "models/engine/iac-return-spring-estimated.glb": "760b6dd26766451c707404fbd8d40889f9acf6eeb8d95518b75cb545b2eed463"
+  },
+  "source_sha256": {
+    "cad/engine/intake_cap_coordination.py": "d915eef8d603883f5f6978f6e6e3abc3cb80c8e2cc131064073ab2e7c89dfec4",
+    "cad/engine/iac_attachment_integration.py": "ec868b974e4f638fa423de3d9a4ff1d7c1dd367ba71c431e51cb4b4ca62cb3b7",
+    "cad/engine/throttle_plate_fasteners_integration.py": "70e3fc3b57d2cacf658c79b70d841646502bbbb289f2ddff9d2fb89304e1dd79",
+    "cad/engine/intake_exterior_integration.py": "fbf275489cbdc54464763aeac149c5c08bced66e8f909aa9c96d1e1f5d197f5a",
+    "cad/engine/iac_closure_integration.py": "c6ba657c04a2844f115dab941c2a3a9e4e3e4daa19e4a19850e63be73e945b87",
+    "cad/engine/iac_electrical_integration.py": "1b3071ed4bca8574c7a0938e0250ab411fdc24f2492edb5b14d985cffad764f9"
+  },
+  "checker_sha256": "48ecf9ae6fb9e5fa482c140fdf03712e278a7971a030bd2e1f6ec5f19eea1157",
+  "exporter_sha256": "d63ba0e00e5ba476654551c2cd4b4d9e8cf5c1d848bdd1b4d473c61eb92d74b5",
+  "metrics_sha256": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af"
+}

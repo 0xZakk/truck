@@ -1,0 +1,96 @@
+{
+  "schema": "iac-electrical-review-v1",
+  "issue": 44,
+  "baseline_commit": "fb2a1e756cf5e0d6ed925975312231406fce18ed",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/563186997.png",
+      "sha256": "a5bb2f7924af69fd47621471bdabc8c2b25b7a7a47b0d304f52c5ff67aebbd9f",
+      "review": "actual image viewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/442501993.png",
+      "sha256": "a1f0e374708037f6173a34d453025ff13724aa11b2db828a903b43d858d62ef8",
+      "review": "actual image viewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Testing%20and%20Inspection/Pinpoint%20Tests/KE%20-%20Idle%20Air%20Control%20Control%20Solenoid/KE4%20-%20Measure%20IAC%20Solenoid%20Resistance/index.html",
+      "sha256": "260e2c591423f02d83b4e95da28d20c4b7329997d850ab6a09035d2bf62be2a1",
+      "review": "text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Testing%20and%20Inspection/Pinpoint%20Tests/KE%20-%20Idle%20Air%20Control%20Control%20Solenoid/KE5%20-%20Check%20For%20Internal%20Short%20to%20IAC%20Solenoid%20Case/index.html",
+      "sha256": "5f8ddfbf586e8602742c0d7d607f9b8f409ce14eb377f4befb988c4ec65f1314",
+      "review": "text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Diagrams/index.html",
+      "sha256": "673b74fad434297c2860eb8003490d666d14f5a988471c1e423c570a149d63ab",
+      "review": "text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Specifications/Electrical%20Specifications/index.html",
+      "sha256": "15b05c5ef53e5d96b378a20f3f2c18ac43ed7813ca6732f50b073cbebf49c768",
+      "review": "text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Parts%20Information/index.html",
+      "sha256": "8d9d4060df55915b41f266ffee7aaab4e05f1ca166115ab4e617fae35c37e441",
+      "review": "text reviewed"
+    },
+    {
+      "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+      "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+      "pages": [
+        {
+          "pdf_page": 75,
+          "printed_page": "23-2",
+          "review": "full page rendered and viewed"
+        },
+        {
+          "pdf_page": 360,
+          "printed_page": "152-25",
+          "review": "full page rendered and viewed"
+        }
+      ]
+    }
+  ],
+  "supported": {
+    "connector": "C1007",
+    "terminal_count": 2,
+    "connector_color": "BK in EVTM index; not a terminal alloy/plating claim",
+    "circuits": [
+      {
+        "name": "VPWR",
+        "number": 361,
+        "wire_color": "red"
+      },
+      {
+        "name": "IAC control",
+        "number": 264,
+        "wire_color": "white/light blue",
+        "pcm_pin": 21
+      }
+    ],
+    "topology": "Coil and suppression diode in parallel between the two terminals; diode cathode toward VPWR as drawn.",
+    "service_test_reference": "FSM lists6\u201313ohm solenoid range and greater than10000ohm terminal-to-case test criterion. These are source facts, not CAD validation or repair instructions."
+  },
+  "view_mapping": {
+    "component_face": "FSM563186997: IAC contact above VPWR in drawing, asymmetric outline. Candidate viewed from+X toward-X,+Z up.",
+    "harness_face": "FSM442501993 explicitly says connectors viewed into harness mating surface; cavity/key geometry must not be copied unmirrored.",
+    "numbering": "21/37/57 in harness diagram are breakout/PCM pins, not connector cavity numbers."
+  },
+  "inferences": [
+    "Estimated two blade-like conductive terminal/tail studies in a keyed insulating carrier. Physical blade section, position and retention unknown.",
+    "Separate insulating bobbin/carrier is an educational construction satisfying terminal-to-case isolation topology; actual internal insulator decomposition unverified.",
+    "Coil shape is a winding envelope; internal winding/end-joint method is not modeled.",
+    "Diode physical package, dimensions and location deliberately not fabricated."
+  ],
+  "unknowns": [
+    "Owner installed IAC variant and connector clocking",
+    "Exact key/latch/cavity dimensions and terminal plating/alloy",
+    "Winding wire gauge/turns/insulation/termination and electromagnetic behavior",
+    "Diode packaging and internal attachment"
+  ],
+  "scope": "Engine side only, no vehicle harness routing or production mating connector geometry"
+}

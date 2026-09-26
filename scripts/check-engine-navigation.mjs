@@ -22,7 +22,7 @@ for(const [identifier,ratio] of [['oil-pump-intermediate-rotation',-.5],['oil-pu
 }
 assert.equal(manifest.occurrences.find(part=>part.id==='oil-pump-drive-retainer').parent,'oil-pump-intermediate-rotation');
 assert.equal(nav.parts('oil-pickup-assembly').length,3);
-assert.equal(nav.parts('induction').length,219);
+assert.equal(nav.parts('induction').length,222);
 assert.equal(nav.parts('intake-head-locator').length,1);
 assert.ok(nav.ancestors('intake-head-locating-dowel').some(node=>node.id==='induction'));
 assert.equal(nav.parts('fuel-test-valve').length,8);
@@ -32,7 +32,7 @@ for(const identifier of ['front-manifold-lifting-eye','front-manifold-stud13','f
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
 assert.equal(nav.parts('intake-studs').length,7);
-assert.equal(nav.parts('throttle-assembly').length,42);
+assert.equal(nav.parts('throttle-assembly').length,45);
 for(const identifier of ['throttle-lever-estimated','throttle-cable-ball-stud-estimated','throttle-lever-retaining-pin-estimated','throttle-linkage-shield-estimated','throttle-shield-pushpin-estimated','throttle-return-spring-illustrative']){
   assert.ok(nav.ancestors(identifier).some(node=>node.id==='throttle-assembly'));
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
@@ -80,7 +80,7 @@ assert.equal(nav.search('rear camshaft bore plug')[0].id,'rear-cam-plug');
 assert.deepEqual(nav.ancestors('cam-timing-key').map(n=>n.id),['engine','closures','cam-retention-assembly','cam-timing-key']);
 for(const line of ['supply','return'])assert.equal(nav.parts(`fuel-${line}-coupling`).length,8);
 for(let i=1;i<=6;i++)assert.equal(nav.parts(`fuel-injector-${i}`).length,13);
-assert.equal(nav.parts('idle-air').length,11);
+assert.equal(nav.parts('idle-air').length,14);
 assert.equal(nav.parts('throttle-sensor').length,7);
 assert.equal(nav.parts('exhaust').length,7);
 

@@ -864,6 +864,13 @@ def main():
     iac_attachment_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     import throttle_plate_fasteners_integration as throttle_plate_retention
     throttle_plate_retention.install(define,add,defs,occurrences,assemblies,shapes)
+    import intake_exterior_integration
+    intake_exterior_integration.install(define,defs,occurrences,assemblies,shapes,
+        {**BASE['mechanism'],'firing_order':[1,5,3,6,2,4],'cylinder_phases_deg':PHASES,'bore_pitch_mm':PITCH,'deck_height_mm':DECK},OUT)
+    import iac_closure_integration
+    iac_closure_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import iac_electrical_integration
+    iac_electrical_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -898,6 +905,8 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/intake-cap-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/iac-attachment-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/throttle-plate-fasteners-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/iac-closure-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/iac-electrical-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -918,6 +927,9 @@ def main():
     sources.update(intake_cap_coordination.sources())
     sources.update(iac_attachment_integration.sources())
     sources.update(throttle_plate_retention.source())
+    sources.update(intake_exterior_integration.sources())
+    sources.update(iac_closure_integration.sources())
+    sources.update(iac_electrical_integration.sources())
     for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
         sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}

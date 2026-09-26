@@ -1,0 +1,21 @@
+{
+  "status": "INSTALLED exterior; independent browser acceptance pending",
+  "manifest_sha256": "f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70",
+  "stage_validation_sha256": "260592a09d457b261800bda499b151561a1a667c37d3fd4f248437ee731509f5",
+  "candidate_report_sha256": "43a195748b0113d689d9be4c2759a6c18e093dcdc25d7be43ea1b5ec8c9f28b4",
+  "definitions": 722,
+  "occurrences": 1330,
+  "static_pairs": 246,
+  "current_throttle_motion": {
+    "phases": 46,
+    "actors": 12,
+    "pairs": 552,
+    "failures": []
+  },
+  "frame_changes": false,
+  "promotion_source_sha256": {
+    "scripts/install-intake-exterior.py": "d180277f2c4f70031ed06946d4f878ccf0ad8b5040287778ebee60fac06cc98c",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b"
+  },
+  "after_manifest_sha256": "5c0435fd45ae5083f96a3d9cdf0058c4ac4283051eba45994dacbe7dd8d56744"
+}

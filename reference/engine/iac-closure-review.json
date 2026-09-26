@@ -1,0 +1,50 @@
+{
+  "schema": "iac-closure-review-v1",
+  "issue": 44,
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Description%20and%20Operation/index.html",
+      "sha256": "393447c3030dc3d90ee916d3cfa665cee7e7cae7cc10e0cdb1f11ca0096aef69",
+      "review": "read text"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Service%20and%20Repair/Removal%20and%20Replacement/index.html",
+      "sha256": "ebe069b6da584476fe6d42464dfaeeea78f2e206f8179f49f8219c91a179b6fb",
+      "review": "read text"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/441899701.png",
+      "sha256": "441816fb78f9e316fde040351e7ee975d102dbcef4b0fbf8a972420f2389df01",
+      "review": "viewed actual image pixels"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/442083839.png",
+      "sha256": "ea2c72deb1aa1192ea428ac1575c49c5a3cedb157b94282e4223d7770a132279",
+      "review": "viewed actual image pixels"
+    }
+  ],
+  "review": "Exact1994 diagrams viewed again at original resolution; service/operation text reviewed in preceding attachment study.",
+  "supported": [
+    "A distinct circular chamber-end closure/rim is drawn for the unvented illustration.",
+    "The manual distinguishes unvented and vent/filter designs; installed identity unresolved."
+  ],
+  "not_determined": [
+    "Pressed, crimped/staked or threaded retention cannot be distinguished reliably from the available image pixels/text.",
+    "No dimensions, material, sealing compound, independent elastomer seal, interference fit or separate closure service procedure established."
+  ],
+  "educational_choice": "A recessed flanged metal plug, captured by an integral formed body lip and rear shoulder. Continuous coincident metal surfaces close the geometric gap. Not asserted to be Ford construction or a leak-rate solution.",
+  "parameters": {
+    "front_x": -24,
+    "lip_back_x": -23.7,
+    "shoulder_x": -23.3,
+    "spring_seat_x": -23,
+    "bore_radius": 8.5,
+    "flange_radius": 9.2
+  },
+  "limits": [
+    "All listed parameters are model-derived estimates.",
+    "No extra elastomer inferred. No threads invented.",
+    "Lip forming, material strain, contact pressure, thermal expansion, strength, leak-rate and actual serviceability unvalidated.",
+    "Candidate preserves the already illustrative spring and unresolved valve variant."
+  ]
+}
