@@ -1,0 +1,125 @@
+{
+  "status": "research only; production spring count/anchors unresolved; no CAD authorized by this evidence alone",
+  "issue": 43,
+  "date": "2026-09-26",
+  "baseline_commit": "5567d751abcf6a9bfac84bdf87ce0d7f0d4dac5c",
+  "input_hashes": {
+    "cad/engine/throttle_linkage_candidate.py": "9e6149128e65e903fe27e667cf0016ba9fe80af4d1083f917ddf3b8baf9f4b78",
+    "cad/engine/throttle_shield_candidate.py": "bcb84f8d452b8c3f88769b44db391d9cf8585d71c35ae4f6bd1dd4d0e4115de8",
+    "reference/engine/throttle-linkage-review.json": "8e59eae527b73f83eb16a1f3c8366cb4a979cbf493b6c1ee4841e5df2487c984",
+    "cad/engine/generated/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f"
+  },
+  "factory_diagrams": [
+    {
+      "id": "690090240",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690090240.png",
+      "sha256": "80fb8776efe6de8e6c997e7129255f1a3c5ebf97e917f25d5bfccbd111f4f86c",
+      "url": "https://charm.li/images/DM05Q313/ford10/690090240/",
+      "reviewed": "visually inspected;690370320 previously reviewed in linkage research"
+    },
+    {
+      "id": "690365451",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690365451.png",
+      "sha256": "a016502163071f6953ad7b28e5ddbde982d1133eed07df1e2a817bb1e63761c4",
+      "url": "https://charm.li/images/DM05Q313/ford10/690365451/",
+      "reviewed": "visually inspected;690370320 previously reviewed in linkage research"
+    },
+    {
+      "id": "689805816",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/689805816.png",
+      "sha256": "b612aefd74b61e1650d4d9778e1ee18bff981455def3f66d6152bceb3cfab1c2",
+      "url": "https://charm.li/images/DM05Q313/ford10/689805816/",
+      "reviewed": "visually inspected;690370320 previously reviewed in linkage research"
+    },
+    {
+      "id": "690370320",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690370320.png",
+      "sha256": "8062e600860a08f1d335fbf14c1ccf2f374da2fda5f8dad1523b049c018e269e",
+      "url": "https://charm.li/images/DM05Q313/ford10/690370320/",
+      "reviewed": "visually inspected;690370320 previously reviewed in linkage research"
+    }
+  ],
+  "new_exact_application_text": {
+    "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Testing%20and%20Inspection/Pinpoint%20Tests/Test%20C/",
+    "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Testing%20and%20Inspection/Pinpoint%20Tests/Test%20C/index.html",
+    "sha256": "252df613483303de9e7adcdd5a66281d34e5cf66b1b1eceb7243f735f2df2c70",
+    "observation": "With cable disconnected from ball stud, TestC separately checks cable core return and compression/recovery of spring at throttle-body end of cable. This establishes a cable-end spring function, not the count of shaft-mounted return springs."
+  },
+  "specimen": {
+    "url": "https://www.ebay.com/itm/127349857337",
+    "image_url": "https://i.ebayimg.com/images/g/-wwAAeSw4UtouIZQ/s-l1200.jpg",
+    "sha256": "b4d21c66082ff12a724f5d262aa9b40a1dce07d51895d1a91cc6e2779b45c0db",
+    "visually_reinspected": true,
+    "class": "comparison specimen; exact1994 manual applicability unverified",
+    "observed": "Large coil bank at cable-side lever with bent external wire/leg. A smaller upper coil-looking region and nearby stop screw exist, but hidden endpoints do not allow unambiguous separate spring count or axis assignment.",
+    "limit": "No exploded/orthogonal view identifying every independent wire and both anchors."
+  },
+  "unavailable_lead": {
+    "url": "https://www.ebay.com/itm/257472725875",
+    "claim": "Seller title identifies4.9 MT F2TE-EA; renewed web retrieval still cache miss; images not reviewed."
+  },
+  "conclusions": {
+    "shaft_return_spring_count": null,
+    "nested_or_split_configuration": "unresolved",
+    "upper_vs_lower_coil_regions": "Do not identify both regions as independent coaxial return springs. Perspective, screw-associated coils and other linkage hardware cannot be excluded.",
+    "cable_end_compression_spring": "Separately supported by applicable TestC; not interchangeable with shaft torsion spring.",
+    "stationary_anchor_production": null,
+    "moving_anchor_production": null,
+    "spring_axis_proposal": "Y axis through current shaft X394,Z490; model-derived mapping of cable-side coil topology."
+  },
+  "proposed_anchor_study": {
+    "class": "explicit geometric estimate; not production anchor locations",
+    "stationary": {
+      "parent": "throttle-assembly",
+      "material_probe_world_mm": [
+        389,
+        104,
+        503
+      ],
+      "probe_inside_current_proposed_bracket": true,
+      "proposed_seat_world_mm": [
+        389,
+        103,
+        503
+      ],
+      "change_needed": "New dedicated small tang slot/hole through bracket web; shape/radius to be selected only in later candidate contract. Avoid shield pin atX389,Z514 and shield ear startingZ508."
+    },
+    "moving": {
+      "parent": "throttle-moving",
+      "material_probe_local_mm": [
+        0,
+        65,
+        18
+      ],
+      "probe_inside_current_proposed_lever": true,
+      "world_closed_mm": [
+        394,
+        90,
+        508
+      ],
+      "world_open90_mm": [
+        412,
+        90,
+        490
+      ],
+      "change_needed": "Dedicated tang capture through lever plate, away from ball stud at radial24 mm. Probe is material existence only, not clearance/strength acceptance."
+    },
+    "coil_envelope_trial": "Around shaft axis, outboard of hub/pin and inboard of bracket web. Y94\u2013101 and radial7.5\u201310 mm are exploratory envelopes only, not dimensions or a checked spring; guide/support and every tang route must be solved before CAD acceptance."
+  },
+  "dynamics_plan": [
+    "Hold fixed tang seat in throttle-assembly frame; moving seat follows rigid throttle-moving transform.",
+    "Represent torsional deformation; never rotate entire coil rigidly because that detaches stationary anchor.",
+    "Keep number of physical wires/count unknown until measured or explicitly scope a one-spring educational abstraction approved by integration owner.",
+    "Preserve wire continuity and approximately constant wire length through0\u201390; winding handedness must oppose opening and retain closing bias. Preload, rate and fatigue cannot be claimed without evidence.",
+    "Check 2-degree samples plus endpoint/worst-gap refinement against lever, pin, keyed shaft, housing, bracket, hood, pushpin and cable envelope; verify minimum coil spacing and spring self-clearance.",
+    "Negative controls: stationary tang incorrectly parented to moving group; moving tang detached; reversed winding/torque sign; deliberate coil/hub intersection.",
+    "Spring return requires physical torque/friction characterization before any safety or functional return claim; source warning requires free return from WOT, not just a visually moving spring."
+  ],
+  "next_evidence": [
+    "Applicable manual specimen with both shaft ends and spring bank in several orthogonal views.",
+    "Trace each wire from one free end to the other; distinguish coil behind set screw and cable-end compression spring from shaft torsion elements.",
+    "Record every stationary notch/post and moving tang tab, unloaded/preloaded angle, coil diameters/wire gauge and count."
+  ],
+  "no_cad_changes": true,
+  "asset_policy": "Factory originals inspected in place and remain ignored. Public comparison image is not redistributed. URLs/hashes and observations persist without temporary-path dependency."
+}

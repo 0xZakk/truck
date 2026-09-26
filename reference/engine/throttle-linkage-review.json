@@ -20,9 +20,9 @@
     {
       "id": "throttle-1994-factory-diagram",
       "url": "https://charm.li/images/DM05Q313/ford10/690090240/",
-      "class": "unavailable evidence",
-      "observed": null,
-      "access_result": "Web returned no inspectable image; direct retrieval timed out. No diagram topology claims."
+      "class": "verified applicable factory diagram, locally inspected",
+      "observed": "Applicable throttle service view shows cable-side lever, ball-end attachment and coil spring bank; no exploded spring internals or plate fasteners.",
+      "access_result": "Web failed; local690090240.png subsequently inspected successfully. See local_factory_archive_review hashes."
     },
     {
       "id": "throttle-manual-specimen-lead",
@@ -84,12 +84,12 @@
       "id": "throttle-return-spring",
       "quantity": null,
       "readiness": "source gap",
-      "interface": "Coaxial torsion spring topology supported only by comparison. Must attach one end to stationary casting datum and other to rotating lever; do not rotate whole spring rigidly."
+      "interface": "Factory and comparison figures support coil bank at cable-side shaft end. Quantity and precise anchor connections remain unresolved; assign stationary casting and moving lever endpoint constraints only as explicit inference until resolved."
     },
     {
       "id": "throttle-stop-contact",
       "quantity": null,
-      "readiness": "research/candidate",
+      "readiness": "applicable factory drawing labels plate set screw; text supports preset WOT stop; angular calibration unknown",
       "interface": "Separate stationary screw/stop and moving lever contact; actual closed/WOT angles and calibration unresolved."
     },
     {
@@ -102,7 +102,7 @@
       "id": "throttle-linkage-shield",
       "quantity": 1,
       "readiness": "factory procedure supports existence",
-      "interface": "Stationary guard; separate from moving lever. Exact shape/fastener points unresolved."
+      "interface": "Stationary accelerator control splash shield9E766 with pushpinN804527-S, shown around lever in viewY; exact contours and attachment count/dimensions unresolved."
     }
   ],
   "datums": {
@@ -121,7 +121,7 @@
       -37,
       87
     ],
-    "sensor_side": "negative Y, existing tps-housing; comparison photo opposite cable side",
+    "sensor_side": "Factory figures place TPS opposite cable lever; mapping to existing negativeY sensor and positiveY lever is model-coordinate inference.",
     "cable_side": "positive Y proposed; exact handedness remains inherited estimate",
     "plate_centers_world_y": [
       -2,
@@ -142,5 +142,121 @@
     "Spring stationary/moving endpoints remain attached throughout travel; wrong anchor or rigid-spring negative control.",
     "Stop-contact at both endpoints, no plate/casting penetration, no cable guard interference."
   ],
-  "asset_policy": "Public specimen images inspected transiently; not redistributed. Re-fetch image URLs and compare hashes. No dependency on temporary paths; observations preserved here. No owner/purchased photographs used."
+  "asset_policy": "Public specimen images inspected transiently; not redistributed. Re-fetch image URLs and compare hashes. No dependency on temporary paths; observations preserved here. No owner/purchased photographs used. Factory archive diagrams inspected in place; local relative paths/hashes recorded, restricted originals not redistributed.",
+  "local_factory_archive_review": {
+    "status": "Reviewed applicable1994 pages and9 diagrams directly; supersedes earlier web-image unavailability",
+    "access_dependency": "Ignored local manuals/factory-service-manual archive; authorized access required. Do not commit originals. Discover using rg --files --no-ignore manuals/factory-service-manual.",
+    "html_inputs": [
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/index.html",
+        "sha256": "8f98ec60d8bcbf3de4baeead501efd32363b84aea46555152061e52f97b719bb"
+      },
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Description%20and%20Operation/index.html",
+        "sha256": "b9ecb1fe444d841d8d0aa482c3a794ea930fa2178372cff7fd6df05107f46b41"
+      },
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Service%20and%20Repair/index.html",
+        "sha256": "43788746ddf2ba0b7cd138445737f43fbcb3e6ef1aa614086746f0eeec1ff5d0"
+      },
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Testing%20and%20Inspection/Check%20Throttle%20Valves/index.html",
+        "sha256": "eddc5839bbc1820746fa8af7fe5aa451a76e5b78c5b52f7fc507feb3e5229360"
+      },
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Testing%20and%20Inspection/Check%20Throttle%20Body%20Condition/index.html",
+        "sha256": "a5094f9431685501ca98b12740d58defa0b69e07d4c19a1800fd1666941e58af"
+      },
+      {
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Technical%20Service%20Bulletins/All%20Technical%20Service%20Bulletins/Accelerator%20Cable%20-%20Service%20Procedures%2FTips/index.html",
+        "sha256": "e4a7311343f879139e001f5be00b39020f73e5ed6cd5368ef6bab75500ef09fb"
+      }
+    ],
+    "images": [
+      {
+        "id": "690090240",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690090240.png",
+        "sha256": "80fb8776efe6de8e6c997e7129255f1a3c5ebf97e917f25d5bfccbd111f4f86c",
+        "url": "https://charm.li/images/DM05Q313/ford10/690090240/",
+        "visually_inspected": true,
+        "observed": "Applicable throttle service view shows cable-side lever, ball-end attachment and coil spring bank; no exploded spring internals or plate fasteners."
+      },
+      {
+        "id": "690365451",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690365451.png",
+        "sha256": "a016502163071f6953ad7b28e5ddbde982d1133eed07df1e2a817bb1e63761c4",
+        "url": "https://charm.li/images/DM05Q313/ford10/690365451/",
+        "visually_inspected": true,
+        "observed": "V5652-D separates throttle body9E926, gasket9E936 and upper intake9424; explicitly four retaining nuts. Cable-side lever and coil bank visible. Four refers to mounting nuts, not butterfly screws."
+      },
+      {
+        "id": "690370320",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690370320.png",
+        "sha256": "8062e600860a08f1d335fbf14c1ccf2f374da2fda5f8dad1523b049c018e269e",
+        "url": "https://charm.li/images/DM05Q313/ford10/690370320/",
+        "visually_inspected": true,
+        "observed": "V5942-F labels TPS9B989 at one shaft end and IAC connector; lever/spring is opposite. Confirms side distinction without assigning project world axes."
+      },
+      {
+        "id": "689805816",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/689805816.png",
+        "sha256": "b612aefd74b61e1650d4d9778e1ee18bff981455def3f66d6152bceb3cfab1c2",
+        "url": "https://charm.li/images/DM05Q313/ford10/689805816/",
+        "visually_inspected": true,
+        "observed": "V4752-G labels throttle plate set screw on cable side, TPS9B989 opposite, IAC9F715 and two canister purge ports. No butterfly screw count; set screw is not a plate retaining screw."
+      },
+      {
+        "id": "692036165",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/692036165.png",
+        "sha256": "693e4888b1d24cd9af436b98421d29fcb855c19dabbea803987af4b45af97257",
+        "url": "https://charm.li/images/DM05Q313/ford10/692036165/",
+        "visually_inspected": true,
+        "observed": "V6832-F overall accelerator-cable diagram explicitly covers C6, E4OD and manual. ViewY shows bracket item3, splash shield8 and pushpin9 over throttle linkage. Lower-right ViewZ specifically C6-only; do not transfer rod7 or inner bracket10 to manual truck."
+      },
+      {
+        "id": "692057936",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/692057936.png",
+        "sha256": "c72c192db166ba4e89cfc7e4468914a7675a6e0c25fef6c83497d74529e44c3e",
+        "url": "https://charm.li/images/DM05Q313/ford10/692057936/",
+        "visually_inspected": true,
+        "observed": "Legend identifies bracket9728, accelerator cable9A758, shield9E766, pushpinN804527-S. Item7 is kickdown control shaft rod7A187; item10 gearshift inner bracket7C431; item11 C6 transmission7003."
+      },
+      {
+        "id": "693289419",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/693289419.png",
+        "sha256": "d688bffd1bf85ba9bd144e5f2d56df0ebe15209725407cab667424d609dbe619",
+        "url": "https://charm.li/images/DM05Q313/ford10/693289419/",
+        "visually_inspected": true,
+        "observed": "TSB94-15-16 diagnostic chart distinguishes restricted pedal travel, cable wear and throttle-body concerns."
+      },
+      {
+        "id": "693295768",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/693295768.png",
+        "sha256": "e8ee47cad0a94f6a1d9ccb6971e96e5fe7385143125a91398896cf7c6eead461",
+        "url": "https://charm.li/images/DM05Q313/ford10/693295768/",
+        "visually_inspected": true,
+        "observed": "TSB94-15-16 TestA isolates cable from throttle body before checking pedal travel and obstruction."
+      },
+      {
+        "id": "693298821",
+        "local_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/693298821.png",
+        "sha256": "ab877d5042b9ba86cabaae6ea53c97c65d5e32b4de87a8422002301b9d669329",
+        "url": "https://charm.li/images/DM05Q313/ford10/693298821/",
+        "visually_inspected": true,
+        "observed": "TSB94-15-16 TestB checks smooth pedal/cable operation while disconnected before directing throttle-body diagnosis."
+      }
+    ],
+    "source_supported_additions": [
+      "Factory preset WOT stop; plate set screw distinct from retaining screws.",
+      "Sensor and lever/spring opposite shaft ends.",
+      "Accelerator shield9E766 and pushpinN804527-S; bracket9728.",
+      "Factory cable warning requires unobstructed return to idle from WOT.",
+      "C6-specific kickdown rod and gearshift bracket excluded from manual application."
+    ],
+    "remaining_unknowns": [
+      "Spring count, exact tang retention, preload and material.",
+      "Butterfly screw count, dimensions, staking and shaft attachment.",
+      "Production dimensions and exact manual specimen contours."
+    ]
+  }
 }

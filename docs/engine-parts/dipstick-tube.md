@@ -2,21 +2,62 @@
 
 Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket: [#78](https://github.com/0xZakk/truck/issues/78).
 
-**Backlog** — Known scope not delivered as a complete modeled/installed package; applicability and quantity may need research.
+**In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
-- No accepted installed definitions are mapped to this package; candidate artifacts may exist as noted below.
+- [x] Provisional geometry is present in the integrated engine manifest.
 
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
+- [ ] **Engine oil dipstick guide · estimated** — `engine-oil-dipstick-tube`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-tube`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
+- [ ] **Dipstick lower retaining nut · estimated** — `engine-oil-dipstick-tube-retaining-nut`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-tube-retaining-nut`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
+- [ ] **Dipstick tube support bracket · estimated** — `engine-oil-dipstick-tube-bracket`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-tube-bracket`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
+- [ ] **Dipstick support nut · estimated** — `engine-oil-dipstick-tube-support-nut`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-tube-support-nut`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
+- [ ] **Dipstick support / cover retainer · estimated** — `pushrod-cover-dipstick-retainer-estimated`; modeled quantity **1**; provisional.
+  - Instances: `pushrod-cover-bolt-1`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
 
 ## Additional known scope and reconciliation
 
-- [ ] Guide tube path, stop/seat, block entry seal and retaining bracket/hardware
-- [ ] Determine matched indicator/tube identity and quantities
+- [ ] Exact1994 guide/indicator identity and routing; current estimated guide, receiver, bracket and hardware are installed
+- [ ] Production threads, seals, clamp load and attachment strength; modeled nut/receiver threads are clearance envelopes
+- [ ] Support bracket manufacturing joint and actual upper mounting station; adjacent1995 architecture remains applicability-limited
 
 ## Acceptance and handoff
 

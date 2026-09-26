@@ -1,4 +1,5 @@
-import { engineLearningModules } from './engine-learning-modules.js';
+import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=dipstick2-20260926';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -7,7 +8,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { occurrenceValvePose, springMeshData } from './engine-valve-layout.js';
 import {sourceOccurrencePose} from './engine-valve-source.js';
 import {sourceSpringMeshDataFast,prewarmSourceSpringCache} from './engine-valve-source-spring-cache.js';
-import { buildNavigation } from './engine-navigation.js?revision=complete-valve-train-20260925';
+import { buildNavigation } from './engine-navigation.js?revision=linkage-20260926';
 import { sliderCrank, rotaryViewRotation, compressorState } from './engine-motion.js';
 
 const $ = id => document.getElementById(id);
@@ -37,6 +38,7 @@ const groups=new Map(),objects=new Map();
 void prewarmSourceSpringCache(96,12);
 let data,nav,learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
 let compressorAngle=0,compressorEngaged=true,compressorPlaying=false;
+let throttleSpringPaths=null;
 const clip=new THREE.Plane(new THREE.Vector3(-1,0,0),0);
 const toView=a=>new THREE.Vector3(a[0],a[2],-a[1]);
 function cadQuaternion(rotation=[0,0,0]){
@@ -44,7 +46,7 @@ function cadQuaternion(rotation=[0,0,0]){
   const matrix=new THREE.Matrix4().makeRotationFromEuler(new THREE.Euler(...rotation.map(value=>value*Math.PI/180),'ZYX'));
   return new THREE.Quaternion().setFromRotationMatrix(basis.clone().multiply(matrix).multiply(basis.clone().invert()));
 }
-const covers=['pilot-bearing-case','pilot-bearing-seal','evr-body','evr-cap','egr-tube-heat-sleeve','egr-tube-valve-nut','egr-body','egr-lower-shell','egr-upper-shell','evp-body','evp-lid','pushrod-cover','oil-pressure-body','oil-pressure-insulator','oil-pressure-rim','oil-filter-case','pcv-body','pcv-outlet-head',...['supply','return'].flatMap(line=>['male','female','cage'].map(part=>`fuel-${line}-coupling-${part}`)),'fuel-test-body','fuel-test-core','fuel-test-cap',...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-shell`),...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-insulator`),'ignition-coil-case','distributor-cap','distributor-housing','coolant-outlet-housing','water-pump-housing','block','cylinder-head','valve-cover','timing-cover','oil-pan','oil-pump-housing','oil-pump-cover','efi-upper-intake','efi-lower-intake','throttle-housing','iac-valve-body','iac-solenoid-can','tps-housing','tps-cover','regulator-upper-housing','regulator-lower-housing','exhaust-front','exhaust-rear',...Array.from({length:6},(_,i)=>`injector-${i+1}-metal-body`),...Array.from({length:6},(_,i)=>`injector-${i+1}-connector-shell`)];
+const covers=['engine-oil-dipstick-tube','throttle-linkage-shield-estimated','pilot-bearing-case','pilot-bearing-seal','evr-body','evr-cap','egr-tube-heat-sleeve','egr-tube-valve-nut','egr-body','egr-lower-shell','egr-upper-shell','evp-body','evp-lid','pushrod-cover','oil-pressure-body','oil-pressure-insulator','oil-pressure-rim','oil-filter-case','pcv-body','pcv-outlet-head',...['supply','return'].flatMap(line=>['male','female','cage'].map(part=>`fuel-${line}-coupling-${part}`)),'fuel-test-body','fuel-test-core','fuel-test-cap',...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-shell`),...Array.from({length:6},(_,i)=>`spark-plug-${i+1}-insulator`),'ignition-coil-case','distributor-cap','distributor-housing','coolant-outlet-housing','water-pump-housing','block','cylinder-head','valve-cover','timing-cover','oil-pan','oil-pump-housing','oil-pump-cover','efi-upper-intake','efi-lower-intake','throttle-housing','iac-valve-body','iac-solenoid-can','tps-housing','tps-cover','regulator-upper-housing','regulator-lower-housing','exhaust-front','exhaust-rear',...Array.from({length:6},(_,i)=>`injector-${i+1}-metal-body`),...Array.from({length:6},(_,i)=>`injector-${i+1}-connector-shell`)];
 covers.push('alternator-drive-housing','alternator-rear-housing','fan-clutch-front-cover','fan-clutch-housing');
 covers.push('engine-coolant-temperature-body','engine-coolant-temperature-insulator');
 covers.push('ps-pump-reservoir','ps-pump-housing','ps-pump-valve-cover');
@@ -98,7 +100,7 @@ function partDetails(n){
   const paragraphs=[`Geometry: ${d.geometry_status}. ${data.occurrences.filter(o=>o.definition===d.id).length} instances in this reconstruction.`,...(d.unresolved||[])];
   if(d.model_bounds_mm)paragraphs.push(`Modeled envelope: ${d.model_bounds_mm.map(n=>n.toFixed(2)).join(' × ')} mm (CAD X × Y × Z). Model measurements, not verified manufacturing dimensions.`);
   for(const text of paragraphs){const p=document.createElement('p');p.textContent=text;$('part-evidence').append(p);}
-  $('part-sources').replaceChildren();for(const id of d.sources||[]){const s=data.sources[id];if(!s)continue;const a=document.createElement('a');a.className='source';a.href=s.url;a.target='_blank';a.rel='noopener';a.textContent=s.title;$('part-sources').append(a);}
+  $('part-sources').replaceChildren();for(const id of d.sources||[]){const a=lessonSource(id);if(a)$('part-sources').append(a);}
   $('step-download').href=d.step;
   const siblings=nav.nodes.get(n.parent).children.filter(id=>nav.nodes.get(id).type==='part'),index=siblings.indexOf(n.id);
   for(const [element,id,prefix] of [['previous-part',siblings[index-1],'← Previous'],['next-part',siblings[index+1],'Next →']]){const a=$(element);a.hidden=!id;if(id){linkTo(a,id);a.textContent=prefix;a.title=nav.nodes.get(id).name;}}
@@ -202,6 +204,28 @@ function setValveSpringHeight(object,height,sourceSized=false){
     node.geometry.computeBoundingBox();node.geometry.computeBoundingSphere();
   });object.userData.springHeight=height;object.userData.springSegments=segments;
 }
+function setThrottleSpringPose(object, degrees){
+  if(!throttleSpringPaths)return;
+  const index=Math.max(0,Math.min(90,Math.round(degrees)));
+  if(object.userData.throttleSpringAngle===index)return;
+  const mesh=buildThrottleSpringMesh(throttleSpringPaths.frames[index],throttleSpringPaths.wire_radius_mm);
+  object.traverse(node=>{if(!node.isMesh)return;
+    if(!node.userData.dynamicThrottleSpring){
+      const geometry=new THREE.BufferGeometry();
+      geometry.setAttribute('position',new THREE.BufferAttribute(mesh.positions,3));
+      geometry.setAttribute('normal',new THREE.BufferAttribute(mesh.normals,3));
+      geometry.setIndex(new THREE.BufferAttribute(mesh.indices,1));
+      node.geometry=geometry;node.userData.dynamicThrottleSpring=true;
+    }else{
+      node.geometry.attributes.position.array.set(mesh.positions);
+      node.geometry.attributes.normal.array.set(mesh.normals);
+      node.geometry.attributes.position.needsUpdate=true;
+      node.geometry.attributes.normal.needsUpdate=true;
+    }
+    node.geometry.computeBoundingBox();node.geometry.computeBoundingSphere();
+  });
+  object.userData.throttleSpringAngle=index;
+}
 function pose(){
   if(!data)return;
   const m=data.mechanism;
@@ -229,6 +253,7 @@ function pose(){
     const object=objects.get(o.id);
     object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
     object.position.copy(toView(o.position_cad_mm)).add(toView(explodeOffset(o,explosion)));
+    if(o.throttle_spring)setThrottleSpringPose(object,throttleAngle);
     if(o.valvetrain){
       const sourceSized=o.valvetrain.model==='source-sized-v2';
       const motion=sourceSized?sourceOccurrencePose(angle,o.valvetrain):occurrenceValvePose(angle,o.valvetrain);
@@ -250,7 +275,7 @@ $('play').onclick=()=>togglePlay(!playing);
 $('compressor-play').onclick=()=>toggleCompressorPlay(!compressorPlaying);
 $('compressor-angle').oninput=event=>{toggleCompressorPlay(false);compressorAngle=Number(event.target.value);pose();};
 $('compressor-engaged').onchange=event=>{compressorEngaged=event.target.checked;pose();};
-$('throttle-angle').oninput=e=>{throttleAngle=Number(e.target.value);pose();};
+$('throttle-angle').oninput=e=>{throttleAngle=Math.round(Number(e.target.value));pose();};
 $('angle').oninput=e=>{togglePlay(false);angle=Number(e.target.value);pose();};
 $('explode').oninput=e=>{explosion=Number(e.target.value);pose();frameAssembly();};
 $('section').onclick=()=>{section=!section;styles();};$('ghost').onclick=()=>{ghost=!ghost;styles();};
@@ -269,7 +294,13 @@ renderer.domElement.addEventListener('pointerup',e=>{
 try{
   const response=await fetch('/inventory/engine/full-assembly.json',{cache:'no-store'});if(!response.ok)throw new Error(`Manifest: ${response.status}`);const manifestText=await response.text();data=JSON.parse(manifestText);nav=buildNavigation(data);
   const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(manifestText))),byte=>byte.toString(16).padStart(2,'0')).join('');
-  const lessons=await Promise.all(engineLearningModules.map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
+  if(data.occurrences.some(o=>o.throttle_spring)){
+    const response=await fetch('/viewer/throttle-return-spring-paths.json',{cache:'no-store'});
+    if(!response.ok)throw new Error(`Throttle spring paths: ${response.status}`);
+    throttleSpringPaths=await response.json();
+    if(throttleSpringPaths.schema!=='illustrative-throttle-spring-paths-v1'||throttleSpringPaths.frames.length!==91)throw new Error('Invalid throttle spring motion data');
+  }
+  const lessons=await Promise.all(engineLearningModules.map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=resolveEngineLearning(data,nav.nodes.keys(),...lessons);
   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
   const loader=new GLTFLoader();

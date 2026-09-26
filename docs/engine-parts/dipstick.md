@@ -4,24 +4,36 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
-- No accepted installed definitions are mapped to this package; candidate artifacts may exist as noted below.
+- [x] Provisional geometry is present in the integrated engine manifest.
 
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
-
-## Separate candidate parts (not installed)
-
-- [ ] **Dipstick blade and handle/stop** — `engine-oil-dipstick`; Candidate only; fit/identity not accepted. Source: `cad/engine/pilot/dipstick/dipstick.py`.
+- [ ] **Engine oil dipstick blade · flexed study** — `engine-oil-dipstick-blade`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-blade`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
+- [ ] **Engine oil dipstick handle and stop · study** — `engine-oil-dipstick-handle`; modeled quantity **1**; provisional.
+  - Instances: `engine-oil-dipstick-handle`
+  - Source IDs: dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
 
 ## Additional known scope and reconciliation
 
-- [ ] Candidate blade/handle exists
-- [ ] Trial installed routing intersects block
-- [ ] Oil-level markings/calibration and matched tube remain unresolved
+- [ ] Exact1994 indicator identity, section/waves and dimensions; current inserted specimen-informed study is installed
+- [ ] Oil-level markings and calibration with the matched sump/guide; no ADD/FULL marks claimed
+- [ ] Elastic insertion, withdrawal and handle retention force; inserted pose is a rigid geometry study
 
 ## Acceptance and handoff
 

@@ -80,7 +80,7 @@
       "id": "side-cover",
       "title": "Pushrod side cover, gasket and hardware",
       "patterns": [
-        "pushrod-cover.*"
+        "pushrod-cover(?!-dipstick-retainer-estimated$).*"
       ],
       "remaining": [
         "Production contour, sealing compression and bolt engagement"
@@ -360,10 +360,10 @@
         "throttle-(?!bracket-stud-estimated$).*"
       ],
       "remaining": [
-        "Throttle lever/cam and return spring",
+        "Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing",
         "Plate retaining screws and shaft bushings/seals as applicable",
-        "Speed-control cable attachment and linkage shield if fitted",
-        "Verify stops, return action and installed geometry"
+        "Actual throttle/speed-control cables and sockets, pin locking and production shield construction",
+        "Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts"
       ],
       "related_system_issues": [],
       "existing_issue": null
@@ -927,30 +927,29 @@
     {
       "id": "dipstick",
       "title": "Engine oil dipstick",
-      "patterns": [],
+      "patterns": [
+        "engine-oil-dipstick-(blade|handle)"
+      ],
       "remaining": [
-        "Candidate blade/handle exists",
-        "Trial installed routing intersects block",
-        "Oil-level markings/calibration and matched tube remain unresolved"
+        "Exact1994 indicator identity, section/waves and dimensions; current inserted specimen-informed study is installed",
+        "Oil-level markings and calibration with the matched sump/guide; no ADD/FULL marks claimed",
+        "Elastic insertion, withdrawal and handle retention force; inserted pose is a rigid geometry study"
       ],
       "related_system_issues": [],
       "existing_issue": 17,
-      "candidate_parts": [
-        {
-          "id": "engine-oil-dipstick",
-          "name": "Dipstick blade and handle/stop",
-          "artifact": "cad/engine/pilot/dipstick/dipstick.py",
-          "status": "Candidate only; fit/identity not accepted"
-        }
-      ]
+      "candidate_parts": []
     },
     {
       "id": "dipstick-tube",
       "title": "Dipstick guide tube, seat and retaining hardware",
-      "patterns": [],
+      "patterns": [
+        "engine-oil-dipstick-tube.*",
+        "pushrod-cover-dipstick-retainer-estimated"
+      ],
       "remaining": [
-        "Guide tube path, stop/seat, block entry seal and retaining bracket/hardware",
-        "Determine matched indicator/tube identity and quantities"
+        "Exact1994 guide/indicator identity and routing; current estimated guide, receiver, bracket and hardware are installed",
+        "Production threads, seals, clamp load and attachment strength; modeled nut/receiver threads are clearance envelopes",
+        "Support bracket manufacturing joint and actual upper mounting station; adjacent1995 architecture remains applicability-limited"
       ],
       "related_system_issues": [],
       "existing_issue": null

@@ -1,11 +1,35 @@
 {
-  "definitions": 688,
-  "occurrences": 1244,
+  "definitions": 705,
+  "occurrences": 1310,
   "artifact_integrity": "pass",
   "gltf_scale_axis_bounds": "pass within 0.5 mm",
   "step_volume_relative_tolerance": 1e-05,
-  "assembled_step_solids": 1244,
-  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "bounds_refinements": {
+    "water-pump-seal-spring": {
+      "conservative_cad_extents_viewer_axes_mm": [
+        6.099834910917661,
+        31.799983076924214,
+        31.799998333985553
+      ],
+      "support_cad_extents_viewer_axes_mm": [
+        4.4999999999999964,
+        31.799982876919486,
+        31.7999981339838
+      ],
+      "mesh_extents_mm": [
+        4.4999998062849045,
+        31.79909475147724,
+        31.798893585801125
+      ],
+      "scaled_mesh_negative_control": {
+        "scale": 1.062893085451557,
+        "detected": true
+      },
+      "method": "Two agreeing continuous distances per extremum to distinct enclosing planar support faces"
+    }
+  },
+  "assembled_step_solids": 1310,
+  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
   "checked_poses_deg": [
     0,
     90,

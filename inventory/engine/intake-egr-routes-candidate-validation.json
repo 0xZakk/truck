@@ -1,0 +1,82 @@
+{
+  "status": "LOCAL_CHECKS_PASS_NEIGHBOR_REVIEW_PENDING",
+  "scope": "Isolated estimated fixed-end EGR route with source-supported replacement OD; full coordinated intake neighbors, actual route fidelity, thermal and sealing performance remain separate.",
+  "input_hashes": {
+    "scripts/check-intake-egr-routes-candidate.py": "7299134cf8fa92d1ccb46f249d0a4857371c7aef524a257eee99577de3368311",
+    "cad/engine/intake_egr_routes_candidate.py": "aa64ffa8f13a75be6a3c1d4d2fc62258de3827e102430e7c065b952392db5478",
+    "cad/engine/egr_tube.py": "11dceaf48a02777bec239f64bb265c12bc77eaeb8f5024c8e8915e9639b3622c",
+    "cad/engine/egr_vacuum_hose.py": "cfb95d3abd8d23c55493033435f7ec25d951a71ee74c34774196774929bb8a59",
+    "cad/engine/generated/egr-tube-manifold-fitting.step": "7b258157831457fe6f9589260aaeff1bb848e0fc6d55ab27e38191e14cf79eee"
+  },
+  "output_hashes": {
+    "cad/engine/generated/intake-egr-route-study/egr-exhaust-tube.step": "b0d14c6abf1533c041f83f6ccf533c97fe033a82cbfe33fb786d3ac8062e1676",
+    "cad/engine/generated/intake-egr-route-study/egr-exhaust-tube.glb": "316917f2e037a977f3d7fc46cc4dcb2d72e121c03953b10566ad3f8dc85b2cb8",
+    "cad/engine/generated/intake-egr-route-study/egr-tube-heat-sleeve.step": "f27df2d14e50a32fd1adb01faf042abadf48129194da8473a3b6958a63861eff",
+    "cad/engine/generated/intake-egr-route-study/egr-tube-heat-sleeve.glb": "4b8c80cc68ad211753f6f8ea07c40bcd05e4ffa668ee34fc8fba0bb1b4c3c7f7",
+    "cad/engine/generated/intake-egr-route-study/egr-tube-valve-nut.step": "288fcb5bd3945b34aab167cf284eb27a9081063d937a886eb960cc27bb607e84",
+    "cad/engine/generated/intake-egr-route-study/egr-tube-valve-nut.glb": "5eedab4e6730a90e978907ba23b22c4290fbb3cc6399171e5c191c9b0c45ee7c",
+    "cad/engine/generated/intake-egr-route-study/egr-control-vacuum-hose.step": "dc7f47dc1485310da535e955a9da7a978d1fd0b6778ae876b0b3c51410ed4413",
+    "cad/engine/generated/intake-egr-route-study/egr-control-vacuum-hose.glb": "d51664e3be23288515e6ab5c5d340e5e25afbee27997975c9071e8cdd2c8d5e1"
+  },
+  "exports": {
+    "egr-exhaust-tube": {
+      "valid": true,
+      "solids": 1,
+      "step_volume_delta_mm3": 8.454662747681141e-09,
+      "mesh_watertight": true,
+      "mesh_bounds_error_mm": 0.009523019524976917
+    },
+    "egr-tube-heat-sleeve": {
+      "valid": true,
+      "solids": 1,
+      "step_volume_delta_mm3": 4.47762431576848e-08,
+      "mesh_watertight": true,
+      "mesh_bounds_error_mm": 0.009822118187287288
+    },
+    "egr-tube-valve-nut": {
+      "valid": true,
+      "solids": 1,
+      "step_volume_delta_mm3": 1.2187229003757238e-09,
+      "mesh_watertight": true,
+      "mesh_bounds_error_mm": 1.0251998901367188e-05
+    },
+    "egr-control-vacuum-hose": {
+      "valid": true,
+      "solids": 1,
+      "step_volume_delta_mm3": 2.812157617881894e-09,
+      "mesh_watertight": true,
+      "mesh_bounds_error_mm": 0.0004398954700377544
+    }
+  },
+  "egr_delta_mm": [
+    167.0,
+    0.0,
+    25.0
+  ],
+  "fixed_exhaust_start_mm": [
+    -315.688,
+    -180,
+    230
+  ],
+  "valve_end_mm": [
+    -245.0,
+    25.0,
+    459.0
+  ],
+  "vacuum_end_mm": [
+    -245.0,
+    85.0,
+    562.0
+  ],
+  "tube_centerline_length_mm": 440.9307493570561,
+  "original_route_centerline_length_mm": 363.87927125015665,
+  "published_replacement_length_mm": 454.6599999999999,
+  "length_limit": "Catalog17.9-inch field lacks measurement definition; neither prior nor proposed centerline is proven Ford routing. New route must remain visibly provisional.",
+  "flow_probe_intrusion_mm3": 0.0,
+  "oversized_probe_negative_mm3": 33730.87256835711,
+  "fixed_fitting": {
+    "distance_mm": 0.0,
+    "overlap_mm3": 0.0
+  },
+  "method": "Collision probes use STEP-roundtripped world solids to avoid nested-placement Boolean anomalies; source/exports guarded."
+}

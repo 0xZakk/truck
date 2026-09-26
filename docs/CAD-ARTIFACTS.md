@@ -1,41 +1,38 @@
-# CAD checkpoint restoration
+# Restore the engine CAD checkpoint
 
-The source, assembly inventory, validation reports and browser meshes are committed to Git. Generated STEP files and candidate baselines are bundled in the private [2026-09-26 checkpoint release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26). They exceed normal GitHub file limits and should not be repeatedly duplicated in Git history.
+Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-Download once using an account with repository access:
+## Current linkage and dipstick checkpoint
 
-```sh
-gh release download checkpoint-2026-09-26 --repo 0xZakk/truck --pattern truck-cad-checkpoint-20260926.tar.gz --dir /tmp
-shasum -a 256 /tmp/truck-cad-checkpoint-20260926.tar.gz
-```
-
-Compare the checksum with `docs/cad-checkpoint.json`, then extract from the repository root:
+The [linkage/dipstick release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-linkage-dipstick) records **718 definitions /1,322 occurrences**, still provisional and unfinished. Download with an account that can access the repository:
 
 ```sh
-tar -xzf /tmp/truck-cad-checkpoint-20260926.tar.gz
+gh release download checkpoint-2026-09-26-linkage-dipstick --repo 0xZakk/truck --pattern truck-active-cad-20260926-linkage-dipstick.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260926-linkage-dipstick.tar.gz
 ```
 
-The archive restores `cad/` generated files and candidate inputs for the integrated manifest recorded in that JSON. Extraction replaces generated files at those paths; preserve any newer local CAD outputs first. Purchased manuals and owner photographs are excluded. Browser exploration needs only the committed GLBs. Historical scripts may still reference their original temporary workspace paths; adapt those paths before reproducing an old audit and do not treat a saved report as a fresh check.
-
-## Current engine interface checkpoint
-
-The original archive above is historical. A promotion audit found that the local active STEP set did not fully match the promoted manifest/GLB: 17 files were missing and 32 existing files were stale. See `inventory/engine/cad-baseline-restoration.json`. Do not trust a matching manifest hash alone while using arbitrary local STEP files.
-
-For the current 705-definition / 1,310-occurrence checkpoint, restore the [active CAD archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-interfaces):
+Compare the checksum with `docs/cad-linkage-dipstick-checkpoint.json`. Preserve any newer local generated work, then extract from the repository root:
 
 ```sh
-gh release download checkpoint-2026-09-26-interfaces --repo 0xZakk/truck --pattern truck-active-cad-20260926-interfaces.tar.gz --dir /tmp
-shasum -a 256 /tmp/truck-active-cad-20260926-interfaces.tar.gz
-# Compare against docs/cad-interface-checkpoint.json before extracting.
-tar -xzf /tmp/truck-active-cad-20260926-interfaces.tar.gz
+tar -xzf /tmp/truck-active-cad-20260926-linkage-dipstick.tar.gz
 ```
 
-This archive contains every active part STEP and the regenerated combined STEP. If a historical candidate study needs the old archive's extra assets, extract the old archive **first**, then overlay this one. Preserve newer local generated work before extracting either archive. Per-part hashes are recorded in `inventory/engine/combined-step-export.json`; the active archive contains no purchased manuals or owner photos.
+The archive includes every active part STEP and the combined STEP, plus frozen linkage/spring/dipstick candidate evidence needed by their scoped checks. Isolated EGR-route candidate exports are included but are **not installed** in this checkpoint. Purchased manuals and owner photographs are excluded.
 
-To regenerate the combined STEP after a reviewed manifest change without rebuilding all component geometry:
+Part hashes and combined-export identity are in `inventory/engine/combined-step-export.json`. The export uses independent topology for each occurrence, preserving unique names on reimport; its bounds check is not proof of exact shape equivalence or manufacturing fit. Source applicability, inferred dimensions and outstanding work remain in the component reports and `docs/CURRENT-STATE.md`.
+
+## Historical archives
+
+The [original checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26), recorded by `docs/cad-checkpoint.json`, contains older candidate baselines. A later audit recovered17missing and32stale STEP definitions; see `inventory/engine/cad-baseline-restoration.json`. Never trust manifest identity while using arbitrary local STEP files.
+
+The [interface checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-interfaces), recorded by `docs/cad-interface-checkpoint.json`, covers705definitions/1,310occurrences before the linkage/dipstick work and combined naming correction. If a historical study needs old extra assets, extract its archive first, then overlay the current archive. Do not overwrite newer work without preserving it.
+
+## Regenerate a combined assembly
+
+After reviewed part/manifest changes, rebuild the combined STEP without rebuilding all part geometry:
 
 ```sh
 XDG_CACHE_HOME=/tmp/truck-cache .venv-cad/bin/python scripts/export-engine-assembly-step.py
 ```
 
-The bounded interface installer is `scripts/install-engine-component-interfaces.py --apply`; it uses the shared exporter and preserves unrelated inventory. Its new spring bounds use continuous CAD support distances because the CAD kernel's conservative box overstates a clipped helix's axial length. This does not relax the 0.5 mm mesh comparison tolerance or establish factory dimensions.
+Installers default to dry-run/staging and preserve unrelated inventory: `install-engine-component-interfaces.py`, `install-throttle-linkage.py` (linkage/shield/spring stages), and `install-dipstick.py` under `scripts/`. Read their candidate/input guards before applying; a saved report is evidence for its recorded inputs, not a fresh validation of a changed engine. Use a new branch/worktree for further changes and retain explicit provisional labels.

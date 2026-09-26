@@ -5,7 +5,7 @@ export function buildNavigation(manifest) {
   for(const p of manifest.occurrences)nodes.set(p.id,{...p,type:'part',children:[]});
   const group=(id,name,parent)=>nodes.set(id,{id,name,parent,type:'assembly',children:[]});
   nodes.get('engine').name='Engine';
-  const titles={rotating:'Pistons & crankshaft',structure:'Block & main bearings',head:'Cylinder head & covers',valvetrain:'Camshaft & valve train',closures:'Timing drive & covers'};
+  const titles={'throttle-moving':'Shaft, plates & lever',rotating:'Pistons & crankshaft',structure:'Block & main bearings',head:'Cylinder head & covers',valvetrain:'Camshaft & valve train',closures:'Timing drive & covers'};
   for(const [id,name] of Object.entries(titles))nodes.get(id).name=name;
   for(let i=1;i<=6;i++){
     group(`cylinder-${i}`,`Cylinder ${i}`,'rotating');

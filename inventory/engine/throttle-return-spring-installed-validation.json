@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "ed9e4927a22c1a22fa1b5fb3e98dd63a7e45d595ed54070db8fb792f86f51863",
+  "candidate_report_sha256": "b68661f01a8455cfd5d0a846985e2a156f59898e0b36e1e5886e2cb4f148fc52",
+  "parts": [
+    {
+      "id": "accelerator-cable-bracket",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 3386.682336052967,
+      "mesh_bounds_error_mm": 1.1205673217773438e-05
+    },
+    {
+      "id": "throttle-lever-estimated",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 154.99894748058333,
+      "mesh_bounds_error_mm": 0.008497282862663269
+    },
+    {
+      "id": "throttle-return-spring-illustrative",
+      "symmetric_difference_mm3": 0.0,
+      "shifted_negative_control_mm3": 195.42248530075565,
+      "mesh_bounds_error_mm": 0.0006607029081351357
+    }
+  ],
+  "artifact_hashes": {
+    "cad/engine/generated/throttle-return-spring-candidate/bracket-spring-seat.step": "4441353aa9a38ed7aab6517fa3894e3c3d3916017d843bcdf9a34c16b5c6a82c",
+    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+    "models/engine/accelerator-cable-bracket.glb": "32b993e20d74404d7d85921507c1fc7affa641582347ff2428f0989b8f6f988a",
+    "cad/engine/generated/throttle-return-spring-candidate/lever-spring-seat.step": "5cec28b8923a5351c78988483a59c5d38e061840a50fb842fd09e0f5e845b727",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "models/engine/throttle-lever-estimated.glb": "cc18775ce533af22a8d9ddc615e2b20183dea7291e8c86b167999082b91a4d08",
+    "cad/engine/generated/throttle-return-spring-candidate/spring-0.step": "1dedb39eff64253456e0000236661e361efc8ba654965af03bac1127187cf9f5",
+    "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+    "models/engine/throttle-return-spring-illustrative.glb": "9843eeac8add63ff1a761ddea3609129f08790cdf7cf02b644e07c40ce1a1510"
+  },
+  "scope": "Installed geometry/frames match illustrative spring candidate checked at 11 travel poses. Whole-engine static, browser and production-fidelity acceptance remain separate."
+}

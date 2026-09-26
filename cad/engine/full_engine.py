@@ -13,6 +13,7 @@ import numpy as np
 import trimesh
 from first_assembly import ROOT, P, cx, annulus, split_ring
 from assembly_math import transforms
+from assembly_step import placed_occurrences, verify_roundtrip
 from valvetrain_dispatch import occurrence_shape
 import valve_source_integration as source_valves
 import valve_source_evidence as source_evidence
@@ -210,6 +211,12 @@ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(
         raise ValueError(f'{id}: STEP round-trip changed topology or volume')
     vertices,faces=shape.tessellate(.18,.22)
     mesh=trimesh.Trimesh(vertices=np.array([[v.X,v.Z,-v.Y] for v in vertices])/1000,faces=faces,process=False)
+    if id == 'throttle-cable-ball-stud-estimated':
+        # The tessellator emits zero-area triangles at the sphere pole.
+        mesh.merge_vertices()
+        mesh.update_faces(mesh.nondegenerate_faces())
+        mesh.update_faces(mesh.unique_faces())
+        mesh.remove_unreferenced_vertices()
     smooth_casting = id.startswith(('ignition-coil-', 'distributor-', 'spark-plug-', 'egr-', 'evp-')) or id in ('efi-upper-intake','efi-lower-intake','exhaust-front','exhaust-rear')
     if smooth_casting:
         # Smooth curved casting surfaces while preserving sharp flange edges.
@@ -842,6 +849,14 @@ def main():
         source_ids.update(rear_mounts.SOURCES)
     import component_interface_integration as component_interfaces
     component_interfaces.install(define,add,group,defs,occurrences,assemblies)
+    import throttle_linkage_integration as throttle_linkage
+    throttle_linkage.install(define,add,defs,occurrences,shapes)
+    import throttle_shield_integration as throttle_shield
+    throttle_shield.install(define,add,defs,occurrences,shapes)
+    import throttle_return_spring_integration as throttle_spring
+    throttle_spring.install(define,add,defs,occurrences,shapes)
+    import dipstick_integration
+    dipstick_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -870,6 +885,8 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/common-carrier-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/component-interface-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/throttle-linkage-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/dipstick-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -884,6 +901,9 @@ def main():
     sources.update(json.loads((ROOT/'inventory/engine/common-carrier-sources.json').read_text()))
     sources.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-sources.json').read_text()))
     sources.update(component_interfaces.sources())
+    sources.update(throttle_linkage.sources())
+    sources.update(throttle_spring.sources())
+    sources.update(dipstick_integration.sources())
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
     for occurrence in occurrences:
         if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS | rear_mounts.ADAPTERS):
@@ -921,11 +941,9 @@ def main():
     for key in ('definitions','assemblies','occurrences'):
         ids=[item['id'] for item in manifest[key]]
         if len(ids)!=len(set(ids)):raise ValueError(f'Duplicate IDs in {key}; refusing to publish assembly')
-    poses=transforms(manifest)
-    placed=[]
-    for o in occurrences:
-        s=occurrence_shape(o,shapes[o['definition']],0).moved(poses[o['id']]);s.label=o['id'];placed.append(s)
+    placed=placed_occurrences(manifest,shapes)
     b.export_step(b.Compound(children=placed),STEP/'full-assembly.step',unit=b.Unit.MM)
+    verify_roundtrip(STEP/'full-assembly.step',placed)
     (ROOT/'inventory/engine/full-assembly.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(f'Wrote {len(defs)} definitions / {len(occurrences)} individual parts',flush=True)
 

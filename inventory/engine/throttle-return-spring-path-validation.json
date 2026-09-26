@@ -1,0 +1,32 @@
+{
+  "checker_sha256": "5016f6e004c4cb9a2bd0d7aff54676cead808c2ae8c1d720e9ae6d2bcab68789",
+  "status": "PASS",
+  "scope": "Exact-CAD-derived91 integer paths and pure tube mesh; sampled self-spacing sanity, not CAD continuous collision or physical spring validation.",
+  "table_sha256": "19ca2d0bbe8e6251656df1fcec294e7dbc9cbf34c23004283541bdd3fa79de8f",
+  "module_sha256": "ff8a5aaa6aaed25421b2122fc26abc3bf58b027fbf2cf8174609dbe90bc546da",
+  "samples_per_pose": 1601,
+  "max_polyline_length_loss_mm": 0.00749284182984411,
+  "max_endpoint_error_mm": 0.000006391271617920001,
+  "min_sampled_nonlocal_centerline_distance_mm": 1.8123682470458378,
+  "wrong_fixed_anchor_negative_error_mm": 12.191060235750056,
+  "meshes": [
+    {
+      "angle_deg": 0,
+      "vertices": 19214,
+      "triangles": 38424,
+      "closed_oriented_topology": true
+    },
+    {
+      "angle_deg": 45,
+      "vertices": 19214,
+      "triangles": 38424,
+      "closed_oriented_topology": true
+    },
+    {
+      "angle_deg": 90,
+      "vertices": 19214,
+      "triangles": 38424,
+      "closed_oriented_topology": true
+    }
+  ]
+}

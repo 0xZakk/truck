@@ -1,0 +1,19 @@
+{
+  "status": "SCOPED_BROWSER_REVIEW_PASS",
+  "manifest_sha256": "ed9e4927a22c1a22fa1b5fb3e98dd63a7e45d595ed54070db8fb792f86f51863",
+  "url": "http://127.0.0.1:8081/viewer/engine.html?assembly=throttle-assembly",
+  "checks": [
+    "35-part throttle assembly loads with spring link",
+    "Throttle control0/45/90 degrees updates displayed angle and model",
+    "Translucent shield toggle and individual spring navigation operate",
+    "Individual spring screenshot shows continuous coil and two hook ends",
+    "Spring learning distinguishes illustrative construction and geometric motion from force simulation"
+  ],
+  "scope": "Actual browser UI/render review plus separate pure91-frame mesh validation; not continuous operating or factory fidelity certification. Full assembly visual constraints require current whole-engine audit.",
+  "input_hashes": {
+    "viewer/atlas.js": "19647a66978e29970b494a3e443f75a68990f90c84ab9ae11f351d51b19e15e0",
+    "viewer/throttle-return-spring-mesh.js": "ff8a5aaa6aaed25421b2122fc26abc3bf58b027fbf2cf8174609dbe90bc546da",
+    "viewer/throttle-return-spring-paths.json": "19ca2d0bbe8e6251656df1fcec294e7dbc9cbf34c23004283541bdd3fa79de8f",
+    "inventory/engine/throttle-linkage-learning.json": "7ff177119e014b3dfbd3015d1bc607e13b4e25920aa69db402a9d8d175be0eae"
+  }
+}

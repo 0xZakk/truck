@@ -1,0 +1,25 @@
+{
+  "manifest_sha256": "330b2c5f10534fd1298f350ee94f30cd2b2a3c39f958a4e0a0b68a767f455f8d",
+  "reviewer": "root",
+  "checks": {
+    "throttle_assembly_parts": 34,
+    "moving_group_label": "Shaft, plates & lever",
+    "opening_degrees": 90,
+    "transparent_shield": "visually inspected with See through covers enabled",
+    "explode_then_reset": "35 percent then reset to0 percent and0 degrees",
+    "search": "throttle lever ranks exact part first",
+    "part_navigation": "lever page shows description, learning, neighbor links and assembled return"
+  },
+  "console": "No app-origin error identified. Browser extension content/injection scripts emitted errors; duplicate unattributed messages match those extension errors. Not recorded as an empty console.",
+  "limits": [
+    "No spring return simulation yet",
+    "Factory contours, dimensions, retention and stops remain unverified",
+    "Exploded view is exploratory, not a service removal sequence"
+  ],
+  "reviewed_files_sha256": {
+    "viewer/atlas.js": "9dbbba904e8f6e260747a90f86938e3d5c8966947292921c27cfe5fac0b38d86",
+    "viewer/engine-navigation.js": "c39b4ba60b20b056cfd7fa48fc960c0b953f6dcbfe22c85bf55360b8e7c22814",
+    "viewer/engine-learning-modules.js": "4096141aee5c5f2c547ebb4910ede0fe0314f8f39d7b389dee8e1655a04646c5",
+    "inventory/engine/throttle-linkage-learning.json": "13eea4d660f363f330c52a3b8f8e428b7a6f960feda56e4016ad099e2fc71f5b"
+  }
+}

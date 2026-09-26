@@ -1,0 +1,20 @@
+{
+  "status": "SCOPED_BROWSER_REVIEW_PASS",
+  "manifest_sha256": "bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9",
+  "checks": [
+    "6-part dipstick assembly loads with guide, nuts, bracket, blade and handle",
+    "See through covers exposes guide interior; actual screenshot inspected",
+    "Assembly lesson links shared support to pushrod-cover-bolt-1 without duplicating physical part",
+    "Keyboard activation of shared-support link navigates to retainer page and shows its definition-based lesson",
+    "Spring individual page source link resolves to saved reference JSON rather than undefined"
+  ],
+  "interaction_note": "One automated pointer click on the low sidebar support link had no effect; keyboard activation succeeded. No navigation exception observed.",
+  "console_note": "Known extension errors remain; not asserted to be an empty console.",
+  "scope": "UI, rendered presence, learning and links only; CAD/source-fidelity acceptance is separate.",
+  "input_hashes": {
+    "viewer/atlas.js": "b91a8978c717c218120a7d6740504d62472dfcb595fa6c0a652136c36e4d21ec",
+    "viewer/engine-learning-modules.js": "b44ffef45046ee0a17b3fa2884316a0e2fcbea8dc6dda39066de23b150066487",
+    "inventory/engine/dipstick-learning.json": "6c15de4732fed13c0ead5d638634b2c9326b0bd8baa94776c228b98081b60a70",
+    "inventory/engine/dipstick-assembly-learning.json": "d117e0ad8728bd476207901e2f4f9b45573fe0d9e16b9d13d23930217772b647"
+  }
+}

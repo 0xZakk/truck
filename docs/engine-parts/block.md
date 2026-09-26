@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -19,7 +19,7 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Uniform1mm cup wall, square internal corner, supporting boss, .5mm recess and clearance-fit seat are assumptions. Actual press fit, stamp radii and bore size remain unresolved.
 - [ ] **Cylinder block** — `block`; modeled quantity **1**; provisional.
   - Instances: `block`
-  - Source IDs: fsm-ed8704e3446e, fsm-2e5473b2bf99, ford-engine-side-layout, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions, ford-accessory-brackets, ford-accessory-routing, ford-cii-pump-study, ford-alternator-study, ford-thermactor-study, fsm-d975f341ee63, fsm-6f023139b5f8, wix-51515-envelope, enginequest-oil-filter-adapter, ford-tsb-94-10-19-accessory, truck-oil-pan-hardware, fel-pro-vin-y-gaskets, felpro-os34601r-topology, water-pump-mounting-topology, gates-water-pumps-2011. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: fsm-ed8704e3446e, fsm-2e5473b2bf99, ford-engine-side-layout, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions, ford-accessory-brackets, ford-accessory-routing, ford-cii-pump-study, ford-alternator-study, ford-thermactor-study, fsm-d975f341ee63, fsm-6f023139b5f8, wix-51515-envelope, enginequest-oil-filter-adapter, ford-tsb-94-10-19-accessory, truck-oil-pan-hardware, fel-pro-vin-y-gaskets, felpro-os34601r-topology, water-pump-mounting-topology, gates-water-pumps-2011, dipstick-specimen-e9te, dipstick-service-catalog, dipstick-tube-1995-adjacent-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Bore pitch 113.792 mm, deck height 254 mm and casting envelope are assumptions. The side-cover opening, perimeter rail and six fastener webs are provisional fit-study geometry. The rear cam plug seat and support boss are provisional. Water jackets, oil drillings, other bosses/plugs and deck passages need reconstruction.
   - Open: 20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.
   - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
@@ -58,6 +58,11 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: The larger gasket opening is retained as an unidentified passage with a provisional short pump-chamber connection; its actual cast routing is unverified. Radiator inlet neck remains a separate missing reconstruction.
   - Open: Impeller, mechanical seal, bearing cartridge and internal shaft geometry remain simplified. Existing belt plane and pumpY−32/Z170 coordinates are not factory dimensions.
   - Open: The provisional Thermactor upper support foot and blind socket move together to Y-125/Z140; casting, load capacity and production coordinates remain unverified.
+  - Open: Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.
+  - Open: Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.
+  - Open: The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.
+  - Open: Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.
+  - Open: The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.
 
 ## Additional known scope and reconciliation
 

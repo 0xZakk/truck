@@ -1,0 +1,1234 @@
+{
+  "status": "PASS",
+  "readiness": "candidate; requires coordinated shaft/bracket replacement and independent integration review",
+  "scope": "Estimated physical D-key, shoulder and transverse pin; sampled0\u201390\u00b0 against current throttle/IAC/TPS/hardware/intake and revised bracket. No real strength/spring/stop calibration claims.",
+  "input_hashes": {
+    "inventory/engine/full-assembly.json": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+    "scripts/check-throttle-linkage-candidate.py": "8fd3da13890862567ae0f43a415e75f949a7be88b70c42bc318b1b442753d06b",
+    "cad/engine/throttle_linkage_candidate.py": "9e6149128e65e903fe27e667cf0016ba9fe80af4d1083f917ddf3b8baf9f4b78",
+    "reference/engine/throttle-linkage-review.json": "8e59eae527b73f83eb16a1f3c8366cb4a979cbf493b6c1ee4841e5df2487c984",
+    "cad/engine/pilot/throttle-bracket/candidate.py": "fd3753c695a02a19dbe2a5ec3abe10dea47ab66b4478cc45ec91eb5bfa1697c0",
+    "cad/engine/generated/throttle-shaft.step": "2d32bf78af35cb78b5fb73648629c3cf314623785c3925b816baae7b3cdff164",
+    "cad/engine/generated/efi-upper-intake.step": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+    "cad/engine/generated/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+    "cad/engine/generated/throttle-gasket.step": "a6de7b0985d2ae30c92abe131a1609f6ddcc6ab2b04055280a44b830c6aca18f",
+    "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "cad/engine/generated/throttle-mount-stud.step": "f81c6143c4b75966eea3335737aec772fd95d9842cdede7faa92e6d0285eda5c",
+    "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+    "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d",
+    "cad/engine/generated/iac-valve-body.step": "ae9b42c24b6d30f55f47b327534ef8bbd0633a43aade539af9e1c1dcf7d80f8c",
+    "cad/engine/generated/iac-gasket.step": "4e0d027784e62bd99c8ef6007cdce1306bbf61d63798eeb76fc059c55771ba72",
+    "cad/engine/generated/iac-end-plug.step": "1b17a5ea46e62042515de08f03dd24d915733c3cda4716528890f5a5e8bda9a3",
+    "cad/engine/generated/iac-solenoid-can.step": "4282bcd6eff8fa7acb0f7974a3524e7a399a29a7305278de810c2df7b1c8ab4b",
+    "cad/engine/generated/iac-coil.step": "e8bc49b3a38992173e4e61e646ad91fe974d030048ded8846d2667c2e63d7216",
+    "cad/engine/generated/iac-armature.step": "acebcf514b6932e1b59d63a2ddcaf92518dbca8c14417af261af9cdbe9db27d3",
+    "cad/engine/generated/iac-pintle.step": "1d2edf63fb000c6a097970852d4e9a55bbb52bff1ba55d10485cbd0b0444faa6",
+    "cad/engine/generated/iac-connector-cap.step": "2a062b3b961a3e4b02cfeca2f9baf6f72c1f595dfdd898f95eaa53d2e48bbbe7",
+    "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+    "cad/engine/generated/tps-cover.step": "599c3f3120d3023a1ca725ad60bd098e1f51a064205e93b4c731d9051dd449a8",
+    "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+    "cad/engine/generated/tps-resistance-track.step": "41760977026789a80df6a374fcbd4944ff394aa9c38e919cfbdc715dc937024a",
+    "cad/engine/generated/tps-wiper.step": "be4d3a3a15be2838c662787250b08cae5ab63fc3bbc6b63b78e85e7a0a4eea93",
+    "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695",
+    "cad/engine/generated/accelerator-cable-bracket.step": "4f70dc35c7bb59e91a1ffd8dbda24a3fbdbc95775173a4c55708049c174369ed"
+  },
+  "output_hashes": {
+    "cad/engine/generated/throttle-linkage-candidate/throttle-lever-estimated.step": "faf9b0c4a4f87efaa8546ca83a66ff0742ae761bab1719931122b50278d38093",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-lever-estimated.glb": "ddd0da0bb6473399d2c3ecc7690eb17df44b1e66af908561b2bd521d82181751",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-cable-ball-stud-estimated.step": "8f66c76b5867bf78b4eb8f235028d5f81bbab294338e6c5ddbc30111a39266d3",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-cable-ball-stud-estimated.glb": "df341680dde910d861810c7e5393de37abd80e8023dc5cff5684f8ceece48368",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-shaft-keyed-estimated.step": "2094ac43646664066a92a887bb5929778510a1beb0087f251bce4673754f085c",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-shaft-keyed-estimated.glb": "13f973c944d0c238f30e5ef270a72725c880f807e7d53d122194287a9ad25f90",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-lever-retaining-pin-estimated.step": "6173d817d7dc4e95732fc5e460c3be95906202811fcb520e4d4762568befe772",
+    "cad/engine/generated/throttle-linkage-candidate/throttle-lever-retaining-pin-estimated.glb": "350c4bbed5982a5d62950440c5f781e3842f4632ca2a50daa7550d0d5e9c1c40",
+    "cad/engine/generated/throttle-linkage-candidate/accelerator-bracket-offset-estimated.step": "81e22d537b8a21d3ecb7af74a7a551b07dab7952e3d788bdefbfcbd1ade4649a",
+    "cad/engine/generated/throttle-linkage-candidate/accelerator-bracket-offset-estimated.glb": "a9ad71472134322072cb32167b32e718a573d39f1c4513b68aada70affdaa9ae"
+  },
+  "parameters": {
+    "shaft_end_y": 62.0,
+    "shoulder_length": 2.0,
+    "arm_thickness": 2.0,
+    "hub_radius": 6.0,
+    "arm_radius": 24.0,
+    "arm_width": 7.0,
+    "key_radius": 2.5,
+    "key_flat_x": 2.0,
+    "key_length": 4.0,
+    "pin_radius": 0.75,
+    "pin_length": 8.0,
+    "ball_radius": 3.0,
+    "neck_radius": 1.8,
+    "ball_offset": 4.0,
+    "bracket_web_y": 104.0,
+    "cable_window_x": [
+      431.0,
+      449.0
+    ],
+    "cable_window_z": 484.0,
+    "cable_window_radius": 12.0,
+    "cable_envelope_radius": 1.0
+  },
+  "export_checks": {
+    "throttle-lever-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 0.000683072954416275,
+      "volume_mm3": 484.4957423984195
+    },
+    "throttle-cable-ball-stud-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 0.00411379337310791,
+      "volume_mm3": 126.2166264622795
+    },
+    "throttle-shaft-keyed-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 3.5954879820110364e-06,
+      "volume_mm3": 2962.4317525175443
+    },
+    "throttle-lever-retaining-pin-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 2.682209014892578e-06,
+      "volume_mm3": 14.137166941154053
+    },
+    "accelerator-bracket-offset-estimated": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_bounds_error_mm": 1.4543533325195312e-05,
+      "volume_mm3": 10581.455137541056
+    }
+  },
+  "shaft_hub_contact_mm2": 40.64217717529506,
+  "ball_stud_seat_contact_mm2": 10.178760197630933,
+  "pin_lever_distance_mm": 0.0,
+  "shaft_pin_contact_mm2": 23.02250453450362,
+  "negative_controls": {
+    "disconnected_anchor_contact_mm2": 0,
+    "relative_rotation5deg_collision_mm3": 0.1961278479801321,
+    "axial_positive025mm_blocked_mm3": 0.585872668119638,
+    "axial_negative025mm_blocked_mm3": 2.415315431833252
+  },
+  "pose_checks": [
+    {
+      "angle_deg": 0,
+      "cable_opening_projection_mm": 71.0
+    },
+    {
+      "angle_deg": 2,
+      "cable_opening_projection_mm": 71.75943714251332
+    },
+    {
+      "angle_deg": 4,
+      "cable_opening_projection_mm": 72.43144646456238
+    },
+    {
+      "angle_deg": 6,
+      "cable_opening_projection_mm": 73.01520922630345
+    },
+    {
+      "angle_deg": 8,
+      "cable_opening_projection_mm": 73.51001420273302
+    },
+    {
+      "angle_deg": 10,
+      "cable_opening_projection_mm": 73.91525855020616
+    },
+    {
+      "angle_deg": 12,
+      "cable_opening_projection_mm": 74.23044854090867
+    },
+    {
+      "angle_deg": 14,
+      "cable_opening_projection_mm": 74.45520016438813
+    },
+    {
+      "angle_deg": 16,
+      "cable_opening_projection_mm": 74.58923959541163
+    },
+    {
+      "angle_deg": 18,
+      "cable_opening_projection_mm": 74.63240352757968
+    },
+    {
+      "angle_deg": 20,
+      "cable_opening_projection_mm": 74.58463937228989
+    },
+    {
+      "angle_deg": 22,
+      "cable_opening_projection_mm": 74.44600532280788
+    },
+    {
+      "angle_deg": 24,
+      "cable_opening_projection_mm": 74.21667028336806
+    },
+    {
+      "angle_deg": 26,
+      "cable_opening_projection_mm": 73.89691366338964
+    },
+    {
+      "angle_deg": 28,
+      "cable_opening_projection_mm": 73.48712503705929
+    },
+    {
+      "angle_deg": 30,
+      "cable_opening_projection_mm": 72.98780366869515
+    },
+    {
+      "angle_deg": 32,
+      "cable_opening_projection_mm": 72.39955790446994
+    },
+    {
+      "angle_deg": 34,
+      "cable_opening_projection_mm": 71.72310443123516
+    },
+    {
+      "angle_deg": 36,
+      "cable_opening_projection_mm": 70.95926740334818
+    },
+    {
+      "angle_deg": 38,
+      "cable_opening_projection_mm": 70.1089774385674
+    },
+    {
+      "angle_deg": 40,
+      "cable_opening_projection_mm": 69.17327048423786
+    },
+    {
+      "angle_deg": 42,
+      "cable_opening_projection_mm": 68.15328655514874
+    },
+    {
+      "angle_deg": 44,
+      "cable_opening_projection_mm": 67.05026834460116
+    },
+    {
+      "angle_deg": 46,
+      "cable_opening_projection_mm": 65.86555971037778
+    },
+    {
+      "angle_deg": 48,
+      "cable_opening_projection_mm": 64.60060403745901
+    },
+    {
+      "angle_deg": 50,
+      "cable_opening_projection_mm": 63.256942479480756
+    },
+    {
+      "angle_deg": 52,
+      "cable_opening_projection_mm": 61.836212081076354
+    },
+    {
+      "angle_deg": 54,
+      "cable_opening_projection_mm": 60.34014378338936
+    },
+    {
+      "angle_deg": 56,
+      "cable_opening_projection_mm": 58.77056031518899
+    },
+    {
+      "angle_deg": 58,
+      "cable_opening_projection_mm": 57.12937397215535
+    },
+    {
+      "angle_deg": 60,
+      "cable_opening_projection_mm": 55.418584287042094
+    },
+    {
+      "angle_deg": 62,
+      "cable_opening_projection_mm": 53.64027559355358
+    },
+    {
+      "angle_deg": 64,
+      "cable_opening_projection_mm": 51.79661448690536
+    },
+    {
+      "angle_deg": 66,
+      "cable_opening_projection_mm": 49.88984718416164
+    },
+    {
+      "angle_deg": 68,
+      "cable_opening_projection_mm": 47.92229678756586
+    },
+    {
+      "angle_deg": 70,
+      "cable_opening_projection_mm": 45.896360454198394
+    },
+    {
+      "angle_deg": 72,
+      "cable_opening_projection_mm": 43.8145064754098
+    },
+    {
+      "angle_deg": 74,
+      "cable_opening_projection_mm": 41.67927126958828
+    },
+    {
+      "angle_deg": 76,
+      "cable_opening_projection_mm": 39.493256291924304
+    },
+    {
+      "angle_deg": 78,
+      "cable_opening_projection_mm": 37.25912486493845
+    },
+    {
+      "angle_deg": 80,
+      "cable_opening_projection_mm": 34.979598933632865
+    },
+    {
+      "angle_deg": 82,
+      "cable_opening_projection_mm": 32.657455749220745
+    },
+    {
+      "angle_deg": 84,
+      "cable_opening_projection_mm": 30.295524485473674
+    },
+    {
+      "angle_deg": 86,
+      "cable_opening_projection_mm": 27.89668279180886
+    },
+    {
+      "angle_deg": 88,
+      "cable_opening_projection_mm": 25.46385328731677
+    },
+    {
+      "angle_deg": 90,
+      "cable_opening_projection_mm": 23.000000000000004
+    }
+  ],
+  "direct_cable_envelope_checks": [
+    {
+      "angle_deg": 0,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 2,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 4,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 6,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 8,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 10,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 12,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 14,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 16,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 18,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 20,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 22,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 24,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 26,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 28,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 30,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 32,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 34,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 36,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 38,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 40,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 42,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 44,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 46,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 48,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 50,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 52,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 54,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 56,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 58,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 60,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 62,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 64,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 66,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 68,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 70,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 72,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 74,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 76,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 78,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 80,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 82,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 84,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 86,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 88,
+      "bracket_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 90,
+      "bracket_overlap_mm3": 0.0
+    }
+  ],
+  "neighbors": [
+    "efi-upper-intake",
+    "throttle-housing",
+    "throttle-gasket",
+    "throttle-plate-1",
+    "throttle-plate-2",
+    "throttle-stud-1",
+    "throttle-nut-1",
+    "throttle-stud-2",
+    "throttle-nut-2",
+    "throttle-stud-3",
+    "throttle-nut-3",
+    "throttle-stud-4",
+    "throttle-nut-4",
+    "iac-valve-body",
+    "iac-gasket",
+    "iac-end-plug",
+    "iac-solenoid-can",
+    "iac-coil",
+    "iac-armature",
+    "iac-pintle",
+    "iac-connector-cap",
+    "tps-housing",
+    "tps-cover",
+    "tps-rotor",
+    "tps-resistance-track",
+    "tps-wiper",
+    "tps-screw-1",
+    "tps-screw-2"
+  ],
+  "exact_pair_count": 557,
+  "collisions": [],
+  "original_bracket_conflicts": [
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 0,
+      "overlap_mm3": 32.26206217123979
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 0,
+      "overlap_mm3": 16.05821236918414
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 0,
+      "overlap_mm3": 4.125103815660554
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 2,
+      "overlap_mm3": 32.262062171525656
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 2,
+      "overlap_mm3": 16.058212369350308
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 2,
+      "overlap_mm3": 4.125103815660467
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 4,
+      "overlap_mm3": 32.262062172114156
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 4,
+      "overlap_mm3": 16.058212369512948
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 4,
+      "overlap_mm3": 4.125103815660535
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 6,
+      "overlap_mm3": 32.2620621716144
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 6,
+      "overlap_mm3": 16.058212369672727
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 6,
+      "overlap_mm3": 4.125103815660458
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 8,
+      "overlap_mm3": 32.26206217283172
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 8,
+      "overlap_mm3": 16.058212369827206
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 8,
+      "overlap_mm3": 4.125103815660509
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 10,
+      "overlap_mm3": 32.26206217150427
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 10,
+      "overlap_mm3": 16.058212369976488
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 10,
+      "overlap_mm3": 4.125103815660491
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 12,
+      "overlap_mm3": 32.26206217127386
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 12,
+      "overlap_mm3": 16.05821237012028
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 12,
+      "overlap_mm3": 4.125103815660554
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 14,
+      "overlap_mm3": 32.26206217171833
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 14,
+      "overlap_mm3": 16.058212370257028
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 14,
+      "overlap_mm3": 4.125103815660475
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 16,
+      "overlap_mm3": 32.26206217244982
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 16,
+      "overlap_mm3": 16.05821237038668
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 16,
+      "overlap_mm3": 4.125103815660573
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 18,
+      "overlap_mm3": 32.262062171790994
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 18,
+      "overlap_mm3": 16.058212370509178
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 18,
+      "overlap_mm3": 4.125103815660538
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 20,
+      "overlap_mm3": 32.262062171022265
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 20,
+      "overlap_mm3": 16.058212370628198
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 20,
+      "overlap_mm3": 4.125103815660545
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 22,
+      "overlap_mm3": 32.26206217107852
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 22,
+      "overlap_mm3": 16.05821237074373
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 22,
+      "overlap_mm3": 4.125103815660605
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 24,
+      "overlap_mm3": 32.26206217263549
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 24,
+      "overlap_mm3": 16.058212370856328
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 24,
+      "overlap_mm3": 4.125103815660493
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 26,
+      "overlap_mm3": 32.262062171534616
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 26,
+      "overlap_mm3": 16.05821237096743
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 26,
+      "overlap_mm3": 4.125103815660513
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 28,
+      "overlap_mm3": 32.262062171054644
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 28,
+      "overlap_mm3": 16.058212371076777
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 28,
+      "overlap_mm3": 4.125103815660587
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 30,
+      "overlap_mm3": 32.26206217088062
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 30,
+      "overlap_mm3": 16.05821237118525
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 30,
+      "overlap_mm3": 4.125103815660587
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 32,
+      "overlap_mm3": 32.262062171076465
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 32,
+      "overlap_mm3": 16.058212371294292
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 32,
+      "overlap_mm3": 4.125103815660486
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 34,
+      "overlap_mm3": 32.262062177263644
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 34,
+      "overlap_mm3": 16.058212371403393
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 34,
+      "overlap_mm3": 4.125103815660601
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 36,
+      "overlap_mm3": 32.26206217248637
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 36,
+      "overlap_mm3": 16.058212371513584
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 36,
+      "overlap_mm3": 4.125103815660503
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 38,
+      "overlap_mm3": 32.262062173353776
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 38,
+      "overlap_mm3": 16.058212371625764
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 38,
+      "overlap_mm3": 4.125103815660597
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 40,
+      "overlap_mm3": 32.26206217100178
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 40,
+      "overlap_mm3": 16.058212371739977
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 40,
+      "overlap_mm3": 4.125103815660451
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 42,
+      "overlap_mm3": 32.26206217127115
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 42,
+      "overlap_mm3": 16.058212371856847
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 42,
+      "overlap_mm3": 4.125103815660523
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 44,
+      "overlap_mm3": 32.26206217081795
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 44,
+      "overlap_mm3": 16.05821237197692
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 44,
+      "overlap_mm3": 4.125103815660546
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 46,
+      "overlap_mm3": 32.26206217022147
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 46,
+      "overlap_mm3": 16.058212372100506
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 46,
+      "overlap_mm3": 4.125103815660558
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 48,
+      "overlap_mm3": 32.262062170749516
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 48,
+      "overlap_mm3": 16.05821237222784
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 48,
+      "overlap_mm3": 4.125103815660531
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 50,
+      "overlap_mm3": 32.26206217036528
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 50,
+      "overlap_mm3": 16.05821237235888
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 50,
+      "overlap_mm3": 4.125103815660453
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 52,
+      "overlap_mm3": 32.26206217095822
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 52,
+      "overlap_mm3": 16.05821237249474
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 52,
+      "overlap_mm3": 4.125103815660598
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 54,
+      "overlap_mm3": 32.26206217009634
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 54,
+      "overlap_mm3": 16.058212372634582
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 54,
+      "overlap_mm3": 4.125103815660515
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 56,
+      "overlap_mm3": 32.262062170223004
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 56,
+      "overlap_mm3": 16.058212372778936
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 56,
+      "overlap_mm3": 4.125103815660586
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 58,
+      "overlap_mm3": 32.26206216798359
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 58,
+      "overlap_mm3": 16.058212372928924
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 58,
+      "overlap_mm3": 4.1251038156604825
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 60,
+      "overlap_mm3": 32.2620621695865
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 60,
+      "overlap_mm3": 16.058212373082835
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 60,
+      "overlap_mm3": 4.125103815660593
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 62,
+      "overlap_mm3": 32.262062169506315
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 62,
+      "overlap_mm3": 16.058212373240977
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 62,
+      "overlap_mm3": 4.125103815660589
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 64,
+      "overlap_mm3": 32.26206216961789
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 64,
+      "overlap_mm3": 16.05821237340459
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 64,
+      "overlap_mm3": 4.125103815660509
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 66,
+      "overlap_mm3": 32.26206217017991
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 66,
+      "overlap_mm3": 16.0582123735712
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 66,
+      "overlap_mm3": 4.125103815660496
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 68,
+      "overlap_mm3": 32.26206217009403
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 68,
+      "overlap_mm3": 16.058212373742613
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 68,
+      "overlap_mm3": 4.125103815660606
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 70,
+      "overlap_mm3": 32.26206216933682
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 70,
+      "overlap_mm3": 16.058212373917556
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 70,
+      "overlap_mm3": 4.125103815660549
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 72,
+      "overlap_mm3": 32.262062169439055
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 72,
+      "overlap_mm3": 16.058212374095636
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 72,
+      "overlap_mm3": 4.125103815660537
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 74,
+      "overlap_mm3": 32.26206216913057
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 74,
+      "overlap_mm3": 16.058212374277232
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 74,
+      "overlap_mm3": 4.125103815660577
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 76,
+      "overlap_mm3": 32.26206211529359
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 76,
+      "overlap_mm3": 16.058212374460048
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 76,
+      "overlap_mm3": 4.125103815660474
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 78,
+      "overlap_mm3": 31.024504392977704
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 78,
+      "overlap_mm3": 16.058212374645567
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 78,
+      "overlap_mm3": 4.125103815660556
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 80,
+      "overlap_mm3": 26.478592259742307
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 80,
+      "overlap_mm3": 16.05821237483189
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 80,
+      "overlap_mm3": 4.125103815660484
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 82,
+      "overlap_mm3": 19.720932564271273
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 82,
+      "overlap_mm3": 16.05821237501914
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 82,
+      "overlap_mm3": 4.125103815660509
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 84,
+      "overlap_mm3": 12.293950146585429
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 84,
+      "overlap_mm3": 16.05821237520559
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 84,
+      "overlap_mm3": 4.1251038156604505
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 86,
+      "overlap_mm3": 5.358025241288735
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 86,
+      "overlap_mm3": 16.058212375391452
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 86,
+      "overlap_mm3": 4.125103815660531
+    },
+    {
+      "part": "throttle-cable-ball-stud-estimated",
+      "angle_deg": 88,
+      "overlap_mm3": 0.9224309293789494
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 88,
+      "overlap_mm3": 16.0582123755758
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 88,
+      "overlap_mm3": 4.125103815660473
+    },
+    {
+      "part": "throttle-shaft-keyed-estimated",
+      "angle_deg": 90,
+      "overlap_mm3": 16.058212375757396
+    },
+    {
+      "part": "throttle-lever-retaining-pin-estimated",
+      "angle_deg": 90,
+      "overlap_mm3": 4.125103815660555
+    }
+  ],
+  "revised_bracket_contact_mm2": {
+    "throttle-housing": 369.7314775237985,
+    "throttle-nut-3": 36.64296159304475,
+    "throttle-nut-4": 36.64296159304475
+  },
+  "integration": {
+    "moving_parent": "throttle-moving",
+    "position_cad_mm": [
+      0,
+      0,
+      0
+    ],
+    "rotation_cad_deg": [
+      0,
+      0,
+      0
+    ],
+    "bracket_parent": "throttle-assembly",
+    "bracket_web_delta_y_mm": 11.0
+  },
+  "limitations": [
+    "All new dimensions, D-section shaft coupling and retention pin inferred; production retention unverified.",
+    "Bracket web offset11 mm and ear extensions are a coordinated educational revision, not a Ford dimension.",
+    "Spring, shield, cable/socket, plate screws and preset stops absent;0\u201390 degrees is inherited educational travel."
+  ]
+}

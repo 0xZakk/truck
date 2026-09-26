@@ -15,7 +15,7 @@ for identifier, source in sources.items():
     if not path or not digest:
         errors.append({'source': identifier, 'error': 'Missing local capture path or SHA256'})
         continue
-    capture = ROOT / path
+    capture = ROOT / path.lstrip("/")
     if not capture.is_file():
         errors.append({'source': identifier, 'error': 'Missing capture', 'path': path})
         continue

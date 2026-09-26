@@ -1,0 +1,138 @@
+{
+  "engine-oil-dipstick-blade": {
+    "summary": "The metal indicator follows the guide and extends into the sump. Its reading marks must belong to the correct matched indicator and tube.",
+    "steps": [
+      {
+        "title": "Keep the length distinctions clear",
+        "text": "The approximate 692.15 mm axial study route comprises 558.476126 mm through the guide and 133.673874 mm beyond it. Estimated near-stop waves add 6.572804 mm to the material centerline; that difference has not been hidden by shortening the tip."
+      },
+      {
+        "title": "Unknown marks stay unknown",
+        "text": "E9TE-6750-DA is a specimen stamp comparison. No ADD, FULL, NORMAL band or oil-level plane has been reconstructed. A clear fit does not calibrate an oil reading."
+      },
+      {
+        "title": "A flexible part shown in one pose",
+        "text": "The strip is modeled in a seated flexed shape. Its real withdrawal follows the tube; the exploded view is separation for inspection, not a removal simulation.",
+        "part": "engine-oil-dipstick-tube"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "engine-oil-dipstick-handle": {
+    "summary": "The handle and stop provide a repeatable modeled seating reference at the guide mouth.",
+    "steps": [
+      {
+        "title": "Seat before interpreting a reading",
+        "text": "The stop bears on the mouth annulus. This contact establishes a geometric reference in the study; the true matched-pair stop datum, fit and retention still require confirmation.",
+        "part": "engine-oil-dipstick-tube"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "A mismatch changes the reference",
+        "text": "An unseated stop or an incorrect tube/indicator combination can alter the apparent reading. This model cannot supply replacement calibration marks or diagnose the actual truck."
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "engine-oil-dipstick-tube": {
+    "summary": "The hollow guide connects the handle location to an estimated rear-side block entry and supports the indicator route.",
+    "steps": [
+      {
+        "title": "Two independent attachments",
+        "text": "Adjacent 1995 Ford documentation describes a lower retaining nut and an upper bracket at the pushrod cover. Exact 1994 applicability, dimensions and the owner\u2019s attachment station remain unverified.",
+        "part": "pushrod-cover-bolt-1"
+      },
+      {
+        "title": "Passage into the crankcase",
+        "text": "The proposed boss and passage are isolated interface estimates derived from the existing model section, not factory machining dimensions.",
+        "part": "block"
+      },
+      {
+        "title": "Clearance is not calibration",
+        "text": "The guide and expanded mouth clear the inherited blade section and near-stop waves. The sump reading level remains unknown.",
+        "part": "engine-oil-dipstick-blade"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "engine-oil-dipstick-tube-retaining-nut": {
+    "summary": "The lower nut shoulder bears on the modeled tube shoulder beside the block receiver.",
+    "steps": [
+      {
+        "title": "Unfinished threaded joint",
+        "text": "The mating threads are clearance envelopes. Thread engagement, sealing construction, tightening specification and strength have not been established.",
+        "part": "engine-oil-dipstick-tube"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "engine-oil-dipstick-tube-bracket": {
+    "summary": "The upper bracket connects the tube collar to a proposed stud at the rear cover mounting station.",
+    "steps": [
+      {
+        "title": "Support at the cover",
+        "text": "Only the rear cover-bolt occurrence receives the new retainer. The other five cover bolts stay as modeled. The actual Ford retainer station and bracket manufacturing joint remain uncertain.",
+        "part": "pushrod-cover-bolt-1"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "engine-oil-dipstick-tube-support-nut": {
+    "summary": "The support nut bears on the tube bracket beside the exposed retainer stud.",
+    "steps": [
+      {
+        "title": "Contact versus retention",
+        "text": "Bearing contact is checked, but modeled clearance envelopes do not establish actual thread engagement or retention force.",
+        "part": "engine-oil-dipstick-tube-bracket"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  },
+  "pushrod-cover-dipstick-retainer-estimated": {
+    "summary": "This proposed cover retainer adds an exposed support stud while keeping the existing rear cover mounting datum.",
+    "steps": [
+      {
+        "title": "One coordinated replacement",
+        "text": "The original rear occurrence is preserved at its original frame and now refers to this retainer definition. Actual 6C517 dimensions and upper thread geometry remain unknown.",
+        "part": "engine-oil-dipstick-tube-bracket"
+      }
+    ],
+    "limits": "This is an educational fit study with estimated sections, routing and attachments. Exact 1994 identity and oil calibration remain unresolved. The rigid flexed pose does not simulate insertion, withdrawal, retention force or elastic behavior.",
+    "sources": [
+      "dipstick-specimen-e9te",
+      "dipstick-service-catalog",
+      "dipstick-tube-1995-adjacent-study"
+    ]
+  }
+}

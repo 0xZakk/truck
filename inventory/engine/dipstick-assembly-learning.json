@@ -1,0 +1,15 @@
+{
+  "engine-oil-dipstick-assembly": {
+    "summary": "The guide brings the flexible indicator from an accessible handle down into the sump. The seated stop fixes how far the indicator extends; the guide and calibrated marks must match the engine and oil pan.",
+    "limits": "This study connects the guide, blade and support hardware using inferred dimensions and adjacent-year mounting evidence. The blade has no verified ADD/FULL marks. Its flexed shape is a display pose, and the exploded view does not simulate bending or withdrawal.",
+    "steps": [
+      {"title": "Follow the indicator", "text": "Use See through covers to reveal the continuous strip inside the guide. The free lower end extends into the sump.", "part": "engine-oil-dipstick-blade"},
+      {"title": "Locate the seated stop", "text": "The handle's stop meets the guide mouth, giving the strip a repeatable axial position. Actual friction retention and oil calibration remain unresolved.", "part": "engine-oil-dipstick-handle"},
+      {"title": "Find the shared support", "text": "The upper bracket attaches to a retainer that also clamps the side cover. That retainer stays in the side-cover assembly because it is one physical part serving both systems.", "part": "pushrod-cover-bolt-1"}
+    ],
+    "troubleshooting": [
+      {"title": "Treat tube and indicator as a matched set", "text": "A changed guide route, stop position or indicator length changes where the marks sit in the sump. This uncalibrated model cannot supply a correct oil-level reading."}
+    ],
+    "sources": ["dipstick-specimen-e9te", "dipstick-service-catalog", "dipstick-tube-1995-adjacent-study"]
+  }
+}

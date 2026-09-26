@@ -1,4 +1,4 @@
-import {engineLearningModules} from '../viewer/engine-learning-modules.js';
+import {engineLearningModules,resolveEngineLearning} from '../viewer/engine-learning-modules.js';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {buildNavigation} from '../viewer/engine-navigation.js';
@@ -22,7 +22,7 @@ for(const [identifier,ratio] of [['oil-pump-intermediate-rotation',-.5],['oil-pu
 }
 assert.equal(manifest.occurrences.find(part=>part.id==='oil-pump-drive-retainer').parent,'oil-pump-intermediate-rotation');
 assert.equal(nav.parts('oil-pickup-assembly').length,3);
-assert.equal(nav.parts('induction').length,206);
+assert.equal(nav.parts('induction').length,212);
 assert.equal(nav.parts('intake-head-locator').length,1);
 assert.ok(nav.ancestors('intake-head-locating-dowel').some(node=>node.id==='induction'));
 assert.equal(nav.parts('fuel-test-valve').length,8);
@@ -32,7 +32,11 @@ for(const identifier of ['front-manifold-lifting-eye','front-manifold-stud13','f
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
 assert.equal(nav.parts('intake-studs').length,7);
-assert.equal(nav.parts('throttle-assembly').length,29);
+assert.equal(nav.parts('throttle-assembly').length,35);
+for(const identifier of ['throttle-lever-estimated','throttle-cable-ball-stud-estimated','throttle-lever-retaining-pin-estimated','throttle-linkage-shield-estimated','throttle-shield-pushpin-estimated','throttle-return-spring-illustrative']){
+  assert.ok(nav.ancestors(identifier).some(node=>node.id==='throttle-assembly'));
+  assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
+}
 assert.equal(nav.parts('cylinder-1').length,15);
 assert.equal(nav.parts('main-support-1').length,5);
 assert.equal(nav.fromUrl('/viewer/part.html?id=c1-piston-1'),'c1-piston-1');
@@ -42,7 +46,7 @@ const results=nav.search('cylinder 4 lifter');
 assert.ok(results.some(n=>n.id==='c4-intake-lifter-body'));
 assert.ok(results.every(n=>nav.ancestors(n.id).some(a=>a.id==='valvetrain-cylinder-4')));
 assert.equal(nav.search('timing cover')[0].id,'timing-cover','Exact part names outrank broad ancestor matches');
-const learning=Object.assign({},...await Promise.all(engineLearningModules.map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+const learning=resolveEngineLearning(manifest,nav.nodes.keys(),...await Promise.all(engineLearningModules.map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
 for(const [id,entry] of Object.entries(learning)){
   assert.ok(nav.nodes.has(id));
   for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.part)assert.ok(nav.nodes.has(step.part),step.part);
@@ -158,3 +162,8 @@ for(let i=1;i<=6;i++){const ids=nav.parts(`valvetrain-cylinder-${i}`);for(const 
 assert.equal(nav.parts('water-pump-mechanical-seal-assembly').length,6);
 assert.ok(!nav.nodes.has('water-pump-seal'));
 assert.ok(nav.nodes.has('accelerator-cable-bracket'));
+
+assert.ok(learning['pushrod-cover-bolt-1'].summary.includes('stud'));
+const lessonFixture={assemblies:[{id:'root'}],occurrences:[{id:'copy-a',definition:'shared'},{id:'copy-b',definition:'shared'}]};
+assert.deepEqual(resolveEngineLearning(lessonFixture,[],{shared:{summary:'default'},'copy-a':{summary:'specific'}}),{'copy-a':{summary:'specific'},'copy-b':{summary:'default'}});
+assert.throws(()=>resolveEngineLearning(lessonFixture,[],{missing:{}}),/absent/);

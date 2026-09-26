@@ -136,5 +136,72 @@
     "reference/engine/ford-engine-exploded.jpg": "dfc9f5f35b23161c43c4a670aa1adb2dc22c487c30e4486f486e1b9d5518e4c7",
     "reference/photos/2026-09-23/engine-bay-passenger-side.jpg": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
     "reference/photos/2026-09-23/engine-bay-driver-side.jpg": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474"
+  },
+  "offline_1994_archive_review": {
+    "date": "2026-09-26",
+    "archive": "manuals/factory-service-manual/fsm-bundle.zip",
+    "archive_entries": 14278,
+    "method": "Enumerated extracted files with rg --files --no-ignore; searched HTML for dipstick, oil-level-indicator, 6754, 6C517 and A23872; checked ZIP directory for unextracted tube pages; read relevant service pages and visually inspected their four local PNGs using view_image.",
+    "result": "No engine-oil dipstick/tube installation page or A23872-A attachment diagram was located in this offline 1994 CHARM bundle. Only automatic-transmission dipstick parts pages and unrelated electrical oil-level warning pages were located under corresponding names. This is a scoped archive finding, not proof that a Ford1994 procedure or component does not exist.",
+    "applicability_change": "None: exact1994 tube attachment not established. Adjacent1995 retention architecture remains explicitly adjacent-year evidence.",
+    "reviewed_pages": [
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Service%20and%20Repair/index.html",
+        "sha256": "8c4fda7026bf04f4b98bf203745dd715e2a930d61f21725bc9cdc7287d819240",
+        "observation": "Engine removal/reinstallation procedure; no engine-oil tube attachment instructions or tube illustration."
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Camshaft%2C%20Lifters%20and%20Push%20Rods/Lifter%20%2F%20Lash%20Adjuster/Service%20and%20Repair/index.html",
+        "sha256": "c14abecfb76098608f17ea7b47362702b13cc4d24748b36d7a560f7e00467698",
+        "observation": "Lifter procedure includes pushrod-cover removal, but does not identify tube support retainer or station."
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Pan/Service%20and%20Repair/index.html",
+        "sha256": "805b4520e7fc0324229f714ecff0f1964282694a3be438558cb7e96c09718b70",
+        "observation": "Pan procedure and two figures inspected. No dipstick attachment step or identified guide-tube port."
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Diagrams/index.html",
+        "sha256": "7a164249ec9921d5ce3ddcd95dec044f40738cabf76434017cdbac2810bdfe80",
+        "observation": "Lubrication schematic inspected; oil galleries, bearings, pump and filter, no identified dipstick tube."
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Level%20Warning%20Indicator/Testing%20and%20Inspection/index.html",
+        "sha256": "24236866b129a351851989008292c40d6034ca3b9ddfe3dbd92bf4a72b3d9eeb",
+        "observation": "Electrical oil-level warning diagnosis; not a guide-tube installation procedure or dimensional source."
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Transmission%20and%20Drivetrain/Automatic%20Transmission%2FTransaxle/Automatic%20Transmission%20Dipstick%20-%20Dipstick%20Tube/Parts%20Information/index.html",
+        "sha256": "2dc5ca08cbc0c1edda2e081737c31f94c36c9db39c2378bb0e162f2fe0e5eed3",
+        "observation": "Numbers F4TZ7A020A/E7TZ7A020D/E9TZ7A020B are transmission indicators; excluded from engine tube identification."
+      }
+    ],
+    "viewed_images": [
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/288847252.png",
+        "sha256": "2d95844b4c5273e516dadd60e5622d270b8fe545e8cf22914d4db4b44a8e2dc9",
+        "observation": "Hydraulic lifter exploded parts, no tube attachment.",
+        "viewed": true
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/350370598.png",
+        "sha256": "60688c9af632f3f8666e79d766ce945516ef66cbfe3e801909887464e57676b8",
+        "observation": "Rear pan seal detail, no dipstick attachment.",
+        "viewed": true
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/350379654.png",
+        "sha256": "8cb2091a2ca0bdfeda36098cfbfa346d3fa78a665ecfb25e27e0edf18bab3803",
+        "observation": "Oil pan exploded installation drawing; no labeled dipstick tube or entry. Its omission does not prove absence of a port.",
+        "viewed": true
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/354634388.png",
+        "sha256": "302d3b539982e0db7052066994585136a402101142d4c855c36da1c579a3443c",
+        "observation": "Oil galleries and bearing lubrication diagram, no tube placement.",
+        "viewed": true
+      }
+    ],
+    "redistribution": "No manual file or image copied. Paths/hashes identify local evidence only; future users need lawful source access."
   }
 }

@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. **705 definitions / 1310 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. **718 definitions / 1322 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
@@ -19,7 +19,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Crankshaft, main bearings and caps](crank-main.md) | 5 | 36 | In review | [#23](https://github.com/0xZakk/truck/issues/23) |
 | [Cylinder block, plugs and dowels](block.md) | 2 | 2 | In review | [#24](https://github.com/0xZakk/truck/issues/24) |
 | [Cylinder head, gasket and bolts](head.md) | 3 | 16 | In review | [#25](https://github.com/0xZakk/truck/issues/25) |
-| [Pushrod side cover, gasket and hardware](side-cover.md) | 4 | 14 | In review | [#26](https://github.com/0xZakk/truck/issues/26) |
+| [Pushrod side cover, gasket and hardware](side-cover.md) | 4 | 13 | In review | [#26](https://github.com/0xZakk/truck/issues/26) |
 | [Intake/exhaust valves, springs, retainers and keepers](valves.md) | 7 | 72 | In review | [#27](https://github.com/0xZakk/truck/issues/27) |
 | [Rocker arms, fulcrums, guides and bolts](rockers.md) | 4 | 48 | In review | [#28](https://github.com/0xZakk/truck/issues/28) |
 | [Pushrods](pushrods.md) | 1 | 12 | In review | [#29](https://github.com/0xZakk/truck/issues/29) |
@@ -37,7 +37,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Fuel rails, return tube and retaining hardware](fuel-rail.md) | 4 | 8 | In review | [#40](https://github.com/0xZakk/truck/issues/40) |
 | [Fuel regulator vacuum hose and fitting](regulator-vacuum.md) | 2 | 2 | In review | [#41](https://github.com/0xZakk/truck/issues/41) |
 | [Fuel pressure regulator and internals](fuel-regulator.md) | 11 | 13 | In review | [#42](https://github.com/0xZakk/truck/issues/42) |
-| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 6 | 11 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
+| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 12 | 17 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
 | [Throttle cable bracket](throttle-bracket.md) | 2 | 3 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
 | [Idle-air control valve and internals](iac.md) | 8 | 8 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
 | [Throttle-position sensor and internals](tps.md) | 6 | 7 | In review | [#45](https://github.com/0xZakk/truck/issues/45) |
@@ -73,8 +73,8 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Oil filter, mounting insert and gallery interface](filter.md) | 14 | 14 | In review | [#75](https://github.com/0xZakk/truck/issues/75) |
 | [FS10 A/C compressor, clutch and internal components](ac-compressor.md) | 67 | 67 | In review | [#76](https://github.com/0xZakk/truck/issues/76) |
 | [Starter motor, reduction, drive and solenoid](starter.md) | 132 | 132 | In review | [#77](https://github.com/0xZakk/truck/issues/77) |
-| [Engine oil dipstick](dipstick.md) | 0 | 0 | In review | [#17](https://github.com/0xZakk/truck/issues/17) |
-| [Dipstick guide tube, seat and retaining hardware](dipstick-tube.md) | 0 | 0 | Backlog | [#78](https://github.com/0xZakk/truck/issues/78) |
+| [Engine oil dipstick](dipstick.md) | 2 | 2 | In review | [#17](https://github.com/0xZakk/truck/issues/17) |
+| [Dipstick guide tube, seat and retaining hardware](dipstick-tube.md) | 5 | 5 | In review | [#78](https://github.com/0xZakk/truck/issues/78) |
 | [Engine mounting brackets, isolators and hardware](engine-mounts.md) | 0 | 0 | Backlog | [#79](https://github.com/0xZakk/truck/issues/79) |
 | [Air cleaner, filter and intake ducts](air-cleaner.md) | 0 | 0 | Backlog | [#80](https://github.com/0xZakk/truck/issues/80) |
 | [Vacuum tree, hoses, caps and retainers](vacuum-network.md) | 0 | 0 | Backlog | [#81](https://github.com/0xZakk/truck/issues/81) |
