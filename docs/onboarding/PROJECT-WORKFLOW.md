@@ -52,3 +52,20 @@ Before a planned stop, push a labeled WIP branch if authorized and record curren
 Follow [the efficiency workflow](../TOKEN-EFFICIENT-BUILD-WORKFLOW.md). Fresh focused briefs reference relevant files rather than carrying all history. Parallel workers require non-overlapping ownership and a single integration owner; more agents alone do not improve token efficiency.
 
 For experiments, record model/effort, stage scope, outcome, elapsed time and available input/cached/output usage for workers **and** coordinator/rework. Reasoning is already included in output where reported that way. Mark unavailable usage as unavailable. Compare similar accepted deliverables with the same gates; the three-part pilot's candidate-only cost is not a completed-part budget. Do not mix unrelated GitHub administration into a modeling benchmark without labeling it.
+
+## CLI status updates
+
+The issue publisher does not reset operational statuses. Update only the issues being worked on, after reading their current state:
+
+```sh
+# One-time account authorization, if Projects access is absent:
+gh auth refresh -s project
+
+# Preview the specific changes; omit --expect only after inspecting the board:
+python3 scripts/set-engine-project-status.py 15 16 47 --status "In progress" --expect "In review" --reason "Component interface work resumed"
+
+# Repeat with --apply to write, then verify the statuses through the API:
+python3 scripts/set-engine-project-status.py 15 16 47 --status "In progress" --expect "In review" --reason "Component interface work resumed" --apply
+```
+
+This command resolves exact repository issue URLs, rejects missing/duplicate items and unexpected statuses, and verifies writes. It preserves issue bodies, checklists and closure state. Done additionally requires `--acceptance-record docs/components/<part>.md`; the integration owner must actually review the gates, because presence of a file is not an automated acceptance verdict. If authorization expires, continue local work and issue updates, record the board discrepancy, and reconcile once access is restored.
