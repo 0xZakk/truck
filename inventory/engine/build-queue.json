@@ -1,0 +1,481 @@
+{
+  "objective": "Complete engine before requesting whole-engine review",
+  "policy": "Continue independent work when evidence is missing. Do not equate provisional geometry or count growth with accurate completion. Mark implemented, validated and evidence-limited separately.",
+  "tasks": [
+    {
+      "id": "block-and-head-1",
+      "system": "Block and head",
+      "task": "Casting contours and installed identities",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-2",
+      "system": "Block and head",
+      "task": "Coolant jackets and deck passages",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-3",
+      "system": "Block and head",
+      "task": "Oil galleries and their plugs",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-4",
+      "system": "Block and head",
+      "task": "Core plugs and locating dowels",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-5",
+      "system": "Block and head",
+      "task": "Lifter side cover and its seal/fasteners",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-6",
+      "system": "Block and head",
+      "task": "Spark-plug bores",
+      "status": "in_progress",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry.",
+      "progress": "Six recessed wells, simplified seats/bores and firing pockets now share provisional mounting datums with the plugs. Replaced staged plug placements. Casting-specific dimensions, female threads and coolant-jacket clearance remain unresolved."
+    },
+    {
+      "id": "block-and-head-7",
+      "system": "Block and head",
+      "task": "Valve guide/seat construction and ports",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "block-and-head-8",
+      "system": "Block and head",
+      "task": "Engine mounting bosses and brackets",
+      "status": "pending",
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "id": "rotating-and-valve-train-1",
+      "system": "Rotating and valve train",
+      "task": "Rod length and pin offset verification",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-2",
+      "system": "Rotating and valve train",
+      "task": "Crank counterweights, fillets, drillings and keys",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-3",
+      "system": "Rotating and valve train",
+      "task": "Correct thrust bearing construction",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-4",
+      "system": "Rotating and valve train",
+      "task": "Intake/exhaust-specific springs, retainers and seals",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-5",
+      "system": "Rotating and valve train",
+      "task": "Cam spacer, thrust plate and retaining screws",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-6",
+      "system": "Rotating and valve train",
+      "task": "Timing tooth counts, helix and marks",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "rotating-and-valve-train-7",
+      "system": "Rotating and valve train",
+      "task": "Sourced cam profile and coordinated valve motion",
+      "status": "pending",
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "id": "fuel-and-air-1",
+      "system": "Fuel and air",
+      "task": "Fuel rail mounting supports and three retaining fasteners",
+      "status": "in_progress",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation.",
+      "progress": "Three separate1/4-20x.90in threaded bolts and washers, with lower-intake support bosses and matching bores. Nominal bolt dimensions sourced to factory image648486791; head/washer/boss dimensions and mount stations remain provisional."
+    },
+    {
+      "id": "fuel-and-air-2",
+      "system": "Fuel and air",
+      "task": "Fuel pressure-test valve and cap",
+      "status": "in_progress",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation.",
+      "progress": "Eight-component generic Schrader diagnostic valve connected by an open branch to the modeled rail. Ford confirms fitting; exact installed identity, dimensions, threads, position and core internals remain unverified."
+    },
+    {
+      "id": "fuel-and-air-3",
+      "system": "Fuel and air",
+      "task": "Supply and return spring-lock couplings, clips and seals",
+      "status": "in_progress",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation.",
+      "progress": "Both connections now have eight inspectable parts, including two seals each and a coiled garter spring. Focused CAD validity, internal clearances and fuel passage checks pass. Exact dimensions, spring end-joining detail, seal compression and stations remain provisional."
+    },
+    {
+      "id": "fuel-and-air-4",
+      "system": "Fuel and air",
+      "task": "Wiring harness and terminals",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-5",
+      "system": "Fuel and air",
+      "task": "Regulator vacuum line",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-6",
+      "system": "Fuel and air",
+      "task": "IAC variant, mounting hardware and restoring mechanism",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-7",
+      "system": "Fuel and air",
+      "task": "Throttle linkage, return spring, bracket and plate screws",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-8",
+      "system": "Fuel and air",
+      "task": "PCV valve, grommet and hoses",
+      "status": "in_progress",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation.",
+      "progress": "Added six-part PCV/grommet study using factory mechanism and Standard V219 photo exterior. Open outlet passages and cover/intake clearances pass. Hoses, baffle, installed variant, unused outlet treatment and calibrated dimensions remain unresolved."
+    },
+    {
+      "id": "fuel-and-air-9",
+      "system": "Fuel and air",
+      "task": "EGR valve, sensor and tube",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-10",
+      "system": "Fuel and air",
+      "task": "Vacuum tree and hoses",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "fuel-and-air-11",
+      "system": "Fuel and air",
+      "task": "Air inlet hoses and air-cleaner boundary",
+      "status": "pending",
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "id": "exhaust-1",
+      "system": "Exhaust",
+      "task": "Head fasteners, shared clamps, dowel and lifting eye",
+      "status": "pending",
+      "progress": "Front eye/stud13/bolt14 and separate intake locating dowel are integrated at688 definitions/1244 occurrences. Installed joint, socket, exploded-view and whole-static checks pass on716eb2. Manufacturer-supported rectangular front exhaust entries and a blended collector are now being integrated with matching head passages; candidate passes225 neighbor/35 flow checks and positive rim controls. Fourteen other attachment stations and shared clamps remain open. All production stations, casting walls/bosses, gallery compatibility, fits and lifting strength remain unverified.",
+      "dependency": "Reconcile the factory joint layout with measured casting ports and attachment stations."
+    },
+    {
+      "id": "exhaust-2",
+      "system": "Exhaust",
+      "task": "EGR takeoff",
+      "status": "pending",
+      "dependency": "Reconcile the factory joint layout with measured casting ports and attachment stations."
+    },
+    {
+      "id": "exhaust-3",
+      "system": "Exhaust",
+      "task": "Air-injection hardware",
+      "status": "pending",
+      "dependency": "Reconcile the factory joint layout with measured casting ports and attachment stations."
+    },
+    {
+      "id": "exhaust-4",
+      "system": "Exhaust",
+      "task": "Outlet joints, seals and fasteners",
+      "status": "pending",
+      "dependency": "Reconcile the factory joint layout with measured casting ports and attachment stations."
+    },
+    {
+      "id": "lubrication-1",
+      "system": "Lubrication",
+      "task": "Pump/block mount and outlet",
+      "status": "pending",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "lubrication-2",
+      "system": "Lubrication",
+      "task": "Intermediate drive and retainer",
+      "status": "in_progress",
+      "progress": "IS-74 shaft, retainer and provisional cam/pump interfaces are integrated with coordinated shaft/gerotor motion. Production geometry remains unverified.",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "lubrication-3",
+      "system": "Lubrication",
+      "task": "Production rotor profiles",
+      "status": "in_progress",
+      "progress": "Analytic conjugate 4/5 gerotor study integrated. Production tooth counts, running clearance and hydraulic performance remain unresolved.",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "lubrication-4",
+      "system": "Lubrication",
+      "task": "Pickup support and fasteners",
+      "status": "pending",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "lubrication-5",
+      "system": "Lubrication",
+      "task": "Oil filter, adapter, seals and bypass",
+      "status": "in_progress",
+      "progress": "Filter and hollow comparison insert integrated. Saved STEP audit verifies eight open inlets, separated return and gasket support. E4TZ service insert and pump/main-gallery routes remain missing.",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry.",
+      "progress": "Thirteen-component oil filter construction study added with separate media, tube, endcaps, anti-drainback flap, bypass valve and spring, tension clip, gasket, baseplate and shell. Published WIX51515 metric envelope; generic Motorcraft internals are explicitly provisional. Adapter, block boss and galleries remain unfinished; staged placement is not installed fit. Factory lubrication diagram corrects filter to camshaft side; numerical location/angle remain provisional.",
+      "evidence": [
+        "reference/engine/oil-filter-reviewed.json",
+        "inventory/engine/oil-filter-validation.json"
+      ]
+    },
+    {
+      "id": "lubrication-6",
+      "system": "Lubrication",
+      "task": "Dipstick and guide tube",
+      "status": "pending",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "lubrication-7",
+      "system": "Lubrication",
+      "task": "Oil pressure sender",
+      "status": "in_progress",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry.",
+      "progress": "Factory catalogE9TZ9278A; application-specific1994EVTM60-2 confirms switch plus fixed20ohm cluster resistor, superseding generic variable-sender explanation. Location lowerLHrear nearfilter/C135. SMPPS238 manufacturer exterior and diaphragm material reviewed; dimensions, threshold and internal construction unresolved. No CAD yet. Nine-component functional study now built; source-limited internal arrangement and staged placement explicitly flagged. Inlet, diaphragm separation, contact gap and terminal isolation checks added.",
+      "evidence": [
+        "reference/engine/oil-pressure-switch-reviewed.json",
+        "reference/engine/standard-ps238-reviewed.json"
+      ]
+    },
+    {
+      "id": "lubrication-8",
+      "system": "Lubrication",
+      "task": "Pan fasteners, end seals and drain plug",
+      "status": "pending",
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "id": "cooling-1",
+      "system": "Cooling",
+      "task": "Water-pump production casting, impeller profile, seal internals and bearing internals; eight-component provisional study present",
+      "status": "pending",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "id": "cooling-2",
+      "system": "Cooling",
+      "task": "Water-pump mounting/coolant interfaces, gasket profile and fasteners",
+      "status": "pending",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "id": "cooling-3",
+      "system": "Cooling",
+      "task": "Pump pulley, fan clutch and fan boundary",
+      "status": "pending",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "id": "cooling-4",
+      "system": "Cooling",
+      "task": "Thermostat, housing, seal and fasteners",
+      "status": "in_progress",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions.",
+      "evidence": [
+        "motorad-244-192",
+        "system-b852e150201f",
+        "system-44801c5452af",
+        "ford-tsb-93-24-8",
+        "dorman-902-1002",
+        "truck-thermostat-housing-parts"
+      ],
+      "progress": "Thermostat, outlet casting, gasket and two fasteners modeled; outlet continuous main passage, secondary passage and bolt clearance checked. Production contours, threaded fittings and head-side interface still pending."
+    },
+    {
+      "id": "cooling-5",
+      "system": "Cooling",
+      "task": "Bypass/heater fittings and hoses",
+      "status": "pending",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "id": "cooling-6",
+      "system": "Cooling",
+      "task": "Coolant sensors",
+      "status": "pending",
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "id": "ignition-1",
+      "system": "Ignition",
+      "task": "Distributor housing, gear/pin, shaft/bushings, O-ring and clamp",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Separate helical drive-gear study, slotted roll pin and4.9L thrust washer added; shaft and hub have matching pin bores. Factory architecture/1996 comparison support decomposition. Tooth count/profile/dimensions, clamp, block mount and cam/oil-pump engagement remain unfinished. Separate hold-down clamp and bolt now bear on the modeled housing flange. Production fastener dimensions and block-side attachment remain unverified.",
+      "evidence": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "inventory/engine/distributor-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-2",
+      "system": "Ignition",
+      "task": "Hall stator and shutter",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Closed-bowl distributor study has shaft, vanes, Hall package, rotor/contact, cap/terminals, O-ring, bushings and screws; drive gear/pin, clamp, leads and detailed internal electronics remain pending. Placement/dimensions provisional.",
+      "evidence": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "inventory/engine/distributor-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-3",
+      "system": "Ignition",
+      "task": "Rotor, contact spring, cap and terminals",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Closed-bowl distributor study has shaft, vanes, Hall package, rotor/contact, cap/terminals, O-ring, bushings and screws; drive gear/pin, clamp, leads and detailed internal electronics remain pending. Placement/dimensions provisional.",
+      "evidence": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "inventory/engine/distributor-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-4",
+      "system": "Ignition",
+      "task": "Cap and clamp fasteners",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Closed-bowl distributor study has shaft, vanes, Hall package, rotor/contact, cap/terminals, O-ring, bushings and screws; drive gear/pin, clamp, leads and detailed internal electronics remain pending. Placement/dimensions provisional.",
+      "evidence": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "inventory/engine/distributor-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-5",
+      "system": "Ignition",
+      "task": "Six spark plugs and leads",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Six nine-component WR4-1 replacement studies now use shared head mounting datums and matching recessed wells/bores. All 54 plug components clear the head; axial bore access passes. Dimensions/angle of the casting interface remain provisional. Leads and production thread fit unfinished; internals illustrative.",
+      "evidence": [
+        "ngk-2019-spark-plugs",
+        "inventory/engine/spark-plug-evidence.json",
+        "inventory/engine/spark-plug-validation.json",
+        "inventory/engine/plug-mount-validation.json",
+        "inventory/engine/head-interface-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-6",
+      "system": "Ignition",
+      "task": "Coil, bracket and electrical connections",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "DG470/F7PZ12029AA source match and manufacturer exterior photographs reviewed. Ten-component coil study added; winding packs/core stacks are aggregate teaching geometry. Production dimensions, bracket, screws, capacitor and harness remain pending.",
+      "evidence": [
+        "ford-dg470",
+        "system-f015ea2ab18c",
+        "inventory/engine/ignition-coil-evidence.json"
+      ]
+    },
+    {
+      "id": "ignition-7",
+      "system": "Ignition",
+      "task": "Ignition module interface",
+      "status": "in_progress",
+      "dependency": "Installed ignition variant and distributor-drive geometry.",
+      "progress": "Fender heat sink, module envelope, connector shell and four distinct mounting screws modeled from factory service architecture. Internal electronics, installed variant, dimensions and harness unfinished.",
+      "evidence": [
+        "system-0538e7de7e9d",
+        "inventory/engine/ignition-module-evidence.json"
+      ]
+    },
+    {
+      "id": "front-and-rear-interfaces-1",
+      "system": "Front and rear interfaces",
+      "task": "Damper internal dimensions, keyway, key, washer and retaining bolt; three-piece envelope study now present",
+      "status": "pending",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+    },
+    {
+      "id": "front-and-rear-interfaces-2",
+      "system": "Front and rear interfaces",
+      "task": "Crank pulley and bolts",
+      "status": "pending",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+    },
+    {
+      "id": "front-and-rear-interfaces-3",
+      "system": "Front and rear interfaces",
+      "task": "Belt, tensioner/idler and accessory brackets",
+      "status": "in_progress",
+      "progress": "Accessory supports, alternator, steering pump, FS10 compressor and Thermactor exterior are integrated studies. Belt length and tensioner support remain under reconciliation; rejected layout collisions are retained as evidence.",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+    },
+    {
+      "id": "front-and-rear-interfaces-4",
+      "system": "Front and rear interfaces",
+      "task": "Manual-transmission flywheel, ring gear and fasteners",
+      "status": "in_progress",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment.",
+      "progress": "Replacement application and dimensional references acquired. Separate physical construction study integrated; installed identity, internal production geometry and fit remain unverified."
+    },
+    {
+      "id": "front-and-rear-interfaces-5",
+      "system": "Front and rear interfaces",
+      "task": "Pilot bearing",
+      "status": "in_progress",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment.",
+      "progress": "Replacement application and dimensional references acquired. Separate physical construction study integrated; installed identity, internal production geometry and fit remain unverified."
+    },
+    {
+      "id": "front-and-rear-interfaces-6",
+      "system": "Front and rear interfaces",
+      "task": "Starter and clutch boundaries",
+      "status": "in_progress",
+      "progress": "132-component manual PMGR starter study includes separate pull/hold windings, insulated contact bridge, provisional linkage, four coil-end conductors/sleeves and eight motor-feed/brush-circuit additions. Initial overlapping coil wiring was rejected and corrected without overlap exemptions. Installed motor-feed audit passes14 STEP matches,13 contacts,286 directed overlap checks and218 clearance checks. Full132-part rest audit passes848 checks; saved-STEP stroke passes17 poses/945 checks;25 exploded additions pass against132 parts at60/100percent. Whole engine passes4515 static checks at manifest550892c. Bellhousing/index plate, mounting support, production dimensions, loaded engagement, overrun internals, commutator/armature interconnections, vehicle cables and clutch boundary remain open.",
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+    }
+  ],
+  "last_increment": "Flywheel body, 164-tooth ring and six bolts; FC65662 pilot-bearing construction study with individual needles. Production accuracy remains unresolved."
+}

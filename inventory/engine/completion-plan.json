@@ -1,0 +1,134 @@
+{
+  "vehicle": "1994 Ford F-150 2WD 4.9L, manual transmission",
+  "complete": false,
+  "scope": "Engine long block and attached fuel, induction, exhaust, ignition, lubrication, cooling and crankshaft interfaces. Vehicle-side tanks, radiator, battery and transmission internals belong to later truck systems.",
+  "count_policy": "Modeled occurrence count is not a completion percentage. This is a work breakdown, not a verified physical bill of materials.",
+  "gates": [
+    "Resolve installed component variants and physical decomposition against applicable references",
+    "Reconcile dimensions and interfaces at a common datum; label every remaining assumption",
+    "Represent each identified physical component separately, including seals and retaining hardware",
+    "Verify hierarchy, scale, solid validity, interfaces and relevant motion",
+    "Provide per-part explanations, source links and system-level operating/diagnostic context"
+  ],
+  "remaining": [
+    {
+      "system": "Block and head",
+      "items": [
+        "Casting contours and installed identities",
+        "Coolant jackets and deck passages",
+        "Oil galleries and their plugs",
+        "Rear camshaft plug has a replacement-envelope study; its seat and cup section remain provisional. Other core plugs and locating dowels remain unfinished.",
+        "Lifter side cover, gasket and six grommet/bolt pairs are integrated as a14-part study; production contours, seal compression and bolt engagement remain unverified.",
+        "Six angled bores, seats and plug wells are cut in the head. Angles, stations, female threads, casting identity and production fit remain unverified.",
+        "Valve guide/seat construction and ports",
+        "Engine mounting bosses and brackets"
+      ],
+      "dependency": "Applicable casting drawings or dimensional survey; service clearances do not establish casting geometry."
+    },
+    {
+      "system": "Rotating and valve train",
+      "items": [
+        "Rod length and pin offset verification",
+        "Crank counterweights, fillets, drillings and keys",
+        "Correct thrust bearing construction",
+        "Intake/exhaust-specific springs, retainers and seals",
+        "Cam spacer, thrust plate, key and two washer/bolt pairs are integrated as a7-part study. Industrial dimensions constrain selected features; installed identities, hub/key dimensions and axial stations remain provisional.",
+        "Timing tooth counts, helix and marks",
+        "Sourced cam profile and coordinated valve motion"
+      ],
+      "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
+    },
+    {
+      "system": "Fuel and air",
+      "items": [
+        "Three mounting stations, bolts and washers exist. Ford nominal bolt dimensions are supported; washer/boss geometry, stations, female threads and production fit remain provisional.",
+        "Eight-part static valve/cap study already exists. Generic core construction, identity, dimensions, pressure performance and production sealing remain unresolved; motion extension is separate pending work.",
+        "Both eight-part spring-lock couplings exist, including two seals, spring, cage, clip and tether per line. Dimensions, seal compression, spring joining, flexure and tank-side hoses remain unresolved.",
+        "Wiring harness and terminals",
+        "Regulator vacuum line and manifold fitting are integrated with open-passage and static clearance checks; production routing and dimensions remain unverified.",
+        "IAC variant, mounting hardware and restoring mechanism",
+        "Throttle linkage, return spring, bracket and plate screws",
+        "Valve and grommet are already a six-part study. Hoses, unused-outlet closure, baffle, calibration and verified installed identity remain unresolved.",
+        "EVP has illustrative follower/contact internals and three fasteners; EGR has two bolts and one control hose. EVR internals, full routing/support/harness, EVP calibration and all production internal construction remain unresolved. Rewrite broad absence language without promoting the illustrative EVP to factory accuracy.",
+        "Vacuum tree and hoses",
+        "Air inlet hoses and air-cleaner boundary"
+      ],
+      "dependency": "Actual routing, interface dimensions and installed variant confirmation."
+    },
+    {
+      "system": "Exhaust",
+      "items": [
+        "Front-manifold form correction uses manufacturer-supported rectangular entries, matching head transitions and a blended collector instead of circular mouths and a box. Installed geometry passes225 neighbor checks,35 flow checks,24 corner controls and six rim bands; whole-static verification passes4542 checks with zero overlaps above0.1mm3. Port dimensions, detailed collector/flange contours, internal walls and installed casting identity remain unverified. See reference/engine/dorman-674185-mounting-profile-reviewed.json.",
+        "Rear manufacturer674-186 evidence supports rectangular entries and blended branches. The entry/head/fitting correction passes three STEP roundtrips,212 neighbor checks,36 passage checks,24 corner controls, six rim bands and isolated visual inspection. Installed verification is pending. Its box collector, mounting lands and auxiliary bosses remain unfinished. See reference/engine/dorman-674186-profile-reviewed.json.",
+        "Three-part front lifting-eye/stud13/bolt14 study is integrated with provisional casting pads and head socket bosses. Installed interface and exploded-view checks pass; production stations, coolant-gallery compatibility, threaded retention and lifting capacity remain unverified. Other fourteen manifold attachment stations/shared clamps remain unfinished. A locating-dowel comparison study is integrated with installed checks; its production station, fits and1994 dimensional applicability remain unverified.",
+        "EGR takeoff bore and tube fitting are represented as a provisional joint. The12.5mm insertion-envelope candidate removes the old fitting's intrusion into the collector and rear runner; installed verification and production engagement remain unresolved. Current collector-end location is unsupported by reviewed rear manufacturer photos, which show auxiliary bosses near the discharge neck. Identify the applicable takeoff and reconcile the tube route; production threads and seats remain unverified.",
+        "Air-injection hardware",
+        "Outlet joints, seals and fasteners"
+      ],
+      "dependency": "Reconcile the factory joint layout with measured casting ports and attachment stations."
+    },
+    {
+      "system": "Lubrication",
+      "items": [
+        "Pump feet, two bolts and block mounting interfaces are represented; complete pump outlet-to-block oil-gallery connection and production mounting dimensions remain unresolved.",
+        "IS-74 intermediate drive and retainer are integrated with a reconciled provisional tilted axis, cam gear, block bore, pump socket, mounting feet/bolts and pickup tube. Source shaft dimensions are retained. Coordinated shaft, retainer and gerotor motion is integrated; production mounting geometry, gear construction and retainer details remain unresolved.",
+        "Analytic conjugate four/five gerotor study replaces the nonconjugate profiles, with a provisional D-flat coupling. Actual production tooth count, profile, dimensions and running clearance remain unverified; rigid-body animation is not hydraulic validation.",
+        "Pickup support and fasteners",
+        "Thirteen-part filter and hollow mounting insert with block sealing land are integrated as comparison studies. Eight inlet routes and a separate central outlet are modeled, but pump/main-gallery connections and the E4TZ anti-drainback service insert remain unresolved; no additional unsourced valve is inferred.",
+        "Dipstick and guide tube",
+        "Nine-part pressure-switch study exists. It is not a verified variable sender; block boss, oil passage, connector, installed identity, calibrated threshold and actual internal construction remain unresolved.",
+        "The drain plug/washer and continuous molded pan gasket with 25 screw/washer pairs are integrated. V9 corrects the shallow end walls and stages display separation. Replacement-photo topology and nominal fastener data constrain the study; pan stamping, capacity, hole stations, end orientation, seal compression, timing-cover junction and production fit remain unresolved."
+      ],
+      "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+    },
+    {
+      "system": "Cooling",
+      "items": [
+        "Water-pump production casting, impeller profile, seal internals and bearing internals; eight-component provisional study present",
+        "The pump now seats directly on the modeled block front through a shaped gasket and four fasteners. Local sealing, blind socket, cylinder-wall retention and impeller clearance checks pass. Casting dimensions, fifth-aperture function, deeper coolant jacket, internal bearing/seal construction and radiator inlet remain unresolved.",
+        "Pump pulley and four bolts have a provisional five-part fit study. A 35-occurrence fan/clutch study and connected hub nose are integrated. Installed clutch variant, fan application, blade pitch, production pulley profile and mounting geometry remain unresolved.",
+        "The nine-part thermostat and outlet housing/gasket/two bolts have a coordinated head-front joint, separate local coolant pockets and blind bolt receivers. Geometry/contact/flow checks pass, but production contours, absolute dimensions, deeper jacket routing and thermostat calibration remain unresolved.",
+        "Heater supply elbow and five ECT components follow the revised head outlet; the return elbow follows the pump. Both local wet connections are modeled and checked. Vehicle hoses/clamps, production routes and fittings, deeper head/block coolant circuits and sensor harness remain unfinished.",
+        "Separate single-wire gauge sender is identified but unmounted pending a verified wet head jacket; ECT electrical harness and calibration remain unresolved."
+      ],
+      "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+    },
+    {
+      "system": "Ignition",
+      "items": [
+        "Listed distributor construction is present. Provisional mounting/drive reconstruction does not establish production tooth geometry, gear mesh or component dimensions.",
+        "Sensor package and shutter/vane exist; internal electronics, vane profile/indexing and calibrated signal timing remain unverified.",
+        "Rotor, contact envelope, cap and seven terminals exist. Center brush/contact-spring construction and production electrical geometry remain unfinished.",
+        "Cap, clamp and vane fasteners exist; thread geometry, dimensions and production fit remain provisional.",
+        "Six spark plugs plus seven six-part secondary leads and a seven-part coil mount are represented. Cable diameter/routing, clips, boots, bracket, head bosses and hardware remain illustrative; absolute distributor clocking is unverified.",
+        "Coil production dimensions/internal winding construction, capacitor and primary electrical connections; DG470 exterior study and provisional mounting bracket present",
+        "Remote module package, connector shell, heat sink and four screws exist. Harness contacts/pinout, fender attachment, installed push-start/CCD identity and electronics remain unresolved."
+      ],
+      "dependency": "Installed ignition variant and distributor-drive geometry."
+    },
+    {
+      "system": "Front and rear interfaces",
+      "items": [
+        "Damper hub, elastomer, integrated pulley rim, key, washer and retaining bolt are present; production internal dimensions, key profile, threads and belt plane remain unverified.",
+        "Verify the integrated crank pulley profile against the saved Dorman reference; a separate bolt-on pulley is not established.",
+        "Gates 38022 pulley and six-part 38131 support study are present at provisional stations. Belt, engine mounting bracket, spring/damper internals and bearing internals remain missing; wheel section, hardware and mounting coordinates remain unverified.",
+        "Flywheel body, 164-tooth ring gear and six bolts integrated as a replacement-dimension study; installed profile, indexing, ring fit and fastener threads remain unverified.",
+        "FC65662 pilot-bearing construction study includes outer case, cage, 16 illustrative needles and seal. Two catalog dimensional tables disagree; installed fit and internal geometry remain unresolved.",
+        "Manual PMGR starter:132-component construction study includes distinct S/B/M terminals, pull/hold winding envelopes, insulated contact bridge, provisional slotted-clevis/fork linkage, four separately insulated coil-end conductors, motor feed, frame grommet, ground bridge and four brush pigtails. Corrected nonpenetrating wiring passes installed face-contact and clearance checks without overlap exemptions. Saved-STEP engagement passes17 poses/945 neighbor checks. Loaded engagement, production joint geometry, bellhousing/index-plate support, mounting datums, overrunning internals, commutator/armature connections and vehicle wiring remain unresolved. Starter geometry stays stationary during normal engine animation; clutch boundary remains open.",
+        "Alternator: 26-part integrated construction study and separate support. Installed 75/95/130 A variant, production dimensions, terminals and wiring remain unresolved.",
+        "Power-steering pump: 46-part CII slipper-pump study integrated at provisional upper-LH station; internal relief/baffle/retention details, hydraulic passages, shaft splines and production dimensions remain unresolved. Six modeled grooves follow Ford belt data but conflict with five-groove Dorman replacement metadata.",
+        "The 1994 shared PS/A/C carrier and engine attachments are integrated, along with a revised alternator position/support and pump-clearing Thermactor foot. All casting dimensions and stations remain provisional. New F4TE-10239-AC evidence indicates a common alternator/Thermactor casting; the current separate supports require replacement and source-backed hole mapping.",
+        "A/C compressor:67-part FS10 study includes five double-ended pistons, ten shoes, ten PTFE ring envelopes, dimensioned comparison clutch-bearing envelope, rear manifold/two seals/bolt and two source-counted radial support cartridges. Rigid-body motion has independent teaching controls. A manifold-boss obstruction was corrected by restoring the cap drillings while retaining a blind bolt socket; complete suction/discharge network checks and sampled installed motion pass. Bearing internals, pressure-actuated reed/clutch behavior, installed identity and production dimensions remain open; radial bearing envelopes and seal glands are provisional and no hydraulic performance is claimed.",
+        "Thermactor: 20-object exterior/support study integrated; pumping cartridge is an explicitly unresolved envelope, not a completed rotor/vanes assembly. Installed displacement, vanes, air-routing hardware and production dimensions remain open.",
+        "Accessory hoses, wiring and shared belt routing remain unfinished. The connected pump/outlet diagnostic gives a 2854.845 mm outside-radius loop versus 2491 mm catalog effective length, with additional outlet/heater collisions. Assumed cord correction explains only 22.043 mm. Reconcile manufacturer length definitions, accessory mounting topology and source-backed datums before accepting the belt."
+      ],
+      "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+    }
+  ],
+  "accuracy_dependencies": [
+    "A dimensioned reference or survey for block/head, bore pitch and deck height",
+    "Correct installed casting and service-part identities rather than generic or superseded catalog matches",
+    "Dimensioned intake/exhaust, pump, distributor and accessory mounting interfaces",
+    "A reconciled physical BOM covering hardware and nonserviceable assembly internals"
+  ]
+}

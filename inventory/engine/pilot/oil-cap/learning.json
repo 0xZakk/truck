@@ -1,0 +1,48 @@
+{
+  "oil-filler-cap": {
+    "summary": "The oil cap closes the valve-cover fill opening. Male screw retention holds a nonvented closure against an annular rubber seal. Ford lists EC743/F3AZ6766B for the 1994 F-150 4.9 Gas application.",
+    "limits": "Candidate only: the cover opening is smooth, so screw engagement fails. Published MotoRad dimensions are replacement comparisons; Ford contours, thread lead, seal dimensions and tolerances require measurement.",
+    "steps": [
+      {
+        "title": "Follow the load path",
+        "text": "Hand force on the scalloped rim turns the screw stem. In a complete neck, female threads provide axial clamp force for the sealing ring. The current frozen cover does not contain that interface.",
+        "source": "pilot-oil-cap-ford"
+      },
+      {
+        "title": "Separate retention from sealing",
+        "text": "The thread locates and retains the cap; the rubber annulus closes the oil-fill joint. A modeled touch between flat faces does not establish leak-tight compression.",
+        "part": "oil-filler-cap-seal"
+      },
+      {
+        "title": "Keep the ventilation path distinct",
+        "text": "MotoRad identifies this replacement cap as nonvented. It is not the PCV valve or crankcase breather. No operating motion or airflow through the cap is modeled.",
+        "source": "pilot-oil-cap-motorad"
+      },
+      {
+        "title": "Inspect the actual joint",
+        "text": "Oil around the cap may justify inspecting the ring for damage, dirt or flattening and the cap and neck for cracked or damaged retention. This model cannot diagnose an actual leak or establish tightening torque.",
+        "source": "pilot-oil-cap-motorad"
+      }
+    ],
+    "sources": [
+      "pilot-oil-cap-ford",
+      "pilot-oil-cap-motorad",
+      "pilot-oil-cap-dorman"
+    ]
+  },
+  "oil-filler-cap-seal": {
+    "summary": "A separate rubber annulus seals between the oil filler cap and neck.",
+    "limits": "OD44, ID31.6 and thickness3 mm are assumptions matched to the provisional cover. Compression and rubber grade are unknown.",
+    "steps": [
+      {
+        "title": "Two contact faces",
+        "text": "The lower face touches the frozen cover at world Z413; the upper face touches the cap boss at Z416. The ring remains a separate part for inspection and learning.",
+        "part": "oil-filler-cap"
+      }
+    ],
+    "sources": [
+      "pilot-oil-cap-ford",
+      "pilot-oil-cap-motorad"
+    ]
+  }
+}

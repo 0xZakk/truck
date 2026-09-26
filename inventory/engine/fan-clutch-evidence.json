@@ -1,0 +1,88 @@
+{
+  "application": "1994 Ford F-Series 4.9L comparison; actual truck fan and clutch identity uninspected",
+  "selected_clutch": "Imperial 215161, 36 mm hex / M30x1.5 right-hand branch",
+  "alternative_clutch": "Imperial 215155, 40 mm hex / M33x1.5 right-hand branch; same published main envelope and fan mount dimensions, 0.63 inch pilot depth instead of 0.70",
+  "sources": [
+    {
+      "id": "imperial-fan-clutch-215161",
+      "title": "Imperial fan clutch application and specification catalog",
+      "url": "https://www.haydenauto.com/media/5587/imperial_fan-clutch-pages.pdf",
+      "path": "reference/engine/imperial-fan-clutch-catalog.pdf",
+      "sha256": "cff25dbf787355a3eb4d01df1733ffce07e8d08c319ecdaf7f8bdb633ce3868a",
+      "reviewed_pages": [{"pdf": 8, "printed": 331}, {"pdf": 89, "printed": 182}],
+      "review": "Visually reviewed application row and specification headers/drawing B. Both nut-size branches listed for 1994 4.9L; REV means counterclockwise looking at engine from radiator. Metric hex value used explicitly: 36 mm rather than converting the rounded 1.44 inch parallel value."
+    },
+    {
+      "id": "hayden-fan-clutch-operation",
+      "title": "Hayden Fan Clutch Operation and Troubleshooting Guide",
+      "url": "https://www.haydenauto.com/media/5670/fan-clutch_operations-ts_6980012.pdf",
+      "path": "reference/engine/hayden-fan-clutch-operation.pdf",
+      "sha256": "f3ca58054564511134c48165f325e64caeffb21e72ea544502e36acf34fcc5f8",
+      "reviewed_pages": [1, 2],
+      "review": "Front bimetal spring meters silicone fluid between reservoir and working region. Cover illustrations inform general architecture only; they are not a 215161-specific teardown."
+    },
+    {
+      "id": "dorman-620-151",
+      "title": "Dorman 620-151 radiator fan blade specifications and photograph",
+      "url": "https://www.dormanproducts.com/p-76119-620-151.aspx",
+      "path": "reference/engine/dorman-620-151.html",
+      "sha256": "b43797805345045faf30e8fa1be1e6deef263dec960fb4f2c6c40c70c32305da",
+      "photo_path": "reference/engine/dorman-620-151.jpg",
+      "photo_sha256": "4ad1a611eec893b83b076d5466fe6b7c06b6af57bbee7b91e20af6110a25c422",
+      "review": "Primary page specifies 7 blades, 18.9 inch OD, black stamped steel, F2UZ8600A direct OE cross. Photograph visually reviewed: separate broad blades attached to a central stamped spider and four clutch attachment holes. Detailed application endpoint returned a challenge page, not usable fit evidence."
+    },
+    {
+      "id": "system-7b01cf423275",
+      "review": "Existing saved Ford service procedure specifies separate fan/clutch, pulley and right-hand clutch nut; blade attaches to clutch by bolts."
+    }
+  ],
+  "sourced_clutch_dimensions_mm": {
+    "outside_diameter": 182.88,
+    "overall_height": 71.882,
+    "fan_mount_height_from_nut_rear": 31.75,
+    "fan_mount_pilot_diameter": 60.198,
+    "fan_mount_bolt_circle": 76.2,
+    "fan_hole_count": 4,
+    "fan_hole_thread": "5/16-18",
+    "pump_attachment_thread": "M30x1.5 RH",
+    "pump_pilot_depth": 17.78,
+    "hex_across_flats": 36,
+    "rotation": "Counterclockwise from radiator looking toward engine"
+  },
+  "sourced_fan_comparison": {
+    "blade_count": 7,
+    "diameter_mm": 480.06,
+    "material": "Stamped steel",
+    "finish": "Black",
+    "installed_identity_confirmed": false
+  },
+  "provisional_dimensions_and_construction": {
+    "clutch_origin": [530, 0, 170],
+    "pump_origin": [440, 0, 170],
+    "nose_thread_envelope_diameter": 29.9,
+    "nose_front_global_x": 547.5,
+    "pulley_center_bore": 30.1,
+    "internal_rotor_land_count": 4,
+    "output_partition_land_count": 5,
+    "fin_count": 36,
+    "spring_turns": 3,
+    "blade_pitch_deg": [0, 17, 22],
+    "blade_and_spider_thickness": 2,
+    "rivets_per_blade": 2,
+    "fan_bolt_under_head_length": 8,
+    "limits": "Every internal section, clearance, material assignment, valve port, return-flow path, spring calibration, blade pitch/chord/angular spacing and fastener length is provisional. Fluid is not a rigid solid. Sealed clutch decomposition is educational, not a service procedure."
+  },
+  "integration": {
+    "build": "fan_clutch.build((define, add, group)) after cooling/pump construction",
+    "parent": "cooling",
+    "new_definitions": 13,
+    "new_occurrences": 35,
+    "replacements": {
+      "water-pump-drive-hub": "fan_clutch.hub_interface(local_shape)",
+      "water-pump-pulley": "fan_clutch.pulley_interface(local_shape)"
+    },
+    "geometry_status": "Changes reconcile existing illustrative pump/pulley interfaces. No production fit established."
+  },
+  "complete": false,
+  "remaining": ["Inspect installed 36/40 mm nut branch", "Verify exact fan application and stamping", "Production bearing, seal and viscous clutch teardown", "Pump housing and installed datum reconciliation", "Radiator and shroud clearance", "Temperature/flow/speed behavior"]
+}

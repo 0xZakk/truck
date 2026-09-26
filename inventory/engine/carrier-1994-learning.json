@@ -1,0 +1,26 @@
+{
+  "carrier-1994-engine-attachments": {
+    "summary": "Four Ford-identified attachment sites join the shared accessory carrier to the head and block.",
+    "limits": "Ford TSB94-10-19 Figure4 establishes the1994 shared carrier and four engine attachment sites. Casting shape, hole coordinates, smooth thread envelopes and engagement depths remain provisional. Belt fit, alternator placement and operating tensioner travel remain unresolved.",
+    "steps": [
+      {
+        "title": "Front head attachment",
+        "text": "Bolt #1 bears against the front carrier foot and enters a blind head socket.",
+        "part": "carrier-front-head-bolt-1"
+      },
+      {
+        "title": "Side head attachment",
+        "text": "Bolt #2 clamps the upper side foot into a dry external head boss. Boss dimensions and passage clearance remain assumptions.",
+        "part": "carrier-side-head-bolt-2"
+      },
+      {
+        "title": "Two block studs",
+        "text": "Each lower foot slides over a stud and is retained by a washer and nut. The Ford drawing supports the two nuts; the modeled washer and stud dimensions are illustrative.",
+        "part": "carrier-block-nut-1"
+      }
+    ],
+    "sources": [
+      "ford-tsb-94-10-19-accessory"
+    ]
+  }
+}

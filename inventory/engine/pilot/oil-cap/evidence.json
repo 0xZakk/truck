@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-26",
+  "scope": "1994 Ford F-150 4.9L oil filler cap; replacement-style candidate, not measured factory reconstruction",
+  "sources": [
+    {
+      "id": "pilot-oil-cap-ford",
+      "url": "https://www.ford.com/product/engine-oil-filler-cap-p4000083484",
+      "publisher": "Ford Motor Company",
+      "part": "EC743 / F3AZ6766B",
+      "application": {
+        "text": "Ford_F-150_1994__4.9 Gas_",
+        "descriptionParts": [
+          "Ford",
+          "F-150",
+          "1994",
+          "",
+          "4.9 Gas",
+          ""
+        ]
+      },
+      "capture": "reference/engine/pilot/oil-cap/ford.html",
+      "facts": [
+        "Exact target application is present in embedded product fitment data.",
+        "Primary top and underside photos establish scalloped hand grip, closed male screw stem, underside molding relief and annular seal."
+      ],
+      "images": [
+        {
+          "file": "ford-cap.jpg",
+          "url": "https://nvc-feil-prod-gcsproxy.ford.com/feil-image-upload-bucket-p/parts/images/photo-images/648/726648.jpg"
+        },
+        {
+          "file": "ford-bottom.jpg",
+          "url": "https://nvc-feil-prod-gcsproxy.ford.com/feil-image-upload-bucket-p/parts/images/photo-images/647/726647.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pilot-oil-cap-motorad",
+      "url": "https://motorad.com/part/MO100/",
+      "publisher": "MotoRad",
+      "capture_method": "Web retrieval; direct HTTP returned denial; rejected HTTP response retained separately",
+      "facts": [
+        "MO100 cross-references Ford F3AZ6766B and Motorcraft EC743.",
+        "Nonvented black plastic cap with included preinstalled rubber seal and male screw retention."
+      ],
+      "dimensions_mm": {
+        "neck_diameter": 31.24,
+        "shell_outside_diameter": 69.09,
+        "overall_height": 38.1
+      },
+      "dimension_scope": "Published replacement comparison only; no proof these are Ford EC743 dimensions."
+    },
+    {
+      "id": "pilot-oil-cap-dorman",
+      "url": "https://www.dormanproducts.com/p-84374-90005.aspx",
+      "publisher": "Dorman",
+      "capture": "reference/engine/pilot/oil-cap/dorman.html",
+      "facts": [
+        "90005 crosses EC743 and F3AZ6766B; nylon screw-on cap."
+      ],
+      "catalog_dimensions_in": {
+        "diameter": 2.75,
+        "height": 0.5
+      },
+      "conflict": "Height differs from MotoRad 1.5 in. Measurement scope is unclear. Not averaged or silently promoted to Ford dimensions."
+    }
+  ],
+  "geometry_assumptions": [
+    "Four scallops reconstructed from Ford photo; shape, depth and wall thickness estimated.",
+    "Thread pitch 4.5 mm, triangular profile and 18 mm engaged length are illustrative; no sourced tolerance or lead.",
+    "Seal OD44 ID31.6 thickness3 mm chosen for the frozen cover datum; rubber compound and compression unknown.",
+    "Overall envelope uses MotoRad replacement comparison dimensions, not verified Ford dimensions."
+  ],
+  "acceptance_blockers": [
+    "Frozen cover lacks female threads and has diameter34 opening; candidate male thread is31.24 mm. No retention contact.",
+    "Source photo supports construction but not exact production dimensions or installed part identity.",
+    "Seal contact is geometric only; no compression, pressure, heat or material validation."
+  ],
+  "capture_sha256": {
+    "ford-bottom.jpg": "fa94c90518d842cb4f604a8de273a6f861f4493f02bea62ac7e4309d65f36aff",
+    "dorman.html": "5b4c1a31871238c905bc2d97b024e9c1fc03738e19f232f40520ad3268d88b1e",
+    "ford.html": "0a980564533a211f8f6b9ab767309ccc59521fb026738244306592e79a779a7c",
+    "ford-cap.jpg": "28c7011442de11bc21f24a858859beaf82924bac1071fff0f1027d046dc59330",
+    "motorad.html": "f261423d1da97890ff6bfccd31ff4ee0b74f69351cf75095fbe791cb16cbf5bd"
+  }
+}

@@ -1,0 +1,484 @@
+{
+  "displacements_yz_mm": {
+    "ALT": [
+      0,
+      -40
+    ],
+    "PS": [
+      -90,
+      -60
+    ],
+    "AC": [
+      30,
+      115.46927520758456
+    ],
+    "AP": [
+      -50,
+      60
+    ],
+    "TENS": [
+      -20,
+      20
+    ]
+  },
+  "candidate_routing": {
+    "nodes": [
+      {
+        "id": "ALT",
+        "center": [
+          -325,
+          370
+        ],
+        "radius": 35,
+        "side": 1,
+        "path_radius": 35
+      },
+      {
+        "id": "TENS",
+        "center": [
+          -20,
+          455
+        ],
+        "radius": 45,
+        "side": -1,
+        "path_radius": 45
+      },
+      {
+        "id": "PS",
+        "center": [
+          190,
+          350
+        ],
+        "radius": 65.65899999999999,
+        "side": 1,
+        "path_radius": 65.65899999999999
+      },
+      {
+        "id": "AC",
+        "center": [
+          310,
+          215.46927520758456
+        ],
+        "radius": 72.5,
+        "side": 1,
+        "path_radius": 72.5
+      },
+      {
+        "id": "WP",
+        "center": [
+          0,
+          170
+        ],
+        "radius": 75,
+        "side": -1,
+        "path_radius": 75
+      },
+      {
+        "id": "CS",
+        "center": [
+          0,
+          0
+        ],
+        "radius": 81.53399999999999,
+        "side": 1,
+        "path_radius": 81.53399999999999
+      },
+      {
+        "id": "AP",
+        "center": [
+          -330,
+          160
+        ],
+        "radius": 70,
+        "side": 1,
+        "path_radius": 70
+      }
+    ],
+    "spans": [
+      {
+        "from": "ALT",
+        "to": "TENS",
+        "start": [
+          -325.57246567662247,
+          404.99531801611596
+        ],
+        "end": [
+          -19.26397270148539,
+          410.00601969356524
+        ],
+        "normal": [
+          -0.016356162189213597,
+          0.9998662290318839
+        ],
+        "length": 306.3494736408078
+      },
+      {
+        "from": "TENS",
+        "to": "PS",
+        "start": [
+          -18.77907417451495,
+          410.0165659366844
+        ],
+        "end": [
+          188.21856069387727,
+          415.6348288258498
+        ],
+        "normal": [
+          -0.027131685010778877,
+          0.9996318680736804
+        ],
+        "length": 207.0738653693411
+      },
+      {
+        "from": "PS",
+        "to": "AC",
+        "start": [
+          237.30478073210972,
+          395.5341849700532
+        ],
+        "end": [
+          362.233457760215,
+          265.74765913558923
+        ],
+        "normal": [
+          0.7204614863477928,
+          0.6934949507310987
+        ],
+        "length": 180.14360003112137
+      },
+      {
+        "from": "AC",
+        "to": "WP",
+        "start": [
+          285.5130786371985,
+          147.229692250389
+        ],
+        "end": [
+          25.331297961518835,
+          240.59267202468504
+        ],
+        "normal": [
+          -0.3377506394869178,
+          -0.9412356269958008
+        ],
+        "length": 276.4257675903299
+      },
+      {
+        "from": "WP",
+        "to": "CS",
+        "start": [
+          -29.254713634040055,
+          100.94088235294119
+        ],
+        "end": [
+          31.803384285837623,
+          75.07554797647057
+        ],
+        "normal": [
+          0.3900628484538674,
+          0.9207882352941176
+        ],
+        "length": 66.31068423715746
+      },
+      {
+        "from": "CS",
+        "to": "AP",
+        "start": [
+          -37.860861527945765,
+          -72.21044467638816
+        ],
+        "end": [
+          -362.5049710176884,
+          98.00462227601771
+        ],
+        "normal": [
+          -0.46435672882411966,
+          -0.8856482531997469
+        ],
+        "length": 366.56100016777566
+      },
+      {
+        "from": "AP",
+        "to": "ALT",
+        "start": [
+          -398.72431345154837,
+          173.30295984408448
+        ],
+        "end": [
+          -359.3621567257742,
+          376.65147992204226
+        ],
+        "normal": [
+          -0.9817759064506913,
+          0.1900422834869212
+        ],
+        "length": 207.1231517720798
+      }
+    ],
+    "arcs": [
+      {
+        "pulley": "ALT",
+        "start": [
+          -359.3621567257742,
+          376.65147992204226
+        ],
+        "middle": [
+          -347.49333790426124,
+          396.8151030190959
+        ],
+        "end": [
+          -325.57246567662247,
+          404.99531801611596
+        ],
+        "wrap_degrees": 78.10756732358254,
+        "length": 47.71319771818777,
+        "side": 1,
+        "path_radius": 35
+      },
+      {
+        "pulley": "TENS",
+        "start": [
+          -19.26397270148539,
+          410.00601969356524
+        ],
+        "middle": [
+          -19.02150922937721,
+          410.0106395265302
+        ],
+        "end": [
+          -18.77907417451495,
+          410.0165659366844
+        ],
+        "wrap_degrees": 0.6175409757496411,
+        "length": 0.4850155481764362,
+        "side": -1,
+        "path_radius": 45
+      },
+      {
+        "pulley": "PS",
+        "start": [
+          188.21856069387727,
+          415.6348288258498
+        ],
+        "middle": [
+          214.88177293725548,
+          410.7618437549327
+        ],
+        "end": [
+          237.30478073210972,
+          395.5341849700532
+        ],
+        "wrap_degrees": 47.64731658558192,
+        "length": 54.60219210349341,
+        "side": 1,
+        "path_radius": 65.65899999999999
+      },
+      {
+        "pulley": "AC",
+        "start": [
+          362.233457760215,
+          265.74765913558923
+        ],
+        "middle": [
+          370.8612741335868,
+          176.07187287143557
+        ],
+        "end": [
+          285.5130786371985,
+          147.229692250389
+        ],
+        "wrap_degrees": 153.64729523458004,
+        "length": 194.41971117547308,
+        "side": 1,
+        "path_radius": 72.5
+      },
+      {
+        "pulley": "WP",
+        "start": [
+          25.331297961518835,
+          240.59267202468504
+        ],
+        "middle": [
+          -69.85344577946813,
+          197.30377469755615
+        ],
+        "end": [
+          -29.254713634040055,
+          100.94088235294119
+        ],
+        "wrap_degrees": 176.78147992078937,
+        "length": 231.40641608745142,
+        "side": -1,
+        "path_radius": 75
+      },
+      {
+        "pulley": "CS",
+        "start": [
+          31.803384285837623,
+          75.07554797647057
+        ],
+        "middle": [
+          73.70525195377297,
+          -34.86156896111885
+        ],
+        "end": [
+          -37.860861527945765,
+          -72.21044467638816
+        ],
+        "wrap_degrees": 184.71018851464245,
+        "length": 262.8493867844869,
+        "side": 1,
+        "path_radius": 81.53399999999999
+      },
+      {
+        "pulley": "AP",
+        "start": [
+          -362.5049710176884,
+          98.00462227601771
+        ],
+        "middle": [
+          -393.0817082732154,
+          129.65699287590382
+        ],
+        "end": [
+          -398.72431345154837,
+          173.30295984408448
+        ],
+        "wrap_degrees": 73.28665323815204,
+        "length": 89.53653777411819,
+        "side": 1,
+        "path_radius": 70
+      }
+    ],
+    "length": 2491.0
+  },
+  "limits": [
+    "Outside pulley radius is only a diagnostic proxy for effective radius; matching 2491 mm does not verify Gates K060980 installation.",
+    "Upper-accessory relocation is a numerical hypothesis, not a measured Ford station. No production geometry is changed by this module.",
+    "Original support brackets, engine feet and belt-side hose/pipe connections cannot be retained after relocation. New supports require independent design and validation.",
+    "Tensioner arm is a provisional 75 mm construction study; unrestricted rotation is diagnostic only and is not allowed physical travel.",
+    "No spring force, wrap traction, belt elasticity, accessory load or operating clearance has been verified."
+  ],
+  "search_method": "10 mm grid, \u00b1120 mm station range; moving mesh bounds checked against fixed engine excluding support brackets, then valid winding/pulley separation/moving-body constraints. Continuous A/C height refinement; all dimensions unverified.",
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "source_sha256": {
+    "cad/engine/accessory_layout_constrained.py": "b0676f7e0d53bacf04144675de70bb51e618ee26ef47f88ed13802ef4c8d7e9f",
+    "cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "scripts/check-accessory-layout-constrained.py": "682bd8125fb93537f74b2e5ab661de916c9d5406dde083f6c48be6df463c8586"
+  },
+  "candidate_status": "rejected",
+  "verified_production_fit": false,
+  "ready_to_install": false,
+  "candidate_outside_radius_length_mm": 2491.0,
+  "candidate_cord_path_length_mm": 2508.5575801191544,
+  "moved_components": 167,
+  "exact_intersection_checks": 136,
+  "step_round_trip_checks": [
+    "candidate-belt"
+  ],
+  "overlaps": [
+    {
+      "a": "alternator-drive-housing",
+      "b": "alternator-support-bracket",
+      "volume_mm3": 3368.632334959731,
+      "known_support_redesign": true
+    },
+    {
+      "a": "alternator-fan",
+      "b": "alternator-support-bracket",
+      "volume_mm3": 405.47318430082134,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-housing",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 7412.109495230078,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-housing",
+      "b": "ps-bracket-bolt-3",
+      "volume_mm3": 432.2580163927273,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-reservoir",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 1694.2480747724524,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-shaft",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 221.01150587198754,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-shaft-bushing",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 1202.5172037127768,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-lower-plate",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 8.496229442449446,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-lower-outer-seal",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 1.5772998973801702,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ps-pump-reservoir-seal",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 128.50184930935532,
+      "known_support_redesign": true
+    },
+    {
+      "a": "thermactor-support-bracket",
+      "b": "alternator-support-bracket",
+      "volume_mm3": 881.1392007607467,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ac-compressor-front-cylinder",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 14133.291427420703,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ac-compressor-case-bolt-1",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 64.7709735098782,
+      "known_support_redesign": true
+    },
+    {
+      "a": "ac-compressor-case-bolt-2",
+      "b": "ps-ac-support-bracket",
+      "volume_mm3": 26.067878585590638,
+      "known_support_redesign": true
+    }
+  ],
+  "support_redesign_required_even_without_overlap": [
+    "ac-bracket-bolt-1",
+    "ac-bracket-bolt-2",
+    "ac-bracket-bolt-3",
+    "ac-bracket-bolt-4",
+    "alt-bracket-bolt-1",
+    "alt-bracket-bolt-2",
+    "alt-engine-bracket-bolt-1",
+    "alt-engine-bracket-bolt-2",
+    "alternator-support-bracket",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2",
+    "ps-ac-support-bracket",
+    "ps-bracket-bolt-1",
+    "ps-bracket-bolt-2",
+    "ps-bracket-bolt-3"
+  ],
+  "geometry_limits": "Five pulley grooves use the existing PK normalization adapter locally. Existing supports stay in place and collisions are recorded; zero overlaps alone would not establish installed fit."
+}

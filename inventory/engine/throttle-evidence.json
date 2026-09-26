@@ -1,0 +1,33 @@
+{
+  "status": "provisional",
+  "vehicle": "1994 F-150 4.9L manual transmission",
+  "supported": [
+    "Single-piece aluminum dual-bore housing",
+    "IAC-controlled bypass and housing-mounted TPS exist; not yet modeled",
+    "Separate gasket and four upper-intake studs with four retaining nuts",
+    "Manual/C6 service assembly entry F6PZ9E926GA differs from E4OD F6PZ9E926DA"
+  ],
+  "sources": [
+    "truck-throttle-operation",
+    "truck-throttle-service",
+    "truck-throttle-catalog"
+  ],
+  "assumptions": {
+    "bore_diameter_mm": 40,
+    "bore_spacing_mm": 54,
+    "shaft_diameter_mm": 6,
+    "plate_diameter_mm": 39.2,
+    "plate_thickness_mm": 1,
+    "travel_deg": [
+      0,
+      90
+    ],
+    "mounting_face_x_mm": 371
+  },
+  "limits": [
+    "Mounting pad added to provisional upper intake; no production dimensional drawing establishes this position or pattern",
+    "Shaft slots and plate fit are illustrative; screws, bevels and idle orifices missing",
+    "IAC valve, bypass, TPS, return spring/linkage, purge ports and accelerator bracket remain missing",
+    "No flow rate, idle behavior or production stop calibration inferred from slider angle"
+  ]
+}

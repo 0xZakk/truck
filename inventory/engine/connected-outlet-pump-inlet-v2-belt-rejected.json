@@ -1,0 +1,593 @@
+{
+  "status": "rejected-conditional-belt",
+  "installed": false,
+  "tested_obstacles": 21,
+  "checks": [
+    {
+      "id": "coolant-outlet-housing",
+      "overlap_mm3": 233.04189658350094,
+      "minimum_distance_mm": 0.0,
+      "passes": false
+    },
+    {
+      "id": "coolant-outlet-gasket",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 88.67999999999819,
+      "passes": true
+    },
+    {
+      "id": "coolant-outlet-bolt-1",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 76.68,
+      "passes": true
+    },
+    {
+      "id": "coolant-outlet-bolt-2",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 84.91632635024142,
+      "passes": true
+    },
+    {
+      "id": "thermostat-frame",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 71.83313018272068,
+      "passes": true
+    },
+    {
+      "id": "thermostat-cage",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 94.15520347152278,
+      "passes": true
+    },
+    {
+      "id": "thermostat-poppet",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 91.79653364712799,
+      "passes": true
+    },
+    {
+      "id": "thermostat-capsule",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 94.75486661816346,
+      "passes": true
+    },
+    {
+      "id": "thermostat-wax",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 97.39088780586928,
+      "passes": true
+    },
+    {
+      "id": "thermostat-diaphragm",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 95.87930448024441,
+      "passes": true
+    },
+    {
+      "id": "thermostat-piston",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 74.01739744671522,
+      "passes": true
+    },
+    {
+      "id": "thermostat-spring",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 96.4643399276911,
+      "passes": true
+    },
+    {
+      "id": "thermostat-jiggle-pin",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 90.57622623161592,
+      "passes": true
+    },
+    {
+      "id": "heater-supply-ect-elbow",
+      "overlap_mm3": 56.82814662092848,
+      "minimum_distance_mm": 0.0,
+      "passes": false
+    },
+    {
+      "id": "engine-coolant-temperature-body",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 28.72626952896021,
+      "passes": true
+    },
+    {
+      "id": "engine-coolant-temperature-insulator",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 31.579999999999984,
+      "passes": true
+    },
+    {
+      "id": "engine-coolant-temperature-thermistor",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 43.54520361942149,
+      "passes": true
+    },
+    {
+      "id": "engine-coolant-temperature-terminal-1",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 40.58627191497408,
+      "passes": true
+    },
+    {
+      "id": "engine-coolant-temperature-terminal-2",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 37.58677239290301,
+      "passes": true
+    },
+    {
+      "id": "cylinder-head",
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 89.88,
+      "passes": true
+    },
+    {
+      "id": "water-pump-housing-with-inlet-v2",
+      "overlap_mm3": 552.3794404517288,
+      "minimum_distance_mm": 0.0,
+      "passes": false
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ALT",
+      "center": [
+        -325,
+        320
+      ],
+      "radius": 35,
+      "side": 1
+    },
+    {
+      "id": "TENS",
+      "center": [
+        167,
+        350
+      ],
+      "radius": 45,
+      "side": -1
+    },
+    {
+      "id": "PS",
+      "center": [
+        280,
+        410
+      ],
+      "radius": 65.65899999999999,
+      "side": 1
+    },
+    {
+      "id": "AC",
+      "center": [
+        280,
+        100
+      ],
+      "radius": 72.5,
+      "side": 1
+    },
+    {
+      "id": "WP",
+      "center": [
+        -32,
+        170
+      ],
+      "radius": 75,
+      "side": -1
+    },
+    {
+      "id": "CS",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 81.53399999999999,
+      "side": 1
+    },
+    {
+      "id": "AP",
+      "center": [
+        -280,
+        100
+      ],
+      "radius": 70,
+      "side": 1
+    }
+  ],
+  "outside_radius_loop_mm": 2854.8453421318895,
+  "illustrative_cord_path_mm": 2876.8879134565686,
+  "catalog_comparison_effective_length_mm": 2491.0,
+  "outside_radius_residual_vs_catalog_mm": 363.84534213188954,
+  "radius_sensitivities": [
+    {
+      "id": "ALT",
+      "length_change_per_plus1mm_radius": 1.7214597129200229
+    },
+    {
+      "id": "TENS",
+      "length_change_per_plus1mm_radius": 1.6441149221850537
+    },
+    {
+      "id": "PS",
+      "length_change_per_plus1mm_radius": 3.0913057574903178
+    },
+    {
+      "id": "AC",
+      "length_change_per_plus1mm_radius": 2.296394361390867
+    },
+    {
+      "id": "WP",
+      "length_change_per_plus1mm_radius": 3.59676373259299
+    },
+    {
+      "id": "CS",
+      "length_change_per_plus1mm_radius": 3.2783583079208256
+    },
+    {
+      "id": "AP",
+      "length_change_per_plus1mm_radius": 1.14764667440204
+    }
+  ],
+  "solution": {
+    "nodes": [
+      {
+        "id": "ALT",
+        "center": [
+          -325,
+          320
+        ],
+        "radius": 35,
+        "side": 1,
+        "path_radius": 36.75
+      },
+      {
+        "id": "TENS",
+        "center": [
+          167,
+          350
+        ],
+        "radius": 45,
+        "side": -1,
+        "path_radius": 45.35
+      },
+      {
+        "id": "PS",
+        "center": [
+          280,
+          410
+        ],
+        "radius": 65.65899999999999,
+        "side": 1,
+        "path_radius": 67.40899999999999
+      },
+      {
+        "id": "AC",
+        "center": [
+          280,
+          100
+        ],
+        "radius": 72.5,
+        "side": 1,
+        "path_radius": 74.25
+      },
+      {
+        "id": "WP",
+        "center": [
+          -32,
+          170
+        ],
+        "radius": 75,
+        "side": -1,
+        "path_radius": 75.35
+      },
+      {
+        "id": "CS",
+        "center": [
+          0,
+          0
+        ],
+        "radius": 81.53399999999999,
+        "side": 1,
+        "path_radius": 83.28399999999999
+      },
+      {
+        "id": "AP",
+        "center": [
+          -280,
+          100
+        ],
+        "radius": 70,
+        "side": 1,
+        "path_radius": 71.75
+      }
+    ],
+    "spans": [
+      {
+        "from": "ALT",
+        "to": "TENS",
+        "start": [
+          -321.0957022163742,
+          356.5420163485374
+        ],
+        "end": [
+          162.18204341530807,
+          304.9066546556144
+        ],
+        "normal": [
+          0.10623939547281001,
+          0.9943405809125825
+        ],
+        "length": 486.0283839448062
+      },
+      {
+        "from": "TENS",
+        "to": "PS",
+        "start": [
+          212.34963691043072,
+          349.81852798535544
+        ],
+        "end": [
+          212.59153970242062,
+          410.2697430437745
+        ],
+        "normal": [
+          -0.9999919936147901,
+          0.00400158797452157
+        ],
+        "length": 60.45169905800831
+      },
+      {
+        "from": "PS",
+        "to": "AC",
+        "start": [
+          347.392584407395,
+          411.48756441612903
+        ],
+        "end": [
+          354.23191847155545,
+          101.63852983870967
+        ],
+        "normal": [
+          0.9997564777313868,
+          0.022067741935483897
+        ],
+        "length": 309.92450809672994
+      },
+      {
+        "from": "AC",
+        "to": "WP",
+        "start": [
+          231.73841955033953,
+          43.57409856722758
+        ],
+        "end": [
+          16.976566826692483,
+          227.26184071325793
+        ],
+        "normal": [
+          -0.6499876154836428,
+          -0.7599448004413794
+        ],
+        "length": 282.6019108215654
+      },
+      {
+        "from": "WP",
+        "to": "CS",
+        "start": [
+          -48.74893464783068,
+          96.53507171334954
+        ],
+        "end": [
+          18.512518556203457,
+          81.20043911646181
+        ],
+        "normal": [
+          0.22228181350803827,
+          0.9749824590132776
+        ],
+        "length": 68.98734698479139
+      },
+      {
+        "from": "CS",
+        "to": "AP",
+        "start": [
+          -31.03297235404342,
+          -77.28634603132159
+        ],
+        "end": [
+          -306.7352164449668,
+          33.41703895409293
+        ],
+        "normal": [
+          -0.3726162570727081,
+          -0.9279855198035829
+        ],
+        "length": 297.09757125227395
+      },
+      {
+        "from": "AP",
+        "to": "ALT",
+        "start": [
+          -351.6765220639257,
+          96.75366594146975
+        ],
+        "end": [
+          -361.7123649595717,
+          318.3372435309967
+        ],
+        "normal": [
+          -0.9989759172672571,
+          -0.0452450739864844
+        ],
+        "length": 221.81073012818834
+      }
+    ],
+    "arcs": [
+      {
+        "pulley": "ALT",
+        "start": [
+          -361.7123649595717,
+          318.3372435309967
+        ],
+        "middle": [
+          -350.17922724122644,
+          346.7688067633707
+        ],
+        "end": [
+          -321.0957022163742,
+          356.5420163485374
+        ],
+        "wrap_degrees": 98.69181520173143,
+        "length": 63.30176916147019,
+        "side": 1,
+        "path_radius": 36.75
+      },
+      {
+        "pulley": "TENS",
+        "start": [
+          162.18204341530807,
+          304.9066546556144
+        ],
+        "middle": [
+          197.24852672451416,
+          316.2117012710561
+        ],
+        "end": [
+          212.34963691043072,
+          349.81852798535544
+        ],
+        "wrap_degrees": 95.86930341414987,
+        "length": 75.88120707632565,
+        "side": -1,
+        "path_radius": 45.35
+      },
+      {
+        "pulley": "PS",
+        "start": [
+          212.59153970242062,
+          410.2697430437745
+        ],
+        "middle": [
+          279.3910375752863,
+          477.4062493079483
+        ],
+        "end": [
+          347.392584407395,
+          411.48756441612903
+        ],
+        "wrap_degrees": 178.50623416395294,
+        "length": 210.01419024258897,
+        "side": 1,
+        "path_radius": 67.40899999999999
+      },
+      {
+        "pulley": "AC",
+        "start": [
+          354.23191847155545,
+          101.63852983870967
+        ],
+        "middle": [
+          311.8038387457086,
+          32.90619744688067
+        ],
+        "end": [
+          231.73841955033953,
+          43.57409856722758
+        ],
+        "wrap_degrees": 131.80515926247153,
+        "length": 170.80722451823797,
+        "side": 1,
+        "path_radius": 74.25
+      },
+      {
+        "pulley": "WP",
+        "start": [
+          16.976566826692483,
+          227.26184071325793
+        ],
+        "middle": [
+          -99.32033201234866,
+          203.84664529531906
+        ],
+        "end": [
+          -48.74893464783068,
+          96.53507171334954
+        ],
+        "wrap_degrees": 207.6975778190173,
+        "length": 273.1442459054003,
+        "side": -1,
+        "path_radius": 75.35
+      },
+      {
+        "pulley": "CS",
+        "start": [
+          18.512518556203457,
+          81.20043911646181
+        ],
+        "middle": [
+          79.49028687484953,
+          -24.849928542233762
+        ],
+        "end": [
+          -31.03297235404342,
+          -77.28634603132159
+        ],
+        "wrap_degrees": 189.03396906706266,
+        "length": 274.77599944663524,
+        "side": 1,
+        "path_radius": 83.28399999999999
+      },
+      {
+        "pulley": "AP",
+        "start": [
+          -306.7352164449668,
+          33.41703895409293
+        ],
+        "middle": [
+          -338.51580682704616,
+          58.47936836487413
+        ],
+        "end": [
+          -351.6765220639257,
+          96.75366594146975
+        ],
+        "wrap_degrees": 65.52970353794865,
+        "length": 82.06112681954639,
+        "side": 1,
+        "path_radius": 71.75
+      }
+    ],
+    "length": 2876.8879134565686
+  },
+  "input_sha256": {
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/coolant_outlet_head_candidate.py": "9aeaa1fd3d3693a64643a120808aa74820d8f58695daf62c79ef7c4bf1a95fc7",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/alternator_carrier_1994_candidate.py": "c35dfeb13d170f8ae1475be49746df54a483a93b1d4570d86b535efb22dff0b7",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/accessory_carrier_1994.py": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_inlet_v2_candidate.py": "d23341f3e7309bbc752c1004e441d75c5134d07e7b44589699b5001161633edf",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/manifest.json": "4b847d7b3d3de16ceeb3a209277cd909fc953fe729a17128efe317d2a832f059",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-frame.step": "b880dbdc9ce655aab5976be5152adb1f79c486b87e71c70decf96de86110a6e4",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-cage.step": "3205ac6242e05e9d15a95edff24cafa361271f7dece98f20c7baaac45c895f8f",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-poppet.step": "9aad6b8f3d2606322a3549c2e89b76ac915aaab5f1fda39cffc87ca1fa3b02a0",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-capsule.step": "fc9ce3d2bdef7dc717edf6d5fa5724798ff782c21732103137e65108678abb70",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-wax.step": "0751f02755c1d8253dd169789664d0fb7d9afcc49b0d4a56e2090094b38f6dcc",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-diaphragm.step": "2eff4bc03e90031f37cbb17314dd9d88f58c809c3906aeccb37ee09ae5cad159",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-spring.step": "20a1f66833ab6b9c7691985ac59d96df14eaaf33621fafc5acf0764cb6920bf3",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/thermostat-jiggle-pin.step": "49a2b914fd738032becc4ac7be998476835345985c077f0a0ffc4760a8601aeb",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/engine-coolant-temperature-body.step": "173edee6e626959422757f584d7213f4c6d28037471876f6006de4af9a5446fb",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/engine-coolant-temperature-insulator.step": "6c9faa58ef0546dccef4b9a221cbc0e804ab51fc59cda77ce52a734d10afdbc1",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/engine-coolant-temperature-thermistor.step": "fd697ab2d6e2c0cc50dcecce739bb49fb5452b249dd459dcceee79307538e441",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/engine-coolant-temperature-terminal.step": "400e433d3ae364a821f4226e55e018518b717d435a851bd306cdb5363fd5ebdc",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/outlet-head-20260925/baseline/cylinder-head.step": "a0ae87b75ba99676570cb78c74426afa559ed9322690f7d44cd5ee2d6ffa4f22",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/generated/water-pump-housing.step": "ed86d0450efbb31af3b551553eba5c2f5e1ba798ceffa0be05344e7166d3d72f"
+  },
+  "limits": [
+    "Uses frozen 4b847 head/thermostat/ECT definitions, accepted outlet9aea module, and original main pump housing with pump+inlet adapters; no installed belt acceptance.",
+    "All 20 outlet components plus pump housing/inlet tested; remaining engine obstacles, pulley traction, travel, dynamic clearance and accurate pitch gauge remain outside this diagnostic.",
+    "Ford TSB identifies E8TZ8620T/JK6-984-B; 2491mm comes from Gates replacement comparison and is not independently a measurement of that Ford belt.",
+    "No station or radius adjusted to force fit. Source-supported topology does not supply manufacturing coordinates."
+  ]
+}

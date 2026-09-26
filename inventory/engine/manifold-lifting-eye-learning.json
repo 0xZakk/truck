@@ -1,0 +1,31 @@
+{
+  "front-manifold-lifting-eye": {
+    "summary": "A spanning lifting eye uses two separately fastened feet on the front exhaust manifold rather than hanging from a single stud.",
+    "limits": "Provisional construction study. The two-foot topology comes from a recovered 1996 factory comparison figure and the 1994 installation sequence. Outline, section, mounting stations, casting lugs and internal head mounting bosses are provisional. The assumed head bosses support blind sockets but are not verified against production coolant galleries. No safe lifting capacity, material strength, fatigue life or production fit is established; this model is not lifting equipment guidance.",
+    "steps": [
+      {"title": "Identify both attachments", "text": "The comparison figure shows the eye spanning two front-manifold attachment regions. The 1994 procedure identifies front stud13 and bolt14 before intake installation; correspondence to the later figure is an explicit cross-year inference.", "source": "ford-manifold-fastener-topology"},
+      {"title": "Follow the modeled contact path", "text": "Each foot contacts its own casting pad. The stud shoulder and bolt head contact the opposite faces of those feet. These nominal surfaces illustrate the attachment arrangement without predicting clamping preload.", "part": "front-manifold-stud13"},
+      {"title": "Preserve the adjacent passages", "text": "The candidate casting webs stay outside the intake gasket sealing plane and leave all three modeled front exhaust runner bores open. Those clearance checks do not establish production casting contours.", "part": "exhaust-front"}
+    ],
+    "troubleshooting": [
+      {"title": "Separate model interference from vehicle diagnosis", "text": "The initial assumed bolt station intersected the modeled injector connector. Moving the candidate station resolves a study-layout conflict only; it does not establish that a real vehicle has an incorrect bracket or connector.", "part": "front-manifold-bolt14"}
+    ],
+    "sources": ["ford-manifold-fastener-topology", "ford-1996-manifold-comparison", "ford-1996-manifold-fastener-table"]
+  },
+  "front-manifold-stud13": {
+    "summary": "The long front stud has an integral shoulder that clamps one lifting-eye foot against the front manifold.",
+    "limits": "The 90.678mm overall length and nominal3/8-16 designation are 1996 comparison values, not verified 1994 truck dimensions. Smooth thread envelopes, socket depth and the projecting end do not prove retention or establish an additional nut or accessory attachment.",
+    "steps": [
+      {"title": "Distinguish the shoulder from the extension", "text": "The modeled integral hex shoulder supplies the nominal foot-contact surface. The outboard threaded extension remains a boundary with no invented downstream retaining hardware.", "part": "front-manifold-lifting-eye"}
+    ],
+    "sources": ["ford-manifold-fastener-topology", "ford-1996-manifold-comparison", "ford-1996-manifold-fastener-table"]
+  },
+  "front-manifold-bolt14": {
+    "summary": "A separate headed bolt clamps the other lifting-eye foot at the front manifold's second mounting region.",
+    "limits": "The 33.274mm underhead length and nominal3/8-16 designation are later-model comparison dimensions. The X49/Z315mm station is an explicit packaging assumption. Thread engagement, installation torque, socket wall strength and lifting loads are not simulated.",
+    "steps": [
+      {"title": "Keep the two-point attachment distinct", "text": "The headed bolt and shoulder stud remain separate physical components. The front manifold attachment does not complete the other fourteen numbered manifold stations or their shared intake/exhaust clamping details.", "part": "front-manifold-stud13"}
+    ],
+    "sources": ["ford-manifold-fastener-topology", "ford-1996-manifold-comparison", "ford-1996-manifold-fastener-table"]
+  }
+}

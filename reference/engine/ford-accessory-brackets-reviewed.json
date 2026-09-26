@@ -1,0 +1,29 @@
+{
+  "source_id": "ford-accessory-brackets",
+  "title": "Ford 1994 4.9L accessory bracket attachment topology",
+  "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Torque%20Specifications/index.html",
+  "sha256": "90e42ec143672fe38960c8105892c3a4dcf3a9c684b2acbc13b2ddfa474889c5",
+  "findings": [
+    "A shared power-steering pump/A/C compressor bracket attaches to both cylinder block and cylinder head.",
+    "A separate alternator bracket attaches to the engine; its bottom bolt is distinguished from the remaining attachments.",
+    "Alternator pivot, power-steering pump, compressor, Thermactor pump and Thermactor pulley-to-hub fasteners are named separately."
+  ],
+  "attachment_table_ft_lb": {
+    "power_steering_ac_bracket_to_block": [30, 40],
+    "power_steering_ac_bracket_to_head": [39, 53],
+    "alternator_bracket_except_bottom": [30, 40],
+    "alternator_bracket_bottom": [39, 53],
+    "alternator_pivot": [39, 53],
+    "alternator_mount": [30, 40],
+    "power_steering_pump_mount": [30, 40],
+    "compressor_mount": [18, 23],
+    "thermactor_pump_mount": [30, 40],
+    "thermactor_pulley_to_hub": [9, 11]
+  },
+  "limits": [
+    "This is attachment architecture evidence, not a dimensioned casting drawing or fastener specification for manufacture.",
+    "Bolt counts, hole coordinates, bracket thickness, casting ribs, thread sizes and exact installed bracket part numbers remain unresolved.",
+    "Owner photos corroborate accessory presence and broad placement but cannot establish hidden engine attachment datums.",
+    "Filtered dealer catalog pages can include 7.3L diesel-only brackets; those bracket part numbers are not accepted for this 4.9L study."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_sha256": "7d11501cee5e4a6ba06898ea0af1fa3ca0f020a35ed55e2c3eca7dcefa365dfa",
+  "source_sha256": {
+    "water_pump_pulley": "c6367308526aa03e3467f40feba3403352997cf157cc88529a7b1a5ab902d87e",
+    "tensioner_arm": "b90890dfac093c3d2aa47377ef1fe98f818cbd412f5978894bc937bb3185da49",
+    "tensioner_pulley": "e1195de0b49f99c78e74733ac92e9489450a8bfd90549a1a33725a43d2f70fa6"
+  },
+  "api_world_transform_checks": [
+    "water-pump-pulley",
+    "water-pump-pulley-bolt-1",
+    "water-pump-pulley-bolt-2",
+    "water-pump-pulley-bolt-3",
+    "water-pump-pulley-bolt-4"
+  ],
+  "cross_candidate_pairs": 40,
+  "collisions": [],
+  "verified_production_fit": false,
+  "unresolved_belt_alignment": {
+    "water_pump_belt_center_x": 473.56,
+    "tensioner_envelope_center_x": 473.56,
+    "center_delta_mm": 0.0,
+    "meaning": "Illustrative axial centers are reconciled; actual belt tracking, usable pulley face width and production datums remain unverified."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "factory": {
+    "id": "system-8b605c7dd171",
+    "filter": "D9AZ6731A / FL-1A",
+    "bulletin": "fsm-d975f341ee63,95-8-8",
+    "adapter": "E4TZ-6890-A",
+    "note": "Factory bulletin distinguishes an anti-drainback mounting insert from the disposable filter."
+  },
+  "comparison": {
+    "url": "https://m.wixfilters.com/Search/PartDetail?PartID=193964+&Source=WESR",
+    "part": "WIX51515",
+    "height_mm": 132,
+    "diameter_mm": 93,
+    "thread": "3/4-16",
+    "gasket_mm": {
+      "od": 72,
+      "id": 63,
+      "thickness": 5
+    },
+    "bypass_psi": [
+      8,
+      11
+    ],
+    "anti_drainback": true,
+    "limits": "WIX replacement dimensions, not a Ford manufacturing drawing. Metric values are the published rounded values. Pressure is catalog data only; no modeled spring calibration."
+  },
+  "construction": {
+    "path": "manuals/manufacturer-catalogs/motorcraft-oil-filter-cutaway.pdf",
+    "url": "https://www.ford-trucks.com/ford-manuals/Oil_Filter_Cutaway_Comparison.pdf",
+    "sha256": "a5535a14936bc181231077a0c561bfa48e864af7800f5776392adb4e32b3172c",
+    "reviewed": "PDF2 cutaway visually reviewed; comparison pages identify FL-820S, not FL-1A. Steel case, media, center tube, anti-drainback valve, threaded-end bypass; metal endcaps and tension clip.",
+    "limits": "Construction comparison only. FL-820S pleat/flute counts and dimensions are not transferred. Generic internal study does not claim either part is reproduced exactly."
+  },
+  "mounting": {
+    "source": "ford-industrial-csg649",
+    "page": 33,
+    "figure": 60,
+    "reviewed": "Visually reviewed typical filter placement on industrial300 block; inclined filter and threaded mounting shown. Not a dimensioned1994truck reference.",
+    "status": "Staged placement until block boss/adapter/galleries reconciled."
+  }
+}

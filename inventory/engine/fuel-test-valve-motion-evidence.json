@@ -1,0 +1,39 @@
+{
+  "complete": false,
+  "verified_production_fit": false,
+  "module": "cad/engine/fuel_test_valve_motion.py",
+  "existing_parts_reused": ["fuel-test-body", "fuel-test-core", "fuel-test-static-seal", "fuel-test-pin", "fuel-test-seat-seal", "fuel-test-spring", "fuel-test-cap", "fuel-test-cap-seal"],
+  "new_installed_part_count": 0,
+  "source_ids": ["fsm-4840fb38c793", "schrader-core-construction"],
+  "additional_local_service_review": {
+    "manual_root": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L",
+    "path": "Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Tune-up%20and%20Engine%20Performance%20Checks/Fuel%20Pressure/Fuel%20Pressure%20Test%20Port",
+    "pages": ["Description%20and%20Operation/index.html", "Service%20and%20Repair/index.html"],
+    "supported": "Ford identifies diagnostic/pressure-relief function and removable valve/cap, with the specified diagnostic gauge. It does not supply valve-core travel or sectional dimensions."
+  },
+  "coordinate_datum_mm": [100, -163, 378],
+  "motion": {
+    "axis": "Negative local/global Z",
+    "moving_rigid_parts": ["fuel-test-pin", "fuel-test-seat-seal"],
+    "illustrative_travel_range_mm": [0, 0.12],
+    "sampled_openings_mm": [0.03, 0.06, 0.09, 0.12],
+    "spring": "Existing four-turn geometry retained; helix height changes from1.62 to1.50 mm. Minimum illustrative pitch0.375 mm exceeds wire diameter0.36 mm by0.015 mm; no real spring rate or preload established.",
+    "cap_state": "Any nonzero opening requires both cap and cap seal excluded from the working state. This does not model a gauge connector or fuel collection."
+  },
+  "flow_test": "A connected chain of narrow cylindrical probes runs through the lower core inlet, around the poppet, across the opened seat and up the outlet. Each opened-state probe is also tested against the unchanged closed assembly as a blocking control. The actual installed rail branch is checked independently.",
+  "seal_limit": "Existing static seal has0.01 mm radial clearance to its groove. The adapter deliberately preserves and reports this gap; connectivity through the intended seat does not establish leak-tightness or exclude bypass leakage.",
+  "integration": "Replacement-state API only. Replace fuel_test_valve.build invocation with this module's build((define,add,group),travel=0,cap_removed=False) if accepted. Never add the module alongside the existing eight parts. Closed geometry and identifiers are preserved. For motion UI use components()/parts(); regenerate spring for each state and translate pin/seat together.",
+  "validation": "inventory/engine/fuel-test-valve-motion-validation.json",
+  "validation_summary": {
+    "passed": true,
+    "manifest_sha256": "73dd4bdab67fc7fbc3a36c502b0cf079f4fe4641aa0d0454ed8b097ce2eea63e",
+    "sampled_states": 6,
+    "step_round_trips": 38,
+    "exact_intersection_checks": 139,
+    "overlaps": 0,
+    "open_passage_tests": 4,
+    "closed_blocking_controls": 4,
+    "closed_build_api": "Eight definitions and occurrences; existing group datum preserved.",
+    "viewer_animation_integrated": false
+  }
+}

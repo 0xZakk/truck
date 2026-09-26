@@ -1,0 +1,88 @@
+{
+  "status": "PASS replacement-envelope STEP roundtrip; no assembled fit approval",
+  "source_inputs": {
+    "cad/engine/candidates/valve-layout/intake-valve.step": "461fc6ff1e4109889d2ef625e43d8a13e6820d90c5b8f6b1005f926c06f04327",
+    "cad/engine/candidates/valve-layout/exhaust-valve.step": "c412403b972aab3a8b08ea18a8de450577ba46757e43dea7d0170f2d9405a226"
+  },
+  "sources": [
+    "kb/sources/melling-valve-progressive-size-chart-2025.md",
+    "kb/sources/melling-pushrod-specifications.md"
+  ],
+  "constraints": {
+    "valve_lengths_mm": {
+      "intake": 120.62459999999999,
+      "exhaust": 120.64999999999999
+    },
+    "stem_diameter_mm": 8.6868,
+    "pushrod_overall_mm": 257.556,
+    "pushrod_diameter_mm": 7.924799999999999,
+    "assumed_ball_radius_mm": 3.9623999999999997,
+    "end_axial_material_extent_mm": 3.77632278281399,
+    "derived_ball_centers_mm": 250.003354434372
+  },
+  "measured_step": {
+    "pushrod": {
+      "height_mm": 257.556,
+      "width_mm": 7.9248,
+      "volume_mm3": 11425.987719336106,
+      "valid": true
+    },
+    "intake-valve": {
+      "height_mm": 120.6246,
+      "width_mm": 45.2882,
+      "volume_mm3": 11770.165926528922,
+      "valid": true
+    },
+    "exhaust-valve": {
+      "height_mm": 120.65,
+      "width_mm": 39.5986,
+      "volume_mm3": 10601.086485902097,
+      "valid": true
+    }
+  },
+  "conditional_datum_solutions": [
+    {
+      "source": "Crower66015J-12 comparison",
+      "kind": "intake",
+      "valve_tip_z": 381.6246,
+      "pivot_z_assumed_pad": 395.1246,
+      "lower_ball_center_z": 137.5234,
+      "upper_ball_center_z": 387.52675443437204,
+      "required_rocker_cup_offset_z": -7.597845565627949
+    },
+    {
+      "source": "Crower66015J-12 comparison",
+      "kind": "exhaust",
+      "valve_tip_z": 381.65,
+      "pivot_z_assumed_pad": 395.15,
+      "lower_ball_center_z": 137.5234,
+      "upper_ball_center_z": 387.52675443437204,
+      "required_rocker_cup_offset_z": -7.62324556562794
+    },
+    {
+      "source": "Howards91211-12 alternative",
+      "kind": "intake",
+      "valve_tip_z": 381.6246,
+      "pivot_z_assumed_pad": 395.1246,
+      "lower_ball_center_z": 145.21959999999999,
+      "upper_ball_center_z": 395.222954434372,
+      "required_rocker_cup_offset_z": 0.09835443437202684
+    },
+    {
+      "source": "Howards91211-12 alternative",
+      "kind": "exhaust",
+      "valve_tip_z": 381.65,
+      "pivot_z_assumed_pad": 395.15,
+      "lower_ball_center_z": 145.21959999999999,
+      "upper_ball_center_z": 395.222954434372,
+      "required_rocker_cup_offset_z": 0.0729544343720363
+    }
+  ],
+  "limitations": [
+    "These are replacement comparisons, not owner-part identification.",
+    "Valve groove location and head contours retain prior assumptions; overall and stem dimensions now sourced.",
+    "Pushrod ball radius equated to tube radius and1.2mm oil bore remain assumed; center spacing includes loss of spherical apex from oil drilling.",
+    "Conditional seat-height scenarios assume seat height is socket bottom, not ball center; manufacturer convention and actual part unresolved.",
+    "No coordinated rocker,head,lifter,cover or timing fit approval."
+  ]
+}

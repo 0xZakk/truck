@@ -1,0 +1,220 @@
+{
+  "installed": true,
+  "manifest_sha256": "550892c05fd3bf618674d89a8be4b5556205ae1f98f08ccd2a65875476526fce",
+  "source_sha256": "7b08e201d0b68c47be1b3245b380fd3c893dab7517ac832269a0951d34e11415",
+  "parts": 14,
+  "canonical_step_expected": true,
+  "shape_checks": [
+    {
+      "id": "starter-brush-carrier",
+      "symmetric_difference_mm3": -3.637978807091713e-12
+    },
+    {
+      "id": "starter-brush-holder-4",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-frame",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-brush-holder-1",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-brush-holder-2",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-brush-holder-3",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-motor-positive-feed",
+      "symmetric_difference_mm3": 1.1368683772161603e-13
+    },
+    {
+      "id": "starter-motor-feed-jacket",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-motor-feed-grommet",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-motor-ground-bridge",
+      "symmetric_difference_mm3": -4.547473508864641e-13
+    },
+    {
+      "id": "starter-brush-pigtail-positive-1",
+      "symmetric_difference_mm3": 7.105427357601002e-15
+    },
+    {
+      "id": "starter-brush-pigtail-positive-4",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-brush-pigtail-ground-2",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "starter-brush-pigtail-ground-3",
+      "symmetric_difference_mm3": 1.4210854715202004e-14
+    }
+  ],
+  "directed_boolean_checks": 286,
+  "contacts": [
+    [
+      "starter-motor-positive-feed",
+      "starter-solenoid-terminal-2",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-motor-positive-feed",
+      "starter-solenoid-terminal-nut-2",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-motor-ground-bridge",
+      "starter-brush-end-plate",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-motor-ground-bridge",
+      "starter-brush-plate-screw-1",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-motor-ground-bridge",
+      "starter-brush-plate-screw-2",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-positive-1",
+      "starter-motor-positive-feed",
+      1.1249353007067814e-11,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-positive-1",
+      "starter-brush-1",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-positive-4",
+      "starter-motor-positive-feed",
+      6.039613253960852e-14,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-positive-4",
+      "starter-brush-4",
+      7.105427357601002e-15,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-ground-2",
+      "starter-motor-ground-bridge",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-ground-2",
+      "starter-brush-2",
+      7.105427357601002e-15,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-ground-3",
+      "starter-motor-ground-bridge",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      "starter-brush-pigtail-ground-3",
+      "starter-brush-3",
+      0.0,
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "clearance_checks": 218,
+  "clearances": [
+    [
+      "starter-brush-pigtail-positive-4",
+      "starter-brush-pigtail-positive-1",
+      2.00585932482666
+    ],
+    [
+      "starter-brush-pigtail-ground-2",
+      "starter-through-bolt-1",
+      0.13931632973455121
+    ],
+    [
+      "starter-brush-pigtail-positive-1",
+      "starter-brush-pigtail-positive-4",
+      2.00585932482666
+    ],
+    [
+      "starter-motor-positive-feed",
+      "starter-frame",
+      1.2499999378389748
+    ],
+    [
+      "starter-motor-ground-bridge",
+      "starter-through-bolt-2",
+      1.799999999995372
+    ],
+    [
+      "starter-brush-pigtail-ground-3",
+      "starter-brush-plate-screw-2",
+      0.3262797278515168
+    ]
+  ],
+  "failures": [],
+  "boundary": "No volume-overlap exemptions. Known dielectrics excluded only from conductive clearance; material-unknown neighbors conservatively treated as conductors. Production brush clocking and routing, electrical performance and armature winding continuity remain unverified."
+}

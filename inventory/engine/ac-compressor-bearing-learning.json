@@ -1,0 +1,12 @@
+{
+  "ac-compressor-pulley-bearing": {
+    "summary": "The clutch pulley runs on a double-row angular-contact bearing around the stationary compressor nose. The manufacturer comparison envelope is30mm bore,55mm outside diameter and23mm width.",
+    "limits": "This is a dimensioned cartridge, not completed bearing internals. Ball count, ball size, raceways, cage counts and seal profiles are unverified. The installed bearing identity and exact nose/pulley fits remain unknown.",
+    "steps": [
+      {"title": "Use an identified comparison", "text": "NSK lists30BD40 for FordFS10/FX15 and cross-references NACHI30BG05S5G-2DS. Both manufacturer tables give30×55×23mm.", "source": "nsk-fs10-clutch-bearing"},
+      {"title": "Reconcile both seats", "text": "The provisional stationary nose and rotating pulley seat are resized around the sourced bearing envelope. The coil carrier, retention and armature neck are also adjusted so the correction does not leave incompatible interfaces.", "part": "ac-compressor-front-head"},
+      {"title": "Do not invent missing internals", "text": "NACHI describes a reinforced-polyamide cage and sealed construction, but the reviewed documents do not publish an element count. The failed comparison bearing has missing balls and cannot supply that count.", "source": "nachi-magnetic-clutch-bearing-construction"}
+    ],
+    "sources": ["nsk-fs10-clutch-bearing", "nachi-magnetic-clutch-bearing-construction", "fs10-bearing-dissection-limit"]
+  }
+}

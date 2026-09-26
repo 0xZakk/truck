@@ -1,0 +1,18 @@
+{
+  "installed": true,
+  "manifest_sha256": "550892c05fd3bf618674d89a8be4b5556205ae1f98f08ccd2a65875476526fce",
+  "comparison_method": "Expected geometry independently STEP-roundtripped before intersection; original volume tolerance remains0.02mm3.",
+  "source_sha256": "3841a065c9bb465306a2b257e0329da021d4886324c127c17a47a3ecf274a433",
+  "composed_source_sha256": {
+    "cad/engine/starter_motor.py": "3841a065c9bb465306a2b257e0329da021d4886324c127c17a47a3ecf274a433",
+    "cad/engine/starter_solenoid.py": "2f94ce43bc2fbc3888ca4d69049326cba78180ff08ff272b9f40b77021f5d89a",
+    "cad/engine/starter_engagement.py": "b2b4c23e5cf39cea91a114b9bf7d7558182ff9c96649354377201970e0ccca3c",
+    "cad/engine/starter_wiring_fit.py": "43dc089604f6cfe55104af59bd9e10e62a0ed3a5bf59edaec8b073d457b1d1f2",
+    "cad/engine/starter_wiring.py": "b775447106654b773435109e933b9c55f2546821abfca24b17b64e27f0124289",
+    "cad/engine/starter_motor_feed.py": "7b08e201d0b68c47be1b3245b380fd3c893dab7517ac832269a0951d34e11415"
+  },
+  "candidate_parts": 132,
+  "boolean_checks": 848,
+  "collisions": [],
+  "boundary": "Default disengaged stationary candidate. Bellhousing/index-plate support unresolved. Isolated checker separately samples reducer and engaged flywheel mesh."
+}

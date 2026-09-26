@@ -1,0 +1,24 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Checked crank 0 exact checks 74 failures 0
+Checked crank 111 exact checks 148 failures 0
+Checked crank 150 exact checks 223 failures 1
+{'crank_deg': 180, 'a': 'cylinder-head', 'b': 'c1-exhaust-valve', 'overlap_mm3': 7.998313064911024}
+Checked crank 180 exact checks 299 failures 3
+Checked crank 210 exact checks 376 failures 3
+Checked crank 246 exact checks 453 failures 3
+Checked crank 282 exact checks 530 failures 3
+Checked crank 333 exact checks 606 failures 3
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/check-valve-layout-motion.py", line 78, in <module>
+    if not box_overlap(parts[a],parts[c]):continue
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/valve_layout_candidate.py", line 131, in box_overlap
+    aa=a.bounding_box();cc=c.bounding_box()
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/.venv-cad/lib/python3.13/site-packages/build123d/topology/shape_core.py", line 1020, in bounding_box
+    return BoundBox.from_topo_ds(self.wrapped, tolerance=tolerance, optimal=optimal)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/.venv-cad/lib/python3.13/site-packages/build123d/geometry.py", line 1120, in from_topo_ds
+    BRepBndLib.AddOptimal_s(shape, bbox)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

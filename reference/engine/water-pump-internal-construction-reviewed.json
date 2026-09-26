@@ -1,0 +1,52 @@
+{
+  "source_id": "water-pump-internal-construction",
+  "review_date": "2026-09-26",
+  "sources": [
+    {
+      "title": "Gates \u2014 Preventing Water Pump Installation Problems",
+      "url": "https://www.gatestechzone.com/en/news/2022-05-water-pump-installation",
+      "date": "2022-06-01",
+      "scope": "Generic Gates technical explanation, not a44009 drawing",
+      "summary": "The stationary sealing assembly is fixed to the housing but can move axially under spring pressure. The mating assembly rotates with the shaft. Spring and coolant pressure maintain face contact, with a thin coolant film controlling friction and heat. These are separate from the bearing grease seals.",
+      "capture": "Reviewed through web tool; direct HTML download returned403. Summary preserved here; original HTML not claimed."
+    },
+    {
+      "title": "Gates Water Pumps2011 catalog",
+      "url": "https://cms.gates.com/~/media/Files/Gates/Industrial/Fluid%20Power/Catalogs/Water%20Pump%20Catalog%20Full%20Version.pdf",
+      "local": "reference/engine/research-2026-09-23/gates-water-pumps-2011.pdf",
+      "scope": "Generic exploded pump onA1, application table identifies44009 separately",
+      "summary": "The catalog identifies a unitized seal and a unitized bearing/shaft assembly. It does not provide individual44009 seal or bearing dimensions."
+    },
+    {
+      "title": "Schaeffler TPI131 \u2014 Water pump bearings",
+      "url": "https://www.schaeffler.com/remotemedien/media/_shared_media/08_media_library/01_publications/schaeffler_2/tpi/downloads_8/tpi131_de_en.pdf",
+      "local": "reference/engine/schaeffler-water-pump-bearings-tpi131.pdf",
+      "scope": "Generic manufacturer bearing architecture; no relationship to Gates44009 established",
+      "summary": "Shaft raceways replace a separate inner ring. The unit combines rolling-element rows, cages, a common outer ring and end seals. Ball/ball, roller/ball and triple-row designs are offered. The application-specific choice cannot be determined from the exterior pump photograph. Published standard sizes do not justify selecting an installed bearing number.",
+      "pages": "Printed5\u201310 for architecture/variants;12\u201313 for mounting and standard dimensions."
+    },
+    {
+      "title": "GMB Water Pumps \u2014 manufacturer cutaways",
+      "url": "https://gmb.net/products/water-pump/",
+      "scope": "Generic GMB construction only; not evidence of Gates internal materials or exactparts",
+      "summary": "Manufacturer cutaways illustrate a spring-loaded mechanical face seal near the impeller and a separate sealed shaft bearing. GMB describes elastomer supports and carbon/ceramic faces for its products; that material claim is not transferred to Gates44009.",
+      "images": [
+        "reference/engine/gmb-water-pump-mechanical-seal.png",
+        "reference/engine/gmb-water-pump-cutaway.png"
+      ]
+    }
+  ],
+  "decision": "Proceed with a clearly illustrative six-component mechanical face-seal study. Preserve bearing cartridge until specific row/race evidence is available; do not inflate verified truck parts with an arbitrarily chosen bearing arrangement.",
+  "unknowns": [
+    "Seal supplier/part number and material pair",
+    "Exact44009 seal dimensions and axial stack",
+    "Bearing supplier/part number, row type/count and rolling-element geometry",
+    "Actual installed truck pump identity and internal condition"
+  ],
+  "candidate_dimensions": "LocalX11..21. CarrierOD48mm; rotating/stationary faceOD36mm. All inherited/assumed packaging, not manufacturer measurements.",
+  "hashes": {
+    "reference/engine/schaeffler-water-pump-bearings-tpi131.pdf": "bb06502734d035fcd74471749daf9cded3382b371d2543d3b6ec8a03603b5f72",
+    "reference/engine/gmb-water-pump-mechanical-seal.png": "8ed99d78912062ae29de5de1b6ec72b3fd18beae1e3d5a7f78cf955541cd1a9f",
+    "reference/engine/gmb-water-pump-cutaway.png": "cba910cc26e49a3f4b55529dc0f3af5e94b7b9502a7e0e7d1ba3724d62c67c56"
+  }
+}

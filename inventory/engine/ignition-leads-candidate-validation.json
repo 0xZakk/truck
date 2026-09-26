@@ -1,0 +1,113 @@
+{
+  "installed": false,
+  "manifest_sha256": "95236469efc7b11aab9423bc2426fb7a94143fa8f2bab152e05e0e1620e199f1",
+  "source_sha256": "b085f7897ee2e475c149bed81aef8b361ea28a686d33692c9b53dbbe5b5ed16f",
+  "candidate_count": 51,
+  "invalid": [],
+  "boolean_checks": 267,
+  "collisions": [],
+  "terminal_continuity": [
+    {
+      "contact": "ignition-lead-1-cap-contact",
+      "terminal": "distributor-terminal-1",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-1-plug-contact",
+      "terminal": "spark-plug-1-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-2-cap-contact",
+      "terminal": "distributor-terminal-3",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-2-plug-contact",
+      "terminal": "spark-plug-2-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-3-cap-contact",
+      "terminal": "distributor-terminal-5",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-3-plug-contact",
+      "terminal": "spark-plug-3-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-4-cap-contact",
+      "terminal": "distributor-terminal-2",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-4-plug-contact",
+      "terminal": "spark-plug-4-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-5-cap-contact",
+      "terminal": "distributor-terminal-6",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-5-plug-contact",
+      "terminal": "spark-plug-5-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-6-cap-contact",
+      "terminal": "distributor-terminal-4",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-lead-6-plug-contact",
+      "terminal": "spark-plug-6-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-coil-lead-cap-contact",
+      "terminal": "distributor-coil-terminal",
+      "distance_mm": 0.0
+    },
+    {
+      "contact": "ignition-coil-lead-coil-contact",
+      "terminal": "ignition-coil-hv-terminal",
+      "distance_mm": 0.0
+    }
+  ],
+  "firing_order": [
+    1,
+    5,
+    3,
+    6,
+    2,
+    4
+  ],
+  "tower_assignment": {
+    "1": 1,
+    "5": 6,
+    "3": 5,
+    "6": 4,
+    "2": 3,
+    "4": 2
+  },
+  "cable_lengths_mm": {
+    "1": 194.95329822182805,
+    "2": 254.71781756372698,
+    "3": 295.3949157846945,
+    "4": 473.8922094863443,
+    "5": 533.8886002618871,
+    "6": 612.6587984092605
+  },
+  "coil_cable_length_mm": 424.0008994426739,
+  "limits": [
+    "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+    "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+    "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+    "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+    "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+  ]
+}

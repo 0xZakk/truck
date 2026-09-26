@@ -1,0 +1,37 @@
+{
+  "installed": false,
+  "manifest_sha256": "97f41f9a5eb4c64f201e60be03b982d95415780d62922e01b447b97f0f05d1a3",
+  "source_sha256": "a3db9afe402f1786431b9484a85571e5b094e9caef99bb4dc5194748257062e4",
+  "valid_step_solids": [
+    "modified-block",
+    "oil-filter-mounting-insert"
+  ],
+  "inlet_outlet_separation_mm": 15.59999999999999,
+  "open_gallery_boundaries": {
+    "unfiltered-inlet": {
+      "center_cad_mm": [
+        41.85750544105942,
+        136.10769515458674,
+        47.61731409782015
+      ],
+      "radius_mm": 4,
+      "connects_to": "Filter baseplate outer inlet annulus",
+      "unresolved": "Pump delivery route upstream"
+    },
+    "filtered-outlet": {
+      "center_cad_mm": [
+        109.0,
+        134.88526329025126,
+        79.5
+      ],
+      "radius_mm": 6.4,
+      "connects_to": "Hollow insert and filter clean center",
+      "unresolved": "Main oil gallery downstream"
+    }
+  },
+  "all_eight_filter_inlets_open": true,
+  "full_gasket_land_supported": true,
+  "boolean_checks": 23,
+  "collisions": [],
+  "scope": "Static attachment and bounded galleries only; no full oil circuit or service-insert anti-drainback performance."
+}

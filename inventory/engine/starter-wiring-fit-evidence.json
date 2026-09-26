@@ -1,0 +1,26 @@
+{
+  "status": "isolated correction of accepted provisional coil-end routing; not installed",
+  "supersedes_geometry": "cad/engine/starter_wiring.py",
+  "integration": "Use starter_wiring_fit_metadata.api(base_api) downstream of starter_wiring.api for all existing starter/solenoid/wiring builds. All ten fitted definitions replace the accepted geometry under the same identifiers. Merge starter-wiring-fit-learning.json last. Accepted starter_wiring.py remains intact; shared source metadata can record the fitted geometry and adapter separately.",
+  "reason": "Whole-assembly auditing exposed embedded conductor contacts and intersecting shared-S sleeves. Prior local checks exempted those pairs and were insufficient. This correction removes those exemptions and the underlying overlapping geometry.",
+  "sources": ["ford-pmgr-starter-exploded", "ford-starter-solenoid-test", "ford-pmgr-conventional-circuit"],
+  "changes": [
+    "Separate S endpoints at solenoid-local (0.8,-12.65,-109.8) and (-0.8,-11.35,-109.8) rather than a shared endpoint.",
+    "Trim each conductor against its intended winding/terminal/frame attachment solids, producing face-contact interfaces instead of embedded metal volumes.",
+    "Trim S sleeve ends against the existing S terminal insulator; separate dielectric parts do not overlap.",
+    "Retain conductor radius0.4mm, sleeve radii0.45/0.65mm and feedthrough bore radius0.75mm as provisional packaging assumptions."
+  ],
+  "validation_requirements": [
+    "Eight zero-distance endpoint interfaces with nominal overlap below0.001mm3 and directional witness contact area above0.02mm2.",
+    "Ten valid single solids and STEP round trips.",
+    "All candidate-related pairs checked without overlap exemptions across17prescribed linkage/solenoid poses.",
+    "Both Boolean operand orders checked against all relevant frozen full-engine neighbors.",
+    "Separate S core and sleeve gaps exceed0.1mm; unintended lead-to-metal gaps exceed0.01mm."
+  ],
+  "limits": [
+    "All routing and joint dimensions remain explicitly provisional; this is not recovered Ford production wiring.",
+    "Aggregate winding envelopes represent insulated coil packages, not conductive nodes or recovered winding turns.",
+    "Face contacts are geometric attachment surfaces, not electrical resistance, solder/braze/crimp construction, contact pressure, ampacity or dielectric verification.",
+    "Motor brush feed, brush pigtails, commutator winding connections and vehicle cables remain absent."
+  ]
+}

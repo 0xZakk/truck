@@ -1,0 +1,37 @@
+{
+  "source": "https://www.vaglinks.com/Docs/Catalogues/Gates_431-2020_2008_web_Full_Catalog.pdf",
+  "path": "reference/engine/gates-2008-car-light-truck.pdf",
+  "sha256": "c77d82d2e0d47715ce5b83788b6803d00ba65a50ca470b672cc8714fe8df27fd",
+  "reviewed_pdf_page": 473,
+  "printed_page": 389,
+  "application": "1994 Ford F-Series Pickup 6-cylinder 4.9L",
+  "parts": {
+    "serpentine_with_ac": "K060980",
+    "serpentine_without_ac": "K060970",
+    "tensioner_pulley": "38022",
+    "tensioner_assembly": "38131",
+    "upper_radiator_hose": "22417",
+    "lower_radiator_factory_ac": "20609",
+    "lower_radiator_dealer_ac": [
+      "21236",
+      "26505"
+    ],
+    "heater_to_thermostat_five_speed_manual": "18767",
+    "heater_to_water_pump_five_speed_manual": "18767"
+  },
+  "limits": [
+    "Catalog replacement applications, not installed measurements",
+    "Factory versus dealer A/C lower-hose branch unresolved",
+    "Automatic transmission hose branches excluded from manual truck selection",
+    "Belt routing and pulley centers not inferred from application table"
+  ],
+  "routing": {
+    "index_pdf_page": 119,
+    "index_printed_page": 35,
+    "with_ac": "S7004",
+    "without_ac": "S6008",
+    "diagram_pdf_page": 163,
+    "diagram_printed_page": 79,
+    "reviewed": "S7004 visually reviewed; schematic seven-pulley routing only, not dimensioned centers."
+  }
+}

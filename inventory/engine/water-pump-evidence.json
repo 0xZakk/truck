@@ -1,0 +1,21 @@
+{
+  "sources": [
+    "system-7b01cf423275",
+    "system-628ac5b60213",
+    "gates-water-pumps-2011"
+  ],
+  "application": "Factory parts reference F6TZ8501KB; previously collected Gates cross-reference 44009. Installed part identity not established.",
+  "dimensions": "All dimensions are modeling assumptions, not manufacturer specifications.",
+  "datum_cad_mm": [
+    440,
+    0,
+    170
+  ],
+  "datum_status": "Provisional staging position ahead of timing cover; mechanical attachment and block coolant interfaces not yet modeled.",
+  "decomposition": "Eight components; sealed bearing and coolant seal are simplified envelopes. Not a complete physical BOM.",
+  "validation": "See atlas-static-validation.json; solid validity/clearance does not establish real-truck accuracy.",
+  "browser_validation": [
+    "Assembly page renders eight selectable components",
+    "65 percent explosion separates visible components"
+  ]
+}

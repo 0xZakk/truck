@@ -1,0 +1,90 @@
+{
+  "hard_constraints": {
+    "valve_overall_mm": {
+      "intake": 120.62459999999999,
+      "exhaust": 120.64999999999999
+    },
+    "valve_stem_diameter_mm": 8.6868,
+    "pushrod_overall_mm": 257.556,
+    "pushrod_diameter_mm": 7.924799999999999,
+    "lifter_body_height_mm": 50.8,
+    "spring_installed_mm": {
+      "intake": 41.65599999999999,
+      "exhaust": 37.337999999999994
+    },
+    "guide_diameter_mm": 8.73252
+  },
+  "assumed_datums": {
+    "cam_z": 72.0,
+    "cam_base_radius": 18.0,
+    "valve_seat_base_z": 261.0,
+    "lower_pushrod_ball_center_z": 139.7,
+    "head_z": 255.5,
+    "valve_y": -12.0
+  },
+  "derived": {
+    "pivot_y": 51.0718402496357,
+    "rocker_cup_local_z": -5.4212455656279985,
+    "pushrod_ball_centers_mm": 250.003354434372,
+    "stations": {
+      "intake": {
+        "rest": {
+          "angle": -4.50623696343633e-16,
+          "pivot_z": 395.1246,
+          "top": [
+            90.0,
+            389.703354434372
+          ],
+          "tip_z": 381.6246
+        },
+        "peak": {
+          "angle": 0.16005911301582815,
+          "pivot_z": 395.1246,
+          "valve_lift": 10.032999999999959,
+          "top": [
+            90.36643445539683,
+            395.97688588941077
+          ],
+          "bottom": [
+            90.0,
+            145.97379999999998
+          ],
+          "closure_error": -5.684341886080802e-14,
+          "pad_y": -10.954742305552411
+        }
+      },
+      "exhaust": {
+        "rest": {
+          "angle": -0.00024902083818501995,
+          "pivot_z": 395.1342937511289,
+          "top": [
+            89.99864878990479,
+            389.7033544307205
+          ],
+          "tip_z": 381.65
+        },
+        "peak": {
+          "angle": 0.15981241160550458,
+          "pivot_z": 395.1342937511289,
+          "valve_lift": 10.033403852674041,
+          "top": [
+            90.36664351975995,
+            395.9768855828936
+          ],
+          "bottom": [
+            90.0,
+            145.97379999999998
+          ],
+          "closure_error": -2.842170943040401e-14,
+          "pad_y": -10.957585625370733
+        }
+      }
+    }
+  },
+  "seat_height_policy": "Melling publishes body height only. Internal cup/clip offsets are explicitly retained assumptions after1.2mm reduction; Crower/Howards seat-height numbers are not chosen or equated. Exact production socket datum unresolved.",
+  "kinematics_validation": {
+    "samples": 2002,
+    "max_pushrod_closure_error_mm": 1.1368683772161603e-13,
+    "status": "PASS; no installed clearance claim"
+  }
+}

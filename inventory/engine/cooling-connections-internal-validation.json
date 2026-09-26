@@ -1,0 +1,34 @@
+{
+  "manifest_sha256": "8452ed8bfbe050a2f55bcb20384195f564b2c4c1c1d95eea82d62e6ae86dbdad",
+  "source_sha256": "f4167d6cd0be2b385c30cdbef748f9e8f97ad46a493dd770e9ef92663b8415bb",
+  "step_roundtrips": [
+    "heater-supply-ect-elbow",
+    "heater-pump-return-elbow",
+    "engine-coolant-temperature-body",
+    "engine-coolant-temperature-insulator",
+    "engine-coolant-temperature-thermistor",
+    "engine-coolant-temperature-terminal",
+    "water-pump-housing"
+  ],
+  "checks": 23,
+  "collisions": [],
+  "flow_probes": [
+    "heater-supply-bore",
+    "heater-return-bore",
+    "pump-chamber-to-return",
+    "outlet-secondary-to-supply"
+  ],
+  "blocked_passages": [],
+  "internal_only": true,
+  "installed": false,
+  "verified_production_fit": false,
+  "limits": [
+    "Ford identifies the two-lead ECT at the thermostat housing/heater elbow and specifies 3/8-18 NPTF-SPL dry-seal thread. All sensor dimensions, internal thermistor shape and connector detail are provisional.",
+    "A separate single-wire gauge sender C150 on the RH engine side feeds circuit 39 R/W and grounds through its body. It is not the ECT C183. Gauge sender mounting and the head coolant jacket remain unresolved; no false dry pocket is presented as a coolant connection.",
+    "Both heater connections use Gates 18767 in the five-speed manual application. Exact hose end assignment, bore, installed cut length and routing are not established here; metal tubes, radii, beads and clearances are illustrative.",
+    "Owner photos show paired red-orange heater hoses crossing from the firewall toward the front engine. Only attached engine-side metal takeoffs are modeled; full heater/radiator hoses need located vehicle endpoints.",
+    "The thermostat-side elbow opens into the existing secondary outlet passage; the pump return opens into its existing coolant chamber. Pump/block and outlet/head jacket connections remain incomplete.",
+    "Ford TSB 94-9-13 describes an E4OD-only radiator bleed tee. That automatic-transmission arrangement is not applied to this manual truck.",
+    "Thread helices, tapered sealing fits, hose deformation, clamps, harness connectors and coolant/temperature simulation are absent. Sensor resistor and leads are a construction study, not a rebuild procedure."
+  ]
+}

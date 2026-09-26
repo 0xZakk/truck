@@ -1,0 +1,1701 @@
+{
+  "input_hashes": {
+    "scripts/check-oil-pan-joint-motion.py": "3116477e7dda07d4859cd878c8c3284c87bc9336dca04af27dca275aae60ce0f",
+    "cad/engine/oil_pan_joint_candidate.py": "64c98b36d12f470147099d8d05d22c875da7219d40c70d5c2965a330e53b7016",
+    "cad/engine/oil_pan_fasteners.py": "0b8b894d1e8818436c2012131aac99a2d7664c54591c3268bdd1107a74ae4503",
+    "cad/engine/assembly_math.py": "b323903193babcc542b6bb9bc57fcd0160208212cd57575451c4224cafeb6b4b",
+    "inventory/engine/full-assembly.json": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9"
+  },
+  "step_hashes": {
+    "cad/engine/generated/oil-pan.step": "5be5bb4cac11b38d77d5e8ee1f8da598b29dd36601615dea6285ec2a14fc617b",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/generated/compression-ring.step": "b02db59c68c38c257a780235049ea3dce673520acef55974c0609e364afa04aa",
+    "cad/engine/generated/oil-rail.step": "5f1219bb90feeba66fbe128ebee020cd0d444229163dc84cb7d4ed6bb0302970",
+    "cad/engine/generated/oil-expander.step": "58421ad3f8dd05c273f8b5fcb67243fc1c36b490d2dbf60cfe4fcce9d4fcdd8f",
+    "cad/engine/generated/pin.step": "12d1a53f03ba93754e9587246cdb275d1da000549b34d22e401759f39ebdd9d3",
+    "cad/engine/generated/rod.step": "a6ce2bf5a478b0c70406f102f1d4d6863faef6d82d60c87fc1a413a50a94b48f",
+    "cad/engine/generated/rod-cap.step": "1c4f8d8a0ed80a0e403639004526b057c00d65383033a012cc82ad111ec5dd4e",
+    "cad/engine/generated/upper-bearing.step": "5f1ce383e543913936394cd4f2a350f6d5fd9033858725ce3cbf14fcdfa87c79",
+    "cad/engine/generated/lower-bearing.step": "d834330456513bc9b1edde4c710495cd15b8df5c9978be1fabb96d884e70e343",
+    "cad/engine/generated/rod-bolt.step": "ff61f3d3f3b6c6f55f7b6643dc7ed2bd8268a38827b8fd850f73f64c1d8ea5c8",
+    "cad/engine/generated/rod-nut.step": "6756d6777261d2490d4e89af5801e3b89d8fdee3044a0ca772ed1c85640db69f",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/camshaft.step": "b73f75bb43fc358c1b54289c3bb408278fdf5a2d0c80649791ddf1c9f4534cac",
+    "cad/engine/generated/cam-gear-spacer.step": "1ebb7f916920df904538f92b50d96cbc719cab2031aa8af8912fe59f0137df4c",
+    "cad/engine/generated/cam-timing-key.step": "43f02d0ce2c5c11354e88714dc307041d46a88d263a601269cf2e1f8ae0ff7d0",
+    "cad/engine/generated/crank-timing-gear.step": "eeb03418443d08710253d68b50baa672b15c2b692aadc481829bb7919fadda1e",
+    "cad/engine/generated/cam-timing-gear.step": "ae14fa678575ee1015345673bea92d7a39707cebaf79e8162fe8d4ec80eab078",
+    "cad/engine/generated/throttle-shaft.step": "2d32bf78af35cb78b5fb73648629c3cf314623785c3925b816baae7b3cdff164",
+    "cad/engine/generated/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+    "cad/engine/generated/tps-wiper.step": "be4d3a3a15be2838c662787250b08cae5ab63fc3bbc6b63b78e85e7a0a4eea93",
+    "cad/engine/generated/flywheel-body.step": "b4883f53ff98538e047130be96c83fcce38dd7fa7354b0c1a400ed725a43b9a1",
+    "cad/engine/generated/flywheel-ring-gear.step": "986e86b808435a0deec7b7926f9a5018322b5f4a593503ae47cc5c1c0b979ffb",
+    "cad/engine/generated/flywheel-crank-bolt.step": "9bb7e75d3c0a5f3828beeb629ef0b55f7172bc19390a981f71dc5bc1551119cf",
+    "cad/engine/generated/pilot-bearing-case.step": "caa82c47516f3102c81bf09a60dab358564570a1b0fc698e8399089af127f254",
+    "cad/engine/generated/pilot-bearing-cage.step": "7398aa74d5ade5e48d1ff21a16e9f24d34fef3c279818cc6307928dfaccc4d76",
+    "cad/engine/generated/pilot-bearing-seal.step": "0192a8633c2d03c44bd3dba890ddef6ff8004d09cf5a9798a1c1c342d7f602db",
+    "cad/engine/generated/pilot-bearing-needle.step": "780a060ad0d2e9f1fcce217665ce9c8845c3bc7ba378a9511ee44d4c11e28b87",
+    "cad/engine/generated/damper-hub.step": "1460c506cf60a4836b36d3809387dca0c8abc5cf39b750d7801b02dbbf277edc",
+    "cad/engine/generated/damper-elastomer.step": "b67aa35b4b1a00c75052ad79f7083f14c7ba5aa157d8f78ee770d0b46ca4faca",
+    "cad/engine/generated/damper-inertia-ring.step": "0e1e328e94763c05f049dd81bf90d6ad9cd07e0ca0b03f2a8faca819fd083d2c",
+    "cad/engine/generated/damper-key.step": "e60da6a9a55c001d5f7c149f590e6d0ad6067fc94a8eb47f9215796562035b96",
+    "cad/engine/generated/damper-washer.step": "a319196671020591b0ca060c14288f623656d19278873530940e7d5ff08d471a",
+    "cad/engine/generated/damper-bolt.step": "af84ce32147268cdfe6f704e0790f2c821d2726674a51f89dce3464e32902e63",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/distributor-drive-pin.step": "cc5033150eec951ba302549b165904ee9b59c6d18cf2637c0701e211b90513c3",
+    "cad/engine/generated/distributor-thrust-washer.step": "3aa131f66f7e3f7b815eb9b5f132a15c0bf2618138732c83077f42721de7ba96",
+    "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a",
+    "cad/engine/generated/distributor-vane.step": "d5ecf7b1075bd3e04f0e62e1364afac45e8ccf4658a954c921635b8c66f882ed",
+    "cad/engine/generated/distributor-rotor.step": "9350f6e264d83013655a36c546f36861c54ce95b3814a9b8c04e96d0c1f097c2",
+    "cad/engine/generated/distributor-rotor-contact.step": "30f41a3c3a93d4dc46e30ce8bb636b08e2271bdff6cfb257e965b7520156cd03",
+    "cad/engine/generated/distributor-vane-screw.step": "8faddd9125e929b96665cace08545779b7ba1f4a7a50170dea52b30e5fcbe05c",
+    "cad/engine/generated/oil-pump-inner-rotor.step": "09ba28b0e860c3c038d0563bb6539d0a49df6d7f402b38a135c7d6049454b56f",
+    "cad/engine/generated/oil-pump-outer-rotor.step": "580d8282dd8554ed7f95ab0e60defb082ec409589a5e7b2e1bf2c570a7b4f894",
+    "cad/engine/generated/oil-pump-rotor-shaft.step": "e70378f97719491e12dc2106dd63f93c11dda3909aac4d0b95959db25b83a2bf",
+    "cad/engine/generated/oil-pump-intermediate-shaft.step": "1a1fb02a45835ce7521f58d1decb496a592971c3c98d74295fd8d810ff358952",
+    "cad/engine/generated/oil-pump-drive-retainer.step": "d609a9e2caba3bb82d4e10b974ba244933f44252c8a753bdc1ec5d6616d95904",
+    "cad/engine/generated/ac-compressor-swashplate-shaft.step": "731f5feb3bbe701a5eb7b9652a77596db93f62803c2cf837d6a5ef6f9f5cec26",
+    "cad/engine/generated/ac-compressor-piston-1.step": "9563ffc95da86b31b598174566ee025e4f0c9ec9d7ed58cb2eb62a4aa04eea8f",
+    "cad/engine/generated/ac-compressor-shoe-1-rear.step": "8c952211965359075e7c7324a03154d1491b4aed51edbf8447a4bd3fd9ff1468",
+    "cad/engine/generated/ac-compressor-piston-1-rear-seal.step": "f726e97fbc4c752892b526849a27286390992d279610e64891436ea61e86c292",
+    "cad/engine/generated/ac-compressor-shoe-1-front.step": "b14a1a0c1bcfbcbe286d278c3755b24fda3f8bcd58a5d829869f6fa3b05125c9",
+    "cad/engine/generated/ac-compressor-piston-1-front-seal.step": "47e27be3fe5af29aa42773222cd1241426c00ff12d4f1fd67d129214cbb8fd60",
+    "cad/engine/generated/ac-compressor-piston-2.step": "458ebb6bf0968bfb810763d14c5003b181d803be5f2e722add2dd7791ef35cad",
+    "cad/engine/generated/ac-compressor-shoe-2-rear.step": "c4dff2ea33b03540c8095062236277102456291860231a346c034f40b35d6928",
+    "cad/engine/generated/ac-compressor-piston-2-rear-seal.step": "3c435cbf8038cf517bf6fcf62d458e94dc6f740b64a969b2f7c9df67a6735503",
+    "cad/engine/generated/ac-compressor-shoe-2-front.step": "9c1540ff18c4ef764db9bbc1d238a2d4d3ebe1e85784e341370a5c243092e22b",
+    "cad/engine/generated/ac-compressor-piston-2-front-seal.step": "cebe4b8aede9204297433cd44dcef786e980becf214dc77cdd859be28e0f8498",
+    "cad/engine/generated/ac-compressor-piston-3.step": "237f7322d44768018e3d63540cd7806e6c5e308a7c51321a5063b26d2e939193",
+    "cad/engine/generated/ac-compressor-shoe-3-rear.step": "2ad763c23c095d28315de2158ab4c610ef1cb510257286b0d3c2005e0b5d9f28",
+    "cad/engine/generated/ac-compressor-piston-3-rear-seal.step": "5c190c7cedae5dce817b2150c6512d086756848246c89d3a8657c01018fddf78",
+    "cad/engine/generated/ac-compressor-shoe-3-front.step": "6d457f8c2e6e3290c89c51f8001199c1831e5340847a59c165789e5194b6b982",
+    "cad/engine/generated/ac-compressor-piston-3-front-seal.step": "626a50ef6636d9defdad39e07571f8afcfd36ba13d17a1851f654163390368c3",
+    "cad/engine/generated/ac-compressor-piston-4.step": "04e563dc73d71628595cdb865e2eab5595022db8d61821899ca15034a48d6085",
+    "cad/engine/generated/ac-compressor-shoe-4-rear.step": "e4a08372cc4b1648bebccb5a24d5d3643cde67cfa90a5180803c98bcad343329",
+    "cad/engine/generated/ac-compressor-piston-4-rear-seal.step": "635fae435fb02ff7d8932cf60e218989f0a5cd2a094c7034d725a8aed8610dd4",
+    "cad/engine/generated/ac-compressor-shoe-4-front.step": "1fc08829f4b0428d9ba8f58c0831c11ec3dec962a5292396be5b0fec6173b88d",
+    "cad/engine/generated/ac-compressor-piston-4-front-seal.step": "4233d7ad27e1c87b64cf65f6fa55429cc572c72947b174c377a8eb31d45278c4",
+    "cad/engine/generated/ac-compressor-piston-5.step": "ea089156df7c79fc731366a56280c311d077903eef57c7a682b25b95a239fd75",
+    "cad/engine/generated/ac-compressor-shoe-5-rear.step": "055958a09f9904fa98931ea6f1984a4211081988f822303b01ab782ce977f1cb",
+    "cad/engine/generated/ac-compressor-piston-5-rear-seal.step": "e2dd942c2431aec6958b37d6717a80f1eb153ed00ed5e7f8c57cef8600fb3789",
+    "cad/engine/generated/ac-compressor-shoe-5-front.step": "689b0470ada7436d42a29b7935757eb8cc915e35228a45424c6c12b2790ee7a3",
+    "cad/engine/generated/ac-compressor-piston-5-front-seal.step": "2f0239cd2ccc5142f633cdd0b9217a02d3a6385b1b06ed44d5490fb97bf1797b",
+    "cad/engine/generated/ac-compressor-clutch-pulley.step": "d1a971d879a3b04d474504d5ac48db920a19198b3365588468b4f6fc0e853ea0",
+    "cad/engine/generated/ac-compressor-armature-hub.step": "22ae142c06339b36169e83e109eb21e61644ac734ef865b533441ebacc61bb04",
+    "cad/engine/generated/ac-compressor-hub-bolt.step": "d914c8746b2f03f1cf26e74b218c4f2127740a8dbb2afa1e4f4fbd5302b31567"
+  },
+  "inputs_unchanged": true,
+  "sampled_crank_degrees": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570,
+    600,
+    630,
+    660,
+    690,
+    720
+  ],
+  "rotating_neighbor_checks": 706,
+  "exploded_fractions": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "exploded_pair_checks": 474,
+  "wrapper_null_intersections": [],
+  "stock_enclosure_verified_empty_intersections": [],
+  "conservative_stock_clearances": [
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "pan",
+      "b": "screw-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "gasket",
+      "b": "screw-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.1,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "gasket",
+      "b": "screw-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.25,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.5,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 0.75,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-1",
+      "b": "washer-1",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-2",
+      "b": "washer-2",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-3",
+      "b": "washer-3",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-4",
+      "b": "washer-4",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-5",
+      "b": "washer-5",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-6",
+      "b": "washer-6",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-7",
+      "b": "washer-7",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-8",
+      "b": "washer-8",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-9",
+      "b": "washer-9",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-10",
+      "b": "washer-10",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-11",
+      "b": "washer-11",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-12",
+      "b": "washer-12",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-13",
+      "b": "washer-13",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-14",
+      "b": "washer-14",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-15",
+      "b": "washer-15",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-16",
+      "b": "washer-16",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-17",
+      "b": "washer-17",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-18",
+      "b": "washer-18",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-19",
+      "b": "washer-19",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-20",
+      "b": "washer-20",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-21",
+      "b": "washer-21",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-22",
+      "b": "washer-22",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-23",
+      "b": "washer-23",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-24",
+      "b": "washer-24",
+      "stock_superset_intersection_mm3": 0
+    },
+    {
+      "fraction": 1,
+      "a": "screw-25",
+      "b": "washer-25",
+      "stock_superset_intersection_mm3": 0
+    }
+  ],
+  "failures": [
+    {
+      "kind": "exploded",
+      "fraction": 0.1,
+      "a": "gasket",
+      "b": "screw-24",
+      "mm3": 18.635376524255275
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.1,
+      "a": "gasket",
+      "b": "screw-25",
+      "mm3": 18.635376524255424
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-1",
+      "mm3": 130.6282885858518
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-2",
+      "mm3": 130.62828858585124
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-3",
+      "mm3": 130.62828858585226
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-4",
+      "mm3": 130.62828858585095
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-5",
+      "mm3": 130.62828858584962
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-6",
+      "mm3": 130.62828858584993
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-7",
+      "mm3": 130.62828858585078
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-8",
+      "mm3": 130.6282885858526
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-9",
+      "mm3": 130.62828858585158
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-10",
+      "mm3": 130.62828858585175
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-11",
+      "mm3": 146.01759752900594
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-12",
+      "mm3": 146.01759752900483
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-13",
+      "mm3": 146.01759752900855
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-14",
+      "mm3": 146.0175975290043
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-15",
+      "mm3": 146.0175975290057
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-16",
+      "mm3": 146.01759752900531
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-17",
+      "mm3": 146.017597529003
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-18",
+      "mm3": 146.01759752900824
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-19",
+      "mm3": 146.01759752900585
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.25,
+      "a": "pan",
+      "b": "screw-20",
+      "mm3": 146.0175975290056
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-1",
+      "mm3": 0.4510904551618581
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-2",
+      "mm3": 0.45109045516185714
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-3",
+      "mm3": 0.4510904551619389
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-4",
+      "mm3": 0.45109045516190954
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-5",
+      "mm3": 0.45109045516189944
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-6",
+      "mm3": 0.4510904551618961
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-7",
+      "mm3": 0.45109045516190677
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-21",
+      "mm3": 2.543205828274914
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-22",
+      "mm3": 2.5432058282749215
+    },
+    {
+      "kind": "exploded",
+      "fraction": 0.5,
+      "a": "pan",
+      "b": "screw-23",
+      "mm3": 2.4525561760494865
+    }
+  ],
+  "scope": "25 sampled crank phases and6exploded poses; no continuous swept-volume or production-fit proof. Starter engagement and independent compressor controls are outside this pan-specific audit."
+}

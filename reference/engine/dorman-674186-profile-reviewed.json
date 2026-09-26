@@ -1,0 +1,73 @@
+{
+  "status": "Entry/head/fitting correction published; installed rear, whole-static and earlier-joint regressions passed",
+  "implementation": {
+    "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+    "module": "cad/engine/exhaust_rear_entries.py",
+    "candidate_report": "inventory/engine/exhaust-rear-entries-validation.json",
+    "installed_report": "inventory/engine/exhaust-rear-entries-installed-validation.json",
+    "installed_result": "Three actual saved-STEP matches,212 neighbor checks,36 passage checks,24 corner controls and six rim bands pass on the recorded manifest. Actual saved-STEP fitting half-section and published exhaust renders were viewed.",
+    "regressions": "4542 whole-static checks with zero overlaps above0.1mm3; front profile, lifting eye, intake locating dowel and exploded views pass on90807873.",
+    "candidate_result": "Three STEP roundtrips, 212 neighbor checks, 36 passage checks, 24 corner controls, six rim bands and head contact pass. Rear entry render and fitting half-section were inspected.",
+    "fitting_correction": "Assumed insertion length changes from 19 to 12.5 mm, ending 0.5 mm before the collector inner wall. Removes observed runner/collector probe intrusions; not verified production engagement.",
+    "retained_limits": "Box collector and end-mounted EGR route remain unfinished and unsupported by the reviewed auxiliary-boss arrangement. No complete rear-casting claim."
+  },
+  "review_date": "2026-09-25",
+  "manufacturer_product": "Dorman 674-186",
+  "sources": [
+    {
+      "url": "https://www.dormanproducts.com/p-26852-674-186.aspx",
+      "path": "reference/engine/dorman-674186-profile.html",
+      "sha256": "50fb0460a97d428c95b757d68cce60468c7668dfe11d8a856e003dfb7e697cc9",
+      "supports": "Cast iron, rectangular port specification; OE crosses F5TZ9431-A/F. Generic Ford 1990-1996 summary is not a detailed vehicle row."
+    },
+    {
+      "url": "https://static.dormanproducts.com/images/product/medium/674-186-001.jpg",
+      "path": "reference/engine/dorman-674186-front.jpg",
+      "sha256": "48f200b532b96dc217728bdc26b2386a80ea1b5a3649228e78653bd91af62b98",
+      "viewed": true,
+      "supports": "Three rounded-rectangular entries, separate irregular flange lands, two enclosed end mounting holes and blended branches."
+    },
+    {
+      "url": "https://static.dormanproducts.com/images/product/medium/674-186-002.jpg",
+      "path": "reference/engine/dorman-674186-back.jpg",
+      "sha256": "ff6ad62eeb6b4a5d0372f84230be6da8d82c88a224a86d676931a825c16e82e0",
+      "viewed": true,
+      "supports": "Round discharge with two-hole flange and auxiliary plugged bosses near the discharge neck, not merely a capped straight collector end."
+    },
+    {
+      "url": "https://static.dormanproducts.com/images/product/medium/674-186-007.jpg",
+      "path": "reference/engine/dorman-674186-three-quarter.jpg",
+      "sha256": "e0f2ac74933a6aa32432d48aaa1c3c98e643364b7d3d716ca6665ddb92412772",
+      "viewed": true,
+      "supports": "Overview confirms the flange and two visibly plugged auxiliary bosses near the outlet. Package hardware must not be substituted for head attachment topology."
+    },
+    {
+      "url": "https://images.carid.com/dorman/pdf/2006-oes-catalog.pdf",
+      "path": "reference/engine/dorman-2006-oes-catalog.pdf",
+      "sha256": "4577593a52fc21401f4e7da9ff305abb4b190eb5fa3f3eaf9d3a775df89f36ab",
+      "publisher": "Dorman; public catalog mirror hosted by CARiD",
+      "pdf_page": 130,
+      "printed_page": 128,
+      "viewed": true,
+      "supports": "F-100/150 Pickup, six-cylinder 4.9L (300 CID), 1994-90 row lists 674-185 LH/Front and 674-186 RH/Rear. This establishes replacement application, not installed casting identity."
+    }
+  ],
+  "failed_capture": {
+    "url": "https://www.dormanproducts.com/itemdetailapp.aspx?ProductID=26852&PartType=Exhaust%20Manifold",
+    "path": "reference/engine/dorman-674186-applications.html",
+    "sha256": "2dfc2fe7bc7329ac2cb7a17324e10c8d83c7e599ecdbd588f7020fca58a3e8e6",
+    "result": "ShieldSquare CAPTCHA, not an application table. No bypass attempted. Do not register this file as fitment evidence."
+  },
+  "current_model_discrepancies": [
+    "The corrected rear entries are rounded-rectangular; dimensions and production head transitions remain assumed. The collector remains a rounded box rather than the photographed blended casting.",
+    "The existing EGR tube uses an assumed axial connection on the far collector end at (-285.688,-180,230). Photos show auxiliary bosses near the outlet neck. Their exact service identities and installed orientation are not established by these photos alone.",
+    "Mirroring the front correction while preserving the old EGR station would preserve an unsupported interface rather than resolve it.",
+    "Discharge flange ears, auxiliary bosses/plugs and complete head mounting lands/hardware remain incomplete."
+  ],
+  "next_requirements": [
+    "Identify the EGR takeoff and other auxiliary port functions from applicable service evidence before routing the tube to a photographed boss.",
+    "Coordinate rear entry/head transitions, collector, outlet flange and EGR tube interfaces in the same candidate; retain explicit dimensional assumptions without pixel-derived measurements.",
+    "Check positive rim and socket material, connected gas passages, saved STEP identity and every affected neighbor; visually inspect installed and exploded results."
+  ],
+  "limits": "No dimensions, thread pitches, production wall thicknesses, calibrated flow, thermal performance or truck-specific casting identity are established by these replacement photographs. Integration status is separate from evidence review; candidate validation is not installed verification."
+}

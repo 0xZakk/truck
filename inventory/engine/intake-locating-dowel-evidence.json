@@ -1,0 +1,81 @@
+{
+  "complete_manifold_attachment": false,
+  "verified_production_fit": false,
+  "current_candidate_status": "Revised comparison pin integrated; installed socket, neighbor, exploded display and whole-static audits pass within study scope",
+  "installed_validation": {
+    "report": "inventory/engine/intake-locating-dowel-installed-validation.json",
+    "manifest_sha256": "716eb2b349aec8b75a44300738b594e3a073a3c0cb2fea6902b5b92101b8a22a",
+    "saved_step_matches": 4,
+    "exact_joint_neighbor_checks": 3,
+    "wall_probes": 2,
+    "floor_probes": 2,
+    "explosion_report": "inventory/engine/manifold-joint-explosion-validation.json",
+    "visual_review": "Actual-STEP cropped half-section inspected in assembled and separated views. All three adapted castings/gasket and full pin visible. Crop and display offsets are illustrative, not complete silhouettes or removal trajectories.",
+    "limits": "Clearance and socket material verification do not establish press fit, production dimensions, retention, gallery compatibility or sealing."
+  },
+  "preintegration_validation": {
+    "report": "inventory/engine/intake-locating-dowel-validation.json",
+    "manifest_sha256": "760d3f21ad0b38695f41ccf5409d011c08bdb0c715329b30154caf86f6c7d9bc",
+    "source_sha256": "9fb8f707a7c9a40fb83f644a52177491c17e0751656b51c90c170dced53d3551",
+    "step_roundtrips": 4,
+    "exact_overlap_checks": 5,
+    "collisions": [],
+    "socket_wall_probes": 2,
+    "blind_floor_probes": 2,
+    "scope": "Candidate pin and adapted joint solids, added material versus all saved neighbors, socket and port probes. Unchanged legacy geometry is covered by the separate current-manifest static audit; this is not installed pin verification or production retention proof."
+  },
+  "dimensional_comparison": {
+    "source_id": "ford-1996-manifold-fastener-table",
+    "path": "reference/engine/ford-1996-manifold-exploded.html",
+    "sha256": "69ae8d61a27db94f939c9ec01ab08dd941f8d9bc858d3bdda097265989d44bb5",
+    "table_item": 5,
+    "nominal_inches": "5/16 diameter by1.00 length, part of6049",
+    "nominal_mm": [7.9375, 25.4],
+    "decision": "Replace arbitrary6 by23.5mm candidate with explicitly later-year manufacturer comparison dimensions. This does not establish1994 production applicability; station, socket fits and pad sections remain assumptions."
+  },
+  "source": "reference/engine/ford-intake-manifold-dowel-reviewed.json",
+  "source_id": "ford-intake-manifold-dowel",
+  "module": "cad/engine/intake_locating_dowel.py",
+  "new_physical_parts": 1,
+  "new_part": "intake-head-locating-dowel",
+  "source_supported_quantity": "The factory installation procedure specifies one locating dowel for the intake gasket and lower intake manifold.",
+  "provisional_joint_mm": {
+    "axis": "Global Y",
+    "center_x": 0,
+    "center_z": 298,
+    "pin_radius": 3.96875,
+    "pin_y_extents": [-145.4, -120],
+    "head_face_y": -133,
+    "head_socket_bottom_y": -118,
+    "head_engagement": 13,
+    "head_bottom_clearance": 2,
+    "gasket_y_extents": [-135.5, -133],
+    "gasket_clearance_radius": 3.2,
+    "intake_face_y": -135.5,
+    "intake_socket_bottom_y": -145.9,
+    "intake_engagement": 9.9,
+    "intake_bottom_clearance": 0.5,
+    "socket_radial_clearance": 0.05
+  },
+  "adapters": {
+    "cylinder-head": "head_interface(shape) accepts definition-local head geometry, using the existing255.5 mm head origin. Cuts one dry blind socket; no new wet gallery or exterior boss.",
+    "efi-lower-intake": "lower_interface(shape) accepts current world-datum definition geometry. Adds a small joined mounting pad and a blind socket without blocking intake ports.",
+    "efi-head-intake-gasket": "gasket_interface(shape) accepts current world-datum gasket. Adds a connected locating pad and a clearance hole; no exhaust gasket is introduced."
+  },
+  "integration": "Apply adapters after existing definition adapters and regenerate those three definitions. Call build((define,add,group)) once to add the single world-positioned pin. Do not translate its definition a second time. Root owns all integration/shared changes.",
+  "limits": [
+    "Station, socket fits and local pad contours are construction assumptions. Nominal pin dimensions are1996 comparison values, not verified1994 production dimensions.",
+    "Geometric engagement and clearance do not prove real interference retention, tolerance stack or fatigue strength.",
+    "A locating pin does not clamp or seal the manifold joint. A front lifting-eye/stud13/bolt14 study is now integrated separately; fourteen other attachment stations and shared clamp details remain unresolved.",
+    "The factory procedure prohibits inferring a combined intake/exhaust gasket for new exhaust manifolds."
+  ],
+  "validation": "inventory/engine/intake-locating-dowel-validation.json",
+  "historical_6mm_candidate_validation_summary": {
+    "passed": true,
+    "manifest_sha256": "302200fd628564389445450404d1ff463ae4b59e9b82821e288ae487a565cba0",
+    "step_round_trips": 4,
+    "exact_intersection_checks": 5,
+    "overlaps": 0,
+    "scope": "All installed neighbors broad-phase screened; added casting/gasket material checked rather than re-auditing unchanged legacy casting intersections. Blind material and port-clearance probes pass."
+  }
+}

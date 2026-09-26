@@ -1,0 +1,29 @@
+{
+  "status": "provisional educational reconstruction",
+  "source_index": "inventory/engine/system-references.json",
+  "supported_architecture": [
+    "Six fuel injectors with upper/lower O-rings",
+    "Injector coil, armature, return spring, needle/seat, integral inlet filter and protection cap",
+    "Supply/return rail with six injector connections and three mounting attachments",
+    "Vacuum-referenced diaphragm fuel regulator and three retaining screws",
+    "IAC solenoid linked to a reverse-seated pintle; unvented and vent/filter variants illustrated",
+    "TPS curved resistor, moving wiper, direct shaft coupling and two mounting screws",
+    "Separate front/rear exhaust castings"
+  ],
+  "assumptions": [
+    "All new component envelopes, internal dimensions and mounting stations",
+    "Unvented IAC selected as a teaching study; installed variant unknown",
+    "Injector upper/lower seal centers at local Z 65 and 15 mm",
+    "Rail and return-tube routing",
+    "Pressure-regulator valve seat and diaphragm construction",
+    "TPS track sweep and internal packaging",
+    "Exhaust runners and collector contours"
+  ],
+  "not_simulated": [
+    "Fuel delivery calibration, spray, leakage and pressure",
+    "IAC duty cycle and idle speed",
+    "TPS voltage calibration",
+    "Exhaust temperature or gas flow"
+  ],
+  "missing": "See inventory/engine/completion-plan.json; part count is not proof of completion."
+}

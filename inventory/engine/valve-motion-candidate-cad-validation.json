@@ -1,0 +1,28 @@
+{
+  "status": "PASS isolated CAD candidates; not installed engine clearance",
+  "roundtrips": [
+    {
+      "part": "catalog-constrained-cam-lobe",
+      "volume_mm3": 16958.84908192922,
+      "roundtrip_volume_error_mm3": 4.6966306399554014e-09
+    },
+    {
+      "part": "asymmetric-rocker-datum",
+      "volume_mm3": 18162.29066092829,
+      "roundtrip_volume_error_mm3": 8.694769348949194e-10
+    }
+  ],
+  "flat_follower_poses": 73,
+  "max_follower_overlap_mm3": 0,
+  "candidate_pivot_y_mm": 49.230769230769226,
+  "candidate_pivot_shift_mm": 13.230769230769226,
+  "exports": "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/candidates/valve-motion",
+  "unresolved": [
+    "Follower uses11.1mm study radius; no tappet crown, lobe taper or wear simulation.",
+    "Rocker pad/cup Z offsets are not reconciled with the coplanar ideal linkage solver.",
+    "Head pedestal and bolt socket atY36 must move13.23077mm; cover and neighbors need full sweep checks.",
+    "Cam journal/retention/drive integrations and twelve lobe phases require separate adapters.",
+    "All lobe-profile intermediates and base-circle radius are assumptions, not a measured Ford profile."
+  ],
+  "failures": []
+}

@@ -1,0 +1,182 @@
+{
+  "passed": true,
+  "manifest_sha256": "4b847d7b3d3de16ceeb3a209277cd909fc953fe729a17128efe317d2a832f059",
+  "checks": [
+    {
+      "roundtrip": "camshaft",
+      "delta_mm3": 1.1641532182693481e-10
+    },
+    {
+      "roundtrip": "head-gasket",
+      "delta_mm3": 1.881562639027834e-06
+    },
+    {
+      "a": "camshaft",
+      "b": "block",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "block",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "crankshaft",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "crankshaft",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "rear-cam-plug",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "rear-cam-plug",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c1-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c1-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c1-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c1-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c2-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c2-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c2-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c2-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c3-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c3-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c3-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c3-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c4-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c4-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c4-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c4-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c5-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c5-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c5-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c5-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c6-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c6-intake-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "camshaft",
+      "b": "c6-exhaust-lifter-body",
+      "volume_mm3": 0
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "c6-exhaust-lifter-body",
+      "volume_mm3": 0
+    }
+  ],
+  "gasket_motion_checks": 588,
+  "positive_journal_missing_mm3": 0.0,
+  "failures": [],
+  "inputs": {
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/camshaft.step": "ee52c02ec917a14cd0a58acebd15a15bac0a4fc42b92155bc34e8b2f545e926b",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/head-gasket.step": "521bd3cee706771dd11dd49f16bb1ee946fc97148da1ac3e89b4a6eab2e90ad2",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/cam-bearing.step": "29e3f03a5a106b72aa2731c65edd55ba40dfd679dfa983e65831bf7d77a52423",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/block.step": "b281ee7989fc37758d5c676409768ee8ecf06ad891a39f99acddff83d65e8fb0",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/rear-cam-plug.step": "02c33cbc1d9e3c2bdc0ed1fd25adc8202ef6c7b51cb8d166e51470cc4e93bf87",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/lifter-body.step": "a6673c82f3af180e285eb5e7584884a52a0fa4971397ac153355fe6def52e167",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/pushrod.step": "e78e4c5a9c068983f0efcc74f8c1f9dab355339d003fd82f9a0e2a51f04d0d38"
+  },
+  "limits": [
+    "Rear cam journal and bearing move from assumedX-330to-334mm to clear the complete cylinder6 intake follower. Journal width23mm, bearing width22mm and axial coordinates remain unverified; source radial dimensions are preserved.",
+    "The existing continuous cam bore supports the revised bearing location; actual bearing retention, oil-feed indexing and axial production layout remain unresolved.",
+    "The head gasket pushrod openings retain their old clearance and gain a6mm-radius cut at the revisedY90axis. Hole contours and sealing lands remain provisional; positive passage checks do not establish a production gasket."
+  ]
+}

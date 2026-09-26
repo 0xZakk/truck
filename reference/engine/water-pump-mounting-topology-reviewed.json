@@ -1,0 +1,56 @@
+{
+  "review_date": "2026-09-25",
+  "status": "source-reviewed; dimensions and installed orientation unverified",
+  "identity_sources": [
+    "reference/engine/fel-pro-vin-y-gaskets-reviewed.json",
+    "reference/engine/research-2026-09-23/gates-water-pumps-2011.txt"
+  ],
+  "gasket": {
+    "part": "Fel-Pro 13816",
+    "url": "https://www.autozone.com/p/fel-pro-engine-water-pump-gasket-13816/67708",
+    "image_url": "https://contentassets.autozone.com/product_image/USA/2148/BCWV/13816/13816-01.jpg",
+    "observed": "Continuous approximately round gasket with four smaller lug apertures and one larger aperture adjacent to one of the four. Retailer reports four mounting holes; larger opening function unresolved. All five peripheral openings are separate from main central aperture.",
+    "image": "reference/engine/felpro-13816.jpg"
+  },
+  "pump": {
+    "part": "Gates 44009",
+    "url": "https://www.carparts.com/details/water-pump/gates/gat44009",
+    "images": [
+      "reference/engine/gates44009-1.jpg",
+      "reference/engine/gates44009-2.jpg",
+      "reference/engine/gates44009-3.jpg"
+    ],
+    "image_urls": [
+      "https://cld.partsimg.com/image/upload/c_limit,w_1200/e_sharpen/f_auto/q_auto/v1/images/gat44009_1",
+      "https://cld.partsimg.com/image/upload/c_limit,w_1200/e_sharpen/f_auto/q_auto/v1/images/gat44009_2",
+      "https://cld.partsimg.com/image/upload/c_limit,w_1200/e_sharpen/f_auto/q_auto/v1/images/gat44009_3"
+    ],
+    "observed": "Front and rear views corroborate four mounting holes plus larger fifth aperture. Side view shows impeller protruding behind casting mounting plane. Casting includes large lateral radiator hose neck and formed smaller tube. Photograph provides shape topology, not measured dimensions."
+  },
+  "constraints": [
+    "Preserve distinction between four mounting openings and larger fifth opening; no fifth bolt inferred.",
+    "Photographs are exact aftermarket replacement identification evidence, not scans of this truck or factory dimension drawings.",
+    "Current candidate baseline rear gasketX420 and blockfaceX373 leave47mm; no invented coolant tunnel or extension should hide this datum gap.",
+    "Pump shaft/hub datum also controls pulley and fan clutch; coordinate changes must be audited across accessories.",
+    "Industrial Ford300 pump measurements are excluded: Foley tech tip221 explicitly says industrial and automotive pumps are not interchangeable."
+  ],
+  "hashes": {
+    "felpro-13816.jpg": "360a98ae9e5c4293781663ee5d24151109292d6bd8d819271ab62dcbeed9bc4d",
+    "gates44009-1.jpg": "a3cc0fece42700d33cd3ab0e111cbc3cbb5fb14b774b42c004fcfed86a3a85ba",
+    "gates44009-2.jpg": "b55f5df937963b3a329f3a116e19b2cd0f0e3a756ec04839ee2f2dc42bca3207",
+    "gates44009-3.jpg": "9b78df353dbfb0a27b6a2abfd7bcef1e588187e6a5b170da5fa3e31741722b94"
+  },
+  "block_front": {
+    "url": "https://www.ebay.com/itm/146111774717",
+    "seller": "Titan Engines",
+    "product_brand": "ATK North America",
+    "product_part": "DFF8",
+    "listed_application": "Ford300/4.9L1987\u20131996 remanufactured engine",
+    "image_url": "https://i.ebayimg.com/images/g/bBwAAOSw8FVnEovT/s-l1200.jpg",
+    "image": "reference/engine/atk-dff8-block-front.jpg",
+    "sha256": "70616ce77f9adbee7ff6415545bdace98b786ba405e20524a8b9b9ce7d87ae45",
+    "observed": "Main pump opening and four small mounting holes lie in machined block front face above crankshaft and beside cam gear. Larger fifth opening is above main pump opening near upper mounting hole. Front cylinder outer wall is visible through pump opening. Head thermostat opening is separate, higher on head.",
+    "inference": "Exact gasket photograph requires approximately180degree in-plane rotation to match block front photo. Pump rear gasket belongs at block front face; extending block forward47mm to existing floatingpump would contradict observed interface architecture.",
+    "limits": "Perspective photograph cannot fix millimeter distances, pump axis position, gasket thickness, internal water-jacket depth, or bolt socket depth. Larger fifth opening function remains unverified."
+  }
+}

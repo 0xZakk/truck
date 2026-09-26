@@ -1,0 +1,22 @@
+{
+  "ac-compressor-front-shaft-bearing": {
+    "summary": "A front radial shaft support is distinct from both the axial thrust stack and the clutch pulley bearing.",
+    "limits": "The single cartridge represents an unresolved support. Its 20 × 28 × 12 mm envelope and axial station are assumed around the study shaft; individual rolling elements, cage, races, tolerances and production identity are not established.",
+    "steps": [
+      {"title": "Locate the shaft radially", "text": "The bearing envelope lies between the rotating shaft and a stationary seat in the front cylinder half. Nominal touching surfaces illustrate where radial support is required, not a real running fit.", "part": "ac-compressor-front-cylinder", "source": "summit-fs10-shaft-supports"},
+      {"title": "Separate radial and axial support", "text": "The manufacturer illustration labels the shaft bearing separately from the adjacent thrust-bearing and race stack. The latter addresses axial loading along the shaft.", "part": "ac-compressor-front-thrust-2", "source": "summit-fs10-shaft-supports"},
+      {"title": "Do not confuse the pulley bearing", "text": "The clutch pulley bearing surrounds the stationary front nose and lets the belt-side pulley rotate independently. It is not this internal shaft support.", "part": "ac-compressor-pulley-bearing"}
+    ],
+    "sources": ["summit-fs10-shaft-supports"]
+  },
+  "ac-compressor-rear-shaft-bearing": {
+    "summary": "A second radial support locates the compressor shaft within the rear cylinder half.",
+    "limits": "Only the comparison support count is sourced. Envelope dimensions, axial position, manufacturing fit and all bearing internals remain unresolved; no production or loaded-motion claim is made.",
+    "steps": [
+      {"title": "Support the opposite shaft end", "text": "The rear cartridge meets the study shaft and its own cylindrical seat. Its stationary envelope remains fixed while the shaft turns inside it.", "part": "ac-compressor-rear-cylinder", "source": "summit-fs10-shaft-supports"},
+      {"title": "Keep the thrust stack separate", "text": "The adjacent thrust races and rolling-element cartridge remain separate parts; the radial support does not replace them.", "part": "ac-compressor-rear-thrust-2", "source": "summit-fs10-shaft-supports"},
+      {"title": "Recognize the remaining evidence gap", "text": "An identified bearing drawing or measured intact part is needed before splitting this envelope into real cups, rolling elements and cage geometry."}
+    ],
+    "sources": ["summit-fs10-shaft-supports"]
+  }
+}

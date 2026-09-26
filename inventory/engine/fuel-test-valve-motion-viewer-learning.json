@@ -1,0 +1,17 @@
+{
+  "fuel-test-valve": {
+    "summary": "The diagnostic valve connects to the fuel rail through an open branch. A spring-returned pin carries a sealing washer away from its seat when depressed; the protective cap is removed from the isolated opening study.",
+    "limits": "The isolated motion is not integrated into viewer controls. The sampled 0–0.12 mm travel, spring geometry, thread dimensions and seal gaps are provisional. A 0.01 mm static-seal radial clearance remains unresolved; geometric connectivity does not establish leakage, pressure sealing or safe servicing.",
+    "steps": [
+      {"title": "Connect to the rail", "text": "The valve body meets the existing rail branch. The checked passage remains open into the cartridge without adding a second rail fitting.", "part": "fuel-test-body", "source": "fsm-4840fb38c793"},
+      {"title": "Distinguish cap protection from the working valve", "text": "The cap and its illustrative seal are present in the installed state and excluded from the isolated uncapped states. Gauge attachment and a servicing procedure are not modeled.", "part": "fuel-test-cap", "source": "schrader-core-construction"},
+      {"title": "Unseat the moving washer", "text": "The pin and seating washer move together, opening the intended route across the annular seat. The same diagnostic route is blocked in the closed-state control.", "part": "fuel-test-seat-seal", "source": "schrader-core-construction"},
+      {"title": "Shorten the return spring", "text": "The modeled spring shortens with the pin over four sampled open positions. This checks geometric clearance only; no actual spring rate, preload or stroke is established.", "part": "fuel-test-spring", "source": "schrader-core-construction"},
+      {"title": "Keep bypass sealing unresolved", "text": "The separate static seal is intended to close the route around the cartridge, but its current clearance is not a compressed production seal. A clear intended passage is not proof that all unintended paths are sealed.", "part": "fuel-test-static-seal", "source": "schrader-core-construction"}
+    ],
+    "troubleshooting": [
+      {"title": "Do not reproduce the study on a pressurized rail", "text": "This is a geometric explanation, not a fuel-system service procedure. The model does not simulate pressure relief, fuel discharge, leakage or tool attachment."}
+    ],
+    "sources": ["fsm-4840fb38c793", "schrader-core-construction"]
+  }
+}

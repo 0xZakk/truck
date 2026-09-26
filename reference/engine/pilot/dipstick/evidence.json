@@ -1,0 +1,58 @@
+{
+  "component": "engine-oil-dipstick",
+  "status": "specimen-informed candidate",
+  "sources": [
+    {
+      "id": "dipstick-specimen-e9te",
+      "url": "https://www.tbscshop.com/90s-ford-f150-f250-truck-4-9l-300-inline-6-oil-dip-stick-dipstick-e9te-6750-da/",
+      "kind": "firsthand seller specimen photos",
+      "retrieved": "2026-09-26",
+      "facts": [
+        "E9TE-6750-DA stamp visible",
+        "Seller describes 1990s 4.9L truck application",
+        "Seller reports roughly 27.25 inch metal blade"
+      ],
+      "limits": [
+        "Used specimen; exact owner/VIN match unverified",
+        "Stop datum and oil marks unmeasured"
+      ]
+    },
+    {
+      "id": "dipstick-service-catalog",
+      "url": "https://www.fordpartsgiant.com/oem-1994-ford-f_150-dipstick.html",
+      "kind": "service-parts catalog corroboration, not dimensional authority",
+      "retrieved": "2026-09-26",
+      "facts": [
+        "E9TZ-6750-E superseded by F4TZ-6750-D; listed for 1994 4.9L among other engines"
+      ],
+      "limits": [
+        "Broad listing does not prove engineering-number interchange",
+        "Item dimensions not used as part dimensions"
+      ]
+    }
+  ],
+  "owner_photo_review": {
+    "files": [
+      "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "reference/photos/2026-09-23/engine-bay-passenger-side.jpg"
+    ],
+    "result": "Engine-oil handle/tube cannot be securely isolated; placement unverified"
+  },
+  "dimension_classification": {
+    "approximate_specimen_measurement": {
+      "blade_axial_length_mm": 692.15
+    },
+    "inferred": [
+      "all other dimensions",
+      "handle proportions",
+      "stamp location and depth",
+      "wave plane"
+    ],
+    "unknown": [
+      "seat-to-tip insertion length",
+      "oil calibration marks",
+      "tube bore/path",
+      "exact installed pose"
+    ]
+  }
+}

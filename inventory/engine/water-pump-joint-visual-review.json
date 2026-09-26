@@ -1,0 +1,25 @@
+{
+  "status": "Actual assembled and CAD-cutaway meshes visually inspected",
+  "hashes": {
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/water_pump_thermactor_foot_candidate.py": "734c9e2b43202b385a5353ecba5538d40c6486ee14b97215523895fb38ac85d2",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5",
+    "scripts/check-water-pump-joint-candidate.py": "f63e06d90458c797c2e5c1a3f19a2ca57331d341d527d089bbcd49769199d06e",
+    "scripts/check-water-pump-joint-interfaces.py": "1cb969b33c780040bd02cce0d737e9544610f8bd58c9f677495ff710238d9087",
+    "scripts/export-check-water-pump-joint.py": "83ba4dc2a677eb15c7a42bf9e9b12c0d8d953dfbd43a86e5dce556c4cb585091",
+    "scripts/check-water-pump-joint-installed.py": "adb61b5b4d2c4bb1e7f24a6accc5526b1a5360f344eff4bdd9d4ac73d9e41dda",
+    "scripts/check-water-pump-impeller-sweep.py": "95458b654e5d3690704e21b576e3291ff7ee83f299d6c857083719b008b3a67f",
+    "reference/engine/qc/water-pump-joint-candidate.png": "2dd32fff6e59635785f2db90d5d13af7c92e6ac3cc5db09ef64d84acb26517d6"
+  },
+  "observed": [
+    "Pump flange now meets block front face.",
+    "Four fastener heads and extra unassigned-aperture casting boss remain separate.",
+    "Section exposes extended shaft and tapered coolant chamber; retained cylinder wall remains behind front receiver."
+  ],
+  "limits": [
+    "Provisional long tapered casting does not claim exact Gates44009 outline.",
+    "Radiator inlet neck, deeper block jacket and exact fifth-aperture route remain unfinished.",
+    "Cutaway intentionally slices block/pump and produces section fragments; no viewer integration or browser validation claim."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "Integrated14-part provisional study; current static and retention audits pass. Production fit remains unverified.",
+  "sources": [
+    "enginequest-fsp300n",
+    "fel-pro-vin-y-gaskets",
+    "ford-industrial-parts",
+    "fel-pro-10740-retailer",
+    "fsm-7261979bd1f1",
+    "fsm-d30eff3d667f"
+  ],
+  "construction": "Six centerline fasteners in a stamped side cover, one perimeter gasket and six grommets. Cover architecture follows the EngineQuest replacement photograph; Ford industrial hardware is comparison evidence.",
+  "factory_service_review": {
+    "lifter_access": "1994 lifter service procedure removes the pushrod cover and preserves pushrod/lifter order for reinstallation. It also removes obstructing induction and ignition components; the interactive explode action is not the complete service procedure.",
+    "cover_bolt_torque": {
+      "value": [
+        25,
+        35
+      ],
+      "unit": "in lb",
+      "source_id": "fsm-d30eff3d667f",
+      "scope": "Valve Pushrod Cover To Cylinder Block row; not a generic 5/16-inch fastener torque."
+    }
+  },
+  "provisional_placement": {
+    "position_cad_mm": [
+      0,
+      119,
+      185
+    ],
+    "rotation_cad_deg": [
+      -90,
+      0,
+      0
+    ],
+    "gasket_thickness_mm": 1.5,
+    "block_seat_y_mm": 117.5,
+    "support_web_count": 6
+  },
+  "candidate_checks": {
+    "parts": 14,
+    "block_single_valid_solid": true,
+    "block_step_roundtrip": "pass",
+    "pushrod_passages": 12,
+    "gasket_support_probes": 4,
+    "internal_overlaps": 0,
+    "block_overlaps": 0,
+    "selected_neighbor_overlaps": 0,
+    "selected_neighbors": [
+      "cylinder-head",
+      "distributor-housing",
+      "oil-filter-case",
+      "oil-pressure-body"
+    ],
+    "visual_review": "Scratch rendering inspected with cover assembly displaced outward; six stamped bays and fasteners visible."
+  },
+  "unresolved": [
+    "Casting opening and support webs are illustrative, not traced Ford geometry.",
+    "Cover envelope, sheet thickness, rib profiles, gasket shape and fastener stations remain assumed.",
+    "The uncompressed grommet/cover/bolt stack leaves3.908mm of engagement; no adequacy or production fit is claimed.",
+    "Female threads, embedded grommet washer, elastomer compression and installed bolt identity are unresolved."
+  ],
+  "research_leads": [
+    {
+      "url": "https://www.coulsoncompression.com/resources/docs/194-203%20CSG649%20Parts.pdf",
+      "status": "Not acquired: web timeout, www TLS hostname mismatch; bare domain403. No new dimensions accepted from this lead."
+    }
+  ],
+  "verified_production_fit": false
+}

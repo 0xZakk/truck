@@ -1,0 +1,45 @@
+{
+  "status": "Dimensioned uninstalled shaft candidate; illustrative retainer; drive datums block installation",
+  "primary_sources": [
+    {
+      "id": "melling-intermediate-shaft-dimensions",
+      "url": "https://melling.com/wp-content/uploads/2025/05/Intermediate_Shaft_2023-08-08_18-05-35-083123.pdf",
+      "title": "Melling Intermediate Shaft Identification Chart",
+      "page": 1,
+      "review": "Manufacturer PDF text: IS-74, 4.520 inch length, .312 inch hex, L & M ends, hardened steel, stock.",
+      "limits": "No dimensional end drawing, retainer detail, tolerances or installed orientation supplied."
+    },
+    {
+      "id": "melling-1994-49-applications",
+      "path": "inventory/engine/melling-1994-49-applications.json",
+      "review": "Previously reviewed manufacturer application table lists IS-74 for 1994 F-150 4.9L."
+    },
+    {
+      "id": "fsm-a3698a10af15",
+      "path": "inventory/engine/research-index.json",
+      "review": "1994 truck catalog entry names drive shaft C5AZ6A618A; no dimensions."
+    },
+    {
+      "id": "ford-industrial-csg649",
+      "path": "reference/engine/ford-csg649-drive-layout-reviewed.txt",
+      "review": "Previously reviewed Ford comparison manual establishes distributor/intermediate shaft/pump sequence, not dimensional truck fit."
+    }
+  ],
+  "retainer_evidence": {
+    "path": "kb/.raw/ford-1980-89-mpc-sample.txt",
+    "claim": "Ford comparison catalog index names intermediate-shaft retaining ring basic number 6629.",
+    "limits": "Index alone does not identify 1994 truck application, ring shape, material, diameter or gripping details. Model is explicitly an envelope, not an identified production ring."
+  },
+  "dimensions_mm": {"length": 114.808, "hex_across_flats": 7.9248},
+  "assumptions_mm": {
+    "end_chamfer_axial": 1,
+    "end_chamfer_radial": 0.5,
+    "retainer_outer_diameter": 14,
+    "retainer_thickness": 0.7,
+    "retainer_split_width": 0.45,
+    "retainer_hex_clearance_across_flats": 0.06,
+    "retainer_station_from_lower_end": 102.808,
+    "candidate_lower_end": [213.5, 56, -95]
+  },
+  "integration": "Do not add build() to the live assembly until candidate QC blockers are reconciled. Export the local parts for component inspection or use build((define, add, group)) under an existing lubrication root for staging only. No shared geometry or manifest was modified."
+}

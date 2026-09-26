@@ -1,0 +1,37 @@
+{
+  "status": "isolated candidate; not a production solenoid reconstruction",
+  "sources": {
+    "ford-pmgr-conventional-circuit": {
+      "title": "Ford US5475270A, Figure 1 conventional PM starter circuit",
+      "url": "https://patents.google.com/patent/US5475270A/en",
+      "reviewed": "Ford-assigned patent with 1993 priority. Background and Figure 1 describe the conventional separate battery/control supply, pull-in and holding coils, spring-biased normally open plunger contacts. This candidate uses that background only, not Figure 2's proposed single-terminal switching circuit. No production adoption or 1994 dimensions inferred."
+    },
+    "ford-starter-solenoid-test": {
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Testing%20and%20Inspection/Solenoid%20Test/",
+      "reviewed": "Applicable factory test identifies S and M terminals and the frame as continuity-test nodes. It does not provide internal dimensions or contact geometry. Existing source registry entry retained."
+    }
+  },
+  "geometry_assumptions": {
+    "stroke_mm": 11.25,
+    "pull_winding_radii_mm": [9.2, 14],
+    "hold_winding_radii_mm": [14.5, 19.2],
+    "winding_axial_extent_mm": [-84, -35],
+    "bridge_dimensions_mm": [28, 8, 2],
+    "bridge_rest_axial_extent_mm": [-100, -98],
+    "fixed_contact_face_z_mm": -111.25,
+    "terminal_convention": "Existing terminal-1 is B at x=-10; terminal-2 is M at x=10; new S at local x=0,y=-12. Clocking and shapes are model assumptions.",
+    "return_spring": "Four turns,0.25mm wire radius,5mm mean radius. Assumed compressed geometric clearance only, not force/preload validation."
+  },
+  "integration": {
+    "baseline": "starter_motor.build(starter_explanations.api(starter_solenoid.api(base_api)))",
+    "new_parts": "starter_solenoid.build(base_api)",
+    "remove_old_definition_and_occurrence": "starter-solenoid-coil-envelope",
+    "replace_definitions": ["starter-solenoid-end-cap", "starter-solenoid-return-spring", "starter-solenoid-terminal-1", "starter-solenoid-terminal-2"],
+    "metadata": "Update existing coil-envelope references and lessons only if candidate accepted. Default assembly remains static/open."
+  },
+  "limits": [
+    "Logical coil connections are specified but lead conductors, motor bus/brush feed and vehicle harness are absent; no physical electrical continuity claim.",
+    "Isolated solenoid stroke does not validate or drive lever, clevis, fork or pinion articulation.",
+    "No electromagnetic, thermal, arcing, insulation or loaded mechanical simulation."
+  ]
+}

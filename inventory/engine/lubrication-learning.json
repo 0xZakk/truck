@@ -1,0 +1,381 @@
+{
+  "lubrication": {
+    "summary": "Follow the oil from the sump, through the pickup and pump, toward the filter and engine bearings.",
+    "limits": "Pump, pickup and filter are component studies at provisional mounting locations. A connected intermediate drive and illustrative pump mounts are now present, but their installed dimensions are not factory-verified. The filter adapter and full oil galleries remain unfinished. No oil-flow or pressure simulation is running.",
+    "steps": [
+      {
+        "title": "1 \u00b7 Collect oil",
+        "text": "The strainer intercepts larger debris. Its tube supplies the pump inlet from the sump.",
+        "part": "oil-pickup-assembly"
+      },
+      {
+        "title": "2 \u00b7 Move oil",
+        "text": "The driven inner rotor and offset outer rotor create chambers that grow and shrink as they rotate. The pump supplies flow; restrictions in the system produce pressure.",
+        "part": "oil-pump-rotors"
+      },
+      {
+        "title": "3 \u00b7 Limit pressure",
+        "text": "A spring-loaded relief valve opens a return path to the inlet when pressure is high. The spring and plunger are separate parts in this study.",
+        "part": "oil-pump-relief"
+      },
+      {
+        "title": "4 \u00b7 Filter the oil",
+        "text": "Oil crosses the pleated media into the center tube before returning to the engine. Inspect the filter internals and its separate anti-drainback and bypass valves. The mounting adapter and block passages are still unresolved.",
+        "part": "oil-filter-assembly"
+      },
+      {
+        "title": "5 \u00b7 Supply the engine",
+        "text": "The factory diagram routes filtered oil to the main gallery, bearings and hydraulic lifters. The crankshaft feeds the rod bearings; hollow pushrods carry metered oil to the rocker gear.",
+        "part": "valvetrain"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Low indicated oil pressure",
+        "text": "The EVTM shows a pressure switch and fixed cluster resistor, so the normal indication is not a continuous pressure measurement. Low indication can come from the oil system or the indication circuit; the dashboard alone does not establish pump failure.",
+        "part": "oil-pump-assembly"
+      },
+      {
+        "title": "Knock after a long overnight stop",
+        "text": "Ford bulletin 95-8-8 describes a possible oil-filter drainback cause on this engine family. This is a separate possibility from pump wear; the anti-drainback filter adapter has not been modeled yet."
+      }
+    ],
+    "sources": [
+      "fsm-6f023139b5f8",
+      "fsm-59c6d1fb5ae3",
+      "fsm-6e630ca15230",
+      "fsm-d975f341ee63",
+      "motorcraft-filter-construction",
+      "truck-oil-pressure-evtm"
+    ]
+  },
+  "oil-drive-assembly": {
+    "summary": "The camshaft drives the distributor, whose lower socket transmits torque through a separate hexagonal intermediate shaft to the oil pump.",
+    "limits": "Melling constrains the IS-74 shaft to 114.808 mm length and 7.9248 mm across flats. The 20-degree axis, mounting stations, gear teeth, socket clearances, engagement depths and retainer shape remain illustrative. Coordinated shaft and rotor animation demonstrates rigid-body kinematics; sampled clearance does not establish production fit or hydraulic performance.",
+    "steps": [
+      {
+        "title": "Take drive from the camshaft",
+        "text": "The crossed-axis gear pair transfers camshaft rotation to the distributor shaft. The equal tooth counts shown here are provisional, not a recovered Ford gear drawing.",
+        "part": "distributor-drive-gear"
+      },
+      {
+        "title": "Bridge the two sockets",
+        "text": "The intermediate shaft fits inside the distributor and pump sockets. Its sourced external dimensions are preserved while the surrounding illustrative mounting layout is reconciled around a common axis.",
+        "part": "oil-pump-intermediate-shaft"
+      },
+      {
+        "title": "Retain the shaft",
+        "text": "A separate retaining-ring envelope sits beneath the modeled block shoulder. Its gripping construction and exact seating require further evidence.",
+        "part": "oil-pump-drive-retainer"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "ford-industrial-csg649",
+      "melling-intermediate-shaft-dimensions",
+      "fsm-a3698a10af15"
+    ]
+  },
+  "oil-pump-assembly": {
+    "summary": "Explore the housing, rotor set, cover and spring-loaded relief valve as individual components.",
+    "limits": "Architecture follows the factory lubrication and inspection references. Manufacturing dimensions, rotor curves, cover hardware and installed position remain provisional. An exploded study does not imply that Ford supplies every internal part separately: the 1994 inspection text directs replacement of an out-of-spec pump assembly.",
+    "steps": [
+      {
+        "title": "Rotor set",
+        "text": "The generated four-lobe inner rotor follows the distributor at half crank speed. Its conjugate five-tooth outer rotor turns in the same direction at four-fifths inner speed. A mathematical profile construction replaces the earlier nonconjugate curves, but tooth count, dimensions, clearances and hydraulic performance remain unverified for this Ford pump.",
+        "part": "oil-pump-rotors"
+      },
+      {
+        "title": "Housing and cover",
+        "text": "The housing locates the rotors and the cover closes their end face. Select Cutaway or Explode to inspect the pocket and separate end surfaces.",
+        "part": "oil-pump-housing"
+      },
+      {
+        "title": "Pressure relief",
+        "text": "The plunger, spring and closure occupy a separate bore. The factory description routes relieved oil back to the pump inlet; the complete bypass passage is not yet modeled.",
+        "part": "oil-pump-relief"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Wear and internal leakage",
+        "text": "The factory procedure checks rotor damage, cover wear and rotor endplay. Its 0.005-inch maximum endplay is a service inspection limit, not a dimension used to size this reconstruction.",
+        "part": "oil-pump-cover"
+      },
+      {
+        "title": "Relief-valve trouble",
+        "text": "The inspection calls for checking spring collapse or wear and confirming that the relief valve moves freely. The model does not calculate opening pressure.",
+        "part": "oil-pump-relief"
+      }
+    ],
+    "sources": [
+      "fsm-6f023139b5f8",
+      "fsm-59c6d1fb5ae3",
+      "fsm-3ceaca21ab73",
+      "fsm-76412d392bb7"
+    ]
+  },
+  "oil-filter-assembly": {
+    "summary": "Oil enters around the baseplate, passes through folded media into the center tube, and returns through the central outlet. Separate valves address reverse flow and excessive restriction.",
+    "limits": "Construction study combining a WIX replacement envelope with generic Motorcraft cutaway architecture. Internal dimensions, mounting station and flow behavior are provisional; it is not an exact replica of either filter.",
+    "steps": [
+      {
+        "title": "Large area in a small canister",
+        "text": "Folding the media increases its available surface area. Individual pleats are represented, but their count and pore structure are not production specifications.",
+        "part": "oil-filter-media"
+      },
+      {
+        "title": "Keep the filter filled",
+        "text": "An annular anti-drainback flap closes over the baseplate inlet holes against reverse flow. It is distinct from the mounting-insert remedy in Ford bulletin95-8-8.",
+        "part": "oil-filter-anti-drainback"
+      },
+      {
+        "title": "Bypass restricted media",
+        "text": "The illustrated inlet-side valve opens an alternate path when pressure difference overcomes the spring. No opening threshold is simulated.",
+        "part": "oil-filter-bypass-poppet"
+      },
+      {
+        "title": "Hold the element stack",
+        "text": "Metal end caps seal the pleat ends; the tension clip holds the stack seated in the canister. Exact profiles remain unverified.",
+        "part": "oil-filter-tension-clip"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Brief knock after an overnight stop",
+        "text": "Ford bulletin95-8-8 describes a possible filter-drainback cause on this engine family and a service mounting insert. The hollow comparison insert and boss now shown do not reconstruct that E4TZ anti-drainback remedy; this is not a diagnosis of this truck.",
+        "source": "fsm-d975f341ee63"
+      },
+      {
+        "title": "Distinguish the valves",
+        "text": "The filter bypass handles pressure difference across the filter. It is separate from the pump pressure-relief valve and the inlet anti-drainback flap.",
+        "part": "oil-filter-bypass-housing"
+      }
+    ],
+    "sources": [
+      "system-8b605c7dd171",
+      "fsm-d975f341ee63",
+      "wix-51515-envelope",
+      "motorcraft-filter-construction"
+    ]
+  },
+  "oil-filter-adapter-assembly": {
+    "summary": "A hollow mounting insert retains the filter against a block sealing land. The outer inlet annulus and central clean-oil return remain separated.",
+    "limits": "Comparison construction only: boss, passages, insert lengths and attachment are provisional. Two open study boundaries are not production external ports. Pump delivery and main-gallery connections remain missing; the E4TZ anti-drainback service insert is not reconstructed.",
+    "steps": [
+      {
+        "title": "Separate inlet from return",
+        "text": "Eight baseplate openings communicate with the outer annulus. Filtered oil returns through the hollow insert without connecting directly to the dirty-oil annulus.",
+        "part": "oil-filter-mounting-insert"
+      },
+      {
+        "title": "Seat the filter gasket",
+        "text": "A continuous boss land supports the existing filter gasket. Its dimensions and seal compression remain unverified.",
+        "part": "oil-filter-gasket"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Do not equate the comparison insert with a repair",
+        "text": "The model does not reproduce or simulate the anti-drainback service insert described in the Ford bulletin.",
+        "source": "fsm-d975f341ee63"
+      }
+    ],
+    "sources": [
+      "fsm-d975f341ee63",
+      "fsm-6f023139b5f8",
+      "enginequest-oil-filter-adapter",
+      "wix-51515-envelope"
+    ]
+  },
+  "oil-pressure-switch-assembly": {
+    "summary": "Oil pressure operates a switch that changes the dashboard indication between low and normal. It does not continuously measure pressure.",
+    "limits": "Exterior is a replacement-photo study. Internal arrangement, dimensions and mounting interface are provisional; no pressure threshold or diaphragm deformation is simulated.",
+    "steps": [
+      {
+        "title": "Pressure reaches a diaphragm",
+        "text": "Oil enters the metal body and loads the diaphragm. The manufacturer describes a film diaphragm; its actual contour and size are not established.",
+        "part": "oil-pressure-diaphragm"
+      },
+      {
+        "title": "Contacts close the circuit",
+        "text": "The EVTM shows the switch grounding circuit31 at normal pressure. This study illustrates a moving contact approaching a fixed terminal contact.",
+        "part": "oil-pressure-moving-contact"
+      },
+      {
+        "title": "The cluster shows normal",
+        "text": "The cluster uses a fixed20-ohm resistor with the switch. A normal indication is not a numerical pressure reading.",
+        "part": "oil-pressure-terminal"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Low indication",
+        "text": "The indication can reflect actual low pressure or a fault in the switch, wiring or instrument circuit. Do not infer pump condition from the dashboard alone. Consult the factory diagnostic procedure before attributing a cause.",
+        "source": "truck-oil-pressure-evtm"
+      },
+      {
+        "title": "Leaks at the switch",
+        "text": "Distinguish leakage at the threaded mounting joint from oil escaping through the switch body or terminal. The model does not reproduce the production sealing details.",
+        "part": "oil-pressure-body"
+      }
+    ],
+    "sources": [
+      "truck-oil-pressure-evtm",
+      "standard-ps238-switch"
+    ]
+  },
+  "oil-pan-assembly": {
+    "summary": "The pan collects returning oil in a rear sump, where the pickup screen supplies the pump. A perimeter gasket seals the pan to the engine.",
+    "limits": "The continuous molded gasket and25fastener assemblies follow replacement-image topology and Ford count/nominal screw dimensions. Sump shape, flange stations, inset neck, seal compression, end orientation and dry block lands remain provisional; capacity, production fit and the timing-cover junction remain unverified.",
+    "steps": [
+      {
+        "title": "Collect returning oil",
+        "text": "Oil drains back from the engine into the sump. The deeper rear section provides space around the pickup; modeled volume is not a validated oil capacity.",
+        "part": "oil-pan"
+      },
+      {
+        "title": "Seal the perimeter",
+        "text": "One continuous gasket follows both long rails and two curved end bridges. The exact replacement photograph supports ten holes on each side plus three and two at its ends; coordinates and installed orientation remain assumptions.",
+        "part": "oil-pan-molded-gasket"
+      },
+      {
+        "title": "Clamp the sealing flange",
+        "text": "Twenty-five screw-and-washer assemblies distribute load around the flange. Explore each fastener separately.",
+        "part": "oil-pan-fastener-assembly"
+      },
+      {
+        "title": "Keep the pickup above the floor",
+        "text": "The screen needs a clear inlet and a sealed route to the pump. Its placement here is a clearance study, not a recovered factory dimension.",
+        "part": "oil-pickup-assembly"
+      },
+      {
+        "title": "Close the drain opening",
+        "text": "The threaded plug and separate sealing washer seat against a local flat face. Diameter and pitch follow the M14\u00d71.5 replacement-pan listing; length, head, washer and location are provisional.",
+        "part": "oil-pan-drain-plug"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Leak at a joint",
+        "text": "Identify whether oil begins at the flange, an end joint or the drain fitting. A leak path is not established by the lowest wet point alone.",
+        "part": "oil-pan"
+      },
+      {
+        "title": "Replacement drain hardware",
+        "text": "Dorman264-011 specifies M14x1.5. The separate older1/2-20 plug reference cannot be combined with that threaded opening. Confirm the actual pan before selecting hardware.",
+        "source": "dorman-264011-pan"
+      }
+    ],
+    "sources": [
+      "truck-oil-pan-hardware",
+      "dorman-264011-pan",
+      "fel-pro-vin-y-gaskets",
+      "felpro-os34601r-topology"
+    ]
+  },
+  "pushrod-cover-assembly": {
+    "summary": "Two kinds of seals close the side access opening: one gasket around the perimeter and six grommets around the bolts.",
+    "limits": "The six-hole architecture is referenced, but cover dimensions, mounting webs, seal compression and bolt engagement remain provisional. This study is not a complete service procedure.",
+    "steps": [
+      {
+        "title": "Close the access opening",
+        "text": "Removing this cover exposes the modeled pushrod-side cavity. Ford includes cover removal in the lifter service procedure.",
+        "part": "pushrod-cover"
+      },
+      {
+        "title": "Seal the perimeter",
+        "text": "The separate gasket follows the block-side rail. It seals a different path from the bolt grommets.",
+        "part": "pushrod-cover-gasket"
+      },
+      {
+        "title": "Seal each fastener",
+        "text": "Each of the six bolts passes through a separate grommet. The rubber section and its compressed shape remain unverified.",
+        "part": "pushrod-cover-grommet-1"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate the possible leak paths",
+        "text": "The perimeter joint and six bolt openings are separate sealing interfaces. The lowest wet point alone does not identify which interface leaks."
+      },
+      {
+        "title": "Use the cover-specific specification",
+        "text": "The archived factory table lists 25\u201335 inch-lb for the pushrod-cover-to-block fasteners. This is not the rocker-cover specification or a generic bolt torque.",
+        "source": "fsm-d30eff3d667f"
+      }
+    ],
+    "sources": [
+      "enginequest-fsp300n",
+      "fel-pro-vin-y-gaskets",
+      "ford-industrial-parts",
+      "fsm-7261979bd1f1",
+      "fsm-d30eff3d667f"
+    ]
+  },
+  "cam-retention-assembly": {
+    "summary": "The camshaft, spacer and keyed gear rotate together while the thrust plate stays attached to the block.",
+    "limits": "The plate and spacer use industrial comparison dimensions. Outline, mounting stations, gear relief, key dimensions and axial layout remain provisional; sampled clearance does not establish production fit.",
+    "steps": [
+      {
+        "title": "Hold the plate stationary",
+        "text": "Two bolts and separate washers retain the plate at the block face. The plate surrounds the rotating nose.",
+        "part": "cam-thrust-plate"
+      },
+      {
+        "title": "Set the axial allowance",
+        "text": "The spacer sets the shoulder-to-hub distance. This study leaves 0.1 mm beyond the plate thickness, within the published 0.001\u20130.007-inch endplay range. It is a modeling selection, not a measurement.",
+        "part": "cam-gear-spacer"
+      },
+      {
+        "title": "Register the gear to the shaft",
+        "text": "A separate key occupies matching shaft and hub seats. The gear has an annular rear relief so it can rotate past the fixed bolt heads.",
+        "part": "cam-timing-key"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Excessive axial movement",
+        "text": "The factory specification treats camshaft endplay as a measured clearance. The model explains the retaining surfaces but does not simulate wear or determine the cause of an out-of-range reading.",
+        "source": "fsm-2e5473b2bf99"
+      },
+      {
+        "title": "Preserve the timing relationship",
+        "text": "The gears coordinate camshaft and crankshaft rotation. Their current tooth profiles are teaching geometry, and a static fit check is not a timing adjustment procedure.",
+        "part": "timing-drive"
+      }
+    ],
+    "sources": [
+      "ford-industrial-parts",
+      "fsm-33bfe47109d5",
+      "fsm-2e5473b2bf99"
+    ]
+  },
+  "block-plugs": {
+    "summary": "The block needs closures for machining access, casting openings and drilled passages. This branch currently contains the rear camshaft plug.",
+    "limits": "The Melling kit identifies six block plugs and one camshaft plug, plus two pipe plugs. Only the rear camshaft closure has a provisional seat here. Locations of the remaining plugs are unfinished.",
+    "steps": [
+      {
+        "title": "Close the rear cam tunnel",
+        "text": "The fixed cup seals the rear machining opening. Its closed floor faces the camshaft; its open rim faces outward. It does not carry bearing load.",
+        "part": "rear-cam-plug"
+      },
+      {
+        "title": "Keep the camshaft free to rotate",
+        "text": "The rear bearing supports the shaft ahead of the plug. Axial location is controlled at the front thrust plate and spacer, not by allowing the shaft to rub on this rear closure.",
+        "part": "cam-retention-assembly"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Oil at the rear of the engine",
+        "text": "Fluid appearing near the bellhousing does not identify a single failed seal. Trace the source before attributing it to the rear main seal or cam plug; the model does not simulate leakage.",
+        "part": "rear-cam-plug"
+      }
+    ],
+    "sources": [
+      "melling-expansion-plug-guide",
+      "ford-industrial-parts"
+    ]
+  }
+}

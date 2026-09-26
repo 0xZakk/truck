@@ -1,0 +1,18 @@
+{
+  "status": "uninstalled candidate accepted on frozen baseline only",
+  "hashes": {
+    "cad/engine/water_pump_inlet_v3_candidate.py": "e22fe3d9ad01e1d146b12ade6ec510c8bb26f4b5b107119cd6687320488749f4",
+    "scripts/check-water-pump-inlet-v3-candidate.py": "03d549dfc2d5210fe96c4984d395566ed428512d92ea1cea7163e2af72baddab",
+    "scripts/check-water-pump-inlet-v3-interfaces.py": "ef2de4a9d395c5ed1dbcae09b910e57cd6aeb8be731ac1256383d1efaa60ab30",
+    "scripts/check-water-pump-inlet-v3-installed.py": "fe3510a1b4e4ef48948e3f70e3af96d30dfe3ae7cd82609a84f18d306ad61c64",
+    "scripts/render-water-pump-inlet-v3-candidate.py": "8654b963071972cf0a9c7f5dfd0fbdc57cadeee0ec0def600fe9ea2943cfe2be",
+    "reference/engine/water-pump-inlet-v3-topology-reviewed.json": "0c4cb008eec438698052ce6e22a1bc44b120e6d858b51aa9df4f2faf3bad87db",
+    "inventory/engine/water-pump-inlet-v3-learning.json": "763dbf522a24ecaf35954918079810370428d574e1a9a968156c2e755017678e",
+    "reference/engine/qc/water-pump-inlet-v3.png": "b453b63654fcf9a8ded76f8570b3e99cc60101372d0414d8059c454065a24e8e"
+  },
+  "visual_review": "Actual CAD assembled and inlet-axis section inspected. Global per-face sorting used to avoid opaque housing collection hiding shaft. Lateral neck and continuous channel visible.",
+  "baseline_manifest_sha256": "6b11c0f874bb53638b0e7fd0f477f6b7d5fca4df928bcbc918b37c98cb01d94f",
+  "neighbor_checks": 162,
+  "collisions": [],
+  "geometry_limit": "Photo-informed topology; all inlet dimensions/placement and inner passage provisional."
+}

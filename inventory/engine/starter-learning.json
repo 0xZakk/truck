@@ -1,0 +1,71 @@
+{
+  "starter-assembly": {
+    "summary": "A manual-transmission permanent-magnet gear-reduction starter converts battery energy into a brief, reduced-speed drive at the flywheel.",
+    "limits": "The displayed starter is stationary and disengaged. Its 116 components are an architectural study, not a verified F2TZ11002ARM replica. Bellhousing/index-plate support, production mounting station, wiring and complete actuation remain unresolved. The S control terminal, separate pull/hold winding envelopes and insulated contact bridge are represented, but coil leads and motor/vehicle connections remain open boundaries.",
+    "steps": [
+      {"title": "Make motor torque", "text": "Stationary magnetic poles surround the wound armature. Brushes and commutator transfer and switch current as the armature rotates.", "part": "starter-motor-assembly"},
+      {"title": "Reduce speed", "text": "The armature sun gear drives three planets inside a fixed ring. Their carrier delivers slower rotation to the output shaft.", "part": "starter-reducer-assembly"},
+      {"title": "Engage briefly", "text": "The solenoid and lever shift the drive toward the flywheel. A provisional slotted clevis and fork groove maintain geometric connection across the prescribed stroke. The viewer keeps the ten-tooth pinion retracted; sampled geometry checks do not implement a loaded starting sequence.", "part": "starter-drive-assembly"},
+      {"title": "Keep the application distinction", "text": "The truck parts page separates manual F2TZ11002ARM from automatic F7SZ11002AARM. A matching tooth count alone does not establish mounting depth or interchangeability.", "part": "starter-drive-end-housing"}
+    ],
+    "troubleshooting": [
+      {"title": "Slow or abnormal cranking", "text": "The factory load test compares measured starter current under engine load with the applicable electrical specification. The CAD model measures neither current nor battery condition; its geometric gear checks are not a diagnostic test.", "part": "starter-motor-assembly"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-manual-starter-parts", "jn-410-14033-starter", "ford-starter-load-test"]
+  },
+  "starter-motor-assembly": {
+    "summary": "Separate field components, armature, commutator and brush hardware explain how the PM motor produces rotation.",
+    "limits": "Six magnets, six shunts, six retainers and four brush springs follow the exploded drawing. Twelve copper packets and 24 commutator segments are provisional subdivisions, not recovered winding data. No current, magnetization, torque or insulation performance is simulated.",
+    "steps": [
+      {"title": "Distinguish field pieces", "text": "The permanent magnets provide the field. Ford separately identifies pole shunts in that magnetic structure and retainers that locate the pieces mechanically; neither is a field-winding coil.", "part": "starter-magnet-1"},
+      {"title": "Carry the winding", "text": "The armature core carries winding packets in slots. Its single iron solid stands in for a lamination stack, while the copper packets remain separate explorable pieces.", "part": "starter-armature-core"},
+      {"title": "Switch current while rotating", "text": "The commutator segments pass under stationary brushes. Separate brush springs push the brushes inward, and holders guide their motion as they wear.", "part": "starter-commutator-segment-1"},
+      {"title": "Support and clamp the motor", "text": "The rear bushing supports the armature journal. Two through-bolts clamp the casing stack; brush-plate screws secure the rear brush region.", "part": "starter-rear-bushing"}
+    ],
+    "troubleshooting": [
+      {"title": "Excessive no-load current", "text": "The factory bench-test discussion directs inspection for armature rubbing, a bent shaft, binding bearings and shorts involving the armature or brushes when current is above specification. None of those faults can be inferred from a collision-free CAD model.", "part": "starter-armature-shaft"},
+      {"title": "Open or shorted windings", "text": "The manual identifies the no-load bench test as a way to uncover winding faults and rubbing. Follow the applicable test equipment and safety procedure rather than using the visual winding packets as an electrical schematic.", "part": "starter-armature-winding-1"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-starter-no-load-test"]
+  },
+  "starter-reducer-assembly": {
+    "summary": "The sun, three orbiting planets, fixed ring and output carrier form a compact reduction stage.",
+    "limits": "Three planets are shown by Ford. The displayed 12/18/48 tooth counts and 5:1 reduction are mathematical design assumptions. Sampled noninterference does not verify production tooth shape, lubrication, tooth strength or noise.",
+    "steps": [
+      {"title": "Input through the sun", "text": "The sun gear is integral with the modeled armature shaft, so it turns at armature speed.", "part": "starter-armature-shaft"},
+      {"title": "React against the ring", "text": "The stationary internal gear reacts the planet forces into the drive housing. The fixed-ring condition is essential to the assumed reduction relationship.", "part": "starter-stationary-gear"},
+      {"title": "Collect output at the carrier", "text": "The planets spin on three carrier pins while their centers orbit the sun. The integral carrier and output shaft turn together at one fifth of sun speed in this study.", "part": "starter-output-shaft-assembly"},
+      {"title": "Locate the stack axially", "text": "A gear retainer, thrust ball, thrust washer and E-ring are separate components rather than a solid filler inside the housing.", "part": "starter-armature-thrust-ball"}
+    ],
+    "troubleshooting": [],
+    "sources": ["ford-pmgr-starter-exploded"]
+  },
+  "starter-drive-assembly": {
+    "summary": "The drive sleeve, overrunning-clutch envelope and ten-tooth pinion move toward the manual flywheel only during starting.",
+    "limits": "The pinion count and 27.7 mm outside diameter follow a manufacturer cross-reference. Six shaft splines, tooth-profile shift, center distance, 12 mm travel and mounting station remain provisional. The clutch interior and full lever articulation are not modeled; the transmission-side mounting support is absent.",
+    "steps": [
+      {"title": "Slide without losing drive", "text": "The provisional noncircular shaft splines let the clutch sleeve slide axially while retaining angular alignment.", "part": "starter-drive-clutch"},
+      {"title": "Reach the ring gear", "text": "The resting pinion has a modeled 3.525 mm axial gap. The separate engagement study advances it to 8.475 mm overlap with the existing 164-tooth ring; these are study results, not service measurements.", "part": "starter-drive-pinion"},
+      {"title": "Allow overrun", "text": "A real overrunning clutch passes starting torque but prevents the running engine from forcing the starter armature to excessive speed. Only its outer envelope is represented, not a functioning one-way mechanism.", "part": "starter-drive-clutch"},
+      {"title": "Locate the drive nose", "text": "The forward bushing, stop ring and retainer locate the shaft and travel-stop region. Mounting-ear holes do not stand in for an absent bellhousing or index plate.", "part": "starter-nose-bushing"}
+    ],
+    "troubleshooting": [
+      {"title": "Do not infer fit from tooth count", "text": "The manufacturer mounting guide distinguishes manual and automatic ring-depth/register combinations for its listed Ford V8 applications. Those comparison dimensions are not a verified mounting drawing for this 4.9L truck.", "part": "starter-drive-end-housing"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-manual-starter-parts", "jn-410-14033-starter", "tuffstuff-ford-starter-boundaries"]
+  },
+  "starter-solenoid-assembly": {
+    "summary": "The starter-mounted solenoid provides an electromagnetic drive actuator and a high-current switching function, separate from the vehicle starter relay.",
+    "limits": "Shell, aggregate coil, plunger, clevis, return spring, end cap and two large terminal envelopes are decomposed. The S control terminal, distinct pull/hold windings, internal bridge contacts and vehicle wiring are still missing. This is not a complete electrical interface or energized switching simulation.",
+    "steps": [
+      {"title": "Move the plunger", "text": "The winding surrounds the moving magnetic plunger. Its provisional clevis and pin connect to the drive lever; the present viewer holds this linkage in the resting state.", "part": "starter-solenoid-plunger"},
+      {"title": "Separate control and motor circuits", "text": "The factory solenoid test names S, M and the frame. The two heavy terminal envelopes shown here do not represent the complete control circuit, and neither is silently relabeled as the missing S terminal.", "part": "starter-solenoid-terminal-1"},
+      {"title": "Return after starting", "text": "The separate return spring acts between the rear region and plunger. Its geometry does not establish release force, timing or a calibrated solenoid stroke.", "part": "starter-solenoid-return-spring"},
+      {"title": "Attach the actuator", "text": "Two screws connect the solenoid front-seat ears to the drive-end housing. The insulating end cap is distinct from the metal shell and terminal nuts.", "part": "starter-solenoid-front-seat"}
+    ],
+    "troubleshooting": [
+      {"title": "Check the specified continuity paths", "text": "The factory solenoid test distinguishes continuity from S to M and from S to the frame, and mentions contamination such as ice or dirt when investigating a fault. This model has no resistance values and cannot perform that test.", "part": "starter-solenoid-coil-envelope"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-starter-solenoid-test"]
+  }
+}

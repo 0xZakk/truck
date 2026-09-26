@@ -1,0 +1,13 @@
+{
+  "water-pump-mechanical-seal-assembly": {
+    "summary": "A rotating ring and a stationary ring meet across an annular sealing face. A spring and flexible secondary seal let the stationary face maintain contact while the shaft rotates.",
+    "limits": "This is a generic construction study based on manufacturer explanations. The six-piece arrangement, dimensions and materials have not been established for Gates44009 or the pump installed on this truck. It explains how a mechanical seal works; it is not a rebuild procedure or replacement-parts list.",
+    "steps": [
+      {"title": "Find the rotating face", "text": "The modeled collar couples one sealing face to the shaft. The mating ring remains attached to the housing through its stationary support.", "part": "water-pump-seal-rotating-face"},
+      {"title": "Inspect the face joint", "text": "The rings meet across a flat annular surface. Gates describes a thin film of coolant at that interface that lubricates and cools the faces. The CAD shows ideal contact, without simulating that microscopic film.", "part": "water-pump-seal-stationary-face"},
+      {"title": "Follow the spring load", "text": "The spring reacts against the fixed carrier and presses the stationary face toward its rotating mate. The flexible secondary seal permits axial compliance while closing the route around the face support.", "part": "water-pump-seal-spring"},
+      {"title": "Distinguish the two kinds of seal", "text": "This mechanical seal separates coolant from the shaft's dry leakage space. The bearing cartridge has its own grease-retaining end seals. Its rolling-element arrangement remains unidentified for this application.", "part": "water-pump-seal-carrier"}
+    ],
+    "sources": ["water-pump-internal-construction"]
+  }
+}

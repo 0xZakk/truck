@@ -1,0 +1,175 @@
+{
+  "manifest_sha256": "97f41f9a5eb4c64f201e60be03b982d95415780d62922e01b447b97f0f05d1a3",
+  "source_sha256": "547feea5790b8c128464b273c20eef085b29bf52ceafdec83e0379b98b9b9e8f",
+  "base_sha256": "a642b8c9e89de926db61f3515bf4eee31743bb599c280318f05c7c88f0931799",
+  "step_roundtrips": [
+    "ac-compressor-rear-cylinder",
+    "ac-compressor-rear-valve-plate",
+    "ac-compressor-rear-suction-reed",
+    "ac-compressor-rear-discharge-reed",
+    "ac-compressor-rear-head",
+    "ac-compressor-rear-head-seal",
+    "ac-compressor-rear-plenum-seal",
+    "ac-compressor-rear-thrust-1",
+    "ac-compressor-rear-thrust-2",
+    "ac-compressor-rear-thrust-3",
+    "ac-compressor-front-cylinder",
+    "ac-compressor-front-valve-plate",
+    "ac-compressor-front-suction-reed",
+    "ac-compressor-front-discharge-reed",
+    "ac-compressor-front-head",
+    "ac-compressor-front-head-seal",
+    "ac-compressor-front-plenum-seal",
+    "ac-compressor-front-thrust-1",
+    "ac-compressor-front-thrust-2",
+    "ac-compressor-front-thrust-3",
+    "ac-compressor-case-seal",
+    "ac-compressor-swashplate-shaft",
+    "ac-compressor-piston-1",
+    "ac-compressor-shoe-1-rear",
+    "ac-compressor-piston-1-rear-seal",
+    "ac-compressor-shoe-1-front",
+    "ac-compressor-piston-1-front-seal",
+    "ac-compressor-case-bolt-1",
+    "ac-compressor-piston-2",
+    "ac-compressor-shoe-2-rear",
+    "ac-compressor-piston-2-rear-seal",
+    "ac-compressor-shoe-2-front",
+    "ac-compressor-piston-2-front-seal",
+    "ac-compressor-case-bolt-2",
+    "ac-compressor-piston-3",
+    "ac-compressor-shoe-3-rear",
+    "ac-compressor-piston-3-rear-seal",
+    "ac-compressor-shoe-3-front",
+    "ac-compressor-piston-3-front-seal",
+    "ac-compressor-case-bolt-3",
+    "ac-compressor-piston-4",
+    "ac-compressor-shoe-4-rear",
+    "ac-compressor-piston-4-rear-seal",
+    "ac-compressor-shoe-4-front",
+    "ac-compressor-piston-4-front-seal",
+    "ac-compressor-case-bolt-4",
+    "ac-compressor-piston-5",
+    "ac-compressor-shoe-5-rear",
+    "ac-compressor-piston-5-rear-seal",
+    "ac-compressor-shoe-5-front",
+    "ac-compressor-piston-5-front-seal",
+    "ac-compressor-case-bolt-5",
+    "ac-compressor-shaft-seal",
+    "ac-compressor-seal-retainer",
+    "ac-compressor-pulley-bearing",
+    "ac-compressor-clutch-coil",
+    "ac-compressor-clutch-coil-carrier",
+    "ac-compressor-clutch-pulley",
+    "ac-compressor-pulley-snap-ring",
+    "ac-compressor-armature-hub",
+    "ac-compressor-hub-bolt"
+  ],
+  "phases": [
+    0
+  ],
+  "checks": 456,
+  "collisions": [],
+  "connected_probe_networks": [
+    "suction",
+    "discharge"
+  ],
+  "seated_reed_tests": [
+    {
+      "probe": "rear-suction-1",
+      "seated_reed_mm3": 0.6283185307179221
+    },
+    {
+      "probe": "rear-discharge-1",
+      "seated_reed_mm3": 0.628318530717922
+    },
+    {
+      "probe": "rear-suction-2",
+      "seated_reed_mm3": 0.6283185307179245
+    },
+    {
+      "probe": "rear-discharge-2",
+      "seated_reed_mm3": 0.6283185307179242
+    },
+    {
+      "probe": "rear-suction-3",
+      "seated_reed_mm3": 0.6283185307179242
+    },
+    {
+      "probe": "rear-discharge-3",
+      "seated_reed_mm3": 0.6283185307179197
+    },
+    {
+      "probe": "rear-suction-4",
+      "seated_reed_mm3": 0.6283185307179253
+    },
+    {
+      "probe": "rear-discharge-4",
+      "seated_reed_mm3": 0.6283185307179221
+    },
+    {
+      "probe": "rear-suction-5",
+      "seated_reed_mm3": 0.6283185307179238
+    },
+    {
+      "probe": "rear-discharge-5",
+      "seated_reed_mm3": 0.6283185307179242
+    },
+    {
+      "probe": "front-suction-1",
+      "seated_reed_mm3": 0.6283185307179221
+    },
+    {
+      "probe": "front-discharge-1",
+      "seated_reed_mm3": 0.628318530717922
+    },
+    {
+      "probe": "front-suction-2",
+      "seated_reed_mm3": 0.6283185307179243
+    },
+    {
+      "probe": "front-discharge-2",
+      "seated_reed_mm3": 0.6283185307179238
+    },
+    {
+      "probe": "front-suction-3",
+      "seated_reed_mm3": 0.6283185307179242
+    },
+    {
+      "probe": "front-discharge-3",
+      "seated_reed_mm3": 0.628318530717918
+    },
+    {
+      "probe": "front-suction-4",
+      "seated_reed_mm3": 0.6283185307179252
+    },
+    {
+      "probe": "front-discharge-4",
+      "seated_reed_mm3": 0.6283185307179215
+    },
+    {
+      "probe": "front-suction-5",
+      "seated_reed_mm3": 0.6283185307179243
+    },
+    {
+      "probe": "front-discharge-5",
+      "seated_reed_mm3": 0.628318530717924
+    }
+  ],
+  "internal_only": true,
+  "production_fit": false,
+  "limits": [
+    "DENSO identifies FS10 471-8130 for the 1990\u201395 F-150 4.9 factory-A/C branch. Owner photos show A/C, but installed identity and factory/dealer branch are unresolved.",
+    "Five double-ended pistons, ten shoes, swashplate/shaft, two cylinder halves and valve/reed stacks follow Ford FS10 architecture and a 1998 Crown Victoria dissection. This is not truck-specific teardown evidence.",
+    "UAC CO101220C supplies a 145 mm clutch diameter and six grooves for 1990\u201395 F-series 4.9. Diameter is used as an outside envelope, not a verified belt pitch diameter. Its 93 mm tangent mount width lacks a diagrammed datum and is not yet applied. Case diameter, cylinder pitch/bore, 18 degree swash angle, groove profile, axial lengths, mount ears and manifold ports remain provisional.",
+    "Clutch static gap is 0.6 mm, within the Ford 1994 specification 0.4572\u20130.8382 mm. Friction, electromagnetics, refrigerant, oil and thermodynamics are not simulated.",
+    "Piston displacement and shoe face orientation are analytic swashplate relationships; checked discrete poses do not prove production motion, pressure sealing or continuous clearance.",
+    "Thrust rolling elements and pulley bearing are envelope cartridges, not counted rollers. Reed flexure, shaft splines, seals, fastener threads, piston coatings and manufacturing fits are simplified.",
+    "Mount ears at X432.56, Y210/350, Z60/140 and the X473.56 belt center are shared provisional accessory-bracket interfaces, not measured truck locations. Vehicle refrigerant lines are omitted.",
+    "Ford describes gas-tight passages through the cylinder connecting both heads to rear suction/discharge ports. The two 4 mm longitudinal galleries, radial head-cap drillings, concentric plenums and full reed sheets are an illustrative connected topology, not traced production passages.",
+    "Two fixed spherical sockets per piston allow rigid piston translation and shoe rotation without geometry morphing. The socket spacing and 18 degree swash inclination remain provisional.",
+    "Independent compressor angle and engagement controls are not coupled to crank angle or a claimed belt pitch ratio. Engagement gates motion only; this simplified combined hub/armature does not flex or close its static gap.",
+    "Disengagement resets the mechanism to its reference pose; it does not simulate physical run-down. Shared illustrative PK groove normalization uses 3.56 mm pitch and 40 degree flanks, not a traced Ford pulley section.",
+    "Open-channel probes and seated-reed obstruction checks establish selected geometric routes, not a pressure-tight fluid simulation. Piston-ring clearances, oil films, reed lift and leakage are not solved."
+  ]
+}

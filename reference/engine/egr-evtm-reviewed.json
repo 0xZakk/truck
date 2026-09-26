@@ -1,0 +1,51 @@
+{
+  "source": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+  "pdf_pages": [
+    75,
+    77
+  ],
+  "printed_pages": [
+    "23-2",
+    "23-4"
+  ],
+  "visually_reviewed": true,
+  "engine": "4.9L",
+  "evp": {
+    "connector": "C182",
+    "signal": {
+      "circuit": 352,
+      "color": "BR/LG",
+      "pcm_pin": 27
+    },
+    "reference": {
+      "circuit": 351,
+      "color": "BR/W",
+      "pcm_pin": 26
+    },
+    "return": {
+      "circuit": 359,
+      "color": "GY/R",
+      "pcm_pin": 46
+    },
+    "symbol": "three-terminal potentiometer",
+    "function": "position-proportional voltage feedback"
+  },
+  "evr": {
+    "connector": "C180",
+    "supply": {
+      "circuit": 361,
+      "color": "R",
+      "condition": "12V with relay energized"
+    },
+    "control": {
+      "circuit": 360,
+      "color": "BR/PK",
+      "pcm_pin": 33
+    }
+  },
+  "limits": [
+    "Connector cavity-to-model terminal mapping not established.",
+    "Electrical symbol does not establish physical potentiometer layout or internal part count.",
+    "No nominal resistance, travel calibration or spring rate derived from schematic."
+  ]
+}

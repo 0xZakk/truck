@@ -1,0 +1,56 @@
+{
+  "source_id": "ford-tsb-94-10-19-accessory",
+  "article": "94-10-19",
+  "publication_date": "1994-05-18",
+  "review_date": "2026-09-25",
+  "html_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Technical%20Service%20Bulletins/All%20Technical%20Service%20Bulletins/Accessory%20Drive%20Belt%20-%20Chirp%20or%20Squeal%20Noise/index.html",
+  "html_sha256": "2fdab241c98799f222174faba3f6b7ce5cedb2245787301a54e7eacaf47e3cbc",
+  "figures": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/212687181.png",
+      "sha256": "71adec40fa481333edbd3f83a25c71c31ff54be96826569bfa23c135cc427c8f",
+      "visually_reviewed": true,
+      "description": "Figure4,1994 bracket"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/212715023.png",
+      "sha256": "a595be917e6bdf19e6d1160ca50c47152bd2d966590bbd884d0e2c44d3d69a8a",
+      "visually_reviewed": true,
+      "description": "Figure1,beltusage"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/212660296.png",
+      "sha256": "18488a05385583d11824f721403bee3707826999240b36360701a48c13555e0b",
+      "visually_reviewed": true,
+      "description": "Figure3,1987\u201393 bracket"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/212725437.png",
+      "sha256": "264bea32e9b443a7e997174a2fd448c995b0f01d566dc42fcd45be6f7623c132",
+      "visually_reviewed": true,
+      "description": "Figure5,Econoline-only76mm"
+    }
+  ],
+  "applicability": "1987\u201394 4.9L F-Series/Econoline; Fig4 specifically1994-present bracket, lower drawing withA/C.",
+  "accepted_constraints": {
+    "tensioner_mount": "Shared power-steering/A/C bracket carries tensioner pivot; independent standalone engine bracket is unsupported by Fig4.",
+    "head_front_attachment": "Bolt #1, front face of cylinder head.",
+    "head_side_attachment": "Bolt #2, side of cylinder head.",
+    "block_side_attachment": "Two lower nuts #3 onto block-side studs.",
+    "not_1994": "Do not duplicate older Fig3 bolts#4 in1994 bracket.",
+    "power_steering_pulley": "Hub face flush with end of pump shaft per text.",
+    "belt_service_number": "E8TZ-8620-T",
+    "belt_motorcraft_number": "JK6-984-B",
+    "belt_engineering_number": "F5TE-8620-FA",
+    "belt_variant": "1994 F-Series withA/C under8500GVW or over8500 withmanual transmission.",
+    "f_series_tensioner_service": "E7TZ-6B209-G",
+    "76mm_pulley_limit": "76mm replacement procedure is Econoline withA/C only; not evidence to shrink thisF150 pulley."
+  },
+  "unresolved": [
+    "No dimensioned pulley centers, shared-bracket hole coordinates or casting sections.",
+    "No water-pump OD, crank/water-pump axis separation or pulley effective/pitch radii.",
+    "Motorcraft suffix digits are an identifier, not a dimensioned belt drawing.",
+    "Part identity differs from installed-part verification."
+  ],
+  "next_correction": "Replace independent tensioner mount and provisional two-front-bolt PS/AC attachment with one1994 shared carrier and four supported engine attachment sites; retain dimensions as assumed."
+}

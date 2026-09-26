@@ -1,0 +1,128 @@
+{
+  "passed_geometry_only": false,
+  "accepted_for_installation": false,
+  "verified_nominal_belt_fit": false,
+  "manifest_sha256": "631eded833ee58db78882ee1182c7f732d6dcb5be8205db19c3ac7d9c57903ec",
+  "source_sha256": {
+    "accessory_datum_study.py": "210030824424c889f3e38c14ce7f1be7a727805a9dc2f6dfb1c15461481f5041",
+    "accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729"
+  },
+  "targets_yz_mm": {
+    "ALT": [
+      -325,
+      350
+    ],
+    "TENS": [
+      -160,
+      420
+    ],
+    "PS": [
+      190,
+      350
+    ],
+    "AC": [
+      245,
+      100
+    ],
+    "AP": [
+      -235,
+      100
+    ]
+  },
+  "moved_component_count": 158,
+  "excluded_dependent_brackets": [
+    "ps-ac-support-bracket",
+    "alternator-support-bracket",
+    "ps-bracket-bolt-1",
+    "ps-bracket-bolt-2",
+    "ps-bracket-bolt-3",
+    "ac-bracket-bolt-1",
+    "ac-bracket-bolt-2",
+    "ac-bracket-bolt-3",
+    "ac-bracket-bolt-4",
+    "alt-bracket-bolt-1",
+    "alt-bracket-bolt-2",
+    "ps-ac-engine-bracket-bolt-1",
+    "ps-ac-engine-bracket-bolt-2",
+    "alt-engine-bracket-bolt-1",
+    "alt-engine-bracket-bolt-2",
+    "thermactor-support-bracket",
+    "thermactor-engine-bolt-1",
+    "thermactor-engine-bolt-2"
+  ],
+  "belt_step_round_trips": 3,
+  "narrow_phase_checks": 209,
+  "collisions": [
+    {
+      "angle_degrees": -10,
+      "a": "candidate-belt",
+      "b": "coolant-outlet-housing",
+      "volume_mm3": 0.7643122358827874
+    }
+  ],
+  "numerical_sweep": [
+    {
+      "exploratory_arm_angle_degrees": -10,
+      "assumed_effective_length_mm": 2511.7452330303013,
+      "assumed_effective_length_residual_mm": 20.74523303030128,
+      "illustrative_cord_path_length_mm": 2531.073427026299,
+      "modeled_rib_root_reference_length_mm": 2521.020330534812,
+      "modeled_rib_root_residual_mm": 30.02033053481182,
+      "rib_root_reference_not_verified_catalog_gauge_line": true,
+      "wrap_degrees": {
+        "ALT": 111.30146005638979,
+        "TENS": 18.335488198407315,
+        "PS": 85.32483891766795,
+        "AC": 155.83700000528157,
+        "WP": 210.82805977531171,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 0,
+      "assumed_effective_length_mm": 2508.639735778713,
+      "assumed_effective_length_residual_mm": 17.639735778713202,
+      "illustrative_cord_path_length_mm": 2527.713576715727,
+      "modeled_rib_root_reference_length_mm": 2517.6604802242396,
+      "modeled_rib_root_residual_mm": 26.660480224239564,
+      "rib_root_reference_not_verified_catalog_gauge_line": true,
+      "wrap_degrees": {
+        "ALT": 106.502859279389,
+        "TENS": 11.379187049565227,
+        "PS": 83.16713854582657,
+        "AC": 155.83700000528157,
+        "WP": 210.82805977531171,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    },
+    {
+      "exploratory_arm_angle_degrees": 10,
+      "assumed_effective_length_mm": 2507.073625703565,
+      "assumed_effective_length_residual_mm": 16.073625703565085,
+      "illustrative_cord_path_length_mm": 2525.898947204143,
+      "modeled_rib_root_reference_length_mm": 2515.8458507126556,
+      "modeled_rib_root_residual_mm": 24.845850712655647,
+      "rib_root_reference_not_verified_catalog_gauge_line": true,
+      "wrap_degrees": {
+        "ALT": 101.9071414509085,
+        "TENS": 4.585122545212624,
+        "PS": 80.9687918699545,
+        "AC": 155.83700000528157,
+        "WP": 210.82805977531171,
+        "CS": 184.56965631987003,
+        "AP": 52.130592674509685
+      }
+    }
+  ],
+  "limits": [
+    "This is a non-unique analytical layout hypothesis, not measured Ford accessory coordinates or an accepted installation.",
+    "The root engine, water pump, crankshaft and pulley diameters are fixed. Translated accessory bodies preserve all internal geometry; brackets and engine attachments must be redesigned before installation.",
+    "Current outside radii are only an assumed effective-radius diagnostic. A near-zero nominal length residual does not prove actual Gates belt fit.",
+    "The exploratory plus/minus ten-degree tensioner sweep is not a sourced working-angle range. Factory stops, spring preload, arm force, available take-up and installed index remain unknown.",
+    "Low air-pump and tensioner wraps require traction, load and travel review. No minimum safe wrap, belt tension or accessory-power capacity is established.",
+    "Oblique owner photographs support component identity and broad topology but are not calibrated front-view center measurements."
+  ]
+}

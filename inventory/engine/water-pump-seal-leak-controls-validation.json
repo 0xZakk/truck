@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "input_hashes": {
+    "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/check-water-pump-seal-leak-controls.py": "5995e8512ea5e1dfdd5dde8b4c1b5ff9724480973d0e99cc92c72fbc33262709",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_mechanical_seal_candidate.py": "63bf8b89e98d88112a6976afc768a3906eee8cbdd4ebb70f9a43d9362fcbbb9e",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "/private/tmp/truck-seal-inlet-baseline-2032a3da/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "/private/tmp/truck-seal-inlet-baseline-2032a3da/water-pump-shaft.step": "5448c0838592e5699583e2cdc4834b78e8573c2e5411c12c865041f87816f72a",
+    "/private/tmp/truck-seal-inlet-baseline-2032a3da/full-assembly.json": "2032a3dae31b2ae012752e79ba814e616c5406fb0a940336383358a91f8dc421"
+  },
+  "results": {
+    "intact_connected": false,
+    "missing_bellows_connected": true,
+    "face_gap_connected": true
+  },
+  "scope": "Ideal zero-gap geometric fluid connectivity only, not hydraulic performance."
+}

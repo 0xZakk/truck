@@ -1,0 +1,35 @@
+{
+  "source_chain": [
+    "truck-thermostat-housing-parts",
+    "dorman-902-1002"
+  ],
+  "service_part": "F5TZ8592BC",
+  "replacement": "Dorman 902-1002",
+  "published_dimensions": {
+    "mounting_holes": 2,
+    "mounting_hole_diameter_in": 0.313,
+    "mounting_hole_diameter_mm": 7.9502,
+    "outside_diameter_in": 1.5,
+    "outside_diameter_mm": 38.1
+  },
+  "visual_features": [
+    "Main thermostat opening",
+    "Two-hole gasket flange",
+    "Adjacent secondary passage",
+    "Threaded boss beside hose neck"
+  ],
+  "assumptions": [
+    "Neck OD assigned to catalog outside-diameter field; exact measuring station unspecified",
+    "80 mm mounting-hole center spacing",
+    "All casting lengths, curvature, wall thickness and secondary-bore dimensions",
+    "Unthreaded representative bolts",
+    "Assembly position [415,0,295] mm is provisional"
+  ],
+  "open_interfaces": [
+    "Cylinder-head mating surface and coolant openings",
+    "Radiator hose and clamp",
+    "Secondary fitting and thread geometry"
+  ],
+  "construction": "Hollow analytic sections joined before export to avoid pathological broad-cylinder/curved-neck cuts.",
+  "complete": false
+}

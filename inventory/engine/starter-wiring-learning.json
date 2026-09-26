@@ -1,0 +1,19 @@
+{
+  "starter-solenoid-assembly": {
+    "summary": "Distinct control and power terminals, aggregate pull/hold windings, four provisional coil-end conductors and an insulated contact bridge explain the starter-mounted magnetic switch.",
+    "limits": "Ford's conventional circuit and applicable continuity description establish S-to-M and S-to-frame winding paths. Every conductor route, feedthrough, sleeve, joint, winding allocation and 11.25 mm stroke is provisional. The aggregate winding envelopes represent insulated coils, not solid copper shorting their ends. Motor brush feed, brush pigtails, armature connections and vehicle cables remain absent, so complete starter electrical continuity is not claimed. The viewer remains static; sampled prescribed movement does not establish loaded or production performance.",
+    "steps": [
+      {"title": "Identify three terminals", "text": "The small S terminal is distinct from the heavy B battery and M motor terminals. Their locations and the internal conductor routes are packaging assumptions; external power and control harnesses remain open boundaries.", "part": "starter-solenoid-s-terminal"},
+      {"title": "Connect the pull winding", "text": "One provisional conductor joins S to the aggregate pull winding, and a second joins that winding to M. The two attachments specify winding endpoints without recovering its internal turns, gauge or resistance.", "part": "starter-solenoid-lead-pull-m"},
+      {"title": "Connect the hold winding", "text": "A separate provisional S conductor reaches the hold winding; its other end attaches to the shell. The shell joint demonstrates a frame-side interface, not a verified factory ground-joint process.", "part": "starter-solenoid-lead-hold-frame"},
+      {"title": "Separate leads from the pole", "text": "Individual sleeves pass through candidate bores in the bobbin and fixed pole. Geometric checks test conductor separation through the prescribed stroke; they do not establish dielectric strength, current capacity or thermal durability.", "part": "starter-solenoid-lead-insulation-pull-s"},
+      {"title": "Close the power contacts", "text": "A captured insulating collar separates the movable copper bridge from its rod. Closing B to M shunts the pull winding in the declared conventional circuit, while the hold winding remains supplied through S. Current, arcing and contact pressure are not simulated.", "part": "starter-solenoid-contact-bridge"},
+      {"title": "Return the mechanism", "text": "The separate return spring and constrained linkage provide a sampled geometric reset. Spring preload, magnetic release, loaded disengagement and production construction remain unresolved.", "part": "starter-solenoid-return-spring"},
+      {"title": "Keep the motor-feed boundary visible", "text": "The M terminal receives the pull-winding attachment, but no conductor yet connects it to the motor brushes. Brush pigtails and commutator-to-armature connections are also unresolved; the displayed starter is not a complete current-carrying circuit.", "part": "starter-solenoid-terminal-2"}
+    ],
+    "troubleshooting": [
+      {"title": "Distinguish attachment from electrical performance", "text": "The factory description supports S-to-M and S-to-frame continuity paths. CAD contact and separation measurements support only the provisional geometry; they provide no resistance target or live high-current testing procedure.", "part": "starter-solenoid-s-terminal"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-starter-solenoid-test", "ford-pmgr-conventional-circuit"]
+  }
+}

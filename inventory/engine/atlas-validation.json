@@ -1,17 +1,20 @@
 {
-  "definitions": 53,
-  "occurrences": 399,
+  "definitions": 688,
+  "occurrences": 1244,
   "artifact_integrity": "pass",
   "gltf_scale_axis_bounds": "pass within 0.5 mm",
-  "assembled_step_solids": 399,
-  "manifest_sha256": "276b2a5eb96aebdcf2ea1b95830fb5f339668dee2070e7f635fac15bb6327af2",
+  "step_volume_relative_tolerance": 1e-05,
+  "assembled_step_solids": 1244,
+  "manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
   "checked_poses_deg": [
     0,
     90,
     180,
     270
   ],
-  "collision_scope": "Crank, pistons, rods and caps against block and crank; does not cover all part pairs or continuous motion.",
+  "collision_scope": "Rotating core against block/crank, plus lubrication components against rotating core, block and oil pan; sampled poses, not continuous motion.",
+  "exact_intersection_checks": 3924,
+  "overlap_failure_threshold_mm3": 0.1,
   "collisions": [],
   "verified_complete": false
 }

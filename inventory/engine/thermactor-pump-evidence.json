@@ -1,0 +1,30 @@
+{
+  "complete": false,
+  "internal_construction_complete": false,
+  "verified_production_fit": false,
+  "source_capture": "reference/engine/ford-thermactor-reviewed.json",
+  "source_id": "ford-thermactor-study",
+  "scope": "Interim exterior, shaft/bearing interfaces, hub/pulley and separate support; unresolved internal pumping cartridge",
+  "supported_architecture": ["Belt-driven positive-displacement vane pump", "Distinct inlet and outlet", "Cast housing and end plate", "Three-hole pulley hub", "Lower-RH A/P routing location"],
+  "unresolved_internal_parts": ["Rotor contour and eccentricity", "Vane count and individual vane geometry", "Vane guide/support interfaces", "Port timing and internal passages", "Seals and retainers", "Actual bearing identities", "19 versus 22 cubic-inch displacement assignment"],
+  "provisional_geometry_mm": {
+    "pulley_center": [473.56, -280, 100],
+    "pulley_outside_diameter": 140,
+    "pulley_width": 24,
+    "housing_outside_diameter": 116,
+    "housing_bore": 100,
+    "front_mount_face_x": 449.06,
+    "pump_mount_bores_yz": [[-195, 100], [-365, 100]],
+    "block_front_seats_xyz": [[373, -100, 90], [373, -100, 180]],
+    "engine_engagement": "14 mm smooth shaft overlap with blind bore envelope, 2 mm bottom clearance; no helical thread or production tolerance claim"
+  },
+  "decomposition": "Twenty study objects including one explicitly unresolved pumping-cartridge envelope, two unresolved bearing cartridges, three illustrative case bolts, three hub bolts and separate provisional engine support.",
+  "limits": [
+    "Every numerical dimension is an assumption, not scaled from Ford artwork.",
+    "Six modeled grooves follow the common six-rib drive study, not a verified pulley catalog identity.",
+    "The internal cartridge envelope is not a single physical production part and is not counted as completed internal reconstruction.",
+    "Intake filter, hoses, bypass/diverter valves and exhaust injection connections remain unresolved.",
+    "Dry blind block bosses are explicit assumed attachment geometry, not invented wet oil/coolant passages.",
+    "No validated displacement, belt ratio, pressure/flow, motion, emissions performance or manufacturing fit."
+  ]
+}

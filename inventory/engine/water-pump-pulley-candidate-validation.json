@@ -1,0 +1,28 @@
+{
+  "installed": false,
+  "verified_production_fit": false,
+  "manifest_sha256": "261cbceefc6fa042178ae0b9393aa2c9e2451bd1a33a6c0cf14cdd0c4551d6fe",
+  "source_sha256": "c6367308526aa03e3467f40feba3403352997cf157cc88529a7b1a5ab902d87e",
+  "step_roundtrips": [
+    "water-pump-pulley",
+    "water-pump-pulley-bolt-1",
+    "water-pump-pulley-bolt-2",
+    "water-pump-pulley-bolt-3",
+    "water-pump-pulley-bolt-4"
+  ],
+  "checks": 14,
+  "collisions": [],
+  "belt_plane": {
+    "candidate_mm": 473.56,
+    "existing_groove_mean_mm": 473.56,
+    "axial_delta_mm": 0.0,
+    "status": "Assumed dish offset, not a measured alignment"
+  },
+  "limits": [
+    "Ford service procedure establishes a separate pulley and threaded fan-clutch assembly, but supplies no pulley dimensions.",
+    "Gates S7004 shows backside contact at the central upper wheel; identifying that wheel as the water pump is an interpretation. Smooth rim is provisional pending an identified production-pulley photograph.",
+    "150 mm diameter, 28 mm rim width, dish section, four-hole 50 mm bolt circle and all fastener dimensions are illustrative. Four bolts follow the existing provisional hub holes, not a sourced production bolt count.",
+    "Pulley sits on the existing pump hub front at global X522. Its assumed dish depth aligns the smooth rim with the current illustrative damper belt center X473.56; neither datum establishes factory belt alignment.",
+    "Fan-clutch threaded nose, thread dimensions, belt routing, working belt ratio and rotational animation remain unresolved. Smooth fastener shanks do not model threads or production clamping fit."
+  ]
+}

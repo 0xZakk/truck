@@ -1,0 +1,49 @@
+{
+  "sources": [
+    "ford-industrial-csg649",
+    "fsm-bf23f907dbe0",
+    "system-2ea2c28d7cca"
+  ],
+  "reviewed_pages": {
+    "ford-industrial-csg649": [
+      6,
+      7
+    ]
+  },
+  "verified_architecture": [
+    "Camshaft drives distributor through gears",
+    "Distributor drives oil pump through intermediate shaft",
+    "Industrial comparison places distributor on left side"
+  ],
+  "current_study_datums_mm": {
+    "distributor_base": [
+      200,
+      190,
+      145
+    ],
+    "distributor_gear_center": [
+      200,
+      190,
+      60
+    ],
+    "cam_axis_yz": [
+      -90,
+      72
+    ],
+    "oil_pump_drive_axis_xy": [
+      213.5,
+      -80
+    ]
+  },
+  "required_reconciliation": [
+    "Longitudinal drive station",
+    "Shaft inclination and lower socket",
+    "Distributor neck/bowl dimensions",
+    "Block bore and clamping pad",
+    "Pump location and mounting pad",
+    "Intermediate shaft length and engagement",
+    "Conjugate crossed-helical gear profiles"
+  ],
+  "warning": "Current datums are staging positions, not an installed drive. Naive translation would embed the distributor bowl in the block. Do not treat collision-free component studies as an assembled production engine.",
+  "complete": false
+}

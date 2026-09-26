@@ -1,0 +1,48 @@
+{
+  "review_date": "2026-09-26",
+  "source_id": "water-pump-mounting-topology",
+  "review_basis": "reference/engine/water-pump-mounting-topology-reviewed.json",
+  "part": "Gates 44009",
+  "observed": [
+    "Large lateral cast arm terminates in a round hose neck with retaining bead.",
+    "Large inlet lies opposite the formed smaller heater-return tube in both front and rear views.",
+    "Side view places the branch below the front bearing tower; the arm is not a separate bolted fitting."
+  ],
+  "inferences": [
+    "Positive-Y assignment uses the retained heater tube on negative Y. Exact installed angle is not measured.",
+    "Continuous open channel toward impeller chamber is functional reconstruction; photos do not reveal internal casting."
+  ],
+  "provisional_dimensions": {
+    "neck_center_local_x_z_mm": [
+      -10,
+      25
+    ],
+    "neck_end_local_y_mm": 145,
+    "outer_radius_mm": 24,
+    "bore_radius_mm": 20,
+    "entry_center_local_xyz_mm": [
+      -20,
+      19,
+      25
+    ],
+    "transition_center_local_xyz_mm": [
+      -10,
+      60,
+      25
+    ]
+  },
+  "construction_limits": [
+    "The entire cast arm is above the inherited timing-cover envelope and behind the pulley envelope. Slight forward curve feeds rear chamber. This is a packaging assumption, not a measured Gates contour.",
+    "No new dry-side opening: passage terminates in rear wet chamber before modeled coolant seal.",
+    "No full volute, impeller-eye feed, hose, radiator, hose clamp, or hydraulic simulation."
+  ],
+  "photos": {
+    "reference/engine/gates44009-1.jpg": "a3cc0fece42700d33cd3ab0e111cbc3cbb5fb14b774b42c004fcfed86a3a85ba",
+    "reference/engine/gates44009-2.jpg": "b55f5df937963b3a329f3a116e19b2cd0f0e3a756ec04839ee2f2dc42bca3207",
+    "reference/engine/gates44009-3.jpg": "9b78df353dbfb0a27b6a2abfd7bcef1e588187e6a5b170da5fa3e31741722b94"
+  },
+  "rejected_layouts": [
+    "Initial lateral neck intersected timing cover.",
+    "V2 forward neck at localX10/Z\u221212 intersected water-pump pulley. Neither is accepted."
+  ]
+}

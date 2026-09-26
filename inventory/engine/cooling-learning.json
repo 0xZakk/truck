@@ -1,0 +1,290 @@
+{
+  "cooling-connections": {
+    "summary": "The heater circuit takes coolant from the thermostat-side elbow and returns it to the water pump. The two attached metal takeoffs end at explicitly unfinished vehicle-hose interfaces.",
+    "limits": "Tube routes and dimensions are provisional. The engine-side outlet and pump joints have local passage and contact checks; the deeper head/block coolant jackets and vehicle hoses remain unfinished. The automatic-transmission bleed-tee procedure does not establish this manual truck’s routing.",
+    "steps": [
+      {
+        "title": "Supply the heater",
+        "text": "The outlet's secondary passage opens into an elbow that also carries the ECT sensor. The exposed nipple marks the future heater supply hose connection.",
+        "part": "heater-supply-ect-elbow",
+        "source": "ford-cooling-connections"
+      },
+      {
+        "title": "Return coolant to the pump",
+        "text": "The separate return tube opens through the pump housing into its coolant chamber. Its upper end is the heater return interface, not a completed hose run.",
+        "part": "heater-pump-return-elbow",
+        "source": "gates-1994-drive"
+      },
+      {
+        "title": "Keep the two temperature circuits distinct",
+        "text": "The PCM ECT uses two leads and a sensor-return circuit. The separate gauge sender uses one wire and its metal body as ground; its wet head mounting remains unresolved.",
+        "source": "ford-cooling-sensor-circuits"
+      }
+    ],
+    "sources": [
+      "ford-cooling-connections",
+      "gates-1994-drive",
+      "ford-cooling-sensor-circuits",
+      "truck-cooling-hose-photos"
+    ],
+    "troubleshooting": []
+  },
+  "engine-coolant-temperature-assembly": {
+    "summary": "The two-lead ECT measures coolant temperature for the PCM. Its negative-temperature-coefficient thermistor loses resistance as it warms.",
+    "limits": "Metal-body envelope, internal sensing element, leads and connector are educational geometry. Thread designation is sourced; no temperature calibration, wiring harness or manufacturing section is reconstructed.",
+    "steps": [
+      {
+        "title": "Expose the probe to coolant",
+        "text": "The metal tip extends into the heater elbow's fluid cavity, while its electrical parts stay inside a closed probe body.",
+        "part": "engine-coolant-temperature-body"
+      },
+      {
+        "title": "Change electrical resistance",
+        "text": "The sensing element changes resistance with temperature. Ford identifies it as an NTC thermistor.",
+        "part": "engine-coolant-temperature-thermistor",
+        "source": "ford-ect-construction"
+      },
+      {
+        "title": "Return a separate PCM signal",
+        "text": "The two terminals carry signal and sensor return. They are distinct from the single-wire dash gauge sender.",
+        "part": "engine-coolant-temperature-terminal-1",
+        "source": "ford-cooling-sensor-circuits"
+      }
+    ],
+    "sources": [
+      "ford-ect-construction",
+      "ford-cooling-sensor-circuits"
+    ],
+    "troubleshooting": []
+  },
+  "fan-clutch-assembly": {
+    "summary": "A thermal viscous clutch varies fan speed without making the fan rigidly follow the pump shaft. This reconstruction separates a pump-driven input, output housing, bearing and fluid-control pieces inside a published replacement envelope.",
+    "limits": "One of two catalog nut-size branches is shown. Internal geometry is illustrative; the assembly is sealed and is not a rebuild guide. No slip, temperature, fluid flow or airflow simulation is implemented.",
+    "steps": [
+      {
+        "title": "Receive pump drive",
+        "text": "The right-hand threaded nut drives the clutch input shaft. The output housing can rotate at a different speed around its bearing.",
+        "part": "fan-clutch-input-shaft",
+        "source": "imperial-fan-clutch-215161"
+      },
+      {
+        "title": "Sense radiator-exit air",
+        "text": "The front bimetal spring responds to the air coming through the radiator and operates the internal valve.",
+        "part": "fan-clutch-thermal-spring",
+        "source": "hayden-fan-clutch-operation"
+      },
+      {
+        "title": "Meter silicone fluid",
+        "text": "Opening the valve admits fluid from the reservoir into the working region. More fluid coupling increases fan speed; cooling closes the valve while fluid returns to the reservoir.",
+        "part": "fan-clutch-control-valve",
+        "source": "hayden-fan-clutch-operation"
+      },
+      {
+        "title": "Transfer torque through shear",
+        "text": "The illustrated rotor and opposing lands provide a narrow working region. Their clearances are assumptions and do not predict clutch torque.",
+        "part": "fan-clutch-drive-rotor"
+      }
+    ],
+    "sources": [
+      "imperial-fan-clutch-215161",
+      "hayden-fan-clutch-operation",
+      "system-7b01cf423275"
+    ],
+    "troubleshooting": []
+  },
+  "cooling-fan-assembly": {
+    "summary": "The seven-blade fan comparison uses Dorman's published 18.9-inch diameter and black stamped-steel construction. Four bolts attach its central spider to the clutch output.",
+    "limits": "Exact installed fan identity, blade pitch, stamping contours and rivet details remain unverified. The model does not establish radiator or shroud clearance.",
+    "steps": [
+      {
+        "title": "Attach the fan to the output",
+        "text": "The clutch specification gives four threaded holes on a three-inch circle. The fan follows the output housing rather than the input shaft directly.",
+        "part": "cooling-fan-spider",
+        "source": "imperial-fan-clutch-215161"
+      },
+      {
+        "title": "Move air through the radiator",
+        "text": "Seven blades reproduce the replacement's published count; their illustrative pitch represents a pulling fan. Actual airflow depends on geometry, speed and the surrounding shroud.",
+        "part": "cooling-fan-blade-1",
+        "source": "dorman-620-151"
+      }
+    ],
+    "sources": [
+      "dorman-620-151",
+      "imperial-fan-clutch-215161"
+    ],
+    "troubleshooting": []
+  },
+  "cooling": {
+    "summary": "The cooling system transfers engine heat into coolant and rejects it through the radiator. The pump provides circulation, the thermostat regulates the radiator path, and the fan supplies airflow when needed.",
+    "limits": "Pump, thermostat and coolant outlet are modeled as component studies. Production internal profiles, head connections, hoses, fan clutch and fan remain unfinished.",
+    "steps": [
+      {
+        "title": "Circulate coolant",
+        "text": "The shaft drives the impeller inside the pump housing. Explore the pump to see its drive and sealing components.",
+        "part": "water-pump-assembly"
+      },
+      {
+        "title": "Regulate warm-up",
+        "text": "The thermostat regulates the radiator path during warm-up. Explore its capsule, poppet and return spring.",
+        "source": "system-44801c5452af",
+        "part": "thermostat-assembly"
+      },
+      {
+        "title": "Reject heat",
+        "text": "Radiator airflow and coolant circulation both matter. The factory service procedure distinguishes the pump pulley, fan clutch and fan blade as separate assemblies.",
+        "source": "system-7b01cf423275"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Slow warm-up or poor heater output",
+        "text": "Ford TSB 93-24-8 links these symptoms, and some driveability complaints, to thermostats that stay open or open too early. Its procedure monitors the ECT signal while the sensor remains connected. Use the full factory procedure to distinguish thermostat failure from other causes.",
+        "source": "ford-tsb-93-24-8"
+      },
+      {
+        "title": "Overheating",
+        "text": "Do not apply the under-temperature thermostat test to overheating: Ford explicitly excludes that use. The overheating diagnostic path still needs the applicable factory checks; do not infer a failed pump or thermostat here.",
+        "source": "ford-tsb-93-24-8"
+      },
+      {
+        "title": "Leakage near the pump",
+        "text": "Identify whether leakage originates at a hose, mounting joint or pump bleed passage. Ford explains that the slinger discharges seal leakage through the bleed hole; it is not a lubrication hole.",
+        "part": "water-pump-housing",
+        "source": "system-7b01cf423275"
+      }
+    ],
+    "sources": [
+      "system-7b01cf423275",
+      "system-44801c5452af",
+      "system-b852e150201f",
+      "ford-tsb-93-24-8"
+    ]
+  },
+  "water-pump-assembly": {
+    "summary": "The belt-driven water pump transfers shaft power to coolant through an impeller. The housing supports a sealed bearing and keeps coolant separated from that bearing by a seal.",
+    "limits": "Eight pump components and a five-part pulley/fastener study are separately selectable. They are illustrative, not a dimensionally verified production pump or rebuild guide. The bearing cartridge and coolant seal are not fully decomposed. Ford directs replacement of a damaged pump. Pulley geometry, fan clutch, hoses and final mounting interfaces remain unverified or unfinished.",
+    "steps": [
+      {
+        "title": "Drive enters through the hub",
+        "text": "The pulley drives the hub and shaft; the impeller turns with the shaft. Belt ratio and rotation direction are not yet modeled.",
+        "part": "water-pump-drive-hub"
+      },
+      {
+        "title": "The impeller moves coolant",
+        "text": "The impeller transfers energy to coolant within the pump chamber. Vane shape and casing passages determine performance; the current geometry is illustrative.",
+        "part": "water-pump-impeller"
+      },
+      {
+        "title": "The seal protects the bearing",
+        "text": "The coolant seal separates the wet chamber from the bearing cavity. A slinger and bleed passage provide a path for leakage.",
+        "part": "water-pump-seal"
+      },
+      {
+        "title": "The bearing carries the shaft",
+        "text": "The factory manual specifies a sealed bearing integral with the shaft. It requires no lubrication.",
+        "part": "water-pump-bearing"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Coolant at the bleed hole",
+        "text": "The factory manual identifies the bleed hole as an outlet for leakage past the seal, not a lubrication point. Consult its replacement procedure for a damaged pump.",
+        "part": "water-pump-housing"
+      }
+    ],
+    "sources": [
+      "system-7b01cf423275",
+      "system-628ac5b60213",
+      "gates-water-pumps-2011"
+    ]
+  },
+  "water-pump-pulley-assembly": {
+    "summary": "The pulley transfers belt torque to the water-pump hub and shaft. Its dished shape bridges the distance between the hub face and the belt plane.",
+    "limits": "The factory procedure identifies a separate pulley. Diameter, dish profile, bolt count and smooth contact face remain provisional. The assumed belt plane follows the current damper study, not measured production alignment. Fan-clutch connection and operating motion remain unfinished.",
+    "steps": [
+      {
+        "title": "The belt turns the rim",
+        "text": "The smooth rim illustrates backside belt contact. Its diameter and section need a verified production reference.",
+        "part": "water-pump-pulley"
+      },
+      {
+        "title": "The hub receives torque",
+        "text": "Four provisional fasteners pass through the existing modeled hub holes. The hub, shaft and impeller carry rotation into the pump.",
+        "part": "water-pump-pulley-bolt-1"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "system-7b01cf423275",
+      "gates-1994-drive"
+    ]
+  },
+  "thermostat-assembly": {
+    "summary": "A wax-element thermostat converts coolant heat into mechanical movement. Expansion acts against the bridge through a piston and moves the capsule and poppet; the return spring closes the valve as it cools.",
+    "limits": "Replacement outer envelope is sourced to MotoRad 244-192, cross-referenced to the factory service number. Internal profiles, mounting position and calibration remain provisional. Explosion shows construction, not a rebuild procedure.",
+    "steps": [
+      {
+        "title": "Heat reaches the wax",
+        "text": "The metal capsule conducts heat to the wax charge. Its thermal expansion supplies force and movement.",
+        "part": "thermostat-wax"
+      },
+      {
+        "title": "The actuator opens the path",
+        "text": "The piston reacts against the frame while the capsule and poppet move. Valve travel is not yet animated.",
+        "part": "thermostat-piston"
+      },
+      {
+        "title": "Cooling allows the valve to close",
+        "text": "Spring force returns the poppet toward its seat as the actuator contracts.",
+        "part": "thermostat-spring"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Slow warm-up",
+        "text": "Use the factory under-temperature diagnostic procedure; symptoms alone do not identify the failed component.",
+        "source": "ford-tsb-93-24-8"
+      }
+    ],
+    "sources": [
+      "motorad-244-192",
+      "system-b852e150201f",
+      "ford-tsb-93-24-8"
+    ]
+  },
+  "coolant-outlet-assembly": {
+    "summary": "The bolted coolant outlet encloses the thermostat and connects it to the radiator hose. The matching replacement photo shows a second passage beside the thermostat opening.",
+    "limits": "Replacement photos support the two-aperture flange and direct head-front mounting. The model now includes mating local head pockets, a gasket, two blind fastener receivers and the attached heater-supply/ECT elbow. Casting dimensions, thread forms, deeper coolant jackets and vehicle hoses remain provisional or unfinished.",
+    "steps": [
+      {
+        "title": "Regulate coolant flow",
+        "text": "The thermostat sits inside the outlet chamber and changes the available radiator flow path.",
+        "part": "thermostat-assembly"
+      },
+      {
+        "title": "Seal the joint",
+        "text": "A separate gasket surrounds both passages. Two fasteners clamp the flange.",
+        "part": "coolant-outlet-gasket"
+      },
+      {
+        "title": "Follow the heater takeoff",
+        "text": "The smaller outlet passage enters the separate heater-supply elbow, where the ECT tip reaches the coolant. The model preserves this local passage without inventing a connection to the thermostat-controlled radiator chamber.",
+        "part": "heater-supply-ect-elbow"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Leakage at the outlet joint",
+        "text": "Identify the leak location before attributing it to the thermostat. The factory replacement procedure removes the outlet and gasket together.",
+        "source": "system-44801c5452af"
+      }
+    ],
+    "sources": [
+      "dorman-902-1002",
+      "truck-thermostat-housing-parts",
+      "system-44801c5452af",
+      "water-pump-mounting-topology"
+    ]
+  }
+}

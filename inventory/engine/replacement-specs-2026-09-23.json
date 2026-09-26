@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-23",
+  "policy": "Research only: no automatic CAD promotion. Inch-to-mm conversions use exactly 25.4; extra digits are arithmetic, not increased source precision.",
+  "application_source": "melling-1994-49-applications",
+  "claims": [
+    {
+      "part_number": "44009",
+      "source_id": "gates-water-pumps-2011",
+      "pdf_page_1based": 55,
+      "values": {
+        "application": "1993\u201396 F-Series 4.9L",
+        "OE_cross_reference": "F6TZ8501KB",
+        "cross_reference_pdf_page": 199
+      },
+      "fitment": "manufacturer application confirmed",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Hub height, mounting pattern, shaft/impeller geometry, installed revision."
+    },
+    {
+      "part_number": "594-152",
+      "source_id": "dorman-2006-oes-catalog",
+      "pdf_page_1based": 241,
+      "values": {
+        "diameter_in": 6.42,
+        "diameter_mm_converted": 163.068,
+        "width_in": 2.8,
+        "width_mm_converted": 71.12
+      },
+      "fitment": "manufacturer application confirmed",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Axial datum, bore, keyway and elastomer profiles. OE code conflict with current page."
+    },
+    {
+      "part_number": "SYB-38",
+      "source_id": "melling-camshaft-specifications",
+      "pdf_page_1based": 13,
+      "values": {
+        "intake_duration_at_050_deg": 192,
+        "exhaust_duration_at_050_deg": 192,
+        "advertised_intake_duration_deg": 270,
+        "advertised_exhaust_duration_deg": 270,
+        "cam_lift_in": 0.247,
+        "valve_lift_in": 0.395,
+        "rocker_ratio": 1.6,
+        "intake_centerline_table_value_deg": 108,
+        "exhaust_centerline_table_value_deg": 114
+      },
+      "fitment": "manufacturer application confirmed",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Full lobe lift curve and base circle; journal diameters/stations. Do not infer curve or timing convention from these scalar values."
+    },
+    {
+      "part_number": "MPR-306",
+      "source_id": "melling-pushrod-specifications",
+      "pdf_page_1based": 1,
+      "values": {
+        "length_in": 10.14,
+        "length_mm_converted": 257.556,
+        "diameter_in": 0.312,
+        "diameter_mm_converted": 7.9248,
+        "end_type": "H&H",
+        "drilled": true,
+        "material": "Welded steel"
+      },
+      "fitment": "manufacturer application confirmed",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Ball radii, bore/wall thickness, installed angle and rocker/lifter datums."
+    },
+    {
+      "part_number": "V1504",
+      "source_id": "melling-stock-valve-specifications",
+      "pdf_page_1based": 1,
+      "values": {
+        "head_diameter_in": 1.559,
+        "type": "exhaust",
+        "material": "High alloy steel"
+      },
+      "fitment": "Listed by manufacturer; application note unresolved",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Stem length, profile and anomalous application exception."
+    },
+    {
+      "part_number": "V1505",
+      "source_id": "melling-stock-valve-specifications",
+      "pdf_page_1based": 4,
+      "values": {
+        "head_diameter_in": 1.783,
+        "type": "intake",
+        "material": "Stainless steel"
+      },
+      "fitment": "Listed by manufacturer; application note unresolved",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Stem length, profile and anomalous application exception."
+    },
+    {
+      "part_number": "MPE-107R",
+      "source_id": "melling-expansion-plug-guide",
+      "pdf_page_1based": 10,
+      "values": {
+        "contents": [
+          {
+            "part": "MPS-126",
+            "qty": 5,
+            "catalog_location_class": "Block"
+          },
+          {
+            "part": "MPC-147",
+            "qty": 1,
+            "catalog_location_class": "Camshaft"
+          },
+          {
+            "part": "MPS-59A",
+            "qty": 1,
+            "catalog_location_class": "Block"
+          },
+          {
+            "part": "MPP-554",
+            "qty": 2,
+            "catalog_location_class": "Not specified in kit row"
+          }
+        ]
+      },
+      "fitment": "manufacturer application confirmed",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Individual installed locations; kit is not entire engine plug inventory."
+    },
+    {
+      "part_number": "MPS-126",
+      "source_id": "melling-expansion-plug-guide",
+      "pdf_page_1based": 7,
+      "values": {
+        "nominal_size_in": 1.625,
+        "OD_decimal_equivalent_in": 1.64,
+        "OD_min_in": 1.64,
+        "OD_max_in": 1.642,
+        "height_in": 0.365,
+        "type": "shallow cup"
+      },
+      "fitment": "Component of applicable MPE-107R kit",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Wall thickness and installed seating depth; nominal size is not measured OD."
+    },
+    {
+      "part_number": "MPS-59-A",
+      "source_id": "melling-expansion-plug-guide",
+      "pdf_page_1based": 8,
+      "values": {
+        "nominal_size_in": 2.0625,
+        "OD_decimal_equivalent_in": 2.07,
+        "OD_metric_as_printed_mm": 52.48,
+        "OD_min_in": 2.065,
+        "OD_max_in": 2.075,
+        "height_in": 0.343,
+        "type": "shallow cup"
+      },
+      "fitment": "Component of applicable MPE-107R kit, listed there as MPS-59A",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Printed inch and metric OD disagree (2.070 inches converts to 52.578 mm); reconcile before exact CAD. Wall thickness and installed depth unknown."
+    },
+    {
+      "part_number": "MPC-147",
+      "source_id": "melling-expansion-plug-guide",
+      "pdf_page_1based": 9,
+      "values": {
+        "nominal_size_in": 2.1875,
+        "OD_decimal_equivalent_in": 2.194,
+        "OD_min_in": 2.184,
+        "OD_max_in": 2.204,
+        "height_in": 0.343,
+        "type": "deep cup"
+      },
+      "fitment": "Component of applicable MPE-107R kit",
+      "scope": "Published replacement-part data; not measured installed OEM geometry",
+      "remaining_gaps": "Cup section and installed seating depth."
+    },
+    {
+      "part_number": "MPP-554",
+      "source_id": "melling-expansion-plug-guide",
+      "pdf_page_1based": 3,
+      "values": {
+        "nominal_pipe_size_in": 0.375,
+        "length_in": 0.375,
+        "hex_socket_fractional_in": 0.3125,
+        "hex_socket_decimal_as_printed_in": 0.312,
+        "type": "Hex head socket"
+      },
+      "fitment": "Two included in applicable MPE-107R kit",
+      "scope": "Manufacturer dimensional table, visually reviewed2026-09-24",
+      "remaining_gaps": "Nominal pipe size is NOT actual outside diameter. Thread form, taper, actual OD and mounting locations must be resolved before CAD."
+    }
+  ]
+}

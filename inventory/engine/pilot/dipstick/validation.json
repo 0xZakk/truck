@@ -1,0 +1,128 @@
+{
+  "status": "candidate only; installation and oil calibration unaccepted",
+  "parameters": {
+    "blade_axial_length": 692.15,
+    "stem_width": 2.2,
+    "blade_thickness": 0.8,
+    "tip_width": 6.5,
+    "tip_length": 90,
+    "wave_amplitude": 3.0,
+    "stop_radius": 7.0,
+    "stop_height": 12.0,
+    "handle_wire_radius": 2.6,
+    "handle_height": 72.0,
+    "stamp": true
+  },
+  "units": "mm",
+  "shape_checks": {
+    "engine-oil-dipstick-blade": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1546.5743191938902,
+      "bounds_mm": [
+        [
+          -3.9977775788672054,
+          -0.4000001,
+          -692.1500000999999
+        ],
+        [
+          3.997777578867205,
+          0.4,
+          1e-07
+        ]
+      ]
+    },
+    "engine-oil-dipstick-handle": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4159.9688098883735,
+      "bounds_mm": [
+        [
+          -20.66345402173598,
+          -7.0000001,
+          -0.5
+        ],
+        [
+          14.890288331674782,
+          7.0000001,
+          75.58003653740542
+        ]
+      ]
+    }
+  },
+  "neighbor_checks": {
+    "block": {
+      "intersection_mm3": 163.6697241477513,
+      "distance_mm": 0.0,
+      "baseline_step_sha256": "fe81742dd879c3a4dbd6d4066c37d76f24a68c157f972943df2692a6261d3f55",
+      "interpretation": "unresolved passage/interface"
+    },
+    "oil-pan": {
+      "intersection_mm3": 0,
+      "distance_mm": 7.103692675920815,
+      "baseline_step_sha256": "57a1eea73d09075fb159afd633675f483793b2eb32aa079fc0e0399dbcb9e6ea",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "efi-upper-intake": {
+      "intersection_mm3": 0,
+      "distance_mm": 65.50298425090179,
+      "baseline_step_sha256": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "efi-lower-intake": {
+      "intersection_mm3": 0,
+      "distance_mm": 274.87980458731164,
+      "baseline_step_sha256": "2f12556c1254b98914428b0f4b65330ad2336cbab116b10e2d9ced1802655066",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "valve-cover": {
+      "intersection_mm3": 0,
+      "distance_mm": 48.911630579888566,
+      "baseline_step_sha256": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+      "interpretation": "no static solid interference in hypothesized pose"
+    },
+    "cylinder-head": {
+      "intersection_mm3": 0,
+      "distance_mm": 31.920084256015738,
+      "baseline_step_sha256": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+      "interpretation": "no static solid interference in hypothesized pose"
+    }
+  },
+  "pose": {
+    "position_cad_mm": [
+      -120,
+      170,
+      445
+    ],
+    "rotation_cad_deg": [
+      -8.5,
+      0,
+      0
+    ]
+  },
+  "tip_cad_mm": [
+    -120.0,
+    67.69371608664001,
+    -239.54732982595067
+  ],
+  "unverified": [
+    "Seating datum to tip length",
+    "Oil ADD/FULL calibration positions and range",
+    "Guide tube centerline/bore and block entry",
+    "Installed routing and handle location",
+    "Material grade and all cross sections",
+    "Extraction path and whole-engine moving clearances"
+  ],
+  "source_hashes": {
+    "reference/engine/pilot/dipstick/seller-overall.jpg": "0e1059e1fb57a1b172ba9cab8a1b4c03f4d6657e4e88e3fcaff860f9beeed03a",
+    "reference/engine/pilot/dipstick/seller-tip.jpg": "39c009aed61c3bd6dd16f21f6b569dcfee6b18959312ae933f3c9ee3bbcc2917",
+    "reference/engine/pilot/dipstick/seller-markings.jpg": "970444884c68314a5f54e4d8f1ee29bd48462017e46d83dc147dd9f9afcead89",
+    "reference/engine/pilot/dipstick/seller-id.jpg": "4c1781d1d94b3de82c00e42a7f0c6b1349340c2702ee5a54aa40c7aba1823380"
+  },
+  "module_sha256": "56c714db3e18b71c7917f1fe295a0be537610c8d0669fc4223fc6c9318d4102e",
+  "baseline_manifest_sha256": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
+  "outputs": {
+    "engine-oil-dipstick.glb": "40b381f4a404ea97effdca89ad47e2df18e12c77b00d7274c4a7aae82c3b7738",
+    "engine-oil-dipstick.step": "d2604f9a732c72d198b8b779ef96f8aaffe009f6f9b6043a1d4aa2d9b80e0f97"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "conditional-routing-diagnostic-only",
+  "installed_belt": false,
+  "results": [
+    {
+      "pump_y_mm": 0,
+      "cord_path_mm": 2822.770559872733,
+      "outside_radius_loop_mm": 2800.861616525459,
+      "outlet_overlap_mm3": 233.04189658350094,
+      "outlet_distance_mm": 0.0,
+      "passes_outlet_only": false
+    },
+    {
+      "pump_y_mm": -32,
+      "cord_path_mm": 2876.8879134565686,
+      "outside_radius_loop_mm": 2854.8453421318895,
+      "outlet_overlap_mm3": 233.04189658350094,
+      "outlet_distance_mm": 0.0,
+      "passes_outlet_only": false
+    }
+  ],
+  "candidate_sources_sha256": {
+    "accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "coolant_outlet_head_candidate.py": "adec968a825266690d44c8d1da6351a80a2c39686d4545cdba68f5c2454643c3",
+    "alternator_carrier_1994_candidate.py": "c35dfeb13d170f8ae1475be49746df54a483a93b1d4570d86b535efb22dff0b7",
+    "accessory_carrier_1994.py": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951"
+  },
+  "limits": [
+    "PumpY\u221232 is an unintegrated coordinated pump candidate; originalY0 retained as comparison.",
+    "No belt effective gauge, nominal fit, arm travel, traction or full-engine clearance is verified.",
+    "This exact solid test isolates the prior coolant-outlet obstacle only; it does not accept a belt assembly."
+  ]
+}

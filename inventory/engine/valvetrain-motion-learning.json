@@ -1,0 +1,193 @@
+{
+  "valvetrain": {
+    "summary": "The crank turns the cam at half speed. Each lobe raises a lifter and pushrod, rotating a rocker to open its valve. The spring closes the valve as the lobe falls.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Follow one cylinder",
+        "text": "Isolate a complete cylinder valve train to see its intake and exhaust valves together with their lifters, pushrods and rockers. Scrub the 720-degree crank control to follow the cycle.",
+        "part": "valvetrain-cylinder-1"
+      },
+      {
+        "title": "Inspect the cam",
+        "text": "The cam turns once per two crank revolutions. Separate intake and exhaust lobes repeat the cycle in firing order 1\u20135\u20133\u20136\u20132\u20134.",
+        "part": "camshaft"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-1": {
+    "summary": "Cylinder 1: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c1-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c1-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c1-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-2": {
+    "summary": "Cylinder 2: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c2-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c2-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c2-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-3": {
+    "summary": "Cylinder 3: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c3-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c3-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c3-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-4": {
+    "summary": "Cylinder 4: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c4-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c4-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c4-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-5": {
+    "summary": "Cylinder 5: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c5-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c5-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c5-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  },
+  "valvetrain-cylinder-6": {
+    "summary": "Cylinder 6: the intake valve admits mixture and the exhaust valve releases burned gas. Both mechanisms share the crank-cycle control.",
+    "limits": "Valve and pushrod lengths follow replacement catalogs; intake and exhaust spring heights follow service load-test dimensions. The smooth cam profile, rocker shape, spring winding and absolute mounting heights remain illustrative, and the parts installed in this truck have not been identified.",
+    "steps": [
+      {
+        "title": "Lifter to valve",
+        "text": "The pushrod follows a solved rigid linkage. Its cup and rocker contact are modeled; hydraulic lash adjustment is not simulated.",
+        "part": "c6-intake-pushrod"
+      },
+      {
+        "title": "Intake valve",
+        "text": "The rocker opens the valve against its spring. This cam curve is an illustrative replacement-catalog study.",
+        "part": "c6-intake-valve"
+      },
+      {
+        "title": "Exhaust valve",
+        "text": "The exhaust follows a different phase of the same 720-degree cycle.",
+        "part": "c6-exhaust-valve"
+      }
+    ],
+    "sources": [
+      "melling-camshaft-specifications",
+      "melling-pushrod-specifications",
+      "melling-stock-valve-specifications",
+      "melling-valve-progressive-size-chart-2025",
+      "melling-jb900-lifter-envelope"
+    ]
+  }
+}

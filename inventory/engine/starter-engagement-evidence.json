@@ -1,0 +1,46 @@
+{
+  "status": "provisional constrained engagement candidate, not a production joint reconstruction",
+  "sources": [
+    {"id": "ford-pmgr-starter-exploded", "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/1187056411.png", "reviewed": "Factory image identifies the separate forked drive lever, drive assembly, plunger-side connection, housing seal and solenoid. It does not dimension the linkage or establish this candidate's slot, spherical pads, groove or pivot geometry."},
+    {"id": "ford-pmgr-conventional-circuit", "url": "https://patents.google.com/patent/US5475270A/en", "reviewed": "Conventional prior-art discussion supports plunger-actuated engagement and spring-biased return. No production adoption or 1994 linkage dimensions inferred."}
+  ],
+  "constraints_mm": {
+    "upper_arm": 30,
+    "lower_arm": 32,
+    "pinion_travel": 12,
+    "solenoid_stroke": 11.25,
+    "pivot_starter_local": [0, -32, -16],
+    "clutch_shift_groove_z_rest": [-17.5, -14.5],
+    "clutch_shift_groove_root_radius": 16.5,
+    "clutch_collar_radius": 21,
+    "fork_pad_radius": 1.5,
+    "fork_pad_centers_rest": [[-18.5, 0, -16], [18.5, 0, -16]],
+    "front_seat_candidate_bore_radius": 13
+  },
+  "kinematics": {
+    "angle": "asin(12*fraction/32)",
+    "upper_pin_z": "-16-11.25*fraction",
+    "upper_pin_y": "-62+30*(1-cos(angle))",
+    "fork_pad_z": "-16+12*fraction",
+    "fork_pad_y": "-32*(1-cos(angle))",
+    "accommodation": "Upper pin slides transversely within the translating plunger clevis. Lower spherical pads slide laterally within an annular clutch groove while retaining axial contact. This is a provisional rigid linkage, not a production-construction claim.",
+    "return": "Prescribed fraction can reverse to zero and restores every replacement shape. Spring return force, friction and tooth-blocking are not solved."
+  },
+  "interfaces": [
+    "Housing fork passage widened to51mm with upper surface atz=-1.5;25mm radial clearance stops there to retain nose-bar attachment.",
+    "Clutch collar clearance21.2mm radius ends atz=1; original shaft/pinion front clearance remains.",
+    "Seal slot enlarged around the rotating stem; no elastomer deformation or sealing rating modeled.",
+    "Solenoid front seat bore enlarged to13mm radius for the stem's final-stroke envelope."
+  ],
+  "integration": {
+    "api": "Use starter_engagement.api(base3) beneath both existing explanation and solenoid geometry adapters. Keep root-owned solenoid explosion metadata wrapper in place.",
+    "parts": "Eight replacement definitions, no new occurrences. Default static/retracted pose.",
+    "motion": "parts(fraction,baseline) returns replacement shapes; switch.parts(fraction) supplies coordinated spring/contact shapes. This does not install a running-starter viewer animation."
+  },
+  "limits": [
+    "Fork pads and clevis slot are provisional, not recovered Ford production details.",
+    "No force, wear, tolerance-stack, thermal, electromagnetic or tooth-blocking simulation.",
+    "Existing manual flywheel mounting and tooth-profile assumptions remain unchanged.",
+    "Overrunning clutch internals and electrical lead connections remain unresolved."
+  ]
+}

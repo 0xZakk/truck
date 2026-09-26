@@ -1,0 +1,79 @@
+{
+  "installed": false,
+  "release_status": "blocked-installation",
+  "component_geometry_status": "pass",
+  "manifest_sha256": "261cbceefc6fa042178ae0b9393aa2c9e2451bd1a33a6c0cf14cdd0c4551d6fe",
+  "source_sha256": "aa064a85f0eec3d878315ee69cd998a0394d71e8bd1f5846ebffd7248e67b3ab",
+  "step_roundtrips": [
+    {
+      "id": "oil-pump-intermediate-shaft",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6232.7831873138875
+    },
+    {
+      "id": "oil-pump-drive-retainer",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 68.33306025423906
+    }
+  ],
+  "candidate_origin_mm": [
+    213.5,
+    56,
+    -95
+  ],
+  "neighbor_boolean_checks": 9,
+  "collisions": [
+    {
+      "candidate": "oil-pump-intermediate-shaft",
+      "neighbor": "crankshaft",
+      "volume_mm3": 895.007455
+    },
+    {
+      "candidate": "oil-pump-drive-retainer",
+      "neighbor": "crankshaft",
+      "volume_mm3": 23.243719
+    },
+    {
+      "candidate": "oil-pump-intermediate-shaft",
+      "neighbor": "block",
+      "volume_mm3": 757.463029
+    },
+    {
+      "candidate": "oil-pump-drive-retainer",
+      "neighbor": "block",
+      "volume_mm3": 39.647107
+    },
+    {
+      "candidate": "oil-pump-intermediate-shaft",
+      "neighbor": "main-cap-2",
+      "volume_mm3": 1767.125767
+    },
+    {
+      "candidate": "oil-pump-intermediate-shaft",
+      "neighbor": "oil-pump-rotor-shaft",
+      "volume_mm3": 273.325427
+    }
+  ],
+  "axis_lateral_error_mm": 134.67832045284794,
+  "pump_socket_across_flats_mm": 5.196152422706632,
+  "shaft_across_flats_mm": 7.924799999999999,
+  "shaft_length_mm": 114.80799999999998,
+  "candidate_top_z_mm": 19.80799999999998,
+  "distributor_bottom_z_mm": 42.0,
+  "required_changes": [
+    "Resolve block, cam, distributor and pump axis stations together from reference measurements.",
+    "Rebuild the provisional pump socket for the manufacturer hex dimension plus a justified fit allowance.",
+    "Add the distributor lower hex socket after reconciling shaft length and engagement depths.",
+    "Resolve block passage and retainer stop before claiming retained installation."
+  ],
+  "limits": [
+    "Uninstalled candidate. Existing distributor and pump axes are separated laterally; this shaft must not be stretched or tilted to bridge them.",
+    "Melling IS-74 establishes 4.520 inch length, .312 inch hex section and L & M ends. End profiles, orientation, chamfers and tolerances remain unverified.",
+    "The older Melling chart uses nominal 5/16 inch, while the current chart lists .312 inch; the 0.0127 mm difference is not a manufacturing tolerance.",
+    "Retainer is a separate illustrative split washer. Truck-specific retention architecture, dimensions, interference, axial station and block retaining shoulder remain unverified.",
+    "Pump-side candidate origin and 9 mm insertion are provisional. Existing pump socket is undersized and distributor lower socket is absent; no installed fit or motion is claimed.",
+    "Neighbor audit is static at zero crank angle; it intentionally diagnoses the proposed pump-side placement."
+  ]
+}

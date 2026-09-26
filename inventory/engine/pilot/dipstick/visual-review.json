@@ -1,0 +1,27 @@
+{
+  "reviewed": "2026-09-26",
+  "result": "standalone silhouette accepted as provisional specimen study; installed fit rejected",
+  "image": "reference/engine/pilot/dipstick/cad-review.png",
+  "image_sha256": "41a2d4a5a637771e5c5103d5a7e412729ebb68714ae978d68997e747590e1e8d",
+  "observations": [
+    "Open yellow loop remains open; stop and blade are connected material volumes",
+    "Two near-stop waves and widened reading end visible",
+    "Engineering stamp cut exists but is small in overall rendering",
+    "Tip is faceted approximation rather than measured stamped edge",
+    "Installed study passes through unresolved block material; no valid tube path established"
+  ],
+  "source_comparison": [
+    "Inspected all four saved seller photographs",
+    "Inspected owner passenger-side and driver-side engine-bay overviews"
+  ],
+  "acceptance": {
+    "cad_validity": true,
+    "source_silhouette_comparison": true,
+    "dimensional_production_accuracy": false,
+    "oil_calibration": false,
+    "installed_neighbor_fit": false,
+    "extraction_motion": false,
+    "browser_integration": "not performed; root-owned"
+  },
+  "validation_sha256": "2ff38284af386fdb9160c2bde65043577774dcab9585cb53fd3fcd9fb5f54481"
+}

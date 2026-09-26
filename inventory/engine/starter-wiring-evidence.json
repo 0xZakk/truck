@@ -1,0 +1,45 @@
+{
+  "status": "isolated provisional coil-end attachment study; not installed",
+  "sources": {
+    "ford-pmgr-conventional-circuit": {
+      "url": "https://patents.google.com/patent/US5475270A/en",
+      "local_capture": "reference/engine/ford-pmgr-us5475270a.html",
+      "reviewed": "Ford patent Figure 1/background describes conventional separate supply/control architecture, pull/hold coils and the power contact shunting the pull coil. Only that background topology is used. The patent invention and production adoption are not inferred."
+    },
+    "ford-starter-solenoid-test": {
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Testing%20and%20Inspection/Solenoid%20Test/",
+      "local_summary": "kb/sources/chg-starter-motor-bench-tests.md",
+      "reviewed": "Applicable factory description identifies S-to-M and S-to-frame continuity. It establishes circuit endpoints, not the physical locations of internal solder joints, lead passages or brush feed. No live electrical test procedure is provided by this extension."
+    }
+  },
+  "modeled_interfaces": [
+    "S terminal to aggregate pull winding",
+    "Aggregate pull winding to M terminal",
+    "S terminal to aggregate hold winding",
+    "Aggregate hold winding to solenoid shell/frame"
+  ],
+  "geometry_assumptions": {
+    "conductor_radius_mm": 0.4,
+    "sleeve_inner_radius_mm": 0.45,
+    "sleeve_outer_radius_mm": 0.65,
+    "feedthrough_bore_radius_mm": 0.75,
+    "routing": "All four piecewise straight routes and rounded junctions are provisional packaging studies; they are not traced factory routing.",
+    "feedthroughs": "Candidate bores replace only the study bobbin and fixed-pole shapes. Accepted source files are preserved.",
+    "terminations": "Positive-volume attachment into aggregate coil envelopes and assigned terminal/frame surfaces demonstrates geometric contact only. Coil envelopes must not be interpreted as solid copper shorting the winding ends.",
+    "shared_s": "The two S conductors join at the S terminal. Their dielectric sleeves may merge near that same-node junction; sleeves are cut clear of both conductor cores."
+  },
+  "integration": {
+    "new_parts": 8,
+    "replacement_parts": ["starter-solenoid-winding-bobbin", "starter-solenoid-fixed-pole"],
+    "candidate_api": "starter_wiring.parts() returns local starter-coordinate shapes, consistent with starter_solenoid.parts(). Root integration must apply starter.FRAME exactly once. Place starter_wiring.api(base_api) downstream of the existing solenoid/explanation wrappers for both starter_motor.build and starter_solenoid.build; pass that same wrapped API to starter_wiring.build. The wrapper replaces bobbin/pole shapes and updates coil-related metadata while preserving add/group calls.",
+    "metadata": "starter_wiring.api replaces the obsolete all-coil-leads-absent gap and affected role explanations. Merge starter-wiring-learning.json after starter-solenoid-learning.json. starter_wiring.circuit preserves the logical pull/hold topology but lists four modeled coil interfaces and keeps physical_wiring_complete false.",
+    "geometry_preservation": "Integration-only update preserves ROUTES, CONTACTS, REPLACED, route() and parts() AST hash169a2bbf99c58a1dc086c45a8a62a9ed150538bc3dfa6b9acfb2a46e3c51e0ab. Existing geometry validation refers to pre-overlay source SHA0484e7556d098b869afe46bd698c74357dcf6fa01249a2dc0f5057259c43a3ca; metadata checker records the new source SHA and geometry-preservation assertion."
+  },
+  "remaining_gaps": [
+    "Motor brush feed at M and frame-return brush connections are absent.",
+    "Commutator-to-armature winding connections and winding topology remain aggregate, not a closed electrical solver model.",
+    "External battery/control cables and their support/insulation are absent.",
+    "No source establishes this 1994 solenoid's coil-end exit locations, lead gauge, insulation material, joining process or ground attachment construction.",
+    "Dielectric strength, resistance, ampacity, electromagnetic force and thermal durability are not validated."
+  ]
+}

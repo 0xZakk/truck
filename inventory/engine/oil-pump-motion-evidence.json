@@ -1,0 +1,50 @@
+{
+  "status": "Conjugate kinematic study; production rotor dimensions and hydraulic performance unverified",
+  "primary_research": {
+    "id": "gerotor-conjugate-profile-liu-2015",
+    "title": "Profile Design and Numerical Calculation of Instantaneous Flow Rate of a Gerotor Pump",
+    "authors": "Hao Liu, Jae-Cheon Lee, Alex Yoon, Sang-Tae Kim",
+    "year": 2015,
+    "doi": "10.4236/jamp.2015.31013",
+    "url": "https://www.scirp.org/journal/paperinformation?paperid=53600",
+    "applicable_sections": "2.1–2.2, especially circular-cutter family and inward equidistant envelope; circular-arc outer teeth",
+    "scope": "Mathematical construction only. The paper is not a Ford application or production geometry reference. Its hydraulic calculations are not implemented here."
+  },
+  "factory_sources": ["fsm-6f023139b5f8", "fsm-59c6d1fb5ae3"],
+  "inherited_manufacturer_constraint": {
+    "source": "https://melling.com/wp-content/uploads/2025/05/Intermediate_Shaft_2023-08-08_18-05-35-083123.pdf",
+    "part": "IS-74",
+    "length_mm": 114.808,
+    "hex_across_flats_mm": 7.9248,
+    "change": "None"
+  },
+  "construction": {
+    "inner_teeth": 4,
+    "outer_teeth": 5,
+    "eccentricity_mm": 3.5,
+    "cutter_center_radius_mm": 26,
+    "cutter_radius_mm": 8,
+    "outer_root_radius_mm": 26.5,
+    "outer_body_radius_mm": 29.3,
+    "rotor_height_mm": 24,
+    "normal_running_gap_mm": 0.025,
+    "inner_curve": "C(t)=(26cos(t)-3.5cos(5t),26sin(t)-3.5sin(5t)); inward unit normal=(-Cy',Cx')/|C'|; profile=C+8.025*normal. 720 samples interpolated by periodic spline.",
+    "outer_cavity": "Radius26.5 root circle with five radius8 circular teeth whose centers are radius26 at72deg intervals.",
+    "conjugacy": "In the inner rotor frame an outer tooth center follows C(t), with t=-inner_angle/5. Envelope normals meet the corresponding circular cutter, so equal-direction4:5 angular velocity preserves conjugate geometry, offset by the deliberate normal gap."
+  },
+  "motion": {
+    "distributor_intermediate_inner_shaft_per_crank": -0.5,
+    "outer_rotor_per_crank": -0.4,
+    "axis": "Local Z after existing20deg group tilt",
+    "retainer": "Co-rotates with intermediate shaft because its existing bore is hexagonal; grip and axial retention mechanics remain provisional.",
+    "continuous_socket_fit": "All three coaxial shafts use the same angular motion; relative hex phase and10mm upper/9mm lower axial insertion are invariant for every angle.",
+    "lower_coupling": "Provisional D-flat: shaft radius4.75 and flatX3.7; inner bore radius4.78 and flatX3.73. Flat extends shaft-localZ-21..4 covering entire rotor engagement. Clearance fit does not model loaded face deflection/contact."
+  },
+  "limitations": [
+    "Four/five tooth count comes from the earlier interpretation of the inspection illustration, not a dimensioned manufacturing print.",
+    "Every rotor radius, normal gap, axial dimension, shaft-flat dimension and tilt is provisional.",
+    "Periodic spline approximates the analytic envelope; sampled interference and gap checks do not certify manufacturing tolerances.",
+    "Existing crossed-helical cam gears retain their prior source and dimensional caveats; repeating their motion check does not validate production tooth design.",
+    "No oil pressure, flow rate, sealing, cavitation, port timing, strength or serviceability certification is claimed."
+  ]
+}

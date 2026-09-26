@@ -1,0 +1,41 @@
+{
+  "water-pump-assembly": {
+    "summary": "The water pump mounts directly to the machined front of the engine block. Its impeller projects behind the mounting flange into the front coolant opening. Four fasteners clamp the casting through one shaped gasket.",
+    "limits": "The Gates44009 and Fel-Pro13816 identities are application-supported. Exact replacement photos and the ATKDFF8 automotive block-front photo establish interface topology. Every modeled dimension, pump axis offset, bolt size, local passage route and accessory support coordinate remains provisional. The larger fifth gasket opening is visible but its function is not yet established. The deeper coolant jacket, internal bearing elements and mechanical seal construction remain incomplete. The radiator inlet cast arm and hose bead are now represented. Their dimensions, angle and internal passage are assumed; no hose sizing or hydraulic performance is established.",
+    "steps": [
+      {
+        "title": "Find the block interface",
+        "text": "The rear flange and gasket meet the block front face. The model opens the demonstrated front receiver while retaining the front cylinder wall; it does not invent an extension between a floating pump and the block.",
+        "part": "water-pump-gasket"
+      },
+      {
+        "title": "Inspect the impeller",
+        "text": "The shaft drives the impeller inside the coolant space. Its backing disk lies behind the casting flange. The current six-vane shape is an educational approximation, not a measured production impeller.",
+        "part": "water-pump-impeller"
+      },
+      {
+        "title": "Follow the large inlet",
+        "text": "The large hose neck enters the cast pump body through an open passage into the wet impeller chamber. A retaining bead helps the hose stay on the neck. The modeled passage explains connectivity; its shape is not a measured pump volute.",
+        "part": "water-pump-housing"
+      },
+      {
+        "title": "Follow the mounting load",
+        "text": "Four modeled fastener envelopes pass through the housing and gasket into blind block sockets. Their diameter, length, head and engagement are assumptions and must not be used to select real replacement bolts.",
+        "part": "water-pump-mounting-screw-1"
+      },
+      {
+        "title": "Separate known topology from open questions",
+        "text": "The gasket has four small mounting apertures and a larger fifth opening beside them. The model preserves that separate opening while leaving its function and actual internal routing unresolved.",
+        "part": "water-pump-gasket"
+      }
+    ],
+    "sources": [
+      "water-pump-mounting-topology",
+      "gates-water-pumps-2011",
+      "fel-pro-vin-y-gaskets",
+      "system-7b01cf423275",
+      "system-628ac5b60213",
+      "water-pump-inlet-v3-topology"
+    ]
+  }
+}

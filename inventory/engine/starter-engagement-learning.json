@@ -1,0 +1,17 @@
+{
+  "starter-drive-assembly": {
+    "summary": "A constrained fork-and-slot linkage connects the provisional solenoid stroke to the sliding clutch and ten-tooth pinion.",
+    "limits": "Factory architecture supports a fork lever and drive assembly, but not these dimensions or detailed joint construction. The30/32mm arms, slotted clevis, spherical pads and annular shift groove are provisional. Prescribed CAD motion is not a force, wear, tooth-blocking or starting-sequence simulation. The overrunning clutch interior and transmission-side mounting support remain absent.",
+    "steps": [
+      {"title": "Accommodate the upper arc", "text": "The upper pin follows the rotating lever rather than translating in a straight line. A transverse slot in the plunger clevis permits its lateral movement while maintaining the solenoid axis.", "part": "starter-solenoid-clevis-pin"},
+      {"title": "Shift through the fork", "text": "Two integral spherical fork pads contact the axial faces of the clutch's annular shift groove. They slide laterally within the groove as the lever rotates; this construction is a candidate solution, not a verified production detail.", "part": "starter-drive-lever"},
+      {"title": "Retain torque coupling", "text": "The clutch sleeve translates on the existing provisional shaft splines. A12mm drive stroke corresponds to11.25mm plunger travel with the assumed arm lengths.", "part": "starter-drive-clutch"},
+      {"title": "Reach the ring and reset", "text": "The pinion advances from3.525mm axial clearance to8.475mm overlap with the indexed manual flywheel. Reversing the prescribed fraction restores the resting geometry; real spring forces and tooth-blocking are not modeled.", "part": "starter-drive-pinion"},
+      {"title": "Keep the freewheel boundary", "text": "A real overrunning clutch prevents the running engine from overspeeding the starter armature. The displayed clutch is still an envelope and sliding interface, not a functioning internal one-way mechanism.", "part": "starter-drive-clutch"}
+    ],
+    "troubleshooting": [
+      {"title": "Do not confuse clearance with service fit", "text": "Sampled interference checks establish only the candidate's geometry. They do not verify production bellhousing depth, clutch function, tooth engagement under load or safe electrical performance.", "part": "starter-drive-end-housing"}
+    ],
+    "sources": ["ford-pmgr-starter-exploded", "ford-pmgr-conventional-circuit", "jn-410-14033-starter", "tuffstuff-ford-starter-boundaries"]
+  }
+}

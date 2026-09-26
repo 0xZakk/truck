@@ -1,0 +1,85 @@
+{
+  "installed": true,
+  "manifest_sha256": "550892c05fd3bf618674d89a8be4b5556205ae1f98f08ccd2a65875476526fce",
+  "source_sha256": {
+    "cad/engine/starter_motor.py": "3841a065c9bb465306a2b257e0329da021d4886324c127c17a47a3ecf274a433",
+    "cad/engine/starter_solenoid.py": "2f94ce43bc2fbc3888ca4d69049326cba78180ff08ff272b9f40b77021f5d89a",
+    "cad/engine/starter_engagement.py": "b2b4c23e5cf39cea91a114b9bf7d7558182ff9c96649354377201970e0ccca3c"
+  },
+  "comparison_method": "Expected geometry independently STEP-roundtripped before intersection; original volume tolerance remains0.02mm3.",
+  "stroke_samples": 17,
+  "pose_comparisons": 153,
+  "exact_checks": 945,
+  "contact_gaps_mm": [
+    [
+      11.25,
+      11.25
+    ],
+    [
+      10.546875,
+      10.546875
+    ],
+    [
+      9.84375,
+      9.84375
+    ],
+    [
+      9.140625,
+      9.140625
+    ],
+    [
+      8.4375,
+      8.4375
+    ],
+    [
+      7.734375,
+      7.734375
+    ],
+    [
+      7.03125,
+      7.03125
+    ],
+    [
+      6.328125,
+      6.328125
+    ],
+    [
+      5.625,
+      5.625
+    ],
+    [
+      4.921875,
+      4.921875
+    ],
+    [
+      4.21875,
+      4.21875
+    ],
+    [
+      3.515625,
+      3.515625
+    ],
+    [
+      2.8125,
+      2.8125
+    ],
+    [
+      2.109375,
+      2.109375
+    ],
+    [
+      1.40625,
+      1.40625
+    ],
+    [
+      0.703125,
+      0.703125
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "failures": [],
+  "scope": "Eight rigid saved-STEP components move through the prescribed stroke against all saved neighbors; return spring is regenerated at each sample as an explicit deformation exception. Viewer remains static; no loaded starting, continuous collision or production fit claim."
+}

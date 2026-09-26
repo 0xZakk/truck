@@ -1,0 +1,54 @@
+{
+  "id": "accelerator-cable-bracket",
+  "title": "Accelerator cable mounting bracket",
+  "status": "provisional photo-informed teaching candidate",
+  "function": "Anchors the cable outer housing while the inner cable pulls throttle linkage.",
+  "troubleshooting": [
+    "Inspect mounting ears and cable housing retainer for looseness or cracks.",
+    "Check routing, housing seating and full return with engine stopped.",
+    "Missing linkage and cables prevent validating real operating travel."
+  ],
+  "sources": {
+    "pilot-throttle-bracket-factory": {
+      "title": "1994 4.9L throttle body factory service procedure",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/",
+      "supports": [
+        "shared throttle-body/bracket retention",
+        "assembly order"
+      ],
+      "diagram_status": "linked diagram researched; endpoint timed out, not visually inspected"
+    },
+    "pilot-throttle-bracket-photo": {
+      "title": "Salvage 4.9 bracket photo, eBay item 375325588661",
+      "url": "https://www.ebay.com/itm/375325588661",
+      "image_url": "https://i.ebayimg.com/images/g/YbQAAOSwAqBl~O8i/s-l1200.jpg",
+      "supports": [
+        "formed tapered web",
+        "central aperture",
+        "round and rectangular end openings",
+        "forked mounting end"
+      ],
+      "limits": "No dimensions or verified 1994 manual-transmission variant."
+    }
+  },
+  "integration": {
+    "definition": "accelerator-cable-bracket",
+    "parent": "throttle-assembly",
+    "position_cad_mm": [
+      0,
+      0,
+      0
+    ],
+    "rotation_cad_deg": [
+      0,
+      0,
+      0
+    ],
+    "exploded_offset_mm": [
+      130,
+      100,
+      0
+    ],
+    "conditional_change": "Two nuts at Y=74 require +2 mm X shift; engagement remains unresolved."
+  }
+}

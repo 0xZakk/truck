@@ -1,0 +1,134 @@
+{
+  "status": "FAIL sampled local motion",
+  "baseline_manifest_sha256": "90807873b8c58234650e03b08557e524044f800d8fc3de97e212dd644e816cb9",
+  "source_step_hashes": {
+    "cad/engine/candidates/valve-station/baseline/block.step": "c3aeed637053e2a0973b1a3115fb8988d7a327937dc1d757f3ecf04b606cb043",
+    "cad/engine/candidates/valve-station/baseline/valve-cover.step": "99c0f4af1d9f57c0c7baeeeaa6367adde721b382e2f2d36d0651557a8bca8398",
+    "cad/engine/candidates/valve-source-layout/cylinder-head.step": "f8e0afa4f6f3fcd275c3fb3ed208fe15080e145eeb4c784ab55ec2c56b8aace5",
+    "cad/engine/candidates/valve-layout/camshaft.step": "ed821c2c4d9e9efa2b7e097f5ac049bbece52a2e04e06b9b080a3b730df08c45",
+    "cad/engine/candidates/valve-station/baseline/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-shell.step": "609b6fe911174a57817d2e547eb9d3cd461c8266bf911cb8dfc2585e995769a0",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-insulator.step": "25fba8183e7bde6447b05b650c22de77c7994cd31773f402b21671c627e96703",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-center-electrode.step": "0e4e707c1be2e3f3fafb3352bcdc58c8fe0777d253903586c7dc5f04e1a8d1c1",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-copper-core.step": "b1675acc2a16301b4cc805c6ca66ce9afaddafd766863f0edbf19a8cec71ed91",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-resistor.step": "dfb277a258209a9e05de8b71ae47aba6833c6d922d7ba2960ef6e1cd6d836b56",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-lower-seal.step": "ebaaf5d6cacb6169e88fc5aa3e03a58c46a7c10c660a97063e9b9476e969044d",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-upper-seal.step": "a6593e7d553e64138f539936809892c07a28bb1b4faf4379d882441b9643eaed",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-terminal.step": "d0fe8cc055bf79bfddd4565687f2e88306c06ee865f214bdfc3c0e005a72b6ec",
+    "cad/engine/candidates/valve-station/baseline/spark-plug-ground-electrode.step": "a2ea56aefba971c761afe288e6503f6bc8f03f88d73a0f67fd1cf235bd6d0dc3",
+    "cad/engine/candidates/valve-source-layout/intake-valve.step": "e3adf6dab531dfc187dafdb642d3a8a431423c9a70a7ae5bac870924bad2c3d0",
+    "cad/engine/candidates/valve-source-layout/intake-spring.step": "44fb933ab8d2af83e4878e728b5514dd26f34be4cce7f5f8209e6bf978d1ae5f",
+    "cad/engine/candidates/valve-station/baseline/spring-retainer.step": "bab8c35d7411a40df217a2e75bb6454a8f1efb15a1af66f8e49869445d6f096b",
+    "cad/engine/candidates/valve-station/baseline/valve-keeper.step": "9ed1ad6ba50e8fc3ddc37d752b55136289baac6649f86f36d1890eead0f7228f",
+    "cad/engine/candidates/valve-source-layout/valve-seal.step": "050e47dbe55b3fb4bacb0d3de679f03668601ab9a37c49132ae936753fb9f2b0",
+    "cad/engine/candidates/valve-source-layout/pushrod.step": "60757ad3c17c21ad742185bbee758662788c6f8e55531461bea7a584d204d871",
+    "cad/engine/candidates/valve-source-layout/rocker-arm.step": "f5d88179f42aefe10cea0609b883104f189e25504f552de648fba78326329427",
+    "cad/engine/candidates/valve-layout/rocker-fulcrum.step": "593004a55f957057483a735c1a9ef9f59c481d9098b3ecef94ee9d90e7f5012e",
+    "cad/engine/candidates/valve-station/baseline/rocker-bolt.step": "9fa2d2d5e76b61501ec24ee0b7a86328b0820c3038c9d075e4cd980880096c95",
+    "cad/engine/candidates/valve-station/baseline/rocker-guide.step": "ae058fd3703833663e82cab0533e60b1fb980e60a6a8d14100b24b22e18d8800",
+    "cad/engine/candidates/valve-source-layout/lifter-body.step": "b2bc916bdb09ebc2d8bb96eb68d6556a1d19a73e2350d94f9cfd331cd59b0649",
+    "cad/engine/candidates/valve-station/baseline/lifter-plunger-spring.step": "e33cc8c6d9915d6753bf3a5d49207958c6aa822bcbc6a163d3335c8928388fdf",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-retainer.step": "cda47ec2bef7aed7cf4bf09f5933eadc65d384383f0b8030a55c349ff060f2cd",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-spring.step": "88845c456bc7f0f11d87109fb18ec66b05000d61c26a01ad6248615545dae006",
+    "cad/engine/candidates/valve-station/baseline/lifter-check-ball.step": "6c0f4fc519f21f2ffdbdcc3627e756436743f0053e1ed810bcdedd051f21f4a0",
+    "cad/engine/candidates/valve-station/baseline/lifter-plunger.step": "77b115498bad2b90b703def022941f3ebbffffcb42f76c53452cd77457951cd7",
+    "cad/engine/candidates/valve-station/baseline/lifter-metering-disc.step": "e382265f91fd45b97f8d31981e00d541a50ed05fed9cfdd873ffbcb2bc01f874",
+    "cad/engine/candidates/valve-source-layout/lifter-pushrod-cup.step": "586abe49087298ff3946824ce44d4caa5f820e7595338039777176d2117cdaca",
+    "cad/engine/candidates/valve-station/baseline/lifter-lock-ring.step": "f6bdbc8ab3661043d5c609eda09167dd21cc76e7ae52afa1a1209391d958643b",
+    "cad/engine/candidates/valve-source-layout/exhaust-valve.step": "6ec918e0d44c07d76019e68f93c4ea3c4efd021018304d975ffec349dc12be0c",
+    "cad/engine/candidates/valve-source-layout/exhaust-spring.step": "a05fa4e942f41a90626db0ee6a676a9df0de065c6b702c67dc4f8c8113f09dbe"
+  },
+  "crank_angles_deg": [
+    0,
+    246,
+    468
+  ],
+  "exact_intersections": 277,
+  "contact_checks": 48,
+  "max_contact_gap_mm": 1.2917666936118621e-11,
+  "max_pushrod_closure_error_mm": 5.684341886080802e-14,
+  "minimum_helix_pitch_minus_wire_diameter_mm": 0.5507660245543251,
+  "max_pad_slide_mm": 1.0452576944475886,
+  "overlap_failure_threshold_mm3": 0.1,
+  "failures": [
+    {
+      "crank_deg": 0,
+      "a": "valve-cover",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 278.9724429061931
+    },
+    {
+      "crank_deg": 0,
+      "a": "valve-cover",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 279.5214444742928
+    },
+    {
+      "crank_deg": 0,
+      "a": "c1-intake-pushrod",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 6.26224452922056
+    },
+    {
+      "crank_deg": 0,
+      "a": "c1-exhaust-pushrod",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 6.256089770134942
+    },
+    {
+      "crank_deg": 246,
+      "a": "valve-cover",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 278.9724429061931
+    },
+    {
+      "crank_deg": 246,
+      "a": "valve-cover",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 513.2131631414193
+    },
+    {
+      "crank_deg": 246,
+      "a": "c1-intake-pushrod",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 6.26224452922056
+    },
+    {
+      "crank_deg": 246,
+      "a": "c1-exhaust-pushrod",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 11.431042735181116
+    },
+    {
+      "crank_deg": 468,
+      "a": "valve-cover",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 508.6830148571104
+    },
+    {
+      "crank_deg": 468,
+      "a": "valve-cover",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 279.5214444742928
+    },
+    {
+      "crank_deg": 468,
+      "a": "c1-intake-pushrod",
+      "b": "c1-intake-rocker",
+      "overlap_mm3": 11.44113976347657
+    },
+    {
+      "crank_deg": 468,
+      "a": "c1-exhaust-pushrod",
+      "b": "c1-exhaust-rocker",
+      "overlap_mm3": 6.256089770134942
+    }
+  ],
+  "scope": "Cylinder1 intake/exhaust candidate vs saved block/head/cover/spark plug/piston and candidate cam; unchanged rigid-group internal pairs reuse static audit.",
+  "limits": [
+    "Sampled clearance only;3 poses not continuous proof.",
+    "Spring uses sourced installed height with assumed6turn constant-pitch ground ends; not production winding or force model.",
+    "Replacement valve/pushrod/lifter-body lengths enforced; internal lifter seat and rocker construction remain assumed. Not OEM cam law or head galleries.",
+    "Other10 lobes remain original shapes; other cylinder valvetrains were not animated."
+  ]
+}

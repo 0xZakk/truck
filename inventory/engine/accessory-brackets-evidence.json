@@ -1,0 +1,29 @@
+{
+  "complete": false,
+  "verified_production_fit": false,
+  "source_capture": "reference/engine/ford-accessory-brackets-reviewed.json",
+  "source_id": "ford-accessory-brackets",
+  "sourced_topology": {
+    "shared_ps_ac_bracket": "Ford names separate attachments to cylinder block and cylinder head.",
+    "alternator_bracket": "Ford distinguishes bottom attachment from other engine attachments and identifies alternator pivot fastener separately."
+  },
+  "construction_study": {
+    "castings": ["shared PS/A-C open support frame", "separate alternator open support frame"],
+    "fasteners": "Three PS, four A/C, two alternator and four engine fasteners: all counts except Ford's two alternator mounting bolts are study assumptions.",
+    "ps_mount_face_x": 432.56,
+    "ac_mount_face_x": 432.56,
+    "ac_mount_bores_yz": [[210, 60], [210, 140], [350, 60], [350, 140]],
+    "alternator_mount_face_x": 438.56,
+    "block_seats_xyz": [[373, 90, 220], [373, -100, 220]],
+    "head_seats_xyz": [[373, 90, 300], [373, -100, 310]],
+    "engine_blind_boss": "R12 mm boss X349..373; R5.2 mm smooth thread-envelope bore X357..373; bolt tip X359 gives 14 mm engagement and 2 mm blind-end clearance. Geometry is assumed and closed to internal galleries.",
+    "head_adapter_frame": "Local cylinder-head shape, installed Z255.5. Coil-bracket bosses at engine X-95/-20 are remote from these X349..373 front attachment bosses."
+  },
+  "limits": [
+    "No verified factory bracket part number, casting dimensions, web/rib contours, hole coordinates or bolt grades.",
+    "Open ring-and-web geometry explains load paths; it is not a production or fabrication drawing.",
+    "Smooth engagement envelopes omit actual threads, torque/preload, contact mechanics, thermal growth and belt-load deflection.",
+    "Tensioner and Thermactor supports are not silently assigned to these brackets.",
+    "All accessory stations and mounting interfaces remain provisional."
+  ]
+}

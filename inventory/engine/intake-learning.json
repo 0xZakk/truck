@@ -1,0 +1,600 @@
+{
+  "regulator-vacuum-line": {
+    "summary": "The regulator references intake manifold pressure through a vacuum hose. This lets it regulate the pressure difference across the injectors rather than fuel pressure relative to outside air alone.",
+    "limits": "Ford confirms the vacuum connection. The dedicated plenum fitting, hose route, dimensions and sealing geometry are assumptions; the actual truck may route this through a shared vacuum harness. No pressure or leak-rate simulation is implemented.",
+    "steps": [
+      {"title": "Communicate manifold pressure", "text": "An open plenum port and fitting lead into the hose. The modeled port is an illustrative location, not a production drilling specification.", "part": "regulator-vacuum-fitting"},
+      {"title": "Reference the diaphragm chamber", "text": "The hose fits around the regulator nipple and reaches the spring side of the diaphragm. This connection is distinct from the fuel supply and return passages.", "part": "regulator-vacuum-hose"}
+    ],
+    "troubleshooting": [],
+    "sources": ["system-750bd1047639", "system-73d3dd2d32e7"]
+  },
+  "induction": {
+    "summary": "The EFI intake is built from two castings. Air passes from the throttle interface into a shared plenum, through six curved runners, and down to the cylinder-head intake ports.",
+    "limits": "This is a layout reconstruction. Factory references support component identities and architecture. Runner shapes, mounting dimensions and installed positions remain provisional. Wiring, vacuum hoses, tank-side fuel hoses and EGR remain incomplete.",
+    "steps": [
+      {
+        "title": "Shared plenum and long runners",
+        "text": "The upper casting distributes incoming air among the six passages. Use Cutaway to inspect its hollow plenum and runner bores. These passages belong to a single casting.",
+        "part": "efi-upper-intake"
+      },
+      {
+        "title": "Lower manifold",
+        "text": "The lower casting turns air toward the head. Six separate injector assemblies fit into modeled sockets at this end of the intake. Socket and port profiles are provisional.",
+        "part": "efi-lower-intake"
+      },
+      {
+        "title": "A sealed joint",
+        "text": "A separate gasket seals the upper-to-lower joint. Seven retaining studs hold the castings together; their count comes from the truck service procedure.",
+        "part": "intake-studs"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Leaks at a sealing joint",
+        "text": "The gasket interfaces must seal the intake air path. A damaged gasket or poorly seated joint can admit unwanted air. The model identifies those interfaces; it does not perform a vacuum-leak diagnosis.",
+        "part": "efi-upper-intake-gasket"
+      },
+      {
+        "title": "Missing connections matter",
+        "text": "The wiring, vacuum hoses, PCV and EGR connections are part of the installed system. Their current absence is a modeling gap."
+      }
+    ],
+    "sources": [
+      "fsm-212bf152ff88",
+      "fsm-9e1b0b719d0e",
+      "efi-intake-drawing"
+    ]
+  },
+  "throttle-assembly": {
+    "summary": "Two butterfly plates share a shaft. Moving the throttle-opening slider turns them together, changing how much of each bore is obstructed.",
+    "limits": "Factory references support twin bores, a separate gasket, four mounting studs/nuts, an IAC valve and a TPS. Dimensions and internal packaging remain provisional. Linkage, return spring, bracket, plate screws, IAC fasteners and harness are still missing.",
+    "steps": [
+      {
+        "title": "Air passages",
+        "text": "The twin bores lead into the shared upper plenum. Use See through covers to watch the plates inside.",
+        "part": "throttle-housing"
+      },
+      {
+        "title": "Paired plates",
+        "text": "A common shaft coordinates the two discs. At 90 degrees the idealized discs are edge-on to the incoming air. Production closed and full-open stops still need verification.",
+        "part": "throttle-moving"
+      },
+      {
+        "title": "Idle uses another path",
+        "text": "The IAC-controlled bypass is a separate passage around the plates. The model now includes two passages and an unvented IAC study; the installed valve variant is unverified.",
+        "part": "idle-air"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate throttle opening from idle control",
+        "text": "Closed butterfly plates do not mean the real engine has no air supply: the IAC meters a separate bypass path. The viewer does not simulate idle speed or air flow."
+      },
+      {
+        "title": "Sealing interface",
+        "text": "The separate gasket seals the body to the upper manifold. Inspect its position in the exploded view.",
+        "part": "throttle-gasket"
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "truck-throttle-service",
+      "truck-throttle-catalog"
+    ]
+  },
+  "fuel-system": {
+    "summary": "The supply rail feeds six solenoid-operated injectors. Each injector meters fuel by opening for a controlled time. The vacuum-referenced regulator returns excess fuel toward the tank.",
+    "limits": "Source diagrams establish the architecture and internal component identities. All geometry and installed stations are provisional. Rail supports, spring-lock couplings, pressure-test valve, wiring, vacuum hose and calibrated fuel paths remain incomplete.",
+    "steps": [
+      {
+        "title": "Shared supply",
+        "text": "A hollow rail feeds six injector cups. The separate return tube connects the regulator outlet toward the tank.",
+        "part": "fuel-rail-assembly"
+      },
+      {
+        "title": "Inside one injector",
+        "text": "Explore the coil, armature, needle, spring, inlet filter, body and seals. Pulse duration meters fuel; this model does not predict flow or spray.",
+        "part": "fuel-injector-1"
+      },
+      {
+        "title": "Pressure balance",
+        "text": "The diaphragm senses fuel pressure on one side and manifold pressure plus spring load on the other. The return valve opens to bypass excess fuel.",
+        "part": "fuel-regulator"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Distinguish the seals",
+        "text": "Each injector has an upper rail seal and a lower manifold seal. The model keeps their identities separate. Fuel-pressure testing and service require the applicable factory procedure.",
+        "part": "injector-1-upper-seal"
+      },
+      {
+        "title": "Do not infer flow from a visible opening",
+        "text": "Actual injector calibration depends on pressure, pulse duration and nozzle geometry. These study dimensions are not flow specifications."
+      }
+    ],
+    "sources": [
+      "system-bd3903b7892e",
+      "system-57b3dbc66361",
+      "system-750bd1047639"
+    ]
+  },
+  "idle-air": {
+    "summary": "The IAC solenoid moves a reverse-seated pintle to meter air through a path around the throttle plates. The controller uses it to manage idle and changing loads.",
+    "limits": "The manual illustrates unvented and vent/filter variants. This is an unvented teaching study, with unverified installed applicability, dimensions and routing. It has no pressure, duty-cycle or idle-speed simulation.",
+    "steps": [
+      {
+        "title": "Independent bypass",
+        "text": "Two openings connect the upstream and downstream sides of the throttle to the valve chamber.",
+        "part": "iac-valve-body"
+      },
+      {
+        "title": "Electromagnetic actuator",
+        "text": "The coil acts on the armature, which moves the pintle and changes the bypass opening.",
+        "part": "iac-armature"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Identify the variant first",
+        "text": "The factory text gives different serviceability for the two illustrated valve types. Do not infer that the installed valve can be cleaned from this model."
+      }
+    ],
+    "sources": [
+      "system-1cf529afa81d",
+      "truck-throttle-operation"
+    ]
+  },
+  "throttle-sensor": {
+    "summary": "The TPS is a rotary potentiometer. A wiper turns with the throttle shaft over a curved resistance track, producing the throttle-position signal.",
+    "limits": "The track and wiper illustrate the factory operating description. Their dimensions, packaging and angular/voltage calibration are unverified. No electrical diagnostic simulation is provided.",
+    "steps": [
+      {
+        "title": "Turn the shaft",
+        "text": "Use Throttle opening and See through covers to watch the sensor rotor and wiper move together.",
+        "part": "throttle-sensor-moving"
+      },
+      {
+        "title": "Stationary track",
+        "text": "The resistance track remains fixed while the wiper moves. Three electrical circuits connect reference, return and signal; harness details remain missing.",
+        "part": "tps-resistance-track"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Mechanical and electrical faults differ",
+        "text": "A freely moving throttle can still have a sensor or wiring problem. The geometric animation does not validate the electrical signal."
+      }
+    ],
+    "sources": [
+      "system-5691d2ae0a6c",
+      "system-f6b16c0f51f5"
+    ]
+  },
+  "exhaust": {
+    "summary": "Separate front and rear castings collect exhaust from three cylinders each. The passages merge into two outlets.",
+    "limits": "Manufacturer references support the split castings and rounded-rectangular entry shapes. Both entry sets, the front collector, a three-part lifting-eye mounting study and a provisional EGR fitting/tube joint are represented. Port dimensions, casting identity, wall thickness, installed positions and EGR routing remain unverified. The rear collector contour, remaining manifold fasteners, air-injection hardware and exhaust-pipe joints are unfinished.",
+    "steps": [
+      {
+        "title": "Front three cylinders",
+        "text": "The front casting combines three head ports into one collector.",
+        "part": "exhaust-front"
+      },
+      {
+        "title": "Rear three cylinders",
+        "text": "The rear casting serves the other three cylinders. Its production EGR connection remains to be modeled.",
+        "part": "exhaust-rear"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Use the correct joint instructions",
+        "text": "The factory procedure distinguishes exhaust-manifold installation from the intake gasket. Do not add a generic combined gasket based on this study."
+      }
+    ],
+    "sources": [
+      "system-9d57ed6d21b9",
+      "system-b9d2a4ac71cc"
+    ]
+  },
+  "fuel-test-valve": {
+    "summary": "The rail diagnostic fitting provides access for a fuel-pressure tester. Its spring-loaded core normally closes the passage.",
+    "limits": "Ford confirms the diagnostic fitting; internal geometry is a generic valve study. Exact part identity, materials, threads and installed location remain unverified.",
+    "steps": [
+      {
+        "title": "Fuel reaches the fitting",
+        "text": "A branch bore connects the test fitting to the rail supply passage.",
+        "part": "fuel-test-body",
+        "source": "fsm-4840fb38c793"
+      },
+      {
+        "title": "The pin opens the seated valve",
+        "text": "Depressing the actuating pin moves the soft seat off its mating surface. The spring returns it toward closure; the external sleeve seals around the cartridge.",
+        "part": "fuel-test-pin",
+        "source": "schrader-core-construction"
+      },
+      {
+        "title": "The cap closes the outer boundary",
+        "text": "The cap helps seal the fitting and keeps debris away from the exposed port.",
+        "part": "fuel-test-cap",
+        "source": "schrader-core-construction"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Compare pressure using the applicable test",
+        "text": "Ford lists 50\u201360 psi key-on/engine-off and 45\u201360 psi at idle for this application. Follow the linked precautions and test procedure; this model does not simulate pressure or diagnose a leak.",
+        "source": "fsm-4840fb38c793"
+      }
+    ],
+    "sources": [
+      "fsm-4840fb38c793",
+      "schrader-core-construction"
+    ]
+  },
+  "fuel-rail-assembly": {
+    "summary": "The supply and return tubes connect the injectors and regulator. Three fasteners retain the rail on the lower intake; the test valve provides diagnostic access.",
+    "limits": "Bolt diameter, pitch and under-head length follow the Ford exploded drawing. Rail bends, casting bosses, bolt-head/washer shapes, station coordinates and female threads remain provisional.",
+    "steps": [
+      {
+        "title": "Three mounts retain the rail",
+        "text": "Ford shows three 1/4-20 \u00d7 .90-inch bolts with washers. The model keeps each fastener separate and provides matching support bosses and bores on the lower intake.",
+        "part": "fuel-rail-mount-bolt-1",
+        "source": "system-12bc4a9dabbf"
+      },
+      {
+        "title": "The cups seal around the injectors",
+        "text": "Injector O-rings seal the fuel connections. The service procedure installs injectors into the rail before fitting the assembly to the lower intake.",
+        "part": "injector-1-upper-seal",
+        "source": "system-12bc4a9dabbf"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "A disturbed rail needs a seal and mounting check",
+        "text": "Use the linked factory procedure for O-ring handling, coupling engagement and retaining-fastener tightening. Provisional CAD clearances do not establish leak-tight assembly.",
+        "source": "system-12bc4a9dabbf"
+      }
+    ],
+    "sources": [
+      "system-12bc4a9dabbf",
+      "system-57b3dbc66361"
+    ]
+  },
+  "fuel-supply-coupling": {
+    "summary": "Two seals prevent leakage; a garter spring captures the female flare; an external clip adds redundant retention.",
+    "limits": "Documented construction with provisional dimensions and rail stations. No pressure, sealing, spring-force or installed fit validation. Tank-side hose routing is not modeled.",
+    "steps": [
+      {
+        "title": "A sealed sliding connection",
+        "text": "The female socket slides over two O-rings carried by the male spigot. Explode the assembly to distinguish the two seals.",
+        "part": "fuel-supply-coupling-female"
+      },
+      {
+        "title": "Spring and cage retain the flare",
+        "text": "The coiled garter spring sits inside the male cage. After the female flare passes it, the spring contracts behind the flare.",
+        "part": "fuel-supply-coupling-spring"
+      },
+      {
+        "title": "Redundant safety clip",
+        "text": "Ford specifies a large black supply clip and a small gray return clip. The tether keeps it associated with the line.",
+        "part": "fuel-supply-coupling-clip"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Connection does not lock",
+        "text": "Ford calls for checking that the female flare is captured behind the spring and verifying engagement by pulling the connection. The viewer does not simulate insertion or retention force.",
+        "source": "truck-fuel-coupler-service"
+      },
+      {
+        "title": "Seal condition and identity",
+        "text": "The factory procedure calls for two specified fuel-resistant O-rings. Similar-looking generic seals do not establish a correct replacement.",
+        "source": "truck-fuel-coupler-service"
+      }
+    ],
+    "sources": [
+      "truck-fuel-coupler-operation",
+      "truck-fuel-coupler-service"
+    ]
+  },
+  "fuel-return-coupling": {
+    "summary": "Two seals prevent leakage; a garter spring captures the female flare; an external clip adds redundant retention.",
+    "limits": "Documented construction with provisional dimensions and rail stations. No pressure, sealing, spring-force or installed fit validation. Tank-side hose routing is not modeled.",
+    "steps": [
+      {
+        "title": "A sealed sliding connection",
+        "text": "The female socket slides over two O-rings carried by the male spigot. Explode the assembly to distinguish the two seals.",
+        "part": "fuel-return-coupling-female"
+      },
+      {
+        "title": "Spring and cage retain the flare",
+        "text": "The coiled garter spring sits inside the male cage. After the female flare passes it, the spring contracts behind the flare.",
+        "part": "fuel-return-coupling-spring"
+      },
+      {
+        "title": "Redundant safety clip",
+        "text": "Ford specifies a large black supply clip and a small gray return clip. The tether keeps it associated with the line.",
+        "part": "fuel-return-coupling-clip"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Connection does not lock",
+        "text": "Ford calls for checking that the female flare is captured behind the spring and verifying engagement by pulling the connection. The viewer does not simulate insertion or retention force.",
+        "source": "truck-fuel-coupler-service"
+      },
+      {
+        "title": "Seal condition and identity",
+        "text": "The factory procedure calls for two specified fuel-resistant O-rings. Similar-looking generic seals do not establish a correct replacement.",
+        "source": "truck-fuel-coupler-service"
+      }
+    ],
+    "sources": [
+      "truck-fuel-coupler-operation",
+      "truck-fuel-coupler-service"
+    ]
+  },
+  "pcv-valve-assembly": {
+    "summary": "Crankcase ventilation returns blow-by gases to the intake. A spring-loaded plunger meters flow, and a separate grommet locates the valve in the cover.",
+    "limits": "Factory mechanism and replacement-photo exterior are combined in a provisional study. Installed valve identity, flow calibration, exact hose connections and cover baffle remain unverified.",
+    "steps": [
+      {
+        "title": "A replaceable cover connection",
+        "text": "The valve inserts into a separate grommet. The manual calls for checking that rubber mounting piece for deterioration.",
+        "part": "pcv-grommet"
+      },
+      {
+        "title": "Pressure and spring force",
+        "text": "The factory cutaway shows a plunger and spring. Pressure forces move the plunger relative to the metering opening. This model does not simulate valve travel or airflow.",
+        "part": "pcv-plunger"
+      },
+      {
+        "title": "Metering opening",
+        "text": "The orifice washer surrounds the tapered plunger. Its clearance influences the available flow area; the modeled dimensions are illustrative.",
+        "part": "pcv-orifice-washer"
+      },
+      {
+        "title": "Angled connections",
+        "text": "The Standard V219 reference has two angled hose connectors. The installed truck routing and unused-outlet closure remain to be established.",
+        "part": "pcv-outlet-head"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Grommet condition",
+        "text": "The factory service procedure identifies deterioration of the mounting grommet as an inspection item.",
+        "source": "truck-pcv-service"
+      },
+      {
+        "title": "Check the complete path",
+        "text": "The factory system diagram includes a clean-air closure hose as well as the metered return path. Missing or disconnected plumbing cannot be assessed from the valve alone.",
+        "source": "truck-pcv-system-operation"
+      }
+    ],
+    "sources": [
+      "truck-pcv-valve-operation",
+      "truck-pcv-system-operation",
+      "truck-pcv-service",
+      "standard-v219-pcv"
+    ]
+  },
+  "crankcase-ventilation": {
+    "summary": "Crankcase ventilation returns blow-by gases to the intake. A spring-loaded plunger meters flow, and a separate grommet locates the valve in the cover.",
+    "limits": "Factory mechanism and replacement-photo exterior are combined in a provisional study. Installed valve identity, flow calibration, exact hose connections and cover baffle remain unverified.",
+    "steps": [
+      {
+        "title": "A replaceable cover connection",
+        "text": "The valve inserts into a separate grommet. The manual calls for checking that rubber mounting piece for deterioration.",
+        "part": "pcv-grommet"
+      },
+      {
+        "title": "Pressure and spring force",
+        "text": "The factory cutaway shows a plunger and spring. Pressure forces move the plunger relative to the metering opening. This model does not simulate valve travel or airflow.",
+        "part": "pcv-plunger"
+      },
+      {
+        "title": "Metering opening",
+        "text": "The orifice washer surrounds the tapered plunger. Its clearance influences the available flow area; the modeled dimensions are illustrative.",
+        "part": "pcv-orifice-washer"
+      },
+      {
+        "title": "Angled connections",
+        "text": "The Standard V219 reference has two angled hose connectors. The installed truck routing and unused-outlet closure remain to be established.",
+        "part": "pcv-outlet-head"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Grommet condition",
+        "text": "The factory service procedure identifies deterioration of the mounting grommet as an inspection item.",
+        "source": "truck-pcv-service"
+      },
+      {
+        "title": "Check the complete path",
+        "text": "The factory system diagram includes a clean-air closure hose as well as the metered return path. Missing or disconnected plumbing cannot be assessed from the valve alone.",
+        "source": "truck-pcv-system-operation"
+      }
+    ],
+    "sources": [
+      "truck-pcv-valve-operation",
+      "truck-pcv-system-operation",
+      "truck-pcv-service",
+      "standard-v219-pcv"
+    ]
+  },
+  "egr": {
+    "summary": "The EGR system meters exhaust into the intake. The PCM commands vacuum through a separate regulator and receives valve-position feedback from the EVP sensor.",
+    "limits": "Valve and sensor geometry are provisional studies. The exhaust tube, regulator, vacuum hoses, wiring and actual calibration remain unfinished. The static model does not simulate flow, temperature or sensor voltage.",
+    "steps": [
+      {
+        "title": "Meter exhaust",
+        "text": "Vacuum acting across the diaphragm lifts the guided pintle against a closing spring. The resulting seat opening admits exhaust to the intake outlet.",
+        "part": "egr-valve-assembly"
+      },
+      {
+        "title": "Measure position",
+        "text": "The sensor follows valve movement. Its three-terminal potentiometer provides feedback independently of the vacuum solenoid command. Internal contact geometry here is illustrative.",
+        "part": "egr-position-sensor"
+      },
+      {
+        "title": "Seal the intake connection",
+        "text": "Two mounting bolts clamp the valve outlet and gasket against the plenum interface. Gasket variant and production mounting dimensions remain unresolved.",
+        "part": "egr-intake-gasket"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Command and feedback are separate",
+        "text": "The EVTM shows C180 for the vacuum-control solenoid and C182 for position feedback. A feedback fault does not by itself identify a failed vacuum solenoid or blocked exhaust passage.",
+        "part": "egr-position-sensor"
+      },
+      {
+        "title": "Position is not a flow measurement",
+        "text": "EVP reports valve position. Open passages and a pressure difference are also necessary for gas flow, so valve movement alone does not prove the exhaust path is clear.",
+        "part": "egr-pintle"
+      }
+    ],
+    "sources": [
+      "truck-egr-evtm",
+      "system-d015c4a19a04",
+      "standard-egv258"
+    ]
+  },
+  "egr-valve-assembly": {
+    "summary": "Inspect the body passage, guided pintle, flexible diaphragm and spring separately.",
+    "limits": "A static teaching section based on factory architecture and replacement photographs. Dimensions, seat contour and attachment details remain provisional.",
+    "sources": [
+      "system-d015c4a19a04",
+      "standard-egv258"
+    ],
+    "steps": [
+      {
+        "title": "Pressure moves the diaphragm",
+        "text": "The pressure difference between the vacuum chamber and vented lower housing acts across the diaphragm.",
+        "part": "egr-diaphragm"
+      },
+      {
+        "title": "The pintle opens a metering area",
+        "text": "The stem transfers diaphragm movement to the pintle. Lifting off its seat creates an opening between inlet and outlet.",
+        "part": "egr-pintle"
+      },
+      {
+        "title": "The spring closes the valve",
+        "text": "The closing spring biases the assembly toward the seated position as the vacuum command decreases.",
+        "part": "egr-return-spring"
+      }
+    ],
+    "troubleshooting": []
+  },
+  "egr-position-sensor": {
+    "summary": "A follower transfers EGR movement to a three-terminal position-sensing circuit.",
+    "limits": "The EVTM verifies the potentiometer circuit. The modeled linear track, collector, wiper and internal supports are illustrative, with no teardown or resistance calibration.",
+    "sources": [
+      "truck-egr-evtm",
+      "standard-egv258"
+    ],
+    "steps": [
+      {
+        "title": "Follow mechanical movement",
+        "text": "The follower touches the valve stem; the small spring represents the force that keeps contact.",
+        "part": "evp-follower"
+      },
+      {
+        "title": "Produce electrical feedback",
+        "text": "The wiper samples a position along a resistance. The illustrated collector and track express the EVTM potentiometer circuit, not a verified production contact layout.",
+        "part": "evp-wiper"
+      },
+      {
+        "title": "Return a signal to the PCM",
+        "text": "EVTM23-4 identifies signal circuit352 BR/LG to PCM27, reference351 BR/W to PCM26 and return359 GY/R to PCM46. Physical connector cavity mapping is still unfinished.",
+        "part": "evp-terminal-2"
+      }
+    ],
+    "troubleshooting": []
+  },
+  "egr-exhaust-line": {
+    "summary": "A separate metal tube connects the rear exhaust manifold to the EGR valve. The valve meters this exhaust into the intake; the tube itself does not control flow.",
+    "limits": "Replacement application and outside diameter are sourced. Bend coordinates, wall thickness, coupling dimensions, thread forms and sealing seats remain provisional. The protective sleeve is shown as a smooth shell, not verified braid construction.",
+    "sources": [
+      "dorman-598-105",
+      "efi-intake-drawing",
+      "system-d015c4a19a04"
+    ],
+    "steps": [
+      {
+        "title": "Follow the exhaust passage",
+        "text": "The hollow manifold fitting, tube and valve inlet form the exhaust route. Isolate the tube to inspect its two ends.",
+        "part": "egr-exhaust-tube"
+      },
+      {
+        "title": "Inspect the connections",
+        "text": "The valve-end union nut surrounds the tube end and valve inlet. Smooth thread envelopes illustrate assembly relationships; they do not specify a replacement thread or repair dimension.",
+        "part": "egr-tube-valve-nut"
+      },
+      {
+        "title": "Separate the protective covering",
+        "text": "Explode the sleeve away from the tube to distinguish the covering from the exhaust passage. Its material and thermal performance have not been established.",
+        "part": "egr-tube-heat-sleeve"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Inspect for leakage or blockage",
+        "text": "A leaking joint, damaged tube or obstructed passage can affect EGR delivery. Inspect only after the exhaust has cooled, and use the factory diagnostic procedure to distinguish passage faults from vacuum-command and valve faults. A fault code alone does not identify a failed tube.",
+        "part": "egr-exhaust-tube"
+      }
+    ]
+  },
+  "egr-vacuum-regulator": {
+    "summary": "The PCM controls the vacuum delivered to the EGR diaphragm through an electromagnetic regulator. Its lower port receives manifold vacuum; its upper port supplies the EGR valve.",
+    "limits": "Exterior reconstruction only. Internal solenoid and valve parts, hose routing, mounting hardware, dimensions and calibrated response remain unfinished. Terminal functions are known electrically, but physical cavity assignments are not verified.",
+    "sources": [
+      "ford-evr-factory",
+      "standard-vs52",
+      "truck-egr-evtm"
+    ],
+    "steps": [
+      {
+        "title": "Separate command from feedback",
+        "text": "The two-terminal regulator receives a PCM command; the separate EVP sensor reports EGR position. They have different jobs and separate connectors.",
+        "part": "evr-body"
+      },
+      {
+        "title": "Follow the two vacuum ports",
+        "text": "Ford labels the lower nipple as vacuum source and the upper nipple as the connection to the EGR valve. Increased command duty cycle increases the described output vacuum.",
+        "part": "evr-body"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Check the circuit and vacuum supply separately",
+        "text": "An electrical circuit fault, missing source vacuum, damaged hose or valve fault can each prevent normal EGR operation. Use the applicable factory pinpoint tests to distinguish these causes; do not diagnose the solenoid from a code alone.",
+        "part": "evr-terminal-control"
+      }
+    ]
+  },
+  "egr-vacuum-lines": {
+    "summary": "The controlled-vacuum hose connects the upper EVR output port to the EGR diaphragm chamber. The separate source-vacuum line is still to be modeled.",
+    "limits": "Hose routing, end diameters, rubber construction and retaining hardware are provisional. This is a connected fit study, not a surveyed factory hose.",
+    "sources": [
+      "ford-evr-factory",
+      "truck-egr-evtm"
+    ],
+    "steps": [
+      {
+        "title": "Trace the command to the diaphragm",
+        "text": "The hose carries the vacuum signal produced by the regulator. The separate EVP sensor measures valve position electrically.",
+        "part": "egr-control-vacuum-hose"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Inspect the hose path",
+        "text": "Leaks, disconnections and restrictions can interrupt the vacuum signal even when the regulator circuit works. Follow the applicable factory vacuum tests to distinguish hose and valve faults.",
+        "part": "egr-control-vacuum-hose"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_model_calls": 5730,
+  "mean_input_per_call": 130525.59755671902,
+  "input_median": 130061,
+  "input_p90": 203811,
+  "tool_calls": {
+    "request_user_input_async": 5,
+    "js": 523,
+    "sleep": 3,
+    "wait": 30,
+    "spawn_agent": 8,
+    "send_message": 675,
+    "followup_task": 47,
+    "list_agents": 14,
+    "wait_agent": 34,
+    "interrupt_agent": 2
+  },
+  "note": "Token totals use the prior cost snapshot; distribution/tool counts reread logs and may include subsequent turns. Counts identify opportunities, not proven waste."
+}

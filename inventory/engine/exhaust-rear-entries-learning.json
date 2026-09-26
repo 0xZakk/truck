@@ -1,0 +1,17 @@
+{
+  "exhaust-rear": {
+    "summary": "The rear manifold collects exhaust from the rear three cylinders and provides the exhaust supply for the EGR tube.",
+    "limits": "The manufacturer replacement has rectangular entries and blended branches. Entry dimensions and head transitions are assumed. This incremental correction retains an unfinished box collector and unsupported end-mounted EGR connection; the reviewed replacement has auxiliary plugged bosses near its discharge neck. Port identity, routing, flange details, threads, production dimensions and thermal/flow performance remain unresolved. The fitting insertion envelope is a clearance study, not a verified thread or sealing specification.",
+    "steps": [
+      {"title": "Separate application from identity", "text": "The manufacturer catalog lists 674-186 in the rear column for F-100/150 pickups with the 4.9L engine in 1994-90. This verifies replacement application, not the casting actually installed on this truck.", "source": "dorman-674186-catalog-application"},
+      {"title": "Match the entry shape", "text": "Three rounded-rectangular mouths are visible in the head-facing photograph. The candidate changes the manifold and corresponding head entries together, retaining material around their openings rather than covering circular bores with decorative pads.", "source": "dorman-674186-head-facing-photo"},
+      {"title": "Distinguish EGR from the main outlet", "text": "The applicable service procedure disconnects a tube between the EGR valve and rear exhaust manifold separately from the exhaust inlet pipe. The EGR branch and main exhaust outlet therefore need separate connected passages; their exact modeled stations are not established by that procedure.", "source": "ford-manifold-fastener-topology"},
+      {"title": "Resolve the auxiliary bosses", "text": "The replacement photographs show two plugged bosses near the discharge neck. Their presence alone does not identify which is used for this truck's EGR tube or justify retaining the far-end connection study.", "source": "dorman-674186-opposite-photo"},
+      {"title": "Keep the fitting out of the runner", "text": "Passage probes exposed the old fitting extending into the collector and rear runner. Its assumed insertion envelope changes from19mm to12.5mm, ending0.5mm before the collector inner wall. This removes that modeled obstruction without certifying factory engagement, sealing or route.", "part": "egr-tube-manifold-fitting"}
+    ],
+    "troubleshooting": [
+      {"title": "Do not infer installation readiness from a clearance pass", "text": "A connected modeled passage and nonintersecting parts do not prove correct routing, thread engagement, exhaust sealing, clamp load or heat clearance. The unresolved EGR interface must remain visible as a limitation even if the incremental entry checks pass."}
+    ],
+    "sources": ["dorman-674186-profile-specification", "dorman-674186-head-facing-photo", "dorman-674186-opposite-photo", "dorman-674186-overview-photo", "dorman-674186-catalog-application", "ford-manifold-fastener-topology"]
+  }
+}

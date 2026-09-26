@@ -1,0 +1,35 @@
+{
+  "status": "Corrective adapter passes complete diagnostic network, blind-socket and frozen-neighbor checks; awaiting installed revalidation",
+  "module": "cad/engine/ac_compressor_manifold_passages.py",
+  "replaced_part": "ac-compressor-rear-head",
+  "new_parts": [],
+  "diagnosis": {
+    "failed_installed_manifest_sha256": "04c782593eefbea5a6b43ad68eceac6df87ab77186e2ad68899ab8c48c6e5a81",
+    "failed_installed_report": "inventory/engine/ac-compressor-motion-installed-clearance-validation.json",
+    "suction_overlap_mm3": 2.862820169672184,
+    "regenerated_analytic_overlap_mm3": 2.8628202260905886,
+    "independently_step_normalized_overlap_mm3": 2.8628201696784665,
+    "local_space_overlap_mm3": 2.862820169646441,
+    "world_centroid_mm": [290.3983683473492, 314.0663180379645, 100.0223944190595],
+    "root_cause": "The manifold retaining-bolt boss extends into the original suction cap drilling. The selected straight port probes in the prior manifold checker did not cover this cap branch. This is a physical Boolean addition regression, not STEP serialization noise."
+  },
+  "correction": {
+    "physical_drillings": "Reapply ac_compressor_motion.head_branches(-1), using the actual 2 mm radius drilling volumes, not the smaller diagnostic probes, after the added boss geometry.",
+    "blind_socket": "Fill the previous socket segment from local shaft station -86 to -82 mm. The shaft end remains at -89 mm, leaving clearance to the new blind floor. The floor is separated from the physical radius-2 suction cap drill at -82 mm by a nominal 2 mm wall.",
+    "preserved": "Two nominal size-211 toroidal seats, manifold face, original port axes, manifold bolt itself, shaft-support seats, pulley-bearing correction, all motion groups and all 67 occurrence IDs.",
+    "limits": "The blind socket and wall remain illustrative and have no production thread, pressure-strength or clamp-load verification. The accepted connected drilling topology was already explicitly provisional."
+  },
+  "sources": ["fs10-cylinder-passage-comparison", "ford-compressor-manifold-diagnosis"],
+  "new_source_registry_entries_required": false,
+  "validation": {
+    "candidate_sha256": "8aa65f6ddbe11fd179cd25db08b0132ca73916a5181c3e728ae796ee02a3d4f5",
+    "frozen_manifest_sha256": "04c782593eefbea5a6b43ad68eceac6df87ab77186e2ad68899ab8c48c6e5a81",
+    "report": "inventory/engine/ac-compressor-manifold-passages-validation.json",
+    "exact_checks": 197,
+    "collisions": [],
+    "full_networks_checked": ["suction", "discharge"],
+    "scope": "The independently STEP-normalized revised head remains one valid solid. Both entire accepted diagnostic networks are checked against all 67 composed parts, together with both manifold extensions. The blind bolt socket is isolated from both networks, a floor probe lies within solid material, and both gland contacts remain. The revised head clears all compressor parts in eight poses and frozen external installed neighbors. Loaded artifacts remain unchanged.",
+    "installed_validation_pending": true
+  },
+  "production_fit_verified": false
+}

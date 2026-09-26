@@ -1,0 +1,41 @@
+{
+  "baseline_manifest_sha256": "6b11c0f874bb53638b0e7fd0f477f6b7d5fca4df928bcbc918b37c98cb01d94f",
+  "inputs_unchanged": true,
+  "input_hashes": {
+    "/Users/zacharyfleischmann/projects/truck/truck-build/reference/engine/water-pump-inlet-v3-topology-reviewed.json": "0c4cb008eec438698052ce6e22a1bc44b120e6d858b51aa9df4f2faf3bad87db",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/check-water-pump-inlet-v3-interfaces.py": "ef2de4a9d395c5ed1dbcae09b910e57cd6aeb8be731ac1256383d1efaa60ab30",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_inlet_v3_candidate.py": "e22fe3d9ad01e1d146b12ade6ec510c8bb26f4b5b107119cd6687320488749f4",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/cooling_connections.py": "89260620a2a17be990995da071e97b46213f755402238bce16bb60cff139d265",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/cad_metrics.py": "93170ebbd9bdb6c19e6ccd4276d308b48545cdd66d21a82b2aaa3205468790c1",
+    "/Users/zacharyfleischmann/projects/truck/truck-build/reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5",
+    "/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8/cad/engine/generated/water-pump-housing.step": "ed86d0450efbb31af3b551553eba5c2f5e1ba798ceffa0be05344e7166d3d72f",
+    "/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8/cad/engine/generated/water-pump-seal.step": "8a225fd6b2f006c20af03e011eabfd86768f9ec70d79f743d778b9554932c72a",
+    "/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8/cad/engine/generated/water-pump-bearing.step": "03d3d6be74a7daf1726020fbee170f28a24d5d5330b00d3a22b44be8d877372c",
+    "/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8/cad/engine/generated/water-pump-slinger.step": "aa131297221ea0107faa0e6b69dd2cb9c746641039b17e548d0f2906ca79fb52",
+    "/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8/cad/engine/generated/water-pump-impeller.step": "b1a2a3219fb68be8ad03c918d38f65e76dfd89d1ea163ad9c0dbf901b91e34ef"
+  },
+  "checks": {
+    "back_flange_symmetric_difference_mm3": 0,
+    "dry_nose_material_symmetric_difference_mm3": 0.0,
+    "open_probe_obstruction_mm3": 0,
+    "neck_ring_missing_mm3": 0,
+    "added_neck_volume_mm3": 113593.73757232122,
+    "removed_passage_volume_mm3": 5264.248055198732,
+    "cast_arm_original_contact_mm3": 9135.820282801016,
+    "probe_solids": 1,
+    "impeller_full_rotation_envelope_contact_mm3": 0,
+    "water-pump-seal_new_cut_contact_mm3": 0.0,
+    "water-pump-bearing_new_cut_contact_mm3": 0.0,
+    "water-pump-slinger_new_cut_contact_mm3": 0.0,
+    "step_symmetric_difference_mm3": 0
+  },
+  "step_sha256": "ddb20ef527df0dde373ebcf8005075bdfca503bf3a6200af5950770689debeb0",
+  "limits": [
+    "Gates44009 front/rear/side photos show large lateral cast inlet arm with hose neck and retaining bead. Positive-Y assignment opposite retained heater tube is inferred; no physical pump measurement exists.",
+    "Inlet neck localX\u221210/Z25, endY145, outer radius24 and bore20mm are provisional. Cast arm curves to rear chamber at localX\u221220/Y19; no internal photograph fixes this path. They are not hose purchasing dimensions.",
+    "Smooth tapered open passage demonstrates topology only: the actual volute, impeller-eye feed, casting wall sections, hydraulic capacity and flow simulation remain unverified."
+  ],
+  "status": "PASS"
+}

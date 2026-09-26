@@ -1,0 +1,53 @@
+{
+  "id": "ford-manifold-fastener-topology",
+  "primary": {
+    "html": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Exhaust%20Manifold/Service%20and%20Repair/index.html",
+    "html_sha256": "4d6a4eab38ff073fcaf1738d8dfd87fb35e587fed8f0a9778eaebcd04ee4a1ed",
+    "image": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/299739995.png",
+    "image_sha256": "6e4a98ccaef582735f07fe25b33b330f38ad6f7431ed0390425885fff8d95897",
+    "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Exhaust%20Manifold/Service%20and%20Repair/"
+  },
+  "coordinate_convention": "Approximate leader endpoints in the 608 by 443 pixel source image, origin top left. Front of engine is right. These are traceability locations only, never millimetres, scaled dimensions or installation coordinates.",
+  "stations": [
+    {"number": 1, "leader_endpoint_px": [278, 177], "row": "upper/inter-port", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 2, "leader_endpoint_px": [113, 176], "row": "upper/inter-port", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 3, "leader_endpoint_px": [177, 176], "row": "upper/inter-port", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 4, "leader_endpoint_px": [29, 121], "row": "rear upper end", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 5, "leader_endpoint_px": [61, 239], "row": "lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 6, "leader_endpoint_px": [149, 232], "row": "lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 7, "leader_endpoint_px": [236, 234], "row": "lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 8, "leader_endpoint_px": [334, 232], "row": "lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 9, "leader_endpoint_px": [431, 236], "row": "lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 10, "leader_endpoint_px": [518, 237], "row": "front lower", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 11, "leader_endpoint_px": [364, 177], "row": "upper/inter-port", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 12, "leader_endpoint_px": [466, 175], "row": "upper/inter-port", "hardware": "remaining attachment; clamp versus direct unresolved"},
+    {"number": 13, "leader_endpoint_px": [584, 179], "row": "front end", "hardware": "front exhaust/lifting-eye stud", "basis": "explicit installation text"},
+    {"number": 14, "leader_endpoint_px": [337, 178], "row": "upper/inter-port", "hardware": "front exhaust bolt", "basis": "installed before intake, explicit text"},
+    {"number": 15, "leader_endpoint_px": [250, 177], "row": "upper/inter-port", "hardware": "rear exhaust bolt", "basis": "installed before intake, explicit text"},
+    {"number": 16, "leader_endpoint_px": [89, 175], "row": "upper/inter-port", "hardware": "rear exhaust bolt", "basis": "installed before intake, explicit text"}
+  ],
+  "supported_groups": {
+    "rear_exhaust_pre_intake": [15, 16],
+    "front_exhaust_and_eye_pre_intake": [13, 14],
+    "remaining_after_intake": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  "interpretation": [
+    "Stations 14, 15 and 16 retain exhaust castings before the intake is present; a model must not depend on intake material for their initial retention.",
+    "Stud 13 participates in the front exhaust and lifting-eye installation. The text does not establish the stud thread, nut/washer stack or every contact of the eye.",
+    "The image shows upper and lower attachment positions, not sixteen identical bolts at equal spacing. Shared contact at a schematic joint is insufficient evidence for a particular clamp section or washer count.",
+    "The lifting-eye outline extends inboard of station 13 above the front intake mouths. A miniature eye placed only around a convenient new stud would not reproduce that traced outline.",
+    "The separate single intake locating dowel is not one of these clamping fasteners. Existing upper-intake studs are a different joint."
+  ],
+  "manufacturer_photo_review": {
+    "image": "reference/engine/dorman-674185-head-flange.jpg",
+    "page": "reference/engine/dorman-674185-head-flange.html",
+    "url": "https://www.dormanhdsolutions.com/p-7661-674-185.aspx",
+    "result": "674-185 exterior view supports a three-port front exhaust replacement casting and packaged loose studs/nuts. Head-facing holes, shared clamp sections and lifting-eye stack are not exposed. Package quantity cannot be substituted for head station count."
+  },
+  "candidate_constraints": [
+    "Current exhaust head branches have no mounting lugs; any functional fastener requires explicit casting-interface geometry, head socket, bearing seat and clearance checks.",
+    "Current lower-intake continuous upper strip occupies Y -145.5 to -135.5, Z 295.5 to 305.5 across X +/-344. Upper exhaust lugs cannot be added through this strip without a deliberate joint reconciliation.",
+    "A provisional station-13 stud beyond the front branch is geometrically conceivable, but its location and the lifting-eye support footprint are not recovered from dimensions. It must not be presented as installed Ford hardware.",
+    "No physical clamp candidate is accepted from this source alone; retain missing shared hardware explicitly rather than installing cosmetic floating bolts."
+  ]
+}

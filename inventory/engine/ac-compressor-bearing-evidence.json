@@ -1,0 +1,78 @@
+{
+  "status": "Manufacturer-sized bearing envelope and mating-seat correction passes candidate validation; internal element counts remain unresolved",
+  "checkpoint": {
+    "accepted_generators_unchanged": ["cad/engine/ac_compressor.py", "cad/engine/ac_compressor_motion.py"],
+    "live_validation_processes": [],
+    "interrupted_download": "The multi-download exec was aborted by the user after2494seconds without returning a process/session ID. None of its four target files exists. A subsequent process inventory was sandbox-denied; no unknown process was restarted.",
+    "local_downloads_available": true,
+    "source_review_method": "Root subsequently downloaded both primary PDFs with bounded calls. NSK PDF page2 application/dimension table and NACHI PDF page1 construction description were rendered and visually reviewed."
+  },
+  "sources": [
+    {
+      "id": "nsk-fs10-clutch-bearing",
+      "title": "NSK Magnetic Clutch Bearings for A/C Compressor",
+      "url": "https://www.nsk.com/content/dam/nsk/am/en_us/documents/automotive-americas/MCB_products_heet.pdf",
+      "path": "reference/engine/nsk-magnetic-clutch-bearings.pdf",
+      "sha256": "82d481cab36718f05b195d6c8b61b2be5d027a008cd72aa99060f70c4f55d03b",
+      "pages": [1, 2],
+      "verified": "Manufacturer table identifies30BD40, bore30mm, outside diameter55mm, width23mm, FordFS10/FX15 application; cross-referenceNACHI30BG05S5G-2DS. Introductory text identifies thin-section double-row angular-contact ball-bearing architecture and outer-ring rotation.",
+      "not_established": "Installed bearing brand/suffix, ball count, ball diameter, pitch circles, contact angle, raceway sections, cage count/shape, seal profiles and fit tolerances."
+    },
+    {
+      "id": "nachi-magnetic-clutch-bearing-construction",
+      "title": "NACHI BG Type for Car Air Conditioning Magnetic Clutch, NAB0302-3",
+      "url": "https://www.nachiamerica.com/download/369-ac-magnetic-clutch-bearings/",
+      "path": "reference/engine/nachi-magnetic-clutch-bearings.pdf",
+      "sha256": "6e88d9972257ff493e32769d8842df7a90d2cd9caa08b24aa68ff21e461b2f8c",
+      "pages": [1, 2],
+      "verified": "Manufacturer identifies double-row angular-contact architecture, glass-reinforced polyamide cage, seals and grease. Its30BG05S5G-2DS table and test description confirm30×55×23mm. Test setup specifies outer-ring rotation.",
+      "not_established": "No verified element count, cage count or internal manufacturing dimensions. Performance test claims are not modeled and do not establish truck-specific loads."
+    },
+    {
+      "id": "fs10-bearing-dissection-limit",
+      "title": "Firsthand1998 Crown Victoria FS10 dissection: bearing evidence limits",
+      "url": "https://www.idmsvcs.com/2vmod/accompressor/disassembled/index.html",
+      "path": "reference/engine/fs10-comparison-disassembly.html",
+      "sha256": "b8173a9a8e38f5aafdc3de857e89fde3f7cc5cc3ed3ce6f2b782e179821c94ac",
+      "verified": "Author explicitly warns that some clutch-bearing balls are missing. Therefore the exposed failed bearing cannot establish the original ball count. Separate thrust washers and roller-bearing assemblies are described and photographed.",
+      "not_established": "Truck-specific thrust-bearing dimensions, roller counts, cage details, radial shaft-support identity or bearing interchange. This is a1998 nontruck comparison, not the installed1994 unit."
+    }
+  ],
+  "model_reconciliation": {
+    "current_pulley_bearing_envelope_mm": {"bore": 48.2, "outside_diameter": 70, "width": 12},
+    "manufacturer_comparison_envelope_mm": {"bore": 30, "outside_diameter": 55, "width": 23},
+    "required_interface_changes": "A separate candidate must reconcile the front-head nose, pulley bearing seat, retaining ring and coil-carrier clearance around the dimensioned bearing. Do not merely resize the bearing inside incompatible accepted interfaces.",
+    "supported_decomposition": "Inner race, outer race, two ball rows and sealed construction are supported architecturally; polyamide cage material is supported for the NACHI comparison. Exact rolling-element and cage counts remain unresolved.",
+    "prohibited_shortcut": "Do not infer a full ball count from the failed dissection photograph, generic catalog illustrations or a desired CAD packing pattern. Do not claim bearing completion from a toroidal rolling-element placeholder.",
+    "shaft_supports": "Two thrust stacks remain supported by the existing comparison photograph, but their individual roller count and radial shaft-support construction require additional direct evidence."
+  },
+  "candidate": {
+    "module": "cad/engine/ac_compressor_bearing.py",
+    "validator": "scripts/check-ac-compressor-bearing.py",
+    "integration": "Call ac_compressor_bearing.build((define,add,group)) instead of ac_compressor_motion.build. This wraps the accepted generator without modifying it and preserves all61IDs and motion groups.",
+    "replacements": ["ac-compressor-front-head", "ac-compressor-pulley-bearing", "ac-compressor-shaft-seal", "ac-compressor-seal-retainer", "ac-compressor-clutch-pulley", "ac-compressor-clutch-coil-carrier", "ac-compressor-pulley-snap-ring", "ac-compressor-armature-hub"],
+    "provisional_seats": "Bearing center localX99.7, faces88.2/111.2;29.8mm nose diameter;55.1mm pulley seat bore. Nose end111.1, retaining-ring center111.7, reduced armature neck29.6mmOD. Shaft seal/retainer move rearward into the existing counterbore, coil carrier clears the new bearing seat. All axial stations and fit clearances are illustrative.",
+    "preserved": "145mm clutch outside diameter, normalized six-groove band and belt center,0.6mm armature face gap, external mount ears, all piston/shoe motion and connected refrigerant routes.",
+    "completion_limit": "The bearing remains one solid cartridge envelope. No new fabricated ball/cage counts or asserted internal completion."
+  },
+  "next_checks": [
+    "Find clearly identified internal-bearing drawings before promoting cage/seal geometry; the manufacturer overview and application pages are already visually reviewed.",
+    "Find a directly identified30BD40 or30BG05S5G engineering drawing or intact dissection with countable rolling elements.",
+    "Inspect higher-resolution intact thrust-bearing photos or a manufacturer thrust-bearing cross-reference without treating the failed clutch bearing as count evidence.",
+    "Only then create an isolated bearing/interface extension and validate STEP solids, static and moving clearance, and unchanged coolant/refrigerant passages against a released manifest."
+  ],
+  "validation": {
+    "manifest_sha256": "73dd4bdab67fc7fbc3a36c502b0cf079f4fe4641aa0d0454ed8b097ce2eea63e",
+    "candidate_sha256": "866055148fc3be861991c00d74e7bf4fd53db545916024b1b633d523c42e27b0",
+    "accepted_motion_sha256": "39e8664e75ea47536ecb6222a18367179fc6c4a289a00133c362e3828fae8740",
+    "replacement_step_roundtrips": 8,
+    "exact_intersection_checks": 425,
+    "api_shape_pose_checks": 183,
+    "shaft_phases_degrees": [0, 45, 90, 135, 180, 225, 270, 315],
+    "collisions": [],
+    "report": "inventory/engine/ac-compressor-bearing-validation.json",
+    "scope": "Eight replacement solids checked against all compressor parts in eight poses, both existing open passage probes, actual shared API transforms at reference/engaged/disengaged poses, and frozen installed neighbors. Unchanged parts inherit the accepted compressor checks."
+  },
+  "production_identity_verified": false,
+  "bearing_internal_completion_claimed": false
+}

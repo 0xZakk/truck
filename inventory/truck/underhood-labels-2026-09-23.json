@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-23",
+  "method": "Visual inspection of four owner-supplied photos; uncertain small text deliberately left untranscribed.",
+  "labels": [
+    {
+      "file": "reference/photos/2026-09-23/belt-routing-label.jpeg",
+      "identification": "4.9L drive belt installation diagram",
+      "readable_details": [
+        "4.9L DRIVE BELT INSTALLATION",
+        "Diagram includes A/C and without-A/C routing variants."
+      ],
+      "modeling_use": "Reference for accessory belt routing; trace pulley sequence and belt contact sides against full-resolution diagram before implementing.",
+      "limits": [
+        "Diagram is schematic, not a source of pulley diameters or center distances.",
+        "Presence of alternative routes does not establish installed accessories."
+      ],
+      "sha256": "a9debf37e3c5ce616c5f39f667204358a9815266658e6d2bfe432bfb37b4bb71"
+    },
+    {
+      "file": "reference/photos/2026-09-23/air-conditioning-label.jpeg",
+      "identification": "Air-conditioning refrigerant/service label",
+      "readable_details": [
+        "R-134a"
+      ],
+      "modeling_use": "Evidence for labeled refrigerant specification and A/C service reference.",
+      "limits": [
+        "Charge quantity and lubricant specification not transcribed confidently from supplied resolution.",
+        "Label does not establish current refrigerant contents or absence of modifications."
+      ],
+      "sha256": "ca03de15586d7ad76f6db2749808c18e02b523a486aa589106506498ed6c2d1e"
+    },
+    {
+      "file": "reference/photos/2026-09-23/airbag-warning-label.jpeg",
+      "identification": "Airbag-system warning label",
+      "readable_details": [
+        "Warning against tampering with or disconnecting airbag system wiring."
+      ],
+      "modeling_use": "Documentation of original safety label location on radiator support.",
+      "limits": [
+        "Not an emissions or engine calibration label."
+      ],
+      "sha256": "146929ae06927897ec5443caf8ebb9ca3604255da6e2abba8943caa61e69f4f6"
+    },
+    {
+      "file": "reference/photos/2026-09-23/fuel-pump-shutoff-label.jpeg",
+      "identification": "If engine fails to start / fuel-pump shutoff-switch notice",
+      "readable_details": [
+        "IF ENGINE FAILS TO START",
+        "Notice refers to fuel pump shut-off switch and owner guide."
+      ],
+      "modeling_use": "Reference for future fuel-delivery troubleshooting content; actual diagnosis requires the service procedure.",
+      "limits": [
+        "Not an emissions or engine calibration label."
+      ],
+      "sha256": "1e00a5cc1d6092e9838036c8acab2eddf561b2d88d29251b147822cede9f5810"
+    }
+  ],
+  "emissions_label_status": "Owner reports no additional underhood labels. Treat VECI as missing; calibration remains unverified. Do not request further label search.",
+  "search_reference": "https://www.epa.gov/importing-vehicles-and-engines/locating-vehicle-emissions-label"
+}

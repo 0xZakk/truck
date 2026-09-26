@@ -1,0 +1,66 @@
+{
+  "status": "Decomposed manual PMGR fit study, not surveyed production mounting or an electrically operating starter",
+  "factory_architecture": {
+    "id": "ford-pmgr-starter-exploded",
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Description%20and%20Operation/index.html",
+    "sha256": "5a7126af11aceb6dfbd99fc795a9474d6db24ba209b83c362173c611033af1f9",
+    "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Description%20and%20Operation/",
+    "image": "images/DM05Q313/ford10/1187056411.png",
+    "visual_review": "Exploded image inspected directly. Six magnet pole pieces, six pole shunts, six magnet retainers, four brush springs, three planet gears, stationary gear, gear retainer, armature, thrust ball/washer, shaft assembly, drive lever, drive assembly, stop ring/retainer, E-ring, solenoid, housing seal, drive/rear housings, two bushing bearings and fastening hardware are distinguished.",
+    "text": "Permanent-magnet gear-reduction starter with solenoid-actuated drive; manual transmission uses clutch-pedal interlock.",
+    "limit": "No dimensional drawing or internal planetary tooth counts, winding counts, armature lamination count or drive-clutch internals supplied."
+  },
+  "factory_application": {
+    "id": "ford-manual-starter-parts",
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Parts%20Information/index.html",
+    "sha256": "5c0eb8eb30bb56187457aaf3fe868f1f539954b21e043218224ddb6fd42a9f3f",
+    "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Parts%20and%20Labor/Starting%20and%20Charging/Starting%20System/Starter%20Motor/Parts%20Information/",
+    "manual": "F2TZ11002ARM",
+    "automatic": "F7SZ11002AARM",
+    "limit": "Manual application selected; automatic starter interchange or mounting depth is not assumed."
+  },
+  "manufacturer_replacement": {
+    "id": "jn-410-14033-starter",
+    "url": "https://www.jnelectric.com/410-14033-starter",
+    "brand": "J&N Electrical Products",
+    "part": "410-14033",
+    "cross_references": ["F2TZ11002ARM", "F2TZ11002A", "SA793", "Lester3223", "Lester3241"],
+    "architecture": "PMGR,12V,CW",
+    "pinion_teeth": 10,
+    "pinion_od_mm": 27.7,
+    "mount_hole_mm": 11,
+    "limit": "Manufacturer replacement comparison, not an inspected original starter. No mounting-face/pinion axial dimensions or planetary tooth counts supplied."
+  },
+  "manual_boundary_comparison": {
+    "id": "tuffstuff-ford-starter-boundaries",
+    "url": "https://www.tuffstuffperformance.com/file/30474-Ford%2BStarters%2BTechnical%2BInformation.pdf",
+    "manufacturer": "Tuff Stuff Performance Accessories",
+    "explicit_application": "Ford289,302,351W,351C,not4.9L",
+    "manual164tooth_ring_setback_mm": 9.525,
+    "manual_register_diameter_mm": 104.902,
+    "automatic_comparison_setback_mm": 19.05,
+    "limit": "Only a declared manual-family comparison. No4.9L bellhousing/index plate is modeled and no production mounting position is claimed."
+  },
+  "kinematic_study": {
+    "flywheel": "Existing164-tooth,362mmOD HICENGINE/LFW132 comparison model retained unchanged.",
+    "module_mm": 2.180722891566265,
+    "pinion_profile": "Uses matching assumed20deg module, with positive profile shift inferred from the sourced27.7mmOD. Outside diameter and ten teeth preserved; not a measured Ford tooth profile.",
+    "center_distance_mm": 190.5228915662651,
+    "clocking": "Starter axis placed on negativeY side atZ-35 in a clearance study; not surveyed vehicle-side geometry.",
+    "mounting_face_x_mm": -388.475,
+    "rest_pinion_local_z_mm": [-4,6],
+    "engaged_pinion_local_z_mm": [8,18],
+    "travel_mm": 12,
+    "rest_ring_face_gap_mm": 3.525,
+    "engaged_ring_axial_overlap_mm": 8.475,
+    "external_ratio": "164/10=16.4 pinion turns per crank turn, opposite angular directions in a common-axis coordinate convention.",
+    "internal_reducer": "Assumed12-tooth sun integral with armature shaft, three18-tooth planets, fixed48-tooth ring. Sun/ring tooth counts permit equally spaced planets; carrier speed is sun/5."
+  },
+  "decomposition_limits": [
+    "Twelve closed copper winding packets and24commutator segments are aggregate subdivisions, not measured electrical winding topology. Interconnections, individual lamination sheets and insulation layers remain unresolved.",
+    "The solenoid coil is an aggregate hollow envelope; pull/hold winding circuits and contact bridge are not fabricated from unsupported geometry.",
+    "Six straight shaft splines mate with matching drive-clutch slots; count/form/helix remain provisional. Overrunning clutch rollers, ramps and springs are not invented.",
+    "Rest-state lever, pivot, clevis and plunger are decomposed. Engagement testing translates the drive clutch and pinion; full solenoid/lever articulation is not claimed.",
+    "No battery cable, vehicle harness, bellhousing, mounting bolts into absent material or index-plate interface is fabricated."
+  ]
+}

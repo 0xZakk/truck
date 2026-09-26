@@ -1,0 +1,311 @@
+{
+  "thermactor-pump-assembly": {
+    "summary": "The belt-driven Thermactor pump supplies secondary air to the emissions system. This branch currently shows its exterior, shaft interfaces and a separate engine support.",
+    "limits": "The internal pumping cartridge is explicitly unresolved: it is not an identified single production part. Ford describes vane-pump families but the installed displacement, vane count, rotor geometry and filtration variant remain unverified. Bearings are cartridges; no air-flow or pump-motion simulation is implemented.",
+    "steps": [
+      {
+        "title": "Receive belt drive",
+        "text": "A separate pulley and shaft represent the mechanical input at the lower vehicle-right accessory station. Diameter, grooves and mounting geometry remain provisional.",
+        "part": "thermactor-pump-assembly"
+      },
+      {
+        "title": "Identify the missing mechanism",
+        "text": "The interior envelope marks space still requiring a rotor, vanes and their supporting details. It must not be interpreted as a completed pump mechanism.",
+        "part": "thermactor-pumping-cartridge"
+      },
+      {
+        "title": "React belt loads",
+        "text": "One common casting supports the alternator and Thermactor air pump. Reference photographs establish the shared construction; the modeled contours, hole mapping and mounting dimensions remain provisional.",
+        "part": "alternator-thermactor-common-carrier"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "ford-thermactor-study",
+      "ford-accessory-routing",
+      "ford-accessory-brackets"
+    ]
+  },
+  "ac-compressor": {
+    "summary": "The FS10 uses five double-ended pistons to create ten compression chambers. A tilted swashplate turns shaft rotation into piston strokes through ten spherical shoes.",
+    "limits": "This is a manufacturer-application comparison and construction study, not an identification of the installed compressor. Most geometry remains provisional. Refrigerant passages between heads, individual bearing rollers, reed flexure and pressure/contact physics are unresolved.",
+    "steps": [
+      {
+        "title": "Turn the pulley without necessarily pumping",
+        "text": "The belt drives the pulley on its own bearing. The electromagnetic clutch engages the separate armature hub to drive the compressor shaft; the static 0.6 mm gap lies within the Ford service range.",
+        "part": "ac-compressor-clutch-pulley",
+        "source": "ford-ac-clutch-gap"
+      },
+      {
+        "title": "Keep stationary and rotating clutch pieces distinct",
+        "text": "The carrier and coil remain fixed to the nose. The pulley rotates on its bearing, while the separate armature hub transfers torque to the shaft only when the clutch engages. This is a static mechanism analogy, not an electromagnetic simulation.",
+        "part": "ac-compressor-clutch-coil",
+        "source": "ford-fs10-construction-comparison"
+      },
+      {
+        "title": "Convert rotation into reciprocation",
+        "text": "The shaft-mounted inclined swashplate acts on spherical shoes seated in the pistons. Five pistons slide along fixed cylinder axes rather than orbiting with the shaft.",
+        "part": "ac-compressor-swashplate-shaft",
+        "source": "ford-fs10-construction-comparison"
+      },
+      {
+        "title": "Compress at both ends",
+        "text": "Each piston has a head at both ends, creating ten chambers from five pistons. Separate PTFE seal rings follow the comparison teardown; their profile is illustrative.",
+        "part": "ac-compressor-piston-1",
+        "source": "fs10-piston-ring-photo"
+      },
+      {
+        "title": "Control intake and discharge",
+        "text": "Pressure differences flex suction and discharge reeds against their valve plates. This model separates the plates and reeds but does not simulate their deflection or reconstruct all longitudinal passages.",
+        "part": "ac-compressor-front-valve-plate",
+        "source": "ford-fs10-construction-comparison"
+      },
+      {
+        "title": "React axial loads",
+        "text": "Thrust-bearing stacks at either end of the swash assembly carry axial loads into the case. Races are separate, while the rolling elements remain simplified cartridges.",
+        "part": "ac-compressor-front-thrust-2",
+        "source": "fs10-separated-parts-photo"
+      },
+      {
+        "title": "Recognize the unfinished fluid network",
+        "text": "The modeled rear ports open into separate head annuli, but longitudinal galleries joining the two heads have not been reconstructed. Sampled piston and shoe clearance does not establish complete refrigerant circulation, sealing, pumping performance or production fit.",
+        "part": "ac-compressor-rear-head"
+      }
+    ],
+    "sources": [
+      "denso-fs10-application",
+      "uac-fs10-101220c",
+      "ford-fs10-construction-comparison",
+      "fs10-dissection-comparison",
+      "fs10-separated-parts-photo",
+      "ford-ac-clutch-gap",
+      "fs10-piston-ring-photo"
+    ],
+    "troubleshooting": []
+  },
+  "accessory-support-brackets": {
+    "summary": "One carrier supports the power-steering pump, A/C compressor and tensioner. Another common casting supports the alternator and Thermactor air pump.",
+    "limits": "Ford TSB94-10-19 Figure4 establishes the1994 shared carrier and four engine attachment sites. Casting shape, hole coordinates, smooth thread envelopes and engagement depths remain provisional. Belt fit, alternator placement and operating tensioner travel remain unresolved.",
+    "steps": [
+      {
+        "title": "Support three accessories together",
+        "text": "The common casting ties the steering pump, compressor and tensioner pivot to the engine. Its shape here is a construction study constrained by the Ford attachment diagram.",
+        "part": "ps-ac-support-bracket"
+      },
+      {
+        "title": "Locate the alternator",
+        "text": "One common casting supports the alternator and Thermactor air pump. Reference photographs establish the shared construction; the modeled contours, hole mapping and mounting dimensions remain provisional.",
+        "part": "alternator-thermactor-common-carrier"
+      },
+      {
+        "title": "Attach at the head and block",
+        "text": "One front-head bolt and one side-head bolt locate the upper carrier. Two stud, washer and nut stacks attach its lower feet to the block. The smooth envelopes explain assembly, without establishing thread retention or clamp loads.",
+        "part": "carrier-1994-engine-attachments"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "ford-accessory-brackets",
+      "ford-accessory-routing",
+      "ford-tsb-94-10-19-accessory"
+    ]
+  },
+  "power-steering-pump-assembly": {
+    "summary": "The Ford CII is a slipper pump: ten spring-loaded slippers travel around a cam track, forming chambers that expand and contract to move steering fluid.",
+    "limits": "The geometry is an illustrative construction study, not a hydraulic simulation. Production cam profile, passages, valve internals, bearing construction, mounting brackets and hoses remain unresolved. Six modeled pulley grooves follow the Ford belt instruction; the Dorman comparison lists five, an unresolved compatibility discrepancy.",
+    "steps": [
+      {
+        "title": "Supply fluid",
+        "text": "A nylon reservoir surrounds the pump housing and supplies the pumping cartridge.",
+        "part": "ps-pump-reservoir"
+      },
+      {
+        "title": "Form moving chambers",
+        "text": "Ten slippers and their individual springs divide the spaces around the rotor. The noncircular cam track changes chamber volume as the rotor turns.",
+        "part": "power-steering-pump-assembly"
+      },
+      {
+        "title": "Close and control the cartridge",
+        "text": "Pressure plates close its ends, while a disc spring preloads the stack. A separate flow-control valve governs delivery; its internal relief mechanism remains an unresolved package.",
+        "part": "ps-pump-valve-cover"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "ford-cii-pump-study",
+      "dorman-300-029",
+      "ford-accessory-routing"
+    ]
+  },
+  "alternator-assembly": {
+    "summary": "The belt turns the alternator rotor inside stationary stator windings. Controlled field current produces the changing magnetic field used to generate electrical power.",
+    "limits": "The installed 75, 95 or 130 amp variant and alternator generation remain unresolved. Dimensions, mounting station and internal geometry are construction assumptions. Windings, bearings, regulator and rectifier are incomplete envelopes; the engine bracket and wiring remain unfinished.",
+    "steps": [
+      {
+        "title": "Drive the magnetic rotor",
+        "text": "Belt torque enters through the pulley. Interleaved claw poles carry magnetic flux around the rotor field coil.",
+        "part": "alternator-rotor-front-pole"
+      },
+      {
+        "title": "Supply field current",
+        "text": "Two stationary brushes contact rotating slip rings. The regulator varies field current to control output voltage.",
+        "part": "alternator-brush-holder"
+      },
+      {
+        "title": "Induce alternating current",
+        "text": "Rotating magnetic flux induces AC in the stationary stator winding. Copper is shown as an envelope rather than individual turns.",
+        "part": "alternator-stator-winding"
+      },
+      {
+        "title": "Produce direct current",
+        "text": "The rectifier converts stator AC to DC. The electronics package is not an exact diode or circuit reconstruction.",
+        "part": "alternator-rectifier"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "ford-alternator-study",
+      "denso-alternator-construction"
+    ]
+  },
+  "tensioner-pulley-assembly": {
+    "summary": "The tensioner pulley rolls on the smooth back of the accessory belt. Its bearing allows the wheel to turn around a stationary mounting axis; a separate tensioner arm and spring maintain belt loading.",
+    "limits": "Gates supplies the 90 mm diameter, 37.5 mm width and 17 mm bearing bore. Wheel section, bearing outside dimensions and placement are illustrative. A separate tensioner support study is present; its enclosed spring internals, engine bracket, belt and bearing internals remain unfinished. No operating belt motion is simulated.",
+    "steps": [
+      {
+        "title": "The wheel follows the belt",
+        "text": "The smooth wheel contacts the belt backside. It has no ribbed grooves; its actual stamped section remains unverified.",
+        "part": "tensioner-pulley-wheel"
+      },
+      {
+        "title": "The bearing permits relative rotation",
+        "text": "The stationary mounting axis passes through the 17 mm bore. This cartridge envelope reserves space for bearing internals that still require evidence.",
+        "part": "tensioner-pulley-bearing"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "gates-38022",
+      "gates-1994-drive"
+    ]
+  },
+  "tensioner-support-assembly": {
+    "summary": "The tensioner arm carries the pulley around an offset pivot. Gates describes an enclosed preloaded spring and a locating pin that registers the stationary housing to the engine bracket.",
+    "limits": "A provisional shared carrier now supports the cartridge and locator. Spring/damper internals, production dimensions, belt fit and working-angle travel remain unresolved. The pose is static.",
+    "steps": [
+      {
+        "title": "The spring loads the arm",
+        "text": "The enclosed spring biases the arm to maintain belt loading. This rigid cartridge envelope does not simulate spring behavior.",
+        "part": "tensioner-spring-cartridge"
+      },
+      {
+        "title": "The arm carries the pulley",
+        "text": "The offset journal supports the pulley bearing while the arm transmits load toward its pivot. Geometry and working angle remain provisional.",
+        "part": "tensioner-moving-arm"
+      },
+      {
+        "title": "The housing registers to a bracket",
+        "text": "The locator registers the stationary cartridge to the shared carrier. Both locating bushing and blind mounting-bolt seat are represented; production fits remain unverified.",
+        "part": "tensioner-locating-bushing"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "gates-1994-drive",
+      "gates-38131-instructions"
+    ]
+  },
+  "damper-assembly": {
+    "summary": "The crankshaft does not turn with perfectly steady torque. Each firing event can twist it slightly. A vibration damper couples an outer inertia ring to the crankshaft hub through an elastic layer.",
+    "limits": "Overall diameter and width follow replacement Dorman 594-152. Internal sections and placement are provisional. The explosion separates bonded parts for explanation, not repair. Rotation here is rigid; torsional vibration is not simulated. Key, washer, bolt and crank-nose seat are provisional fit-study geometry. The integrated rim has six illustrative V grooves; exact pulley profile and belt plane remain unverified.",
+    "steps": [
+      {
+        "title": "The hub follows the crankshaft",
+        "text": "The hub is located by a crankshaft key and clamped by a center bolt and washer. These separate parts now share matching pockets and a front shaft seat; their production dimensions remain unverified.",
+        "part": "damper-hub"
+      },
+      {
+        "title": "The outer ring supplies inertia",
+        "text": "The outer mass resists rapid changes in angular motion. Its response relative to the hub loads the elastic coupling.",
+        "part": "damper-inertia-ring"
+      },
+      {
+        "title": "The elastic layer dissipates energy",
+        "text": "Deformation in the coupling turns some oscillation energy into heat. Its material properties and geometry determine the response; this model does not claim a measured tuning frequency.",
+        "part": "damper-elastomer"
+      },
+      {
+        "title": "The center fastener clamps the hub",
+        "text": "The retaining bolt and washer provide axial clamp load at the hub face. Smooth threads and a provisional nose bore illustrate the connection; they are not a fastener specification.",
+        "part": "damper-bolt"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "dorman-2006-oes-catalog",
+      "dorman-594-152"
+    ]
+  },
+  "flywheel-assembly": {
+    "summary": "The flywheel turns with the crankshaft. Its mass stores kinetic energy between combustion events, its friction face works with the clutch, and its outer ring gear accepts torque from the starter.",
+    "limits": "LFW132 application is supported by the LuK catalog. HICENGINE FFM68 provides replacement dimensions and tooth count. The installed flywheel has not been inspected; recesses, exact tooth geometry, angular indexing and fasteners are provisional. A pilot-bearing construction study is present; the clutch is not yet reconstructed.",
+    "steps": [
+      {
+        "title": "The crankshaft drives the flywheel",
+        "text": "Six bolts clamp the center against the rear crankshaft flange. The model uses a 76 mm bolt circle and 11 mm flywheel holes from a replacement catalog; actual hole indexing and thread engagement need confirmation.",
+        "part": "flywheel-crank-bolt-1"
+      },
+      {
+        "title": "Rotating mass carries energy between firing events",
+        "text": "At a given speed, the rotating flywheel stores energy. Its inertia reduces speed variation as the engine passes through compression and power strokes. This viewer shows rigid rotation, not a computed vibration response.",
+        "part": "flywheel-body"
+      },
+      {
+        "title": "The starter acts on the ring gear",
+        "text": "The starter pinion engages the outer gear to turn the engine during starting. The replacement catalog specifies 164 teeth. Starter engagement and tooth contact are not yet simulated.",
+        "part": "flywheel-ring-gear"
+      },
+      {
+        "title": "The clutch transfers torque onward",
+        "text": "The clutch disc is clamped against the rear friction face by a pressure plate. LuK lists more than one relevant clutch size, so a specific installed disc diameter is not asserted.",
+        "part": "flywheel-body"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "luk-flywheel",
+      "hicengine-ffm68"
+    ]
+  },
+  "pilot-bearing-assembly": {
+    "summary": "The pilot bearing supports the tip of the transmission input shaft inside the rear of the crankshaft. When the clutch is disengaged, the crankshaft and input shaft can turn at different speeds.",
+    "limits": "The FC65662 application is catalog-supported. Two Timken dimensional tables disagree slightly; both are recorded in the reference notes. Internal construction, 16-needle count, cage pockets, seal and installed seating depth are illustrative. This view does not simulate rolling contact.",
+    "steps": [
+      {
+        "title": "The outer case follows the crankshaft",
+        "text": "The bearing case is seated in a recess at the rear of the crankshaft. This model includes a matched recess for inspection, with provisional clearance and depth.",
+        "part": "pilot-bearing-case"
+      },
+      {
+        "title": "Needles support relative rotation",
+        "text": "The rollers carry radial load between the input-shaft pilot and the outer race when their speeds differ. Each modeled needle can be isolated.",
+        "part": "pilot-bearing-needle-1"
+      },
+      {
+        "title": "The cage spaces the needles",
+        "text": "Cage pockets keep the rollers distributed around the shaft. Exact pocket geometry and number require a part-specific section or teardown.",
+        "part": "pilot-bearing-cage"
+      },
+      {
+        "title": "The closure protects the running surfaces",
+        "text": "The seal is shown separately to explain the bearing boundary. Its production lip geometry is not verified.",
+        "part": "pilot-bearing-seal"
+      }
+    ],
+    "troubleshooting": [],
+    "sources": [
+      "timken-pilot-application",
+      "timken-pilot-dimensions"
+    ]
+  }
+}

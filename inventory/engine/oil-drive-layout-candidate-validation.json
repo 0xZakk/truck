@@ -1,0 +1,111 @@
+{
+  "installed": false,
+  "manifest_sha256": "7d11501cee5e4a6ba06898ea0af1fa3ca0f020a35ed55e2c3eca7dcefa365dfa",
+  "source_sha256": "34bd23baac328da15a385de3311f3463d47810f7c255938da4d700beb5d40af7",
+  "candidate_count": 47,
+  "invalid": [],
+  "checks": 213,
+  "collisions": [],
+  "crank_motion_collisions": [],
+  "gear_mesh_samples": [
+    {
+      "shaft_degrees": 0.0,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.1690987072815941
+    },
+    {
+      "shaft_degrees": 1.40625,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16803943091177997
+    },
+    {
+      "shaft_degrees": 2.8125,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16726597175405203
+    },
+    {
+      "shaft_degrees": 4.21875,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16781863841936157
+    },
+    {
+      "shaft_degrees": 5.625,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.17019406063492962
+    },
+    {
+      "shaft_degrees": 7.03125,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16781863841934858
+    },
+    {
+      "shaft_degrees": 8.4375,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16726597175403632
+    },
+    {
+      "shaft_degrees": 9.84375,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16803943091176549
+    },
+    {
+      "shaft_degrees": 11.25,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16909870728158055
+    },
+    {
+      "shaft_degrees": 12.65625,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16803943091177265
+    },
+    {
+      "shaft_degrees": 14.0625,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16726597175404517
+    },
+    {
+      "shaft_degrees": 15.46875,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16781863841934652
+    },
+    {
+      "shaft_degrees": 16.875,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.17019406063495587
+    },
+    {
+      "shaft_degrees": 18.28125,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16781863841932962
+    },
+    {
+      "shaft_degrees": 19.6875,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.1672659717540221
+    },
+    {
+      "shaft_degrees": 21.09375,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16803943091173834
+    },
+    {
+      "shaft_degrees": 22.5,
+      "overlap_mm3": 0,
+      "minimum_distance_mm": 0.16909870728159365
+    }
+  ],
+  "gear_origin_mm": [
+    227.584,
+    123.8289343482927,
+    59.687274840275926
+  ],
+  "tilt_degrees": 20.0,
+  "shaft_length_mm": 114.80799999999998,
+  "limits": [
+    "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+    "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+    "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+    "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+    "Static neighbor audit plus twelve crank angles and seventeen points across one gear-tooth period. Unchanged block-to-neighbor intersections are not re-audited."
+  ]
+}

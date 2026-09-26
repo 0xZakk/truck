@@ -1,0 +1,74 @@
+{
+  "status": "Installed manifold study passes its selected port probes but fails the broader suction-network check; isolated corrective adapter under validation",
+  "sources": [
+    {
+      "id": "summit-fs10-port-seals",
+      "title": "Summit Industries 2006 mobile A/C catalog: FS10 port seals and size 211 dimensions",
+      "url": "https://www.summitseal.com/products/sumcat2006.pdf",
+      "path": "reference/engine/summit-mobile-ac-2006.pdf",
+      "sha256": "a2bb07ec145ff65101f2b011385d82052af790e5663188ca7630d8430178fda8",
+      "pages_visually_reviewed": [121, 131, 135],
+      "verified": "Page 121 depicts two separate rear port rings beside the shipping pad/plate. Page 135 explicitly lists 211C70 suction and discharge O-rings for Ford FX-15/FS-10. Page 131 specifies nominal size 211 inside diameter .796 inch and section .139 inch, with tolerances .010 and .004 inch respectively.",
+      "limits": "Shipping pad, plate and its bolt are not an installed vehicle manifold. Family comparison does not identify the truck's installed seal, gland dimensions, elastomer or manifold casting. No dimensions are scaled from illustrations."
+    },
+    {
+      "id": "uac-fs10-rear-port-photo",
+      "title": "UAC CO101220C application-linked rear port photograph",
+      "url": "https://www.uacparts.com/legacy/Search/Co/images/280/CO%20101220C.jpg",
+      "path": "reference/engine/uac-co101220c-photo.jpg",
+      "sha256": "865b685cf76e5350a3ef59a17f3f1abddfd1f2a22b4503d87c99c84d59368acf",
+      "verified": "Visually reviewed manufacturer photograph shows two separate green rings on the rear-facing ports. The already captured UAC replacement table links CO101220C to 1990-1995 F-series 4.9L/7.5L and Four Seasons 58122.",
+      "limits": "Replacement application and port orientation comparison only, not installed-unit identity. Low-resolution perspective image does not establish port pitch, diameter, manifold outline or mounting coordinates."
+    },
+    {
+      "id": "uac-fs10-port-seals",
+      "title": "UAC Ford O-ring application table: OR 1211",
+      "url": "https://www.uacparts.com/legacy/Search/OR/Seals_Ford_O-Rings.html",
+      "path": "reference/engine/uac-fs10-port-seals.html",
+      "sha256": "f635a70820f03dfc0406d49b163756e6b811d5ef3d4965c5efdff657687d6585",
+      "verified": "OR 1211 is listed for Ford FX15/FS10 service-valve ports, with OEM references N805340-S/YF-1593 and N806959-S/YF-1692.",
+      "limits": "The table does not dimension the O-ring or identify an installed truck seal."
+    },
+    {
+      "id": "ford-compressor-manifold-diagnosis",
+      "existing_registry_entry": true,
+      "verified": "The captured 1994 F-150 4.9 factory procedure refers to one manifold bolt and separate manifold O-ring seals. It specifies 13-17 ft lb for that bolt before diagnosing persistent joint leakage.",
+      "limits": "No bolt diameter, length, thread, manifold geometry or O-ring dimensions are provided. This model is not a service or refrigerant-handling procedure."
+    }
+  ],
+  "candidate": {
+    "module": "cad/engine/ac_compressor_manifold.py",
+    "new_parts": ["ac-compressor-rear-manifold", "ac-compressor-manifold-suction-seal", "ac-compressor-manifold-discharge-seal", "ac-compressor-manifold-bolt"],
+    "replacement": "ac-compressor-rear-head",
+    "composition": "Wraps ac_compressor_bearing.build and preserves its eight replacements and compressor motion groups. Call only the outermost builder.",
+    "seal_nominal_mm": {"inside_diameter": 20.2184, "section_diameter": 3.5306, "outside_diameter": 27.2796},
+    "provisional": "The accepted study port axes are retained; mating pads grow locally to accommodate dimensioned nominal seals. Manifold and head share two illustrative toroidal seats at the common face. Two independent through-bores reach the existing suction/discharge plenums. A single assumed smooth-shank fastener enters a blind socket; no thread engagement or clamp load is claimed.",
+    "not_modeled": "Production casting, production gland section, seal squeeze, hose/tube routing, crimps, fastener threads, pressure loads and refrigerant properties."
+  },
+  "validation": {
+    "candidate_sha256": "038cf84c301c6198af45ad08a71ba9d04ca627b646b6c7af38c142d721ed7844",
+    "final_api_source_sha256": "be9984fa50b1fe7c6a300636fb71792f94d43e7ed4897504c6bf92b7bf999029",
+    "api_only_revision": "After frozen-neighbor validation, added complete home_components, components and parts API accessors for root motion validators. Existing solid generation and build placement are unchanged. Internal validation was rerun successfully against the final API source.",
+    "manifest_sha256": "302200fd628564389445450404d1ff463ae4b59e9b82821e288ae487a565cba0",
+    "report": "inventory/engine/ac-compressor-manifold-validation.json",
+    "step_roundtrips": 5,
+    "sampled_compressor_phases": [0, 45, 90, 135, 180, 225, 270, 315],
+    "exact_intersection_checks": 61,
+    "collisions": [],
+    "nominal_seal_to_seat_contacts": 4,
+    "composed_api_occurrences": 65,
+    "api_revised_or_added_shape_checks": 5,
+    "passages": "Two disjoint 11 mm diameter diagnostic probes cross the manifold and meet the accepted suction/discharge networks without intersecting any of the five changed solids.",
+    "visual_review": "Offline depth-buffered rear-interface assembled and separated render completed and visually inspected at /private/tmp/manifold-qc.png. Both individual seals, bolt, two bores and matching rear-head seats are visible. This is not live viewer verification.",
+    "installed_neighbors_checked": true,
+    "freeze_verification": "Manifest bytes, all loaded neighbor STEP files and the manifold, bearing, motion and baseline generator files are hash-checked for stability during validation."
+  },
+  "broader_flow_failure": {
+    "manifest_sha256": "04c782593eefbea5a6b43ad68eceac6df87ab77186e2ad68899ab8c48c6e5a81",
+    "suction_probe_overlap_mm3": 2.862820169672184,
+    "cause": "The added retaining-bolt boss partially refills the pre-existing suction cap drilling. The original manifold checker tested two external straight port extensions, not the entire accepted inter-head flow network. Passing those probes was not proof that every route remained open.",
+    "serialization_excluded": "Regenerated analytic geometry, independently STEP-normalized geometry and local-space comparisons all reproduce the approximately 2.86282 cubic millimeter obstruction.",
+    "corrective_candidate": "cad/engine/ac_compressor_manifold_passages.py restores original physical cap drillings and preserves a separate blind bolt socket; not yet accepted."
+  },
+  "production_fit_verified": false
+}

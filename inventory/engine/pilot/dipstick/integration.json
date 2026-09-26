@@ -1,0 +1,33 @@
+{
+  "id": "engine-oil-dipstick",
+  "name": "Engine oil dipstick \u00b7 specimen study",
+  "module": "cad/engine/pilot/dipstick/dipstick.py",
+  "step": "cad/engine/pilot/dipstick/engine-oil-dipstick.step",
+  "glb": "cad/engine/pilot/dipstick/engine-oil-dipstick.glb",
+  "learning": "inventory/engine/pilot/dipstick/learning.json",
+  "evidence": "reference/engine/pilot/dipstick/evidence.json",
+  "accepted_installed": false,
+  "presentation": "withdrawn standalone candidate",
+  "local_origin": "assumed seating-stop reference",
+  "source_units": "mm",
+  "gltf_units": "metres",
+  "gltf_transform": "(x,y,z) -> (x,z,-y) / 1000",
+  "geometry_api": [
+    "Parameters",
+    "parts(p)",
+    "shape(p)"
+  ],
+  "trial_pose_only": {
+    "position_cad_mm": [
+      -120,
+      170,
+      445
+    ],
+    "rotation_cad_deg": [
+      -8.5,
+      0,
+      0
+    ]
+  },
+  "blocking_issue": "unresolved owner pose, guide-tube route and block penetration"
+}

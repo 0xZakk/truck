@@ -1,0 +1,130 @@
+{
+  "status": "candidate_only",
+  "parameters": {
+    "shell_diameter": 69.09,
+    "overall_height": 38.1,
+    "thread_major": 31.24,
+    "thread_root": 28.84,
+    "pitch": 4.5,
+    "thread_height": 18.0,
+    "stem_bottom": -25.0,
+    "seal_bottom": -6.0,
+    "seal_thickness": 3.0,
+    "seal_outer": 22.0,
+    "seal_inner": 15.8,
+    "scallop_depth": 4.0
+  },
+  "checks": {
+    "oil-filler-cap": {
+      "valid": true,
+      "solids": 1,
+      "step_valid": true,
+      "step_volume_error_mm3": 0.0013403194097918458,
+      "mesh_watertight": true,
+      "bounds_mm": [
+        [
+          -34.545,
+          -34.545,
+          -25.0
+        ],
+        [
+          34.545,
+          34.545,
+          13.100000000000001
+        ]
+      ],
+      "volume_mm3": 61841.58547404023
+    },
+    "oil-filler-cap-seal": {
+      "valid": true,
+      "solids": 1,
+      "step_valid": true,
+      "step_volume_error_mm3": 4.865796654485166e-11,
+      "mesh_watertight": true,
+      "bounds_mm": [
+        [
+          -22.0,
+          -22.0,
+          -6.0
+        ],
+        [
+          22.0,
+          22.0,
+          -3.0
+        ]
+      ],
+      "volume_mm3": 2208.7909628859124
+    },
+    "interfaces": {
+      "cap_cover_overlap_mm3": 0,
+      "seal_cover_overlap_mm3": 0,
+      "seal_cover_distance_mm": 0.0,
+      "cap_seal_overlap_mm3": 0,
+      "cap_seal_distance_mm": 0.0,
+      "radial_thread_to_smooth_hole_gap_mm": 1.3800000000000008,
+      "retention_engagement": "FAIL: frozen cover is smooth diameter 34; no female thread exists",
+      "seal_contact_annular_area_mm2": 612.6105674500096,
+      "contact_area_method": "coplanar circular annulus: cover hole radius17, seal outer22, cap datum419, cover top413"
+    },
+    "neighbors_within_15mm_broadphase": [
+      {
+        "id": "c1-intake-valve",
+        "distance_mm": 12.39613007030819,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c1-intake-keeper-1",
+        "distance_mm": 14.875399999999956,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c1-intake-keeper-2",
+        "distance_mm": 14.875399999999956,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c1-intake-rocker",
+        "distance_mm": 1.3753999999999564,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c1-intake-fulcrum",
+        "distance_mm": 27.82754182319179,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c2-exhaust-rocker",
+        "distance_mm": 24.188975523456943,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "c2-exhaust-fulcrum",
+        "distance_mm": 37.928360486646426,
+        "overlap_mm3": 0
+      },
+      {
+        "id": "efi-upper-intake",
+        "distance_mm": 12.899999999999977,
+        "overlap_mm3": 0
+      }
+    ],
+    "service_motion": {
+      "status": "illustrative_only",
+      "reason": "Pitch is assumed; smooth cover cannot validate unscrewing engagement. No operational rotation when installed."
+    }
+  },
+  "baseline": "/private/tmp/truck-desktop-integration-20260925",
+  "hashes": {
+    "cad/engine/pilot/oil-cap/oil-filler-cap.step": "92f4df0c18f52b06d028fd6cd6f7edf1afad3b3c0de734d657dc977cdb151720",
+    "cad/engine/pilot/oil-cap/oil-filler-cap-seal.step": "bc34c7118e7895d231666958f272c1dd87f0ab7b5e1e2ddc9ec0071c05321ce4",
+    "frozen_manifest": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
+    "frozen_cover_step": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/valve-keeper.step": "9ed1ad6ba50e8fc3ddc37d752b55136289baac6649f86f36d1890eead0f7228f",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0",
+    "/private/tmp/truck-desktop-integration-20260925/cad/engine/generated/efi-upper-intake.step": "40e2960b67e6427c3004cc7a37029615d83a0e519409e73759791a65b8ddc271",
+    "builder": "a10d4d07e102024e7b1193b463cc63c02e75e5798e66c30a3f609da65ba62c5f",
+    "checker": "8331a8f8ebe76e374402a8e62e773115a6844feffaf02408eed7c93ed40999d6"
+  }
+}

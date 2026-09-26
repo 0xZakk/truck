@@ -1,0 +1,772 @@
+--- a/cad/engine/full_engine.py
++++ b/cad/engine/full_engine.py
+@@ -13,6 +13,10 @@
+ import trimesh
+ from first_assembly import ROOT, P, cx, annulus, split_ring
+ from assembly_math import transforms
++from valvetrain_dispatch import occurrence_shape
++import valve_source_integration as source_valves
++import valve_source_evidence as source_evidence
++import valve_source_definition_adapter as source_definitions
+ from oil_pump import build as build_oil_pump
+ from efi_intake import build as build_efi_intake
+ from throttle import build as build_throttle
+@@ -112,20 +116,86 @@
+ import intake_locating_dowel
+ import exhaust_front_profile
+ import exhaust_rear_entries
+-
+-
+-def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(), claims=()):
+-    for interface in (manifold_lifting_eye, intake_locating_dowel, exhaust_front_profile, exhaust_rear_entries):
+-        if id in interface.ADAPTERS:
+-            shape = interface.ADAPTERS[id](shape)
+-            if not isinstance(shape, b.Shape):
+-                shape = b.Compound(children=list(shape))
+-            sources = list(dict.fromkeys(list(sources) + interface.SOURCES))
+-            gaps = list(dict.fromkeys(list(gaps) + interface.GAPS))
+-    if id == 'exhaust-front':
+-        function = 'Collects exhaust from three rounded-rectangular head entries through open curved runners into a blended collector and outlet. Manufacturer replacement evidence supports the form; dimensions, casting walls and installed identity remain provisional.'
+-    if id == 'exhaust-rear':
+-        function = 'Collects exhaust from three rounded-rectangular rear entries. Entry dimensions, retained box collector and EGR end connection remain provisional; manufacturer photos require further collector, flange and auxiliary-port reconstruction.'
++import rear_manifold_mounts_desktop_candidate as rear_mounts
++import exhaust_outlet_flanges_desktop as exhaust_outlets
++import valve_layout_integration as valve_layout
++import rear_cam_clearance_desktop as rear_cam
++import water_pump_joint_integration_desktop as pump_joint
++import coolant_outlet_head_candidate as outlet_joint
++from functools import lru_cache
++
++@lru_cache(maxsize=1)
++def outlet_parts(): return outlet_joint.parts()
++OUTLET_IDS=('cylinder-head','coolant-outlet-housing','coolant-outlet-gasket','coolant-outlet-bolt','thermostat-piston','heater-supply-ect-elbow')
++import alternator_carrier_1994_candidate as alternator94
++import alt_thermactor_common_carrier_candidate as common_carrier
++import oil_pan_joint_v9_candidate as pan_joint
++from explode_stages_candidate import pan_hardware_stages
++import accessory_carrier_1994 as carrier94
++import accessory_carrier_1994_integration as carrier94_integration
++
++
++VALVE_IDS = ('head-gasket','cylinder-head','camshaft','intake-valve','exhaust-valve','rocker-arm','rocker-fulcrum','pushrod','lifter-pushrod-cup')
++VALVE_SOURCES = ['melling-camshaft-specifications','melling-stock-valve-specifications','melling-pushrod-specifications']
++VALVE_GAPS = [
++ 'Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.',
++ 'The current pushrod is226.6mm between ball centers/234.2mm overall, shorter than the application-listed MPR-306257.556mm. Diameter7.6mm also differs from7.9248mm. Absolute lifter/cam/head/rocker datums still require reconciliation; this is not a correctly dimensioned replacement pushrod.',
++ 'Valve head diameters compare Melling V1504/V1505, whose application exception remains unresolved. Stem/guide, spring heights, spring end seating, keeper geometry and production rocker construction remain unfinished.',
++ 'Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.'
++]
++VALVE_STATIONS = {'occurrences':[{'id':f'c{i}-{kind}-valve','position_cad_mm':[x+dx,0,0]} for i,x in enumerate(CYLINDERS,1) for kind,dx in [('intake',-25),('exhaust',25)]]}
++
++def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(), claims=(), prepared=False):
++    if not prepared:
++        if id in common_carrier.REMOVE_IDS: return
++        if id in VALVE_IDS:
++            if id=='head-gasket': shape=rear_cam.gasket_interface(shape,[o['position_cad_mm'][0] for o in VALVE_STATIONS['occurrences']])
++            elif id=='cylinder-head': shape=valve_layout.adapt_head_all(shape,VALVE_STATIONS)
++            elif id=='camshaft': shape=rear_cam.cam_interface(valve_layout.adapt_cam_all(shape,VALVE_STATIONS),sum(P['camshaft_journal_diameter_range'])/4)
++            elif id in ('intake-valve','exhaust-valve'): shape=valve_layout.revised_valve(shape,id.split('-')[0])
++            else: shape={'rocker-arm':valve_layout.rocker,'rocker-fulcrum':valve_layout.fulcrum,'pushrod':valve_layout.pushrod,'lifter-pushrod-cup':valve_layout.cup}[id]()
++            sources=list(dict.fromkeys(list(sources)+VALVE_SOURCES))
++            gaps=list(dict.fromkeys(list(gaps)+VALVE_GAPS))
++            if id in ('camshaft','head-gasket'): gaps=list(dict.fromkeys(list(gaps)+rear_cam.GAPS))
++            if id=='camshaft': function='Twelve hypothetical replacement-catalog lobes coordinate valve motion through a720degree engine cycle. Installed cam identity and full production timing remain unverified.'
++        if id in ('alternator-support-bracket','alt-bracket-bolt-1','alt-bracket-bolt-2'):
++            shape = alternator94.replacements()[id]
++            sources = list(dict.fromkeys(list(sources) + alternator94.SOURCES))
++            gaps = list(dict.fromkeys(list(gaps) + alternator94.GAPS))
++        if id in ('pan-side-gasket-1','pan-side-gasket-2'): return
++        if id in ('block','oil-pan'):
++            shape = (pan_joint.block_interface if id=='block' else pan_joint.pan_interface)(shape)
++            sources = list(dict.fromkeys(list(sources) + pan_joint.SOURCES))
++            gaps = list(dict.fromkeys(list(gaps) + pan_joint.GAPS))
++        if id in ('ps-ac-support-bracket','tensioner-mounting-bolt','block','cylinder-head'):
++            shape = carrier94_integration.replacement_definition(id, shape)
++            if id == 'block': shape = carrier94.block_interface(shape)
++            if id == 'cylinder-head': shape = carrier94.head_interface(shape)
++            sources = list(dict.fromkeys(list(sources) + carrier94.SOURCES))
++            gaps = list(dict.fromkeys(list(gaps) + carrier94.GAPS))
++        if id in OUTLET_IDS:
++            shape=outlet_joint.head_interface(shape) if id=='cylinder-head' else outlet_parts()[id]
++            sources=list(dict.fromkeys(list(sources)+outlet_joint.SOURCES))
++            gaps=list(dict.fromkeys(list(gaps)+outlet_joint.GAPS))
++        if id in pump_joint.IDS:
++            shape=pump_joint.replacement(id,shape)
++            sources=list(dict.fromkeys(list(sources)+pump_joint.SOURCES))
++            gaps=list(dict.fromkeys(list(gaps)+pump_joint.GAPS))
++            if id=='water-pump-housing':
++                gaps=[g.replace('Radiator inlet neck remains a separate missing reconstruction.','Radiator inlet neck is modeled with provisional dimensions and passage geometry.').replace('Vehicle hoses, block coolant interface and pump attaching hardware remain outstanding.','Vehicle hoses and deeper coolant routing remain outstanding; local block mounting and four fasteners are modeled.') for g in gaps]
++            if id=='water-pump-gasket': function='One shaped gasket seals the four-fastener pump flange directly to the block front. Dimensions and the larger fifth aperture function remain provisional.'
++        for interface in (manifold_lifting_eye, intake_locating_dowel, exhaust_front_profile, exhaust_rear_entries, rear_mounts, exhaust_outlets):
++            if id in interface.ADAPTERS:
++                shape = interface.ADAPTERS[id](shape)
++                if not isinstance(shape, b.Shape):
++                    shape = b.Compound(children=list(shape))
++                sources = list(dict.fromkeys(list(sources) + interface.SOURCES))
++                gaps = list(dict.fromkeys(list(gaps) + interface.GAPS))
++        if id == 'exhaust-front':
++            function = 'Collects exhaust from three rounded-rectangular head entries through open curved runners into a blended collector and outlet. Manufacturer replacement evidence supports the form; dimensions, casting walls and installed identity remain provisional.'
++        if id == 'exhaust-rear':
++            function = 'Collects exhaust from three rounded-rectangular rear entries. Entry dimensions, retained box collector and EGR end connection remain provisional; manufacturer photos require further collector, flange and auxiliary-port reconstruction.'
++        shape=source_definitions.replacement(id,shape,VALVE_STATIONS)
+     if not shape.is_valid or shape.volume<=0 or len(shape.solids())!=1:
+         raise ValueError(f'{id}: invalid or disconnected ({len(shape.solids())} solids)')
+     volume_method="adaptive" if id == "oil-pump-housing" else "default"
+@@ -163,6 +233,11 @@
+ 
+ 
+ def add(id,definition,parent,pos=(0,0,0),explode=(0,0,0),rotation=(0,0,0),name=None):
++    if id in common_carrier.REMOVE_IDS or id in carrier94_integration.REMOVE_OCCURRENCES or id in ('pan-side-gasket-1','pan-side-gasket-2'): return
++    if id in carrier94_integration.PLACEMENT_OVERRIDES:
++        override = carrier94_integration.PLACEMENT_OVERRIDES[id]
++        pos, rotation = override['position_cad_mm'], override['rotation_cad_deg']
++    if parent == 'alternator-assembly': pos = alternator94.POSITION
+     d=next(d for d in defs if d['id']==definition)
+     occurrences.append(dict(id=id,definition=definition,parent=parent,name=name or d['name'],function=d['function'],
+         position_cad_mm=list(pos),rotation_cad_deg=list(rotation),explode_cad_mm=list(explode)))
+@@ -453,18 +528,59 @@
+         refresh='exhaust-profile'
+     if '--refresh-rear-entries' in sys.argv:
+         refresh='rear-entries'
++    if '--refresh-rear-mounts' in sys.argv:
++        refresh='rear-mounts'
++    if '--refresh-exhaust-outlets' in sys.argv:
++        refresh='exhaust-outlets'
++    if '--refresh-common-carrier' in sys.argv:
++        refresh='common-carrier'
++    if '--refresh-carrier-1994' in sys.argv:
++        refresh='carrier-1994'
++    if '--refresh-pump-inlet' in sys.argv:
++        refresh='pump-inlet'
++    if '--refresh-outlet-joint' in sys.argv:
++        refresh='outlet-joint'
++    if '--refresh-pump-joint' in sys.argv:
++        refresh='pump-joint'
++    if '--refresh-pan-joint' in sys.argv:
++        refresh='pan-joint'
++    if '--refresh-alternator-carrier' in sys.argv:
++        refresh='alternator-carrier'
++    if '--refresh-valvetrain' in sys.argv:
++        refresh='valvetrain'
++    if '--refresh-source-valves' in sys.argv:
++        refresh='source-valves'
+     if refresh:
+         # Explicit development shortcut: retain the saved long block/lubrication.
+         # Use a full build after changing any core generator or its dimensions.
+         previous=json.loads((ROOT/'inventory/engine/full-assembly.json').read_text())
+-        removed={'rear-entries':set(),'exhaust-profile':set(),'intake-dowel':{'intake-head-locator'},'manifold-eye':{'front-manifold-eye'},'starter':{'starter-assembly'},'ac-compressor':{'ac-compressor'},'peripherals':{'induction','exhaust'},'exhaust':{'exhaust'},'throttle':{'throttle-assembly'},'damper':{'damper-assembly'},'cooling':{'cooling'},'ignition':{'ignition'},'head-interface':{'ignition'},'fuel':{'fuel-system'},'induction':{'induction'},'fuel-couplings':{'fuel-supply-coupling','fuel-return-coupling'},'ventilation':{'crankcase-ventilation'},'oil-filter':{'oil-filter-assembly'},'oil-pressure':{'oil-pressure-switch-assembly'},'oil-pan':{'oil-pan-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'},'timing-cover':set(),'block-plugs':{'block-plugs'},'egr':{'egr'},'egr-tube':{'egr-exhaust-line'},'evr':{'egr-vacuum-regulator'},'egr-hoses':{'egr-vacuum-lines'},'flywheel':{'flywheel-assembly'},'pilot-bearing':{'pilot-bearing-assembly'},'accessory-drive':{'accessory-drive','water-pump-pulley-assembly','fan-clutch-assembly'},'regulator-vacuum':{'regulator-vacuum-line'},'ignition-leads':{'ignition-leads','ignition-coil-mount'},'cooling-connections':{'cooling-connections'},'oil-drive':{'distributor-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'}}[refresh]
++        removed={'source-valves':set(),'common-carrier':set(),'pump-inlet':set(),'outlet-joint':set(),'pump-joint':set(),'valvetrain':set(),'alternator-carrier':set(),'pan-joint':{'oil-pan-fastener-assembly'},'carrier-1994':{'carrier-1994-engine-attachments'},'exhaust-outlets':set(),'rear-mounts':{'rear-manifold-mounts'},'rear-entries':set(),'exhaust-profile':set(),'intake-dowel':{'intake-head-locator'},'manifold-eye':{'front-manifold-eye'},'starter':{'starter-assembly'},'ac-compressor':{'ac-compressor'},'peripherals':{'induction','exhaust'},'exhaust':{'exhaust'},'throttle':{'throttle-assembly'},'damper':{'damper-assembly'},'cooling':{'cooling'},'ignition':{'ignition'},'head-interface':{'ignition'},'fuel':{'fuel-system'},'induction':{'induction'},'fuel-couplings':{'fuel-supply-coupling','fuel-return-coupling'},'ventilation':{'crankcase-ventilation'},'oil-filter':{'oil-filter-assembly'},'oil-pressure':{'oil-pressure-switch-assembly'},'oil-pan':{'oil-pan-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'},'timing-cover':set(),'block-plugs':{'block-plugs'},'egr':{'egr'},'egr-tube':{'egr-exhaust-line'},'evr':{'egr-vacuum-regulator'},'egr-hoses':{'egr-vacuum-lines'},'flywheel':{'flywheel-assembly'},'pilot-bearing':{'pilot-bearing-assembly'},'accessory-drive':{'accessory-drive','water-pump-pulley-assembly','fan-clutch-assembly'},'regulator-vacuum':{'regulator-vacuum-line'},'ignition-leads':{'ignition-leads','ignition-coil-mount'},'cooling-connections':{'cooling-connections'},'oil-drive':{'distributor-assembly','oil-pump-assembly','oil-pickup-assembly','oil-drive-assembly'}}[refresh]
+         if refresh=='oil-filter':removed.add('oil-filter-adapter-assembly')
+         for a in previous['assemblies']:
+             if a['parent'] in removed:removed.add(a['id'])
+         assemblies.extend(a for a in previous['assemblies'] if a['id'] not in removed)
+         old_pan_ids={'oil-pan','pan-side-gasket-1','pan-side-gasket-2'} if refresh=='oil-pan' else set()
+         occurrences.extend(o for o in previous['occurrences'] if o['parent'] not in removed and o['id'] not in old_pan_ids)
++        occurrences[:] = [o for o in occurrences if o['id'] not in carrier94_integration.REMOVE_OCCURRENCES and o['id'] not in ('pan-side-gasket-1','pan-side-gasket-2') and not (refresh=='pan-joint' and o['id']=='oil-pan-molded-gasket')]
++        for occurrence in occurrences:
++            if occurrence['id'] in carrier94_integration.PLACEMENT_OVERRIDES:
++                occurrence.update(carrier94_integration.PLACEMENT_OVERRIDES[occurrence['id']])
++        for occurrence in occurrences:
++            override = alternator94.placement_override(occurrence)
++            if override is not None: occurrence['position_cad_mm'] = list(override)
++        occurrences[:]=[o for o in occurrences if o['id'] not in common_carrier.REMOVE_IDS and not (refresh=='common-carrier' and o['id']==common_carrier.NEW_ID)]
++        if refresh=='pump-joint': occurrences[:]=[o for o in occurrences if not o['id'].startswith('water-pump-mounting-screw-')]
+         used={o['definition'] for o in occurrences}
++        if refresh=='pump-joint': used.difference_update(pump_joint.IDS)
++        if refresh=='pump-inlet': used.discard('water-pump-housing')
++        if refresh=='outlet-joint': used.difference_update(OUTLET_IDS)
++        if refresh=='source-valves': used.difference_update(source_definitions.IDS | {'valve-spring'})
++        if refresh=='valvetrain': used.difference_update(VALVE_IDS)
++        if refresh=='alternator-carrier': used.difference_update(('alternator-support-bracket','alt-bracket-bolt-1','alt-bracket-bolt-2'))
++        if refresh=='pan-joint':
++            used.difference_update(('block','oil-pan'))
++        if refresh=='carrier-1994':
++            used.difference_update(('block','cylinder-head','ps-ac-support-bracket','tensioner-mounting-bolt'))
+         if refresh=='oil-filter':used.discard('block')
+         if refresh=='manifold-eye':
+             used.difference_update(manifold_lifting_eye.ADAPTERS)
+@@ -472,16 +588,58 @@
+             used.difference_update(intake_locating_dowel.ADAPTERS)
+         if refresh=='exhaust-profile':
+             used.difference_update(exhaust_front_profile.ADAPTERS)
++        if refresh=='exhaust-outlets':
++            used.difference_update(exhaust_outlets.ADAPTERS)
++        if refresh=='rear-mounts':
++            used.difference_update(rear_mounts.ADAPTERS)
+         if refresh=='rear-entries':
+             used.difference_update(exhaust_rear_entries.ADAPTERS)
+         defs.extend(d for d in previous['definitions'] if not (refresh=='ignition-leads' and d['id'] in ('distributor-cap','cylinder-head')) and not (refresh=='cooling-connections' and d['id']=='water-pump-housing') and d['id'] in used and not (refresh=='oil-drive' and d['id'] in ('block','camshaft')) and not (refresh=='head-interface' and d['id']=='cylinder-head') and not (refresh=='timing-cover' and d['id']=='timing-cover') and not (refresh=='block-plugs' and d['id']=='block') and not (refresh in ('egr','regulator-vacuum') and d['id']=='efi-upper-intake') and not (refresh=='egr-tube' and d['id']=='exhaust-rear') and not (refresh=='accessory-drive' and d['id'] in ('water-pump-drive-hub','block','cylinder-head')) and not (refresh in ('flywheel','pilot-bearing','damper') and d['id']=='crankshaft'))
+-        if refresh in ('manifold-eye', 'intake-dowel', 'exhaust-profile', 'rear-entries'):
++        if refresh in ('manifold-eye', 'intake-dowel', 'exhaust-profile', 'rear-entries', 'rear-mounts', 'exhaust-outlets'):
+             interface = {'manifold-eye': manifold_lifting_eye, 'intake-dowel': intake_locating_dowel,
+-                         'exhaust-profile': exhaust_front_profile, 'rear-entries': exhaust_rear_entries}[refresh]
++                         'exhaust-profile': exhaust_front_profile, 'rear-entries': exhaust_rear_entries, 'rear-mounts': rear_mounts, 'exhaust-outlets': exhaust_outlets}[refresh]
+             for identifier in interface.ADAPTERS:
+                 old = next(definition for definition in previous['definitions'] if definition['id'] == identifier)
+                 shape = b.import_step(ROOT / old['step'].lstrip('/'))
+                 define(identifier, shape, old['name'], old['function'], old['system'], old['color'], old['sources'], old['unresolved'], old['dimension_claims'])
++        if refresh=='pump-inlet':
++            old=next(d for d in previous['definitions'] if d['id']=='water-pump-housing')
++            define(old['id'],b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources']+['water-pump-inlet-v3-topology'],old['unresolved']+pump_joint.inlet.GAPS,old['dimension_claims'])
++        if refresh=='outlet-joint':
++            for identifier in OUTLET_IDS:
++                old=next(d for d in previous['definitions'] if d['id']==identifier)
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],old['unresolved'],old['dimension_claims'])
++        if refresh=='pump-joint':
++            for identifier in pump_joint.IDS:
++                if identifier in common_carrier.REMOVE_IDS: continue
++                old=next(d for d in previous['definitions'] if d['id']==identifier)
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],old['unresolved'],old['dimension_claims'])
++        if refresh=='source-valves':
++            if previous.get('valvetrain_model')=='source-sized-v2':
++                raise ValueError('Source-sized refresh requires the accepted first-stage baseline')
++            old_defs={d['id']:d for d in previous['definitions']}
++            inputs={key:b.import_step(ROOT/old_defs[key]['step'].lstrip('/')) for key in ['cylinder-head','lifter-body','intake-valve','exhaust-valve']}
++            for identifier,shape in source_valves.replacements(inputs,previous).items():
++                old=old_defs.get(identifier,old_defs['valve-spring'])
++                name=identifier.split('-')[0].title()+' valve spring' if identifier.endswith('-spring') else old['name']
++                define(identifier,shape,name,old['function'],old['system'],old['color'],old['sources'],old['unresolved'],old['dimension_claims'],prepared=True)
++        if refresh=='valvetrain':
++            for identifier in VALVE_IDS:
++                old=next(d for d in previous['definitions'] if d['id']==identifier)
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],old['unresolved'],old['dimension_claims'])
++        if refresh=='alternator-carrier':
++            for identifier in ('alt-bracket-bolt-1','alt-bracket-bolt-2'):
++                old = next(d for d in previous['definitions'] if d['id'] == identifier)
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],alternator94.GAPS,old['dimension_claims'])
++        if refresh=='pan-joint':
++            for identifier in ('block','oil-pan'):
++                old = next(d for d in previous['definitions'] if d['id'] == identifier)
++                gaps = old['unresolved'] if identifier=='block' else pan_joint.GAPS + ['Sump stamping, capacity, installed pan identity and production dimensions remain provisional.']
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],gaps,old['dimension_claims'])
++        if refresh=='carrier-1994':
++            for identifier in ('block','cylinder-head','ps-ac-support-bracket','tensioner-mounting-bolt'):
++                old = next(d for d in previous['definitions'] if d['id'] == identifier)
++                define(identifier,b.import_step(ROOT/old['step'].lstrip('/')),old['name'],old['function'],old['system'],old['color'],old['sources'],old['unresolved'],old['dimension_claims'])
+         if refresh=='oil-filter':
+             define_block_casting()
+         if refresh=='ignition-leads':
+@@ -666,14 +824,27 @@
+         build_starter_motor_feed(wired_api)
+     if refresh in (None, 'intake-dowel', 'peripherals', 'induction'):
+         intake_locating_dowel.build((define, add, group))
++    if refresh in (None,'pump-joint','cooling'):
++        pump_joint.pump.build_hardware((define,lambda id,definition,parent,position=(0,0,0),**kw:add(id,definition,parent,pos=position,**kw),group))
++    if refresh in (None,'pan-joint','oil-pan'):
++        pan_joint.build((define,add,group))
++    if refresh in (None, 'carrier-1994','accessory-drive'):
++        carrier94_integration.build_hardware((define,add,group))
++    if not any(o['id']==common_carrier.NEW_ID for o in occurrences):
++        define(common_carrier.NEW_ID,common_carrier.carrier(),'Alternator / Thermactor common carrier','One provisional cast support carries the alternator and Thermactor pump. Photographs establish a single carrier; hole mapping, contours and dimensions remain assumed.','accessory-drive','#96a4ad',common_carrier.SOURCES,common_carrier.GAPS)
++        add(common_carrier.NEW_ID,common_carrier.NEW_ID,'accessory-drive',explode=(180,-90,0))
+     source_ids=set(s for d in defs for s in d.get('sources',[]))
+     if refresh in (None, 'manifold-eye', 'peripherals', 'exhaust'):
+         manifold_lifting_eye.build((define, add, group))
+         source_ids.update(manifold_lifting_eye.SOURCES)
++    if refresh in (None, 'rear-mounts', 'peripherals', 'exhaust'):
++        rear_mounts.build((define, add, group))
++        source_ids.update(rear_mounts.SOURCES)
+     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
+     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/damper-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/cooling-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/water-pump-joint-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/ignition-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/ac-compressor-motion-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/ac-compressor-bearing-learning.json').read_text()))
+@@ -691,6 +862,10 @@
+     learning.update(json.loads((ROOT/'inventory/engine/intake-locating-dowel-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/exhaust-front-profile-learning.json').read_text()))
+     learning.update(json.loads((ROOT/'inventory/engine/exhaust-rear-entries-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/rear-manifold-mounts-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/carrier-1994-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/common-carrier-learning.json').read_text()))
++    learning.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-learning.json').read_text()))
+     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
+     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
+     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
+@@ -700,16 +875,40 @@
+         if source['id'] in source_ids:
+             sources[source['id']]={k:source[k] for k in ('title','url','sha256')}
+             sources[source['id']]['path']=source['local_path']
++    sources.update(json.loads((ROOT/'inventory/engine/pump-joint-sources.json').read_text()))
++    sources.update(json.loads((ROOT/'inventory/engine/carrier-1994-sources.json').read_text()))
++    sources.update(json.loads((ROOT/'inventory/engine/common-carrier-sources.json').read_text()))
++    sources.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-sources.json').read_text()))
+     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
+     for occurrence in occurrences:
+-        if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS):
++        if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS | rear_mounts.ADAPTERS):
+             occurrence['function'] = functions_by_definition[occurrence['definition']]
++    for kind in ('intake','exhaust'):
++        if not any(d['id']==kind+'-spring' for d in defs):
++            define(kind+'-spring',source_definitions.v.spring(kind),kind.title()+' valve spring','Returns the valve toward its seat.','valvetrain',sources=['fsm-2e5473b2bf99'],prepared=True)
++    defs[:]=[d for d in defs if d['id']!='valve-spring']
++    annotated=source_valves.annotate_manifest({'occurrences':occurrences,'assemblies':assemblies})
++    occurrences[:]=annotated['occurrences'];assemblies[:]=annotated['assemblies']
++    next(o for o in occurrences if o['id']=='cam-bearing-1')['position_cad_mm'][0]=rear_cam.NEW_STATION
++    for o in occurrences:
++        if o['id'].startswith(('oil-pan-mounting-screw-','oil-pan-mounting-washer-')): o['explode_stages']=pan_hardware_stages(o['explode_cad_mm'])
++    pump_joint.annotate(assemblies,occurrences)
++    for a in assemblies:
++        if a['id']=='coolant-outlet-assembly': a['position_cad_mm']=list(outlet_joint.POSITION)
++        elif a['id']=='thermostat-assembly': a['position_cad_mm']=list(outlet_joint.THERMOSTAT_POSITION)
++    for o in occurrences:
++        if o['id']=='coolant-outlet-bolt-1': o['position_cad_mm']=[0,-27,29]
++        elif o['id']=='coolant-outlet-bolt-2': o['position_cad_mm']=[0,32,-25]
++        elif o['parent']=='engine-coolant-temperature-assembly': o['position_cad_mm']=list(outlet_joint.ect_position(o['id']))
+     manifest=dict(schema_version=2,title='Ford 4.9L · engine atlas',status='In-progress reconstruction; not a complete or verified OEM engine',
+         coordinate_system=BASE['coordinate_system'],definitions=defs,assemblies=assemblies,occurrences=occurrences,sources=sources,
+         mechanism={**BASE['mechanism'],'firing_order':[1,5,3,6,2,4],'cylinder_phases_deg':PHASES,'bore_pitch_mm':PITCH,'deck_height_mm':DECK},
+         omissions=[item['system']+': '+', '.join(item['items']) for item in json.loads((ROOT/'inventory/engine/completion-plan.json').read_text())['remaining']],
+         coverage={'modeled_occurrences':len(occurrences),'modeled_definitions':len(defs),'verified_complete':False,
+           'note':'Counts describe the current reconstruction, not a verified complete engine bill of materials. Some parts have unconfirmed applicability.'})
++    manifest=source_evidence.annotate_evidence(manifest)
++    manifest['valvetrain_model']='source-sized-v2'
++    defs[:]=manifest['definitions']
+     for d in defs:
+         if d['id'] not in shapes:shapes[d['id']]=b.import_step(ROOT/d['step'].lstrip('/'))
+         size=shapes[d['id']].bounding_box().size
+@@ -720,7 +919,7 @@
+     poses=transforms(manifest)
+     placed=[]
+     for o in occurrences:
+-        s=shapes[o['definition']].moved(poses[o['id']]);s.label=o['id'];placed.append(s)
++        s=occurrence_shape(o,shapes[o['definition']],0).moved(poses[o['id']]);s.label=o['id'];placed.append(s)
+     b.export_step(b.Compound(children=placed),STEP/'full-assembly.step',unit=b.Unit.MM)
+     (ROOT/'inventory/engine/full-assembly.json').write_text(json.dumps(manifest,indent=2)+'\n')
+     print(f'Wrote {len(defs)} definitions / {len(occurrences)} individual parts',flush=True)
+--- a/cad/engine/assembly_math.py
++++ b/cad/engine/assembly_math.py
+@@ -1,6 +1,7 @@
+ """CAD-space transforms shared by assembly export and geometric verification."""
+ import math
+ import build123d as b
++VALVETRAIN_TRANSFORMS_VERSION=2
+ 
+ 
+ def compressor_state(motion, degrees, engaged=True):
+@@ -44,4 +45,9 @@
+             if motion['type']=='piston':loc*=b.Pos(0,0,jz+math.sqrt(length**2-jy**2))
+             if motion['type']=='rod':loc*=b.Pos(0,jy,jz)*b.Rot(math.degrees(math.asin(jy/length)),0,0)
+         result[a['id']]=result.get(a['parent'],b.Location())*loc
+-    return {o['id']:result[o['parent']]*b.Pos(*o['position_cad_mm'])*b.Rot(*o.get('rotation_cad_deg',[0,0,0])) for o in manifest['occurrences']}
++    poses = {o['id']:result[o['parent']]*b.Pos(*o['position_cad_mm'])*b.Rot(*o.get('rotation_cad_deg',[0,0,0])) for o in manifest['occurrences']}
++
++    if any(o.get('valvetrain') for o in manifest['occurrences']):
++        from valvetrain_dispatch import apply_valve_transforms
++        poses = apply_valve_transforms(manifest,poses,degrees)
++    return poses
+--- a/scripts/check-engine-atlas.py
++++ b/scripts/check-engine-atlas.py
+@@ -15,6 +15,7 @@
+ sys.path.insert(0,str(ROOT/'cad/engine'))
+ from assembly_math import transforms
+ from cad_metrics import solid_volume
++from valvetrain_dispatch import occurrence_shape
+ 
+ manifest_path=ROOT/'inventory/engine/full-assembly.json'
+ manifest_bytes=manifest_path.read_bytes()
+@@ -53,7 +54,7 @@
+     core=['block','crankshaft','camshaft']+[f'c{i}-{p}' for i in range(1,7) for p in ['piston-1','connecting-rod-1','rod-cap-1']]
+     lubrication=[o['id'] for o in m['occurrences'] if defs[o['definition']]['system']=='lubrication']
+     targets=core+['oil-pan']+lubrication
+-    placed={o['id']:parts[o['definition']].moved(loc[o['id']]) for o in m['occurrences'] if '--all-static' in sys.argv or o['id'] in targets}
++    placed={o['id']:occurrence_shape(o,parts[o['definition']],angle).moved(loc[o['id']]) for o in m['occurrences'] if '--all-static' in sys.argv or o['id'] in targets}
+     pairs=[('crankshaft','block'),('camshaft','block'),('camshaft','crankshaft')]+[(f'c{i}-{p}',target) for i in range(1,7) for p in ['piston-1','connecting-rod-1','rod-cap-1'] for target in ['block','crankshaft','camshaft']]
+     pairs += [(id,target) for id in lubrication for target in core+['oil-pan']]
+     if '--all-static' in sys.argv:
+--- a/viewer/atlas.js
++++ b/viewer/atlas.js
+@@ -1,8 +1,11 @@
++import { explodeOffset } from './engine-explode-stages-candidate.js';
+ import * as THREE from 'three';
+ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+-import { buildNavigation } from './engine-navigation.js';
++import { occurrenceValvePose, springMeshData } from './engine-valve-layout.js';
++import {sourceOccurrencePose, sourceSpringMeshData} from './engine-valve-source.js';
++import { buildNavigation } from './engine-navigation.js?revision=complete-valve-train-20260925';
+ import { sliderCrank, rotaryViewRotation, compressorState } from './engine-motion.js';
+ 
+ const $ = id => document.getElementById(id);
+@@ -176,6 +179,25 @@
+   orbit.target.copy(sphere.center).addScaledVector(screenUp,targetOffset);
+   camera.position.copy(orbit.target).addScaledVector(direction,distance);orbit.update();
+ }
++function setValveSpringHeight(object,height,sourceSized=false){
++  if(Math.abs((object.userData.springHeight??-1)-height)<1e-9)return;
++  const meshData=sourceSized?sourceSpringMeshData(height):springMeshData(height);
++  object.traverse(node=>{if(!node.isMesh)return;
++    if(!node.userData.dynamicValveSpring || node.geometry.attributes.position.array.length!==meshData.positions.length || Boolean(node.geometry.index)!==Boolean(meshData.indices)){
++      if(node.userData.dynamicValveSpring)node.geometry.dispose();
++      const geometry=new THREE.BufferGeometry();
++      geometry.setAttribute('position',new THREE.BufferAttribute(meshData.positions,3));
++      geometry.setAttribute('normal',new THREE.BufferAttribute(meshData.normals,3));
++      geometry.setIndex(meshData.indices ? new THREE.BufferAttribute(meshData.indices,1) : null);
++      node.geometry=geometry;node.userData.dynamicValveSpring=true;
++    }else{
++      node.geometry.attributes.position.array.set(meshData.positions);
++      node.geometry.attributes.normal.array.set(meshData.normals);
++      node.geometry.attributes.position.needsUpdate=true;node.geometry.attributes.normal.needsUpdate=true;
++    }
++    node.geometry.computeBoundingBox();node.geometry.computeBoundingSphere();
++  });object.userData.springHeight=height;
++}
+ function pose(){
+   if(!data)return;
+   const m=data.mechanism;
+@@ -200,7 +222,17 @@
+     if(a.motion.type==='piston')g.position.add(new THREE.Vector3(0,state.pistonY,0).applyQuaternion(g.quaternion));
+   }
+   for(const o of data.occurrences){
+-    objects.get(o.id).position.copy(toView(o.position_cad_mm)).addScaledVector(toView(o.explode_cad_mm),explosion);
++    const object=objects.get(o.id);
++    object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
++    object.position.copy(toView(o.position_cad_mm)).add(toView(explodeOffset(o,explosion)));
++    if(o.valvetrain){
++      const sourceSized=o.valvetrain.model==='source-sized-v2';
++      const motion=sourceSized?sourceOccurrencePose(angle,o.valvetrain):occurrenceValvePose(angle,o.valvetrain);
++      // Source-sized linkage offsets use engine axes; legacy offsets use part axes.
++      object.position.add(sourceSized?toView(motion.translationEngineCad):toView(motion.translationCad).applyQuaternion(object.quaternion));
++      object.rotateX(sourceSized?motion.rotationXDeltaRad:motion.rotationXRad);
++      if(motion.springHeightMm!==undefined)setValveSpringHeight(object,motion.springHeightMm,sourceSized);
++    }
+   }
+   $('throttle-angle').value=String(throttleAngle);$('throttle-value').textContent=`${throttleAngle}°`;
+   $('angle').value=String(angle);$('angle-value').textContent=`${Math.round(angle)}°`;
+@@ -208,7 +240,7 @@
+   $('compressor-engaged').checked=compressorEngaged;
+   $('explode-value').textContent=`${Math.round(explosion*100)}%`;
+ }
+-function togglePlay(value){playing=value;$('play').setAttribute('aria-pressed',String(playing));$('play').textContent=playing?'Pause crank motion':'Play crank motion';}
++function togglePlay(value){playing=value;$('play').setAttribute('aria-pressed',String(playing));$('play').textContent=playing?'Pause engine motion':'Play engine motion';}
+ function toggleCompressorPlay(value){compressorPlaying=value;$('compressor-play').setAttribute('aria-pressed',String(value));$('compressor-play').textContent=value?'Pause compressor motion':'Play compressor motion';}
+ $('play').onclick=()=>togglePlay(!playing);
+ $('compressor-play').onclick=()=>toggleCompressorPlay(!compressorPlaying);
+@@ -231,12 +263,13 @@
+   const hit=hits.find(h=>!section||clip.distanceToPoint(h.point)>=0);if(hit){let o=hit.object;while(o&&!o.userData.occurrence)o=o.parent;if(o&&o.userData.occurrence!==current)navigate(o.userData.occurrence);}
+ });
+ try{
+-  const response=await fetch('/inventory/engine/full-assembly.json');if(!response.ok)throw new Error(`Manifest: ${response.status}`);data=await response.json();nav=buildNavigation(data);
+-  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`);if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
++  const response=await fetch('/inventory/engine/full-assembly.json',{cache:'no-store'});if(!response.ok)throw new Error(`Manifest: ${response.status}`);const manifestText=await response.text();data=JSON.parse(manifestText);nav=buildNavigation(data);
++  const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(manifestText))),byte=>byte.toString(16).padStart(2,'0')).join('');
++  const lessons=await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts','carrier-1994','common-carrier','oil-pan-joint','valvetrain-motion','water-pump-joint'].map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=Object.assign({},...lessons);
+   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
+   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
+   const loader=new GLTFLoader();
+-  const models=new Map(await Promise.all(data.definitions.map(async d=>[d.id,(await loader.loadAsync(d.glb)).scene])));
++  const models=new Map(await Promise.all(data.definitions.map(async d=>[d.id,(await loader.loadAsync(`${d.glb}?revision=${revision}`)).scene])));
+   for(const o of data.occurrences){
+     const object=models.get(o.definition).clone(true);object.scale.setScalar(data.coordinate_system.display_scale);
+     object.userData.occurrence=o.id;
+--- a/viewer/engine.html
++++ b/viewer/engine.html
+@@ -28,9 +28,9 @@
+   <div class="view-heading"><div><span class="kicker" id="view-kind">Whole engine</span><h2 id="view-title">Engine</h2></div><a id="home" href="/viewer/engine.html">← Whole engine</a></div>
+   <div class="toolbar" aria-label="Model view controls"><button id="section" aria-pressed="false">Cutaway</button><button id="ghost" aria-pressed="false">See through covers</button><button id="reset">Reset this view</button></div>
+   <div id="status" role="status">Loading component geometry…</div><div id="error" role="alert" hidden></div>
+-  <div class="controls" id="assembly-controls"><div><label for="explode">Explode this assembly <output id="explode-value">0%</output></label><input id="explode" type="range" min="0" max="1" step="0.01" value="0"><small>Exploration view · not a removal sequence.</small></div><div id="throttle-controls" hidden><label for="throttle-angle">Throttle opening <output id="throttle-value">0°</output></label><input id="throttle-angle" type="range" min="0" max="90" step="1" value="0"><small>Idealized butterfly motion · idle bypass and airflow are not simulated.</small></div><div id="compressor-controls" hidden><label for="compressor-angle">Compressor pulley phase <output id="compressor-value">0°</output></label><input id="compressor-angle" type="range" min="0" max="360" step="1" value="0"><button id="compressor-play" aria-pressed="false">Play compressor motion</button><label><input id="compressor-engaged" type="checkbox" checked> Clutch engaged · idealized</label><small>Independent demonstration, not a verified belt ratio. Disengaged shaft and pistons return to the reference pose; clutch plate travel and coast-down are not simulated.</small></div><div id="motion-controls" title="Idealized crank linkage; rod length and pin offset remain provisional. Valve motion is not simulated."><label for="angle">Crank position · 720° cycle <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="720" step="1" value="0"><button id="play" aria-pressed="false">Play crank motion</button></div></div>
++  <div class="controls" id="assembly-controls"><div><label for="explode">Explode this assembly <output id="explode-value">0%</output></label><input id="explode" type="range" min="0" max="1" step="0.01" value="0"><small>Exploration view · not a removal sequence.</small></div><div id="throttle-controls" hidden><label for="throttle-angle">Throttle opening <output id="throttle-value">0°</output></label><input id="throttle-angle" type="range" min="0" max="90" step="1" value="0"><small>Idealized butterfly motion · idle bypass and airflow are not simulated.</small></div><div id="compressor-controls" hidden><label for="compressor-angle">Compressor pulley phase <output id="compressor-value">0°</output></label><input id="compressor-angle" type="range" min="0" max="360" step="1" value="0"><button id="compressor-play" aria-pressed="false">Play compressor motion</button><label><input id="compressor-engaged" type="checkbox" checked> Clutch engaged · idealized</label><small>Independent demonstration, not a verified belt ratio. Disengaged shaft and pistons return to the reference pose; clutch plate travel and coast-down are not simulated.</small></div><div id="motion-controls" title="Illustrative crank and valve linkage. Cam law fits selected replacement-catalog values; installed identity, pushrod length and absolute valve-train heights remain unresolved."><label for="angle">Crank position · 720° cycle <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="720" step="1" value="0"><button id="play" aria-pressed="false">Play engine motion</button></div></div>
+   <p class="model-note">Provisional model · drag to orbit · scroll to zoom</p>
+ </section>
+ </main>
+-<script type="module" src="./atlas.js"></script>
++<script type="module" src="./atlas.js?revision=staged-pan-pump-20260926"></script>
+ </body></html>
+--- a/scripts/check-engine-navigation.mjs
++++ b/scripts/check-engine-navigation.mjs
+@@ -41,7 +41,7 @@
+ assert.ok(results.some(n=>n.id==='c4-intake-lifter-body'));
+ assert.ok(results.every(n=>nav.ancestors(n.id).some(a=>a.id==='valvetrain-cylinder-4')));
+ assert.equal(nav.search('timing cover')[0].id,'timing-cover','Exact part names outrank broad ancestor matches');
+-const learning=Object.assign({},...await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries'].map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
++const learning=Object.assign({},...await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts','carrier-1994','common-carrier','oil-pan-joint','valvetrain-motion'].map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+ for(const [id,entry] of Object.entries(learning)){
+   assert.ok(nav.nodes.has(id));
+   for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.part)assert.ok(nav.nodes.has(step.part),step.part);
+@@ -63,7 +63,7 @@
+ assert.equal(nav.parts('oil-filter-assembly').length,13);
+ assert.equal(nav.parts('oil-filter-adapter-assembly').length,1);
+ assert.equal(nav.parts('oil-pressure-switch-assembly').length,9);
+-assert.equal(nav.parts('oil-pan-assembly').length,5);
++assert.equal(nav.parts('oil-pan-assembly').length,54);
+ assert.equal(nav.parts('pushrod-cover-assembly').length,14);
+ assert.equal(nav.parts('cam-retention-assembly').length,7);
+ assert.equal(nav.parts('block-plugs').length,1);
+@@ -77,11 +77,13 @@
+ for(let i=1;i<=6;i++)assert.equal(nav.parts(`fuel-injector-${i}`).length,13);
+ assert.equal(nav.parts('idle-air').length,8);
+ assert.equal(nav.parts('throttle-sensor').length,7);
+-assert.equal(nav.parts('exhaust').length,5);
++assert.equal(nav.parts('exhaust').length,7);
+ 
+ assert.equal(nav.parts('damper-assembly').length,6);
+-assert.equal(nav.parts('accessory-drive').length,182);
+-assert.equal(nav.parts('accessory-support-brackets').length,15);
++assert.equal(nav.parts('accessory-drive').length,187);
++assert.ok(nav.nodes.has('alternator-thermactor-common-carrier'));
++for(const old of ['alternator-support-bracket','thermactor-support-bracket'])assert.ok(!nav.nodes.has(old));
++assert.equal(nav.parts('accessory-support-brackets').length,20);
+ assert.equal(nav.parts('ac-compressor').length,67);
+ for(const component of ['ac-compressor-rear-manifold','ac-compressor-manifold-suction-seal','ac-compressor-manifold-discharge-seal','ac-compressor-manifold-bolt']){
+   assert.ok(nav.ancestors(component).some(node=>node.id==='ac-compressor'));
+@@ -119,7 +121,7 @@
+     assert.equal(markup.split(`id="${identifier}"`).length-1,1,`${page}: ${identifier}`);
+   }
+ }
+-assert.equal(nav.parts('thermactor-pump-assembly').length,20);
++assert.equal(nav.parts('thermactor-pump-assembly').length,19);
+ assert.equal(nav.parts('power-steering-pump-assembly').length,46);
+ assert.equal(nav.parts('alternator-assembly').length,26);
+ assert.equal(nav.parts('fan-clutch-assembly').length,35);
+@@ -140,3 +142,14 @@
+ assert.equal(nav.parts('egr-vacuum-regulator').length,4);
+ 
+ assert.equal(nav.parts('egr-vacuum-lines').length,1);
++
++assert.equal(nav.parts('rear-manifold-mounts').length,2);
++for(const id of ['rear-manifold-bolt15','rear-manifold-bolt16']) { assert.ok(nav.ancestors(id).some(n=>n.id==='exhaust')); assert.equal(nav.fromUrl(nav.url(id)),id); }
++
++assert.equal(nav.parts('carrier-1994-engine-attachments').length,8);
++
++
++assert.equal(nav.parts('oil-pan-fastener-assembly').length,50);
++assert(!manifest.occurrences.some(p=>p.id.startsWith('pan-side-gasket-')));
++
++for(let i=1;i<=6;i++){const ids=nav.parts(`valvetrain-cylinder-${i}`);for(const kind of ['intake','exhaust'])for(const suffix of ['valve','rocker','pushrod','lifter-body'])assert(ids.includes(`c${i}-${kind}-${suffix}`));}
+--- a/inventory/engine/damper-learning.json
++++ b/inventory/engine/damper-learning.json
+@@ -3,12 +3,28 @@
+     "summary": "The belt-driven Thermactor pump supplies secondary air to the emissions system. This branch currently shows its exterior, shaft interfaces and a separate engine support.",
+     "limits": "The internal pumping cartridge is explicitly unresolved: it is not an identified single production part. Ford describes vane-pump families but the installed displacement, vane count, rotor geometry and filtration variant remain unverified. Bearings are cartridges; no air-flow or pump-motion simulation is implemented.",
+     "steps": [
+-      {"title": "Receive belt drive", "text": "A separate pulley and shaft represent the mechanical input at the lower vehicle-right accessory station. Diameter, grooves and mounting geometry remain provisional.", "part": "thermactor-pump-assembly"},
+-      {"title": "Identify the missing mechanism", "text": "The interior envelope marks space still requiring a rotor, vanes and their supporting details. It must not be interpreted as a completed pump mechanism.", "part": "thermactor-pumping-cartridge"},
+-      {"title": "React belt loads", "text": "A separate bracket and blind block attachments connect the exterior study to the engine. Their dimensions and fastener construction remain illustrative.", "part": "thermactor-support-bracket"}
+-    ],
+-    "troubleshooting": [],
+-    "sources": ["ford-thermactor-study", "ford-accessory-routing", "ford-accessory-brackets"]
++      {
++        "title": "Receive belt drive",
++        "text": "A separate pulley and shaft represent the mechanical input at the lower vehicle-right accessory station. Diameter, grooves and mounting geometry remain provisional.",
++        "part": "thermactor-pump-assembly"
++      },
++      {
++        "title": "Identify the missing mechanism",
++        "text": "The interior envelope marks space still requiring a rotor, vanes and their supporting details. It must not be interpreted as a completed pump mechanism.",
++        "part": "thermactor-pumping-cartridge"
++      },
++      {
++        "title": "React belt loads",
++        "text": "One common casting supports the alternator and Thermactor air pump. Reference photographs establish the shared construction; the modeled contours, hole mapping and mounting dimensions remain provisional.",
++        "part": "alternator-thermactor-common-carrier"
++      }
++    ],
++    "troubleshooting": [],
++    "sources": [
++      "ford-thermactor-study",
++      "ford-accessory-routing",
++      "ford-accessory-brackets"
++    ]
+   },
+   "ac-compressor": {
+     "summary": "The FS10 uses five double-ended pistons to create ten compression chambers. A tilted swashplate turns shaft rotation into piston strokes through ten spherical shoes.",
+@@ -68,38 +84,89 @@
+     "troubleshooting": []
+   },
+   "accessory-support-brackets": {
+-    "summary": "A shared power-steering/A/C bracket and a separate alternator bracket transfer accessory loads into the block and head.",
+-    "limits": "Ford establishes the attachment topology, not these casting shapes, bolt counts or hole coordinates. All modeled webs, bosses, smooth thread envelopes and engagement depths remain provisional. Tensioner and Thermactor supports are separate unfinished load paths.",
+-    "steps": [
+-      {"title": "Support two accessories together", "text": "The shared support joins steering-pump and compressor ears to separate block and head feet.", "part": "ps-ac-support-bracket"},
+-      {"title": "Locate the alternator", "text": "A separate frame supports the alternator's two mounting ears and connects to the engine front.", "part": "alternator-support-bracket"},
+-      {"title": "Close the attachment load path", "text": "Four engine fasteners enter modeled dry blind bosses. Their smooth bores and nominal engagement are explanatory geometry, not thread or torque instructions.", "part": "ps-ac-engine-bracket-bolt-1"}
+-    ],
+-    "troubleshooting": [],
+-    "sources": ["ford-accessory-brackets", "ford-accessory-routing"]
++    "summary": "One carrier supports the power-steering pump, A/C compressor and tensioner. Another common casting supports the alternator and Thermactor air pump.",
++    "limits": "Ford TSB94-10-19 Figure4 establishes the1994 shared carrier and four engine attachment sites. Casting shape, hole coordinates, smooth thread envelopes and engagement depths remain provisional. Belt fit, alternator placement and operating tensioner travel remain unresolved.",
++    "steps": [
++      {
++        "title": "Support three accessories together",
++        "text": "The common casting ties the steering pump, compressor and tensioner pivot to the engine. Its shape here is a construction study constrained by the Ford attachment diagram.",
++        "part": "ps-ac-support-bracket"
++      },
++      {
++        "title": "Locate the alternator",
++        "text": "One common casting supports the alternator and Thermactor air pump. Reference photographs establish the shared construction; the modeled contours, hole mapping and mounting dimensions remain provisional.",
++        "part": "alternator-thermactor-common-carrier"
++      },
++      {
++        "title": "Attach at the head and block",
++        "text": "One front-head bolt and one side-head bolt locate the upper carrier. Two stud, washer and nut stacks attach its lower feet to the block. The smooth envelopes explain assembly, without establishing thread retention or clamp loads.",
++        "part": "carrier-1994-engine-attachments"
++      }
++    ],
++    "troubleshooting": [],
++    "sources": [
++      "ford-accessory-brackets",
++      "ford-accessory-routing",
++      "ford-tsb-94-10-19-accessory"
++    ]
+   },
+   "power-steering-pump-assembly": {
+     "summary": "The Ford CII is a slipper pump: ten spring-loaded slippers travel around a cam track, forming chambers that expand and contract to move steering fluid.",
+     "limits": "The geometry is an illustrative construction study, not a hydraulic simulation. Production cam profile, passages, valve internals, bearing construction, mounting brackets and hoses remain unresolved. Six modeled pulley grooves follow the Ford belt instruction; the Dorman comparison lists five, an unresolved compatibility discrepancy.",
+     "steps": [
+-      {"title": "Supply fluid", "text": "A nylon reservoir surrounds the pump housing and supplies the pumping cartridge.", "part": "ps-pump-reservoir"},
+-      {"title": "Form moving chambers", "text": "Ten slippers and their individual springs divide the spaces around the rotor. The noncircular cam track changes chamber volume as the rotor turns.", "part": "power-steering-pump-assembly"},
+-      {"title": "Close and control the cartridge", "text": "Pressure plates close its ends, while a disc spring preloads the stack. A separate flow-control valve governs delivery; its internal relief mechanism remains an unresolved package.", "part": "ps-pump-valve-cover"}
+-    ],
+-    "troubleshooting": [],
+-    "sources": ["ford-cii-pump-study", "dorman-300-029", "ford-accessory-routing"]
++      {
++        "title": "Supply fluid",
++        "text": "A nylon reservoir surrounds the pump housing and supplies the pumping cartridge.",
++        "part": "ps-pump-reservoir"
++      },
++      {
++        "title": "Form moving chambers",
++        "text": "Ten slippers and their individual springs divide the spaces around the rotor. The noncircular cam track changes chamber volume as the rotor turns.",
++        "part": "power-steering-pump-assembly"
++      },
++      {
++        "title": "Close and control the cartridge",
++        "text": "Pressure plates close its ends, while a disc spring preloads the stack. A separate flow-control valve governs delivery; its internal relief mechanism remains an unresolved package.",
++        "part": "ps-pump-valve-cover"
++      }
++    ],
++    "troubleshooting": [],
++    "sources": [
++      "ford-cii-pump-study",
++      "dorman-300-029",
++      "ford-accessory-routing"
++    ]
+   },
+   "alternator-assembly": {
+     "summary": "The belt turns the alternator rotor inside stationary stator windings. Controlled field current produces the changing magnetic field used to generate electrical power.",
+     "limits": "The installed 75, 95 or 130 amp variant and alternator generation remain unresolved. Dimensions, mounting station and internal geometry are construction assumptions. Windings, bearings, regulator and rectifier are incomplete envelopes; the engine bracket and wiring remain unfinished.",
+     "steps": [
+-      {"title": "Drive the magnetic rotor", "text": "Belt torque enters through the pulley. Interleaved claw poles carry magnetic flux around the rotor field coil.", "part": "alternator-rotor-front-pole"},
+-      {"title": "Supply field current", "text": "Two stationary brushes contact rotating slip rings. The regulator varies field current to control output voltage.", "part": "alternator-brush-holder"},
+-      {"title": "Induce alternating current", "text": "Rotating magnetic flux induces AC in the stationary stator winding. Copper is shown as an envelope rather than individual turns.", "part": "alternator-stator-winding"},
+-      {"title": "Produce direct current", "text": "The rectifier converts stator AC to DC. The electronics package is not an exact diode or circuit reconstruction.", "part": "alternator-rectifier"}
+-    ],
+-    "troubleshooting": [],
+-    "sources": ["ford-alternator-study", "denso-alternator-construction"]
++      {
++        "title": "Drive the magnetic rotor",
++        "text": "Belt torque enters through the pulley. Interleaved claw poles carry magnetic flux around the rotor field coil.",
++        "part": "alternator-rotor-front-pole"
++      },
++      {
++        "title": "Supply field current",
++        "text": "Two stationary brushes contact rotating slip rings. The regulator varies field current to control output voltage.",
++        "part": "alternator-brush-holder"
++      },
++      {
++        "title": "Induce alternating current",
++        "text": "Rotating magnetic flux induces AC in the stationary stator winding. Copper is shown as an envelope rather than individual turns.",
++        "part": "alternator-stator-winding"
++      },
++      {
++        "title": "Produce direct current",
++        "text": "The rectifier converts stator AC to DC. The electronics package is not an exact diode or circuit reconstruction.",
++        "part": "alternator-rectifier"
++      }
++    ],
++    "troubleshooting": [],
++    "sources": [
++      "ford-alternator-study",
++      "denso-alternator-construction"
++    ]
+   },
+   "tensioner-pulley-assembly": {
+     "summary": "The tensioner pulley rolls on the smooth back of the accessory belt. Its bearing allows the wheel to turn around a stationary mounting axis; a separate tensioner arm and spring maintain belt loading.",
+@@ -117,18 +184,36 @@
+       }
+     ],
+     "troubleshooting": [],
+-    "sources": ["gates-38022", "gates-1994-drive"]
++    "sources": [
++      "gates-38022",
++      "gates-1994-drive"
++    ]
+   },
+   "tensioner-support-assembly": {
+     "summary": "The tensioner arm carries the pulley around an offset pivot. Gates describes an enclosed preloaded spring and a locating pin that registers the stationary housing to the engine bracket.",
+-    "limits": "Arm shape, pivot sleeve, cartridge size, fasteners and installed station are illustrative. The cartridge does not reconstruct spring or damping internals. The optional locating bushing represents the large bracket-hole variant; the installed bracket is unknown and not modeled.",
+-    "steps": [
+-      {"title": "The spring loads the arm", "text": "The enclosed spring biases the arm to maintain belt loading. This rigid cartridge envelope does not simulate spring behavior.", "part": "tensioner-spring-cartridge"},
+-      {"title": "The arm carries the pulley", "text": "The offset journal supports the pulley bearing while the arm transmits load toward its pivot. Geometry and working angle remain provisional.", "part": "tensioner-moving-arm"},
+-      {"title": "The housing registers to a bracket", "text": "The rear locating pin prevents the housing from turning. Gates supplies a bushing for the larger bracket-hole option; the modeled bracket connection remains incomplete.", "part": "tensioner-locating-bushing"}
+-    ],
+-    "troubleshooting": [],
+-    "sources": ["gates-1994-drive", "gates-38131-instructions"]
++    "limits": "A provisional shared carrier now supports the cartridge and locator. Spring/damper internals, production dimensions, belt fit and working-angle travel remain unresolved. The pose is static.",
++    "steps": [
++      {
++        "title": "The spring loads the arm",
++        "text": "The enclosed spring biases the arm to maintain belt loading. This rigid cartridge envelope does not simulate spring behavior.",
++        "part": "tensioner-spring-cartridge"
++      },
++      {
++        "title": "The arm carries the pulley",
++        "text": "The offset journal supports the pulley bearing while the arm transmits load toward its pivot. Geometry and working angle remain provisional.",
++        "part": "tensioner-moving-arm"
++      },
++      {
++        "title": "The housing registers to a bracket",
++        "text": "The locator registers the stationary cartridge to the shared carrier. Both locating bushing and blind mounting-bolt seat are represented; production fits remain unverified.",
++        "part": "tensioner-locating-bushing"
++      }
++    ],
++    "troubleshooting": [],
++    "sources": [
++      "gates-1994-drive",
++      "gates-38131-instructions"
++    ]
+   },
+   "damper-assembly": {
+     "summary": "The crankshaft does not turn with perfectly steady torque. Each firing event can twist it slightly. A vibration damper couples an outer inertia ring to the crankshaft hub through an elastic layer.",
+--- a/inventory/engine/completion-plan.json
++++ b/inventory/engine/completion-plan.json
+@@ -77,7 +77,7 @@
+         "Thirteen-part filter and hollow mounting insert with block sealing land are integrated as comparison studies. Eight inlet routes and a separate central outlet are modeled, but pump/main-gallery connections and the E4TZ anti-drainback service insert remain unresolved; no additional unsourced valve is inferred.",
+         "Dipstick and guide tube",
+         "Nine-part pressure-switch study exists. It is not a verified variable sender; block boss, oil passage, connector, installed identity, calibrated threshold and actual internal construction remain unresolved.",
+-        "M14x1.5 replacement-comparison drain plug and sealing washer exist. Pan fasteners and complete applicable molded-rubber end/perimeter sealing remain unfinished; side strips are placeholders."
++        "The drain plug/washer and continuous molded pan gasket with 25 screw/washer pairs are integrated. V9 corrects the shallow end walls and stages display separation. Replacement-photo topology and nominal fastener data constrain the study; pan stamping, capacity, hole stations, end orientation, seal compression, timing-cover junction and production fit remain unresolved."
+       ],
+       "dependency": "Pump/cam/distributor datum reconciliation and truck-specific sump/pickup geometry."
+     },
+@@ -85,10 +85,10 @@
+       "system": "Cooling",
+       "items": [
+         "Water-pump production casting, impeller profile, seal internals and bearing internals; eight-component provisional study present",
+-        "Water-pump mounting/coolant interfaces, gasket profile and fasteners",
++        "The pump now seats directly on the modeled block front through a shaped gasket and four fasteners. Local sealing, blind socket, cylinder-wall retention and impeller clearance checks pass. Casting dimensions, fifth-aperture function, deeper coolant jacket, internal bearing/seal construction and radiator inlet remain unresolved.",
+         "Pump pulley and four bolts have a provisional five-part fit study. A 35-occurrence fan/clutch study and connected hub nose are integrated. Installed clutch variant, fan application, blade pitch, production pulley profile and mounting geometry remain unresolved.",
+-        "Thermostat production internals and installed fit; nine-part replacement-envelope study present. Outlet housing, gasket and two bolts present as a provisional four-part study; head fit and production profile still unresolved.",
+-        "Seven-occurrence heater takeoff and two-wire ECT study integrated through existing outlet and opened pump passage; vehicle-side hoses/clamps, production fitting contours and head/block coolant connections remain unfinished.",
++        "The nine-part thermostat and outlet housing/gasket/two bolts have a coordinated head-front joint, separate local coolant pockets and blind bolt receivers. Geometry/contact/flow checks pass, but production contours, absolute dimensions, deeper jacket routing and thermostat calibration remain unresolved.",
++        "Heater supply elbow and five ECT components follow the revised head outlet; the return elbow follows the pump. Both local wet connections are modeled and checked. Vehicle hoses/clamps, production routes and fittings, deeper head/block coolant circuits and sensor harness remain unfinished.",
+         "Separate single-wire gauge sender is identified but unmounted pending a verified wet head jacket; ECT electrical harness and calibration remain unresolved."
+       ],
+       "dependency": "Correct pump rotation/version and mounting/belt-plane dimensions."
+@@ -117,10 +117,10 @@
+         "Manual PMGR starter:132-component construction study includes distinct S/B/M terminals, pull/hold winding envelopes, insulated contact bridge, provisional slotted-clevis/fork linkage, four separately insulated coil-end conductors, motor feed, frame grommet, ground bridge and four brush pigtails. Corrected nonpenetrating wiring passes installed face-contact and clearance checks without overlap exemptions. Saved-STEP engagement passes17 poses/945 neighbor checks. Loaded engagement, production joint geometry, bellhousing/index-plate support, mounting datums, overrunning internals, commutator/armature connections and vehicle wiring remain unresolved. Starter geometry stays stationary during normal engine animation; clutch boundary remains open.",
+         "Alternator: 26-part integrated construction study and separate support. Installed 75/95/130 A variant, production dimensions, terminals and wiring remain unresolved.",
+         "Power-steering pump: 46-part CII slipper-pump study integrated at provisional upper-LH station; internal relief/baffle/retention details, hydraulic passages, shaft splines and production dimensions remain unresolved. Six modeled grooves follow Ford belt data but conflict with five-groove Dorman replacement metadata.",
+-        "Shared PS/A/C and separate alternator supports: 15-part attachment study integrated with dry block/head bosses and blind fastener seats. Casting geometry, counts, threads and production coordinates remain unverified.",
++        "The 1994 shared PS/A/C carrier and engine attachments are integrated, along with a revised alternator position/support and pump-clearing Thermactor foot. All casting dimensions and stations remain provisional. New F4TE-10239-AC evidence indicates a common alternator/Thermactor casting; the current separate supports require replacement and source-backed hole mapping.",
+         "A/C compressor:67-part FS10 study includes five double-ended pistons, ten shoes, ten PTFE ring envelopes, dimensioned comparison clutch-bearing envelope, rear manifold/two seals/bolt and two source-counted radial support cartridges. Rigid-body motion has independent teaching controls. A manifold-boss obstruction was corrected by restoring the cap drillings while retaining a blind bolt socket; complete suction/discharge network checks and sampled installed motion pass. Bearing internals, pressure-actuated reed/clutch behavior, installed identity and production dimensions remain open; radial bearing envelopes and seal glands are provisional and no hydraulic performance is claimed.",
+         "Thermactor: 20-object exterior/support study integrated; pumping cartridge is an explicitly unresolved envelope, not a completed rotor/vanes assembly. Installed displacement, vanes, air-routing hardware and production dimensions remain open.",
+-        "Accessory hoses, wiring and shared belt routing. Current assumed outside-radius path is roughly 294 mm longer than catalog effective belt length and assumed groove pitches differ; reconcile pitch definitions and component datums before claiming belt fit."
++        "Accessory hoses, wiring and shared belt routing remain unfinished. The connected pump/outlet diagnostic gives a 2854.845 mm outside-radius loop versus 2491 mm catalog effective length, with additional outlet/heater collisions. Assumed cord correction explains only 22.043 mm. Reconcile manufacturer length definitions, accessory mounting topology and source-backed datums before accepting the belt."
+       ],
+       "dependency": "Verified mounting patterns, accessory configuration, clutch boundary and belt alignment."
+     }

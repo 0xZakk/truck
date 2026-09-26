@@ -1,0 +1,127 @@
+{
+  "installed": true,
+  "manifest_sha256": "302200fd628564389445450404d1ff463ae4b59e9b82821e288ae487a565cba0",
+  "source_sha256": "b775447106654b773435109e933b9c55f2546821abfca24b17b64e27f0124289",
+  "candidate_parts": 10,
+  "checks": 100,
+  "contacts": [
+    [
+      "starter-solenoid-lead-pull-s",
+      "starter-solenoid-pull-winding",
+      1.1393509357019025
+    ],
+    [
+      "starter-solenoid-lead-pull-s",
+      "starter-solenoid-s-terminal",
+      0.0418963064992561
+    ],
+    [
+      "starter-solenoid-lead-pull-m",
+      "starter-solenoid-terminal-2",
+      2.043767850618329
+    ],
+    [
+      "starter-solenoid-lead-pull-m",
+      "starter-solenoid-pull-winding",
+      1.1393509357019656
+    ],
+    [
+      "starter-solenoid-lead-hold-s",
+      "starter-solenoid-hold-winding",
+      1.1393509357019647
+    ],
+    [
+      "starter-solenoid-lead-hold-s",
+      "starter-solenoid-s-terminal",
+      0.04210640305317915
+    ],
+    [
+      "starter-solenoid-lead-hold-frame",
+      "starter-solenoid-shell",
+      0.9234230935598576
+    ],
+    [
+      "starter-solenoid-lead-hold-frame",
+      "starter-solenoid-hold-winding",
+      1.1393509357019687
+    ]
+  ],
+  "failures": [],
+  "installed_shape_checks": [
+    {
+      "id": "starter-solenoid-winding-bobbin",
+      "volume_error_mm3": 1.127773430198431e-10,
+      "symmetric_difference_mm3": -1.127773430198431e-10
+    },
+    {
+      "id": "starter-solenoid-fixed-pole",
+      "volume_error_mm3": 9.140421752817929e-11,
+      "symmetric_difference_mm3": -9.185896487906575e-11
+    },
+    {
+      "id": "starter-solenoid-lead-pull-s",
+      "volume_error_mm3": 1.674038685450796e-10,
+      "symmetric_difference_mm3": 1.67396763117722e-10
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-pull-s",
+      "volume_error_mm3": 8.416360017804436e-07,
+      "symmetric_difference_mm3": 8.416359733587342e-07
+    },
+    {
+      "id": "starter-solenoid-lead-pull-m",
+      "volume_error_mm3": 1.0557761953577938e-07,
+      "symmetric_difference_mm3": -1.0557761953577938e-07
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-pull-m",
+      "volume_error_mm3": 2.608295801564964e-10,
+      "symmetric_difference_mm3": 2.608473437248904e-10
+    },
+    {
+      "id": "starter-solenoid-lead-hold-s",
+      "volume_error_mm3": 1.3865568959658958e-07,
+      "symmetric_difference_mm3": 1.3865569314930326e-07
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-hold-s",
+      "volume_error_mm3": 1.5491184583993345e-06,
+      "symmetric_difference_mm3": 1.5491184512939071e-06
+    },
+    {
+      "id": "starter-solenoid-lead-hold-frame",
+      "volume_error_mm3": 8.65085780787922e-13,
+      "symmetric_difference_mm3": -8.704148513061227e-13
+    },
+    {
+      "id": "starter-solenoid-lead-insulation-hold-frame",
+      "volume_error_mm3": 4.975440699439559e-07,
+      "symmetric_difference_mm3": 4.975440575094581e-07
+    }
+  ],
+  "clearance_checks": 171,
+  "conductor_clearances": [
+    {
+      "lead": "starter-solenoid-lead-pull-s",
+      "nearest_unintended_neighbor": "starter-solenoid-fixed-pole",
+      "clearance_mm": 0.3499999999999735
+    },
+    {
+      "lead": "starter-solenoid-lead-pull-m",
+      "nearest_unintended_neighbor": "starter-solenoid-fixed-pole",
+      "clearance_mm": 0.34999999999998405
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-s",
+      "nearest_unintended_neighbor": "starter-solenoid-fixed-pole",
+      "clearance_mm": 0.34999999999998405
+    },
+    {
+      "lead": "starter-solenoid-lead-hold-frame",
+      "nearest_unintended_neighbor": "starter-solenoid-fixed-pole",
+      "clearance_mm": 0.34999999999997844
+    }
+  ],
+  "clearance_scope": "Each coil-end conductor versus every installed neighbor except its declared winding/terminal/frame attachments, the shared S junction, and known solenoid dielectric parts. Other material-unknown neighbors are conservatively treated as conductive. AABB lower bounds prune exact distances without excluding a closer neighbor.",
+  "boundary": "Static full-engine neighbors; separate isolated validator samples seventeen solenoid/linkage poses. Production routing and complete motor electrical continuity remain unresolved."
+}

@@ -1,0 +1,38 @@
+{
+  "complete": false,
+  "installed_identity_verified": false,
+  "application_source": "gates-1994-drive",
+  "architecture_source": {
+    "id": "gates-38131-instructions",
+    "title": "Gates 38131 tensioner removal/installation instructions",
+    "url": "https://manualzz.com/doc/en/25462854/gates-38131-tensioner-instruction-manual",
+    "author": "Gates",
+    "hosting_note": "Manufacturer-authored instructions mirrored by Manualzz; use the document transcription, not generated chat content.",
+    "verified_architecture": [
+      "Enclosed preloaded spring and moving arm",
+      "Central mounting bolt and rear locating pin",
+      "Removable locating-pin bushing for two bracket-hole variants",
+      "Clockwise load stop and counterclockwise free-arm stop"
+    ],
+    "bracket_hole_diameters_mm": [12.7, 7.9375]
+  },
+  "provisional_geometry_mm": {
+    "pulley_center": [473.56, 0, 435],
+    "pivot_station": [433.56, -75, 435],
+    "axial_datum_basis": "Aligned to the illustrative pump/damper belt plane; not a measured installed location.",
+    "routing_basis": "Top-center tensioner in the labeled Ford drive-belt drawing; all modeled center coordinates remain provisional.",
+    "pivot_axis_yz": [-75, 435],
+    "arm_length": 75,
+    "cartridge_diameter": 64,
+    "cartridge_width": 40,
+    "journal_diameter": 16.8,
+    "pin_diameter": 7.6,
+    "optional_bushing_outer_diameter": 12.4
+  },
+  "limits": [
+    "The spring cartridge remains one unresolved envelope, not an invented spring reconstruction.",
+    "Pivot sleeve and arm contour illustrate functional separation; exact internals remain unknown.",
+    "All geometry dimensions except previously sourced pulley envelope are provisional. Bracket-hole nominal diameters are not measured locating-pin or bushing dimensions.",
+    "Engine bracket, installed option, operating travel, spring rate/preload, stops, seals, fastener threads and load path remain unfinished."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "reviewed": "2026-09-24",
+  "manufacturer": "Fel-Pro",
+  "url": "https://www.drivparts.com/content/dam/marketing/North-America/catalogs/fel-pro/pdf/fel-pro-master-gasket-900-16.pdf",
+  "path": "manuals/manufacturer-catalogs/fel-pro-master-gasket-900-16.pdf",
+  "sha256": "44b84daa9b26ad9867b818577b4cb35dc337fc9aa7ed06c7067ab4a688fcfc7c",
+  "reviewed_pages": {
+    "pdf": [
+      353,
+      354
+    ],
+    "printed": [
+      327,
+      328
+    ]
+  },
+  "application": "Entry 42: 1991–1997 Ford truck 4.9L 300 OHV L6, MFI gasoline, VIN Y. Entry 41 above it is VIN 9; entry 43 below is bi-fuel VIN Z and is not this truck.",
+  "review_method": "Text extracted with tools/ingest.py; both rendered PDF pages visually inspected. Only entry42 used for VIN-Y claims.",
+  "parts": [
+    {
+      "component": "head-gasket",
+      "replacement_numbers": [
+        "525 SD",
+        "8168 PT"
+      ],
+      "notes": "Alternative service gaskets; do not install both."
+    },
+    {
+      "component": "head-bolt-set",
+      "replacement_numbers": [
+        "ES 72155-1"
+      ],
+      "notes": "Catalog describes flanged hex head. Exact dimensions not supplied."
+    },
+    {
+      "component": "lower-intake-gasket-set",
+      "replacement_numbers": [
+        "MS 95647"
+      ],
+      "notes": "Includes upper set; kit count is not physical piece count."
+    },
+    {
+      "component": "plenum-gasket-set",
+      "replacement_numbers": [
+        "MS 93838"
+      ],
+      "notes": "Upper set."
+    },
+    {
+      "component": "intake-exhaust-gasket-set",
+      "replacement_numbers": [
+        "MS 93837"
+      ],
+      "notes": "Physical decomposition and installed manifold joint require review."
+    },
+    {
+      "component": "oil-pan-gasket",
+      "replacement_numbers": [
+        "OS 34601 R"
+      ],
+      "notes": "PermaDry molded rubber. This catalog row does not itself say one-piece."
+    },
+    {
+      "component": "drain-plug-gasket",
+      "replacement_numbers": [
+        "70822"
+      ],
+      "notes": "Dimensions and compatibility with chosen replacement drain must be verified."
+    },
+    {
+      "component": "rear-main-seal",
+      "replacement_numbers": [
+        "BS 40592",
+        "BS 40645"
+      ],
+      "notes": "Alternative one-piece rubber / PTFE-rubber service seals; not two simultaneous seals."
+    },
+    {
+      "component": "valve-cover-gasket",
+      "replacement_numbers": [
+        "VS 50028 R"
+      ],
+      "notes": "PermaDry molded rubber."
+    },
+    {
+      "component": "pushrod-cover-gasket",
+      "replacement_numbers": [
+        "PS 13809 C",
+        "PS 13809 R"
+      ],
+      "notes": "Cork improved design versus older rubber design; both listed with grommets. Alternatives, not stacked gaskets."
+    },
+    {
+      "component": "pushrod-cover-grommet",
+      "replacement_numbers": [
+        "10740"
+      ],
+      "notes": "Quantity six explicitly listed."
+    },
+    {
+      "component": "intake-valve-stem-seal",
+      "replacement_numbers": [
+        "SS 72623"
+      ],
+      "notes": "1993–1997 intake, premium valve stem oil seals."
+    },
+    {
+      "component": "exhaust-valve-stem-seal",
+      "replacement_numbers": [
+        "SS 72839-1"
+      ],
+      "notes": "1993–1997 exhaust, premium valve stem oil seals."
+    },
+    {
+      "component": "water-outlet-gasket",
+      "replacement_numbers": [
+        "35355"
+      ],
+      "notes": "Water outlet."
+    },
+    {
+      "component": "water-pump-gasket",
+      "replacement_numbers": [
+        "13816"
+      ],
+      "notes": "Water pump."
+    },
+    {
+      "component": "timing-cover-set",
+      "replacement_numbers": [
+        "TCS 45829",
+        "TCS 45830"
+      ],
+      "notes": "Without / with repair sleeve, respectively. Both explicitly must be used with OS 34601 R."
+    },
+    {
+      "component": "fuel-injector-oring-set",
+      "replacement_numbers": [
+        "ES 70599"
+      ],
+      "notes": "Catalog quantity two is set quantity; not proof of only two physical O-rings in the engine."
+    },
+    {
+      "component": "throttle-body-gasket",
+      "replacement_numbers": [
+        "60846"
+      ],
+      "notes": "Throttle body."
+    },
+    {
+      "component": "egr-gasket",
+      "replacement_numbers": [
+        "72649"
+      ],
+      "notes": "EGR."
+    },
+    {
+      "component": "oil-pump-to-block-gasket",
+      "replacement_numbers": [
+        "70374"
+      ],
+      "notes": "Catalog heading Oil Pump Cover; description explicitly says to block. Do not confuse with pump internal cover seam."
+    }
+  ],
+  "pan_variant_resolution": {
+    "factory_catalog_number": "E7TZ6710B",
+    "factory_catalog_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Oil%20Pan%20Gasket/Parts%20Information/index.html",
+    "older_drawing": "350379654 depicts separate sides and end seals. It does not establish that piece count for this specific service gasket.",
+    "secondary_leads": [
+      "https://www.getoemparts.com/oem-parts/ford-oil-pan-gasket-e7tz6710b",
+      "https://shop.advanceautoparts.com/p/felpro-oil-pan-gasket-set-permadry-molded-rubber-includes-snap-ups-5-piece-set-os-34601-r/5182239-P"
+    ],
+    "secondary_claim": "Dealer lists E7TZ6710B as single piece; reseller lists OS34601R configuration as one piece with installation SnapUps. Manufacturer catalog confirms molded rubber/application, but not the detailed shape.",
+    "model_decision": "Do not promote the two provisional side strips or a four-piece drawing to verified installed construction. Reconstruct a continuous molded gasket only after reviewing the actual part shape and matching front/rear support contours."
+  },
+  "limits": [
+    "Replacement application is not installed identity.",
+    "No flange coordinates, gasket thicknesses, hole coordinates or internal casting dimensions are supplied.",
+    "Catalog set counts and service options are not a physical BOM."
+  ]
+}

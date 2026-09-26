@@ -1,0 +1,15 @@
+{
+  "oil-pan-fastener-assembly": {
+    "summary": "Twenty-five screw-and-washer assemblies clamp the thin oil-pan flange against its seal and the engine's lower rails. Each screw and washer is independently selectable in this study.",
+    "limits": "The factory service figure supplies the count and nominal screw dimensions, but does not dimension the holes. The 13/12 side-rail pattern, block pads, washer and screw head are provisional. Captive washer retention and production threads are not reconstructed. The existing gasket strips do not complete the molded-rubber end/perimeter seal.",
+    "steps": [
+      {"title": "Transmit clamping load", "text": "The screw head bears on the washer. The washer distributes that load over a larger portion of the sheet-metal flange.", "part": "oil-pan-mounting-screw-1"},
+      {"title": "Support the thin flange", "text": "The separate washer sits on the flange's underside. The modeled screw passes through clearance holes in the flange and gasket into a blind rail socket; that socket is a clearance envelope, not a threaded joint simulation.", "part": "oil-pan-mounting-washer-1"},
+      {"title": "Compress the sealing joint", "text": "Clamping brings the pan, gasket and block together. A complete production gasket outline and measured flange pattern are still required before this assembly can demonstrate the actual sealing interface.", "part": "oil-pan"}
+    ],
+    "troubleshooting": [
+      {"title": "Oil at the pan rail", "text": "Oil on the outside of the flange does not by itself identify the leak's origin. Inspect the seal path and flange condition rather than assuming additional tightening will correct it. This model does not supply a verified tightening sequence or production fit.", "part": "oil-pan"}
+    ],
+    "sources": ["truck-oil-pan-hardware"]
+  }
+}

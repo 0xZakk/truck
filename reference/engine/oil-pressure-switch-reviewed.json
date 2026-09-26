@@ -1,0 +1,26 @@
+{
+  "factory_part": "E9TZ9278A",
+  "factory_catalog": "Parts and Labor / Engine / Oil Pressure Sender / Parts Information",
+  "evtm": {
+    "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+    "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+    "reviewed_pdf_pages": [
+      183,
+      312
+    ],
+    "printed_pages": [
+      "60-2",
+      "151-1"
+    ],
+    "operation": "Pressure switch closes at normal pressure, opens at low pressure. Instrument cluster includes20ohm resistor. Not a proportional pressure measurement.",
+    "circuit": "31 W/R; switchC135; gasoline harnessC234; clusterC251 pin8",
+    "location": "Location index152-9 PDF344: lower LH rear of4.9L engine near oil filter; connectorC135. Component-view151-1 visually reviewed."
+  },
+  "conflict": "Archived generic magnetic-gauge description says variable sender resistance. The application-specific EVTM circuit is stronger evidence for this truck and explicitly shows switch plus fixed20ohm resistor.",
+  "limits": [
+    "No switching pressure threshold established by reviewed EVTM page.",
+    "Do not interpret schematic caption normal oil level literally: accompanying description says normal oil pressure.",
+    "No production dimensions or internal switch cutaway yet.",
+    "SMP PS-238 and Motorcraft SW2178A are replacement leads from retailers, pending manufacturer confirmation."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "status": "Layout reconstruction, not verified manufacturing geometry",
+  "sources": [
+    "fsm-212bf152ff88",
+    "fsm-9e1b0b719d0e",
+    "fsm-4069bc7976d8",
+    "efi-intake-drawing",
+    "engine-exploded-drawing"
+  ],
+  "supported_architecture": [
+    "Separate upper and lower intake castings.",
+    "Seven upper manifold retaining studs, explicitly stated by the truck procedure.",
+    "Upper E7TZ9424A and lower E7TZ9424D catalog service identities.",
+    "Six curved upper passages feeding the lower intake; each manifold modeled as a single casting, not detachable pipes.",
+    "Separate upper/lower and intake/head sealing interfaces."
+  ],
+  "visual_comparison": {
+    "url": "https://www.supermotors.net/registry/media/1174826",
+    "document": "Ford TSB 87-08-16 installation illustration",
+    "application": "1987 comparison only; do not transfer torque values or all revisions to the 1994 truck.",
+    "observed": "Exploded upper/lower castings, six-port joint gasket, seven studs and installed runner layout; viewed in browser."
+  },
+  "model_assumptions_mm": {
+    "head_port_radius": 15,
+    "upper_runner_bore_radius": 16.5,
+    "upper_runner_outer_radius": 22,
+    "upper_flange_top_z": 371.5,
+    "plenum_center": [
+      0,
+      25,
+      490
+    ],
+    "plenum_outer_envelope": [
+      734,
+      145,
+      90
+    ],
+    "joint_gasket_thickness": 1.5
+  },
+  "valve_cover": {
+    "change": "Replaced rectangular walls with sloped shoulder lofts and added a rear ventilation opening.",
+    "limits": "Visual interpretation only. Existing base dimensions retained; roof profile, opening positions, hardware and baffles remain unverified."
+  },
+  "remaining": [
+    "No measured casting scan or drawing establishing runner curves, plenum volume or engine datum positions.",
+    "Injector sockets, fuel rail, injectors, throttle assembly, EGR, vacuum fittings, support bracket, heat shield and head hardware are missing.",
+    "Intake and exhaust head-port order and production shape must be reconciled before declaring this interface accurate.",
+    "Block and head overall geometry remain the earlier provisional studies.",
+    "This work does not simulate airflow, fuel injection or vacuum-leak diagnosis."
+  ],
+  "head_interface_correction": "Extended provisional head ports to the manifold face; previous cuts ended 5.5 mm short. This fixes model connectivity, not production port geometry."
+}

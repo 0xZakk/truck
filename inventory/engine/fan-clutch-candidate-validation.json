@@ -1,0 +1,40 @@
+{
+  "installed": false,
+  "verified_production_fit": false,
+  "manifest_sha256": "7d11501cee5e4a6ba06898ea0af1fa3ca0f020a35ed55e2c3eca7dcefa365dfa",
+  "source_sha256": "3e749f26351a82a9367b315916abd9cb74ccc5d6ee362d8755d06dc86e23bf52",
+  "step_roundtrips": [
+    "fan-clutch-input-shaft",
+    "fan-clutch-housing",
+    "fan-clutch-bearing",
+    "fan-clutch-shaft-seal",
+    "fan-clutch-drive-rotor",
+    "fan-clutch-reservoir-partition",
+    "fan-clutch-front-cover",
+    "fan-clutch-control-valve",
+    "fan-clutch-thermal-spring",
+    "cooling-fan-spider",
+    "cooling-fan-blade",
+    "cooling-fan-rivet",
+    "cooling-fan-bolt",
+    "water-pump-drive-hub",
+    "water-pump-pulley"
+  ],
+  "candidate_occurrences": 37,
+  "checks": 90,
+  "collisions": [],
+  "internal_only": false,
+  "replaced_definitions": [
+    "water-pump-drive-hub",
+    "water-pump-pulley"
+  ],
+  "limits": [
+    "Imperial lists both 215161 (36 mm hex, M30x1.5 RH) and 215155 (40 mm hex, M33x1.5 RH) for 1994 F-Series 4.9L. This is the 215161 comparison branch; installed nut size is unknown.",
+    "Catalog dimensions constrain clutch OD, overall height, fan mount height, fan pilot and four-hole bolt circle. Housing sections, bearing, seals, shear lands, reservoir, valve and spring are educational assumptions, not a production teardown.",
+    "Dorman 620-151 supplies a seven-blade, 18.9 inch black stamped-steel comparison and F2UZ8600A cross-reference. Exact 4.9L vehicle fit is not independently established by the saved primary application table; installed fan identity remains unverified.",
+    "Blade chord, pitch, twist, angular spacing, root shape, spider, fourteen rivets and all sheet thicknesses are provisional interpretations of the manufacturer photo. No airflow, stress, balance or fan-speed simulation.",
+    "Pump nose extension, pulley bore and axial seating at X530 are provisional interface reconciliation. Thread nominal size and right-hand direction are sourced; the model uses smooth clearance envelopes rather than thread helices.",
+    "Fan bolts use sourced 5/16-18 nominal diameter and four-hole count; length, head dimensions, thread engagement and hole angular index are provisional. Radiator/shroud clearance is not established.",
+    "Silicone fluid and its dynamic fill fraction are described rather than represented as rigid solids. The sealed clutch is not a user-serviceable exploded repair procedure."
+  ]
+}

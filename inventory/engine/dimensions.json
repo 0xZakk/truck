@@ -167,8 +167,8 @@
       "value": 157.7,
       "unit": "mm",
       "status": "assumed",
-      "source_ids": [],
-      "note": "Provisional center distance solely for pipeline/motion demonstration; obtain applicable primary drawing.",
+      "source_ids": ["ford-industrial-csg649"],
+      "note": "Provisional installed center distance. It falls within the visually reviewed Ford CSG649 industrial comparison range 6.2082-6.2112 in (157.68828-157.76448 mm), PDF page 100, printed 8-03. This narrows the evidence gap but does not verify 1994 truck applicability, rod identity or pin offset; see reference/engine/ford-csg649-rod-length-reviewed.json.",
       "original": null
     },
     {
@@ -361,6 +361,90 @@
       "source_ids": [],
       "note": "Provisional rail width; expander rendered as a simple split band.",
       "original": null
+    },
+    {
+      "id": "camshaft_journal_diameter_range",
+      "value": [
+        51.2318,
+        51.2572
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "2.0170\u20132.0180 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
+    },
+    {
+      "id": "camshaft_bearing_inside_diameter_range",
+      "value": [
+        51.2826,
+        51.308
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "2.0190\u20132.0200 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
+    },
+    {
+      "id": "camshaft_bearing_clearance_range",
+      "value": [
+        0.0254,
+        0.0762
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "0.0010\u20130.0030 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
+    },
+    {
+      "id": "camshaft_endplay_range",
+      "value": [
+        0.0254,
+        0.1778
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "0.0010\u20130.0070 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
+    },
+    {
+      "id": "lifter_diameter_range",
+      "value": [
+        22.1996,
+        22.2123
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "0.8740\u20130.8745 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
+    },
+    {
+      "id": "lifter_bore_diameter_range",
+      "value": [
+        22.23008,
+        22.26818
+      ],
+      "unit": "mm",
+      "status": "published",
+      "source_ids": [
+        "fsm-2e5473b2bf99"
+      ],
+      "original": "0.8752\u20130.8767 in",
+      "note": "Factory rebuilding specification, not an installed measurement. CAD midpoint selection is illustrative; axial stations and bearing shell thickness are not specified by this range."
     }
   ],
   "blocked_claims": [

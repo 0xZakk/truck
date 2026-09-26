@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
+  "parts": [
+    {
+      "part": "cylinder-head",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "rocker-arm",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "pushrod",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "lifter-body",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "lifter-pushrod-cup",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "valve-cover",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "valve-seal",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "intake-valve",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "exhaust-valve",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "intake-spring",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    },
+    {
+      "part": "exhaust-spring",
+      "symmetric_difference_mm3": 0,
+      "adapter_idempotence_mm3": 0
+    }
+  ],
+  "pose_basis_comparisons": 16128,
+  "step_sha256": {
+    "cylinder-head": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "rocker-arm": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "pushrod": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "lifter-body": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "lifter-pushrod-cup": "e7e39eeac754ff25c1fd9ec6e9bb35a5108ac82a8299667af520570747304869",
+    "valve-cover": "17284e8d2aca7aae12d32fe4639c1b0bdfab26717b13af72f8f97d2716760df2",
+    "valve-seal": "fbd405c30920fdb7afb05e1394eb9024b47a6482eac0e8b3100646800ed47462",
+    "intake-valve": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "exhaust-valve": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d",
+    "intake-spring": "da49a9d6ed3178e0482795eafa4bee52da394dc7ce8c1ea5887e77420331ba11",
+    "exhaust-spring": "c0ab3b3594e19c1e805336a10f5b5e7db7683e58511bc455467655572551093c"
+  },
+  "scope": "Installed delta versus predecessor, persistent adapter idempotence and phase placement; does not prove factory contours or installed part identity."
+}

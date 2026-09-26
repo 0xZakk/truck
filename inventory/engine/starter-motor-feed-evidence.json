@@ -1,0 +1,51 @@
+{
+  "status": "isolated provisional two-feed/two-ground brush connection study; not installed or accepted",
+  "sources": {
+    "ford-pmgr-starter-exploded": {
+      "local_image": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/1187056411.png",
+      "reviewed": "Applicable factory exploded image distinguishes the brush assembly, four springs, brush plate screws and external connector. It does not identify individual brush polarity or manufacturing clocking."
+    },
+    "ford-pmgr-brush-connector-comparison": {
+      "url": "https://www.fordservicecontent.dealerconnection.com/pubs/content/~WSRB/~MUS~LEN/19/SRB36014.HTM",
+      "local_capture": "reference/engine/ford-pmgr-brush-connector-mustang1994.html",
+      "reviewed": "Primary Ford1994Mustang PMGR-family service text identifies the positive brush connector at solenoid M and a black grommet in the starter frame. Family architecture comparison only, not F150 installed coordinates or dimensions."
+    },
+    "jn-pmgr-brush-holder-comparison": {
+      "url": "https://www.jnelectric.com/151-14007-brush-holder-assembly",
+      "local_capture": "reference/engine/jn-151-14007-brush-holder.html",
+      "primary_photographs": ["reference/engine/jn-151-14005-brush-holder.jpg", "reference/engine/jn-151-14007-brush-holder.jpg"],
+      "photo_urls": ["https://www.jnelectric.com/product-images/AEP%20Product%20Images/151-14005_1_Z.jpg", "https://www.jnelectric.com/product-images/AEP%20Product%20Images/151-14007_1_Z.jpg"],
+      "reviewed": "Both photographs inspected directly: four carbon brushes, two braid paths entering the insulated frame grommet/common external eyelet, and two braid paths joining the opposite metal ground bracket. Two feed/two ground is inferred from visible connections together with Ford's identification of the external connector as positive. No polarity stamp or angular dimension is visible."
+    },
+    "wagner-pmgr-brush-holder-cross-reference": {
+      "url": "https://www.wagneralt.com/images/cat50.pdf",
+      "local_capture": "reference/engine/wagner-starter-brush-holders.pdf",
+      "pdf_page_index": 7,
+      "reviewed": "Wagner F50-01 lists Lester3223 and J&N151-14005/69-200/E9OZ11061A/B/C with straight eyelet and push-on solenoid connection. It explicitly identifies F50-00 as an alternate; F50-00 lists J&N151-14007/69-201/F3RZ11061A and a left-angled eyelet. The direct-family15114005 photograph therefore strengthens the earlier15114007 alternate comparison. Exact installed brushholder identity is not established."
+    }
+  },
+  "topology": {
+    "feed": ["M terminal", "common positive feed/eyelet", "two positive pigtails", "brushes1and4"],
+    "return": ["brushes2and3", "two ground pigtails", "common ground bridge", "brush end plate and retaining screws"],
+    "polarity_clocking": "Brush1 at +X and brush4 at -Y are assigned positive; brush2 at +Y and brush3 at -X are assigned ground. These are adjacent pairs in the retained provisional90degree brush layout, not a measured production angle or polarity map.",
+    "open_boundaries": ["commutator-to-armature winding connections", "recovered armature winding topology", "vehicle battery cable", "S-terminal control harness"]
+  },
+  "construction_assumptions": {
+    "new_parts": 8,
+    "replacement_parts": ["starter-frame", "starter-brush-carrier", "starter-brush-holder-1", "starter-brush-holder-2", "starter-brush-holder-3", "starter-brush-holder-4"],
+    "feed_radius_mm": 1.3,
+    "feed_jacket_radii_mm": [1.35, 1.9],
+    "pigtail_radius_mm": 0.65,
+    "pigtail_channel_radius_mm": 0.95,
+    "frame_bore_radius_mm": 2.55,
+    "grommet": "Separate flanged dielectric body surrounds the jacket through a provisional frame bore. All grommet dimensions and the opening station are assumptions.",
+    "ground_bridge": "One provisional annular metal bridge with two retaining-screw pads sits between the insulating carrier and end plate. Photo supports a common ground bracket, not this ring profile, pad construction or two-pad attachment arrangement.",
+    "terminations": "Pigtails are trimmed to face-contact interfaces at brushes and common conductors. No positive-volume overlap or invented aggregate-winding node is permitted."
+  },
+  "limits": [
+    "Existing accepted starter and coil-wiring modules remain untouched.",
+    "Lead gauge, ampacity, braiding, insulation materials, brush wear travel, elastic lead motion and thermal durability are not simulated.",
+    "Existing aggregate armature winding packets and commutator subdivision do not form a solved electrical circuit; the new feed/return does not establish complete starter electrical continuity.",
+    "No source-derived production fit, current rating, calibrated starting behavior or live electrical test procedure is claimed."
+  ]
+}
