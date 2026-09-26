@@ -13,6 +13,7 @@ import numpy as np
 import trimesh
 from first_assembly import ROOT, P, cx, annulus, split_ring
 from assembly_math import transforms
+from assembly_step import placed_occurrences, verify_roundtrip
 from valvetrain_dispatch import occurrence_shape
 import valve_source_integration as source_valves
 import valve_source_evidence as source_evidence
@@ -921,11 +922,9 @@ def main():
     for key in ('definitions','assemblies','occurrences'):
         ids=[item['id'] for item in manifest[key]]
         if len(ids)!=len(set(ids)):raise ValueError(f'Duplicate IDs in {key}; refusing to publish assembly')
-    poses=transforms(manifest)
-    placed=[]
-    for o in occurrences:
-        s=occurrence_shape(o,shapes[o['definition']],0).moved(poses[o['id']]);s.label=o['id'];placed.append(s)
+    placed=placed_occurrences(manifest,shapes)
     b.export_step(b.Compound(children=placed),STEP/'full-assembly.step',unit=b.Unit.MM)
+    verify_roundtrip(STEP/'full-assembly.step',placed)
     (ROOT/'inventory/engine/full-assembly.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(f'Wrote {len(defs)} definitions / {len(occurrences)} individual parts',flush=True)
 

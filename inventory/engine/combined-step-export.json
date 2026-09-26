@@ -707,9 +707,13 @@
     "cad/engine/generated/accelerator-cable-bracket.step": "4f70dc35c7bb59e91a1ffd8dbda24a3fbdbc95775173a4c55708049c174369ed",
     "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d"
   },
-  "assembly_step_sha256": "e1182c0ed091cd2670c560413c9f9851692ac8d3ae202b5568d9ce8a8a4fc7d3",
+  "assembly_step_sha256": "fc9b2e5cda1e371b86082a2160e4219ab7857781e8a961c020f65c631e6ad4c7",
   "occurrences": 1310,
-  "scope": "Combined STEP regenerated from current part definitions and zero-angle poses",
-  "previous_manifest_sha256": "18d31887ddae03bb78c1abfe565f4cd5c3a469c81328c77c4b4f1e04860de37c",
-  "metadata_only_rebinding": "Spring bounds metadata corrected from conservative box to continuous CAD support distances; individual STEP hashes and all occurrence/group transforms unchanged."
+  "roundtrip": {
+    "unique_occurrence_labels": 1310,
+    "max_roundtrip_bounds_delta_mm": 0.00035065968842218354,
+    "bounds_tolerance_mm": 0.01,
+    "scope": "Occurrence identity, solid validity and world bounding boxes; not exact geometric equivalence or manufacturing fit"
+  },
+  "scope": "Combined STEP regenerated from current part definitions and zero-angle poses"
 }
