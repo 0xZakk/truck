@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Explore the engine · 1994 F-150</title>
-<link rel="stylesheet" href="./atlas.css">
+<link rel="stylesheet" href="./atlas.css?revision=compact-controls2-20260926">
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 </head>
 <body>
@@ -28,9 +28,9 @@
   <div class="view-heading"><div><span class="kicker" id="view-kind">Whole engine</span><h2 id="view-title">Engine</h2></div><a id="home" href="/viewer/engine.html">← Whole engine</a></div>
   <div class="toolbar" aria-label="Model view controls"><button id="section" aria-pressed="false">Cutaway</button><button id="ghost" aria-pressed="false">See through covers</button><button id="reset">Reset this view</button></div>
   <div id="status" role="status">Loading component geometry…</div><div id="error" role="alert" hidden></div>
-  <div class="controls" id="assembly-controls"><div><label for="explode">Explode this assembly <output id="explode-value">0%</output></label><input id="explode" type="range" min="0" max="1" step="0.01" value="0"><small>Exploration view · not a removal sequence.</small></div><div id="compressor-controls" hidden><label for="compressor-angle">Compressor pulley phase <output id="compressor-value">0°</output></label><input id="compressor-angle" type="range" min="0" max="360" step="1" value="0"><button id="compressor-play" aria-pressed="false">Play compressor motion</button><label><input id="compressor-engaged" type="checkbox" checked> Clutch engaged · idealized</label><small>Independent demonstration, not a verified belt ratio. Disengaged shaft and pistons return to the reference pose; clutch plate travel and coast-down are not simulated.</small></div><div id="motion-controls" title="Idealized crank linkage; rod length and pin offset remain provisional. Valve motion is not simulated."><label for="angle">Crank position <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="360" step="1" value="0"><button id="play" aria-pressed="false">Play crank motion</button></div></div>
+  <div class="controls" id="assembly-controls"><div><label for="explode">Explode this assembly <output id="explode-value">0%</output></label><input id="explode" type="range" min="0" max="1" step="0.01" value="0"><small>Exploration view · not a removal sequence.</small></div><div id="compressor-controls" hidden><label for="compressor-angle">Compressor pulley phase <output id="compressor-value">0°</output></label><input id="compressor-angle" type="range" min="0" max="360" step="1" value="0"><button id="compressor-play" aria-pressed="false">Play compressor motion</button><label><input id="compressor-engaged" type="checkbox" checked> Clutch engaged · idealized</label><details class="motion-limits"><summary>About this motion</summary><small>Independent demonstration, not a verified belt ratio. Disengaged shaft and pistons return to the reference pose; clutch plate travel and coast-down are not simulated.</small></details></div><div id="motion-controls" title="Idealized crank linkage; rod length and pin offset remain provisional. Valve motion is not simulated."><label for="angle">Crank position <output id="angle-value">0°</output></label><input id="angle" type="range" min="0" max="360" step="1" value="0"><button id="play" aria-pressed="false">Play crank motion</button></div></div>
   <p class="model-note">Provisional model · drag to orbit · scroll to zoom</p>
 </section>
 </main>
-<script type="module" src="./atlas.js?revision=dipstick3-review-20260926"></script>
+<script type="module" src="./atlas.js?revision=plate-retention-review-20260926"></script>
 </body></html>

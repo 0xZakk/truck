@@ -1,0 +1,83 @@
+{
+  "iac-mount-screw-estimated": {
+    "summary": "Two diagonal screws clamp the valve and separate gasket to the throttle pad.",
+    "steps": [
+      {
+        "title": "Follow the clamping stack",
+        "text": "Each modeled head bears on a flange ear; its shank passes through the body and gasket into a blind receiver.",
+        "part": "iac-gasket"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Missing contact or blocked passage",
+        "text": "The isolated checker rejects a lifted head, oversized shank and blocked bypass. Smooth thread envelopes do not establish tightening strength."
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ],
+    "limits": "Educational fit study. Valve variant, dimensions, threads, spring construction/rate/preload, joint strength and end-plug sealing remain unresolved; no factory calibration or leak-tightness is certified."
+  },
+  "iac-return-spring-estimated": {
+    "summary": "This illustrative spring supplies a visible restoring path between the chamber closure and pintle.",
+    "steps": [
+      {
+        "title": "A construction choice",
+        "text": "The spring and idealized closed ends are estimated. Three geometric trial positions remain seated; they are not calibrated valve travel or a force simulation.",
+        "part": "iac-pintle"
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ],
+    "limits": "Educational fit study. Valve variant, dimensions, threads, spring construction/rate/preload, joint strength and end-plug sealing remain unresolved; no factory calibration or leak-tightness is certified."
+  },
+  "iac-armature": {
+    "summary": "The armature acts through a stem joint on the reverse-seated pintle.",
+    "steps": [
+      {
+        "title": "Keep the joint connected",
+        "text": "An estimated contact sleeve removes the inherited radial gap. The manual supports direct linkage; actual joint construction and retention strength remain unknown.",
+        "part": "iac-pintle"
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ],
+    "limits": "Educational fit study. Valve variant, dimensions, threads, spring construction/rate/preload, joint strength and end-plug sealing remain unresolved; no factory calibration or leak-tightness is certified."
+  },
+  "iac-gasket": {
+    "summary": "A separate two-port gasket joins the IAC valve to the throttle pad.",
+    "steps": [
+      {
+        "title": "Leave both bypass openings clear",
+        "text": "The candidate retains the original bypass openings and adds diagonal fastener clearances. This geometry check does not prove material sealing performance.",
+        "part": "throttle-housing"
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ],
+    "limits": "Educational fit study. Valve variant, dimensions, threads, spring construction/rate/preload, joint strength and end-plug sealing remain unresolved; no factory calibration or leak-tightness is certified."
+  },
+  "iac-valve-body": {
+    "summary": "The body carries two bypass chambers, a reverse-pintle seat and two estimated attachment ears.",
+    "steps": [
+      {
+        "title": "Separate evidence from estimate",
+        "text": "Exact1994 service diagrams show two bolts and a separate gasket. Casting contour, flange dimensions and installed valve variant remain provisional.",
+        "part": "iac-mount-screw-1-estimated"
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study"
+    ],
+    "limits": "Educational fit study. Valve variant, dimensions, threads, spring construction/rate/preload, joint strength and end-plug sealing remain unresolved; no factory calibration or leak-tightness is certified."
+  }
+}

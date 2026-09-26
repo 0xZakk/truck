@@ -1,5 +1,5 @@
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
-import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=dipstick2-20260926';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=plate-retention-20260926';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -117,7 +117,8 @@ function navigate(id,historyMode='push'){
   linkTo($('home'),'engine');$('home').hidden=id==='engine';
   $('nav-title').textContent=id==='engine'?'Explore the engine':n.name;
   $('view-title').textContent=n.name;$('view-kind').textContent=isPart?'Individual part':id==='engine'?'Whole engine':'Assembly';
-  if(path.some(n=>['lubrication','induction','exhaust','crankcase-ventilation','oil-pan-assembly'].includes(n.id)))$('view-kind').textContent+=' · provisional study';
+  const visibleDefinitions=new Set(data.occurrences.filter(o=>visible.has(o.id)).map(o=>o.definition));
+  if(data.definitions.some(d=>visibleDefinitions.has(d.id)&&d.geometry_status==='provisional'))$('view-kind').textContent+=' · provisional study';
   $('level-label').textContent=id==='engine'?'Start here':isPart?'Inspect a part':'Explore an assembly';
   $('nav-description').textContent=isPart?'':`${visible.size} parts${id==='engine'?' in this reconstruction':''}. Choose ${id==='engine'?'an assembly to see what’s inside.':'a component below to take a closer look.'}`;
   $('selection').hidden=!isPart;if(isPart)partDetails(n);
@@ -282,6 +283,7 @@ $('section').onclick=()=>{section=!section;styles();};$('ghost').onclick=()=>{gh
 $('reset').onclick=()=>navigate(current,'none');
 $('part-search').oninput=search;$('part-search').onkeydown=e=>{if(e.key==='Escape')clearSearch();};
 $('clear-search').onclick=()=>{clearSearch();$('part-search').focus();};
+document.querySelectorAll('.motion-limits').forEach(detail=>detail.addEventListener('toggle',()=>{if(nav)frameAssembly();}));
 window.addEventListener('popstate',()=>{if(nav)navigate(nav.fromUrl(location.href)||'engine','none');});
 const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();let down;
 renderer.domElement.addEventListener('pointerdown',e=>down=[e.clientX,e.clientY]);

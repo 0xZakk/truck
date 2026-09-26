@@ -231,29 +231,14 @@
       "id": "oil-cap",
       "title": "Oil filler cap and seal",
       "patterns": [
-        "oil-filler-cap"
+        "oil-filler-cap(?:-seal)?"
       ],
       "remaining": [
-        "Candidate male thread and separate seal exist",
-        "Matching female neck retention is missing",
-        "Dynamic rocker clearance and production cap dimensions unverified"
+        "Cap, separate seal and continuous matching threaded neck are installed as an educational study; production identity, pitch, dimensions and neck construction remain unverified",
+        "Installed cap removal and12-rocker interference studies pass at their recorded hashes; actual material deformation, seal compression and leak tightness remain unknown"
       ],
       "related_system_issues": [],
-      "existing_issue": 15,
-      "candidate_parts": [
-        {
-          "id": "oil-filler-cap",
-          "name": "Replacement cap body",
-          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
-          "status": "Candidate only; fit/identity not accepted"
-        },
-        {
-          "id": "oil-filler-cap-seal",
-          "name": "Separate filler-cap seal",
-          "artifact": "cad/engine/pilot/oil-cap/oil_cap.py",
-          "status": "Candidate only; fit/identity not accepted"
-        }
-      ]
+      "existing_issue": 15
     },
     {
       "id": "intake",
@@ -263,7 +248,7 @@
       ],
       "remaining": [
         "Verify all upper/lower manifold fasteners and support brackets",
-        "Verify casting contours, runner geometry, bosses and gasket seats"
+        "Compact plenum and balanced six-runner spread are installed from image comparison; production casting dimensions, ribs/bosses and exact wall distribution remain unfinished"
       ],
       "related_system_issues": [],
       "existing_issue": null
@@ -361,7 +346,7 @@
       ],
       "remaining": [
         "Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing",
-        "Plate retaining screws and shaft bushings/seals as applicable",
+        "Four illustrative plate screws are installed; verify actual Ford count, thread/locking construction and shaft bushings/seals as applicable",
         "Actual throttle/speed-control cables and sockets, pin locking and production shield construction",
         "Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts"
       ],
@@ -390,8 +375,8 @@
         "iac-.*"
       ],
       "remaining": [
-        "Mounting bolts and terminals: verify complete inventory",
-        "Verify restoring mechanism, installed valve identity and internal passages"
+        "Two modeled mounting screws and an illustrative restoring spring are installed; actual screw dimensions and restoring mechanism remain unverified",
+        "End closure retention/sealing and electrical terminals remain unfinished; verify installed valve variant and internal passages"
       ],
       "related_system_issues": [],
       "existing_issue": null
@@ -614,7 +599,8 @@
         "egr-(exhaust-tube|tube-.*)"
       ],
       "remaining": [
-        "Verify takeoff location, seats/threads, hot routing and heat sleeve"
+        "Fixed exhaust fitting and moved valve now have a connected estimated tube and sleeve route; verify production bends, fitting threads and catalog length convention",
+        "Nominal contact checks are geometric only; hot behavior, sealing and assembly procedure remain unverified"
       ],
       "related_system_issues": [
         7,

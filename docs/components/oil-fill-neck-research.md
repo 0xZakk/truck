@@ -75,3 +75,12 @@ The ignored archive at `manuals/factory-service-manual/1994 Ford F 150 2WD Picku
 | PCV → Oil Separator → Service and Repair | Text describes PCV-to-upper-intake hose connections | Do not reinterpret this hose/ventilation entry as a separately identified filler-neck baffle |
 
 Full repository-relative HTML/image paths and SHA-256 values are in the JSON ledger. No separately listed neck/insert was found in these relevant pages; this is a scoped search result, not proof that such a manufacturing subpart never existed. The drawing is a service assembly overview, not a dimensioned manufacturing drawing. **Formed female neck versus attached collar therefore remains unknown.** A continuous female-seat region within the cover service assembly remains a reasonable illustrative modeling choice, explicitly labeled as such. The measurement plan and required clearance/retention checks above still apply.
+
+
+## Removal-failure source comparison
+
+The isolated matched-neck check found collision with the current upper-intake plenum at1035° /12.9375 mm cap lift, before the19 mm stem clearance needed for pure axial exit. This is an upstream assembly conflict, not evidence for a shorter factory cap. The full current plenum extends734 mm along the engine and lies directly above the cap.
+
+Reinspection of Ford `ford-bottom.jpg` shows a substantial closed stem and aboutfour prominent raised ridges. A deliberately loose perspective estimate uses apparent stem end-face ellipse ratio around0.4, axial center offset390–480px and shellwidth1440–1480px on the1500px image. Correcting only approximate axial foreshortening gives stem/shell proportion about0.28–0.37, with the recessed seal reference uncertain. Existing22/69.09=0.318 shell-underside-to-tip projection is consistent. Truncating projection toward12.5 mm (ratio0.18) is not supported. This is photo proportion reasoning, not Ford dimensions or a measurement specification.
+
+Both actualowner bay views show an exposed cap forward of the plenum body. They support reconsidering the full-length genericplenum and fan-in runner layout. They do not uniquely determine plenum length or a throttle-frame translation. The upstream trial and explicit coordinated interfaces are recorded in `upper-intake-clearance-candidate.md`; no installed geometry is changed.

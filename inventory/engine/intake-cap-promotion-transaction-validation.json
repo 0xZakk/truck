@@ -1,0 +1,10 @@
+{
+  "status": "PASS isolated transaction controls",
+  "canonical_modified": false,
+  "cases": [
+    "mid-write exception restores old bytes and removes new files",
+    "postcheck exception restores old bytes and removes new files",
+    "successful promotion retains all writes"
+  ],
+  "installer_sha256": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b"
+}

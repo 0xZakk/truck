@@ -1,0 +1,90 @@
+{
+  "schema": "iac-attachment-review-v1",
+  "issue": 44,
+  "scope": "exact 1994 manual topology; dimensions and installed variant unresolved",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Description%20and%20Operation/index.html",
+      "sha256": "393447c3030dc3d90ee916d3cfa665cee7e7cae7cc10e0cdb1f11ca0096aef69",
+      "review": "read text"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Service%20and%20Repair/Removal%20and%20Replacement/index.html",
+      "sha256": "ebe069b6da584476fe6d42464dfaeeea78f2e206f8179f49f8219c91a179b6fb",
+      "review": "read text"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Specifications/Mechanical%20Specifications/index.html",
+      "sha256": "8cb93cec4ba6b4d8d6b060be0c9aa87e0f12396fd077275f41ddcf8f1cfbf420",
+      "review": "read text"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/441899701.png",
+      "sha256": "441816fb78f9e316fde040351e7ee975d102dbcef4b0fbf8a972420f2389df01",
+      "review": "viewed actual image pixels"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/441904883.png",
+      "sha256": "a3a6d5ff85d91ba19d838e1356a27baa36a0dd231dfa370bb67624b18e937a70",
+      "review": "viewed actual image pixels"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/442080900.png",
+      "sha256": "47e0952461c701416ded9aab640d4fa613b670b583e6c78d265134caee22f35b",
+      "review": "viewed actual image pixels"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/442083839.png",
+      "sha256": "ea2c72deb1aa1192ea428ac1575c49c5a3cedb157b94282e4223d7770a132279",
+      "review": "viewed actual image pixels"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed%2FThrottle%20Actuator%20-%20Electronic/Parts%20Information/index.html",
+      "sha256": "8d9d4060df55915b41f266ffee7aaab4e05f1ca166115ab4e617fae35c37e441",
+      "review": "read archived catalog text; no inspected replacement specimen"
+    }
+  ],
+  "claims": [
+    {
+      "feature": "mounting",
+      "evidence": "1994 removal text and 442080900: two bolts; 442083839 diagonal flange ears, separate two-port gasket",
+      "classification": "factory topology"
+    },
+    {
+      "feature": "reverse seated pintle",
+      "evidence": "441899701 and operation text: directly linked duty-cycle solenoid stem and reverse-seated pintle",
+      "classification": "factory topology"
+    },
+    {
+      "feature": "restoring spring",
+      "evidence": "Internal linework at chamber closure is suggestive, not a dimensioned spring specification. Chosen ground-end helical spring is illustrative; no confirmed production construction or rate.",
+      "classification": "educational inference"
+    },
+    {
+      "feature": "stem joint",
+      "evidence": "Direct mechanical linkage is stated; existing armature bore1.6 / stem1.5 leave0.1 radial disconnect. Candidate adds a contact sleeve, explicitly a bonded educational joint.",
+      "classification": "topology supported; joint construction estimated"
+    },
+    {
+      "feature": "retaining screw torque",
+      "evidence": "Exact1994 service text8\u201311Nm; recorded solely as source fact, not a design rating for invented screw dimensions.",
+      "classification": "factory text"
+    },
+    {
+      "feature": "service number",
+      "evidence": "Archived parts text FOTZ9F715CA, ambiguous letter O/zero; not normalized or used as specimen identification.",
+      "classification": "catalog transcription unresolved"
+    }
+  ],
+  "replacement_review": "No dedicated IAC replacement specimen found in saved reference filenames or comparison-sources records; system-references IAC entries are manual/catalog pages, not measured specimens.",
+  "parameters": "cad/engine/iac_attachment_candidate.py PARAMS/BOLTS are model-derived estimates, never factory dimensions",
+  "limitations": [
+    "Unvented versus vent/filter installed variant unverified.",
+    "No new electronics or vent/filter components inferred.",
+    "Spring force, rate, preload, fatigue and operating travel not established.",
+    "Fastener thread, strength and production dimensions not established.",
+    "The unchanged end plug still has an estimated0.1mm radial clearance; no hermetic closure or production seal/retention method is established.",
+    "Closed spring end turns are idealized annular seats (outer3.5/inner2.5mm radius,0.8mm thick), not measured wire-end geometry.",
+    "Static checks demonstrate geometry, not a thread load path or bonded-joint strength."
+  ]
+}

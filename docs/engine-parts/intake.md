@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -22,14 +22,6 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.
   - Open: Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.
-- [ ] **Upper EFI intake manifold** — `efi-upper-intake`; modeled quantity **1**; provisional.
-  - Instances: `efi-upper-intake`
-  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.
-  - Open: Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.
-  - Open: Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.
-  - Open: Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.
-  - Open: The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.
 - [ ] **Intake manifold locating dowel** — `intake-head-locating-dowel`; modeled quantity **1**; provisional.
   - Instances: `intake-head-locating-dowel`
   - Source IDs: ford-intake-manifold-dowel, ford-1996-manifold-fastener-table. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -79,11 +71,23 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Nominal3/8-16 diameter and1.31in underhead length are1996 comparison dimensions, not established1994 installed identity.
   - Open: All mounting stations, casting webs, head bosses, clearance holes, socket depths and hex-head dimensions are provisional adaptations to the existing reconstruction.
   - Open: Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.
+- [ ] **Upper EFI intake manifold** — `efi-upper-intake`; modeled quantity **1**; provisional.
+  - Instances: `efi-upper-intake`
+  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7, upper-intake-topology-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.
+  - Open: Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.
+  - Open: Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.
+  - Open: Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.
+  - Open: The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.
+  - Open: Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.
+  - Open: Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.
+  - Open: Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.
+  - Open: Casting ribs, bosses and detailed wall distribution remain incomplete.
 
 ## Additional known scope and reconciliation
 
 - [ ] Verify all upper/lower manifold fasteners and support brackets
-- [ ] Verify casting contours, runner geometry, bosses and gasket seats
+- [ ] Compact plenum and balanced six-runner spread are installed from image comparison; production casting dimensions, ribs/bosses and exact wall distribution remain unfinished
 
 ## Acceptance and handoff
 

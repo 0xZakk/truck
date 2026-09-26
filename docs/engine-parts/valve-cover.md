@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `bfab1f2596991d27fe5e52e90f02d070eb034f9de8c2cd72d3dd44666d6c8bb9`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -18,8 +18,12 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Exact production contours, dimensions and tolerances need applicable drawings or measurements.
 - [ ] **Valve cover** — `valve-cover`; modeled quantity **1**; provisional.
   - Instances: `valve-cover`
-  - Source IDs: engine-exploded-drawing, ford-engine-side-layout. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: engine-exploded-drawing, ford-engine-side-layout, upper-intake-topology-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Profile lofts are visual approximations. Upper profiles lean22mm toward the cam side to clear the corrected rocker placement; this is a fit-study assumption. The base envelope and fill/ventilation locations require measurements of the installed truck cover.
+  - Open: Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.
+  - Open: Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.
+  - Open: Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.
+  - Open: Casting ribs, bosses and detailed wall distribution remain incomplete.
 
 ## Additional known scope and reconciliation
 

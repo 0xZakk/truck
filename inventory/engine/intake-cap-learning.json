@@ -1,0 +1,68 @@
+{
+  "efi-upper-intake": {
+    "summary": "The plenum receives air from the twin throttle openings and distributes it through six curved runners to the lower manifold.",
+    "limits": "The compact plenum and two-ended runner spread follow comparison images. Dimensions, casting ribs, bosses and internal wall distribution remain inferred; this is not a manufacturing model.",
+    "steps": [
+      {
+        "title": "Trace the six paths",
+        "text": "See through covers reveals separate runner passages that join the common plenum. The lower flange keeps its existing six connections.",
+        "part": "efi-lower-intake"
+      },
+      {
+        "title": "Find the throttle joint",
+        "text": "The throttle mounts directly to the twin-port face. Its lever, cable bracket and sensors move with the assembly when the intake location changes.",
+        "part": "throttle-housing"
+      }
+    ],
+    "sources": [
+      "upper-intake-topology-study"
+    ]
+  },
+  "oil-filler-cap": {
+    "summary": "The screw cap closes the oil-fill opening above the rocker compartment. Turning the cap advances it along the matching neck thread.",
+    "limits": "Thread pitch, neck construction and seal section are educational estimates. CAD removal clearance does not establish production dimensions, torque or leak tightness.",
+    "steps": [
+      {
+        "title": "Locate the neck",
+        "text": "The continuous neck joins the cover around one fill opening. The former provisional opening has been closed.",
+        "part": "valve-cover"
+      },
+      {
+        "title": "Find the sealing land",
+        "text": "A separate annular seal lies between cap and neck. The model shows nominal contact without elastic compression.",
+        "part": "oil-filler-cap-seal"
+      }
+    ],
+    "sources": [
+      "upper-intake-topology-study"
+    ]
+  },
+  "oil-filler-cap-seal": {
+    "summary": "This illustrative annular seal closes the joint between the cap and oil-fill neck when the cap is seated.",
+    "limits": "Its material, section and compression have not been verified for the installed cap. Nominal surface contact is not a leak test.",
+    "sources": [
+      "upper-intake-topology-study"
+    ]
+  },
+  "egr-exhaust-tube": {
+    "summary": "The tube connects the fixed exhaust-manifold fitting to the EGR valve inlet, carrying exhaust toward the intake when the valve opens.",
+    "limits": "Its route is inferred around the revised intake. The 18.796 mm outside diameter comes from a replacement-part listing; wall thickness, bends and the catalog length datum remain unverified.",
+    "steps": [
+      {
+        "title": "Follow the hot-gas route",
+        "text": "The tube remains connected at both ends; its sleeve surrounds the middle span. The revised route keeps the manifold end fixed.",
+        "part": "egr-tube-heat-sleeve"
+      }
+    ],
+    "sources": [
+      "upper-intake-topology-study"
+    ]
+  },
+  "egr-control-vacuum-hose": {
+    "summary": "The hose connects the fixed vacuum regulator to the EGR diaphragm connection.",
+    "limits": "The revised hose follows the moved EGR valve. Its estimated tip has nominal contact with the nipple; grip, elastic compression and sealing are not simulated.",
+    "sources": [
+      "upper-intake-topology-study"
+    ]
+  }
+}
