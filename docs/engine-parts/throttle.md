@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -102,6 +102,48 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Four screws (two per plate) are an explicit educational hypothesis; Ford count, shaft construction and dimensions remain unverified.
   - Open: Actual helical geometry demonstrates capture and unthreading; pitch, fit, torque, staking/locking, strength and preload are not Ford specifications.
   - Open: Plate bevels, airflow/idle calibration and production stops remain unresolved.
+- [ ] **Cable-end compression spring · illustrative** — `throttle-cable-compression-spring-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-compression-spring-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Accelerator cable core and terminal · illustrative** — `throttle-cable-core-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-core-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Cable telescoping guide · illustrative** — `throttle-cable-fixed-guide-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-fixed-guide-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Accelerator cable sheath stub · illustrative** — `throttle-cable-sheath-stub-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-sheath-stub-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Accelerator cable snap retainer · illustrative** — `throttle-cable-snap-retainer-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-snap-retainer-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Accelerator cable socket and stem · illustrative** — `throttle-cable-socket-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-socket-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Cable fixed spring seat · illustrative** — `throttle-cable-swivel-seat-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-cable-swivel-seat-illustrative`
+  - Source IDs: throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
 
 ## Additional known scope and reconciliation
 

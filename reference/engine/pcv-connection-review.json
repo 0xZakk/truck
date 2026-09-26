@@ -1,0 +1,153 @@
+{
+  "schema": "pcv-connection-review-v1",
+  "issue": 55,
+  "baseline_commit": "3e53f117146fe1746ef882abbeabf6542bcba0d2",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Description%20and%20Operation/index.html",
+      "sha256": "26c6614c9a2052314be8f58ab20770f9b9a9e1aeddae8ef250a3f630588f16e7",
+      "review": "HTML text reviewed; diagram content evaluated separately"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/PCV%20Valve%20Hose/Service%20and%20Repair/index.html",
+      "sha256": "598eab62f18b53ce5262a336cbb856221e95017e05fec94897975627f5c274e0",
+      "review": "HTML text reviewed; diagram content evaluated separately"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Positive%20Crankcase%20Ventilation%20Valve/Description%20and%20Operation/index.html",
+      "sha256": "f8276bab4832fcec6772eda5c4b88459293efcb3629e96a45494cb5f71d2d39b",
+      "review": "HTML text reviewed; diagram content evaluated separately"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Positive%20Crankcase%20Ventilation%20Valve/Service%20and%20Repair/Removal%20and%20Installation/index.html",
+      "sha256": "307a3e9a9c1fcb8c7ccc55d05153d37617fac87ce5c2a3309c2b039088381e70",
+      "review": "HTML text reviewed; diagram content evaluated separately"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation%20Valve/Parts%20Information/index.html",
+      "sha256": "e4c44aace9f9c31e50ed97390f16ca2eee4d1f7f3d6491b6ce1f63061b300f41",
+      "review": "HTML text reviewed; diagram content evaluated separately"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Oil%20Separator/Service%20and%20Repair/index.html",
+      "sha256": "861a8530127a060279163e78d876594f9b731a0bb4e6af38d56ff0dd771622d0",
+      "review": "HTML text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Testing%20and%20Inspection/PCV%203%20-%20Evaporative%20Emission%20System%20Check/index.html",
+      "sha256": "8247990d2696108e761d7d686a03138c9ed9cdf060242547defc9fc9ac1c8b60",
+      "review": "HTML text reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/620350918.png",
+      "sha256": "273c7674af69916f8c2bd468bcabfc79616949540f1cfd92850148319ebc1160",
+      "review": "actual image viewed"
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "review": "actual image viewed"
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "review": "actual image viewed"
+    },
+    {
+      "path": "cad/engine/generated/pcv-connection-reference/ford-pcv-hoses.jpg",
+      "url": "https://www.supermotors.net/getfile/1169346/fullsize/pcvefis.jpg",
+      "sha256": "f18d864ee39fa378479b31a09b2f9ee9ec4bb89a536f46d8ec4d02d1c2853daf",
+      "review": "Actual pixels reviewed. Typical4.9L panel labels intake manifold connector and PCV hose assembly; exact publication/year not established; adjacentV8 dimensions rejected.",
+      "access": "Ignored local reference; do not redistribute original"
+    },
+    {
+      "path": "cad/engine/generated/pcv-connection-reference/specimen-vacuum-tree.webp",
+      "url": "https://www.ebay.com/itm/225905195802",
+      "sha256": "ecfb3fbc0ce9e09ba498584ed53e722ec58b2ec72b01d1aa2313913b278626ef",
+      "review": "Actual pixels reviewed. Shared multi-nipple tree on runner-facing plenum wall between central runners; large hose descends behind tree, terminal occluded. Seller claims87\u201396, yearfield90; specimen comparison only.",
+      "access": "Ignored local reference; do not redistribute original"
+    },
+    {
+      "path": "reference/photos/2026-09-23/front-hood-open.jpg",
+      "sha256": "ecf6acc9a1b01555c2c593d398f2d73ccc029d3f4b57aefb7b5a9c82b6dbaf43",
+      "review": "Actual image viewed; no useful PCV or fresh-air endpoint detail"
+    },
+    {
+      "path": "cad/engine/generated/pcv-connection-reference/ford-1987-intake-installation.jpg",
+      "url": "https://www.supermotors.net/getfile/1174826/fullsize/tsb870816intakeinstall49l.jpg",
+      "sha256": "78ff9b9e59f5e9544695a79ff91b6115548ec618b9603c86ca0660fa4dc0906b",
+      "review": "Actual pixels inspected: PCV CONNECTOR390659-S100 is separate from VACUUM TREE9D496. Exploded illustration supports a separate connector, not assignment of a tree nipple; exact spatial datum unresolved.",
+      "applicability": "Ford1987 4.9L comparison, not exact1994 dimensional evidence",
+      "access": "Ignored reference, do not redistribute"
+    },
+    {
+      "path": "cad/engine/generated/pcv-connection-reference/ford-crankcase-parts-1987.jpg",
+      "url": "https://cimg2.ibsrv.net/gimg/www.ford-trucks.com-vbulletin/724x494/20130515082220_2_2d9842a98c213a5acccf1ff27d577635940571ec.jpg",
+      "sha256": "1be913efc33b88e701c1a1b4890a2895135c1105dc29c694727a39ea192eb6f4",
+      "review": "Actual pixels viewed. DrawingP-20657 explicitly1987 6cyl300(4.9L)EFI: rear PCV6A666/grommet6A892, hose descending toward hidden underside; separate front6A768 and6A664 fresh-air hose to air cleaner. Exact manifold nipple remains obscured; no dimensional transfer.",
+      "access": "Ignored public Ford-diagram reproduction; retain URL/hash, do not redistribute"
+    },
+    {
+      "path": "reference/engine/standard-v219-pcv.jpg",
+      "sha256": "f720ef6f290f7d5d0138957e32c38e8064fa51fdcfdb4018bb8e9cad9ce35cbc",
+      "review": "Actual manufacturer-watermarked replacement image reviewed: two small molded pieces held by thin links between the outlets. Closure-piece lead only; no inspected manufacturer use instruction or owner installation evidence.",
+      "applicability": "StandardV219 replacement comparison only"
+    }
+  ],
+  "claims": [
+    {
+      "feature": "Fresh-air connection",
+      "evidence": "Exact1994 PCV Valve Hose service page specifies valve cover and engine air cleaner endpoints; typical diagram calls this closure hose.",
+      "classification": "source-supported functional endpoints; hose dimensions and exact route unknown"
+    },
+    {
+      "feature": "PCV vacuum return",
+      "evidence": "Oil Separator service page specifies hose endpoints at PCV valve and upper intake manifold, plus an emission-vacuum control hose at its center.",
+      "classification": "source-supported missing physical connection; exact port/branch geometry unknown"
+    },
+    {
+      "feature": "Possible evaporative branch",
+      "evidence": "Typical system diagram and PCV3 test qualify EVAP connection by application/if equipped.",
+      "classification": "variant-dependent; no plug or connection can be inferred solely from the second replacement outlet"
+    },
+    {
+      "feature": "Owner-photo observations",
+      "evidence": "Black connector and descending hose visible near front oil-fill cap; rear PCV and underside manifold interface concealed in reviewed views.",
+      "classification": "truck-specific visible topology only; no dimensions or hidden terminal identification"
+    },
+    {
+      "feature": "Valve identity",
+      "evidence": "Archived parts page distinguishes under/over8500lbGVW PCV entries; existing Standard V219 exterior is a replacement comparison, not installed identity.",
+      "classification": "unresolved installed calibration and secondary outlet use"
+    }
+  ],
+  "rejected_transfers": [
+    "Generic vacuum distribution image1830481352 explicitly says typical and vehicle details differ; not used to locate a PCV manifold port.",
+    "Images701579832/701612858/615164388 show chassis fuel/vapor routing; they do not establish the hidden engine-side PCV hose contour.",
+    "Broad web catalog search surfaced5.0/5.8L or industrial examples; none transferred to4.9L geometry.",
+    "Arbitrary educational plenum-floor receiver trial(-100,25,445) rejected; geometric feasibility is not receiver evidence."
+  ],
+  "proposal": "Continue source-first identification of separate PCV manifold connector, preserving vacuum return vs fresh-air distinction. Ford1987 installation diagram distinguishes PCVconnector390659-S100 from vacuumtree9D496. Do not assign the visible tree nipple or drill an arbitrary receiver.",
+  "limits": [
+    "Exact valve identity, hose material/bore/length/route and manifold receiver station unknown.",
+    "Owner photos do not establish a cover baffle or secondary-outlet cap.",
+    "Fresh-air connection belongs between cover and air cleaner, never substitute it for manifold vacuum return.",
+    "Root visually reviewed specimen gallery12 casting RF-F5TE-9425-BA;1995engineeringprefix makes seller year90 field unreliable. Same specimen remains comparison, not exact1994 identification."
+  ],
+  "unreviewed_leads": [
+    {
+      "url": "https://charm.li/Ford/1991/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Positive%20Crankcase%20Ventilation%20Valve/Locations/",
+      "image": "620012007",
+      "status": "Page identified image; image inaccessible/stalled. Not visually reviewed."
+    },
+    {
+      "url": "https://ww2.justanswer.com/uploads/s420/2010-03-27_191041_93_F-150_4.9_PCV.jpg",
+      "status": "Root retrieval403; not viewed."
+    },
+    {
+      "url": "https://charm.li/hyperlink/Ford%20Truck/1989/F%20250%204WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Intake%20Manifold/Service%20and%20Repair/Upper%20Intake%20Manifold",
+      "status": "Search excerpt indicates underside fittings, but full page unavailable; not used as dimensional or installation proof."
+    }
+  ],
+  "result": "EVIDENCE GAP: rear PCV\u2192manifold return and separate front cover\u2192aircleaner fresh air supported; actual manifold connector station and photographed fresh-air box terminal not established. No model-ready connection selected."
+}

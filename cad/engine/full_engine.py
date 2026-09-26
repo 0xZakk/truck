@@ -211,7 +211,7 @@ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(
         raise ValueError(f'{id}: STEP round-trip changed topology or volume')
     vertices,faces=shape.tessellate(.18,.22)
     mesh=trimesh.Trimesh(vertices=np.array([[v.X,v.Z,-v.Y] for v in vertices])/1000,faces=faces,process=False)
-    if id == 'throttle-cable-ball-stud-estimated':
+    if id in ('throttle-cable-ball-stud-estimated', 'throttle-cable-snap-retainer-illustrative', 'throttle-cable-socket-illustrative', 'throttle-cable-swivel-seat-illustrative'):
         # The tessellator emits zero-area triangles at the sphere pole.
         mesh.merge_vertices()
         mesh.update_faces(mesh.nondegenerate_faces())
@@ -871,6 +871,10 @@ def main():
     iac_closure_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     import iac_electrical_integration
     iac_electrical_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import distributor_center_contact_integration
+    distributor_center_contact_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import throttle_cable_integration
+    throttle_cable_integration.install(define,add,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -907,6 +911,8 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/throttle-plate-fasteners-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/iac-closure-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/iac-electrical-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/distributor-center-contact-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/throttle-cable-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -930,6 +936,8 @@ def main():
     sources.update(intake_exterior_integration.sources())
     sources.update(iac_closure_integration.sources())
     sources.update(iac_electrical_integration.sources())
+    sources.update(distributor_center_contact_integration.sources())
+    sources.update(throttle_cable_integration.source())
     for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
         sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}

@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -18,13 +18,16 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.
   - Open: Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.
   - Open: Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated.
-- [ ] **Accelerator cable bracket · estimated** — `accelerator-cable-bracket`; modeled quantity **1**; provisional.
+- [ ] **Accelerator cable bracket · cable clearance study** — `accelerator-cable-bracket`; modeled quantity **1**; provisional.
   - Instances: `accelerator-cable-bracket`
-  - Source IDs: pilot-throttle-bracket-factory, pilot-throttle-bracket-photo, throttle-1994-linkage-study, throttle-return-spring-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: pilot-throttle-bracket-factory, pilot-throttle-bracket-photo, throttle-1994-linkage-study, throttle-return-spring-study, throttle-cable-engine-end-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.
   - Open: Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.
   - Open: Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.
   - Open: Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.
+  - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
+  - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
+  - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
 
 ## Additional known scope and reconciliation
 

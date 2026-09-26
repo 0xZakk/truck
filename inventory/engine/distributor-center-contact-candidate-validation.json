@@ -1,0 +1,174 @@
+{
+  "status": "PASS bounded rotor leaf study",
+  "input_sha256_before": {
+    "cad/engine/generated/distributor-cap-screw.step": "53ca52deea596dcc93640ef6eedffd0b3f7f91ab770f6a575704c0435e641653",
+    "cad/engine/generated/distributor-bushing.step": "96f9f7071edb4e76f462a2f2db3545da8ce34bf47399a97e1624286b61b15757",
+    "scripts/check-distributor-center-contact-candidate.py": "231514581b68dedf2d7aeef1fd4d7b373b115f3218bb1ed21bf486d3f69afb5e",
+    "cad/engine/generated/distributor-vane.step": "d5ecf7b1075bd3e04f0e62e1364afac45e8ccf4658a954c921635b8c66f882ed",
+    "cad/engine/generated/distributor-drive-pin.step": "cc5033150eec951ba302549b165904ee9b59c6d18cf2637c0701e211b90513c3",
+    "cad/engine/generated/distributor-hold-down-clamp.step": "c8120795b3d947308fe88729dd09cbe74f20621624b2eb334e1878a77b5496d0",
+    "inventory/engine/full-assembly.json": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+    "cad/engine/distributor_center_contact_candidate.py": "e0f91b16dc6b87ec2db5f63bafc8888a0a476add81b37cf761c3a4a8c3f736a7",
+    "cad/engine/generated/distributor-rotor.step": "9350f6e264d83013655a36c546f36861c54ce95b3814a9b8c04e96d0c1f097c2",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/distributor-hall-sensor.step": "4aa0e1efdde0c4de3f842fe0332ec22a401f098c06e64b242fa1a2f1f28d25f2",
+    "cad/engine/generated/distributor-vane-screw.step": "8faddd9125e929b96665cace08545779b7ba1f4a7a50170dea52b30e5fcbe05c",
+    "cad/engine/generated/distributor-o-ring.step": "51fa53374456dd95f982b3012b8d563ea74b985bfd4d919678ad317bd2a7be7e",
+    "cad/engine/generated/distributor-center-contact.step": "34726bc68ac09301ebe89e766ee013bd82b27ece6e95cbabd9c3f3a04b71f929",
+    "cad/engine/generated/distributor-cap.step": "94d852b28a458000b3770cc4f942aa46c2bf9e07fde0a4ed55333a116da590cf",
+    "reference/engine/distributor-center-contact-review.json": "a1148975acefa9b0e63e2f19a698e82c1fc0d5f64dba4c52e4f5635e366ae776",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/distributor-connector.step": "8244f0b67c14f7f46f25f58ead32b069eceadf1abe60f4f3c9dc19cc9d3d42a4",
+    "cad/engine/generated/distributor-hold-down-bolt.step": "511287762081dd5c20c2f9d4443746ba4387e2d7d406659a2172528022e3aecf",
+    "cad/engine/generated/distributor-rotor-contact.step": "30f41a3c3a93d4dc46e30ce8bb636b08e2271bdff6cfb257e965b7520156cd03",
+    "cad/engine/generated/distributor-cap-terminal.step": "ce4280f9b90dff814285ffd1706a403e51c306ed8d1401152ad0ffdd52832354",
+    "cad/engine/generated/distributor-housing.step": "fd6dd04a45660c9322b2c586888fe168c2ad9c240a26682ec86be7caca14b0df",
+    "cad/engine/generated/distributor-thrust-washer.step": "3aa131f66f7e3f7b815eb9b5f132a15c0bf2618138732c83077f42721de7ba96",
+    "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a"
+  },
+  "input_sha256_after": {
+    "cad/engine/generated/distributor-cap-screw.step": "53ca52deea596dcc93640ef6eedffd0b3f7f91ab770f6a575704c0435e641653",
+    "cad/engine/generated/distributor-bushing.step": "96f9f7071edb4e76f462a2f2db3545da8ce34bf47399a97e1624286b61b15757",
+    "scripts/check-distributor-center-contact-candidate.py": "231514581b68dedf2d7aeef1fd4d7b373b115f3218bb1ed21bf486d3f69afb5e",
+    "cad/engine/generated/distributor-vane.step": "d5ecf7b1075bd3e04f0e62e1364afac45e8ccf4658a954c921635b8c66f882ed",
+    "cad/engine/generated/distributor-drive-pin.step": "cc5033150eec951ba302549b165904ee9b59c6d18cf2637c0701e211b90513c3",
+    "cad/engine/generated/distributor-hold-down-clamp.step": "c8120795b3d947308fe88729dd09cbe74f20621624b2eb334e1878a77b5496d0",
+    "inventory/engine/full-assembly.json": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+    "cad/engine/distributor_center_contact_candidate.py": "e0f91b16dc6b87ec2db5f63bafc8888a0a476add81b37cf761c3a4a8c3f736a7",
+    "cad/engine/generated/distributor-rotor.step": "9350f6e264d83013655a36c546f36861c54ce95b3814a9b8c04e96d0c1f097c2",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/distributor-hall-sensor.step": "4aa0e1efdde0c4de3f842fe0332ec22a401f098c06e64b242fa1a2f1f28d25f2",
+    "cad/engine/generated/distributor-vane-screw.step": "8faddd9125e929b96665cace08545779b7ba1f4a7a50170dea52b30e5fcbe05c",
+    "cad/engine/generated/distributor-o-ring.step": "51fa53374456dd95f982b3012b8d563ea74b985bfd4d919678ad317bd2a7be7e",
+    "cad/engine/generated/distributor-center-contact.step": "34726bc68ac09301ebe89e766ee013bd82b27ece6e95cbabd9c3f3a04b71f929",
+    "cad/engine/generated/distributor-cap.step": "94d852b28a458000b3770cc4f942aa46c2bf9e07fde0a4ed55333a116da590cf",
+    "reference/engine/distributor-center-contact-review.json": "a1148975acefa9b0e63e2f19a698e82c1fc0d5f64dba4c52e4f5635e366ae776",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/distributor-connector.step": "8244f0b67c14f7f46f25f58ead32b069eceadf1abe60f4f3c9dc19cc9d3d42a4",
+    "cad/engine/generated/distributor-hold-down-bolt.step": "511287762081dd5c20c2f9d4443746ba4387e2d7d406659a2172528022e3aecf",
+    "cad/engine/generated/distributor-rotor-contact.step": "30f41a3c3a93d4dc46e30ce8bb636b08e2271bdff6cfb257e965b7520156cd03",
+    "cad/engine/generated/distributor-cap-terminal.step": "ce4280f9b90dff814285ffd1706a403e51c306ed8d1401152ad0ffdd52832354",
+    "cad/engine/generated/distributor-housing.step": "fd6dd04a45660c9322b2c586888fe168c2ad9c240a26682ec86be7caca14b0df",
+    "cad/engine/generated/distributor-thrust-washer.step": "3aa131f66f7e3f7b815eb9b5f132a15c0bf2618138732c83077f42721de7ba96",
+    "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a"
+  },
+  "input_guard_pass": true,
+  "native_z_shift_mm": 50.0,
+  "contacts": {
+    "leaf_to_center": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    "leaf_to_conductor": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    "leaf_to_insulator": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    "conductor_to_insulator": {
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    }
+  },
+  "protected_regions_difference_mm3": {
+    "shaft_seat": 0.0,
+    "outer_tip": 0.0
+  },
+  "capture_negative_controls": {
+    "leaf_lift_0_2_into_conductor_mm3": 8.639379797372808,
+    "conductor_lift_0_2_into_stake_mm3": 2.20539804281991
+  },
+  "center_negative_controls": {
+    "leaf_lowered_0_5_center_gap_mm": 0.5,
+    "leaf_raised_0_5_center_overlap_mm3": 5.02654824574374
+  },
+  "motion": {
+    "crank_samples": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      320,
+      340,
+      360,
+      380,
+      400,
+      420,
+      440,
+      460,
+      480,
+      500,
+      520,
+      540,
+      560,
+      580,
+      600,
+      620,
+      640,
+      660,
+      680,
+      700,
+      720
+    ],
+    "exact_pairs": 333,
+    "maximum_center_gap_mm": 0.0,
+    "failures": [],
+    "scope": "Relative local-frame rigid rotor motion through full cycle; no spring deflection or electrical analysis."
+  },
+  "cap_removal_failures": [],
+  "exports": [
+    {
+      "id": "distributor-rotor",
+      "valid": true,
+      "solid_count": 1,
+      "step_sha256": "1493cc2140a650bddbc081bba4574984b1cd254edc234fbfa0bf33b70180643e",
+      "glb_sha256": "904424a9d617598c377830f983dba287b74ec6b1cb5e164881d15071838a11c7",
+      "watertight": true,
+      "bounds_error_mm": 7.390975942378475e-06
+    },
+    {
+      "id": "distributor-rotor-contact",
+      "valid": true,
+      "solid_count": 1,
+      "step_sha256": "f91535e610041168f56c4174448b811ef17983ef34e1f068b9c10b32b629b14d",
+      "glb_sha256": "df72cc8b11658d4f035b1b24697072c3d01bea706796cb16d3dce69891b5b94e",
+      "watertight": true,
+      "bounds_error_mm": 3.0994415367580075e-06
+    },
+    {
+      "id": "distributor-rotor-center-leaf",
+      "valid": true,
+      "solid_count": 1,
+      "step_sha256": "3b1e33dfc325198efd3d305d7cf1583ef76fa91187dfbb952aaee65d960dc9d3",
+      "glb_sha256": "a58f2442eaacb0d8edbb7224d4d64d32a0ba71d6966606067cab5dd9849a98f5",
+      "watertight": true,
+      "bounds_error_mm": 6.53270820771823e-06
+    }
+  ],
+  "render": "cad/engine/generated/distributor-center-contact-study/rotor-contact-render.svg",
+  "limits": [
+    "All geometry dimensions inferred; source photo establishes topology only.",
+    "Existing cap center envelope retained; actual brush material, retention and hidden connection unverified.",
+    "Idealized molded stake retention, no manufacturing process or interference/preload claim.",
+    "Outer tip and shaft seating preserve existing estimates; electrical gap not factory verified.",
+    "Browser and integrated full-neighbor check NOT RUN."
+  ],
+  "environment": {
+    "python": "3.13.12",
+    "build123d": "0.10.0"
+  }
+}

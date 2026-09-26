@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+  "manifest_sha256": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
   "part_step_hashes": {
     "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
     "cad/engine/generated/pin.step": "12d1a53f03ba93754e9587246cdb275d1da000549b34d22e401759f39ebdd9d3",
@@ -341,8 +341,6 @@
     "cad/engine/generated/distributor-housing.step": "fd6dd04a45660c9322b2c586888fe168c2ad9c240a26682ec86be7caca14b0df",
     "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a",
     "cad/engine/generated/distributor-vane.step": "d5ecf7b1075bd3e04f0e62e1364afac45e8ccf4658a954c921635b8c66f882ed",
-    "cad/engine/generated/distributor-rotor.step": "9350f6e264d83013655a36c546f36861c54ce95b3814a9b8c04e96d0c1f097c2",
-    "cad/engine/generated/distributor-rotor-contact.step": "30f41a3c3a93d4dc46e30ce8bb636b08e2271bdff6cfb257e965b7520156cd03",
     "cad/engine/generated/distributor-hall-sensor.step": "4aa0e1efdde0c4de3f842fe0332ec22a401f098c06e64b242fa1a2f1f28d25f2",
     "cad/engine/generated/distributor-connector.step": "8244f0b67c14f7f46f25f58ead32b069eceadf1abe60f4f3c9dc19cc9d3d42a4",
     "cad/engine/generated/distributor-bushing.step": "96f9f7071edb4e76f462a2f2db3545da8ce34bf47399a97e1624286b61b15757",
@@ -692,7 +690,6 @@
     "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
     "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
     "cad/engine/generated/throttle-shield-pushpin-estimated.step": "dc9f04af0c0e833d39ab0728bd079d51ce783d05d01e7246b959c434f26f5d30",
-    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
     "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
     "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
     "cad/engine/generated/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
@@ -725,7 +722,18 @@
     "cad/engine/generated/iac-coil-carrier-estimated.step": "a72f5e5a8a35111616591013abcfab52a50d9a5de3b77bc13f43537b2ad9fd87",
     "cad/engine/generated/iac-connector-cap.step": "bd24a100ffe893f9589164b37e8a40d13085f9cede161f2a31a3bd8553c6b3e1",
     "cad/engine/generated/iac-terminal-control-estimated.step": "c776e3349b71b02258fa3eae1e99456dddff971dfd548776a1a08b10b0f6ab4a",
-    "cad/engine/generated/iac-terminal-vpwr-estimated.step": "829b7cb5fe5511a9b87620702847611c8f8f2e32a2a2e85b27a88579f79cc91d"
+    "cad/engine/generated/iac-terminal-vpwr-estimated.step": "829b7cb5fe5511a9b87620702847611c8f8f2e32a2a2e85b27a88579f79cc91d",
+    "cad/engine/generated/distributor-rotor.step": "3ab5017a460b67639b6ade8c8b8f830281a46b35197aa5bda882157dd1a90fae",
+    "cad/engine/generated/distributor-rotor-center-leaf.step": "9271529ef6ebc0b2a8e1b29e164dd43dffba4bef5b780c1a4dbabafb217749d0",
+    "cad/engine/generated/distributor-rotor-contact.step": "67e6bdc70b13a45e556d049b82683868476789dcee7b162019709a7908a53a4a",
+    "cad/engine/generated/accelerator-cable-bracket.step": "90d1c4cab4e828849623a62f066ddea66ab5a08ea7112dc72ae8c1ab459924d9",
+    "cad/engine/generated/throttle-cable-compression-spring-illustrative.step": "d78319bc86ba1446e276029002a71bb43d6481c155273a30ebf6ae9bc454681b",
+    "cad/engine/generated/throttle-cable-core-illustrative.step": "b6e0b0b8edc22c278bcf06e5574476fd41697f0d9a3aa95b502091ec1cc7c7fe",
+    "cad/engine/generated/throttle-cable-fixed-guide-illustrative.step": "95deb3cc507172d00a589e36903e8c42d63a2685917e42d00c8f884a49009863",
+    "cad/engine/generated/throttle-cable-sheath-stub-illustrative.step": "68f1b3d9a201a8eaebcabe18e0459680e00172cfd57230bafcc690ceb2b2991b",
+    "cad/engine/generated/throttle-cable-snap-retainer-illustrative.step": "01d1914d62a79cb07ce0323959757faf1bea04f683b40e9fc053cffefeb30eef",
+    "cad/engine/generated/throttle-cable-socket-illustrative.step": "44bec925b79429d27b8acb52bb1eb8744767bb5b285e57d47af15109d0213201",
+    "cad/engine/generated/throttle-cable-swivel-seat-illustrative.step": "24cb4c8833a2fc3cc22f91c556e4ccf3ff34038f5085b2b74a4e9804f4571204"
   },
   "export_dependency_hashes": {
     "scripts/export-engine-assembly-step.py": "ac0a645ba0c67ed89a6e6f56e097856933025373423bba5e1402dd2edb5517ff",
@@ -733,10 +741,10 @@
     "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
     "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c"
   },
-  "assembly_step_sha256": "75db6d77d0646e606aa79159a7798f3a679c3d2a6390d0f827d17bba30e05fed",
-  "occurrences": 1333,
+  "assembly_step_sha256": "f37cfd1932fc3da280fd148147457c8aff9f349d618565403f15e9fc50008bee",
+  "occurrences": 1341,
   "roundtrip": {
-    "unique_occurrence_labels": 1333,
+    "unique_occurrence_labels": 1341,
     "max_roundtrip_bounds_delta_mm": 0.00035065968842218354,
     "bounds_tolerance_mm": 0.01,
     "scope": "Occurrence identity, solid validity and world bounding boxes; not exact geometric equivalence or manufacturing fit"

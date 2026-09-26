@@ -1,0 +1,225 @@
+{
+  "throttle-assembly": {
+    "summary": "Two butterfly plates share a shaft. Moving the throttle-opening slider turns them together, changing how much of each bore is obstructed.",
+    "limits": "Factory references support twin bores, four body mounting studs/nuts, IAC attachment by two bolts, TPS, an external lever and shield. The installed lever, D-shaped shaft end, retaining pin, bracket, shield and single return spring are educational constructions with inferred dimensions. Four internal plate screws are an explicit hypothesis, not a verified Ford count. The two IAC screws have source-supported count but estimated dimensions and thread envelopes. Actual Ford shaft-return-spring construction, production cable dimensions/internal construction, production stops, plate locking and preload, IAC variant, sealing, calibration and harness remain unresolved. The separate cable-end compression spring, long socket/stem, guide and retainer now have an illustrative study informed by replacement photographs; force/rate and complete pedal/firewall routing are not simulated.",
+    "steps": [
+      {
+        "title": "Air passages",
+        "text": "The twin bores lead into the shared upper plenum. Use See through covers to watch the plates inside.",
+        "part": "throttle-housing"
+      },
+      {
+        "title": "Paired plates",
+        "text": "A common shaft coordinates the two discs. At 90 degrees the idealized discs are edge-on to the incoming air. Production closed and full-open stops still need verification.",
+        "part": "throttle-moving"
+      },
+      {
+        "title": "Idle uses another path",
+        "text": "The IAC-controlled bypass is separate from the plates. Two illustrative screws attach the valve and separate gasket to the throttle pad; the exact installed valve variant and internal dimensions remain unverified.",
+        "part": "idle-air"
+      },
+      {
+        "title": "Cable pull becomes shaft rotation",
+        "text": "The outward ball follows the lever and twin plates while the bracket and shield stay fixed. An illustrative spring winds between captured fixed and moving hooks. The control commands the angle; return force and friction are not calculated.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Keep the plates on the shaft",
+        "text": "Four illustrative screws seat against the two plates and enter helical shaft receivers. The mounting nuts outside the body do not establish this internal screw count.",
+        "part": "throttle-plate-screw-1-1-illustrative"
+      },
+      {
+        "title": "Separate the IAC joint",
+        "text": "Two diagonal IAC screws pass through the valve flange and gasket into the throttle pad. Their count is supported by the service diagrams; estimated smooth receivers do not establish production thread engagement or clamp strength.",
+        "part": "iac-mount-screw-1-estimated"
+      },
+      {
+        "title": "Distinguish two spring mechanisms",
+        "text": "The cable-end compression coil shortens as the ball pulls its long socket stem toward the fixed bracket retainer. It is separate from the shaft torsion spring. Both are educational constructions; the slider commands angle directly.",
+        "part": "throttle-cable-compression-spring-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate throttle opening from idle control",
+        "text": "Closed butterfly plates do not mean the real engine has no air supply: the IAC meters a separate bypass path. The viewer does not simulate idle speed or air flow."
+      },
+      {
+        "title": "Sealing interface",
+        "text": "The separate gasket seals the body to the upper manifold. Inspect its position in the exploded view.",
+        "part": "throttle-gasket"
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "truck-throttle-service",
+      "truck-throttle-catalog",
+      "throttle-1994-linkage-study",
+      "throttle-return-spring-study",
+      "throttle-plate-retention-illustrative-study",
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study",
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "accelerator-cable-bracket": {
+    "summary": "The fixed bracket supports the cable retainer while keeping the existing mounting, shield and shaft-spring anchors.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "A proposed distal flange and relief revision clears the larger articulated cable end. Its dimensions and opening assignment are estimates.",
+        "part": "throttle-cable-snap-retainer-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-snap-retainer-illustrative": {
+    "summary": "The retainer sits through the bracket and captures the sheath end.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "The flange bears on one face; slotted barbs capture the opposite face. Actual snap construction and insertion flexure remain unknown.",
+        "part": "accelerator-cable-bracket"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-sheath-stub-illustrative": {
+    "summary": "This short fixed sheath segment guides the inner core beyond the retainer.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "Its captive bead is an educational joint. The open cut end stands for the omitted cable route, not the pedal.",
+        "part": "throttle-cable-core-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-socket-illustrative": {
+    "summary": "The long socket stem captures the outward lever ball and changes direction as the throttle opens.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "The socket articulates toward the fixed retainer; it does not rigidly follow the lever orientation. Its internal retention is inferred.",
+        "part": "throttle-cable-ball-stud-estimated"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-swivel-seat-illustrative": {
+    "summary": "This estimated fixed-end seat supports the compression spring while allowing cable direction to change.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "A hollow spherical joint is a physically captured educational mechanism, not an observed Ford internal construction.",
+        "part": "throttle-cable-snap-retainer-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-fixed-guide-illustrative": {
+    "summary": "A retained guide enters the hollow moving stem as the cable-end spring compresses.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "The guide follows the articulating fixed seat. Replacement photographs show overlapping guide/stem forms, but hidden sections and attachment are unknown.",
+        "part": "throttle-cable-socket-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-core-illustrative": {
+    "summary": "A continuous flexible core joins the captive socket terminal to the fixed sheath segment.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "Its visible length changes as material passes through the open sheath boundary. This is not a stretching-wire or complete cable-route simulation.",
+        "part": "throttle-cable-sheath-stub-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  },
+  "throttle-cable-compression-spring-illustrative": {
+    "summary": "The cable-end spring compresses between moving and fixed seats as the throttle opens.",
+    "limits": "Exact1994 service material supports a ball-connected accelerator cable and a separate cable-end compression spring. Replacement specimens inform proportions, but owner-installed identity, all dimensions,24 turns, internal retention, material, preload, strength and rate remain unverified. Full routing, pedal, firewall and unverified cruise/C6 hardware are excluded.",
+    "steps": [
+      {
+        "title": "Follow the connection",
+        "text": "It is separate from the shaft torsion spring. The wire remains continuous with approximately constant centerline length; no spring rate or return-force result is claimed.",
+        "part": "throttle-return-spring-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Demonstration limits",
+        "text": "The control selects integer angles from0 to90 degrees. Geometry is a bounded educational construction, not a service specification or proof of reliable vehicle return."
+      }
+    ],
+    "sources": [
+      "throttle-cable-engine-end-illustrative-study"
+    ]
+  }
+}

@@ -1,0 +1,4475 @@
+{
+  "status": "PASS",
+  "scope": "Exact CAD integer poses; estimated educational engine-end mechanism, not production cable/force validation.",
+  "input_hashes": {
+    "scripts/export-throttle-cable-motion.py": "1e9ee2170ca7208d04bd090e4a5cb7ba0fc39c7c64380de97808325bd0bad8d5",
+    "cad/engine/throttle_cable_candidate.py": "82c534adf51b35aa23f92d991e2848ec26d3f062d977cc0106f0bb90e02930f2",
+    "inventory/engine/throttle-cable-candidate-validation.json": "7a0a5189db51e32a18088fe0d7d6d784729ea19b12799b13bc1ab684c2a4cd0b"
+  },
+  "output_sha256": "f1530c1770b2cdad89707bf994d2da64b863b5c395f156146f8a4e2d5608bcd5",
+  "output_bytes": 9037954,
+  "frames": [
+    {
+      "angle_deg": 0,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.0049787428034164805,
+          "quantization_error_mm": 7.906560639970002e-05,
+          "cad_bounds_mm": [
+            [
+              397.2011567459888,
+              95.17252125719658,
+              466.5999998999999
+            ],
+            [
+              487.8000001,
+              112.40000010000001,
+              512.2142439942767
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4683,
+          "triangles": 9362,
+          "bounds_error_mm": 0.09081645263069049,
+          "quantization_error_mm": 8.517066887134745e-05,
+          "cad_bounds_mm": [
+            [
+              421.94846747536405,
+              98.1971835473693,
+              465.98178424430404
+            ],
+            [
+              464.71737231043164,
+              115.16759811112298,
+              497.90769308511113
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 1,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.00495681391109315,
+          "quantization_error_mm": 7.909019268201415e-05,
+          "cad_bounds_mm": [
+            [
+              397.6115126553514,
+              95.1760431860889,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.40000010000028,
+              512.2003901142632
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4692,
+          "triangles": 9380,
+          "bounds_error_mm": 0.09070998463953117,
+          "quantization_error_mm": 8.230475144390182e-05,
+          "cad_bounds_mm": [
+            [
+              422.29418690999734,
+              98.22519001536047,
+              465.99220225051755
+            ],
+            [
+              464.731760552633,
+              115.16488328895359,
+              497.822598106899
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 2,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004973064857864529,
+          "quantization_error_mm": 7.279478670747245e-05,
+          "cad_bounds_mm": [
+            [
+              398.0218538796289,
+              95.17962693514214,
+              466.59999990000017
+            ],
+            [
+              487.80000010000003,
+              112.40000010000026,
+              512.1794524901644
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4711,
+          "triangles": 9418,
+          "bounds_error_mm": 0.0907157434963608,
+          "quantization_error_mm": 8.345553984000097e-05,
+          "cad_bounds_mm": [
+            [
+              422.64061652929183,
+              98.25368985594537,
+              466.0022540698753
+            ],
+            [
+              464.74590056299166,
+              115.16211574349636,
+              497.7319947165823
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 3,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 231,
+          "triangles": 458,
+          "bounds_error_mm": 0.005027030196146143,
+          "quantization_error_mm": 7.769058815728694e-05,
+          "cad_bounds_mm": [
+            [
+              398.4320572963149,
+              95.18327296980385,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              512.1514383636729
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4723,
+          "triangles": 9442,
+          "bounds_error_mm": 0.09059490526360037,
+          "quantization_error_mm": 8.342309864294989e-05,
+          "cad_bounds_mm": [
+            [
+              422.9876656023889,
+              98.28268680775561,
+              466.0119341969948
+            ],
+            [
+              464.7597863233995,
+              115.15929490526361,
+              497.63591657846393
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 4,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.005018247939631237,
+          "quantization_error_mm": 8.30422412849766e-05,
+          "cad_bounds_mm": [
+            [
+              398.8419999132226,
+              95.18698175206036,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              512.1163572589559
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4085,
+          "triangles": 8166,
+          "bounds_error_mm": 0.09052020471850142,
+          "quantization_error_mm": 8.220335555542981e-05,
+          "cad_bounds_mm": [
+            [
+              423.33524388928106,
+              98.31218457985871,
+              466.02123710266403
+            ],
+            [
+              464.77341172894353,
+              115.1564202047185,
+              497.53440004252934
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 5,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.005046260454889762,
+          "quantization_error_mm": 7.644323805594454e-05,
+          "cad_bounds_mm": [
+            [
+              399.25155890700364,
+              95.19075373954512,
+              466.59999990000017
+            ],
+            [
+              487.8000000999999,
+              112.4000001000002,
+              512.0742209825804
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4092,
+          "triangles": 8180,
+          "bounds_error_mm": 0.09041315544028805,
+          "quantization_error_mm": 8.234701943625813e-05,
+          "cad_bounds_mm": [
+            [
+              423.68326167553226,
+              98.3421868445597,
+              466.0301572338938
+            ],
+            [
+              464.78677058644627,
+              115.15349107297645,
+              497.42748415697264
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 6,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 231,
+          "triangles": 458,
+          "bounds_error_mm": 0.005010615410597552,
+          "quantization_error_mm": 8.194917284227788e-05,
+          "cad_bounds_mm": [
+            [
+              399.6606116615466,
+              95.1945893845894,
+              466.59999990000017
+            ],
+            [
+              487.80000010000003,
+              112.40000009999999,
+              512.0250436227665
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4126,
+          "triangles": 8248,
+          "bounds_error_mm": 0.09030277024868383,
+          "quantization_error_mm": 8.477306417793732e-05,
+          "cad_bounds_mm": [
+            [
+              424.0316298063204,
+              98.37269722975131,
+              466.03868901402444
+            ],
+            [
+              464.79985661302817,
+              115.15050694259791,
+              497.3152106801888
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 7,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 226,
+          "triangles": 448,
+          "bounds_error_mm": 0.005010866786491874,
+          "quantization_error_mm": 7.810159617340395e-05,
+          "cad_bounds_mm": [
+            [
+              400.06903580624254,
+              95.19848913321351,
+              466.5999999
+            ],
+            [
+              487.80000010000015,
+              112.40000010000003,
+              511.96884154797266
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4123,
+          "triangles": 8242,
+          "bounds_error_mm": 0.09018068927888123,
+          "quantization_error_mm": 8.398390852052183e-05,
+          "cad_bounds_mm": [
+            [
+              424.3802597197263,
+              98.40371931072112,
+              466.04682684286297
+            ],
+            [
+              464.81266343469656,
+              115.14746724847542,
+              497.19762409221585
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 8,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.005046575945740983,
+          "quantization_error_mm": 7.834104219185209e-05,
+          "cad_bounds_mm": [
+            [
+              400.476709254095,
+              95.20245342405426,
+              466.59999989999994
+            ],
+            [
+              487.8000001,
+              112.40000010000013,
+              511.9056334048106
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4169,
+          "triangles": 8334,
+          "bounds_error_mm": 0.09014339840021535,
+          "quantization_error_mm": 8.497520544558443e-05,
+          "cad_bounds_mm": [
+            [
+              424.72906347912044,
+              98.43525660159979,
+              466.0545650970124
+            ],
+            [
+              464.8251845849646,
+              115.1443714286853,
+              497.0747716055966
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 9,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.00501731277365991,
+          "quantization_error_mm": 8.223073889327547e-05,
+          "cad_bounds_mm": [
+            [
+              400.88351023965856,
+              95.20648268722634,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              511.83544011528426
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4138,
+          "triangles": 8272,
+          "bounds_error_mm": 0.08998745385309803,
+          "quantization_error_mm": 8.346968495297645e-05,
+          "cad_bounds_mm": [
+            [
+              425.07795380486806,
+              98.4673125461469,
+              466.06189813018426
+            ],
+            [
+              464.83741350350823,
+              115.14121892548629,
+              496.94670317563725
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 10,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.00502265688608361,
+          "quantization_error_mm": 7.638854755806363e-05,
+          "cad_bounds_mm": [
+            [
+              401.2893173567836,
+              95.21057734311391,
+              466.5999999000002
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              511.75828487335326
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4183,
+          "triangles": 8362,
+          "bounds_error_mm": 0.08990949204476806,
+          "quantization_error_mm": 8.46490656758659e-05,
+          "cad_bounds_mm": [
+            [
+              425.4268441048595,
+              98.49989050795523,
+              466.0688202738039
+            ],
+            [
+              464.8493435348695,
+              115.13800918633585,
+              496.8134715100296
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 11,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004962198911243831,
+          "quantization_error_mm": 8.425037537897579e-05,
+          "cad_bounds_mm": [
+            [
+              401.6940095961502,
+              95.21473780108876,
+              466.5999999000002
+            ],
+            [
+              487.8000001000001,
+              112.4000001,
+              511.6741931408146
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4171,
+          "triangles": 8338,
+          "bounds_error_mm": 0.08980623971824286,
+          "quantization_error_mm": 8.222489330879075e-05,
+          "cad_bounds_mm": [
+            [
+              425.7756485040632,
+              98.53299376028176,
+              466.0753258375319
+            ],
+            [
+              464.8609679272096,
+              115.13474166497748,
+              496.6751320778073
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 12,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.0050355418477892044,
+          "quantization_error_mm": 8.129131916562156e-05,
+          "cad_bounds_mm": [
+            [
+              402.09746638257013,
+              95.21896445815221,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.40000010000003,
+              511.58319264250264
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4210,
+          "triangles": 8416,
+          "bounds_error_mm": 0.08967452498460204,
+          "quantization_error_mm": 8.54067803458066e-05,
+          "cad_bounds_mm": [
+            [
+              426.12428187311707,
+              98.5666254750154,
+              466.0814091100356
+            ],
+            [
+              464.87227983112564,
+              115.13141582263138,
+              496.5317431175933
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 13,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.005042302503923679,
+          "quantization_error_mm": 8.473434486865718e-05,
+          "cad_bounds_mm": [
+            [
+              402.4995676120361,
+              95.22325769749608,
+              466.5999999000001
+            ],
+            [
+              487.8000001000001,
+              112.40000010000014,
+              511.48531336080026
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4187,
+          "triangles": 8370,
+          "bounds_error_mm": 0.0896112888408993,
+          "quantization_error_mm": 8.210438347356681e-05,
+          "cad_bounds_mm": [
+            [
+              426.47265985551684,
+              98.6007887111591,
+              466.0870643599326
+            ],
+            [
+              464.88327229853445,
+              115.12803112918735,
+              496.38336564510143
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 14,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.00498211302016216,
+          "quantization_error_mm": 8.081124033026205e-05,
+          "cad_bounds_mm": [
+            [
+              402.9001936884973,
+              95.22761788697984,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              511.3805875294598
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4230,
+          "triangles": 8456,
+          "bounds_error_mm": 0.089513597398863,
+          "quantization_error_mm": 8.584867194575065e-05,
+          "cad_bounds_mm": [
+            [
+              426.8206988936921,
+              98.63548640260113,
+              466.09228583677015
+            ],
+            [
+              464.89393828163793,
+              115.12458706457217,
+              496.2300634598437
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 15,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 224,
+          "triangles": 444,
+          "bounds_error_mm": 0.0049546224800280925,
+          "quantization_error_mm": 7.740977695843188e-05,
+          "cad_bounds_mm": [
+            [
+              403.2992255603401,
+              95.23204537751997,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.40000010000001,
+              511.2690496267273
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4240,
+          "triangles": 8476,
+          "bounds_error_mm": 0.08937865480876894,
+          "quantization_error_mm": 8.424753542720063e-05,
+          "cad_bounds_mm": [
+            [
+              427.1683162536046,
+              98.67072134519123,
+              466.0970677722892
+            ],
+            [
+              464.9042706319761,
+              115.12108312010855,
+              496.07190315099285
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 16,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004959498613189339,
+          "quantization_error_mm": 8.264858377683757e-05,
+          "cad_bounds_mm": [
+            [
+              403.6965447565532,
+              95.23654050138681,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.40000010000003,
+              511.15073636776884
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4231,
+          "triangles": 8458,
+          "bounds_error_mm": 0.08930381694327139,
+          "quantization_error_mm": 8.408289758988195e-05,
+          "cad_bounds_mm": [
+            [
+              427.5154300480514,
+              98.70649618305673,
+              466.1014043817699
+            ],
+            [
+              464.9142620995825,
+              115.11751880003227,
+              495.90895410234594
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 17,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0049964295941009595,
+          "quantization_error_mm": 7.948220289781705e-05,
+          "cad_bounds_mm": [
+            [
+              404.0920334225505,
+              95.2411035704059,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              511.0256866963864
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4256,
+          "triangles": 8508,
+          "bounds_error_mm": 0.08918660576310344,
+          "quantization_error_mm": 8.367718555227288e-05,
+          "cad_bounds_mm": [
+            [
+              427.86195925822864,
+              98.74281339423689,
+              466.1052898656408
+            ],
+            [
+              464.9239053322533,
+              115.11389362304307,
+              495.7412884963267
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 18,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.00496512594074261,
+          "quantization_error_mm": 7.317964988337267e-05,
+          "cad_bounds_mm": [
+            [
+              404.4855743556373,
+              95.24573487405925,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.40000010000009,
+              510.8939417760271
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4248,
+          "triangles": 8492,
+          "bounds_error_mm": 0.08912472458411003,
+          "quantization_error_mm": 8.445844659332596e-05,
+          "cad_bounds_mm": [
+            [
+              428.20782375379633,
+              98.77967527541588,
+              466.10871841122105
+            ],
+            [
+              464.9331928749413,
+              115.11020712400129,
+              495.5689813169582
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 19,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0049653225179753235,
+          "quantization_error_mm": 8.371680815868834e-05,
+          "cad_bounds_mm": [
+            [
+              404.8770510400861,
+              95.25043467748202,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.40000010000017,
+              510.7555449800706
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4249,
+          "triangles": 8494,
+          "bounds_error_mm": 0.08901607409183043,
+          "quantization_error_mm": 8.519661631764993e-05,
+          "cad_bounds_mm": [
+            [
+              428.552944311111,
+              98.81708392590816,
+              466.11168419477616
+            ],
+            [
+              464.9421171692924,
+              115.10645885565869,
+              495.3921103517362
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 20,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 226,
+          "triangles": 448,
+          "bounds_error_mm": 0.004996780648951926,
+          "quantization_error_mm": 7.712911859294047e-05,
+          "cad_bounds_mm": [
+            [
+              405.2663476818067,
+              95.25520321935105,
+              466.5999999000002
+            ],
+            [
+              487.8000001,
+              112.40000010000024,
+              510.61054188139315
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4273,
+          "triangles": 8542,
+          "bounds_error_mm": 0.08885876924183833,
+          "quantization_error_mm": 8.58241610716636e-05,
+          "cad_bounds_mm": [
+            [
+              428.89724262968593,
+              98.85504123075816,
+              466.114181383655
+            ],
+            [
+              464.95067055333664,
+              115.10264839058426,
+              495.21075619231743
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 21,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 223,
+          "triangles": 442,
+          "bounds_error_mm": 0.004959290339101585,
+          "quantization_error_mm": 7.831750260899751e-05,
+          "cad_bounds_mm": [
+            [
+              405.65334924258246,
+              95.2600407096609,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000037,
+              510.4589802411968
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4267,
+          "triangles": 8530,
+          "bounds_error_mm": 0.08875115706679537,
+          "quantization_error_mm": 8.227381713498269e-05,
+          "cad_bounds_mm": [
+            [
+              429.24064134658454,
+              98.8935488429332,
+              466.1162041388461
+            ],
+            [
+              464.95884526135194,
+              115.09877532309575,
+              495.0250022339408
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 22,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004952672617520193,
+          "quantization_error_mm": 7.31038490740442e-05,
+          "cad_bounds_mm": [
+            [
+              406.03794147384883,
+              95.26494732738249,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.40000010000016,
+              510.3009099970994
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4302,
+          "triangles": 8600,
+          "bounds_error_mm": 0.0886918353735382,
+          "quantization_error_mm": 8.357049897126696e-05,
+          "cad_bounds_mm": [
+            [
+              429.58306404881165,
+              98.93260816462646,
+              466.1177466176341
+            ],
+            [
+              464.9666334239177,
+              115.09483927138852,
+              494.83493467348404
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 23,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 226,
+          "triangles": 448,
+          "bounds_error_mm": 0.004976781999147306,
+          "quantization_error_mm": 8.203218868253992e-05,
+          "cad_bounds_mm": [
+            [
+              406.4200109499886,
+              95.26992321800086,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000023,
+              510.1363832504712
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4301,
+          "triangles": 8598,
+          "bounds_error_mm": 0.08857967244344422,
+          "quantization_error_mm": 8.416144579827774e-05,
+          "cad_bounds_mm": [
+            [
+              429.92443528347656,
+              98.97222032755656,
+              466.11880297666363
+            ],
+            [
+              464.97402706817616,
+              115.09083987976038,
+              494.6406425060517
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 24,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.0049315090722927835,
+          "quantization_error_mm": 8.05358489074985e-05,
+          "cad_bounds_mm": [
+            [
+              406.79944510112017,
+              95.2749684909277,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              509.9654542530119
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4293,
+          "triangles": 8582,
+          "bounds_error_mm": 0.08841382769389838,
+          "quantization_error_mm": 8.337032220572195e-05,
+          "cad_bounds_mm": [
+            [
+              430.2646805656288,
+              99.01238617230611,
+              466.1193673752252
+            ],
+            [
+              464.9810181183228,
+              115.08677682088995,
+              494.44221751998344
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 25,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0050167832160781245,
+          "quantization_error_mm": 7.9754472848407e-05,
+          "cad_bounds_mm": [
+            [
+              407.17613224534887,
+              95.28008321678392,
+              466.5999998999999
+            ],
+            [
+              487.8000001,
+              112.40000010000013,
+              509.7881793925551
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4296,
+          "triangles": 8588,
+          "bounds_error_mm": 0.08834979835788204,
+          "quantization_error_mm": 8.474933380016334e-05,
+          "cad_bounds_mm": [
+            [
+              430.60372638368904,
+              99.05310622662324,
+              466.1194339788394
+            ],
+            [
+              464.98759839634795,
+              115.08264979835788,
+              494.23975429016474
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 26,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.0049325754508942055,
+          "quantization_error_mm": 7.505874520096719e-05,
+          "cad_bounds_mm": [
+            [
+              407.54996162046007,
+              95.2852674245491,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.40000010000003,
+              509.6046171780877
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4115,
+          "triangles": 8226,
+          "bounds_error_mm": 0.08821931732902044,
+          "quantization_error_mm": 8.453186324272734e-05,
+          "cad_bounds_mm": [
+            [
+              430.9415002022473,
+              99.09438068267097,
+              466.1189969632438
+            ],
+            [
+              464.99375962304714,
+              115.07845854922357,
+              494.0333501695012
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 27,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004978901426824223,
+          "quantization_error_mm": 8.04818112247057e-05,
+          "cad_bounds_mm": [
+            [
+              407.92082341502436,
+              95.29052109857318,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000017,
+              509.4148282239734
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4118,
+          "triangles": 8232,
+          "bounds_error_mm": 0.08809062682124136,
+          "quantization_error_mm": 8.305895556887682e-05,
+          "cad_bounds_mm": [
+            [
+              431.277930462205,
+              99.13620937317876,
+              466.1180505186619
+            ],
+            [
+              464.9994934193338,
+              115.0742028467607,
+              493.8231052784256
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 28,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004955824553007915,
+          "quantization_error_mm": 7.359564174305526e-05,
+          "cad_bounds_mm": [
+            [
+              408.28860879888475,
+              95.29584417544699,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.40000010000003,
+              509.2188752333625
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4138,
+          "triangles": 8272,
+          "bounds_error_mm": 0.08790825349566944,
+          "quantization_error_mm": 8.261585102154434e-05,
+          "cad_bounds_mm": [
+            [
+              431.61294657805206,
+              99.17859174650432,
+              466.1165888545011
+            ],
+            [
+              465.00479130787005,
+              115.06988250330984,
+              493.6091224922773
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 29,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.00496345927223274,
+          "quantization_error_mm": 7.760820102233442e-05,
+          "cad_bounds_mm": [
+            [
+              408.6532099530061,
+              95.30123654072777,
+              466.5999999000003
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              509.01682298077634
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4140,
+          "triangles": 8276,
+          "bounds_error_mm": 0.0878973733560855,
+          "quantization_error_mm": 8.239018684377068e-05,
+          "cad_bounds_mm": [
+            [
+              431.94647893218007,
+              99.22152684051771,
+              466.1146062043377
+            ],
+            [
+              465.0096447150507,
+              115.06549737335608,
+              493.3915074263961
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 30,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.005001974482894411,
+          "quantization_error_mm": 8.169836867281869e-05,
+          "cad_bounds_mm": [
+            [
+              409.0145200986516,
+              95.30669802551711,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.4000001000001,
+              508.8087382938474
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4173,
+          "triangles": 8342,
+          "bounds_error_mm": 0.08768674465716231,
+          "quantization_error_mm": 8.440657904737302e-05,
+          "cad_bounds_mm": [
+            [
+              432.27845886607383,
+              99.26501325534284,
+              466.1120968314631
+            ],
+            [
+              465.01404497336506,
+              115.06104735663635,
+              493.17036841875483
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 31,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004971597113083703,
+          "quantization_error_mm": 7.532080487489215e-05,
+          "cad_bounds_mm": [
+            [
+              409.3724335258629,
+              95.31222840288692,
+              466.59999989999983
+            ],
+            [
+              487.8000001,
+              112.40000010000018,
+              508.59469003419827
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4178,
+          "triangles": 8352,
+          "bounds_error_mm": 0.08755087510253645,
+          "quantization_error_mm": 8.177821824834049e-05,
+          "cad_bounds_mm": [
+            [
+              432.6088186682218,
+              99.30904912489747,
+              466.10905503470974
+            ],
+            [
+              465.01798332417036,
+              115.05653240152334,
+              492.94581650994195
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 32,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 225,
+          "triangles": 446,
+          "bounds_error_mm": 0.004972615846995154,
+          "quantization_error_mm": 7.878902846827114e-05,
+          "cad_bounds_mm": [
+            [
+              409.7268456212134,
+              95.317827384153,
+              466.59999989999994
+            ],
+            [
+              487.8000001000001,
+              112.40000010000017,
+              508.374749077438
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4159,
+          "triangles": 8314,
+          "bounds_error_mm": 0.08746791277640398,
+          "quantization_error_mm": 8.322109530243528e-05,
+          "cad_bounds_mm": [
+            [
+              432.93749155870495,
+              99.3536320872236,
+              466.10547515487013
+            ],
+            [
+              465.02145092090507,
+              115.05195250845766,
+              492.7179654202955
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 33,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.005005385008686858,
+          "quantization_error_mm": 7.348119747500631e-05,
+          "cad_bounds_mm": [
+            [
+              410.0776528948073,
+              95.32349461499132,
+              466.5999998999998
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              508.1489882922606
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4154,
+          "triangles": 8304,
+          "bounds_error_mm": 0.08734074640921108,
+          "quantization_error_mm": 8.407804432328046e-05,
+          "cad_bounds_mm": [
+            [
+              433.26441167013644,
+              99.39875925359078,
+              466.1013515814612
+            ],
+            [
+              465.02443883278096,
+              115.04730773364798,
+              492.48693152397647
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 34,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004970328602126983,
+          "quantization_error_mm": 8.036633236768112e-05,
+          "cad_bounds_mm": [
+            [
+              410.42475300649886,
+              95.32922967139787,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.40000010000021,
+              507.9174825186169
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4217,
+          "triangles": 8430,
+          "bounds_error_mm": 0.08717282363900836,
+          "quantization_error_mm": 8.39469503728423e-05,
+          "cad_bounds_mm": [
+            [
+              433.58951402500094,
+              99.44442717636099,
+              466.0966787600902
+            ],
+            [
+              465.026938048988,
+              115.04259819285484,
+              492.25283381975305
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 35,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 222,
+          "triangles": 440,
+          "bounds_error_mm": 0.004967944510127609,
+          "quantization_error_mm": 7.715725412466293e-05,
+          "cad_bounds_mm": [
+            [
+              410.7680447912988,
+              95.33503205548988,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.4000001000001,
+              507.6803085449415
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4213,
+          "triangles": 8422,
+          "bounds_error_mm": 0.08706818439493702,
+          "quantization_error_mm": 8.4344293805566e-05,
+          "cad_bounds_mm": [
+            [
+              433.9127345091355,
+              99.49063181560506,
+              466.0914512002859
+            ],
+            [
+              465.02893948344774,
+              115.0378240653894,
+              492.01579389825565
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 36,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004998808852718639,
+          "quantization_error_mm": 8.13014569961055e-05,
+          "cad_bounds_mm": [
+            [
+              411.1074282839447,
+              95.34090119114728,
+              466.59999990000017
+            ],
+            [
+              487.80000010000003,
+              112.40000010000017,
+              507.43754508440753
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4226,
+          "triangles": 8448,
+          "bounds_error_mm": 0.08698559824621555,
+          "quantization_error_mm": 8.323690534689632e-05,
+          "cad_bounds_mm": [
+            [
+              434.2340098412536,
+              99.5373685044757,
+              466.0856634839212
+            ],
+            [
+              465.03043398015836,
+              115.03298559824621,
+              491.7759359054499
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 37,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004963580503186904,
+          "quantization_error_mm": 7.781727530792452e-05,
+          "cad_bounds_mm": [
+            [
+              411.44280474260745,
+              95.34683641949681,
+              466.5999999000002
+            ],
+            [
+              487.8000001,
+              112.4000001000001,
+              507.1892727501825
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4226,
+          "triangles": 8448,
+          "bounds_error_mm": 0.08676808667352987,
+          "quantization_error_mm": 8.369861737791985e-05,
+          "cad_bounds_mm": [
+            [
+              434.5532775383727,
+              99.58463191332648,
+              466.0793102741383
+            ],
+            [
+              465.0314123191715,
+              115.02808311046407,
+              491.53338650205507
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 38,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004963005762448347,
+          "quantization_error_mm": 7.478835298035794e-05,
+          "cad_bounds_mm": [
+            [
+              411.7740766717034,
+              95.35283699423755,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000021,
+              506.9355740296593
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4216,
+          "triangles": 8428,
+          "bounds_error_mm": 0.08668398738279848,
+          "quantization_error_mm": 8.480687985076336e-05,
+          "cad_bounds_mm": [
+            [
+              434.8704758770144,
+              99.6324160126172,
+              466.07238632494835
+            ],
+            [
+              465.0318652232415,
+              115.02311699759169,
+              491.2882748186277
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 39,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.00499792318755965,
+          "quantization_error_mm": 8.17232475706574e-05,
+          "cad_bounds_mm": [
+            [
+              412.1011478437933,
+              95.35890207681244,
+              466.59999990000034
+            ],
+            [
+              487.8000001000001,
+              112.40000010000006,
+              506.6765332576299
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4261,
+          "triangles": 8518,
+          "bounds_error_mm": 0.08658596544277941,
+          "quantization_error_mm": 8.386401897577825e-05,
+          "cad_bounds_mm": [
+            [
+              435.185543850023,
+              99.68071403455723,
+              466.0648864913992
+            ],
+            [
+              465.03178336519596,
+              115.01808773636887,
+              491.0407324060098
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 40,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004969268572892815,
+          "quantization_error_mm": 7.460495114056649e-05,
+          "cad_bounds_mm": [
+            [
+              412.4239233205355,
+              95.36503073142711,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000004,
+              506.4122365883749
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4269,
+          "triangles": 8534,
+          "bounds_error_mm": 0.08638156634476957,
+          "quantization_error_mm": 8.401947979697527e-05,
+          "cad_bounds_mm": [
+            [
+              435.4984211189854,
+              99.72951843365523,
+              466.05680574037393
+            ],
+            [
+              465.03115737607106,
+              115.0129958895853,
+              490.7908931808277
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 41,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004978080078032576,
+          "quantization_error_mm": 7.763293659897586e-05,
+          "cad_bounds_mm": [
+            [
+              412.74230947267444,
+              95.37122191992196,
+              466.5999999000002
+            ],
+            [
+              487.8000001,
+              112.40000010000007,
+              506.14277196663113
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4286,
+          "triangles": 8568,
+          "bounds_error_mm": 0.08627915399594599,
+          "quantization_error_mm": 8.506319655226028e-05,
+          "cad_bounds_mm": [
+            [
+              435.809047961985,
+              99.77882084600405,
+              466.04813916210236
+            ],
+            [
+              465.0299778540614,
+              115.00784211106988,
+              490.53889336572075
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 42,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 224,
+          "triangles": 444,
+          "bounds_error_mm": 0.004925503497631212,
+          "quantization_error_mm": 8.132969155746915e-05,
+          "cad_bounds_mm": [
+            [
+              413.05621399904015,
+              95.37747449650237,
+              466.59999989999983
+            ],
+            [
+              487.80000010000003,
+              112.40000010000007,
+              505.8682290974074
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4281,
+          "triangles": 8558,
+          "bounds_error_mm": 0.08618795245338617,
+          "quantization_error_mm": 8.227690912985497e-05,
+          "cad_bounds_mm": [
+            [
+              436.1173652166802,
+              99.82861204754661,
+              466.0388819823085
+            ],
+            [
+              465.02823537433113,
+              115.00262715088834,
+              490.2848714239492
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 43,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004912797665099333,
+          "quantization_error_mm": 7.872341978572351e-05,
+          "cad_bounds_mm": [
+            [
+              413.3655459445392,
+              95.3837872023349,
+              466.5999998999998
+            ],
+            [
+              487.8000001,
+              112.40000010000006,
+              505.5886994146141
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4283,
+          "triangles": 8562,
+          "bounds_error_mm": 0.08601808873218886,
+          "quantization_error_mm": 8.352533298126062e-05,
+          "cad_bounds_mm": [
+            [
+              436.4233142187106,
+              99.87888191126781,
+              466.0290295750907
+            ],
+            [
+              465.02592049974214,
+              114.9973518606694,
+              490.0289679880394
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 44,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004941339981940018,
+          "quantization_error_mm": 7.776512070694341e-05,
+          "cad_bounds_mm": [
+            [
+              413.67021571711524,
+              95.39015866001806,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.40000010000021,
+              505.304276048466
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4289,
+          "triangles": 8574,
+          "bounds_error_mm": 0.08588063658407918,
+          "quantization_error_mm": 8.341538516825019e-05,
+          "cad_bounds_mm": [
+            [
+              436.7268367352342,
+              99.92961936341592,
+              466.01857747652036
+            ],
+            [
+              465.02302379254434,
+              114.99201719910867,
+              489.7713257820893
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 45,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004912632061618183,
+          "quantization_error_mm": 7.891236657760598e-05,
+          "cad_bounds_mm": [
+            [
+              413.9701351036659,
+              95.39658736793838,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.4000001000001,
+              505.01505379162404
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4320,
+          "triangles": 8636,
+          "bounds_error_mm": 0.08578766115138592,
+          "quantization_error_mm": 8.347779276964693e-05,
+          "cad_bounds_mm": [
+            [
+              437.0278748933993,
+              99.98081233884861,
+              466.0075213989775
+            ],
+            [
+              465.0195358270861,
+              114.98662423761364,
+              489.5120895373647
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 46,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004928305475303318,
+          "quantization_error_mm": 7.619696836286712e-05,
+          "cad_bounds_mm": [
+            [
+              414.2652172848991,
+              95.4030716945247,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000016,
+              504.7211290640374
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4302,
+          "triangles": 8600,
+          "bounds_error_mm": 0.085652264416197,
+          "quantization_error_mm": 8.486224526470446e-05,
+          "cad_bounds_mm": [
+            [
+              437.3263711042468,
+              100.0324477355838,
+              465.99585724627406
+            ],
+            [
+              465.01544720359504,
+              114.98117416608896,
+              489.2514059007959
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 47,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004990127585813298,
+          "quantization_error_mm": 7.894211603598269e-05,
+          "cad_bounds_mm": [
+            [
+              414.5553768491196,
+              95.40960987241418,
+              466.59999989999983
+            ],
+            [
+              487.80000010000003,
+              112.40000010000021,
+              504.42259987644735
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4123,
+          "triangles": 8242,
+          "bounds_error_mm": 0.08548863130658901,
+          "quantization_error_mm": 8.344238285812691e-05,
+          "cad_bounds_mm": [
+            [
+              437.62226798133105,
+              100.08451136869341,
+              465.98358112952127
+            ],
+            [
+              465.0107485630834,
+              114.97566829880898,
+              488.98942333598103
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 48,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.00490000745107011,
+          "quantization_error_mm": 7.696951696521743e-05,
+          "cad_bounds_mm": [
+            [
+              414.84052980493493,
+              95.41619999254893,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.4000001000001,
+              504.1195657925104
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4140,
+          "triangles": 8276,
+          "bounds_error_mm": 0.08531207634271709,
+          "quantization_error_mm": 8.259657551332738e-05,
+          "cad_bounds_mm": [
+            [
+              437.9155082546456,
+              100.13698792365729,
+              465.9706893838055
+            ],
+            [
+              465.0054306034316,
+              114.97010808047293,
+              488.726292016294
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 49,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004960001779892309,
+          "quantization_error_mm": 8.40026309018187e-05,
+          "cad_bounds_mm": [
+            [
+              415.12059359287866,
+              95.42283999822011,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.4000001,
+              503.8121278895057
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4169,
+          "triangles": 8334,
+          "bounds_error_mm": 0.08513909064679126,
+          "quantization_error_mm": 8.310182051594107e-05,
+          "cad_bounds_mm": [
+            [
+              438.20603467959353,
+              100.18986090935321,
+              465.95717858564853
+            ],
+            [
+              464.99948409670156,
+              114.96449509230551,
+              488.46216370969375
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 50,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004972320917076445,
+          "quantization_error_mm": 7.630291416504431e-05,
+          "cad_bounds_mm": [
+            [
+              415.39548709594976,
+              95.42952767908292,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.40000010000021,
+              503.5003887175841
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4171,
+          "triangles": 8338,
+          "bounds_error_mm": 0.08508738917281278,
+          "quantization_error_mm": 8.432011550174465e-05,
+          "cad_bounds_mm": [
+            [
+              438.4937899411766,
+              100.24311261082718,
+              465.9430455712799
+            ],
+            [
+              464.9928999077327,
+              114.95883105824225,
+              488.1971916548259
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 51,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004939334833323983,
+          "quantization_error_mm": 8.150762322816702e-05,
+          "cad_bounds_mm": [
+            [
+              415.6651306490715,
+              95.43626066516667,
+              466.5999999000001
+            ],
+            [
+              487.8000001000001,
+              112.40000010000006,
+              503.18445225752066
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4178,
+          "triangles": 8352,
+          "bounds_error_mm": 0.08487595793215519,
+          "quantization_error_mm": 8.203497191840851e-05,
+          "cad_bounds_mm": [
+            [
+              438.7787165534978,
+              100.29672404206785,
+              465.92828745567886
+            ],
+            [
+              464.98566901406883,
+              114.95311785116337,
+              487.931530428019
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 52,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004963579093114845,
+          "quantization_error_mm": 7.677173987062263e-05,
+          "cad_bounds_mm": [
+            [
+              415.9294460474797,
+              95.44303642090688,
+              466.5999998999999
+            ],
+            [
+              487.8000001,
+              112.40000010000037,
+              502.864423876934
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4163,
+          "triangles": 8322,
+          "bounds_error_mm": 0.08472510101235287,
+          "quantization_error_mm": 8.36397070009086e-05,
+          "cad_bounds_mm": [
+            [
+              439.0607567547301,
+              100.35067489898765,
+              465.91290165251684
+            ],
+            [
+              464.977782527266,
+              114.94735749919032,
+              487.6653358007694
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 53,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004947760770022569,
+          "quantization_error_mm": 7.508714686615209e-05,
+          "cad_bounds_mm": [
+            [
+              416.18835655405485,
+              95.44985223922998,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.4000001,
+              502.54041028493447
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4158,
+          "triangles": 8312,
+          "bounds_error_mm": 0.08465219193644202,
+          "quantization_error_mm": 8.34752633477896e-05,
+          "cad_bounds_mm": [
+            [
+              439.3398523977281,
+              100.404943512855,
+              465.89688589474645
+            ],
+            [
+              464.9692317156255,
+              114.94155219193644,
+              487.398764587336
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 54,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004894764275590546,
+          "quantization_error_mm": 8.094372853236536e-05,
+          "cad_bounds_mm": [
+            [
+              416.44178690561705,
+              95.45670523572441,
+              466.5999998999998
+            ],
+            [
+              487.8000001000001,
+              112.40000010000013,
+              502.21251948516806
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4208,
+          "triangles": 8412,
+          "bounds_error_mm": 0.08450428675755006,
+          "quantization_error_mm": 8.46774228047931e-05,
+          "cad_bounds_mm": [
+            [
+              439.6159448365637,
+              100.45950680444744,
+              465.88023825608906
+            ],
+            [
+              464.9600080283894,
+              114.93570428675756,
+              487.1319744820634
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 55,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.0049076570653880935,
+          "quantization_error_mm": 7.847730330870283e-05,
+          "cad_bounds_mm": [
+            [
+              416.6896633182139,
+              95.46359234293462,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.4000001000002,
+              501.8808607272244
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4197,
+          "triangles": 8390,
+          "bounds_error_mm": 0.08435976078577312,
+          "quantization_error_mm": 8.222766230868364e-05,
+          "cad_bounds_mm": [
+            [
+              439.8889748092021,
+              100.51434023921422,
+              465.8629571732295
+            ],
+            [
+              464.95010312144444,
+              114.92981631493521,
+              486.86512388608764
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 56,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004889695181972797,
+          "quantization_error_mm": 7.788573762115452e-05,
+          "cad_bounds_mm": [
+            [
+              416.9319134914298,
+              95.47051030481802,
+              466.5999999000002
+            ],
+            [
+              487.8000001000001,
+              112.40000010000004,
+              501.5455444563792
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4230,
+          "triangles": 8456,
+          "bounds_error_mm": 0.03949098776803339,
+          "quantization_error_mm": 8.206645918092646e-05,
+          "cad_bounds_mm": [
+            [
+              440.15888231672653,
+              100.56941778376964,
+              465.8450414687387
+            ],
+            [
+              464.939508884554,
+              114.92389098776803,
+              486.5983717230896
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 57,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004944328591037106,
+          "quantization_error_mm": 8.210248189344566e-05,
+          "cad_bounds_mm": [
+            [
+              417.16846661176487,
+              95.47745567140896,
+              466.59999990000006
+            ],
+            [
+              487.8000001,
+              112.40000010000021,
+              501.20668226165066
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4231,
+          "triangles": 8458,
+          "bounds_error_mm": 0.08408813593744924,
+          "quantization_error_mm": 8.537121108431187e-05,
+          "cad_bounds_mm": [
+            [
+              440.4256064994767,
+              100.62471186406255,
+              465.82649037474937
+            ],
+            [
+              464.9282174701523,
+              114.91793120246942,
+              486.33187724380576
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 58,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004875206263463383,
+          "quantization_error_mm": 8.23771794769049e-05,
+          "cad_bounds_mm": [
+            [
+              417.39925335512567,
+              95.48442479373654,
+              466.5999999000002
+            ],
+            [
+              487.80000010000003,
+              112.40000010000004,
+              500.86438682214424
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4211,
+          "triangles": 8418,
+          "bounds_error_mm": 0.08394004794955379,
+          "quantization_error_mm": 8.385664864086951e-05,
+          "cad_bounds_mm": [
+            [
+              440.68908551056194,
+              100.68019332559561,
+              465.8073035572137
+            ],
+            [
+              464.91622132371333,
+              114.91194004794956,
+              486.0657998190362
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 59,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004886180952951236,
+          "quantization_error_mm": 7.84055935501733e-05,
+          "cad_bounds_mm": [
+            [
+              417.6242058884895,
+              95.49141381904705,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.4000001000002,
+              500.5187718516804
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4251,
+          "triangles": 8498,
+          "bounds_error_mm": 0.08382081029185429,
+          "quantization_error_mm": 8.310132163287459e-05,
+          "cad_bounds_mm": [
+            [
+              440.94925638727574,
+              100.73583139609431,
+              465.7874811408337
+            ],
+            [
+              464.9035132157056,
+              114.90592081029186,
+              485.80029872093866
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 60,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.0048813136147458636,
+          "quantization_error_mm": 8.396616875592567e-05,
+          "cad_bounds_mm": [
+            [
+              417.8432578708074,
+              95.49841868638525,
+              466.5999999000002
+            ],
+            [
+              487.80000010000003,
+              112.40000010000027,
+              500.1699520416919
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4250,
+          "triangles": 8496,
+          "bounds_error_mm": 0.08367697796398943,
+          "quantization_error_mm": 8.39686694449735e-05,
+          "cad_bounds_mm": [
+            [
+              441.2060549210095,
+              100.79159365105866,
+              465.7670237345074
+            ],
+            [
+              464.89008627512686,
+              114.89987697796398,
+              485.53553289245104
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 61,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004964877407928725,
+          "quantization_error_mm": 8.033300994313085e-05,
+          "cad_bounds_mm": [
+            [
+              418.0563444532222,
+              95.50543512259208,
+              466.5999999000001
+            ],
+            [
+              487.8000001000001,
+              112.40000010000006,
+              499.81804300239514
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4267,
+          "triangles": 8530,
+          "bounds_error_mm": 0.08351224669060286,
+          "quantization_error_mm": 8.35011844837104e-05,
+          "cad_bounds_mm": [
+            [
+              441.4594155263017,
+              100.84744598264676,
+              465.7459324572413
+            ],
+            [
+              464.8759340246144,
+              114.8938122466906,
+              485.2716607047486
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 62,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 225,
+          "triangles": 446,
+          "bounds_error_mm": 0.004941361219962914,
+          "quantization_error_mm": 7.592022650864258e-05,
+          "cad_bounds_mm": [
+            [
+              418.26340227868457,
+              95.51245863878003,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.4000001000001,
+              499.4631612022453
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4276,
+          "triangles": 8548,
+          "bounds_error_mm": 0.08334742761915948,
+          "quantization_error_mm": 8.408232242580487e-05,
+          "cad_bounds_mm": [
+            [
+              441.70927110979227,
+              100.90335257238084,
+              465.72420896449535
+            ],
+            [
+              464.8610504170969,
+              114.88773052387026,
+              485.00883970271167
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 63,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0049154726500120205,
+          "quantization_error_mm": 8.060180336712427e-05,
+          "cad_bounds_mm": [
+            [
+              418.4643694810641,
+              95.51948452734999,
+              466.5999999000001
+            ],
+            [
+              487.8000001000001,
+              112.40000010000009,
+              499.10542390569344
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4296,
+          "triangles": 8588,
+          "bounds_error_mm": 0.08323593255263972,
+          "quantization_error_mm": 8.246764039247564e-05,
+          "cad_bounds_mm": [
+            [
+              441.95555293984717,
+              100.95927586817413,
+              465.7018554747926
+            ],
+            [
+              464.84542987395577,
+              114.88163593255264,
+              484.74722633846034
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 64,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 223,
+          "triangles": 442,
+          "bounds_error_mm": 0.0048921403825801235,
+          "quantization_error_mm": 7.315468033049054e-05,
+          "cad_bounds_mm": [
+            [
+              418.6591856838615,
+              95.52650785961742,
+              466.5999998999999
+            ],
+            [
+              487.8000001000001,
+              112.40000010000013,
+              498.7449491092779
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4271,
+          "triangles": 8538,
+          "bounds_error_mm": 0.0831328148427275,
+          "quantization_error_mm": 8.33457913509844e-05,
+          "cad_bounds_mm": [
+            [
+              442.1981905177651,
+              101.01517656621537,
+              465.67887479654877
+            ],
+            [
+              464.82906732463675,
+              114.87553281484273,
+              484.48697569310536
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 65,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004876515883097454,
+          "quantization_error_mm": 7.871986642771103e-05,
+          "cad_bounds_mm": [
+            [
+              418.84779199863317,
+              95.5335234841169,
+              466.59999989999983
+            ],
+            [
+              487.8000001,
+              112.4000001000001,
+              498.381855476092
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4298,
+          "triangles": 8592,
+          "bounds_error_mm": 0.08288640174313855,
+          "quantization_error_mm": 8.559696837257719e-05,
+          "cad_bounds_mm": [
+            [
+              442.437111451517,
+              101.07101359825685,
+              465.6552703549836
+            ],
+            [
+              464.8119582476437,
+              114.86942573467805,
+              484.2282411869635
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 66,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004873974342316956,
+          "quantization_error_mm": 7.973247425903373e-05,
+          "cad_bounds_mm": [
+            [
+              419.03013102325815,
+              95.54052602565768,
+              466.59999989999983
+            ],
+            [
+              487.80000010000003,
+              112.40000010000018,
+              498.01626226868575
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4326,
+          "triangles": 8648,
+          "bounds_error_mm": 0.0828194799714197,
+          "quantization_error_mm": 8.503503600064603e-05,
+          "cad_bounds_mm": [
+            [
+              442.67224133303785,
+              101.12674412487544,
+              465.63104621894865
+            ],
+            [
+              464.7940987128228,
+              114.86331947997142,
+              483.97117427859223
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 67,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 225,
+          "triangles": 446,
+          "bounds_error_mm": 0.0048901147958275715,
+          "quantization_error_mm": 7.635079707462629e-05,
+          "cad_bounds_mm": [
+            [
+              419.2061468401811,
+              95.54750988520418,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000028,
+              497.6482892804699
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4125,
+          "triangles": 8246,
+          "bounds_error_mm": 0.08271906383143346,
+          "quantization_error_mm": 8.388264752810413e-05,
+          "cad_bounds_mm": [
+            [
+              442.90350362019706,
+              101.18232353529052,
+              465.6062071276268
+            ],
+            [
+              464.7754854248288,
+              114.85721906383144,
+              483.7159241531287
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 68,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.00493075934369358,
+          "quantization_error_mm": 7.410849214763057e-05,
+          "cad_bounds_mm": [
+            [
+              419.3757850147759,
+              95.5544692406563,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000003,
+              497.27805676571217
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4146,
+          "triangles": 8288,
+          "bounds_error_mm": 0.08142972510384539,
+          "quantization_error_mm": 8.577581655165957e-05,
+          "cad_bounds_mm": [
+            [
+              443.13081952461,
+              101.23770545432676,
+              465.58075851681554
+            ],
+            [
+              464.75611576764237,
+              114.85112972510385,
+              483.46263740054
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 69,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004901951394273851,
+          "quantization_error_mm": 7.521309331803711e-05,
+          "cad_bounds_mm": [
+            [
+              419.5389925939866,
+              95.56139804860572,
+              466.5999998999999
+            ],
+            [
+              487.8000001000001,
+              112.40000010000024,
+              496.9056853682262
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4113,
+          "triangles": 8222,
+          "bounds_error_mm": 0.07585692785356457,
+          "quantization_error_mm": 8.386576512624575e-05,
+          "cad_bounds_mm": [
+            [
+              443.3541079065434,
+              101.29284175712044,
+              465.5547065447303
+            ],
+            [
+              464.7359878499846,
+              114.84505692785356,
+              483.2114576845311
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 70,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 225,
+          "triangles": 446,
+          "bounds_error_mm": 0.004909952855683741,
+          "quantization_error_mm": 7.93215283794856e-05,
+          "cad_bounds_mm": [
+            [
+              419.6957181054099,
+              95.56829004714432,
+              466.5999999000001
+            ],
+            [
+              487.8000001000001,
+              112.40000010000004,
+              496.53129604887744
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4164,
+          "triangles": 8324,
+          "bounds_error_mm": 0.0708063598492572,
+          "quantization_error_mm": 8.272082994249209e-05,
+          "cad_bounds_mm": [
+            [
+              443.57328517821503,
+              101.34768259216567,
+              465.5280581170984
+            ],
+            [
+              464.7151005514549,
+              114.83900635984925,
+              482.9625254030178
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 71,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004861240200796146,
+          "quantization_error_mm": 7.409039067126764e-05,
+          "cad_bounds_mm": [
+            [
+              419.84591155698774,
+              95.5751387597992,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000009999999,
+              496.15501001204103
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4171,
+          "triangles": 8338,
+          "bounds_error_mm": 0.06892358671549914,
+          "quantization_error_mm": 8.406126413362947e-05,
+          "cad_bounds_mm": [
+            [
+              443.78826521686705,
+              101.40217641328451,
+              465.5008209113512
+            ],
+            [
+              464.69345356918393,
+              114.8329839299605,
+              482.7159773412094
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 72,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004862499332631387,
+          "quantization_error_mm": 7.949675231420931e-05,
+          "cad_bounds_mm": [
+            [
+              419.9895244374927,
+              95.58193750066737,
+              466.5999999000002
+            ],
+            [
+              487.80000010000003,
+              112.40000010000004,
+              495.77694863117773
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4174,
+          "triangles": 8344,
+          "bounds_error_mm": 0.06929576435011597,
+          "quantization_error_mm": 8.335567517271573e-05,
+          "cad_bounds_mm": [
+            [
+              443.9989592889683,
+              101.45627002109913,
+              465.4730033997125
+            ],
+            [
+              464.6710474647852,
+              114.82699576435012,
+              482.47194631853324
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 73,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 231,
+          "triangles": 458,
+          "bounds_error_mm": 0.004920619178761854,
+          "quantization_error_mm": 7.958480537394495e-05,
+          "cad_bounds_mm": [
+            [
+              420.12650971799076,
+              95.58867938082123,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000024,
+              495.3972333737028
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4184,
+          "triangles": 8364,
+          "bounds_error_mm": 0.06534820140477393,
+          "quantization_error_mm": 8.212878412852516e-05,
+          "cad_bounds_mm": [
+            [
+              444.20527598710066,
+              101.5099086145509,
+              465.44461487095856
+            ],
+            [
+              464.6478837113401,
+              114.82104820140478,
+              482.23056083078137
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 74,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 226,
+          "triangles": 448,
+          "bounds_error_mm": 0.004842683949377147,
+          "quantization_error_mm": 7.308827858682809e-05,
+          "cad_bounds_mm": [
+            [
+              420.25682185446783,
+              95.59535731605062,
+              466.5999998999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000028,
+              495.01598572535016
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4181,
+          "triangles": 8358,
+          "bounds_error_mm": 0.06254778531993566,
+          "quantization_error_mm": 8.450672022100184e-05,
+          "cad_bounds_mm": [
+            [
+              444.4071211808661,
+              101.5630358529915,
+              465.41566545061426
+            ],
+            [
+              464.6239647401476,
+              114.81514778531994,
+              481.9919446890524
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 75,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 226,
+          "triangles": 448,
+          "bounds_error_mm": 0.004835963997066983,
+          "quantization_error_mm": 8.026108405106997e-05,
+          "cad_bounds_mm": [
+            [
+              420.3804167918166,
+              95.60196403600294,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000028,
+              494.6333271142533
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4207,
+          "triangles": 8410,
+          "bounds_error_mm": 0.06580607068109146,
+          "quantization_error_mm": 8.323301417492775e-05,
+          "cad_bounds_mm": [
+            [
+              444.604397983378,
+              101.6155939293189,
+              465.3861661193791
+            ],
+            [
+              464.59929398692327,
+              114.80930125825218,
+              481.75621665722457
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 76,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004907905223191733,
+          "quantization_error_mm": 7.752399439964892e-05,
+          "cad_bounds_mm": [
+            [
+              420.49725196937396,
+              95.6084920947768,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000013,
+              494.2493788349855
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4208,
+          "triangles": 8412,
+          "bounds_error_mm": 0.055576345409832584,
+          "quantization_error_mm": 8.434421332780013e-05,
+          "cad_bounds_mm": [
+            [
+              444.79700673481364,
+              101.66752365459017,
+              465.35612872947195
+            ],
+            [
+              464.5738759371227,
+              114.80351555100782,
+              481.52349008988176
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 77,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004866116983890834,
+          "quantization_error_mm": 7.835867950033351e-05,
+          "cad_bounds_mm": [
+            [
+              420.6072863282035,
+              95.6149338830161,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000001,
+              493.86426197282077
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4228,
+          "triangles": 8452,
+          "bounds_error_mm": 0.056797772186016005,
+          "quantization_error_mm": 8.394400538051305e-05,
+          "cad_bounds_mm": [
+            [
+              444.984845004457,
+              101.71876455447848,
+              465.3255660187128
+            ],
+            [
+              464.54771617002746,
+              114.79779777218602,
+              481.29387257278523
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 78,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004918358456606597,
+          "quantization_error_mm": 8.23623353771371e-05,
+          "cad_bounds_mm": [
+            [
+              420.7104803203093,
+              95.62128164154339,
+              466.5999999000001
+            ],
+            [
+              487.80000010000003,
+              112.40000010000018,
+              493.4780973285009
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4207,
+          "triangles": 8410,
+          "bounds_error_mm": 0.04805519567459271,
+          "quantization_error_mm": 8.453777603927979e-05,
+          "cad_bounds_mm": [
+            [
+              445.16780761266307,
+              101.76925497786893,
+              465.2944916220378
+            ],
+            [
+              464.520821401215,
+              114.7921551956746,
+              481.0674655681516
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 79,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004872523439829024,
+          "quantization_error_mm": 7.703630165640904e-05,
+          "cad_bounds_mm": [
+            [
+              420.8067959199681,
+              95.62752747656018,
+              466.59999989999994
+            ],
+            [
+              487.80000010000003,
+              112.4000001000002,
+              493.0910053438089
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4228,
+          "triangles": 8452,
+          "bounds_error_mm": 0.041195246595535195,
+          "quantization_error_mm": 8.24543061171136e-05,
+          "cad_bounds_mm": [
+            [
+              445.3457866741023,
+              101.81893221780376,
+              465.2629200802025
+            ],
+            [
+              464.493199523007,
+              114.78659524659554,
+              480.8443640671629
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 80,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.004836623568976961,
+          "quantization_error_mm": 7.721397150072051e-05,
+          "cad_bounds_mm": [
+            [
+              420.8961966373498,
+              95.63366337643102,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.40000010000006,
+              492.70310602826714
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4266,
+          "triangles": 8528,
+          "bounds_error_mm": 0.04033315457155595,
+          "quantization_error_mm": 8.445174769332313e-05,
+          "cad_bounds_mm": [
+            [
+              445.51867166356243,
+              101.86773264491411,
+              465.23086684542847
+            ],
+            [
+              464.4648596424758,
+              114.78112548551586,
+              480.6246562522793
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 81,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004918769946215207,
+          "quantization_error_mm": 7.757858553436596e-05,
+          "cad_bounds_mm": [
+            [
+              420.97864753459146,
+              95.63968123005378,
+              466.5999999000001
+            ],
+            [
+              487.80000010000015,
+              112.40000010000001,
+              492.31451888729765
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4277,
+          "triangles": 8550,
+          "bounds_error_mm": 0.04365171626875508,
+          "quantization_error_mm": 8.422495292784269e-05,
+          "cad_bounds_mm": [
+            [
+              445.6863495054801,
+              101.91559185332788,
+              465.19834828373126
+            ],
+            [
+              464.43581211656823,
+              114.7757535910053,
+              480.40842317206096
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 82,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.00482715319452609,
+          "quantization_error_mm": 7.596387467004142e-05,
+          "cad_bounds_mm": [
+            [
+              421.05411524447334,
+              95.64557284680548,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000016,
+              491.925362852191
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4259,
+          "triangles": 8514,
+          "bounds_error_mm": 0.046318326311450164,
+          "quantization_error_mm": 8.465770549600833e-05,
+          "cad_bounds_mm": [
+            [
+              445.84870468824573,
+              101.96244481898498,
+              465.16538167368856
+            ],
+            [
+              464.4060685838937,
+              114.77048734051621,
+              480.19573843132343
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 83,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.0048700219638675435,
+          "quantization_error_mm": 7.508856785461404e-05,
+          "cad_bounds_mm": [
+            [
+              421.12256799182506,
+              95.65132997803613,
+              466.5999999000001
+            ],
+            [
+              487.8000001,
+              112.4000001000001,
+              491.5357562122421
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4294,
+          "triangles": 8584,
+          "bounds_error_mm": 0.0482147985671304,
+          "quantization_error_mm": 8.212931270868416e-05,
+          "cad_bounds_mm": [
+            [
+              446.00561940418646,
+              102.00822607012266,
+              465.1319852014329
+            ],
+            [
+              464.37564199271833,
+              114.76533458958191,
+              479.9866678995388
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 84,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0048556599326730066,
+          "quantization_error_mm": 7.80600473278055e-05,
+          "cad_bounds_mm": [
+            [
+              421.18397561777493,
+              95.65694434006733,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000009999999,
+              491.1458165494224
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4288,
+          "triangles": 8572,
+          "bounds_error_mm": 0.04902204836935198,
+          "quantization_error_mm": 8.229398749560668e-05,
+          "cad_bounds_mm": [
+            [
+              446.15697371593217,
+              102.05286986958534,
+              465.09817795163065
+            ],
+            [
+              464.3445466246957,
+              114.76030324940781,
+              479.7812694404641
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 85,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 231,
+          "triangles": 458,
+          "bounds_error_mm": 0.004892361366358955,
+          "quantization_error_mm": 7.961383907885838e-05,
+          "cad_bounds_mm": [
+            [
+              421.2383096069259,
+              95.66240763863364,
+              466.59999989999983
+            ],
+            [
+              487.8000001000001,
+              112.40000010000016,
+              490.75566067595474
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4294,
+          "triangles": 8584,
+          "bounds_error_mm": 0.043320105716816215,
+          "quantization_error_mm": 8.559897964654368e-05,
+          "cad_bounds_mm": [
+            [
+              446.3026457496966,
+              102.09631040846482,
+              465.0639798942832
+            ],
+            [
+              464.31279811387674,
+              114.75540126285993,
+              479.6056446249263
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 86,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 228,
+          "triangles": 452,
+          "bounds_error_mm": 0.004888405313195676,
+          "quantization_error_mm": 7.860830403476944e-05,
+          "cad_bounds_mm": [
+            [
+              421.2855431175174,
+              95.6677115946868,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              490.3654045751656
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4307,
+          "triangles": 8610,
+          "bounds_error_mm": 0.03588813285819015,
+          "quantization_error_mm": 8.246810045843211e-05,
+          "cad_bounds_mm": [
+            [
+              446.4425119157667,
+              102.13848201043362,
+              465.0294118671418
+            ],
+            [
+              464.2804134605377,
+              114.75063657898154,
+              479.4070220889481
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 87,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 230,
+          "triangles": 456,
+          "bounds_error_mm": 0.0048520285367601446,
+          "quantization_error_mm": 8.209935616826586e-05,
+          "cad_bounds_mm": [
+            [
+              421.32565101460267,
+              95.67284797146324,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000010000017,
+              489.9751633459757
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4333,
+          "triangles": 8662,
+          "bounds_error_mm": 0.06420444636336242,
+          "quantization_error_mm": 8.450390064023455e-05,
+          "cad_bounds_mm": [
+            [
+              446.57644715625713,
+              102.17931934598359,
+              464.9944955536366
+            ],
+            [
+              464.2474110393878,
+              114.746017126069,
+              479.2121919549683
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 88,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 227,
+          "triangles": 450,
+          "bounds_error_mm": 0.004891397302941414,
+          "quantization_error_mm": 8.118719493195177e-05,
+          "cad_bounds_mm": [
+            [
+              421.35860990623996,
+              95.67780860269706,
+              466.5999999
+            ],
+            [
+              487.8000001,
+              112.40000009999999,
+              489.5850511513893
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4315,
+          "triangles": 8626,
+          "bounds_error_mm": 0.047846543825755816,
+          "quantization_error_mm": 8.163351190052666e-05,
+          "cad_bounds_mm": [
+            [
+              446.7043252199216,
+              102.21875765562869,
+              464.9592534561742
+            ],
+            [
+              464.2138106017368,
+              114.74155078347752,
+              479.0211788062843
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 89,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 229,
+          "triangles": 454,
+          "bounds_error_mm": 0.004814578161102645,
+          "quantization_error_mm": 7.819574984291388e-05,
+          "cad_bounds_mm": [
+            [
+              421.3843981826528,
+              95.6825854218389,
+              466.5999999
+            ],
+            [
+              487.80000010000003,
+              112.40000009999999,
+              489.19518117132264
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4120,
+          "triangles": 8236,
+          "bounds_error_mm": 0.049791135253371976,
+          "quantization_error_mm": 8.366466560284632e-05,
+          "cad_bounds_mm": [
+            [
+              446.82601896353293,
+              102.25673298097968,
+              464.92370886474663
+            ],
+            [
+              464.1796332712282,
+              114.73724535226364,
+              478.83399830375197
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "angle_deg": 90,
+      "meshes": {
+        "core": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 225,
+          "triangles": 446,
+          "bounds_error_mm": 0.004829507874788419,
+          "quantization_error_mm": 8.105533945005464e-05,
+          "cad_bounds_mm": [
+            [
+              421.4029960582949,
+              95.6871704921252,
+              466.59999990000006
+            ],
+            [
+              487.80000010000003,
+              112.40000010000011,
+              488.8056655600941
+            ]
+          ]
+        },
+        "compression-spring": {
+          "cad_valid": true,
+          "cad_solids": 1,
+          "watertight": true,
+          "winding_consistent": true,
+          "vertices": 4124,
+          "triangles": 8244,
+          "bounds_error_mm": 0.0648141791941157,
+          "quantization_error_mm": 8.411585488864961e-05,
+          "cad_bounds_mm": [
+            [
+              446.94140067905056,
+              102.29318240244754,
+              464.8878858208059
+            ],
+            [
+              464.1449015327859,
+              114.73310852483509,
+              478.65065710185183
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "maximum_bounds_error_mm": 0.09081645263069049,
+  "maximum_vertex_quantization_error_mm": 8.584867194575065e-05,
+  "cad_spring_length_variation_mm": 7.389644451905042e-12
+}

@@ -20,7 +20,7 @@
     {
       "issue": 43,
       "desired_status": "In progress",
-      "reason": "Plate retention merged in PR91; photo-compared cable/socket/spring candidate active."
+      "reason": "Cable/socket/spring installed with CAD and browser checks; source-supported idle stop and illustrative WOT candidate underway. Production details remain unresolved."
     },
     {
       "issue": 78,
@@ -36,6 +36,21 @@
       "issue": 44,
       "desired_status": "In progress",
       "reason": "Attachment integrated; closure and electrical internals under integration."
+    },
+    {
+      "issue": 71,
+      "desired_status": "In progress",
+      "reason": "Rotor curved center leaf installed with protected-interface and rotation checks; factory dimensions and cap internals remain unresolved."
+    },
+    {
+      "issue": 58,
+      "desired_status": "In progress",
+      "reason": "EVR filter and vent candidate underway; production internal dimensions and valve construction remain unresolved."
+    },
+    {
+      "issue": 55,
+      "desired_status": "In progress",
+      "reason": "PCV routing evidence reviewed; manifold receiver and owner routing remain unresolved."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes."
