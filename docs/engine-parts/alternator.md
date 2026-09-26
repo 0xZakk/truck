@@ -1,0 +1,262 @@
+# Alternator, pulley and internal components
+
+Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket: [#67](https://github.com/0xZakk/truck/issues/67).
+
+**In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
+
+Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+
+## Existing modeled parts
+
+- [x] Provisional geometry is present in the integrated engine manifest.
+
+Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
+
+- [ ] **Alternator drive housing** — `alternator-drive-housing`; modeled quantity **1**; provisional.
+  - Instances: `alternator-drive-housing`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rear housing** — `alternator-rear-housing`; modeled quantity **1**; provisional.
+  - Instances: `alternator-rear-housing`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator stator iron core** — `alternator-stator-core`; modeled quantity **1**; provisional.
+  - Instances: `alternator-stator-core`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator stator winding envelope** — `alternator-stator-winding`; modeled quantity **1**; provisional.
+  - Instances: `alternator-stator-winding`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rotor front claw pole** — `alternator-rotor-front-pole`; modeled quantity **1**; provisional.
+  - Instances: `alternator-rotor-front-pole`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rotor rear claw pole and core** — `alternator-rotor-rear-pole`; modeled quantity **1**; provisional.
+  - Instances: `alternator-rotor-rear-pole`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rotor field-coil envelope** — `alternator-field-coil`; modeled quantity **1**; provisional.
+  - Instances: `alternator-field-coil`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rotor shaft** — `alternator-shaft`; modeled quantity **1**; provisional.
+  - Instances: `alternator-shaft`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator front bearing cartridge** — `alternator-front-bearing`; modeled quantity **1**; provisional.
+  - Instances: `alternator-front-bearing`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rear bearing cartridge** — `alternator-rear-bearing`; modeled quantity **1**; provisional.
+  - Instances: `alternator-rear-bearing`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator external cooling fan · provisional** — `alternator-fan`; modeled quantity **1**; provisional.
+  - Instances: `alternator-fan`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator pulley spacer · illustrative** — `alternator-pulley-spacer`; modeled quantity **1**; provisional.
+  - Instances: `alternator-pulley-spacer`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator six-groove pulley · provisional** — `alternator-pulley`; modeled quantity **1**; provisional.
+  - Instances: `alternator-pulley`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator pulley nut · illustrative** — `alternator-pulley-nut`; modeled quantity **1**; provisional.
+  - Instances: `alternator-pulley-nut`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator slip-ring insulating sleeve** — `alternator-slip-ring-insulator`; modeled quantity **1**; provisional.
+  - Instances: `alternator-slip-ring-insulator`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator brush holder · illustrative** — `alternator-brush-holder`; modeled quantity **1**; provisional.
+  - Instances: `alternator-brush-holder`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator regulator · unresolved electronics** — `alternator-regulator`; modeled quantity **1**; provisional.
+  - Instances: `alternator-regulator`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator rectifier · unresolved electronics** — `alternator-rectifier`; modeled quantity **1**; provisional.
+  - Instances: `alternator-rectifier`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator slip ring 1** — `alternator-slip-ring-1`; modeled quantity **1**; provisional.
+  - Instances: `alternator-slip-ring-1`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator brush 1** — `alternator-brush-1`; modeled quantity **1**; provisional.
+  - Instances: `alternator-brush-1`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator slip ring 2** — `alternator-slip-ring-2`; modeled quantity **1**; provisional.
+  - Instances: `alternator-slip-ring-2`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator brush 2** — `alternator-brush-2`; modeled quantity **1**; provisional.
+  - Instances: `alternator-brush-2`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator housing through-bolt 1 · illustrative** — `alternator-case-bolt-1`; modeled quantity **1**; provisional.
+  - Instances: `alternator-case-bolt-1`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator housing through-bolt 2 · illustrative** — `alternator-case-bolt-2`; modeled quantity **1**; provisional.
+  - Instances: `alternator-case-bolt-2`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator housing through-bolt 3 · illustrative** — `alternator-case-bolt-3`; modeled quantity **1**; provisional.
+  - Instances: `alternator-case-bolt-3`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+- [ ] **Alternator housing through-bolt 4 · illustrative** — `alternator-case-bolt-4`; modeled quantity **1**; provisional.
+  - Instances: `alternator-case-bolt-4`
+  - Source IDs: ford-alternator-study, denso-alternator-construction, gates-1994-drive. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: The 1994 vehicle service archive lists 75, 95 and 130 amp variants; the installed rating and 2G/3G identity have not been verified. This is a 95-amp-oriented integral-regulator construction study, not an identified replacement part.
+  - Open: Ford establishes a field coil, rotor, stator, brushes, internal rectifier, regulator and two mounting bolts. DENSO conventional-alternator cutaway is a generic construction comparison only, not evidence of a DENSO alternator on this truck.
+  - Open: All dimensions, case vents, mounting-ear angles, four through-bolts, twelve claw poles, ten fan blades and six pulley grooves are illustrative. External fan configuration remains provisional pending installed alternator identification.
+  - Open: The stator winding and rotor coil are volume envelopes, not individual winding turns; rectifier and regulator electronics are unresolved packages without invented diode or transistor arrangements.
+  - Open: Bearings are unresolved cartridges. Fits, bearing identity, threads, materials, spring-loaded brush detail, wiring, terminals and electrical insulation clearances are not production reconstructions.
+  - Open: Pulley center (473.56,-325,410) follows the current illustrative belt plane and Ford RH-front location only; lateral clearance is chosen against the current provisional intake. Bracket, belt routing, belt ratio and installed centers remain unresolved.
+
+## Additional known scope and reconciliation
+
+- [ ] Verify installed alternator variant, bearings, terminal hardware, rectifier/regulator electronics and wiring
+
+## Cross-system boundaries
+
+Coordinate with [#11](https://github.com/0xZakk/truck/issues/11). Keep the current engine-mounted component here; agree ownership before adding its vehicle-side continuation.
+
+## Acceptance and handoff
+
+Use [the shared rubric](../onboarding/QUALITY-STANDARD.md) and [component handoff](../templates/COMPONENT-HANDOFF.md). Reconcile sources, critical dimensions, interfaces, motion/flow, actual render comparison, individual-part learning and browser behavior. A saved audit is evidence only for its recorded hashes and scope. Current global static/navigation passes do not complete every component.
+
+Evidence starting points: `inventory/engine/full-assembly.json`, component-specific evidence/learning/validation JSON, `docs/CURRENT-STATE.md`, and `inventory/engine/completion-plan.json`. Older completion prose contains superseded missing/pending statements; this package maps the current manifest. Future source/BOM reconciliation may add parts.

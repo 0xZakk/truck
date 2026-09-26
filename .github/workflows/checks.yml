@@ -17,3 +17,7 @@ jobs:
         run: node scripts/check-engine-navigation.mjs
       - name: Python syntax
         run: python -m compileall -q cad scripts tools
+      - name: Engine parts inventory coverage and freshness
+        run: |
+          python scripts/build-engine-work-breakdown.py
+          git diff --exit-code -- inventory/engine/work-breakdown.json docs/engine-parts

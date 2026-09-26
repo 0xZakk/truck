@@ -1,0 +1,365 @@
+# Spark-plug leads and coil-to-distributor lead
+
+Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket: [#51](https://github.com/0xZakk/truck/issues/51).
+
+**In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
+
+Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+
+## Existing modeled parts
+
+- [x] Provisional geometry is present in the integrated engine manifest.
+
+Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
+
+- [ ] **Ignition lead 1 jacket** — `ignition-lead-1-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 1 carbon core** — `ignition-lead-1-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 1 cap boot** — `ignition-lead-1-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 1 cap contact** — `ignition-lead-1-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 1 plug boot** — `ignition-lead-1-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 1 plug contact** — `ignition-lead-1-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-1-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 jacket** — `ignition-lead-2-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 carbon core** — `ignition-lead-2-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 cap boot** — `ignition-lead-2-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 cap contact** — `ignition-lead-2-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 plug boot** — `ignition-lead-2-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 2 plug contact** — `ignition-lead-2-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-2-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 jacket** — `ignition-lead-3-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 carbon core** — `ignition-lead-3-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 cap boot** — `ignition-lead-3-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 cap contact** — `ignition-lead-3-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 plug boot** — `ignition-lead-3-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 3 plug contact** — `ignition-lead-3-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-3-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 jacket** — `ignition-lead-4-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 carbon core** — `ignition-lead-4-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 cap boot** — `ignition-lead-4-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 cap contact** — `ignition-lead-4-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 plug boot** — `ignition-lead-4-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 4 plug contact** — `ignition-lead-4-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-4-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 jacket** — `ignition-lead-5-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 carbon core** — `ignition-lead-5-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 cap boot** — `ignition-lead-5-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 cap contact** — `ignition-lead-5-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 plug boot** — `ignition-lead-5-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 5 plug contact** — `ignition-lead-5-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-5-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 jacket** — `ignition-lead-6-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 carbon core** — `ignition-lead-6-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 cap boot** — `ignition-lead-6-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 cap contact** — `ignition-lead-6-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 plug boot** — `ignition-lead-6-plug-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-plug-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition lead 6 plug contact** — `ignition-lead-6-plug-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-lead-6-plug-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead jacket** — `ignition-coil-lead-jacket`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-jacket`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead carbon core** — `ignition-coil-lead-carbon-core`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-carbon-core`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead cap boot** — `ignition-coil-lead-cap-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-cap-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead cap contact** — `ignition-coil-lead-cap-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-cap-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead coil boot** — `ignition-coil-lead-coil-boot`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-coil-boot`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+- [ ] **Ignition coil lead coil contact** — `ignition-coil-lead-coil-contact`; modeled quantity **1**; provisional.
+  - Instances: `ignition-coil-lead-coil-contact`
+  - Source IDs: fsm-be886ffa4807, fsm-2f144bda5e08, system-f1571449160a, system-2ea2c28d7cca. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.
+  - Open: Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.
+  - Open: Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.
+  - Open: Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.
+  - Open: Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.
+
+## Additional known scope and reconciliation
+
+- [ ] Wire separators, clips and brackets
+- [ ] Verify routing, boots, contacts and conductor construction
+
+## Cross-system boundaries
+
+Coordinate with [#11](https://github.com/0xZakk/truck/issues/11). Keep the current engine-mounted component here; agree ownership before adding its vehicle-side continuation.
+
+## Acceptance and handoff
+
+Use [the shared rubric](../onboarding/QUALITY-STANDARD.md) and [component handoff](../templates/COMPONENT-HANDOFF.md). Reconcile sources, critical dimensions, interfaces, motion/flow, actual render comparison, individual-part learning and browser behavior. A saved audit is evidence only for its recorded hashes and scope. Current global static/navigation passes do not complete every component.
+
+Evidence starting points: `inventory/engine/full-assembly.json`, component-specific evidence/learning/validation JSON, `docs/CURRENT-STATE.md`, and `inventory/engine/completion-plan.json`. Older completion prose contains superseded missing/pending statements; this package maps the current manifest. Future source/BOM reconciliation may add parts.

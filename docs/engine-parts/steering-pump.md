@@ -1,0 +1,490 @@
+# Power-steering pump, reservoir, pulley and internals
+
+Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket: [#68](https://github.com/0xZakk/truck/issues/68).
+
+**In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
+
+Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+
+## Existing modeled parts
+
+- [x] Provisional geometry is present in the integrated engine manifest.
+
+Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
+
+- [ ] **Pump housing and front plate** — `ps-pump-housing`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-housing`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Reinforced-nylon reservoir and return nipple** — `ps-pump-reservoir`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-reservoir`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Reservoir cap and dipstick** — `ps-pump-cap-dipstick`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-cap-dipstick`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump rotor shaft** — `ps-pump-shaft`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-shaft`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Shaft support bushing · illustrative** — `ps-pump-shaft-bushing`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-shaft-bushing`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump shaft seal** — `ps-pump-shaft-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-shaft-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Shaft seal retainer** — `ps-pump-shaft-seal-retainer`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-shaft-seal-retainer`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pressure-plate disc spring** — `ps-pump-disc-spring`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-disc-spring`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Lower pressure plate** — `ps-pump-lower-plate`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-lower-plate`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Lower pressure-plate outer seal** — `ps-pump-lower-outer-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-lower-outer-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Lower pressure-plate inner seal** — `ps-pump-lower-inner-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-lower-inner-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **CII slipper-pump cam ring** — `ps-pump-cam`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-cam`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **CII ten-pocket rotor** — `ps-pump-rotor`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-rotor`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Rotor shaft retaining clip** — `ps-pump-rotor-clip`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-rotor-clip`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Upper pressure plate** — `ps-pump-upper-plate`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-upper-plate`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump valve cover** — `ps-pump-valve-cover`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-valve-cover`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Valve-cover O-ring** — `ps-pump-valve-cover-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-valve-cover-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Valve-cover retaining ring** — `ps-pump-cover-retaining-ring`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-cover-retaining-ring`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Reservoir interface seal · illustrative section** — `ps-pump-reservoir-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-reservoir-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Flow/relief valve assembly · unresolved interior** — `ps-pump-flow-valve`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-flow-valve`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Flow-control valve spring** — `ps-pump-flow-spring`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-flow-spring`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pressure outlet fitting** — `ps-pump-outlet-fitting`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-outlet-fitting`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pressure outlet seal · illustrative** — `ps-pump-outlet-seal`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-outlet-seal`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Power steering pulley · Ford belt study** — `ps-pump-pulley`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-pulley`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump cartridge dowel 1** — `ps-pump-dowel-1`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-dowel-1`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump cartridge dowel 2** — `ps-pump-dowel-2`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-dowel-2`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 1** — `ps-pump-slipper-1`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-1`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 1** — `ps-pump-slipper-spring-1`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-1`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 2** — `ps-pump-slipper-2`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-2`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 2** — `ps-pump-slipper-spring-2`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-2`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 3** — `ps-pump-slipper-3`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-3`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 3** — `ps-pump-slipper-spring-3`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-3`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 4** — `ps-pump-slipper-4`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-4`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 4** — `ps-pump-slipper-spring-4`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-4`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 5** — `ps-pump-slipper-5`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-5`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 5** — `ps-pump-slipper-spring-5`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-5`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 6** — `ps-pump-slipper-6`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-6`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 6** — `ps-pump-slipper-spring-6`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-6`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 7** — `ps-pump-slipper-7`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-7`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 7** — `ps-pump-slipper-spring-7`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-7`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 8** — `ps-pump-slipper-8`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-8`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 8** — `ps-pump-slipper-spring-8`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-8`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 9** — `ps-pump-slipper-9`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-9`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 9** — `ps-pump-slipper-spring-9`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-9`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper 10** — `ps-pump-slipper-10`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-10`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+- [ ] **Pump slipper spring 10** — `ps-pump-slipper-spring-10`; modeled quantity **1**; provisional.
+  - Instances: `ps-pump-slipper-spring-10`
+  - Source IDs: ford-cii-pump-study, dorman-300-029, gates-1994-drive, ford-accessory-routing. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Ford identifies the CII slipper pump with ten rotor cavities, ten slippers and springs, two dowels, pressure plates, disc spring, valve cover, reservoir, seals and flow-control valve. All internal dimensions and clearances remain illustrative.
+  - Open: Dorman 300-029 provides 5.17 inch pulley OD and steel press-fit construction. Its bore value 0.6854 has no displayed unit; treating this as inches is an explicit assumption. Dorman lists five grooves, conflicting with Ford six-rib seating instructions and Gates belt data. The study uses six illustrative grooves for the Ford belt; exact Dorman replacement compatibility remains unresolved.
+  - Open: Pulley width, dish, hub offset and groove profile are provisional. The pulley press fit is drawn with clearance for study; no production interference or fit tolerance is claimed.
+  - Open: The elliptical two-lobe cam track, slipper contour, spring geometry, shaft support bushing and smooth spline interface are illustrative. This is not a displacement, contact-motion or pressure simulation.
+  - Open: Valve body is one unresolved flow/relief assembly, not an invented relief-valve interior. Valve bore, passages, spool, outlet and return fitting geometry are provisional and do not establish a complete working hydraulic circuit.
+  - Open: Reservoir shape, wall thickness, cap/dipstick, sealing grooves, mount ears, port positions and material colors are construction-study approximations. Ford supports a fiberglass-reinforced nylon reservoir.
+  - Open: Station (473.56,280,410) is an illustrative upper-LH accessory position following the labeled Ford routing and provisional belt plane. Exact engine bracket, hose routing, working belt geometry and installed pump identity remain unresolved.
+
+## Additional known scope and reconciliation
+
+- [ ] Relief valve internals, baffle, shaft splines and retention
+- [ ] Resolve pulley groove evidence conflict
+- [ ] Steering hoses are owned by Steering
+
+## Cross-system boundaries
+
+Coordinate with [#5](https://github.com/0xZakk/truck/issues/5). Keep the current engine-mounted component here; agree ownership before adding its vehicle-side continuation.
+
+## Acceptance and handoff
+
+Use [the shared rubric](../onboarding/QUALITY-STANDARD.md) and [component handoff](../templates/COMPONENT-HANDOFF.md). Reconcile sources, critical dimensions, interfaces, motion/flow, actual render comparison, individual-part learning and browser behavior. A saved audit is evidence only for its recorded hashes and scope. Current global static/navigation passes do not complete every component.
+
+Evidence starting points: `inventory/engine/full-assembly.json`, component-specific evidence/learning/validation JSON, `docs/CURRENT-STATE.md`, and `inventory/engine/completion-plan.json`. Older completion prose contains superseded missing/pending statements; this package maps the current manifest. Future source/BOM reconciliation may add parts.

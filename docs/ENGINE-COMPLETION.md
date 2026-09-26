@@ -8,7 +8,10 @@ independent identities. Passing CAD checks does not verify Ford manufacturing ge
 
 ## Available now
 
-The saved assembly now contains 688 definitions and 1,244 occurrences. Added
+The current checkpoint contains 698 definitions and 1,304 occurrences. See
+[the complete tracking inventory](engine-parts/README.md) and [current state](CURRENT-STATE.md)
+for the authoritative import status. The detailed build notes below describe historical
+checkpoints and must not override current manifest/report hashes. Added
 studies include accessory supports, alternator, CII steering pump, FS10 compressor,
 Thermactor exterior, fan/clutch, secondary ignition leads, filter mounting insert
 and a 132-component manual PMGR starter study. The starter remains retracted and
