@@ -1,3 +1,4 @@
+import {engineLearningModules} from '../viewer/engine-learning-modules.js';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {buildNavigation} from '../viewer/engine-navigation.js';
@@ -21,7 +22,7 @@ for(const [identifier,ratio] of [['oil-pump-intermediate-rotation',-.5],['oil-pu
 }
 assert.equal(manifest.occurrences.find(part=>part.id==='oil-pump-drive-retainer').parent,'oil-pump-intermediate-rotation');
 assert.equal(nav.parts('oil-pickup-assembly').length,3);
-assert.equal(nav.parts('induction').length,205);
+assert.equal(nav.parts('induction').length,206);
 assert.equal(nav.parts('intake-head-locator').length,1);
 assert.ok(nav.ancestors('intake-head-locating-dowel').some(node=>node.id==='induction'));
 assert.equal(nav.parts('fuel-test-valve').length,8);
@@ -31,7 +32,7 @@ for(const identifier of ['front-manifold-lifting-eye','front-manifold-stud13','f
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
 assert.equal(nav.parts('intake-studs').length,7);
-assert.equal(nav.parts('throttle-assembly').length,28);
+assert.equal(nav.parts('throttle-assembly').length,29);
 assert.equal(nav.parts('cylinder-1').length,15);
 assert.equal(nav.parts('main-support-1').length,5);
 assert.equal(nav.fromUrl('/viewer/part.html?id=c1-piston-1'),'c1-piston-1');
@@ -41,7 +42,7 @@ const results=nav.search('cylinder 4 lifter');
 assert.ok(results.some(n=>n.id==='c4-intake-lifter-body'));
 assert.ok(results.every(n=>nav.ancestors(n.id).some(a=>a.id==='valvetrain-cylinder-4')));
 assert.equal(nav.search('timing cover')[0].id,'timing-cover','Exact part names outrank broad ancestor matches');
-const learning=Object.assign({},...await Promise.all(['lubrication','intake','damper','cooling','ignition','ac-compressor-motion','ac-compressor-bearing','ac-compressor-manifold','ac-compressor-shaft-support','ac-compressor-manifold-passages','fuel-test-valve-motion-viewer','starter','starter-solenoid','starter-engagement','starter-wiring','starter-wiring-fit','starter-motor-feed','manifold-lifting-eye','intake-locating-dowel','exhaust-front-profile','exhaust-rear-entries','rear-manifold-mounts','carrier-1994','common-carrier','oil-pan-joint','valvetrain-motion'].map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+const learning=Object.assign({},...await Promise.all(engineLearningModules.map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
 for(const [id,entry] of Object.entries(learning)){
   assert.ok(nav.nodes.has(id));
   for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.part)assert.ok(nav.nodes.has(step.part),step.part);
@@ -153,3 +154,7 @@ assert.equal(nav.parts('oil-pan-fastener-assembly').length,50);
 assert(!manifest.occurrences.some(p=>p.id.startsWith('pan-side-gasket-')));
 
 for(let i=1;i<=6;i++){const ids=nav.parts(`valvetrain-cylinder-${i}`);for(const kind of ['intake','exhaust'])for(const suffix of ['valve','rocker','pushrod','lifter-body'])assert(ids.includes(`c${i}-${kind}-${suffix}`));}
+
+assert.equal(nav.parts('water-pump-mechanical-seal-assembly').length,6);
+assert.ok(!nav.nodes.has('water-pump-seal'));
+assert.ok(nav.nodes.has('accelerator-cable-bracket'));

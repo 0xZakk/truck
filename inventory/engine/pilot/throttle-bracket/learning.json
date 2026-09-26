@@ -1,7 +1,7 @@
 {
   "id": "accelerator-cable-bracket",
   "title": "Accelerator cable mounting bracket",
-  "status": "provisional photo-informed teaching candidate",
+  "status": "estimated educational mounting-stack candidate",
   "function": "Anchors the cable outer housing while the inner cable pulls throttle linkage.",
   "troubleshooting": [
     "Inspect mounting ears and cable housing retainer for looseness or cracks.",
@@ -29,6 +29,15 @@
         "forked mounting end"
       ],
       "limits": "No dimensions or verified 1994 manual-transmission variant."
+    },
+    "bracket-fastener-engagement-guidance": {
+      "title": "Bolt Science: Short Bolting",
+      "url": "https://www.boltscience.com/pages/shortbolting.htm",
+      "accessed": "2026-09-26",
+      "supports": [
+        "Nut must have complete nominal coverage; incomplete end threads motivate protrusion allowance."
+      ],
+      "limits": "General engineering guidance only; neither Ford fastener length nor actual pitch is established."
     }
   },
   "integration": {
@@ -49,6 +58,6 @@
       100,
       0
     ],
-    "conditional_change": "Two nuts at Y=74 require +2 mm X shift; engagement remains unresolved."
+    "conditional_change": "Two positive-Y nuts shift +2 mm X to383.5. Replace only their studs with34 mm inferred smooth envelopes centeredX373, preserving inwardX356. This establishes nominal overlap/protrusion, not actual threaded engagement."
   }
 }

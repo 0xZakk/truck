@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "manifest_sha256": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f",
-  "definition_count": 698,
-  "occurrence_count": 1304,
+  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+  "definition_count": 705,
+  "occurrence_count": 1310,
   "group_count": 70,
   "verified_production_bom": false,
   "groups": [
@@ -6202,7 +6202,7 @@
       "id": "throttle",
       "title": "Throttle body, shaft, plates and mounting hardware",
       "patterns": [
-        "throttle-.*"
+        "throttle-(?!bracket-stud-estimated$).*"
       ],
       "remaining": [
         "Throttle lever/cam and return spring",
@@ -6321,7 +6321,7 @@
         {
           "id": "throttle-mount-stud",
           "name": "Throttle mounting stud",
-          "modeled_quantity": 4,
+          "modeled_quantity": 2,
           "geometry_status": "provisional",
           "function": "One of four studs locating the gasket and retaining the throttle body. Threads and installed depth are provisional.",
           "sources": [
@@ -6345,16 +6345,6 @@
               "id": "throttle-stud-2",
               "parent": "throttle-hardware",
               "name": "Throttle mounting stud 2"
-            },
-            {
-              "id": "throttle-stud-3",
-              "parent": "throttle-hardware",
-              "name": "Throttle mounting stud 3"
-            },
-            {
-              "id": "throttle-stud-4",
-              "parent": "throttle-hardware",
-              "name": "Throttle mounting stud 4"
             }
           ]
         },
@@ -6403,33 +6393,84 @@
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 13
+      "modeled_quantity": 11
     },
     {
       "id": "throttle-bracket",
       "title": "Throttle cable bracket",
-      "patterns": [],
+      "patterns": [
+        "accelerator-cable-bracket",
+        "throttle-bracket-stud-estimated"
+      ],
       "remaining": [
-        "Candidate exists",
-        "Mounting nuts interfere and proposed shift leaves engagement unresolved",
-        "Cable retainers/attachment fit require review"
+        "Bracket and two longer smooth stud envelopes are provisionally installed with seated nuts; factory bracket variant, shape and stud dimensions remain unverified",
+        "Resolve actual threads, engagement strength and intake anchorage; nominal nut coverage is not thread verification",
+        "Cable retainers/attachment fit, cable routing, return spring and complete linkage motion require reconstruction"
       ],
       "related_system_issues": [],
       "existing_issue": 16,
-      "candidate_parts": [
+      "parts": [
         {
           "id": "accelerator-cable-bracket",
-          "name": "Throttle cable bracket",
-          "artifact": "cad/engine/pilot/throttle-bracket/candidate.py",
-          "status": "Candidate only; fit/identity not accepted"
+          "name": "Accelerator cable mounting bracket",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Holds the cable outer housing so cable pull rotates the throttle linkage. Photo-informed provisional mounting study.",
+          "sources": [
+            "pilot-throttle-bracket-factory",
+            "pilot-throttle-bracket-photo"
+          ],
+          "unresolved": [
+            "Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.",
+            "Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.",
+            "Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated."
+          ],
+          "glb": "/models/engine/accelerator-cable-bracket.glb",
+          "step": "/cad/engine/generated/accelerator-cable-bracket.step",
+          "occurrences": [
+            {
+              "id": "accelerator-cable-bracket",
+              "parent": "throttle-assembly",
+              "name": "Accelerator cable mounting bracket"
+            }
+          ]
+        },
+        {
+          "id": "throttle-bracket-stud-estimated",
+          "name": "Throttle bracket mounting stud \u00b7 estimated envelope",
+          "modeled_quantity": 2,
+          "geometry_status": "provisional",
+          "function": "Longer modeled stud envelope accommodates the bracket and full nut height. Actual Ford length, threads and anchorage are unverified.",
+          "sources": [
+            "pilot-throttle-bracket-factory",
+            "pilot-throttle-bracket-photo"
+          ],
+          "unresolved": [
+            "Photo-informed teaching candidate only; every bracket dimension and installed handedness is assumed. Exact 1994 manual-transmission variant is unconfirmed.",
+            "Preserves accepted stud axes. Educational stack requires positive-Y nuts shifted +2 mm X and explicitly inferred 34 mm stud envelopes centered X373. Threads, material and installed anchorage remain unverified.",
+            "Sharp bend intersections replace production bend radii; cable clips, linkage, load strength and motion sweep are not validated."
+          ],
+          "glb": "/models/engine/throttle-bracket-stud-estimated.glb",
+          "step": "/cad/engine/generated/throttle-bracket-stud-estimated.step",
+          "occurrences": [
+            {
+              "id": "throttle-stud-3",
+              "parent": "throttle-hardware",
+              "name": "Bracket mounting stud \u00b7 estimated envelope"
+            },
+            {
+              "id": "throttle-stud-4",
+              "parent": "throttle-hardware",
+              "name": "Bracket mounting stud \u00b7 estimated envelope"
+            }
+          ]
         }
       ],
-      "parts": [],
       "issue": 16,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 0
+      "modeled_quantity": 3
     },
     {
       "id": "iac",
@@ -7085,7 +7126,7 @@
         "water-pump-.*"
       ],
       "remaining": [
-        "Six-part mechanical-seal candidate: identify seat, rotating seal, elastomer and retention pieces from candidate ledger",
+        "Six illustrative mechanical-seal pieces are integrated; identify the actual seal variant, dimensions, materials and production component count before claiming truck-specific completeness",
         "Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence",
         "Cast inlet exists: verify production contour and coolant path",
         "Verify impeller, hub, pulley, fasteners and gland interfaces"
@@ -7094,71 +7135,7 @@
         8
       ],
       "existing_issue": null,
-      "candidate_parts": [
-        {
-          "id": "water-pump-seal-carrier",
-          "name": "Mechanical-seal carrier",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-stationary-face",
-          "name": "Stationary sealing face",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-rotating-face",
-          "name": "Rotating sealing face",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-shaft-collar",
-          "name": "Rotating seal collar",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-bellows",
-          "name": "Stationary seal bellows",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        },
-        {
-          "id": "water-pump-seal-spring",
-          "name": "Seal face-loading spring",
-          "artifact": "cad/engine/water_pump_mechanical_seal_candidate.py",
-          "status": "Candidate only; six-part generic construction, not installed or accepted"
-        }
-      ],
       "parts": [
-        {
-          "id": "water-pump-seal",
-          "name": "Water pump coolant seal \u00b7 envelope",
-          "modeled_quantity": 1,
-          "geometry_status": "provisional",
-          "function": "Separates the coolant chamber from the bearing area. Mechanical seal faces, spring and elastomer are not yet individually represented.",
-          "sources": [
-            "system-7b01cf423275",
-            "system-628ac5b60213",
-            "gates-water-pumps-2011"
-          ],
-          "unresolved": [
-            "F6TZ8501KB / Gates 44009 application is sourced; no pump dimensions or installed datums are established.",
-            "Casting outline, ports, mounting pattern, vane count/profile and all internal dimensions are illustrative. Bearing is represented as a sealed cartridge, not individual races/rolling elements.",
-            "Hose connections, block coolant interface, attaching hardware, pulley and fan clutch remain outstanding. No belt ratio or coolant-flow simulation is implemented."
-          ],
-          "glb": "/models/engine/water-pump-seal.glb",
-          "step": "/cad/engine/generated/water-pump-seal.step",
-          "occurrences": [
-            {
-              "id": "water-pump-seal",
-              "parent": "water-pump-assembly",
-              "name": "Water pump coolant seal \u00b7 envelope"
-            }
-          ]
-        },
         {
           "id": "water-pump-slinger",
           "name": "Water pump slinger",
@@ -7512,13 +7489,169 @@
               "name": "Water pump housing"
             }
           ]
+        },
+        {
+          "id": "water-pump-seal-carrier",
+          "name": "Mechanical-seal carrier \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Stationary cup fixes the seal support to the pump housing.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-carrier.glb",
+          "step": "/cad/engine/generated/water-pump-seal-carrier.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-carrier",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Mechanical-seal carrier \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "water-pump-seal-stationary-face",
+          "name": "Stationary sealing face \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Spring-loaded face remains stationary while its mating face rotates.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-stationary-face.glb",
+          "step": "/cad/engine/generated/water-pump-seal-stationary-face.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-stationary-face",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Stationary sealing face \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "water-pump-seal-rotating-face",
+          "name": "Rotating sealing face \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Shaft-driven face meets the stationary ring across a lubricating coolant film.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-rotating-face.glb",
+          "step": "/cad/engine/generated/water-pump-seal-rotating-face.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-rotating-face",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Rotating sealing face \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "water-pump-seal-shaft-collar",
+          "name": "Rotating seal collar \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Illustrative elastomer collar seals and couples the rotating face to the shaft.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-shaft-collar.glb",
+          "step": "/cad/engine/generated/water-pump-seal-shaft-collar.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-shaft-collar",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Rotating seal collar \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "water-pump-seal-bellows",
+          "name": "Stationary seal bellows \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Flexible secondary seal joins the stationary face to its carrier while permitting axial compliance.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-bellows.glb",
+          "step": "/cad/engine/generated/water-pump-seal-bellows.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-bellows",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Stationary seal bellows \u00b7 illustrative"
+            }
+          ]
+        },
+        {
+          "id": "water-pump-seal-spring",
+          "name": "Seal face-loading spring \u00b7 illustrative",
+          "modeled_quantity": 1,
+          "geometry_status": "provisional",
+          "function": "Applies axial force to hold the sealing faces together.",
+          "sources": [
+            "water-pump-internal-construction"
+          ],
+          "unresolved": [
+            "This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.",
+            "All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.",
+            "Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.",
+            "Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.",
+            "Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included."
+          ],
+          "glb": "/models/engine/water-pump-seal-spring.glb",
+          "step": "/cad/engine/generated/water-pump-seal-spring.step",
+          "occurrences": [
+            {
+              "id": "water-pump-seal-spring",
+              "parent": "water-pump-mechanical-seal-assembly",
+              "name": "Seal face-loading spring \u00b7 illustrative"
+            }
+          ]
         }
       ],
       "issue": 47,
       "status": "In review",
       "status_reason": "Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.",
       "accepted_complete": false,
-      "modeled_quantity": 17
+      "modeled_quantity": 22
     },
     {
       "id": "thermostat",

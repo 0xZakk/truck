@@ -1,0 +1,7 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/check-water-pump-mechanical-seal-installed.py", line 13, in <module>
+    raw=a.manifest.read_bytes();assert hashlib.sha256(raw).hexdigest()==r['manifest_sha256'], 'Run candidate checker against this installed manifest first; neighbor transforms may have changed'
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Run candidate checker against this installed manifest first; neighbor transforms may have changed

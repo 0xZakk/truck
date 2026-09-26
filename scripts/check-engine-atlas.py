@@ -14,7 +14,7 @@ import trimesh
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'cad/engine'))
 from assembly_math import transforms
-from cad_metrics import solid_volume
+from cad_metrics import solid_volume, support_bounds
 from valvetrain_dispatch import occurrence_shape
 
 manifest_path=ROOT/'inventory/engine/full-assembly.json'
@@ -30,6 +30,7 @@ groups={a['id'] for a in m['assemblies']}
 assert len(groups)==len(m['assemblies'])
 assert not groups.intersection(ids), 'Occurrence and assembly ids must be distinct'
 parts={}
+bounds_refinements={}
 for d in defs.values():
     s=b.import_step(ROOT/d['step'].lstrip('/'))
     assert s.is_valid and len(s.solids())==1 and s.volume>0,d['id']
@@ -38,7 +39,24 @@ for d in defs.values():
     assert abs(solid_volume(s,d.get('volume_method','default'))/d['volume_mm3']-1)<1e-5,d['id']
     glb=trimesh.load(ROOT/d['glb'].lstrip('/'),force='scene')
     bb=s.bounding_box().size
-    assert np.max(np.abs(glb.extents*1000-np.array([bb.X,bb.Z,bb.Y])))<.5,d['id']
+    mesh_size=glb.extents*1000
+    cad_size=np.array([bb.X,bb.Z,bb.Y])
+    if np.max(np.abs(mesh_size-cad_size))>=.5:
+        # Clipped spline surfaces may produce an over-conservative OCC box.
+        # Refine using continuous CAD distances, never the mesh being tested.
+        refined=support_bounds(s).size
+        exact_size=np.array([refined.X,refined.Z,refined.Y])
+        scale=1+2/max(exact_size)
+        fault_size=mesh_size*scale
+        detected=bool(np.max(np.abs(fault_size-exact_size))>=.5)
+        assert detected, (d['id'],'scaled-mesh bounds negative control escaped')
+        bounds_refinements[d['id']]={'conservative_cad_extents_viewer_axes_mm':cad_size.tolist(),
+            'support_cad_extents_viewer_axes_mm':exact_size.tolist(),
+            'mesh_extents_mm':mesh_size.tolist(),
+            'scaled_mesh_negative_control':{'scale':float(scale),'detected':detected},
+            'method':'Two agreeing continuous distances per extremum to distinct enclosing planar support faces'}
+        cad_size=exact_size
+    assert np.max(np.abs(mesh_size-cad_size))<.5,(d['id'],mesh_size.tolist(),cad_size.tolist())
     parts[d['id']]=s
 for o in m['occurrences']:
     assert o['definition'] in defs and o['parent'] in groups,o['id']
@@ -75,7 +93,7 @@ for angle in poses:
 assert manifest_path.read_bytes()==manifest_bytes, 'Manifest changed during validation; rerun on a stable build'
 assert all(hashlib.sha256(p.read_bytes()).hexdigest()==h for p,h in artifact_hashes.items()), 'CAD artifacts changed during validation; rerun on a stable build'
 report=dict(definitions=len(defs),occurrences=len(ids),artifact_integrity='pass',gltf_scale_axis_bounds='pass within 0.5 mm',
-    step_volume_relative_tolerance=1e-5,
+    step_volume_relative_tolerance=1e-5,bounds_refinements=bounds_refinements,
     assembled_step_solids=len(assembly.solids()),manifest_sha256=hashlib.sha256(manifest_bytes).hexdigest(),
     checked_poses_deg=poses,collision_scope='Rotating core against block/crank, plus lubrication components against rotating core, block and oil pan; sampled poses, not continuous motion.',
     exact_intersection_checks=exact_checks,overlap_failure_threshold_mm3=.1,

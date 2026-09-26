@@ -1,0 +1,44 @@
+{
+  "manifest_sha256": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b",
+  "reviewer": "root integration agent",
+  "status": "PASS for provisional educational browser integration",
+  "views": [
+    {
+      "assembly": "water-pump-assembly",
+      "parts": 22
+    },
+    {
+      "assembly": "water-pump-mechanical-seal-assembly",
+      "parts": 6
+    },
+    {
+      "assembly": "throttle-assembly",
+      "parts": 29
+    }
+  ],
+  "checks": [
+    "Seal assembly and individual spring pages load explanatory text and source limitations",
+    "Seal explosion at35 percent and reset to0 visually reviewed",
+    "Search accelerator cable bracket returns the installed part",
+    "Bracket individual page links back to assembled throttle body",
+    "Throttle opening at90 degrees shows both butterfly plates open with bracket stationary",
+    "Throttle explosion at50 percent and reset restore0 percent explosion and0 degree throttle opening",
+    "Browser warning/error log empty"
+  ],
+  "visual_findings": [
+    "Seal exploded and axial construction consistent with local CAD render and explicitly generic manufacturer architecture",
+    "Bracket major opening/fork/cable-hole topology matches salvage reference; planar corners and missing curved lips remain acknowledged fidelity gaps"
+  ],
+  "limits": [
+    "Sampled browser interactions are not complete physical disassembly verification",
+    "Pump rotor/seal spin is not animated; source-supported belt ratio remains unverified",
+    "Actual vehicle component identities and factory dimensions remain open"
+  ],
+  "files": {
+    "viewer/atlas.js": "d780ec80e23afe9d3e25287c14e417e14a5133e0770c963888e1644d88570771",
+    "viewer/engine.html": "a2f895c1f599352b2eae07f7ed1ebffc391d22b8fa51ac8ba1062e95e08c3dcb",
+    "viewer/part.html": "44de26148ed972519b64e1bd89c184e76d0fd483963d27aa00722fce55d24719",
+    "viewer/engine-learning-modules.js": "7cf991e68f5bd4a84901d13b85d347691f856d9c526290b51b88f5022ca2d51a",
+    "inventory/engine/component-interface-learning.json": "2e1c9d2ca1c4f2fc898f7dcd2e5b39157de6a2a8a088b73ce527c0c3b742459b"
+  }
+}

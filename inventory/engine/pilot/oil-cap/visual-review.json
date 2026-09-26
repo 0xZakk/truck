@@ -10,6 +10,7 @@
     "Yellow oil identification artwork and exact molding detail are not reproduced."
   ],
   "verdict": "Provisional visual candidate, not OEM fidelity acceptance",
-  "dynamic_clearance": "Not validated: nearest static rocker clearance 1.3754 mm; full rocker travel unavailable in scoped cap pilot.",
-  "browser_review": "Pending root integration; shared viewer untouched."
+  "dynamic_clearance": "PASS sampled restored-baseline rocker clearance: 181 crank phases across 0\u2013720\u00b0, all12 rockers, minimum1.3754mm. See motion-validation.json for scope, hashes, negative control and limits. Retention still fails.",
+  "browser_review": "Pending root integration; shared viewer untouched.",
+  "review_scope_note": "Existing review image remains the provisional appearance review; final static/motion reports use restored authoritative STEP baseline and supersede the stale-root diagnostic."
 }

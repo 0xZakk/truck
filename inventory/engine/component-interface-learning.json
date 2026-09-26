@@ -1,0 +1,107 @@
+{
+  "water-pump-mechanical-seal-assembly": {
+    "summary": "A rotating ring and a stationary ring meet across an annular sealing face. A spring and flexible secondary seal let the stationary face maintain contact while the shaft rotates.",
+    "limits": "This is a generic construction study based on manufacturer explanations. The six-piece arrangement, dimensions and materials have not been established for Gates44009 or the pump installed on this truck. It explains how a mechanical seal works; it is not a rebuild procedure or replacement-parts list.",
+    "steps": [
+      {
+        "title": "Find the rotating face",
+        "text": "The modeled collar couples one sealing face to the shaft. The mating ring remains attached to the housing through its stationary support.",
+        "part": "water-pump-seal-rotating-face"
+      },
+      {
+        "title": "Inspect the face joint",
+        "text": "The rings meet across a flat annular surface. Gates describes a thin film of coolant at that interface that lubricates and cools the faces. The CAD shows ideal contact, without simulating that microscopic film.",
+        "part": "water-pump-seal-stationary-face"
+      },
+      {
+        "title": "Follow the spring load",
+        "text": "The spring reacts against the fixed carrier and presses the stationary face toward its rotating mate. The flexible secondary seal permits axial compliance while closing the route around the face support.",
+        "part": "water-pump-seal-spring"
+      },
+      {
+        "title": "Distinguish the two kinds of seal",
+        "text": "This mechanical seal separates coolant from the shaft's dry leakage space. The bearing cartridge has its own grease-retaining end seals. Its rolling-element arrangement remains unidentified for this application.",
+        "part": "water-pump-seal-carrier"
+      }
+    ],
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-carrier": {
+    "summary": "The carrier anchors the stationary seal components to the pump housing.",
+    "limits": "A loose or damaged carrier can defeat secondary sealing. This modeled contact does not establish an interference fit or installation force. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-stationary-face": {
+    "summary": "The stationary ring meets the rotating ring across a flat annular face. Spring pressure helps maintain that contact.",
+    "limits": "Face damage or loss of contact can permit leakage; the model does not simulate wear or diagnose a particular leak. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-rotating-face": {
+    "summary": "This ring turns with the shaft and meets the stationary sealing face. A thin coolant film lubricates the real interface.",
+    "limits": "The face pair is distinct from the bearing. A pump can leak at the seal without this model establishing whether the bearing is damaged. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-shaft-collar": {
+    "summary": "The illustrative collar seals around the shaft and couples the rotating face to it.",
+    "limits": "The modeled collar merely touches the shaft. Actual elastomer squeeze, material and torque transfer remain unknown. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-bellows": {
+    "summary": "The flexible secondary seal joins the stationary face to its support while allowing axial movement.",
+    "limits": "The CAD represents its resting shape only. Cracks, aging and actual flexure cannot be assessed from this illustration. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "water-pump-seal-spring": {
+    "summary": "The spring loads the stationary face toward its rotating mate.",
+    "limits": "Spring stiffness, preload and compression are unspecified. The visible helix is a construction explanation, not a replacement specification. Generic construction; actual truck seal identity and dimensions remain unverified.",
+    "sources": [
+      "water-pump-internal-construction"
+    ]
+  },
+  "accelerator-cable-bracket": {
+    "summary": "The bracket anchors the outer cable housing so movement of the inner cable can pull the throttle linkage. Its forked mounting ears share two throttle-body studs.",
+    "limits": "Photo-informed shape with inferred dimensions and handedness. The modeled 34 mm smooth studs accommodate the sheet and nuts; actual Ford threads, length, anchorage and cable travel remain unverified.",
+    "steps": [
+      {
+        "title": "Inspect the mounting ears",
+        "text": "The bracket sits between the housing and nuts. Both ears must be supported; the CAD checks face contact, not clamping load.",
+        "part": "throttle-nut-3"
+      },
+      {
+        "title": "Trace the cable support",
+        "text": "Round and rectangular openings represent cable-retainer locations. Cables, clips and complete linkage motion remain to be reconstructed.",
+        "part": "accelerator-cable-bracket"
+      }
+    ],
+    "sources": [
+      "pilot-throttle-bracket-factory",
+      "pilot-throttle-bracket-photo"
+    ]
+  },
+  "throttle-stud-3": {
+    "summary": "Two longer illustrative stud envelopes leave room for the bracket and full nut height while preserving the prior inward endpoint.",
+    "limits": "34 mm is an inferred educational length. Smooth cylinders do not model thread flank contact, engagement strength, material or factory identity. Do not use as a replacement-fastener specification.",
+    "sources": [
+      "pilot-throttle-bracket-factory"
+    ]
+  },
+  "throttle-stud-4": {
+    "summary": "Two longer illustrative stud envelopes leave room for the bracket and full nut height while preserving the prior inward endpoint.",
+    "limits": "34 mm is an inferred educational length. Smooth cylinders do not model thread flank contact, engagement strength, material or factory identity. Do not use as a replacement-fastener specification.",
+    "sources": [
+      "pilot-throttle-bracket-factory"
+    ]
+  }
+}

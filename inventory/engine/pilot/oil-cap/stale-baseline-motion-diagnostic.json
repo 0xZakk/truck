@@ -1,0 +1,30 @@
+{
+  "status": "SUPERSEDED_STALE_BASELINE_DIAGNOSTIC",
+  "provenance_caveat": "Captured before integration owner restored current authoritative STEP baseline; do not use for acceptance. Checker dependency-list/focused-pose optimization was edited during this diagnostic execution; final rerun supplies authoritative code/input hashes.",
+  "closest": {
+    "crank_deg": 0,
+    "rocker": "c1-intake-rocker",
+    "distance_mm": 0.0,
+    "overlap_mm3": 77.89304500382435
+  },
+  "negative_control": {
+    "cap_offset_cad_mm": [
+      0,
+      0,
+      -10
+    ],
+    "rocker": "c1-intake-rocker",
+    "crank_deg": 0,
+    "overlap_mm3": 129.0809182830445,
+    "distance_mm": 0.0,
+    "detected": true
+  },
+  "failure_count": 155,
+  "sample_count": 362,
+  "stale_input_hashes": {
+    "cad/engine/generated/rocker-arm.step": "73932891d47a486110ce8c63efd8b118a0481db7ef4f81db860f7427b717263d",
+    "cad/engine/pilot/oil-cap/oil-filler-cap.step": "cc16824b3171ba2548f49accc0e37f248f489e11ded8c28243c15c9e70816d49",
+    "inventory/engine/full-assembly.json": "821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f"
+  },
+  "resolution": "Integration owner restored authoritative STEP files; see inventory/engine/cad-baseline-restoration.json. Final validation.json and motion-validation.json supersede this diagnostic."
+}

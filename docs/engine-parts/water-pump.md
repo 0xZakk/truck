@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -14,12 +14,6 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
 
 Current-state correction: the cast inlet neck is present in this manifest. Older unresolved strings below saying it is missing are superseded; its production geometry and flow fidelity remain unverified.
 
-- [ ] **Water pump coolant seal · envelope** — `water-pump-seal`; modeled quantity **1**; provisional.
-  - Instances: `water-pump-seal`
-  - Source IDs: system-7b01cf423275, system-628ac5b60213, gates-water-pumps-2011. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: F6TZ8501KB / Gates 44009 application is sourced; no pump dimensions or installed datums are established.
-  - Open: Casting outline, ports, mounting pattern, vane count/profile and all internal dimensions are illustrative. Bearing is represented as a sealed cartridge, not individual races/rolling elements.
-  - Open: Hose connections, block coolant interface, attaching hardware, pulley and fan clutch remain outstanding. No belt ratio or coolant-flow simulation is implemented.
 - [ ] **Water pump slinger** — `water-pump-slinger`; modeled quantity **1**; provisional.
   - Instances: `water-pump-slinger`
   - Source IDs: system-7b01cf423275, system-628ac5b60213, gates-water-pumps-2011. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -129,19 +123,58 @@ Current-state correction: the cast inlet neck is present in this manifest. Older
   - Open: Gates44009 front/rear/side photos show large lateral cast inlet arm with hose neck and retaining bead. Positive-Y assignment opposite retained heater tube is inferred; no physical pump measurement exists.
   - Open: Inlet neck localX−10/Z25, endY145, outer radius24 and bore20mm are provisional. Cast arm curves to rear chamber at localX−20/Y19; no internal photograph fixes this path. They are not hose purchasing dimensions.
   - Open: Smooth tapered open passage demonstrates topology only: the actual volute, impeller-eye feed, casting wall sections, hydraulic capacity and flow simulation remain unverified.
-
-## Separate candidate parts (not installed)
-
-- [ ] **Mechanical-seal carrier** — `water-pump-seal-carrier`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
-- [ ] **Stationary sealing face** — `water-pump-seal-stationary-face`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
-- [ ] **Rotating sealing face** — `water-pump-seal-rotating-face`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
-- [ ] **Rotating seal collar** — `water-pump-seal-shaft-collar`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
-- [ ] **Stationary seal bellows** — `water-pump-seal-bellows`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
-- [ ] **Seal face-loading spring** — `water-pump-seal-spring`; Candidate only; six-part generic construction, not installed or accepted. Source: `cad/engine/water_pump_mechanical_seal_candidate.py`.
+- [ ] **Mechanical-seal carrier · illustrative** — `water-pump-seal-carrier`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-carrier`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
+- [ ] **Stationary sealing face · illustrative** — `water-pump-seal-stationary-face`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-stationary-face`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
+- [ ] **Rotating sealing face · illustrative** — `water-pump-seal-rotating-face`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-rotating-face`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
+- [ ] **Rotating seal collar · illustrative** — `water-pump-seal-shaft-collar`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-shaft-collar`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
+- [ ] **Stationary seal bellows · illustrative** — `water-pump-seal-bellows`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-bellows`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
+- [ ] **Seal face-loading spring · illustrative** — `water-pump-seal-spring`; modeled quantity **1**; provisional.
+  - Instances: `water-pump-seal-spring`
+  - Source IDs: water-pump-internal-construction. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: This six-component seal is a generic axial-face construction study, not a verified Gates44009 bill of materials. No real replacement seal number is established.
+  - Open: All face diameters,10mm stack length, carrier shape, elastomer sections, spring wire/turn count and installed compression are illustrative. Face material pairing is not established for this truck.
+  - Open: Carrier contact at localX18..21 uses radius24 to meet the modeled housing throat; it replaces the former radius23.8 floating envelope. Housing, shaft, mounting and drive poses are unchanged.
+  - Open: Exact bearing row count/type, rolling-element count, cages and raceway dimensions remain unknown. The existing bearing cartridge is not claimed to be a measured production bearing.
+  - Open: Exploded geometry explains interfaces, not a pump rebuild procedure. Ford services the sealed pump as an assembly. No elastic, thermal, pressure, leakage or coolant-film simulation is included.
 
 ## Additional known scope and reconciliation
 
-- [ ] Six-part mechanical-seal candidate: identify seat, rotating seal, elastomer and retention pieces from candidate ledger
+- [ ] Six illustrative mechanical-seal pieces are integrated; identify the actual seal variant, dimensions, materials and production component count before claiming truck-specific completeness
 - [ ] Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence
 - [ ] Cast inlet exists: verify production contour and coolant path
 - [ ] Verify impeller, hub, pulley, fasteners and gland interfaces

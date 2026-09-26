@@ -1,6 +1,6 @@
 """Generic seal candidate: contacts, fluid separation, all neighbors, STEP."""
 from pathlib import Path
-import sys,json,hashlib,itertools,math
+import sys,json,hashlib,itertools,math,argparse
 import build123d as b
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'cad/engine'))
@@ -9,13 +9,16 @@ from valve_layout_integration import occurrence_shape
 from cad_metrics import solid_volume
 import water_pump_mechanical_seal_candidate as s
 from water_pump_joint_candidate import cx
-ACCEPTED=ROOT/'cad/engine/candidates/pump-joint-desktop/accepted';BASE=Path('/private/tmp/truck-desktop-pan-v9-baseline-6b11c0f8')
-mp=ACCEPTED/'full-assembly.json';raw=mp.read_bytes();m=json.loads(raw);defs={d['id']:d for d in m['definitions']};poses=transforms(m)
+ap=argparse.ArgumentParser()
+ap.add_argument('--manifest',type=Path,default=ROOT/'inventory/engine/full-assembly.json')
+ap.add_argument('--output-dir',type=Path,default=ROOT/'cad/engine/candidates/mechanical-seal')
+ap.add_argument('--report',type=Path,default=ROOT/'inventory/engine/water-pump-mechanical-seal-candidate-validation.json')
+args=ap.parse_args();args.output_dir.mkdir(parents=True,exist_ok=True)
+mp=args.manifest;raw=mp.read_bytes();m=json.loads(raw);defs={d['id']:d for d in m['definitions']};poses=transforms(m)
 files=[Path(__file__),Path(s.__file__),ROOT/'cad/engine/water_pump_joint_candidate.py',ROOT/'cad/engine/valve_layout_integration.py',ROOT/'cad/engine/valve_layout_candidate.py',ROOT/'cad/engine/cad_metrics.py',ROOT/'reference/engine/water-pump-internal-construction-reviewed.json'];hashes={str(q):hashlib.sha256(q.read_bytes()).hexdigest() for q in files};cache={}
 def load(key):
  if key not in cache:
-  path=ACCEPTED/(key+'.step')
-  if not path.exists():path=BASE/defs[key]['step'].lstrip('/')
+  path=ROOT/defs[key]['step'].lstrip('/')
   hashes[str(path)]=hashlib.sha256(path.read_bytes()).hexdigest();cache[key]=b.import_step(path)
  return cache[key]
 def compound(q):return b.Compound(children=list(q)) if isinstance(q,b.ShapeList) else q
@@ -44,8 +47,23 @@ for part in parts.values():void=compound(void)-part
 void=compound(void);wet=b.Pos(10.5,20,0)*b.Sphere(.1);dry=b.Pos(21.5,8.5,0)*b.Sphere(.1)
 wet_ids=[i for i,v in enumerate(void.solids()) if vol(v&wet)>.004];dry_ids=[i for i,v in enumerate(void.solids()) if vol(v&dry)>.004]
 assert len(wet_ids)==len(dry_ids)==1 and wet_ids!=dry_ids,(wet_ids,dry_ids)
+# Sampled connected-void passage check plus deliberately broken geometry.
+# 0.2 mm face opening joins wet and dry; transverse obstruction breaks wet flow.
+def partition(candidate, blocked=False):
+ fluid=cx(30,10,22)-load('water-pump-housing')-load('water-pump-shaft')
+ for part in candidate.values():fluid=compound(fluid)-part
+ if blocked:fluid=compound(fluid)-cx(30,10.9,11.1)
+ cells=compound(fluid).solids()
+ ids=[[i for i,v in enumerate(cells) if v.is_inside(pt)] for pt in [(10.5,20,0),(17,20,0),(21.5,8.5,0)]]
+ assert all(len(q)==1 for q in ids),ids
+ return {'wet_path_connected':ids[0]==ids[1],'wet_dry_separated':ids[0]!=ids[2],'probe_components':ids}
+topology=partition(parts);assert topology['wet_path_connected'] and topology['wet_dry_separated'],topology
+fault_parts=dict(parts);fault_parts['water-pump-seal-stationary-face']=b.Pos(.2,0,0)*fault_parts['water-pump-seal-stationary-face']
+fault_gap=partition(fault_parts);fault_block=partition(parts,True)
+assert not fault_gap['wet_dry_separated'] and not fault_block['wet_path_connected'],(fault_gap,fault_block)
+negative_controls={'face_opened_0.2_mm':fault_gap,'wet_passage_blocked':fault_block}
 print('Contacts and wet/dry partition passed',flush=True)
-frame=poses['water-pump-seal'];world={k:frame*v for k,v in parts.items()};neighbors={o['id']:poses[o['id']]*occurrence_shape(o,load(o['definition'])) for o in m['occurrences'] if o['id']!='water-pump-seal'};bounds={k:v.bounding_box(optimal=False) for k,v in {**world,**neighbors}.items()};checks=0;fail=[]
+frame=poses['water-pump-seal'] if 'water-pump-seal' in poses else poses['water-pump-seal-carrier'];world={k:frame*v for k,v in parts.items()};neighbors={o['id']:poses[o['id']]*occurrence_shape(o,load(o['definition'])) for o in m['occurrences'] if o['id']!='water-pump-seal' and o['id'] not in parts};bounds={k:v.bounding_box(optimal=False) for k,v in {**world,**neighbors}.items()};checks=0;fail=[]
 for a,v in world.items():
  for c,t in neighbors.items():
   if broad(bounds[a],bounds[c]):
@@ -70,7 +88,7 @@ for fraction in [.05,.1,.25,.5,.75,1]:
    if amount>.02:fail.append(['explode',fraction,a,c,amount])
 print('Pump-study explosion checked',motion_checks,flush=True)
 
-step_checks={};out=Path('/private/tmp/water-pump-mechanical-seal-step');out.mkdir(exist_ok=True)
+step_checks={};out=args.output_dir
 for key,part in parts.items():
  path=out/(key+'.step');b.export_step(part,path);again=b.import_step(path);delta=vol(part-again)+vol(again-part);assert again.is_valid and len(again.solids())==1 and delta<.02,(key,delta);step_checks[key]=delta
 # Actual meshes for whole seal and upper-half cutaway.
@@ -81,5 +99,5 @@ for cut in [False,True]:
   if cut:part=compound(part&(b.Pos(0,0,-25)*b.Box(200,100,50)))
   if not part:continue
   v,f=part.tessellate(.08);i=len(ids);ids.append(key);used.append(color);arrays[f'vertices_{i}']=np.array([[q.X,q.Y,q.Z] for q in v]);arrays[f'faces_{i}']=np.array(f)
- arrays['metadata']=json.dumps({'parts':ids,'colors':used});np.savez('/private/tmp/water-pump-mechanical-seal-'+('cutaway' if cut else 'actual')+'.npz',**arrays)
-unchanged=raw==mp.read_bytes() and all(hashlib.sha256(Path(q).read_bytes()).hexdigest()==h for q,h in hashes.items());report={'status':'PASS' if unchanged and not fail else 'FAIL','manifest_sha256':hashlib.sha256(raw).hexdigest(),'inputs_unchanged':unchanged,'input_hashes':hashes,'neighbor_checks':checks,'pump_study_explode_checks':motion_checks,'collisions':fail,'contact_distances_mm':contacts,'face_contact_area_mm2':face_area,'fluid_partition':{'void_solids':len(void.solids()),'wet_component':wet_ids,'dry_component':dry_ids,'ideal_zero_gap_faces':True},'step_symmetric_difference_mm3':step_checks,'limits':s.GAPS};(ROOT/'inventory/engine/water-pump-mechanical-seal-candidate-validation.json').write_text(json.dumps(report,indent=2)+'\n');assert unchanged and not fail,fail;print('PASS illustrative seal candidate',flush=True)
+ arrays['metadata']=json.dumps({'parts':ids,'colors':used});np.savez(out/('water-pump-mechanical-seal-'+('cutaway' if cut else 'actual')+'.npz'),**arrays)
+unchanged=raw==mp.read_bytes() and all(hashlib.sha256(Path(q).read_bytes()).hexdigest()==h for q,h in hashes.items());report={'status':'PASS' if unchanged and not fail else 'FAIL','manifest_sha256':hashlib.sha256(raw).hexdigest(),'inputs_unchanged':unchanged,'input_hashes':{str(Path(p).relative_to(ROOT)):h for p,h in hashes.items()},'neighbor_checks':checks,'pump_study_explode_checks':motion_checks,'collisions':fail,'contact_distances_mm':contacts,'face_contact_area_mm2':face_area,'topology':topology,'negative_controls':negative_controls,'fluid_partition':{'void_solids':len(void.solids()),'wet_component':wet_ids,'dry_component':dry_ids,'ideal_zero_gap_faces':True},'step_symmetric_difference_mm3':step_checks,'limits':s.GAPS};args.report.write_text(json.dumps(report,indent=2)+'\n');assert unchanged and not fail,fail;print('PASS illustrative seal candidate',flush=True)

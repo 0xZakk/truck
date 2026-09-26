@@ -1,0 +1,206 @@
+/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pilot/oil-cap/check_motion.py:56: DeprecationWarning: to_tuple is deprecated and will be removed in a future version. Use 'tuple(Location)' instead.
+  assert full[o['id']].to_tuple() == focused[o['id']].to_tuple(), 'Focused transform mismatch'
+Checked crank 0 degrees
+Checked crank 3 degrees
+Checked crank 5 degrees
+Checked crank 6 degrees
+Checked crank 10 degrees
+Checked crank 15 degrees
+Checked crank 20 degrees
+Checked crank 21 degrees
+Checked crank 25 degrees
+Checked crank 30 degrees
+Checked crank 35 degrees
+Checked crank 40 degrees
+Checked crank 45 degrees
+Checked crank 50 degrees
+Checked crank 55 degrees
+Checked crank 60 degrees
+Checked crank 65 degrees
+Checked crank 70 degrees
+Checked crank 75 degrees
+Checked crank 80 degrees
+Checked crank 85 degrees
+Checked crank 90 degrees
+Checked crank 93 degrees
+Checked crank 95 degrees
+Checked crank 100 degrees
+Checked crank 105 degrees
+Checked crank 108 degrees
+Checked crank 110 degrees
+Checked crank 111 degrees
+Checked crank 115 degrees
+Checked crank 120 degrees
+Checked crank 123 degrees
+Checked crank 125 degrees
+Checked crank 126 degrees
+Checked crank 130 degrees
+Checked crank 135 degrees
+Checked crank 140 degrees
+Checked crank 141 degrees
+Checked crank 145 degrees
+Checked crank 150 degrees
+Checked crank 155 degrees
+Checked crank 160 degrees
+Checked crank 165 degrees
+Checked crank 170 degrees
+Checked crank 175 degrees
+Checked crank 180 degrees
+Checked crank 185 degrees
+Checked crank 190 degrees
+Checked crank 195 degrees
+Checked crank 200 degrees
+Checked crank 205 degrees
+Checked crank 210 degrees
+Checked crank 213 degrees
+Checked crank 215 degrees
+Checked crank 220 degrees
+Checked crank 225 degrees
+Checked crank 228 degrees
+Checked crank 230 degrees
+Checked crank 231 degrees
+Checked crank 235 degrees
+Checked crank 240 degrees
+Checked crank 243 degrees
+Checked crank 245 degrees
+Checked crank 246 degrees
+Checked crank 250 degrees
+Checked crank 255 degrees
+Checked crank 260 degrees
+Checked crank 261 degrees
+Checked crank 265 degrees
+Checked crank 270 degrees
+Checked crank 275 degrees
+Checked crank 280 degrees
+Checked crank 285 degrees
+Checked crank 290 degrees
+Checked crank 295 degrees
+Checked crank 300 degrees
+Checked crank 305 degrees
+Checked crank 310 degrees
+Checked crank 315 degrees
+Checked crank 320 degrees
+Checked crank 325 degrees
+Checked crank 330 degrees
+Checked crank 333 degrees
+Checked crank 335 degrees
+Checked crank 340 degrees
+Checked crank 345 degrees
+Checked crank 348 degrees
+Checked crank 350 degrees
+Checked crank 351 degrees
+Checked crank 355 degrees
+Checked crank 360 degrees
+Checked crank 363 degrees
+Checked crank 365 degrees
+Checked crank 366 degrees
+Checked crank 370 degrees
+Checked crank 375 degrees
+Checked crank 380 degrees
+Checked crank 381 degrees
+Checked crank 385 degrees
+Checked crank 390 degrees
+Checked crank 395 degrees
+Checked crank 400 degrees
+Checked crank 405 degrees
+Checked crank 410 degrees
+Checked crank 415 degrees
+Checked crank 420 degrees
+Checked crank 425 degrees
+Checked crank 430 degrees
+Checked crank 435 degrees
+Checked crank 440 degrees
+Checked crank 445 degrees
+Checked crank 450 degrees
+Checked crank 453 degrees
+Checked crank 455 degrees
+Checked crank 460 degrees
+Checked crank 465 degrees
+Checked crank 468 degrees
+Checked crank 470 degrees
+Checked crank 471 degrees
+Checked crank 475 degrees
+Checked crank 480 degrees
+Checked crank 483 degrees
+Checked crank 485 degrees
+Checked crank 486 degrees
+Checked crank 490 degrees
+Checked crank 495 degrees
+Checked crank 500 degrees
+Checked crank 501 degrees
+Checked crank 505 degrees
+Checked crank 510 degrees
+Checked crank 515 degrees
+Checked crank 520 degrees
+Checked crank 525 degrees
+Checked crank 530 degrees
+Checked crank 535 degrees
+Checked crank 540 degrees
+Checked crank 545 degrees
+Checked crank 550 degrees
+Checked crank 555 degrees
+Checked crank 560 degrees
+Checked crank 565 degrees
+Checked crank 570 degrees
+Checked crank 573 degrees
+Checked crank 575 degrees
+Checked crank 580 degrees
+Checked crank 585 degrees
+Checked crank 588 degrees
+Checked crank 590 degrees
+Checked crank 591 degrees
+Checked crank 595 degrees
+Checked crank 600 degrees
+Checked crank 603 degrees
+Checked crank 605 degrees
+Checked crank 606 degrees
+Checked crank 610 degrees
+Checked crank 615 degrees
+Checked crank 620 degrees
+Checked crank 621 degrees
+Checked crank 625 degrees
+Checked crank 630 degrees
+Checked crank 635 degrees
+Checked crank 640 degrees
+Checked crank 645 degrees
+Checked crank 650 degrees
+Checked crank 655 degrees
+Checked crank 660 degrees
+Checked crank 665 degrees
+Checked crank 670 degrees
+Checked crank 675 degrees
+Checked crank 680 degrees
+Checked crank 685 degrees
+Checked crank 690 degrees
+Checked crank 693 degrees
+Checked crank 695 degrees
+Checked crank 700 degrees
+Checked crank 705 degrees
+Checked crank 708 degrees
+Checked crank 710 degrees
+Checked crank 711 degrees
+Checked crank 715 degrees
+Checked crank 720 degrees
+{
+  "status": "PASS_SAMPLED_CLEARANCE",
+  "exact_pairs": 362,
+  "aabb_separated_pairs": 1810,
+  "closest": {
+    "crank_deg": 0,
+    "rocker": "c1-intake-rocker",
+    "distance_mm": 1.3753999999999564,
+    "overlap_mm3": 0.0
+  },
+  "negative_control": {
+    "cap_offset_cad_mm": [
+      0,
+      0,
+      -10
+    ],
+    "rocker": "c1-intake-rocker",
+    "crank_deg": 0,
+    "overlap_mm3": 352.67084687750867,
+    "distance_mm": 0.0,
+    "detected": true
+  }
+}

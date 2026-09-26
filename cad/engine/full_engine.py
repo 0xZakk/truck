@@ -111,7 +111,7 @@ def gear(radius, teeth, width):
     return b.extrude(b.Plane.YZ*b.Polygon(*pts,align=None),amount=width/2,both=True)
 
 
-from cad_metrics import solid_volume
+from cad_metrics import solid_volume, support_bounds
 import manifold_lifting_eye
 import intake_locating_dowel
 import exhaust_front_profile
@@ -840,6 +840,9 @@ def main():
     if refresh in (None, 'rear-mounts', 'peripherals', 'exhaust'):
         rear_mounts.build((define, add, group))
         source_ids.update(rear_mounts.SOURCES)
+    import component_interface_integration as component_interfaces
+    component_interfaces.install(define,add,group,defs,occurrences,assemblies)
+    source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/damper-learning.json').read_text()))
@@ -866,6 +869,7 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/carrier-1994-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/common-carrier-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/component-interface-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -879,6 +883,7 @@ def main():
     sources.update(json.loads((ROOT/'inventory/engine/carrier-1994-sources.json').read_text()))
     sources.update(json.loads((ROOT/'inventory/engine/common-carrier-sources.json').read_text()))
     sources.update(json.loads((ROOT/'inventory/engine/oil-pan-joint-sources.json').read_text()))
+    sources.update(component_interfaces.sources())
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
     for occurrence in occurrences:
         if occurrence['definition'] in (exhaust_front_profile.ADAPTERS | exhaust_rear_entries.ADAPTERS | rear_mounts.ADAPTERS):
@@ -911,7 +916,7 @@ def main():
     defs[:]=manifest['definitions']
     for d in defs:
         if d['id'] not in shapes:shapes[d['id']]=b.import_step(ROOT/d['step'].lstrip('/'))
-        size=shapes[d['id']].bounding_box().size
+        size=(support_bounds(shapes[d['id']]) if d['id']=='water-pump-seal-spring' else shapes[d['id']].bounding_box()).size
         d['model_bounds_mm']=[size.X,size.Y,size.Z]
     for key in ('definitions','assemblies','occurrences'):
         ids=[item['id'] for item in manifest[key]]
