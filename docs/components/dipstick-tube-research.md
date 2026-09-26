@@ -47,3 +47,11 @@ Critical future negative controls: deliberately offset the tube from its seat; m
 ## Restart
 
 Next action is to obtain the actual figure and/or an identifiable matched tube specimen, then document the two anchor measurements. If the owner inspects the truck, the useful photographs are the lower threaded entry with nearby pan rail visible, the upper bracket/retainer, and the complete indicator seated at the tube mouth; include an independent length reference. No new owner input was requested during this research task. No process remains running. #78 remains open. Model/effort/usage were not available; no cost figure is inferred.
+
+## Exact-year offline archive follow-up
+
+The local 1994 CHARM bundle was searched again with ignored files included (`rg --files --no-ignore manuals/factory-service-manual`), and the ZIP directory was checked for pages absent from extraction. The bundle has 14,278 entries. Searches covered dipstick/oil-level-indicator names and text, 6754, 6C517 and A23872. **No engine-oil tube installation page or attachment diagram was found in this bundle.** This is a finding about the available archive, not evidence that the tube or a Ford procedure did not exist.
+
+The engine removal procedure, lifter/pushrod-cover removal procedure, oil-pan procedure and lubrication diagram were read. The lifter page gives no tube retainer detail. Four downloaded images were visually inspected: `288847252.png` (lifter), `350370598.png` (rear pan seal), `350379654.png` (pan installation) and `354634388.png` (lubrication passages). None identifies the dipstick tube's fitting, bracket or route. The pan drawing's omission of a tube is not evidence for or against a pan port. The electrical oil-level warning pages and automatic-transmission dipstick parts entries were also checked and excluded; their indicators cannot identify this engine-oil tube.
+
+Exact source paths, SHA-256 hashes, per-image observations and reproducible search scope are recorded under `offline_1994_archive_review` in the JSON ledger. No manual content was copied or redistributed. **Applicability has not been promoted:** the two-anchor retention architecture is still adjacent-1995 Ford evidence, and exact 1994 attachment confirmation remains open before geometry work.

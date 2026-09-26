@@ -4,7 +4,7 @@
 
 Research-only continuation of engine component issue #15, performed on 2026-09-26 for the coordinating integration owner. Research checkpoint commit: `aa3b3ed488ade3c4462e1bb530db5ec8b575e152`. Owned files are this handoff and `reference/engine/oil-fill-neck-review.json`. No cap, cover, manifest or checker changed; no posts or commits made.
 
-**The required female screw interface is supported, but the production neck's manufacturing construction is still unknown.** Available applicable cap evidence does not distinguish a neck formed from the cover sheet from a separate permanently attached collar/insert. No defensible numerical neck depth, shoulder height or oil-fill baffle dimensions were found. The next candidate can model a coherent screw seat with explicitly inferred geometry; it must not be presented as a verified factory cover reconstruction.
+**The required female screw interface is supported, but the production neck's manufacturing construction is still unknown.** Available applicable cap evidence does not distinguish a neck formed from the cover sheet from a separate permanently attached collar/insert. The subsequently inspected exact-model CHARM archive identifies cover service part **F3TZ6582H** and depicts the neck/opening within the cover service assembly; it still provides no defensible numerical neck depth, shoulder height or oil-fill baffle dimensions. The next candidate can model a coherent screw seat with explicitly inferred geometry; it must not be presented as a verified factory cover reconstruction.
 
 ## Evidence ledger
 
@@ -27,7 +27,7 @@ The JSON ledger stores local photo/capture hashes and retrieval limitations. Own
 - **Visible shoulder:** owner images support a local cap seat at the front of the cover, not a dimensional annular-land specification. The installed cap hides its seat edge. “Tall filler neck” is an EngineQuest replacement description, not a measured owner-truck height.
 - **Depth:** cap images establish a protruding male stem; they do not establish how much enters the cover or the axial position of the mating female thread. No millimetre neck-depth estimate is promoted from unscaled photographs.
 - **Baffle:** no applicable cap-off underside view was obtained. Its existence, attachment, offset and drain openings remain unknown. An invented closed plate under the fill opening would risk blocking oil flow or rocker travel. Do not borrow a PCV baffle or a V8 neck from an unrelated engine.
-- **Codes:** EC743/F3AZ6766B is the applicable cap identity. EQ-VC300N, C5AZ6582K and F1TZ6582C are replacement-cover search leads, not a verified engineering stamping on the owner's cover. E7TZ-6582 variants surfaced in broad catalog searches, but exact target attribution was not established; do not use those codes as accepted identification.
+- **Codes:** The exact-model archived parts entry identifies **F3TZ6582H / F3TZ-6582-H** as the cover service part; actual truck stamping remains unverified. EC743/F3AZ6766B is the applicable cap identity. EQ-VC300N, C5AZ6582K and F1TZ6582C are replacement-cover search leads, not a verified engineering stamping on the owner's cover. E7TZ-6582 variants surfaced in broad catalog searches, but exact target attribution was not established; do not use those codes as accepted identification.
 
 ## Mechanically coherent illustrative candidate
 
@@ -60,3 +60,18 @@ Research source/application review completed; manufacturing topology and dimensi
 An unrelated image-search hit resolved to a Renault valve cover and was rejected. Ford V8/Powerstroke neck images were not transferred to the 4.9L cover. A matching-year owner teardown page could not be decoded by the web reader; a replacement image URL could not be fetched, and computer browser surfaces were unavailable. These are evidence-access limits, not proof of any neck design. Search captions were not treated as visual observations.
 
 Next action: choose whether the next sub-issue is an explicitly illustrative matched pair or production-topology capture. For the former, declare its parameter variant and limits before CAD work; for the latter, acquire the identified cap-off/underside specimen views and measurements above. No process remains running.
+
+## Exact-model offline archive follow-up
+
+The ignored archive at `manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L` was discovered with `rg --files --no-ignore` and reviewed directly. Originals remain local; only identifiers, hashes and paraphrased findings are recorded. Another reviewer needs authorized access to this archive to reproduce the image inspection; the delivery does not redistribute the manual.
+
+| Reviewed page/image | Finding | Interface consequence |
+|---|---|---|
+| Parts and Labor → Engine → Valve Cover → Parts Information | Manufacturer FOR; OEM part **F3TZ6582H** | Prefer this exact-model application lead over broad replacement interchanges when locating a specimen |
+| Parts and Labor → Engine → Images; `images/DM05Q313/ford10/1860036218.png` | Actual exploded 4.9L engine image inspected: cover callout 3 and gasket 4. Top openings belong to the depicted cover; no separate neck/insert/baffle callout | Supports keeping the neck within the cover service assembly. Does not distinguish integral forming from permanent joining, nor prove absence of hidden subcomponents |
+| PCV → Description and Operation; `620350918.png` | Actual schematic inspected: cap at one end of rocker cover, closure hose nearby, PCV connection at the other end | Keep fill cap and ventilation connections distinct; this schematic gives no thread or joining section |
+| Rocker Arm Assembly → Service and Repair, Fig. 24; `289449564.png` | Actual rocker/fulcrum/guide/pedestal view inspected | No filler baffle evidence. Rocker oil-deflector terminology is not a specification for a cover baffle |
+| Engine Lubrication → Diagrams; `354634388.png` | Actual lubrication image inspected | Upper-train oil-feed illustration does not specify the fill-neck underside |
+| PCV → Oil Separator → Service and Repair | Text describes PCV-to-upper-intake hose connections | Do not reinterpret this hose/ventilation entry as a separately identified filler-neck baffle |
+
+Full repository-relative HTML/image paths and SHA-256 values are in the JSON ledger. No separately listed neck/insert was found in these relevant pages; this is a scoped search result, not proof that such a manufacturing subpart never existed. The drawing is a service assembly overview, not a dimensioned manufacturing drawing. **Formed female neck versus attached collar therefore remains unknown.** A continuous female-seat region within the cover service assembly remains a reasonable illustrative modeling choice, explicitly labeled as such. The measurement plan and required clearance/retention checks above still apply.

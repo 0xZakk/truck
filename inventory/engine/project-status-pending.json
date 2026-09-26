@@ -1,0 +1,32 @@
+{
+  "project": {
+    "owner": "0xZakk",
+    "number": 2
+  },
+  "repository": "0xZakk/truck",
+  "applied": false,
+  "reason_not_applied": "CLI token lacks Projects scope; device authorization expired. Entries are desired changes, not observed board statuses.",
+  "updates": [
+    {
+      "issue": 1,
+      "desired_status": "In progress",
+      "reason": "Engine reconstruction active; no completion claim."
+    },
+    {
+      "issue": 15,
+      "desired_status": "In progress",
+      "reason": "Matched illustrative oil-fill neck candidate and cap retention checks active."
+    },
+    {
+      "issue": 43,
+      "desired_status": "In progress",
+      "reason": "Throttle lever and ball stud candidate active; return hardware unresolved."
+    },
+    {
+      "issue": 78,
+      "desired_status": "In progress",
+      "reason": "Guide tube attachment and route feasibility active."
+    }
+  ],
+  "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes."
+}
