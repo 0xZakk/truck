@@ -1,5 +1,7 @@
 # Engine parts and work breakdown
 
+[Engine ticket](https://github.com/0xZakk/truck/issues/1) · [Engine parts project view](https://github.com/users/0xZakk/projects/2/views/6)
+
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
 Manifest SHA-256: `821f7d3bb47d49a00ffb2975fa5faffcd306fe90bea48ce7c0d6308cd636653f`. **698 definitions / 1304 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.

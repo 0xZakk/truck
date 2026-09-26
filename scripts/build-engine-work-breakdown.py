@@ -36,7 +36,7 @@ assert count == len(manifest['definitions']) and quantity == len(manifest['occur
 assert set(occurrences) <= {d['id'] for d in manifest['definitions']}
 DOC = ROOT / 'docs/engine-parts'
 DOC.mkdir(exist_ok=True)
-index = ['# Engine parts and work breakdown', '',
+index = ['# Engine parts and work breakdown', '', '[Engine ticket](https://github.com/0xZakk/truck/issues/1) · [Engine parts project view](https://github.com/users/0xZakk/projects/2/views/6)', '',
          'Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.', '',
          f'Manifest SHA-256: `{sha}`. **{count} definitions / {quantity} modeled occurrences / {len(groups)} work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.', '',
          'Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.', '',
