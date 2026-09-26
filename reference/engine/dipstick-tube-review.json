@@ -1,0 +1,140 @@
+{
+  "component": "engine-oil-dipstick-tube",
+  "issue": 78,
+  "parent_issue": 1,
+  "reviewed": "2026-09-26",
+  "readiness": "research; no installed geometry authorized by this evidence",
+  "target": "1994 Ford F-150 2WD 4.9L EFI, M5OD-R2; exact engine build and matched tube/indicator identity unverified",
+  "baseline_commit_at_delivery": "24a023b5313bda64a50f0a36356220f05a731eb8",
+  "sources": [
+    {
+      "id": "ford-1995-49-dipstick-retention",
+      "url": "https://www.scribd.com/document/720481789/1995-FORD-F-150-F-250-F-350-BRONCO-F-SUPER-DUTY-POWERTRAIN-DRIVETRAIN",
+      "title": "Ford 1995 F-Series/Bronco Powertrain Drivetrain, Engine 4.9L Six-Cylinder",
+      "locator": "03-01A, Oil Level Indicator Tube, printed 03-01A-37 / figure A23872-A; engine-out repetition near 03-01A-68 to 69",
+      "kind": "primary Ford service-manual content in third-party reprint, adjacent model year",
+      "access": "Indexed text inspected, including procedure and figure callout table. Full open exceeded tool content limit; actual figure pixels NOT inspected. Search exact title plus Oil Level Indicator Tube to reproduce.",
+      "facts": [
+        "Lower retaining nut is unscrewed to release tube.",
+        "Upper tube bracket fastens at valve pushrod-cover retainer.",
+        "Callouts identify dipstick 6750, tube 6754, retainer 6C517, pushrod cover 6519 and stamped nut 370786-S8.",
+        "Lower nut and tube bracket are listed as parts of 6754, not independently identified service numbers."
+      ],
+      "limits": [
+        "1995 manual is not exact 1994 applicability proof.",
+        "No tube centerline dimensions, bore, seat section, thread pitch or independently inspected illustration supplied.",
+        "Do not transfer torque or OCR hardware-size text into this project's 1994 repair guidance."
+      ],
+      "capture_sha256": null
+    },
+    {
+      "id": "reman-1994-f150-block-entry-comparison",
+      "url": "https://carpartplanet.com/engines/ford/f-150/1994/4.9l-vin-y-8th-digit-air-in-head-without-e4od-transmission",
+      "kind": "supplier description of its replacement engine; replacement comparison",
+      "facts": [
+        "1994 F-150 4.9L VIN Y replacement listing describes rear-side dipstick entry through block."
+      ],
+      "limits": [
+        "AIR-in-head application differs from some 1994 engines; broad reman interchange is not installed casting identification.",
+        "No measured station or side-to-side coordinate."
+      ],
+      "capture_sha256": null
+    },
+    {
+      "id": "reman-1996-manifold-air-comparison",
+      "url": "https://reman-engine.com/remanufactured-engines/ford/f-150/1996/4.9l-vin-y-8th-digit-gasoline-air-in-manifold-without-e4od-transmission",
+      "kind": "supplier replacement-engine description",
+      "facts": [
+        "Later manifold-AIR 4.9L replacement also specifies rear-side block entry."
+      ],
+      "limits": [
+        "Adjacent-year comparison only, not new dimensional evidence."
+      ],
+      "capture_sha256": null
+    },
+    {
+      "id": "ford-e7tz6754a-catalog-lead",
+      "url": "https://www.fordpartsgiant.com/parts/ford-tube-oil-level-indicator_e7tz-6754-a.html",
+      "kind": "catalog lead; NOT accepted 1994 identity",
+      "facts": [
+        "Oil-level tube base number 6754; E7TZ-6754-A exists as service-number lead."
+      ],
+      "limits": [
+        "Current fitment table lists broad 1987-1989 combinations and omits 4.9L; it does not establish 1994 fitment.",
+        "An older forum lead naming this part is not treated as authority."
+      ],
+      "capture_sha256": null
+    },
+    {
+      "id": "ford-1994-tube-catalog-exclusions",
+      "url": "https://www.fordpartsgiant.com/oem-1994-ford-f_150-dipstick_tube.html",
+      "kind": "catalog exclusion check",
+      "facts": [
+        "Listed F2TZ-6754-A is associated with 5.0L; F2TZ-6754-B and F3TZ-6754-A with 5.8L variants.",
+        "Base number 7A228 entries are transmission filler tubes, not this engine-oil tube."
+      ],
+      "limits": [
+        "Absence of 4.9 tube on this page does not prove no tube existed.",
+        "Do not adopt package dimensions as manufactured tube dimensions."
+      ],
+      "capture_sha256": null
+    },
+    {
+      "id": "used-tube-specimen-lead-307070141153",
+      "url": "https://www.ebay.com/itm/307070141153",
+      "discovered_from": "https://www.ebay.com/b/Ford-Engines-Engine-Parts-for-1987-Ford-F-250/33612/bn_7073331583",
+      "kind": "unreviewed specimen lead",
+      "facts": [
+        "Listing title describes 1987-95 F150/F250/F350 4.9L 300 dipstick and tube."
+      ],
+      "limits": [
+        "Direct item page inaccessible; no specimen photo or stamping inspected. Do not use for shape or fit.",
+        "Aggregated eBay product page 10000661764 mixes dipsticks and throttle cables and is not reliable identity evidence."
+      ],
+      "capture_sha256": null
+    }
+  ],
+  "interface_decision": {
+    "lower_entry": "Use rear-side block-entry architecture as working comparison-supported hypothesis; do not cut oil pan or invent a block bore from rejected blade pose.",
+    "side": "Pushrod-cover/cam/distributor side from manual bracket attachment; existing CAD convention maps that face to +Y. Truck RH/LH label and precise station await direct illustration or owner inspection.",
+    "upper_anchor": "A pushrod-cover retainer, not an arbitrary valve-cover screw or intake bolt. Exact one of six current cover stations remains unverified.",
+    "lower_retention": "Threaded retaining nut belongs to tube assembly in adjacent-year Ford manual. Seat shape, thread and seal method remain unknown.",
+    "secondary_seal": "No separate O-ring/ferrule identified by accepted evidence; absence from inspected table is not proof of absence.",
+    "matched_identity": "6754 tube and 6750 indicator must be checked as a matched pair; existing E9TE-6750-DA specimen does not determine tube number or calibrated insertion length.",
+    "cad_coordinates_mm": null
+  },
+  "owner_photo_review": {
+    "files": [
+      "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "reference/photos/2026-09-23/engine-bay-driver-side.jpg"
+    ],
+    "result": "Both original bay views inspected again. No securely traced handle-to-tube-to-block route or identifiable lower seat; no measured coordinates extracted.",
+    "distribution": "Owner photos stay local; no copied image or crop included."
+  },
+  "required_before_modeling": [
+    "Obtain exact 1994 service illustration or compare figure A23872-A to owner's lower entry and upper bracket.",
+    "Record lower seat center/axis relative to pan rail and rear block face; confirm threaded versus press-fit details visually.",
+    "Identify upper retaining station and measure bracket plane/hole; reconcile modeled pushrod-cover bolts with retainer6C517 architecture.",
+    "Measure tube OD/ID, seating engagement, mouth datum and centerline bends from matched specimen; determine join construction and lower nut captivity.",
+    "Measure seated indicator stop-to-tip and original marked band; retain current rejected trial pose as rejected."
+  ],
+  "not_done": [
+    "Exact 1994 tube service/engineering number",
+    "Seat geometry and seal",
+    "Tube bends/length/diameters",
+    "Upper bracket exact station",
+    "Thread specification",
+    "Oil-level calibration",
+    "CAD/interface/motion/browser checks"
+  ],
+  "geometry_changed": false,
+  "external_posts": false,
+  "local_input_sha256": {
+    "docs/pilot/dipstick.md": "b2d03b2e06007e7353f7f59952ebda303b7f4bc2b410a2f98713533a79d95073",
+    "docs/engine-parts/dipstick-tube.md": "d7195d1c4a76cb69ae9f812dbc73c9ee527ddd3beb55f1b801cf3609320c40fa",
+    "reference/engine/engine-side-layout-reviewed.json": "59bd898cc4eadde766de7591f0a66cd2317db29bc484d2821613980e5e251b5c",
+    "reference/engine/ford-engine-exploded.jpg": "dfc9f5f35b23161c43c4a670aa1adb2dc22c487c30e4486f486e1b9d5518e4c7",
+    "reference/photos/2026-09-23/engine-bay-passenger-side.jpg": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+    "reference/photos/2026-09-23/engine-bay-driver-side.jpg": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474"
+  }
+}

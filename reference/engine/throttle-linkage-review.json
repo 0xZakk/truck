@@ -1,0 +1,146 @@
+{
+  "status": "research-only; next modeling round not accepted",
+  "date": "2026-09-26",
+  "issue": 43,
+  "parent_issue": 1,
+  "baseline_commit": "24a023b5313bda64a50f0a36356220f05a731eb8",
+  "input_hashes": {
+    "cad/engine/throttle.py": "ecf3e3a0511dad6672d5bbc249e3c7d4e334f4ff174563cf44369f6dad04f60c",
+    "docs/engine-parts/throttle.md": "2829d12d9c7547f983d170a329a39ccb719820460d3ec572f7429392a79b030b",
+    "inventory/engine/full-assembly.json": "f725260d8f1497a1b6f2aed9d41d01155bf2a82e7391d24ce866f352bb50cd5b"
+  },
+  "sources": [
+    {
+      "id": "throttle-1994-factory-service",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/",
+      "class": "verified applicable procedure",
+      "observed": "Factory removal disconnects linkage shield, throttle and speed-control cables; cable is released at a ball stud. Four nuts retain body; bracket is positioned on body before installing on intake.",
+      "limits": "Procedure does not specify lever construction, spring turns/anchors or butterfly fastener count."
+    },
+    {
+      "id": "throttle-1994-factory-diagram",
+      "url": "https://charm.li/images/DM05Q313/ford10/690090240/",
+      "class": "unavailable evidence",
+      "observed": null,
+      "access_result": "Web returned no inspectable image; direct retrieval timed out. No diagram topology claims."
+    },
+    {
+      "id": "throttle-manual-specimen-lead",
+      "url": "https://www.ebay.com/itm/257472725875",
+      "class": "unverified seller application lead",
+      "observed": "Indexed title identifies 92\u201396 F150/E1504.9 MT, F2TE-EA TPS assembly;8 photographs listed.",
+      "limits": "Actual images unavailable in this session (listing challenge/cache miss). Not evidence for exact topology or engineering number equivalence."
+    },
+    {
+      "id": "throttle-fa-specimen",
+      "url": "https://www.ebay.com/itm/127349857337",
+      "image_url": "https://i.ebayimg.com/images/g/-wwAAeSw4UtouIZQ/s-l1200.jpg",
+      "image_sha256": "b4d21c66082ff12a724f5d262aa9b40a1dce07d51895d1a91cc6e2779b45c0db",
+      "class": "visually inspected comparison specimen; application unverified",
+      "observed": [
+        "Two inlet necks with plates visible below mid-bore.",
+        "Formed metal lever at photo left carries an outward ball stud.",
+        "Coil spring bank is coaxial with shaft at that lever side.",
+        "A bent wire leg runs alongside the coil and bends around an adjacent lever/casting region; hidden endpoints prevent assigning exact stationary and moving retention.",
+        "A stop screw on a casting pad is adjacent to lever.",
+        "Black electrical sensor/connector is on opposite shaft end at photo right."
+      ],
+      "limits": "Seller title says1993\u201396 4.9 and F2TE-FA; manual applicability not established. No reliable coil count, number of nested springs, anchor geometry, physical dimensions or plate screw count."
+    },
+    {
+      "id": "throttle-ma-rear-comparison",
+      "url": "https://www.ebay.com/itm/256430005933",
+      "image_url": "https://i.ebayimg.com/images/g/FdUAAOSwtF1l9dRD/s-l960.jpg",
+      "image_sha256": "cd412f5d33ba91d83a000eab310ed88f9266b63cd568fd62a677c0259158c759",
+      "class": "visually inspected comparison specimen only",
+      "observed": [
+        "Rear flange view: twin plates, cable lever/coil at photo left and sensor at right.",
+        "Two screw-head-like features are visible across the right-hand plate; one clearly visible near inner edge of left plate. Remaining left plate area is too dark for a reliable total."
+      ],
+      "limits": "Seller broadly groups1987\u201393 and4.9/5.0/5.8 with F2TE-MA; not an exact1994 manual specimen. Do not report3 as production count or silently promote4 total."
+    },
+    {
+      "id": "throttle-service-catalog-comparison",
+      "url": "https://www.oemfordpartsoutlet.com/v-1996-ford-e-150-econoline--xl--4-9l-l6-gas/fuel-system--throttle-body",
+      "class": "catalog comparison",
+      "observed": "Indexed Ford dealer catalog distinguishes F6PZ-9E926-GA manual/C6 from F6PZ-9E926-DA E4OD.",
+      "limits": "1996 E150 page and indexed text only; supports caution over variants, not exact1994 engineering-number mapping."
+    }
+  ],
+  "proposed_components": [
+    {
+      "id": "throttle-lever",
+      "quantity": 1,
+      "readiness": "candidate proposal",
+      "interface": "Rigidly keyed to positive-Y end of throttle shaft, child of throttle-moving. Lever outline/ball-stud offset to be parameterized as inferred until exact specimen verified."
+    },
+    {
+      "id": "throttle-cable-ball-stud",
+      "quantity": 1,
+      "readiness": "procedure-supported existence",
+      "interface": "Separate physical stud on lever unless evidence establishes integral construction; articulation point for accelerator cable."
+    },
+    {
+      "id": "throttle-return-spring",
+      "quantity": null,
+      "readiness": "source gap",
+      "interface": "Coaxial torsion spring topology supported only by comparison. Must attach one end to stationary casting datum and other to rotating lever; do not rotate whole spring rigidly."
+    },
+    {
+      "id": "throttle-stop-contact",
+      "quantity": null,
+      "readiness": "research/candidate",
+      "interface": "Separate stationary screw/stop and moving lever contact; actual closed/WOT angles and calibration unresolved."
+    },
+    {
+      "id": "throttle-plate-screw",
+      "quantity": null,
+      "readiness": "count and dimensions unverified",
+      "interface": "Screws pass through plate into shaft. Proposed four-instance educational candidate requires explicit inferred count; no production claim."
+    },
+    {
+      "id": "throttle-linkage-shield",
+      "quantity": 1,
+      "readiness": "factory procedure supports existence",
+      "interface": "Stationary guard; separate from moving lever. Exact shape/fastener points unresolved."
+    }
+  ],
+  "datums": {
+    "units": "mm, inherited model estimates",
+    "throttle_axis_world": "X394,Z490; shaft runs along Y",
+    "moving_parent_origin": [
+      394,
+      25,
+      490
+    ],
+    "shaft_local_end_y": [
+      -62,
+      62
+    ],
+    "world_shaft_ends_y": [
+      -37,
+      87
+    ],
+    "sensor_side": "negative Y, existing tps-housing; comparison photo opposite cable side",
+    "cable_side": "positive Y proposed; exact handedness remains inherited estimate",
+    "plate_centers_world_y": [
+      -2,
+      52
+    ],
+    "bracket_cable_holes": "current approximate centers X465,Y110,Z467 and488; do not force lever reach from these assumed points",
+    "plate_screw_direction_closed": "approximately X through1 mm plate and shaft; count, spacing, bore diameters and seat depth unknown"
+  },
+  "required_next_evidence": [
+    "Exact F2TE-EA or verified1994 M5OD specimen front/rear/cable-side/sensor-side views with scale.",
+    "Count every plate screw, identify head/staking and actual shaft attachment.",
+    "Show both spring tang anchor points, coil count, free/preload angles, single/nested spring configuration.",
+    "Determine whether speed-control linkage exists on owner truck and distinguish from C6/E4OD controls."
+  ],
+  "next_checks": [
+    "Nominal shaft-to-lever torque connection, actual screw-through-plate/shaft engagement and collision-negative control.",
+    "Cable path tangent/ball-joint travel against fixed bracket across explicitly labeled angle range.",
+    "Spring stationary/moving endpoints remain attached throughout travel; wrong anchor or rigid-spring negative control.",
+    "Stop-contact at both endpoints, no plate/casting penetration, no cable guard interference."
+  ],
+  "asset_policy": "Public specimen images inspected transiently; not redistributed. Re-fetch image URLs and compare hashes. No dependency on temporary paths; observations preserved here. No owner/purchased photographs used."
+}
