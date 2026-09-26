@@ -1,8 +1,14 @@
 # Current engine integration — 2026-09-26
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Branch: `engine/intake-exterior-iac-detail`. Saved main checkpoint: PR #91 (`3e53f11`), both CI runs passed. **Engine unfinished.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Branch: `engine/cable-and-distributor-contact`. Saved main checkpoint: PR #92 (`74ca528`), push and PR CI runs passed. **Engine unfinished.**
 
-## Current local integration
+## Working733-definition integration
+
+Branch `engine/cable-and-distributor-contact` now has **733 definitions /1,341 occurrences**, manifest `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Curved rotor center leaf and seven-part cable/socket/spring mechanism are installed; canonical scope checks and browser motion/explosion/reset review pass. Direct individual-part entry was repaired by synchronizing its controls with the engine page. Navigation reaches1,341 parts/1,540 links;191 source records pass capture-integrity checks.
+
+Combined STEP export passes1,341 unique occurrence names and bounds. Whole-static audit passes5,249 exact overlapping-bound comparisons with zero overlaps above0.1mm³; artifact, scale and hierarchy checks pass. This is one static pose, not continuous whole-engine motion or production fit. The private restoration archive is uploading as a draft; see `docs/cad-cable-distributor-checkpoint.json`. CLI checklists #43, #16 and #71 have been refreshed; board columns remain authorization-blocked.
+
+## Saved725-definition integration (PR #92)
 
 **725 definitions / 1,333 occurrences.** Manifest SHA-256: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`.
 
@@ -21,9 +27,9 @@ Reports: `inventory/engine/intake-detail-replay-validation.json`, `iac-closure-i
 
 ## Parallel work and remaining gaps
 
-1. Throttle cable/socket/compression spring candidate: proportions compared with Pioneer replacement photographs; bracket exit revision preserves reviewed anchors. Full motion sweep and final-current neighbor addendum remain in progress. Not installed.
-2. Distributor center-contact study: Ford rotor photographs support a raised leaf and molded collar, replacing the old flat-contact approximation. Cap center construction still being reconciled. Not installed.
-3. PCV connections: exact-year instructions distinguish fresh-air breather from valve-to-manifold vacuum return. Port/routing evidence is being reconciled before geometry. Not installed.
+1. Throttle cable/socket/compression spring candidate: proportions compared with Pioneer replacement photographs; bracket exit revision preserves reviewed anchors. Installed with47-pose proof/current-neighbor binding and91-pose viewer mesh checks. Browser acceptance passes; throttle stop candidate is next.
+2. Distributor center-contact study: curved leaf and molded collar installed locally; current inventory726 definitions /1,334 occurrences. Exact shape/interface checks pass and browser verifies assembled/exploded distributor plus direct leaf page. Hidden cap construction remains unresolved. Not yet committed.
+3. PCV connections: evidence gap documented; no manifold receiver inferred. Worker moved to an isolated EVR filter/vent candidate. Intake runner exterior refinement is also isolated pending Boolean robustness checks.
 
 Upper-intake support research establishes a below-throttle mounting pad and strap but not the lower anchor. The current casting/cover datums may need coordination; no arbitrary brace is installed. See `reference/engine/intake-support-review.json`.
 
@@ -31,7 +37,7 @@ The broader remaining work is in `inventory/engine/completion-plan.json`. All ac
 
 ## GitHub and restoration
 
-PR #91 and its private [CAD checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-intake-attachments) preserve722 definitions /1,330 occurrences. GitHub asset checksum matches the recorded local archive. The725-definition archive is prepared for publication; see `docs/CAD-ARTIFACTS.md` and its checkpoint record.
+PR #92 and its private [CAD checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-iac-detail) preserve725 definitions /1,333 occurrences. The archive includes3,642 files and its224,076,800-byte upload is recorded in the checkpoint manifest; see `docs/CAD-ARTIFACTS.md` and its checkpoint record.
 
 CLI issue checklists #36, #43 and #44 reflect the current inventory; #1 records the saved milestone. Project column writes still lack token authorization. `inventory/engine/project-status-pending.json` contains desired transitions, **not observed board status**. No engine component is newly marked Done.
 

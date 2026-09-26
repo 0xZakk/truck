@@ -1,0 +1,521 @@
+{
+  "relevant_snapshot": {
+    "definitions": {
+      "pcv-outlet-head": {
+        "id": "pcv-outlet-head",
+        "name": "PCV angled outlet head",
+        "function": "Connects the valve passage to two perpendicular hose outlets, following the V219 replacement exterior. Which outlet is used or closed on this truck remains unverified.",
+        "system": "crankcase-ventilation",
+        "color": "#303d3c",
+        "glb": "/models/engine/pcv-outlet-head.glb",
+        "step": "/cad/engine/generated/pcv-outlet-head.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-pcv-valve-operation",
+          "truck-pcv-service",
+          "truck-pcv-parts",
+          "standard-v219-pcv"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "The factory diagram is a typical mechanism, and the exterior follows a Standard V219 replacement photograph. Installed identity, external dimensions and internal calibration remain unverified.",
+          "All model dimensions and clocking are provisional. The catalog inlet-diameter field is not assigned to a geometric feature without a dimensioned drawing. Hose routing, unused-outlet closure and valve-cover baffle remain unresolved. No airflow, spring-rate or backfire simulation is claimed."
+        ],
+        "volume_mm3": 2557.9841515290127,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 3450,
+        "model_bounds_mm": [
+          12.0000002,
+          25.000000200000002,
+          28.300000100000002
+        ]
+      },
+      "pcv-body": {
+        "id": "pcv-body",
+        "name": "PCV metal valve body",
+        "function": "Houses the metering mechanism and inserts into the cover grommet. The external shoulder follows the replacement photo; rolled seams and production dimensions are unresolved.",
+        "system": "crankcase-ventilation",
+        "color": "#a2afb5",
+        "glb": "/models/engine/pcv-body.glb",
+        "step": "/cad/engine/generated/pcv-body.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-pcv-valve-operation",
+          "truck-pcv-service",
+          "truck-pcv-parts",
+          "standard-v219-pcv"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "The factory diagram is a typical mechanism, and the exterior follows a Standard V219 replacement photograph. Installed identity, external dimensions and internal calibration remain unverified.",
+          "All model dimensions and clocking are provisional. The catalog inlet-diameter field is not assigned to a geometric feature without a dimensioned drawing. Hose routing, unused-outlet closure and valve-cover baffle remain unresolved. No airflow, spring-rate or backfire simulation is claimed."
+        ],
+        "volume_mm3": 2941.850192674554,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1160,
+        "model_bounds_mm": [
+          24.0,
+          24.0,
+          25.0
+        ]
+      },
+      "valve-cover": {
+        "id": "valve-cover",
+        "name": "Valve cover",
+        "function": "Contains rocker oil with one relocated fill opening and a continuous illustrative threaded neck. The previous provisional opening is regenerated closed.",
+        "system": "closures",
+        "color": "#48565e",
+        "glb": "/models/engine/valve-cover.glb",
+        "step": "/cad/engine/generated/valve-cover.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "engine-exploded-drawing",
+          "ford-engine-side-layout",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Profile lofts are visual approximations. Upper profiles lean22mm toward the cam side to clear the corrected rocker placement; this is a fit-study assumption. The base envelope and fill/ventilation locations require measurements of the installed truck cover.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 768306.0883928679,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 3252,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          734.0000002,
+          237.0000002,
+          76.00000029293695
+        ]
+      },
+      "efi-upper-intake": {
+        "id": "efi-upper-intake",
+        "name": "Upper EFI intake manifold",
+        "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
+        "system": "induction",
+        "color": "#a7afb3",
+        "glb": "/models/engine/efi-upper-intake.glb",
+        "step": "/cad/engine/generated/efi-upper-intake.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-212bf152ff88",
+          "fsm-9e1b0b719d0e",
+          "efi-intake-drawing",
+          "system-750bd1047639",
+          "system-73d3dd2d32e7",
+          "upper-intake-topology-study",
+          "upper-intake-exterior-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.",
+          "Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.",
+          "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
+          "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
+          "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete.",
+          "Visible border ribs, Ford oval/word and ELECTRONIC/FUEL INJECTION wording follow owner/specimen photos; all new dimensions and font outlines are inferred.",
+          "Arial Bold and Brush Script are explicit system-font approximations, not traced factory lettering. Casting texture, lower mounting bosses and exact wall distribution remain incomplete.",
+          "Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions."
+        ],
+        "volume_mm3": 2380612.7634378937,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 46546,
+        "model_bounds_mm": [
+          734.0000002,
+          353.5000001,
+          175.10000000000002
+        ]
+      },
+      "regulator-vacuum-fitting": {
+        "id": "regulator-vacuum-fitting",
+        "name": "Regulator manifold vacuum fitting \u00b7 provisional",
+        "function": "Provides an open connection through the modeled plenum wall. A dedicated fitting is a construction assumption; the production vacuum harness and port identity remain unresolved.",
+        "system": "induction",
+        "color": "#a49772",
+        "glb": "/models/engine/regulator-vacuum-fitting.glb",
+        "step": "/cad/engine/generated/regulator-vacuum-fitting.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "system-750bd1047639",
+          "system-73d3dd2d32e7"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
+          "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
+          "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated."
+        ],
+        "volume_mm3": 1264.4910430698924,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 928,
+        "model_bounds_mm": [
+          12.0,
+          30.0,
+          12.0
+        ]
+      }
+    },
+    "occurrences": {
+      "pcv-outlet-head": {
+        "id": "pcv-outlet-head",
+        "definition": "pcv-outlet-head",
+        "parent": "pcv-valve-assembly",
+        "name": "PCV angled outlet head",
+        "function": "Connects the valve passage to two perpendicular hose outlets, following the V219 replacement exterior. Which outlet is used or closed on this truck remains unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -20,
+          35
+        ]
+      },
+      "pcv-body": {
+        "id": "pcv-body",
+        "definition": "pcv-body",
+        "parent": "pcv-valve-assembly",
+        "name": "PCV metal valve body",
+        "function": "Houses the metering mechanism and inserts into the cover grommet. The external shoulder follows the replacement photo; rolled seams and production dimensions are unresolved.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -30
+        ]
+      },
+      "valve-cover": {
+        "id": "valve-cover",
+        "definition": "valve-cover",
+        "parent": "closures",
+        "name": "Valve cover",
+        "function": "Contains rocker oil with one relocated fill opening and a continuous illustrative threaded neck. The previous provisional opening is regenerated closed.",
+        "position_cad_mm": [
+          0,
+          -12,
+          375.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          460
+        ]
+      },
+      "efi-upper-intake": {
+        "id": "efi-upper-intake",
+        "definition": "efi-upper-intake",
+        "parent": "intake-castings",
+        "name": "Upper EFI intake manifold",
+        "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -150,
+          310
+        ]
+      },
+      "regulator-vacuum-fitting": {
+        "id": "regulator-vacuum-fitting",
+        "definition": "regulator-vacuum-fitting",
+        "parent": "regulator-vacuum-line",
+        "name": "Regulator manifold vacuum fitting \u00b7 provisional",
+        "function": "Provides an open connection through the modeled plenum wall. A dedicated fitting is a construction assumption; the production vacuum harness and port identity remain unresolved.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          60
+        ]
+      }
+    },
+    "assemblies": {
+      "closures": {
+        "id": "closures",
+        "name": "Timing drive, covers, pan & seals",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "crankcase-ventilation": {
+        "id": "crankcase-ventilation",
+        "name": "Crankcase ventilation",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "induction": {
+        "id": "induction",
+        "name": "EFI intake",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fuel-system": {
+        "id": "fuel-system",
+        "name": "Fuel rail & injection",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "regulator-vacuum-line": {
+        "id": "regulator-vacuum-line",
+        "name": "Fuel regulator vacuum reference",
+        "parent": "fuel-system",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      "intake-castings": {
+        "id": "intake-castings",
+        "name": "Manifolds & gaskets",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "pcv-valve-assembly": {
+        "id": "pcv-valve-assembly",
+        "name": "PCV valve & grommet",
+        "parent": "crankcase-ventilation",
+        "motion": null,
+        "position_cad_mm": [
+          -240,
+          -12,
+          416
+        ]
+      },
+      "engine": {
+        "id": "engine",
+        "name": "Ford 4.9L engine",
+        "parent": null,
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "status": "AUDIT: no source-identified receiver; arbitrary trial rejected",
+  "baseline_commit": "74ca5288bb543871b1cc550e191e3f54ed62a8f1",
+  "manifest_sha256": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+  "input_sha256": {
+    "scripts/check-pcv-connection-interfaces.py": "3f098dd01e4786d1fa5f26c2dad27ed3b8055e84e8dec6316d27b64fc337264b",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "reference/engine/pcv-connection-review.json": "5c12e026aa7c020ce1fad4202fc82a96876311ff1c7d565c869677d483bf2024",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Description%20and%20Operation/index.html": "26c6614c9a2052314be8f58ab20770f9b9a9e1aeddae8ef250a3f630588f16e7",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/PCV%20Valve%20Hose/Service%20and%20Repair/index.html": "598eab62f18b53ce5262a336cbb856221e95017e05fec94897975627f5c274e0",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Positive%20Crankcase%20Ventilation%20Valve/Description%20and%20Operation/index.html": "f8276bab4832fcec6772eda5c4b88459293efcb3629e96a45494cb5f71d2d39b",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Positive%20Crankcase%20Ventilation%20Valve/Service%20and%20Repair/Removal%20and%20Installation/index.html": "307a3e9a9c1fcb8c7ccc55d05153d37617fac87ce5c2a3309c2b039088381e70",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation%20Valve/Parts%20Information/index.html": "e4c44aace9f9c31e50ed97390f16ca2eee4d1f7f3d6491b6ce1f63061b300f41",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Oil%20Separator/Service%20and%20Repair/index.html": "861a8530127a060279163e78d876594f9b731a0bb4e6af38d56ff0dd771622d0",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/Testing%20and%20Inspection/PCV%203%20-%20Evaporative%20Emission%20System%20Check/index.html": "8247990d2696108e761d7d686a03138c9ed9cdf060242547defc9fc9ac1c8b60",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/620350918.png": "273c7674af69916f8c2bd468bcabfc79616949540f1cfd92850148319ebc1160",
+    "reference/photos/2026-09-23/engine-bay-driver-side.jpg": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+    "reference/photos/2026-09-23/engine-bay-passenger-side.jpg": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+    "cad/engine/generated/pcv-connection-reference/ford-pcv-hoses.jpg": "f18d864ee39fa378479b31a09b2f9ee9ec4bb89a536f46d8ec4d02d1c2853daf",
+    "cad/engine/generated/pcv-connection-reference/specimen-vacuum-tree.webp": "ecfb3fbc0ce9e09ba498584ed53e722ec58b2ec72b01d1aa2313913b278626ef",
+    "reference/photos/2026-09-23/front-hood-open.jpg": "ecf6acc9a1b01555c2c593d398f2d73ccc029d3f4b57aefb7b5a9c82b6dbaf43",
+    "cad/engine/generated/pcv-connection-reference/ford-1987-intake-installation.jpg": "78ff9b9e59f5e9544695a79ff91b6115548ec618b9603c86ca0660fa4dc0906b",
+    "cad/engine/generated/pcv-connection-reference/ford-crankcase-parts-1987.jpg": "1be913efc33b88e701c1a1b4890a2895135c1105dc29c694727a39ea192eb6f4",
+    "reference/engine/standard-v219-pcv.jpg": "f720ef6f290f7d5d0138957e32c38e8064fa51fdcfdb4018bb8e9cad9ce35cbc",
+    "cad/engine/generated/pcv-outlet-head.step": "8b31fe662077da98250a4e72822e3a437ed692810905d4305143d04569395c2a",
+    "cad/engine/generated/pcv-body.step": "63e058cfc34916c2981220709579ab4ef75d3407a072ba5b3dc986a974951794",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "cad/engine/generated/regulator-vacuum-fitting.step": "18f3d0ad57bbb57a749a83546f1a17273090dbda0cea74468a1140a6e036c094"
+  },
+  "part_bounds_world_mm": {
+    "pcv-outlet-head": {
+      "min": [
+        -246.0000001,
+        -31.0000001,
+        415.9999999
+      ],
+      "max": [
+        -233.9999999,
+        -5.9999999,
+        444.3
+      ]
+    },
+    "pcv-body": {
+      "min": [
+        -252.0,
+        -24.0,
+        391.0
+      ],
+      "max": [
+        -228.0,
+        0.0,
+        416.0
+      ]
+    },
+    "valve-cover": {
+      "min": [
+        -367.0000001,
+        -128.0000001,
+        336.9999999
+      ],
+      "max": [
+        367.0000001,
+        109.0000001,
+        413.00000019293697
+      ]
+    },
+    "efi-upper-intake": {
+      "min": [
+        -367.0000001,
+        -256.0000001,
+        361.5
+      ],
+      "max": [
+        367.0000001,
+        97.5,
+        536.6
+      ]
+    },
+    "regulator-vacuum-fitting": {
+      "min": [
+        -6.0,
+        -73.0,
+        454.0
+      ],
+      "max": [
+        6.0,
+        -43.0,
+        466.0
+      ]
+    }
+  },
+  "pcv_outlet_datums": {
+    "lower_large": {
+      "center_world_mm": [
+        -240.0,
+        -31.0,
+        428.0
+      ],
+      "outward_direction": [
+        0,
+        -1,
+        0
+      ],
+      "model_bore_radius_mm": 3,
+      "opening_witness_obstruction_mm3": 0.0
+    },
+    "upper_small": {
+      "center_world_mm": [
+        -240.0,
+        -31.0,
+        440.0
+      ],
+      "outward_direction": [
+        0,
+        -1,
+        0
+      ],
+      "model_bore_radius_mm": 2.5,
+      "opening_witness_obstruction_mm3": 0.0
+    }
+  },
+  "rejected_receiver_trial": {
+    "center_world_mm": [
+      -100,
+      25,
+      445
+    ],
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "classification": "REJECTED arbitrary feasibility trial; not source-observed or authorized for modeling",
+    "radius_half_mm_probe_obstruction_mm3": 3.1415926535897913,
+    "existing_compatible_receiver": false
+  },
+  "limits": [
+    "No production hose route, diameter, manifold port station, center-branch hardware or secondary outlet use established.",
+    "No cover baffle or unused-outlet plug justified by reviewed owner photographs.",
+    "No geometry changed; this audit is not pneumatic closure or installed acceptance."
+  ],
+  "relevant_inputs_stable": true
+}

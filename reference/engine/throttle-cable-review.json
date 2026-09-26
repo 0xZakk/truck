@@ -1,0 +1,187 @@
+{
+  "status": "ISOLATED EDUCATIONAL CANDIDATE; no installed acceptance",
+  "issue": 43,
+  "scope": "Accelerator cable engine-end connection; exclude C6 kickdown and unverified cruise cable",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Service%20and%20Repair/index.html",
+      "sha256": "43788746ddf2ba0b7cd138445737f43fbcb3e6ef1aa614086746f0eeec1ff5d0",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Service%20and%20Repair/",
+      "access": "Local HTML read"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Testing%20and%20Inspection/Pinpoint%20Tests/Test%20C/index.html",
+      "sha256": "252df613483303de9e7adcdd5a66281d34e5cf66b1b1eceb7243f735f2df2c70",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Cable%2FLinkage/Testing%20and%20Inspection/Pinpoint%20Tests/Test%20C/",
+      "access": "Local HTML read"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/692036165.png",
+      "sha256": "693e4888b1d24cd9af436b98421d29fcb855c19dabbea803987af4b45af97257",
+      "url": "https://charm.li/images/DM05Q313/ford10/692036165/",
+      "access": "Image visually inspected"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/692057936.png",
+      "sha256": "c72c192db166ba4e89cfc7e4468914a7675a6e0c25fef6c83497d74529e44c3e",
+      "url": "https://charm.li/images/DM05Q313/ford10/692057936/",
+      "access": "Image visually inspected"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/693302607.png",
+      "sha256": "abf55f620f85f8a06a613b9c19ca5e4591ade9cd4aa10253c14abbc326eb0a05",
+      "url": "https://charm.li/images/DM05Q313/ford10/693302607/",
+      "access": "Image visually inspected"
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "url": null,
+      "access": "Image visually inspected"
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "url": null,
+      "access": "Image visually inspected"
+    },
+    {
+      "path": "cad/engine/generated/cable-reference-study/cahsa-fo149.jpg",
+      "sha256": "32e2746a3e5e3557aeda20c9ae1be5f9e61c9b9077c5a3eb7c9aa0110c24b87f",
+      "url": "https://www.cahsa.mx/catalogo/images/products/FO149.jpg",
+      "access": "Full-resolution comparison image directly inspected with view_image; captured by integration lead; local only, exclude from archives/commits",
+      "applicability": "Manufacturer/replacement comparison, not owner-installed original. CAHSA manufacturer catalog maps1994 F1504.9 toFO149/F4TZ9A758M; Pioneer manufacturer catalog maps1992\u201396 F-series4.9 toCA-8806/F4TZ9A758M; transmission qualifier not stated in those rows."
+    },
+    {
+      "path": "cad/engine/generated/cable-reference-study/pioneer-ca8806-detail.jpg",
+      "sha256": "e60279b58b9ed2b6987295bc1ab39b865f1f2059d0f8266f448ece0b0bc1dba6",
+      "url": "https://contentinfo.autozone.com/znetcs/additional-prod-images/en/US/pnr/CA-8806/2/image/10/",
+      "access": "Full-resolution comparison image directly inspected with view_image; captured by integration lead; local only, exclude from archives/commits",
+      "applicability": "Manufacturer/replacement comparison, not owner-installed original. CAHSA manufacturer catalog maps1994 F1504.9 toFO149/F4TZ9A758M; Pioneer manufacturer catalog maps1992\u201396 F-series4.9 toCA-8806/F4TZ9A758M; transmission qualifier not stated in those rows."
+    }
+  ],
+  "supported": [
+    {
+      "feature": "Accelerator cable assembly",
+      "evidence": "Factory figure692036165 and legend692057936 identify9A758 accelerator cable and9728 bracket; overall figure includes manual transmission."
+    },
+    {
+      "feature": "Ball/socket and stationary cable mounting",
+      "evidence": "Service text disconnects accelerator cable from ball stud and cable bracket. TestC refers to cable core wire and throttle-body-end spring."
+    },
+    {
+      "feature": "Separate cable-end spring",
+      "evidence": "Applicable TestC and diagram693302607 instruct compression and return observation after ball-stud disconnection. This is separate from shaft torsion bank."
+    },
+    {
+      "feature": "Excluded C6 rod",
+      "evidence": "ViewY dangling item7 and ViewZ belong to7A187 kickdown rod; ViewZ explicitlyC6. Do not reinterpret this as accelerator spring or cable."
+    },
+    {
+      "feature": "Owner observations",
+      "evidence": "Paired inlet hoses and clutter obscure socket and spring seats. No reliable cruise equipment or precise cable fitting identification from either overview."
+    }
+  ],
+  "unknowns": [
+    "Socket retainer profile/material and production articulation limits",
+    "Ferrule retention detail and bracket hole assignment",
+    "Spring turns, diameter, wire size, seats, preload, force and exact construction",
+    "Cruise equipment on owner vehicle",
+    "Complete cable route, firewall datum and pedal attachment geometry"
+  ],
+  "proposed_parts": [
+    "Captive ball socket; inferred retention construction",
+    "Inner core segment continuous from socket to fixed exit",
+    "Sheath-end ferrule physically captured through current bracket datum",
+    "Distinct illustrative cable compression spring",
+    "Fixed and moving spring seats; separate parts only where geometric retention requires them"
+  ],
+  "frame": {
+    "parent": "throttle-assembly for fixed bracket end; socket center follows ball, orientation follows cable rather than blindly copying lever rotation",
+    "fixed_exit_old_cad_mm": [
+      465,
+      110,
+      467
+    ],
+    "current_shifted_exit_mm": [
+      298,
+      110,
+      467
+    ],
+    "ball_center_at_0_current_mm": [
+      227,
+      95,
+      514
+    ],
+    "ball_center_at_90_current_mm": [
+      251,
+      95,
+      490
+    ],
+    "direct_span_mm": [
+      86.45808232895291,
+      54.433445601027316
+    ],
+    "draw_mm": 32.024636727925596,
+    "limits": "All coordinates are inherited educational datums, not measured truck dimensions; use parent-relative transforms, not permanently hardcoded shifted world numbers."
+  },
+  "acceptance_plan": [
+    "Cheap 0/45/90 socket/ferrule/seat feasibility first, preserve existing ball/bracket/shaft spring",
+    "Model actual captured ball neck and seated bracket ferrule; no bonded contact alone",
+    "Resolve fixed exit tangent and moving cable direction with explicit flexible/articulated transition; no rigid diagonal cable passing through ferrule solid",
+    "Continuous inner core and deforming compression spring with endpoint/length constraints throughout0\u201390; no force guarantee",
+    "All nearby existing shield/bracket/linkage/shaft-spring intersections; detached socket and ferrule controls",
+    "Full cable route and pedal are explicit excluded interfaces until datums exist"
+  ],
+  "proportion_review": {
+    "status": "Narrow prototype rejected; revised specimen-informed proportions visually reviewed by integration lead before full sweep",
+    "prototype": "0.36 mm wire, 2.36\u20132.46 mm OD coil over40.3\u201372.45 mm active length. All dimensions were clearance-driven estimates, not source-supported proportions.",
+    "manufacturer_application": "CAHSA primary catalog maps1994 F1504.9 toFO149/F4TZ9A758M; Pioneer primary catalog maps1992\u201396 4.9 toCA-8806/F4TZ9A758M. Neither establishes exact production dimensions or owner-installed identity.",
+    "urls": [
+      "https://www.cahsa.mx/catalogo/index.php?ano=1994&marca=FORD&modelo=F150&request=FO149&tipo_producto=ACELERADOR",
+      "https://www.cahsa.mx/catalogo/images/products/FO149.jpg",
+      "https://www.pioneerautoinc.com/pioneer-admin/pdf/Cables_catalog.pdf"
+    ],
+    "visual_observation_from_integration_lead": "Root directly viewed FO149 manufacturer photo in IAB tab52: substantial exposed compression coil around extended engine-end stem, long black socket/stem section comparable to spring length, bulky snap-in bracket retainer; coil modestly wider than moving stem and several times sheath width. Worker direct image inspection pending screenshot handoff. Worker subsequently directly inspected both full-resolution copies and confirmed topology.",
+    "decision": "Replace short ball cup/long tiny coil with source-informed relative topology; propose isolated larger aperture/seat revision instead of optimizing only for inherited guessed bracket."
+  },
+  "direct_specimen_observations": [
+    "Both images show a long black socket/terminal stem at the moving end, terminating in a transverse ball receiver.",
+    "The exposed compression coil overlaps an extended guide/stem; it is not a thin spring on an otherwise bare long core.",
+    "The fixed end has a substantial flange and outward snap-retainer features.",
+    "Pioneer detail shows a lighter-colored fixed guide within the coil and a darker moving guide entering the opposite end. Exact internal cross-section and retention remain hidden.",
+    "The moving black section and exposed spring have comparable axial lengths. Coil OD is close to/slightly greater than the stem OD and several times the sheath OD. These are visual proportions, not dimensions or precision pixel measurements.",
+    "Neither image supplies a dimensional scale, installed preload or sufficient evidence to identify actual spring rate, material or precise turn count."
+  ],
+  "coordinated_revision_proposal": {
+    "socket_stem_length_mm": 36,
+    "spring_neutral_outside_diameter_mm": 8,
+    "sheath_outside_diameter_mm": 2.5,
+    "moving_stem_outside_diameter_mm": 6.8,
+    "turns": 24,
+    "wire_diameter_mm": 0.5,
+    "classification": "All dimensions and turn count inferred; relative form informed by compared specimens. Clearance is tested after choosing proportions.",
+    "bracket_cable_exit_delta_mm": [
+      5,
+      2,
+      0
+    ],
+    "existing_exit_mm": [
+      465,
+      110,
+      467
+    ],
+    "proposed_exit_mm": [
+      470,
+      112,
+      467
+    ],
+    "preserved": [
+      "Mounting studs and ear seats",
+      "Shield fastener",
+      "Shaft-return-spring anchor",
+      "Lever and ball datums"
+    ],
+    "unverified_internal_construction": "Spherical articulation and insert-retained guide are educational mechanisms for physical movement, not observed Ford internals."
+  }
+}

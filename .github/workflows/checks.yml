@@ -15,6 +15,10 @@ jobs:
           python-version: '3.12'
       - name: Engine navigation
         run: node scripts/check-engine-navigation.mjs
+      - name: Cable motion and asynchronous viewer controls
+        run: |
+          node scripts/check-throttle-cable-motion.mjs
+          node scripts/check-throttle-cable-async.mjs
       - name: Python syntax
         run: python -m compileall -q cad scripts tools
       - name: Project status update controls

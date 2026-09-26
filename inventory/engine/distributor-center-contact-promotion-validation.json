@@ -1,0 +1,22 @@
+{
+  "status": "PASS isolated installed mirror and promotion controls",
+  "stage_validation_sha256": "8423736e7edc00e9da3355f614714a68d3071544638bbae344a85ec25ec042c6",
+  "stage_installation_sha256": "4cd6a6fc7423d37c0ef5963c4d8060e7ae1c1f067dd64828179e44e8951321b5",
+  "source_sha256": {
+    "scripts/check-distributor-center-contact-promotion.py": "0d48cb22939d6a7ec043064a10a9d3f4d071c8f786d97630aae0f267105b19a8",
+    "scripts/install-distributor-center-contact.py": "05cfdda9a40902cc034fa155d7f63e72b7463cfb939410e59487f427fd704ae9",
+    "scripts/check-distributor-center-contact-installed.py": "3345fafb75916442faad0986a6ce9c59a37d597278cd7a5a77b5848fad8e4365",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b"
+  },
+  "installed_mirror_status": "PASS installed rotor-only binding; browser acceptance pending",
+  "corrupt_glb_rejected": true,
+  "shifted_leaf_frame_rejected": true,
+  "changed_external_scene_frame_rejected": true,
+  "rollback_failures_restored": [
+    "1",
+    "3",
+    "9",
+    "postcheck"
+  ],
+  "canonical_writes": false
+}

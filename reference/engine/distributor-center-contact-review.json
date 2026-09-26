@@ -1,0 +1,117 @@
+{
+  "status": "CANDIDATE: source-compared rotor leaf; cap brush construction remains open",
+  "issue": "https://github.com/0xZakk/truck/issues/71",
+  "baseline_commit": "3e53f117146fe1746ef882abbeabf6542bcba0d2",
+  "manifest_sha256": "80060a6dabed8f1f909e49852423fae03693aa3066e43a139438e240056aa8b2",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Ignition%20System/Distributor%20Cap/Parts%20Information/index.html",
+      "sha256": "1b18dcccb545e66aa0129a50ae075d6490951f1da33bcf8fa23c46427ce54181",
+      "redistribute": false,
+      "pixels_inspected": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Tune-up%20and%20Engine%20Performance%20Checks/Distributor/Ignition%20Rotor/Parts%20Information/index.html",
+      "sha256": "981515a43eddb010afdb736951f5dcc880cc93473d86da7da741ee2427d5ee68",
+      "redistribute": false,
+      "pixels_inspected": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Maintenance/Tune-up%20and%20Engine%20Performance%20Checks/Distributor/Distributor%20Cap/Service%20and%20Repair/index.html",
+      "sha256": "b477f06e2f1e7fecad6ed1b35d0fcba7736fe4a0fa3abefe2de8fb0664d15975",
+      "redistribute": false,
+      "pixels_inspected": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/196152907.png",
+      "sha256": "6e7f2346210580ecf5bb77a6aef948103ed0ea357f5c10e0494c384e230ff7b4",
+      "redistribute": false,
+      "pixels_inspected": true
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/196138335.png",
+      "sha256": "41d8d252ea546ecab2f5d7aa41bc8c49747bb589235c44b5b1acd72ae513eee0",
+      "redistribute": false,
+      "pixels_inspected": true
+    },
+    {
+      "url": "https://www.ford.com/product/distributor-rotor-p4000075990",
+      "claim": "Ford current listing identifies DR375A as E6FZ12200A. Replacement may contain revisions from original manufacture.",
+      "class": "primary replacement identity"
+    },
+    {
+      "url": "https://www.ford.com/parts/product/images/photo-images/734/332734.jpg",
+      "sha256": "8d8f72e5a1f8c63a247315e36595c9bcd8497a55aa2d1693b6015c1ea6c708c5",
+      "pixels_inspected": true,
+      "redistribute": false,
+      "claim": "Ford DR375A actual contact-side photo: raised metal leaf inside open circular molded collar; leaf leads toward outer circular captured metal pad with polymer-looking central stake and brass peripheral tip. Photograph does not reveal embedded joint or spring material/thickness/preload.",
+      "class": "primary replacement visual comparison"
+    },
+    {
+      "url": "https://i5.walmartimages.com/seo/Motorcraft-Distributor-Cap-DH-434-Fits-select-1984-1996-FORD-F150-1983-1994-FORD-RANGER_7af60aff-579b-4e8a-b987-2e08bba04499.a5891e6ba14a8e24e15e38a50b07e8b1.jpeg",
+      "sha256": "8fa791a60c2f88bb217dda0922b1d047311c25ab62ca8192c42a7a89b9748fe6",
+      "pixels_inspected": true,
+      "redistribute": false,
+      "claim": "Motorcraft-marked actual replacement underside: concentric molded central rings, metal ring and dark center; projection, carbon composition and hidden retainer unresolved.",
+      "class": "replacement photo comparison"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Exact1994 parts pages list capE6AZ12106A and rotorE6FZ12200A",
+      "class": "verified application identity"
+    },
+    {
+      "claim": "Exact1994 cap removal instruction warns against damaging rotor blade and spring; typical ignition figure visibly shows raised folded/looped contact at rotor center",
+      "class": "verified application procedure and typical architecture; no dimensions"
+    },
+    {
+      "claim": "Cap brush spring type, carbon composition, attachment method and preload are unverified; do not assume a cap helical spring",
+      "class": "unknown"
+    },
+    {
+      "claim": "Current flat rotor strip and box insulator need coordinated recess/collar/contact support for a source-compared leaf candidate; separate cap coil spring is not supported.",
+      "class": "inference from actual Ford replacement photo and exact1994 service text"
+    }
+  ],
+  "current_geometry": {
+    "center_contact": "R2 cylinder Z84.5..87",
+    "coil_terminal": "R3 cylinder Z87..111",
+    "rotor_contact": "flat34x6x1.5 box X-1..33 Z83..84.5",
+    "class": "existing inferred geometry, not factory measurement",
+    "native_z_shift_mm": 50,
+    "note": "Original distributor.py unshifted numbers above are historical source; current installed upper components are shifted +50mm by drive integration. Candidate normalizes current contact Z133 to83 then restores shift; rejects other checker datum."
+  },
+  "planned_checks": [
+    "Current local contact connectivity plus intended support/retention",
+    "Rotor half-speed360degree cycle using current leaned group transforms",
+    "Cap axial removal separating fixed brush from rotor spring",
+    "Negative controls separating center contact and forcing collision",
+    "STEP roundtrip, watertightGLB, actualexport render"
+  ],
+  "nonredistribution": "Restricted manuals and product photographs are optional research captures, excluded from Git and CAD releases.",
+  "candidate_estimates": {
+    "leaf_thickness_mm": 0.4,
+    "leaf_width_mm": 6,
+    "raised_contact_top_native_z_mm": 134.5,
+    "collar_outer_inner_radii_mm": [
+      10,
+      8
+    ],
+    "collar_top_native_z_mm": 136,
+    "outer_capture_station_mm": [
+      18,
+      0
+    ],
+    "stake_radius_head_radius_mm": [
+      1.5,
+      2.4
+    ],
+    "class": "inferred educational geometry, not measured Ford dimensions",
+    "retention": "Idealized molded stake captures conductor above leaf foot. Actual visible polymer-looking stake supports broad topology, not manufacturing process.",
+    "leaf_shape": "Rounded free end with tangent-continuous folded transition dipping into central recess. Source supports observed curved silhouette; exact path remains inferred.",
+    "recess_floor_native_z_mm": 131,
+    "leaf_curve_min_center_native_z_mm": 131.7,
+    "review": "Root visually accepted refined exported mesh for bounded rotor-only integration; cap brush construction still unresolved."
+  }
+}

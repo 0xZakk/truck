@@ -2,6 +2,10 @@ import {engineLearningModules,resolveEngineLearning} from '../viewer/engine-lear
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {buildNavigation} from '../viewer/engine-navigation.js';
+// Both public entry points use the same controller and must expose its controls.
+const shells=await Promise.all(['engine','part'].map(name=>readFile(new URL(`../viewer/${name}.html`,import.meta.url),'utf8')));
+const controlIds=html=>[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]).sort();
+assert.deepEqual(controlIds(shells[1]),controlIds(shells[0]),'Direct part entry must expose the engine controller controls');
 const manifest=JSON.parse(await readFile(new URL('../inventory/engine/full-assembly.json',import.meta.url)));
 const original=JSON.stringify(manifest), nav=buildNavigation(manifest);
 assert.equal(JSON.stringify(manifest),original,'Navigation must not alter CAD transforms');
@@ -22,7 +26,7 @@ for(const [identifier,ratio] of [['oil-pump-intermediate-rotation',-.5],['oil-pu
 }
 assert.equal(manifest.occurrences.find(part=>part.id==='oil-pump-drive-retainer').parent,'oil-pump-intermediate-rotation');
 assert.equal(nav.parts('oil-pickup-assembly').length,3);
-assert.equal(nav.parts('induction').length,222);
+assert.equal(nav.parts('induction').length,229);
 assert.equal(nav.parts('intake-head-locator').length,1);
 assert.ok(nav.ancestors('intake-head-locating-dowel').some(node=>node.id==='induction'));
 assert.equal(nav.parts('fuel-test-valve').length,8);
@@ -32,7 +36,7 @@ for(const identifier of ['front-manifold-lifting-eye','front-manifold-stud13','f
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
 assert.equal(nav.parts('intake-studs').length,7);
-assert.equal(nav.parts('throttle-assembly').length,45);
+assert.equal(nav.parts('throttle-assembly').length,52);
 for(const identifier of ['throttle-lever-estimated','throttle-cable-ball-stud-estimated','throttle-lever-retaining-pin-estimated','throttle-linkage-shield-estimated','throttle-shield-pushpin-estimated','throttle-return-spring-illustrative']){
   assert.ok(nav.ancestors(identifier).some(node=>node.id==='throttle-assembly'));
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);

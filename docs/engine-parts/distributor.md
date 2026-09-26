@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -84,26 +84,6 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
 - [ ] **Distributor rotary vane** — `distributor-vane`; modeled quantity **1**; provisional.
   - Instances: `distributor-vane`
-  - Source IDs: system-4fe310c18acd, system-2ea2c28d7cca, system-0452beae4961, fsm-2f144bda5e08, ford-1996-distributor-drive, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.
-  - Open: All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.
-  - Open: Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.
-  - Open: 20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.
-  - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
-  - Open: Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.
-  - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
-- [ ] **Distributor rotor insulator** — `distributor-rotor`; modeled quantity **1**; provisional.
-  - Instances: `distributor-rotor`
-  - Source IDs: system-4fe310c18acd, system-2ea2c28d7cca, system-0452beae4961, fsm-2f144bda5e08, ford-1996-distributor-drive, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.
-  - Open: All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.
-  - Open: Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.
-  - Open: 20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.
-  - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
-  - Open: Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.
-  - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
-- [ ] **Distributor rotor contact** — `distributor-rotor-contact`; modeled quantity **1**; provisional.
-  - Instances: `distributor-rotor-contact`
   - Source IDs: system-4fe310c18acd, system-2ea2c28d7cca, system-0452beae4961, fsm-2f144bda5e08, ford-1996-distributor-drive, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.
   - Open: All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.
@@ -207,6 +187,41 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
   - Open: Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.
   - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
+- [ ] **Distributor rotor insulator · source-compared study** — `distributor-rotor`; modeled quantity **1**; provisional.
+  - Instances: `distributor-rotor`
+  - Source IDs: system-4fe310c18acd, system-2ea2c28d7cca, system-0452beae4961, fsm-2f144bda5e08, ford-1996-distributor-drive, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions, distributor-center-contact-photo-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.
+  - Open: All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.
+  - Open: Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.
+  - Open: 20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.
+  - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
+  - Open: Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.
+  - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
+  - Open: Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.
+  - Open: Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.
+  - Open: Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.
+  - Open: Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration.
+- [ ] **Distributor rotor center leaf · estimated** — `distributor-rotor-center-leaf`; modeled quantity **1**; provisional.
+  - Instances: `distributor-rotor-center-leaf`
+  - Source IDs: distributor-center-contact-photo-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.
+  - Open: Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.
+  - Open: Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.
+  - Open: Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration.
+- [ ] **Distributor rotor outer conductor · estimated** — `distributor-rotor-contact`; modeled quantity **1**; provisional.
+  - Instances: `distributor-rotor-contact`
+  - Source IDs: system-4fe310c18acd, system-2ea2c28d7cca, system-0452beae4961, fsm-2f144bda5e08, ford-1996-distributor-drive, ford-industrial-csg649, fsm-a3698a10af15, melling-intermediate-shaft-dimensions, distributor-center-contact-photo-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.
+  - Open: All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.
+  - Open: Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.
+  - Open: 20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.
+  - Open: Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.
+  - Open: Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.
+  - Open: Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.
+  - Open: Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.
+  - Open: Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.
+  - Open: Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.
+  - Open: Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration.
 
 ## Additional known scope and reconciliation
 

@@ -1,0 +1,39 @@
+{
+  "status": "PASS browser acceptance within illustrative scope",
+  "manifest_sha256": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+  "distributor": {
+    "assembly_parts": 29,
+    "observed": [
+      "Assembled distributor renders",
+      "See-through covers and 50 percent explosion render at crank angle180",
+      "Direct part.html?id=distributor-rotor-center-leaf renders curved leaf and explanatory text"
+    ],
+    "repair": "Direct part entry lacked throttle controls required by atlas; synchronized shell and added control-ID parity check"
+  },
+  "cable": {
+    "installed": true,
+    "async_checks": "Reverse response order, reset during load, return to displayed pose and load failure pass using actual request coordinator",
+    "assembly_parts": 52,
+    "observed": [
+      "Assembled neutral mechanism renders",
+      "45 and90 degree throttle positions render without loading indicator persisting",
+      "50 percent exploded view at90 degrees renders",
+      "Reset restores zero angle and assembled neutral geometry",
+      "Individual cable compression spring selection renders and explains separate spring role"
+    ]
+  },
+  "limits": [
+    "Browser images are visual checks, not dimensional proof.",
+    "Extension errors were observed; no clean-console claim.",
+    "Factory dimensions and hidden cap construction unresolved."
+  ],
+  "viewer_inputs_sha256": {
+    "viewer/atlas.js": "e81dbf4c1685b98c3ef541f171845c61812e869bdb9b29f3eed8259d7550f93d",
+    "viewer/engine.html": "4732f7bf911ce4615e581e7cab88276ab696bd8b00ecd9e84a4c81be25ccbd68",
+    "viewer/part.html": "4732f7bf911ce4615e581e7cab88276ab696bd8b00ecd9e84a4c81be25ccbd68",
+    "viewer/engine-learning-modules.js": "393460c6886d5b0d766922f610e9ab6160437752d80af22120bbe475b59134c7",
+    "viewer/throttle-cable-motion.js": "b0d5c4134603dea21f7c065dc047702b0560de862c1d9acfddfa7b4a51519374",
+    "viewer/throttle-cable-motion.json": "f1530c1770b2cdad89707bf994d2da64b863b5c395f156146f8a4e2d5608bcd5"
+  },
+  "console": "Only previously observed old-revision direct-part initialization error appears among local-origin captured errors; repaired revision exercise produced no additional local-origin error. Extension/unlocated errors prevent a blanket clean-console claim."
+}

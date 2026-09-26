@@ -10590,84 +10590,6 @@
       ]
     },
     {
-      "id": "distributor-rotor",
-      "name": "Distributor rotor insulator",
-      "function": "Insulates and supports the high-voltage rotor contact.",
-      "system": "ignition",
-      "color": "#a77659",
-      "glb": "/models/engine/distributor-rotor.glb",
-      "step": "/cad/engine/generated/distributor-rotor.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-4fe310c18acd",
-        "system-2ea2c28d7cca",
-        "system-0452beae4961",
-        "fsm-2f144bda5e08",
-        "ford-1996-distributor-drive",
-        "ford-industrial-csg649",
-        "fsm-a3698a10af15",
-        "melling-intermediate-shaft-dimensions"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
-        "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
-        "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
-        "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
-        "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
-        "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
-        "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions."
-      ],
-      "volume_mm3": 3346.223555697139,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 608,
-      "model_bounds_mm": [
-        44.0,
-        20.0,
-        14.0
-      ]
-    },
-    {
-      "id": "distributor-rotor-contact",
-      "name": "Distributor rotor contact",
-      "function": "Transfers coil voltage from the center contact toward each cap terminal as the shaft turns.",
-      "system": "ignition",
-      "color": "#c6ad69",
-      "glb": "/models/engine/distributor-rotor-contact.glb",
-      "step": "/cad/engine/generated/distributor-rotor-contact.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-4fe310c18acd",
-        "system-2ea2c28d7cca",
-        "system-0452beae4961",
-        "fsm-2f144bda5e08",
-        "ford-1996-distributor-drive",
-        "ford-industrial-csg649",
-        "fsm-a3698a10af15",
-        "melling-intermediate-shaft-dimensions"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
-        "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
-        "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
-        "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
-        "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
-        "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
-        "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions."
-      ],
-      "volume_mm3": 306.0,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 12,
-      "model_bounds_mm": [
-        34.0,
-        6.0,
-        1.5
-      ]
-    },
-    {
       "id": "distributor-hall-sensor",
       "name": "Distributor Hall sensor \u00b7 package",
       "function": "Senses the passing vane to provide Profile Ignition Pickup information. Internal electronics remain an envelope.",
@@ -24420,38 +24342,6 @@
       ]
     },
     {
-      "id": "accelerator-cable-bracket",
-      "name": "Accelerator cable bracket \u00b7 estimated",
-      "function": "Supports the cable housing on the throttle mounting studs. Its revised web and opening clear the modeled outward-facing lever and direct cable path.",
-      "system": "induction",
-      "color": "#879297",
-      "glb": "/models/engine/accelerator-cable-bracket.glb",
-      "step": "/cad/engine/generated/accelerator-cable-bracket.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "pilot-throttle-bracket-factory",
-        "pilot-throttle-bracket-photo",
-        "throttle-1994-linkage-study",
-        "throttle-return-spring-study"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
-        "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
-        "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
-        "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified."
-      ],
-      "volume_mm3": 10543.693194095738,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 1330,
-      "model_bounds_mm": [
-        86.5,
-        51.000000000000355,
-        68.0
-      ]
-    },
-    {
       "id": "throttle-lever-estimated",
       "name": "Throttle lever \u00b7 estimated",
       "function": "Converts cable pull at the ball stud into shaft rotation through a modeled D-shaped hub.",
@@ -25583,6 +25473,355 @@
         13.500000100000022,
         7.1000002,
         2.2000002
+      ]
+    },
+    {
+      "id": "distributor-rotor",
+      "name": "Distributor rotor insulator \u00b7 source-compared study",
+      "function": "An estimated molded collar and recess surround the raised center leaf; an illustrative integral stake captures the outer conductor. Shaft seating follows the existing model.",
+      "system": "ignition",
+      "color": "#a77659",
+      "glb": "/models/engine/distributor-rotor.glb",
+      "step": "/cad/engine/generated/distributor-rotor.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "system-0452beae4961",
+        "fsm-2f144bda5e08",
+        "ford-1996-distributor-drive",
+        "ford-industrial-csg649",
+        "fsm-a3698a10af15",
+        "melling-intermediate-shaft-dimensions",
+        "distributor-center-contact-photo-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
+        "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
+        "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
+        "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+        "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+        "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+        "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+        "Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.",
+        "Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.",
+        "Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.",
+        "Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration."
+      ],
+      "volume_mm3": 3703.326677785423,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 3386,
+      "model_bounds_mm": [
+        44.0,
+        20.0,
+        17.0
+      ]
+    },
+    {
+      "id": "distributor-rotor-center-leaf",
+      "name": "Distributor rotor center leaf \u00b7 estimated",
+      "function": "A separate curved metal leaf contacts the cap center-contact envelope and the outer conductor while rotating with the rotor. Source-supported topology; dimensions, spring preload and alloy remain inferred.",
+      "system": "ignition",
+      "color": "#cad0d4",
+      "glb": "/models/engine/distributor-rotor-center-leaf.glb",
+      "step": "/cad/engine/generated/distributor-rotor-center-leaf.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "distributor-center-contact-photo-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.",
+        "Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.",
+        "Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.",
+        "Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration."
+      ],
+      "volume_mm3": 65.53344549304308,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 2900,
+      "model_bounds_mm": [
+        27.0000001,
+        8.000000000000002,
+        3.070165636633277
+      ]
+    },
+    {
+      "id": "distributor-rotor-contact",
+      "name": "Distributor rotor outer conductor \u00b7 estimated",
+      "function": "The captured outer conductor connects the raised center leaf to the existing peripheral tip. Electrical material and exact captured-joint construction remain unverified.",
+      "system": "ignition",
+      "color": "#c6ad69",
+      "glb": "/models/engine/distributor-rotor-contact.glb",
+      "step": "/cad/engine/generated/distributor-rotor-contact.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-4fe310c18acd",
+        "system-2ea2c28d7cca",
+        "system-0452beae4961",
+        "fsm-2f144bda5e08",
+        "ford-1996-distributor-drive",
+        "ford-industrial-csg649",
+        "fsm-a3698a10af15",
+        "melling-intermediate-shaft-dimensions",
+        "distributor-center-contact-photo-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
+        "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
+        "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
+        "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+        "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+        "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+        "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+        "Exact1994 manual identifies rotor blade and spring; current Ford DR375A photo supports a raised folded leaf, open molded collar and captured outer pad. Current replacement revisions may differ from original1994 production.",
+        "Leaf thickness, bend/recess dimensions, stake geometry and material properties are inferred. Geometric contact does not establish elastic preload, pressure, electrical resistance or durability.",
+        "Cap central-contact envelope is unchanged: material, hidden retention and actual coil-feed construction remain unresolved. No cap coil spring is inferred.",
+        "Preserved shaft seat and peripheral tip are inherited educational estimates, not verified Ford dimensions or ignition calibration."
+      ],
+      "volume_mm3": 144.45971696895785,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 892,
+      "model_bounds_mm": [
+        19.0,
+        8.0,
+        1.5
+      ]
+    },
+    {
+      "id": "accelerator-cable-bracket",
+      "name": "Accelerator cable bracket \u00b7 cable clearance study",
+      "function": "Retains unchanged mounting, shield and shaft-spring anchors; a proposed distal web/flange revision supports the thicker cable end.",
+      "system": "induction",
+      "color": "#879297",
+      "glb": "/models/engine/accelerator-cable-bracket.glb",
+      "step": "/cad/engine/generated/accelerator-cable-bracket.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "pilot-throttle-bracket-factory",
+        "pilot-throttle-bracket-photo",
+        "throttle-1994-linkage-study",
+        "throttle-return-spring-study",
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
+        "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
+        "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
+        "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.",
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 9500.87080593713,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 3544,
+      "model_bounds_mm": [
+        91.5,
+        51.000000000001265,
+        68.0
+      ]
+    },
+    {
+      "id": "throttle-cable-compression-spring-illustrative",
+      "name": "Cable-end compression spring \u00b7 illustrative",
+      "function": "A separate spring compresses between cable-end seats; this is distinct from the throttle shaft torsion spring.",
+      "system": "induction",
+      "color": "#b6bec1",
+      "glb": "/models/engine/throttle-cable-compression-spring-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-compression-spring-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 111.1793860597479,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 318298,
+      "model_bounds_mm": [
+        42.76890483506759,
+        16.97041456375368,
+        31.925908840807097
+      ]
+    },
+    {
+      "id": "throttle-cable-core-illustrative",
+      "name": "Accelerator cable core and terminal \u00b7 illustrative",
+      "function": "Continuous flexible core joins the captured terminal to a short sheath segment; material feeds through the open cut boundary.",
+      "system": "induction",
+      "color": "#b6bec1",
+      "glb": "/models/engine/throttle-cable-core-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-core-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 54.06087049756046,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 5072,
+      "model_bounds_mm": [
+        90.5988433540112,
+        17.227478842803436,
+        45.614244094276785
+      ]
+    },
+    {
+      "id": "throttle-cable-fixed-guide-illustrative",
+      "name": "Cable telescoping guide \u00b7 illustrative",
+      "function": "A captured insert aligns the compression spring as the hollow moving stem slides over it.",
+      "system": "induction",
+      "color": "#b6bec1",
+      "glb": "/models/engine/throttle-cable-fixed-guide-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-fixed-guide-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 98.05538990384464,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 1512,
+      "model_bounds_mm": [
+        24.969031431407245,
+        8.231867390336959,
+        17.71051966534685
+      ]
+    },
+    {
+      "id": "throttle-cable-sheath-stub-illustrative",
+      "name": "Accelerator cable sheath stub \u00b7 illustrative",
+      "function": "A short fixed sheath segment with a captive bead; routing to the firewall and pedal is omitted.",
+      "system": "induction",
+      "color": "#20272d",
+      "glb": "/models/engine/throttle-cable-sheath-stub-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-sheath-stub-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 43.729398941643126,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 2016,
+      "model_bounds_mm": [
+        18.100000000000023,
+        3.1999999999999886,
+        3.2000000000000455
+      ]
+    },
+    {
+      "id": "throttle-cable-snap-retainer-illustrative",
+      "name": "Accelerator cable snap retainer \u00b7 illustrative",
+      "function": "Captured flange and slotted tabs locate the cable assembly through the proposed bracket opening.",
+      "system": "induction",
+      "color": "#20272d",
+      "glb": "/models/engine/throttle-cable-snap-retainer-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-snap-retainer-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 276.61038238680123,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 17494,
+      "model_bounds_mm": [
+        6.100000000000023,
+        14.0,
+        14.0
+      ]
+    },
+    {
+      "id": "throttle-cable-socket-illustrative",
+      "name": "Accelerator cable socket and stem \u00b7 illustrative",
+      "function": "Captures the unchanged lever ball and guides the moving cable terminal toward the fixed retainer.",
+      "system": "induction",
+      "color": "#20272d",
+      "glb": "/models/engine/throttle-cable-socket-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-socket-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 1382.9603579602783,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 15424,
+      "model_bounds_mm": [
+        44.99740044887142,
+        14.961422617815515,
+        32.29802405904013
+      ]
+    },
+    {
+      "id": "throttle-cable-swivel-seat-illustrative",
+      "name": "Cable fixed spring seat \u00b7 illustrative",
+      "function": "An estimated captive spherical seat articulates about the stationary retainer.",
+      "system": "induction",
+      "color": "#20272d",
+      "glb": "/models/engine/throttle-cable-swivel-seat-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-cable-swivel-seat-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-cable-engine-end-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.",
+        "Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.",
+        "No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded."
+      ],
+      "volume_mm3": 91.00336714142597,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 13278,
+      "model_bounds_mm": [
+        7.919007985828898,
+        8.943945009264766,
+        8.836989474679967
       ]
     }
   ],
@@ -49738,8 +49977,8 @@
       "id": "distributor-rotor",
       "definition": "distributor-rotor",
       "parent": "distributor-rotation",
-      "name": "Distributor rotor insulator",
-      "function": "Insulates and supports the high-voltage rotor contact.",
+      "name": "Distributor rotor insulator \u00b7 source-compared study",
+      "function": "An estimated molded collar and recess surround the raised center leaf; an illustrative integral stake captures the outer conductor. Shaft seating follows the existing model.",
       "position_cad_mm": [
         0,
         0,
@@ -49760,8 +49999,8 @@
       "id": "distributor-rotor-contact",
       "definition": "distributor-rotor-contact",
       "parent": "distributor-rotation",
-      "name": "Distributor rotor contact",
-      "function": "Transfers coil voltage from the center contact toward each cap terminal as the shaft turns.",
+      "name": "Distributor rotor outer conductor \u00b7 estimated",
+      "function": "The captured outer conductor connects the raised center leaf to the existing peripheral tip. Electrical material and exact captured-joint construction remain unverified.",
       "position_cad_mm": [
         0,
         0,
@@ -59732,8 +59971,8 @@
       "id": "accelerator-cable-bracket",
       "definition": "accelerator-cable-bracket",
       "parent": "throttle-assembly",
-      "name": "Accelerator cable bracket \u00b7 estimated",
-      "function": "Supports the cable housing on the throttle mounting studs. Its revised web and opening clear the modeled outward-facing lever and direct cable path.",
+      "name": "Accelerator cable bracket \u00b7 cable clearance study",
+      "function": "Retains unchanged mounting, shield and shaft-spring anchors; a proposed distal web/flange revision supports the thicker cable end.",
       "position_cad_mm": [
         0,
         0,
@@ -60261,6 +60500,210 @@
         0,
         0
       ]
+    },
+    {
+      "id": "distributor-rotor-center-leaf",
+      "definition": "distributor-rotor-center-leaf",
+      "parent": "distributor-rotation",
+      "name": "Distributor rotor center leaf \u00b7 estimated",
+      "function": "A separate curved metal leaf contacts the cap center-contact envelope and the outer conductor while rotating with the rotor. Source-supported topology; dimensions, spring preload and alloy remain inferred.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        225
+      ]
+    },
+    {
+      "id": "throttle-cable-snap-retainer-illustrative",
+      "definition": "throttle-cable-snap-retainer-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Accelerator cable snap retainer \u00b7 illustrative",
+      "function": "Captured flange and slotted tabs locate the cable assembly through the proposed bracket opening.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "fixed"
+      }
+    },
+    {
+      "id": "throttle-cable-sheath-stub-illustrative",
+      "definition": "throttle-cable-sheath-stub-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Accelerator cable sheath stub \u00b7 illustrative",
+      "function": "A short fixed sheath segment with a captive bead; routing to the firewall and pedal is omitted.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "fixed"
+      }
+    },
+    {
+      "id": "throttle-cable-socket-illustrative",
+      "definition": "throttle-cable-socket-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Accelerator cable socket and stem \u00b7 illustrative",
+      "function": "Captures the unchanged lever ball and guides the moving cable terminal toward the fixed retainer.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "socket"
+      }
+    },
+    {
+      "id": "throttle-cable-swivel-seat-illustrative",
+      "definition": "throttle-cable-swivel-seat-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Cable fixed spring seat \u00b7 illustrative",
+      "function": "An estimated captive spherical seat articulates about the stationary retainer.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "seat"
+      }
+    },
+    {
+      "id": "throttle-cable-fixed-guide-illustrative",
+      "definition": "throttle-cable-fixed-guide-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Cable telescoping guide \u00b7 illustrative",
+      "function": "A captured insert aligns the compression spring as the hollow moving stem slides over it.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "guide"
+      }
+    },
+    {
+      "id": "throttle-cable-core-illustrative",
+      "definition": "throttle-cable-core-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Accelerator cable core and terminal \u00b7 illustrative",
+      "function": "Continuous flexible core joins the captured terminal to a short sheath segment; material feeds through the open cut boundary.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "core"
+      }
+    },
+    {
+      "id": "throttle-cable-compression-spring-illustrative",
+      "definition": "throttle-cable-compression-spring-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Cable-end compression spring \u00b7 illustrative",
+      "function": "A separate spring compresses between cable-end seats; this is distinct from the throttle shaft torsion spring.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        75,
+        0
+      ],
+      "throttle_cable": {
+        "model": "illustrative-cable-v1",
+        "kind": "compression-spring"
+      }
     }
   ],
   "sources": {
@@ -61511,6 +61954,18 @@
       "path": "/reference/engine/iac-electrical-review.json",
       "sha256": "99e62c2a0633a7c2ddfc37d494d744547f04cfbdeb60eae030f99f10c1e04cf9",
       "url": "https://github.com/0xZakk/truck/issues/44"
+    },
+    "distributor-center-contact-photo-study": {
+      "title": "Exact1994 rotor spring and Ford DR375A contact construction comparison",
+      "path": "/reference/engine/distributor-center-contact-review.json",
+      "sha256": "a1148975acefa9b0e63e2f19a698e82c1fc0d5f64dba4c52e4f5635e366ae776",
+      "url": "https://www.ford.com/product/distributor-rotor-p4000075990"
+    },
+    "throttle-cable-engine-end-illustrative-study": {
+      "title": "Exact1994 cable topology, replacement comparison and illustrative engine-end mechanism",
+      "path": "/reference/engine/throttle-cable-review.json",
+      "sha256": "1fccbe6dc441ae3e67430fbb06ba9638d1dc4d8e7e9a7b146707e6069ebd96d4",
+      "url": "https://github.com/0xZakk/truck/issues/43"
     }
   },
   "mechanism": {
@@ -61549,8 +62004,8 @@
     "Front and rear interfaces: Damper hub, elastomer, integrated pulley rim, key, washer and retaining bolt are present; production internal dimensions, key profile, threads and belt plane remain unverified., Verify the integrated crank pulley profile against the saved Dorman reference; a separate bolt-on pulley is not established., Gates 38022 pulley and six-part 38131 support study are present at provisional stations. Belt, engine mounting bracket, spring/damper internals and bearing internals remain missing; wheel section, hardware and mounting coordinates remain unverified., Flywheel body, 164-tooth ring gear and six bolts integrated as a replacement-dimension study; installed profile, indexing, ring fit and fastener threads remain unverified., FC65662 pilot-bearing construction study includes outer case, cage, 16 illustrative needles and seal. Two catalog dimensional tables disagree; installed fit and internal geometry remain unresolved., Manual PMGR starter:132-component construction study includes distinct S/B/M terminals, pull/hold winding envelopes, insulated contact bridge, provisional slotted-clevis/fork linkage, four separately insulated coil-end conductors, motor feed, frame grommet, ground bridge and four brush pigtails. Corrected nonpenetrating wiring passes installed face-contact and clearance checks without overlap exemptions. Saved-STEP engagement passes17 poses/945 neighbor checks. Loaded engagement, production joint geometry, bellhousing/index-plate support, mounting datums, overrunning internals, commutator/armature connections and vehicle wiring remain unresolved. Starter geometry stays stationary during normal engine animation; clutch boundary remains open., Alternator: 26-part integrated construction study and separate support. Installed 75/95/130 A variant, production dimensions, terminals and wiring remain unresolved., Power-steering pump: 46-part CII slipper-pump study integrated at provisional upper-LH station; internal relief/baffle/retention details, hydraulic passages, shaft splines and production dimensions remain unresolved. Six modeled grooves follow Ford belt data but conflict with five-groove Dorman replacement metadata., The 1994 shared PS/A/C carrier and engine attachments are integrated, along with a revised alternator position/support and pump-clearing Thermactor foot. All casting dimensions and stations remain provisional. New F4TE-10239-AC evidence indicates a common alternator/Thermactor casting; the current separate supports require replacement and source-backed hole mapping., A/C compressor:67-part FS10 study includes five double-ended pistons, ten shoes, ten PTFE ring envelopes, dimensioned comparison clutch-bearing envelope, rear manifold/two seals/bolt and two source-counted radial support cartridges. Rigid-body motion has independent teaching controls. A manifold-boss obstruction was corrected by restoring the cap drillings while retaining a blind bolt socket; complete suction/discharge network checks and sampled installed motion pass. Bearing internals, pressure-actuated reed/clutch behavior, installed identity and production dimensions remain open; radial bearing envelopes and seal glands are provisional and no hydraulic performance is claimed., Thermactor: 20-object exterior/support study integrated; pumping cartridge is an explicitly unresolved envelope, not a completed rotor/vanes assembly. Installed displacement, vanes, air-routing hardware and production dimensions remain open., Accessory hoses, wiring and shared belt routing remain unfinished. The connected pump/outlet diagnostic gives a 2854.845 mm outside-radius loop versus 2491 mm catalog effective length, with additional outlet/heater collisions. Assumed cord correction explains only 22.043 mm. Reconcile manufacturer length definitions, accessory mounting topology and source-backed datums before accepting the belt."
   ],
   "coverage": {
-    "modeled_occurrences": 1330,
-    "modeled_definitions": 722,
+    "modeled_occurrences": 1341,
+    "modeled_definitions": 733,
     "verified_complete": false,
     "note": "Counts describe the current reconstruction, not a verified complete engine bill of materials. Some parts have unconfirmed applicability."
   },

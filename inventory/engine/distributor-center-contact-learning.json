@@ -1,0 +1,32 @@
+{
+  "distributor-rotor-center-leaf": {
+    "summary": "Follow the rotor's center transfer",
+    "steps": [
+      {"title": "Find the center contact", "text": "The coil feed meets the cap's central contact, which bears on the raised rotor leaf. The cap contact remains an estimated envelope; its hidden attachment and material are unresolved.", "part": "distributor-center-contact"},
+      {"title": "Follow the separate leaf", "text": "The curved leaf rotates with the rotor and meets the captured outer conductor. The exact1994 service procedure names a rotor blade and spring, and Ford's current DR375A photo shows the folded leaf. The model does not infer a coil spring inside the cap."},
+      {"title": "Reach the outer tip", "text": "The conductor leads toward the peripheral tip. Existing terminal indexing, gap and timing are educational estimates, not a wiring or calibration guide.", "part": "distributor-rotor-contact"}
+    ],
+    "troubleshooting": [
+      {"title": "Understand a lost contact", "text": "A deliberately lowered leaf opens the modeled center connection; a raised leaf intersects it. These geometric checks explain contact loss but do not measure voltage, resistance, spring force or ignition performance."}
+    ],
+    "sources": ["distributor-center-contact-photo-study"],
+    "limits": "Rotor-only source-compared topology. Dimensions, bend radii, alloy, preload and molded stake details are inferred; cap brush construction remains open."
+  },
+  "distributor-rotor": {
+    "summary": "Separate insulation from the contact path",
+    "steps": [
+      {"title": "Inspect the collar and recess", "text": "The molded collar surrounds the raised metal leaf, with an opening toward the outer pad. Its dimensions are estimated from replacement-photo topology.", "part": "distributor-rotor-center-leaf"},
+      {"title": "Inspect the captured pad", "text": "An illustrative integral stake holds the conductor over the leaf foot. The photo supports a captured pad; the exact manufacturing joint is unknown.", "part": "distributor-rotor-contact"}
+    ],
+    "sources": ["distributor-center-contact-photo-study"],
+    "limits": "Shaft seat is preserved from the existing model; production seating dimensions and dielectric performance are not verified."
+  },
+  "distributor-rotor-contact": {
+    "summary": "Follow the outer conductor",
+    "steps": [
+      {"title": "Trace center to tip", "text": "The separate raised leaf meets this captured conductor, which keeps the existing peripheral-tip position.", "part": "distributor-rotor-center-leaf"}
+    ],
+    "sources": ["distributor-center-contact-photo-study"],
+    "limits": "Materials, joint resistance, terminal indexing and operating spark gap are unverified."
+  }
+}

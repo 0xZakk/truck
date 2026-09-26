@@ -1,5 +1,6 @@
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
-import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=iac-electrical-20260926';
+import { createThrottleCableMotion, cableAngle } from './throttle-cable-motion.js';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=cable-distributor-20260926';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -39,6 +40,7 @@ void prewarmSourceSpringCache(96,12);
 let data,nav,learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
 let compressorAngle=0,compressorEngaged=true,compressorPlaying=false;
 let throttleSpringPaths=null;
+let cableMotionPromise=null,cableFrame=null,cableRequested=null,cableRequestSerial=0,cableMotionFailed=false,modelRevision='';
 const clip=new THREE.Plane(new THREE.Vector3(-1,0,0),0);
 const toView=a=>new THREE.Vector3(a[0],a[2],-a[1]);
 function cadQuaternion(rotation=[0,0,0]){
@@ -227,13 +229,68 @@ function setThrottleSpringPose(object, degrees){
   });
   object.userData.throttleSpringAngle=index;
 }
+function requestCablePose(degrees){
+  if(!data.occurrences.some(o=>o.throttle_cable)||cableMotionFailed)return;
+  const index=cableAngle(degrees);
+  if(index===0){
+    if(cableRequested!==null||cableFrame){cableRequestSerial++;cableRequested=null;cableFrame=null;}
+    return;
+  }
+  if(cableFrame?.angle_deg===index){
+    if(cableRequested!==null){cableRequestSerial++;cableRequested=null;}
+    return;
+  }
+  if(cableRequested===index)return;
+  const serial=++cableRequestSerial;cableRequested=index;
+  if(!cableMotionPromise)cableMotionPromise=(async()=>{
+    const response=await fetch(`/viewer/throttle-cable-motion.json?revision=${modelRevision}`);
+    if(!response.ok)throw new Error(`Cable motion: ${response.status}`);
+    return createThrottleCableMotion(await response.json());
+  })();
+  cableMotionPromise.then(motion=>motion.frame(index)).then(frame=>{
+    if(serial!==cableRequestSerial)return;
+    cableFrame=frame;cableRequested=null;pose();
+  }).catch(error=>{
+    if(serial!==cableRequestSerial)return;
+    cableMotionFailed=true;cableRequested=null;cableFrame=null;throttleAngle=0;
+    $('error').hidden=false;$('error').textContent='Cable motion could not load. Reload to try again.';
+    console.error(error);pose();
+  });
+}
+function setCablePose(object,kind,displayAngle){
+  const frame=cableFrame?.angle_deg===displayAngle?cableFrame:null;
+  const rigid=frame?.rigid[kind];
+  if(rigid){
+    object.position.add(toView(rigid.translation_cad_mm));
+    object.quaternion.premultiply(new THREE.Quaternion(...rigid.quaternion_viewer_xyzw));
+  }
+  if(!['core','compression-spring'].includes(kind))return;
+  object.traverse(node=>{
+    if(!node.isMesh)return;
+    if(!node.userData.cableNeutralGeometry)node.userData.cableNeutralGeometry=node.geometry;
+    const mesh=frame?.meshes[kind],index=frame?.angle_deg??0;
+    if(node.userData.cableGeometryAngle===index)return;
+    if(node.geometry!==node.userData.cableNeutralGeometry)node.geometry.dispose();
+    if(!mesh)node.geometry=node.userData.cableNeutralGeometry;
+    else{
+      const geometry=new THREE.BufferGeometry();
+      geometry.setAttribute('position',new THREE.BufferAttribute(mesh.positions,3));
+      geometry.setAttribute('normal',new THREE.BufferAttribute(mesh.normals,3));
+      geometry.setIndex(new THREE.BufferAttribute(mesh.indices,1));
+      geometry.computeBoundingBox();geometry.computeBoundingSphere();node.geometry=geometry;
+    }
+    node.userData.cableGeometryAngle=index;
+  });
+}
 function pose(){
   if(!data)return;
+  requestCablePose(throttleAngle);
+  const displayThrottleAngle=cableRequested!==null?(cableFrame?.angle_deg??0):throttleAngle;
   const m=data.mechanism;
   for(const a of data.assemblies){
     const g=groups.get(a.id);g.position.copy(toView(a.position_cad_mm||[0,0,0]));g.quaternion.copy(cadQuaternion(a.rotation_cad_deg));
     if(!a.motion)continue;
-    if(a.motion.type==='throttle'){g.rotateZ(-throttleAngle*Math.PI/180);continue;}
+    if(a.motion.type==='throttle'){g.rotateZ(-displayThrottleAngle*Math.PI/180);continue;}
     if(a.motion.type==='fs10'){
       const state=compressorState(compressorAngle,a.motion,compressorEngaged);
       g.position.add(toView([state.translationX,0,0]).applyQuaternion(g.quaternion));
@@ -254,7 +311,8 @@ function pose(){
     const object=objects.get(o.id);
     object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
     object.position.copy(toView(o.position_cad_mm)).add(toView(explodeOffset(o,explosion)));
-    if(o.throttle_spring)setThrottleSpringPose(object,throttleAngle);
+    if(o.throttle_spring)setThrottleSpringPose(object,displayThrottleAngle);
+    if(o.throttle_cable)setCablePose(object,o.throttle_cable.kind,displayThrottleAngle);
     if(o.valvetrain){
       const sourceSized=o.valvetrain.model==='source-sized-v2';
       const motion=sourceSized?sourceOccurrencePose(angle,o.valvetrain):occurrenceValvePose(angle,o.valvetrain);
@@ -264,7 +322,7 @@ function pose(){
       if(motion.springHeightMm!==undefined)setValveSpringHeight(object,motion.springHeightMm,sourceSized);
     }
   }
-  $('throttle-angle').value=String(throttleAngle);$('throttle-value').textContent=`${throttleAngle}°`;
+  $('throttle-angle').value=String(throttleAngle);$('throttle-value').textContent=`${throttleAngle}°${cableRequested!==null?' · loading cable…':''}`;
   $('angle').value=String(angle);$('angle-value').textContent=`${Math.round(angle)}°`;
   $('compressor-angle').value=String(compressorAngle);$('compressor-value').textContent=`${Math.round(compressorAngle)}°`;
   $('compressor-engaged').checked=compressorEngaged;
@@ -276,7 +334,7 @@ $('play').onclick=()=>togglePlay(!playing);
 $('compressor-play').onclick=()=>toggleCompressorPlay(!compressorPlaying);
 $('compressor-angle').oninput=event=>{toggleCompressorPlay(false);compressorAngle=Number(event.target.value);pose();};
 $('compressor-engaged').onchange=event=>{compressorEngaged=event.target.checked;pose();};
-$('throttle-angle').oninput=e=>{throttleAngle=Math.round(Number(e.target.value));pose();};
+$('throttle-angle').oninput=e=>{throttleAngle=cableMotionFailed?0:Math.round(Number(e.target.value));pose();};
 $('angle').oninput=e=>{togglePlay(false);angle=Number(e.target.value);pose();};
 $('explode').oninput=e=>{explosion=Number(e.target.value);pose();frameAssembly();};
 $('section').onclick=()=>{section=!section;styles();};$('ghost').onclick=()=>{ghost=!ghost;styles();};
@@ -296,6 +354,7 @@ renderer.domElement.addEventListener('pointerup',e=>{
 try{
   const response=await fetch('/inventory/engine/full-assembly.json',{cache:'no-store'});if(!response.ok)throw new Error(`Manifest: ${response.status}`);const manifestText=await response.text();data=JSON.parse(manifestText);nav=buildNavigation(data);
   const revision=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(manifestText))),byte=>byte.toString(16).padStart(2,'0')).join('');
+  modelRevision=revision;
   if(data.occurrences.some(o=>o.throttle_spring)){
     const response=await fetch('/viewer/throttle-return-spring-paths.json',{cache:'no-store'});
     if(!response.ok)throw new Error(`Throttle spring paths: ${response.status}`);
