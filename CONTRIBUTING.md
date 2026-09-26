@@ -1,5 +1,7 @@
 # Contributing
 
+Start with [developer onboarding](docs/onboarding/START-HERE.md). The [project workflow](docs/onboarding/PROJECT-WORKFLOW.md), [quality standard](docs/onboarding/QUALITY-STANDARD.md) and [component handoff template](docs/templates/COMPONENT-HANDOFF.md) define the common process for humans and agents.
+
 ## Ownership and branches
 
 Pick a component sub-issue under a truck-system parent issue and assign it. Agree on the coordinate frame, units (millimeters), mounting datums, adjacent-part ownership and evidence limits before modeling. Create a focused branch such as `component/123-water-pump`; use a separate worktree when working in parallel. Never have two workers edit the shared assembly builder concurrently.
@@ -23,4 +25,4 @@ Run `node scripts/check-engine-navigation.mjs`. CAD work uses the environment an
 
 Do not commit credentials, purchased reference originals or personal owner photos. Preserve their local source paths and reproducible evidence metadata as appropriate. Large generated STEP files belong in the private release checkpoint, with checksums and restoration instructions. Candidate files are clearly labeled and remain separate from accepted installed geometry.
 
-Follow `AGENTS.md` for knowledge-base notes. Use focused worker briefs described in `docs/TOKEN-EFFICIENT-BUILD-WORKFLOW.md`; one integration owner handles shared files.
+Follow `AGENTS.md` and `docs/KNOWLEDGE-BASE-WORKFLOW.md` for knowledge-base notes. Use focused worker briefs described in `docs/TOKEN-EFFICIENT-BUILD-WORKFLOW.md`; one integration owner handles shared files.
