@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. **722 definitions / 1330 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. **725 definitions / 1333 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
@@ -39,7 +39,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Fuel pressure regulator and internals](fuel-regulator.md) | 11 | 13 | In review | [#42](https://github.com/0xZakk/truck/issues/42) |
 | [Throttle body, shaft, plates and mounting hardware](throttle.md) | 13 | 21 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
 | [Throttle cable bracket](throttle-bracket.md) | 2 | 3 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
-| [Idle-air control valve and internals](iac.md) | 10 | 11 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
+| [Idle-air control valve and internals](iac.md) | 13 | 14 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
 | [Throttle-position sensor and internals](tps.md) | 6 | 7 | In review | [#45](https://github.com/0xZakk/truck/issues/45) |
 | [Front/rear exhaust manifolds, mounting and outlet joints](exhaust.md) | 7 | 7 | In review | [#46](https://github.com/0xZakk/truck/issues/46) |
 | [Water pump, impeller, shaft, seal, bearing and pulley](water-pump.md) | 16 | 22 | In review | [#47](https://github.com/0xZakk/truck/issues/47) |

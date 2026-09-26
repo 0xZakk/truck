@@ -1,0 +1,23 @@
+{
+  "status": "PASS isolated exterior installed-binding controls",
+  "canonical_modified": false,
+  "stage_validation_sha256": "260592a09d457b261800bda499b151561a1a667c37d3fd4f248437ee731509f5",
+  "promotion_validation_sha256": "478454b1bcf1f015aa6f4dae8de71bd967dc936d28587634de1cf9c7db1f725a",
+  "cases": [
+    {
+      "case": "installed mirror",
+      "status": "PASS installed exterior binding; browser acceptance pending"
+    },
+    {
+      "case": "corrupt installed GLB",
+      "status": "PASS rejected",
+      "reason": "Current actor/neighbor changed: models/engine/efi-upper-intake.glb"
+    },
+    {
+      "case": "shifted casting frame",
+      "status": "PASS rejected",
+      "reason": "Manifest no longer matches reviewed stage context"
+    }
+  ],
+  "checker_sha256": "404b506bec679f7c97413d902ce0addbe74a2e5324dcab8192871a9ddd71bc2f"
+}

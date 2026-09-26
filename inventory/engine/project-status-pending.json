@@ -15,17 +15,27 @@
     {
       "issue": 15,
       "desired_status": "In progress",
-      "reason": "Matched illustrative oil-fill neck candidate and cap retention checks active."
+      "reason": "Oil-fill neck/seal coordinated and merged in PR91; factory dimensions remain unresolved."
     },
     {
       "issue": 43,
       "desired_status": "In progress",
-      "reason": "Throttle lever and ball stud candidate active; return hardware unresolved."
+      "reason": "Plate retention merged in PR91; photo-compared cable/socket/spring candidate active."
     },
     {
       "issue": 78,
       "desired_status": "In progress",
-      "reason": "Guide tube attachment and route feasibility active."
+      "reason": "Dipstick guide and inserted assembly merged; calibration and production details remain unresolved."
+    },
+    {
+      "issue": 36,
+      "desired_status": "In progress",
+      "reason": "Compact intake and exterior integrated; support bracket anchor/datum research unresolved."
+    },
+    {
+      "issue": 44,
+      "desired_status": "In progress",
+      "reason": "Attachment integrated; closure and electrical internals under integration."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes."

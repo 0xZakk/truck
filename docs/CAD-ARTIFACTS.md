@@ -2,7 +2,24 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Current intake and attachment checkpoint
+## Current intake exterior and IAC detail checkpoint
+
+The [intake/IAC detail release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-iac-detail) records **725 definitions / 1,333 occurrences**. It adds source-compared intake exterior detail, an explicitly illustrative captured IAC closure, and separately selectable terminals and insulating carrier. Production geometry remains provisional.
+
+```sh
+gh release download checkpoint-2026-09-26-iac-detail --repo 0xZakk/truck --pattern truck-active-cad-20260926-iac-detail.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260926-iac-detail.tar.gz
+```
+
+Compare with `docs/cad-iac-detail-checkpoint.json`, preserve newer local work, then extract from the repository root:
+
+```sh
+tar -xzf /tmp/truck-active-cad-20260926-iac-detail.tar.gz
+```
+
+This includes active STEP geometry, the combined assembly, prior fixtures and the new exterior/closure/electrical candidates, stages and ordered adapter replay. It excludes ongoing cable/distributor/PCV work, third-party reference photos, purchased manuals and owner photographs. These studies do not make the engine complete.
+
+## Previous intake and attachment checkpoint
 
 The [intake/attachment release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-intake-attachments) records **722 definitions / 1,330 occurrences**. It includes the compact intake, coordinated cap/EGR interfaces, IAC mounting and internal return study, and illustrative plate retention. The engine remains unfinished and dimensions remain provisional.
 

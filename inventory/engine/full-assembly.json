@@ -2757,34 +2757,6 @@
       ]
     },
     {
-      "id": "iac-end-plug",
-      "name": "IAC chamber end closure",
-      "function": "Closes the outer valve chamber. Production retention details remain unresolved.",
-      "system": "induction",
-      "color": "#95a3a9",
-      "glb": "/models/engine/iac-end-plug.glb",
-      "step": "/cad/engine/generated/iac-end-plug.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-1cf529afa81d",
-        "truck-throttle-operation"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-      ],
-      "volume_mm3": 221.67077763729586,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 228,
-      "model_bounds_mm": [
-        1.0000000000000038,
-        16.8,
-        16.8
-      ]
-    },
-    {
       "id": "iac-solenoid-can",
       "name": "IAC solenoid casing",
       "function": "Encloses the coil and provides the magnetic return structure.",
@@ -2813,34 +2785,6 @@
       ]
     },
     {
-      "id": "iac-coil",
-      "name": "IAC solenoid coil",
-      "function": "The controller varies solenoid duty cycle to regulate bypass air. Shown as a winding envelope.",
-      "system": "induction",
-      "color": "#b47647",
-      "glb": "/models/engine/iac-coil.glb",
-      "step": "/cad/engine/generated/iac-coil.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-1cf529afa81d",
-        "truck-throttle-operation"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-      ],
-      "volume_mm3": 9806.669963739756,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 464,
-      "model_bounds_mm": [
-        39.0,
-        19.6,
-        19.60000000000001
-      ]
-    },
-    {
       "id": "iac-pintle",
       "name": "IAC stem and reverse-seated pintle",
       "function": "Meters the bypass opening. This separate moving element is shown near its seat; calibrated travel and restoring mechanism remain unresolved.",
@@ -2866,34 +2810,6 @@
         57.5,
         15.0,
         15.0
-      ]
-    },
-    {
-      "id": "iac-connector-cap",
-      "name": "IAC electrical connector cap",
-      "function": "Insulates the solenoid connection. Terminal geometry and electrical harness are still missing.",
-      "system": "induction",
-      "color": "#404d46",
-      "glb": "/models/engine/iac-connector-cap.glb",
-      "step": "/cad/engine/generated/iac-connector-cap.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-1cf529afa81d",
-        "truck-throttle-operation"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow."
-      ],
-      "volume_mm3": 2079.645943005142,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 492,
-      "model_bounds_mm": [
-        12.0,
-        24.0,
-        24.0
       ]
     },
     {
@@ -24913,46 +24829,6 @@
       ]
     },
     {
-      "id": "efi-upper-intake",
-      "name": "Upper EFI intake manifold",
-      "function": "A compact estimated plenum distributes air through six curved runners; direct twin-port throttle flange and two-ended runner spread follow Ford comparison images.",
-      "system": "induction",
-      "color": "#a7afb3",
-      "glb": "/models/engine/efi-upper-intake.glb",
-      "step": "/cad/engine/generated/efi-upper-intake.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "fsm-212bf152ff88",
-        "fsm-9e1b0b719d0e",
-        "efi-intake-drawing",
-        "system-750bd1047639",
-        "system-73d3dd2d32e7",
-        "upper-intake-topology-study"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.",
-        "Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.",
-        "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
-        "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
-        "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.",
-        "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
-        "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
-        "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
-        "Casting ribs, bosses and detailed wall distribution remain incomplete."
-      ],
-      "volume_mm3": 2221774.032327898,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 35052,
-      "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
-      "model_bounds_mm": [
-        734.0000002,
-        353.5000001,
-        173.50000009999997
-      ]
-    },
-    {
       "id": "valve-cover",
       "name": "Valve cover",
       "function": "Contains rocker oil with one relocated fill opening and a continuous illustrative threaded neck. The previous provisional opening is regenerated closed.",
@@ -25198,7 +25074,8 @@
         "system-1cf529afa81d",
         "truck-throttle-operation",
         "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -25206,7 +25083,8 @@
         "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
       ],
       "volume_mm3": 763.4855546386755,
       "volume_method": "default",
@@ -25231,7 +25109,8 @@
         "system-1cf529afa81d",
         "truck-throttle-operation",
         "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -25239,7 +25118,8 @@
         "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
       ],
       "volume_mm3": 1555.5982345381112,
       "volume_method": "default",
@@ -25262,13 +25142,15 @@
       "geometry_status": "provisional",
       "sources": [
         "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
       ],
       "volume_mm3": 465.69857622378936,
       "volume_method": "default",
@@ -25291,13 +25173,15 @@
       "geometry_status": "provisional",
       "sources": [
         "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
       ],
       "volume_mm3": 84.0329556260159,
       "volume_method": "default",
@@ -25307,39 +25191,6 @@
         19.0,
         7.0000002,
         7.0000002
-      ]
-    },
-    {
-      "id": "iac-valve-body",
-      "name": "IAC valve body \u00b7 attachment study",
-      "function": "Two estimated flange ears retain the body over a separate gasket. The inherited bypass chambers and reverse-pintle seat remain open.",
-      "system": "induction",
-      "color": "#95a3a9",
-      "glb": "/models/engine/iac-valve-body.glb",
-      "step": "/cad/engine/generated/iac-valve-body.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "system-1cf529afa81d",
-        "truck-throttle-operation",
-        "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
-        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
-        "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
-        "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
-      ],
-      "volume_mm3": 27176.61078718865,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 4336,
-      "model_bounds_mm": [
-        48.00000020000001,
-        56.0,
-        26.0000001
       ]
     },
     {
@@ -25356,7 +25207,8 @@
         "truck-throttle-service",
         "truck-throttle-catalog",
         "iac-attachment-factory-1994",
-        "iac-attachment-estimated-study"
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -25364,7 +25216,8 @@
         "IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0\u201390 degree motion is not the production stop calibration.",
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
-        "The existing end plug retains0.1mm radial clearance with unresolved retention/sealing construction; this study is not a leak-tight valve certification."
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
       ],
       "volume_mm3": 126137.3166360681,
       "volume_method": "default",
@@ -25473,6 +25326,263 @@
         6.0000002051682255,
         130.0000002,
         6.000000200000024
+      ]
+    },
+    {
+      "id": "efi-upper-intake",
+      "name": "Upper EFI intake manifold",
+      "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
+      "system": "induction",
+      "color": "#a7afb3",
+      "glb": "/models/engine/efi-upper-intake.glb",
+      "step": "/cad/engine/generated/efi-upper-intake.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "fsm-212bf152ff88",
+        "fsm-9e1b0b719d0e",
+        "efi-intake-drawing",
+        "system-750bd1047639",
+        "system-73d3dd2d32e7",
+        "upper-intake-topology-study",
+        "upper-intake-exterior-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.",
+        "Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.",
+        "Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.",
+        "Hose routing, 12 mm outside diameter, 8.2 mm main bore, 8.3 mm straight regulator socket, fitting dimensions and plenum port station are provisional; production routing may use a shared vacuum harness.",
+        "The fitting uses an unthreaded seat with clearance; thread sealing, hose compression, clamps and actual installed variant remain unresolved. No pressure response is simulated.",
+        "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+        "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+        "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+        "Casting ribs, bosses and detailed wall distribution remain incomplete.",
+        "Visible border ribs, Ford oval/word and ELECTRONIC/FUEL INJECTION wording follow owner/specimen photos; all new dimensions and font outlines are inferred.",
+        "Arial Bold and Brush Script are explicit system-font approximations, not traced factory lettering. Casting texture, lower mounting bosses and exact wall distribution remain incomplete.",
+        "Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions."
+      ],
+      "volume_mm3": 2380612.7634378937,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 46546,
+      "model_bounds_mm": [
+        734.0000002,
+        353.5000001,
+        175.10000000000002
+      ]
+    },
+    {
+      "id": "iac-end-plug",
+      "name": "IAC captured end plug \u00b7 illustrative",
+      "function": "A recessed metal flange is captured between an integral body lip and shoulder in this illustrative closure. Its inner face preserves the spring seat; actual Ford construction and leak performance remain unknown.",
+      "system": "induction",
+      "color": "#95a3a9",
+      "glb": "/models/engine/iac-end-plug.glb",
+      "step": "/cad/engine/generated/iac-end-plug.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-1cf529afa81d",
+        "truck-throttle-operation",
+        "iac-closure-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
+      ],
+      "volume_mm3": 174.4557816464947,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 1260,
+      "model_bounds_mm": [
+        0.7000000000000051,
+        18.4,
+        18.4
+      ]
+    },
+    {
+      "id": "iac-valve-body",
+      "name": "IAC valve body \u00b7 attachment study",
+      "function": "Two estimated flange ears retain the body over a separate gasket. The inherited bypass chambers and reverse-pintle seat remain open.",
+      "system": "induction",
+      "color": "#95a3a9",
+      "glb": "/models/engine/iac-valve-body.glb",
+      "step": "/cad/engine/generated/iac-valve-body.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-1cf529afa81d",
+        "truck-throttle-operation",
+        "iac-attachment-factory-1994",
+        "iac-attachment-estimated-study",
+        "iac-closure-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+        "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
+        "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
+        "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
+      ],
+      "volume_mm3": 27161.04103847296,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 6720,
+      "model_bounds_mm": [
+        48.00000010000001,
+        56.0,
+        26.0000001
+      ]
+    },
+    {
+      "id": "iac-coil",
+      "name": "IAC winding envelope \u00b7 illustrative",
+      "function": "An annular winding envelope accepts two separate estimated lead tails. The exact1994 circuit includes a parallel suppression diode, represented in explanation only.",
+      "system": "induction",
+      "color": "#b47647",
+      "glb": "/models/engine/iac-coil.glb",
+      "step": "/cad/engine/generated/iac-coil.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-1cf529afa81d",
+        "truck-throttle-operation",
+        "iac-electrical-factory-topology-illustrative-construction"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+        "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+        "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+        "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+      ],
+      "volume_mm3": 8224.909478583833,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 1264,
+      "model_bounds_mm": [
+        39.0,
+        18.6,
+        18.60000000000001
+      ]
+    },
+    {
+      "id": "iac-coil-carrier-estimated",
+      "name": "IAC coil insulator \u00b7 illustrative",
+      "function": "An estimated insulating bobbin supports the winding between fixed axial seats and separates it from the armature and metal case.",
+      "system": "induction",
+      "color": "#9b9b85",
+      "glb": "/models/engine/iac-coil-carrier-estimated.glb",
+      "step": "/cad/engine/generated/iac-coil-carrier-estimated.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "iac-electrical-factory-topology-illustrative-construction"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+        "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+        "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+      ],
+      "volume_mm3": 1606.0943452767865,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 32420,
+      "model_bounds_mm": [
+        44.00000140000001,
+        19.200000199999998,
+        19.200000199999998
+      ]
+    },
+    {
+      "id": "iac-connector-cap",
+      "name": "IAC keyed connector cap \u00b7 illustrative",
+      "function": "An estimated asymmetric shroud and embedded terminal shoulders illustrate a two-contact engine-side connector. The component face looks toward -X, control above VPWR; production cavity numbering and clocking remain unknown.",
+      "system": "induction",
+      "color": "#404d46",
+      "glb": "/models/engine/iac-connector-cap.glb",
+      "step": "/cad/engine/generated/iac-connector-cap.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-1cf529afa81d",
+        "truck-throttle-operation",
+        "iac-electrical-factory-topology-illustrative-construction"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "The factory chapter illustrates both unvented and vent/filter IAC valves. This study uses the unvented architecture; the installed truck variant is not established.",
+        "All dimensions, bypass routing, mounting pattern, valve travel and spring/magnetic details are provisional. The model does not simulate idle speed, duty cycle, vacuum or flow.",
+        "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+        "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+        "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+      ],
+      "volume_mm3": 2060.355056806002,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 41238,
+      "model_bounds_mm": [
+        12.000000099999994,
+        24.0000002,
+        24.0000002
+      ]
+    },
+    {
+      "id": "iac-terminal-control-estimated",
+      "name": "IAC control terminal and tail \u00b7 illustrative",
+      "function": "The upper contact in the chosen engine-side view joins one winding endpoint. This is the PCM-controlled circuit; its embedded capture and termination method are estimated.",
+      "system": "induction",
+      "color": "#c8b986",
+      "glb": "/models/engine/iac-terminal-control-estimated.glb",
+      "step": "/cad/engine/generated/iac-terminal-control-estimated.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "iac-electrical-factory-topology-illustrative-construction"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+        "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+        "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+      ],
+      "volume_mm3": 11.921384048141176,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 27784,
+      "model_bounds_mm": [
+        13.500000100000022,
+        7.100000200000009,
+        2.2000002
+      ]
+    },
+    {
+      "id": "iac-terminal-vpwr-estimated",
+      "name": "IAC VPWR terminal and tail \u00b7 illustrative",
+      "function": "The lower contact in the chosen engine-side view joins the other winding endpoint. VPWR is the supply node and suppression-diode cathode in the source circuit; package construction is unknown.",
+      "system": "induction",
+      "color": "#c8b986",
+      "glb": "/models/engine/iac-terminal-vpwr-estimated.glb",
+      "step": "/cad/engine/generated/iac-terminal-vpwr-estimated.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "iac-electrical-factory-topology-illustrative-construction"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 diagrams support two IAC terminals and a suppression diode in parallel with the winding; no physical diode package or location is modeled.",
+        "Connector dimensions, key and mounting clocking, carrier, terminal alloy/plating, embedded shoulders and tail terminations are illustrative. No production molded retention or joint method is identified.",
+        "The coil is a winding envelope, not a homogeneous conductor, resolved turns or electrical resistance simulation. No wire-color-to-metal-material inference is made."
+      ],
+      "volume_mm3": 11.921384048141016,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 28286,
+      "model_bounds_mm": [
+        13.500000100000022,
+        7.1000002,
+        2.2000002
       ]
     }
   ],
@@ -38428,7 +38538,7 @@
       "definition": "efi-upper-intake",
       "parent": "intake-castings",
       "name": "Upper EFI intake manifold",
-      "function": "A compact estimated plenum distributes air through six curved runners; direct twin-port throttle flange and two-ended runner spread follow Ford comparison images.",
+      "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
       "position_cad_mm": [
         0,
         0,
@@ -41639,8 +41749,8 @@
       "id": "iac-end-plug",
       "definition": "iac-end-plug",
       "parent": "idle-air",
-      "name": "IAC chamber end closure",
-      "function": "Closes the outer valve chamber. Production retention details remain unresolved.",
+      "name": "IAC captured end plug \u00b7 illustrative",
+      "function": "A recessed metal flange is captured between an integral body lip and shoulder in this illustrative closure. Its inner face preserves the spring seat; actual Ford construction and leak performance remain unknown.",
       "position_cad_mm": [
         -23.5,
         0,
@@ -41683,8 +41793,8 @@
       "id": "iac-coil",
       "definition": "iac-coil",
       "parent": "idle-air",
-      "name": "IAC solenoid coil",
-      "function": "The controller varies solenoid duty cycle to regulate bypass air. Shown as a winding envelope.",
+      "name": "IAC winding envelope \u00b7 illustrative",
+      "function": "An annular winding envelope accepts two separate estimated lead tails. The exact1994 circuit includes a parallel suppression diode, represented in explanation only.",
       "position_cad_mm": [
         0,
         0,
@@ -41749,8 +41859,8 @@
       "id": "iac-connector-cap",
       "definition": "iac-connector-cap",
       "parent": "idle-air",
-      "name": "IAC electrical connector cap",
-      "function": "Insulates the solenoid connection. Terminal geometry and electrical harness are still missing.",
+      "name": "IAC keyed connector cap \u00b7 illustrative",
+      "function": "An estimated asymmetric shroud and embedded terminal shoulders illustrate a two-contact engine-side connector. The component face looks toward -X, control above VPWR; production cavity numbering and clocking remain unknown.",
       "position_cad_mm": [
         0,
         0,
@@ -60085,6 +60195,72 @@
         0,
         0
       ]
+    },
+    {
+      "id": "iac-coil-carrier-estimated",
+      "definition": "iac-coil-carrier-estimated",
+      "parent": "idle-air",
+      "name": "IAC coil insulator \u00b7 illustrative",
+      "function": "An estimated insulating bobbin supports the winding between fixed axial seats and separates it from the armature and metal case.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "iac-terminal-control-estimated",
+      "definition": "iac-terminal-control-estimated",
+      "parent": "idle-air",
+      "name": "IAC control terminal and tail \u00b7 illustrative",
+      "function": "The upper contact in the chosen engine-side view joins one winding endpoint. This is the PCM-controlled circuit; its embedded capture and termination method are estimated.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "iac-terminal-vpwr-estimated",
+      "definition": "iac-terminal-vpwr-estimated",
+      "parent": "idle-air",
+      "name": "IAC VPWR terminal and tail \u00b7 illustrative",
+      "function": "The lower contact in the chosen engine-side view joins the other winding endpoint. VPWR is the supply node and suppression-diode cathode in the source circuit; package construction is unknown.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        80,
+        0,
+        0
+      ]
     }
   ],
   "sources": {
@@ -61317,6 +61493,24 @@
       "path": "/reference/engine/throttle-plate-fasteners-review.json",
       "sha256": "271bc00cf811cd8c99775f0d7a12db86b10b1cc7cdf73cf56b29ae9783ec459f",
       "url": "https://github.com/0xZakk/truck/issues/43"
+    },
+    "upper-intake-exterior-study": {
+      "title": "Owner and specimen observations for upper intake casting exterior",
+      "path": "/reference/engine/intake-exterior-review.json",
+      "sha256": "1cffee39124f693112e81b67aeff6a4949b609b22daf4c030f6ff64a5629ccdf",
+      "url": "https://i.ebayimg.com/images/g/-qoAAOSwDTdlcJqH/s-l1200.jpg"
+    },
+    "iac-closure-illustrative-study": {
+      "title": "IAC closure review: unresolved factory method and illustrative captured flange",
+      "path": "/reference/engine/iac-closure-review.json",
+      "sha256": "519d52ece6ffbc1518a67060adf966b92bfbf8c2a7a2c2d104dbffac5c6e6f8e",
+      "url": "https://github.com/0xZakk/truck/issues/44"
+    },
+    "iac-electrical-factory-topology-illustrative-construction": {
+      "title": "Exact1994 IAC two-terminal circuit and illustrative electrical construction",
+      "path": "/reference/engine/iac-electrical-review.json",
+      "sha256": "99e62c2a0633a7c2ddfc37d494d744547f04cfbdeb60eae030f99f10c1e04cf9",
+      "url": "https://github.com/0xZakk/truck/issues/44"
     }
   },
   "mechanism": {

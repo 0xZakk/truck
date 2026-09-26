@@ -1,0 +1,97 @@
+{
+  "iac-connector-cap": {
+    "summary": "Orient the engine-side face",
+    "steps": [
+      {
+        "title": "Orient the engine-side face",
+        "text": "Two vertically arranged contacts sit inside an illustrative asymmetric shroud. Viewed from +X toward -X with +Z up, control is above VPWR. The separate harness-face drawing must not be copied unmirrored."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Open or bridged connection",
+        "text": "The geometric controls disconnect a lead tail or bridge the two contacts. They explain faults without claiming measured resistance, dielectric strength or a repair procedure."
+      }
+    ],
+    "sources": [
+      "iac-electrical-factory-topology-illustrative-construction"
+    ],
+    "limits": "Source-supported two-contact circuit topology; illustrative connector dimensions, key, carrier, retention and internal connections. No harness routing, physical diode package, production variant or electrical calibration claim."
+  },
+  "iac-coil": {
+    "summary": "Follow the circuit, not the envelope material",
+    "steps": [
+      {
+        "title": "Follow the circuit, not the envelope material",
+        "text": "The exact1994 circuit has a winding and parallel suppression diode between VPWR and PCM control. The diode cathode is on VPWR. No physical package, turns or resistance are simulated."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Open or bridged connection",
+        "text": "The geometric controls disconnect a lead tail or bridge the two contacts. They explain faults without claiming measured resistance, dielectric strength or a repair procedure."
+      }
+    ],
+    "sources": [
+      "iac-electrical-factory-topology-illustrative-construction"
+    ],
+    "limits": "Source-supported two-contact circuit topology; illustrative connector dimensions, key, carrier, retention and internal connections. No harness routing, physical diode package, production variant or electrical calibration claim."
+  },
+  "iac-coil-carrier-estimated": {
+    "summary": "Keep winding and case apart",
+    "steps": [
+      {
+        "title": "Keep winding and case apart",
+        "text": "The estimated insulating carrier bears against fixed axial faces and supports the winding envelope around the armature. Production insulation and molding method are unknown."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Open or bridged connection",
+        "text": "The geometric controls disconnect a lead tail or bridge the two contacts. They explain faults without claiming measured resistance, dielectric strength or a repair procedure."
+      }
+    ],
+    "sources": [
+      "iac-electrical-factory-topology-illustrative-construction"
+    ],
+    "limits": "Source-supported two-contact circuit topology; illustrative connector dimensions, key, carrier, retention and internal connections. No harness routing, physical diode package, production variant or electrical calibration claim."
+  },
+  "iac-terminal-control-estimated": {
+    "summary": "Follow the control endpoint",
+    "steps": [
+      {
+        "title": "Follow the control endpoint",
+        "text": "One continuous estimated terminal/tail reaches the winding end face. The source control circuit reaches PCM pin21; that is not a connector cavity number."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Open or bridged connection",
+        "text": "The geometric controls disconnect a lead tail or bridge the two contacts. They explain faults without claiming measured resistance, dielectric strength or a repair procedure."
+      }
+    ],
+    "sources": [
+      "iac-electrical-factory-topology-illustrative-construction"
+    ],
+    "limits": "Source-supported two-contact circuit topology; illustrative connector dimensions, key, carrier, retention and internal connections. No harness routing, physical diode package, production variant or electrical calibration claim."
+  },
+  "iac-terminal-vpwr-estimated": {
+    "summary": "Follow the supply endpoint",
+    "steps": [
+      {
+        "title": "Follow the supply endpoint",
+        "text": "The other estimated terminal/tail reaches a separate winding endpoint. Source VPWR wire color does not identify terminal material, plating or installed clocking."
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Open or bridged connection",
+        "text": "The geometric controls disconnect a lead tail or bridge the two contacts. They explain faults without claiming measured resistance, dielectric strength or a repair procedure."
+      }
+    ],
+    "sources": [
+      "iac-electrical-factory-topology-illustrative-construction"
+    ],
+    "limits": "Source-supported two-contact circuit topology; illustrative connector dimensions, key, carrier, retention and internal connections. No harness routing, physical diode package, production variant or electrical calibration claim."
+  }
+}

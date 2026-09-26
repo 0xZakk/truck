@@ -1,0 +1,48 @@
+{
+  "iac-end-plug": {
+    "summary": "The illustrative end plug has a recessed flange captured between a body lip and shoulder.",
+    "steps": [
+      {
+        "title": "Keep the spring reference",
+        "text": "Its inner face remains at the original spring seat. Continuous modeled contact closes the geometric gap; this does not prove vacuum sealing or production fit.",
+        "part": "iac-return-spring-estimated"
+      },
+      {
+        "title": "Retention is a chosen construction",
+        "text": "The exact1994 picture shows a circular closure/rim but does not establish pressed, crimped or threaded retention. The integral formed lip is an educational choice.",
+        "part": "iac-valve-body"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "A loose closure loses both references",
+        "text": "The fault control opens a connected geometric channel and loses spring-seat contact. It is a topology demonstration, not a leak-rate or service procedure."
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-closure-illustrative-study"
+    ],
+    "limits": "Illustrative captured metal closure, not an identified Ford construction. Exact valve variant, retention/fit, material, forming process, contact pressure, strength and leak-rate remain unknown. The old0.1mm geometric gap has been superseded; no separate seal or factory interference is inferred."
+  },
+  "iac-valve-body": {
+    "summary": "The valve retains its two-port attachment and adds an illustrative recessed closure seat.",
+    "steps": [
+      {
+        "title": "Local adaptation only",
+        "text": "The closure recess removes15.569733mm\u00b3 from the attachment candidate. Mounting flange, gasket passages, chambers and pintle seat remain unchanged.",
+        "part": "iac-gasket"
+      },
+      {
+        "title": "Retain the flange",
+        "text": "Both axial faces of the plug flange contact the body. Straight withdrawal is blocked by the assembled lip; its real forming process and service removal are not simulated.",
+        "part": "iac-end-plug"
+      }
+    ],
+    "sources": [
+      "iac-attachment-factory-1994",
+      "iac-closure-illustrative-study"
+    ],
+    "limits": "Illustrative captured metal closure, not an identified Ford construction. Exact valve variant, retention/fit, material, forming process, contact pressure, strength and leak-rate remain unknown. The old0.1mm geometric gap has been superseded; no separate seal or factory interference is inferred."
+  }
+}

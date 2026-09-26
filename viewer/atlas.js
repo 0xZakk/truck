@@ -1,5 +1,5 @@
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
-import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=plate-retention-20260926';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=iac-electrical-20260926';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';

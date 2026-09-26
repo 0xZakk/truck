@@ -1,0 +1,2402 @@
+{
+  "status": "PASS bounded exterior candidate; current722 context and browser pending",
+  "baseline_scope": "Immutable719definitions/1323occurrences;8coordinated staged overrides plus6verified pre-IAC/plate restoreddefinitions. Current IAC additions/replacements intentionally excluded and require later audit.",
+  "valid": true,
+  "solid_count": 1,
+  "baseline_difference_mm3": 0.0,
+  "protected_interfaces": [
+    {
+      "interface": "lower flange and seven studs",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "interface": "throttle mating pad and ports",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "interface": "EGR mating pad and port",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "interface": "regulator vacuum bore/seat protected R10",
+      "symmetric_difference_mm3": 0.0
+    }
+  ],
+  "new_air_blockage_mm3": 0.0,
+  "runner_probes": [
+    {
+      "cylinder": 1,
+      "blocked_volume_mm3": 0.0
+    },
+    {
+      "cylinder": 2,
+      "blocked_volume_mm3": 0.0
+    },
+    {
+      "cylinder": 3,
+      "blocked_volume_mm3": 0.0
+    },
+    {
+      "cylinder": 4,
+      "blocked_volume_mm3": 0.0
+    },
+    {
+      "cylinder": 5,
+      "blocked_volume_mm3": 0.0
+    },
+    {
+      "cylinder": 6,
+      "blocked_volume_mm3": 0.0
+    }
+  ],
+  "cap_withdrawal_overlap_mm3": 0.0,
+  "negative_controls": {
+    "plugged_runner_new_air_blockage_mm3": 8553.719492370807,
+    "front_protrusion_cap_overlap_mm3": 4188.70768861353,
+    "spring_envelope_shifted_toward_casting_overlap_mm3": 3971.0152522349626
+  },
+  "neighbor_audit": {
+    "exact_pairs": 239,
+    "aabb_excluded": 1083,
+    "pairs": [
+      {
+        "neighbor": "cylinder-head",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c1-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c2-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c3-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c4-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c5-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-intake-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-retainer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-keeper-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-keeper-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-pushrod",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-rocker",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-fulcrum",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-rocker-bolt",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "c6-exhaust-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "valve-cover",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "oil-filler-cap",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-lower-intake",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-intake-gasket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-4",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-5",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-6",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "efi-upper-stud-7",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-1-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-1-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-2-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-2-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-3-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-3-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-4-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-4-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-5-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-5-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-6-metal-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "injector-6-inlet-filter",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-bolt-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-washer-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-bolt-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-washer-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-bolt-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-rail-mount-washer-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-supply-rail",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-tube",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-lower-housing",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-upper-housing",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-diaphragm",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-spring-seat",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-gasket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-valve-seat",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-valve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-inlet-screen",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-o-ring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-screw-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-screw-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-screw-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-core",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-static-seal",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-pin",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-seat-seal",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-cap",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-test-cap-seal",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-male",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-cage",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-female",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-seal-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-seal-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-clip",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "fuel-return-coupling-tether",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-housing",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-gasket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-shaft",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-plate-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-plate-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-stud-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-nut-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-stud-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-nut-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-stud-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-nut-3",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-stud-4",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-nut-4",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-valve-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-gasket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-end-plug",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-solenoid-can",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-coil",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-armature",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-pintle",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "iac-connector-cap",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-housing",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-cover",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-rotor",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-resistance-track",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-wiper",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-screw-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "tps-screw-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-outlet-head",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-plunger",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-orifice-washer",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-spring",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "pcv-grommet",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-body",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-stem-guide",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-pintle",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-lower-shell",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-intake-gasket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-mount-bolt-1",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-mount-bolt-2",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-exhaust-tube",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-tube-heat-sleeve",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-tube-valve-nut",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "egr-control-vacuum-hose",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-vacuum-hose",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "regulator-vacuum-fitting",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "ps-ac-support-bracket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "front-manifold-lifting-eye",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "accelerator-cable-bracket",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-lever-estimated",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-cable-ball-stud-estimated",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-lever-retaining-pin-estimated",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-linkage-shield-estimated",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "throttle-return-spring-illustrative",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "engine-oil-dipstick-tube",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "engine-oil-dipstick-blade",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      },
+      {
+        "neighbor": "oil-filler-cap-seal",
+        "overlap_mm3": 0.0,
+        "baseline_overlap_mm3": 0.0,
+        "new_or_worsened": false
+      }
+    ],
+    "new_or_worsened": []
+  },
+  "motion": {
+    "rocker_phases": 181,
+    "throttle_phases": 46,
+    "pairs": 2540,
+    "spring_continuous_envelope_overlap_mm3": 0.0,
+    "spring_envelope": {
+      "axis_xz_mm": [
+        227,
+        490
+      ],
+      "radius_mm": 20.45,
+      "y_extent_mm": [
+        87.05,
+        107.45
+      ],
+      "basis": "All current hook/Bezier control points and bounded-radius helix plus wire; all0\u201390degree spring poses."
+    },
+    "minimum_added_material_aabb_bound_mm": 4.223158100133531,
+    "failures": [],
+    "scope": "Added metal versus12rockers at181phases and rigid throttle descendants at46poses. Spring uses a continuous source-code-bounded envelope; current IAC/plate update excluded."
+  },
+  "exports": [
+    {
+      "id": "compact-baseline",
+      "glb_sha256": "c281eb0197b63952aa492ffbb649c9786e8493845888581827ba2e0abcaf78bf",
+      "step_sha256": "047e6abe5344e55e631a02af5d733ccb06fdb50b7f00c834fcb0b508b1ddf05d",
+      "mesh_bounds_error_mm": 2.6126043735530402e-05,
+      "watertight": true,
+      "zero_area_faces_removed_after_float32_quantization": 0
+    },
+    {
+      "id": "upper-intake-exterior",
+      "glb_sha256": "7675a7ae0c25e50c37aaf14f2156a9569bc51ae35df1970c9ac4b550f7c17f8b",
+      "step_sha256": "09b8eea79e5afabbc76230d5941435bea5618eaf9274ea7036d2c9ba483abcdb",
+      "mesh_bounds_error_mm": 1.348985898630417e-05,
+      "watertight": true,
+      "zero_area_faces_removed_after_float32_quantization": 1
+    }
+  ],
+  "feature_ids": [
+    "raised-border-1",
+    "raised-border-2",
+    "oval-border",
+    "raised-electronic",
+    "raised-fuel-injection",
+    "raised-ford-word",
+    "runner-root-shoulder-1",
+    "runner-root-shoulder-2",
+    "runner-root-shoulder-3",
+    "runner-root-shoulder-4",
+    "runner-root-shoulder-5",
+    "runner-root-shoulder-6"
+  ],
+  "environment": {
+    "python": "3.13.12",
+    "build123d": "0.10.0"
+  },
+  "input_sha256": {
+    "models/engine/starter-rear-bushing.glb": "110615a74ed1f578c008462aec62d6d982171a1511e35cb4e5a38d557401a618",
+    "models/engine/ac-bracket-bolt-4.glb": "c5a5dda0a03d2231289e3f23a792eaed732711415705f2bd22523e17758145fb",
+    "models/engine/ignition-lead-1-plug-contact.glb": "405c6062f8c6e4c9db36692b53f44475f8b8068617e3db76afb2a243c11a8a92",
+    "models/engine/starter-magnet-5.glb": "452e664921c008f04cd53c8160df3e134e1fa9c9c460f62229aa811d88f808ff",
+    "models/engine/alternator-slip-ring-1.glb": "d3f46114ed5c36e6c1e2ad4582e8626773c070af54e040e2078447e7c8f41a53",
+    "models/engine/tps-housing.glb": "bab036ab8810c74d841c699f632bd13b9a5cf388735be3a2c72f6e6a6b601786",
+    "cad/engine/generated/rocker-bolt.step": "9fa2d2d5e76b61501ec24ee0b7a86328b0820c3038c9d075e4cd980880096c95",
+    "models/engine/alternator-case-bolt-2.glb": "ccc2e7161480fa898dcbd8f64700c4a8e42bf410c394127c30ca19d3ce65ccc9",
+    "models/engine/oil-filter-bypass-spring.glb": "8553644e5fd0086d1e72e191c2b710960a28502f84ed6300092e6867c37ca06a",
+    "models/engine/intake-valve.glb": "025170fa8f0ab192ac05a57172a0f398dfd10506dfc8ac6ce0b41fe647a0fce0",
+    "models/engine/starter-gear-retainer.glb": "f0c122baa8088ebb2101e2438023b9f5e86caf26f45ff022b51d93d4a8db13df",
+    "models/engine/pcv-spring.glb": "5d974e98f1d27ddeee3df8c3c346a0f564b555271e3ef4e38124c150f4275a95",
+    "models/engine/distributor-rotor-contact.glb": "427f0d8232b95772eb543727a8f1c8e0ed4931fc43472a2604c34747cc7d310f",
+    "models/engine/starter-solenoid-terminal-nut-1.glb": "1eac8575d92dff6330b52a8fc2c3b513651eead6ab57119df4a35544c488e9eb",
+    "models/engine/pilot-bearing-case.glb": "87284dc47b0e79ac44416198b0828bc554e0c54db1c7286f9973c5694ea37378",
+    "models/engine/ps-pump-slipper-2.glb": "cb84ddedcf2387496d7362aea824102576478e707aacd927d4515c00f3d5f664",
+    "models/engine/ps-pump-disc-spring.glb": "a677e4bbf722354b7ea66955eca13de6cced8e9c3cef40c680b236957e810df6",
+    "models/engine/starter-solenoid-screw-1.glb": "dcd7cc9f02eccc1d5cea0eb9c4c8e9a0fec4916828bc52f512d74ab2c561430d",
+    "models/engine/oil-pan.glb": "2ab9bfa6b6a1b204dbac74a5c3a4c7633c10d666e0aefef59338a4da9564cf4c",
+    "reference/engine/throttle-return-spring-review.json": "b3936bbf9095292bb4f5a19089eddaa569aaa88211a373a402b2798ea138639b",
+    "models/engine/ac-compressor-shoe-2-front.glb": "514cbbe5016aa053e0f34c8f7ec05a53da070f4ef39157370e44001d179b0e4a",
+    "models/engine/oil-pump-cover.glb": "bf6dd35fbe72ef0708af7bcb13b0e005b336dfe2ba96a89090e1e50858e4d2f8",
+    "models/engine/rear-manifold-bolt16.glb": "8f56632ed72b933e653d1ed7c152989856f157cf928426b1478653c5e61721e1",
+    "models/engine/evp-resistance-track.glb": "efc48a73202c99934e52581d276ca851294d826d0e6da5f767369c52d5434402",
+    "models/engine/starter-pole-shunt-3.glb": "89cb62dd141696c9eefe9cb4112290c1b739ebab049c02ce97c06e424c0b7f6f",
+    "models/engine/oil-pump-cover-bolt.glb": "5ace5b82be5ac63a197f579dca6c9c1ae8653140bb760205ff2a3aae652a427d",
+    "models/engine/alt-engine-bracket-bolt-2.glb": "8f5a377990bfe74cc92867d25c5aea74e5e833fdf7b4d190f75c96428e7df128",
+    "models/engine/spark-plug-center-electrode.glb": "095c3bd885f8497586329fa7eb8ec2ade29890eae3ff6281dd10a4256c965588",
+    "cad/engine/generated/regulator-gasket.step": "26ea4ab7a0a2635e7409834b475fdb4691ba4dd6203282b0185438616995af93",
+    "models/engine/ac-compressor-piston-1-rear-seal.glb": "bc7c20eef37b87949baf169bf71233efedabca18abaa99d46598afb2d0165d1a",
+    "cad/engine/generated/tps-resistance-track.step": "41760977026789a80df6a374fcbd4944ff394aa9c38e919cfbdc715dc937024a",
+    "models/engine/ps-pump-lower-outer-seal.glb": "3a8ed1f1947900bdd6098057d665dc323533f69bc1cd7dcb2bcc8b10b365a1ad",
+    "models/engine/starter-pole-shunt-4.glb": "b8f68f0c90a1a5fcc656cd5598a68d0dd2173d6f336a62584842c62bf2a91af7",
+    "models/engine/carrier-side-head-bolt-2.glb": "fa840ad1db5c1a736c4aa83472dd4994e4e990ffbeceb59568d3af5a7ed02a9a",
+    "models/engine/ps-pump-slipper-spring-8.glb": "96f8c186d8dd5631cef2dfdd7040ca8e03cfa54c6fbe05680f3a2c3866c997d7",
+    "models/engine/ac-compressor-shoe-3-front.glb": "937b607cbb2204f0911c7089f978413c13e863187435b5a7657e13de28fbc86e",
+    "models/engine/regulator-diaphragm.glb": "3884b9d16a6fc9ca6c2ecfb928d39eae2c31db09fa54d67dbf583a673dc05841",
+    "models/engine/injector-coil.glb": "f910ff34e3374adb92b0aa5d771f0bd641eb5259954da1e2d21be2d25d72cabf",
+    "models/engine/starter-housing-seal.glb": "2dc193452ed86a6688f78db528780e795e3d800dc889c6fd6e1e06cd569e3fe3",
+    "models/engine/ignition-lead-3-carbon-core.glb": "8b852f305c1f28954093415eb596273006476dba38e85774ef5c297bf0a69f32",
+    "models/engine/starter-commutator-insulator.glb": "4ada4c125f4d82e5363c29b0bb847689f4e09f2cc833d48b93e30cebee1b41f0",
+    "models/engine/starter-solenoid-winding-bobbin.glb": "8a192c5be8c405fc570128e56ebfade380bbefefc684210e6498a15e8ed6df23",
+    "cad/engine/generated/intake-cap-integration-stage/step/efi-upper-intake.step": "294ed430dd14a91e9ebf87104fa2fd8c7a903d278e8835c5d2ef342865790f75",
+    "models/engine/fan-clutch-input-shaft.glb": "0f88a722c8cb452e2dedc9f828346917820ef2a8a6beab6ae59467ef7ba1a585",
+    "models/engine/alternator-drive-housing.glb": "de6dc76f4e14606a1339aee9dce1703d47a1a49d916fdd9dcf194fea6f4768ee",
+    "models/engine/alternator-thermactor-common-carrier.glb": "96d458973b448a5d97fdc5e2eed643151c15b43117f788ec2924aff40495368a",
+    "models/engine/ac-compressor-shaft-seal.glb": "90d6ef5ef5c206332c945ac37ccf3bd8769e23fc5611447f848a2f576042c1ef",
+    "models/engine/egr-vacuum-nipple.glb": "49a6e4fffe36427271dc0cc321771700e9d34ed2d335c9ab78747168dc1ef01d",
+    "models/engine/starter-magnet-3.glb": "52b34ed38f5733f53982228cdc998774dab93fe9ef06be6af34ef67eb70ab5e0",
+    "models/engine/ignition-lead-6-plug-boot.glb": "ecd3a0feda22d651bffc7eaaff2e2e596c64fc99fd104f97a72086edf91b8f84",
+    "models/engine/spark-plug-terminal.glb": "45917f7f02dc199cf0e241af110f4d47993d3be20bacf4ab1ff784650e3025d9",
+    "models/engine/evp-wiper.glb": "3478880b71d35564936141487b192b11435e4bf7199a09682d688b8688f8537b",
+    "models/engine/alt-engine-bracket-bolt-1.glb": "59508975db46ad335f88b3df0aaeeedd7f78fd0c2e7b148e168dc2a060c79edf",
+    "models/engine/ac-compressor-piston-2-front-seal.glb": "a7dc9323f30e453b7f284b75d6b9dfa18c6df4b1311436599c5a3d525beccb92",
+    "models/engine/regulator-vacuum-fitting.glb": "d16d935fa2a487d27a3f04ac8e6f87f0afe9db8d888fc38016a8ddaf15490216",
+    "models/engine/fuel-return-coupling-female.glb": "70e1a315843e51afbd5e85c3b87c1c709da7d2222b275105f5551c6635ad5bf1",
+    "cad/engine/generated/throttle-cable-ball-stud-estimated.step": "60dfa0e31bd42e2f99ce5caa06a4ee8780358e567e8c3f8a9d0107e7fd0c0d82",
+    "models/engine/heater-pump-return-elbow.glb": "25ed24e45dddff20dc8e92335da4d0e1bf54158cc0582800350b1a24ea3ed244",
+    "models/engine/ignition-lead-1-cap-boot.glb": "7eac63d15fb4f44561e018c8ead6426ec91a386ef6071bfe5d88f0707357ddf5",
+    "models/engine/evp-lid.glb": "bdbaf1cbbeabfed94dcfedb10e5ae04bba2f0ee723503556e9a73c5b65da6a15",
+    "models/engine/thermactor-pulley-hub.glb": "f8bbbb61ccc10e34b51b9110543d9788e2f96765d2227ee5fe5110ff756aa6ec",
+    "models/engine/injector-seat.glb": "e6c8401a312808df2cb50db7884f6e53f658bdbce61a7018b368d14b5632f77a",
+    "models/engine/thermactor-pulley-bolt-2.glb": "353d887c028415a9c93e827a542334925c639abcf752ed38fb04b0800be32c53",
+    "models/engine/lifter-plunger.glb": "b94e0ae64ec9dba16ec906363c1dfe74061ea5a16714590c2442ca3aad8bb2a0",
+    "models/engine/timing-cover.glb": "ac22d9025ce7f74b8baf796d2a56b943d5f1e9847d48fb25e01bf8d08439291f",
+    "cad/engine/generated/exhaust-spring.step": "c0ab3b3594e19c1e805336a10f5b5e7db7683e58511bc455467655572551093c",
+    "models/engine/ps-pump-lower-inner-seal.glb": "1ac6be0a2a850dda37408e4a6d9906ed8596cc7db95e7c52d62c825198a14205",
+    "models/engine/cam-thrust-washer.glb": "0e64b47c07e111dc2e0d826ce5b8adc32d1fe6c2814f056cf717d6f692e17672",
+    "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc",
+    "models/engine/rocker-guide.glb": "2be4fd76a3002836e1fb95a7f67753f882d7b43b5bdb1f0da0fc095b978d7504",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "models/engine/pilot-bearing-needle.glb": "9f68811af7a82e387b1e88b965e86c2d08923fc4c4515bb1bbb6be961ae6022d",
+    "models/engine/evp-resistor-carrier.glb": "e3421b519b36bc81d59404677defc76a4ae3ce032e3c61e2fed247b7e534efae",
+    "models/engine/starter-solenoid-pull-winding.glb": "9e3fe6b9d0e515466e95d695ffdce28d1b5c78549501916604492eaaece27538",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-housing.step": "cf32bf843355060f9461ba26088cfd256d99b7f7041a09d2b3031ea6e427604f",
+    "models/engine/fuel-return-coupling-male.glb": "8c524908c6a10ea237aab584e5ca9d9b183b5127633ac13ba2d510089cb3ac9e",
+    "models/engine/thermactor-shaft.glb": "2b5f51dcca19bbdda7fbeebc924417dad4a341e68c85b4c2f0229fee2606e385",
+    "models/engine/tensioner-mounting-bolt.glb": "a6ad113fad71d1ecfd9dde9e8fcefea04e78eca1af00238d0b6c477e7b778f9a",
+    "models/engine/starter-armature-winding-9.glb": "43011aad7b0230da31ee336228a310cd994f72b66fbe307f9028b08ea0beac32",
+    "cad/engine/generated/iac-coil.step": "e8bc49b3a38992173e4e61e646ad91fe974d030048ded8846d2667c2e63d7216",
+    "models/engine/alternator-pulley.glb": "197c316e1e399a69f8b2caafd9e46e8d5150ef4eabac4d2d0a889a628f7df820",
+    "models/engine/regulator-spring-seat.glb": "4468de2349de94b2d9095503916194af6a12cd83b4c5d9024643726d7cddcc69",
+    "models/engine/front-seal.glb": "21b431aca967326750aaa411f32cc611c979ed4b1e4b367c7b2a1fae7be830c7",
+    "models/engine/distributor-bushing.glb": "1e6a4de6565e3c4c53705b5e773b324e850cf97bebb36f23ee934de582f2a2a8",
+    "cad/engine/generated/intake-cap-integration-stage/step/egr-exhaust-tube.step": "5e8b92d1cc3b8ba635f8406f2d849b7098e086a38050f9cdf3245ef92cd2720d",
+    "models/engine/main-bearing-lower.glb": "7feecdc8d180642530ece13454d215e9d258dd18370288c0683c213a440f541c",
+    "models/engine/injector-return-spring.glb": "6c91ed079ca5d4d4bfe26ffb89d7cff5a77aa9f14377ba260f9c824036fdf456",
+    "models/engine/ps-pump-pulley.glb": "99495963a4cf4a32038f857de2517c040e7aa0025feea973fdc491718991855b",
+    "models/engine/water-pump-seal-stationary-face.glb": "e8897e6f2f6943ca1b40292680db90ddf7a341edfa42077b808454a810b52a0e",
+    "models/engine/heater-supply-ect-elbow.glb": "6ee9f15608249111af88eb99f9e092c423b0cdab3570c00e35de71997de4f86c",
+    "models/engine/engine-coolant-temperature-insulator.glb": "04ec88ed17c0a704fbf9b4b87c9d029d2b2baa12f6db315c32128f2f1f7c69fe",
+    "models/engine/alternator-rotor-front-pole.glb": "5c3af2bdf6cefc7445f94cc05eadb2547ef86f0033acbf460ef7c976c60c1900",
+    "models/engine/starter-drive-lever.glb": "1982d6d79deaa9097e839998c749c42c4ac9c60cbf3129c9112406f9009e1e2c",
+    "models/engine/carrier-block-nut-2.glb": "6e054289342198e427d230e6172eb23f3940ccd70d5950a75e5379d79356112c",
+    "models/engine/iac-solenoid-can.glb": "41ca93be051fbabd856d4527b004edce85d94551585a07df54c48b471d5dedd3",
+    "models/engine/starter-commutator-segment-5.glb": "f82e8bdf53de8c8dec9d4a20977f2c190db2ae19d3647dbbae2bf067cc231af0",
+    "models/engine/starter-commutator-segment-7.glb": "71e1a3f0b40752c6505410b243d6e168b12b9eebdf3edd3ceae5749ee128aa2f",
+    "models/engine/oil-pressure-ground-bridge.glb": "509cb6040b2a250618e7c08782a724152a979b95eb56e803339353482fe172e9",
+    "models/engine/engine-oil-dipstick-blade.glb": "3f75d69a78eace8be5d19f3e337baea3db078a2086e3222ed2cd45efc6812302",
+    "models/engine/ignition-coil-lead-coil-contact.glb": "dde7d59a6e5c765ca75c87420fa495f3eacf93c2b195636442b9e5c159d8b172",
+    "models/engine/head-bolt.glb": "74805a8d752572602bfcefee510711e0d116c562ef2c2e7b02b7f8b00e6f7df4",
+    "models/engine/ignition-lead-6-cap-boot.glb": "4bf0be9aade47ff8a1c94d4c47f14944943125af7266ef4af3718da061a405fd",
+    "models/engine/engine-oil-dipstick-handle.glb": "8bc66fc8a2394d5d500017f24035919472388399849b7fefa54959a28e88a2a6",
+    "models/engine/ps-pump-slipper-7.glb": "b1f518857c51d2afb7432f53b240c3abccf2ad5e1d1817f1a90f0d28e95c4461",
+    "models/engine/distributor-drive-gear.glb": "e85d598425b8cac102284f72fc58d819e3f661d0b018960281df06dd40ab33dc",
+    "models/engine/ignition-lead-1-cap-contact.glb": "59c43cfc500a7b19708b2b08584c863f26ba3833d9f502824327ba86ee4d9b52",
+    "models/engine/oil-pan-drain-plug.glb": "0e7e24866c053aa20bf00ecdb713734963f12f601e23aff0327116a768fee581",
+    "models/engine/ignition-lead-1-carbon-core.glb": "4369f25480bca4de6efe8665297b10f655e2258f786c3dd5a86c57ca5058a26a",
+    "models/engine/egr-return-spring.glb": "ec0982b406a674f8cf54cfc0601e0ff84456bd1c18d232194234720e65e36761",
+    "models/engine/oil-pump-inner-rotor.glb": "1ecf6b9fa1d91b8354d836c849a14ce38842a0a219ad2ce11fa3bcae123afbe5",
+    "cad/engine/generated/regulator-spring.step": "4d97a0ca68f9cc599af99b64ec99a0fbee346013396421927e3c491d5693e2e5",
+    "models/engine/ps-pump-upper-plate.glb": "4e3558846818a119d4332e57f945a3c95048c01a6327ca00bf89b30f7f9db6cc",
+    "models/engine/carrier-block-washer-2.glb": "4b9f77216100d554f2ab737032a4377489a9a02aac4db8a299d3069c754c1af5",
+    "models/engine/ac-compressor-front-head.glb": "41a4bdd60c96dca2b08da11c99c98891f27fb7d6b8eea232939dac2f54d118d9",
+    "models/engine/iac-connector-cap.glb": "c5bf2230cea2c7dfbc690950fa5c99e3103a2102c6c231e36898fff8cf9a9208",
+    "models/engine/alternator-stator-winding.glb": "ac6d27fa37eced37587aa0a404f59d0e230db3adac5e7847de75e2ba7e5dd1e8",
+    "models/engine/ignition-lead-1-plug-boot.glb": "316d4f8528d32ba9767ed53453cfb201a64d3af1eeaa00cc57a5cd811643198e",
+    "models/engine/thermactor-mount-bolt-2.glb": "eb31f5efb856dd3e42811d07aa75124a21d525c8bb125764418656eff2e6bf03",
+    "models/engine/ac-compressor-piston-5.glb": "bbdd1318c3b792d28b50d39aecb28278412da6519e41f586a04ed769627fb422",
+    "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+    "models/engine/carrier-block-washer-1.glb": "08fbe5230cfa2851f368da9e72a72dc6f8b36ed94cb000a5a8217bfe08013675",
+    "models/engine/egr-diaphragm-lower-plate.glb": "2ccfba97da0ab0ab7acac8728894ea505e56466f5e4e51d511de00aaee317dd7",
+    "models/engine/ignition-lead-5-cap-contact.glb": "78612ddba0ecc4d4b866e50a598279d7eec708dacca2970dff3c3efc704db481",
+    "models/engine/water-pump-pulley-bolt.glb": "48e588f005219cfd2245f11fd08c5b9c12ebf46df5d2400d98a0583b4c4ac782",
+    "models/engine/ignition-lead-2-plug-boot.glb": "e692f244cbd3af4d5d080de8c41dd608a147e807580cd69358970d94a64b9b42",
+    "models/engine/starter-commutator-segment-8.glb": "3602b85d37602b2d1e47c7b893e2d67b89a4b837e621002bc81962bc732a11b1",
+    "models/engine/ps-pump-cam.glb": "5acb43a391cfbb2d630032c067c35e741791c03df144b9c7f7c6d38c76885827",
+    "models/engine/oil-filter-baseplate.glb": "f94b2f53298fa61967b0167e7373306c8094a46544f630ca3a7168d5939c995c",
+    "models/engine/starter-brush-pigtail-ground-2.glb": "3e579b2237fd2c143cc085c3598dd8f51c37015bfca37da685c7f58520a766d5",
+    "reference/engine/intake-exterior-review.json": "1cffee39124f693112e81b67aeff6a4949b609b22daf4c030f6ff64a5629ccdf",
+    "models/engine/carrier-block-stud-1.glb": "29255207e66c1c87563463ce703e5f0e9d9bcffcb7367fedebbe9f9bf099d767",
+    "models/engine/starter-brush-holder-1.glb": "9a2703e9e0747fb762bd23f311d2e594b85854f0a82fff1bb35dab8975890f2e",
+    "models/engine/fuel-return-coupling-clip.glb": "c693283668635ad0c7a3d0bde924fec281069ea62afe89b6fd44ab9b42e4d665",
+    "models/engine/ignition-coil-hv-terminal.glb": "e4f3e98b890c3b8f36b0cfba92fa9efe89a15084bca1aa39c9e87ac122e95cf3",
+    "cad/engine/generated/intake-cap-integration-stage/models/oil-filler-cap.glb": "da76a9c797ef739238c11956b14777edd9b1c454d1c5c59a05364b5bf4e4d433",
+    "models/engine/evp-screw-3.glb": "5a2a557ddbe8ce770164c771d4d40d8b0e95b9cec8eddb22ef470c289ac197cf",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-plate.step": "2e74abcd1c98182bdd5f18f4d51d1f84be1907b10af373ffbda0a8fbfb9351e4",
+    "models/engine/main-cap-bolt.glb": "e49dedfc797992913123c7f612af0f9aa5a934301139bdfff62ce1a3351ea776",
+    "models/engine/ac-compressor-shoe-5-rear.glb": "e63439c0710d4d7099fe296373936375a02e751f7feca5d1a69ef5c2e0bb98ef",
+    "models/engine/starter-planet-gear-3.glb": "a1aba4342f8a38eb2fe3500df6879bc2e296d2923276077decd269d581b02b93",
+    "models/engine/ignition-lead-5-plug-boot.glb": "f4abbbdf62e47dd20cb9d9403d6e3eb507825428a115e427245b46790f97e105",
+    "models/engine/starter-brush-plate-screw-2.glb": "71f2075ec1748363cad975c2854bef1baa58075915ecc110f0c66bd0f1ae841e",
+    "models/engine/ignition-coil-lead-jacket.glb": "edf251eb6b4cb63cea4ac168ee72ed58bad7973f580eacb714a86a7bfc14971a",
+    "models/engine/injector-protection-cap.glb": "2c4111f120b39796a55824047325861dd060f7375e8395f6710691200bdc5786",
+    "models/engine/upper-bearing.glb": "c2dfd05767175511e77654f9bcce4eca99bd582802f4e6be89f1aeeb0c49e6f0",
+    "models/engine/distributor-drive-pin.glb": "0fdf8a7e54eb949a324d53cb0852078c4e167d8cdbfa4136755f29aefa7f2a00",
+    "models/engine/carrier-block-stud-2.glb": "47d63edcc35cece76ad109100d95f00200dd7f34c828fa0a7e090b7db48d8395",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0",
+    "models/engine/ignition-coil-core-i.glb": "78edba12c8910bc959ecd64a761afa65ad0130018fb9f89cc84b3016ba4948f0",
+    "models/engine/flywheel-crank-bolt.glb": "d8741c599ee9bc472ddc606a967071b7be2f69eff4ca60dc778e4cb2ea76cb96",
+    "models/engine/water-pump-drive-hub.glb": "7b2a4e4dd3ed552406628aabc6264dc7e9e70cf6658bb0cd578176eebc88e775",
+    "models/engine/ac-compressor-case-bolt-4.glb": "15445a75ca7e805a8924e459ff366883307ed0211a6ed4839ee6c7b13835fc6a",
+    "cad/engine/generated/fuel-test-static-seal.step": "ce2317d480f4a8cc5d0297726d01e527c34de7cd0a9e5b387045643b0861d205",
+    "models/engine/starter-commutator-segment-16.glb": "1682f47182b9d6f2a0ce156146f2d96d49e8247a18ceeda9b70ef4c0af7464cc",
+    "models/engine/cooling-fan-bolt.glb": "869e6920601fc0a20c09f413f3d223610129a4941b06be9a7401cff5381ffbd6",
+    "models/engine/block.glb": "82d7456865309cf2d5f5f85db64731245b41191bd10cfbe61fe99fd352918b87",
+    "models/engine/starter-solenoid-lead-insulation-hold-frame.glb": "958649a4e9661a2e1cdc277c6a9b5a46ed0f5c1191c65dbf8251cd1cd59cc8ca",
+    "models/engine/ps-bracket-bolt-3.glb": "bbfbba36445685494be9819056636d8466001c81a98b9b77fca41fcf7a2bdb44",
+    "models/engine/starter-commutator-segment-17.glb": "efeb3bf89ecec36fdf6591f42c4afbcb31e1458e2b99b49c1f53319160963183",
+    "models/engine/starter-solenoid-clevis-pin.glb": "71b1bcaab955af7437fc51dfab2a171bcdeb89db27f43308db2e9d7bcdd3ac90",
+    "models/engine/starter-magnet-retainer-3.glb": "e0147797d03b4644f0896cb4e28875d42d604a6faaa13a93cc63e9e3b566f01a",
+    "cad/engine/generated/regulator-vacuum-fitting.step": "18f3d0ad57bbb57a749a83546f1a17273090dbda0cea74468a1140a6e036c094",
+    "models/engine/throttle-mount-nut.glb": "c6d320dfb93bb22fb704a01bf137f74e83d901fcfda7dbeeb25b613517895454",
+    "models/engine/ac-compressor-pulley-snap-ring.glb": "769841af7015f05d98a60274b9ccb2086434c45241bcf8a05dd7a89ddb9f522a",
+    "models/engine/ignition-module-package.glb": "d5acf23884630e3f1a3b5bb86949f6cb7ef5a6c35aaa18d3951980f486f3ec2f",
+    "models/engine/thermactor-housing.glb": "0e064ede522e3ac085bbef1d5a50e3b501216cb7f07f899bfb4db37e89c58987",
+    "cad/engine/intake_exterior_candidate.py": "23170d5314c8f7df295ec0c464e671a3f1b26752766411356db58554d653c558",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-housing.glb": "3324150940a7c0dfd0bb4dbbb78a11a39d979d2ce6972dacdb8632342695c413",
+    "models/engine/pushrod-cover-dipstick-retainer-estimated.glb": "f076f537f576f31640c29017e49a2ba92344368193cb8e0d67f876b22f4bd52d",
+    "models/engine/water-pump-mounting-screw.glb": "708c14f4e66dca9f1ee17f6a1bbaf00c329690c1fbce2baf15a11068f96ed448",
+    "cad/engine/generated/fuel-test-cap.step": "e025a4e8081f7ad38c9dbd9b8d80f87bb2e921bc8f18b7bfd904a865b2477f41",
+    "models/engine/injector-needle.glb": "e1cbb03b8bfb3310f48da3519f2d8d77c3e617565734574187d3b1845de70777",
+    "models/engine/starter-solenoid-bridge-insulator.glb": "8717107a659d0709457362aeee93d8a5b5bef62538a51da39ba3dddd18fe1d73",
+    "cad/engine/generated/egr-mount-bolt.step": "54dd6b53e0ab8eecb3513809a46abce2dd35341440850917200561ee04edd451",
+    "models/engine/ignition-lead-4-carbon-core.glb": "5f7676456c43333f84cf300a7e16cc6fe7a71e14f968d9713fb5ff7eacceb2a0",
+    "models/engine/ac-compressor-front-valve-plate.glb": "4a3eef26d0019b40061039b49479785e5b8f31bb7cfaa57df93591e2c45a3000",
+    "models/engine/starter-magnet-retainer-6.glb": "bdef3a9cf36e20f037b94cd073c2021dbedc0347dc499a175e128f6170bd5546",
+    "cad/engine/generated/iac-pintle.step": "1d2edf63fb000c6a097970852d4e9a55bbb52bff1ba55d10485cbd0b0444faa6",
+    "models/engine/ps-pump-shaft-bushing.glb": "ef2427602db33fc172e0a2808a4915aaaa408ea310936bd0699e1a7e27e1f480",
+    "models/engine/evp-body.glb": "7e1a41cb41d71f4e644c4e4c08c956e149f326a4c68f1ca32c449ae989c95756",
+    "cad/engine/generated/tps-cover.step": "599c3f3120d3023a1ca725ad60bd098e1f51a064205e93b4c731d9051dd449a8",
+    "models/engine/throttle-lever-retaining-pin-estimated.glb": "b8ca9ae5e8230e48ab95c7717e6640ab8477737a362a8e05b66a3361db41ad1c",
+    "models/engine/ps-pump-slipper-8.glb": "1bdef62c638280abbb91dcf93aeb2f088bb9ba3a20682cde804b3f88c67adce4",
+    "models/engine/front-manifold-lifting-eye.glb": "5eadcf584969eb56c275926f0eed2f9eb92f854eada117a72c0a767505822d6c",
+    "models/engine/fuel-test-static-seal.glb": "bd485f3b3e874420a87da0b59085dbf8d3faed39a043b84a0bc71e2c9d10a5f3",
+    "models/engine/starter-commutator-segment-12.glb": "c705f79e907f4db2f180189566b0fad6eaad06915ae8905008b425da71b6e04d",
+    "cad/engine/generated/regulator-inlet-screen.step": "d551a12817b0c6bdd8731250122cd64b896fc7dd5a39adc926bad2ffffddc7e0",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-armature.glb": "8af833f5c940483237aad0e8e07a86a7412b5f1cb9b244826b19434d8f7daf74",
+    "models/engine/ac-compressor-clutch-pulley.glb": "abc4991dbc3fdae354f98795e82dad9fb46aafe8c11b2643c12284ee0bd53ba4",
+    "models/engine/starter-brush-holder-2.glb": "038cd97b48a21535d5ede0f6c0756ba0c1bb2c8d970e80d24006b523d95c76ca",
+    "models/engine/thermactor-case-bolt-2.glb": "abc24591d2cefd3156f15dfc2ef49ffce7959ddab91112d49f98deec3e7b45c0",
+    "models/engine/pcv-orifice-washer.glb": "08dfb2a1bcab5402de124c5f2db482ff7e5f741f50383cc5b3455446c06b996c",
+    "cad/engine/generated/efi-upper-intake-gasket.step": "8ae67325bc4935b4106c2dd5c2a4a08dabf18195f4c787a252f20345f454e6f1",
+    "models/engine/starter-lever-pivot.glb": "e9774c72c6a7ed7036ad982cc34f5933a15b927df78ab3fd45e709025e90a66a",
+    "models/engine/starter-armature-winding-1.glb": "ebaa2e6cd163ede9eb7d0b1bb956f2e64110427cdadbbe4def37760d9df4541a",
+    "models/engine/injector-inlet-filter.glb": "39f412878b62f2c84a4c7e19f552e410556c3dc9d8616eb33c35cc1a1f5dea27",
+    "models/engine/engine-oil-dipstick-tube-bracket.glb": "4f85da655cad7d60801e6fa618b3c424ee51f28fb2d3c13a861345554493d676",
+    "models/engine/oil-filter-tension-clip.glb": "0c4f1420dc957ba1b9d1c6b9a294c45e56192ef2ee31e09dc54035199625d43b",
+    "models/engine/oil-filter-bypass-retainer.glb": "8706fbf472eb12395a29bd716f130c55b259fbffc030f91547ac1d3bc4bd9990",
+    "models/engine/oil-filter-center-tube.glb": "534fabdce23d1f68dfcebb49cc0a4a8491cdc4d4363eb0d1dc067acd18722bbd",
+    "models/engine/ac-compressor-rear-discharge-reed.glb": "789b03aec1040986760d0b221059afc508a7b1daafe427919fbc179a1dc8e422",
+    "cad/engine/generated/intake-cap-integration-stage/step/oil-filler-cap.step": "0b8797a35364598e0cb599386e05ef1938978e47a9d7cf2eb012eb0f7c96ced1",
+    "models/engine/oil-filter-upper-endcap.glb": "40368a92ac6b9b01c3f38ddeafbb1a92558abf1e85359ad0be5ef2257317071b",
+    "models/engine/oil-pressure-carrier.glb": "3bc38ccc229b2886a74811203b951c5fbac8bcfc93d9ce41dc43023b7993abd9",
+    "models/engine/ac-compressor-front-thrust-1.glb": "38930cad74096ad64e791ca0e136b87f89eed106b76257c17d65041b4012fc72",
+    "models/engine/evp-screw-2.glb": "c12beabecd48203e68e2aa39b7b4b9e774ec2de11c8cdd66427ebdde466e4f14",
+    "models/engine/ac-compressor-front-cylinder.glb": "8c729169c02ef1908a7c5e71d82bd9850824190141e71139221549a703f1c69e",
+    "models/engine/oil-pump-housing.glb": "6ff7a42c09516607404e02cec092c97e6c60f1b39752b345a12c853e883ea834",
+    "cad/engine/generated/tps-housing.step": "97f89f5e1bef31d3c2db3c2056fc2d12bf4e9fdd0aa2c834dac92a12dab637b0",
+    "models/engine/starter-solenoid-return-spring.glb": "99f45e19ef5060acb1989a7c1bd9ccc53494f8129b8cde5d35b048b13c29e5b7",
+    "models/engine/ignition-lead-3-jacket.glb": "c6452fa53edc05c031d94c73525646ea3223ca087d6cd198fcba9e328cd5d644",
+    "models/engine/distributor-thrust-washer.glb": "4dac045844c7e887cb109d4f64e79d0749fab782951ed8d143bf29f07da2c995",
+    "models/engine/water-pump-slinger.glb": "0aa289852dff28bbb29f81f3c89ba9a68be2e8fc033ce3feefe0e7924260ce0b",
+    "models/engine/thermostat-diaphragm.glb": "f0b0505e6a93cdd0aa8e0c6c89b9a2a49112475db28055fafdd394d3dca31406",
+    "cad/engine/throttle_linkage_candidate.py": "9e6149128e65e903fe27e667cf0016ba9fe80af4d1083f917ddf3b8baf9f4b78",
+    "models/engine/ps-pump-slipper-spring-5.glb": "e8236ad6c460eb348094361214f478110cdfdaba257cf5f006e62d93ec2f83bd",
+    "models/engine/ignition-lead-3-plug-contact.glb": "a8216b80a3a3c7d5b701affad2e39e47bb3dc217833bc13e221375de718a41e5",
+    "models/engine/fan-clutch-drive-rotor.glb": "911d199d94503ae12090152beb9efdf8de5b5a560876c17a2a4cded1e03f6148",
+    "cad/engine/generated/cylinder-head.step": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "models/engine/ps-pump-slipper-spring-6.glb": "cb5dc081c2b871cd8b44048c8cfa260bc7fe89ddd2509eb6f7e5cd6276f889d5",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/generated/regulator-lower-housing.step": "e47b2cbec4bb6d468d49ce788efb1024e0712627b9904c2b2bfb6d17a8721d23",
+    "models/engine/alternator-fan.glb": "98a5af3716bc5b9dd0e531ebcc165b357be1bed297c33d0f13e3d7a19dffc336",
+    "models/engine/rear-manifold-bolt15.glb": "510ace296bac3fc3932e9e4ccb45972a67c80b4bb8ed14eb4c7debb9e5baa112",
+    "models/engine/distributor-housing.glb": "b95ba78962343a6dbc4ccd5655cb0ea543e9d18cca7ec85e0cb3744e9731547a",
+    "cad/engine/generated/egr-pintle.step": "ad3bb96cce05416f2a8380173abb23446bb530e17a51d1ab8794491bd0f55b58",
+    "models/engine/starter-brush-plate-screw-1.glb": "5f763180c6650c0914916750dd20ff260e7f754980d111be49eadef17bd8d86b",
+    "models/engine/oil-filter-case.glb": "6000d7f2b3ab6ab951d1c102be4a55f45a480b0db27f40ccee62276b8ff4e69e",
+    "models/engine/starter-pole-shunt-6.glb": "f1985ca4d9fc77afe312715f9de8d8bbce096c9b5ec68c115784695bee5562c7",
+    "models/engine/starter-brush-holder-3.glb": "c9059198380b59a3f110529cdf2d4c130c20e5edcb2dbabd64da422110e859cd",
+    "models/engine/starter-solenoid-terminal-nut-2.glb": "69c3a90665afc10fc3c8ebf82df64dedd6324fe157d2f77bc4cb40ff70576104",
+    "models/engine/ac-compressor-manifold-suction-seal.glb": "be0de27d4ea43450bd8727c37d7498479e06375ad82a9bda2f9846923966c72f",
+    "models/engine/ac-compressor-piston-4-front-seal.glb": "b7503ef42bb880295aeb27dcfa212ef4c9a6e1cf1183b3a9969f82cceb7fac7f",
+    "models/engine/starter-brush-2.glb": "2bff7ce4a56567cfe9da01732f2547b07981d301f7f5e2b7238bc29454cdc28b",
+    "models/engine/starter-magnet-6.glb": "14a154931078acd1622b18f0c71e1ad2c36a687ff4f4c69b8e477de5b7e5bbe2",
+    "models/engine/starter-solenoid-screw-2.glb": "b459fae7e23052247d93823b66c37d11505a85a53f8ef5d9d965687aae733878",
+    "models/engine/tps-rotor.glb": "8aab369d5eed354de78abb632ed83b71c0d1e5502f01ab11878c88843f6611bf",
+    "models/engine/ignition-module-connector.glb": "b1597f57f1528110f3d74f364fa539607b2d002f217a4d88ea24f8183aaca625",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "models/engine/cooling-fan-spider.glb": "d86652070819dc233b884d5db7f3240c279f565226ce0f30d9db53357e97fd75",
+    "models/engine/starter-solenoid-s-terminal.glb": "73cb13bebb233a3ff07a40fbd13ff70e6d115fb5eb029e45544f792e5f3336bd",
+    "models/engine/starter-armature-winding-3.glb": "80d9ef936eb4632c5640c684da36a1b586d9b70617841a55ffb5d125ac2aa614",
+    "models/engine/alternator-pulley-nut.glb": "1622dabbc078a0f5c976560080765a08730fe6b35c5eba65c054f7dc42050b03",
+    "models/engine/ignition-coil-lead-cap-boot.glb": "7390bc0802c6d4437ddd3310338a685dc25b2532751445c223f3570f5774feb1",
+    "models/engine/egr-diaphragm.glb": "3c40afe128f0768a803cb543526758bfb2c734f67cc356fbe746abb882fe34ab",
+    "models/engine/rod-nut.glb": "8f7871422625522eafe197ca106590caa61001eb96f2edd552e7cf7ed1bea920",
+    "models/engine/ac-compressor-rear-thrust-3.glb": "d48285d8dee699b6cfb36d80e3a80e5dc87aeea8529de75e22e1eaa180f0b936",
+    "models/engine/coolant-outlet-bolt.glb": "8cf83906a165ae74f34d69b3bd7d7348402f9123f228489d8bded94028a22e70",
+    "models/engine/compression-ring.glb": "761e70c75ee3ce64f09b28cf51ff409b855a1a0846a61387f12797bf38443f2d",
+    "models/engine/oil-pressure-diaphragm.glb": "2c08586d2d96dcf926ea7f424c95464f9906e60abb09f993a7672ed6e0014c19",
+    "models/engine/ignition-lead-3-plug-boot.glb": "a1ee0a60bc65090ae213cd5a51e1eba25317fbf994e6b741c7c2fbe81e49ef3b",
+    "cad/engine/generated/throttle-gasket.step": "a6de7b0985d2ae30c92abe131a1609f6ddcc6ab2b04055280a44b830c6aca18f",
+    "models/engine/tps-cover.glb": "186aba854bd15918e1817fbf3aafdebb6fdc307f00ec61f349d888ef94282822",
+    "models/engine/thermactor-rear-bearing.glb": "aa1ac47a283805e46c03189569a7a3d07e66b4815754bfd018546d59d05bff8f",
+    "models/engine/starter-frame.glb": "f29a2882ddbdb67c8096527018d7bc1b1fdfe057b187c89392b03698aafeb09e",
+    "models/engine/starter-planet-gear-2.glb": "9ebca8c7d905dfb2ea9f11c165dd4c984093fabe601852c74dd9e85a0a9066e2",
+    "models/engine/egr-stem-guide.glb": "e0f83f04cb00f05d33421a03fc9f3346a30e4be1719502199bc9df85e7b1499d",
+    "models/engine/starter-solenoid-lead-pull-s.glb": "1b6b95521bcf89807e38dbd8b58db49d288536484134adb2527cc07f5aec8ab9",
+    "cad/engine/generated/efi-lower-intake.step": "2f12556c1254b98914428b0f4b65330ad2336cbab116b10e2d9ced1802655066",
+    "models/engine/crankshaft.glb": "ce4a6b48021f66dcca68ddcf1d9f45337eb0f82a1b55d2d623e3e033b83250d9",
+    "cad/engine/generated/throttle-bracket-stud-estimated.step": "f25f77da9b500dfe687a9b6641a3aa0fcdb77f008a728d083908edb0c8687e7d",
+    "models/engine/rod-bolt.glb": "e551140f98a5c2d609065398939a5f1a12306d458f9528e5181253025ebabb69",
+    "models/engine/starter-drive-clutch.glb": "ad57b8b21ba90ec8f5d2ea0376ed45b26c671b79c3cf1aa1b8fa4b06c075f18c",
+    "models/engine/rear-seal.glb": "5f9e8eb122849c2e624e395123247147defd0678aa114d96889d6b183801cce6",
+    "models/engine/crank-timing-gear.glb": "0d2a157eb082fd82f029834dce45b49519e787e535c74fb4275ca33e7e02cdb5",
+    "cad/engine/generated/fuel-return-coupling-seal.step": "95b33010889b038b6a914ec910b31337648960581f29806d4b67e0cdc496193c",
+    "models/engine/ac-compressor-front-suction-reed.glb": "40b5cd14b9e1c1a69ea9380c05a543e303bdb1ba8abf84b452f226fd08e7bf76",
+    "models/engine/evp-terminal-2.glb": "2de8e0272ca88c9ead48e72ae5dd9fcf43ec3739491c8b30b4f7b1ed4d11d974",
+    "models/engine/starter-nose-bushing.glb": "7a80a811c9b2f4eb97a2213f5d553c53248d968959eb3551b4c2e6fea506ec91",
+    "models/engine/lifter-pushrod-cup.glb": "5f9164a27f6cb44aa57a53562364a295781cb7548f54b73a12325a687c779d9d",
+    "models/engine/alternator-rear-housing.glb": "1399eb8086d4c0ba1132b2ad2b1fe45126ba81cc6d2d4ad5e1cc88cbc5b958d5",
+    "models/engine/ac-compressor-front-plenum-seal.glb": "e30a894f692688f0cbe6175db61aa1be092b1ee421573726d5e69b240de174ce",
+    "models/engine/damper-washer.glb": "61983dc56e7a0e66bdbb39e09f63846a66119935aa6fedfb6a8d8c5a6d63059b",
+    "models/engine/starter-magnet-1.glb": "87ea7e17c97ad68f5ff259a0473c63917522b2c8866b420dab8e4651487d10c9",
+    "models/engine/spark-plug-shell.glb": "8fb487cddc19cc739b2ace697342e1cce06e8352a7cddd464f20cee58112d5c0",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "models/engine/spark-plug-lower-seal.glb": "6e3e26d57b6ffb55a5b08795bf3174ec79a62e068198b4cebaebe2ce900910ae",
+    "models/engine/distributor-cap-screw.glb": "7c2582ab88b07242f890ad92d5ce3c34861a96a14c30d2ddb58b144bc1002a4b",
+    "models/engine/ps-pump-slipper-6.glb": "fe0691c81d82d652969ce2f5f4274897c7451dda2d77a17d45c910680cd6304c",
+    "models/engine/carrier-front-head-bolt-1.glb": "11ccb5f604d7fc70bab9ea3a22de5794ed04504156d0c6fd880336814b2389c5",
+    "models/engine/ac-compressor-shoe-2-rear.glb": "e63439c0710d4d7099fe296373936375a02e751f7feca5d1a69ef5c2e0bb98ef",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "models/engine/alternator-rotor-rear-pole.glb": "264c921c4c51eacb600f704f0373f5d83ce020ceebc6e36afe4bd5c5eb63a128",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-gasket.glb": "41a7e62db09767d5423822d72b503ccf522a9c089710290c7b0f3d14eccaea88",
+    "models/engine/fuel-test-pin.glb": "3a066b4b03a997b346f6a7b05bb473f89efc970914bac43c3d9081ace7e80c42",
+    "models/engine/fuel-supply-coupling-tether.glb": "96aa6a67c4ee4e4c5f2df643f91f7421e894d6fc24dc66666f1ecc82a61148a2",
+    "models/engine/pcv-grommet.glb": "8fcc7e90d56533090fbd0de33bab3397c91f7b0567a15c1d06b039b07a0cac9a",
+    "cad/engine/generated/iac-connector-cap.step": "2a062b3b961a3e4b02cfeca2f9baf6f72c1f595dfdd898f95eaa53d2e48bbbe7",
+    "models/engine/evp-collector-track.glb": "ebf463102ab47f14ba14d2dcc6c758b78cf24280b1cc39e4dea099a78379407c",
+    "models/engine/ignition-lead-2-carbon-core.glb": "bfd0b903c05f2035cbffa907be43670925570d5afb9833e4e2f0e0a32768f3ea",
+    "cad/engine/generated/tps-wiper.step": "be4d3a3a15be2838c662787250b08cae5ab63fc3bbc6b63b78e85e7a0a4eea93",
+    "models/engine/ignition-coil-bracket.glb": "fe3f098127c8a2915321ce729bbc4d546ae1e451d1dd9ad53628c321906de551",
+    "models/engine/ignition-lead-3-cap-boot.glb": "4107ac6174110031e43c0b77851d4c27eacc228ecfbbcbce08ad07a042ff280e",
+    "models/engine/tps-resistance-track.glb": "6916778e1a7f0b4cae1ae2da376a05e81175324d3a61fda06f80933f90c82e91",
+    "models/engine/starter-armature-core.glb": "3d9abce772d3bbd0605b751ac2fef46d457a6b75adfa5211a558c3956d9ecf71",
+    "cad/engine/generated/tps-rotor.step": "46db1c0d380deea12176d91601aefc822ae4aa084c028d8dc879940d103eae97",
+    "models/engine/starter-drive-end-housing.glb": "151dffe8eb48c0e4c43ecb10040a428e75601387a34b1eca4bc3ac50353a854b",
+    "models/engine/engine-oil-dipstick-tube-retaining-nut.glb": "81629f37172fdbcffb28d5cac382f842f906a607f9e10676aed0dd109f8fbc1e",
+    "models/engine/starter-magnet-retainer-2.glb": "49a045a9d18c4d0122ad8b0f35b454a75ae6f5c724a858d4ccb65548c39ee23b",
+    "cad/engine/generated/throttle-mount-nut.step": "7a439dcba1a2ba774328d2cc3ed4a0e7cf310373577750dcabe6a89bdba57148",
+    "models/engine/pin.glb": "5d73284d412aed9fb050d50399ca72a4d58caf7134a05c086abe2dbbcd7b2ed9",
+    "models/engine/tensioner-pulley-bearing.glb": "98559a0c2d6c864eb457bf9cee05a42caf4ce1f330c39d37b03e03c431ca3112",
+    "models/engine/tensioner-spring-cartridge.glb": "ad39aed9c720728998989096314a45f6cb49098893aeb65296efa363c48d2324",
+    "cad/engine/generated/engine-oil-dipstick-tube.step": "f4a1425c4f7f6108bdb0b2687cb6b1367356a79b89685641f94a1e9010c561c6",
+    "models/engine/tensioner-locating-bushing.glb": "09db50e53f051e82f0ad0a96a9a0eb1bc5ee276c2825e380e87614f9a011bc97",
+    "models/engine/cam-thrust-bolt.glb": "7cc7b0964d91c8c01b2f94a88318ca426385a9d8f451b2909df68baef9473697",
+    "models/engine/thermostat-spring.glb": "acd983d2d5db1fcf292920fa9f416f793af9a4c4a206db6b5e7b0736300a77fb",
+    "models/engine/spark-plug-upper-seal.glb": "7ac8ca2a9de4dfb786d7fbecbff707ca987e8a121da8a746468c36fbda7e8649",
+    "models/engine/lifter-body.glb": "570a755d5c40cd9f7700535b20aa45711ff143895f0256947f3ad058fc4f52a6",
+    "models/engine/thermostat-piston.glb": "5dcddd88103d74455a5a6a7752587c7992982f6e0631d926f1ebf8cf7b81d056",
+    "models/engine/starter-brush-pigtail-positive-4.glb": "917d379dfac5e112f43d318c0dd0572376e4a220a086ac4eabdeef6a057ba38b",
+    "models/engine/ac-compressor-piston-1.glb": "63b9d0d91facdc6bade4c80dd3cb7b1dadcc06e80e4280870678eb0ac4977755",
+    "models/engine/starter-armature-winding-7.glb": "70265c8337b54c12eac8e004083114a86e57a504126698767168ae22e5fca951",
+    "cad/engine/generated/fuel-test-seat-seal.step": "f018d5dbc5364f3fa080deb5e214a0e48024b7649ca9c6523c1b490e34bde737",
+    "models/engine/water-pump-seal-rotating-face.glb": "916edf564f7439eab561bfe38830d2a18b3e6a64643e979655f2afdd1afb9049",
+    "cad/engine/generated/intake-cap-integration-stage/models/oil-filler-cap-seal.glb": "d5af029165a03b8e79f08e7e86c3211a0150fa28c9aa808a9eddf9996b152d15",
+    "scripts/check-intake-exterior-candidate.py": "47c7cbea5ea79dc17a0f9aed3d73dfa281a3189591d3f49fde4a92bb0ab0a012",
+    "models/engine/throttle-cable-ball-stud-estimated.glb": "e3778b3b416fd58de99e14a8199d3e4efd50ceb2430c2957d4868b7e8f03fb71",
+    "models/engine/rocker-fulcrum.glb": "9098504a1c14347a10767c47e6882219a2910abc325064164fa1c41d74a77bff",
+    "models/engine/tps-screw.glb": "d5b4b1021919e55ad38c793de0509bb5281341a5c3a30f9e1ca42f6b7550338b",
+    "models/engine/cam-thrust-plate.glb": "5a1b0d408905b29dd02ffcee4c7651dc251f25c2c35ddce6c3ec71921fe0233c",
+    "models/engine/ac-compressor-shoe-5-front.glb": "514cbbe5016aa053e0f34c8f7ec05a53da070f4ef39157370e44001d179b0e4a",
+    "models/engine/starter-solenoid-s-terminal-insulator.glb": "6300dfbbc3ac168f7d540663d509e102ed14b4447205b71ef9dc1e9019add85c",
+    "models/engine/efi-upper-stud.glb": "5a227daf95fcda95b6b5f5f3cb67de71b13bd3d41e3dd10e363ec25deb323267",
+    "cad/engine/egr.py": "d026afe51bb007f74bb64c6d7ee3dbfc887bb4a19157e914c9b35dc3cccdcf54",
+    "cad/engine/upper_intake_clearance_candidate.py": "18fb70f90ab97a441be204f494b8d23585b6fd061e59c731b785ca75a34b9add",
+    "models/engine/cooling-fan-blade.glb": "f17d5cb68d77593b79e6c2e106cc73ac084ff4ec8b0d7017c83e4996d824e85f",
+    "models/engine/ps-pump-slipper-1.glb": "a4330c9f87cc011ae0f1ee4e471defcb975f9680df279318aca23503ba4ccdde",
+    "models/engine/starter-pole-shunt-5.glb": "6a6e816d0eee7e440622e0ab849f4ab1681787b47b42bf4dc5723ed618b58e1e",
+    "cad/engine/generated/egr-intake-gasket.step": "93c1e3968fdf66209484365ea7cbf77629350768e3df5619c104b1199f9c9a70",
+    "models/engine/fan-clutch-front-cover.glb": "f74af0c99fc419d2bff149000dad1dc96d97510b7b95c2ef6c784fbc4acecda1",
+    "models/engine/ignition-lead-6-carbon-core.glb": "c137969d92b8ffeb7ea7599a8acccda55fed77fb2663412faaee60a6aa8fd8c9",
+    "models/engine/ac-compressor-shoe-3-rear.glb": "d23023fdd01a4e16e240f7e03ec8e822b590ffeb462840dcd067c36e1b089161",
+    "models/engine/ignition-lead-5-carbon-core.glb": "381e3f6f34b446e0cf80828cc1ffa08588f1a11bdb4a4d050359de405ba80adc",
+    "models/engine/ps-pump-valve-cover-seal.glb": "1342031671c563a46d6f8a9eff00dc4b57bb0698f3fcc9e104eb88f5dd7b6e0b",
+    "models/engine/distributor-shaft.glb": "c2468ba08b88574e96a8b8a6f316c1589ded116924b9c61b205611b68b7b0663",
+    "models/engine/efi-lower-intake.glb": "ebf8b6634e8c3f9af60bdeeb79a40c949bb7ef5d22533caca9e9b23793423a1a",
+    "models/engine/fuel-rail-mount-washer.glb": "a2b169cfc088e6073cd484fceebc86a54f501415ce3f929648ce2a669614cad2",
+    "models/engine/ignition-lead-6-cap-contact.glb": "8ac085f5c4837addc7b9e652e0edd847d0cb9dfa3f874f5adc7c93e9319b17db",
+    "models/engine/evp-follower-spring.glb": "17a980d06a6669d594c80ccf487066ad269a9ff5a64f5ff96f6fec1b2f88b380",
+    "models/engine/ac-compressor-rear-head.glb": "33ccbca46916e54c5898d12d4df51a36194c1bf057807dacb60da3d991e807cc",
+    "models/engine/starter-solenoid-contact-rod.glb": "7e6c5139623ec88078a36ca239a09b3378d25c724ec3cc0c3168ecd41e8be314",
+    "models/engine/ac-compressor-hub-bolt.glb": "b48eb487d1a94eea785dab2d8a20305db5b34b06385b4bfabb8d94f38b6338ea",
+    "models/engine/starter-solenoid-hold-winding.glb": "8cd1257a99e3745e9b1db5b9e8724e5733afd97675ce73182510e61afb21f12f",
+    "models/engine/evp-follower.glb": "53724ac93b9809b6fdb4845c6d3b853381defd16a2e3147bea4d9367bb88acf0",
+    "models/engine/ps-pump-slipper-5.glb": "24d6898d188d1e8d04079a9a5bfbd59c47d39e9a71e94197be8dad87e8109513",
+    "cad/engine/generated/rocker-guide.step": "ae058fd3703833663e82cab0533e60b1fb980e60a6a8d14100b24b22e18d8800",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "models/engine/ignition-coil-bracket-head-bolt-1.glb": "594c90e329a6e4d5545cbc2a767117a773f9dd58ac21315e676afece3077257e",
+    "inventory/engine/throttle-return-spring-candidate-validation.json": "b68661f01a8455cfd5d0a846985e2a156f59898e0b36e1e5886e2cb4f148fc52",
+    "models/engine/regulator-inlet-screen.glb": "3c19f1f01ab067b8fca01db294f13b8b4d0aed0e8362ac99a0f680c2c008308f",
+    "models/engine/ps-pump-slipper-9.glb": "b1077f0fa91fe05d9b00c5dbdf33a2c36c90b68be9a060911052efba11224bd3",
+    "models/engine/ignition-lead-5-jacket.glb": "e541256a207c0858caa7f876682952b15918b483610f9ab341cb7019d7f81dae",
+    "models/engine/ac-compressor-piston-2.glb": "04bebbd4906513f3597a01a9c8470b31416059842e953fa6cfdf50cf871937e6",
+    "models/engine/fuel-rail-mount-bolt.glb": "c203bd6912327753a1ee97a3b5b88193a00c7f668d9688f34caa094640179f42",
+    "models/engine/ps-pump-flow-valve.glb": "3abbebcb7c8a97030881e95a63287287f2fd3954db3e30ca34b7c59ff71767cd",
+    "models/engine/egr-spring-seat.glb": "ecf654b5c316b0fbe9fdc6eb301ca4347c25d3052497beececfe936612037e04",
+    "models/engine/cam-bearing.glb": "566905e1dc8cc4e32a8d9c7f7e6221020ff6c13d5ef8b1020579d927ba6bbea0",
+    "models/engine/starter-commutator-segment-22.glb": "4b4f062d276edecec5bfc8c85702c3a21d087da12c85e6cfcffbd9d249013fc3",
+    "cad/engine/generated/iac-solenoid-can.step": "4282bcd6eff8fa7acb0f7974a3524e7a399a29a7305278de810c2df7b1c8ab4b",
+    "models/engine/ps-ac-support-bracket.glb": "460dd16bd1289145cdde4c91206b7112f05185c9ca227bc72483d364afa1921d",
+    "models/engine/oil-filter-mounting-insert.glb": "cce081cf1b82457b80fb4fb2ef3592b0b4bc4d290a79842f93e65e55863e6b33",
+    "models/engine/oil-pressure-moving-contact.glb": "ad2d98d4be962c33e3d5d073b62ecacd7f6f8eee7381be1cd730fd1bf4671de2",
+    "models/engine/egr-mount-bolt.glb": "078e031b40b9980c6d2d229d02d8128ba59a8bcce3c942f5ce4e975be4045107",
+    "models/engine/water-pump-seal-bellows.glb": "2a40c2736e9e697416238dfa3f27b52f4c443d1ef4e8dd4e7ac43819467153c2",
+    "models/engine/fuel-return-tube.glb": "321e31f9c52335bcea0ead90ec7d9168c82c01ab84d80f30053070adb3d079c5",
+    "models/engine/fuel-supply-coupling-female.glb": "a4bde2815b62d16dae17962f749d6f398c7f7e13fe4fe6e9ca3ac92f54799673",
+    "models/engine/starter-armature-winding-8.glb": "d8a63249cbf50c4a73b011102469f2e505c62e623179ee5a62f12e215002ba77",
+    "cad/engine/generated/iac-end-plug.step": "1b17a5ea46e62042515de08f03dd24d915733c3cda4716528890f5a5e8bda9a3",
+    "models/engine/regulator-vacuum-hose.glb": "d5d09174c8b2dc70ce334f688a95f13e63ef4955299045edae534840b9545ab4",
+    "models/engine/ac-compressor-rear-head-seal.glb": "17d432c8a1e29e98329598b652de666f2a0cdf3930a035fc8037fc4bd592c6a4",
+    "cad/engine/generated/fuel-test-cap-seal.step": "c99ffc71ecfd15abcb0d6cba42d13c5346a5d261bb8e285b941b9f2c7b9b0234",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-shaft.step": "f4dd76109d16e6a242ddb441503e0c2fd3573180bf38ff3b2dbd04f7359a541f",
+    "models/engine/regulator-valve-seat.glb": "d25b4e6b86a412900c49c1460cd28c361b830a7359e9bf53f79034c8436b287e",
+    "models/engine/thermostat-cage.glb": "b70c8acc0dee2aa42593a87affb110a0fbb5849af2a60579c7631d2680dc60c3",
+    "models/engine/ignition-coil-primary-terminal.glb": "81c0f704a1a55eacda6e0d7a17cbfd9dc936cf735b0918c5cb943cc667116f46",
+    "models/engine/evr-terminal-control.glb": "00a7ed151f5a4b67238ed02a26a0fbdd33601199b2af80cb28ae2da2a7035bf5",
+    "models/engine/ps-pump-slipper-spring-2.glb": "2c90b9c6f217ab878b62e775ce31f13a7664c2a159f0f77fa9accb1fa2887930",
+    "models/engine/engine-coolant-temperature-body.glb": "5781607f79b05cf1bd9977f0bfb4f5c1e617ed76712a4fb4cfe7b0907955c698",
+    "cad/engine/generated/fuel-return-coupling-spring.step": "a6681841cf3a2fd057e292be16aea9a39008e79345df714b87a92028c842b2d7",
+    "models/engine/fan-clutch-reservoir-partition.glb": "d3ebd5bfc335b2988b56dbd6c13bd906b74dc3d45be686255a9babdb74a1a2e7",
+    "models/engine/water-pump-shaft.glb": "16420d963274063e9668e19cd9c5f65b856bf09e7592c1b85fc17f425099c43c",
+    "models/engine/starter-commutator-segment-11.glb": "dc65473a20a95f2ad6ca0a2a6ec65c280146e568f7c54b0a5ba5493f379638c6",
+    "models/engine/egr-body.glb": "915b440055df7cdf329d03b4f4a37c76191a3aaac780685b3ef89b97245f412a",
+    "models/engine/ignition-lead-4-jacket.glb": "35e7ce8891a8838a16156dc25a75436d7f6d06dc7837aa8fe85cb231fe670baa",
+    "models/engine/egr-lower-shell.glb": "93e82416f539c202788a5c60d81a5c1ca787c028d792f108949d54485bb6f55b",
+    "models/engine/starter-through-bolt-1.glb": "61d85e4dad15d93b83abac70230f380e4123b246acd26a450967c4c7d1e9fd78",
+    "models/engine/engine-oil-dipstick-tube.glb": "5bb7ded792223b81724d84ab33c7c953bab29081d1864b589f4b1d4d46ac28ce",
+    "models/engine/front-manifold-bolt14.glb": "69cd75dfc596e3af2872fc56c0db8945fb42ff668e0a706fe3138f1521439952",
+    "models/engine/ps-pump-shaft-seal-retainer.glb": "1d1801d8ba8482a6d269e2f2c723813df246e0da7f9c253da9ff832969cc12d1",
+    "models/engine/fan-clutch-thermal-spring.glb": "c79503a35bfb668efb0723b616bab0adb5cb81509f31326db1726f723b610cc1",
+    "models/engine/valve-seal.glb": "5a3759fd465f1629cb99be5166d213e8067c81310d49b97ce101cbfc4b55eab6",
+    "models/engine/ps-pump-slipper-10.glb": "c9f9dfd64da901601da03b18ce39dd5918142765c94ede37d4111ef3f113e551",
+    "models/engine/ps-pump-slipper-spring-10.glb": "7f090e1203105ebfe50ebe6334b8172d1785eb7657750f196564976bac556ecc",
+    "models/engine/alternator-case-bolt-3.glb": "f364aece442cdf4ba970f4d21f4f4c5d4427044cdd678d076e960dc58d94972a",
+    "models/engine/pilot-bearing-cage.glb": "e1c40b77a917d5a40c7da3c798c82ec2ee57183c905907877d07bae80b5235c8",
+    "models/engine/ps-pump-dowel-2.glb": "338f4f8daddd72d23e5f2b8b230e2dd7958e009b24e3c6f4f721b55ed66923cd",
+    "models/engine/starter-brush-3.glb": "6f765cc770c1ed460a9d75f4ebe0c22babef4b52036502b2b4e8e348c6e65b59",
+    "models/engine/ignition-lead-2-cap-boot.glb": "01bbf9630f3c0ac0ec660b3034def3ff3217cc00467868ce57ed3270269fd903",
+    "models/engine/tensioner-pivot-sleeve.glb": "f36aa09b2c1d4e98dbc29730c208826ea3e3c929a022888e3c78e58b461424c0",
+    "models/engine/efi-head-intake-gasket.glb": "f8b6ea56871fd583d34fa09a47c0a5caeca81ebdac349273c0e076bf94a95911",
+    "cad/engine/throttle_return_spring_integration.py": "d0357c3ecdefb8643fdbda9fbde333de47a14902c0f631b7d95de977b0e4c59c",
+    "models/engine/ac-compressor-pulley-bearing.glb": "5fc92d02ff561248c7a053f41ae45fc98a20af77889a2038dec087cdfcb91c73",
+    "models/engine/ignition-coil-case.glb": "1b6d6f8fee25a35d85d262c3d6fdef4bbf609bb6fe673c14df6220b7093c079d",
+    "models/engine/rocker-bolt.glb": "37b1dbdc0e8b8e4e2d3f6f56f09c4cd3e3370709d7c1dc320470e67feee8a51e",
+    "models/engine/egr-stem-retainer.glb": "ab3500fc49271abd21dcf8504d560ba2d269169ab07518581aebb0eb51b1345e",
+    "models/engine/alternator-rear-bearing.glb": "94a3d93d5b716987e10a3968bda985161ed1baea7eac1e2b85e952794d979693",
+    "models/engine/ac-compressor-piston-5-rear-seal.glb": "f1754377c2800ecd275ab151eafef36cde45cd35b494519ce0900e822968c7b9",
+    "cad/engine/generated/intake-cap-integration-stage/step/egr-control-vacuum-hose.step": "250baa7d2f26700aba296c883ddb4a5712b1a3657ca2512e939a5e5338315df1",
+    "models/engine/starter-brush-spring-2.glb": "acdc563a150eb5b787899480e00b40052a9875feae7f77a8ea761b375e1cb6e1",
+    "cad/engine/generated/fuel-test-core.step": "7124ec3fcff57fc43ad00aa3e89ab15be2cd3356e53446f192e8a6ab76a2a922",
+    "models/engine/ac-compressor-shoe-4-front.glb": "937b607cbb2204f0911c7089f978413c13e863187435b5a7657e13de28fbc86e",
+    "models/engine/damper-elastomer.glb": "3a0fcb81361a71a254a0e637687169ee2677b68dddf217f464d92be1c0cf5c8a",
+    "cad/engine/generated/intake-cap-integration-stage/models/egr-control-vacuum-hose.glb": "e8012fb8347cff05403e9f2f74e509517553ae61ee3bb6563a76a59eabb09872",
+    "models/engine/distributor-cap-terminal.glb": "146069f96784fd2404f9ab011c9efc3e547b114dc3c57cfd89a77073cde6210c",
+    "models/engine/thermactor-rear-plate.glb": "dd5aa6c34de77009990e9a150d716b6f3e0409665c286da0eb3e4ddc7b9e0716",
+    "models/engine/distributor-hold-down-bolt.glb": "9eaa56ad3ad97e6d796decc3b71ccc422b1f14a7c6943eb70e0438312635b7d4",
+    "models/engine/intake-head-locating-dowel.glb": "7327401029e32895b83307a96eb4dd904ff0029a013be58593635aa01928c43a",
+    "models/engine/throttle-gasket.glb": "5902f1f48ad9d7d15d0375c532eb3c60e941664fd05791a0d19c92531986bd15",
+    "models/engine/thermactor-pulley.glb": "9e490712ea34d329d88b4d4b9a6ba73139c46e06c060ff9f5c7d97a27f8e58c4",
+    "models/engine/oil-pressure-rim.glb": "b640970d4f64208d0b7fb9f2a1cafe46e42b82c0e8a30ff33bf62c604f0c49cf",
+    "cad/engine/generated/intake-cap-integration-stage/models/egr-exhaust-tube.glb": "b35b30e5ae5834d391e8258b795cb0ec7053ed9d38a90e771683fff6c97e95b9",
+    "models/engine/egr-pintle.glb": "df32f67ef693ff0c4b56bc9b8b4f318c993163ce5979326edc7d8f8889d597f0",
+    "models/engine/ignition-lead-5-cap-boot.glb": "6828fa7c8d1fe330f3eca918a302ec70a2e5554b5d9aaf487b461a4bdbfe6b82",
+    "cad/engine/generated/regulator-diaphragm.step": "cfd3ad02342c934f08eb5d5ccb06a5ab81450a8d8d4054b536c4927e14ffe2c4",
+    "models/engine/oil-pump-intermediate-shaft.glb": "e9495ff294a5a1e778b445c87a7da10a1132384f0d8f8640c7f60700719976e3",
+    "models/engine/fan-clutch-control-valve.glb": "19da0ab1344f34e877600e05fe9c52ff9a818e018743a37fb8ac18d460f423d7",
+    "models/engine/ps-pump-cap-dipstick.glb": "dd650805da3679bb96fc771baeffe62afdcdd4a72c34a90f406e3c6323b28b4b",
+    "models/engine/pushrod-cover.glb": "700edff2dffc87d27218ec4b687d0b49409780d7938adf482ea0e5da0098c40b",
+    "models/engine/starter-solenoid-contact-bridge.glb": "54d427f2707c42910c5fb7ed1d88f3b81782f671bb8640b4e524c108094143b6",
+    "models/engine/oil-pickup-bell.glb": "d64d063ff5fcb6e9521730f199cea6489e2f627947dd2643510250e04d8af702",
+    "cad/engine/generated/fuel-return-coupling-tether.step": "40f73d302e87f42d25e79ffedf4f0477a9d15eae4930967ebfedd975b397605a",
+    "models/engine/thermactor-engine-bolt-1.glb": "105a2c2ef5c6b92c86771034d7fa1dd7bb2abc5f776687a1828018e61402aef4",
+    "models/engine/starter-motor-feed-grommet.glb": "697b688af245323c98531d69afa60399778ac7a87b9ec0e6d5748186d748af36",
+    "models/engine/ac-compressor-piston-4.glb": "c3c5426c938153ea415574c4dbd2360c094b29f9f896cd32245a002b2987d594",
+    "models/engine/starter-brush-end-plate.glb": "776cebfe6a83360b3f65949f494cd2f69f1412a8032cd95071e0d105e3725f61",
+    "models/engine/ac-compressor-piston-3-front-seal.glb": "cae8140941ac770e7dbde540af316a2b4083b502683474967d4de969897dfebe",
+    "models/engine/ac-compressor-piston-2-rear-seal.glb": "25ea43c23c600f7bbf292bf474afe8215623b69f27727cc7d69ebda036432b69",
+    "models/engine/ps-pump-rotor-clip.glb": "bd6e3fe7b74101d8d18872736f99798772f337ab907dfd9942f5a38b6b4815fd",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/generated/pcv-outlet-head.step": "8b31fe662077da98250a4e72822e3a437ed692810905d4305143d04569395c2a",
+    "models/engine/starter-solenoid-lead-insulation-hold-s.glb": "38fe4be7fe2acf7ad8251855daee30b0969ff81d0e8a4c37539e061f728b1879",
+    "models/engine/regulator-retaining-screw.glb": "52d5a9e5334c8c8532a5146daff536156a63d649af90491cfe760152bdb051c7",
+    "cad/engine/generated/fuel-test-pin.step": "bf0dd799b8f90861a890aa33204973f02e21afb223b78109c7791391e835fa2a",
+    "models/engine/ignition-module-screw.glb": "ad0e2305d34f59308e7c1d1c1191906f5612345f6f645d2362216d51aa194dd6",
+    "cad/engine/generated/tps-screw.step": "aed632b7e537650d7a04e812f4cb7cbaa2d54fdd4c18a9a56e541d0e2ead5695",
+    "models/engine/alternator-shaft.glb": "d198580a4bbdce05929174357dce4fcee1b1ab681d4b1a2b625a9186e70c7788",
+    "models/engine/alternator-regulator.glb": "af41ccd5db87526f1b8cf1198352c61cc2180096b3e780c0caadaf3f30e5174a",
+    "models/engine/fan-clutch-shaft-seal.glb": "b38c2409fd609aad2be4f1b18b4e1a5181512ca50605fb2b9f648654b0de44d8",
+    "models/engine/ps-pump-shaft.glb": "f1412b1e1a6deeaa8af54de2ea57d0b2261c1d3932e062ac6734127476f82682",
+    "models/engine/starter-commutator-segment-20.glb": "54c019ab3f9e2d2fb6943de40cdad137fbb3f1710a29b7d0b419e12fa5830873",
+    "models/engine/ignition-lead-6-plug-contact.glb": "a2594391419017eb46db03407f2db5e06e798cf9ac5a3683640f714215127673",
+    "models/engine/fuel-test-body.glb": "c81c8fb07981768659a4020e7ace70e877266998cd07cd402466d9b1e5a1b41d",
+    "models/engine/starter-stop-ring-retainer.glb": "82eb412679c7a28ee6bc98159b20721bf44af2ccd793f1c9aa6c469c335193d2",
+    "models/engine/starter-magnet-retainer-5.glb": "30c6b5603975254276bb2734d1bf485046291b5913c847e7cfc26cc5ddf78e5a",
+    "models/engine/thermactor-pulley-bolt-1.glb": "9770e707b2383527a18db950411d3d9519bd709a3e2518947f8f93f0a883e6b7",
+    "models/engine/ignition-coil-lead-coil-boot.glb": "b53105de81cfcecb6a0848f9d5fe9984fff41821ffb0650bc0de1da199161598",
+    "models/engine/starter-pole-shunt-2.glb": "28e6da452d59e1566d5a1ad065535a7f8c6c158b16b5505762a47e3533a6650b",
+    "models/engine/thermactor-engine-bolt-2.glb": "36ff3f8adee017d5637e47d13812de9fd91872fa26c86a047186fdce4d71ab7b",
+    "models/engine/iac-coil.glb": "f9dac7f5f52ff7c1232423391339154663b41caa4f882d07d67bf8d2c2902370",
+    "models/engine/regulator-spring.glb": "1709dc62235b25797b4d781b36194d6e87e691458519e50eaaa2df3ff8c564c2",
+    "models/engine/starter-armature-winding-2.glb": "c1578262df76c0911e9db81af923b02776c4b9fd1e11c94655217c48e63d0c84",
+    "cad/engine/generated/intake-cap-integration-stage/step/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "cad/engine/generated/efi-upper-stud.step": "e39f9875881582962d9473f06861198d5478a53179fc2147c9484c432b394272",
+    "models/engine/evr-body.glb": "009ae2be101b2816f73408f686744b46577a3759b9309460f6525ea6e4cab3db",
+    "models/engine/fuel-test-spring.glb": "18160329a7b0b174c65e8656f88bf63facc52ecc6e5854d13616bb25efdaa0eb",
+    "models/engine/water-pump-housing.glb": "941e7400990e8985327d0e5a007786e6839f6c63043d2afffc475a16cb962942",
+    "models/engine/ignition-lead-4-plug-contact.glb": "d2a915e0ab2eb20968d2d264c7977a050661026d3a6c388e1df3a0ce36c41e29",
+    "models/engine/water-pump-bearing.glb": "d253ae029f5edcf2a7f1304d0343dc8489883592177fe8e222ff44a456a4c268",
+    "models/engine/starter-drive-pinion.glb": "5695c5a403c3ce829975bfd5a29b79f7c90ef5f92908dbe62e5ab0441f558530",
+    "models/engine/ps-pump-housing.glb": "60a64d855ad574b042410d356776f3ef8057e6701f951231866a6f7a5c3909e1",
+    "models/engine/ignition-coil-primary.glb": "bb6a37d4b36f9581e3f4eba714855fb906623f07f5d80077ceed6d81b5cb931e",
+    "models/engine/starter-commutator-segment-21.glb": "457c0887b8c3cdcc3a77976b9c4058733451478936cf01d5aae4b69c13a0496b",
+    "models/engine/oil-pump-relief-cap.glb": "1ee1cf949227559f857caed0562b4fdbb277ee3d26a5c8ffaf3af630c845eab2",
+    "models/engine/starter-armature-thrust-ball.glb": "3803270060a92f9f97195e0631ee99eb8cf7fda44e6105f51c04e09d4db0b936",
+    "models/engine/throttle-bracket-stud-estimated.glb": "bff512ccfda311a82f1c55b037a62963d7f9a259d89fb41b5858e47ab5ee21b0",
+    "models/engine/distributor-cap.glb": "8e5e02e34ef204bdd96aee596919c1bdfaf237cda4396abacd07e5b4d7f7bf69",
+    "models/engine/lifter-metering-disc.glb": "a173b5a3ab274770073b14b3b4724ae16aa386b9d73b39879dc618f88163ef83",
+    "models/engine/starter-solenoid-terminal-1.glb": "85d683f41663375b0bc3f19befbd3f8bb8dd7bbd2d4c51dfe67fdb9ee4800b61",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-plate.glb": "d4237bfbee3f5e44fe1b21268cec160714e1c6b040d8da0f67c55eb9936712e4",
+    "models/engine/ps-bracket-bolt-1.glb": "267a8598f39469922ba7887b1fe3f8ddf62ac84b55af5dc6127f2612a3517d10",
+    "models/engine/exhaust-valve.glb": "556aa1a612db09e4ae8d9754c7631c80e0e576e8ba1b2c59bf1a81854574b60b",
+    "models/engine/valve-keeper.glb": "7e86b58dde9aebe5e32e34c5b610b6fa3c2886af0e0cbdd466559c1e0a6c140c",
+    "models/engine/fuel-return-coupling-seal.glb": "53b89762e0182496ae47c11f584d0224958f25a8a0fe983c5008d7c4139136c1",
+    "models/engine/distributor-hall-sensor.glb": "f82c1e153759f9ddf0624dce7e2910977668a561fbfe258976d98035e6d04254",
+    "cad/engine/generated/fuel-rail-mount-bolt.step": "3ce978ba2d5ab7ae1a569171e1d34ce5f51c3bf53e31c1121d3c02e87d6713d7",
+    "models/engine/fuel-test-cap.glb": "35915e054d04fb1db4b59316ff00c4acf0f0abfb20e529006ab1131ad57df5c4",
+    "models/engine/starter-solenoid-lead-hold-s.glb": "12db09d7df7e4a55bd8217773850d157e271c9d986025237ccc403494be49b96",
+    "cad/engine/generated/fuel-test-body.step": "49e5994f6cdb10f061dd39204fd72a8b3fc692377bd2a9a4956a24cd2957dc80",
+    "cad/engine/generated/regulator-upper-housing.step": "fb91074806f560eb950828b00fac8752c5f16a6d0f3e3cfc2fb389a51bbb58bc",
+    "models/engine/oil-filter-gasket.glb": "f8318a4308db6661cdcba3c9461a9c2ed5c0666c8fd20ad6ed8ffa1a2a35143e",
+    "models/engine/throttle-lever-estimated.glb": "cc18775ce533af22a8d9ddc615e2b20183dea7291e8c86b167999082b91a4d08",
+    "models/engine/pilot-bearing-seal.glb": "a964c0049e3201c7834ab184dbc8e9cce39b74ca46b87203fae603e711fcbda0",
+    "models/engine/lifter-check-ball.glb": "fb3404275852082f4ced3086e56999850147be929f73df1c5735cbfaef518f9f",
+    "models/engine/pcv-plunger.glb": "fd7a5ad2a6e9b939009a078ee53ae1543923846d7f3aa5dded578cba96d55cd0",
+    "models/engine/rear-cam-plug.glb": "e15b62226593fe444023744c59e39500b623700e629e1c62e3a46357fcc92623",
+    "models/engine/ps-pump-slipper-4.glb": "0be066b6a8a13aa9dfd1c81de30a26a2947c2896749fafa68d6029c4ae0ca308",
+    "cad/engine/generated/intake-spring.step": "da49a9d6ed3178e0482795eafa4bee52da394dc7ce8c1ea5887e77420331ba11",
+    "models/engine/thermactor-front-bearing.glb": "a038893eb5e9d43bbb1dd415902911c5d3450d064ed974a7778d212b23ed9810",
+    "models/engine/starter-commutator-segment-10.glb": "0872c08d6a95ad07f888a1ea28cb316c3c2649c7cecda6e02c35587e3157e63f",
+    "models/engine/lifter-check-spring.glb": "81874ed166d9d93359f28b6832645e1aec7398a8c5b82b3c3c03d263c29b5ebd",
+    "cad/engine/generated/engine-oil-dipstick-blade.step": "c2774cb94dfe4c405868d559d109ea30da3b99639c5752162bc5d327fcfe04b3",
+    "models/engine/ac-compressor-rear-thrust-2.glb": "e9d9720a448b9b94ce4387f2ed02f66046793e1acc2296481f82ffe455793840",
+    "models/engine/ps-pump-slipper-spring-1.glb": "09a3ae4e5d6458787671ccb8ffb8f907bf9ca6adb09a7c5b90d6896ac8b4f6fb",
+    "models/engine/fan-clutch-bearing.glb": "b27ca3de1dcd8c934ab881c8d6c50747465db23124c2e543d6618c50d03ce5d6",
+    "models/engine/oil-pressure-terminal.glb": "be1e3850dd082e4c3f3a4a3e741ae22e1cd59e95ba94feb2c4a1d2f3c24fc3d3",
+    "models/engine/ps-pump-slipper-spring-7.glb": "bc3c4c4cadceb3d1c45313ecb50703b5079e8189d519d104de6f5c699a2d34ae",
+    "models/engine/starter-brush-pigtail-positive-1.glb": "8bf2aa8c8c5220a2976052929f895eeba7be0503c9c806240341782a6d6cc0cb",
+    "models/engine/ac-compressor-rear-plenum-seal.glb": "373200dd384b77a41d83f84a5f00cc160c22d119fb44032f2083be53d732b449",
+    "models/engine/ac-compressor-piston-1-front-seal.glb": "5eca4a5f4a1dbda869e06fb9d482ff637818c0a9ca6237d30fbf3864590becac",
+    "models/engine/ac-compressor-armature-hub.glb": "70954d65827b15e3b655da5ad734ca3067eef5149e7fa79ee7cf0ad0b8e5427e",
+    "models/engine/cylinder-head.glb": "e00c2f5903a766674784699ae8c38029acf7bfbec8ff299e6f969751b3d83c0d",
+    "models/engine/starter-commutator-segment-1.glb": "58503d92faf343eedecbc69bd8a69121add3fa8f0108bb8b52dd63f7b829569e",
+    "models/engine/starter-shaft-e-ring.glb": "d509aab3385f7b903f66d9bfdd62ec57a18c210a1ac9769369ea745df04d4a4c",
+    "models/engine/ignition-coil-bracket-screw-1.glb": "fd34f0d089034aef076b6ac2c58f16a95350a28583d2761d02c2cd5842eeac58",
+    "cad/engine/generated/regulator-retaining-screw.step": "15ace627554711ae653b0bdbf6af3273068ca165659f593383f20ce5308eab6e",
+    "models/engine/ignition-heat-sink-screw.glb": "4403318156ae93ddce0d0ed81f472494f8597173d14b80e683e97a9df58b8027",
+    "models/engine/egr-upper-shell.glb": "9c01868786eb9da4e4b0d628fe7850fbee78f2d4af5eb013ed905c6b68c1796d",
+    "models/engine/throttle-linkage-shield-estimated.glb": "9ea4aab8d07f3a394ddd696904337638be51a6ae9d9d469cb975c8ba17b794c2",
+    "models/engine/water-pump-impeller.glb": "1c5077ca7cef47ee04858d4ff7901a5721176f2a97f87a19ce5919134aace7c8",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "models/engine/water-pump-seal-shaft-collar.glb": "975dfda58e2a77f4bb999f7f95f41d198eefd84be2bb6c2b4b79429609689c6d",
+    "cad/engine/generated/intake-cap-integration-stage/step/egr-tube-heat-sleeve.step": "de598c5266fc0034d962415645c9ac2ec48e5c683cd109b19f8842c70339c0c5",
+    "models/engine/fuel-supply-coupling-cage.glb": "646a92387495bb821663b09e1ca3390e25ea494ae5132403951f8964aa42db0d",
+    "cad/engine/generated/regulator-valve-seat.step": "eb60678edc8d0fb11a7d9e6e43e57a529442b21ec437d4ca426e6ca60ab6e61d",
+    "models/engine/starter-brush-1.glb": "b96365a4dead6ae5edf87e49778c6931b49cd02dd7b50299444489aa9694a46d",
+    "models/engine/starter-commutator-segment-15.glb": "d5ec6e91fedfa33046484386095c6a9ed86eaa405ec5b2ab5acc1eb869cd3e85",
+    "cad/engine/generated/pcv-spring.step": "f5bc0b08527a01afea90b34d0a9739a89aaf4199b471811db38fe23e9d4896af",
+    "models/engine/thermostat-frame.glb": "179cb80735b4499a7cb5e8babbbaa876d4bbbd1b6b240918b8fb5bbb1e82349f",
+    "models/engine/ps-pump-cover-retaining-ring.glb": "09f0104df7f9196dd31beb9dd61138f298873b84e97105297aa2db8a6bcb96f0",
+    "models/engine/thermactor-case-bolt-1.glb": "d364b4d691b8b8554c81dbc2e33187ad069eaaf447c6118d934a0d67a3cb3010",
+    "models/engine/evr-cap.glb": "b5e51b7a27dba9f5c88b45bd8e5f9d6e65c5b1b057e05ff8a2796fa441d9715b",
+    "cad/engine/generated/injector-metal-body.step": "6c975fabbb7624079909699ed48ea51c3f1c34567bcb63d136c075fccf60074b",
+    "models/engine/ignition-lead-4-cap-contact.glb": "721a43b690d4c56eada2b1023c9efa103ae76d8c59e06c6472b00e66411fc3ab",
+    "models/engine/fuel-supply-coupling-spring.glb": "e1a553eadaf2582d53f4a802414a98985e4d3b1df7ba136be1a587087176a24d",
+    "cad/engine/generated/pcv-grommet.step": "ea82bb4d3ea3d2ddf38be145ae8cdebe1ecbc3d9f8228479a8aaa9fc639a39c0",
+    "models/engine/ignition-lead-5-plug-contact.glb": "fe1b2cc3ed26bccba0d07443ef2e4b7e856e51d461338ce1bfdc4069d88e8151",
+    "models/engine/starter-through-bolt-2.glb": "09741313bbe6725c01bf301b30871cffc889a497cd30be31ce7b75f6e12994b0",
+    "models/engine/ac-compressor-clutch-coil-carrier.glb": "a3bf6984560e22cf525ea7fd8dca52fb5133e188052906ec8dcee8af4fa13314",
+    "models/engine/starter-brush-spring-3.glb": "97d65a0f1cc478ac85507ce5eef98118c210839ee99fb9a984327bd403c33ebe",
+    "models/engine/pushrod.glb": "b6d40d7b971d5ffa729fe40d887cbe33c957066bd909b3f88ec8556139da0e3d",
+    "models/engine/engine-coolant-temperature-thermistor.glb": "4b781347da0e8c086e5ff67fdf176833d5cbfdcd19f4c11248113513bb9f1bae",
+    "models/engine/ps-pump-slipper-spring-4.glb": "77d0caf21268dfca7d337aa0d29b50a4dad356c2e7a4ea3faffb79ea209f3342",
+    "models/engine/starter-stationary-gear.glb": "d053db933ba29eda25f9bdc5d3f292fee35131711b74af94cc2f3f4a5a5af182",
+    "models/engine/rocker-arm.glb": "919eb6d222696be6e35f4238097674954ae9857b9c5501279a32c8cfc55d026f",
+    "models/engine/efi-upper-intake-gasket.glb": "6b5a9bf207f5106811e47d44cef60aea01f8f16127732b17c2d337eadd7c4598",
+    "models/engine/oil-pressure-spring.glb": "d5aed1db19c8b9706ff4b61613168bd6c10f444d77016f4a208325425e05da75",
+    "models/engine/ignition-lead-3-cap-contact.glb": "8b83a81d1ec5d7a211b9a9b7705761b22400cc99586a1ad376ce5473f51fd756",
+    "models/engine/starter-commutator-segment-3.glb": "f49b5ac581a16ac80177c8915ce2670e8ba12fe553a8811e11c9b47565d146a4",
+    "models/engine/ac-compressor-piston-3.glb": "29f856c9d8fc1eafc58d02eba59218dde9efa3b41847519ef6f51d283741ea7f",
+    "models/engine/oil-rail.glb": "3218f63513ace172bf2a7a3487f8fa419d3dbb57102157223dc097262d91ae6c",
+    "models/engine/ignition-coil-bracket-head-bolt-2.glb": "4564247b4cdb515a5bf07b74a4c7c5fed422cbac064e65570755c4263233d3fb",
+    "cad/engine/generated/egr-body.step": "4886a4d37e5e85db85ab38e85aab9f097227b4c854fa3885b3f565c3acb06609",
+    "models/engine/ignition-heat-sink.glb": "aea7fbca6e81f898e1402ba4cf27d538959d50727d31b512c92b7a2e08c86bea",
+    "models/engine/tensioner-pulley-bolt.glb": "c935fe21755de3c606e2648cb97f627ff4e076a53f2e3f684cca17f7e8f5f476",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "models/engine/ac-compressor-shoe-1-front.glb": "e1c5fe02114d0723c2eb9d999563751d573736c5b044b3b54725411dd6f71821",
+    "models/engine/starter-motor-feed-jacket.glb": "e48ae3d68d751faf7a7cc3ec76fbf50759379c92fdffb64a930ac0e73538b701",
+    "cad/engine/generated/regulator-spring-seat.step": "68b2a5c1fa87c873adc3499fba17c4ad763300cc83096c91f676ed845be793cf",
+    "models/engine/ac-compressor-case-bolt-2.glb": "5a365bad0e39b665e5269dd9be477088301d26de1a4d8d9a87874f894016f495",
+    "models/engine/starter-armature-thrust-washer.glb": "54a77c2d894f448c932d4296b7f5ce803aafb3e9fe5dd1215d8d9533710e29cf",
+    "models/engine/distributor-center-contact.glb": "a77f016efe9c426819df4417d9de40a26d8d9656c53c296192928de44728f3dd",
+    "models/engine/alternator-slip-ring-insulator.glb": "9cd3e1800e68193c2041524231ccbe2a7426b6b7d17c5e001c5e380f7f58c4e4",
+    "models/engine/throttle-shield-pushpin-estimated.glb": "b18f5b52b64b84d7443a4ed2a3420e6423bb416e3052332df5e54fd3993e6381",
+    "models/engine/alternator-stator-core.glb": "b25771898c4aee47ccab62206a2e13f2c86a6fba45e3f3a1560bca12ef1a9ee1",
+    "models/engine/injector-terminal.glb": "fd0dacff83ad5dd01296b99bb67e3c2d4f47568b8a54f802a1831bec30bf3296",
+    "models/engine/tensioner-moving-arm.glb": "5cd1705c1d2aa38c3a325f01bb9271963b76c62730ba5e09d0398709b4aca929",
+    "models/engine/evp-terminal-3.glb": "b973e1d3da570ee0b56d5fa205e5e6c01bcc235b15242b34214ad6e171537e78",
+    "models/engine/iac-pintle.glb": "83af35ad403c7085d3774e893050cf0755140e780b78e83fadb376420f1b279b",
+    "models/engine/ac-compressor-case-bolt-3.glb": "803fe71efff141640e0ad94793b07fe598e6703e4a1f832fb21724094edcd213",
+    "models/engine/ignition-lead-4-plug-boot.glb": "5155e6d92898de8cb9a519561499136f6a1338c29de87975624ee35b19bafdf0",
+    "cad/engine/generated/fuel-return-tube.step": "a5e903d8920b40a3c77deb9e0410e536605036cec650f934307fceff50cc02f9",
+    "models/engine/alternator-slip-ring-2.glb": "2c7edf19e66b43d4f49a202fed9ce88bb21bc3d2d3974fcacd1ba390dda4daf9",
+    "models/engine/ps-pump-shaft-seal.glb": "5a89c7d357b217fa3c36b5f33c1dd16a08ae8925228a1c2b31f429b7cfe85cc3",
+    "models/engine/alternator-brush-holder.glb": "dfcfeb05b1fbeb4db921d514689818e48b2db6a7961d4866a5ec289e07f8f111",
+    "models/engine/cam-timing-gear.glb": "7afbe35f0e773cc89e4569676e3ace53d4204fcdcd812e1779d4ed13d8665ef7",
+    "models/engine/starter-commutator-segment-13.glb": "624a4226cd322dd1bea8d0024e9c70612e58ce712551cb0775c1ebd74a02bbf8",
+    "models/engine/throttle-mount-stud.glb": "108f6c8ba610c6795f8d7d7fc6359d3301cead75f5c982c28e7fd300af0bcce7",
+    "models/engine/starter-brush-holder-4.glb": "589ccc62184e6fce8f7c7f386e2fa355528423aacf149de3abfa3fc6ca2f8e99",
+    "models/engine/ignition-lead-4-cap-boot.glb": "712679b5f53c78edfbf9077652496179b000e65d7e9bc578a43cb5ea4509c958",
+    "models/engine/starter-brush-carrier.glb": "967aca0c5811247668091d9cfa0347bee4919b90e76bd8ed156eb9906ff20a13",
+    "models/engine/ignition-coil-bobbin.glb": "69429a6d1bce2d5bc130fa5e247bbf985381e659fc2d8d989093aa551f8e2041",
+    "models/engine/lifter-plunger-spring.glb": "8acdccfab78d463caf7f2d77366d840aa5206c863be6a952eec4ff1c3e8e8e56",
+    "models/engine/oil-pump-outer-rotor.glb": "f8265fa15a1febefd3f91d1ee852e8be19ed67a19472e98e3279a78d23ea5f4a",
+    "models/engine/starter-solenoid-lead-insulation-pull-m.glb": "3bd974a0d069a80e2419cb7339bfbcecc2f37677e88898bccd307549d47bb8c9",
+    "models/engine/intake-spring.glb": "899436f701a2eba8fdef7498c85f85c90a1f289a1c6ac904817300ad2f05a423",
+    "models/engine/pcv-body.glb": "0ada39d730328f62406286e732f1f726574077b2d36425bac53fa51ce19b163a",
+    "models/engine/ac-compressor-piston-5-front-seal.glb": "d939de644ced947df8fd9136c7f956369eadde6688e029eda2c9451913d4b214",
+    "models/engine/evp-terminal-1.glb": "5c9e2f8c1290685706f50cd9d6dd13802a8d1328193ab80b3d7e78343ac8f342",
+    "models/engine/oil-pickup-screen.glb": "38b85aa1238c13f6eb120f8ccd8a40ec7d64d41a13edc7d6dd67340c6c28c95f",
+    "cad/engine/generated/fuel-rail-mount-washer.step": "5f027bde086801aa3d0a3d18c478588fc46c1b43714df48bd867933e10897d8f",
+    "models/engine/accelerator-cable-bracket.glb": "32b993e20d74404d7d85921507c1fc7affa641582347ff2428f0989b8f6f988a",
+    "models/engine/fuel-supply-rail.glb": "5879855153dba3861a95609881dfdb37906b11cba4c08345512b4293d389b9e8",
+    "models/engine/fuel-return-coupling-spring.glb": "af4003b758fd3849f399ee9101e4c71c9c7eab5e3528f42cbe6af466720dd0d4",
+    "models/engine/starter-solenoid-lead-hold-frame.glb": "22ec9526f32456bda8fa4243d25a34e188566fb0fb1f2a9a9f8bca559e04cc0c",
+    "models/engine/starter-commutator-segment-14.glb": "eddb588981e26e334e30d8fd79256deb04ec7744a355a37b2112e6bae937205d",
+    "models/engine/starter-armature-winding-4.glb": "679b2a799ad80614b50a482159dbe8b0bcdbd07a7e5dfb6f73d5f00da1ea7234",
+    "models/engine/ac-compressor-rear-shaft-bearing.glb": "aad6b8de332bd49e609081b7af3a63ff4f0aeedd3abd7d1cb2808431f511a44e",
+    "cad/engine/generated/intake-cap-integration-stage/step/oil-filler-cap-seal.step": "2bb1565eef921afa77174d2547d1f9b904f7dd467bfbbbe7802720392b441614",
+    "cad/engine/generated/injector-inlet-filter.step": "f432da6330397e8191223439771adf50d22e8c53bce05033b84b50c56fa27220",
+    "cad/engine/regulator_vacuum.py": "b9d8a76f45d0cb8bbcd6839e82828ab5c86d36c1e13abe8bcfac6afebc8c6765",
+    "models/engine/piston.glb": "aea83082c8bd8b77a1912ef1008765bf2c2b80f0a2e6d21aaf9aa233ee7bb2f6",
+    "models/engine/ac-compressor-shoe-1-rear.glb": "d23023fdd01a4e16e240f7e03ec8e822b590ffeb462840dcd067c36e1b089161",
+    "models/engine/starter-commutator-segment-6.glb": "bdac69486e0bedd993ae05746341c2acddee5e21a846978045819bebb2c616a5",
+    "models/engine/egr-tube-manifold-fitting.glb": "5f306c8c686e883b9122d0734e361f208b4ee9a6ec0db29178156d1d4eeb4c8a",
+    "models/engine/coolant-outlet-gasket.glb": "5c1a46cb6b20fb0e28f9b2b64b08fa4c735b6ddb220f8ffd62b08351a0f784a3",
+    "models/engine/ac-compressor-front-head-seal.glb": "58115d9a6eb53d702173b0813486d96d3eca99feddced9545d08475035d6379a",
+    "models/engine/engine-coolant-temperature-terminal.glb": "909583616caddd13dd249e023492e2eca5cecf871734797b39498704936e5240",
+    "models/engine/lifter-lock-ring.glb": "2d68c99bb4962fdde30c32c31ad3808d5f723c3b26c7bbdeaeea245cb537b96f",
+    "models/engine/starter-magnet-retainer-4.glb": "6a4f81a1692a5ac3c3a9ff27ce148638f728a78fdd83dcdcedf70bdde8b62aa5",
+    "models/engine/thermostat-jiggle-pin.glb": "1278ac3b91c25c313a8a8368acbe57285ac8d6a7a15fd14a1bccf4ed68c3a480",
+    "models/engine/alternator-front-bearing.glb": "e5755cdfc69ef0064d0a7e94996c51c23e69b3e9077c78aca205219da0a83e54",
+    "models/engine/ps-pump-slipper-3.glb": "4ce6afa99453b2fd09ac67164dbcc332733029aa07a0fc34dd1739b9479499c3",
+    "cad/engine/generated/intake-cap-integration-stage/step/egr-tube-valve-nut.step": "d6ff9d2b45b8c67bb50c9087b097df2f59d48852bedb99793aed71b82f44edd4",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "models/engine/coolant-outlet-housing.glb": "5bd6f35f79d454e48e0712ed942f49a4016b4a4a4fca7643a3640ab07a3173c2",
+    "models/engine/ignition-coil-core-e.glb": "7d028ce32433112895f02c838a4d726e168a16198b6a608419bc1206cdc75704",
+    "models/engine/front-manifold-stud13.glb": "c27b864806cad5eef18e5b441dbd6ac6fe4c4ddcfef29f2c1d2380a43d0f8b04",
+    "models/engine/thermactor-front-plate.glb": "97b232e447d495c6d7fb8c59ea349025fb123cc1c4e28a6eb26041a62d0bf1e0",
+    "models/engine/starter-solenoid-plunger.glb": "a3e9e9cfae73032f8c165b6b8effe67455062537a283cc9c56ed0cca4f39da64",
+    "models/engine/main-bearing-upper.glb": "0f927610e04f2a1a32019211f7a07ef478d50b719d7557759067cc1a19673eea",
+    "models/engine/lower-bearing.glb": "1ab57465ffe65f55338269224af9861cadf00a3aff5dc8fa789e8cf19065361c",
+    "models/engine/distributor-hold-down-clamp.glb": "f6fbf2c0baad099215b8ecf4cc34e4dc1c4df4cddba5fffca5fafca672fe9f40",
+    "models/engine/spark-plug-copper-core.glb": "8ca8da4c0af369fc294d511bad4bf26000f9ec9b8a4ce6ff0c62fd70445ec908",
+    "cad/engine/generated/fuel-return-coupling-clip.step": "4b182633362beb6418aabdf116b1f84f937d974863fcc60c6e5c959c054a257d",
+    "models/engine/injector-connector-shell.glb": "0dc62f93b667b61df765e29d5d2730ffbc917399ac226f33bab4229d53f507fe",
+    "models/engine/starter-commutator-segment-24.glb": "7a6b909f659d51bbd2c5af9a8c1ccf74135a6eca538c4898159a6a869a0b79ab",
+    "models/engine/exhaust-front.glb": "a97f60cbf5ae9073eeb79b69ad0a7ef064050ec0f8145748244917947d1d73fc",
+    "models/engine/egr-intake-gasket.glb": "3fff6608c2a345ed7b212800c65395c6634473c27a7d28642711fab1084e23b0",
+    "models/engine/water-pump-seal-spring.glb": "04e0aa5a61cb472a201fab2c18dd8d1762470f57d88008d96c6f43ceb3810de5",
+    "models/engine/ac-compressor-piston-3-rear-seal.glb": "259d702925118f53df91214e2c547279be6e91aaeb402eb06ba721a75c10308c",
+    "models/engine/starter-armature-winding-12.glb": "29cdfeff95a57e2daed1af997e04e888e019a7f65ded62bf8f5479eeecec1832",
+    "models/engine/starter-magnet-2.glb": "7ec513d1c3f7724f24bf90a7720352e36009cee004cf3ea6db1d60c3a51a780f",
+    "models/engine/starter-commutator-segment-9.glb": "d457d6c1b4d1aefa218a4d889d16c5294608cf3df87aba7ef9591baeb2f6a8f8",
+    "models/engine/engine-oil-dipstick-tube-support-nut.glb": "f935a12e63c664869e110644156e6ee614f8d9fdcbc3aed61bf94c3c9bb77957",
+    "models/engine/ac-compressor-rear-cylinder.glb": "03d6f1221900108d1ada867a95dc4c45325f63c3e898a7a8c7714e010a2137eb",
+    "models/engine/ac-compressor-front-thrust-2.glb": "0c001a1edd91aa73d5057e42377b9ca3767f8c97baafa518d486959773cd1d9a",
+    "models/engine/oil-pump-drive-retainer.glb": "c95d35af487709a44ebd7bf7e4694390d44b138c05bac2d31f205b4392eb2543",
+    "models/engine/alternator-case-bolt-4.glb": "cf241bd26fd7c5dc2aa28a6da1341cffb21021bb4dfeb6d0dc7409345034ff95",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "models/engine/thermostat-wax.glb": "ebbac386453b194301f022f21dd194cfbb04e3fb0c682330f5a2d308f0745dd9",
+    "models/engine/starter-motor-positive-feed.glb": "43b2ea0b533b7c014de3e34175b4a47336bf3cccfc4466b0f481ebad7f4d05ec",
+    "models/engine/ps-pump-flow-spring.glb": "0cc6ed2f121b07d17073bf11db3f28cdb84b295ab1cf8722cbccbcf153cdfc2f",
+    "models/engine/starter-motor-ground-bridge.glb": "2d0af211b6114621000e531b42bc5f60491601fc9b155e30bf08534c87c98fb6",
+    "models/engine/alternator-field-coil.glb": "926db4ea6c51b8a40ac5cd0086ee67a0344d115a3931dccad7fcf540b6c928d2",
+    "models/engine/oil-pan-molded-gasket.glb": "d9572f76306f7b45901957444216188921bbb894622d7d2cc61a6adcc7a31f16",
+    "models/engine/ignition-coil-bracket-screw-3.glb": "f4dbf2081802c93066292039bf02c039437202e3eb06305e7b4d86208b922eef",
+    "models/engine/distributor-o-ring.glb": "21fcaa04b9276110b8256488f28447ec9a8644ff9b1bba3ccaf40d31a26b6658",
+    "cad/engine/generated/regulator-o-ring.step": "7faf90db5654ff7ced92c86aa9d0a4b545498f1061927c275247586abcda251f",
+    "cad/engine/generated/accelerator-cable-bracket.step": "5ce46db32e1fc70992460efb105efc8795bc7fa97a558c60c9e80dc103168ae8",
+    "models/engine/starter-solenoid-end-cap.glb": "4c5a5049fe652870b10a55ae4e50317513253e87fb1cc0640ccb09a0a2a3875d",
+    "models/engine/distributor-vane-screw.glb": "3410b0024700bca6b2854d246704b76f8bec41eaeadeeaff8eab14e06a698a95",
+    "models/engine/alternator-case-bolt-1.glb": "0f782020b6108eba194d66afd6c0f3c3b33f60168432421556e6a059e7f76dd8",
+    "models/engine/cam-timing-key.glb": "5b86a6db09ff138eeb7789b7e08ea170608dde8bb1266a0a604c43970cf9c611",
+    "models/engine/ps-pump-outlet-seal.glb": "ceeb10d0e89e3c5ad9051f6737e25e00003a25f6155dbf3984d2a74619a8311d",
+    "models/engine/distributor-connector.glb": "a79698ca628c76c1038a207f32acf11d1510bce1fbaebcd640cf20befe09c92c",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "models/engine/fuel-supply-coupling-clip.glb": "5fa99ef93e31980799d3e1e6f77b9458fa700289eacf9d921537d8d3ef0df06d",
+    "models/engine/pushrod-cover-bolt.glb": "b521dc9013bf4f683fa61016f7167b7afa1ceee35dbb19807eec96a11495ea47",
+    "models/engine/fan-clutch-housing.glb": "2ffa26346f24d7a73f542122794d869e9dc678d624220ef8e7d7e19aed4e1cbe",
+    "models/engine/alternator-rectifier.glb": "57fa92f22c6dfec40f07ee909585c188af2fcbcd73cb7d3a4ed0527cc1918274",
+    "models/engine/spark-plug-ground-electrode.glb": "9051b433607f70e16263cf20eb9628bb3361ce38ce67b115b88ad6eef837ba5d",
+    "models/engine/tps-wiper.glb": "808b7df91100f36117595ac068f88271dbbb9f581839d4291b7ac69737057d4f",
+    "models/engine/ac-bracket-bolt-1.glb": "fad00488f72607c12ca37c5fb06233a387399a54c8565ff2a9288b4bb3c87154",
+    "models/engine/valve-cover-gasket.glb": "0c73447582dd8efdce5b2ae49d7a5ce284006dca2757e6bcf557931267751d36",
+    "models/engine/starter-armature-shaft.glb": "238b80391f3deea1afd336cadc53847ace2d1f6409c1392bf87a11752cd338e2",
+    "cad/engine/generated/front-manifold-lifting-eye.step": "d1d952ca793909f0e72190902f19cbd9442087c0c35855672e31d2f0058256e4",
+    "cad/engine/generated/intake-cap-integration-stage/models/egr-tube-heat-sleeve.glb": "13f159af6226d736ece278947f49337a65a02fe1a73af7cfad83c82c52232e4c",
+    "models/engine/fuel-supply-coupling-seal.glb": "402617702313f92b0158cd2639359794b47ad019fbc558ea29191c2b9ddded83",
+    "models/engine/ignition-coil-secondary.glb": "7e00084c434b4fce7702a897efb5d0a54cfa759392574e058708634de768dfad",
+    "models/engine/fuel-test-seat-seal.glb": "04859f3ca889fef205c2cda8b4f75fe09ebbadc710eb6516b16f6037b81fb704",
+    "cad/engine/generated/intake-cap-integration-stage/models/egr-tube-valve-nut.glb": "4fd2218213f780a28e29214a5a00c5a0915c2b7daf719dd5163002a7f45c484d",
+    "cad/engine/generated/throttle-return-spring-illustrative.step": "4711f6f0249621bc9afda09c4b2e8640d32c45f2b78de5c2bb3b78a0dfd578c0",
+    "/System/Library/Fonts/Supplemental/Brush Script.ttf": "28b58b7a1bab9fa76aeef353caed56918abcdef3385daeb569c75226618c7b1d",
+    "models/engine/ignition-coil-bracket-screw-4.glb": "d95d7fe4f86dd27a91632696bf47a5d373a2cacdded2155076070ed225855a4a",
+    "models/engine/cooling-fan-rivet.glb": "729de17cb2307dfc79973019a68ba995648a590b292a910be8318f0c93f66d64",
+    "models/engine/ac-compressor-manifold-bolt.glb": "f371dc84dabb34ce2e8f13fc20592c82732e4b629b7715c186b8f23354983a36",
+    "models/engine/starter-commutator-segment-4.glb": "fca0bd53072d471f6a22121ce1ba73c120c500e76a62d97e907a47b9dbc64e61",
+    "models/engine/oil-pan-mounting-washer.glb": "cea6959f4c880848deb5a18cc5abd6d76dcb2da5de9060d869674ef2d6066212",
+    "models/engine/starter-brush-spring-1.glb": "e275196c4738c8ed7f62cc8ea567e0680947488ff5bcc5ef90ac5d2f97eedad4",
+    "models/engine/spark-plug-resistor.glb": "5a5fce628dd4fb73fe8a2b113d8c959ddb2a03cfc3f0ebe2d0970423be2cfbcf",
+    "cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0",
+    "models/engine/starter-commutator-segment-18.glb": "0a7964b683052212137abc850f5813094a6ec32ff6a82a415f26b33567a4045c",
+    "cad/engine/generated/spring-retainer.step": "bab8c35d7411a40df217a2e75bb6454a8f1efb15a1af66f8e49869445d6f096b",
+    "cad/engine/generated/fuel-return-coupling-cage.step": "2056993ece3c8c961a57d3a44887697082edb9a11aeb4eb4b171b6e2ea29631d",
+    "cad/engine/generated/pcv-body.step": "63e058cfc34916c2981220709579ab4ef75d3407a072ba5b3dc986a974951794",
+    "models/engine/oil-pressure-body.glb": "509b25518dc0a120bb9e976c3858c350d308da5e8d23ef2b410dd513ed204729",
+    "models/engine/ac-compressor-shoe-4-rear.glb": "d23023fdd01a4e16e240f7e03ec8e822b590ffeb462840dcd067c36e1b089161",
+    "models/engine/ac-compressor-rear-valve-plate.glb": "e3605ee4eda3c509741322e0cf4ad07ccc09d22ae017626d907a1f39824bfe52",
+    "models/engine/starter-armature-winding-6.glb": "02a796e31eaeb43dcf17e724a4f3f367592359d157c3ab0d1d4cad53f123381d",
+    "models/engine/ac-compressor-manifold-discharge-seal.glb": "4be555cf7e379804f00f72dd89ef4729f2f79f1417615055de7a289d17466c2b",
+    "models/engine/ignition-coil-insulation.glb": "a7a8c436a358e7d010dbfabf81eb26b09c909613635ad7be91845a73dc97a006",
+    "models/engine/injector-armature.glb": "f19736e8b5f8173a4f1c69c432dbebeec615ed7fe662e3f07e00f48fe57dd24d",
+    "models/engine/oil-pickup-tube.glb": "a4c750485fb877ec9064449b98074317017ca108d73fc748ab8450db4e492371",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-valve-body.glb": "4a887d9491ab5295e8063ff3e192fd621dc332d480c30dbc0cfb802d81cde23d",
+    "models/engine/throttle-return-spring-illustrative.glb": "9843eeac8add63ff1a761ddea3609129f08790cdf7cf02b644e07c40ce1a1510",
+    "models/engine/oil-expander.glb": "23eae933b175de6e9748473c7500e6ecc4857a475639dba1590701cd88d84449",
+    "models/engine/oil-pressure-insulator.glb": "ce826c04e9124761b7ea5943f58b873ae1680bd6c1427634394600a39f32dfeb",
+    "models/engine/starter-brush-4.glb": "6eb925201b51d2929f27df4cb6811f8eb6710910c10881fa842346a007cc7c64",
+    "models/engine/starter-solenoid-terminal-2.glb": "3b6974029d092898df47671e4e91fc47177c2fa5309f150409b0e6f0649c7ee8",
+    "cad/engine/generated/valve-keeper.step": "9ed1ad6ba50e8fc3ddc37d752b55136289baac6649f86f36d1890eead0f7228f",
+    "models/engine/ac-compressor-case-seal.glb": "49e6734614cd75276b69b5b242842e0b37da7e4476c491463f26b96e28f2a817",
+    "models/engine/thermostat-capsule.glb": "315474e1bd2baca0f7b4bd138a62177389d174c53acff68725197cb4aa154d14",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "models/engine/exhaust-spring.glb": "8a580db3655311ec7fb0f78bf8e1e92f7bb2c09fcfedab305123f3b1a9f06dfe",
+    "models/engine/ps-pump-rotor.glb": "bb85ffbd3c85d2c0c8a026e468f9279c42d6b3baa6066b9a269363196711c191",
+    "models/engine/oil-filter-media.glb": "d86570c928a6068e3b385aa74e5d630795098e300bbf795afcc6f3551aeeec4a",
+    "models/engine/ps-pump-reservoir-seal.glb": "946d2204d45f87fb1badd71d1d12683ea37c03d6aa7ba4ddb864e28daa76b79c",
+    "models/engine/ps-pump-valve-cover.glb": "31f19b2863f8ce8ea14e08ac8aa33433a77e246f083e29df793415e98c0ba67c",
+    "models/engine/fuel-return-coupling-cage.glb": "d8f0030497ea5a72f503b5bf12c890741ab37811a0a16956ed50dab66a23ad4d",
+    "cad/engine/generated/intake-exterior-study/baseline/throttle-shaft.glb": "33eb718a7cbb34faa5ea7a96e2b493bea8ec87583f6e4def79aff39452403f29",
+    "models/engine/starter-solenoid-front-seat.glb": "7c95a843149bf9e94ea9965a05d72fde2f74ed4aefef678d760fa37f62948f24",
+    "models/engine/starter-pole-shunt-1.glb": "200ddb9ec3a221b94e512aaa33cf883d9c89dee654f17de5726422273325f8bd",
+    "models/engine/oil-filter-anti-drainback.glb": "53f28ad82af22f65eb045fab9905c7e1c3b3912ace32eaeba2195977480ba063",
+    "models/engine/fuel-supply-coupling-male.glb": "e08d35a4fba3e384f9f4372af4f9e4da1d00fb6695ab6fa09620fdfc680627db",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-valve-body.step": "ae9b42c24b6d30f55f47b327534ef8bbd0633a43aade539af9e1c1dcf7d80f8c",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-gasket.step": "4e0d027784e62bd99c8ef6007cdce1306bbf61d63798eeb76fc059c55771ba72",
+    "models/engine/oil-pump-relief-plunger.glb": "ada42249b6579f5d94213978bfa2b85fee2e93742932d73c9b94e3c582791297",
+    "models/engine/evp-flange-seal.glb": "644ce733af2ce9e76c8126ad10166e9efd5d32ae772bedfcfeb5ca0fe599ad53",
+    "cad/engine/generated/intake-cap-integration-stage/full-assembly.json": "36e05dfee7ea0ee12761295851c8fbe804ea0d3a516502e069f1059e77bc131b",
+    "cad/engine/generated/egr-lower-shell.step": "45416686b9e5da2c937569fe7e4df309ee24820417b7e2f10c81e5e2f8080ce4",
+    "models/engine/oil-filter-lower-endcap.glb": "cad8223187d63178a932d53419b7e37349ee24ec7e4b8548c6bdf8a4c7346a1c",
+    "models/engine/ignition-lead-2-jacket.glb": "7a17675f2bd2810dddc1f3d3a0df855b7ccf821d16e9d1f82451a903e944eb28",
+    "models/engine/damper-bolt.glb": "0833df5d3091106d706e93b52590d337ebe535d75b1497378567058456f19f4c",
+    "models/engine/ac-bracket-bolt-2.glb": "486f3fc9b456df7c4c9ce74dc686aac6cb85827e06324280648ffcbe5ad74551",
+    "cad/engine/generated/egr-stem-guide.step": "509d883beec80d10760b356ee78ed1e951ecac5dc5652d1b6de4dcfc55de3192",
+    "models/engine/ignition-coil-lead-carbon-core.glb": "884172caa508f8a4ba7a1e670b73c4966d78dcf97057176b226286545a757221",
+    "models/engine/starter-armature-winding-10.glb": "6471e3c26f96db43adfe9f9f28a3eac974a67c70d0a6a5073271569a99c13c2f",
+    "models/engine/spark-plug-insulator.glb": "5efef8b65490540900620ffa8bc7651431f58028524b875c90a232659869473a",
+    "models/engine/ac-compressor-piston-4-rear-seal.glb": "1fa3d42711d9cd3d153ace9b07c32880355e7a5297df79a61d79fa9b10e8fc95",
+    "models/engine/ac-compressor-front-thrust-3.glb": "1becac3556165a31ba46fcc09b6f501078841978635e7abccc5624a0a954bad0",
+    "models/engine/water-pump-pulley.glb": "0933c2843b5d3072df83446dac57adcfacdc039eb1fcc4af6de23fb3a0c4a65f",
+    "models/engine/evp-spring-stop.glb": "8666cf9df18512794944dde9d58337cdf1102b437dbb04bb1947429137a5eca7",
+    "models/engine/thermostat-poppet.glb": "e7df14a464b80b2e0f3fc2bce5f8817c0e2d7a0d321aef2ce4cdf1f6c526b0b5",
+    "models/engine/damper-hub.glb": "207d5472437c1a0be13cf3c65f3bb061459282d55edb1067186ed346e380bc0c",
+    "models/engine/fuel-test-cap-seal.glb": "44f95cc77a2abe536ea764225733db9ed34dccfa2ff6c63203ee6a69347fcd0d",
+    "models/engine/starter-solenoid-fixed-pole.glb": "09570ef9d95ac54e2e6fedc6b6f40692b092fd0f0ff16f673fcf0aacb7eeb53a",
+    "models/engine/thermactor-mount-bolt-1.glb": "694e92544d0e42e6c16bdf8d66196de38b3a44e68b1a8302e0d1fe0671cd4be3",
+    "models/engine/ps-pump-slipper-spring-3.glb": "c1895e5a5c8ae9f7f53364632270ed0bc9fe689d3b59023cea3012133f749dd6",
+    "models/engine/oil-pump-relief-spring.glb": "c073c0a820a1ba0898ed65ebe7cf07515a10141324c956a5cdc7f56a4aecf51a",
+    "models/engine/starter-armature-winding-5.glb": "280e03fe44a009333a09b869cb3f0f549fe74100013769acbb46ab7812537fa8",
+    "models/engine/iac-end-plug.glb": "0b9bc3a21621be6457ab2d0d193dd9c6b6b5e81a38a396e5fcbe5bbbf0259ed1",
+    "models/engine/ac-compressor-case-bolt-1.glb": "08d4feae30fb3d065eaa72b4ecd23634f560be570830ca9968473dfb4e16f742",
+    "models/engine/damper-key.glb": "26e1df7eb79a70be172662837bedca5f604f3266c91c265c700e8bd24b2db171",
+    "models/engine/exhaust-rear.glb": "e269ffae34d9341d8909f320fd922702187418cbf690c5873eb90c847f5e337d",
+    "models/engine/rod.glb": "c95d4461cb8d3ed8d753552be844ab21579195750c7e548406873abf71e76fba",
+    "models/engine/pushrod-cover-gasket.glb": "9cdd2ad581927a75011568dddc86b74fa7f93eddea4a1bc54775c33428322f92",
+    "models/engine/ac-compressor-swashplate-shaft.glb": "82458c60d0d811374d2208e2279ff1ae922ec3a60bd27201583fde58da53eda8",
+    "models/engine/water-pump-gasket.glb": "6f123f9040b896ab5562f64a5e9281f3aac71ad58fea584eace6864cc499dba6",
+    "models/engine/alternator-brush-1.glb": "99426fbb42a3b4224b1b634578699d440e51cf9aac33aaff7b83f3d9f10a3c0e",
+    "models/engine/oil-pump-rotor-shaft.glb": "69e4e15cdf5302624266d191ecf32e23f50f6cd5fd311047ca97445c8012a446",
+    "models/engine/starter-commutator-segment-2.glb": "cafb087aeb09ecf39862ffb9d8e94b7cc65ae98824dc017d07cce35b467e20d0",
+    "models/engine/regulator-valve.glb": "62b8de5c2093528ff5ccbe9657eff963bd9e9515ebeb8ee900c7f43ce97f284d",
+    "models/engine/evr-terminal-supply.glb": "e02eb653e27b4ebbb39288a00fe46473fa636b1e326be4ace3f23a3549112982",
+    "models/engine/oil-pan-mounting-screw.glb": "4a4950432fb8d55395212c07ff2af6a75aef01d5ea02211cb93010363b918a8b",
+    "models/engine/starter-commutator-segment-19.glb": "9ca7fb40e1b8ac171e707eda20889bf3dff855deef79a1f8080c2db32745d528",
+    "models/engine/tensioner-pulley-wheel.glb": "3750a6e93dc22a44b327ac5c159fdca23cfe2315fe0edde912e1de29cd0bf1d1",
+    "cad/engine/generated/regulator-valve.step": "e0052a9f8caf63adf8fcee90b7f43e7569da86c87341ade8f711c1d846362455",
+    "cad/engine/generated/fuel-return-coupling-male.step": "e7e3ee6c3bec2e5dec1b9903cae7f0b2f1d039585d05479d58d7b0b1beae7bac",
+    "models/engine/regulator-o-ring.glb": "8fefb6c81d315f35c357643dca74dd28cc8d486414ec658bf60d694d7d2d688d",
+    "models/engine/alt-bracket-bolt-1.glb": "7ec195514ab6e3392dac3941ad58c82bfaefe04587918bc416d4938a4b0321f9",
+    "cad/engine/generated/intake-exterior-study/baseline/iac-armature.step": "acebcf514b6932e1b59d63a2ddcaf92518dbca8c14417af261af9cdbe9db27d3",
+    "models/engine/starter-magnet-4.glb": "069f807519fbfe665c5058bf512e9e57e5473cad8022d6f0ecc4f2f61a724ded",
+    "models/engine/alternator-brush-2.glb": "f2502242b3941ae6ad978127efbcc46880a6a65beb17d15a625f3770f9818e8c",
+    "models/engine/starter-magnet-retainer-1.glb": "a639dbadd9d7a0b9aa357ea60b837a23c8e38e4231c8233597141edd4add832c",
+    "models/engine/camshaft.glb": "a335bff024545c842d026b3bce732f95494768a7668f4b96574f41c481019f4a",
+    "cad/engine/generated/throttle-mount-stud.step": "f81c6143c4b75966eea3335737aec772fd95d9842cdede7faa92e6d0285eda5c",
+    "models/engine/ac-compressor-front-discharge-reed.glb": "bc953eadffe2d280b51f148b3b74f5cb199969e77f2955f242d0bc7de8dbecac",
+    "models/engine/oil-pump-mount-bolt.glb": "80e6faf06d617cc1566e5287d50325c0ad3913e639b04c49490eebbfb74952b1",
+    "models/engine/rod-cap.glb": "0d5fe4f4cf46d49dbc505803beea1a50371fcb8597864a1b2860449576210de0",
+    "models/engine/oil-pan-drain-gasket.glb": "a46d2fb4b42506fd93ce00c955df62a4a38a9880c9073e824061614b2b758509",
+    "models/engine/injector-o-ring.glb": "b95b05bf31d6a5acc34584fe68f3d846f60e81fe9b816f27d4430a872952989d",
+    "cad/engine/generated/exhaust-valve.step": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d",
+    "models/engine/starter-solenoid-lead-pull-m.glb": "f84cdf2ea67fb59ed3d8a61a67273e3a3a39e6d81b530f81bf882885e6a80b46",
+    "models/engine/flywheel-body.glb": "6417dc08d267c3dad1f761cdf9ab69c9f9bc2e7d2d047f86efbc82674966a44f",
+    "models/engine/starter-brush-spring-4.glb": "ab6b5d37ddf5bc107812710ebf95ee6d3aadebc7ae5b92864276a63dc65524b3",
+    "models/engine/starter-armature-winding-11.glb": "756588f15c1d56d566e0b190d32ccda562f241bbf8375ea5d87bf6cdb4f53919",
+    "cad/engine/generated/fuel-test-spring.step": "0722b59f079f36cf0456e15113480cc091663d4c636adbb838e19f0f8997e03a",
+    "models/engine/ac-compressor-front-shaft-bearing.glb": "a859a53dd97ace1a671d9dbca1f4658f903e6cfcee02d6802072b37e42bce945",
+    "models/engine/carrier-block-nut-1.glb": "0b2e627eabe2ac58adbf5f54600e58622940197d324b09d75b8e878a2e9aa4da",
+    "cad/engine/generated/fuel-return-coupling-female.step": "05416afe2a198a3af78c5db5babd3707e5003b02f4ce5475f02da8b574583259",
+    "models/engine/ac-compressor-clutch-coil.glb": "c02847e05f7915b22f1ed11c8e2a88dceb079d773e2f3a0c03b7a98ed9677f81",
+    "models/engine/starter-brush-pigtail-ground-3.glb": "d22e00028b4c5ec06a1e1732b330a9fd7501af675047bb12e8951c2ae99115e0",
+    "cad/engine/generated/intake-cap-integration-stage/models/valve-cover.glb": "4d48f38bf633850bd31c29b91079d66ce9b858626846b9b9ed75c29f192095d8",
+    "models/engine/damper-inertia-ring.glb": "7fdf586a5bd5a36c7726a19efd20bfd99a658e14d6a9f1326654e8f900503e8a",
+    "cad/engine/throttle_shield_candidate.py": "bcb84f8d452b8c3f88769b44db391d9cf8585d71c35ae4f6bd1dd4d0e4115de8",
+    "models/engine/injector-metal-body.glb": "33d33c36bef9a25f61395bf66cfef00017e6fc3f0d22bb7207ebfc382dc71b3c",
+    "models/engine/thermactor-pulley-bolt-3.glb": "06d3af56a3bf9a8d3b7d51ac09bbf9ca16d845387dd084c7866199e87159e639",
+    "models/engine/oil-filter-bypass-poppet.glb": "08ea05fbe0ee25ef0a1c62554fa801723ce44ac5ca573ca20c2a6c9af12c5218",
+    "models/engine/regulator-lower-housing.glb": "724acd44c5aab3d647dfd06cde8d087b273ee0536a805df850213e5a9acd2dfb",
+    "cad/engine/generated/pcv-plunger.step": "1177e2c97d3d3d5c9fdc875288fde2054a2c5b3aaa2b6c4cad25c5b46b50717c",
+    "models/engine/ps-pump-slipper-spring-9.glb": "fbca3866a56e7594c72015757f8d488e99fdc1dfa7aedb3a6b30641e68f8f81f",
+    "models/engine/starter-solenoid-lead-insulation-pull-s.glb": "eabcf507efdb87c98bcce8dc61593cfd3b9d49cb284ebd9696ad7761bba834c8",
+    "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297",
+    "models/engine/ignition-lead-1-jacket.glb": "3f8b284b9f041afec6f31fefacc8156bb23f3779b734310bd0dc75bdd5277b70",
+    "models/engine/water-pump-seal-carrier.glb": "4f74f966ccaf7856b4ec97d4c53296e524de6b8da24f25435ffcf6c5c1a38923",
+    "models/engine/alternator-pulley-spacer.glb": "fc4030987be45badd5842ea9eb5ef9496e21cb23a2601c10b4becf19a3fdcf04",
+    "models/engine/ac-bracket-bolt-3.glb": "1ff770aa8b2f465c8f923407586ad79389091c4e7e3402208239adff4090dad1",
+    "models/engine/ac-compressor-rear-suction-reed.glb": "5469061833f5c37a2f9e916e0acd997f109ee56a84fea35b9034a87226d69f18",
+    "models/engine/starter-solenoid-shell.glb": "31c0ece2c6cb3818c6fb351ed47e98d6cc050acc1d68ff39ce7e2724c21dd019",
+    "models/engine/spring-retainer.glb": "03b8fa4da2648e4d58eaf1d593e448fabd0a9c33350d8ba200d8f5451a3d6e3f",
+    "models/engine/thermactor-pumping-cartridge.glb": "9dc3980217c59117e665576f7beed692ff8bd6657816f7f946c85006d089fc75",
+    "models/engine/ignition-coil-bracket-screw-2.glb": "abfe7862d5b32d56d484f85cdb096b39dec574f9b45deb6aec5824e4ac22c926",
+    "models/engine/ps-pump-reservoir.glb": "b45bd46fda5e4fe2b928a8866687e04ecf6cd1a136e6efb6f49a151e7d524f1b",
+    "models/engine/pushrod-cover-grommet.glb": "02e98347c96b880ef684bd6fdc174444ac903cde7a8d5457ab631ef9cf2ae7bf",
+    "models/engine/flywheel-ring-gear.glb": "51cf07e4965473822462cfbfa0a1999feb86ffefc240aacef90a697ea4250be5",
+    "models/engine/distributor-vane.glb": "21589e415b3e45f2d8cf69e1761535e25ca4141715b41d4931469f9cab7db251",
+    "models/engine/regulator-upper-housing.glb": "d162b2a63c300ef6f93d9006b0abe12dc4b5e3e76aa341ae45607fcf7c56655a",
+    "models/engine/ps-pump-outlet-fitting.glb": "2b1081c0c46ef847348c73e20c75d434c2b53fe496784b4d8e832795301c0f71",
+    "models/engine/thermactor-case-bolt-3.glb": "b9351d0a116c1c4fbd2ade091b5022671b637bd2063ccaabeae149b370bf2a44",
+    "models/engine/ignition-lead-2-cap-contact.glb": "441d63dcc9ad30ce9a88019f65b3d87b649a5cd2bd10fb20defa61b911363d45",
+    "models/engine/ps-bracket-bolt-2.glb": "e92f3a1807cbbb6785c8276446cc96749c3481d69941b8ab94e47a2fa2a7e938",
+    "models/engine/alt-bracket-bolt-2.glb": "c02aa0391537ecea84ba8d9d1ad7c65d00ca510ffd60e23f0049d267acd67645",
+    "models/engine/evp-screw-1.glb": "15c5bb7dfd98316ae3ab8e5dd420d72e484593e58e6d2dbcd179de3d5f5c4b69",
+    "cad/engine/generated/pcv-orifice-washer.step": "6bcc65a9c9a27eac1d800bf841e8833bcd4708d340cd9a0236af6fdb0df1540a",
+    "models/engine/ac-compressor-case-bolt-5.glb": "d674640c4633b514ce651f47c40a754ca00b8426cc3d9879c482636f33ac676b",
+    "models/engine/lifter-check-retainer.glb": "c70a723e7735d6768091d56480b37bf16fdfb66d46c1f74ebddfb30f4bc50cb0",
+    "models/engine/ac-compressor-rear-manifold.glb": "461aead498524a436cc333873f4eb7b34d9d2f1bff056fa9c729ac50869fe617",
+    "models/engine/starter-commutator-segment-23.glb": "53ce3360f4e4af983de60e4aa55cc791947bc3e36b386b3083d545a70d977b46",
+    "models/engine/starter-stop-ring.glb": "0ec0c507abb261e2e9878c1f188a30953dffc0b164d19b663af6e7100f9ba123",
+    "models/engine/regulator-gasket.glb": "d788faa1915a07c789b6320299ce059c228e29757ad3275d2f907f6049b6b105",
+    "cad/engine/generated/regulator-vacuum-hose.step": "517fb225c1e464b96dc0b7cfb4867a64090310462a95b4477cdb0cbe6d93b783",
+    "models/engine/main-cap.glb": "1f610213e9206a3cb08af021f671db2f9a5bf17d29e686f7b68bd2bb1d9bfea7",
+    "models/engine/ac-compressor-rear-thrust-1.glb": "44865b2bc841fb6445956c6b63c162d1ce5e8a5fb3f22601516185b3aa844f05",
+    "models/engine/head-gasket.glb": "7010195d46da97f290ca91dd3181b993bcf42eb60827121879313957a401b1f5",
+    "models/engine/ac-compressor-seal-retainer.glb": "26f5340485e749de77506e6e360b78590ead8382f57d2bc6d4a749ba3903c28b",
+    "models/engine/starter-planet-gear-1.glb": "1999610e4400765a8f86c487f903fe4c4e416a8fb1d932b41d254dbea77b71ab",
+    "models/engine/cam-gear-spacer.glb": "c4e3cfc4a290929931529b4566187000b6d4dfb0445eb5f8d5510f2e56329330",
+    "models/engine/ps-pump-lower-plate.glb": "4ff87b29dbe48fcdc1840b1454b141f54b163d27dd790554e8ef8cb67b4d17cd",
+    "cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "models/engine/fuel-test-core.glb": "4cff2fbecd2ed300660f34964d8b4d6f204df66063efcd5705ed62d78cdbe0ed",
+    "models/engine/ignition-lead-2-plug-contact.glb": "ad5ca6d9bbc998322eda22a8ef12a1f5705eb9db522cf1a25eb3c619ebab742e",
+    "models/engine/distributor-rotor.glb": "407238d0f7917a3afc0e8d99a3491ae71aee2c7544737cc6685d9a21f5d40e67",
+    "models/engine/ps-pump-dowel-1.glb": "e9329814490b01f76f5cc4dce1ca058c444ac62e816b50b120f58905ec416fe2",
+    "models/engine/fuel-return-coupling-tether.glb": "9a945a9fe5d1b19df8b3d7a68755ced1dbf9e205c4b5098d92c8d4cf9a1b7bff",
+    "models/engine/egr-diaphragm-upper-plate.glb": "5a08d0cc65f0d28eae59f7ba7f37b23488d39b045f6719631c8e3b9e2e0d206d",
+    "cad/engine/generated/fuel-supply-rail.step": "bebff574118492705813bf8687062812533cffa80c50822f0ebdbdb2fa105a2c",
+    "models/engine/ignition-lead-6-jacket.glb": "db28991af2714206c39f450249dcf227a0a08a9790304b45a44398b2099e1438",
+    "models/engine/pcv-outlet-head.glb": "dc193d9726f86a1845869848ca60d2d854d41a0570ee5381f7bd74164bb56432",
+    "models/engine/oil-filter-bypass-housing.glb": "33fc5ab7eaab986d655095a65e289038539f7b8cb7db026761adca79b4aa0c76",
+    "models/engine/ignition-coil-lead-cap-contact.glb": "97e6fd4dde101e549a403fc8a95ddcd090953f3c8f104ca36ba67a078eac3c55",
+    "models/engine/starter-output-shaft-assembly.glb": "bd430b2ba9ddf095b3ec9a7f33664e5f375f8f51a87ffd047724c15a4b9e004d"
+  },
+  "input_guard_pass": true,
+  "render_sha256": "b5cfe1ba6e2d27278738e32988c4795db3f822bddc26c262db2c5d8f5b529b02"
+}

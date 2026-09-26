@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `f1dc26ba64eb0ba1e8fede4ef42e23a5ae3e288dbeae3cc4b2558cf4148a4a70`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -73,7 +73,7 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.
 - [ ] **Upper EFI intake manifold** — `efi-upper-intake`; modeled quantity **1**; provisional.
   - Instances: `efi-upper-intake`
-  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7, upper-intake-topology-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7, upper-intake-topology-study, upper-intake-exterior-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.
   - Open: Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.
   - Open: Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.
@@ -83,6 +83,9 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.
   - Open: Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.
   - Open: Casting ribs, bosses and detailed wall distribution remain incomplete.
+  - Open: Visible border ribs, Ford oval/word and ELECTRONIC/FUEL INJECTION wording follow owner/specimen photos; all new dimensions and font outlines are inferred.
+  - Open: Arial Bold and Brush Script are explicit system-font approximations, not traced factory lettering. Casting texture, lower mounting bosses and exact wall distribution remain incomplete.
+  - Open: Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions.
 
 ## Additional known scope and reconciliation
 

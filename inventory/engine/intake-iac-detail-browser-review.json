@@ -1,0 +1,24 @@
+{
+  "status": "PASS scoped visual and navigation review; no factory-accuracy acceptance",
+  "manifest_sha256": "4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07",
+  "definitions": 725,
+  "occurrences": 1333,
+  "reviewer": "root",
+  "checks": [
+    "Actual intake GLB displays rounded shoulders, border ribs and wording; manifold assembly inspected assembled and50% exploded.",
+    "IAC assembly lists14 parts; transparent housing exposes spring/closure and keyed connector contacts.",
+    "IAC50% explosion separates coil, dielectric carrier, terminal tails and connector; reset/assembled navigation available.",
+    "Control terminal individual page displays actual tail/shoulder/flat contact mesh, source limits and links back to idle-air assembly."
+  ],
+  "limits": [
+    "Educational construction and estimated dimensions remain provisional.",
+    "No continuous IAC actuation simulation or electrical performance validation.",
+    "Console has extension-origin errors and an unlocated matching animation error; no clean-console claim. No visible viewer loading or interaction failure during reviewed flows."
+  ],
+  "source_sha256": {
+    "viewer/atlas.js": "e16b6147bdd699fcc620865086f6e687461789d647804d06dcd33641690028cd",
+    "viewer/engine-learning-modules.js": "986596618faad4eca6b456dd07428ca0255e4dc4efc354c35f84c777f28e477b",
+    "inventory/engine/iac-closure-learning.json": "84789dd4a80a1faec8004f9719acff0747f2fa76fa4dd1a4656c84f2b9de4a98",
+    "inventory/engine/iac-electrical-learning.json": "52f0aae7fb6d4ae35c58d6407584dbfbff589236d36c0dcbadd13ce9a46ffa62"
+  }
+}
