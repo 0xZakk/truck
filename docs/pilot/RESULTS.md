@@ -23,3 +23,7 @@ The integration owner inspected all three CAD renders and handoffs. Keep these a
 ## Next experiment change
 
 Give each worker a verified interface contract before dispatch, or explicitly make interface discovery the deliverable. Choose a part whose upstream datums and evidence are sufficient to finish. Preserve focused contexts and automated checks. Measure planning, worker work, integration and rework in a dedicated run separate from repository administration so total cost can be compared fairly.
+
+## Coordinator accounting
+
+At 2026-09-26T14:59:34.772Z, the coordinator had used 7,772,728 input and 16,260 output tokens since this request: **$9.64** standard-rate equivalent. This combines pilot planning/review with repository consolidation, GitHub issues/board setup and archiving. Adding all of it to the workers gives **$20.34** through that snapshot, but overstates pilot-specific cost. The snapshot excludes subsequent final administration. A clean end-to-end pilot allocation is unavailable; worker-only cost must not be presented as the full cost.

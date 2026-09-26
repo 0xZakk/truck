@@ -75,5 +75,19 @@
     }
   ],
   "scope": "Exact worker-only usage. Root coordination/review and concurrent GitHub setup are not included. Not an end-to-end completed-part cost.",
-  "accepted_installed_parts": 0
+  "accepted_installed_parts": 0,
+  "root_mixed_pilot_and_github_snapshot": {
+    "start": "2026-09-26T14:42:16.553Z",
+    "through": "2026-09-26T14:59:34.772Z",
+    "usage": {
+      "input_tokens": 7772728,
+      "cached_input_tokens": 7655552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 16260,
+      "reasoning_output_tokens": 2484
+    },
+    "calls": 64,
+    "standard_cost_usd": 9.640312,
+    "meaning": "Includes GitHub setup, checkpoint preservation and pilot coordination/review; cannot cleanly allocate to the experiment. Snapshot excludes subsequent final administrative work."
+  }
 }
