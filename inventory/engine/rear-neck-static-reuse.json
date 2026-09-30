@@ -1,0 +1,22 @@
+{
+  "status": "PASS unchanged static evidence plus fresh rear-neighbor scan",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "input_sha256": {
+    "cad/engine/generated/exhaust-timing-checkpoint/atlas-static-validation.json": "27d100fdac0f36731d0009a877492affcdc769374be92735541845a4b58c935d",
+    "cad/engine/generated/exhaust-timing-checkpoint/combined-step-export.json": "6a8290882edc1cab925e3ebdac79d23656caa47e62a692d2ae5ee1c737f8bd3e",
+    "cad/engine/generated/rear-exhaust-neck-integration-stage/before.json": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf",
+    "cad/engine/generated/rear-exhaust-neck-integration-stage/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/rear-exhaust-neck-integration-stage/installation.json": "6c5855e56832b29e088db8435f2ef6916779355d93179032cf9074cde7e1250c",
+    "inventory/engine/rear-exhaust-neck-installed-validation.json": "a7b0d4bc709438d6dc71c172eb1745937ffb1018072b4bf53425622e8d9042f8",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  },
+  "unchanged_step_definitions": 740,
+  "fresh_rear_exact_comparisons": 27,
+  "fresh_max_overlap_mm3": 0.0,
+  "prior_global_exact_comparisons": 5287,
+  "scope": "Prior static audit is retained for byte-identical unchanged STEP shapes, identical assembly/occurrence/mechanism frames. Fresh installed scan covers every potentially affected rear-manifold neighbor. Not a newly executed whole-engine audit or continuous motion test.",
+  "limits": [
+    "Browser NOT RUN. Factory fidelity and full clean rebuild unproven.",
+    "The historical global report remains keyed to its original manifest; this report documents only justified reuse and changed-part checks."
+  ]
+}

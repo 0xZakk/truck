@@ -1,0 +1,664 @@
+{
+  "status": "CHECKED isolated core; inspect interface results; UNINSTALLED",
+  "baseline_manifest_sha256": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf",
+  "input_sha256": {
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/cam-timing-key.step": "43f02d0ce2c5c11354e88714dc307041d46a88d263a601269cf2e1f8ae0ff7d0",
+    "cad/engine/timing_core_migration_candidate.py": "abdfb7a1ebaefa484941f3bf95e6784d17f86bc4b2bbe1f25d91251bc70fb7e5",
+    "cad/engine/generated/cam-thrust-washer.step": "c6bc7e634405f53c9dd2b2c7e79fcd1e29395b776c2168fd8370ebe6fef07527",
+    "cad/engine/generated/rear-cam-plug.step": "02c33cbc1d9e3c2bdc0ed1fd25adc8202ef6c7b51cb8d166e51470cc4e93bf87",
+    "cad/engine/generated/timing-cover.step": "9012c3609084ac505760d25f31f5dc837ad60100de5618a1ec1511f543ddc167",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "scripts/check-timing-core-migration-candidate.py": "a0705f40328b490363b7a3ea7d17638e2b507e1fed5fde5a457415a40e67bf1d",
+    "cad/engine/generated/timing-gear-pair-refined/crank.step": "60d06a737ad9279a71c1628448e95681e033556e25597a75b3d3e0ed3c473255",
+    "cad/engine/generated/cam-bearing.step": "29e3f03a5a106b72aa2731c65edd55ba40dfd679dfa983e65831bf7d77a52423",
+    "cad/engine/generated/cam-thrust-plate.step": "aa32d4b5f567bf49acfe072a3888d815b730bd2e91692c078a26d41d498c3d15",
+    "cad/engine/generated/cam-thrust-bolt.step": "da33d7c48904809d8323ab7df042314aea2273fd08b58b85b198943cc1f7d426",
+    "cad/engine/generated/cam-gear-spacer.step": "1ebb7f916920df904538f92b50d96cbc719cab2031aa8af8912fe59f0137df4c",
+    "cad/engine/generated/timing-gear-pair-refined/cam.step": "d723a068fc20c7fde7447dc5b1be04930180814f43e9b32189a5970226440598",
+    "cad/engine/generated/camshaft.step": "5d79eb1ae93440e08ae33077d2c51cba29dfedbf5f6816f076b927003fd5924f",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af"
+  },
+  "refinement_report_sha256": "c5c6b5212b146b5bda89e854df1c38b7c4d1506199fb36f4a414097589edb19a",
+  "world_translation_mm": [
+    0,
+    5.109820990161097,
+    4.087856792128875
+  ],
+  "cam_axis_yz_mm": [
+    95.1098209901611,
+    76.08785679212887
+  ],
+  "output_frame": "World CAD frame per occurrence; these are not drop-in local definition exports",
+  "occurrence_records": {
+    "camshaft": {
+      "definition": "camshaft",
+      "parent": "cam-motion",
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-bearing-1": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "baseline_position_cad_mm": [
+        -334.0,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-bearing-2": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "baseline_position_cad_mm": [
+        -110,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-bearing-3": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "baseline_position_cad_mm": [
+        110,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-bearing-4": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "baseline_position_cad_mm": [
+        360.5,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "rear-cam-plug": {
+      "definition": "rear-cam-plug",
+      "parent": "block-plugs",
+      "baseline_position_cad_mm": [
+        -363.7878,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        -90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "crank-timing-gear": {
+      "definition": "crank-timing-gear",
+      "parent": "crank-motion",
+      "baseline_position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "cam-timing-gear": {
+      "definition": "cam-timing-gear",
+      "parent": "cam-motion",
+      "baseline_position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-thrust-plate": {
+      "definition": "cam-thrust-plate",
+      "parent": "cam-retention-assembly",
+      "baseline_position_cad_mm": [
+        373.0,
+        90,
+        72
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-gear-spacer": {
+      "definition": "cam-gear-spacer",
+      "parent": "cam-motion",
+      "baseline_position_cad_mm": [
+        373.0,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-timing-key": {
+      "definition": "cam-timing-key",
+      "parent": "cam-motion",
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-thrust-bolt-1": {
+      "definition": "cam-thrust-bolt",
+      "parent": "cam-retention-assembly",
+      "baseline_position_cad_mm": [
+        361.109375,
+        90,
+        107
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-thrust-bolt-2": {
+      "definition": "cam-thrust-bolt",
+      "parent": "cam-retention-assembly",
+      "baseline_position_cad_mm": [
+        361.109375,
+        90,
+        37
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-thrust-washer-1": {
+      "definition": "cam-thrust-washer",
+      "parent": "cam-retention-assembly",
+      "baseline_position_cad_mm": [
+        378.159375,
+        90,
+        107
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "cam-thrust-washer-2": {
+      "definition": "cam-thrust-washer",
+      "parent": "cam-retention-assembly",
+      "baseline_position_cad_mm": [
+        378.159375,
+        90,
+        37
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        5.109820990161097,
+        4.087856792128875
+      ]
+    },
+    "block": {
+      "definition": "block",
+      "parent": "structure",
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timing-cover": {
+      "definition": "timing-cover",
+      "parent": "closures",
+      "baseline_position_cad_mm": [
+        403,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "crankshaft": {
+      "definition": "crankshaft",
+      "parent": "crank-motion",
+      "baseline_position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "baseline_rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "additional_world_translation_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "exports": {
+    "camshaft": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.01146978346187666,
+      "step_volume_error_mm3": 1.1641532182693481e-10,
+      "step_sha256": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+      "glb_sha256": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+      "triangles": 30902
+    },
+    "cam-bearing-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+      "glb_sha256": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+      "triangles": 840
+    },
+    "cam-bearing-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+      "glb_sha256": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+      "triangles": 840
+    },
+    "cam-bearing-3": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+      "glb_sha256": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+      "triangles": 840
+    },
+    "cam-bearing-4": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+      "glb_sha256": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+      "triangles": 840
+    },
+    "rear-cam-plug": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012469756733580084,
+      "step_volume_error_mm3": 1.8189894035458565e-12,
+      "step_sha256": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+      "glb_sha256": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+      "triangles": 836
+    },
+    "crank-timing-gear": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.011857403742503436,
+      "step_volume_error_mm3": 0.0,
+      "step_sha256": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+      "glb_sha256": "dd452eb2681ce3b82c343f0055b70b1a9e510c42c66106d819d922ea4c37c05d",
+      "triangles": 5282
+    },
+    "cam-timing-gear": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.00033498745501159277,
+      "step_volume_error_mm3": 0.0,
+      "step_sha256": "5e571257bccdc84783b4d525f049fcf3afb2193c9dfbc3135976e3ca43f961c8",
+      "glb_sha256": "9304ec5db35d5fbce665a9ed5229360daa1f519309a87d8dfb63e99eb6f82547",
+      "triangles": 8704
+    },
+    "cam-thrust-plate": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.003951035655333612,
+      "step_volume_error_mm3": 4.911271389573812e-10,
+      "step_sha256": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+      "glb_sha256": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+      "triangles": 2044
+    },
+    "cam-gear-spacer": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.008523355639766805,
+      "step_volume_error_mm3": 7.958078640513122e-11,
+      "step_sha256": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+      "glb_sha256": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+      "triangles": 840
+    },
+    "cam-timing-key": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.0027870071760816018,
+      "step_volume_error_mm3": 2.842170943040401e-14,
+      "step_sha256": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+      "glb_sha256": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+      "triangles": 212
+    },
+    "cam-thrust-bolt-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+      "glb_sha256": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+      "triangles": 9194
+    },
+    "cam-thrust-bolt-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+      "glb_sha256": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+      "triangles": 9194
+    },
+    "cam-thrust-washer-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540087378813837,
+      "step_volume_error_mm3": 3.325340003357269e-12,
+      "step_sha256": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+      "glb_sha256": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+      "triangles": 808
+    },
+    "cam-thrust-washer-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540385402037714,
+      "step_volume_error_mm3": 3.268496584496461e-12,
+      "step_sha256": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+      "glb_sha256": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+      "triangles": 808
+    }
+  },
+  "interfaces": [
+    {
+      "a": "camshaft",
+      "b": "cam-timing-gear",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0249999999999536
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-plate",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-timing-key",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.024999996209353875
+    },
+    {
+      "a": "camshaft",
+      "b": "rear-cam-plug",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 8.787800000000004
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-timing-key",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.024999999999991473
+    },
+    {
+      "a": "cam-thrust-plate",
+      "b": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 1.587500000000001
+    },
+    {
+      "a": "crankshaft",
+      "b": "crank-timing-gear",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.02499999999995942
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-1",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0253999999999865
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-2",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.025399999999983842
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-3",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.025399999999983842
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-4",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.025399999999988113
+    },
+    {
+      "a": "cam-thrust-bolt-1",
+      "b": "cam-thrust-washer-1",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "cam-thrust-bolt-2",
+      "b": "cam-thrust-washer-2",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "cam-thrust-washer-1",
+      "b": "cam-thrust-plate",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "cam-thrust-washer-2",
+      "b": "cam-thrust-plate",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.0
+    },
+    {
+      "a": "cam-thrust-bolt-1",
+      "b": "cam-timing-gear",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.7999999999999545
+    },
+    {
+      "a": "cam-thrust-bolt-2",
+      "b": "cam-timing-gear",
+      "overlap_mm3": 0.0,
+      "local_interface_distance_mm": 0.7999999999999545
+    }
+  ],
+  "expected_unmigrated_context_conflicts": [
+    {
+      "a": "camshaft",
+      "b": "block",
+      "overlap_mm3": 18775.065722837608
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "timing-cover",
+      "overlap_mm3": 520.1755337964239
+    }
+  ],
+  "limitations": [
+    "No block bore filling or canonical updates",
+    "No crank key supplied; refined keyway lacks matched shaft slot/key",
+    "Bearing oil feeds, press fits and installed manufacturing dimensions unresolved",
+    "Static internal interface scope only; gear phase sweep inherited only by unchanged gear shapes and relative pose, not new shaft/context motion",
+    "Browser and CAD valvetrain/distributor adaptation NOT RUN"
+  ]
+}

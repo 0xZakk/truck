@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-30",
+  "scope": "Source interpretation and diagnostic; not an accepted gear revision",
+  "sources": [
+    {
+      "id": "ford-1994-49-timing-service",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html",
+      "sha256": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+      "facts": {
+        "backlash_in": [
+          0.002,
+          0.004
+        ],
+        "backlash_mm": [
+          0.0508,
+          0.1016
+        ],
+        "method": "Dial indicator, gear held against block",
+        "crank_key": "Separate key removed from crankshaft during gear removal"
+      },
+      "unknowns": [
+        "Indicator radius and orientation are not explicit in this excerpt",
+        "Crank key shape and dimensions are not given"
+      ]
+    },
+    {
+      "id": "khk-backlash-definitions",
+      "url": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/gear_backlash.html",
+      "path": "reference/engine/timing-gear-evidence/khk-backlash.html",
+      "sha256": "6fa20ee72fb25d7b4cc8965cc90c5c3513876eae73e10ded1b216c383cb51ac1",
+      "summary": "Pitch-circle backlash is rotational travel between opposite flank contacts with the mate held. Normal clearance uses a contact condition, unlike a neutral unloaded pose. Tooth thinning contributions from both gears add."
+    }
+  ],
+  "interpretation": "The existing parameter removes 0.12 mm circumferential thickness from EACH gear at its pitch circle, so ideal pair play is 0.24 mm. The actual polygonal helical exports require a two-sided contact check. Service comparison assumes tangential pitch-circle indicator measurement; retain that assumption until the measurement setup is corroborated.",
+  "next": "Run check-timing-gear-backlash-diagnostic.py; preserve old proof and create a distinct corrected candidate only after inspecting the result.",
+  "crank_key_followup": {
+    "source": "Dorman AutoGrade catalog, manufacturer-authored distributor mirror",
+    "url": "https://images.carid.com/dorman/info/pdf/dorman-auto-grade-catalog.pdf",
+    "path": "reference/engine/timing-gear-evidence/dorman-auto-grade-catalog.pdf",
+    "sha256": "2a6a6e148e4ab98553ad700b9e680cb243c3b3668e635506323071dda1124f5f",
+    "visual_review": "PDF pages 359 and360, printed133\u2013134; rendered and read directly",
+    "comparison_only": {
+      "part": "595-080",
+      "application": "Ford 4.9L 300, 1980\u20131992; does not include1994",
+      "decimal_dimensions_in": {
+        "width": 0.188,
+        "length": 1.75,
+        "height": 0.302
+      },
+      "fractional_dimensions_in": [
+        "3/16",
+        "1-3/4",
+        "19/64"
+      ]
+    },
+    "limits": [
+      "Fractional and decimal heights disagree by0.005125inch; preserve both rather than silently choosing.",
+      "Earlier broad1965\u20131988 row lists both595-080 and600-108; no specific timing-versus-damper assignment.",
+      "Current4.9crank timing key remains unmodeled. Neither catalog year match nor exact key pocket dimensions are established."
+    ],
+    "failed_retrievals": [
+      "Manufacturer old hardware2006 PDF link404",
+      "a1-autoparts catalog mirror403"
+    ]
+  }
+}

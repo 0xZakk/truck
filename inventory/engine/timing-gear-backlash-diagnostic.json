@@ -1,0 +1,98 @@
+{
+  "status": "FAIL service-backlash comparison; frozen estimated gear pair remains unaccepted",
+  "input_sha256": {
+    "scripts/check-timing-gear-backlash-diagnostic.py": "7bf227b91b9c56711b61122030a9f8ec895115374bb7c3d437bb7a5c97029131",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/generated/timing-gear-pair-candidate/crank.step": "cc4358ef17843843ac7a6b7150dc6db425b6e916e48c976ac3d7399301107a47",
+    "cad/engine/generated/timing-gear-pair-candidate/cam.step": "827d96d965fbcf65b642d7c54d8ef5df9afcff429502851c143e410545438577"
+  },
+  "rows": [
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": -0.09,
+      "overlap_mm3": 0.02314568052898275,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": -0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.005778409956901883
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.005778409959134377
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.09,
+      "overlap_mm3": 0.02314568047430804,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": -0.09,
+      "overlap_mm3": 0.02255833761377826,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": -0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.007208109659343596
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.007208109661262855
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.09,
+      "overlap_mm3": 0.022558337613610795,
+      "local_gap_mm": 0.0
+    }
+  ],
+  "brackets": [
+    {
+      "crank_degrees": 0,
+      "two_sided_angular_play_deg": [
+        0.16,
+        0.18
+      ],
+      "pitch_circle_play_mm": [
+        0.22675317641910328,
+        0.25509732347149117
+      ],
+      "exceeds_service_max_under_pitch_circle_interpretation": true
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "two_sided_angular_play_deg": [
+        0.16,
+        0.18
+      ],
+      "pitch_circle_play_mm": [
+        0.22675317641910328,
+        0.25509732347149117
+      ],
+      "exceeds_service_max_under_pitch_circle_interpretation": true
+    }
+  ],
+  "pitch_radius_mm": 81.19999999999999,
+  "analytical_tooth_thinning_pair_play_mm": 0.24,
+  "service_range_mm": [
+    0.0508,
+    0.1016
+  ],
+  "limits": [
+    "Two sampled crank phases, fixed axial position. No continuous loaded-contact proof.",
+    "Service excerpt specifies dial indicator but does not state tip radius/direction; pitch-circle interpretation is explicit and needs corroboration.",
+    "Analytic ideal involute thinning is not exact faceted CAD. Two-sided CAD bracket independently measures the exported hypothesis.",
+    "Do not replace rotational free play with the unloaded single-pose nearest-surface distance. No canonical geometry changed."
+  ]
+}

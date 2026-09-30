@@ -2,7 +2,20 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Current rear-exhaust and timing-study checkpoint
+## Current neck and timing-core checkpoint
+
+The September 30 neck/core package is published at [this private release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). It preserves **741 definitions / 1,349 occurrences**, the further installed rear-neck blend, isolated timing-core/thrust-land studies and the failed old-gear backlash diagnostic. The engine remains unfinished and browser acceptance is NOT RUN.
+
+```sh
+gh release download checkpoint-2026-09-30-neck-core --repo 0xZakk/truck --pattern truck-active-cad-20260930-neck-core.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260930-neck-core.tar.gz
+```
+
+Compare with `docs/cad-neck-core-checkpoint.json`, preserve newer local generated work, then extract from the repository root using `tar -xzf /tmp/truck-active-cad-20260930-neck-core.tar.gz`. Package reproduction: `python3 scripts/package-neck-core-checkpoint.py --previous <exhaust-timing-archive> --output <new-archive>`.
+
+All prior archive fixtures are retained with current active STEP definitions and the rebuilt combined assembly. The ongoing shifted-block, coordinated pan-joint and reduced-backlash revisions are excluded. Purchased manuals, owner photographs and third-party reference images/composites remain excluded; acquire authorized evidence separately.
+
+## Previous rear-exhaust and timing-study checkpoint
 
 The [September30 exhaust/timing archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published for PR #95. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.
 

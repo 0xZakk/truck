@@ -884,6 +884,8 @@ def main():
     throttle_stops.install(define,add,defs,occurrences,assemblies,shapes)
     import exhaust_rear_collector_integration as rear_collector
     rear_collector.install(define,add,defs,occurrences,assemblies,shapes)
+    import rear_exhaust_neck_integration as rear_neck
+    rear_neck.install(define,add,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -926,6 +928,7 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/intake-runner-exterior-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/throttle-stop-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/exhaust-rear-collector-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/rear-exhaust-neck-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -955,6 +958,7 @@ def main():
     sources.update(intake_runner_exterior_integration.sources())
     sources.update(throttle_stops.source())
     sources.update(rear_collector.source())
+    sources.update(rear_neck.source())
     for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
         sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}

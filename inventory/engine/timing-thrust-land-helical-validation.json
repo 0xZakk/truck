@@ -1,0 +1,229 @@
+{
+  "status": "PASS25rotational samples at both axial endpoints; full axial interval bounded at those rotations; UNINSTALLED",
+  "input_sha256": {
+    "scripts/check-timing-thrust-land-helical-endpoints.py": "b9733eee1fb5473c29460b6ca9f27a528866ed586ef526606b451fcf926717ef",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/timing-gear-pair-candidate-validation.json": "e8b0397a995aa7888fedbac640c9aa836696d7c88a597ea6323b20286e6b39a8",
+    "inventory/engine/timing-gear-pair-refinement-validation.json": "c5c6b5212b146b5bda89e854df1c38b7c4d1506199fb36f4a414097589edb19a",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+  },
+  "endpoint_minus_0_1": [
+    {
+      "crank_angle_deg": 0.0,
+      "cam_angle_deg": -0.0,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317471932312493,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032952897693890176
+    },
+    {
+      "crank_angle_deg": 0.5172413793103449,
+      "cam_angle_deg": -0.25862068965517243,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317608849403696,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003293242913407199
+    },
+    {
+      "crank_angle_deg": 1.0344827586206897,
+      "cam_angle_deg": -0.5172413793103449,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317674122866804,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032907789891115924
+    },
+    {
+      "crank_angle_deg": 1.5517241379310347,
+      "cam_angle_deg": -0.7758620689655173,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317665289633807,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032881641222460845
+    },
+    {
+      "crank_angle_deg": 2.0689655172413794,
+      "cam_angle_deg": -1.0344827586206897,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317586018041371,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003285757385169591
+    },
+    {
+      "crank_angle_deg": 2.586206896551724,
+      "cam_angle_deg": -1.293103448275862,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.0631744532019099,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032840183472620382
+    },
+    {
+      "crank_angle_deg": 3.1034482758620694,
+      "cam_angle_deg": -1.5517241379310347,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317256761017928,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032936821055910837
+    },
+    {
+      "crank_angle_deg": 3.620689655172414,
+      "cam_angle_deg": -1.810344827586207,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317037664960559,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003291545229197848
+    },
+    {
+      "crank_angle_deg": 4.137931034482759,
+      "cam_angle_deg": -2.0689655172413794,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316808320992484,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032892788695849523
+    },
+    {
+      "crank_angle_deg": 4.655172413793104,
+      "cam_angle_deg": -2.327586206896552,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316591186636923,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003287102933420105
+    },
+    {
+      "crank_angle_deg": 5.172413793103448,
+      "cam_angle_deg": -2.586206896551724,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316410091657167,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032852517317773916
+    },
+    {
+      "crank_angle_deg": 5.689655172413794,
+      "cam_angle_deg": -2.844827586206897,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316289441796177,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032839660159612594
+    },
+    {
+      "crank_angle_deg": 6.206896551724139,
+      "cam_angle_deg": -3.1034482758620694,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06376201175819961,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003298742860367243
+    },
+    {
+      "crank_angle_deg": 6.724137931034483,
+      "cam_angle_deg": -3.3620689655172415,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06480073090408056,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003283966016702125
+    },
+    {
+      "crank_angle_deg": 7.241379310344828,
+      "cam_angle_deg": -3.620689655172414,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06434793598741992,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003285251731739644
+    },
+    {
+      "crank_angle_deg": 7.758620689655173,
+      "cam_angle_deg": -3.8793103448275863,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06435018587242723,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032871029328231383
+    },
+    {
+      "crank_angle_deg": 8.275862068965518,
+      "cam_angle_deg": -4.137931034482759,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06435417515679062,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003289278868628745
+    },
+    {
+      "crank_angle_deg": 8.793103448275863,
+      "cam_angle_deg": -4.3965517241379315,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.0643590211886924,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032915452280697644
+    },
+    {
+      "crank_angle_deg": 9.310344827586208,
+      "cam_angle_deg": -4.655172413793104,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.0633406463294784,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032936821044414477
+    },
+    {
+      "crank_angle_deg": 9.827586206896552,
+      "cam_angle_deg": -4.913793103448276,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316326335185493,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003284018345409284
+    },
+    {
+      "crank_angle_deg": 10.344827586206897,
+      "cam_angle_deg": -5.172413793103448,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06316515406992738,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003285757384136348
+    },
+    {
+      "crank_angle_deg": 10.862068965517242,
+      "cam_angle_deg": -5.431034482758621,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.0631676433625263,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032881641218931584
+    },
+    {
+      "crank_angle_deg": 11.379310344827587,
+      "cam_angle_deg": -5.689655172413794,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.063170283723666,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032907789893422412
+    },
+    {
+      "crank_angle_deg": 11.896551724137932,
+      "cam_angle_deg": -5.948275862068966,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.06317272749850991,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.0032932429141325076
+    },
+    {
+      "crank_angle_deg": 12.413793103448276,
+      "cam_angle_deg": -6.206896551724138,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "local_engagement_gap_mm": 0.063174719326628,
+      "whole_axial_interval_gap_lower_bound_mm_at_this_rotation": 0.003295289770054069
+    }
+  ],
+  "endpoint_zero": {
+    "mode": "inherited frozen original proof plus subtractive refinement and addedR26 material outside engagement",
+    "proof_sha256": "e8b0397a995aa7888fedbac640c9aa836696d7c88a597ea6323b20286e6b39a8",
+    "refinement_sha256": "c5c6b5212b146b5bda89e854df1c38b7c4d1506199fb36f4a414097589edb19a",
+    "land_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "samples": 25,
+    "overlap_limit_mm3": 1e-05
+  },
+  "continuous_axial_argument": "At each sampled rotation, original lens-local gap exceeds total0.1mm translation. Translation inX commutes with fixedYZ lens clipping and full geometry remains withinX\u00b18. Subtractive refinement cannot reduce gap; addedR26 annulus lies52.62mm from crank tip. Distance Lipschitz bound establishes no intersection for every axial value[-0.1,0] at these25 rotations.",
+  "limits": [
+    "25 rotations over one tooth period, not continuous rotation proof",
+    "No loaded contact/forces/production backlash claim",
+    "Original finite contact-phase brackets ataxial0 are not inherited ataxial\u22120.1",
+    "Full engine context still unmigrated"
+  ]
+}
