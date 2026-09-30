@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -80,14 +80,13 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Manufacturer replacement photographs show an integral outlet flange with two opposed mounting holes on each manifold. Installed casting identity remains unknown.
   - Open: The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.
   - Open: Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.
-- [ ] **Rear exhaust manifold** — `exhaust-rear`; modeled quantity **1**; provisional.
+- [ ] **Rear exhaust manifold · rounded collector study** — `exhaust-rear`; modeled quantity **1**; provisional.
   - Instances: `exhaust-rear`
-  - Source IDs: system-9d57ed6d21b9, system-b9d2a4ac71cc, dorman-598-105, dorman-674186-profile-specification, dorman-674186-head-facing-photo, dorman-674186-opposite-photo, dorman-674186-overview-photo, dorman-674186-catalog-application, ford-manifold-fastener-topology, ford-1996-manifold-comparison, ford-1996-manifold-fastener-table, dorman-674185-opposite-photo, dorman-674185-application. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: system-9d57ed6d21b9, system-b9d2a4ac71cc, dorman-598-105, dorman-674186-profile-specification, dorman-674186-head-facing-photo, dorman-674186-opposite-photo, dorman-674186-overview-photo, dorman-674186-catalog-application, ford-manifold-fastener-topology, ford-1996-manifold-comparison, ford-1996-manifold-fastener-table, dorman-674185-opposite-photo, dorman-674185-application, rear-collector-rounded-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory procedure establishes separate front/rear castings and head attachment. Runner bends, common chamber, flange contours, outlet dimensions and installed stations remain provisional.
   - Open: EGR takeoff, air-injection connections, lifting eye, dowel, head fasteners and exhaust-pipe joints remain unresolved. No production gasket is inferred from the model.
   - Open: Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.
   - Open: Entry28x28mm, corner3mm, outer36x36mm and transition stations reuse provisional front study dimensions; no pixel scaling is used.
-  - Open: This incremental entry correction retains the old collector and EGR end connection. Both remain unsupported form/routing studies pending joint reconstruction; this is not a completed rear manifold.
   - Open: The provisional EGR fitting insertion envelope is shortened from19mm to12.5mm so its tip ends0.5mm before the collector inner wall rather than intruding into the collector and rear runner. This is a geometric clearance assumption, not a verified thread engagement or retention specification.
   - Open: Production flange lands, head attachment, outlet flange, auxiliary ports, wall thickness and thermal/flow performance remain unverified.
   - Open: Ford1994 explicitly installs rear bolts15/16 before the intake; these two fasteners do not complete the remaining shared manifold clamps.
@@ -97,6 +96,8 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Manufacturer replacement photographs show an integral outlet flange with two opposed mounting holes on each manifold. Installed casting identity remains unknown.
   - Open: The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.
   - Open: Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.
+  - Open: Rounded collector and repaired runner exterior are a replacement-photo-informed dimensional study, not production geometry.
+  - Open: Retained long outlet neck, thin head lands/bolt arms and end EGR connection still differ visibly from Dorman674-186; dimensions, casting identity, auxiliary ports, threads, sealing and thermal behavior remain unresolved.
 
 ## Additional known scope and reconciliation
 

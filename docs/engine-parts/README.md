@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. **741 definitions / 1349 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf`. **741 definitions / 1349 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
