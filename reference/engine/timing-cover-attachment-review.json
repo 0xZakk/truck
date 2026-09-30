@@ -1,0 +1,56 @@
+{
+  "scope": "New isolated attachment study; frozen sealing candidate unchanged",
+  "evidence": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/350379654.png",
+      "sha256": "8cb2091a2ca0bdfeda36098cfbfa346d3fa78a665ecfb25e27e0edf18bab3803",
+      "distribution": "Restricted local manual; exclude original from Git/release"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html",
+      "sha256": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407",
+      "distribution": "Restricted local manual; exclude original from Git/release"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Torque%20Specifications/index.html",
+      "sha256": "90e42ec143672fe38960c8105892c3a4dcf3a9c684b2acbc13b2ddfa474889c5",
+      "distribution": "Restricted local manual; exclude original from Git/release"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Front%20Crankshaft%20Seal/Parts%20Information/index.html",
+      "sha256": "a3612f7ddf0999697d70ac1a847c90598e6c31b43a3bf623b3b2376e36880bd9",
+      "distribution": "Restricted local manual; exclude original from Git/release"
+    }
+  ],
+  "findings": [
+    "Actual 1994 oil pan Fig34 pixels inspected: 25 screw-and-washer assemblies, 5/16-18 x .87 in. Head/washer dimensions and captive construction remain current model conventions.",
+    "Exact-year timing-cover removal names attaching screws and calls for a replacement crankshaft seal; no cover screw size/length/mapping or separate cover washers supplied.",
+    "Exact-year torque table names timing-cover attaching bolts, but torque does not establish bolt dimensions. No torque is inferred for the proposed geometry.",
+    "Exact-year front-cover seal parts entry lists E6DZ6700A; no dimensions or lip-track datum provided. This part number is recorded, not used to resize the current illustrative seal.",
+    "Current manifest has no main-cover mounting fastener definitions or occurrences. Seven source-supported holes are retained as unresolved mounting axes.",
+    "Five relocated pan screw/washer pairs reuse existing physical definitions and retain indices10,20,21,22,23. Twenty other pairs remain unchanged."
+  ],
+  "bounded_search_limits": [
+    "Public exact-year dealer parts page was not accessible through search tool.",
+    "1987 Bronco and mixed-engine catalog results include differing cover bolts/studs. Those are unverified leads and are not transferred to 1994 4.9 hardware."
+  ],
+  "unadopted_search_urls": [
+    "https://www.fordpartsgiant.com/parts-list/1994-ford-f_150--6_cyl_4_9l-5mt/engine/cylinder_block_and_related_parts_external.html",
+    "https://www.fordpartsgiant.com/parts-list/1987-ford-bronco--6_cyl_4_9l-3at_c6/engine/cylinder_block_and_related_parts_engine_assembly.html"
+  ],
+  "frozen_review_sha256": "b35f40a483d91e936365db091b0217acac3e07dc07ff532640537cdd827682b7",
+  "thread_classification": "Male nominal 5/16-18 x22.098mm is source supported; male profile/head and female conjugate geometry are estimated teaching geometry. No factory thread class/preload/material-strength assertion.",
+  "root_review": "PENDING",
+  "current_base": "eb502ce755d12fe896b3ea915f3ada4361e52a9c",
+  "branch": "engine/timing-interface-reconciliation",
+  "decision": "REJECTED; source-supported nominal male thread requires a separate valid construction study",
+  "validation_sha256": "3b08515dca5f03b08f078cadf27a9c671fb34e0dbb8df45cb9bc2f0f9ea0b754",
+  "owned_source_sha256": {
+    "cad/engine/timing_cover_attachment_candidate.py": "7d35dd4f7fea75a4d73266944e4951a117cdcbbfc3ada9b7f36c368e6ca867ae",
+    "scripts/check-timing-cover-attachment-candidate.py": "a40520a4b68f955a8cff8b8a6c306e5bad6f7990005ac7c719785bdebcaf0513",
+    "scripts/render-timing-cover-attachment-candidate.py": "63f1a5045cecc42b0c8a3a2e8a7bca7f93fcfa9440a29f583571711a283746ed"
+  },
+  "render_sha256": "c7114daeb91fcaf821fe59649a6a4e319b1b362fff919f849d98a78c81a0de14",
+  "raw_checkpoint_sha256": "f8b3ce2f32ce5aedbf1f8262d4dfb6bc362110dfb9e082551432b5883f82a5bd",
+  "root_next": "Authorized new isolated reusable male revision after rejection frozen."
+}

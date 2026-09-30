@@ -1,0 +1,108 @@
+{
+  "status": "FAIL CAD validity preserved",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/01-feature-regenerated.step": "4c717c013109a06046a6cb1606693adb075f362c177babdb98d3f697b998ba70",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/02-pan-joint.step": "b3e04015cd472e05ce1a534cc8ab8ba09a6f4c5c8671fe1d893b5a896889ad92",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-after.step": "907f77bf2adbc7fc9d28000806ce559681b2c9acf9989599abd5bad5fbe422dc",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-before.step": "a1f210df49427e2809026690ef1e610b9a40ae8ac6b9e40a6a376d7602e1653e",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994.step": "907f77bf2adbc7fc9d28000806ce559681b2c9acf9989599abd5bad5fbe422dc",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/04-pump-joint.step": "48d8cf2d1a9bf89293753592692566f89bc4333e99a9018c202c2ee3382229e7",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/05-dipstick.step": "1dcaa5dcc7a159650ce23d6171dfbc6d0cbd3d9a08a4d5a5ee3681f545919886",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block.step": "1dcaa5dcc7a159650ce23d6171dfbc6d0cbd3d9a08a4d5a5ee3681f545919886",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-before.step": "1c7d8280dfb251ff9c4fb60c24b779f770dfdb6d6ec01000ba771e3aa5bc021e",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-after.step": "4c717c013109a06046a6cb1606693adb075f362c177babdb98d3f697b998ba70",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-before.step": "df8af2b8d9d7da870405cb5527e8443581d53b7f7e09d4f5fdbd8525b4537ea1"
+  },
+  "step_readback_checks": [
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/01-feature-regenerated.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/02-pan-joint.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-after.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-before.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/04-pump-joint.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/05-dipstick.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/block.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-before.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-after.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    },
+    {
+      "path": "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-before.step",
+      "valid_after_step_readback": true,
+      "solid_count": 1,
+      "invalid_subshapes": []
+    }
+  ],
+  "mesh_nonmanifold_edge_count": 144,
+  "mesh_nonmanifold_bounds_mm": [
+    [
+      -361.0000014305115,
+      83.98636430501938,
+      48.940207809209824
+    ],
+    [
+      320.6045627593994,
+      108.65036398172379,
+      52.55812034010887
+    ]
+  ],
+  "limits": [
+    "No healing or tolerance change applied",
+    "Invalid-solid downstream intersections are diagnostic only"
+  ]
+}

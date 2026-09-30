@@ -1,0 +1,38 @@
+{
+  "status": "LOCAL construction comparison; no final-machining changes",
+  "variants": {
+    "original": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.59188133,
+      "step_sha256": "7992716cb5a8462c66dcb255f7d3cd753bac390bbb021120d67bf5befa2f18d3"
+    },
+    "distributed": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 9636.123450036483,
+      "step_sha256": "bd7a3c14f3fadd965b8e681fcd711eb5a7ba1916f1338a521fab0aee3d574641",
+      "difference_from_original_step_readback_mm3": 19784096.591865566
+    },
+    "cut-together": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.591881327,
+      "step_sha256": "2bf5704baa8f7361005a3588a78ed8d6f95f1744efe6e7aef4da9269147e6c0b"
+    },
+    "seat-first": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.591881327,
+      "step_sha256": "97a8c11ace46a6ef291c90044af0ffbd8b227332e217e7518633e132d0befceb"
+    }
+  },
+  "source_operand_policy": "Exact source boss/tunnel/seat expressions, dimensions, frame retained; distributive set identity",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "scripts/check-timing-block-rear-seat-repair-local.py": "3ed1564b707f1c6db8a4e50f6b605a7fb13cabe739d7a4a201fd3070b32d1fda",
+    "cad/engine/timing_block_rear_seat_repair_candidate.py": "0ac4ad0f7ee786d8060ca2fd4f9dcd31915557d2339fa0b1d6ec9a8d31bb217b",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163"
+  }
+}

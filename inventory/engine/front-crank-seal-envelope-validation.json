@@ -1,0 +1,66 @@
+{
+  "status": "PASS envelope diagnostic; current seat incompatible; no installation",
+  "input_sha256": {
+    "scripts/check-front-crank-seal-envelope.py": "ce3cbd3dcdac97c5a4f0ab5e01c91614b093fd4d3be94003def62f9a91e25286",
+    "cad/engine/front_crank_seal_envelope_candidate.py": "10fed0442011c0ab34db09fd0d3c9e56e9e8b068c5b221c9f7aceeab1a3cf4d3",
+    "reference/engine/front-crank-seal-envelope-review.json": "e5b4f015648df6535c8a08088fcaf34c567ef03b884317fd95a044c8bfa7d156",
+    "cad/engine/generated/timing-cover-front-joint-candidate/cover.step": "da95fc5f84dad6c16025e19b65bf8395cdbdb9396835a16cf7bf05c428d1e223",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Front%20Crankshaft%20Seal/Parts%20Information/index.html": "a3612f7ddf0999697d70ac1a847c90598e6c31b43a3bf623b3b2376e36880bd9",
+    "reference/engine/national-seals-cross-reference.pdf": "cf8eddb6b4beb085df0574f2bbde2ce0bfaa7fd84245bb5412ea60616e25d5aa",
+    "reference/engine/national-seal-specifications.pdf": "f367025b5a838d4170e92120362aa124bb30c3b2d7290645a8a94091aaf51179"
+  },
+  "replacement_dimensions_mm": {
+    "shaft_diameter": 47.625,
+    "housing_bore": 65.04939999999999,
+    "case_diameter": 65.151,
+    "width": 13.4112,
+    "flange_diameter": 80.264
+  },
+  "current_annulus_dimensions_mm": {
+    "outside": 54,
+    "inside": 42,
+    "width": 8
+  },
+  "radial_bore_increase_mm": 5.524699999999996,
+  "nominal_diametral_case_fit_mm": 0.1016000000000048,
+  "alignments": [
+    {
+      "hypothesis": "front-aligned-with-estimated-cover",
+      "adopted": false,
+      "case_axial_interval_mm": [
+        401.5888,
+        415.0
+      ],
+      "housing_probe_material_obstruction_mm3": 11220.842159918695,
+      "old_bore_control_overlap_mm3": 0,
+      "exports": {
+        "front-aligned-with-estimated-cover-housing-bore-probe.step": "f881313e93d7b5c0fc86a3112b8a18fae1c6b8ce272ac5c3a031ca00f0a7ac91",
+        "front-aligned-with-estimated-cover-seal-annular-envelope.step": "6ae204e85dbbd600d30c8a830c209ce19590e7ef88f14cec6eeedc838055eeab",
+        "front-aligned-with-estimated-cover-flange-face-probe.step": "fc023aaeafca8d27ea8b5b3a615b846694dd2d1414225437a900c471fbb23fe9"
+      }
+    },
+    {
+      "hypothesis": "centered-on-old-seal-datum",
+      "adopted": false,
+      "case_axial_interval_mm": [
+        407.2944,
+        420.7056
+      ],
+      "housing_probe_material_obstruction_mm3": 12360.78093379641,
+      "old_bore_control_overlap_mm3": 0,
+      "exports": {
+        "centered-on-old-seal-datum-housing-bore-probe.step": "046ce66e79167cae9da60efb932a96833834a2be03dcbc70bdfd0940d4c1c650",
+        "centered-on-old-seal-datum-seal-annular-envelope.step": "85be6fa916d4aa071f6df78b286445b588501191c93d62905483d8e88021f36d",
+        "centered-on-old-seal-datum-flange-face-probe.step": "88f7f5f81bf8c02e0acd55daed11685bbd202fc1cc6eac0ef792039c04225234"
+      }
+    }
+  ],
+  "limits": [
+    "Probes are envelopes, not physical seal internals",
+    "Neither axial hypothesis is source-established or adopted",
+    "Catalog nominal fit is not a tolerance or deformation model",
+    "Lip, spring, case thickness and damper track remain unresolved",
+    "Flange face has no assumed thickness; no flange support claim",
+    "No canonical changes, installed clearance or browser acceptance"
+  ]
+}

@@ -70,7 +70,7 @@
     {
       "issue": 32,
       "desired_status": "In progress",
-      "reason": "Three active isolated studies: shifted block features, coordinated cover/pan joint and revised gear backlash. Original pair failed exact-year service-range comparison under explicit pitch-circle measurement interpretation; no installed timing acceptance."
+      "reason": "PR97 preserves isolated timing-fit studies and failed block trial. Block topology, pan fastener revision and rotating-core clearance work continue; no installed acceptance."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

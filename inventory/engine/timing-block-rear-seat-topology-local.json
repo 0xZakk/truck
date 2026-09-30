@@ -1,0 +1,26 @@
+{
+  "status": "LOCAL construction comparison; no final-machining changes",
+  "variants": {
+    "original": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.59188133,
+      "step_sha256": "73e77fd5fa3fa33490ea17012625224492ffd2d11c1c4492e53be92b8b3eb2ab"
+    },
+    "retain-boolean-topology": {
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 19784096.591932535,
+      "step_sha256": "a994dff97e25354d0ae890166a8b296af6ff5606833406592b929b0f2f40f036",
+      "difference_from_original_step_readback_mm3": 19784096.591881383
+    }
+  },
+  "source_operand_policy": "Exact source boss/tunnel/seat expressions, dimensions, frame retained; distributive set identity",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "scripts/check-timing-block-rear-seat-topology-local.py": "9c17d985eeefbbe8f3aa43ce0317b5728e770fe565c22e817e5049ee1646779f",
+    "cad/engine/timing_block_rear_seat_topology_candidate.py": "8f5ed17b73dfce9314017c167a60814d0602748d5e6b8c5eb399bf8e33d48e3a",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163"
+  }
+}

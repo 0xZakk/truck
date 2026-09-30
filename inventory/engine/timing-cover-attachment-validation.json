@@ -1,0 +1,177 @@
+{
+  "status": "REJECTED; not ready for integration",
+  "reason": "Reused detailed male thread fails watertight mesh checks and meaningful interference-control consistency. Prior attachment checks also encountered imported assembly transforms and empty-result handling issues.",
+  "input_sha256": {
+    "cad/engine/generated/oil-pan-mounting-screw.step": "eb151db3bef2ea33016c242c7893ea66e470677183aa61720d2fbf74542211b0",
+    "models/engine/oil-pan-mounting-screw.glb": "4a4950432fb8d55395212c07ff2af6a75aef01d5ea02211cb93010363b918a8b",
+    "cad/engine/generated/oil-pan-mounting-washer.step": "89dfd958fc84025474dfd159c2f7ee3c167ec0e8abc2e904f383357916ee2c17",
+    "inventory/engine/timing-cover-front-joint-validation.json": "6a4490ed3d50956e9fd0db1297fa17a217c363e15d1b453bd64b2a8c94d11116",
+    "inventory/engine/timing-cover-front-joint-root-review.json": "b35f40a483d91e936365db091b0217acac3e07dc07ff532640537cdd827682b7"
+  },
+  "raw_rejected_checkpoint_sha256": "f8b3ce2f32ce5aedbf1f8262d4dfb6bc362110dfb9e082551432b5883f82a5bd",
+  "raw_export_checks": {
+    "cover": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 5.145557224750519e-08
+    },
+    "main-gasket": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 8.003553375601768e-11
+    },
+    "future-block-land": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 9.604264050722122e-10
+    },
+    "front-terminal-sealant": {
+      "valid": true,
+      "solids": 2,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "pan-gasket": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 5.529727786779404e-10
+    },
+    "pan": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 9.358953684568405e-05
+    },
+    "oil-pan-mounting-screw-20": {
+      "valid": true,
+      "solids": 1,
+      "watertight": false,
+      "step_delta_mm3": 6.499507298940443e-05
+    },
+    "oil-pan-mounting-washer-20": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "oil-pan-mounting-screw-10": {
+      "valid": true,
+      "solids": 1,
+      "watertight": false,
+      "step_delta_mm3": 6.499507344415179e-05
+    },
+    "oil-pan-mounting-washer-10": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "oil-pan-mounting-screw-21": {
+      "valid": true,
+      "solids": 1,
+      "watertight": false,
+      "step_delta_mm3": 6.499507344415179e-05
+    },
+    "oil-pan-mounting-washer-21": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "oil-pan-mounting-screw-23": {
+      "valid": true,
+      "solids": 1,
+      "watertight": false,
+      "step_delta_mm3": 6.499507298940443e-05
+    },
+    "oil-pan-mounting-washer-23": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "oil-pan-mounting-screw-22": {
+      "valid": true,
+      "solids": 1,
+      "watertight": false,
+      "step_delta_mm3": 6.499507389889914e-05
+    },
+    "oil-pan-mounting-washer-22": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "front-seal": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    },
+    "damper-hub": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_delta_mm3": 0.0
+    }
+  },
+  "raw_check_warning": "Raw overlap numbers are not accepted physical collision measurements: empty clipped shapes could cause intersection with no effective operand. The raw records are retained only to reproduce rejection.",
+  "male_mesh_checks": {
+    "canonical_glb_after_weld": {
+      "watertight": false,
+      "euler": 4,
+      "vertices": 5179,
+      "faces": 14050,
+      "weld_digits_meter": 9
+    },
+    "new_roundtrip_glb": {
+      "watertight": false,
+      "euler": 2,
+      "vertices": 6793,
+      "faces": 16164
+    }
+  },
+  "thread_negative_control": {
+    "cad_valid": true,
+    "male_volume_mm3_default": 1605.2886545145984,
+    "female_complement_volume_mm3_default": 223.46533242504836,
+    "shifted_male_axial_offset_mm": 0.3,
+    "common_result": "None or zero-volume result",
+    "independent_point_classification": "Both shifted male and female classify points as inside, including radial3.6/Z10.1..10.3. This contradiction invalidates the common-based control; it is not accepted physical engagement.",
+    "kernel_diagnostic": "Additional fuzzy common trial was stopped after bounded investigation; no pass claim."
+  },
+  "front_seal_read_only": {
+    "seal_bounds_x_mm": [
+      410,
+      418
+    ],
+    "hub_rear_x_mm": 419,
+    "seal_hub_distance_mm": 1.0,
+    "seal_crank_distance_mm": 2.2876966251409342e-29,
+    "seal_crank_common": "None (no overlapping solid)",
+    "limit": "Plain seal annulus touches model crank; no real lip/case/press fit established."
+  },
+  "pan_identity_scope": {
+    "relocated_indices": [
+      10,
+      20,
+      21,
+      22,
+      23
+    ],
+    "unchanged_count": 20,
+    "total_count": 25,
+    "canonical_changes": false
+  },
+  "main_cover_hardware": "UNRESOLVED: seven mounting axes retained, no invented screws/washers. Exact-year source does not establish nominal size or length map.",
+  "frozen_joint_unchanged": true,
+  "root_next_authorization": "New isolated reusable male revision preserving5/16-18 x0.87in nominal, current estimated head/washer, IDs and all25 eventual station identities. New module/check/outputs; root review before adoption.",
+  "browser": "NOT RUN",
+  "installed": "NOT RUN",
+  "learning": "NOT RUN",
+  "running_process": null
+}

@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-30",
+  "status": "Source-supported replacement envelope; no CAD installation",
+  "baseline": "3079300f629f5a2db6c1150fa87092578c9e2cad",
+  "sources": [
+    {
+      "id": "exact-year-parts",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Front%20Crankshaft%20Seal/Parts%20Information/index.html",
+      "sha256": "a3612f7ddf0999697d70ac1a847c90598e6c31b43a3bf623b3b2376e36880bd9",
+      "kind": "Exact-year service-manual parts entry, locally captured",
+      "facts": {
+        "front_cover_seal_oem": "E6DZ6700A"
+      },
+      "limits": "Application/part identity only; no dimensions."
+    },
+    {
+      "id": "national-cross",
+      "url": "https://tractopartesdiamante.com.mx/catalogos/catalogonationalseals.pdf",
+      "path": "reference/engine/national-seals-cross-reference.pdf",
+      "sha256": "cf8eddb6b4beb085df0574f2bbde2ce0bfaa7fd84245bb5412ea60616e25d5aa",
+      "kind": "Manufacturer-authored National 2013 catalog, distributor-hosted mirror",
+      "pdf_page": 309,
+      "printed_page": 295,
+      "visual_review": "Actual rendered page inspected by root",
+      "facts": {
+        "Ford E6DZ-6700-A": "National 2692"
+      },
+      "type76_diagram": {
+        "pdf_page": 244,
+        "printed_page": 230,
+        "visual_review": "Actual rendered manufacturer cross-section inspected by root",
+        "observation": "Stepped/flanged case and separate elastomer sealing element with circular spring section shown; profile is representative and undimensioned."
+      }
+    },
+    {
+      "id": "national-dimensions",
+      "url": "https://www.drivheavydutyparts.com/content/dam/marketing/North-America/driv-parts-new/catalog-pdfs/national-oil-seals-and-bearings-specifications.pdf",
+      "path": "reference/engine/national-seal-specifications.pdf",
+      "sha256": "f367025b5a838d4170e92120362aa124bb30c3b2d7290645a8a94091aaf51179",
+      "kind": "Manufacturer dimensional catalog",
+      "pdf_page": 47,
+      "printed_page": 35,
+      "visual_review": "Actual rendered table/header inspected by root",
+      "facts": {
+        "part": "2692",
+        "shaft_in": 1.875,
+        "housing_bore_in": 2.561,
+        "outside_diameter_in": 2.565,
+        "width_in": 0.528,
+        "printed_mm": {
+          "shaft": 47.63,
+          "housing_bore": 65.05,
+          "outside_diameter": 65.15,
+          "width": 13.41
+        },
+        "material": "Polyacrylate",
+        "type": 76
+      }
+    },
+    {
+      "id": "timken-dimensions",
+      "url": "https://cad.timken.com/item/seals/oil-seals-inch/2692",
+      "kind": "Manufacturer public dimensional table, inspected through web tool",
+      "facts": {
+        "shaft_mm": 47.625,
+        "outside_diameter_mm": 65.151,
+        "housing_bore_mm": 65.049,
+        "width_mm": 13.411,
+        "flanged_outside_diameter_mm": 80.264,
+        "material": "Polyacrylate",
+        "type": 76,
+        "lip_design": "Clockwise-spiral"
+      },
+      "limits": "Replacement envelope comparison. Internal features and lip position are representative; no CAD drawing downloaded or incorporated."
+    }
+  ],
+  "classification": {
+    "application": "Exact-year manual OEM identity plus manufacturer cross-reference supports National2692 as a replacement comparison",
+    "dimensions": "Use inch values and exact25.4 conversion for consistent model envelopes; printed catalog mm values are rounded",
+    "unknown": [
+      "Original installed seal manufacturer/profile",
+      "Lip axial position, flexible interference and spring dimensions",
+      "Damper hub sealing-track axial extent and actual crankshaft bore",
+      "Factory cover-seat depth, shoulder and flange seating surface"
+    ]
+  },
+  "current_model_comparison": {
+    "source": "cad/engine/full_engine.py front-seal ringx(27,21,8); frozen timing cover seat diameter54",
+    "current_annulus_mm": {
+      "outer_diameter": 54,
+      "inner_diameter": 42,
+      "width": 8
+    },
+    "replacement_mm_from_inches": {
+      "shaft_surface_diameter": 47.625,
+      "case_outside_diameter": 65.151,
+      "housing_bore": 65.0494,
+      "width": 13.4112
+    },
+    "inference": "The existing plain annulus and cover bore cannot represent this replacement envelope. Seal shaft size describes the contacted rotating surface, not necessarily the crankshaft metal bore inside a damper hub. Do not resize the crank nose from the seal ID.",
+    "observed_attachment": "Current modeled seal X410..418; damper hub beginsX419. Zero seal/crank distance and1mm hub distance are model observations, not factory evidence."
+  },
+  "next_contract": [
+    "Create isolated front-seal replacement envelope/profile study with separately identified case, illustrative elastomer and any source-established spring only",
+    "Coordinate cover bore, shoulder and flange envelope with damper sealing-track position; preserve existing bolt/gear/gasket interfaces or report conflicts",
+    "Model installed case fit separately from free-state OD; nominal catalog OD minus housing bore is0.1016mm diametral, not a tolerance specification",
+    "Do not independently move damper or expand crankshaft to erase gaps",
+    "Retain existing candidates and evidence; factory lip details remain unknown"
+  ],
+  "artifact_policy": "Original PDFs and manual remain ignored; commit this factual ledger only. Render pages may be regenerated locally from cited PDFs; no third-party artwork in release."
+}
