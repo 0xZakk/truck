@@ -29,12 +29,12 @@ Three workers own isolated files; root alone edits shared assembly/viewer data:
 
 1. Timing core (#32): coordinated shaft/bearing/gear/retention candidate. The inherited gear-back relief fails to establish the stated endplay; an estimated rear thrust-land correction is being checked before any installation.
 2. Cover/pan joint (#32): coordinated cover, gasket and local front-pan seating candidate using the explicitly estimated registration. Preserve the supported 25 pan-fastener count; prove sealing contacts, not merely absence of overlap.
-3. Exhaust ports (#46): source-led EGR/auxiliary-boss and outlet topology review. Exact-year references disagree on the oxygen-sensor location; no spare boss is automatically labeled AIR or oxygen sensor.
+3. Exhaust exterior (#46): an additional source-compared outlet blend candidate is undergoing exact interface/flow/neighbor checks. The port review found conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
 
 Do not install these candidates or overwrite their files. Failed trials remain useful evidence. Worker completion alone does not establish accepted installation.
 
 ## Restoration and tracking
 
-The next private CAD archive is being prepared for PR #95. Until published, use the [prior runner/EVR/stops checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-runner-evr-stops) and its checksum in `docs/cad-runner-evr-stops-checkpoint.json`; it excludes the new exhaust/timing fixtures. Follow `docs/CAD-ARTIFACTS.md`. Browser meshes are committed. Source originals/composites, purchased manuals and owner photographs are excluded from Git and release archives.
+The [current private CAD archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published, with checksum and scope in `docs/cad-exhaust-timing-checkpoint.json`. It includes the installed rear collector and reviewed timing studies, but excludes ongoing timing-core and coordinated pan-joint candidates. Follow `docs/CAD-ARTIFACTS.md`. Browser meshes are committed. Source originals/composites, purchased manuals and owner photographs are excluded from Git and release archives.
 
 CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #95 tracks the reviewed checkpoint. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.

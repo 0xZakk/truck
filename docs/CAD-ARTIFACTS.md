@@ -2,11 +2,11 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Prepared rear-exhaust and timing-study checkpoint
+## Current rear-exhaust and timing-study checkpoint
 
-The September30 exhaust/timing archive is prepared for PR #95; publication is pending. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.
+The [September30 exhaust/timing archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published for PR #95. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.
 
-After publication, restore using:
+Restore using:
 
 ```sh
 gh release download checkpoint-2026-09-30-exhaust-timing --repo 0xZakk/truck --pattern truck-active-cad-20260930-exhaust-timing.tar.gz --dir /tmp
