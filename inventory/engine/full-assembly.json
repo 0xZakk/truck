@@ -5374,126 +5374,6 @@
       ]
     },
     {
-      "id": "evr-body",
-      "name": "EVR body and hose ports",
-      "function": "Receives manifold vacuum at the lower nipple and delivers controlled vacuum from the upper nipple to the EGR valve. Internal valve and magnetic components remain unmodeled.",
-      "system": "induction",
-      "color": "#343936",
-      "glb": "/models/engine/evr-body.glb",
-      "step": "/cad/engine/generated/evr-body.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "ford-evr-factory",
-        "standard-vs52",
-        "truck-egr-evtm"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
-        "Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.",
-        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished."
-      ],
-      "volume_mm3": 42207.7129194223,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 4004,
-      "model_bounds_mm": [
-        49.0000001,
-        68.0,
-        50.0000002
-      ]
-    },
-    {
-      "id": "evr-cap",
-      "name": "EVR upper cap",
-      "function": "Externally distinct upper cap. Hidden vent and filter construction remains unresolved.",
-      "system": "induction",
-      "color": "#343936",
-      "glb": "/models/engine/evr-cap.glb",
-      "step": "/cad/engine/generated/evr-cap.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "ford-evr-factory",
-        "standard-vs52",
-        "truck-egr-evtm"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
-        "Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.",
-        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished."
-      ],
-      "volume_mm3": 6292.415749745378,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 780,
-      "model_bounds_mm": [
-        37.1,
-        37.1,
-        17.0
-      ]
-    },
-    {
-      "id": "evr-terminal-supply",
-      "name": "EVR power terminal",
-      "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
-      "system": "induction",
-      "color": "#b5a278",
-      "glb": "/models/engine/evr-terminal-supply.glb",
-      "step": "/cad/engine/generated/evr-terminal-supply.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "ford-evr-factory",
-        "standard-vs52",
-        "truck-egr-evtm"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
-        "Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.",
-        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished."
-      ],
-      "volume_mm3": 48.00000000000001,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 12,
-      "model_bounds_mm": [
-        20.0,
-        0.8000000000000003,
-        3.0
-      ]
-    },
-    {
-      "id": "evr-terminal-control",
-      "name": "EVR control terminal",
-      "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
-      "system": "induction",
-      "color": "#b5a278",
-      "glb": "/models/engine/evr-terminal-control.glb",
-      "step": "/cad/engine/generated/evr-terminal-control.step",
-      "geometry_status": "provisional",
-      "sources": [
-        "ford-evr-factory",
-        "standard-vs52",
-        "truck-egr-evtm"
-      ],
-      "dimension_claims": [],
-      "unresolved": [
-        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
-        "Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.",
-        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished."
-      ],
-      "volume_mm3": 48.00000000000001,
-      "volume_method": "default",
-      "solid_count": 1,
-      "triangle_count": 12,
-      "model_bounds_mm": [
-        20.0,
-        0.8000000000000003,
-        3.0
-      ]
-    },
-    {
       "id": "flywheel-body",
       "name": "Flywheel body",
       "function": "Stores rotational energy and provides the clutch friction face and mounting pattern. Replacement dimensions constrain this study; installed profile and clutch variant remain unverified.",
@@ -24343,8 +24223,8 @@
     },
     {
       "id": "throttle-lever-estimated",
-      "name": "Throttle lever \u00b7 estimated",
-      "function": "Converts cable pull at the ball stud into shaft rotation through a modeled D-shaped hub.",
+      "name": "Throttle lever \u00b7 illustrative stop lands",
+      "function": "Preserves the keyed hub, spring hook and cable ball interfaces while adding idle and WOT contact lands.",
       "system": "induction",
       "color": "#9c8a62",
       "glb": "/models/engine/throttle-lever-estimated.glb",
@@ -24352,24 +24232,22 @@
       "geometry_status": "provisional",
       "sources": [
         "throttle-1994-linkage-study",
-        "throttle-return-spring-study"
+        "throttle-return-spring-study",
+        "throttle-stop-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
         "One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.",
         "Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.",
         "Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.",
-        "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified."
+        "Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.",
+        "Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.",
+        "The inherited 0\u201390 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified."
       ],
-      "volume_mm3": 482.92494607169317,
+      "volume_mm3": 542.9249460716853,
       "volume_method": "default",
       "solid_count": 1,
-      "triangle_count": 732,
-      "model_bounds_mm": [
-        12.0,
-        2.0,
-        33.5
-      ]
+      "triangle_count": 1608
     },
     {
       "id": "throttle-return-spring-illustrative",
@@ -25085,8 +24963,8 @@
     },
     {
       "id": "throttle-housing",
-      "name": "Twin-bore throttle housing",
-      "function": "Two main air bores and separate bypass passages remain open. Estimated blind receivers mate to the IAC flange screws.",
+      "name": "Throttle body \u00b7 illustrative mechanical stops",
+      "function": "Twin-bore body with an estimated threaded idle-stop boss and a fixed WOT contact lug.",
       "system": "induction",
       "color": "#9da8ac",
       "glb": "/models/engine/throttle-housing.glb",
@@ -25098,7 +24976,8 @@
         "truck-throttle-catalog",
         "iac-attachment-factory-1994",
         "iac-attachment-estimated-study",
-        "iac-closure-illustrative-study"
+        "iac-closure-illustrative-study",
+        "throttle-stop-illustrative-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -25107,17 +24986,14 @@
         "Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.",
         "The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.",
         "The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.",
-        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred."
+        "The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred.",
+        "Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.",
+        "The inherited 0\u201390 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified."
       ],
-      "volume_mm3": 126137.3166360681,
+      "volume_mm3": 126839.42846383073,
       "volume_method": "default",
       "solid_count": 1,
-      "triangle_count": 13782,
-      "model_bounds_mm": [
-        50.000000200000045,
-        124.00000019999999,
-        70.00000009999997
-      ]
+      "triangle_count": 37620
     },
     {
       "id": "throttle-plate",
@@ -25221,7 +25097,7 @@
     {
       "id": "efi-upper-intake",
       "name": "Upper EFI intake manifold",
-      "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
+      "function": "The upper casting distributes air through six open runners. Broad runner faces and rounded shoulders follow visible casting form; section dimensions, wall distribution and earlier lettering details remain estimates.",
       "system": "induction",
       "color": "#a7afb3",
       "glb": "/models/engine/efi-upper-intake.glb",
@@ -25234,7 +25110,8 @@
         "system-750bd1047639",
         "system-73d3dd2d32e7",
         "upper-intake-topology-study",
-        "upper-intake-exterior-study"
+        "upper-intake-exterior-study",
+        "upper-intake-runner-exterior-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -25249,12 +25126,15 @@
         "Casting ribs, bosses and detailed wall distribution remain incomplete.",
         "Visible border ribs, Ford oval/word and ELECTRONIC/FUEL INJECTION wording follow owner/specimen photos; all new dimensions and font outlines are inferred.",
         "Arial Bold and Brush Script are explicit system-font approximations, not traced factory lettering. Casting texture, lower mounting bosses and exact wall distribution remain incomplete.",
-        "Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions."
+        "Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions.",
+        "Broad runner faces follow owner/Ford comparisons and a later F5TE-marked specimen; the specimen is not established as the owner1994 casting.",
+        "Runner widths34\u201356mm, depths34\u201346mm, R9 edges and transition stations are inferred exterior estimates. Existing circular air passages are preserved project datums, not measured factory sections.",
+        "No PCV receiver or unresolved intake support lower anchor is inferred from these exterior faces."
       ],
-      "volume_mm3": 2380612.7634378937,
-      "volume_method": "default",
+      "volume_mm3": 3406264.61143021,
+      "volume_method": "adaptive",
       "solid_count": 1,
-      "triangle_count": 46546,
+      "triangle_count": 435346,
       "model_bounds_mm": [
         734.0000002,
         353.5000001,
@@ -25822,6 +25702,377 @@
         7.919007985828898,
         8.943945009264766,
         8.836989474679967
+      ]
+    },
+    {
+      "id": "throttle-idle-stop-screw-illustrative",
+      "name": "Throttle plate-stop screw \u00b7 illustrative",
+      "function": "A modeled helix retains the external stop screw; its tip meets the lever pad at the educational closed endpoint.",
+      "system": "induction",
+      "color": "#bca369",
+      "glb": "/models/engine/throttle-idle-stop-screw-illustrative.glb",
+      "step": "/cad/engine/generated/throttle-idle-stop-screw-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "throttle-stop-illustrative-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.",
+        "The inherited 0\u201390 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified."
+      ],
+      "volume_mm3": 81.05363149848176,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 11362
+    },
+    {
+      "id": "evr-bobbin-illustrative",
+      "name": "EVR winding insulator \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#ceb989",
+      "glb": "/models/engine/evr-bobbin-illustrative.glb",
+      "step": "/cad/engine/generated/evr-bobbin-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 1263.4997951473724,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 118484,
+      "model_bounds_mm": [
+        18.6,
+        18.6,
+        20.0
+      ]
+    },
+    {
+      "id": "evr-body",
+      "name": "EVR chamber and ports",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#343936",
+      "glb": "/models/engine/evr-body.glb",
+      "step": "/cad/engine/generated/evr-body.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 32159.65141583309,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 71912,
+      "model_bounds_mm": [
+        49.0,
+        68.0,
+        56.0
+      ]
+    },
+    {
+      "id": "evr-cap",
+      "name": "EVR vent cap and illustrative capture",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#343936",
+      "glb": "/models/engine/evr-cap.glb",
+      "step": "/cad/engine/generated/evr-cap.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 7658.443754549451,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 4626,
+      "model_bounds_mm": [
+        37.099999999999994,
+        37.099999999999994,
+        17.0
+      ]
+    },
+    {
+      "id": "evr-core-illustrative",
+      "name": "EVR hollow core \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#627c94",
+      "glb": "/models/engine/evr-core-illustrative.glb",
+      "step": "/cad/engine/generated/evr-core-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 530.1437602932778,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 1008,
+      "model_bounds_mm": [
+        6.0,
+        6.0,
+        25.0
+      ]
+    },
+    {
+      "id": "evr-disc-illustrative",
+      "name": "EVR vent disc \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#b6bcc2",
+      "glb": "/models/engine/evr-disc-illustrative.glb",
+      "step": "/cad/engine/generated/evr-disc-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 66.52322443976384,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 500,
+      "model_bounds_mm": [
+        11.0,
+        11.0,
+        0.6999999999999993
+      ]
+    },
+    {
+      "id": "evr-disc-spring-illustrative",
+      "name": "EVR disc spring \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#9c9ca1",
+      "glb": "/models/engine/evr-disc-spring-illustrative.glb",
+      "step": "/cad/engine/generated/evr-disc-spring-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 81.88873782711184,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 192542,
+      "model_bounds_mm": [
+        7.0,
+        7.0,
+        18.5
+      ]
+    },
+    {
+      "id": "evr-magnetic-shell-illustrative",
+      "name": "EVR magnetic shell \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#8c969d",
+      "glb": "/models/engine/evr-magnetic-shell-illustrative.glb",
+      "step": "/cad/engine/generated/evr-magnetic-shell-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 1418.121385554094,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 8838,
+      "model_bounds_mm": [
+        20.0,
+        20.0,
+        22.0
+      ]
+    },
+    {
+      "id": "evr-terminal-control",
+      "name": "EVR control terminal",
+      "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
+      "system": "induction",
+      "color": "#b5a278",
+      "glb": "/models/engine/evr-terminal-control.glb",
+      "step": "/cad/engine/generated/evr-terminal-control.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 48.00000000000001,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 12,
+      "model_bounds_mm": [
+        20.0,
+        0.7999999999999972,
+        3.0
+      ]
+    },
+    {
+      "id": "evr-terminal-supply",
+      "name": "EVR supply terminal",
+      "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
+      "system": "induction",
+      "color": "#b5a278",
+      "glb": "/models/engine/evr-terminal-supply.glb",
+      "step": "/cad/engine/generated/evr-terminal-supply.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+        "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 48.00000000000001,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 12,
+      "model_bounds_mm": [
+        20.0,
+        0.7999999999999972,
+        3.0
+      ]
+    },
+    {
+      "id": "evr-vent-filter-illustrative",
+      "name": "EVR filter \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#d6b857",
+      "glb": "/models/engine/evr-vent-filter-illustrative.glb",
+      "step": "/cad/engine/generated/evr-vent-filter-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 974.0665102087855,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 35552,
+      "model_bounds_mm": [
+        26.0,
+        26.0,
+        2.0
+      ]
+    },
+    {
+      "id": "evr-winding-illustrative",
+      "name": "EVR continuous winding \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "system": "induction",
+      "color": "#b77643",
+      "glb": "/models/engine/evr-winding-illustrative.glb",
+      "step": "/cad/engine/generated/evr-winding-illustrative.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "ford-evr-factory",
+        "standard-vs52",
+        "truck-egr-evtm",
+        "evr-detail-mechanism-comparison"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+        "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+        "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+      ],
+      "volume_mm3": 83.43587965015762,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 387786,
+      "model_bounds_mm": [
+        16.49998525401825,
+        9.000038155324592,
+        15.70319881235487
       ]
     }
   ],
@@ -38777,7 +39028,7 @@
       "definition": "efi-upper-intake",
       "parent": "intake-castings",
       "name": "Upper EFI intake manifold",
-      "function": "A source-compared compact casting distributes air through six open runners. Rounded shoulders, raised borders and observed wording improve exterior recognition; their dimensions and font shapes remain inferred.",
+      "function": "The upper casting distributes air through six open runners. Broad runner faces and rounded shoulders follow visible casting form; section dimensions, wall distribution and earlier lettering details remain estimates.",
       "position_cad_mm": [
         0,
         0,
@@ -41658,8 +41909,8 @@
       "id": "throttle-housing",
       "definition": "throttle-housing",
       "parent": "throttle-assembly",
-      "name": "Twin-bore throttle housing",
-      "function": "Two main air bores and separate bypass passages remain open. Estimated blind receivers mate to the IAC flange screws.",
+      "name": "Throttle body \u00b7 illustrative mechanical stops",
+      "function": "Twin-bore body with an estimated threaded idle-stop boss and a fixed WOT contact lug.",
       "position_cad_mm": [
         0,
         0,
@@ -45445,8 +45696,8 @@
       "id": "evr-body",
       "definition": "evr-body",
       "parent": "egr-vacuum-regulator",
-      "name": "EVR body and hose ports",
-      "function": "Receives manifold vacuum at the lower nipple and delivers controlled vacuum from the upper nipple to the EGR valve. Internal valve and magnetic components remain unmodeled.",
+      "name": "EVR chamber and ports",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
       "position_cad_mm": [
         -420,
         -65,
@@ -45467,8 +45718,8 @@
       "id": "evr-cap",
       "definition": "evr-cap",
       "parent": "egr-vacuum-regulator",
-      "name": "EVR upper cap",
-      "function": "Externally distinct upper cap. Hidden vent and filter construction remains unresolved.",
+      "name": "EVR vent cap and illustrative capture",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
       "position_cad_mm": [
         -420,
         -65,
@@ -45489,7 +45740,7 @@
       "id": "evr-terminal-supply",
       "definition": "evr-terminal-supply",
       "parent": "egr-vacuum-regulator",
-      "name": "EVR power terminal",
+      "name": "EVR supply terminal",
       "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
       "position_cad_mm": [
         -420,
@@ -59993,8 +60244,8 @@
       "id": "throttle-lever-estimated",
       "definition": "throttle-lever-estimated",
       "parent": "throttle-moving",
-      "name": "Throttle lever \u00b7 estimated",
-      "function": "Converts cable pull at the ball stud into shaft rotation through a modeled D-shaped hub.",
+      "name": "Throttle lever \u00b7 illustrative stop lands",
+      "function": "Preserves the keyed hub, spring hook and cable ball interfaces while adding idle and WOT contact lands.",
       "position_cad_mm": [
         0,
         0,
@@ -60704,6 +60955,182 @@
         "model": "illustrative-cable-v1",
         "kind": "compression-spring"
       }
+    },
+    {
+      "id": "throttle-idle-stop-screw-illustrative",
+      "definition": "throttle-idle-stop-screw-illustrative",
+      "parent": "throttle-assembly",
+      "name": "Throttle plate-stop screw \u00b7 illustrative",
+      "function": "A modeled helix retains the external stop screw; its tip meets the lever pad at the educational closed endpoint.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        -50,
+        40,
+        0
+      ]
+    },
+    {
+      "id": "evr-bobbin-illustrative",
+      "definition": "evr-bobbin-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR winding insulator \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        80
+      ]
+    },
+    {
+      "id": "evr-core-illustrative",
+      "definition": "evr-core-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR hollow core \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        95
+      ]
+    },
+    {
+      "id": "evr-disc-illustrative",
+      "definition": "evr-disc-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR vent disc \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        110
+      ]
+    },
+    {
+      "id": "evr-disc-spring-illustrative",
+      "definition": "evr-disc-spring-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR disc spring \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        125
+      ]
+    },
+    {
+      "id": "evr-magnetic-shell-illustrative",
+      "definition": "evr-magnetic-shell-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR magnetic shell \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        140
+      ]
+    },
+    {
+      "id": "evr-vent-filter-illustrative",
+      "definition": "evr-vent-filter-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR filter \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        155
+      ]
+    },
+    {
+      "id": "evr-winding-illustrative",
+      "definition": "evr-winding-illustrative",
+      "parent": "egr-vacuum-regulator",
+      "name": "EVR continuous winding \u00b7 illustrative",
+      "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+      "position_cad_mm": [
+        -420,
+        -65,
+        395
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        90
+      ],
+      "explode_cad_mm": [
+        -70,
+        0,
+        170
+      ]
     }
   ],
   "sources": {
@@ -61966,6 +62393,24 @@
       "path": "/reference/engine/throttle-cable-review.json",
       "sha256": "1fccbe6dc441ae3e67430fbb06ba9638d1dc4d8e7e9a7b146707e6069ebd96d4",
       "url": "https://github.com/0xZakk/truck/issues/43"
+    },
+    "upper-intake-runner-exterior-study": {
+      "title": "Observed broad runner casting faces and explicitly inferred exterior sections",
+      "path": "/reference/engine/intake-runner-exterior-review.json",
+      "sha256": "5279ae58ef3ed3b226d2c1e4b75530d03813ead216a3783de5e493a9dd8bc729",
+      "url": "https://i.ebayimg.com/images/g/-qoAAOSwDTdlcJqH/s-l1200.jpg"
+    },
+    "evr-detail-mechanism-comparison": {
+      "title": "EVR exact1994 topology and comparative illustrative mechanism",
+      "path": "/reference/engine/evr-detail-mechanism-review.json",
+      "sha256": "6a8d40703eac20d9c8eb4739bd57e52c555795d9d2858bd7de5305b0eed0aa9f",
+      "url": "https://github.com/0xZakk/truck/issues/58"
+    },
+    "throttle-stop-illustrative-study": {
+      "title": "Factory stop topology and illustrative mechanical stop study",
+      "path": "/reference/engine/throttle-stop-review.json",
+      "sha256": "4eb12c11d26bbc25b569afbedfd2a193c2817e890022bf34cde8ca6fcf972ae3",
+      "url": "https://github.com/0xZakk/truck/issues/43"
     }
   },
   "mechanism": {
@@ -61996,16 +62441,16 @@
   "omissions": [
     "Block and head: Casting contours and installed identities, Coolant jackets and deck passages, Oil galleries and their plugs, Rear camshaft plug has a replacement-envelope study; its seat and cup section remain provisional. Other core plugs and locating dowels remain unfinished., Lifter side cover, gasket and six grommet/bolt pairs are integrated as a14-part study; production contours, seal compression and bolt engagement remain unverified., Six angled bores, seats and plug wells are cut in the head. Angles, stations, female threads, casting identity and production fit remain unverified., Valve guide/seat construction and ports, Engine mounting bosses and brackets",
     "Rotating and valve train: Rod length and pin offset verification, Crank counterweights, fillets, drillings and keys, Correct thrust bearing construction, Intake/exhaust-specific springs, retainers and seals, Cam spacer, thrust plate, key and two washer/bolt pairs are integrated as a7-part study. Industrial dimensions constrain selected features; installed identities, hub/key dimensions and axial stations remain provisional., Timing tooth counts, helix and marks, Sourced cam profile and coordinated valve motion",
-    "Fuel and air: Three mounting stations, bolts and washers exist. Ford nominal bolt dimensions are supported; washer/boss geometry, stations, female threads and production fit remain provisional., Eight-part static valve/cap study already exists. Generic core construction, identity, dimensions, pressure performance and production sealing remain unresolved; motion extension is separate pending work., Both eight-part spring-lock couplings exist, including two seals, spring, cage, clip and tether per line. Dimensions, seal compression, spring joining, flexure and tank-side hoses remain unresolved., Wiring harness and terminals, Regulator vacuum line and manifold fitting are integrated with open-passage and static clearance checks; production routing and dimensions remain unverified., IAC variant, mounting hardware and restoring mechanism, Throttle linkage, return spring, bracket and plate screws, Valve and grommet are already a six-part study. Hoses, unused-outlet closure, baffle, calibration and verified installed identity remain unresolved., EVP has illustrative follower/contact internals and three fasteners; EGR has two bolts and one control hose. EVR internals, full routing/support/harness, EVP calibration and all production internal construction remain unresolved. Rewrite broad absence language without promoting the illustrative EVP to factory accuracy., Vacuum tree and hoses, Air inlet hoses and air-cleaner boundary",
-    "Exhaust: Front-manifold form correction uses manufacturer-supported rectangular entries, matching head transitions and a blended collector instead of circular mouths and a box. Installed geometry passes225 neighbor checks,35 flow checks,24 corner controls and six rim bands; whole-static verification passes4542 checks with zero overlaps above0.1mm3. Port dimensions, detailed collector/flange contours, internal walls and installed casting identity remain unverified. See reference/engine/dorman-674185-mounting-profile-reviewed.json., Rear manufacturer674-186 evidence supports rectangular entries and blended branches. The entry/head/fitting correction passes three STEP roundtrips,212 neighbor checks,36 passage checks,24 corner controls, six rim bands and isolated visual inspection. Installed verification is pending. Its box collector, mounting lands and auxiliary bosses remain unfinished. See reference/engine/dorman-674186-profile-reviewed.json., Three-part front lifting-eye/stud13/bolt14 study is integrated with provisional casting pads and head socket bosses. Installed interface and exploded-view checks pass; production stations, coolant-gallery compatibility, threaded retention and lifting capacity remain unverified. Other fourteen manifold attachment stations/shared clamps remain unfinished. A locating-dowel comparison study is integrated with installed checks; its production station, fits and1994 dimensional applicability remain unverified., EGR takeoff bore and tube fitting are represented as a provisional joint. The12.5mm insertion-envelope candidate removes the old fitting's intrusion into the collector and rear runner; installed verification and production engagement remain unresolved. Current collector-end location is unsupported by reviewed rear manufacturer photos, which show auxiliary bosses near the discharge neck. Identify the applicable takeoff and reconcile the tube route; production threads and seats remain unverified., Air-injection hardware, Outlet joints, seals and fasteners",
-    "Lubrication: Pump feet, two bolts and block mounting interfaces are represented; complete pump outlet-to-block oil-gallery connection and production mounting dimensions remain unresolved., IS-74 intermediate drive and retainer are integrated with a reconciled provisional tilted axis, cam gear, block bore, pump socket, mounting feet/bolts and pickup tube. Source shaft dimensions are retained. Coordinated shaft, retainer and gerotor motion is integrated; production mounting geometry, gear construction and retainer details remain unresolved., Analytic conjugate four/five gerotor study replaces the nonconjugate profiles, with a provisional D-flat coupling. Actual production tooth count, profile, dimensions and running clearance remain unverified; rigid-body animation is not hydraulic validation., Pickup support and fasteners, Thirteen-part filter and hollow mounting insert with block sealing land are integrated as comparison studies. Eight inlet routes and a separate central outlet are modeled, but pump/main-gallery connections and the E4TZ anti-drainback service insert remain unresolved; no additional unsourced valve is inferred., Dipstick and guide tube, Nine-part pressure-switch study exists. It is not a verified variable sender; block boss, oil passage, connector, installed identity, calibrated threshold and actual internal construction remain unresolved., The drain plug/washer and continuous molded pan gasket with 25 screw/washer pairs are integrated. V9 corrects the shallow end walls and stages display separation. Replacement-photo topology and nominal fastener data constrain the study; pan stamping, capacity, hole stations, end orientation, seal compression, timing-cover junction and production fit remain unresolved.",
-    "Cooling: Water-pump production casting, impeller profile, seal internals and bearing internals; eight-component provisional study present, The pump now seats directly on the modeled block front through a shaped gasket and four fasteners. Local sealing, blind socket, cylinder-wall retention and impeller clearance checks pass. Casting dimensions, fifth-aperture function, deeper coolant jacket, internal bearing/seal construction and radiator inlet remain unresolved., Pump pulley and four bolts have a provisional five-part fit study. A 35-occurrence fan/clutch study and connected hub nose are integrated. Installed clutch variant, fan application, blade pitch, production pulley profile and mounting geometry remain unresolved., The nine-part thermostat and outlet housing/gasket/two bolts have a coordinated head-front joint, separate local coolant pockets and blind bolt receivers. Geometry/contact/flow checks pass, but production contours, absolute dimensions, deeper jacket routing and thermostat calibration remain unresolved., Heater supply elbow and five ECT components follow the revised head outlet; the return elbow follows the pump. Both local wet connections are modeled and checked. Vehicle hoses/clamps, production routes and fittings, deeper head/block coolant circuits and sensor harness remain unfinished., Separate single-wire gauge sender is identified but unmounted pending a verified wet head jacket; ECT electrical harness and calibration remain unresolved.",
+    "Fuel and air: Three mounting stations, bolts and washers exist. Ford nominal bolt dimensions are supported; washer/boss geometry, stations, female threads and production fit remain provisional., Eight-part static valve/cap study already exists. Generic core construction, identity, dimensions, pressure performance and production sealing remain unresolved; motion extension is separate pending work., Both eight-part spring-lock couplings exist, including two seals, spring, cage, clip and tether per line. Dimensions, seal compression, spring joining, flexure and tank-side hoses remain unresolved., Wiring harness and terminals, Regulator vacuum line and manifold fitting are integrated with open-passage and static clearance checks; production routing and dimensions remain unverified., IAC two-bolt attachment and illustrative restoring spring are integrated. Captured end closure is an illustrative study; two-terminal electrical construction is integrated with separate terminals and insulating carrier. Installed variant, factory internal construction and calibration remain unverified., Cable bracket, longer studs, lever, keyed shaft, retaining pin, shield, plate screws and two illustrative spring mechanisms are modeled. The seven-part cable/socket mechanism has CAD-derived motion. Idle-stop screw/pad and WOT-lug studies preserve those interfaces; factory stops/calibration, spring construction/rates, cable dimensions and vehicle routing remain unresolved., Valve and grommet are already a six-part study. Hoses, unused-outlet closure, baffle, calibration and verified installed identity remain unresolved., EVP has illustrative follower/contact internals and three fasteners; EGR has two bolts and one control hose. EVR now has eleven comparative component models and five matched disc/spring poses. Factory internal construction, calibration, mounting bracket/hardware, full vacuum routing and harness remain unresolved., Vacuum tree and hoses, Air-cleaner housing, paper element and seal have a four-part isolated candidate. Body placement, cover screw pattern, breather connection, twin ducts/clamps and snorkel remain unfinished., Upper-intake support bracket is confirmed by exact-year service text and a below-throttle mounting pad in specimen photos. Lower anchor and relationship to current cover/manifold datums remain unresolved; no unsupported brace is added.",
+    "Exhaust: Front-manifold form correction uses manufacturer-supported rectangular entries, matching head transitions and a blended collector instead of circular mouths and a box. Installed geometry passes225 neighbor checks,35 flow checks,24 corner controls and six rim bands; whole-static verification passes4542 checks with zero overlaps above0.1mm3. Port dimensions, detailed collector/flange contours, internal walls and installed casting identity remain unverified. See reference/engine/dorman-674185-mounting-profile-reviewed.json., Rear manufacturer674-186 evidence supports rectangular entries and blended branches. The entry/head/fitting correction passes three STEP roundtrips,212 neighbor checks,36 passage checks,24 corner controls, six rim bands and isolated visual inspection. An installed correction audit passed at historical manifest90807873; its evidence must be checked against current dependencies before reuse. Its box collector, mounting lands and auxiliary bosses remain unfinished. See reference/engine/dorman-674186-profile-reviewed.json., Three-part front lifting-eye/stud13/bolt14 study is integrated with provisional casting pads and head socket bosses. Installed interface and exploded-view checks pass; production stations, coolant-gallery compatibility, threaded retention and lifting capacity remain unverified. Other fourteen manifold attachment stations/shared clamps remain unfinished. A locating-dowel comparison study is integrated with installed checks; its production station, fits and1994 dimensional applicability remain unverified., EGR takeoff bore and tube fitting are represented as a provisional joint. The12.5mm insertion-envelope candidate removes the old fitting's intrusion into the collector and rear runner; historical installed correction verification exists; current dependency validity and production engagement remain unresolved. Current collector-end location is unsupported by reviewed rear manufacturer photos, which show auxiliary bosses near the discharge neck. Identify the applicable takeoff and reconcile the tube route; production threads and seats remain unverified., Air-injection hardware, Outlet joints, seals and fasteners",
+    "Lubrication: Pump feet, two bolts and block mounting interfaces are represented; complete pump outlet-to-block oil-gallery connection and production mounting dimensions remain unresolved., IS-74 intermediate drive and retainer are integrated with a reconciled provisional tilted axis, cam gear, block bore, pump socket, mounting feet/bolts and pickup tube. Source shaft dimensions are retained. Coordinated shaft, retainer and gerotor motion is integrated; production mounting geometry, gear construction and retainer details remain unresolved., Analytic conjugate four/five gerotor study replaces the nonconjugate profiles, with a provisional D-flat coupling. Actual production tooth count, profile, dimensions and running clearance remain unverified; rigid-body animation is not hydraulic validation., Pickup support and fasteners, Thirteen-part filter and hollow mounting insert with block sealing land are integrated as comparison studies. Eight inlet routes and a separate central outlet are modeled, but pump/main-gallery connections and the E4TZ anti-drainback service insert remain unresolved; no additional unsourced valve is inferred., Dipstick blade/handle, guide tube, lower nut and upper bracket/retainer/nut are installed as an educational study; exact1994 identity, thread/seal construction, elastic insertion and oil-level calibration remain unresolved., Nine-part pressure-switch study exists. It is not a verified variable sender; block boss, oil passage, connector, installed identity, calibrated threshold and actual internal construction remain unresolved., The drain plug/washer and continuous molded pan gasket with 25 screw/washer pairs are integrated. V9 corrects the shallow end walls and stages display separation. Replacement-photo topology and nominal fastener data constrain the study; pan stamping, capacity, hole stations, end orientation, seal compression, timing-cover junction and production fit remain unresolved.",
+    "Cooling: Water-pump production casting, impeller profile and bearing internals; six-piece generic seal construction is integrated but actual seal identity, dimensions and materials remain unverified, The pump now seats directly on the modeled block front through a shaped gasket and four fasteners. Local sealing, blind socket, cylinder-wall retention and impeller clearance checks pass. Casting dimensions, fifth-aperture function, deeper coolant jacket, internal bearing/seal construction and radiator inlet remain unresolved., Pump pulley and four bolts have a provisional five-part fit study. A 35-occurrence fan/clutch study and connected hub nose are integrated. Installed clutch variant, fan application, blade pitch, production pulley profile and mounting geometry remain unresolved., The nine-part thermostat and outlet housing/gasket/two bolts have a coordinated head-front joint, separate local coolant pockets and blind bolt receivers. Geometry/contact/flow checks pass, but production contours, absolute dimensions, deeper jacket routing and thermostat calibration remain unresolved., Heater supply elbow and five ECT components follow the revised head outlet; the return elbow follows the pump. Both local wet connections are modeled and checked. Vehicle hoses/clamps, production routes and fittings, deeper head/block coolant circuits and sensor harness remain unfinished., Separate single-wire gauge sender is identified but unmounted pending a verified wet head jacket; ECT electrical harness and calibration remain unresolved.",
     "Ignition: Listed distributor construction is present. Provisional mounting/drive reconstruction does not establish production tooth geometry, gear mesh or component dimensions., Sensor package and shutter/vane exist; internal electronics, vane profile/indexing and calibrated signal timing remain unverified., Rotor, contact envelope, cap and seven terminals exist. Center brush/contact-spring construction and production electrical geometry remain unfinished., Cap, clamp and vane fasteners exist; thread geometry, dimensions and production fit remain provisional., Six spark plugs plus seven six-part secondary leads and a seven-part coil mount are represented. Cable diameter/routing, clips, boots, bracket, head bosses and hardware remain illustrative; absolute distributor clocking is unverified., Coil production dimensions/internal winding construction, capacitor and primary electrical connections; DG470 exterior study and provisional mounting bracket present, Remote module package, connector shell, heat sink and four screws exist. Harness contacts/pinout, fender attachment, installed push-start/CCD identity and electronics remain unresolved.",
     "Front and rear interfaces: Damper hub, elastomer, integrated pulley rim, key, washer and retaining bolt are present; production internal dimensions, key profile, threads and belt plane remain unverified., Verify the integrated crank pulley profile against the saved Dorman reference; a separate bolt-on pulley is not established., Gates 38022 pulley and six-part 38131 support study are present at provisional stations. Belt, engine mounting bracket, spring/damper internals and bearing internals remain missing; wheel section, hardware and mounting coordinates remain unverified., Flywheel body, 164-tooth ring gear and six bolts integrated as a replacement-dimension study; installed profile, indexing, ring fit and fastener threads remain unverified., FC65662 pilot-bearing construction study includes outer case, cage, 16 illustrative needles and seal. Two catalog dimensional tables disagree; installed fit and internal geometry remain unresolved., Manual PMGR starter:132-component construction study includes distinct S/B/M terminals, pull/hold winding envelopes, insulated contact bridge, provisional slotted-clevis/fork linkage, four separately insulated coil-end conductors, motor feed, frame grommet, ground bridge and four brush pigtails. Corrected nonpenetrating wiring passes installed face-contact and clearance checks without overlap exemptions. Saved-STEP engagement passes17 poses/945 neighbor checks. Loaded engagement, production joint geometry, bellhousing/index-plate support, mounting datums, overrunning internals, commutator/armature connections and vehicle wiring remain unresolved. Starter geometry stays stationary during normal engine animation; clutch boundary remains open., Alternator: 26-part integrated construction study and separate support. Installed 75/95/130 A variant, production dimensions, terminals and wiring remain unresolved., Power-steering pump: 46-part CII slipper-pump study integrated at provisional upper-LH station; internal relief/baffle/retention details, hydraulic passages, shaft splines and production dimensions remain unresolved. Six modeled grooves follow Ford belt data but conflict with five-groove Dorman replacement metadata., The 1994 shared PS/A/C carrier and engine attachments are integrated, along with a revised alternator position/support and pump-clearing Thermactor foot. All casting dimensions and stations remain provisional. New F4TE-10239-AC evidence indicates a common alternator/Thermactor casting; the current separate supports require replacement and source-backed hole mapping., A/C compressor:67-part FS10 study includes five double-ended pistons, ten shoes, ten PTFE ring envelopes, dimensioned comparison clutch-bearing envelope, rear manifold/two seals/bolt and two source-counted radial support cartridges. Rigid-body motion has independent teaching controls. A manifold-boss obstruction was corrected by restoring the cap drillings while retaining a blind bolt socket; complete suction/discharge network checks and sampled installed motion pass. Bearing internals, pressure-actuated reed/clutch behavior, installed identity and production dimensions remain open; radial bearing envelopes and seal glands are provisional and no hydraulic performance is claimed., Thermactor: 20-object exterior/support study integrated; pumping cartridge is an explicitly unresolved envelope, not a completed rotor/vanes assembly. Installed displacement, vanes, air-routing hardware and production dimensions remain open., Accessory hoses, wiring and shared belt routing remain unfinished. The connected pump/outlet diagnostic gives a 2854.845 mm outside-radius loop versus 2491 mm catalog effective length, with additional outlet/heater collisions. Assumed cord correction explains only 22.043 mm. Reconcile manufacturer length definitions, accessory mounting topology and source-backed datums before accepting the belt."
   ],
   "coverage": {
-    "modeled_occurrences": 1341,
-    "modeled_definitions": 733,
+    "modeled_occurrences": 1349,
+    "modeled_definitions": 741,
     "verified_complete": false,
     "note": "Counts describe the current reconstruction, not a verified complete engine bill of materials. Some parts have unconfirmed applicability."
   },

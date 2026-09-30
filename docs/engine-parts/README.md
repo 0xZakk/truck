@@ -4,7 +4,7 @@
 
 Authoritative tracking snapshot of every current modeled definition and occurrence, plus known missing work. This is not a verified Ford production BOM: unknown variants, quantities and undiscovered internals remain an explicit reconciliation task.
 
-Manifest SHA-256: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. **733 definitions / 1341 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
+Manifest SHA-256: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. **741 definitions / 1349 modeled occurrences / 70 work packages.** Repeated physical instances share a checklist entry with their modeled quantity; occurrence IDs remain in the JSON inventory.
 
 Existing geometry is credited separately from acceptance. Integrated/candidate packages enter In review for acceptance triage; identified unbuilt work enters Backlog. In review does not assert that known fit/evidence failures have passed. Rejected parts remain open. No worker is implied to be running. Done requires a recorded acceptance decision, not geometry presence.
 
@@ -37,7 +37,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [Fuel rails, return tube and retaining hardware](fuel-rail.md) | 4 | 8 | In review | [#40](https://github.com/0xZakk/truck/issues/40) |
 | [Fuel regulator vacuum hose and fitting](regulator-vacuum.md) | 2 | 2 | In review | [#41](https://github.com/0xZakk/truck/issues/41) |
 | [Fuel pressure regulator and internals](fuel-regulator.md) | 11 | 13 | In review | [#42](https://github.com/0xZakk/truck/issues/42) |
-| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 20 | 28 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
+| [Throttle body, shaft, plates and mounting hardware](throttle.md) | 21 | 29 | In review | [#43](https://github.com/0xZakk/truck/issues/43) |
 | [Throttle cable bracket](throttle-bracket.md) | 2 | 3 | In review | [#16](https://github.com/0xZakk/truck/issues/16) |
 | [Idle-air control valve and internals](iac.md) | 13 | 14 | In review | [#44](https://github.com/0xZakk/truck/issues/44) |
 | [Throttle-position sensor and internals](tps.md) | 6 | 7 | In review | [#45](https://github.com/0xZakk/truck/issues/45) |
@@ -53,7 +53,7 @@ Each package lists every modeled part and its unresolved claims, then the additi
 | [PCV valve, grommet and crankcase ventilation](pcv.md) | 6 | 6 | In review | [#55](https://github.com/0xZakk/truck/issues/55) |
 | [Oil-pressure switch and electrical connection](oil-pressure.md) | 9 | 9 | In review | [#56](https://github.com/0xZakk/truck/issues/56) |
 | [EGR valve-position sensor and internals](evp.md) | 16 | 16 | In review | [#57](https://github.com/0xZakk/truck/issues/57) |
-| [EGR vacuum regulator and internals](evr.md) | 4 | 4 | In review | [#58](https://github.com/0xZakk/truck/issues/58) |
+| [EGR vacuum regulator and internals](evr.md) | 11 | 11 | In review | [#58](https://github.com/0xZakk/truck/issues/58) |
 | [EGR exhaust tube and connections](egr-tube.md) | 4 | 4 | In review | [#59](https://github.com/0xZakk/truck/issues/59) |
 | [EGR vacuum hoses and supports](egr-vacuum.md) | 1 | 1 | In review | [#60](https://github.com/0xZakk/truck/issues/60) |
 | [EGR valve and vacuum actuator](egr-valve.md) | 14 | 15 | In review | [#61](https://github.com/0xZakk/truck/issues/61) |

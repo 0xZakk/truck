@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -73,7 +73,7 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.
 - [ ] **Upper EFI intake manifold** — `efi-upper-intake`; modeled quantity **1**; provisional.
   - Instances: `efi-upper-intake`
-  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7, upper-intake-topology-study, upper-intake-exterior-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: fsm-212bf152ff88, fsm-9e1b0b719d0e, efi-intake-drawing, system-750bd1047639, system-73d3dd2d32e7, upper-intake-topology-study, upper-intake-exterior-study, upper-intake-runner-exterior-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Upper/lower split and seven retaining studs are supported by the truck manual. Runner curves, plenum volume, port profiles, wall thickness and installed stations remain provisional.
   - Open: Fuel rail, injectors and throttle controls are provisional studies. EGR, vacuum fittings, heat shield, support bracket and head-mounting hardware remain to be reconstructed. No airflow simulation is claimed.
   - Open: Ford establishes an intake-manifold vacuum connection to the regulator spring chamber. It does not dimension the hose or identify this modeled dedicated fitting.
@@ -86,6 +86,9 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Visible border ribs, Ford oval/word and ELECTRONIC/FUEL INJECTION wording follow owner/specimen photos; all new dimensions and font outlines are inferred.
   - Open: Arial Bold and Brush Script are explicit system-font approximations, not traced factory lettering. Casting texture, lower mounting bosses and exact wall distribution remain incomplete.
   - Open: Protected flange/port/air regions and cap clearance remain those of the coordinated compact casting; this exterior detail does not establish factory dimensions.
+  - Open: Broad runner faces follow owner/Ford comparisons and a later F5TE-marked specimen; the specimen is not established as the owner1994 casting.
+  - Open: Runner widths34–56mm, depths34–46mm, R9 edges and transition stations are inferred exterior estimates. Existing circular air passages are preserved project datums, not measured factory sections.
+  - Open: No PCV receiver or unresolved intake support lower anchor is inferred from these exterior faces.
 
 ## Additional known scope and reconciliation
 

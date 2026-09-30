@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **Backlog** — Known scope not delivered as a complete modeled/installed package; applicability and quantity may need research.
 
-Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -13,9 +13,16 @@ Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
 
+## Separate candidate parts (not installed)
+
+- [ ] **Lower dirty-air tray** — `air-cleaner-lower-tray-candidate`; Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.. Source: `docs/components/air-cleaner-candidate.md`.
+- [ ] **Twin-outlet clean-air cover** — `air-cleaner-twin-outlet-cover-candidate`; Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.. Source: `docs/components/air-cleaner-candidate.md`.
+- [ ] **Pleated paper element** — `air-cleaner-paper-element-candidate`; Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.. Source: `docs/components/air-cleaner-candidate.md`.
+- [ ] **Filter perimeter seal** — `air-cleaner-perimeter-seal-candidate`; Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.. Source: `docs/components/air-cleaner-candidate.md`.
+
 ## Additional known scope and reconciliation
 
-- [ ] Air-cleaner housing, lid, filter element and retaining clips/fasteners
+- [ ] Four-part housing/lid/filter/seal candidate remains isolated; cover screws are source-supported but their count, pattern and retention are unknown.
 - [ ] Twin intake ducts/bellows, clamps and throttle connections visible in owner photos
 - [ ] Inlet snorkel and body mounts: verify routing and variant
 

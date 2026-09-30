@@ -1,0 +1,76 @@
+{
+  "status": "PASS cheap feasibility; full-neighbor/motion/export/render gates NOT RUN",
+  "input_sha256_before": {
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "scripts/check-intake-runner-exterior-candidate.py": "8503c5c46fda3d6e7cc010eb0c63520f1e7cd71a93fc9014ba67424de6e4b9c9",
+    "cad/engine/intake_runner_exterior_candidate.py": "f6f4679fdbde608cc66851a2b3e9d282a0e8e7c4c9ae0d04e1ebe0af2c7586f2",
+    "cad/engine/upper_intake_clearance_candidate.py": "18fb70f90ab97a441be204f494b8d23585b6fd061e59c731b785ca75a34b9add",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "reference/engine/intake-runner-exterior-review.json": "5279ae58ef3ed3b226d2c1e4b75530d03813ead216a3783de5e493a9dd8bc729"
+  },
+  "input_sha256_after": {
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "scripts/check-intake-runner-exterior-candidate.py": "8503c5c46fda3d6e7cc010eb0c63520f1e7cd71a93fc9014ba67424de6e4b9c9",
+    "cad/engine/intake_runner_exterior_candidate.py": "f6f4679fdbde608cc66851a2b3e9d282a0e8e7c4c9ae0d04e1ebe0af2c7586f2",
+    "cad/engine/upper_intake_clearance_candidate.py": "18fb70f90ab97a441be204f494b8d23585b6fd061e59c731b785ca75a34b9add",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "reference/engine/intake-runner-exterior-review.json": "5279ae58ef3ed3b226d2c1e4b75530d03813ead216a3783de5e493a9dd8bc729"
+  },
+  "source_manifest_snapshot_sha256": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+  "intake_pose_mm": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0
+    ]
+  ],
+  "valid": true,
+  "solid_count": 1,
+  "exterior_lofts": [
+    {
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "added_material_mm3": 1025652.7199268092,
+  "protected_difference_mm3": {
+    "lower_flange_seven_studs": 0,
+    "throttle_flange_ports": 0,
+    "EGR_flange_port": 0,
+    "regulator_vacuum_seat_R10": 0,
+    "existing_plenum_wall": 0
+  },
+  "new_air_blockage_mm3": 0,
+  "cap_withdrawal_overlap_mm3": 0.0,
+  "step_sha256": "95fe3ffef2815fcc5e9812736cf1019e87d249c90b6bd6dce210a4ddc25ea04f",
+  "limits": [
+    "Cheap feasibility only; no source-to-render comparison, GLB, full neighbors or new motion audit yet.",
+    "No PCV receiver datum is accepted; protected original plenum wall, no arbitrary port.",
+    "All cross-section and wall assumptions inferred."
+  ]
+}

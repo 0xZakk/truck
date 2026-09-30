@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "readiness": "In progress; browser acceptance pending",
+  "engine_complete": false,
+  "runner": {
+    "manifest_sha256": "2df0e1b64ae048a5f4c57d518bf9104936d7a1bcba8c87dd89850b54921f41c4",
+    "installed_report": "inventory/engine/intake-runner-exterior-installed-validation.json",
+    "installed_report_sha256": "7273ecc06729b22ca7340393e5615f2016020421961fb40592fc9c94d386e4b9",
+    "actual_stage_render_reviewed": true,
+    "scope": "Broader rounded exterior faces only; factory dimensions remain inferred. Saved installation hashes revalidated after interruption."
+  },
+  "evr": {
+    "scope": "Comparative eleven-part mechanism; factory internal construction and calibration unresolved",
+    "render_reviewed": "cad/engine/generated/evr-mechanism-candidate/candidate-review.png",
+    "installation": "PASS installed after final exporter refresh; browser pending",
+    "historical_proof": "cad/engine/generated/evr-before-stop-hooks-20260930/sha256.json",
+    "installed_report": "inventory/engine/evr-mechanism-installed-validation.json",
+    "installed_report_sha256": "4d18996624d67005a41ad2560a695cab9992e6041c0de56eaf0411309d13978d",
+    "promotion_controls": "Post-apply stage-control attempt rejected stale pre-install STEP hashes; fresh separate control stage running. No geometry gate bypass."
+  },
+  "stops": {
+    "scope": "Source-supported idle-stop topology; illustrative WOT geometry and endpoint calibration",
+    "candidate_render_reviewed": true,
+    "installation": "PASS installed throttle stops; browser pending",
+    "installed_report": "inventory/engine/throttle-stop-installed-validation.json",
+    "installed_report_sha256": "46bb0f2aee51c3be430d894c7bf4ee6ea1c6b69867e434a696f32bc745bcdf3c",
+    "current_context_exact_pairs": 141,
+    "inherited_exact_pairs": 843,
+    "collisions": []
+  },
+  "browser": {
+    "status": "NOT RUN for this batch",
+    "reason": "cua.getTab for the existing localhost engine URL was rejected by browser URL security policy. No alternate surface or workaround attempted. CAD renders and Node tests are not browser acceptance."
+  },
+  "combined_step": "RUNNING",
+  "whole_static": "Queued after combined STEP",
+  "limits": [
+    "Previous checkpoint reports retain their historical input hashes and do not certify this batch.",
+    "No Done transition or factory-exact claim."
+  ],
+  "manifest_sha256": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+  "definitions": 741,
+  "occurrences": 1349,
+  "cli_issue_updates": [
+    36,
+    43,
+    58,
+    80
+  ]
+}

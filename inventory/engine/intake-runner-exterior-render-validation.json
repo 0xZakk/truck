@@ -1,0 +1,43 @@
+{
+  "status": "PASS actual GLB export comparison only; see feasibility status",
+  "feasibility_status": "PASS cheap feasibility; full-neighbor/motion/export/render gates NOT RUN",
+  "exports": [
+    {
+      "id": "baseline",
+      "glb_sha256": "063b5547dc956617385749dd76e4e9ae4be04c3b0e9a783b7e6e87f9eb129499",
+      "watertight": true,
+      "bounds_error_mm": 1.348985898630417e-05,
+      "zero_area_faces_removed": 1,
+      "triangles": 262848
+    },
+    {
+      "id": "runner-exterior",
+      "glb_sha256": "47e8843563188c70ec6b889fa82209cebe67384cc62a17b50c0b43fcb15236af",
+      "watertight": true,
+      "bounds_error_mm": 1.348985898630417e-05,
+      "zero_area_faces_removed": 0,
+      "triangles": 435878
+    }
+  ],
+  "tessellation": {
+    "linear_deflection_mm": 0.07,
+    "angular_deflection_rad": 0.08
+  },
+  "input_sha256_before": {
+    "inventory/engine/intake-runner-exterior-candidate-validation.json": "5233381bfdbe7deff11f613053bf119e4defa8746d68cb3377aa2dce192155b3",
+    "cad/engine/generated/intake-runner-exterior-study/baseline.step": "35b4a463f19bd28e47a6a5350ee39b3441364073ad6eb854e8f1cc810f248c1a",
+    "cad/engine/generated/intake-runner-exterior-study/runner-exterior.step": "95fe3ffef2815fcc5e9812736cf1019e87d249c90b6bd6dce210a4ddc25ea04f",
+    "scripts/check-intake-exterior-candidate.py": "47c7cbea5ea79dc17a0f9aed3d73dfa281a3189591d3f49fde4a92bb0ab0a012",
+    "scripts/render-intake-runner-exterior-candidate.py": "3d4b3c19ea58276ba93bd11268e1b39efbf20906a3452c9db8375ac593027027"
+  },
+  "input_sha256_after": {
+    "inventory/engine/intake-runner-exterior-candidate-validation.json": "5233381bfdbe7deff11f613053bf119e4defa8746d68cb3377aa2dce192155b3",
+    "cad/engine/generated/intake-runner-exterior-study/baseline.step": "35b4a463f19bd28e47a6a5350ee39b3441364073ad6eb854e8f1cc810f248c1a",
+    "cad/engine/generated/intake-runner-exterior-study/runner-exterior.step": "95fe3ffef2815fcc5e9812736cf1019e87d249c90b6bd6dce210a4ddc25ea04f",
+    "scripts/check-intake-exterior-candidate.py": "47c7cbea5ea79dc17a0f9aed3d73dfa281a3189591d3f49fde4a92bb0ab0a012",
+    "scripts/render-intake-runner-exterior-candidate.py": "3d4b3c19ea58276ba93bd11268e1b39efbf20906a3452c9db8375ac593027027"
+  },
+  "render_png_sha256": "3a6cac794f591587e1492d73c0705e89fcb84ecfd6e4b783d9e192305242e948",
+  "render_svg_sha256": "e5865d85e430e7eca2497d448674c39c38d608feec18938da95eee4f5a2ffd49",
+  "limits": "Render/export only. Full neighbor/motion/interface acceptance remains separate; later specimen is not exact1994 identity."
+}

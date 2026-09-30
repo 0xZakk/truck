@@ -1,0 +1,1487 @@
+{
+  "status": "INSTALLED illustrativeEVR; browser/factory acceptance pending",
+  "candidate_evidence": {
+    "candidate_report_sha256": "d81c0ad684949eb4e492d69269c2969ec6c38f49b4386bb8004e139d64bd48ec",
+    "source_review_sha256": "6a8d40703eac20d9c8eb4739bd57e52c555795d9d2858bd7de5305b0eed0aa9f"
+  },
+  "changed_definitions": [
+    "evr-bobbin-illustrative",
+    "evr-body",
+    "evr-cap",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-terminal-control",
+    "evr-terminal-supply",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "geometry_definitions": [
+    "evr-bobbin-illustrative",
+    "evr-body",
+    "evr-cap",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-terminal-control",
+    "evr-terminal-supply",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "changed_occurrences": [
+    "evr-bobbin-illustrative",
+    "evr-body",
+    "evr-cap",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-terminal-control",
+    "evr-terminal-supply",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "new_definitions": [
+    "evr-bobbin-illustrative",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "new_occurrences": [
+    "evr-bobbin-illustrative",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "neighbor_ids": [
+    "egr-control-vacuum-hose",
+    "egr-exhaust-tube",
+    "egr-tube-heat-sleeve"
+  ],
+  "guard_occurrences": [
+    "egr-control-vacuum-hose",
+    "egr-exhaust-tube",
+    "egr-tube-heat-sleeve",
+    "evr-bobbin-illustrative",
+    "evr-body",
+    "evr-cap",
+    "evr-core-illustrative",
+    "evr-disc-illustrative",
+    "evr-disc-spring-illustrative",
+    "evr-magnetic-shell-illustrative",
+    "evr-terminal-control",
+    "evr-terminal-supply",
+    "evr-vent-filter-illustrative",
+    "evr-winding-illustrative"
+  ],
+  "before_manifest_sha256": "eeafadb96e186266dab83ec10b96c54fc73197d75dc615e2688f566cdffc2f69",
+  "staged_manifest_sha256": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+  "baseline_snapshot_sha256": "eeafadb96e186266dab83ec10b96c54fc73197d75dc615e2688f566cdffc2f69",
+  "input_scope": {
+    "definitions": {
+      "egr-control-vacuum-hose": {
+        "id": "egr-control-vacuum-hose",
+        "name": "EGR controlled-vacuum hose",
+        "function": "Carries the regulator output vacuum from its upper nipple to the EGR diaphragm chamber. Shape and reducing ends are provisional.",
+        "system": "induction",
+        "color": "#3d4140",
+        "glb": "/models/engine/egr-control-vacuum-hose.glb",
+        "step": "/cad/engine/generated/egr-control-vacuum-hose.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "truck-egr-evtm",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Routing, hose material, wall thickness and diameters are provisional; this smooth reducing envelope connects the current provisional nipples.",
+          "No production hose identity, molded end geometry, hose compression or vacuum-flow simulation is established. Source-vacuum plumbing and retainers remain unfinished.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 20181.515211780585,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 16166,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          187.80120387431754,
+          157.61420058602343,
+          164.0000001999976
+        ]
+      },
+      "egr-exhaust-tube": {
+        "id": "egr-exhaust-tube",
+        "name": "EGR exhaust tube",
+        "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+        "system": "induction",
+        "color": "#989f9e",
+        "glb": "/models/engine/egr-exhaust-tube.glb",
+        "step": "/cad/engine/generated/egr-exhaust-tube.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "dorman-598-105",
+          "efi-intake-drawing",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+          "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+          "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 35009.289166499366,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 13196,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          180.26609574291365,
+          225.3980000999828,
+          248.39800020000004
+        ]
+      },
+      "egr-tube-heat-sleeve": {
+        "id": "egr-tube-heat-sleeve",
+        "name": "EGR tube protective sleeve",
+        "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
+        "system": "induction",
+        "color": "#363835",
+        "glb": "/models/engine/egr-tube-heat-sleeve.glb",
+        "step": "/cad/engine/generated/egr-tube-heat-sleeve.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "dorman-598-105",
+          "efi-intake-drawing",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+          "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+          "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 71065.92834791765,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 8502,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          131.74546422176536,
+          216.3017564892739,
+          229.85871685133947
+        ]
+      },
+      "evr-body": {
+        "id": "evr-body",
+        "name": "EVR chamber and ports",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#343936",
+        "glb": "/models/engine/evr-body.glb",
+        "step": "/cad/engine/generated/evr-body.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 32159.65141583309,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 71912,
+        "model_bounds_mm": [
+          49.0,
+          68.0,
+          56.0
+        ]
+      },
+      "evr-cap": {
+        "id": "evr-cap",
+        "name": "EVR vent cap and illustrative capture",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#343936",
+        "glb": "/models/engine/evr-cap.glb",
+        "step": "/cad/engine/generated/evr-cap.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 7658.443754549451,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 4626,
+        "model_bounds_mm": [
+          37.099999999999994,
+          37.099999999999994,
+          17.0
+        ]
+      },
+      "evr-terminal-control": {
+        "id": "evr-terminal-control",
+        "name": "EVR control terminal",
+        "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
+        "system": "induction",
+        "color": "#b5a278",
+        "glb": "/models/engine/evr-terminal-control.glb",
+        "step": "/cad/engine/generated/evr-terminal-control.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 48.00000000000001,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 12,
+        "model_bounds_mm": [
+          20.0,
+          0.7999999999999972,
+          3.0
+        ]
+      },
+      "evr-terminal-supply": {
+        "id": "evr-terminal-supply",
+        "name": "EVR supply terminal",
+        "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
+        "system": "induction",
+        "color": "#b5a278",
+        "glb": "/models/engine/evr-terminal-supply.glb",
+        "step": "/cad/engine/generated/evr-terminal-supply.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 48.00000000000001,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 12,
+        "model_bounds_mm": [
+          20.0,
+          0.7999999999999972,
+          3.0
+        ]
+      }
+    },
+    "occurrences": {
+      "egr-control-vacuum-hose": {
+        "id": "egr-control-vacuum-hose",
+        "definition": "egr-control-vacuum-hose",
+        "parent": "egr-vacuum-lines",
+        "name": "EGR controlled-vacuum hose",
+        "function": "Carries the regulator output vacuum from its upper nipple to the EGR diaphragm chamber. Shape and reducing ends are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -100,
+          70,
+          0
+        ]
+      },
+      "egr-exhaust-tube": {
+        "id": "egr-exhaust-tube",
+        "definition": "egr-exhaust-tube",
+        "parent": "egr-exhaust-line",
+        "name": "EGR exhaust tube",
+        "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -70,
+          -50,
+          0
+        ]
+      },
+      "egr-tube-heat-sleeve": {
+        "id": "egr-tube-heat-sleeve",
+        "definition": "egr-tube-heat-sleeve",
+        "parent": "egr-exhaust-line",
+        "name": "EGR tube protective sleeve",
+        "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -100,
+          -75,
+          -20
+        ]
+      },
+      "evr-body": {
+        "id": "evr-body",
+        "definition": "evr-body",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR chamber and ports",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          0
+        ]
+      },
+      "evr-cap": {
+        "id": "evr-cap",
+        "definition": "evr-cap",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR vent cap and illustrative capture",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          20
+        ]
+      },
+      "evr-terminal-control": {
+        "id": "evr-terminal-control",
+        "definition": "evr-terminal-control",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR control terminal",
+        "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          60
+        ]
+      },
+      "evr-terminal-supply": {
+        "id": "evr-terminal-supply",
+        "definition": "evr-terminal-supply",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR supply terminal",
+        "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          40
+        ]
+      }
+    },
+    "assemblies": {
+      "egr": {
+        "id": "egr",
+        "name": "Exhaust gas recirculation",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-exhaust-line": {
+        "id": "egr-exhaust-line",
+        "name": "EGR exhaust tube & connections",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-vacuum-lines": {
+        "id": "egr-vacuum-lines",
+        "name": "EGR vacuum hoses",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-vacuum-regulator": {
+        "id": "egr-vacuum-regulator",
+        "name": "EGR vacuum regulator",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engine": {
+        "id": "engine",
+        "name": "Ford 4.9L engine",
+        "parent": null,
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "induction": {
+        "id": "induction",
+        "name": "EFI intake",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "installed_scope": {
+    "definitions": {
+      "egr-control-vacuum-hose": {
+        "id": "egr-control-vacuum-hose",
+        "name": "EGR controlled-vacuum hose",
+        "function": "Carries the regulator output vacuum from its upper nipple to the EGR diaphragm chamber. Shape and reducing ends are provisional.",
+        "system": "induction",
+        "color": "#3d4140",
+        "glb": "/models/engine/egr-control-vacuum-hose.glb",
+        "step": "/cad/engine/generated/egr-control-vacuum-hose.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "truck-egr-evtm",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Routing, hose material, wall thickness and diameters are provisional; this smooth reducing envelope connects the current provisional nipples.",
+          "No production hose identity, molded end geometry, hose compression or vacuum-flow simulation is established. Source-vacuum plumbing and retainers remain unfinished.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 20181.515211780585,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 16166,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          187.80120387431754,
+          157.61420058602343,
+          164.0000001999976
+        ]
+      },
+      "egr-exhaust-tube": {
+        "id": "egr-exhaust-tube",
+        "name": "EGR exhaust tube",
+        "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+        "system": "induction",
+        "color": "#989f9e",
+        "glb": "/models/engine/egr-exhaust-tube.glb",
+        "step": "/cad/engine/generated/egr-exhaust-tube.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "dorman-598-105",
+          "efi-intake-drawing",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+          "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+          "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 35009.289166499366,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 13196,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          180.26609574291365,
+          225.3980000999828,
+          248.39800020000004
+        ]
+      },
+      "egr-tube-heat-sleeve": {
+        "id": "egr-tube-heat-sleeve",
+        "name": "EGR tube protective sleeve",
+        "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
+        "system": "induction",
+        "color": "#363835",
+        "glb": "/models/engine/egr-tube-heat-sleeve.glb",
+        "step": "/cad/engine/generated/egr-tube-heat-sleeve.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "dorman-598-105",
+          "efi-intake-drawing",
+          "upper-intake-topology-study"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Tube OD is from the applicable replacement catalog; wall thickness, bend coordinates and fitting dimensions are provisional.",
+          "The published 17.9 inch length has no measurement definition and is not treated as a verified developed centerline length.",
+          "Protective sleeve construction, thread forms and sealing seats remain unverified. Route is a candidate, not installed factory routing.",
+          "Educational source-compared interface study, not factory dimensions. Plenum size and cap/throttle/EGR stations are inferred.",
+          "Cap and matching neck use assumed4.5mm pitch; production thread dimensions and formed-versus-insert neck construction remain unknown.",
+          "Nominal seal and hose contact do not establish compression, leak tightness, retention strength or production tolerance.",
+          "Casting ribs, bosses and detailed wall distribution remain incomplete."
+        ],
+        "volume_mm3": 71065.92834791765,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 8502,
+        "intake_cap_coordination_contract": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+        "model_bounds_mm": [
+          131.74546422176536,
+          216.3017564892739,
+          229.85871685133947
+        ]
+      },
+      "evr-bobbin-illustrative": {
+        "id": "evr-bobbin-illustrative",
+        "name": "EVR winding insulator \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#ceb989",
+        "glb": "/models/engine/evr-bobbin-illustrative.glb",
+        "step": "/cad/engine/generated/evr-bobbin-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 1263.4997951473724,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 118484,
+        "model_bounds_mm": [
+          18.6,
+          18.6,
+          20.0
+        ]
+      },
+      "evr-body": {
+        "id": "evr-body",
+        "name": "EVR chamber and ports",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#343936",
+        "glb": "/models/engine/evr-body.glb",
+        "step": "/cad/engine/generated/evr-body.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 32159.65141583309,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 71912,
+        "model_bounds_mm": [
+          49.0,
+          68.0,
+          56.0
+        ]
+      },
+      "evr-cap": {
+        "id": "evr-cap",
+        "name": "EVR vent cap and illustrative capture",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#343936",
+        "glb": "/models/engine/evr-cap.glb",
+        "step": "/cad/engine/generated/evr-cap.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 7658.443754549451,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 4626,
+        "model_bounds_mm": [
+          37.099999999999994,
+          37.099999999999994,
+          17.0
+        ]
+      },
+      "evr-core-illustrative": {
+        "id": "evr-core-illustrative",
+        "name": "EVR hollow core \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#627c94",
+        "glb": "/models/engine/evr-core-illustrative.glb",
+        "step": "/cad/engine/generated/evr-core-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 530.1437602932778,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1008,
+        "model_bounds_mm": [
+          6.0,
+          6.0,
+          25.0
+        ]
+      },
+      "evr-disc-illustrative": {
+        "id": "evr-disc-illustrative",
+        "name": "EVR vent disc \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#b6bcc2",
+        "glb": "/models/engine/evr-disc-illustrative.glb",
+        "step": "/cad/engine/generated/evr-disc-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 66.52322443976384,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 500,
+        "model_bounds_mm": [
+          11.0,
+          11.0,
+          0.6999999999999993
+        ]
+      },
+      "evr-disc-spring-illustrative": {
+        "id": "evr-disc-spring-illustrative",
+        "name": "EVR disc spring \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#9c9ca1",
+        "glb": "/models/engine/evr-disc-spring-illustrative.glb",
+        "step": "/cad/engine/generated/evr-disc-spring-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 81.88873782711184,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 192542,
+        "model_bounds_mm": [
+          7.0,
+          7.0,
+          18.5
+        ]
+      },
+      "evr-magnetic-shell-illustrative": {
+        "id": "evr-magnetic-shell-illustrative",
+        "name": "EVR magnetic shell \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#8c969d",
+        "glb": "/models/engine/evr-magnetic-shell-illustrative.glb",
+        "step": "/cad/engine/generated/evr-magnetic-shell-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 1418.121385554094,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 8838,
+        "model_bounds_mm": [
+          20.0,
+          20.0,
+          22.0
+        ]
+      },
+      "evr-terminal-control": {
+        "id": "evr-terminal-control",
+        "name": "EVR control terminal",
+        "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
+        "system": "induction",
+        "color": "#b5a278",
+        "glb": "/models/engine/evr-terminal-control.glb",
+        "step": "/cad/engine/generated/evr-terminal-control.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 48.00000000000001,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 12,
+        "model_bounds_mm": [
+          20.0,
+          0.7999999999999972,
+          3.0
+        ]
+      },
+      "evr-terminal-supply": {
+        "id": "evr-terminal-supply",
+        "name": "EVR supply terminal",
+        "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
+        "system": "induction",
+        "color": "#b5a278",
+        "glb": "/models/engine/evr-terminal-supply.glb",
+        "step": "/cad/engine/generated/evr-terminal-supply.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.",
+          "Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.",
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 48.00000000000001,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 12,
+        "model_bounds_mm": [
+          20.0,
+          0.7999999999999972,
+          3.0
+        ]
+      },
+      "evr-vent-filter-illustrative": {
+        "id": "evr-vent-filter-illustrative",
+        "name": "EVR filter \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#d6b857",
+        "glb": "/models/engine/evr-vent-filter-illustrative.glb",
+        "step": "/cad/engine/generated/evr-vent-filter-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 974.0665102087855,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 35552,
+        "model_bounds_mm": [
+          26.0,
+          26.0,
+          2.0
+        ]
+      },
+      "evr-winding-illustrative": {
+        "id": "evr-winding-illustrative",
+        "name": "EVR continuous winding \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "system": "induction",
+        "color": "#b77643",
+        "glb": "/models/engine/evr-winding-illustrative.glb",
+        "step": "/cad/engine/generated/evr-winding-illustrative.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-evr-factory",
+          "standard-vs52",
+          "truck-egr-evtm",
+          "evr-detail-mechanism-comparison"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.",
+          "All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.",
+          "Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished."
+        ],
+        "volume_mm3": 83.43587965015762,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 387786,
+        "model_bounds_mm": [
+          16.49998525401825,
+          9.000038155324592,
+          15.70319881235487
+        ]
+      }
+    },
+    "occurrences": {
+      "egr-control-vacuum-hose": {
+        "id": "egr-control-vacuum-hose",
+        "definition": "egr-control-vacuum-hose",
+        "parent": "egr-vacuum-lines",
+        "name": "EGR controlled-vacuum hose",
+        "function": "Carries the regulator output vacuum from its upper nipple to the EGR diaphragm chamber. Shape and reducing ends are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -100,
+          70,
+          0
+        ]
+      },
+      "egr-exhaust-tube": {
+        "id": "egr-exhaust-tube",
+        "definition": "egr-exhaust-tube",
+        "parent": "egr-exhaust-line",
+        "name": "EGR exhaust tube",
+        "function": "Carries exhaust from the rear manifold to the valve inlet. End construction and routing remain a fit study.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -70,
+          -50,
+          0
+        ]
+      },
+      "egr-tube-heat-sleeve": {
+        "id": "egr-tube-heat-sleeve",
+        "definition": "egr-tube-heat-sleeve",
+        "parent": "egr-exhaust-line",
+        "name": "EGR tube protective sleeve",
+        "function": "Protective woven covering visible on the replacement tube. This smooth sleeve omits unverified braid construction and thermal properties.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          -100,
+          -75,
+          -20
+        ]
+      },
+      "evr-bobbin-illustrative": {
+        "id": "evr-bobbin-illustrative",
+        "definition": "evr-bobbin-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR winding insulator \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          80
+        ]
+      },
+      "evr-body": {
+        "id": "evr-body",
+        "definition": "evr-body",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR chamber and ports",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          0
+        ]
+      },
+      "evr-cap": {
+        "id": "evr-cap",
+        "definition": "evr-cap",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR vent cap and illustrative capture",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          20
+        ]
+      },
+      "evr-core-illustrative": {
+        "id": "evr-core-illustrative",
+        "definition": "evr-core-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR hollow core \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          95
+        ]
+      },
+      "evr-disc-illustrative": {
+        "id": "evr-disc-illustrative",
+        "definition": "evr-disc-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR vent disc \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          110
+        ]
+      },
+      "evr-disc-spring-illustrative": {
+        "id": "evr-disc-spring-illustrative",
+        "definition": "evr-disc-spring-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR disc spring \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          125
+        ]
+      },
+      "evr-magnetic-shell-illustrative": {
+        "id": "evr-magnetic-shell-illustrative",
+        "definition": "evr-magnetic-shell-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR magnetic shell \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          140
+        ]
+      },
+      "evr-terminal-control": {
+        "id": "evr-terminal-control",
+        "definition": "evr-terminal-control",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR control terminal",
+        "function": "C180 connects to the PCM control on circuit 360, brown/pink, PCM pin 33. Physical cavity assignment remains unverified.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          60
+        ]
+      },
+      "evr-terminal-supply": {
+        "id": "evr-terminal-supply",
+        "definition": "evr-terminal-supply",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR supply terminal",
+        "function": "C180 receives switched EEC power on circuit 361, red. Physical cavity assignment and internal strap routing are unverified.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          40
+        ]
+      },
+      "evr-vent-filter-illustrative": {
+        "id": "evr-vent-filter-illustrative",
+        "definition": "evr-vent-filter-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR filter \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          155
+        ]
+      },
+      "evr-winding-illustrative": {
+        "id": "evr-winding-illustrative",
+        "definition": "evr-winding-illustrative",
+        "parent": "egr-vacuum-regulator",
+        "name": "EVR continuous winding \u00b7 illustrative",
+        "function": "Illustrative positive-gain EVR component; see source-bound mechanism lesson. Geometry and calibration are not production measurements.",
+        "position_cad_mm": [
+          -420,
+          -65,
+          395
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          90
+        ],
+        "explode_cad_mm": [
+          -70,
+          0,
+          170
+        ]
+      }
+    },
+    "assemblies": {
+      "egr": {
+        "id": "egr",
+        "name": "Exhaust gas recirculation",
+        "parent": "induction",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-exhaust-line": {
+        "id": "egr-exhaust-line",
+        "name": "EGR exhaust tube & connections",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-vacuum-lines": {
+        "id": "egr-vacuum-lines",
+        "name": "EGR vacuum hoses",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "egr-vacuum-regulator": {
+        "id": "egr-vacuum-regulator",
+        "name": "EGR vacuum regulator",
+        "parent": "egr",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "engine": {
+        "id": "engine",
+        "name": "Ford 4.9L engine",
+        "parent": null,
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "induction": {
+        "id": "induction",
+        "name": "EFI intake",
+        "parent": "engine",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "input_sha256": {
+    "scripts/install-evr-mechanism.py": "16fab4a96fa7769d2392de8e947e78a07ff532a50332cb71d38e3f59ab31d27d",
+    "scripts/check-evr-mechanism-installed.py": "236abc8783643689adcba11963539a20965d5d3287ac10ce128b968b19bd6130",
+    "scripts/prepare-evr-motion.py": "f660a6c8c4d74611ddfe7d56b68c6153f004a10582f9b8a18c74a7fdfebf91dc",
+    "cad/engine/evr_mechanism_integration.py": "4e98763e736d0dbf4bca2a43bbd0b5a9bc5f4e4a90c12a041c54fa9f84b31e1a",
+    "cad/engine/full_engine.py": "da52e8f3669ec8f5ed1d57e1805cfd5d78ceb3e238e4ad10be61c1f22c2690b5",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/evr-mechanism-learning.json": "8e616f92b7fd8acb98220902117eaf46a103f440c0d06547f52287b19de5a792",
+    "viewer/evr-discrete-motion.js": "1e0395c919487f1dfcf2dd2de275a57375dfa58df281fee296b42554fc564256"
+  },
+  "neighbor_artifact_sha256": {
+    "cad/engine/generated/egr-control-vacuum-hose.step": "250baa7d2f26700aba296c883ddb4a5712b1a3657ca2512e939a5e5338315df1",
+    "models/engine/egr-control-vacuum-hose.glb": "e8012fb8347cff05403e9f2f74e509517553ae61ee3bb6563a76a59eabb09872",
+    "cad/engine/generated/egr-exhaust-tube.step": "5e8b92d1cc3b8ba635f8406f2d849b7098e086a38050f9cdf3245ef92cd2720d",
+    "models/engine/egr-exhaust-tube.glb": "b35b30e5ae5834d391e8258b795cb0ec7053ed9d38a90e771683fff6c97e95b9",
+    "cad/engine/generated/egr-tube-heat-sleeve.step": "de598c5266fc0034d962415645c9ac2ec48e5c683cd109b19f8842c70339c0c5",
+    "models/engine/egr-tube-heat-sleeve.glb": "13f159af6226d736ece278947f49337a65a02fe1a73af7cfad83c82c52232e4c"
+  },
+  "canonical_modified": true,
+  "original_artifact_sha256": {
+    "cad/engine/generated/evr-body.step": "ed352615807109597f621cd54cb723da0d137de612b4dca29087b563e7319d49",
+    "cad/engine/generated/evr-cap.step": "0e83d5fdd13f85830ebfe4ce5176496f24efd7dbf272abf411e01a23813cd945",
+    "cad/engine/generated/evr-terminal-control.step": "0e542de3bed00335242f719538b36863afbb56d29b42f39c3715852e3014d757",
+    "cad/engine/generated/evr-terminal-supply.step": "effc736e86b1732d0f8d7af045bfb229fb876e3ef7ecb85d598db62111d429e7"
+  },
+  "staged_artifact_sha256": {
+    "step/evr-terminal-control.step": "c07605a0074ee4cf12bc573d5309e0f31a1e021b97c745e9e7bb0b545ea2da59",
+    "step/evr-bobbin-illustrative.step": "9a770d558e6fd1c50a9796a283ba2a47f65d76614b721259d649fd6be7799941",
+    "step/evr-body.step": "fbda041d38e0b55945a6a9f82d6ecb4beb9c1a305372d2e09c3e3647a06dc22e",
+    "step/evr-vent-filter-illustrative.step": "229e48d865d0f3b70bae12c6e7c1c3b45f6a97cfc9a1ba76159b008d8c742304",
+    "step/evr-magnetic-shell-illustrative.step": "a27dae79a051286cd8c9611dd882b8e3ed7d98210c939e450144b4f2137d61ee",
+    "step/evr-disc-spring-illustrative.step": "365b8251797a182a9285edd7b82ea93dcafdfab6feea47aab77377d016ae44c2",
+    "step/evr-winding-illustrative.step": "cb35d1e5be94abd831d51784fc4c1b644ecba284a240c621c91acc14f517276f",
+    "step/evr-cap.step": "5699c1229c3509bdf0371ffefc8f62053d3370b61e77d28bdd17468a8eed41fe",
+    "step/evr-core-illustrative.step": "dafb4246ed4c31383d66c4fc0f2d1c47a6244d7f0e64ae9df9e770a6edb3105b",
+    "step/evr-disc-illustrative.step": "fc23f38a5ed9f037daf8ec1868e93856b4f7fa0dd502bf12d4d2f892cb6d62c2",
+    "step/evr-terminal-supply.step": "69fae51533c2311227394fa4a9fe3d0fa1684182ff8a128952afd60c7c6acbe0",
+    "models/evr-disc-illustrative.glb": "c110fee779e6a45e68c49ce753c4c895d1262aef15c1f4d7cc1f646844a2e56d",
+    "models/evr-terminal-supply.glb": "e02eb653e27b4ebbb39288a00fe46473fa636b1e326be4ace3f23a3549112982",
+    "models/evr-vent-filter-illustrative.glb": "45cd173f80947eadf1808ea74dda77cb458a98e0caccbc1bfe6d16fa24e885c2",
+    "models/evr-disc-spring-illustrative.glb": "bebafa3f587620a8ed67608450a9b1f0326819072bce88c6d9424a7cee451078",
+    "models/evr-body.glb": "96e4b32170fd9442eab67e69f85bee7cb75395b378d9dc40448fe7cadc4a396c",
+    "models/evr-cap.glb": "ec5ba970e4b074735b3b92105410957b28123c83cb401979c09438c04ceaeb92",
+    "models/evr-terminal-control.glb": "00a7ed151f5a4b67238ed02a26a0fbdd33601199b2af80cb28ae2da2a7035bf5",
+    "models/evr-winding-illustrative.glb": "8db871ee464ff7008362068ebed848bff39b3611cf486f08f5faacc50faf0a19",
+    "models/evr-core-illustrative.glb": "309649251ac664ce8973adfd07a40f326f97fc911b015d737cb20d3bda93f7a7",
+    "models/evr-magnetic-shell-illustrative.glb": "600dc3e8f74cd1166a7d622aac049cb6f5a987c5572748eb9a15da76ba775913",
+    "models/evr-bobbin-illustrative.glb": "9d494e801d16313947589f9936c1b259d86bacc4444cd47659711da49ebcb374",
+    "motion/spring-4.glb": "b8e35340668206bc5e71159cb5a2e055d6e4da1285b3342c9051e369a26adb7c",
+    "motion/spring-0.step": "2aa44f657271c155267767b99b80ca649d06bcf47c295282f07faeeb99ddfe9a",
+    "motion/spring-3.glb": "9c1a93e8ca1c025ff95c49cb40793059d2fe32d82aa00f5ce9f821bc89c6e5fb",
+    "motion/spring-2.glb": "904251bf0a131d49b0f6414210b51e8241fcd08b00d423b396100a88435626c1",
+    "motion/spring-1.step": "5b7d3c2cb72ffe283e491b8a51db6f45afcc176cc6477d5fbe7080dc477626a7",
+    "motion/spring-0.glb": "5534b3ae7ebe8001a5bd6eccffeae4a4c823da5ee72725d5594714740f0b4e62",
+    "motion/spring-1.glb": "dd7cd3664c822004101fa42df0d57fc14ad23711ad05ab73abbd84b95cb01423",
+    "motion/poses.json": "3956b33a443ccbb2db8bc625b1fa4bc443e7f397f39ea10f4e7d962eeb88383d",
+    "motion/spring-4.step": "cee07be332d548436e8d9cfe9b6b515f79ddcd8726403beb7e6854f5ab723ff1",
+    "motion/spring-2.step": "8d816af91a2838ebba10f1fdc19192fc9f34a250f23903602aa07e5ceace8496",
+    "motion/spring-3.step": "02e5414959494866f94a6a92e994b523ba0e6d91c8af7d394a59dac8d956796a",
+    "baseline/evr-terminal-control.step": "0e542de3bed00335242f719538b36863afbb56d29b42f39c3715852e3014d757",
+    "baseline/evr-body.step": "ed352615807109597f621cd54cb723da0d137de612b4dca29087b563e7319d49",
+    "baseline/evr-cap.step": "0e83d5fdd13f85830ebfe4ce5176496f24efd7dbf272abf411e01a23813cd945",
+    "baseline/evr-terminal-supply.step": "effc736e86b1732d0f8d7af045bfb229fb876e3ef7ecb85d598db62111d429e7"
+  },
+  "stage_validation_sha256": "7678542198fb04c1557e4809535cb58991e5ff65b851835614cf06d2f7f5b338",
+  "canonical_artifact_sha256": {
+    "cad/engine/generated/evr-magnetic-shell-illustrative.step": "a27dae79a051286cd8c9611dd882b8e3ed7d98210c939e450144b4f2137d61ee",
+    "models/engine/evr-magnetic-shell-illustrative.glb": "600dc3e8f74cd1166a7d622aac049cb6f5a987c5572748eb9a15da76ba775913",
+    "cad/engine/generated/evr-body.step": "fbda041d38e0b55945a6a9f82d6ecb4beb9c1a305372d2e09c3e3647a06dc22e",
+    "models/engine/evr-body.glb": "96e4b32170fd9442eab67e69f85bee7cb75395b378d9dc40448fe7cadc4a396c",
+    "cad/engine/generated/evr-terminal-supply.step": "69fae51533c2311227394fa4a9fe3d0fa1684182ff8a128952afd60c7c6acbe0",
+    "models/engine/evr-terminal-supply.glb": "e02eb653e27b4ebbb39288a00fe46473fa636b1e326be4ace3f23a3549112982",
+    "cad/engine/generated/evr-terminal-control.step": "c07605a0074ee4cf12bc573d5309e0f31a1e021b97c745e9e7bb0b545ea2da59",
+    "models/engine/evr-terminal-control.glb": "00a7ed151f5a4b67238ed02a26a0fbdd33601199b2af80cb28ae2da2a7035bf5",
+    "cad/engine/generated/evr-bobbin-illustrative.step": "9a770d558e6fd1c50a9796a283ba2a47f65d76614b721259d649fd6be7799941",
+    "models/engine/evr-bobbin-illustrative.glb": "9d494e801d16313947589f9936c1b259d86bacc4444cd47659711da49ebcb374",
+    "cad/engine/generated/evr-disc-illustrative.step": "fc23f38a5ed9f037daf8ec1868e93856b4f7fa0dd502bf12d4d2f892cb6d62c2",
+    "models/engine/evr-disc-illustrative.glb": "c110fee779e6a45e68c49ce753c4c895d1262aef15c1f4d7cc1f646844a2e56d",
+    "cad/engine/generated/evr-core-illustrative.step": "dafb4246ed4c31383d66c4fc0f2d1c47a6244d7f0e64ae9df9e770a6edb3105b",
+    "models/engine/evr-core-illustrative.glb": "309649251ac664ce8973adfd07a40f326f97fc911b015d737cb20d3bda93f7a7",
+    "cad/engine/generated/evr-vent-filter-illustrative.step": "229e48d865d0f3b70bae12c6e7c1c3b45f6a97cfc9a1ba76159b008d8c742304",
+    "models/engine/evr-vent-filter-illustrative.glb": "45cd173f80947eadf1808ea74dda77cb458a98e0caccbc1bfe6d16fa24e885c2",
+    "cad/engine/generated/evr-disc-spring-illustrative.step": "365b8251797a182a9285edd7b82ea93dcafdfab6feea47aab77377d016ae44c2",
+    "models/engine/evr-disc-spring-illustrative.glb": "bebafa3f587620a8ed67608450a9b1f0326819072bce88c6d9424a7cee451078",
+    "cad/engine/generated/evr-cap.step": "5699c1229c3509bdf0371ffefc8f62053d3370b61e77d28bdd17468a8eed41fe",
+    "models/engine/evr-cap.glb": "ec5ba970e4b074735b3b92105410957b28123c83cb401979c09438c04ceaeb92",
+    "cad/engine/generated/evr-winding-illustrative.step": "cb35d1e5be94abd831d51784fc4c1b644ecba284a240c621c91acc14f517276f",
+    "models/engine/evr-winding-illustrative.glb": "8db871ee464ff7008362068ebed848bff39b3611cf486f08f5faacc50faf0a19",
+    "models/engine/evr-motion/spring-4.glb": "b8e35340668206bc5e71159cb5a2e055d6e4da1285b3342c9051e369a26adb7c",
+    "cad/engine/generated/evr-motion/spring-0.step": "2aa44f657271c155267767b99b80ca649d06bcf47c295282f07faeeb99ddfe9a",
+    "models/engine/evr-motion/spring-3.glb": "9c1a93e8ca1c025ff95c49cb40793059d2fe32d82aa00f5ce9f821bc89c6e5fb",
+    "models/engine/evr-motion/spring-2.glb": "904251bf0a131d49b0f6414210b51e8241fcd08b00d423b396100a88435626c1",
+    "cad/engine/generated/evr-motion/spring-1.step": "5b7d3c2cb72ffe283e491b8a51db6f45afcc176cc6477d5fbe7080dc477626a7",
+    "models/engine/evr-motion/spring-0.glb": "5534b3ae7ebe8001a5bd6eccffeae4a4c823da5ee72725d5594714740f0b4e62",
+    "models/engine/evr-motion/spring-1.glb": "dd7cd3664c822004101fa42df0d57fc14ad23711ad05ab73abbd84b95cb01423",
+    "models/engine/evr-motion/poses.json": "3956b33a443ccbb2db8bc625b1fa4bc443e7f397f39ea10f4e7d962eeb88383d",
+    "cad/engine/generated/evr-motion/spring-4.step": "cee07be332d548436e8d9cfe9b6b515f79ddcd8726403beb7e6854f5ab723ff1",
+    "cad/engine/generated/evr-motion/spring-2.step": "8d816af91a2838ebba10f1fdc19192fc9f34a250f23903602aa07e5ceace8496",
+    "cad/engine/generated/evr-motion/spring-3.step": "02e5414959494866f94a6a92e994b523ba0e6d91c8af7d394a59dac8d956796a"
+  }
+}

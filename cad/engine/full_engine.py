@@ -211,8 +211,8 @@ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(
         raise ValueError(f'{id}: STEP round-trip changed topology or volume')
     vertices,faces=shape.tessellate(.18,.22)
     mesh=trimesh.Trimesh(vertices=np.array([[v.X,v.Z,-v.Y] for v in vertices])/1000,faces=faces,process=False)
-    if id in ('throttle-cable-ball-stud-estimated', 'throttle-cable-snap-retainer-illustrative', 'throttle-cable-socket-illustrative', 'throttle-cable-swivel-seat-illustrative'):
-        # The tessellator emits zero-area triangles at the sphere pole.
+    if id in ('throttle-cable-ball-stud-estimated', 'throttle-cable-snap-retainer-illustrative', 'throttle-cable-socket-illustrative', 'throttle-cable-swivel-seat-illustrative', 'throttle-housing'):
+        # Remove zero-area tessellation faces without changing the CAD geometry.
         mesh.merge_vertices()
         mesh.update_faces(mesh.nondegenerate_faces())
         mesh.update_faces(mesh.unique_faces())
@@ -231,8 +231,8 @@ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(
     defs.append(dict(id=id,name=name,function=function,system=group,color=color,glb=f'/models/engine/{id}.glb',
         step=f'/cad/engine/generated/{id}.step',geometry_status='provisional',sources=list(sources),dimension_claims=list(claims),
         unresolved=list(gaps) or ['Exact production contours, dimensions and tolerances need applicable drawings or measurements.'],
-        volume_mm3=volume,volume_method=volume_method,solid_count=1,triangle_count=len(faces)))
-    print('CAD',id,len(faces),'triangles',flush=True)
+        volume_mm3=volume,volume_method=volume_method,solid_count=1,triangle_count=len(mesh.faces)))
+    print('CAD',id,len(mesh.faces),'triangles',flush=True)
 
 
 def group(id,name,parent='engine',motion=None,position=(0,0,0),rotation=(0,0,0)):
@@ -867,6 +867,9 @@ def main():
     import intake_exterior_integration
     intake_exterior_integration.install(define,defs,occurrences,assemblies,shapes,
         {**BASE['mechanism'],'firing_order':[1,5,3,6,2,4],'cylinder_phases_deg':PHASES,'bore_pitch_mm':PITCH,'deck_height_mm':DECK},OUT)
+    import intake_runner_exterior_integration
+    intake_runner_exterior_integration.install(define,defs,occurrences,assemblies,shapes,
+        {**BASE['mechanism'],'firing_order':[1,5,3,6,2,4],'cylinder_phases_deg':PHASES,'bore_pitch_mm':PITCH,'deck_height_mm':DECK},OUT)
     import iac_closure_integration
     iac_closure_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     import iac_electrical_integration
@@ -875,6 +878,10 @@ def main():
     distributor_center_contact_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     import throttle_cable_integration
     throttle_cable_integration.install(define,add,defs,occurrences,assemblies,shapes)
+    import evr_mechanism_integration
+    evr_mechanism_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
+    import throttle_stop_integration as throttle_stops
+    throttle_stops.install(define,add,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -913,6 +920,9 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/iac-electrical-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/distributor-center-contact-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/throttle-cable-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/evr-mechanism-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/intake-runner-exterior-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/throttle-stop-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -938,6 +948,9 @@ def main():
     sources.update(iac_electrical_integration.sources())
     sources.update(distributor_center_contact_integration.sources())
     sources.update(throttle_cable_integration.source())
+    sources.update(evr_mechanism_integration.sources())
+    sources.update(intake_runner_exterior_integration.sources())
+    sources.update(throttle_stops.source())
     for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
         sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
@@ -972,7 +985,7 @@ def main():
     defs[:]=manifest['definitions']
     for d in defs:
         if d['id'] not in shapes:shapes[d['id']]=b.import_step(ROOT/d['step'].lstrip('/'))
-        size=(support_bounds(shapes[d['id']]) if d['id']=='water-pump-seal-spring' else shapes[d['id']].bounding_box()).size
+        size=(support_bounds(shapes[d['id']]) if d['id']=='water-pump-seal-spring' or d['id'] in evr_mechanism_integration.CHANGED_IDS else shapes[d['id']].bounding_box()).size
         d['model_bounds_mm']=[size.X,size.Y,size.Z]
     for key in ('definitions','assemblies','occurrences'):
         ids=[item['id'] for item in manifest[key]]

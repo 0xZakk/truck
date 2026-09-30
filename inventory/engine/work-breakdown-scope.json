@@ -345,7 +345,7 @@
         "throttle-(?!bracket-stud-estimated$).*"
       ],
       "remaining": [
-        "Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing",
+        "Verify actual return-spring construction, count and preload; illustrative shaft and cable-end springs are modeled. Idle-stop and WOT studies do not establish factory calibration.",
         "Four illustrative plate screws are installed; verify actual Ford count, thread/locking construction and shaft bushings/seals as applicable",
         "Actual throttle/speed-control cables and sockets, pin locking and production shield construction",
         "Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts"
@@ -584,7 +584,7 @@
         "evr-.*"
       ],
       "remaining": [
-        "Coil, valve, seat, filter/vent and internal connections: applicability/decomposition pending",
+        "Eleven comparative component models include coil, disc/seat, spring, filter/vent and electrical connections. Verify installed identity, production internals, dimensions and calibration; browser acceptance remains pending.",
         "Mounting bracket, hardware, vacuum and electrical connectors"
       ],
       "related_system_issues": [
@@ -959,7 +959,7 @@
       "title": "Air cleaner, filter and intake ducts",
       "patterns": [],
       "remaining": [
-        "Air-cleaner housing, lid, filter element and retaining clips/fasteners",
+        "Four-part housing/lid/filter/seal candidate remains isolated; cover screws are source-supported but their count, pattern and retention are unknown.",
         "Twin intake ducts/bellows, clamps and throttle connections visible in owner photos",
         "Inlet snorkel and body mounts: verify routing and variant"
       ],
@@ -967,7 +967,33 @@
         7,
         12
       ],
-      "existing_issue": null
+      "existing_issue": null,
+      "candidate_parts": [
+        {
+          "id": "air-cleaner-lower-tray-candidate",
+          "name": "Lower dirty-air tray",
+          "status": "Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.",
+          "artifact": "docs/components/air-cleaner-candidate.md"
+        },
+        {
+          "id": "air-cleaner-twin-outlet-cover-candidate",
+          "name": "Twin-outlet clean-air cover",
+          "status": "Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.",
+          "artifact": "docs/components/air-cleaner-candidate.md"
+        },
+        {
+          "id": "air-cleaner-paper-element-candidate",
+          "name": "Pleated paper element",
+          "status": "Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.",
+          "artifact": "docs/components/air-cleaner-candidate.md"
+        },
+        {
+          "id": "air-cleaner-perimeter-seal-candidate",
+          "name": "Filter perimeter seal",
+          "status": "Isolated candidate; not installed. Local CAD/flow/seal checks pass; retention/body placement and browser acceptance remain open.",
+          "artifact": "docs/components/air-cleaner-candidate.md"
+        }
+      ]
     },
     {
       "id": "vacuum-network",

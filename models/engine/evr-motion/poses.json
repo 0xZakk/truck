@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "label": "Illustrative vent opening",
+  "baseline_travel_mm": 0.8,
+  "frame": "EVR geometry-local; preserve occurrence and ancestor transforms",
+  "axes": "CAD millimeters[x,y,z] -> viewer meters[x,z,-y]",
+  "scope": "Exactly five validated discrete kinematic fixtures, not PCM duty cycle, vacuum pressure or elastic simulation",
+  "candidate_report_sha256": "d81c0ad684949eb4e492d69269c2969ec6c38f49b4386bb8004e139d64bd48ec",
+  "candidate_source_sha256": "b3f656ade6e4cdc88302ad48c589511a8089680388f76513e9a3d6bcd93ce63d",
+  "poses": [
+    {
+      "index": 0,
+      "travel_mm": 0,
+      "spring_glb": "/models/engine/evr-motion/spring-0.glb",
+      "spring_sha256": "5534b3ae7ebe8001a5bd6eccffeae4a4c823da5ee72725d5594714740f0b4e62",
+      "step_sha256": "2aa44f657271c155267767b99b80ca649d06bcf47c295282f07faeeb99ddfe9a",
+      "disc_offset_cad_mm": [
+        0,
+        0,
+        0.8
+      ],
+      "disc_offset_viewer_m": [
+        0,
+        0.0008,
+        0
+      ],
+      "cad_bounds_mm": [
+        [
+          -3.5,
+          -3.5,
+          -3.0
+        ],
+        [
+          3.5,
+          3.5,
+          16.3
+        ]
+      ],
+      "mesh_cad_bounds_error_mm": 0.0010878629971431408,
+      "watertight": true
+    },
+    {
+      "index": 1,
+      "travel_mm": 0.2,
+      "spring_glb": "/models/engine/evr-motion/spring-1.glb",
+      "spring_sha256": "dd7cd3664c822004101fa42df0d57fc14ad23711ad05ab73abbd84b95cb01423",
+      "step_sha256": "5b7d3c2cb72ffe283e491b8a51db6f45afcc176cc6477d5fbe7080dc477626a7",
+      "disc_offset_cad_mm": [
+        0,
+        0,
+        0.6000000000000001
+      ],
+      "disc_offset_viewer_m": [
+        0,
+        0.0006000000000000001,
+        0
+      ],
+      "cad_bounds_mm": [
+        [
+          -3.5,
+          -3.5,
+          -3.0
+        ],
+        [
+          3.5,
+          3.5,
+          16.1
+        ]
+      ],
+      "mesh_cad_bounds_error_mm": 0.0010878629971431408,
+      "watertight": true
+    },
+    {
+      "index": 2,
+      "travel_mm": 0.4,
+      "spring_glb": "/models/engine/evr-motion/spring-2.glb",
+      "spring_sha256": "904251bf0a131d49b0f6414210b51e8241fcd08b00d423b396100a88435626c1",
+      "step_sha256": "8d816af91a2838ebba10f1fdc19192fc9f34a250f23903602aa07e5ceace8496",
+      "disc_offset_cad_mm": [
+        0,
+        0,
+        0.4
+      ],
+      "disc_offset_viewer_m": [
+        0,
+        0.0004,
+        0
+      ],
+      "cad_bounds_mm": [
+        [
+          -3.5,
+          -3.5,
+          -3.0
+        ],
+        [
+          3.5,
+          3.5,
+          15.899999999999999
+        ]
+      ],
+      "mesh_cad_bounds_error_mm": 0.0010878629971431408,
+      "watertight": true
+    },
+    {
+      "index": 3,
+      "travel_mm": 0.6,
+      "spring_glb": "/models/engine/evr-motion/spring-3.glb",
+      "spring_sha256": "9c1a93e8ca1c025ff95c49cb40793059d2fe32d82aa00f5ce9f821bc89c6e5fb",
+      "step_sha256": "02e5414959494866f94a6a92e994b523ba0e6d91c8af7d394a59dac8d956796a",
+      "disc_offset_cad_mm": [
+        0,
+        0,
+        0.20000000000000007
+      ],
+      "disc_offset_viewer_m": [
+        0,
+        0.00020000000000000006,
+        0
+      ],
+      "cad_bounds_mm": [
+        [
+          -3.5,
+          -3.5,
+          -3.0
+        ],
+        [
+          3.5,
+          3.5,
+          15.700000000000003
+        ]
+      ],
+      "mesh_cad_bounds_error_mm": 0.0010878629971431408,
+      "watertight": true
+    },
+    {
+      "index": 4,
+      "travel_mm": 0.8,
+      "spring_glb": "/models/engine/evr-motion/spring-4.glb",
+      "spring_sha256": "b8e35340668206bc5e71159cb5a2e055d6e4da1285b3342c9051e369a26adb7c",
+      "step_sha256": "cee07be332d548436e8d9cfe9b6b515f79ddcd8726403beb7e6854f5ab723ff1",
+      "disc_offset_cad_mm": [
+        0,
+        0,
+        0.0
+      ],
+      "disc_offset_viewer_m": [
+        0,
+        0.0,
+        0
+      ],
+      "cad_bounds_mm": [
+        [
+          -3.5,
+          -3.5,
+          -3.0
+        ],
+        [
+          3.5,
+          3.5,
+          15.5
+        ]
+      ],
+      "mesh_cad_bounds_error_mm": 0.0010878629971431408,
+      "watertight": true
+    }
+  ]
+}

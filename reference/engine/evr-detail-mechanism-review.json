@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "component": "evr-detail-mechanism",
+  "date": "2026-09-26",
+  "scope": "Research supplement; previous vent candidate snapshots unchanged",
+  "sources": [
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Fro.jpg",
+      "sha256": "b460a7f12486a4be3e65e2ab0f0ffb73274a9fb3336a24d946522e747dfff7ff",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Fro.jpg",
+      "review": "Actual pixels inspected; retailer-hosted VS52 product photograph, not independently matched to original named manufacturer file."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Bac.jpg",
+      "sha256": "320aa474bcc3dd79e4ac40f12cf15faa5406d02004bdff6e63bc778b8a69f846",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Bac.jpg",
+      "review": "Actual pixels inspected; retailer-hosted VS52 product photograph, not independently matched to original named manufacturer file."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Bot.jpg",
+      "sha256": "aa81837fba14476ddbfc05781b908cb4d7121e77f64abc90205cf38d977066bd",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Bot.jpg",
+      "review": "Actual pixels inspected; retailer-hosted VS52 product photograph, not independently matched to original named manufacturer file."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Con.jpg",
+      "sha256": "f37a6eaf955b9586bb45d532fcdc5c6bc056afe1e03979f4eace05da5aeeeffd",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Con.jpg",
+      "review": "Actual pixels inspected; retailer-hosted VS52 product photograph, not independently matched to original named manufacturer file."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Oth.jpg",
+      "sha256": "f27f0b35ab92519e6d420ed9cf9d7e5bc20c345fc611655909e90cc246a9ed14",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Oth.jpg",
+      "review": "Actual pixels inspected; retailer-hosted VS52 product photograph, not independently matched to original named manufacturer file."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/patent-section-b.png",
+      "sha256": "3aedde5369d5361325296d85b5c3399cadc71249f7205da2c8469bc2a9e789b5",
+      "url": "https://patentimages.storage.googleapis.com/9d/19/1a/cca7d4d925b3c8/imgf0001.png",
+      "review": "Actual full-size drawing/text inspected; Canadian Fram1984 mechanism comparison, not Ford/VS52 identification."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/EP0124399A2.html",
+      "sha256": "cf6845c5be4928fdd56a84e707ca91a79f35fe785cd00048b0d0cb07fe45ddeb",
+      "url": "https://patents.google.com/patent/EP0124399A2/en",
+      "review": "Actual full-size drawing/text inspected; Canadian Fram1984 mechanism comparison, not Ford/VS52 identification."
+    }
+  ],
+  "replacement_observations": [
+    "Two stepped hose nipples, two mounting ears and rectangular two-blade connector.",
+    "Cap lower skirt has axial slots and circumferential seam, visible particularly Bac and Con.",
+    "Slots are consistent with compliant skirt but do not expose hidden latch, groove, press fit, seal or retention load.",
+    "No visible screw threads or metal crimp; absence from external views is not proof of assembly method.",
+    "Connector closeups show separate insulating terminal recesses; cannot infer coil termination."
+  ],
+  "patent_comparison": "Fig2 positive-gain design has source restriction, common source/output mixing chamber, movable disc at atmospheric seat, bias spring, coil/stator, filter and magnetic shell. Fig3 is a separate negative-gain design, not to combine. No measured dimensions or calibration transferred.",
+  "applicability": "Exact1994PCED supports coil/armature/disc/orifice mechanism; exact1994DN supports filtered atmosphere. Patent supplies comparative complete arrangement only. Actual part identity and hidden construction remain unknown.",
+  "access_limits": [
+    "Direct Standard catalog and two other catalog pages returned403; original five manufacturer filenames remain not independently inspected. Retailer photographs provide replacement comparison.",
+    "Adjacent1992 Ford image request timed out; existing reviewed text retained, no unseen image claim."
+  ],
+  "proposed_topology": [
+    "Lower source nipple -> estimated restrictor -> chamber also connected to upper EGR nipple.",
+    "Atmosphere -> cap slots -> filter -> hollow core -> disc-controlled opening to common chamber.",
+    "Disc moves away from core to vent; seats against core to close atmospheric path.",
+    "Illustrative bias spring under disc, coil/bobbin around core, magnetic return shell and two isolated terminal connections.",
+    "Cap slotted-skirt retention may be modeled as explicit illustrative snap capture; factory latch/groove unknown."
+  ],
+  "required_controls": [
+    "Source-to-output continuous in both disc poses.",
+    "Atmosphere-to-chamber open with disc lifted, blocked with disc seated.",
+    "Blocked source restrictor, stuck disc and filter bypass controls.",
+    "Disc seat contact, spring support and whole-stroke collision controls.",
+    "Electrical continuity/isolation controls without invented resistance.",
+    "Cap pull-off capture, wrong-position and interference checks."
+  ]
+}

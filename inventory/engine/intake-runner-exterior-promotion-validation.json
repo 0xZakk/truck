@@ -1,0 +1,22 @@
+{
+  "status": "PASS scoped promotion controls",
+  "stage_validation_sha256": "1e48750d2d289ae004b2b486fe5e972eec193b78feca0d361f0f2c6ab9faae6c",
+  "source_sha256": {
+    "scripts/install-intake-runner-exterior.py": "35bdb263fc9c6bee75039d856b53cb36d87517d26a756d2537a2aa1000669aa3",
+    "cad/engine/intake_runner_exterior_integration.py": "d4f48689f1e8e9a8d278ebab82dd6f33442ea6036681bc6a09c334b83f6b9324",
+    "inventory/engine/intake-runner-exterior-learning.json": "4d6eeb901b6cf84ecfb028e53bf656e52ef1ab0641b6f68d7bef2f99778dcaa7",
+    "reference/engine/intake-runner-exterior-review.json": "5279ae58ef3ed3b226d2c1e4b75530d03813ead216a3783de5e493a9dd8bc729",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "inventory/engine/intake-runner-exterior-candidate-validation.json": "5233381bfdbe7deff11f613053bf119e4defa8746d68cb3377aa2dce192155b3",
+    "inventory/engine/intake-runner-exterior-context-validation.json": "ccd9e009bc7356d43a44d52ffb22bb4fa86fec3f1bea3b34c355a40a3f75ef74",
+    "inventory/engine/intake-runner-exterior-controls-validation.json": "2fd663500c829a8d203eaa8d45aa6cfee35f8427b9d66e6a5ea0b6f50f19ca03",
+    "inventory/engine/intake-runner-exterior-render-validation.json": "b246a1fbe480bbf5da8404d10b940a761ae3e9771f688224853ac6c3254aacd7"
+  },
+  "rollback_failures": [
+    1,
+    2,
+    "postcheck"
+  ],
+  "corrupt_staged_mesh_rejected": true,
+  "corrupt_staged_frame_rejected": true
+}

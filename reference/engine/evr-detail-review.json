@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "component": "evr-detail",
+  "issue": 58,
+  "date": "2026-09-26",
+  "status": "research proposal; no geometry created",
+  "baseline_commit": "74ca5288bb543871b1cc550e191e3f54ed62a8f1",
+  "manifest_sha256": "d172e97a054c37cbbb3d51a9117fae7c43624e2e4667750d7386dbf9d1a3b014",
+  "local_sources": [
+    {
+      "path": "cad/engine/evr.py",
+      "sha256": "a47c5d4ec62a08935ba930bb4cffeccd5ead5200c8e2b3cea3efb0771ed45aad",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "reference/engine/standard-vs52/capture.txt",
+      "sha256": "7defc88dec7dbef811dcf9739f093b887e254dcbca5242dcaa2c321ab2870e17",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/615919167.png",
+      "sha256": "cbb46b43a96c648d86a1ee2452ba7759699a02b0396ab84cc33e8cc251a20715",
+      "review": "Actual pixels reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Exhaust%20Gas%20Recirculation/EGR%20Electronic%20Vacuum%20Regulator%20Solenoid/Description%20and%20Operation/index.html",
+      "sha256": "99b2e6577d5e8ff077454658194d594272934458765bce6079c2624d50436279",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Testing%20and%20Inspection/Pinpoint%20Tests/DN%20-%20EGR%20Valve%20Position%20Sensor%2FEGR%20Vacuum%20Regulator%20Solenoid/DN10%20-%20Check%20Resistance%20of%20EVR%20Solenoid/index.html",
+      "sha256": "8d01906e57279c94c6accaf523a9023faff1bffaeaf2bf913bf54b5b1f84bdd2",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Testing%20and%20Inspection/Pinpoint%20Tests/DN%20-%20EGR%20Valve%20Position%20Sensor%2FEGR%20Vacuum%20Regulator%20Solenoid/DN42%20-%20Check%20Vacuum%20Hose%20Between%20EVR%20Solenoid%20%26%20EGR%20Valve/index.html",
+      "sha256": "36895cc6a947bfde31c993e17fee4cde5495be23002ec27737bc6461b8b08016",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Testing%20and%20Inspection/Pinpoint%20Tests/DN%20-%20EGR%20Valve%20Position%20Sensor%2FEGR%20Vacuum%20Regulator%20Solenoid/DN%20-%20Testing%20Notes/index.html",
+      "sha256": "2e9d0efea49b61f9a7238759add87da3f62ce7e4cd1860a5dac9d121ae293279",
+      "review": "Text/code reviewed"
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/ford-1994-pced-10a7.jpg",
+      "sha256": "4d83bd6bda84ec0a091a548333533df4588234e6cbbefef49b662d3c81780859",
+      "review": "Actual pixels inspected: typical EVR exterior, coil/armature/disc/orifice prose, no section or dimensions; separate2.3Ranger illustration must not transfer."
+    }
+  ],
+  "exact_1994_claims": [
+    "DN notes describes filtered atmospheric venting.",
+    "DN42 calls for checking filter obstruction and replacing as necessary.",
+    "DN10 diagnostic acceptance is20\u201370ohms, not a winding specification.",
+    "Exterior image615919167 labels upper port to EGR and lower to source vacuum; no hidden construction or dimensions."
+  ],
+  "comparison_sources": [
+    {
+      "url": "https://www.fordservicecontent.dealerconnection.com/pubs/content/~WVX2/~MUS~LEN/15/VX21024.HTM",
+      "identity": "Ford1999 PCED section1",
+      "review": "Text inspected; coil controls disc and atmospheric vent. Later-system calibration not transferred."
+    },
+    {
+      "url": "https://charm.li/Ford/1992/F%20350%202WD%20Pickup%20V8-351%205.8L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Exhaust%20Gas%20Recirculation/EGR%20Electronic%20Vacuum%20Regulator%20Solenoid/Description%20and%20Operation/",
+      "identity": "Archived Ford1992 F3505.8 description",
+      "review": "Text inspected; hollow core, lower disc, weak spring, vented cover. Comparison only."
+    }
+  ],
+  "unreviewed_leads": [],
+  "replacement_limit": "Standard VS52 manufacturer fit/specification capture reviewed; named product images not acquired/inspected. Actual truck identity unknown.",
+  "proposal": "First separate element: atmospheric vent filter, paired with isolated illustrative body/cap passage and retention study. No solid decorative disk blocking its own vent.",
+  "model_findings": [
+    "Body solid and nipple bores blind at local X8; no shared chamber.",
+    "Cap internal R13 local Z41..57 with solid roof57..59; no atmospheric inlet."
+  ],
+  "unknowns": [
+    "Internal dimensions/disc/armature construction",
+    "Winding specification",
+    "Weak spring actual1994 applicability",
+    "Calibration/restriction/leakage",
+    "Installed identity/cap retention/filter material",
+    "Hose routing/mounting hardware"
+  ],
+  "reviewed_1994_pced_scan": {
+    "url": "https://www.supermotors.net/getfile/892343/fullsize/94-bronco-emissions-10a7.jpg",
+    "scope": "Reproduced1994PCED10A-7 typical mechanism, not truck installed identity."
+  }
+}

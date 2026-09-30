@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "installed": true,
+  "scope": "Source-bound illustrative EVR; no factory calibration or browser acceptance",
+  "candidate_evidence": {
+    "candidate_report_sha256": "d81c0ad684949eb4e492d69269c2969ec6c38f49b4386bb8004e139d64bd48ec",
+    "source_review_sha256": "6a8d40703eac20d9c8eb4739bd57e52c555795d9d2858bd7de5305b0eed0aa9f"
+  },
+  "bindings_mm3": {
+    "evr-bobbin-illustrative": 0,
+    "evr-body": 0,
+    "evr-cap": 0,
+    "evr-core-illustrative": 0,
+    "evr-disc-illustrative": 0,
+    "evr-disc-spring-illustrative": 0,
+    "evr-magnetic-shell-illustrative": 0,
+    "evr-terminal-control": 0,
+    "evr-terminal-supply": 0,
+    "evr-vent-filter-illustrative": 0,
+    "evr-winding-illustrative": 0
+  },
+  "original_geometry_binding_mm3": {
+    "evr-terminal-control": 0,
+    "evr-terminal-supply": 0,
+    "evr-body": 0,
+    "evr-cap": 0
+  },
+  "exports": {
+    "evr-bobbin-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.00289079099893641
+    },
+    "evr-body": {
+      "watertight": true,
+      "bounds_error_mm": 1.8477439880371094e-06
+    },
+    "evr-cap": {
+      "watertight": true,
+      "bounds_error_mm": 7.778406114766767e-07
+    },
+    "evr-core-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.0009324606508016586
+    },
+    "evr-disc-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.0017094723880290985
+    },
+    "evr-disc-spring-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.0010879095643758774
+    },
+    "evr-magnetic-shell-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.0031080469489097595
+    },
+    "evr-terminal-control": {
+      "watertight": true,
+      "bounds_error_mm": 1.519918441772461e-06
+    },
+    "evr-terminal-supply": {
+      "watertight": true,
+      "bounds_error_mm": 1.519918441772461e-06
+    },
+    "evr-vent-filter-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.004040740430355072
+    },
+    "evr-winding-illustrative": {
+      "watertight": true,
+      "bounds_error_mm": 0.00010540663902247616
+    }
+  },
+  "neighbor_ids": [
+    "egr-control-vacuum-hose",
+    "egr-exhaust-tube",
+    "egr-tube-heat-sleeve"
+  ],
+  "neighbor_collisions": [],
+  "replay_volume_delta_mm3": {
+    "evr-terminal-control": 0.0,
+    "evr-disc-illustrative": 0.0,
+    "evr-cap": 0.0,
+    "evr-magnetic-shell-illustrative": 0.0,
+    "evr-vent-filter-illustrative": 0.0,
+    "evr-disc-spring-illustrative": 0.0,
+    "evr-body": 0.0,
+    "evr-terminal-supply": 0.0,
+    "evr-core-illustrative": 0.0,
+    "evr-bobbin-illustrative": 0.0,
+    "evr-winding-illustrative": 0.0
+  },
+  "changed_relative_pose_rejected": true,
+  "motion": [
+    {
+      "index": 0,
+      "travel_mm": 0,
+      "spring_symmetric_difference_mm3": 0,
+      "watertight": true
+    },
+    {
+      "index": 1,
+      "travel_mm": 0.2,
+      "spring_symmetric_difference_mm3": 0,
+      "watertight": true
+    },
+    {
+      "index": 2,
+      "travel_mm": 0.4,
+      "spring_symmetric_difference_mm3": 0,
+      "watertight": true
+    },
+    {
+      "index": 3,
+      "travel_mm": 0.6,
+      "spring_symmetric_difference_mm3": 0,
+      "watertight": true
+    },
+    {
+      "index": 4,
+      "travel_mm": 0.8,
+      "spring_symmetric_difference_mm3": 0,
+      "watertight": true
+    }
+  ],
+  "input_sha256": {
+    "scripts/install-evr-mechanism.py": "16fab4a96fa7769d2392de8e947e78a07ff532a50332cb71d38e3f59ab31d27d",
+    "scripts/check-evr-mechanism-installed.py": "236abc8783643689adcba11963539a20965d5d3287ac10ce128b968b19bd6130",
+    "scripts/prepare-evr-motion.py": "f660a6c8c4d74611ddfe7d56b68c6153f004a10582f9b8a18c74a7fdfebf91dc",
+    "cad/engine/evr_mechanism_integration.py": "4e98763e736d0dbf4bca2a43bbd0b5a9bc5f4e4a90c12a041c54fa9f84b31e1a",
+    "cad/engine/full_engine.py": "da52e8f3669ec8f5ed1d57e1805cfd5d78ceb3e238e4ad10be61c1f22c2690b5",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/evr-mechanism-learning.json": "8e616f92b7fd8acb98220902117eaf46a103f440c0d06547f52287b19de5a792",
+    "viewer/evr-discrete-motion.js": "1e0395c919487f1dfcf2dd2de275a57375dfa58df281fee296b42554fc564256"
+  },
+  "relevant_inputs_stable": true
+}

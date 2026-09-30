@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "component": "evr-mount-research",
+  "date": "2026-09-30",
+  "issue": 58,
+  "baseline_commit": "796b621244d8e341fe2f3c4de7af99488af01548",
+  "readiness": "research",
+  "status": "RESEARCH COMPLETE; mount candidate blocked by missing bracket/receiver evidence",
+  "geometry_changed": false,
+  "canonical_changed": false,
+  "sources": [
+    {
+      "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+      "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+      "review": "Purchased exact-year manual; PDF pages312 and339, printed151-1 and152-4 actually inspected; restricted original."
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "review": "Owner photograph inspected; mounting area obscured."
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+      "review": "Owner photograph inspected; mounting area obscured."
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Bac.jpg",
+      "sha256": "320aa474bcc3dd79e4ac40f12cf15faa5406d02004bdff6e63bc778b8a69f846",
+      "review": "Actual replacement back photo inspected; no receiving bracket shown.",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Bac.jpg"
+    },
+    {
+      "path": "cad/engine/generated/evr-detail-reference/vs52-Bot.jpg",
+      "sha256": "aa81837fba14476ddbfc05781b908cb4d7121e77f64abc90205cf38d977066bd",
+      "review": "Actual replacement bottom photo inspected; two molded feet/openings.",
+      "url": "https://www2.fleetpride.com/imagesns/PDPF/SI_VS52_Bot.jpg"
+    },
+    {
+      "path": "reference/engine/ford-efi-intake-parts.jpg",
+      "sha256": "bf3b9927b7dfb77c396ee0fbdb5671216f33aa9ef2d89ba54bc5d41cc0fced25",
+      "review": "Actual historical intake illustration inspected; no EVR mount identified."
+    },
+    {
+      "path": "cad/engine/evr.py",
+      "sha256": "a47c5d4ec62a08935ba930bb4cffeccd5ead5200c8e2b3cea3efb0771ed45aad",
+      "review": "Read-only existing estimated interface and original pose."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Exhaust%20Gas%20Recirculation/EGR%20Electronic%20Vacuum%20Regulator%20Solenoid/Description%20and%20Operation/index.html",
+      "sha256": "99b2e6577d5e8ff077454658194d594272934458765bce6079c2624d50436279",
+      "review": "Local exact-vehicle function page; not a mounting procedure."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Powertrain%20Management/Emission%20Control%20Systems/EGR%20Control%20Solenoid/Parts%20Information/index.html",
+      "sha256": "9e262d3ffe48b78b31c3522b3df63c67d9392158648a1fcf68e8ef3f680884e6",
+      "review": "Local parts text identifies regulator, not support."
+    },
+    {
+      "path": "cad/engine/generated/evr-mount-reference/evtm-151-1.png",
+      "sha256": "6886db17147d66c891195fd3162652637862ac136be4d4bafbbe07a2be13d458",
+      "review": "Locally rendered restricted manual page inspected."
+    },
+    {
+      "path": "cad/engine/generated/evr-mount-reference/evtm-152-4.png",
+      "sha256": "8bdf26a63656f839b9b04f12df5d6444a520fe813d2faa232f4e7e83e6c90d62",
+      "review": "Locally rendered restricted manual page inspected."
+    },
+    {
+      "path": "cad/engine/generated/evr-mount-reference/dealer-egr.html",
+      "sha256": "9586fba29540ea5c896a784dacbfe6686f0bd05e4c5aa3760fbdee0dcd547553",
+      "url": "https://www.fordpartsgiant.com/parts-list/1994-ford-f_150--6_cyl_4_9l-5mt/fuel_system_manifolds/exhaust_gas_recirculation_e_g_r.html",
+      "review": "No mounting support identified; EGR sensor screws must not be attributed to EVR."
+    },
+    {
+      "path": "cad/engine/generated/evr-mount-reference/dealer-regular-mount.html",
+      "sha256": "ba3573d1eb624976e5aa4e799e3c5ddb6a3210ad5c6dfc6f0009b73b6393055a",
+      "url": "https://www.fordpartsgiant.com/parts-list/1994-ford-f_150--6_cyl_4_9l-5mt/fuel_system_manifolds/regular_mount_assembly_installation.html",
+      "review": "Unrelated fuel/CNG mounting category; excluded."
+    },
+    {
+      "path": "cad/engine/generated/evr-mount-reference/dealer-wire-harness.html",
+      "sha256": "ad8fc9da833fdbd3156a509740b15d4cd5d4d5106420ca0ca6a31f731c213f50",
+      "url": "https://www.fordpartsgiant.com/parts-list/1994-ford-f_150--6_cyl_4_9l-5mt/fuel_system_manifolds/wire_harness_electrical_components.html",
+      "review": "Contains generic service pigtail catalog entries; not regulator mounting hardware."
+    }
+  ],
+  "findings": {
+    "exact_application_location": "1994 EVTM 4.9L C180 EGR control solenoid below EVP near valve cover, LH rear engine.",
+    "excluded_transfer": "5.0/5.8L ignition-coil support bracket and C181/9D475 entry are not the 4.9L mounting instruction.",
+    "replacement_topology": "VS52 photos show two molded feet/openings; no loose hardware or engine-side support.",
+    "bracket_identity": null,
+    "engine_receiver": null,
+    "hardware_bom": null,
+    "measured_dimensions_mm": null
+  },
+  "existing_model_only": {
+    "source": "cad/engine/evr.py",
+    "units": "mm",
+    "ear_bore_centers": [
+      [
+        0,
+        -23,
+        27
+      ],
+      [
+        0,
+        23,
+        27
+      ]
+    ],
+    "ear_bore_axis": [
+      1,
+      0,
+      0
+    ],
+    "ear_bore_diameter": 6.6,
+    "ear_spacing": 46,
+    "ear_block_size": [
+      5,
+      22,
+      14
+    ],
+    "occurrence_position": [
+      -420,
+      -65,
+      395
+    ],
+    "occurrence_rotation_deg": [
+      0,
+      0,
+      90
+    ],
+    "evidence_class": "estimated model values; not physical measurements"
+  },
+  "limitations": [
+    "Owner photographs obscure mount.",
+    "No applicable bracket or receiver drawing found in bounded search.",
+    "No fastener or isolator quantities inferred from replacement openings.",
+    "No CAD/interface/browser acceptance.",
+    "Purchased manuals and owner photographs require authorized access and remain excluded from redistribution."
+  ],
+  "handoff": "docs/components/evr-mount-research.md"
+}

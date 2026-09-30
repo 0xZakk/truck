@@ -1,6 +1,7 @@
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
 import { createThrottleCableMotion, cableAngle } from './throttle-cable-motion.js';
-import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=cable-distributor-20260926';
+import { createEvrDiscreteMotion } from './evr-discrete-motion.js';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=runner-evr-stops-20260930';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -40,6 +41,7 @@ void prewarmSourceSpringCache(96,12);
 let data,nav,learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
 let compressorAngle=0,compressorEngaged=true,compressorPlaying=false;
 let throttleSpringPaths=null;
+let evrMotion=null,evrFrame=null,evrPending=false,evrRequestSerial=0;
 let cableMotionPromise=null,cableFrame=null,cableRequested=null,cableRequestSerial=0,cableMotionFailed=false,modelRevision='';
 const clip=new THREE.Plane(new THREE.Vector3(-1,0,0),0);
 const toView=a=>new THREE.Vector3(a[0],a[2],-a[1]);
@@ -55,6 +57,7 @@ covers.push('ps-pump-reservoir','ps-pump-housing','ps-pump-valve-cover');
 covers.push('ac-compressor-front-cylinder','ac-compressor-rear-cylinder','ac-compressor-front-head','ac-compressor-rear-head');
 covers.push('thermactor-housing','thermactor-front-plate','thermactor-rear-plate');
 covers.push('starter-frame','starter-brush-end-plate','starter-drive-end-housing','starter-solenoid-shell','starter-solenoid-end-cap');
+covers.push('evr-magnetic-shell-illustrative','evr-bobbin-illustrative');
 const story=document.createElement('section');story.id='assembly-story';$('parts').after(story);
 function lessonSource(id){
   const source=data.sources[id];if(!source)return null;
@@ -111,6 +114,7 @@ function navigate(id,historyMode='push'){
   if(!nav?.nodes.has(id))return;
   const changed=current!==id;current=id;const n=nav.nodes.get(id),isPart=n.type==='part',visible=new Set(nav.parts(id));
   togglePlay(false);toggleCompressorPlay(false);angle=0;throttleAngle=0;compressorAngle=0;compressorEngaged=true;explosion=0;section=false;ghost=false;$('explode').value='0';clearSearch();
+  if(evrMotion)void requestEvrPose(0);
   for(const [key,object] of objects)object.visible=visible.has(key);
   grid.visible=!isPart;styles();pose();resetCamera();
   const path=nav.ancestors(id);$('breadcrumbs').replaceChildren();
@@ -132,6 +136,7 @@ function navigate(id,historyMode='push'){
   $('motion-controls').hidden=![...visible].some(key=>{let p=data.occurrences.find(o=>o.id===key).parent;while(p){const a=data.assemblies.find(a=>a.id===p);if(a.motion&&!['throttle','fs10'].includes(a.motion.type))return true;p=a.parent;}return false;});
   $('compressor-controls').hidden=![...visible].some(key=>{let parent=data.occurrences.find(occurrence=>occurrence.id===key).parent;while(parent){const assembly=data.assemblies.find(item=>item.id===parent);if(assembly.motion?.type==='fs10')return true;parent=assembly.parent;}return false;});
   $('throttle-controls').hidden=isPart||!(visible.has('throttle-shaft')||visible.has('tps-rotor'));
+  $('evr-controls').hidden=isPart||!evrMotion||!['egr','egr-vacuum-regulator'].includes(id);
   $('ghost').hidden=!covers.some(id=>visible.has(id))||isPart;
   $('status').textContent=isPart?'Inspecting one part · Use the path above to return':`Showing ${visible.size} parts · Click a part to inspect it`;
   // Measure after the controls have reached this scope's actual height.
@@ -282,6 +287,43 @@ function setCablePose(object,kind,displayAngle){
     node.userData.cableGeometryAngle=index;
   });
 }
+async function requestEvrPose(index){
+  if(!evrMotion)return;
+  const serial=++evrRequestSerial;evrPending=true;pose();
+  try{
+    const applied=await evrMotion.setIndex(index);
+    if(applied&&serial===evrRequestSerial&&$('error').textContent.startsWith('EGR vent motion could not load.'))$('error').hidden=true;
+  }catch(error){
+    if(serial!==evrRequestSerial)return;
+    $('error').hidden=false;$('error').textContent='EGR vent motion could not load. The last complete pose is still displayed. Reload to retry.';
+    console.error(error);
+  }finally{if(serial===evrRequestSerial){evrPending=false;pose();}}
+}
+async function initializeEvrMotion(loader){
+  if(!objects.has('evr-disc-spring-illustrative'))return;
+  const response=await fetch(`/models/engine/evr-motion/poses.json?revision=${modelRevision}`);
+  if(!response.ok)throw new Error(`EVR poses: ${response.status}`);
+  evrMotion=createEvrDiscreteMotion(await response.json(),{
+    async loadSpring(url,expectedHash){
+      const response=await fetch(`${url}?revision=${expectedHash}`);
+      if(!response.ok)throw new Error(`EVR spring: ${response.status}`);
+      const bytes=await response.arrayBuffer();
+      const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
+      if(hash!==expectedHash)throw new Error('EVR spring does not match its validated pose');
+      const gltf=await loader.parseAsync(bytes,'');gltf.scene.updateMatrixWorld(true);
+      const meshes=[];gltf.scene.traverse(node=>{if(node.isMesh)meshes.push(node);});
+      if(meshes.length!==1)throw new Error('Expected one EVR spring mesh');
+      return meshes[0].geometry.clone().applyMatrix4(meshes[0].matrixWorld);
+    },
+    applyPose(frame){
+      const nodes=[];objects.get('evr-disc-spring-illustrative').traverse(node=>{if(node.isMesh)nodes.push(node);});
+      if(nodes.length!==1)throw new Error('Expected one installed EVR spring mesh');
+      nodes[0].geometry=frame.spring;evrFrame=frame;pose();
+    }
+  });
+  // Load the seated pair before revealing the engine, so disc and spring agree.
+  await evrMotion.setIndex(0);
+}
 function pose(){
   if(!data)return;
   requestCablePose(throttleAngle);
@@ -311,6 +353,7 @@ function pose(){
     const object=objects.get(o.id);
     object.quaternion.copy(cadQuaternion(o.rotation_cad_deg));
     object.position.copy(toView(o.position_cad_mm)).add(toView(explodeOffset(o,explosion)));
+    if(o.id==='evr-disc-illustrative'&&evrFrame)object.position.add(toView(evrFrame.discOffsetCadMm).applyQuaternion(object.quaternion));
     if(o.throttle_spring)setThrottleSpringPose(object,displayThrottleAngle);
     if(o.throttle_cable)setCablePose(object,o.throttle_cable.kind,displayThrottleAngle);
     if(o.valvetrain){
@@ -323,6 +366,7 @@ function pose(){
     }
   }
   $('throttle-angle').value=String(throttleAngle);$('throttle-value').textContent=`${throttleAngle}°${cableRequested!==null?' · loading cable…':''}`;
+  $('evr-opening').value=String(evrFrame?.index??0);$('evr-value').textContent=`${(evrFrame?.travelMm??0).toFixed(1)} mm${evrPending?' · loading…':''}`;
   $('angle').value=String(angle);$('angle-value').textContent=`${Math.round(angle)}°`;
   $('compressor-angle').value=String(compressorAngle);$('compressor-value').textContent=`${Math.round(compressorAngle)}°`;
   $('compressor-engaged').checked=compressorEngaged;
@@ -334,6 +378,7 @@ $('play').onclick=()=>togglePlay(!playing);
 $('compressor-play').onclick=()=>toggleCompressorPlay(!compressorPlaying);
 $('compressor-angle').oninput=event=>{toggleCompressorPlay(false);compressorAngle=Number(event.target.value);pose();};
 $('compressor-engaged').onchange=event=>{compressorEngaged=event.target.checked;pose();};
+$('evr-opening').oninput=e=>{void requestEvrPose(Number(e.target.value));};
 $('throttle-angle').oninput=e=>{throttleAngle=cableMotionFailed?0:Math.round(Number(e.target.value));pose();};
 $('angle').oninput=e=>{togglePlay(false);angle=Number(e.target.value);pose();};
 $('explode').oninput=e=>{explosion=Number(e.target.value);pose();frameAssembly();};
@@ -374,6 +419,7 @@ try{
     groups.get(o.parent).add(object);objects.set(o.id,object);
   }
 
+  await initializeEvrMotion(loader);
   $('coverage').textContent=`${data.definitions.length} component designs assembled as ${data.occurrences.length} parts. This is an incomplete engine reconstruction.`;
   for(const text of data.omissions){const li=document.createElement('li');li.textContent=text;$('omissions').append(li);}
   const requested=nav.fromUrl(location.href);navigate(requested||'engine','replace');

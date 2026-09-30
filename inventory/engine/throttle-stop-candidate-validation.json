@@ -1,0 +1,388 @@
+{
+  "status": "PASS",
+  "scope": "Isolated estimated idle screw/pad and illustrative WOT lug; no factory dimensions, thread, torque or stop-angle calibration.",
+  "readiness": "ISOLATED CANDIDATE; integration and browser checks not performed",
+  "thread_retention_status": "PASS",
+  "full_sweep": true,
+  "input_hashes": {
+    "scripts/check-throttle-stop-candidate.py": "286aa9be60e74435c22c698196671ae16624eb03e446ee5afa223f9a2f591272",
+    "cad/engine/throttle_stop_candidate.py": "a4adb7a6b19a682abcb4b1998204e7dd52380db6cb131fe990d32a5b2a359b36",
+    "cad/engine/throttle_cable_candidate.py": "82c534adf51b35aa23f92d991e2848ec26d3f062d977cc0106f0bb90e02930f2",
+    "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297",
+    "inventory/engine/full-assembly.json": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+    "cad/engine/generated/throttle-housing.step": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+    "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+    "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+    "cad/engine/generated/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+    "cad/engine/generated/accelerator-cable-bracket.step": "90d1c4cab4e828849623a62f066ddea66ab5a08ea7112dc72ae8c1ab459924d9",
+    "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+    "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+    "cad/engine/generated/throttle-cable-ball-stud-estimated.step": "60dfa0e31bd42e2f99ce5caa06a4ee8780358e567e8c3f8a9d0107e7fd0c0d82"
+  },
+  "output_hashes": {
+    "cad/engine/generated/throttle-stop-candidate/throttle-housing-stop-proposal.step": "90e800e56ae3cf22d3153faa2e820c3ad028acdc51f0e44cf8011c0f684b3ee3",
+    "cad/engine/generated/throttle-stop-candidate/throttle-housing-stop-proposal.glb": "f0cec661e4f4e5c0eddb37ed6c2486802b0e547cf2552a3a58d79483345d7ea0",
+    "cad/engine/generated/throttle-stop-candidate/throttle-lever-stop-proposal.step": "d68941152bab4bb822930c7cbf56092251bb5d9fec56b201801faa150cecb8eb",
+    "cad/engine/generated/throttle-stop-candidate/throttle-lever-stop-proposal.glb": "8e13c129f82f76dc65cb83e45dc241fd5bdb9a848d58913a0d9e651cc5a0b04f",
+    "cad/engine/generated/throttle-stop-candidate/throttle-idle-stop-screw-illustrative.step": "b735e00605e4bbb764a9e2c6fb2f2205df20f0920869de2886706b5ea77ac02a",
+    "cad/engine/generated/throttle-stop-candidate/throttle-idle-stop-screw-illustrative.glb": "ae9dae833f8cd6f62a56a228f55c2d96dedee9ab988036206156fa7c32e4147a"
+  },
+  "parameters": {
+    "idle_axis_y": 90.0,
+    "idle_axis_z": 502.0,
+    "idle_tip_x": 389.0,
+    "screw_core_radius": 1.15,
+    "thread_major_radius": 1.45,
+    "thread_pitch": 0.5,
+    "thread_start_x": 378.25,
+    "thread_length": 6.5,
+    "thread_radial_clearance": 0.02,
+    "thread_axial_clearance": 0.02,
+    "idle_pad_x": -4.25,
+    "idle_pad_z": 12.0,
+    "wot_pad_y": 66.875,
+    "wot_pad_z": 12.0
+  },
+  "volume_measurement_refinements": [
+    [
+      {
+        "eps": 1e-10,
+        "error": 9.29531904382704e-08,
+        "value": 81.05364774914415
+      },
+      {
+        "eps": 1e-11,
+        "error": 1.201202223462406e-07,
+        "value": 81.0536477480731
+      },
+      {
+        "eps": 1e-12,
+        "error": 7.603761027039593e-08,
+        "value": 81.0536477482268
+      }
+    ]
+  ],
+  "protected_regions": {
+    "original_housing_removed_mm3": 0.0,
+    "original_lever_removed_mm3": 0.0,
+    "lever_key_hook_ball_changes_mm3": 0.0,
+    "new_housing_in_flow_bores_mm3": 0.0
+  },
+  "casting_attachment_overlap_mm3": {
+    "idle_boss": 189.98929862436435,
+    "wot_lug": 16.851045093651546
+  },
+  "contacts": [
+    {
+      "angle_deg": 0,
+      "idle_contact_mm2": 3.694166127612716,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 2,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 4,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 6,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 8,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 10,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 12,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 14,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 16,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 18,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 20,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 22,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 24,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 26,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 28,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 30,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 32,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 34,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 36,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 38,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 40,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 42,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 44,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 45,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 46,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 48,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 50,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 52,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 54,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 56,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 58,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 60,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 62,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 64,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 66,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 68,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 70,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 72,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 74,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 76,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 78,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 80,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 82,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 84,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 86,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 88,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 0.0
+    },
+    {
+      "angle_deg": 90,
+      "idle_contact_mm2": 0.0,
+      "wot_contact_mm2": 6.946349540849362
+    }
+  ],
+  "overtravel_sensitivity": [
+    {
+      "angle_deg": -1,
+      "idle_overlap_mm3": 0.7674324540172697,
+      "housing_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 1,
+      "idle_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 89,
+      "idle_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0
+    },
+    {
+      "angle_deg": 91,
+      "idle_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 1.4394961215529127
+    }
+  ],
+  "retention_controls": {
+    "detached_screw_contact_mm2": 0.0,
+    "capture_witnesses": [
+      {
+        "delta_x_mm": 0.125,
+        "center_mm": [
+          380.0,
+          91.12583302491977,
+          501.35
+        ],
+        "radius_mm": 0.03,
+        "exact_containment": true,
+        "overlap_lower_bound_mm3": 0.00011309733552923254
+      },
+      {
+        "delta_x_mm": -0.125,
+        "center_mm": [
+          380.0,
+          88.87416697508023,
+          501.35
+        ],
+        "radius_mm": 0.03,
+        "exact_containment": true,
+        "overlap_lower_bound_mm3": 0.00011309733552923254
+      }
+    ],
+    "positive_axial_capture_mm3": 0.00011309733552923254,
+    "negative_axial_capture_mm3": 0.00011309733552923254,
+    "quarter_turn_thread_path_overlap_mm3": 0.0
+  },
+  "collisions": [],
+  "exact_pairs": 843,
+  "exports": {
+    "throttle-housing-stop-proposal": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 2.9747607186436653e-05
+    },
+    "throttle-lever-stop-proposal": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 0.0
+    },
+    "throttle-idle-stop-screw-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 1.565034324357839e-08
+    }
+  },
+  "all_current_occurrences_considered": 1341,
+  "source_ledger": "reference/engine/throttle-stop-review.json"
+}

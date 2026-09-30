@@ -1,44 +1,39 @@
-# Current engine integration — 2026-09-26
+# Current engine integration — 2026-09-30
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Branch: `engine/cable-and-distributor-contact`. Saved main checkpoint: PR #92 (`74ca528`), push and PR CI runs passed. **Engine unfinished.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Branch: `engine/runner-stops-and-evr`. Saved main checkpoint: PR #93 (`796b621`), push and PR CI passed. **Engine unfinished.**
 
-## Working733-definition integration
+## Saved733-definition integration (PR #93)
 
-Branch `engine/cable-and-distributor-contact` now has **733 definitions /1,341 occurrences**, manifest `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Curved rotor center leaf and seven-part cable/socket/spring mechanism are installed; canonical scope checks and browser motion/explosion/reset review pass. Direct individual-part entry was repaired by synchronizing its controls with the engine page. Navigation reaches1,341 parts/1,540 links;191 source records pass capture-integrity checks.
+**733 definitions / 1,341 occurrences.** Manifest SHA-256: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`.
 
-Combined STEP export passes1,341 unique occurrence names and bounds. Whole-static audit passes5,249 exact overlapping-bound comparisons with zero overlaps above0.1mm³; artifact, scale and hierarchy checks pass. This is one static pose, not continuous whole-engine motion or production fit. The private restoration archive is uploading as a draft; see `docs/cad-cable-distributor-checkpoint.json`. CLI checklists #43, #16 and #71 have been refreshed; board columns remain authorization-blocked.
+The increment adds a source-compared curved rotor leaf/collar and an explicitly illustrative seven-part engine-end cable mechanism. Cable socket, guide, core and compression spring move with the throttle slider. The throttle assembly has52 selectable parts; the distributor has29. Direct part links were repaired by synchronizing their missing throttle controls with the engine entry page.
 
-## Saved725-definition integration (PR #92)
+- Guarded component installations match reviewed STEP geometry, preserve protected interfaces and verify mesh exports. Rotor rotation/cap-lift controls and adapter replay pass within their recorded scope.
+- Cable current-neighbor/frame checks preserve the original47-pose/2,360-pair CAD proof;91 viewer mesh poses pass. Historical hash-at-finish limitation remains explicit in the original candidate report and addendum.
+- Browser acceptance covers distributor assembled/exploded motion and direct leaf page; cable0/45/90degree positions,50% explosion, reset and individual spring page. Asynchronous stale-response/reset/failure controls pass.
+- Whole-static audit passes5,249 exact overlapping-bound comparisons, zero overlaps above0.1mm³. Artifact/scale/hierarchy checks pass. This is one static pose, not continuous whole-engine motion or production validation.
+- Combined STEP roundtrip contains1,341 uniquely named occurrences with matching world bounds. Navigation reaches1,341 parts/1,540 links. All191 source records pass capture integrity/registration; applicability remains a separate judgment.
+- The old direct-part initialization error was repaired; no additional local-origin error appeared during the new browser exercise. Extension/unlocated errors remain, so no blanket clean-console claim.
 
-**725 definitions / 1,333 occurrences.** Manifest SHA-256: `4f98bbdad7fb1996487d17c4a651de588cef39254efe24e96384375dbdce0c07`.
+Reports: `inventory/engine/cable-distributor-browser-review.json`, `throttle-cable-installed-validation.json`, `distributor-center-contact-installed-validation.json`, `atlas-static-validation.json`, `combined-step-export.json` and `source-record-validation.json`. Read each input hash and scope; a saved report does not certify later changes. Full clean-clone rebuild remains unproven.
 
-The current increment adds rounded upper-intake exterior shoulders, border ribs and source-visible wording; an illustrative captured IAC end closure; and two separate electrical terminals with an insulating carrier. The IAC has14 selectable parts. Exact-year electrical topology is supported; terminal construction, closure method, dimensions and font outlines remain estimates.
+## Current branch work (not yet merged)
 
-- Exterior stage:246 exact static neighbor pairs and552 throttle motion pairs across46 positions, no new collisions. Protected interfaces and cap-removal envelope remain intact.
-- IAC closure/electrical: final neighbors and attachment coexistence pass. Electrical stage and installed checks bind12 related components, test translated/rotated parent frames and reject a shifted connector datum. No force, pressure or electrical performance is simulated.
-- Ordered coordination→attachment→plate-retention→exterior→closure→electrical replay reproduces active changed geometry and frames in isolated output. This is **not** a clean whole-engine rebuild.
-- Replay found a nested STEP compound whose container volume reports zero despite one valid solid. `cad_metrics.solid_volume` now measures enclosed solids. The original thresholds remain; nested round-trip and deliberately removed-material controls pass.
-- Combined STEP export:1,333 uniquely named occurrences and world-bounds roundtrip pass.
-- Navigation:1,333 parts reachable once /1,532 links. All189 source records pass capture registration/integrity checks; applicability is a separate question.
-- Browser review covers intake assembled/exploded views,14-part IAC transparency/explosion and the individual control-terminal page. Extension-origin errors and one matching unlocated console error remain recorded; no clean-console claim.
-- Whole-static audit passes5,204 exact broad-phase-selected comparisons, with no overlaps above0.1mm³; artifact/scale/hierarchy and1,333-solid combined checks pass. This is one static pose, not continuous whole-engine motion or production validation.
+The interrupted runner installation completed and its artifact/report hashes were rechecked on September30. The upper-intake exterior now has broader rounded runner faces while preserving bores, flange, plenum and cap envelope. Its installed geometry/replay differences are zero; mesh435,346triangles,8.71MB, watertight, bounds error0.000014mm. These checks retain their recorded runner-only manifest scope.
 
-Reports: `inventory/engine/intake-detail-replay-validation.json`, `iac-closure-installed-validation.json`, `iac-electrical-installed-validation.json`, `intake-iac-detail-browser-review.json`, `combined-step-export.json` and `source-record-validation.json`.
+- EVR: eleven-part illustrative mechanism is installed, with the subsequent stop installation bringing the current assembly to741 definitions / 1,349 occurrences. All11STEP bindings and five matched disc/spring poses pass; no overlaps with its three nearby components. Viewer controls and asynchronous request tests pass. The scoped EVR installation/check has been refreshed after the shared exporter change and passes. The promotion fault-control suite is being rerun in a separate stage after its first post-install attempt correctly rejected stale pre-install STEP hashes. Historical proof is preserved in `cad/engine/generated/evr-before-stop-hooks-20260930/`.
+- Throttle stops: rounded idle screw/boss/pad and illustrative WOT lug passed47poses/843exactpairs. Current integration staging caught zero-area housing mesh faces; shared export cleanup now removes them and reports the actual exported triangle count. Installed validation now passes: three zero-difference STEP bindings, watertight exports, replay/fault/rollback controls, and 141 fresh exact neighbor comparisons across 47 poses. Viewer lessons and all 1,349 part links pass navigation checks; production dimensions/calibration remain unresolved.
+- Air cleaner: isolated four-part tray, twin-outlet cover, pleated paper/carrier and separate perimeter seal candidate passes local solid/export, flow-witness and sealing checks. Root reviewed actual full/section renders. Not installed: retention, body datums, ducts and breather receiver remain open. See `docs/components/air-cleaner-candidate.md`.
+- Two workers are researching/building the next bounded candidates: rear exhaust collector exterior (#46), and source-led timing-cover gasket/joint (#32). Neither is installed; the latter must establish the gasket outline and explain the current pan/cover datum gap before geometry.
 
-## Parallel work and remaining gaps
+Three focused workers resumed after the usage interruption. Preview server was restarted on8081. Browser automation rejected the localhost URL under its security policy; the batch browser gate remains NOT RUN (see `inventory/engine/runner-evr-stops-review.json`). No claim that work continued while execution was stopped. Engine remains unfinished.
 
-1. Throttle cable/socket/compression spring candidate: proportions compared with Pioneer replacement photographs; bracket exit revision preserves reviewed anchors. Installed with47-pose proof/current-neighbor binding and91-pose viewer mesh checks. Browser acceptance passes; throttle stop candidate is next.
-2. Distributor center-contact study: curved leaf and molded collar installed locally; current inventory726 definitions /1,334 occurrences. Exact shape/interface checks pass and browser verifies assembled/exploded distributor plus direct leaf page. Hidden cap construction remains unresolved. Not yet committed.
-3. PCV connections: evidence gap documented; no manifold receiver inferred. Worker moved to an isolated EVR filter/vent candidate. Intake runner exterior refinement is also isolated pending Boolean robustness checks.
-
-Upper-intake support research establishes a below-throttle mounting pad and strap but not the lower anchor. The current casting/cover datums may need coordination; no arbitrary brace is installed. See `reference/engine/intake-support-review.json`.
-
-The broader remaining work is in `inventory/engine/completion-plan.json`. All active geometry remains provisional. A collision pass is not proof of production fit, completeness, sealing or strength.
+PCV routing evidence identifies separate fresh-air and manifold-return hoses but not a reliable manifold receiver datum; no arbitrary connection is installed. Upper-intake support evidence identifies the below-throttle pad/strap but not its lower anchor. Broader remaining work is in `inventory/engine/completion-plan.json`. All geometry remains provisional; part count is not a completion percentage.
 
 ## GitHub and restoration
 
-PR #92 and its private [CAD checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-iac-detail) preserve725 definitions /1,333 occurrences. The archive includes3,642 files and its224,076,800-byte upload is recorded in the checkpoint manifest; see `docs/CAD-ARTIFACTS.md` and its checkpoint record.
+The private [CAD checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-cable-distributor) is published at PR #93's merge commit. Its242,602,576-byte archive contains3,737 files; GitHub's SHA-256 digest matches `docs/cad-cable-distributor-checkpoint.json`. Restore instructions are in `docs/CAD-ARTIFACTS.md`. Third-party reference photographs/composites, owner photographs and purchased manuals are excluded.
 
-CLI issue checklists #36, #43 and #44 reflect the current inventory; #1 records the saved milestone. Project column writes still lack token authorization. `inventory/engine/project-status-pending.json` contains desired transitions, **not observed board status**. No engine component is newly marked Done.
+CLI checklists #36, #43, #58 and #80 were refreshed and each write verified on September30. Issues #1 and #58 record current progress. Project-column writes still lack token authorization. `inventory/engine/project-status-pending.json` contains desired transitions, **not observed board statuses**. No engine component is newly marked Done.
 
-Preserve worker files and frozen candidate evidence. Shared assembly changes belong to the integration owner. Never upload purchased manuals, owner photographs or local third-party photo comparisons.
+Preserve worker files and frozen candidate evidence. Shared assembly changes belong to the integration owner. Serialize runner → EVR → stops integration. Preserve current canonical geometry while each worker binds its stage; source/report hashes define which older checks remain applicable.

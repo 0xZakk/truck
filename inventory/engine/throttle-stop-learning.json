@@ -1,0 +1,134 @@
+{
+  "throttle-assembly": {
+    "summary": "Two butterfly plates share a shaft. Moving the throttle-opening slider turns them together, changing how much of each bore is obstructed.",
+    "limits": "Factory references support twin bores, four body mounting studs/nuts, IAC attachment by two bolts, TPS, an external lever and shield. The installed lever, D-shaped shaft end, retaining pin, bracket, shield and single return spring are educational constructions with inferred dimensions. Four internal plate screws are an explicit hypothesis, not a verified Ford count. The two IAC screws have source-supported count but estimated dimensions and thread envelopes. Actual Ford shaft-return-spring construction, production cable dimensions/internal construction, production stops, plate locking and preload, IAC variant, sealing, calibration and harness remain unresolved. The separate cable-end compression spring, long socket/stem, guide and retainer now have an illustrative study informed by replacement photographs; force/rate and complete pedal/firewall routing are not simulated. External idle screw/pad and WOT-stop existence are source supported; the installed rounded boss, thread and WOT lug are illustrative. Neither endpoint establishes Ford calibration, and screw locking/strength are unresolved.",
+    "steps": [
+      {
+        "title": "Air passages",
+        "text": "The twin bores lead into the shared upper plenum. Use See through covers to watch the plates inside.",
+        "part": "throttle-housing"
+      },
+      {
+        "title": "Paired plates",
+        "text": "A common shaft coordinates the two discs. The educational travel ends at illustrated mechanical contacts; 90 degrees is not a verified production calibration.",
+        "part": "throttle-moving"
+      },
+      {
+        "title": "Idle uses another path",
+        "text": "The IAC-controlled bypass is separate from the plates. Two illustrative screws attach the valve and separate gasket to the throttle pad; the exact installed valve variant and internal dimensions remain unverified.",
+        "part": "idle-air"
+      },
+      {
+        "title": "Cable pull becomes shaft rotation",
+        "text": "The outward ball follows the lever and twin plates while the bracket and shield stay fixed. An illustrative spring winds between captured fixed and moving hooks. The control commands the angle; return force and friction are not calculated.",
+        "part": "throttle-lever-estimated"
+      },
+      {
+        "title": "Keep the plates on the shaft",
+        "text": "Four illustrative screws seat against the two plates and enter helical shaft receivers. The mounting nuts outside the body do not establish this internal screw count.",
+        "part": "throttle-plate-screw-1-1-illustrative"
+      },
+      {
+        "title": "Separate the IAC joint",
+        "text": "Two diagonal IAC screws pass through the valve flange and gasket into the throttle pad. Their count is supported by the service diagrams; estimated smooth receivers do not establish production thread engagement or clamp strength.",
+        "part": "iac-mount-screw-1-estimated"
+      },
+      {
+        "title": "Distinguish two spring mechanisms",
+        "text": "The cable-end compression coil shortens as the ball pulls its long socket stem toward the fixed bracket retainer. It is separate from the shaft torsion spring. Both are educational constructions; the slider commands angle directly.",
+        "part": "throttle-cable-compression-spring-illustrative"
+      },
+      {
+        "title": "See the mechanical endpoints",
+        "text": "At the closed demonstration endpoint, the external screw touches a lever pad. At full opening, a separate lever land meets the illustrated fixed lug. The screw is not a plate-retaining screw or an idle-speed adjustment instruction.",
+        "part": "throttle-idle-stop-screw-illustrative"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate throttle opening from idle control",
+        "text": "Closed butterfly plates do not mean the real engine has no air supply: the IAC meters a separate bypass path. The viewer does not simulate idle speed or air flow."
+      },
+      {
+        "title": "Sealing interface",
+        "text": "The separate gasket seals the body to the upper manifold. Inspect its position in the exploded view.",
+        "part": "throttle-gasket"
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "truck-throttle-service",
+      "truck-throttle-catalog",
+      "throttle-1994-linkage-study",
+      "throttle-return-spring-study",
+      "throttle-plate-retention-illustrative-study",
+      "iac-attachment-factory-1994",
+      "iac-attachment-estimated-study",
+      "throttle-cable-engine-end-illustrative-study",
+      "throttle-stop-illustrative-study"
+    ]
+  },
+  "throttle-idle-stop-screw-illustrative": {
+    "summary": "An external stop screw contacts the moving lever pad at the closed demonstration endpoint.",
+    "limits": "Screw/pad contact and WOT-stop existence are supported by factory material. All dimensions, helical fit, casting contour, WOT-lug construction and 0\u201390 degree endpoints are illustrative. Locking, strength, torque and production calibration are unknown.",
+    "steps": [
+      {
+        "title": "Follow the contact",
+        "text": "Use throttle opening to separate the idle contact and approach the wide-open lug. The viewer commands angle; it does not simulate spring force or impact.",
+        "part": "throttle-lever-estimated"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Keep idle control separate",
+        "text": "The IAC meters a separate bypass. This geometry is not an instruction to adjust the real stop screw."
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "throttle-stop-illustrative-study"
+    ]
+  },
+  "throttle-housing": {
+    "summary": "The fixed body carries an estimated threaded idle-stop boss and an illustrative wide-open stop lug.",
+    "limits": "Screw/pad contact and WOT-stop existence are supported by factory material. All dimensions, helical fit, casting contour, WOT-lug construction and 0\u201390 degree endpoints are illustrative. Locking, strength, torque and production calibration are unknown.",
+    "steps": [
+      {
+        "title": "Follow the contact",
+        "text": "Use throttle opening to separate the idle contact and approach the wide-open lug. The viewer commands angle; it does not simulate spring force or impact.",
+        "part": "throttle-lever-estimated"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Keep idle control separate",
+        "text": "The IAC meters a separate bypass. This geometry is not an instruction to adjust the real stop screw."
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "throttle-stop-illustrative-study"
+    ]
+  },
+  "throttle-lever-estimated": {
+    "summary": "Two added lands provide mechanical endpoint contacts while preserving cable, shaft and spring interfaces.",
+    "limits": "Screw/pad contact and WOT-stop existence are supported by factory material. All dimensions, helical fit, casting contour, WOT-lug construction and 0\u201390 degree endpoints are illustrative. Locking, strength, torque and production calibration are unknown.",
+    "steps": [
+      {
+        "title": "Follow the contact",
+        "text": "Use throttle opening to separate the idle contact and approach the wide-open lug. The viewer commands angle; it does not simulate spring force or impact.",
+        "part": "throttle-lever-estimated"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Keep idle control separate",
+        "text": "The IAC meters a separate bypass. This geometry is not an instruction to adjust the real stop screw."
+      }
+    ],
+    "sources": [
+      "truck-throttle-operation",
+      "throttle-stop-illustrative-study"
+    ]
+  }
+}
