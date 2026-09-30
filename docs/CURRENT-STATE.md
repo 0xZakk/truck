@@ -1,6 +1,6 @@
 # Current engine integration — 2026-09-30
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/timing-core-pan-joint`. Saved checkpoint: merged [PR #95](https://github.com/0xZakk/truck/pull/95), commit `705c4683c199d8c5e28addba018bc8d1bdd399b1`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/timing-interface-reconciliation`. Saved checkpoint: merged [PR #96](https://github.com/0xZakk/truck/pull/96), commit `eb502ce755d12fe896b3ea915f3ada4361e52a9c`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
 
 ## Current installed checkpoint
 
@@ -27,9 +27,11 @@ Reviewed studies remain uninstalled:
 
 Three workers own isolated files; root alone edits shared assembly/viewer data:
 
-1. Timing block (#32): baseline regeneration matches the installed block exactly. A bounded cam-side feature migration is being checked. The isolated thrust-land correction passed its limited core/endplay checks; all remain uninstalled.
-2. Cover/pan joint (#32): coordinated cover, gasket and local front-pan seating candidate using the explicitly estimated registration. Preserve the supported 25 pan-fastener count; prove sealing contacts, not merely absence of overlap.
-3. Gear backlash (#32): the exact-year manual calls for0.0508–0.1016mm; the old estimated pair gives0.22675–0.25510mm of sampled pitch-circle free play. Indicator setup interpretation is explicit. A distinct revised pair is being checked, including axial/rotational coupling; old evidence is preserved. Rear outlet blend (#46) is installed but its browser/production gates remain open. Port research found conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
+1. Timing block (#32): exact baseline regeneration passed. The first migrated-stock trial failed actual side-cover/gasket, shaft, bearing and guide fit. Root reviewed its sections and retained the failures; a new fixed-stock/feature-ordering study is active with physical interface protection.
+2. Cover/pan (#32): the isolated estimated joint passed sealing-face support, gasket topology, five clamp-position and gear-envelope checks. Root reviewed actual sections/source comparison. A new attachment study addresses missing main-cover screws, actual pan thread engagement and the seal/hub interface; no canonical installation.
+3. Coupled timing core (#32): revised gear play brackets 0.07086–0.08503 mm under the explicit pitch-circle interpretation, with 50 sampled coupled axial/rotational states clear. Fixed-phase axial travel fails and is preserved. A new study checks the actual four-part keyed moving group against stationary bearings/retention; no unsupported gear bolt is added.
+
+The frozen first block trial, coordinated joint and revised gear pair are packaged separately in the timing-fit supplement; active follow-up studies are excluded. `inventory/engine/timing-studies-root-review.json` records the reviewed outcomes by hash. The rear port research still has conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
 
 Do not install these candidates or overwrite their files. Failed trials remain useful evidence. Worker completion alone does not establish accepted installation.
 
@@ -37,4 +39,4 @@ Do not install these candidates or overwrite their files. Failed trials remain u
 
 The [current private CAD archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core) is published, with checksum and scope in `docs/cad-neck-core-checkpoint.json`. It includes the installed rear-neck blend, isolated timing core/thrust land and rejected old-gear backlash diagnostic, but excludes ongoing shifted-block, coordinated pan-joint and revised-backlash candidates. Follow `docs/CAD-ARTIFACTS.md`. Browser meshes are committed. Source originals/composites, purchased manuals and owner photographs are excluded from Git and release archives.
 
-CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #95 is merged; the next candidates remain separate and the further neck installation is saved in PR #96, whose checks pass; merge is pending the final checkpoint review. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.
+CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #96 is merged with final-head CI passing; new timing candidates remain separate. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.

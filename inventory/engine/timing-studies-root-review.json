@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "input_sha256": {
+    "inventory/engine/timing-block-axis-feature-validation.json": "be6b5f69ac54d45d581ce49f4d854dd8d553ccff8c358dc201dae8ebb32ce7a7",
+    "inventory/engine/timing-block-core-interface-validation.json": "a52cd2db2e373f05d615aeb8d3d1007eaf1a858483e1b686f1a8752f960286e9",
+    "inventory/engine/timing-block-side-cover-conflict.json": "4dac2d6e2d5eb5f9f38c8f5e40ab67464bad25b0616b69eaf5fff23c22238ef6",
+    "inventory/engine/timing-gear-backlash-candidate-validation.json": "0a4023d5eb2d609fa122c797dcb9af2b3fb0dcec714f013d57eff9789576a5eb",
+    "inventory/engine/timing-cover-front-joint-validation.json": "6a4490ed3d50956e9fd0db1297fa17a217c363e15d1b453bd64b2a8c94d11116"
+  },
+  "decisions": {
+    "block_axis_trial": "FAIL preserved. Root inspected actual mesh and side-cover sections; stock intrudes into fixed cover/gasket, and shifted guides/bearings conflict with later casting features. No installation. New fixed-stock trial authorized; later-feature changes require physical interface contract. Original broad guards and thresholds remain preserved.",
+    "revised_backlash_pair": "Accept bounded uninstalled study for keyed-core preparation. Root inspected actual front/back/contact source comparison, code and report. Two-sided play and coupled axial endpoints pass within stated pitch-circle interpretation. No factory calibration, full rotation or installed acceptance.",
+    "cover_pan_joint": "Accept bounded uninstalled sealing study for attachment preparation. Root inspected actual mesh/sections/source comparison and report. Unknown registration/dimensions and missing casting detail remain. Future block land is not an independent installed part."
+  },
+  "next_tasks": {
+    "block": "Fixed stock trial plus exact feature-refill attribution and predeclared mating-interface masks before any later machining change.",
+    "gears": "Complete keyed rotating-core transform contract and stationary retention/support checks; no slipping gear on key.",
+    "cover": "Separate mounting hardware and actual thread/seat engagement; front seal/hub interface audit."
+  },
+  "canonical_changes": "None from these three studies. Canonical neck checkpoint is independent.",
+  "browser": "NOT RUN",
+  "completion": "Engine unfinished; no Done or issue closure."
+}

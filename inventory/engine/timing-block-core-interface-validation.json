@@ -1,0 +1,553 @@
+{
+  "status": "FAIL isolated core or guide fit; inspect reported intrusions",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-axis-feature-candidate/block.step": "7377a11be5d73bb36062c5f4e1f6661fdbb54300a8594a89a81eb1dd8a206a59",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/timing-thrust-land-candidate/rear-cam-plug.step": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-key.step": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "scripts/check-timing-block-core-interfaces.py": "7056b33530db335a91b81aab6a05e6b585ad3be14b938388d7b45917baa201db",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "cad/engine/timing_core_migration_candidate.py": "abdfb7a1ebaefa484941f3bf95e6784d17f86bc4b2bbe1f25d91251bc70fb7e5",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "inventory/engine/timing-block-axis-feature-validation.json": "be6b5f69ac54d45d581ce49f4d854dd8d553ccff8c358dc201dae8ebb32ce7a7"
+  },
+  "block_core_pairs": [
+    {
+      "part": "camshaft",
+      "travel_mm": -0.1,
+      "overlap_mm3": 511.808355452332,
+      "intersection_bounds_mm": [
+        [
+          74.29599990000001,
+          103.99999989999995,
+          63.4526829785692
+        ],
+        [
+          349.9173038917631,
+          120.73207111774889,
+          100.11834611385567
+        ]
+      ],
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": false
+    },
+    {
+      "part": "camshaft",
+      "travel_mm": 0,
+      "overlap_mm3": 505.8046049337594,
+      "intersection_bounds_mm": [
+        [
+          74.3959999,
+          103.99999989999996,
+          63.4526829785692
+        ],
+        [
+          349.91730389176314,
+          120.73207111921798,
+          100.11834611385567
+        ]
+      ],
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": false
+    },
+    {
+      "part": "cam-bearing-1",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-bearing-2",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-bearing-3",
+      "travel_mm": 0,
+      "overlap_mm3": 349.7636571228695,
+      "intersection_bounds_mm": [
+        [
+          98.9999999,
+          117.39999988177402,
+          60.59131448037301
+        ],
+        [
+          109.0000001,
+          122.25747109202385,
+          91.58439910456599
+        ]
+      ],
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": false
+    },
+    {
+      "part": "cam-bearing-4",
+      "travel_mm": 0,
+      "overlap_mm3": 3.321125757464873,
+      "intersection_bounds_mm": [
+        [
+          349.4999998999998,
+          103.9999999,
+          99.71651798498448
+        ],
+        [
+          351.302607981932,
+          108.4769922981011,
+          101.73858042374655
+        ]
+      ],
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": false
+    },
+    {
+      "part": "rear-cam-plug",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "crank-timing-gear",
+      "travel_mm": 0,
+      "overlap_mm3": 61.012931062409116,
+      "intersection_bounds_mm": [
+        [
+          378.25937489999995,
+          -27.030078660740003,
+          -43.17997748993559
+        ],
+        [
+          381.0000001000001,
+          27.979453133229423,
+          -31.99999989998767
+        ]
+      ],
+      "unshifted_same_shape_baseline_overlap_mm3": 61.012931062409116,
+      "clear": false
+    },
+    {
+      "part": "cam-timing-gear",
+      "travel_mm": -0.1,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-timing-gear",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-thrust-plate",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-gear-spacer",
+      "travel_mm": -0.1,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-gear-spacer",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-timing-key",
+      "travel_mm": -0.1,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-timing-key",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-thrust-bolt-1",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-thrust-bolt-2",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-thrust-washer-1",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    },
+    {
+      "part": "cam-thrust-washer-2",
+      "travel_mm": 0,
+      "overlap_mm3": 0,
+      "intersection_bounds_mm": null,
+      "unshifted_same_shape_baseline_overlap_mm3": 0,
+      "clear": true
+    }
+  ],
+  "lifter_guide_probes": [
+    {
+      "cylinder": 1,
+      "x_mm": 259.48,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098888017,
+      "intersection_bounds_mm": [
+        [
+          254.3890219542247,
+          105.0,
+          130.0
+        ],
+        [
+          264.57097804577535,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 1,
+      "x_mm": 309.48,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 183.4413679249877,
+      "intersection_bounds_mm": [
+        [
+          302.7943125395078,
+          103.9999999,
+          101.08468640912668
+        ],
+        [
+          314.57097804577535,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 2,
+      "x_mm": 145.688,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889523,
+      "intersection_bounds_mm": [
+        [
+          140.59702195422466,
+          105.0,
+          130.0
+        ],
+        [
+          150.77897804577532,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 2,
+      "x_mm": 195.688,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098890643,
+      "intersection_bounds_mm": [
+        [
+          190.5970219542244,
+          104.99999999999991,
+          130.0
+        ],
+        [
+          200.77897804577557,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 3,
+      "x_mm": 31.896,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889404,
+      "intersection_bounds_mm": [
+        [
+          26.805021954224667,
+          105.0,
+          130.0
+        ],
+        [
+          36.98697804577534,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 3,
+      "x_mm": 81.896,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889887,
+      "intersection_bounds_mm": [
+        [
+          76.80502195422463,
+          105.0,
+          130.0
+        ],
+        [
+          86.98697804577537,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 4,
+      "x_mm": -81.896,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889893,
+      "intersection_bounds_mm": [
+        [
+          -86.98697804577537,
+          105.0,
+          130.0
+        ],
+        [
+          -76.80502195422463,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 4,
+      "x_mm": -31.896,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889404,
+      "intersection_bounds_mm": [
+        [
+          -36.98697804577534,
+          105.0,
+          130.0
+        ],
+        [
+          -26.805021954224667,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 5,
+      "x_mm": -195.688,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098890643,
+      "intersection_bounds_mm": [
+        [
+          -200.77897804577557,
+          104.99999999999991,
+          130.0
+        ],
+        [
+          -190.5970219542244,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 5,
+      "x_mm": -145.688,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098889523,
+      "intersection_bounds_mm": [
+        [
+          -150.77897804577532,
+          105.0,
+          130.0
+        ],
+        [
+          -140.59702195422466,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 6,
+      "x_mm": -309.48,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098888403,
+      "intersection_bounds_mm": [
+        [
+          -314.57097804577535,
+          105.0,
+          130.0
+        ],
+        [
+          -304.3890219542247,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    },
+    {
+      "cylinder": 6,
+      "x_mm": -259.48,
+      "probe_radius_mm": 11.123565000000001,
+      "intrusion_mm3": 152.45387098887983,
+      "intersection_bounds_mm": [
+        [
+          -264.57097804577535,
+          105.0,
+          130.0
+        ],
+        [
+          -254.3890219542247,
+          106.2333859901611,
+          240.0
+        ]
+      ],
+      "baseline_intrusion_mm3": 0,
+      "clear": false
+    }
+  ],
+  "bearing_support_shells": [
+    {
+      "bearing": 1,
+      "x_mm": -334.0,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_volume_mm3": 178.01747409727915,
+      "candidate_supported_volume_mm3": 180.62938051978426,
+      "difference_mm3": 2.6119064225051147
+    },
+    {
+      "bearing": 2,
+      "x_mm": -110.0,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_volume_mm3": 184.051183902513,
+      "candidate_supported_volume_mm3": 184.051183902513,
+      "difference_mm3": 0.0
+    },
+    {
+      "bearing": 3,
+      "x_mm": 110.0,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_volume_mm3": 184.051183902513,
+      "candidate_supported_volume_mm3": 184.051183902513,
+      "difference_mm3": 0.0
+    },
+    {
+      "bearing": 4,
+      "x_mm": 360.5,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_volume_mm3": 175.39923006495928,
+      "candidate_supported_volume_mm3": 179.14453677094264,
+      "difference_mm3": 3.745306705983353
+    }
+  ],
+  "connected_drive_cutter_probes": [
+    {
+      "name": "distributor-neck",
+      "baseline_intrusion_mm3": 0,
+      "candidate_intrusion_mm3": 0,
+      "clear": true
+    },
+    {
+      "name": "drive-gear-pocket",
+      "baseline_intrusion_mm3": 0,
+      "candidate_intrusion_mm3": 0,
+      "clear": true
+    },
+    {
+      "name": "lower-shaft",
+      "baseline_intrusion_mm3": 0,
+      "candidate_intrusion_mm3": 0,
+      "clear": true
+    },
+    {
+      "name": "clamp-bolt",
+      "baseline_intrusion_mm3": 0,
+      "candidate_intrusion_mm3": 0,
+      "clear": true
+    },
+    {
+      "name": "intermediate-shaft",
+      "baseline_intrusion_mm3": 0,
+      "candidate_intrusion_mm3": 0,
+      "clear": true
+    }
+  ],
+  "negative_control_unshifted_bearing_overlap_mm3": 2751.1095412891195,
+  "limits": [
+    "No canonical installation or factory datum claim",
+    "Bearing shell material is a support comparison, not press fit or loading analysis",
+    "Axial endpoints only against block; frozen gear pair proofs remain separate and service backlash unresolved",
+    "Protected block-feature gates must also pass; a core fit pass cannot override them",
+    "Distributor/pump physical fit remains a separate connected-frame validation"
+  ]
+}

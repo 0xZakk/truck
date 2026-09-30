@@ -1,0 +1,596 @@
+{
+  "status": "PASS isolated candidate after explicit additive metadata rebind; fixed-phase axial hypothesis FAIL; UNINSTALLED",
+  "input_sha256": {
+    "scripts/check-timing-gear-backlash-candidate.py": "24a2b5c785903342cb3447d62308e05731657ba48bbda004f87143968ab29d69",
+    "cad/engine/timing_gear_backlash_candidate.py": "bda605596ed7821723fa8d8d78688654a264f15bf312d798420b975e81d96245",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/timing_gear_pair_refinement.py": "4b46be561c4fa4bfa9508fa1865caa8a5b1310ae79fd08b47afb7934fc2925d7",
+    "cad/engine/timing_thrust_land_candidate.py": "a06cc31e8343b52e647983bb2f59fcb85c699b1fb37b8899ad61d037e81da358",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "reference/engine/timing-gear-backlash-review.json": "08116d1484e0832b1882168fb48f8458b57bcb269df7a564af9c3dcb5232f90f",
+    "inventory/engine/timing-gear-backlash-diagnostic.json": "285906370505e85b5b5554da80d2fc835eca85458af48091b720a90fa1ae195f",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+    "reference/engine/timing-gear-evidence/khk-backlash.html": "6fa20ee72fb25d7b4cc8965cc90c5c3513876eae73e10ded1b216c383cb51ac1",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+  },
+  "original_run_input_sha256": {
+    "scripts/check-timing-gear-backlash-candidate.py": "24a2b5c785903342cb3447d62308e05731657ba48bbda004f87143968ab29d69",
+    "cad/engine/timing_gear_backlash_candidate.py": "bda605596ed7821723fa8d8d78688654a264f15bf312d798420b975e81d96245",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/timing_gear_pair_refinement.py": "4b46be561c4fa4bfa9508fa1865caa8a5b1310ae79fd08b47afb7934fc2925d7",
+    "cad/engine/timing_thrust_land_candidate.py": "a06cc31e8343b52e647983bb2f59fcb85c699b1fb37b8899ad61d037e81da358",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "reference/engine/timing-gear-backlash-review.json": "58c9cfbc225a5b576993a94c6ff233a69b33284a8b85ac567b347722cb794419",
+    "inventory/engine/timing-gear-backlash-diagnostic.json": "285906370505e85b5b5554da80d2fc835eca85458af48091b720a90fa1ae195f",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+    "reference/engine/timing-gear-evidence/khk-backlash.html": "6fa20ee72fb25d7b4cc8965cc90c5c3513876eae73e10ded1b216c383cb51ac1",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+  },
+  "metadata_rebind": {
+    "reason": "Root added only independent crank_key_followup metadata after numerical sweep began. Removing exactly that key reconstructs original bytes/hash; backlash evidence and all numerical inputs unchanged.",
+    "original_ledger_sha256": "58c9cfbc225a5b576993a94c6ff233a69b33284a8b85ac567b347722cb794419",
+    "current_ledger_sha256": "08116d1484e0832b1882168fb48f8458b57bcb269df7a564af9c3dcb5232f90f",
+    "removed_key": "crank_key_followup",
+    "original_run_final_guard": "FAILED as intended on ledger hash change; all 50 numerical rows preserved, no original successful exit claimed",
+    "checker_sha256": "05d69b9d02f1c2d4bf61e39d1f11a7304fb65540ff91f8cbe1063fe53ad66e2f",
+    "witness_sha256": {
+      "build-report.json": "eac6bedbcfb03e5d4386b5a75f2c4359c28560eb1bf35b7f0b35ca467a8b60af",
+      "contact-progress.json": "ed78b243c176b01f7374712d028bf3a567e90592323125907ad71a9ecfec0143",
+      "sweep-progress.json": "e503f4c1c27d114f3b32e7249572409c2a050599f622053eb17155613eccadc2",
+      "axial-sign-witnesses.json": "2ae20dcb48db4338e0ad96498f8e811fe8d610b0a099ec3ee79e1b050fd1dfa3",
+      "motion.log": "988b329e0a73d6a789b8e412cdf9150593012c15d41fc789b6e509afe87e1f92",
+      "original-backlash-review.json": "58c9cfbc225a5b576993a94c6ff233a69b33284a8b85ac567b347722cb794419",
+      "render-record.json": "da1128a4bb3550e6a197fa09961e44a7fff1075f670c0886e25eb986a443ab98"
+    }
+  },
+  "build": {
+    "status": "PASS isolated core and exports",
+    "input_sha256": {
+      "scripts/check-timing-gear-backlash-candidate.py": "24a2b5c785903342cb3447d62308e05731657ba48bbda004f87143968ab29d69",
+      "cad/engine/timing_gear_backlash_candidate.py": "bda605596ed7821723fa8d8d78688654a264f15bf312d798420b975e81d96245",
+      "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+      "cad/engine/timing_gear_pair_refinement.py": "4b46be561c4fa4bfa9508fa1865caa8a5b1310ae79fd08b47afb7934fc2925d7",
+      "cad/engine/timing_thrust_land_candidate.py": "a06cc31e8343b52e647983bb2f59fcb85c699b1fb37b8899ad61d037e81da358",
+      "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+      "reference/engine/timing-gear-backlash-review.json": "58c9cfbc225a5b576993a94c6ff233a69b33284a8b85ac567b347722cb794419",
+      "inventory/engine/timing-gear-backlash-diagnostic.json": "285906370505e85b5b5554da80d2fc835eca85458af48091b720a90fa1ae195f",
+      "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+      "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+      "reference/engine/timing-gear-evidence/khk-backlash.html": "6fa20ee72fb25d7b4cc8965cc90c5c3513876eae73e10ded1b216c383cb51ac1",
+      "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+      "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+    },
+    "parameters": {
+      "crank_teeth": 29,
+      "cam_teeth": 58,
+      "transverse_module_mm": 2.8,
+      "helix_angle_deg": 25.0,
+      "transverse_pressure_angle_deg": 20.0,
+      "width_mm": 14.0,
+      "backlash_mm": 0.0381,
+      "crank_tip_diameter_mm": 86.36,
+      "cam_tip_diameter_mm": 167.894,
+      "crank_bore_radius_mm": 21.025,
+      "cam_bore_radius_mm": 15.9
+    },
+    "exports": {
+      "crank": {
+        "step_sha256": "533208c5f28da3500021a1e8431aba26f1cd8f0b0e886a768a03041263c0e4a4",
+        "glb_sha256": "f435281f938a9a4c9e299f89c14d1c9ef58688aff76750f0e112911c54eb216c",
+        "valid": true,
+        "solids": 1,
+        "watertight": true,
+        "triangles": 6864,
+        "bounds_error_mm": 0.012899087817999089,
+        "roundtrip_volume_error_mm3": 9.38598532229662e-09
+      },
+      "cam": {
+        "step_sha256": "78df586a13fa6d0a18dc10c8628e8a02900468fb33da94b147f9b7abb3b0a0be",
+        "glb_sha256": "07fd302629f47b033ff03b02ef19b8ba22299f9a60af8e4d2445814e13e16d90",
+        "valid": true,
+        "solids": 1,
+        "watertight": true,
+        "triangles": 10380,
+        "bounds_error_mm": 0.0002280653669259891,
+        "roundtrip_volume_error_mm3": 2.034357748925686e-08
+      }
+    },
+    "protected_core": {
+      "crank": {
+        "core_radius_mm": 36.599999999999994,
+        "core_difference_mm3": 0.0,
+        "outside_tooth_envelope_mm3": 0.0,
+        "tooth_ring_mm": [
+          36.599999999999994,
+          43.18
+        ],
+        "axial_span_mm": [
+          -7,
+          7
+        ]
+      },
+      "cam": {
+        "core_radius_mm": 77.19999999999999,
+        "core_difference_mm3": 0.0,
+        "outside_tooth_envelope_mm3": 0.0,
+        "tooth_ring_mm": [
+          77.19999999999999,
+          83.947
+        ],
+        "axial_span_mm": [
+          -7,
+          7
+        ]
+      }
+    },
+    "core_fault_detected_mm3": 0.5235987755982988,
+    "base_globals_unchanged": true
+  },
+  "contact_rows": [
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": -0.025,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0023796196556261644
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": -0.03,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0028215311309748997,
+      "gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.025,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.002379619658475554
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.03,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0028215312181428505,
+      "gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": -0.025,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0034337149252944292
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": -0.03,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0023366405972209616,
+      "gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.025,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0034337149313233323
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.03,
+      "axial_mm": 0,
+      "overlap_mm3": 0.0023366406466592852,
+      "gap_mm": 0.0
+    }
+  ],
+  "two_sided_brackets": [
+    {
+      "crank_degrees": 0.0,
+      "pitch_circle_play_mm": [
+        0.07086036763096978,
+        0.08503244115716373
+      ]
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "pitch_circle_play_mm": [
+        0.07086036763096978,
+        0.08503244115716373
+      ]
+    }
+  ],
+  "service_range_mm": [
+    0.0508,
+    0.1016
+  ],
+  "service_interpretation": "Tangential pitch-circle indicator assumed; source radius/direction unspecified",
+  "axial_sign_witnesses": {
+    "fixed_phase": {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.033396179495963255,
+      "gap_mm": 0.0
+    },
+    "opposite_sign": {
+      "crank_degrees": 0,
+      "cam_extra_degrees": -0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 1.3339405637406263,
+      "gap_mm": 0.0
+    },
+    "correct_sign": {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284101413227898
+    },
+    "k_rad_per_mm": -0.005742705149692102
+  },
+  "cam_k_rad_per_mm": -0.0057427051496921015,
+  "sweep": [
+    {
+      "crank_degrees": 0.0,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284107484571725
+    },
+    {
+      "crank_degrees": 0.0,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284101413227898
+    },
+    {
+      "crank_degrees": 0.5172413793103449,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032839084200764396
+    },
+    {
+      "crank_degrees": 0.5172413793103449,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283915472080252
+    },
+    {
+      "crank_degrees": 1.0344827586206897,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836627017967475
+    },
+    {
+      "crank_degrees": 1.0344827586206897,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836702563345865
+    },
+    {
+      "crank_degrees": 1.5517241379310347,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032833957870297435
+    },
+    {
+      "crank_degrees": 1.5517241379310347,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283403045801188
+    },
+    {
+      "crank_degrees": 2.0689655172413794,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032831424098996066
+    },
+    {
+      "crank_degrees": 2.0689655172413794,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283148440254128
+    },
+    {
+      "crank_degrees": 2.586206896551724,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282947337101408
+    },
+    {
+      "crank_degrees": 2.586206896551724,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032829510790349764
+    },
+    {
+      "crank_degrees": 3.1034482758620694,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282866113268289
+    },
+    {
+      "crank_degrees": 3.1034482758620694,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282866386534307
+    },
+    {
+      "crank_degrees": 3.620689655172414,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283648272775106
+    },
+    {
+      "crank_degrees": 3.620689655172414,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283655491963509
+    },
+    {
+      "crank_degrees": 4.137931034482759,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032834157600340544
+    },
+    {
+      "crank_degrees": 4.137931034482759,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032834236066001096
+    },
+    {
+      "crank_degrees": 4.655172413793104,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283196880219765
+    },
+    {
+      "crank_degrees": 4.655172413793104,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283204465671495
+    },
+    {
+      "crank_degrees": 5.172413793103448,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283016026846882
+    },
+    {
+      "crank_degrees": 5.172413793103448,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032830222560893484
+    },
+    {
+      "crank_degrees": 5.689655172413794,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282898218634194
+    },
+    {
+      "crank_degrees": 5.689655172413794,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282901783401401
+    },
+    {
+      "crank_degrees": 6.206896551724139,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03347057493518366
+    },
+    {
+      "crank_degrees": 6.206896551724139,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03347057901057567
+    },
+    {
+      "crank_degrees": 6.724137931034483,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282898219190492
+    },
+    {
+      "crank_degrees": 6.724137931034483,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282895098359025
+    },
+    {
+      "crank_degrees": 7.241379310344828,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283016027364371
+    },
+    {
+      "crank_degrees": 7.241379310344828,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283010059991654
+    },
+    {
+      "crank_degrees": 7.758620689655173,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283196880701134
+    },
+    {
+      "crank_degrees": 7.758620689655173,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283189402634734
+    },
+    {
+      "crank_degrees": 8.275862068965518,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283415760481892
+    },
+    {
+      "crank_degrees": 8.275862068965518,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032834078935619515
+    },
+    {
+      "crank_degrees": 8.793103448275863,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283648273195255
+    },
+    {
+      "crank_degrees": 8.793103448275863,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836409318413994
+    },
+    {
+      "crank_degrees": 9.310344827586208,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282866113715097
+    },
+    {
+      "crank_degrees": 9.310344827586208,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032838653443634784
+    },
+    {
+      "crank_degrees": 9.827586206896552,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032829473375203776
+    },
+    {
+      "crank_degrees": 9.827586206896552,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282943968906445
+    },
+    {
+      "crank_degrees": 10.344827586206897,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283142410291321
+    },
+    {
+      "crank_degrees": 10.344827586206897,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283136609623321
+    },
+    {
+      "crank_degrees": 10.862068965517242,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032833957873936344
+    },
+    {
+      "crank_degrees": 10.862068965517242,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032833886303881316
+    },
+    {
+      "crank_degrees": 11.379310344827587,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283662702135034
+    },
+    {
+      "crank_degrees": 11.379310344827587,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283655138037806
+    },
+    {
+      "crank_degrees": 11.896551724137932,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0328390842038975
+    },
+    {
+      "crank_degrees": 11.896551724137932,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283901264976485
+    },
+    {
+      "crank_degrees": 12.413793103448276,
+      "cam_extra_degrees": -0.0,
+      "axial_mm": 0.0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032841074848847324
+    },
+    {
+      "crank_degrees": 12.413793103448276,
+      "cam_extra_degrees": 0.032903276806540115,
+      "axial_mm": -0.1,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284101413806741
+    }
+  ],
+  "continuous_axial_argument": "At each sampled crank phase: cam hand=-1 produces phase k*x. Translation delta plus rotation k*delta preserves cross-section phase at world X. The shared axial slab is a subset of the neutral slab for delta in[-0.1,0]. This is an analytic construction-level no-intersection certificate at the 25 checked rotations, independently supported by endpoint CAD checks; not continuous rotation or loaded dynamics.",
+  "limits": [
+    "The keyed camshaft/key/spacer/gear and retaining bolt must rotate together; gear must not slip on its key.",
+    "Existing fixed-phase core/thrust proofs do not validate rotated non-axisymmetric neighbors, valve linkage or distributor/pump drive coupling.",
+    "No production calibration: source dial indicator radius/direction unspecified; profile/helix/axes and thrust land retain estimated status.",
+    "Coupled law is one feasible unloaded path, not a prediction of loaded engine motion."
+  ]
+}

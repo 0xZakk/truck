@@ -1,0 +1,102 @@
+{
+  "scope": "Isolated estimated coordinated cover/main gasket/front pan sealing candidate; no canonical installation",
+  "readiness": "candidate",
+  "integration_base": "705c4683c199d8c5e28addba018bc8d1bdd399b1",
+  "branch": "engine/timing-core-pan-joint",
+  "source_ledgers": {
+    "reference/engine/timing-cover-joint-review.json": "f593d0a83c340e79a46bb72509fb878dfaef71614c543b0866fdb81482592906",
+    "reference/engine/timing-cover-pan-joint-review.json": "7b93559a81f7d16431cb2307b8b3550cbccc98b0d4584ba165c3bb1606d0e4dd",
+    "reference/engine/timing-cover-registration-review.json": "8c0a0a3661437b68be32d85ee0710caec31512f497b6257ca0ebc435765f7958"
+  },
+  "source_limits": "Normalized outline remains primary. No manufacturer dimension inferred from pixels. Aperture registration is an accepted feasibility hypothesis with unbounded photo depth uncertainty. Image comparison mirrors the photograph only; no projective CAD warp.",
+  "validation": {
+    "path": "inventory/engine/timing-cover-front-joint-validation.json",
+    "sha256": "6a4490ed3d50956e9fd0db1297fa17a217c363e15d1b453bd64b2a8c94d11116",
+    "local_status": "PASS"
+  },
+  "source_and_checker_hashes": {
+    "scripts/check-timing-cover-front-joint-candidate.py": "795a642e14e95d4f75341c6cbf90192b4764f16b1c557e132ad7f6f55a9bb207",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "renderer_sha256": "b995569ef991ba34819df22c5adf00fd202fc6ba87a719bf81bb7ddb7a902a82",
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-cover-front-joint-candidate/front-terminal-sealant.step": "2cbb34b015a1395ac287e49e2c9252097f35a51f5f7ec76fba575b680de34f08",
+    "cad/engine/generated/timing-cover-front-joint-candidate/cover.step": "da95fc5f84dad6c16025e19b65bf8395cdbdb9396835a16cf7bf05c428d1e223",
+    "cad/engine/generated/timing-cover-front-joint-candidate/main-gasket.step": "0f7c537736b1af03102a49e49b77634dd4fe44b013292966c479a64a87be89d5",
+    "cad/engine/generated/timing-cover-front-joint-candidate/pan-gasket.step": "39dd8639ce53e6082753e99336eaf758e579cfdcf4fdcd0d3c1b852a3398f7cb",
+    "cad/engine/generated/timing-cover-front-joint-candidate/pan.step": "93860007b0c81b993c9849c3aa17e6b395d049c208d360a3eb9e7596ffebd2d0",
+    "cad/engine/generated/timing-cover-front-joint-candidate/future-block-land.step": "765de5a4310b0be1730ea949b301b17ca973e644514087ed16d380e97cc04db3",
+    "cad/engine/generated/timing-cover-front-joint-candidate/candidate.glb": "4e6f09cb9a393ef4a80469b3d3432a90adaa1d04ba6cdae08e6c92a0e9015462",
+    "cad/engine/generated/timing-cover-front-joint-candidate/front-terminal-sealant.glb": "f17c9e3a02ca6c4254f7cc59a1bafa2faeb2a030ea93e3152b35713ef4740603",
+    "cad/engine/generated/timing-cover-front-joint-candidate/main-gasket.glb": "fe5631bf629c6f03fa5f854392a40296b79b74a7ee9c8fe224b404389c60b90d",
+    "cad/engine/generated/timing-cover-front-joint-candidate/pan.glb": "6e313d756208111a3c7b94884ad046c8464203be7634874469a7f06f2a5ce5fb",
+    "cad/engine/generated/timing-cover-front-joint-candidate/cover.glb": "d440ca34f869f64baea1d1cac5d8a37d689e788c29655d95b508d1e11f05f2f2",
+    "cad/engine/generated/timing-cover-front-joint-candidate/future-block-land.glb": "fa479fd6b27fb2d27ee76296d7d53ed59fe16de87d1caf8e8a7d0c3229e90475",
+    "cad/engine/generated/timing-cover-front-joint-candidate/pan-gasket.glb": "9b87c1ad4ba4f2b229029c935dc520d0a0dba1e8abead483fa585a8411fe97fe",
+    "cad/engine/generated/timing-cover-front-joint-candidate/preview.npz": "f1845ed8ad6509b9bb6364b826e704ddbda66310768b6411ecdaad815db721ad",
+    "cad/engine/generated/timing-cover-front-joint-candidate/candidate-review.png": "0ab70505601940e2ca7508b68f64fce1b29d38759523c73e44ea46645b4a1100",
+    "cad/engine/generated/timing-cover-front-joint-candidate/terminal-contact-review.png": "6389979dfdf937405deb1ec3b80d8b74a99f92cfcca13daf3522e6280553a913",
+    "cad/engine/generated/timing-cover-front-joint-candidate/source-comparison.png": "0e3ceceb3b92d6497c5fc9484c32be5dcb1e9b6828874699a5ce884d0579ac06"
+  },
+  "worker_visual_review": {
+    "reviewer": "air_cleaner_candidate",
+    "actual_meshes_reviewed": true,
+    "views": [
+      "candidate-review.png",
+      "terminal-contact-review.png",
+      "source-comparison.png"
+    ],
+    "findings": [
+      "Both terminal sections show the main gasket ending into a distinct 0.5 mm sealant pocket above the continuous pan gasket.",
+      "Widened upper pan neck connects to original body through a modeled shoulder; X <=335 equality is checked.",
+      "Seven-hole perimeter, rear recess, seal aperture and lower bridge are represented; front ribs, lettering and casting blends are omitted.",
+      "Outline and pan dimensions are estimates; the candidate is not production casting fidelity."
+    ],
+    "root_review": "PENDING; parent notified after local PASS"
+  },
+  "protected_interfaces": {
+    "crank_yz_mm": [
+      0,
+      0
+    ],
+    "seal_center_x_mm": 414,
+    "block_model_front_x_mm": 373,
+    "gear_axial_protection_mm": [
+      378.159375,
+      392.259375
+    ],
+    "current_cam_yz_mm": [
+      90,
+      72
+    ],
+    "proposed_cam_yz_mm": [
+      95.1098209901611,
+      76.08785679212887
+    ],
+    "rear_pan_preserved_through_x_mm": 335,
+    "unchanged_pan_stations": 20,
+    "total_pan_stations": 25
+  },
+  "future_block_patch": "Arch X363..373 above Z-24.5; side supports from X335; sockets X365.5/Y-132 and196. Must coordinate with block cam tunnel/front retention migration; never install as separate hardware.",
+  "gates": {
+    "application": "PASS for bounded replacement topology",
+    "coordinates": "PASS for explicitly estimated model contract",
+    "cad_export": "PASS",
+    "local_interfaces": "PASS",
+    "source_visual": "Worker reviewed; root PENDING",
+    "installed_interfaces": "NOT RUN",
+    "motion": "PASS only for prescribed tip envelopes and axial travel; broader motion NOT RUN",
+    "learning_diagnostics": "NOT RUN",
+    "browser": "NOT RUN",
+    "root_acceptance": "PENDING"
+  },
+  "no_source_originals_in_git_or_release": true,
+  "rejected_trials": [
+    "cad/engine/generated/timing-cover-front-joint-candidate/rejected-first-joint/",
+    "cad/engine/generated/timing-cover-front-joint-candidate/rejected-pad-windows/"
+  ],
+  "running_process": null
+}
