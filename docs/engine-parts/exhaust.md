@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -80,9 +80,9 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Manufacturer replacement photographs show an integral outlet flange with two opposed mounting holes on each manifold. Installed casting identity remains unknown.
   - Open: The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.
   - Open: Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.
-- [ ] **Rear exhaust manifold · rounded collector study** — `exhaust-rear`; modeled quantity **1**; provisional.
+- [ ] **Rear exhaust manifold** — `exhaust-rear`; modeled quantity **1**; provisional.
   - Instances: `exhaust-rear`
-  - Source IDs: system-9d57ed6d21b9, system-b9d2a4ac71cc, dorman-598-105, dorman-674186-profile-specification, dorman-674186-head-facing-photo, dorman-674186-opposite-photo, dorman-674186-overview-photo, dorman-674186-catalog-application, ford-manifold-fastener-topology, ford-1996-manifold-comparison, ford-1996-manifold-fastener-table, dorman-674185-opposite-photo, dorman-674185-application, rear-collector-rounded-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: system-9d57ed6d21b9, system-b9d2a4ac71cc, dorman-598-105, dorman-674186-profile-specification, dorman-674186-head-facing-photo, dorman-674186-opposite-photo, dorman-674186-overview-photo, dorman-674186-catalog-application, ford-manifold-fastener-topology, ford-1996-manifold-comparison, ford-1996-manifold-fastener-table, dorman-674185-opposite-photo, dorman-674185-application, rear-collector-rounded-study, rear-exhaust-neck-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory procedure establishes separate front/rear castings and head attachment. Runner bends, common chamber, flange contours, outlet dimensions and installed stations remain provisional.
   - Open: EGR takeoff, air-injection connections, lifting eye, dowel, head fasteners and exhaust-pipe joints remain unresolved. No production gasket is inferred from the model.
   - Open: Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.
@@ -97,7 +97,8 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.
   - Open: Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.
   - Open: Rounded collector and repaired runner exterior are a replacement-photo-informed dimensional study, not production geometry.
-  - Open: Retained long outlet neck, thin head lands/bolt arms and end EGR connection still differ visibly from Dorman674-186; dimensions, casting identity, auxiliary ports, threads, sealing and thermal behavior remain unresolved.
+  - Open: The outlet exterior now blends more broadly into the collector using estimated dimensions; the retained axis, flange and endpoint do not establish production neck length or seat geometry.
+  - Open: Thin head lands/bolt arms and the provisional end EGR connection still differ from replacement photographs. Casting identity, auxiliary-port assignments, threads, sealing and thermal behavior remain unresolved.
 
 ## Additional known scope and reconciliation
 

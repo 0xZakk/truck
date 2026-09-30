@@ -1,0 +1,41 @@
+{
+  "exhaust-rear": {
+    "summary": "Three rear exhaust passages join in a rounded collector before the shared outlet. A separate fitting carries some exhaust toward the EGR valve.",
+    "limits": "The collector and broad outlet transition use estimated dimensions informed by replacement photographs. Flange position, sealing seat, thin head lands and bolt arms, and the provisional end EGR location remain unverified. Auxiliary ports are not identified as AIR or oxygen-sensor connections. This model does not establish production dimensions, temperatures or flow rates.",
+    "steps": [
+      {
+        "title": "Follow the three passages",
+        "text": "Use the transparent view to follow the open runners into their shared collector. The model demonstrates connected passages rather than predicting flow.",
+        "part": "exhaust-rear"
+      },
+      {
+        "title": "Find the EGR branch",
+        "text": "The fitting and tube lead toward the EGR valve. Their current connection is retained as a provisional interface; its location is not established by the replacement casting photographs.",
+        "part": "egr-tube-manifold-fitting"
+      },
+      {
+        "title": "Inspect the head attachment",
+        "text": "The two rear mounting stations are retained. Exact production lands, clamping load and sealing remain unresolved.",
+        "part": "rear-manifold-bolt15"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate the suspected joint",
+        "text": "For a suspected exhaust leak, distinguish the head-to-manifold joint, main exhaust-pipe connection and EGR tube fitting. This localization is an inference from the applicable Ford procedure, which disconnects those interfaces separately; the drawing alone cannot identify the leaking joint.",
+        "part": "exhaust-rear",
+        "source": "system-b9d2a4ac71cc"
+      },
+      {
+        "title": "Check mating surfaces before reassembly",
+        "text": "The applicable procedure requires clean cylinder-head and manifold mating surfaces. It also says not to install a combination intake/exhaust gasket on new exhaust manifolds. Use the applicable installation sequence; this model does not supply repair dimensions or substitute gasket instructions.",
+        "part": "exhaust-rear",
+        "source": "system-b9d2a4ac71cc"
+      }
+    ],
+    "sources": [
+      "rear-exhaust-neck-study",
+      "system-b9d2a4ac71cc"
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "issue": 46,
+  "scope": "research only; unresolved port assignment; no geometry or canonical changes",
+  "review_date": "2026-09-30",
+  "baseline_commit": "a93b5bc1732f41651403ff15d821b52ab3d57d82",
+  "model_snapshot": {
+    "manifest_sha256": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf",
+    "rear_glb_sha256": "6cdd2b125029740e6a9d3b4edd3969941bedb5c3c155948c398547ee0d716a79",
+    "rear_step_sha256": "680cf58c458970dfacd5d15f8da3533fe12fc47058de2d68f3709b35aa47bc48",
+    "definition": {
+      "id": "exhaust-rear",
+      "name": "Rear exhaust manifold \u00b7 rounded collector study",
+      "function": "Collects three rear exhaust passages into a rounded estimated collector. Protected head, bolt, outlet and provisional EGR connections are retained.",
+      "system": "exhaust",
+      "color": "#7c6e63",
+      "glb": "/models/engine/exhaust-rear.glb",
+      "step": "/cad/engine/generated/exhaust-rear.step",
+      "geometry_status": "provisional",
+      "sources": [
+        "system-9d57ed6d21b9",
+        "system-b9d2a4ac71cc",
+        "dorman-598-105",
+        "dorman-674186-profile-specification",
+        "dorman-674186-head-facing-photo",
+        "dorman-674186-opposite-photo",
+        "dorman-674186-overview-photo",
+        "dorman-674186-catalog-application",
+        "ford-manifold-fastener-topology",
+        "ford-1996-manifold-comparison",
+        "ford-1996-manifold-fastener-table",
+        "dorman-674185-opposite-photo",
+        "dorman-674185-application",
+        "rear-collector-rounded-study"
+      ],
+      "dimension_claims": [],
+      "unresolved": [
+        "The factory procedure establishes separate front/rear castings and head attachment. Runner bends, common chamber, flange contours, outlet dimensions and installed stations remain provisional.",
+        "EGR takeoff, air-injection connections, lifting eye, dowel, head fasteners and exhaust-pipe joints remain unresolved. No production gasket is inferred from the model.",
+        "Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.",
+        "Entry28x28mm, corner3mm, outer36x36mm and transition stations reuse provisional front study dimensions; no pixel scaling is used.",
+        "The provisional EGR fitting insertion envelope is shortened from19mm to12.5mm so its tip ends0.5mm before the collector inner wall rather than intruding into the collector and rear runner. This is a geometric clearance assumption, not a verified thread engagement or retention specification.",
+        "Production flange lands, head attachment, outlet flange, auxiliary ports, wall thickness and thermal/flow performance remain unverified.",
+        "Ford1994 explicitly installs rear bolts15/16 before the intake; these two fasteners do not complete the remaining shared manifold clamps.",
+        "Nominal3/8-16 diameter and1.31in underhead length are1996 comparison dimensions, not established1994 installed identity.",
+        "All mounting stations, casting webs, head bosses, clearance holes, socket depths and hex-head dimensions are provisional adaptations to the existing reconstruction.",
+        "Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.",
+        "Manufacturer replacement photographs show an integral outlet flange with two opposed mounting holes on each manifold. Installed casting identity remains unknown.",
+        "The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.",
+        "Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.",
+        "Rounded collector and repaired runner exterior are a replacement-photo-informed dimensional study, not production geometry.",
+        "Retained long outlet neck, thin head lands/bolt arms and end EGR connection still differ visibly from Dorman674-186; dimensions, casting identity, auxiliary ports, threads, sealing and thermal behavior remain unresolved."
+      ],
+      "volume_mm3": 361910.3056001678,
+      "volume_method": "default",
+      "solid_count": 1,
+      "triangle_count": 64810,
+      "model_bounds_mm": [
+        292.6039999999999,
+        82.00224244111385,
+        183.50000000000003
+      ]
+    },
+    "render_sha256": "f86a224fd7e1b242c00818d411552d27bab133e93d306aaee0c3358c81331dd6"
+  },
+  "sources": [
+    {
+      "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+      "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Exhaust%20Manifold/Service%20and%20Repair/index.html",
+      "sha256": "4d6a4eab38ff073fcaf1738d8dfd87fb35e587fed8f0a9778eaebcd04ee4a1ed"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Exhaust%20Manifold/Parts%20Information/index.html",
+      "sha256": "11c230b060b230faee3c40c9a4cb5037c5a104711c014e056cedbdbcee46aa25"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Intake%20Manifold/Service%20and%20Repair/index.html",
+      "sha256": "7ad063d79c908c6a09468759ed9c3498fb6f33864854ab658e970e98e0ca3957"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Technical%20Service%20Bulletins/Customer%20Interest/Engine%20-%20Hesitation%2FSurge%20On%20Cruise%2FLight%20Acceleration/index.html",
+      "sha256": "3f06dfe4b831389d8370d15461c3089ec10d3dc7ad43ae3980b76d3efd39be90"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Air%20Injection/Description%20and%20Operation/index.html",
+      "sha256": "f3b3d35f9e30b1c0a59404ce1811183e23b91fcb56546b28fb6ac2cbd219ce7e"
+    },
+    {
+      "path": "reference/engine/dorman-674186-back.jpg",
+      "sha256": "ff6ad62eeb6b4a5d0372f84230be6da8d82c88a224a86d676931a825c16e82e0"
+    },
+    {
+      "path": "reference/engine/dorman-674186-front.jpg",
+      "sha256": "48f200b532b96dc217728bdc26b2386a80ea1b5a3649228e78653bd91af62b98"
+    },
+    {
+      "path": "reference/engine/dorman-674186-three-quarter.jpg",
+      "sha256": "e0f2ac74933a6aa32432d48aaa1c3c98e643364b7d3d716ca6665ddb92412772"
+    },
+    {
+      "path": "reference/engine/dorman-598-105/598-105-007.jpg",
+      "sha256": "f9d21cb8d20a1502ddc03a207c0bb3445119d7aac3db0d5dc0d2bc42dc1a9255"
+    },
+    {
+      "path": "reference/engine/dorman-674186-profile-reviewed.json",
+      "sha256": "62561ae6fcb1aa001d2d07143cdfb8c1a45a0b1cfb1477358ed444f142baa4c4"
+    },
+    {
+      "path": "reference/engine/dorman-598-105/review.json",
+      "sha256": "8518ca700bb13e0c47fbc23e033941ff281a0993fa65ab835f8fc4d627c4aab6"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Service%20and%20Repair/index.html",
+      "sha256": "d3a2d9072172a6da8d340ef74028e63955994de6f2f76f289ddacf300c0b083d"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Testing%20and%20Inspection/index.html",
+      "sha256": "e61924ffc8d00206711bc0b9da6ed3a83837a729c3e998773ec6b34414e80d4d"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Diagrams/index.html",
+      "sha256": "7ecfac53183ee39b5c41ac6e13ecbfd9c217cd5fcc24b7aff5daa5d1a8453039"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Description%20and%20Operation/index.html",
+      "sha256": "b6a52f57fd8c494d08c42b5804d7f052d454c0e625d8f44a5f95b21b41d1193c"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Technical%20Service%20Bulletins/index.html",
+      "sha256": "3708a33c1228735f5c1d914a23c2a1177ed4c0a3c59349205afcf98f031e0403"
+    }
+  ],
+  "primary_urls": [
+    "https://www.dormanproducts.com/p-26852-674-186.aspx",
+    "https://www.dormanproducts.com/p-32641-598-105.aspx"
+  ],
+  "reviewed_figures": [
+    {
+      "source": "1994 EVTM",
+      "pdf_page_1_based": 341,
+      "printed_page": "152-6",
+      "observation": "4.9L HO2S entry says exhaust manifold; C1025, figure151-1-B1"
+    },
+    {
+      "source": "1994 EVTM",
+      "pdf_page_1_based": 312,
+      "printed_page": "151-1",
+      "observation": "Explicit 4.9L engine drawing; leader reaches obscured lower engine region, not a distinguishable casting boss"
+    },
+    {
+      "source": "AIR description",
+      "image": "606914019.png",
+      "observation": "Typical diagram with two banks of four ports; cannot assign 4.9L receiver"
+    },
+    {
+      "source": "Oxygen sensor service",
+      "image": "150757959.png",
+      "observation": "No identifiable 4.9L casting boss map"
+    },
+    {
+      "source": "Oxygen sensor diagrams",
+      "image": "150877394.png",
+      "observation": "Electrical connector only"
+    }
+  ],
+  "photo_feature_labels": {
+    "A": "674186 back image-left lateral hex-plugged boss, physical function unknown",
+    "B": "674186 back image-upper-right oblique hex-plugged boss, physical function unknown",
+    "C": "Small circular recess above outlet flange; blind/mounting/gas function unknown"
+  },
+  "conflicts": [
+    {
+      "topic": "HO2S location",
+      "manifold": "1994 EVTM explicit4.9L location page152-6",
+      "pipe": "Selected1994 sensor service and Ford TSB95-2-10 covering1991\u201394 4.9L F-Series",
+      "resolution": "Unresolved; TSB calibration applicability and installed variant unknown. Neither assigns A/B."
+    }
+  ],
+  "conclusions": {
+    "EGR": "Exact1994 procedure connects EGR valve to rear manifold, but does not label A/B or prove modeled end location.",
+    "AIR": "Generic upstream/downstream routing; exact Thermactor tube and lower-intake bypass bracket removal does not establish gas receiver. No AIR assignment.",
+    "outlet": "Integral two-hole flange and broad blended neck visible; perspective gives no defensible length/angle. Existing long neck remains estimated.",
+    "seat_threads": "No verified thread pitch, sealing seat, connector endpoint assignment or bore dimensions.",
+    "owner_identity": "F5TZ9431F service table matches Dorman OE cross-reference; replacement comparison only, not owner installed identity."
+  },
+  "next_gate": "Applicable oriented Ford or manufacturer port map tying 9D477 and any HO2S/unused plugs to A/B, plus separate4.9L AIR receiver evidence; no port relocation until resolved.",
+  "part_count_delta": 0,
+  "new_part_ids": [],
+  "geometry_checks": "N/A: research only; no geometry changed",
+  "source_comparison": "Actual retained Dorman pixels and current hash-bound model rendered and viewed; qualitative only",
+  "running_process": null
+}

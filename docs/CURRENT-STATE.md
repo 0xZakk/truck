@@ -1,17 +1,17 @@
 # Current engine integration — 2026-09-30
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/exhaust-timing-joints`. [PR #95](https://github.com/0xZakk/truck/pull/95) is in integration review; prior merged checkpoint is PR #94 / `124aa7c345af352459a800343ffc50f1e931367c`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/timing-core-pan-joint`. Saved checkpoint: merged [PR #95](https://github.com/0xZakk/truck/pull/95), commit `705c4683c199d8c5e28addba018bc8d1bdd399b1`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
 
 ## Current installed checkpoint
 
-**741 definitions / 1,349 occurrences.** Manifest SHA-256: `ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf`.
+**741 definitions / 1,349 occurrences.** Manifest SHA-256: `91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6`.
 
-The rear exhaust manifold now has a source-compared rounded collector and repaired runner exterior, retaining checked head, bolt, outlet and provisional EGR interfaces. Exact target STEP binding, watertight export, metadata preservation, baseline/target replay, rollback tests and 27 fresh neighbor comparisons pass. Ten promotion controls include changed canonical STEP/GLB rejection. The actual candidate/source comparison and section were reviewed. Its long neck, thin bolt lands and end EGR arrangement still differ from replacement photographs; no factory-casting acceptance or Done claim.
+The rear exhaust manifold now has a source-compared rounded collector and repaired runner exterior, retaining checked head, bolt, outlet and provisional EGR interfaces. Exact target STEP binding, watertight export, metadata preservation, baseline/target replay, rollback tests and 27 fresh neighbor comparisons pass. Ten promotion controls include changed canonical STEP/GLB rejection. The actual candidate/source comparison and section were reviewed. A further reviewed neck blend is now installed with 12 promotion controls, 65,670 watertight triangles and 27 fresh zero-overlap neighbor checks. Thin bolt lands, the end EGR arrangement and outlet dimensions still differ or remain unverified; no factory-casting acceptance or Done claim.
 
 The earlier runner exterior, eleven-part illustrative EVR with five matched disc/spring poses, and illustrative throttle stops remain installed. Their historical reports retain their own input hashes and scopes. The four-part air-cleaner housing/filter/seal candidate is uninstalled.
 
-- Current whole-engine static audit: **5,287 exact overlapping-bound comparisons, zero overlaps above 0.1 mm³**. Artifact, scale and hierarchy checks pass. This is one static pose, not continuous whole-engine motion or factory validation.
-- Combined STEP: **1,349 unique occurrence names**, valid solids and matching world bounds; maximum roundtrip difference 0.000351 mm against 0.01 mm tolerance.
+- Previous whole-engine static audit: **5,287 exact overlapping-bound comparisons, zero overlaps above 0.1 mm³**. Artifact, scale and hierarchy checks pass. This is one static pose, not continuous whole-engine motion or factory validation. `rear-neck-static-reuse.json` verifies 740 unchanged STEP definitions/frames and fresh checks for the sole changed rear manifold; no redundant whole-engine audit is claimed.
+- Current combined STEP: **1,349 unique occurrence names**, valid solids and matching world bounds; maximum roundtrip difference 0.000351 mm against 0.01 mm tolerance. Combined STEP regenerated successfully for the installed neck update.
 - Navigation: **1,349 parts / 1,548 links**, including the new source-linked exhaust lesson. Python syntax and existing numeric crank-motion checks pass. CI initially caught stale generated parts checklists; those were refreshed and the checks now pass.
 - Browser automation rejected the localhost preview under its security policy. No alternate-surface bypass was attempted. CAD renders and Node checks do not replace selection, explosion/reset or installed-motion browser acceptance.
 
@@ -27,9 +27,9 @@ Reviewed studies remain uninstalled:
 
 Three workers own isolated files; root alone edits shared assembly/viewer data:
 
-1. Timing core (#32): coordinated shaft/bearing/gear/retention candidate. The inherited gear-back relief fails to establish the stated endplay; an estimated rear thrust-land correction is being checked before any installation.
+1. Timing block (#32): baseline regeneration matches the installed block exactly. A bounded cam-side feature migration is being checked. The isolated thrust-land correction passed its limited core/endplay checks; all remain uninstalled.
 2. Cover/pan joint (#32): coordinated cover, gasket and local front-pan seating candidate using the explicitly estimated registration. Preserve the supported 25 pan-fastener count; prove sealing contacts, not merely absence of overlap.
-3. Exhaust exterior (#46): an additional source-compared outlet blend candidate is undergoing exact interface/flow/neighbor checks. The port review found conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
+3. Gear backlash (#32): the exact-year manual calls for0.0508–0.1016mm; the old estimated pair gives0.22675–0.25510mm of sampled pitch-circle free play. Indicator setup interpretation is explicit. A distinct revised pair is being checked, including axial/rotational coupling; old evidence is preserved. Rear outlet blend (#46) is installed but its browser/production gates remain open. Port research found conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
 
 Do not install these candidates or overwrite their files. Failed trials remain useful evidence. Worker completion alone does not establish accepted installation.
 
@@ -37,4 +37,4 @@ Do not install these candidates or overwrite their files. Failed trials remain u
 
 The [current private CAD archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published, with checksum and scope in `docs/cad-exhaust-timing-checkpoint.json`. It includes the installed rear collector and reviewed timing studies, but excludes ongoing timing-core and coordinated pan-joint candidates. Follow `docs/CAD-ARTIFACTS.md`. Browser meshes are committed. Source originals/composites, purchased manuals and owner photographs are excluded from Git and release archives.
 
-CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #95 tracks the reviewed checkpoint. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.
+CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #95 is merged; the next candidates remain separate and the further neck installation awaits its next saved checkpoint. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.

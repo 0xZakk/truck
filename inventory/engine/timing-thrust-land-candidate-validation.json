@@ -1,0 +1,1403 @@
+{
+  "status": "PASS isolated thrust land and complete core axial-pair checks; helical endpoint report REQUIRED; UNINSTALLED",
+  "input_sha256": {
+    "scripts/check-timing-thrust-land-candidate.py": "f4c3aad4b9735dae3d7a111a0db69711ebb8e25f16547970ea7b31034044a0f9",
+    "cad/engine/timing_thrust_land_candidate.py": "a06cc31e8343b52e647983bb2f59fcb85c699b1fb37b8899ad61d037e81da358",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/timing-core-migration-candidate-validation.json": "c825fbd684970edb8c3ba3f18ece3c8907a7766703f793eb179df370451f8a86",
+    "inventory/engine/timing-gear-pair-refinement-validation.json": "c5c6b5212b146b5bda89e854df1c38b7c4d1506199fb36f4a414097589edb19a",
+    "cad/engine/generated/timing-gear-pair-refined/cam.step": "d723a068fc20c7fde7447dc5b1be04930180814f43e9b32189a5970226440598",
+    "cad/engine/generated/timing-core-migration-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/timing-core-migration-candidate/rear-cam-plug.step": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+    "cad/engine/generated/timing-core-migration-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-core-migration-candidate/cam-timing-gear.step": "5e571257bccdc84783b4d525f049fcf3afb2193c9dfbc3135976e3ca43f961c8",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-core-migration-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-core-migration-candidate/cam-timing-key.step": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-core-migration-candidate/camshaft.glb": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-1.glb": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-2.glb": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-3.glb": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+    "cad/engine/generated/timing-core-migration-candidate/cam-bearing-4.glb": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+    "cad/engine/generated/timing-core-migration-candidate/rear-cam-plug.glb": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+    "cad/engine/generated/timing-core-migration-candidate/crank-timing-gear.glb": "dd452eb2681ce3b82c343f0055b70b1a9e510c42c66106d819d922ea4c37c05d",
+    "cad/engine/generated/timing-core-migration-candidate/cam-timing-gear.glb": "9304ec5db35d5fbce665a9ed5229360daa1f519309a87d8dfb63e99eb6f82547",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-plate.glb": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+    "cad/engine/generated/timing-core-migration-candidate/cam-gear-spacer.glb": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+    "cad/engine/generated/timing-core-migration-candidate/cam-timing-key.glb": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-bolt-1.glb": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-bolt-2.glb": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-washer-1.glb": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+    "cad/engine/generated/timing-core-migration-candidate/cam-thrust-washer-2.glb": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454"
+  },
+  "parameters": {
+    "inner_radius_mm": 20.65,
+    "outer_radius_mm": 26.0,
+    "local_x_min_mm": -7.0,
+    "local_x_max_mm": 1.02
+  },
+  "protected_regions": {
+    "bore_difference_mm3": 0.0,
+    "key_and_spacer_difference_mm3": 0.0,
+    "removed_solids": 0,
+    "added_outside_outer_radius_solids": 0,
+    "added_outside_tooth_root_guard_solids": 0,
+    "added_volume_mm3": 6272.566724010458
+  },
+  "exports": {
+    "camshaft": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.01146978346187666,
+      "step_volume_error_mm3": 1.1641532182693481e-10,
+      "step_sha256": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+      "glb_sha256": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+      "triangles": 30902,
+      "inherited_unchanged": true
+    },
+    "cam-bearing-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+      "glb_sha256": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+      "triangles": 840,
+      "inherited_unchanged": true
+    },
+    "cam-bearing-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+      "glb_sha256": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+      "triangles": 840,
+      "inherited_unchanged": true
+    },
+    "cam-bearing-3": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+      "glb_sha256": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+      "triangles": 840,
+      "inherited_unchanged": true
+    },
+    "cam-bearing-4": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+      "glb_sha256": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+      "triangles": 840,
+      "inherited_unchanged": true
+    },
+    "rear-cam-plug": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012469756733580084,
+      "step_volume_error_mm3": 1.8189894035458565e-12,
+      "step_sha256": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+      "glb_sha256": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+      "triangles": 836,
+      "inherited_unchanged": true
+    },
+    "crank-timing-gear": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.011857403742503436,
+      "step_volume_error_mm3": 0.0,
+      "step_sha256": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+      "glb_sha256": "dd452eb2681ce3b82c343f0055b70b1a9e510c42c66106d819d922ea4c37c05d",
+      "triangles": 5282,
+      "inherited_unchanged": true
+    },
+    "cam-timing-gear": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.00033498745501159277,
+      "step_volume_error_mm3": 8.731149137020111e-11,
+      "triangles": 10380,
+      "step_sha256": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+      "glb_sha256": "787d78d23105d797d5fb4912f7bb2aab52578014c476817c9a7f604c287afb36"
+    },
+    "cam-thrust-plate": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.003951035655333612,
+      "step_volume_error_mm3": 4.911271389573812e-10,
+      "step_sha256": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+      "glb_sha256": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+      "triangles": 2044,
+      "inherited_unchanged": true
+    },
+    "cam-gear-spacer": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.008523355639766805,
+      "step_volume_error_mm3": 7.958078640513122e-11,
+      "step_sha256": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+      "glb_sha256": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+      "triangles": 840,
+      "inherited_unchanged": true
+    },
+    "cam-timing-key": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.0027870071760816018,
+      "step_volume_error_mm3": 2.842170943040401e-14,
+      "step_sha256": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+      "glb_sha256": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+      "triangles": 212,
+      "inherited_unchanged": true
+    },
+    "cam-thrust-bolt-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+      "glb_sha256": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+      "triangles": 9194,
+      "inherited_unchanged": true
+    },
+    "cam-thrust-bolt-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+      "glb_sha256": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+      "triangles": 9194,
+      "inherited_unchanged": true
+    },
+    "cam-thrust-washer-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540087378813837,
+      "step_volume_error_mm3": 3.325340003357269e-12,
+      "step_sha256": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+      "glb_sha256": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+      "triangles": 808,
+      "inherited_unchanged": true
+    },
+    "cam-thrust-washer-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540385402037714,
+      "step_volume_error_mm3": 3.268496584496461e-12,
+      "step_sha256": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+      "glb_sha256": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+      "triangles": 808,
+      "inherited_unchanged": true
+    }
+  },
+  "axial_interval_mm": [
+    -0.1,
+    0.0
+  ],
+  "all_affected_pairs": [
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-3",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-4",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "rear-cam-plug",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "crank-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-plate",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-bolt-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-bolt-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-washer-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-washer-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-1",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-2",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-2",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-2",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-3",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-3",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-3",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-4",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-4",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-bearing-4",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "rear-cam-plug",
+      "b": "cam-timing-gear",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "rear-cam-plug",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "rear-cam-plug",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "cam-timing-gear",
+      "coverage": "separate25pose helical endpoint sweep"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-plate",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-bolt-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-bolt-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-washer-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-washer-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-thrust-plate",
+      "b": "cam-gear-spacer",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-thrust-plate",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-timing-key",
+      "axial_samples_mm": [
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0
+      ],
+      "relative_pose_constant": true
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-bolt-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-bolt-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-washer-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-washer-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-bolt-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-bolt-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-washer-1",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-washer-2",
+      "axial_samples_mm": [
+        -0.1,
+        -0.075,
+        -0.05,
+        -0.025,
+        0.0
+      ],
+      "overlap_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "relative_pose_constant": false
+    }
+  ],
+  "continuous_axial_certificates_non_helical": [
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-1",
+      "proof": "entire source axial interval contained in coaxial journal cylinder; cylinder clears bearing",
+      "journal_radius_mm": 25.62225
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-2",
+      "proof": "entire source axial interval contained in coaxial journal cylinder; cylinder clears bearing",
+      "journal_radius_mm": 25.62225
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-3",
+      "proof": "entire source axial interval contained in coaxial journal cylinder; cylinder clears bearing",
+      "journal_radius_mm": 25.62225
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-bearing-4",
+      "proof": "entire source axial interval contained in coaxial journal cylinder; cylinder clears bearing",
+      "journal_radius_mm": 25.62225
+    },
+    {
+      "a": "camshaft",
+      "b": "rear-cam-plug",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "camshaft",
+      "b": "crank-timing-gear",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-timing-gear",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-plate",
+      "proof": "shaft shoulder remainsX<=373; nose cylinder clears plate for full negative travel"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-gear-spacer",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-timing-key",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-bolt-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-bolt-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-washer-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "camshaft",
+      "b": "cam-thrust-washer-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-bearing-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-bearing-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-bearing-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-bearing-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-bearing-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-bearing-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-bearing-3",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-bearing-3",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-bearing-3",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-bearing-4",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-bearing-4",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-bearing-4",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "rear-cam-plug",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "rear-cam-plug",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "rear-cam-plug",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "crank-timing-gear",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "crank-timing-gear",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-plate",
+      "proof": "entire gear stays at/forward of plate front plane throughout travel"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-gear-spacer",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-timing-key",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-bolt-1",
+      "proof": "local gap and omitted-region separation exceed total0.1mm translation",
+      "local_gap_mm": 0.7999999999999545
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-bolt-2",
+      "proof": "local gap and omitted-region separation exceed total0.1mm translation",
+      "local_gap_mm": 0.7999999999999545
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-washer-1",
+      "proof": "local gap and omitted-region separation exceed total0.1mm translation",
+      "local_gap_mm": 1.4999999999911182
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-thrust-washer-2",
+      "proof": "local gap and omitted-region separation exceed total0.1mm translation",
+      "local_gap_mm": 1.499999999999872
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-plate",
+      "proof": "local gap and omitted-region separation exceed total0.1mm translation",
+      "local_gap_mm": 1.5874999999999964
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-plate",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-timing-key",
+      "proof": "rigid shared translation; relative solids unchanged"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-bolt-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-bolt-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-washer-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-thrust-washer-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-bolt-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-bolt-2",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-washer-1",
+      "proof": "entire travel swept AABB separated"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "cam-thrust-washer-2",
+      "proof": "entire travel swept AABB separated"
+    }
+  ],
+  "stop_contacts": [
+    {
+      "travel_mm": -0.1,
+      "moving_part": "cam-timing-gear",
+      "opposing_face_contact_area_mm2": 784.0708405013074,
+      "overlap_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.0,
+      "moving_part": "camshaft",
+      "opposing_face_contact_area_mm2": 724.4301821004594,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "overtravel_faults": [
+    {
+      "travel_mm": -0.11,
+      "moving_part": "cam-timing-gear",
+      "overlap_mm3": 7.840708405050512
+    },
+    {
+      "travel_mm": 0.11,
+      "moving_part": "camshaft",
+      "overlap_mm3": 79.68732003106615
+    }
+  ],
+  "limitations": [
+    "Estimated backside topology, no production identity",
+    "Gear-pair helical endpoint/axial certificate separate; do not infer from fixed axial pose",
+    "Full engine block/cover/valvetrain/distributor not adapted",
+    "Crank key missing; no press-fit/load/browser claim"
+  ]
+}

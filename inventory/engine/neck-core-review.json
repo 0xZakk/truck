@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "baseline_commit": "705c4683c199d8c5e28addba018bc8d1bdd399b1",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "report_sha256": {
+    "inventory/engine/rear-exhaust-neck-installed-validation.json": "a7b0d4bc709438d6dc71c172eb1745937ffb1018072b4bf53425622e8d9042f8",
+    "inventory/engine/rear-neck-static-reuse.json": "a4acee5ab1f7af0523ee0e593d5017b560c9e3330c08f47880bb8db61090aa16",
+    "inventory/engine/combined-step-export.json": "bfd574dcd2aeb1aab23d7c546420bc2e92ed068da14c1d19cecb9dbf492f2766",
+    "inventory/engine/timing-core-migration-candidate-validation.json": "c825fbd684970edb8c3ba3f18ece3c8907a7766703f793eb179df370451f8a86",
+    "inventory/engine/timing-core-contact-witnesses.json": "e28f5bbeeb60b30432260a720be76ea87ccf1a6b458f1cc4e0f515a85fc4ddc3",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "inventory/engine/timing-thrust-land-helical-validation.json": "4eb7c3732b0b29c9565d7aa60d43bea87729dc0f9e819290a10f1eb7d82f6436",
+    "inventory/engine/timing-gear-backlash-diagnostic.json": "285906370505e85b5b5554da80d2fc835eca85458af48091b720a90fa1ae195f",
+    "reference/engine/timing-gear-backlash-review.json": "08116d1484e0832b1882168fb48f8458b57bcb269df7a564af9c3dcb5232f90f"
+  },
+  "installed_scope": "Only exhaust-rear neck exterior, same stable ID and frame. Source comparison improves the collector transition; head lands, auxiliary ports and provisional end EGR topology remain unresolved.",
+  "actual_visuals_reviewed": [
+    "cad/engine/generated/rear-exhaust-neck-integration-stage/source-comparison.png",
+    "cad/engine/generated/timing-thrust-land-candidate/thrust-land-render.png",
+    "cad/engine/generated/timing-core-migration-candidate/timing-core-render.png"
+  ],
+  "checks": {
+    "neck_installation": "PASS target binding, metadata, 27 fresh exact neighbors, rollback, 12 staged promotion controls",
+    "static": "PASS targeted changed-part checks and explicit unchanged-evidence reuse; no new global sweep claimed",
+    "combined_step": "PASS1349unique occurrences, bounds error0.000350660mm<0.01",
+    "navigation": "PASS1349parts1548deep links",
+    "python_syntax": "PASS",
+    "browser": "NOT RUN: earlier tool security rejection, no alternate-surface bypass",
+    "production_fidelity": "NOT established",
+    "clean_clone_full_cad_rebuild": "NOT RUN"
+  },
+  "uninstalled_timing": "Core and estimated thrust land have bounded geometric proofs. Original gear pair fails the new service-backlash comparison; axial proof at its old generous clearance does not accept the ongoing revised teeth. Block, cover/pan and reduced-backlash revisions are active isolated work.",
+  "acceptance": "Code checkpoint and provisional neck installation only; no component Done or engine completion.",
+  "usage": "Unavailable for this checkpoint; no billing claim."
+}
