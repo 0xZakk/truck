@@ -4,7 +4,7 @@ Browser meshes, modeling source and validation reports are committed to Git. Gen
 
 ## Current neck and timing-core checkpoint
 
-The September 30 neck/core package is prepared for publication at [this private release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). It preserves **741 definitions / 1,349 occurrences**, the further installed rear-neck blend, isolated timing-core/thrust-land studies and the failed old-gear backlash diagnostic. The engine remains unfinished and browser acceptance is NOT RUN.
+The September 30 neck/core package is published at [this private release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). It preserves **741 definitions / 1,349 occurrences**, the further installed rear-neck blend, isolated timing-core/thrust-land studies and the failed old-gear backlash diagnostic. The engine remains unfinished and browser acceptance is NOT RUN.
 
 ```sh
 gh release download checkpoint-2026-09-30-neck-core --repo 0xZakk/truck --pattern truck-active-cad-20260930-neck-core.tar.gz --dir /tmp
