@@ -2,7 +2,28 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Current runner, EVR and throttle-stop checkpoint
+## Current rear-exhaust and timing-study checkpoint
+
+The [September30 exhaust/timing archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published for PR #95. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.
+
+Restore using:
+
+```sh
+gh release download checkpoint-2026-09-30-exhaust-timing --repo 0xZakk/truck --pattern truck-active-cad-20260930-exhaust-timing.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260930-exhaust-timing.tar.gz
+```
+
+Compare with `docs/cad-exhaust-timing-checkpoint.json`, preserve newer local work, then extract from the repository root:
+
+```sh
+tar -xzf /tmp/truck-active-cad-20260930-exhaust-timing.tar.gz
+```
+
+The archive contains active STEP geometry and the rebuilt combined assembly; prior fixtures; the rear-collector candidate, stages and promotion evidence; separate gear/refinement studies; cover/gasket studies including rejected pan registration; numeric cam-axis feasibility and the newer registration study. Ongoing timing-core and coordinated pan-joint candidates are excluded. Reference originals/composites, purchased manuals and owner photographs are excluded. Source evidence requiring restricted originals remains a separate authorized-access dependency.
+
+Reproduce the package with `scripts/package-exhaust-timing-checkpoint.py --previous <runner-evr-stops-archive> --output <new-archive>`. The script verifies the prior archive and current input stability. It is not a factory-fidelity certificate.
+
+## Previous runner, EVR and throttle-stop checkpoint
 
 The [September30 checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-runner-evr-stops) contains **741 definitions / 1,349 occurrences**. Geometry remains provisional and browser acceptance for this batch is NOT RUN. It preserves source-compared runner surfaces, illustrative EVR/stop mechanisms and a separate air-cleaner candidate.
 

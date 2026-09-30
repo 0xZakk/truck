@@ -22291,8 +22291,8 @@
     },
     {
       "id": "exhaust-rear",
-      "name": "Rear exhaust manifold",
-      "function": "Collects exhaust from three rounded-rectangular rear entries. Entry dimensions, retained box collector and EGR end connection remain provisional; manufacturer photos require further collector, flange and auxiliary-port reconstruction.",
+      "name": "Rear exhaust manifold \u00b7 rounded collector study",
+      "function": "Collects three rear exhaust passages into a rounded estimated collector. Protected head, bolt, outlet and provisional EGR connections are retained.",
       "system": "exhaust",
       "color": "#7c6e63",
       "glb": "/models/engine/exhaust-rear.glb",
@@ -22311,7 +22311,8 @@
         "ford-1996-manifold-comparison",
         "ford-1996-manifold-fastener-table",
         "dorman-674185-opposite-photo",
-        "dorman-674185-application"
+        "dorman-674185-application",
+        "rear-collector-rounded-study"
       ],
       "dimension_claims": [],
       "unresolved": [
@@ -22319,7 +22320,6 @@
         "EGR takeoff, air-injection connections, lifting eye, dowel, head fasteners and exhaust-pipe joints remain unresolved. No production gasket is inferred from the model.",
         "Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.",
         "Entry28x28mm, corner3mm, outer36x36mm and transition stations reuse provisional front study dimensions; no pixel scaling is used.",
-        "This incremental entry correction retains the old collector and EGR end connection. Both remain unsupported form/routing studies pending joint reconstruction; this is not a completed rear manifold.",
         "The provisional EGR fitting insertion envelope is shortened from19mm to12.5mm so its tip ends0.5mm before the collector inner wall rather than intruding into the collector and rear runner. This is a geometric clearance assumption, not a verified thread engagement or retention specification.",
         "Production flange lands, head attachment, outlet flange, auxiliary ports, wall thickness and thermal/flow performance remain unverified.",
         "Ford1994 explicitly installs rear bolts15/16 before the intake; these two fasteners do not complete the remaining shared manifold clamps.",
@@ -22328,16 +22328,18 @@
         "Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.",
         "Manufacturer replacement photographs show an integral outlet flange with two opposed mounting holes on each manifold. Installed casting identity remains unknown.",
         "The40mm outlet opening,10mm flange thickness,32mm central outer radius,12mm ear radii and77.67mm diagonal hole spacing are explicit geometric assumptions, not measurements from the photos.",
-        "Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved."
+        "Outlet axes and elevations retain the provisional model. Production sealing seat, mating pipe flange, fastener identity, thread engagement, gasket applicability and thermal performance remain unresolved.",
+        "Rounded collector and repaired runner exterior are a replacement-photo-informed dimensional study, not production geometry.",
+        "Retained long outlet neck, thin head lands/bolt arms and end EGR connection still differ visibly from Dorman674-186; dimensions, casting identity, auxiliary ports, threads, sealing and thermal behavior remain unresolved."
       ],
-      "volume_mm3": 423227.3502239283,
+      "volume_mm3": 361910.3056001678,
       "volume_method": "default",
       "solid_count": 1,
-      "triangle_count": 19248,
+      "triangle_count": 64810,
       "model_bounds_mm": [
-        294.8120002,
-        81.0000001,
-        183.50000010000002
+        292.6039999999999,
+        82.00224244111385,
+        183.50000000000003
       ]
     },
     {
@@ -42547,8 +42549,8 @@
       "id": "exhaust-rear",
       "definition": "exhaust-rear",
       "parent": "exhaust",
-      "name": "Rear exhaust manifold",
-      "function": "Collects exhaust from three rounded-rectangular rear entries. Entry dimensions, retained box collector and EGR end connection remain provisional; manufacturer photos require further collector, flange and auxiliary-port reconstruction.",
+      "name": "Rear exhaust manifold \u00b7 rounded collector study",
+      "function": "Collects three rear exhaust passages into a rounded estimated collector. Protected head, bolt, outlet and provisional EGR connections are retained.",
       "position_cad_mm": [
         0,
         0,
@@ -62411,6 +62413,12 @@
       "path": "/reference/engine/throttle-stop-review.json",
       "sha256": "4eb12c11d26bbc25b569afbedfd2a193c2817e890022bf34cde8ca6fcf972ae3",
       "url": "https://github.com/0xZakk/truck/issues/43"
+    },
+    "rear-collector-rounded-study": {
+      "title": "Rear collector source comparison and bounded runner repair",
+      "path": "/reference/engine/exhaust-rear-collector-review.json",
+      "sha256": "39766e0a9c9d968fc4f4716ca34572a78784ef307e40d3c101d6a0e62795c1ef",
+      "url": "https://github.com/0xZakk/truck/issues/46"
     }
   },
   "mechanism": {

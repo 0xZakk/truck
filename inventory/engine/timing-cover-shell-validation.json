@@ -1,0 +1,149 @@
+{
+  "local_status": "PASS",
+  "readiness": "ISOLATED CANDIDATE; NOT FOR INSTALLATION",
+  "parameters": {
+    "scale_mm_per_reference_pixel": 0.24,
+    "source_crank_pixel": [
+      595.0,
+      955.0
+    ],
+    "rotation_deg": 0.0,
+    "block_seat_x": 373.0,
+    "gasket_thickness": 0.8,
+    "cover_front_x": 415.0,
+    "seal_center_x": 414.0,
+    "cam_yz": [
+      95.1098209901611,
+      76.08785679212887
+    ],
+    "gear_center_x": 385.259375,
+    "gear_face_width": 14.0,
+    "block_land_depth": 10.0,
+    "cam_clearance": 1.0,
+    "gear_axial_clearance": 0.25
+  },
+  "input_sha256": {
+    "scripts/check-timing-cover-shell-candidate.py": "df4e13ad43b25a37e506dde8b7a295df8a01d248b3d864ca31617746345ab290",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "exports": {
+    "timing-cover-shell-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 1.1699739843606949e-07,
+      "cad_mesh_bounds_error_mm": 0.0016652898860343157,
+      "glb_bounds_error_mm": 1.2636184709702292e-05
+    },
+    "timing-cover-main-gasket-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 1.762600732035935e-09,
+      "cad_mesh_bounds_error_mm": 0.0,
+      "glb_bounds_error_mm": 9.489059427103541e-06
+    },
+    "timing-cover-block-land-proposal": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 2.283195499330759e-08,
+      "cad_mesh_bounds_error_mm": 0.0,
+      "glb_bounds_error_mm": 6.093978904830877e-06
+    }
+  },
+  "seat_support": {
+    "land_uncovered_mm3": 0,
+    "cover_uncovered_mm3": 0,
+    "required_area_mm2": 9843.204589135406
+  },
+  "negative_controls": {
+    "shifted_gasket_outside_land_mm3": 1790.0562851552409,
+    "removed_gasket_gap_mm": 0.8000000000000114
+  },
+  "blind_socket_obstruction_mm3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "socket_radial_wall_missing_mm3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "socket_bottom_wall_missing_mm3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "blocked_socket_fault_mm3": [
+    218.755379654763,
+    218.75537965476303,
+    218.75537965476303,
+    218.75537965476298,
+    218.75537965476306,
+    218.75537965476315,
+    218.75537965476317
+  ],
+  "cam_relief_exterior_wall_missing_mm3": [
+    0,
+    0
+  ],
+  "seal_radial_support_missing_mm3": 0,
+  "pair_overlap_mm3": {
+    "timing-cover-shell-candidate / timing-cover-main-gasket-candidate": 0,
+    "timing-cover-shell-candidate / timing-cover-block-land-proposal": 0,
+    "timing-cover-main-gasket-candidate / timing-cover-block-land-proposal": 0
+  },
+  "gear_envelope_tests": {
+    "current_axes": {
+      "cam_yz": [
+        90.0,
+        72.0
+      ],
+      "overlap_mm3": [
+        0,
+        0
+      ],
+      "cover_clearance_mm": [
+        3.032215195700128,
+        0.25
+      ]
+    },
+    "proposed_axes": {
+      "cam_yz": [
+        95.1098209901611,
+        76.08785679212887
+      ],
+      "overlap_mm3": [
+        0,
+        0
+      ],
+      "cover_clearance_mm": [
+        3.032215195700128,
+        0.25
+      ]
+    }
+  },
+  "fixed_seal_overlap_mm3": 0,
+  "pan_joint": {
+    "status": "FAIL",
+    "current_front_gasket_arc_overlap_mm3": 1421.2091671798557,
+    "limit": "Only front annulus witness; complete OS34601R and terminal geometry not accepted. Lower bridge does not establish pan seat. Do not install."
+  },
+  "installed_neighbors": "NOT RUN",
+  "browser": "NOT RUN"
+}

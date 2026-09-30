@@ -1,0 +1,58 @@
+{
+  "status": "PASS arithmetic consistency only; NOT CAD/installation acceptance",
+  "script_sha256": "03a394d1904e7ddc486f94385d0bad1e458ccf701701c0c880fe6b97b6e7f65f",
+  "sources_sha256": {
+    "reference/engine/timing-gear-evidence/pbm-catalog-2025.pdf": "592a5d61e6de1aa45a5269030187d12a4037fab1d9ae32a6ef795f040eb15ca8",
+    "reference/engine/ford-industrial-parts.pdf": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+    "reference/engine/timing-gear-evidence/melling-engine-parts-catalog.pdf": "547973b73b028a0e2b4115a6129975a9bc3505211dd2a9dfc9410576dd9b7d7b",
+    "reference/engine/timing-gear-evidence/elgin-c2766s.html": "d0cd86541b8f8ce4ec3c2180ee0d6ea379cb763c4eabc1328d84cb963f4c758e",
+    "reference/engine/timing-gear-evidence/elgin-c2766s-front.jpg": "4a8431ae12c5fd133129b1b7f95bbc85b9f98525e106e9bca948d6e90a0734c8"
+  },
+  "source_comparison_diameters_mm": {
+    "cam": 167.894,
+    "crank": 86.36
+  },
+  "current_center_mm": 115.25623627379127,
+  "old_center_standard_58_29_tip_diameters_mm": {
+    "cam": 158.9741189983328,
+    "crank": 82.13662814913862
+  },
+  "standard_unshifted_transverse_modules_mm": {
+    "cam_from_standard_addendum": 2.7982333333333336,
+    "crank_from_standard_addendum": 2.785806451612903
+  },
+  "standard_unshifted_centers_mm": {
+    "cam_from_standard_addendum": 121.72315,
+    "crank_from_standard_addendum": 121.18258064516128
+  },
+  "standard_unshifted_pair_exactly_consistent": false,
+  "independent_proposed_estimate": {
+    "transverse_module_mm": 2.8,
+    "helix_angle_deg": 25.0,
+    "normal_module_mm": 2.5376618037026195,
+    "transverse_pressure_angle_deg": 20,
+    "width_mm": 14,
+    "center_distance_mm": 121.8,
+    "cam_axis_yz_mm": [
+      95.1098209901611,
+      76.08785679212887
+    ],
+    "cam_axis_delta_yz_mm": [
+      5.109820990161092,
+      4.087856792128873
+    ],
+    "cam_tip_radius_mm": 83.947,
+    "crank_tip_radius_mm": 43.18,
+    "cam_addendum_mm": 2.747000000000014,
+    "crank_addendum_mm": 2.5800000000000054,
+    "cam_lead_mm": 1094.1159511761566,
+    "crank_lead_mm": 547.0579755880783
+  },
+  "limits": [
+    "Elgin labels gear diameter, not explicit outside/pitch diameter. Treating it as tip diameter is a comparison assumption supported by the product envelope, not an engineering drawing.",
+    "Distinct manufacturers: PBM58/29 count and Elgin dimensions are replacement comparisons, not a measured same-specimen engineering specification.",
+    "The two published diameters do not imply one exact standard unshifted module; do not average away the discrepancy. Profile shift, tip truncation, rounding and variant remain unresolved.",
+    "Helix angle/lead and pressure angle are unmeasured. The proposed25degrees and2.8mm transverse module are independent educational estimates, not source facts.",
+    "No CAD has been built or installed by this arithmetic check. Shaft/cover/valvetrain re-registration requires coordinated review."
+  ]
+}

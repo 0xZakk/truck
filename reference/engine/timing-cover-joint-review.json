@@ -1,0 +1,313 @@
+{
+  "issue": 32,
+  "readiness": "candidate; isolated source-proportioned outline only",
+  "baseline_commit": "796b621244d8e341fe2f3c4de7af99488af01548",
+  "sources": [
+    {
+      "part": "TCS 45829",
+      "source_type": "Primary manufacturer public catalog asset",
+      "metadata_url": "https://www.felpro.com/driv/partfinder/api.catalog.productAssets?brand=felpro&locale=en_US&country_code=US&part_number=TCS%2045829&brand_code=BCWV&brand_codes=BCWV&pies_asset_type=P04",
+      "metadata_path": "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45829-assets.json",
+      "metadata_sha256": "c41d0ebadbf194b11b47c1049959492c8d15ba80c612dabd229caf9a81c307e5",
+      "image_url": "https://s3.amazonaws.com/vsdam-driv/Repositories/FE0812619C5046AF853EC6520F0004E0/f38b77d3-6867-49a0-a42a-95fd59c366ea/f38b77d3-6867-49a0-a42a-95fd59c366ea.jpg",
+      "local_private_image": "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45829-manufacturer.jpg",
+      "image_sha256": "4b8131456bde2907a9dde0697bdc087e7f860242afd9caa9195f074394c3cb6f",
+      "pixels_reviewed": true,
+      "distribution": "EXCLUDE originals/metadata captures from release and Git; public URL/hash retained here"
+    },
+    {
+      "part": "TCS 45830",
+      "source_type": "Primary manufacturer public catalog asset",
+      "metadata_url": "https://www.felpro.com/driv/partfinder/api.catalog.productAssets?brand=felpro&locale=en_US&country_code=US&part_number=TCS%2045830&brand_code=BCWV&brand_codes=BCWV&pies_asset_type=P04",
+      "metadata_path": "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45830-assets.json",
+      "metadata_sha256": "73d877cb4ef9fe85e46e0b7a55a91cfba33ad7610b3e08fcd77b87a6a4789ebb",
+      "image_url": "https://s3.amazonaws.com/vsdam-driv/Repositories/FE0812619C5046AF853EC6520F0004E0/52df18f3-05df-4c9a-af01-9318ffce2117/52df18f3-05df-4c9a-af01-9318ffce2117.jpg",
+      "local_private_image": "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45830-manufacturer.jpg",
+      "image_sha256": "7ba3ed1d601af04d20c20fd711969edd7bb50330b24c8c2056158fb61f04bcc0",
+      "pixels_reviewed": true,
+      "distribution": "EXCLUDE originals/metadata captures from release and Git; public URL/hash retained here"
+    }
+  ],
+  "application_source": "reference/engine/fel-pro-vin-y-gaskets-reviewed.json",
+  "exact_year_source": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html",
+    "sha256": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407",
+    "finding": "Cover removal discards gasket and replaces crankshaft seal; front pan screws removed and first six bolts each side loosened. No outline or mounting coordinates supplied."
+  },
+  "visual_findings": [
+    "Both applicable manufacturer kit images show the same asymmetric open-bottom main gasket with seven perimeter holes.",
+    "Both show a separate shallow U-shaped strip with five holes; exact installed role is not identified by the image.",
+    "TCS 45830 also depicts sleeve/consumables; catalog describes repair sleeve option.",
+    "Main gasket must not be modeled as a closed annulus copied from current two-lobe cover."
+  ],
+  "dimensionless_outline": {
+    "coordinate_system": "Normalized image u,v in [0,1], v downward; primary data hand-transcribed from 1600px displayed rendering of a 2000px original",
+    "points_source": "cad/engine/timing_cover_joint_candidate.py OUTLINE_NORMALIZED",
+    "hole_centers_normalized": [
+      [
+        0.08375,
+        0.598125
+      ],
+      [
+        0.224375,
+        0.53625
+      ],
+      [
+        0.351875,
+        0.345625
+      ],
+      [
+        0.6,
+        0.108125
+      ],
+      [
+        0.89875,
+        0.20375
+      ],
+      [
+        0.968125,
+        0.40375
+      ],
+      [
+        0.885625,
+        0.6
+      ]
+    ],
+    "hole_center_uncertainty_each_axis": 0.001875,
+    "edge_uncertainty_each_axis": 0.005,
+    "uncertainty_kind": "Conservative manual-pixel selection estimate, not statistical confidence or manufacturing tolerance",
+    "outline_width_over_height": 1.709211986681465,
+    "hole_radius_normalized_estimate": 0.013125,
+    "image_perspective": "Near frontal product photograph; perspective and flatness not independently calibrated"
+  },
+  "display_scale": {
+    "image_edge_mm": 320,
+    "sheet_thickness_mm": 0.8,
+    "classification": "ARBITRARY illustrative display scale; no manufacturer dimensional inference",
+    "engine_registration": null
+  },
+  "current_interfaces": {
+    "cover_root_x_mm": 403,
+    "cover_rear_x_mm": 391,
+    "cover_front_x_mm": 415,
+    "cam_retention_block_face_x_mm": 373,
+    "gear_center_x_mm": 385.259375,
+    "crank_axis_yz_mm": [
+      0,
+      0
+    ],
+    "cam_axis_yz_mm": [
+      90,
+      72
+    ],
+    "front_seal_occurrence_x_mm": 414,
+    "pan_front_land_x_interval_mm": [
+      365,
+      381
+    ],
+    "cover_rear_to_current_retention_block_face_gap_mm": 18,
+    "units": "Current provisional model mm only; not factory datums",
+    "seven_hole_correspondence": "No seven-hole mounting pattern in timing_cover.py. Current block source has cam-retention screw bores but no matching source-traced timing-cover perimeter pattern. Do not reuse cam-retention holes as cover holes.",
+    "current_center_distance_mm": 115.25623627379127,
+    "axis_status": "Unverified current model; not immutable. Replacement gear evidence conflicts with current center distance under the proposed standard-profile interpretation."
+  },
+  "revision_proposal": {
+    "status": "SUPERSEDED IN PART: gear-axis freeze withdrawn; see cover_evidence_followup. No shared changes.",
+    "joint_plane": "Use current cam-retention BLOCK_FACE X=373 as a modeling candidate only after verifying front casting land; it is not a factory measurement. Confirm exact canonical front-face bounds before accepting.",
+    "cover_change": "Do not register or resize cover to current gear centers. Coordinate with timing-gear evidence proposal first. Preserve canonical source unchanged until source-consistent shaft/gear/cover plan is accepted; proposed changes may include shaft center adjustment. Front seal/axial planes remain inherited estimates, not factory constraints.",
+    "gasket_stack": "If plane373 is accepted, block seat373, gasket373..373+t, cover seat373+t; t remains unknown (0.8 only outline display). Corresponding local cover seat is -30+t.",
+    "block_change": "Add/machine matching perimeter land and seven mounting stations only after dimensionless outline registration is reviewed; protect cam thrust support, crank bearing and oil/coolant regions.",
+    "pan_junction": "Maintain existing front pan gasket land365..381 as provisional. Identify separate five-hole strip and both main-gasket terminal contacts before accepting any triple-junction seal. No extruded bridge or gasket thickening across18mm gap.",
+    "required_checks": [
+      "Registered outline must enclose protected gear cavity without material blockage",
+      "Continuous mating-face contact around supported main gasket path and explicit terminal interfaces",
+      "Seven matching bolt axes and validated engagement",
+      "Pan-cover-block junction sealing and missing/shifted gasket negative controls",
+      "Revalidate nearby pump/brackets and gear motion after cover/block change"
+    ]
+  },
+  "validation": "inventory/engine/timing-cover-joint-validation.json",
+  "render": "cad/engine/generated/timing-cover-joint-candidate/candidate-review.png",
+  "visual_review": "Actual candidate mesh independently viewed beside source: open arch, seven holes, broad left leg, rounded right lobe and open terminals agree at topology level. Hand-traced polygon is visibly faceted; no production contour or scale acceptance. Five-hole strip and crank seal intentionally absent from candidate.",
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-cover-joint-candidate/preview.npz": "144181062950c76a855cde696d7f2053c0ce051b25ade960c187211123304f39",
+    "cad/engine/generated/timing-cover-joint-candidate/main-gasket.glb": "66c6c7f5aa84c84bf132cb4277fb37e0d934b9bbb66515c9e814c37343f4332f",
+    "cad/engine/generated/timing-cover-joint-candidate/main-gasket.step": "f64fbf6167a3e21cb1d085d3db3da0273813b0b914ad336c5cfb20c305b78738",
+    "cad/engine/generated/timing-cover-joint-candidate/candidate-review.png": "a2e67bf4341815c8a8d9182e5eac68ce2825985d3799bf94eabf06060ba90819"
+  },
+  "unresolved": [
+    "True scale, thickness, orientation and engine registration",
+    "Separate five-hole strip identity and joint relationship",
+    "Seven fastener sizes and depths",
+    "Current cover/block/pan mating planes",
+    "Factory cavity/flange contour and seat widths"
+  ],
+  "failed_access": [
+    "OReilly and AutoZone direct pages returned Access Denied; not used as shape evidence",
+    "Fel-Pro product detail endpoint returned empty body; no kit-piece identity extracted",
+    "Initial image search results were unrelated and excluded"
+  ],
+  "verdict": "Preserve topology candidate; coordinated joint and installation remain NOT RUN",
+  "cover_evidence_followup": {
+    "status": "Read-only source/interface follow-up; no geometry or checks changed",
+    "manufacturer_cover_sources": [
+      {
+        "manufacturer": "Dorman",
+        "part": "635-109",
+        "url": "https://www.dormanproducts.com/p-8021-635-109.aspx",
+        "html_path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109.html",
+        "html_sha256": "b4eed8718d01630bdbebbcbd88b76617b7398eb833e045580a196f0836b6a2e0",
+        "direct_OE_cross_as_published": "E5TZ 6019-H",
+        "application_limit": "Manufacturer page broad Ford1965\u201396 summary. Pioneer explicit truck/L6 row provides separate supporting comparison, not proof of Dorman application via brand interchange.",
+        "specification_limit": "14 in length and2 in width are not accompanied by datums/axes and are NOT used to scale geometry.",
+        "images": [
+          {
+            "url": "https://static.dormanproducts.com/images/product/medium/635-109-001.jpg",
+            "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-001.jpg",
+            "sha256": "dcc615c322bc6ea22293a40cdcfbe8456119e04688a548f5f625925b5496bbb7",
+            "pixels_reviewed": true,
+            "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+          },
+          {
+            "url": "https://static.dormanproducts.com/images/product/medium/635-109-002.jpg",
+            "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-002.jpg",
+            "sha256": "ce5b60d4b135469698c7f563f5ffd7e1796497c57efa40c84be2e3506f4ff623",
+            "pixels_reviewed": true,
+            "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+          },
+          {
+            "url": "https://static.dormanproducts.com/images/product/medium/635-109-003.jpg",
+            "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-003.jpg",
+            "sha256": "1d8e6e915c423f80582f99d91849b9b5539f009722a7eb17261261bf9c5264f5",
+            "pixels_reviewed": true,
+            "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+          },
+          {
+            "url": "https://static.dormanproducts.com/images/product/medium/635-109-007.jpg",
+            "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-007.jpg",
+            "sha256": "7058b77c98803b3a7b4fed64d81f52dad9f078db1b537dab3394e08eb8917182",
+            "pixels_reviewed": true,
+            "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+          },
+          {
+            "url": "https://static.dormanproducts.com/images/product/medium/635-109-009.jpg",
+            "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg",
+            "sha256": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494",
+            "pixels_reviewed": true,
+            "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+          }
+        ]
+      },
+      {
+        "manufacturer": "Pioneer",
+        "part": "500300",
+        "url": "https://images.carid.com/pioneer-automotive/items/pdf/timing-cover-catalog.pdf",
+        "path": "cad/engine/generated/timing-cover-joint-candidate/reference/pioneer-timing-cover-catalog.pdf",
+        "sha256": "acad4e37946718f15a843a7e3dc7dbbc501a1ad150425a7829e9c7de5e94f9c5",
+        "reviewed_pdf_pages_1_based": [
+          18,
+          19,
+          35
+        ],
+        "reviewed_printed_pages": [
+          14,
+          15,
+          31
+        ],
+        "application": "Page15 continued F100/F150/F250/F350 table:1965\u201396 L6 4.9L300ci ->500300",
+        "illustration": "Page31:500300,1965\u201397 Ford L6 3.9/4.9 truck; reference OEM E5TE-6019-H",
+        "number_caution": "Pioneer E5TE and Dorman E5TZ are distinct strings; likely engineering/service context is not verified, so do not silently normalize."
+      }
+    ],
+    "cover_observations": [
+      "Backside002 shows recessed gear cavity bounded by a raised perimeter sealing land, not just a constant-thickness circular wall.",
+      "Seven visible through-hole bosses follow the asymmetric main gasket around the large lobe and elongated leg.",
+      "Lower boundary opposite the open main-gasket path forms a curved pan-seal bridge around the crank seal end.",
+      "Front001/003 show crank-seal boss, exterior ribs and threaded cross-axis holes at the lower pan edge. Count of all pan-edge holes is not established from these views.",
+      "Pioneer front specimen shows matching broad topology and circular seal seat. Cast circular surface mark is not treated as a measured cam axis."
+    ],
+    "seven_hole_visual_correspondence": {
+      "source": "Dorman backside635-109-002.jpg,640\u00d7357 pixels; approximate centers from displayed pixels, no metrology",
+      "sequence": "Main-gasket long terminal, long-leg intermediate, transition, large-lobe crown-side, outer lobe, opposite lobe, short terminal",
+      "normalized_centers_approx": [
+        [
+          0.08125,
+          0.8907563025210085
+        ],
+        [
+          0.24375,
+          0.7871148459383753
+        ],
+        [
+          0.4984375,
+          0.8543417366946778
+        ],
+        [
+          0.875,
+          0.8291316526610645
+        ],
+        [
+          0.9703125,
+          0.38935574229691877
+        ],
+        [
+          0.846875,
+          0.12605042016806722
+        ],
+        [
+          0.653125,
+          0.0392156862745098
+        ]
+      ],
+      "uncertainty_pixels_each_axis": 5,
+      "limits": "Perspective oblique. Cyclic/order correspondence only; no homography, metric coordinates, cover thickness or engine datum registration accepted."
+    },
+    "five_hole_strip": {
+      "status": "UNKNOWN installed identity",
+      "finding": "Both Fel-Pro kits show the strip; Dorman635-109 image009 isolates only the seven-hole main gasket and007 shows cover/main gasket. No readable manufacturer installation instruction identifies the five-hole strip.",
+      "rejected_inference": "Do not assume the strip is the entire OS34601R front end, install it on top of the one-piece gasket, or infer five pan bolts from its holes. Kit coverage may include service variants; not established here.",
+      "next_evidence": "Obtain applicable kit instruction/component list or factory drawing explicitly identifying the strip and junction procedure; keep it absent until then."
+    },
+    "gear_coordination": {
+      "worker": "stops_install_resume",
+      "report": "inventory/engine/timing-gear-evidence-validation.json",
+      "report_sha256": "a796d95780836dcebb4a4d09ba6aadef33dc0be0ea015819d575c1d01834d081",
+      "received": "PBM58/29 and Elgin source OD167.894/86.36mm disagree with smaller gear envelopes forced by current115.256mm centers. Source ODs do not uniquely determine pitch or helix.",
+      "alternative_estimate": {
+        "transverse_module_mm": 2.8,
+        "center_distance_mm": 121.8,
+        "crank_yz_mm": [
+          0,
+          0
+        ],
+        "cam_yz_mm": [
+          95.109821,
+          76.087857
+        ],
+        "source_comparison_envelope_radii_mm": [
+          43.18,
+          83.947
+        ],
+        "axial_center_x_mm": 385.259375,
+        "face_width_mm": 14
+      },
+      "limits": "Alternative estimated feasibility proposal, not canonical installation or factory center measurement. Root review and source consistency required before registered cover/flange."
+    },
+    "blockface_registration": {
+      "independent_support": "NONE found in these sources for X373 or absolute blockface-to-seal depth",
+      "status": "X373 remains current model datum only; source specimen has no scale/datum labels. No bridge to existing391 rear face approved."
+    },
+    "coherent_next_proposal": [
+      "First resolve gear/bore-center source consistency and review whether cam axis must move; do not shrink cover around obsolete gears.",
+      "Then register a smooth normalized cover/gasket contour to the reviewed crank seal center and candidate gear cavity using measured or explicitly accepted estimated datums; label all estimates.",
+      "Reconstruct cavity, rear land, seven bosses and pan bridge together as an isolated revised cover/block/pan joint. Do not merely stretch current two-lobe shell.",
+      "Identify main-gasket terminals and five-hole strip role before claiming continuous seating at the pan junction.",
+      "Only after joint review define axial gasket thickness and matching block seat; preserve canonical until this coordinated design passes cavity/seal/bolt/motion gates."
+    ],
+    "root_review": {
+      "verdict": "Useful topology/reference study only",
+      "findings": "Angular polygon and arbitrary scale are not finished fidelity. Smooth source-supported contour and simplified thickness-axis ticks needed after registration; defer cosmetic work until joint is resolved."
+    },
+    "distribution": "All primary images, rendered catalog pages and catalog PDF are reference-only captures; EXCLUDE from Git and release artifacts."
+  }
+}

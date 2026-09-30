@@ -1,7 +1,7 @@
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
 import { createThrottleCableMotion, cableAngle } from './throttle-cable-motion.js';
 import { createEvrDiscreteMotion } from './evr-discrete-motion.js';
-import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=runner-evr-stops-20260930';
+import { engineLearningModules, resolveEngineLearning } from './engine-learning-modules.js?revision=rear-collector-20260930';
 import { explodeOffset } from './engine-explode-stages-candidate.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';

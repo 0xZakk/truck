@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "status": "PASS read-only datum extraction; migration NOT RUN",
+  "baseline_commit": "124aa7c345af352459a800343ffc50f1e931367c",
+  "manifest_sha256": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+  "scope": "#32 dependency audit only; local occurrence positions are not world positions",
+  "input_sha256": {
+    "cad/engine/full_engine.py": "6b5dfb8d61d9ef3a5ff019cad1bdf848af87e7258c1bebb8cadff20f2ba22956",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/rear_cam_clearance_desktop.py": "df48428234e2eb69795f2f7a32063767c9690d32768fd4d0b7ea90d5fb69cc6c",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/oil_pump_drive.py": "aa064a85f0eec3d878315ee69cd998a0394d71e8bd1f5846ebffd7248e67b3ab",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "viewer/engine-valve-source.js": "b123cbae4474a19e5320a3ef0c08326671d6217aea2518a64feb63bb1acee9ac",
+    "reference/engine/timing-axis-datum-leads.json": "69cc3971e811391c3bf49e1deea973a0242066c4810612cde832b26184586734"
+  },
+  "current_cam_center_mm": 115.25623627379127,
+  "hypotheses": [
+    {
+      "center_mm": 121.8,
+      "evidence_class": "independent candidate estimate",
+      "conditional_same_direction_yz_mm": [
+        95.1098209901611,
+        76.08785679212887
+      ],
+      "conditional_delta_yz_mm": [
+        5.109820990161097,
+        4.087856792128875
+      ],
+      "direction_is_estimated": true
+    },
+    {
+      "center_mm": 122.0216,
+      "evidence_class": "unverified forum assertion converted from 4.804 in; NOT accepted datum",
+      "conditional_same_direction_yz_mm": [
+        95.28286151833369,
+        76.22628921466695
+      ],
+      "conditional_delta_yz_mm": [
+        5.282861518333689,
+        4.226289214666949
+      ],
+      "direction_is_estimated": true
+    }
+  ],
+  "assemblies": {
+    "cam-motion": {
+      "id": "cam-motion",
+      "name": "Camshaft",
+      "parent": "valvetrain",
+      "motion": {
+        "type": "cam"
+      },
+      "position_cad_mm": [
+        0,
+        90,
+        72
+      ]
+    },
+    "cam-retention-assembly": {
+      "id": "cam-retention-assembly",
+      "name": "Camshaft thrust plate, spacer & key",
+      "parent": "closures",
+      "motion": null,
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "distributor-assembly": {
+      "id": "distributor-assembly",
+      "name": "Distributor \u00b7 closed-bowl study",
+      "parent": "ignition",
+      "motion": null,
+      "position_cad_mm": [
+        227.584,
+        152.90064653097454,
+        139.56114760707814
+      ],
+      "rotation_cad_deg": [
+        -20.0,
+        0,
+        0
+      ]
+    },
+    "oil-drive-assembly": {
+      "id": "oil-drive-assembly",
+      "name": "Oil pump intermediate drive \u00b7 constrained study",
+      "parent": "lubrication",
+      "motion": null,
+      "position_cad_mm": [
+        227.584,
+        123.8289343482927,
+        59.687274840275926
+      ],
+      "rotation_cad_deg": [
+        -20.0,
+        0,
+        0
+      ]
+    },
+    "oil-pump-assembly": {
+      "id": "oil-pump-assembly",
+      "name": "Oil pump",
+      "parent": "lubrication",
+      "motion": null,
+      "position_cad_mm": [
+        224.084,
+        60.62087570056252,
+        -113.97543902192623
+      ],
+      "rotation_cad_deg": [
+        -20.0,
+        0,
+        0
+      ]
+    }
+  },
+  "occurrences": {
+    "camshaft": {
+      "definition": "camshaft",
+      "parent": "cam-motion",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-timing-gear": {
+      "definition": "cam-timing-gear",
+      "parent": "cam-motion",
+      "position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "crank-timing-gear": {
+      "definition": "crank-timing-gear",
+      "parent": "crank-motion",
+      "position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-thrust-plate": {
+      "definition": "cam-thrust-plate",
+      "parent": "cam-retention-assembly",
+      "position_cad_mm": [
+        373.0,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-gear-spacer": {
+      "definition": "cam-gear-spacer",
+      "parent": "cam-motion",
+      "position_cad_mm": [
+        373.0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-timing-key": {
+      "definition": "cam-timing-key",
+      "parent": "cam-motion",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "rear-cam-plug": {
+      "definition": "rear-cam-plug",
+      "parent": "block-plugs",
+      "position_cad_mm": [
+        -363.7878,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        -90,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-bearing-1": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "position_cad_mm": [
+        -334.0,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-bearing-2": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "position_cad_mm": [
+        -110,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-bearing-3": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "position_cad_mm": [
+        110,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "cam-bearing-4": {
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "position_cad_mm": [
+        360.5,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "c1-intake-lifter-body": {
+      "definition": "lifter-body",
+      "parent": "c1-intake-lifter",
+      "position_cad_mm": [
+        259.48,
+        90,
+        114.8
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-intake-lifter-pushrod-cup": {
+      "definition": "lifter-pushrod-cup",
+      "parent": "c1-intake-lifter",
+      "position_cad_mm": [
+        259.48,
+        90,
+        135.7
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "lifter",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-intake-pushrod": {
+      "definition": "pushrod",
+      "parent": "c1-intake-actuation",
+      "position_cad_mm": [
+        259.48,
+        90.0,
+        264.701677217186
+      ],
+      "rotation_cad_deg": [
+        -0.0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "pushrod",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-intake-rocker": {
+      "definition": "rocker-arm",
+      "parent": "c1-intake-actuation",
+      "position_cad_mm": [
+        259.48,
+        51.0718402496357,
+        395.1246
+      ],
+      "rotation_cad_deg": [
+        -4.183193630790627e-14,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "rocker",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-intake-fulcrum": {
+      "definition": "rocker-fulcrum",
+      "parent": "c1-intake-actuation",
+      "position_cad_mm": [
+        259.48,
+        51.0718402496357,
+        395.1246
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "c1-intake-valve": {
+      "definition": "intake-valve",
+      "parent": "c1-intake-valve-assembly",
+      "position_cad_mm": [
+        259.48,
+        -12.0,
+        261
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "intake",
+        "role": "valve",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-exhaust-lifter-body": {
+      "definition": "lifter-body",
+      "parent": "c1-exhaust-lifter",
+      "position_cad_mm": [
+        309.48,
+        90,
+        114.8
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-exhaust-lifter-pushrod-cup": {
+      "definition": "lifter-pushrod-cup",
+      "parent": "c1-exhaust-lifter",
+      "position_cad_mm": [
+        309.48,
+        90,
+        135.7
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "lifter",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-exhaust-pushrod": {
+      "definition": "pushrod",
+      "parent": "c1-exhaust-actuation",
+      "position_cad_mm": [
+        309.48,
+        89.9993243949524,
+        264.7016772153603
+      ],
+      "rotation_cad_deg": [
+        0.0003096703876891937,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "pushrod",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-exhaust-rocker": {
+      "definition": "rocker-arm",
+      "parent": "c1-exhaust-actuation",
+      "position_cad_mm": [
+        309.48,
+        51.0718402496357,
+        395.1342937511289
+      ],
+      "rotation_cad_deg": [
+        -0.014267843038805978,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "rocker",
+        "model": "source-sized-v2"
+      }
+    },
+    "c1-exhaust-fulcrum": {
+      "definition": "rocker-fulcrum",
+      "parent": "c1-exhaust-actuation",
+      "position_cad_mm": [
+        309.48,
+        51.0718402496357,
+        395.1342937511289
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": null
+    },
+    "c1-exhaust-valve": {
+      "definition": "exhaust-valve",
+      "parent": "c1-exhaust-valve-assembly",
+      "position_cad_mm": [
+        309.48,
+        -12.0,
+        261
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "valvetrain": {
+        "cylinder": 1,
+        "kind": "exhaust",
+        "role": "valve",
+        "model": "source-sized-v2"
+      }
+    }
+  },
+  "dependency_groups": {
+    "axis_support": [
+      "block",
+      "camshaft",
+      "cam-bearing",
+      "rear-cam-plug"
+    ],
+    "front_retention": [
+      "cam-thrust-plate",
+      "cam-thrust-bolt",
+      "cam-thrust-washer",
+      "cam-gear-spacer",
+      "cam-timing-key",
+      "cam-timing-gear",
+      "crank-timing-gear"
+    ],
+    "valvetrain": [
+      "lifter-body and all internal occurrences",
+      "pushrod",
+      "rocker-arm",
+      "rocker-fulcrum",
+      "rocker-bolt",
+      "rocker-guide",
+      "cylinder-head",
+      "head-gasket",
+      "valve-cover"
+    ],
+    "oil_drive": [
+      "distributor-assembly",
+      "oil-drive-assembly",
+      "oil-pump-assembly",
+      "oil-pickup-assembly",
+      "block drive bosses/tunnels/pump sockets",
+      "pump outlet joint"
+    ],
+    "cover_boundary": [
+      "timing-cover",
+      "front-seal",
+      "cover flange/block seat",
+      "pan gasket/bridge"
+    ],
+    "shared_authorities": [
+      "full_engine.py",
+      "assembly_math.py",
+      "valvetrain_dispatch.py",
+      "valve_source_integration.py",
+      "viewer/engine-valve-source.js",
+      "viewer/atlas.js"
+    ]
+  },
+  "motion_counts": {
+    "lifter": 108,
+    "pushrod": 12,
+    "rocker": 12,
+    "valve": 48,
+    "spring": 12
+  },
+  "limits": [
+    "No solids loaded, no clearance or migration pass claimed",
+    "Rear exhaust integration may change whole manifest hash; scope must be rebound explicitly",
+    "No production datum inferred from replacement diameters or forum lead"
+  ]
+}

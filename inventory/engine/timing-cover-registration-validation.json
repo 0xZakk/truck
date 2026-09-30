@@ -1,0 +1,400 @@
+{
+  "scope": "Feasibility study; no factory dimensions or installed acceptance",
+  "input_sha256": {
+    "scripts/check-timing-cover-registration-study.py": "7d91199b7a8e460ced571a8fea9eaa621e6f3182d26fb38aafe086d78d1de01a",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "photo_samples": {
+    "source_holes_pixels": [
+      [
+        134.0,
+        957.0
+      ],
+      [
+        359.0,
+        858.0
+      ],
+      [
+        563.0,
+        553.0
+      ],
+      [
+        960.0,
+        173.0
+      ],
+      [
+        1438.0,
+        326.0
+      ],
+      [
+        1549.0,
+        646.0
+      ],
+      [
+        1417.0,
+        960.0
+      ]
+    ],
+    "dorman002_holes_pixels": [
+      [
+        52.0,
+        318.0
+      ],
+      [
+        156.0,
+        281.0
+      ],
+      [
+        319.0,
+        305.0
+      ],
+      [
+        560.0,
+        296.0
+      ],
+      [
+        621.0,
+        139.0
+      ],
+      [
+        542.0,
+        45.0
+      ],
+      [
+        418.0,
+        14.0
+      ]
+    ],
+    "dorman009_holes_pixels": [
+      [
+        592.0,
+        329.0
+      ],
+      [
+        492.0,
+        292.0
+      ],
+      [
+        333.0,
+        319.0
+      ],
+      [
+        87.0,
+        304.0
+      ],
+      [
+        21.0,
+        137.0
+      ],
+      [
+        99.0,
+        43.0
+      ],
+      [
+        227.0,
+        12.0
+      ]
+    ],
+    "dorman002_aperture_boundary_pixels": [
+      [
+        164.0,
+        203.0
+      ],
+      [
+        168.0,
+        193.0
+      ],
+      [
+        174.0,
+        185.0
+      ],
+      [
+        182.0,
+        179.0
+      ],
+      [
+        189.0,
+        176.0
+      ],
+      [
+        197.0,
+        174.0
+      ],
+      [
+        205.0,
+        172.0
+      ],
+      [
+        213.0,
+        172.0
+      ],
+      [
+        222.0,
+        174.0
+      ],
+      [
+        231.0,
+        177.0
+      ],
+      [
+        240.0,
+        183.0
+      ],
+      [
+        247.0,
+        192.0
+      ],
+      [
+        248.0,
+        203.0
+      ],
+      [
+        244.0,
+        214.0
+      ],
+      [
+        237.0,
+        222.0
+      ],
+      [
+        230.0,
+        227.0
+      ],
+      [
+        221.0,
+        231.0
+      ],
+      [
+        213.0,
+        233.0
+      ],
+      [
+        205.0,
+        234.0
+      ],
+      [
+        197.0,
+        234.0
+      ],
+      [
+        188.0,
+        232.0
+      ],
+      [
+        180.0,
+        228.0
+      ],
+      [
+        172.0,
+        222.0
+      ],
+      [
+        166.0,
+        213.0
+      ]
+    ],
+    "uncertainty_pixels": {
+      "source_holes": 3,
+      "back_holes": 5,
+      "aperture": 4
+    }
+  },
+  "image_fit": {
+    "homography_source_to_back002": [
+      [
+        0.42330713981300405,
+        -0.3473680846511742,
+        337.30092002896197
+      ],
+      [
+        -0.28006730593762225,
+        -0.27260378919011624,
+        676.7804224999542
+      ],
+      [
+        0.0001983576233808042,
+        0.00017087226242314542,
+        1.0
+      ]
+    ],
+    "seven_hole_residual_pixels": [
+      0.25574333822171263,
+      1.0296588950312893,
+      1.0992429665022647,
+      0.4349959250165523,
+      0.9077335612808257,
+      2.1655722576722947,
+      1.4158511643903706
+    ],
+    "similarity_rms_pixels": 28.611474741582377,
+    "similarity_determinant": -1.0000000000000004,
+    "flat009_similarity_rms_pixels": 24.946174935424928,
+    "flat009_homography_rms_pixels": 1.4616809331203613,
+    "aperture_circle_source_pixels": [
+      588.5373742452892,
+      930.4751087566926,
+      92.86347026727807
+    ],
+    "circle_rms_pixels": 3.9761841615592437,
+    "pixel_only_95percent_interval": [
+      [
+        571.9040343185968,
+        921.2806905032891,
+        90.04306482559369
+      ],
+      [
+        603.4843854158636,
+        939.705016551417,
+        96.67819457592492
+      ]
+    ],
+    "monte_carlo_seed": 32094,
+    "trials": 120,
+    "current_seal_ID_scale_comparison": {
+      "current_model_inner_radius_mm": 21,
+      "implied_scale_from_aperture": 0.22613843677775722,
+      "limit": "Not a dimensional constraint: current radius is provisional and aperture is not coplanar."
+    },
+    "depth_parallax": "NOT BOUNDED by this pixel interval. Aperture lies forward of flange; images lack depth/calibration. Circle is only a coplanar approximation."
+  },
+  "physical_registration": {
+    "method": "Rigid in-plane rotation/reflection plus uniform scale about estimated crank point. No homography applied to CAD.",
+    "flat_terminal_rotation_deg": -0.039823552987937626,
+    "current_pan_corridor_y_mm": [
+      -140,
+      116.6
+    ],
+    "current_pan_rail_z_mm": -32,
+    "gear_protection_radius_mm": 86.947,
+    "gear_radius_definition": "83.947 source tip radius +1 estimated clearance +2 estimated wall",
+    "photo_constrained_fits": [
+      {
+        "mirror_y": 1,
+        "parameters": [
+          0.18461990578661902,
+          603.4819904218599,
+          939.6991925106561,
+          -4.151019007610682
+        ],
+        "max_constraint_violation_mm": 24.057029845973986,
+        "terminal_band_error_mm": 24.057026406839306,
+        "gear_wall_margin_mm": -24.057029845973986
+      },
+      {
+        "mirror_y": -1,
+        "parameters": [
+          0.2639464101565435,
+          603.4837951843549,
+          939.6999458095007,
+          29.997862371189093
+        ],
+        "max_constraint_violation_mm": 92.20595340014474,
+        "terminal_band_error_mm": 92.20595333640237,
+        "gear_wall_margin_mm": -92.20595340014474
+      }
+    ],
+    "expanded_unknown_datum_fit": {
+      "parameters": [
+        0.2137889796468676,
+        760.0246269784277,
+        908.9855100244015,
+        -0.531066198251655
+      ],
+      "max_constraint_violation_mm": 14.66252099436723,
+      "terminal_band_error_mm": 14.662519642937971,
+      "gear_wall_margin_mm": -14.66252099436723,
+      "limit": "Expanded crank-image coordinates are hypothetical depth/registration freedom, not observed aperture location."
+    }
+  },
+  "estimated_coordinated_alternative": {
+    "parameters": [
+      0.26223302269259874,
+      588.5373742452892,
+      930.4751087566926,
+      -0.039823552987937626
+    ],
+    "pixel_interval_corner_sensitivity": [
+      {
+        "crank_source_pixel": [
+          571.9040343185968,
+          921.2806905032891
+        ],
+        "scale": 0.27733699214062657,
+        "terminal_y_range_mm": [
+          -144.76344617760668,
+          221.32110225705168
+        ],
+        "terminal_z_range_mm": [
+          -30.904489651164763,
+          -28.680011340502578
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          571.9040343185968,
+          939.705016551417
+        ],
+        "scale": 0.265079290450085,
+        "terminal_y_range_mm": [
+          -138.3618170078999,
+          211.54257762328277
+        ],
+        "terminal_z_range_mm": [
+          -24.65467123253478,
+          -22.528510103935893
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          603.4843854158636,
+          921.2806905032891
+        ],
+        "scale": 0.2600288110156544,
+        "terminal_y_range_mm": [
+          -143.94077818505153,
+          199.29698871334548
+        ],
+        "terminal_z_range_mm": [
+          -28.970079686350108,
+          -26.884427693851748
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          603.4843854158636,
+          939.705016551417
+        ],
+        "scale": 0.24880424889037384,
+        "terminal_y_range_mm": [
+          -137.72415667846582,
+          190.69719959510363
+        ],
+        "terminal_z_range_mm": [
+          -23.13549007497145,
+          -21.139868607437123
+        ]
+      }
+    ],
+    "nominal_minimum_scale": 0.2558524231656339,
+    "trace_uncertainty_reserve_mm": 2.09786418154079,
+    "terminal_y_range_mm": [
+      -141.23966027117248,
+      204.90766380594886
+    ],
+    "terminal_z_range_mm": [
+      -26.807298014667158,
+      -24.703966371756405
+    ],
+    "gear_wall_margin_mm": 2.0978641815884447,
+    "required_pan_change": "Local front seat/terminal corridor must reach these ranges; current pan stations are not moved. This is a proposed coordinated envelope only, not a sealed joint or clamp-load design."
+  },
+  "status": "NO INSTALLED JOINT; review photo constraints and coordinated alternative",
+  "pan_station_count": 25,
+  "fixed_crank_yz": [
+    0,
+    0
+  ],
+  "fixed_seal_x_mm": 414,
+  "browser": "NOT RUN",
+  "learning": "NOT RUN"
+}

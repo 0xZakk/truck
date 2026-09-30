@@ -1,0 +1,303 @@
+{
+  "status": "PASS independent sampled pair; NOT INSTALLABLE at unchanged current axes",
+  "engagement_lens": {
+    "chord_u_mm": 39.62501474137931,
+    "half_height_mm": 17.15723190801688,
+    "clip_u_mm": [
+      33.6,
+      47.6
+    ],
+    "clip_v_mm": [
+      -22,
+      22
+    ],
+    "clip_x_mm": [
+      -8,
+      8
+    ],
+    "guarantee": "All possible tip-cylinder overlap contained; clipped-region distance is an upper bound on global gap."
+  },
+  "parameters": {
+    "crank_teeth": 29,
+    "cam_teeth": 58,
+    "transverse_module_mm": 2.8,
+    "helix_angle_deg": 25.0,
+    "transverse_pressure_angle_deg": 20.0,
+    "width_mm": 14.0,
+    "backlash_mm": 0.12,
+    "crank_tip_diameter_mm": 86.36,
+    "cam_tip_diameter_mm": 167.894,
+    "crank_bore_radius_mm": 21.025,
+    "cam_bore_radius_mm": 15.9
+  },
+  "center_distance_mm": 121.8,
+  "cam_yz_mm": [
+    95.10982099016108,
+    76.08785679212887
+  ],
+  "inputs_sha256": {
+    "scripts/check-timing-gear-pair-candidate.py": "e3e2cb893fab785dbb0ffb8969f3f461dc4c7966f49b30bb080ed22694647a35",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "reference/engine/timing-gear-evidence-review.json": "bc71ff57d91a447a032ad07c0288f3244dfe1ffffbeb6e9e7cc6fa4bc2d40f85",
+    "inventory/engine/timing-gear-evidence-validation.json": "a796d95780836dcebb4a4d09ba6aadef33dc0be0ea015819d575c1d01834d081",
+    "inventory/engine/full-assembly.json": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+    "cad/engine/generated/crank-timing-gear.step": "eeb03418443d08710253d68b50baa672b15c2b692aadc481829bb7919fadda1e",
+    "cad/engine/generated/cam-timing-gear.step": "ae14fa678575ee1015345673bea92d7a39707cebaf79e8162fe8d4ec80eab078",
+    "cad/engine/generated/camshaft.step": "5d79eb1ae93440e08ae33077d2c51cba29dfedbf5f6816f076b927003fd5924f",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/cam-gear-spacer.step": "1ebb7f916920df904538f92b50d96cbc719cab2031aa8af8912fe59f0137df4c",
+    "cad/engine/generated/cam-timing-key.step": "43f02d0ce2c5c11354e88714dc307041d46a88d263a601269cf2e1f8ae0ff7d0",
+    "cad/engine/generated/timing-cover.step": "9012c3609084ac505760d25f31f5dc837ad60100de5618a1ec1511f543ddc167"
+  },
+  "exports": {
+    "crank": {
+      "step_sha256": "cc4358ef17843843ac7a6b7150dc6db425b6e916e48c976ac3d7399301107a47",
+      "glb_sha256": "dd1f894db3930caf4992c76b38faa08e28b6eed8c374119fccd9780d11e7d4b8",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 9.524228516966105e-09,
+      "triangles": 5840
+    },
+    "cam": {
+      "step_sha256": "827d96d965fbcf65b642d7c54d8ef5df9afcff429502851c143e410545438577",
+      "glb_sha256": "5adc0a171509d26d432d725ef0eab8ee6739f3f5b2545d8910efb40d2bcbc14d",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_error_mm3": 1.979060471057892e-08,
+      "triangles": 7860
+    }
+  },
+  "sweep": [
+    {
+      "crank_angle_deg": 0.0,
+      "cam_angle_deg": -0.0,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329528976938902
+    },
+    {
+      "crank_angle_deg": 0.5172413793103449,
+      "cam_angle_deg": -0.25862068965517243,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.1032932429134072
+    },
+    {
+      "crank_angle_deg": 1.0344827586206897,
+      "cam_angle_deg": -0.5172413793103449,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.1032907789891116
+    },
+    {
+      "crank_angle_deg": 1.5517241379310347,
+      "cam_angle_deg": -0.7758620689655173,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328816412224609
+    },
+    {
+      "crank_angle_deg": 2.0689655172413794,
+      "cam_angle_deg": -1.0344827586206897,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.1032857573851696
+    },
+    {
+      "crank_angle_deg": 2.586206896551724,
+      "cam_angle_deg": -1.293103448275862,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328401834726204
+    },
+    {
+      "crank_angle_deg": 3.1034482758620694,
+      "cam_angle_deg": -1.5517241379310347,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329368210559109
+    },
+    {
+      "crank_angle_deg": 3.620689655172414,
+      "cam_angle_deg": -1.810344827586207,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329154522919785
+    },
+    {
+      "crank_angle_deg": 4.137931034482759,
+      "cam_angle_deg": -2.0689655172413794,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328927886958496
+    },
+    {
+      "crank_angle_deg": 4.655172413793104,
+      "cam_angle_deg": -2.327586206896552,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328710293342011
+    },
+    {
+      "crank_angle_deg": 5.172413793103448,
+      "cam_angle_deg": -2.586206896551724,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.1032852517317774
+    },
+    {
+      "crank_angle_deg": 5.689655172413794,
+      "cam_angle_deg": -2.844827586206897,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328396601596126
+    },
+    {
+      "crank_angle_deg": 6.206896551724139,
+      "cam_angle_deg": -3.1034482758620694,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329874286036725
+    },
+    {
+      "crank_angle_deg": 6.724137931034483,
+      "cam_angle_deg": -3.3620689655172415,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328396601670213
+    },
+    {
+      "crank_angle_deg": 7.241379310344828,
+      "cam_angle_deg": -3.620689655172414,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328525173173965
+    },
+    {
+      "crank_angle_deg": 7.758620689655173,
+      "cam_angle_deg": -3.8793103448275863,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328710293282314
+    },
+    {
+      "crank_angle_deg": 8.275862068965518,
+      "cam_angle_deg": -4.137931034482759,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328927886862875
+    },
+    {
+      "crank_angle_deg": 8.793103448275863,
+      "cam_angle_deg": -4.3965517241379315,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329154522806977
+    },
+    {
+      "crank_angle_deg": 9.310344827586208,
+      "cam_angle_deg": -4.655172413793104,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329368210444145
+    },
+    {
+      "crank_angle_deg": 9.827586206896552,
+      "cam_angle_deg": -4.913793103448276,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328401834540929
+    },
+    {
+      "crank_angle_deg": 10.344827586206897,
+      "cam_angle_deg": -5.172413793103448,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328575738413635
+    },
+    {
+      "crank_angle_deg": 10.862068965517242,
+      "cam_angle_deg": -5.431034482758621,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10328816412189316
+    },
+    {
+      "crank_angle_deg": 11.379310344827587,
+      "cam_angle_deg": -5.689655172413794,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329077898934225
+    },
+    {
+      "crank_angle_deg": 11.896551724137932,
+      "cam_angle_deg": -5.948275862068966,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329324291413251
+    },
+    {
+      "crank_angle_deg": 12.413793103448276,
+      "cam_angle_deg": -6.206896551724138,
+      "overlap_mm3": 0.0,
+      "engagement_region_surface_gap_mm": 0.10329528977005407
+    }
+  ],
+  "negative_controls": {
+    "half_cam_tooth_phase_overlap_mm3": 574.8064469983578,
+    "old_axis_overlap_mm3": 1903.1392378401506
+  },
+  "protected_local_interfaces": {
+    "crank_local_core_difference_mm3": 0.0,
+    "cam_local_core_difference_mm3": 0.0
+  },
+  "current_installation_comparison": [
+    {
+      "gear": "crank",
+      "neighbor": "camshaft",
+      "overlap_mm3": 0.0,
+      "distance_mm": 46.856189360178455
+    },
+    {
+      "gear": "crank",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.02499999999999858
+    },
+    {
+      "gear": "crank",
+      "neighbor": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "distance_mm": 53.09781444211879
+    },
+    {
+      "gear": "crank",
+      "neighbor": "cam-timing-key",
+      "overlap_mm3": 0.0,
+      "distance_mm": 78.24744291718527
+    },
+    {
+      "gear": "crank",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0,
+      "distance_mm": 4.820000000000503
+    },
+    {
+      "gear": "cam",
+      "neighbor": "camshaft",
+      "overlap_mm3": 2252.854957249268,
+      "distance_mm": 0.0
+    },
+    {
+      "gear": "cam",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0,
+      "distance_mm": 16.8532464271102
+    },
+    {
+      "gear": "cam",
+      "neighbor": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "gear": "cam",
+      "neighbor": "cam-timing-key",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.9086793819324961
+    },
+    {
+      "gear": "cam",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 520.1755337964078,
+      "distance_mm": 0.0
+    }
+  ],
+  "limits": [
+    "Independent hypothesis only. Pair profiles,25deg helix,14mm width, backlash and web-hole dimensions are estimates.",
+    "Sweep samples one tooth period25times; does not establish continuous contact, load strength or production calibration. Surface gap is unloaded backlash, not demonstrated loaded flank contact.",
+    "Current engine camshaft/block/valvetrain and cover are unchanged and incompatible with proposed axis relocation. Separate coherent datum revision required.",
+    "Source counts and diameters come from different replacement manufacturers; diameter-as-tip assumption remains explicit."
+  ]
+}

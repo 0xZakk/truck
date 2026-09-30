@@ -1,0 +1,118 @@
+{
+  "scope": "Source-led rejection of current joint registration; no new sealing solid or canonical edit",
+  "baseline": "124aa7c345af352459a800343ffc50f1e931367c",
+  "sources": [
+    {
+      "part": "TCS-45829",
+      "form": "I-223, revision 01/04",
+      "url": "https://s3.amazonaws.com/vsdam-driv/Repositories/FE0812619C5046AF853EC6520F0004E0/41d1308a-f074-4e4e-b21d-f2af2fa2b510/41d1308a-f074-4e4e-b21d-f2af2fa2b510.pdf",
+      "path": "cad/engine/generated/timing-cover-pan-joint-proposal/reference/TCS-45829-instructions.pdf",
+      "sha256": "a7eade6ffc35bd0eed59d0609d9912e68c53497f9b34da5b909d15e42cdd5469",
+      "pixels_reviewed": true,
+      "application": "Manufacturer support API attaches sheet to this exact part; drawing and wording are generic, not dimensional evidence."
+    },
+    {
+      "part": "OS-34601-R",
+      "form": "I-1484, revision 02/15",
+      "url": "https://s3.amazonaws.com/vsdam-driv/Repositories/FE0812619C5046AF853EC6520F0004E0/7294359b-8291-4edd-b05a-629098f2f3e9/7294359b-8291-4edd-b05a-629098f2f3e9.pdf",
+      "path": "cad/engine/generated/timing-cover-pan-joint-proposal/reference/OS-34601-R-instructions.pdf",
+      "sha256": "ed0ad1be7cb82a0857b84101e0ff46ca148e8ea5b4570353460c1cee9d1aba6a",
+      "pixels_reviewed": true,
+      "application": "Manufacturer support API attaches sheet to this exact part; drawing and wording are generic, not dimensional evidence."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html",
+      "sha256": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407",
+      "application": "Exact 1994 F150 2WD L6 4.9 service page"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Pan/Service%20and%20Repair/index.html",
+      "sha256": "805b4520e7fc0324229f714ecff0f1964282694a3be438558cb7e96c09718b70",
+      "application": "Exact 1994 F150 2WD L6 4.9 service page"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/350379654.png",
+      "sha256": "8cb2091a2ca0bdfeda36098cfbfa346d3fa78a665ecfb25e27e0edf18bab3803",
+      "pixels_reviewed": true,
+      "figure": "34, Oil Pan Installation",
+      "limit": "Older multipart gasket drawn; not proof of OS34601R piece count."
+    }
+  ],
+  "findings": {
+    "exact_year": "Cover removal involves front pan screws and loosening first six per side; Fig34 marks sealer at two front-cover/block seams and25 screws. This does not change installed25 count.",
+    "compatibility": "Fel-Pro VIN Y catalog explicitly pairs TCS45829/45830 with OS34601R. TCS45830 adds repair sleeve; no separate INS asset returned.",
+    "one_piece": "OS34601R attached I-1484 identifies one-piece molded rubber gasket. Noncoplanar rails/end architecture uses small RTV at four block-side corners.",
+    "timing_cover_repair": "I-223 attached to TCS45829 specifies retaining old pan seal during cover removal, cutting exposed front section flush, replacing front end seal on cover, trimming main gasket to castings as necessary, and a1/8 inch(3.175mm) silicone bead at pan/block intersections.",
+    "five_hole_strip": "Manufacturer instructions establish a replacement oil-pan front end seal in this repair. The five-hole photographed strip is consistent with that role, but sheet has no exact piece callout or matching five-hole outline; exact identification remains inferred. Never stack it over intact one-piece gasket.",
+    "procedure_scope": "A cover-only service repair with cut/replaced front seal differs from a full pan-gasket installation. For the intact OS34601R reconstruction, keep a continuous gasket and avoid adding a redundant strip.",
+    "geometry_limit": "Source instructions authorize no bridging of model gaps with sealant;1/8 inch is bead application size, not permissible joint gap."
+  },
+  "registration_rejection": {
+    "long_leg": {
+      "bounds_mm": [
+        [
+          373.0,
+          -129.09,
+          -18.374999999999996
+        ],
+        [
+          373.8,
+          -87.68026315789471,
+          -3.999999999999997
+        ]
+      ],
+      "distance_to_complete_pan_gasket_mm": 13.625000000000004,
+      "contact_overlap_mm3": 0
+    },
+    "short_leg": {
+      "bounds_mm": [
+        [
+          373.0,
+          148.5,
+          -17.79
+        ],
+        [
+          373.8,
+          205.73046153846153,
+          -3.9999999999999973
+        ]
+      ],
+      "distance_to_complete_pan_gasket_mm": 37.22779886561766,
+      "contact_overlap_mm3": 0
+    }
+  },
+  "proposed_next_joint": {
+    "protected": "Fixed crankYZ0, sealX414, pan25 stations/count and current full gasket retained during registration study. No automatic axis changes.",
+    "seat": "Use current blockX373 as MODEL joint plane only; main gasket373..373.8; review profile registration before adopting these planes.",
+    "pan_surface": "For current intact gasket, proposed cover lower seat must follow its entire upper/front mating path, including curved end and side transitions, with no separate overlapping strip. Radius59.4 atX365..381 and railZ\u221232 are CURRENT estimates only.",
+    "terminals": "Main gasket endpoints must meet the same two block/cover/pan T-joints. Existing endpoints are13.625 and37.2278mm away, so simple overlap removal is rejected.",
+    "datum_revision_required": "Re-establish in-plane gasket-to-crank orientation and translation from suitable orthogonal cover/block evidence, then solve terminal contacts jointly with gear envelopes. If current pan end or bolt locations prove incompatible, propose coordinated estimates preserving25 count for review; do not distort normalized source contour or relocate by eye.",
+    "check_before_geometry_acceptance": [
+      "Continuous full-area support above/below pan front segment",
+      "Two explicit terminal contacts and continuous sealed perimeter without fastener bypass",
+      "Missing front seal and removed terminal-sealer negative controls",
+      "Crank seal and both candidate gear envelopes",
+      "Cover/block/pan pair contact versus interference",
+      "Pan fastener engagement/removal and neighboring oil passages"
+    ]
+  },
+  "validation": "inventory/engine/timing-cover-pan-joint-validation.json",
+  "validation_sha256": "4fbe6e3571926d131929b0f7e7ba69beafe0751b584bdf9aadd5634987552b85",
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-cover-pan-joint-proposal/terminal-comparison.step": "b96c4f963ac7ce570b2c68a4ae90f52b67a49ab5b88bfd9b67b71f41a419158a",
+    "cad/engine/generated/timing-cover-pan-joint-proposal/render.log": "b1abb52ff0729662901bd11f3bc22b34a2e3a04786794fbdc5e002272f4b7dc5",
+    "cad/engine/generated/timing-cover-pan-joint-proposal/terminal-review.png": "c73079900fdcb3670bfa3715fd9a2aff4ed7e4b1811dbabba32d465cd129d3fa",
+    "cad/engine/generated/timing-cover-pan-joint-proposal/check.log": "b0ff9ca7c4c81ee7949ba8a02bbc9fde1f422365101d955a832bc14ed36522fb",
+    "cad/engine/generated/timing-cover-pan-joint-proposal/terminal-preview.npz": "212e3ea1009589e5aeaa931ac9fa5bf7998f061169072ea12c507a0e13abb499"
+  },
+  "root_review": "Prior shell accepted only bounded topology/feasibility; installation remains blocked. Learning corrected to NOT RUN.",
+  "distribution": "Do not commit or release primary manuals, instruction PDFs, source images or website JS. Derived CAD comparison may be regenerated from script.",
+  "gates": {
+    "source_research": "PASS within scope",
+    "registered_joint": "FAIL",
+    "new_geometry": "NOT BUILT",
+    "installed": "NOT RUN",
+    "learning": "NOT RUN",
+    "browser": "NOT RUN"
+  }
+}

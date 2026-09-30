@@ -1,0 +1,177 @@
+{
+  "scope": "Bounded estimated registration and coordinated pan-envelope proposal, no canonical geometry",
+  "baseline": "124aa7c345af352459a800343ffc50f1e931367c",
+  "source_ledger": "reference/engine/timing-cover-joint-review.json",
+  "source_ledger_sha256": "f593d0a83c340e79a46bb72509fb878dfaef71614c543b0866fdb81482592906",
+  "sources": [
+    {
+      "manufacturer": "Dorman",
+      "part": "635-109",
+      "url": "https://www.dormanproducts.com/p-8021-635-109.aspx",
+      "html_path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109.html",
+      "html_sha256": "b4eed8718d01630bdbebbcbd88b76617b7398eb833e045580a196f0836b6a2e0",
+      "direct_OE_cross_as_published": "E5TZ 6019-H",
+      "application_limit": "Manufacturer page broad Ford1965\u201396 summary. Pioneer explicit truck/L6 row provides separate supporting comparison, not proof of Dorman application via brand interchange.",
+      "specification_limit": "14 in length and2 in width are not accompanied by datums/axes and are NOT used to scale geometry.",
+      "images": [
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-001.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-001.jpg",
+          "sha256": "dcc615c322bc6ea22293a40cdcfbe8456119e04688a548f5f625925b5496bbb7",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-002.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-002.jpg",
+          "sha256": "ce5b60d4b135469698c7f563f5ffd7e1796497c57efa40c84be2e3506f4ff623",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-003.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-003.jpg",
+          "sha256": "1d8e6e915c423f80582f99d91849b9b5539f009722a7eb17261261bf9c5264f5",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-007.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-007.jpg",
+          "sha256": "7058b77c98803b3a7b4fed64d81f52dad9f078db1b537dab3394e08eb8917182",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-009.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg",
+          "sha256": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        }
+      ]
+    },
+    {
+      "manufacturer": "Pioneer",
+      "part": "500300",
+      "url": "https://images.carid.com/pioneer-automotive/items/pdf/timing-cover-catalog.pdf",
+      "path": "cad/engine/generated/timing-cover-joint-candidate/reference/pioneer-timing-cover-catalog.pdf",
+      "sha256": "acad4e37946718f15a843a7e3dc7dbbc501a1ad150425a7829e9c7de5e94f9c5",
+      "reviewed_pdf_pages_1_based": [
+        18,
+        19,
+        35
+      ],
+      "reviewed_printed_pages": [
+        14,
+        15,
+        31
+      ],
+      "application": "Page15 continued F100/F150/F250/F350 table:1965\u201396 L6 4.9L300ci ->500300",
+      "illustration": "Page31:500300,1965\u201397 Ford L6 3.9/4.9 truck; reference OEM E5TE-6019-H",
+      "number_caution": "Pioneer E5TE and Dorman E5TZ are distinct strings; likely engineering/service context is not verified, so do not silently normalize."
+    }
+  ],
+  "source_photo_points": "Stored in deterministic checker and validation report; pixel coordinates derived from actual viewed images.",
+  "aperture_extraction": "Photo002 grayscale>160 connected region at seed(205,198),24 angular boundary samples; uncertainty\u00b14px. Threshold100\u2013220 bboxX163\u2013250/Y172\u2013235.",
+  "view_conventions": "Photos001/003/007 corroborate opposite/oblique views and seal/bridge topology. Only002 has seven usable bosses for numeric aperture registration;009 provides independent gasket image comparison. Do not invent hidden front-image holes. Homography reverses handedness; physical engine Y reflection tested separately.",
+  "projective_vs_similarity": "Projective transform corrects image correspondence only. Same original outline uses uniform scale and rigid orientation in feasibility; no projective CAD distortion.",
+  "metric_limit": "Original source outline also comes from a product photo, not an orthographic measured template. Aperture plane differs from flange plane; systematic parallax is unbounded.",
+  "validation": "inventory/engine/timing-cover-registration-validation.json",
+  "validation_sha256": "1a45e5539d951568595396f9ddb9d78fc4f4fbcb2289cc7f2f15980d372dfcb4",
+  "reviewed_render": "cad/engine/generated/timing-cover-registration-study/registration-review.png",
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-cover-registration-study/render.log": "ed98962c36756426e5f0515ba444dd98d9e9c04a2ef125a40ea74eedb540ec26",
+    "cad/engine/generated/timing-cover-registration-study/registration-review.png": "242dfee07bea2bbdfe15f4bb2855c4203ca2db5ecb650c54b383100d5dc6cc6f",
+    "cad/engine/generated/timing-cover-registration-study/registration-preview.npz": "2425fcd8a5679d681addfccbb8374d691455a73ea975124ea891c3c0f1fa1104",
+    "cad/engine/generated/timing-cover-registration-study/check.log": "b1b1a27596eea77d83c7ca42bc022842cca09f94d0de37505b677fa60c1260d3"
+  },
+  "recommended_for_root_review": {
+    "parameters": [
+      0.26223302269259874,
+      588.5373742452892,
+      930.4751087566926,
+      -0.039823552987937626
+    ],
+    "pixel_interval_corner_sensitivity": [
+      {
+        "crank_source_pixel": [
+          571.9040343185968,
+          921.2806905032891
+        ],
+        "scale": 0.27733699214062657,
+        "terminal_y_range_mm": [
+          -144.76344617760668,
+          221.32110225705168
+        ],
+        "terminal_z_range_mm": [
+          -30.904489651164763,
+          -28.680011340502578
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          571.9040343185968,
+          939.705016551417
+        ],
+        "scale": 0.265079290450085,
+        "terminal_y_range_mm": [
+          -138.3618170078999,
+          211.54257762328277
+        ],
+        "terminal_z_range_mm": [
+          -24.65467123253478,
+          -22.528510103935893
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          603.4843854158636,
+          921.2806905032891
+        ],
+        "scale": 0.2600288110156544,
+        "terminal_y_range_mm": [
+          -143.94077818505153,
+          199.29698871334548
+        ],
+        "terminal_z_range_mm": [
+          -28.970079686350108,
+          -26.884427693851748
+        ]
+      },
+      {
+        "crank_source_pixel": [
+          603.4843854158636,
+          939.705016551417
+        ],
+        "scale": 0.24880424889037384,
+        "terminal_y_range_mm": [
+          -137.72415667846582,
+          190.69719959510363
+        ],
+        "terminal_z_range_mm": [
+          -23.13549007497145,
+          -21.139868607437123
+        ]
+      }
+    ],
+    "nominal_minimum_scale": 0.2558524231656339,
+    "trace_uncertainty_reserve_mm": 2.09786418154079,
+    "terminal_y_range_mm": [
+      -141.23966027117248,
+      204.90766380594886
+    ],
+    "terminal_z_range_mm": [
+      -26.807298014667158,
+      -24.703966371756405
+    ],
+    "gear_wall_margin_mm": 2.0978641815884447,
+    "required_pan_change": "Local front seat/terminal corridor must reach these ranges; current pan stations are not moved. This is a proposed coordinated envelope only, not a sealed joint or clamp-load design."
+  },
+  "search_limit": "Numerical best-found results within explicit parameter boxes, not a universal impossibility theorem.",
+  "required_next": "Select explicit estimated coordinated pan/cover/block hypothesis, then build and validate actual seal/contact/terminal geometry; no automatic installation.",
+  "prior_failures": "Unchanged; registration study has own folder.",
+  "learning": "NOT RUN",
+  "browser": "NOT RUN",
+  "distribution": "Primary photographs and catalog pages remain excluded from Git/release. Derived numerical plots contain no originals."
+}

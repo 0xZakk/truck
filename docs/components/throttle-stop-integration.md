@@ -72,3 +72,7 @@ No canonical writes by this worker. Root promotion and installed/browser accepta
 Root applied the checked stage on September30 with `XDG_CACHE_HOME=/tmp/truck-cache .venv-cad/bin/python scripts/install-throttle-stops.py --apply`. Transactional installed postcheck passed: three zero-difference STEP bindings, watertight exports, four replay cases, frame/geometry rejection, rollback controls and the fresh47-pose/141-pair context check. Canonical assembly now741definitions/1,349occurrences. Viewer learning is registered; navigation reaches1,349parts/1,548links. Browser acceptance remains NOT RUN because the browser tool rejected the localhost preview. This is an installed illustrative study, not accepted production geometry or a Done issue.
 
 Report: `inventory/engine/throttle-stop-installed-validation.json`; log: `cad/engine/generated/throttle-stop-install-20260930.log`. EVR proof refresh and whole-engine checkpoint follow; their results are separate evidence.
+
+## Integration-owner checkpoint
+
+Root reports PR #94 merged as `124aa7c345af352459a800343ffc50f1e931367c`; the next focused branch is `engine/exhaust-timing-joints`. Canonical inventory is741 definitions /1,349 occurrences. This tracking addendum does not modify the frozen stage/check inputs or retroactively certify browser acceptance. Refer to the root-owned installed validation and current-state checkpoint for the final installed scope.

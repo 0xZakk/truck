@@ -1,0 +1,168 @@
+{
+  "scope": "Isolated source-compared topology and estimated interface proposal; not installation-ready",
+  "issue": 32,
+  "baseline": "796b621244d8e341fe2f3c4de7af99488af01548",
+  "primary_dimensionless_outline": "cad/engine/timing_cover_joint_candidate.py",
+  "evidence_ledger": "reference/engine/timing-cover-joint-review.json",
+  "evidence_ledger_sha256": "f593d0a83c340e79a46bb72509fb878dfaef71614c543b0866fdb81482592906",
+  "manufacturer_sources": [
+    {
+      "manufacturer": "Dorman",
+      "part": "635-109",
+      "url": "https://www.dormanproducts.com/p-8021-635-109.aspx",
+      "html_path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109.html",
+      "html_sha256": "b4eed8718d01630bdbebbcbd88b76617b7398eb833e045580a196f0836b6a2e0",
+      "direct_OE_cross_as_published": "E5TZ 6019-H",
+      "application_limit": "Manufacturer page broad Ford1965\u201396 summary. Pioneer explicit truck/L6 row provides separate supporting comparison, not proof of Dorman application via brand interchange.",
+      "specification_limit": "14 in length and2 in width are not accompanied by datums/axes and are NOT used to scale geometry.",
+      "images": [
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-001.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-001.jpg",
+          "sha256": "dcc615c322bc6ea22293a40cdcfbe8456119e04688a548f5f625925b5496bbb7",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-002.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-002.jpg",
+          "sha256": "ce5b60d4b135469698c7f563f5ffd7e1796497c57efa40c84be2e3506f4ff623",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-003.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-003.jpg",
+          "sha256": "1d8e6e915c423f80582f99d91849b9b5539f009722a7eb17261261bf9c5264f5",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-007.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-007.jpg",
+          "sha256": "7058b77c98803b3a7b4fed64d81f52dad9f078db1b537dab3394e08eb8917182",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        },
+        {
+          "url": "https://static.dormanproducts.com/images/product/medium/635-109-009.jpg",
+          "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg",
+          "sha256": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494",
+          "pixels_reviewed": true,
+          "scope": "Manufacturer replacement specimen, not owner-installed casting; no image-scale dimension inferred"
+        }
+      ]
+    },
+    {
+      "manufacturer": "Pioneer",
+      "part": "500300",
+      "url": "https://images.carid.com/pioneer-automotive/items/pdf/timing-cover-catalog.pdf",
+      "path": "cad/engine/generated/timing-cover-joint-candidate/reference/pioneer-timing-cover-catalog.pdf",
+      "sha256": "acad4e37946718f15a843a7e3dc7dbbc501a1ad150425a7829e9c7de5e94f9c5",
+      "reviewed_pdf_pages_1_based": [
+        18,
+        19,
+        35
+      ],
+      "reviewed_printed_pages": [
+        14,
+        15,
+        31
+      ],
+      "application": "Page15 continued F100/F150/F250/F350 table:1965\u201396 L6 4.9L300ci ->500300",
+      "illustration": "Page31:500300,1965\u201397 Ford L6 3.9/4.9 truck; reference OEM E5TE-6019-H",
+      "number_caution": "Pioneer E5TE and Dorman E5TZ are distinct strings; likely engineering/service context is not verified, so do not silently normalize."
+    }
+  ],
+  "parameters": {
+    "scale_mm_per_reference_pixel": 0.24,
+    "source_crank_pixel": [
+      595.0,
+      955.0
+    ],
+    "rotation_deg": 0.0,
+    "block_seat_x": 373.0,
+    "gasket_thickness": 0.8,
+    "cover_front_x": 415.0,
+    "seal_center_x": 414.0,
+    "cam_yz": [
+      95.1098209901611,
+      76.08785679212887
+    ],
+    "gear_center_x": 385.259375,
+    "gear_face_width": 14.0,
+    "block_land_depth": 10.0,
+    "cam_clearance": 1.0,
+    "gear_axial_clearance": 0.25
+  },
+  "registration": {
+    "class": "estimated feasibility only",
+    "source_crank_pixel": [
+      595,
+      955
+    ],
+    "method": "Seven approximate hole correspondences between Fel-Pro main gasket and Dorman backside; aperture inverse mapping is photo correspondence, not a factory datum. Rotation zero is estimated.",
+    "source_pixel_uncertainty": "Main gasket holes \u00b13 pixels; edge \u00b18 pixels in 1600 display. Dorman centers \u00b15 pixels in oblique 640x357 photo.",
+    "scale_selection": "0.23 failed 2 mm exterior wall support. Next tested 0.24 passed; 0.25 and 0.26 also passed. Lowest tested feasible estimate selected, not manufacturer dimension.",
+    "model_joint_datum": "X373 is current block front model plane, not factory evidence."
+  },
+  "source_comparison": {
+    "actual_render_viewed": true,
+    "source_pixels_reviewed": true,
+    "matching_topology": [
+      "Seven peripheral through bosses",
+      "Asymmetric open main gasket and elongated leg",
+      "Recessed cavity and rear seating land",
+      "Crank-seal boss",
+      "Lower bridge and exterior stiffening motifs"
+    ],
+    "limits": [
+      "Planar subdivided trace is smoothed but not production casting curvature.",
+      "Constant depth and cylindrical internal relief are estimated; specimen has varying cast sections.",
+      "Boss dimensions, ribs, seal depth and lower bridge are estimated.",
+      "No unidentified five-hole strip is included. Pan-edge threaded features deferred until joint is established.",
+      "Proposed block land is isolated material, not verified canonical casting wall."
+    ],
+    "render": "cad/engine/generated/timing-cover-shell-candidate/candidate-review.png"
+  },
+  "revisions": [
+    {
+      "state": "Initial cavity",
+      "result": "FAIL; current/proposed cam overlap 4799.7478/3590.6284 mm\u00b3",
+      "preserved": "rejected-initial-cavity/"
+    },
+    {
+      "state": "Internal relief at scale0.23",
+      "result": "FAIL; current/proposed 2 mm exterior support witness missing463.6737/143.0441 mm\u00b3",
+      "preserved": "rejected-thin-wall/"
+    },
+    {
+      "state": "Internal relief at scale0.24",
+      "result": "Local PASS, pan interface FAIL",
+      "comparison": "registration-comparison.json"
+    }
+  ],
+  "validation": "inventory/engine/timing-cover-shell-validation.json",
+  "validation_sha256": "2316ca26ac8fcf72f1c3cc8c53d417286ae5af54730330c108cc6bea8b5d41fe",
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-cover-shell-candidate/candidate.glb": "df2754dcbf198062682c92899802fb13241adca7102042ea42a90e27e4033667",
+    "cad/engine/generated/timing-cover-shell-candidate/preview.npz": "ff165659a7362d83b5f5f3ce651a4809c869a67ba42ac42a17238190aca9cb3f",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-shell-candidate.glb": "d73cc7df6d14ac30faa06da4a070e431fc8e1f251c67a7329d15f943b71f7fe7",
+    "cad/engine/generated/timing-cover-shell-candidate/registration-comparison.json": "2debf15a1c1c5a7b932e8ac76431b427291041bf853ca0c7329c94b1ead038d9",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-block-land-proposal.step": "f9ff8898df7e21730f59a26bcfab73554d6ba53a951067e09a0a30d557a9a60f",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-main-gasket-candidate.glb": "2849486314ec6636e4e986a02da9803e7e51f3bac31c93641a8b4ca1010f475c",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-main-gasket-candidate.step": "836d0f7f4fdffa933f0e457759d4aefa46e164481dc7a4324c347e6e7c77303d",
+    "cad/engine/generated/timing-cover-shell-candidate/candidate-review.png": "21d9ce058d03e0121dca76e36d9e3f3eb412ed55737a0b70866c2a51842abb01",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-block-land-proposal.glb": "497259d400360336f4cb7e73e7cecc7846b06ab4eadd70118e2a44575cf66c4e",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-shell-candidate.step": "910a002ecaf90aaa6aa6b1a9b59958dc476a4f827d273922074b580384fef632"
+  },
+  "pan_terminal_gap": {
+    "status": "FAIL",
+    "current_front_gasket_arc_overlap_mm3": 1421.2091671798557,
+    "limit": "Only front annulus witness; complete OS34601R and terminal geometry not accepted. Lower bridge does not establish pan seat. Do not install."
+  },
+  "installed_neighbors": "NOT RUN",
+  "browser": "NOT RUN",
+  "distribution": "Primary source images and catalog excluded from Git and releases; regenerated candidate artifacts only.",
+  "root_review_pending": "New shell candidate requires independent review. Root previously accepted dimensionless gasket only as topology, not finished fidelity."
+}

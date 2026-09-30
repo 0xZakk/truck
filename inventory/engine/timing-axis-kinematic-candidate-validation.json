@@ -1,0 +1,355 @@
+{
+  "status": "PASS numeric closure with common rocker; nominal lift comparison UNRESOLVED; NOT CAD fit or production datum",
+  "units": "mm/degrees",
+  "input_sha256": {
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "scripts/check-timing-axis-kinematic-candidate.py": "1730b07f9db9c32bf4240ac77489dc7f8da9b7865597e4f6ab926d5b426eb4d7",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/oil_pump_drive.py": "aa064a85f0eec3d878315ee69cd998a0394d71e8bd1f5846ebffd7248e67b3ab"
+  },
+  "same_ray_center_mm": 121.8,
+  "delta_yz_mm": [
+    5.109820990161097,
+    4.087856792128875
+  ],
+  "constraints": {
+    "valve_y": -12,
+    "valve_base_z": 261,
+    "pushrod_overall_mm": 257.556,
+    "pushrod_ball_centers_mm": 250.003354434372,
+    "intermediate_shaft_length_mm": 114.80799999999998,
+    "cam_max_lift_mm": 6.2738,
+    "intake_peak_target_mm": 10.033
+  },
+  "baseline": {
+    "PIVOT_Y": 51.0718402496357,
+    "PUSHROD_Y": 90.0,
+    "LOWER_BALL_Z": 139.7,
+    "CUP_Z": -5.4212455656279985
+  },
+  "pivot_y_by_kind_mm": {
+    "intake": 54.00853395699494,
+    "exhaust": 54.00853395699494
+  },
+  "shared_pivot_exhaust_peak_residual_mm": 0.0001344362125497156,
+  "baseline_exhaust_peak_residual_mm": 0.0004038526740419712,
+  "candidate": {
+    "PIVOT_Y": 54.00853395699494,
+    "PUSHROD_Y": 95.1098209901611,
+    "LOWER_BALL_Z": 143.78785679212888,
+    "CUP_Z": -1.3333887734991094
+  },
+  "rest": {
+    "intake": {
+      "baseline": {
+        "angle": -4.50623696343633e-16,
+        "pivot_z": 395.1246,
+        "top": [
+          90.0,
+          389.703354434372
+        ],
+        "tip_z": 381.6246
+      },
+      "candidate": {
+        "angle": -4.3057679817437576e-16,
+        "pivot_z": 395.12459999999993,
+        "top": [
+          95.1098209901611,
+          393.7912112265008
+        ],
+        "tip_z": 381.6246
+      }
+    },
+    "exhaust": {
+      "baseline": {
+        "angle": -0.00024902083818501995,
+        "pivot_z": 395.1342937511289,
+        "top": [
+          89.99864878990479,
+          389.7033544307205
+        ],
+        "tip_z": 381.65
+      },
+      "candidate": {
+        "angle": -0.00023713974610336,
+        "pivot_z": 395.134346710987,
+        "top": [
+          95.1095036350181,
+          393.7912112262994
+        ],
+        "tip_z": 381.65
+      }
+    }
+  },
+  "all_12_numeric_sweeps": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 8.526512829121202e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021809697745482026,
+      "candidate_peak_valve_lift_mm": 10.032999999999959,
+      "target_peak_delta_mm": -4.085620730620576e-14,
+      "minimum_valve_lift_mm": 1.1368683772161603e-13,
+      "rocker_angle_range_deg": [
+        3.9620422921215854e-14,
+        8.757946010371468
+      ]
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "sample_count": 721,
+      "baseline_max_closure_error_mm": 5.684341886080802e-14,
+      "candidate_max_closure_error_mm": 5.684341886080802e-14,
+      "max_lift_curve_change_mm": 0.021947975188652435,
+      "candidate_peak_valve_lift_mm": 10.03313443621255,
+      "target_peak_delta_mm": 0.0001344362125497156,
+      "minimum_valve_lift_mm": 0.0,
+      "rocker_angle_range_deg": [
+        -0.013587106606526438,
+        8.744269053453731
+      ]
+    }
+  ],
+  "drive": {
+    "baseline": {
+      "gear": [
+        227.584,
+        123.8289343482927,
+        59.687274840275926
+      ],
+      "distributor": [
+        227.584,
+        152.90064653097454,
+        139.56114760707814
+      ],
+      "pump": [
+        224.084,
+        60.62087570056252,
+        -113.97543902192623
+      ],
+      "shaft_top": [
+        227.584,
+        105.70186675203226,
+        9.88356593862278
+      ],
+      "shaft_bottom": [
+        227.584,
+        66.4352181370989,
+        -98.00066446856579
+      ],
+      "axis": [
+        0,
+        0.3420201433256687,
+        0.9396926207859084
+      ],
+      "shaft_length_mm": 114.80799999999998,
+      "tilt_deg": 20,
+      "spacing_mm": 36
+    },
+    "candidate": {
+      "gear": [
+        227.584,
+        128.9387553384538,
+        63.7751316324048
+      ],
+      "distributor": [
+        227.584,
+        158.01046752113564,
+        143.64900439920703
+      ],
+      "pump": [
+        224.084,
+        65.73069669072362,
+        -109.88758222979737
+      ],
+      "shaft_top": [
+        227.584,
+        110.81168774219336,
+        13.971422730751655
+      ],
+      "shaft_bottom": [
+        227.584,
+        71.54503912726,
+        -93.91280767643693
+      ],
+      "axis": [
+        0,
+        0.3420201433256687,
+        0.9396926207859084
+      ],
+      "shaft_length_mm": 114.80799999999998,
+      "tilt_deg": 20,
+      "spacing_mm": 36
+    },
+    "shaft_endpoint_length_error_mm": 2.842170943040401e-14
+  },
+  "negative_controls": {
+    "old_rocker_top_to_shifted_lower_ball_min_length_error_mm": 4.0347465591050025,
+    "unshifted_bearing_axis_offset_mm": 6.543763726208726,
+    "unshifted_drive_frame_offset_mm": 6.543763726208726,
+    "detected": true
+  },
+  "limitations": [
+    "Discrete numeric sampling, no solids/contact/clearance validation",
+    "Common rocker/pivot preserved; exhaust nominal peak residual and intermediate curve changes UNRESOLVED, not a source-lift pass or tolerance waiver",
+    "Pivot and cup offset remain estimated freedoms; new rocker geometry and pedestal/passages required",
+    "Connected drive rigid translation preserves assumed engagement, not physical fit or valid crossed-helical teeth",
+    "No canonical or baseline proof writes"
+  ]
+}

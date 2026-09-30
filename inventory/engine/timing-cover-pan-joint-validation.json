@@ -1,0 +1,82 @@
+{
+  "status": "REJECTED REGISTRATION; NO NEW JOINT GEOMETRY",
+  "scope": "Read-only source and current-model terminal comparison",
+  "input_sha256": {
+    "scripts/check-timing-cover-pan-joint-proposal.py": "c8c559d8fcc746ba2228ec113b06c34e408c0ecc231301b216bb8c7c954c0d74",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202"
+  },
+  "parameters": {
+    "cover": {
+      "scale_mm_per_reference_pixel": 0.24,
+      "source_crank_pixel": [
+        595.0,
+        955.0
+      ],
+      "rotation_deg": 0.0,
+      "block_seat_x": 373.0,
+      "gasket_thickness": 0.8,
+      "cover_front_x": 415.0,
+      "seal_center_x": 414.0,
+      "cam_yz": [
+        95.1098209901611,
+        76.08785679212887
+      ],
+      "gear_center_x": 385.259375,
+      "gear_face_width": 14.0,
+      "block_land_depth": 10.0,
+      "cam_clearance": 1.0,
+      "gear_axial_clearance": 0.25
+    },
+    "pan_station_count": 25,
+    "front_end": [
+      365.0,
+      381.0,
+      59.4,
+      61.4
+    ]
+  },
+  "terminal_checks": {
+    "long_leg": {
+      "bounds_mm": [
+        [
+          373.0,
+          -129.09,
+          -18.374999999999996
+        ],
+        [
+          373.8,
+          -87.68026315789471,
+          -3.999999999999997
+        ]
+      ],
+      "distance_to_complete_pan_gasket_mm": 13.625000000000004,
+      "contact_overlap_mm3": 0
+    },
+    "short_leg": {
+      "bounds_mm": [
+        [
+          373.0,
+          148.5,
+          -17.79
+        ],
+        [
+          373.8,
+          205.73046153846153,
+          -3.9999999999999973
+        ]
+      ],
+      "distance_to_complete_pan_gasket_mm": 37.22779886561766,
+      "contact_overlap_mm3": 0
+    }
+  },
+  "complete_main_gasket_to_pan_gasket_distance_mm": 13.625000000000004,
+  "front_gasket_valid": true,
+  "joint_contact_proof": "FAIL: separated terminal regions; no continuous main-to-pan sealing junction established",
+  "collision_subtraction": "NOT PERFORMED; would not establish seating or terminal continuity",
+  "crank_and_seal": "UNCHANGED",
+  "installed": "NOT RUN",
+  "learning": "NOT RUN",
+  "browser": "NOT RUN"
+}
