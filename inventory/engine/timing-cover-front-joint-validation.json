@@ -1,0 +1,426 @@
+{
+  "local_status": "PASS",
+  "readiness": "ISOLATED ESTIMATED JOINT; NO INSTALLATION",
+  "input_sha256": {
+    "scripts/check-timing-cover-front-joint-candidate.py": "795a642e14e95d4f75341c6cbf90192b4764f16b1c557e132ad7f6f55a9bb207",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "parameters": {
+    "scale_mm_per_reference_pixel": 0.26223302269259874,
+    "source_crank_pixel": [
+      588.5373742452892,
+      930.4751087566926
+    ],
+    "rotation_deg": -0.039823552987937626,
+    "block_seat_x": 373.0,
+    "gasket_thickness": 0.8,
+    "cover_front_x": 415.0,
+    "seal_center_x": 414.0,
+    "cam_yz": [
+      95.1098209901611,
+      76.08785679212887
+    ],
+    "gear_center_x": 385.259375,
+    "gear_face_width": 14.0,
+    "block_land_depth": 10.0,
+    "cam_clearance": 1.0,
+    "gear_axial_clearance": 0.25
+  },
+  "terminal_plane_mm": -24.5,
+  "terminal_pocket_height_mm": 0.5,
+  "exports": {
+    "cover": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 1.2538395822048187e-05,
+      "default_step_delta_mm3": 0.0025889615062624216,
+      "volume_mm3": 534990.8720286394,
+      "glb_watertight": true,
+      "mesh_euler_number": -18
+    },
+    "main-gasket": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 1.9081198843196034e-09,
+      "default_step_delta_mm3": 1.82626536116004e-09,
+      "volume_mm3": 9272.001535829773,
+      "glb_watertight": true,
+      "mesh_euler_number": -12
+    },
+    "future-block-land": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 8.253846317529678e-08,
+      "default_step_delta_mm3": 8.227652870118618e-08,
+      "volume_mm3": 132101.35394869774,
+      "glb_watertight": true,
+      "mesh_euler_number": 2
+    },
+    "front-terminal-sealant": {
+      "valid": true,
+      "solids": 2,
+      "mesh_watertight": true,
+      "step_delta_mm3": 9.92002924249391e-10,
+      "default_step_delta_mm3": 9.910365861287573e-10,
+      "volume_mm3": 158.79852681276236,
+      "glb_watertight": true,
+      "mesh_euler_number": 4
+    },
+    "pan-gasket": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 1.2653617886826396e-06,
+      "default_step_delta_mm3": 2.2763415472581983e-05,
+      "volume_mm3": 66417.46234780719,
+      "glb_watertight": true,
+      "mesh_euler_number": -50
+    },
+    "pan": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "step_delta_mm3": 0.00012787827290594578,
+      "default_step_delta_mm3": 0.0072181078139692545,
+      "volume_mm3": 1734394.031746891,
+      "glb_watertight": true,
+      "mesh_euler_number": -56
+    }
+  },
+  "front_seat_support": {
+    "upper_missing_mm3": 0,
+    "lower_missing_mm3": 0,
+    "upper_probe_mm3": 267.7412593745588,
+    "lower_probe_mm3": 267.74154230491683,
+    "main_gasket_land_missing_mm3": 0,
+    "main_gasket_cover_missing_mm3": 0
+  },
+  "gasket_topology": {
+    "expected_pan_gasket_euler": -50,
+    "actual_pan_gasket_euler": -50,
+    "meaning": "One continuous ring, central opening and 25 bolt holes; extra windows rejected."
+  },
+  "pair_overlap_mm3": {
+    "cover / main-gasket": 0,
+    "cover / future-block-land": 0,
+    "cover / front-terminal-sealant": 0,
+    "cover / pan-gasket": 0,
+    "cover / pan": 0,
+    "main-gasket / future-block-land": 0,
+    "main-gasket / front-terminal-sealant": 0,
+    "main-gasket / pan-gasket": 0,
+    "main-gasket / pan": 0,
+    "future-block-land / front-terminal-sealant": 0,
+    "future-block-land / pan-gasket": 0,
+    "future-block-land / pan": 0,
+    "front-terminal-sealant / pan-gasket": 0,
+    "front-terminal-sealant / pan": 0,
+    "pan-gasket / pan": 0
+  },
+  "gear_envelopes": {
+    "current": {
+      "overlap_mm3": [
+        0,
+        0
+      ],
+      "cover_clearance_mm": [
+        0.21999999999999886,
+        0.25
+      ]
+    },
+    "proposed": {
+      "overlap_mm3": [
+        0,
+        0
+      ],
+      "cover_clearance_mm": [
+        0.21999999999999886,
+        0.25
+      ]
+    }
+  },
+  "cam_axial_travel_check": {
+    "axial_interval_mm": [
+      378.159375,
+      392.259375
+    ],
+    "overlap_mm3": 0,
+    "cover_clearance_mm": 0.1500000000000341,
+    "scope": "Proposed cam tip envelope across axial travel[-0.1,0] from timing-core worker; crank remains fixed."
+  },
+  "fixed_seal": {
+    "overlap_mm3": 0,
+    "outer_seat_missing_mm3": 0
+  },
+  "cam_wall_protection_missing_mm3": [
+    0,
+    0
+  ],
+  "current_neighbor_context": {
+    "oil-pump-housing": {
+      "bounds_mm": [
+        [
+          101.08399990000001,
+          7.2140929067684505,
+          -142.00728640087618
+        ],
+        [
+          264.0840001,
+          100.86182496285183,
+          -86.26857275892247
+        ]
+      ],
+      "changed_front_region_x_gap_mm": 70.91599989999997,
+      "method": "Positive X interval separation proves changed front region cannot intersect this current neighbor; not whole-engine integration."
+    },
+    "oil-pickup-tube": {
+      "bounds_mm": [
+        [
+          -190.00000010000045,
+          34.99914567341605,
+          -251.00000009992982
+        ],
+        [
+          190.08400010000014,
+          68.3309765171911,
+          -103.27697581795715
+        ]
+      ],
+      "changed_front_region_x_gap_mm": 144.91599989999986,
+      "method": "Positive X interval separation proves changed front region cannot intersect this current neighbor; not whole-engine integration."
+    }
+  },
+  "context_input_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a"
+  },
+  "clamp_checks": [
+    {
+      "station": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "washer_support_missing_mm3": 0,
+      "shaft_obstruction_mm3": 0,
+      "socket_obstruction_mm3": 0,
+      "socket_wall_missing_mm3": 0,
+      "nominal_socket_engagement_mm": 14.498,
+      "tip_clearance_mm": 0.502
+    },
+    {
+      "station": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "washer_support_missing_mm3": 0,
+      "shaft_obstruction_mm3": 0,
+      "socket_obstruction_mm3": 0,
+      "socket_wall_missing_mm3": 0,
+      "nominal_socket_engagement_mm": 14.498,
+      "tip_clearance_mm": 0.502
+    },
+    {
+      "station": [
+        390.0,
+        -110.0,
+        -32.1
+      ],
+      "washer_support_missing_mm3": 0,
+      "shaft_obstruction_mm3": 0,
+      "socket_obstruction_mm3": 0,
+      "socket_wall_missing_mm3": 0,
+      "nominal_socket_engagement_mm": 14.498,
+      "tip_clearance_mm": 0.502
+    },
+    {
+      "station": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "washer_support_missing_mm3": 0,
+      "shaft_obstruction_mm3": 0,
+      "socket_obstruction_mm3": 0,
+      "socket_wall_missing_mm3": 0,
+      "nominal_socket_engagement_mm": 14.498,
+      "tip_clearance_mm": 0.502
+    },
+    {
+      "station": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "washer_support_missing_mm3": 0,
+      "shaft_obstruction_mm3": 0,
+      "socket_obstruction_mm3": 0,
+      "socket_wall_missing_mm3": 0,
+      "nominal_socket_engagement_mm": 14.498,
+      "tip_clearance_mm": 0.502
+    }
+  ],
+  "negative_controls": {
+    "removed_front_gasket_volume_mm3": 26774.139107368665,
+    "removed_terminal_sealant_upper_support_loss_mm3": 6.339275450470368,
+    "terminal_bottom_contact_missing_mm3": 0,
+    "terminal_solid_count": 2,
+    "limit": "Gap/support negative controls; no fluid simulation or compressed-material model.",
+    "removed_front_upper_witness_gap_mm3": 267.74125877893016,
+    "removed_front_lower_witness_gap_mm3": 267.7413828871027,
+    "terminal_contacts": [
+      {
+        "volume_mm3": 74.674434657037,
+        "lower_missing_mm3": 0
+      },
+      {
+        "volume_mm3": 84.12409215572536,
+        "lower_missing_mm3": 0
+      }
+    ]
+  },
+  "rear_preservation": {
+    "removed_mm3": 0,
+    "added_mm3": 0,
+    "all_pan_stations": [
+      [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      [
+        390.0,
+        -110.0,
+        -32.1
+      ],
+      [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      [
+        390.0,
+        180.0,
+        -32.1
+      ]
+    ],
+    "station_count": 25,
+    "unchanged_station_count": 20
+  },
+  "installed_neighbors": "NOT RUN",
+  "browser": "NOT RUN",
+  "learning": "NOT RUN"
+}

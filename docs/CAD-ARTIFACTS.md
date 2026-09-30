@@ -15,6 +15,17 @@ Compare with `docs/cad-neck-core-checkpoint.json`, preserve newer local generate
 
 All prior archive fixtures are retained with current active STEP definitions and the rebuilt combined assembly. The ongoing shifted-block, coordinated pan-joint and reduced-backlash revisions are excluded. Purchased manuals, owner photographs and third-party reference images/composites remain excluded; acquire authorized evidence separately.
 
+## Supplemental timing-fit studies
+
+The separate [timing-fit study archive](https://github.com/0xZakk/truck/releases/tag/studies-2026-09-30-timing-fit) overlays the neck/core base above. It contains the exact block baseline, rejected first axis migration, reviewed estimated cover/pan joint and revised backlash pair. These are isolated candidates, not installed engine changes. Restore the neck/core archive first, then download this smaller supplement:
+
+```sh
+gh release download studies-2026-09-30-timing-fit --repo 0xZakk/truck --pattern truck-timing-studies-20260930.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-timing-studies-20260930.tar.gz
+```
+
+Compare with `docs/cad-timing-studies-checkpoint.json`, preserve newer local work, then extract from the repository root using `tar -xzf /tmp/truck-timing-studies-20260930.tar.gz`. The metadata records every file hash and required base archive. Reproduce with `python3 scripts/package-timing-studies-checkpoint.py --output <archive>` after restoring the required fixtures. Active fixed-stock, attachment and coupled-core revisions are excluded, as are third-party images, manuals and owner photographs. Failed checks are retained as evidence, not acceptance.
+
 ## Previous rear-exhaust and timing-study checkpoint
 
 The [September30 exhaust/timing archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published for PR #95. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.
