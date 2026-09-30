@@ -1,0 +1,80 @@
+{
+  "status": "PASS finite first-contact bracket",
+  "input_sha256": {
+    "scripts/check-timing-gear-contact-diagnostic.py": "66d69e6e65f86a825aca501d042f06dc24ec9dfa0a17b35a08be8a7546ee9063",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/generated/timing-gear-pair-candidate/crank.step": "cc4358ef17843843ac7a6b7150dc6db425b6e916e48c976ac3d7399301107a47",
+    "cad/engine/generated/timing-gear-pair-candidate/cam.step": "827d96d965fbcf65b642d7c54d8ef5df9afcff429502851c143e410545438577"
+  },
+  "rows": [
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.07,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.017962193033299614
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.005778409959134377
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.09,
+      "overlap_mm3": 0.02314568047430804,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 0,
+      "cam_extra_degrees": 0.1,
+      "overlap_mm3": 0.2676289481188652,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.07,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.019214740079213585
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.08,
+      "overlap_mm3": 0.0,
+      "local_gap_mm": 0.007208109661262855
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.09,
+      "overlap_mm3": 0.022558337613610795,
+      "local_gap_mm": 0.0
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "cam_extra_degrees": 0.1,
+      "overlap_mm3": 0.25907637077713935,
+      "local_gap_mm": 0.0
+    }
+  ],
+  "brackets": [
+    {
+      "crank_degrees": 0,
+      "contact_bracket_deg": [
+        0.08,
+        0.09
+      ]
+    },
+    {
+      "crank_degrees": 6.206896551724138,
+      "contact_bracket_deg": [
+        0.08,
+        0.09
+      ]
+    }
+  ],
+  "limits": [
+    "Finite phase bracket at two tooth-period locations, not exact loaded contact phase or continuous surface-contact proof.",
+    "No load/stress/backlash service specification claimed; extra cam rotation intentionally explores drive-flank closure."
+  ]
+}

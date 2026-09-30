@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "Source-proportioned isolated topology only; coordinated sealing joint NOT RUN",
+  "input_sha256": {
+    "scripts/check-timing-cover-joint-candidate.py": "1f0b7130b32c8677d2028631c8978c0983a8ab88158b266d50b9d5b4575120e2",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "valid": true,
+  "solid_count": 1,
+  "mesh_watertight": true,
+  "step_roundtrip_volume_delta_mm3": 7.194103091023862e-10,
+  "glb_roundtrip_bounds_error_mm": 7.271766661043344e-06,
+  "seven_hole_obstructions_mm3": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "seven_plug_faults_mm3": [
+    30.787608005179983,
+    30.787608005179976,
+    30.78760800517998,
+    30.787608005179987,
+    30.787608005179987,
+    30.78760800517999,
+    30.787608005179976
+  ],
+  "opening_obstruction_mm3": 0,
+  "bottom_bridge_fault_mm3": 150.0,
+  "installed_gates": {
+    "continuous_seating": "NOT RUN; mating flanges and registration unresolved",
+    "pan_junction": "NOT RUN; lower strip function/terminal contact unresolved",
+    "shaft_gear_clearance": "NOT RUN; no engine transform",
+    "browser": "NOT RUN; isolated study"
+  }
+}

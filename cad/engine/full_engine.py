@@ -211,7 +211,7 @@ def define(id, shape, name, function, group, color='#8498a3', sources=(), gaps=(
         raise ValueError(f'{id}: STEP round-trip changed topology or volume')
     vertices,faces=shape.tessellate(.18,.22)
     mesh=trimesh.Trimesh(vertices=np.array([[v.X,v.Z,-v.Y] for v in vertices])/1000,faces=faces,process=False)
-    if id in ('throttle-cable-ball-stud-estimated', 'throttle-cable-snap-retainer-illustrative', 'throttle-cable-socket-illustrative', 'throttle-cable-swivel-seat-illustrative', 'throttle-housing'):
+    if id in ('throttle-cable-ball-stud-estimated', 'throttle-cable-snap-retainer-illustrative', 'throttle-cable-socket-illustrative', 'throttle-cable-swivel-seat-illustrative', 'throttle-housing', 'exhaust-rear'):
         # Remove zero-area tessellation faces without changing the CAD geometry.
         mesh.merge_vertices()
         mesh.update_faces(mesh.nondegenerate_faces())
@@ -882,6 +882,8 @@ def main():
     evr_mechanism_integration.install(define,add,group,defs,occurrences,assemblies,shapes)
     import throttle_stop_integration as throttle_stops
     throttle_stops.install(define,add,defs,occurrences,assemblies,shapes)
+    import exhaust_rear_collector_integration as rear_collector
+    rear_collector.install(define,add,defs,occurrences,assemblies,shapes)
     source_ids.update(s for d in defs for s in d.get('sources',[]))
     learning=json.loads((ROOT/'inventory/engine/lubrication-learning.json').read_text())
     learning.update(json.loads((ROOT/'inventory/engine/intake-learning.json').read_text()))
@@ -923,6 +925,7 @@ def main():
     learning.update(json.loads((ROOT/'inventory/engine/evr-mechanism-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/intake-runner-exterior-learning.json').read_text()))
     learning.update(json.loads((ROOT/'inventory/engine/throttle-stop-learning.json').read_text()))
+    learning.update(json.loads((ROOT/'inventory/engine/exhaust-rear-collector-learning.json').read_text()))
     source_ids.update(s for entry in learning.values() for s in entry.get('sources',[]))
     sources={p['id']:{k:p[k] for k in ['title','url','path','sha256']} for p in INDEX['sources'] if p['id'] in source_ids}
     sources.update(json.loads((ROOT/'inventory/engine/dimensions.json').read_text())['sources'])
@@ -951,6 +954,7 @@ def main():
     sources.update(evr_mechanism_integration.sources())
     sources.update(intake_runner_exterior_integration.sources())
     sources.update(throttle_stops.source())
+    sources.update(rear_collector.source())
     for identifier,capture in json.loads((ROOT/'inventory/engine/source-capture-overrides.json').read_text()).items():
         sources[identifier].update(capture)
     functions_by_definition = {definition['id']: definition['function'] for definition in defs}
@@ -985,7 +989,7 @@ def main():
     defs[:]=manifest['definitions']
     for d in defs:
         if d['id'] not in shapes:shapes[d['id']]=b.import_step(ROOT/d['step'].lstrip('/'))
-        size=(support_bounds(shapes[d['id']]) if d['id']=='water-pump-seal-spring' or d['id'] in evr_mechanism_integration.CHANGED_IDS else shapes[d['id']].bounding_box()).size
+        size=(support_bounds(shapes[d['id']]) if d['id']=='water-pump-seal-spring' or d['id'] in (evr_mechanism_integration.CHANGED_IDS | rear_collector.CHANGED_IDS) else shapes[d['id']].bounding_box()).size
         d['model_bounds_mm']=[size.X,size.Y,size.Z]
     for key in ('definitions','assemblies','occurrences'):
         ids=[item['id'] for item in manifest[key]]

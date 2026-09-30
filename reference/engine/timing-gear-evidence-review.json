@@ -1,0 +1,149 @@
+{
+  "status": "SOURCE RECONCILIATION COMPLETE; candidate hypothesis in progress",
+  "issue": 32,
+  "baseline_commit": "796b621244d8e341fe2f3c4de7af99488af01548",
+  "sources": [
+    {
+      "id": "pbm-timing-2025",
+      "author": "PBM/Erson",
+      "url": "https://www.pbm-erson.com/documents/d/prod/pbmcatalog02-03-2025",
+      "path": "reference/engine/timing-gear-evidence/pbm-catalog-2025.pdf",
+      "pdf_page": 204,
+      "printed_page": 205,
+      "visual": "reference/engine/timing-gear-evidence/pbm-page-204.png",
+      "visually_reviewed": true,
+      "classification": "replacement comparison",
+      "facts": {
+        "row": 108,
+        "engine": "Ford Truck4.9L6cyl300",
+        "heading_years": "1965-1996",
+        "variants": [
+          {
+            "part": "TG2764S",
+            "label": "Steel",
+            "teeth": "58/29",
+            "footnote_years": "1965-83"
+          },
+          {
+            "part": "TG2766S",
+            "label": "Aluminum",
+            "teeth": "58/29",
+            "oem_cross_reference": "D3TZ6256C",
+            "footnote_years": "1984-97"
+          }
+        ]
+      },
+      "limits": [
+        "1994 belongs to heading and applicable footnote; 1996/97 endpoint inconsistency retained.",
+        "Replacement set listing does not establish owner-installed identity or factory material. No profile, helix angle, center distance or dimensions."
+      ],
+      "sha256": "592a5d61e6de1aa45a5269030187d12a4037fab1d9ae32a6ef795f040eb15ca8",
+      "visual_sha256": "2d3420f73c9641e876724b7a586e31cd1f040b5d089c88d340ec473585fd1d79"
+    },
+    {
+      "id": "ford-industrial-cam-gear",
+      "author": "Ford Power Products",
+      "url": "https://www.numeralkod.com/cross/archivemanuals/ford/300%20cid%20gasoline%20engine%20parts%20list/300%20cid%20gasoline%20engine%20parts%20list.pdf",
+      "path": "reference/engine/ford-industrial-parts.pdf",
+      "pdf_page": 13,
+      "printed_page": 10,
+      "visual": "reference/engine/timing-gear-evidence/industrial-page-13.png",
+      "visually_reviewed": true,
+      "classification": "industrial comparison; not truck specification",
+      "facts": {
+        "part": "C5TZ-6256-A",
+        "year_mark": "70/",
+        "cam_teeth": 92,
+        "material": "cast iron"
+      },
+      "limits": [
+        "The92 is legible in actual scan and not OCR confusion. Different earlier industrial part; no transfer to1994. Crank row C5TZ-6306-B does not give tooth count here."
+      ],
+      "sha256": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+      "visual_sha256": "34273116a22504fee9fe242f921382bb19d2ed70c8cb875902f5f4cec6d6c7d4"
+    },
+    {
+      "id": "melling-material-variants",
+      "author": "Melling",
+      "host": "CARiD manufacturer catalog mirror",
+      "url": "https://images.carid.com/melling/info/pdf/melling-engine-parts-catalog.pdf",
+      "path": "reference/engine/timing-gear-evidence/melling-engine-parts-catalog.pdf",
+      "pdf_page": 111,
+      "printed_page": 116,
+      "visual": "reference/engine/timing-gear-evidence/melling-page-111.png",
+      "visually_reviewed": true,
+      "classification": "replacement comparison",
+      "facts": {
+        "row": 18,
+        "application": "Ford Truck4.9L3001965-96 six-cylinder; E/F/P100-500 and Bronco; carburetor/FI",
+        "variants": {
+          "2750AS": "aluminum standard duty",
+          "2764S": "cast iron",
+          "2766AS": "aluminum heavy duty",
+          "2766S": "fiber, includes2766and2765"
+        },
+        "all_variants": "replace as set only"
+      },
+      "limits": [
+        "No tooth count shown in this row. Do not equate PBM TG2766S aluminum with Melling2766S fiber merely by similar number."
+      ],
+      "sha256": "547973b73b028a0e2b4115a6129975a9bc3505211dd2a9dfc9410576dd9b7d7b",
+      "visual_sha256": "60d73b49ed5b907ac8f73fb072506dbae8853e305f686f8c411a752588e07a5d"
+    },
+    {
+      "id": "elgin-c2766s",
+      "author": "Elgin Industries",
+      "url": "https://catalog.elginind.com/partno-search/?partno=C-2766S",
+      "path": "reference/engine/timing-gear-evidence/elgin-c2766s.html",
+      "classification": "replacement comparison",
+      "facts": {
+        "part": "C-2766S",
+        "description": "Matched Set Only1984-96",
+        "engine": "Ford300CID4.9L bi-fuel/gas/LPG",
+        "cam_diameter_in": 6.61,
+        "crank_diameter_in": 3.4,
+        "unit": "IN"
+      },
+      "image_url": "https://catalog.elginind.com/media/41/C-2766S-FRO.jpg",
+      "image_path": "reference/engine/timing-gear-evidence/elgin-c2766s-front.jpg",
+      "image_visually_reviewed": true,
+      "image_observations": [
+        "Two meshing helical gears with opposite hands, cam web has two circular holes, both bores have keyways.",
+        "Rim marks near the pictured engagement comprise cam circular dot and small crank triangular/arrow mark. Numeric angular registration is not established.",
+        "Cam rim is fiber-colored with dark web, crank metallic. Photo appearance is not material analysis."
+      ],
+      "limits": [
+        "Diameter label does not explicitly say tooth-tip diameter. Proposed use as tip envelope is an assumption.",
+        "No numeric helix/lead, pressure angle, thickness, center distance, tooth count or bore dimensions supplied. PBM count + Elgin dimensions are cross-manufacturer comparisons, not one measured specimen."
+      ],
+      "sha256": "d0cd86541b8f8ce4ec3c2180ee0d6ea379cb763c4eabc1328d84cb963f4c758e",
+      "image_path_sha256": "4a8431ae12c5fd133129b1b7f95bbc85b9f98525e106e9bca948d6e90a0734c8"
+    }
+  ],
+  "failures": [
+    {
+      "attempt": "web PDF screenshot PBM",
+      "result": "cache miss; resolved by direct public PDF capture and local rendering"
+    },
+    {
+      "attempt": "unprivileged direct public download",
+      "result": "DNS sandbox failure; normal approved network retrieval succeeded"
+    },
+    {
+      "attempt": "Melling2015 original PDF",
+      "result": "Prior root404 retained; current manufacturer-authored mirror row visually checked instead"
+    }
+  ],
+  "conclusions": [
+    "24/48 is unsupported teaching geometry;58/29 supported for applicable replacement set;92 belongs to distinct industrial part.",
+    "Material and profile variants must remain separated. Existing115.256236mm axis distance conflicts with ordinary interpretation of replacement envelopes.",
+    "No current-cam/casting translation is justified by catalog outer diameters alone. Independent121.8mm hypothesis is not an authoritative target."
+  ],
+  "reproduction": [
+    "pdftoppm -f204 -singlefile -scale-to1800 -png PBM.pdf output",
+    "pdftoppm -f111 -singlefile -scale-to1800 -png Melling.pdf output",
+    "pdftoppm -f13 -singlefile -scale-to1800 -png Industrial.pdf output",
+    "python3 scripts/check-timing-gear-evidence.py"
+  ],
+  "redistribution": "Do not commit/release third-party captures or image composites; URLs/hashes/transcriptions are the shared evidence. Captures remain local and ignored."
+}

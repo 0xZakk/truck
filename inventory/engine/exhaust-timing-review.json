@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "baseline_commit": "124aa7c345af352459a800343ffc50f1e931367c",
+  "engine_complete": false,
+  "reviewed_report_sha256": {
+    "inventory/engine/exhaust-rear-collector-validation.json": "fa4a04e076c6b8ccb42687d5328acf62c343de21ee6b2dc8019e9506f7f40d1a",
+    "inventory/engine/timing-gear-pair-refinement-validation.json": "c5c6b5212b146b5bda89e854df1c38b7c4d1506199fb36f4a414097589edb19a",
+    "inventory/engine/timing-cover-shell-validation.json": "2316ca26ac8fcf72f1c3cc8c53d417286ae5af54730330c108cc6bea8b5d41fe",
+    "inventory/engine/timing-cover-pan-joint-validation.json": "4fbe6e3571926d131929b0f7e7ba69beafe0751b584bdf9aadd5634987552b85",
+    "inventory/engine/timing-axis-dependencies.json": "91d6df27fc6f30cf8585abfa50d44576c62a8914d8765931c11be3cb5d7d9a78"
+  },
+  "rear_collector": {
+    "verdict": "Installed bounded source-compared study; browser NOT RUN",
+    "actual_views_reviewed": [
+      "cad/engine/generated/exhaust-rear-collector-candidate/source-comparison.png",
+      "cad/engine/generated/exhaust-rear-collector-candidate/section-review.png"
+    ],
+    "limits": "Retained long neck, thin lands/bolt arms and end EGR layout remain unlike replacement photographs; no production casting acceptance.",
+    "installed_report": "inventory/engine/exhaust-rear-collector-installed-validation.json",
+    "installed_report_sha256": "25c697778f4db4d1c78f30f9fa0767853a7e52502a01f962732a213453660775",
+    "promotion_controls_sha256": "e347136d17703205af59e27c4da5c7aa4a4defd1ab81ab47ca5bca0d8afd5acc",
+    "fresh_exact_neighbor_checks": 27,
+    "geometry_difference_mm3": 0
+  },
+  "timing_gears": {
+    "verdict": "Preserve independent refinement as uninstalled hypothesis",
+    "actual_view_reviewed": "cad/engine/generated/timing-gear-pair-refined/pair-render.png",
+    "observations": "Hubs, web recesses, keyed bores and paired marks visible. Subtractive refinement preserves tooth geometry and scoped engagement evidence. Dimensions and indexing remain estimated; cam/cover interference requires coordinated migration."
+  },
+  "timing_cover": {
+    "verdict": "Bounded topology/feasibility study only; current pan registration rejected",
+    "actual_views_reviewed": [
+      "cad/engine/generated/timing-cover-shell-candidate/candidate-review.png",
+      "cad/engine/generated/timing-cover-pan-joint-proposal/terminal-review.png"
+    ],
+    "observations": "Seven-hole asymmetric open-bottom outline and recessed shell useful. Main-gasket terminals do not meet current pan gasket; 13.625 and37.2278mm gaps cannot be repaired by merely removing overlap or adding sealant. Source registration is being reworked.",
+    "registration_report": "inventory/engine/timing-cover-registration-validation.json",
+    "registration_report_sha256": "1a45e5539d951568595396f9ddb9d78fc4f4fbcb2289cc7f2f15980d372dfcb4",
+    "registration_view_reviewed": "cad/engine/generated/timing-cover-registration-study/registration-review.png",
+    "next_hypothesis": "Aperture-based central registration accepted as estimated feasibility contract only; scale0.262233/rotation-0.03982deg requires wider asymmetric front pan corridor. Joint CAD candidate authorized separately; no installed acceptance."
+  },
+  "timing_axis": {
+    "verdict": "Dependency audit accepted for planning; numeric feasibility next",
+    "limits": "121.8mm is estimated,122.0216mm unverified forum lead; direction also unverified. No canonical shaft move authorized.",
+    "numeric_report": "inventory/engine/timing-axis-kinematic-candidate-validation.json",
+    "numeric_report_sha256": "b040256fe4baa29bb668967413b5af738cf14374b1f4a35f9800f79a00a5aad3",
+    "numeric_review": "Common rocker geometry retained; strict closure passes; nominal exhaust peak and full-curve differences unresolved, not exact source-lift acceptance. Core CAD study next."
+  },
+  "browser": {
+    "status": "NOT RUN",
+    "reason": "Existing localhost browser request rejected by tool security policy; no alternate-surface bypass. Offline views do not establish browser acceptance."
+  },
+  "tracking": {
+    "issue32_comment": "https://github.com/0xZakk/truck/issues/32#issuecomment-5917712195",
+    "issue46_comment": "https://github.com/0xZakk/truck/issues/46#issuecomment-5917712465",
+    "board_columns_applied": false,
+    "reason": "CLI token lacks Projects scope."
+  },
+  "manifest_sha256": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf"
+}

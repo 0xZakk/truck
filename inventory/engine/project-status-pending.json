@@ -20,7 +20,7 @@
     {
       "issue": 43,
       "desired_status": "In progress",
-      "reason": "Cable/socket/spring installed with CAD and browser checks; source-supported idle stop and illustrative WOT candidate underway. Production details remain unresolved."
+      "reason": "Cable/socket/spring and illustrative throttle stops installed; latest stop browser acceptance and production details remain unresolved."
     },
     {
       "issue": 78,
@@ -30,12 +30,12 @@
     {
       "issue": 36,
       "desired_status": "In progress",
-      "reason": "Compact intake and exterior integrated; support bracket anchor/datum research unresolved."
+      "reason": "Source-compared runner exterior integrated in PR94; production geometry and support bracket datums remain unresolved."
     },
     {
       "issue": 44,
       "desired_status": "In progress",
-      "reason": "Attachment integrated; closure and electrical internals under integration."
+      "reason": "IAC attachment, closure and electrical internals integrated; production dimensions and remaining acceptance gaps stay open."
     },
     {
       "issue": 71,
@@ -65,12 +65,12 @@
     {
       "issue": 46,
       "desired_status": "In progress",
-      "reason": "Rear exhaust collector source-comparison and protected-interface candidate underway."
+      "reason": "Rear collector source comparison and guarded installation underway; independent review is adding canonical-artifact and metadata safeguards before apply."
     },
     {
       "issue": 32,
       "desired_status": "In progress",
-      "reason": "Timing-cover gasket evidence and pan/cover joint research underway; production outline and datums unresolved."
+      "reason": "Isolated 58/29 gear and seven-hole cover studies reviewed; coordinated cam-axis migration and failed cover-to-pan terminal registration are being resolved."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

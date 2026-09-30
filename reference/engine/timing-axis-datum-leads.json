@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-30",
+  "scope": "Issue #32 independent timing-pair research; no canonical or candidate geometry changes",
+  "classification": "UNVERIFIED RESEARCH LEADS; excluded from frozen manufacturer evidence and CAD parameters",
+  "lead": {
+    "url": "https://www.inliners.org/ubbthreads/ubbthreads.php?Main=9904&Number=83145&ubb=showflat",
+    "title": "A little tech help",
+    "author": "THE FRENCHTOWN FLYER",
+    "post_id": 83110,
+    "displayed_date": "2014-11-17 22:27 (forum timezone unknown)",
+    "short_quote": "240/300: 4.804\".",
+    "repeat_post": {
+      "id": 83128,
+      "displayed_date": "2014-11-18 12:52 (forum timezone unknown)",
+      "independent_corroboration": false
+    },
+    "claimed_center_in": 4.804,
+    "unit_conversion_mm": 122.0216,
+    "difference_from_candidate_121_8_mm": 0.2216,
+    "missing": [
+      "identified engine casting and year",
+      "drawing or manufacturer specification",
+      "measurement method",
+      "instrument calibration",
+      "uncertainty and tolerance",
+      "axis direction relative to block datum"
+    ],
+    "status": "Public forum assertion, not verified production dimension"
+  },
+  "search_review": {
+    "queries": [
+      "Ford 300 six cylinder camshaft crankshaft bore center distance",
+      "Ford 240 300 4.804 camshaft drawing",
+      "Ford 300 timing gear center distance manufacturer blueprint"
+    ],
+    "result": "No applicable primary numeric 240/300 center-distance source or identified measurement recovered in this bounded search",
+    "rejected_matches": [
+      {
+        "url": "https://www.go-parts.com/ps-mmp.php?make=Ford&model=300&parttype=Engine+Timing+Set",
+        "reason": "Search-indexed 1963 Ford 300 is vehicle model, not 300-CID I6 application. Chain-set 4.804 value must not transfer."
+      },
+      {
+        "url": "https://www.epartrade.com/uploads/contents/377767a1-6414-11e8-be4b-560001755c9c/2019/01/EM69ATC-Manual-011019.pdf",
+        "reason": "Search-indexed Rottler table associates 4.804/4.807 with Ford 289/302/351W V8; not I6 corroboration. Direct PDF retrieval via web tool failed; page pixels not inspected."
+      },
+      {
+        "url": "https://www.fordgarage.com/pages/camcrankposition.htm",
+        "reason": "1929 Model A/B block drawing A-6015 has a different engine application and cannot establish 240/300 axes."
+      }
+    ],
+    "pending_primary_lead": {
+      "url": "https://manuals.chudov.com/Ford-Industrial-300-Engine/194-210-CSG649.pdf",
+      "status": "Ford-authored industrial manual mirror indexed; direct web PDF retrieval failed. No center-distance value recovered. Industrial applicability must be checked."
+    }
+  },
+  "next_evidence_needed": [
+    "Applicable Ford machined-block drawing with crank/cam datums and revision",
+    "Alternatively an identified 240/300 specimen measurement with method and uncertainty",
+    "Matched gear manufacturer drawing giving working center distance/profile details"
+  ],
+  "decision": "Keep 121.8 mm as explicit independent hypothesis. Do not promote forum number, translate canonical cam, or silently revise frozen pair."
+}

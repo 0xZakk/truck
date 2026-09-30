@@ -1,0 +1,86 @@
+{
+  "status": "PASS interior refinement; inherited independent pair diagnostics; UNINSTALLED",
+  "inputs_sha256": {
+    "scripts/check-timing-gear-pair-refinement.py": "1dae14514410fafa7d6735c3f580876a63c7522748286c7eb8eaea86cebcfe4d",
+    "cad/engine/timing_gear_pair_refinement.py": "4b46be561c4fa4bfa9508fa1865caa8a5b1310ae79fd08b47afb7934fc2925d7",
+    "cad/engine/timing_gear_pair_candidate.py": "44d98d7a74e98ec5b806886df8e25d220a263e2e528f461e8e82b4c006b61799",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/timing-gear-pair-candidate-validation.json": "e8b0397a995aa7888fedbac640c9aa836696d7c88a597ea6323b20286e6b39a8",
+    "inventory/engine/timing-gear-contact-diagnostic.json": "f435c5f95c1b9138071c33624426828bed1da4405f4445615441b246d3d47c7e",
+    "cad/engine/generated/timing-gear-pair-candidate/crank.step": "cc4358ef17843843ac7a6b7150dc6db425b6e916e48c976ac3d7399301107a47",
+    "cad/engine/generated/timing-gear-pair-candidate/cam.step": "827d96d965fbcf65b642d7c54d8ef5df9afcff429502851c143e410545438577"
+  },
+  "parameters": {
+    "cam_recess_inner_radius_mm": 26.0,
+    "cam_recess_outer_radius_mm": 70.0,
+    "cam_recess_depth_mm": 2.5,
+    "crank_recess_inner_radius_mm": 26.0,
+    "crank_recess_outer_radius_mm": 33.0,
+    "crank_recess_depth_mm": 1.2,
+    "crank_key_width_mm": 6.35,
+    "crank_key_depth_mm": 3.175,
+    "cam_mark_radius_mm": 0.75,
+    "cam_mark_depth_mm": 0.6,
+    "crank_mark_depth_mm": 0.5
+  },
+  "exports": {
+    "crank": {
+      "step_sha256": "60d06a737ad9279a71c1628448e95681e033556e25597a75b3d3e0ed3c473255",
+      "glb_sha256": "abde5c80d87ce8700ea7b19d27528136e5717d8cc8992967b9934f4e17b3bfea",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "glb_bounds_error_mm": 0.011857403742503436,
+      "step_volume_error_mm3": 5.820766091346741e-11,
+      "removed_volume_mm3": 1845.2957464662181,
+      "added_solids": 0,
+      "removed_material_outside_protected_inner_radius_solids": 0,
+      "protected_inner_radius_mm": 37.05,
+      "triangles": 6864
+    },
+    "cam": {
+      "step_sha256": "d723a068fc20c7fde7447dc5b1be04930180814f43e9b32189a5970226440598",
+      "glb_sha256": "6bdb434edfc845c793707aa7a165d2483a4e2318ffebf438a5c9383e8c6a2d06",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "glb_bounds_error_mm": 0.00033232036849994984,
+      "step_volume_error_mm3": 5.820766091346741e-11,
+      "removed_volume_mm3": 31605.491218363215,
+      "added_solids": 0,
+      "removed_material_outside_protected_inner_radius_solids": 0,
+      "protected_inner_radius_mm": 77.64999999999999,
+      "triangles": 9372
+    }
+  },
+  "inherited_sweep": {
+    "report_sha256": "e8b0397a995aa7888fedbac640c9aa836696d7c88a597ea6323b20286e6b39a8",
+    "samples": 25,
+    "zero_overlap": true,
+    "basis": "Exact no-added-material and removed-material containment entirely below each tooth root; outer tooth rings identical."
+  },
+  "inherited_contact_diagnostic": {
+    "report_sha256": "f435c5f95c1b9138071c33624426828bed1da4405f4445615441b246d3d47c7e",
+    "brackets": [
+      {
+        "crank_degrees": 0,
+        "contact_bracket_deg": [
+          0.08,
+          0.09
+        ]
+      },
+      {
+        "crank_degrees": 6.206896551724138,
+        "contact_bracket_deg": [
+          0.08,
+          0.09
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Shoulder/key/mark dimensions and relative indexing are estimates from one identified replacement photograph.",
+    "Crank keyway is new illustrative geometry; no matching shaft slot/key engagement is established.",
+    "Current cam axis and cover incompatibilities are not repaired. No installed/browser acceptance."
+  ]
+}
