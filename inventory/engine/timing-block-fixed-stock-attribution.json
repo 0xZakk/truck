@@ -1,0 +1,1668 @@
+{
+  "status": "DIAGNOSTIC proposed final machining NOT APPLIED",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block.step": "1dcaa5dcc7a159650ce23d6171dfbc6d0cbd3d9a08a4d5a5ee3681f545919886",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "inventory/engine/timing-block-fixed-stock-validation.json": "1c756f687838c5bbea606687db3649d196917e16bc3240955c74c368569d474f",
+    "cad/engine/timing_block_physical_interface_contract.py": "630ff09ad025e476397f24168c81386a501f51ea4c113b2bebefa355f6808351",
+    "cad/engine/timing_block_fixed_stock_candidate.py": "53796ccfd332a292a6fa680f4bb31f561aaf95422c92346f8e44dce467b3ba96",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "scripts/check-timing-block-fixed-stock-attribution.py": "7345ac0357539b8e02ea988e2521b1b79f8a9c9d9d80ed04d65fcaf6eedf103a",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-before.step": "1c7d8280dfb251ff9c4fb60c24b779f770dfdb6d6ec01000ba771e3aa5bc021e",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-before.step": "df8af2b8d9d7da870405cb5527e8443581d53b7f7e09d4f5fdbd8525b4537ea1",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/filter_block_interface-after.step": "4c717c013109a06046a6cb1606693adb075f362c177babdb98d3f697b998ba70",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-before.step": "a1f210df49427e2809026690ef1e610b9a40ae8ac6b9e40a6a376d7602e1653e",
+    "cad/engine/generated/timing-block-fixed-stock-candidate/03-carrier1994-after.step": "907f77bf2adbc7fc9d28000806ce559681b2c9acf9989599abd5bad5fbe422dc"
+  },
+  "feature_local_ablation": [
+    {
+      "feature": "block_interface_shape",
+      "interface": "tunnel",
+      "before_intrusion_mm3": 0,
+      "after_intrusion_mm3": 0,
+      "net_added_in_interface_mm3": 0,
+      "net_added_bounds_mm": null,
+      "remaining_in_final_block_mm3": 0
+    },
+    {
+      "feature": "block_interface_shape",
+      "interface": "guides",
+      "before_intrusion_mm3": 0,
+      "after_intrusion_mm3": 1831.7313486465725,
+      "net_added_in_interface_mm3": 1831.731348646477,
+      "net_added_bounds_mm": [
+        [
+          -314.5731626316131,
+          104.9999999999848,
+          130.0
+        ],
+        [
+          314.5731626316606,
+          106.234385990161,
+          240.0
+        ]
+      ],
+      "remaining_in_final_block_mm3": 1831.731348646477
+    },
+    {
+      "feature": "filter_block_interface",
+      "interface": "tunnel",
+      "before_intrusion_mm3": 5082.816571671493,
+      "after_intrusion_mm3": 12642.739763159283,
+      "net_added_in_interface_mm3": 7559.923191511217,
+      "net_added_bounds_mm": [
+        [
+          30.9999999,
+          117.39999989791957,
+          60.59131448037463
+        ],
+        [
+          109.00000010000001,
+          122.25747109207144,
+          91.58439910456431
+        ]
+      ],
+      "remaining_in_final_block_mm3": 7559.923191487712
+    },
+    {
+      "feature": "filter_block_interface",
+      "interface": "guides",
+      "before_intrusion_mm3": 1831.7313486465725,
+      "after_intrusion_mm3": 1831.7313486465725,
+      "net_added_in_interface_mm3": 0,
+      "net_added_bounds_mm": null,
+      "remaining_in_final_block_mm3": 0
+    },
+    {
+      "feature": "03-carrier1994",
+      "interface": "tunnel",
+      "before_intrusion_mm3": 12642.739763159283,
+      "after_intrusion_mm3": 13496.959974171841,
+      "net_added_in_interface_mm3": 854.2202110177852,
+      "net_added_bounds_mm": [
+        [
+          280.69739201805805,
+          103.99999989999768,
+          95.9999999
+        ],
+        [
+          351.302607981932,
+          113.56250255903,
+          101.7385804237474
+        ]
+      ],
+      "remaining_in_final_block_mm3": 854.2202110177852
+    },
+    {
+      "feature": "03-carrier1994",
+      "interface": "guides",
+      "before_intrusion_mm3": 1831.7313486465725,
+      "after_intrusion_mm3": 1862.76385048891,
+      "net_added_in_interface_mm3": 31.03250184697305,
+      "net_added_bounds_mm": [
+        [
+          302.79264888101073,
+          103.99999989999768,
+          101.08267250274454
+        ],
+        [
+          306.0000001,
+          105.67606670718,
+          118.91732749725412
+        ]
+      ],
+      "remaining_in_final_block_mm3": 31.03250184697305
+    }
+  ],
+  "physical_mask_contract": {
+    "side-cover-sealing-land": {
+      "source": "pushrod_cover gasket profile",
+      "local_z_mm": [
+        -3.5,
+        0.1
+      ],
+      "support": "2 mm existing material behind block seat at local\u22121.5; estimated minimum proposal"
+    },
+    "side-cover-fastener-web-1": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "side-cover-fastener-web-2": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "side-cover-fastener-web-3": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "side-cover-fastener-web-4": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "side-cover-fastener-web-5": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "side-cover-fastener-web-6": {
+      "source": "entire existing fastener web and blind socket, no wall reduction"
+    },
+    "filter-insert-seat-wall": {
+      "source": "stepped insert seat radius14.05, 2 mm radial/axial material guard"
+    },
+    "filter-gasket-face": {
+      "source": "entire existing boss face plus 2 mm backing"
+    },
+    "filter-inlet-annulus-wall": {
+      "source": "inlet annulus radius22..30, local\u22124..1; 2 mm surrounding wall guard"
+    },
+    "filter-inlet-feed-wall": {
+      "source": "radius4 inlet feed, 2 mm wall guard"
+    },
+    "filter-inlet-boundary-wall": {
+      "source": "radius4 inlet boundary, 2 mm wall and endpoint guard"
+    },
+    "filter-outlet-center-wall": {
+      "source": "radius6.4 clean outlet, 2 mm wall guard"
+    },
+    "filter-outlet-boundary-wall": {
+      "source": "radius6.4 outlet boundary, 2 mm wall/endpoint guard"
+    },
+    "carrier-entire-support-292": {
+      "source": "entire existing support boss, including socket and all existing wall material"
+    },
+    "carrier-entire-support-340": {
+      "source": "entire existing support boss, including socket and all existing wall material"
+    },
+    "dipstick-entire-receiver": {
+      "source": "unchanged original receiver guard"
+    },
+    "main-journal-1": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-1--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-1-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-1--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-1-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-2": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-2--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-2-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-2--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-2-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-3": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-3--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-3-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-3--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-3-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-4": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-4--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-4-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-4--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-4-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-5": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-5--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-5-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-5--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-5-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-6": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-6--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-6-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-6--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-6-67": {
+      "source": "unchanged original broad guard"
+    },
+    "main-journal-7": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-7--56": {
+      "source": "unchanged original broad guard"
+    },
+    "main-cap-socket-7-56": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-7--67": {
+      "source": "unchanged original broad guard"
+    },
+    "head-bolt-7-67": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-1": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-2": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-3": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-4": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-5": {
+      "source": "unchanged original broad guard"
+    },
+    "cylinder-wall-6": {
+      "source": "unchanged original broad guard"
+    },
+    "deck-outside-declared-guide-openings": {
+      "source": "unchanged original broad guard"
+    },
+    "accessory-front-90-220": {
+      "source": "unchanged original broad guard"
+    },
+    "accessory-front--100-220": {
+      "source": "unchanged original broad guard"
+    },
+    "accessory-front--100-90": {
+      "source": "unchanged original broad guard"
+    },
+    "accessory-front--125-140": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-1": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-2": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-3": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-4": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-5": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-6": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-7": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-8": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-9": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-10": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-11": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-12": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-13": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-14": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-15": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-16": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-17": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-18": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-19": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-20": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-21": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-22": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-23": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-24": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-socket-25": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-front-end-land": {
+      "source": "unchanged original broad guard"
+    },
+    "pan-rear-end-land": {
+      "source": "unchanged original broad guard"
+    },
+    "water-pump-front-interface": {
+      "source": "unchanged original broad guard"
+    }
+  },
+  "physical_results": [
+    {
+      "name": "side-cover-sealing-land",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-1",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-2",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-3",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-4",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-5",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "side-cover-fastener-web-6",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-insert-seat-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-gasket-face",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-inlet-annulus-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-inlet-feed-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-inlet-boundary-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-outlet-center-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "filter-outlet-boundary-wall",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "carrier-entire-support-292",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 427.11010548011404,
+        "guides": 31.032501898409798
+      },
+      "prospective_safe": false
+    },
+    {
+      "name": "carrier-entire-support-340",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 427.1101055324446,
+        "guides": 0
+      },
+      "prospective_safe": false
+    },
+    {
+      "name": "dipstick-entire-receiver",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-1",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-1--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-1-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-1--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-1-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-2",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-2--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-2-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-2--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-2-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-3",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-3--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-3-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-3--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-3-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-4",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-4--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-4-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-4--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-4-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-5",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-5--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-5-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-5--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-5-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-6",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-6--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-6-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-6--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-6-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-journal-7",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-7--56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "main-cap-socket-7-56",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-7--67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "head-bolt-7-67",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-1",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-2",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-3",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-4",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-5",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "cylinder-wall-6",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "deck-outside-declared-guide-openings",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "accessory-front-90-220",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "accessory-front--100-220",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "accessory-front--100-90",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "accessory-front--125-140",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-1",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-2",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-3",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-4",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-5",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-6",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-7",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-8",
+      "fixed_stock_added_mm3": 0.004783590749992498,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": false,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-9",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-10",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-11",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-12",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-13",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-14",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-15",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-16",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-17",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-18",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-19",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-20",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-21",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-22",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-23",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-24",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-socket-25",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-front-end-land",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "pan-rear-end-land",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    },
+    {
+      "name": "water-pump-front-interface",
+      "fixed_stock_added_mm3": 0,
+      "fixed_stock_removed_mm3": 0,
+      "fixed_stock_unchanged": true,
+      "prospective_final_machining_removal_mm3": {
+        "tunnel": 0,
+        "guides": 0
+      },
+      "prospective_safe": true
+    }
+  ],
+  "four_journal_support": [
+    {
+      "bearing": 1,
+      "center_x_mm": -334,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_mm3": 178.01747409727915,
+      "fixed_stock_supported_mm3": 145.33798842324984,
+      "radial_samples": [
+        {
+          "x_mm": -344.9,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": -334,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": -323.1,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            195,
+            200,
+            205,
+            210,
+            215,
+            220,
+            225,
+            230,
+            235,
+            240,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        }
+      ]
+    },
+    {
+      "bearing": 2,
+      "center_x_mm": -110,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_mm3": 184.051183902513,
+      "fixed_stock_supported_mm3": 148.75979180590076,
+      "radial_samples": [
+        {
+          "x_mm": -120.9,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": -110,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": -99.1,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        }
+      ]
+    },
+    {
+      "bearing": 3,
+      "center_x_mm": 110,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_mm3": 184.051183902513,
+      "fixed_stock_supported_mm3": 161.18629872971925,
+      "radial_samples": [
+        {
+          "x_mm": 99.1,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": []
+        },
+        {
+          "x_mm": 110,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": 120.9,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        }
+      ]
+    },
+    {
+      "bearing": 4,
+      "center_x_mm": 360.5,
+      "shell_volume_mm3": 184.051183902513,
+      "baseline_supported_mm3": 175.39923006495928,
+      "fixed_stock_supported_mm3": 143.85314467441165,
+      "radial_samples": [
+        {
+          "x_mm": 349.6,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": 360.5,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            195,
+            200,
+            205,
+            210,
+            215,
+            220,
+            225,
+            230,
+            235,
+            240,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        },
+        {
+          "x_mm": 371.4,
+          "unsupported_sample_angles_deg_from_positive_Y_toward_Z": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            330,
+            335,
+            340,
+            345,
+            350,
+            355
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Before/after feature comparison bypasses only that feature on identical incoming stock; not a whole-pipeline alternate regeneration",
+    "Original 79 broad guards remain reported separately and are not weakened",
+    "Physical 2 mm margins are explicit proposed review guards, not factory wall dimensions",
+    "Journal angle sampling at 5 degrees locates deficiencies; shell volumes are exact CAD comparisons, samples are not continuous coverage proof",
+    "No new casting support added and no final-machined candidate created"
+  ]
+}

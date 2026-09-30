@@ -1,0 +1,69 @@
+{
+  "status": "PROPOSAL measurement only; entire-support guard remains failed",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-boolean-topology-candidate/block.step": "38cda8c9f6b6966ac4980bd32b603b96ec44381633daca466a8432ad883e7d27",
+    "scripts/check-timing-carrier-machining-proposal.py": "8feee5cc30a04b5d80a57c4d7f80beb6cb2cc2519da7ca0828ad2a3c92d968f1",
+    "cad/engine/accessory_carrier_1994.py": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951",
+    "inventory/engine/timing-block-boolean-topology-full.json": "54efce493492269a6f0e7c7661c02d68ce4ed19914b523ca077d7e3430bd690e"
+  },
+  "source_baseline": {
+    "boss_radius_mm": 14,
+    "socket_radius_mm": 5.2,
+    "nominal_radial_wall_mm": 8.8,
+    "blind_backing_mm": 7,
+    "seat_y_mm": 135,
+    "evidence_class": "existing provisional CAD, no manufacturer minimum wall evidence"
+  },
+  "proposed_masks": {
+    "socket": "existing radius5.2+2mm; axial111..136 extended2mm each end",
+    "mating_face": "entire radius14 footprint at Y135 with2mm backing; Y133..135.1",
+    "status": "review proposal only;2mm is an explicit estimate, not production requirement"
+  },
+  "stations": [
+    {
+      "station_x_mm": 292,
+      "prospective_removed_mm3": 458.12460691716853,
+      "removed_bounds_mm": [
+        [
+          280.69739201805805,
+          103.99999989999982,
+          95.9999999
+        ],
+        [
+          306.0000001,
+          113.56250255903,
+          118.9173274972533
+        ]
+      ],
+      "minimum_distance_removed_to_existing_socket_mm": 5.668275349653356,
+      "minimum_distance_removed_to_seat_backing_guard_mm": 19.43749754097,
+      "proposed_2mm_socket_wall_guard_removed_mm3": 0,
+      "proposed_2mm_seat_backing_guard_removed_mm3": 0
+    },
+    {
+      "station_x_mm": 340,
+      "prospective_removed_mm3": 427.11010553084,
+      "removed_bounds_mm": [
+        [
+          328.69739201805817,
+          103.99999989999996,
+          95.9999999
+        ],
+        [
+          351.30260798193194,
+          113.56250255903,
+          101.73858042374395
+        ]
+      ],
+      "minimum_distance_removed_to_existing_socket_mm": 5.668275349653342,
+      "minimum_distance_removed_to_seat_backing_guard_mm": 19.43749754097,
+      "proposed_2mm_socket_wall_guard_removed_mm3": 0,
+      "proposed_2mm_seat_backing_guard_removed_mm3": 0
+    }
+  ],
+  "limits": [
+    "Clearance to the socket surface is geometric, not stress/strength qualification",
+    "No support material added; no final machining applied",
+    "Root must approve any revised physical support contract; prior91 masks remain unchanged"
+  ]
+}

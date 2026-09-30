@@ -1,0 +1,31 @@
+{
+  "status": "LOCAL construction comparison; no final-machining changes",
+  "variants": {
+    "original": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.59188133,
+      "step_sha256": "d2edcbb2a2830495c3595a495b1cc63e6901413bd81804009ce3c0cf70fb617b"
+    },
+    "skip-empty-tunnel": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.591878828,
+      "step_sha256": "b5d7256f5fe7fceb4c9ac388fbdfafb12c7ddd3c9d700940e417e506d4bb3698"
+    },
+    "fused-cutters": {
+      "valid": false,
+      "solids": 1,
+      "volume_mm3": 19784096.591881327,
+      "step_sha256": "231661d368e62b9d1487fdde80a164b24caf6fb24bf6eafd71dd20f4f1f2f3cf"
+    }
+  },
+  "source_operand_policy": "Exact source boss/tunnel/seat expressions, dimensions, frame retained; distributive set identity",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "scripts/check-timing-block-rear-seat-csg-local.py": "bfa8880847dc610978e4b47097e763f2a7b57882d3503c9002d6c1aa602e2564",
+    "cad/engine/timing_block_rear_seat_csg_candidate.py": "ca644a813f00a40aeb3b56c4d894ae51214436cd29f4cf77ea508f8dda58574d",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163"
+  }
+}

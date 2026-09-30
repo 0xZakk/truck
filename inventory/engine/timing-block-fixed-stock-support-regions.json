@@ -1,0 +1,83 @@
+{
+  "status": "DIAGNOSTIC exact support-shell deficits, no material added",
+  "block_step_sha256": "1dcaa5dcc7a159650ce23d6171dfbc6d0cbd3d9a08a4d5a5ee3681f545919886",
+  "checker_sha256": "058d79decc43062764c98d63d987160813713dfcf92315abdffbda7ea41c4d20",
+  "missing_support_regions": [
+    {
+      "bearing": 1,
+      "missing_volume_mm3": 38.7131954793073,
+      "bounds_mm": [
+        [
+          -345.0,
+          68.60709305994934,
+          51.57249547924009
+        ],
+        [
+          -323.0,
+          122.3074709901611,
+          91.52780657928393
+        ]
+      ],
+      "step": "cad/engine/generated/timing-block-fixed-stock-candidate/journal-1-missing-support.step",
+      "step_sha256": "85b82dbf5260728716e0f33a83211a90e20d5aa75902905e0031db054ff6561c"
+    },
+    {
+      "bearing": 2,
+      "missing_volume_mm3": 35.29139209657683,
+      "bounds_mm": [
+        [
+          -121.00000000000001,
+          117.5,
+          60.647907004973824
+        ],
+        [
+          -99.0,
+          122.3074709901611,
+          91.52780657928393
+        ]
+      ],
+      "step": "cad/engine/generated/timing-block-fixed-stock-candidate/journal-2-missing-support.step",
+      "step_sha256": "f616d3da385bfea6abd335fa5a2f0100618c5c6f740baee484880ab893216b84"
+    },
+    {
+      "bearing": 3,
+      "missing_volume_mm3": 22.864885034606573,
+      "bounds_mm": [
+        [
+          99.91736080392468,
+          117.49999989810554,
+          60.64790690476492
+        ],
+        [
+          121.0000001,
+          122.3074711007488,
+          91.52780667928394
+        ]
+      ],
+      "step": "cad/engine/generated/timing-block-fixed-stock-candidate/journal-3-missing-support.step",
+      "step_sha256": "edd8d40da5550edc41b838017b015c3fdc89a86bb2ae6fb8c56c3cd526d1ab51"
+    },
+    {
+      "bearing": 4,
+      "missing_volume_mm3": 40.19803922814191,
+      "bounds_mm": [
+        [
+          349.5,
+          68.60709305994929,
+          51.57249547924005
+        ],
+        [
+          371.5,
+          122.3074709901611,
+          91.52780657928393
+        ]
+      ],
+      "step": "cad/engine/generated/timing-block-fixed-stock-candidate/journal-4-missing-support.step",
+      "step_sha256": "824a1d2ea031c3cebe7e3f77778e86ed0c397b3ce3863779ab5229819e49440c"
+    }
+  ],
+  "limits": [
+    "Exact only within the declared thin support-shell witness; not required casting boss geometry",
+    "Based on valid STEP readback; original builder topology remains failed"
+  ]
+}

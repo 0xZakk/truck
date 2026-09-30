@@ -1,0 +1,1403 @@
+{
+  "status": "PASS isolated coupled modeled core; block/cover/linkage integration NOT RUN",
+  "input_sha256": {
+    "scripts/check-timing-coupled-core-candidate.py": "93015926e8ba354a02bad344af1a8f7f95dde0670b480799de7fd34dad334f60",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "inventory/engine/timing-gear-backlash-candidate-validation.json": "0a4023d5eb2d609fa122c797dcb9af2b3fb0dcec714f013d57eff9789576a5eb",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.glb": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.glb": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.glb": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.glb": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.glb": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.glb": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.glb": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.glb": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.glb": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.glb": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.glb": "787d78d23105d797d5fb4912f7bb2aab52578014c476817c9a7f604c287afb36",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-key.step": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-key.glb": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.glb": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.glb": "dd452eb2681ce3b82c343f0055b70b1a9e510c42c66106d819d922ea4c37c05d",
+    "cad/engine/generated/timing-thrust-land-candidate/rear-cam-plug.step": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+    "cad/engine/generated/timing-thrust-land-candidate/rear-cam-plug.glb": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+    "cad/engine/generated/timing-gear-backlash-candidate/crank.step": "533208c5f28da3500021a1e8431aba26f1cd8f0b0e886a768a03041263c0e4a4",
+    "cad/engine/generated/timing-gear-backlash-candidate/crank.glb": "f435281f938a9a4c9e299f89c14d1c9ef58688aff76750f0e112911c54eb216c",
+    "cad/engine/generated/timing-gear-backlash-candidate/cam.step": "78df586a13fa6d0a18dc10c8628e8a02900468fb33da94b147f9b7abb3b0a0be",
+    "cad/engine/generated/timing-gear-backlash-candidate/cam.glb": "07fd302629f47b033ff03b02ef19b8ba22299f9a60af8e4d2445814e13e16d90"
+  },
+  "membership": {
+    "cam-bearing-1": {
+      "id": "cam-bearing-1",
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "name": "Camshaft bearing",
+      "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+      "position_cad_mm": [
+        -334.0,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -100,
+        0
+      ]
+    },
+    "cam-bearing-2": {
+      "id": "cam-bearing-2",
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "name": "Camshaft bearing",
+      "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+      "position_cad_mm": [
+        -110,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -100,
+        0
+      ]
+    },
+    "cam-bearing-3": {
+      "id": "cam-bearing-3",
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "name": "Camshaft bearing",
+      "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+      "position_cad_mm": [
+        110,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -100,
+        0
+      ]
+    },
+    "cam-bearing-4": {
+      "id": "cam-bearing-4",
+      "definition": "cam-bearing",
+      "parent": "valvetrain",
+      "name": "Camshaft bearing",
+      "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+      "position_cad_mm": [
+        360.5,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        -100,
+        0
+      ]
+    },
+    "cam-gear-spacer": {
+      "id": "cam-gear-spacer",
+      "definition": "cam-gear-spacer",
+      "parent": "cam-motion",
+      "name": "Cam timing-gear spacer",
+      "function": "Sets the shoulder-to-hub distance around the thrust plate, allowing controlled axial clearance rather than clamping the plate rigidly.",
+      "position_cad_mm": [
+        373.0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        155,
+        0,
+        0
+      ]
+    },
+    "cam-thrust-bolt-1": {
+      "id": "cam-thrust-bolt-1",
+      "definition": "cam-thrust-bolt",
+      "parent": "cam-retention-assembly",
+      "name": "Cam thrust-plate bolt",
+      "function": "Fastens the stationary thrust plate to the block. The industrial comparison specifies5/16-18 \u00d73/4-inch.",
+      "position_cad_mm": [
+        361.109375,
+        90,
+        107
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        210,
+        0,
+        0
+      ]
+    },
+    "cam-thrust-bolt-2": {
+      "id": "cam-thrust-bolt-2",
+      "definition": "cam-thrust-bolt",
+      "parent": "cam-retention-assembly",
+      "name": "Cam thrust-plate bolt",
+      "function": "Fastens the stationary thrust plate to the block. The industrial comparison specifies5/16-18 \u00d73/4-inch.",
+      "position_cad_mm": [
+        361.109375,
+        90,
+        37
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        210,
+        0,
+        0
+      ]
+    },
+    "cam-thrust-plate": {
+      "id": "cam-thrust-plate",
+      "definition": "cam-thrust-plate",
+      "parent": "cam-retention-assembly",
+      "name": "Camshaft thrust plate",
+      "function": "Fixed to the block, this plate limits axial camshaft movement between the shaft shoulder and timing-gear hub.",
+      "position_cad_mm": [
+        373.0,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        125,
+        0,
+        0
+      ]
+    },
+    "cam-thrust-washer-1": {
+      "id": "cam-thrust-washer-1",
+      "definition": "cam-thrust-washer",
+      "parent": "cam-retention-assembly",
+      "name": "Cam thrust-plate washer",
+      "function": "Separate washer shown under each retaining bolt in the industrial exploded drawing; its section is provisional.",
+      "position_cad_mm": [
+        378.159375,
+        90,
+        107
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        170,
+        0,
+        0
+      ]
+    },
+    "cam-thrust-washer-2": {
+      "id": "cam-thrust-washer-2",
+      "definition": "cam-thrust-washer",
+      "parent": "cam-retention-assembly",
+      "name": "Cam thrust-plate washer",
+      "function": "Separate washer shown under each retaining bolt in the industrial exploded drawing; its section is provisional.",
+      "position_cad_mm": [
+        378.159375,
+        90,
+        37
+      ],
+      "rotation_cad_deg": [
+        0,
+        90,
+        0
+      ],
+      "explode_cad_mm": [
+        170,
+        0,
+        0
+      ]
+    },
+    "cam-timing-gear": {
+      "id": "cam-timing-gear",
+      "definition": "cam-timing-gear",
+      "parent": "cam-motion",
+      "name": "Cam Timing Gear",
+      "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+      "position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        160,
+        0,
+        0
+      ]
+    },
+    "cam-timing-key": {
+      "id": "cam-timing-key",
+      "definition": "cam-timing-key",
+      "parent": "cam-motion",
+      "name": "Camshaft timing-gear key",
+      "function": "Registers the gear to the cam nose through matching shaft and hub seats. The woodruff-form dimensions remain provisional.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        70
+      ]
+    },
+    "camshaft": {
+      "id": "camshaft",
+      "definition": "camshaft",
+      "parent": "cam-motion",
+      "name": "Camshaft",
+      "function": "Twelve lobes time the intake and exhaust valves. Four bearing journals locate the shaft; the timing gears turn it once per two crankshaft revolutions.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        100,
+        -100,
+        0
+      ]
+    },
+    "crank-timing-gear": {
+      "id": "crank-timing-gear",
+      "definition": "crank-timing-gear",
+      "parent": "crank-motion",
+      "name": "Crank Timing Gear",
+      "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+      "position_cad_mm": [
+        385.259375,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        160,
+        0,
+        0
+      ]
+    },
+    "rear-cam-plug": {
+      "id": "rear-cam-plug",
+      "definition": "rear-cam-plug",
+      "parent": "block-plugs",
+      "name": "Rear camshaft bore plug",
+      "function": "Closes the rear access opening of the camshaft tunnel. The cup is a separate stationary seal; it does not support or retain the rotating camshaft.",
+      "position_cad_mm": [
+        -363.7878,
+        90,
+        72
+      ],
+      "rotation_cad_deg": [
+        0,
+        -90,
+        0
+      ],
+      "explode_cad_mm": [
+        -125,
+        0,
+        0
+      ]
+    }
+  },
+  "rotating_cam_group": [
+    "cam-gear-spacer",
+    "cam-timing-gear",
+    "cam-timing-key",
+    "camshaft"
+  ],
+  "stationary_group": [
+    "cam-bearing-1",
+    "cam-bearing-2",
+    "cam-bearing-3",
+    "cam-bearing-4",
+    "rear-cam-plug",
+    "cam-thrust-plate",
+    "cam-thrust-bolt-1",
+    "cam-thrust-bolt-2",
+    "cam-thrust-washer-1",
+    "cam-thrust-washer-2"
+  ],
+  "retaining_bolt": "No separate gear-retaining bolt established in manifest/source; no bolt invented",
+  "keyed_rigid_interfaces": [
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-timing-gear",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "cam-timing-key",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    },
+    {
+      "a": "cam-gear-spacer",
+      "b": "camshaft",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "cam-timing-key",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "camshaft",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    },
+    {
+      "a": "cam-timing-key",
+      "b": "camshaft",
+      "proof": "Same rigid cam_frame applied to both; local geometry equals frozen core inside R77.2; inherited zero-overlap and gaps/contact invariant",
+      "inherited_report_sha256": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928"
+    }
+  ],
+  "transform_controls": [
+    {
+      "crank_degrees": 0,
+      "axial_mm": -0.1,
+      "rigid_inverse_error_below_mm": 1e-08,
+      "stationary_objects_identical": true,
+      "actual_posed_center_error_below_mm": 1e-07,
+      "left_stationary_key_fault_mm": 0.10036077443615128
+    },
+    {
+      "crank_degrees": 180,
+      "axial_mm": -0.1,
+      "rigid_inverse_error_below_mm": 1e-08,
+      "stationary_objects_identical": true,
+      "actual_posed_center_error_below_mm": 1e-07,
+      "left_stationary_key_fault_mm": 20.931624415894802
+    },
+    {
+      "crank_degrees": 360,
+      "axial_mm": 0,
+      "rigid_inverse_error_below_mm": 1e-08,
+      "stationary_objects_identical": true,
+      "actual_posed_center_error_below_mm": 1e-07,
+      "left_stationary_key_fault_mm": 29.609952593954958
+    },
+    {
+      "crank_degrees": 720,
+      "axial_mm": -0.1,
+      "rigid_inverse_error_below_mm": 1e-08,
+      "stationary_objects_identical": true,
+      "actual_posed_center_error_below_mm": 1e-07,
+      "left_stationary_key_fault_mm": 0.10036077443615248
+    }
+  ],
+  "stationary_certificates": [
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          372.9,
+          378.259375
+        ],
+        [
+          -345.0,
+          -323.0
+        ]
+      ],
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-bearing-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          372.9,
+          378.259375
+        ],
+        [
+          -121.0,
+          -99.0
+        ]
+      ],
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-bearing-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          372.9,
+          378.259375
+        ],
+        [
+          99.0,
+          121.0
+        ]
+      ],
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-bearing-3",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          372.9,
+          378.259375
+        ],
+        [
+          349.5,
+          371.5
+        ]
+      ],
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-bearing-4",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          372.9,
+          378.259375
+        ],
+        [
+          -372.5,
+          -363.7878
+        ]
+      ],
+      "moving": "cam-gear-spacer",
+      "stationary": "rear-cam-plug",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 19.05,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-thrust-plate",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 19.05,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-thrust-bolt-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 19.05,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-thrust-bolt-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 19.05,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-thrust-washer-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 19.05,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-gear-spacer",
+      "stationary": "cam-thrust-washer-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.15937489999993,
+          392.2593751
+        ],
+        [
+          -345.0,
+          -323.0
+        ]
+      ],
+      "moving": "cam-timing-gear",
+      "stationary": "cam-bearing-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.15937489999993,
+          392.2593751
+        ],
+        [
+          -121.0,
+          -99.0
+        ]
+      ],
+      "moving": "cam-timing-gear",
+      "stationary": "cam-bearing-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.15937489999993,
+          392.2593751
+        ],
+        [
+          99.0,
+          121.0
+        ]
+      ],
+      "moving": "cam-timing-gear",
+      "stationary": "cam-bearing-3",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.15937489999993,
+          392.2593751
+        ],
+        [
+          349.5,
+          371.5
+        ]
+      ],
+      "moving": "cam-timing-gear",
+      "stationary": "cam-bearing-4",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.15937489999993,
+          392.2593751
+        ],
+        [
+          -372.5,
+          -363.7878
+        ]
+      ],
+      "moving": "cam-timing-gear",
+      "stationary": "rear-cam-plug",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Gear remains at or ahead of stationary plate front plane for entire axial interval; rotation preserves plane",
+      "stop_x_mm": 378.159375,
+      "moving": "cam-timing-gear",
+      "stationary": "cam-thrust-plate",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Actual gear contained in axisymmetric land/ring/front-web superset expanded for all axial travel; superset clears stationary part",
+      "support_missing_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "land_radius_mm": 26,
+      "relief_radius_mm": 47,
+      "forward_web_min_x_mm": 386.15937499999995,
+      "moving": "cam-timing-gear",
+      "stationary": "cam-thrust-bolt-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Actual gear contained in axisymmetric land/ring/front-web superset expanded for all axial travel; superset clears stationary part",
+      "support_missing_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "land_radius_mm": 26,
+      "relief_radius_mm": 47,
+      "forward_web_min_x_mm": 386.15937499999995,
+      "moving": "cam-timing-gear",
+      "stationary": "cam-thrust-bolt-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Actual gear contained in axisymmetric land/ring/front-web superset expanded for all axial travel; superset clears stationary part",
+      "support_missing_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "land_radius_mm": 26,
+      "relief_radius_mm": 47,
+      "forward_web_min_x_mm": 386.15937499999995,
+      "moving": "cam-timing-gear",
+      "stationary": "cam-thrust-washer-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Actual gear contained in axisymmetric land/ring/front-web superset expanded for all axial travel; superset clears stationary part",
+      "support_missing_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "land_radius_mm": 26,
+      "relief_radius_mm": 47,
+      "forward_web_min_x_mm": 386.15937499999995,
+      "moving": "cam-timing-gear",
+      "stationary": "cam-thrust-washer-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          -345.0,
+          -323.0
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "cam-bearing-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          -121.0,
+          -99.0
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "cam-bearing-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          99.0,
+          121.0
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "cam-bearing-3",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          349.5,
+          371.5
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "cam-bearing-4",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          -372.5,
+          -363.7878
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "rear-cam-plug",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          378.80937499999993,
+          391.609375
+        ],
+        [
+          373.0,
+          378.159375
+        ]
+      ],
+      "moving": "cam-timing-key",
+      "stationary": "cam-thrust-plate",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 17.571857938013263,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-timing-key",
+      "stationary": "cam-thrust-bolt-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 17.571857938013263,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-timing-key",
+      "stationary": "cam-thrust-bolt-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 17.571857938013263,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-timing-key",
+      "stationary": "cam-thrust-washer-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 17.571857938013263,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "cam-timing-key",
+      "stationary": "cam-thrust-washer-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-bearing-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-bearing-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-bearing-3",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-bearing-4",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Entire translated X interval separated; rotation preserves X",
+      "axial_intervals_mm": [
+        [
+          -355.1,
+          392.2593751
+        ],
+        [
+          -372.5,
+          -363.7878
+        ]
+      ],
+      "moving": "camshaft",
+      "stationary": "rear-cam-plug",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "Every shaft source point that can enter plate slab is in coaxial R15.875 nose; rear shoulder stays X<=373 under negative travel",
+      "radial_support_mm": 15.875,
+      "moving": "camshaft",
+      "stationary": "cam-thrust-plate",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-thrust-bolt-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-thrust-bolt-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-thrust-washer-1",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "proof": "All eligible source material contained in coaxial cylinder; rotation and axial travel remain inside stationary-slab support; support clears fixed part",
+      "radius_mm": 25.62225,
+      "source_outside_support_mm3": 0.0,
+      "support_overlap_mm3": 0.0,
+      "moving": "camshaft",
+      "stationary": "cam-thrust-washer-2",
+      "rotation_coverage": "all cam angles",
+      "axial_interval_mm": [
+        -0.1,
+        0.0
+      ]
+    }
+  ],
+  "other_cam_members_vs_crank": [
+    {
+      "moving": "cam-gear-spacer",
+      "radial_box_bound_mm": 26.940768363207617,
+      "radial_separation_lower_bound_mm": 51.67923163679237,
+      "scope": "all independent cam/crank angles and allowed axial travel"
+    },
+    {
+      "moving": "cam-timing-key",
+      "radial_box_bound_mm": 17.571856938013262,
+      "radial_separation_lower_bound_mm": 61.04814306198674,
+      "scope": "all independent cam/crank angles and allowed axial travel"
+    },
+    {
+      "moving": "camshaft",
+      "radial_box_bound_mm": 36.2353334485142,
+      "radial_separation_lower_bound_mm": 42.3846665514858,
+      "scope": "all independent cam/crank angles and allowed axial travel"
+    }
+  ],
+  "tooth_mesh_inheritance": {
+    "report_sha256": "0a4023d5eb2d609fa122c797dcb9af2b3fb0dcec714f013d57eff9789576a5eb",
+    "scope": "Exact same local new gears and compensated poses: 25 rotations, 2 endpoints, construction-level axial interpolation; NOT continuous rotation"
+  },
+  "stop_contacts": [
+    {
+      "crank_degrees": 0.0,
+      "axial_mm": -0.1,
+      "moving": "cam-timing-gear",
+      "contact_area_mm2": 784.0708405013074,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_degrees": 0.0,
+      "axial_mm": 0.0,
+      "moving": "camshaft",
+      "contact_area_mm2": 724.4301821004594,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_degrees": 180.0,
+      "axial_mm": -0.1,
+      "moving": "cam-timing-gear",
+      "contact_area_mm2": 784.0708405013074,
+      "overlap_mm3": 0.0
+    },
+    {
+      "crank_degrees": 180.0,
+      "axial_mm": 0.0,
+      "moving": "camshaft",
+      "contact_area_mm2": 724.4301821004592,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "all_angle_annular_stops": [
+    {
+      "stop": "gear_land",
+      "radii_mm": [
+        20.65,
+        26.0
+      ],
+      "moving_support_missing_mm3": 0.0,
+      "plate_support_missing_mm3": 0.0,
+      "contact_area_mm2": 784.0708405013067,
+      "proof": "Full coaxial annular material on opposing faces; contact invariant under every cam rotation"
+    },
+    {
+      "stop": "shaft_shoulder",
+      "radii_mm": [
+        20.6375,
+        25.62225
+      ],
+      "moving_support_missing_mm3": 0.0,
+      "plate_support_missing_mm3": 0.0,
+      "contact_area_mm2": 724.4301821004599,
+      "proof": "Full coaxial annular material on opposing faces; contact invariant under every cam rotation"
+    }
+  ],
+  "overtravel_faults": [
+    {
+      "crank_degrees": 0.0,
+      "axial_mm": -0.11,
+      "moving": "cam-timing-gear",
+      "overlap_mm3": 7.840708405050508
+    },
+    {
+      "crank_degrees": 0.0,
+      "axial_mm": 0.11,
+      "moving": "camshaft",
+      "overlap_mm3": 79.6873200310661
+    },
+    {
+      "crank_degrees": 180.0,
+      "axial_mm": -0.11,
+      "moving": "cam-timing-gear",
+      "overlap_mm3": 7.840708405049158
+    },
+    {
+      "crank_degrees": 180.0,
+      "axial_mm": 0.11,
+      "moving": "camshaft",
+      "overlap_mm3": 79.68732003106707
+    }
+  ],
+  "shifted_plate_fault_mm3": 39.20354202511883,
+  "exports": {
+    "cam-timing-key": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.0027870071760816018,
+      "step_volume_error_mm3": 2.842170943040401e-14,
+      "step_sha256": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+      "glb_sha256": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+      "triangles": 212,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-timing-gear": {
+      "step_sha256": "b64832c685697b36b008951820a39d5f7d4a3590396b18565539b7845dcc0bf6",
+      "glb_sha256": "a01da6b7144043186f2aa55173cf09277aaed7805fb017bef2b98efbbafce61d",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "triangles": 10380,
+      "bounds_error_mm": 0.00023005488753824466,
+      "roundtrip_volume_error_mm3": 5.820766091346741e-11
+    },
+    "cam-gear-spacer": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.008523355639766805,
+      "step_volume_error_mm3": 7.958078640513122e-11,
+      "step_sha256": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+      "glb_sha256": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+      "triangles": 840,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "camshaft": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.01146978346187666,
+      "step_volume_error_mm3": 1.1641532182693481e-10,
+      "step_sha256": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+      "glb_sha256": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+      "triangles": 30902,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-bearing-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+      "glb_sha256": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+      "triangles": 840,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-bearing-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+      "glb_sha256": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+      "triangles": 840,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-bearing-3": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+      "glb_sha256": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+      "triangles": 840,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-bearing-4": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012153167785001529,
+      "step_volume_error_mm3": 3.637978807091713e-12,
+      "step_sha256": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+      "glb_sha256": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+      "triangles": 840,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "rear-cam-plug": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.012469756733580084,
+      "step_volume_error_mm3": 1.8189894035458565e-12,
+      "step_sha256": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+      "glb_sha256": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+      "triangles": 836,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-thrust-plate": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.003951035655333612,
+      "step_volume_error_mm3": 4.911271389573812e-10,
+      "step_sha256": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+      "glb_sha256": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+      "triangles": 2044,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-thrust-bolt-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+      "glb_sha256": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+      "triangles": 9194,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-thrust-bolt-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 1.1539459251252993e-05,
+      "step_volume_error_mm3": 1.911906565510435e-05,
+      "step_sha256": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+      "glb_sha256": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+      "triangles": 9194,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-thrust-washer-1": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540087378813837,
+      "step_volume_error_mm3": 3.325340003357269e-12,
+      "step_sha256": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+      "glb_sha256": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+      "triangles": 808,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "cam-thrust-washer-2": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_error_mm": 0.001540385402037714,
+      "step_volume_error_mm3": 3.268496584496461e-12,
+      "step_sha256": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+      "glb_sha256": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+      "triangles": 808,
+      "inherited_unchanged": true,
+      "inherited_identical_bytes": true
+    },
+    "crank-timing-gear": {
+      "step_sha256": "2f1cab37c7e4867ad8ab055c933bd71e979d75a2135a329c7f7510c821a49866",
+      "glb_sha256": "e03a2b62f917461c0254def74a5698f1485a65384c9f6cccbb214168fc2e627a",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "triangles": 6864,
+      "bounds_error_mm": 0.012899087812272114,
+      "roundtrip_volume_error_mm3": 0.0
+    }
+  },
+  "limits": [
+    "All-angle certificates cover stationary timing core only, not block/cover or crankshaft/cam-lobe interaction",
+    "Keyed assembly motion must remain rigid; retention fit/preload not established",
+    "Valvetrain linkage and distributor/pump drive phase coupling are unresolved integration dependencies",
+    "Missing/unestablished retention components are not invented; production identity and dimensions remain estimates"
+  ]
+}

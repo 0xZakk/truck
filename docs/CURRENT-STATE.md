@@ -1,6 +1,6 @@
 # Current engine integration — 2026-09-30
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/timing-interface-reconciliation`. Saved checkpoint: merged [PR #96](https://github.com/0xZakk/truck/pull/96), commit `eb502ce755d12fe896b3ea915f3ada4361e52a9c`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Active branch: `engine/timing-coupled-fit`. Saved checkpoint: merged [PR #97](https://github.com/0xZakk/truck/pull/97), commit `3079300f629f5a2db6c1150fa87092578c9e2cad`. **Engine unfinished. Browser acceptance for these batches remains NOT RUN.**
 
 ## Current installed checkpoint
 
@@ -27,11 +27,11 @@ Reviewed studies remain uninstalled:
 
 Three workers own isolated files; root alone edits shared assembly/viewer data:
 
-1. Timing block (#32): exact baseline regeneration passed. The first migrated-stock trial failed actual side-cover/gasket, shaft, bearing and guide fit. Root reviewed its sections and retained the failures; a new fixed-stock/feature-ordering study is active with physical interface protection.
-2. Cover/pan (#32): the isolated estimated joint passed sealing-face support, gasket topology, five clamp-position and gear-envelope checks. Root reviewed actual sections/source comparison. A new attachment study addresses missing main-cover screws, actual pan thread engagement and the seal/hub interface; no canonical installation.
-3. Coupled timing core (#32): revised gear play brackets 0.07086–0.08503 mm under the explicit pitch-circle interpretation, with 50 sampled coupled axial/rotational states clear. Fixed-phase axial travel fails and is preserved. A new study checks the actual four-part keyed moving group against stationary bearings/retention; no unsupported gear bolt is added.
+1. Timing block (#32): root reviewed a topology-only repair with valid original CAD, watertight direct mesh and zero material difference. Previous fixed-stock interface failures remain. New bounded work adds explicitly estimated journal backing and restores tunnel/guide machining while protecting actual mating datums. Carrier interior revisions use a declared geometric wall criterion, not a strength specification.
+2. Cover/pan (#32): the local sealing joint passed its scoped checks. Root rejected detailed attachment because the reused male screw mesh was not watertight and the wrong-phase Boolean control was inconsistent. A new isolated pan-screw revision is active. Manufacturer evidence now identifies the front-seal replacement envelope; the current seal/seat dimensions are incompatible and need coordinated correction.
+3. Coupled timing (#32): root accepted the four-part rigid cam-group proof and continuous clearance certificates against all 91 crank/piston/rod occurrences. These certify the supplied estimated geometry, not production clearances. The tooth pair retains bounded phase coverage. The worker is now auditing all twelve valve linkages and axial/rotational phase coupling.
 
-The frozen first block trial, coordinated joint and revised gear pair are packaged separately in the timing-fit supplement; active follow-up studies are excluded. `inventory/engine/timing-studies-root-review.json` records the reviewed outcomes by hash. The rear port research still has conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
+The first block trial, coordinated joint and revised gear pair are published in the timing-fit supplement. The next timing-proof supplement preserves the fixed-stock/topology, rejected attachment, coupled-motion and seal-envelope studies; active support machining, fastener revision and valvetrain work are excluded. `inventory/engine/timing-studies-root-review.json` records the reviewed outcomes by hash. The rear port research still has conflicting exact-year oxygen-sensor references; no spare boss is automatically labeled AIR or oxygen sensor.
 
 Do not install these candidates or overwrite their files. Failed trials remain useful evidence. Worker completion alone does not establish accepted installation.
 
@@ -39,4 +39,4 @@ Do not install these candidates or overwrite their files. Failed trials remain u
 
 The [current private CAD archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core) is published, with checksum and scope in `docs/cad-neck-core-checkpoint.json`. It includes the installed rear-neck blend, isolated timing core/thrust land and rejected old-gear backlash diagnostic, but excludes ongoing shifted-block, coordinated pan-joint and revised-backlash candidates. Follow `docs/CAD-ARTIFACTS.md`. Browser meshes are committed. Source originals/composites, purchased manuals and owner photographs are excluded from Git and release archives.
 
-CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #96 is merged with final-head CI passing; new timing candidates remain separate. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.
+CLI issue #46 has a verified refreshed parts checklist and installation update; #32 records the timing findings. PR #97 is merged with final-head CI passing; its timing-fit supplement is published. Active follow-up candidates remain separate. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.

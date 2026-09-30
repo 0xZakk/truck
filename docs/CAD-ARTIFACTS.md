@@ -26,6 +26,17 @@ shasum -a 256 /tmp/truck-timing-studies-20260930.tar.gz
 
 Compare with `docs/cad-timing-studies-checkpoint.json`, preserve newer local work, then extract from the repository root using `tar -xzf /tmp/truck-timing-studies-20260930.tar.gz`. The metadata records every file hash and required base archive. Reproduce with `python3 scripts/package-timing-studies-checkpoint.py --output <archive>` after restoring the required fixtures. Active fixed-stock, attachment and coupled-core revisions are excluded, as are third-party images, manuals and owner photographs. Failed checks are retained as evidence, not acceptance.
 
+## Supplemental timing proof and failure evidence
+
+The [timing-proof supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-09-30-timing-proof) requires the neck/core base and timing-fit supplement above, in that order. It preserves fixed-stock block failures and the reviewed topology-only repair, rejected cover attachments, rigid timing-core and continuous rotating-clearance proofs, and the source-sized seal-envelope diagnostic. It replaces no installed engine parts.
+
+```sh
+gh release download studies-2026-09-30-timing-proof --repo 0xZakk/truck --pattern truck-timing-proof-20260930.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-timing-proof-20260930.tar.gz
+```
+
+Verify against `docs/cad-timing-proof-checkpoint.json`, preserve newer local work, then extract from the repository root with `tar -xzf /tmp/truck-timing-proof-20260930.tar.gz`. Reproduce using `python3 scripts/package-timing-proof-checkpoint.py --output <archive>`. Active support-machining, fastener and valvetrain revisions are excluded. Manufacturer PDFs, original source imagery, purchased manuals and owner photos remain separate reference dependencies and are excluded from all archives.
+
 ## Previous rear-exhaust and timing-study checkpoint
 
 The [September30 exhaust/timing archive](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-exhaust-timing) is published for PR #95. It preserves **741 definitions / 1,349 occurrences**, the installed rear collector and separate timing studies. Browser acceptance remains NOT RUN; the engine is unfinished.

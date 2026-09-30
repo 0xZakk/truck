@@ -1,0 +1,66 @@
+{
+  "status": "DIAGNOSTIC feature-order tracing, no geometry policy change",
+  "feature_order": [
+    {
+      "feature": "block_interface_shape",
+      "before_valid": true,
+      "after_valid": true,
+      "tunnel_before_mm3": 0,
+      "tunnel_after_mm3": 0
+    },
+    {
+      "feature": "machine_block_bolts",
+      "before_valid": true,
+      "after_valid": true,
+      "tunnel_before_mm3": 0,
+      "tunnel_after_mm3": 0
+    },
+    {
+      "feature": "machine_block_seat",
+      "before_valid": true,
+      "after_valid": false,
+      "tunnel_before_mm3": 0,
+      "tunnel_after_mm3": 0
+    },
+    {
+      "feature": "oil_drive_block_interface",
+      "before_valid": false,
+      "after_valid": false,
+      "tunnel_before_mm3": 0,
+      "tunnel_after_mm3": 5082.816565077583
+    },
+    {
+      "feature": "accessory_block_interface",
+      "before_valid": false,
+      "after_valid": false,
+      "tunnel_before_mm3": 5082.816565077583,
+      "tunnel_after_mm3": 5082.816565077583
+    },
+    {
+      "feature": "thermactor_block_interface",
+      "before_valid": false,
+      "after_valid": false,
+      "tunnel_before_mm3": 5082.816565077583,
+      "tunnel_after_mm3": 5082.816565077583
+    },
+    {
+      "feature": "filter_block_interface",
+      "before_valid": false,
+      "after_valid": false,
+      "tunnel_before_mm3": 5082.816565077583,
+      "tunnel_after_mm3": 12642.739748128279
+    }
+  ],
+  "repeated_candidate_symmetric_difference_mm3": 20070396.356642924,
+  "final_valid": false,
+  "source_edit_counts": {
+    "stock": 0,
+    "guides": 1,
+    "tunnel": 1
+  },
+  "checker_sha256": "26e111d979fcab58780adf455b26791dc1a0a5b0930c72a76e757d2ac0a35cca",
+  "limits": [
+    "Invalid geometry is retained; intersections serve failure localization only",
+    "Per-function runtime wrappers do not change operands or outputs; conjugated functions reported in new world frame"
+  ]
+}

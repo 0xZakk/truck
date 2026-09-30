@@ -1,0 +1,36 @@
+{
+  "status": "DIAGNOSTIC first invalid operation",
+  "before_valid": true,
+  "after_valid": false,
+  "invalid_subshapes": [
+    {
+      "kind": "face",
+      "index": 63,
+      "status": [
+        "BRepCheck_Status.BRepCheck_InvalidImbricationOfWires"
+      ],
+      "bounds_mm": [
+        [
+          -363.76280010000005,
+          67.962170890161,
+          48.940206692128875
+        ],
+        [
+          373.0000001,
+          122.2574710901611,
+          103.235506892129
+        ]
+      ]
+    }
+  ],
+  "input_sha256": {
+    "cad/engine/generated/timing-block-fixed-stock-candidate/block_interface_shape-after.step": "7cbaab43c4c17a79f5a8cf03e91d3de6ae8abc00b8053c4684af0d1b18e8edcf",
+    "scripts/check-timing-block-fixed-stock-rear-seat.py": "7094a79dea6758ae9da177b13e9068a83c079cffa897e46ad351bc51eba87fd2",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163"
+  },
+  "limits": [
+    "No repair or healing applied; imported prefix is valid STEP readback",
+    "This is a local reconstruction, not a replacement candidate"
+  ]
+}
