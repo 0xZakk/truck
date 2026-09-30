@@ -55,7 +55,40 @@
     "issue32_comment": "https://github.com/0xZakk/truck/issues/32#issuecomment-5917712195",
     "issue46_comment": "https://github.com/0xZakk/truck/issues/46#issuecomment-5917712465",
     "board_columns_applied": false,
-    "reason": "CLI token lacks Projects scope."
+    "reason": "CLI token lacks Projects scope.",
+    "installed_issue46_comment": "https://github.com/0xZakk/truck/issues/46#issuecomment-5917930133",
+    "issue46_checklist_verified": true
   },
-  "manifest_sha256": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf"
+  "manifest_sha256": "ab99fff2f63ad5dfc21fde8d12a32fc2a3d65832e6c8664baefd99d94403f7bf",
+  "whole_static": {
+    "status": "PASS",
+    "report": "inventory/engine/atlas-static-validation.json",
+    "sha256": "27d100fdac0f36731d0009a877492affcdc769374be92735541845a4b58c935d",
+    "exact_pairs": 5287,
+    "collisions": 0,
+    "threshold_mm3": 0.1,
+    "scope": "All part pairs with overlapping bounding boxes at a single static pose; intentional fit interfaces may be included."
+  },
+  "combined_step": {
+    "status": "PASS",
+    "report": "inventory/engine/combined-step-export.json",
+    "sha256": "6a8290882edc1cab925e3ebdac79d23656caa47e62a692d2ae5ee1c737f8bd3e",
+    "occurrences": 1349,
+    "roundtrip": {
+      "unique_occurrence_labels": 1349,
+      "max_roundtrip_bounds_delta_mm": 0.00035065968842218354,
+      "bounds_tolerance_mm": 0.01,
+      "scope": "Occurrence identity, solid validity and world bounding boxes; not exact geometric equivalence or manufacturing fit"
+    }
+  },
+  "navigation": {
+    "status": "PASS",
+    "occurrences": 1349,
+    "links": 1548
+  },
+  "ci": {
+    "status": "PASS at411b836",
+    "initial_failure": "Generated parts checklist snapshot stale after manifest replacement; rebuilt and committed; no check disabled."
+  },
+  "pull_request": "https://github.com/0xZakk/truck/pull/95"
 }
