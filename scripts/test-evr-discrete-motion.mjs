@@ -1,7 +1,15 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 const source=await fs.readFile(new URL('../viewer/evr-discrete-motion.js',import.meta.url),'utf8');
 const {validateEvrMotionData,createEvrDiscreteMotion}=await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+// These are required viewer assets, not optional local CAD intermediates.
+const installed=validateEvrMotionData(JSON.parse(await fs.readFile(new URL('../models/engine/evr-motion/poses.json',import.meta.url))));
+for(const pose of installed.poses){
+  assert.equal(pose.spring_glb,`/models/engine/evr-motion/spring-${pose.index}.glb`);
+  const bytes=await fs.readFile(new URL(`..${pose.spring_glb}`,import.meta.url));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),pose.spring_sha256,'Committed spring must match the validated pose');
+}
 const data={schema_version:1,baseline_travel_mm:.8,poses:[0,.2,.4,.6,.8].map((t,i)=>({index:i,travel_mm:t,spring_glb:`spring-${i}.glb`,spring_sha256:'fixture',disc_offset_cad_mm:[0,0,.8-t],disc_offset_viewer_m:[0,(.8-t)/1000,0]}))};
 validateEvrMotionData(data);
 for(const mutate of [d=>d.poses.pop(),d=>d.poses[0].disc_offset_cad_mm[0]=1,d=>d.poses[0].disc_offset_viewer_m[1]=NaN,d=>d.poses[2].travel_mm=.3]){const bad=structuredClone(data);mutate(bad);assert.throws(()=>validateEvrMotionData(bad));}
