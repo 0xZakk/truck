@@ -2,7 +2,26 @@
 
 Browser meshes, modeling source and validation reports are committed to Git. Generated STEP files live in private GitHub release archives because the combined assembly exceeds normal GitHub file limits. Browser exploration needs only the committed GLBs.
 
-## Current cable and distributor checkpoint
+## Current runner, EVR and throttle-stop checkpoint
+
+The [September30 checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-runner-evr-stops) contains **741 definitions / 1,349 occurrences**. Geometry remains provisional and browser acceptance for this batch is NOT RUN. It preserves source-compared runner surfaces, illustrative EVR/stop mechanisms and a separate air-cleaner candidate.
+
+```sh
+gh release download checkpoint-2026-09-30-runner-evr-stops --repo 0xZakk/truck --pattern truck-active-cad-20260930-runner-evr-stops.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-active-cad-20260930-runner-evr-stops.tar.gz
+```
+
+Compare with `docs/cad-runner-evr-stops-checkpoint.json`, preserve newer local work, then extract from the repository root:
+
+```sh
+tar -xzf /tmp/truck-active-cad-20260930-runner-evr-stops.tar.gz
+```
+
+The archive includes active STEP definitions and the combined assembly; older fixtures; runner, EVR and stop candidates/stages; discrete spring STEP poses; scoped proofs/logs; and the isolated air-cleaner candidate. All five browser spring GLBs and pose metadata are also committed under `models/engine/evr-motion/`. It excludes reference originals/composites, purchased manuals, owner photographs and ongoing exhaust/timing studies. Restricted source access remains an explicit reproduction dependency.
+
+The package can be reproduced with `scripts/package-runner-evr-stops-checkpoint.py --previous <previous-cable-distributor-archive> --output <new-archive>`. It verifies the prior archive, current combined-export hash, active counts and input stability; it does not certify factory fidelity. Restore the previous archive first if a required historical fixture is missing.
+
+## Previous cable and distributor checkpoint
 
 The [cable/distributor release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-cable-distributor) records **733 definitions / 1,341 occurrences**. It adds a source-compared rotor leaf and an explicitly illustrative seven-part engine-end cable mechanism. Production geometry remains provisional and the engine is unfinished.
 

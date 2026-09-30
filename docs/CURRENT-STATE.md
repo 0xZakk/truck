@@ -1,39 +1,34 @@
 # Current engine integration — 2026-09-30
 
-Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Branch: `engine/runner-stops-and-evr`. Saved main checkpoint: PR #93 (`796b621`), push and PR CI passed. **Engine unfinished.**
+Repository root is authoritative. Preview: http://127.0.0.1:8081/viewer/engine.html. Checkpoint branch: `engine/runner-stops-and-evr`, [PR #94](https://github.com/0xZakk/truck/pull/94). **Engine unfinished.** Browser acceptance for this batch remains NOT RUN.
 
-## Saved733-definition integration (PR #93)
+## Current checkpoint
 
-**733 definitions / 1,341 occurrences.** Manifest SHA-256: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`.
+**741 definitions / 1,349 occurrences.** Manifest SHA-256: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`.
 
-The increment adds a source-compared curved rotor leaf/collar and an explicitly illustrative seven-part engine-end cable mechanism. Cable socket, guide, core and compression spring move with the throttle slider. The throttle assembly has52 selectable parts; the distributor has29. Direct part links were repaired by synchronizing their missing throttle controls with the engine entry page.
+The upper intake has broader source-compared runner faces with unchanged bores, flange, plenum and cap envelope. An eleven-part illustrative EGR vacuum regulator has five matched disc/spring poses and viewer controls. The throttle has a threaded illustrative idle-stop screw/pad and a separate WOT contact lug, preserving the existing cable and spring mechanisms. A four-part air-cleaner housing/filter/seal candidate remains separate and uninstalled.
 
-- Guarded component installations match reviewed STEP geometry, preserve protected interfaces and verify mesh exports. Rotor rotation/cap-lift controls and adapter replay pass within their recorded scope.
-- Cable current-neighbor/frame checks preserve the original47-pose/2,360-pair CAD proof;91 viewer mesh poses pass. Historical hash-at-finish limitation remains explicit in the original candidate report and addendum.
-- Browser acceptance covers distributor assembled/exploded motion and direct leaf page; cable0/45/90degree positions,50% explosion, reset and individual spring page. Asynchronous stale-response/reset/failure controls pass.
-- Whole-static audit passes5,249 exact overlapping-bound comparisons, zero overlaps above0.1mm³. Artifact/scale/hierarchy checks pass. This is one static pose, not continuous whole-engine motion or production validation.
-- Combined STEP roundtrip contains1,341 uniquely named occurrences with matching world bounds. Navigation reaches1,341 parts/1,540 links. All191 source records pass capture integrity/registration; applicability remains a separate judgment.
-- The old direct-part initialization error was repaired; no additional local-origin error appeared during the new browser exercise. Extension/unlocated errors remain, so no blanket clean-console claim.
+- Runner installation: zero geometry/replay differences; watertight fine mesh. Its historical report retains the runner-only manifest scope.
+- EVR: eleven zero-difference STEP bindings, five spring poses, nearby-component checks and replay/frame guards pass after the final exporter refresh. Five promotion fault controls pass in a separate fresh stage. The earlier attempt to test a pre-install stage after installation correctly rejected its stale STEP hashes; that failed setup is retained in the logs.
+- Stops: three zero-difference STEP bindings, watertight exports, four replay cases, frame/geometry rejection and transactional rollback controls pass. The frozen 47-pose/843-pair candidate proof is supplemented by 141 current-context exact comparisons. The subsequent EVR refresh changed only manifest array order; `throttle-stop-checkpoint-binding.json` verifies unchanged metadata, source dependencies and all recorded context/artifact hashes.
+- Whole-engine static audit: **5,287 exact overlapping-bound comparisons, zero overlaps above 0.1 mm³**. Artifact, scale and hierarchy checks pass. This is one static pose, not continuous whole-engine motion or factory validation.
+- Combined STEP: 1,349 unique occurrence names, valid solids and matching world bounds (maximum roundtrip difference 0.000351 mm). Navigation reaches all 1,349 parts / 1,548 links; discrete-motion, reset/request/failure and committed motion-asset tests pass. All 194 registered source captures pass integrity checks; applicability is separate.
+- Browser automation rejected the localhost preview under its security policy. No alternate-surface bypass was attempted. Node tests and CAD renders do not replace selection, explosion/reset and installed-motion browser review. No Done transition or accepted-factory-replica claim.
 
-Reports: `inventory/engine/cable-distributor-browser-review.json`, `throttle-cable-installed-validation.json`, `distributor-center-contact-installed-validation.json`, `atlas-static-validation.json`, `combined-step-export.json` and `source-record-validation.json`. Read each input hash and scope; a saved report does not certify later changes. Full clean-clone rebuild remains unproven.
+Root review: `inventory/engine/runner-evr-stops-review.json`. Detailed component handoffs and installed reports retain their own hashes and scopes. Full clean-clone CAD rebuild remains unproven. Production dimensions, calibration, mounting/routing and the remaining physical BOM are tracked in `inventory/engine/completion-plan.json`; part count is not a completion percentage.
 
-## Current branch work (not yet merged)
+## Next batch in progress
 
-The interrupted runner installation completed and its artifact/report hashes were rechecked on September30. The upper-intake exterior now has broader rounded runner faces while preserving bores, flange, plenum and cap envelope. Its installed geometry/replay differences are zero; mesh435,346triangles,8.71MB, watertight, bounds error0.000014mm. These checks retain their recorded runner-only manifest scope.
+Three workers own isolated files; root alone integrates shared assembly/viewer changes:
 
-- EVR: eleven-part illustrative mechanism is installed, with the subsequent stop installation bringing the current assembly to741 definitions / 1,349 occurrences. All11STEP bindings and five matched disc/spring poses pass; no overlaps with its three nearby components. Viewer controls and asynchronous request tests pass. The scoped EVR installation/check has been refreshed after the shared exporter change and passes. The promotion fault-control suite is being rerun in a separate stage after its first post-install attempt correctly rejected stale pre-install STEP hashes. Historical proof is preserved in `cad/engine/generated/evr-before-stop-hooks-20260930/`.
-- Throttle stops: rounded idle screw/boss/pad and illustrative WOT lug passed47poses/843exactpairs. Current integration staging caught zero-area housing mesh faces; shared export cleanup now removes them and reports the actual exported triangle count. Installed validation now passes: three zero-difference STEP bindings, watertight exports, replay/fault/rollback controls, and 141 fresh exact neighbor comparisons across 47 poses. Viewer lessons and all 1,349 part links pass navigation checks; production dimensions/calibration remain unresolved.
-- Air cleaner: isolated four-part tray, twin-outlet cover, pleated paper/carrier and separate perimeter seal candidate passes local solid/export, flow-witness and sealing checks. Root reviewed actual full/section renders. Not installed: retention, body datums, ducts and breather receiver remain open. See `docs/components/air-cleaner-candidate.md`.
-- Two workers are researching/building the next bounded candidates: rear exhaust collector exterior (#46), and source-led timing-cover gasket/joint (#32). Neither is installed; the latter must establish the gasket outline and explain the current pan/cover datum gap before geometry.
+- Rear exhaust collector (#46): source-compared blended casting and bounded runner-seam repair. Original outer sweep exported open despite valid CAD; the repaired candidate uses a separate fine export. Root review and installation remain pending.
+- Timing gears (#32): manufacturer comparisons support 58/29 teeth for an applicable replacement, rather than the current 48/24. Published diameters conflict with current shaft spacing. Independent helical-pair study uses explicitly estimated profile/centers; no installed cam translation. See `docs/components/timing-gear-evidence-review.md`.
+- Timing cover/gasket (#32): manufacturer images establish seven holes, an open-bottom gasket, recessed cover cavity and lower pan bridge. The independent outline is unregistered; shell/flange and block-land proposals are being coordinated with the gear envelope. Scale, axial registration, strip identity and pan junction remain unresolved. See `docs/components/timing-cover-joint.md` and `timing-cover-shell-candidate.md`.
 
-Three focused workers resumed after the usage interruption. Preview server was restarted on8081. Browser automation rejected the localhost URL under its security policy; the batch browser gate remains NOT RUN (see `inventory/engine/runner-evr-stops-review.json`). No claim that work continued while execution was stopped. Engine remains unfinished.
+Do not mix these candidates into the checkpoint or overwrite their files. Preserve failed trials and critical interfaces. Worker completion does not authorize automatic installation.
 
-PCV routing evidence identifies separate fresh-air and manifold-return hoses but not a reliable manifold receiver datum; no arbitrary connection is installed. Upper-intake support evidence identifies the below-throttle pad/strap but not its lower anchor. Broader remaining work is in `inventory/engine/completion-plan.json`. All geometry remains provisional; part count is not a completion percentage.
+## Restoration and tracking
 
-## GitHub and restoration
+Private CAD archive: [runner/EVR/stops checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-runner-evr-stops). Verify `docs/cad-runner-evr-stops-checkpoint.json` and follow `docs/CAD-ARTIFACTS.md`. It contains active STEP geometry, combined assembly, required older fixtures and this batch's studies/proofs. Reference originals/composites, purchased manuals, owner photographs and the next batch are excluded. Browser meshes, including all five EVR spring poses, are committed.
 
-The private [CAD checkpoint](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-cable-distributor) is published at PR #93's merge commit. Its242,602,576-byte archive contains3,737 files; GitHub's SHA-256 digest matches `docs/cad-cable-distributor-checkpoint.json`. Restore instructions are in `docs/CAD-ARTIFACTS.md`. Third-party reference photographs/composites, owner photographs and purchased manuals are excluded.
-
-CLI checklists #36, #43, #58 and #80 were refreshed and each write verified on September30. Issues #1 and #58 record current progress. Project-column writes still lack token authorization. `inventory/engine/project-status-pending.json` contains desired transitions, **not observed board statuses**. No engine component is newly marked Done.
-
-Preserve worker files and frozen candidate evidence. Shared assembly changes belong to the integration owner. Serialize runner → EVR → stops integration. Preserve current canonical geometry while each worker binds its stage; source/report hashes define which older checks remain applicable.
+CLI checklists #36, #43, #58 and #80 were refreshed and each write verified. Issue #1 records ongoing work. Project-column writes still lack Projects authorization. `inventory/engine/project-status-pending.json` records desired changes, **not observed board statuses**. No component was newly marked Done.

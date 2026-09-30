@@ -19,6 +19,7 @@ FOLDERS = (
     'evr-promotion-control-stage',
     'evr-motion', 'throttle-stop-baseline', 'throttle-stop-candidate',
     'throttle-stop-integration-stage', 'air-cleaner-candidate',
+    'runner-evr-stops-checkpoint',
 )
 # Only known project-generated image views may enter this archive. In
 # particular candidate-source-comparison.png contains reference imagery.

@@ -82,3 +82,17 @@ Integration owner next commands, serialized with other canonical edits:
 ```
 
 Apply freshly stages/checks again; the recorded stage is not a bypass. Then complete browser selection/isolation, five poses, explosion/reset, direct-part entry and error review. Factory identity/dimensions/calibration, bracket/hardware, hose seal/routing and manufacturing uncertainties remain open regardless of this staging PASS.
+
+## Integration-owner checkpoint
+
+Root installed the mechanism and then refreshed `--apply` / `--installed` after the final shared exporter change. Eleven candidate bindings and five spring bindings remain zero; current scoped neighbor, mesh and replay checks PASS. Viewer wiring and required pose assets are committed; Node request/reset/failure and pose-asset hash tests PASS. Browser acceptance remains NOT RUN under the recorded localhost security rejection.
+
+The promotion-control suite expects a pre-install stage. Its first post-install rerun failed at the stale original STEP hash guard, before reaching the intended export fault. Root preserved that failed log, added a `--stage-dir` option to the control harness, and generated/checked a separate fresh stage without modifying the canonical engine. All five fault controls then PASS. Reproduce with:
+
+```sh
+.venv-cad/bin/python scripts/install-evr-mechanism.py --stage --stage-dir cad/engine/generated/evr-promotion-control-stage
+.venv-cad/bin/python scripts/check-evr-mechanism-installed.py --stage-dir cad/engine/generated/evr-promotion-control-stage
+.venv-cad/bin/python scripts/check-evr-promotion-controls.py --stage-dir cad/engine/generated/evr-promotion-control-stage
+```
+
+The default installed stage is retained separately so its installed checker remains reproducible. Reports are `inventory/engine/evr-mechanism-installed-validation.json`, `cad/engine/generated/evr-mechanism-promotion-controls/controls-validation.json`, and the integration-owner batch review. The private runner/EVR/stops release preserves these stages and logs. No factory acceptance or issue closure.
