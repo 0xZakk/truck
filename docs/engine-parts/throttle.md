@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -53,13 +53,15 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: All dimensions, mounting coordinate, barb and relief slots are inferred educational geometry; Ford production details unverified.
   - Open: Angular hood approximates factory viewY. Pushpin insertion flexure/material/strength and full cable sheath/connector envelopes are unvalidated.
   - Open: Spring and its tangs, stops and production calibration remain unresolved; not invented here.
-- [ ] **Throttle lever · estimated** — `throttle-lever-estimated`; modeled quantity **1**; provisional.
+- [ ] **Throttle lever · illustrative stop lands** — `throttle-lever-estimated`; modeled quantity **1**; provisional.
   - Instances: `throttle-lever-estimated`
-  - Source IDs: throttle-1994-linkage-study, throttle-return-spring-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: throttle-1994-linkage-study, throttle-return-spring-study, throttle-stop-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: One illustrative torsion spring explains fixed/moving anchors; actual Ford spring count, tang construction, dimensions and stops remain unverified.
   - Open: Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.
   - Open: Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.
   - Open: Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.
+  - Open: Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.
+  - Open: The inherited 0–90 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified.
 - [ ] **Throttle return spring · illustrative** — `throttle-return-spring-illustrative`; modeled quantity **1**; provisional.
   - Instances: `throttle-return-spring-illustrative`
   - Source IDs: throttle-return-spring-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -67,15 +69,17 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Wire motion preserves geometric length; no preload, spring rate, stress, fatigue, friction or guaranteed return force is simulated.
   - Open: Cable-end compression spring is a separate factory-documented component and is not represented by this torsion spring.
   - Open: Bracket and lever anchor holes, wire diameter and retention hooks are inferred; attachment strength and installation flexure are unverified.
-- [ ] **Twin-bore throttle housing** — `throttle-housing`; modeled quantity **1**; provisional.
+- [ ] **Throttle body · illustrative mechanical stops** — `throttle-housing`; modeled quantity **1**; provisional.
   - Instances: `throttle-housing`
-  - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, iac-attachment-factory-1994, iac-attachment-estimated-study, iac-closure-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, iac-attachment-factory-1994, iac-attachment-estimated-study, iac-closure-illustrative-study, throttle-stop-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: The factory manual supports dual bores, a separate gasket and four mounting studs/nuts. Bore diameter, shaft/plate construction, casting contour and fastener dimensions are assumed.
   - Open: IAC/TPS studies and bypass passages are present; their exact variants and internal details remain unresolved. Purge ports, linkage, return spring, accelerator bracket and plate screws remain unmodeled. Idealized 0–90 degree motion is not the production stop calibration.
   - Open: Two diagonal mounting fasteners follow exact1994 factory topology; dimensions, threads, strength and installed valve identity remain unverified.
   - Open: The return spring, idealized annular ends and armature contact sleeve are educational construction choices, not verified production internals. No force, preload, rate, duty cycle or valve calibration is simulated.
   - Open: The previous0.1mm end-plug geometric gap is superseded by an illustrative captured metal closure. Factory retention, material/fit, forming process, contact pressure and leak-rate performance remain unknown.
   - Open: The recessed plug flange and integral formed lip are educational choices; exact1994 images do not distinguish pressed, crimped/staked or threaded closure. No separate elastomer, production interference or service procedure is inferred.
+  - Open: Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.
+  - Open: The inherited 0–90 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified.
 - [ ] **Throttle butterfly plate · retention study** — `throttle-plate`; modeled quantity **2**; provisional.
   - Instances: `throttle-plate-1`, `throttle-plate-2`
   - Source IDs: truck-throttle-operation, truck-throttle-service, truck-throttle-catalog, throttle-plate-retention-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
@@ -144,10 +148,15 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
   - Open: Exact1994 references establish accelerator cable, ball attachment and a distinct cable-end compression spring; owner-installed cable identity is unverified.
   - Open: Dimensions,24 turns, wire size, internal swivel/guide/terminal retention and bracket revision are educational estimates, not Ford specifications.
   - Open: No material, preload, spring rate, strength, insertion-flexure or guaranteed vehicle return claim. Full cable route, firewall, pedal and unverified cruise/C6 hardware are excluded.
+- [ ] **Throttle plate-stop screw · illustrative** — `throttle-idle-stop-screw-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `throttle-idle-stop-screw-illustrative`
+  - Source IDs: throttle-stop-illustrative-study. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Factory material supports an external plate-stop screw contacting a lever pad and a preset wide-open stop. The rounded boss, thread, lever lands and WOT lug are illustrative constructions with estimated dimensions.
+  - Open: The inherited 0–90 degree demonstration is not Ford stop calibration. Screw locking, torque, strength, preload, idle airflow and exact production WOT contact remain unverified.
 
 ## Additional known scope and reconciliation
 
-- [ ] Actual return spring count/construction, preload and stops; one illustrative deforming spring with captured anchors is installed, separate cable-end spring remains missing
+- [ ] Verify actual return-spring construction, count and preload; illustrative shaft and cable-end springs are modeled. Idle-stop and WOT studies do not establish factory calibration.
 - [ ] Four illustrative plate screws are installed; verify actual Ford count, thread/locking construction and shaft bushings/seals as applicable
 - [ ] Actual throttle/speed-control cables and sockets, pin locking and production shield construction
 - [ ] Verify production stops, shaft retention, dimensions and installed geometry; current lever/key/pin/shield are inferred teaching parts

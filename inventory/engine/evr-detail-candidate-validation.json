@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "Isolated illustrative vent/filter only; source port and regulating mechanism unfinished; not integration ready",
+  "input_sha256": {
+    "scripts/check-evr-detail-candidate.py": "dee3f43fd50fa7e8c9bef0082a00dff103a600c8142ab8f62f55695af57e06fc",
+    "cad/engine/evr_detail_candidate.py": "60aeb34699713486c05bf29d17e5ad5f657a7ea3074e9514a855c9cd8ddc5733",
+    "cad/engine/evr.py": "a47c5d4ec62a08935ba930bb4cffeccd5ead5200c8e2b3cea3efb0771ed45aad",
+    "reference/engine/evr-detail-review.json": "f4d65bd9e015c331ca5bb87c689af054a7175a87867ced3dc8d2e722e3f3c1df"
+  },
+  "protected_region_change_mm3": {
+    "ears": 0,
+    "connector": 0,
+    "nipple_ends": 0
+  },
+  "contact_mm2": {
+    "lower": 216.7698930976959,
+    "upper": 216.7698930976959
+  },
+  "collision_mm3": {
+    "evr-body / evr-cap": 0,
+    "evr-body / evr-vent-filter-illustrative": 0,
+    "evr-cap / evr-vent-filter-illustrative": 0
+  },
+  "flow_witness_obstruction_mm3": 0,
+  "faults": {
+    "blocked_witness_mm3": 0.06283185307179587,
+    "oversize_overlap_mm3": 83.25220532012975,
+    "unseated_gap_mm": 0.5
+  },
+  "exports": {
+    "evr-body": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 2.0372681319713593e-10
+    },
+    "evr-cap": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 4.3291947804391384e-10
+    },
+    "evr-vent-filter-illustrative": {
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 4.263256414560601e-11
+    }
+  },
+  "installed_neighbors": "NOT RUN: isolated candidate only; no promotion permitted"
+}

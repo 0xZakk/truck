@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "scope": "Isolated candidate; no OEM dimensions, installed fit, media permeability or retained cover claim",
+  "input_sha256": {
+    "scripts/check-air-cleaner-candidate.py": "9f34ebb4a9f8669e6b0ffe8fc97ef8f0769d8e55c5512bf4dd9c87ed40f76e95",
+    "cad/engine/air_cleaner_candidate.py": "ab016e88bcfdf5fddb85a5e3b5e860ddf88c4b3b60f25e3991c26a2bd9efb637"
+  },
+  "environment": {
+    "python": "3.13.12",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "build123d": "0.10.0",
+    "trimesh": "4.7.4"
+  },
+  "exports": {
+    "air-cleaner-lower-tray-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_roundtrip_bounds_error_mm": 7.033348070617507e-06,
+      "step_volume_delta_mm3": 1.2825476005673409e-06,
+      "mesh_bounds_error_mm": 1.000000082740371e-07
+    },
+    "air-cleaner-twin-outlet-cover-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_roundtrip_bounds_error_mm": 7.033348070617507e-06,
+      "step_volume_delta_mm3": 8.837087079882622e-07,
+      "mesh_bounds_error_mm": 9.999999406318238e-08
+    },
+    "air-cleaner-paper-element-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_roundtrip_bounds_error_mm": 2.384185793236071e-06,
+      "step_volume_delta_mm3": 1.7991987988352776e-07,
+      "mesh_bounds_error_mm": 0.0
+    },
+    "air-cleaner-perimeter-seal-candidate": {
+      "valid": true,
+      "solids": 1,
+      "mesh_watertight": true,
+      "glb_roundtrip_bounds_error_mm": 9.775161791125697e-07,
+      "step_volume_delta_mm3": 0.0,
+      "mesh_bounds_error_mm": 0.0
+    }
+  },
+  "collisions_mm3": {
+    "air-cleaner-lower-tray-candidate / air-cleaner-twin-outlet-cover-candidate": 0,
+    "air-cleaner-lower-tray-candidate / air-cleaner-paper-element-candidate": 0,
+    "air-cleaner-lower-tray-candidate / air-cleaner-perimeter-seal-candidate": 0,
+    "air-cleaner-twin-outlet-cover-candidate / air-cleaner-paper-element-candidate": 0,
+    "air-cleaner-twin-outlet-cover-candidate / air-cleaner-perimeter-seal-candidate": 0,
+    "air-cleaner-paper-element-candidate / air-cleaner-perimeter-seal-candidate": 0
+  },
+  "flow_obstruction_mm3": {
+    "dirty_inlet": 0,
+    "clean_outlet_a": 0,
+    "clean_outlet_b": 0
+  },
+  "blocked_flow_fault_mm3": {
+    "dirty_inlet": 37.69911184307754,
+    "clean_outlet_a": 37.69911184307757,
+    "clean_outlet_b": 37.69911184307757
+  },
+  "perimeter_uncovered_mm3": 0,
+  "faults": {
+    "missing_seal_mm3": 5138.145,
+    "shifted_seal_mm3": 412.04999999999995
+  },
+  "seat_probe_overlap_mm3": {
+    "lower": 427.0144999999982,
+    "upper": 513.8144999999995
+  },
+  "limits": [
+    "Media modeled as paper pleats, not pore scale",
+    "Cover screw retention unknown, NOT RUN",
+    "Body mounting and engine motion NOT RUN",
+    "Browser integration NOT RUN"
+  ]
+}

@@ -45,13 +45,34 @@
     {
       "issue": 58,
       "desired_status": "In progress",
-      "reason": "EVR filter and vent candidate underway; production internal dimensions and valve construction remain unresolved."
+      "reason": "Eleven-part comparative EVR installed; browser acceptance and production dimensions/calibration remain open."
     },
     {
       "issue": 55,
       "desired_status": "In progress",
       "reason": "PCV routing evidence reviewed; manifold receiver and owner routing remain unresolved."
+    },
+    {
+      "issue": 16,
+      "desired_status": "In progress",
+      "reason": "Cable bracket clearance revision installed in PR93; production dimensions and casting/support evidence remain unresolved."
+    },
+    {
+      "issue": 80,
+      "desired_status": "In progress",
+      "reason": "Four-part air-cleaner candidate locally checked and visually reviewed; mounting, ducting and installed acceptance unresolved."
+    },
+    {
+      "issue": 46,
+      "desired_status": "In progress",
+      "reason": "Rear exhaust collector source-comparison and protected-interface candidate underway."
+    },
+    {
+      "issue": 32,
+      "desired_status": "In progress",
+      "reason": "Timing-cover gasket evidence and pan/cover joint research underway; production outline and datums unresolved."
     }
   ],
-  "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes."
+  "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",
+  "last_cli_scope_check": "2026-09-30: gh project field-list still reports missing read:project scope"
 }

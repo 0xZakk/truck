@@ -1,0 +1,42 @@
+{
+  "status": "STAGED illustrative throttle stops",
+  "before_manifest_sha256": "d748bcc9a38a592dc058bcf9c3a792a0dc59821a3bbd442cbcd73705a18569b9",
+  "staged_manifest_sha256": "eeafadb96e186266dab83ec10b96c54fc73197d75dc615e2688f566cdffc2f69",
+  "input_sha256": {
+    "scripts/install-throttle-stops.py": "b996c606524fe6869707ba2e80fbef1e778b1c803fee1fb3624f818446786e64",
+    "cad/engine/throttle_stop_integration.py": "b7725d9fb4628f97755fbb4a49c0be0684e2782313f4ed8dbd19eeeea2264573",
+    "inventory/engine/throttle-stop-candidate-validation.json": "ca8ae2892a6238d8eb20dd93769c59afcc3f8da2b29fa169c1627d1f90eefc49",
+    "cad/engine/throttle_stop_candidate.py": "a4adb7a6b19a682abcb4b1998204e7dd52380db6cb131fe990d32a5b2a359b36",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/full_engine.py": "da52e8f3669ec8f5ed1d57e1805cfd5d78ceb3e238e4ad10be61c1f22c2690b5",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "reference/engine/throttle-stop-review.json": "4eb12c11d26bbc25b569afbedfd2a193c2817e890022bf34cde8ca6fcf972ae3",
+    "inventory/engine/throttle-stop-learning.json": "122090d519610b401d307c7acaac4be05e0901ba09815e50bc6f8cb3b68aff32",
+    "inventory/engine/completion-plan.json": "2e07ab06fe78d5e2882268fe9a777bd40bee66d7c4815818f232e8dc7c763cbe"
+  },
+  "staged_artifact_sha256": {
+    "step/throttle-idle-stop-screw-illustrative.step": "31155764c37077114e9cf85a336f37211c6b103291ed1a1253a6bff3ffac703f",
+    "step/throttle-lever-estimated.step": "b2d1557dd189427000d8d23146a0ea880b89fcc66cebda962f6a5c77a8a42572",
+    "step/throttle-housing.step": "79e0563cff55f5e86ea21eda4c79ab38e87ad30a1033cabc98083998e6ad90b1",
+    "models/throttle-idle-stop-screw-illustrative.glb": "e45a68e381ae4af12ba90629a49198dd0f3ae2d43dfb715a73449c7717be6531",
+    "models/throttle-housing.glb": "1314fff9854e866b0a006e46a544214ec582484195794995a58c320e64a9d5e2",
+    "models/throttle-lever-estimated.glb": "24f073869b20227cc650e57ec2cea6ad2d996c6f1fc23687ecf1be9114a6ae72"
+  },
+  "changed_definitions": [
+    "throttle-housing",
+    "throttle-idle-stop-screw-illustrative",
+    "throttle-lever-estimated"
+  ],
+  "changed_occurrences": [
+    "throttle-housing",
+    "throttle-idle-stop-screw-illustrative",
+    "throttle-lever-estimated"
+  ],
+  "new_definitions": [
+    "throttle-idle-stop-screw-illustrative"
+  ],
+  "new_occurrences": [
+    "throttle-idle-stop-screw-illustrative"
+  ]
+}

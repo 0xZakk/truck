@@ -1,0 +1,156 @@
+{
+  "status": "CANDIDATE ONLY; independent integration review pending",
+  "issue": 80,
+  "evidence_classes": {
+    "topology": "Exact-year drawing190226466 plus dealer illustration; owner exterior photo supports layout, not identity or dimensions",
+    "filter_envelope": "WIX46174 replacement comparison only:326.7\u00d7148.7\u00d743.5mm;1994 fit not confirmed",
+    "all_other_dimensions": "inferred educational geometry; not OEM measurements",
+    "cover_retention": "unknown screw count/pattern; omitted, not clips"
+  },
+  "local_sources": [
+    {
+      "path": "cad/engine/generated/air-cleaner-reference/dealer-air-intake.png",
+      "sha256": "ed30118dd38db219fcc373f84758c8743831fba470057435fdd0f81c5bcc80c8",
+      "pixels_independently_inspected": true,
+      "distribution": "EXCLUDE originals from Git and release"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/190226466.png",
+      "sha256": "9e0ad3b5ca853b081ea9257f9da5ac20d165d25d9b6e0be34c28383b6fffdb39",
+      "pixels_independently_inspected": true,
+      "distribution": "EXCLUDE originals from Git and release"
+    },
+    {
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "pixels_independently_inspected": true,
+      "distribution": "EXCLUDE originals from Git and release"
+    }
+  ],
+  "source_ledger": "reference/engine/air-cleaner-research-review.json",
+  "actual_render": "cad/engine/generated/air-cleaner-candidate/candidate-review.png",
+  "visual_comparison": {
+    "views": [
+      "assembled front/side perspective",
+      "exploded same perspective",
+      "owner overhead engine-bay photograph viewed separately"
+    ],
+    "matching_features": [
+      "two short-face circular outlets",
+      "rolled cover shoulder and molded side ribs",
+      "deep tapered lower tray",
+      "rectangular short-face dirty-air inlet",
+      "separate pleated element and perimeter seal"
+    ],
+    "known_differences": [
+      "source bracket, grommets, screws, snorkel, ducts and hose absent in this isolated scope",
+      "outlet neck lengths and cover curvature/rib count estimated",
+      "paper pleat count, carrier construction and seal section estimated",
+      "no screw bosses pending pattern evidence; retention gate remains open",
+      "body shape proportions unmeasured, replacement footprint not owner-fit confirmation"
+    ]
+  },
+  "future_interface": {
+    "existing_throttle_mm": {
+      "bore_diameter": 40,
+      "spigot_outer_diameter": 48,
+      "center_separation": 54
+    },
+    "candidate_housing_mm": {
+      "bore_diameter": 54,
+      "neck_outer_diameter": 60,
+      "center_separation": 74
+    },
+    "status": "Estimated housing outlets need future flexible tapered ducts; throttle itself provisional. Do not force equality or place body housing using engine-only coordinates."
+  },
+  "verdict": "Useful isolated silhouette/flow/seal study; do not install or close issue80",
+  "failures_retained": [
+    "First flange aperture304\u00d7126 interfered with308\u00d7130media frame by5208mm\u00b3; aperture corrected to308\u00d7130 and all pair overlaps now zero",
+    "CAD environment lacked matplotlib; deterministic render separated into --render using Python with numpy/matplotlib"
+  ],
+  "artifact_sha256": {
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-lower-tray-candidate.glb": "9bf5dac2f9b2f1799f8f27b192f5c5ecf8620a275e69f134076acf1bb5f7a3c9",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-lower-tray-candidate.step": "21038c33db92dec5fd505ed495c0c102818e61c5bc8859ee719d15d079703a37",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-paper-element-candidate.glb": "aa011e52060a92ac62271b5ea224fed0da34dee874237106ad21b388dbceeae4",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-paper-element-candidate.step": "c6a77bd9785dec2ca3e9dd119e516124a32e9517882404cf490036863204cbf8",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-perimeter-seal-candidate.glb": "49398cf45ee0f6a86d4e7b8cbe60cdf1c1d6e52c13eee437052b754ccb4a25f2",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-perimeter-seal-candidate.step": "bafcb136f58bc5ce1d1c90930c9034df01a8e84717ad7831a8ede93494fb9165",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-twin-outlet-cover-candidate.glb": "0076c57dbd8b4845bd162a0c27782b63ecd68d4e3189f9dd22c853b10943ffe6",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-twin-outlet-cover-candidate.step": "3a8dd53ae19eafc84067ac95fe1263571aec4f304c436e5a524793aa983c5d94",
+    "cad/engine/generated/air-cleaner-candidate/candidate-review.png": "9477b7569f692f99b97e88be7998ada93a4eba203c854690fd89a843e900593f",
+    "cad/engine/generated/air-cleaner-candidate/candidate.glb": "93c917f25bf48086d3c8cae3ba02ca66d45ef86b8a4044c223625beac5d9e948",
+    "cad/engine/generated/air-cleaner-candidate/preview.npz": "1f13708da39c80b59a78a05647462afe4b4a3baf824c937c20f23de0f9939ab1"
+  },
+  "retention_breather_followup": {
+    "scope": "Existing authorized archive and owner photographs only; no CAD modification",
+    "sources": [
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/index.html",
+        "sha256": "2982b6892fd14cfd7602405ac906a237ecc6f8e333a680156079dc6c6b395505",
+        "review": "HTML prose read",
+        "distribution": "Exclude original from Git/release"
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Emission%20Control%20Systems/Positive%20Crankcase%20Ventilation/PCV%20Valve%20Hose/Service%20and%20Repair/index.html",
+        "sha256": "598eab62f18b53ce5262a336cbb856221e95017e05fec94897975627f5c274e0",
+        "review": "HTML prose read",
+        "distribution": "Exclude original from Git/release"
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/SA101Q313/sa-f1/13268245.png",
+        "sha256": "9e0ad3b5ca853b081ea9257f9da5ac20d165d25d9b6e0be34c28383b6fffdb39",
+        "review": "Actual pixels inspected",
+        "distribution": "Exclude original from Git/release"
+      },
+      {
+        "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/620350918.png",
+        "sha256": "273c7674af69916f8c2bd468bcabfc79616949540f1cfd92850148319ebc1160",
+        "review": "Actual pixels inspected",
+        "distribution": "Exclude original from Git/release"
+      },
+      {
+        "path": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+        "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b",
+        "review": "Actual pixels inspected",
+        "distribution": "Exclude original from Git/release"
+      }
+    ],
+    "cover_screws": {
+      "supported": "Cover-to-tray screws exist and are distinct from two air-cleaner-to-bracket fasteners. Installation explicitly seats the element before positioning and securing the cover.",
+      "unknown": [
+        "count",
+        "axis positions",
+        "screw diameter/thread",
+        "boss construction",
+        "whether captive"
+      ],
+      "finding": "Alternative procedure image 13268245 reproduces the same assembly view as 190226466; it does not provide an independent exploded cover-fastener view. Owner overview photos do not expose a complete cover perimeter."
+    },
+    "breather_connection": {
+      "supported": "Exact-year hose service prose connects crankcase vent connector/hose between valve cover and engine air cleaner. Housing service prose names a closure hose/filter pack connection. Item 11 in the assembly drawing is the crankcase ventilation hose.",
+      "generic_comparison": "620350918 shows the fresh-air closure hose entering the rocker cover separately from the PCV valve-to-intake-manifold path; its air-cleaner-or-outlet-tube wording is generic and cannot settle this vehicle port position.",
+      "unknown": [
+        "housing penetration coordinates and direction",
+        "barb diameter and retention",
+        "filter-pack construction",
+        "precise relationship to main paper-element dirty/clean sides"
+      ],
+      "finding": "Owner driver-side photo supports a separate small hose but the air-cleaner endpoint is obscured; passenger-side overview crops the air cleaner. Do not place a port based on the exploded hose line alone."
+    },
+    "next_geometry": "No new retention or breather geometry justified yet. Next evidence target is an applicable removed-cover underside/perimeter and closure/filter-pack specimen view with positive part/application identification. Dimensions would still remain estimates until measured.",
+    "section_render": "cad/engine/generated/air-cleaner-candidate/candidate-section-review.png",
+    "section_command": "python3 scripts/render-air-cleaner-section.py",
+    "section_limits": "Actual triangle/plane intersections from preserved mesh; paper skin is a 0.65 mm vertical offset, not constant 0.65 mm material thickness. It is an illustrative sheet, not paper stock measurement or pore-scale representation.",
+    "preservation": "Original candidate source, checker, validation and review copied to generated/air-cleaner-candidate/frozen-first-candidate before follow-up. Geometry and original validation unchanged.",
+    "render_record": {
+      "status": "RENDER ONLY; previous CAD checks unchanged",
+      "input_sha256": {
+        "cad/engine/generated/air-cleaner-candidate/preview.npz": "1f13708da39c80b59a78a05647462afe4b4a3baf824c937c20f23de0f9939ab1",
+        "scripts/render-air-cleaner-section.py": "b39785e68d6bb9c12c9b5560015675d1f08f83964704af5c11e8435d6cda1cf1"
+      },
+      "output": "cad/engine/generated/air-cleaner-candidate/candidate-section-review.png",
+      "output_sha256": "18b51422ed1e7c29078198f89f18efa9538e6fd9ed9ed05b8b70278aaea4ba33",
+      "method": "Triangle/plane intersections of preserved preview.npz mesh; no invented section drawing; no geometry edits or validation rerun"
+    }
+  }
+}

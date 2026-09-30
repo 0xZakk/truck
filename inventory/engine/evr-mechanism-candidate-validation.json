@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "scope": "Illustrative comparative positive-gain topology; no calibrated production behavior or installed identity",
+  "input_sha256": {
+    "scripts/check-evr-mechanism-candidate.py": "5c0797424d1aad41bd9f8d34676a8fa413978a087c9b47988a011a3d895b38cc",
+    "cad/engine/evr_mechanism_candidate.py": "b3f656ade6e4cdc88302ad48c589511a8089680388f76513e9a3d6bcd93ce63d",
+    "cad/engine/evr.py": "a47c5d4ec62a08935ba930bb4cffeccd5ead5200c8e2b3cea3efb0771ed45aad",
+    "cad/engine/evr_detail_candidate.py": "60aeb34699713486c05bf29d17e5ad5f657a7ea3074e9514a855c9cd8ddc5733",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "reference/engine/evr-detail-mechanism-review.json": "6a8d40703eac20d9c8eb4739bd57e52c555795d9d2858bd7de5305b0eed0aa9f"
+  },
+  "inputs_stable": true,
+  "protected_region_change_mm3": {
+    "ears": 0,
+    "connector": 0.0,
+    "nipple_ends": 0.0
+  },
+  "collisions_mm3": {},
+  "states": {
+    "0": {
+      "source_output_obstruction_mm3": 0.0,
+      "vent_obstruction_mm3": 0.4125121665498737,
+      "disc_core_contact_mm2": 21.205750411731113,
+      "spring_base_contact_mm2": 18.84955592153876,
+      "spring_disc_contact_mm2": 18.84955592153876,
+      "motion_collision_mm3": 0.0
+    },
+    "0.2": {
+      "source_output_obstruction_mm3": 0.0,
+      "vent_obstruction_mm3": 0.39837499956357936,
+      "disc_core_contact_mm2": 0,
+      "spring_base_contact_mm2": 18.84955592153876,
+      "spring_disc_contact_mm2": 18.84955592153876,
+      "motion_collision_mm3": 0.0
+    },
+    "0.4": {
+      "source_output_obstruction_mm3": 0.0,
+      "vent_obstruction_mm3": 0.19436797025827168,
+      "disc_core_contact_mm2": 0,
+      "spring_base_contact_mm2": 18.84955592153876,
+      "spring_disc_contact_mm2": 18.84955592153876,
+      "motion_collision_mm3": 0.0
+    },
+    "0.6": {
+      "source_output_obstruction_mm3": 0.0,
+      "vent_obstruction_mm3": 0.0,
+      "disc_core_contact_mm2": 0,
+      "spring_base_contact_mm2": 18.84955592153876,
+      "spring_disc_contact_mm2": 18.84955592153876,
+      "motion_collision_mm3": 0.0
+    },
+    "0.8": {
+      "source_output_obstruction_mm3": 0.0,
+      "vent_obstruction_mm3": 0.0,
+      "disc_core_contact_mm2": 0,
+      "spring_base_contact_mm2": 18.84955592153876,
+      "spring_disc_contact_mm2": 18.84955592153876,
+      "motion_collision_mm3": 0.0
+    }
+  },
+  "filter_seats_mm2": {
+    "body": 216.7698930976959,
+    "cap": 216.7698930976959
+  },
+  "blank_filter_bypass_mm3": 0,
+  "electrical": {
+    "terminal_separation_mm": 5.199999999999999,
+    "terminal_core_gap_mm": 9.278436382536661,
+    "terminal_shell_gap_mm": 2.278436382536662,
+    "coil_core_gap_mm": 1.0000000000000009,
+    "coil_shell_gap_mm": 0.3499992203469905,
+    "lead_coil_contact_distance_mm": [
+      0.0,
+      0.0
+    ],
+    "lead_terminal_contact_mm2": [
+      0.19634954088034817,
+      0.1963495408586456
+    ],
+    "joined_conductor_solids": 1
+  },
+  "faults": {
+    "blocked_source_overlap_mm3": 0.07068583470577035,
+    "closed_disc_vent_block_mm3": 0.4125121665498737,
+    "oversize_disc_collision_mm3": 16.874920027941982,
+    "filter_missing_free_bore_mm3": 53.092915845667754,
+    "short_bridge_overlap_mm3": [
+      0.8,
+      0.8000000000000004
+    ],
+    "cut_lead_solids": 2,
+    "undersize_filter_bypass_mm3": 4.005530633326536,
+    "cap_pull_off_overlap_mm3": 12.227800596989706,
+    "latch_removed_pull_off_overlap_mm3": 0
+  },
+  "exports": {
+    "evr-terminal-supply": {
+      "step_sha256": "97b560c78c9d73182ee994486f64bc362ad40ed3539ebefb764a1c9836febeb7",
+      "glb_sha256": "d463174a5547f367df8982b06ceb01b17085a1fc44d4915786b940d060a45d4b",
+      "mesh_roundtrip_axis_error_mm": 1.519918441772461e-06,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 1.4210854715202004e-14
+    },
+    "evr-terminal-control": {
+      "step_sha256": "863ceba80e9511cf560862727c1633d381429a7bd69ac7bcda895c22232eeeeb",
+      "glb_sha256": "6cfe67841569dd5580e0e5a4bbb0cd699c6121efb0a2f3f58d69f506022a342c",
+      "mesh_roundtrip_axis_error_mm": 1.519918441772461e-06,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 1.4210854715202004e-14
+    },
+    "evr-body": {
+      "step_sha256": "28ede93ca11eb1e07606b516dc0a20717e14cda25984a61c363b0ab8bc5b059c",
+      "glb_sha256": "6fe44ba3125f51fa9fd658f7e2ade68f75ee8f62f0d3a6b946d1230d9cfdef4a",
+      "mesh_roundtrip_axis_error_mm": 1.8477439880371094e-06,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 6.918817234691232e-07
+    },
+    "evr-cap": {
+      "step_sha256": "e968c97117e339682141bd9980fea0c8433616d9483a00dbc2bab60d54fa9bd3",
+      "glb_sha256": "9b5cd42e77ec9b81b1b9e2007902505ddcb8a5f2bead2751b9b83f546d6e604a",
+      "mesh_roundtrip_axis_error_mm": 7.778406150293904e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 3.474269760772586e-10
+    },
+    "evr-vent-filter-illustrative": {
+      "step_sha256": "7e1f183fcf65d0f3724932ff3b15b6eec8e73f3df187a82dfa45e79b298ab506",
+      "glb_sha256": "62bf9e3f97e1d9ec8f98cb26c8908c1925bf2d4fcb9467bc16ffe8b41cad4788",
+      "mesh_roundtrip_axis_error_mm": 7.450580596923828e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 4.263256414560601e-11
+    },
+    "evr-core-illustrative": {
+      "step_sha256": "402db834ac0936c74371e2f32de23a407702631126200548a61cb436b5ba2c6f",
+      "glb_sha256": "c0fa065e3c9d1c99642f3832e23190814ffc4031f4f2d9d2f3197695e6686a1a",
+      "mesh_roundtrip_axis_error_mm": 9.238719940185547e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 1.1596057447604835e-11
+    },
+    "evr-bobbin-illustrative": {
+      "step_sha256": "0a4a4dc60d7759cc716dc2eb81ac0394eef234cb0c898935592df9d28e39f002",
+      "glb_sha256": "7c7006562077799cd7437af93325c7122fcdd216514bfe10cd42ae8e0b723d8b",
+      "mesh_roundtrip_axis_error_mm": 8.940696716308594e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 1.0497387847863138e-08
+    },
+    "evr-winding-illustrative": {
+      "step_sha256": "6e03b820c1c2c2e282a8419e421d9f5d9f8eb16324121c09a4b1d89b71076fb5",
+      "glb_sha256": "ba66dd2151da462185c1752318b3492bdd0c1025fe5770319c573ee5267fd92f",
+      "mesh_roundtrip_axis_error_mm": 1.0429518866317267e-06,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 6.565414878423326e-12
+    },
+    "evr-magnetic-shell-illustrative": {
+      "step_sha256": "b25d925246c6d2bf3bee3dd6d70905a25036fc1a3c84213d1f413ebbd4698ab0",
+      "glb_sha256": "6f764e77e32e761417d807d813f8f0151138a1a7012b5efca232a553e9d33092",
+      "mesh_roundtrip_axis_error_mm": 1.1324882507324219e-06,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 1.5329533198382705e-09
+    },
+    "evr-disc-illustrative": {
+      "step_sha256": "dd4ad0561da9591803e417f1aefe715e8dac95d427740c4ff0aed455fc0bdd46",
+      "glb_sha256": "9ad06c4c3894782c93fcb0cf1f2a6b008a7bbde7a83d2b388f1d6d6fdb06d134",
+      "mesh_roundtrip_axis_error_mm": 4.2021274637704664e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 0.0
+    },
+    "evr-disc-spring-illustrative": {
+      "step_sha256": "05a19b5e99c404aa28121be2bf9a9b2c5f0c835356038e6cbda2e91529ff335a",
+      "glb_sha256": "b8e35340668206bc5e71159cb5a2e055d6e4da1285b3342c9051e369a26adb7c",
+      "mesh_roundtrip_axis_error_mm": 2.5331974029541016e-07,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "step_volume_delta": 9.57811607804615e-12
+    }
+  },
+  "installed_neighbors": "NOT RUN: isolated candidate, no promotion"
+}

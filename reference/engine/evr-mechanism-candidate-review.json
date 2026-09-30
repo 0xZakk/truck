@@ -1,0 +1,21 @@
+{
+  "component": "evr-mechanism-illustrative",
+  "status": "Candidate PASS; not installed or factory-fidelity acceptance",
+  "source_ledger": "reference/engine/evr-detail-mechanism-review.json",
+  "report_sha256": "d81c0ad684949eb4e492d69269c2969ec6c38f49b4386bb8004e139d64bd48ec",
+  "final_review_files": {
+    "inventory/engine/evr-mechanism-candidate-validation.json": "d81c0ad684949eb4e492d69269c2969ec6c38f49b4386bb8004e139d64bd48ec",
+    "inventory/engine/evr-mechanism-learning.json": "a100608c586cf5bc036e4f888efd292eab3a8652af3fa631a94adc494719a5b5",
+    "cad/engine/generated/evr-mechanism-candidate/candidate-review.png": "e529293b07632c31901b426b8ba1644d3c6d4ebdadc2a1a4564431c13f3ba210"
+  },
+  "final_source_and_export_binding_check": "PASS: all source images/text and11STEP/GLB bindings verified after full check",
+  "visual_review": "Actual final two-state CAD section inspected; full open mechanism and seated disc detail legible. Perforated filter and coil dimensions explicitly illustrative.",
+  "limits": [
+    "No actual installed identity",
+    "No factory internal dimensions or material certification",
+    "No pressure/duty-cycle/resistance/spring-force calibration",
+    "Rigid cap capture; insertion compliance and pull-off force not simulated",
+    "Five kinematic samples, not full elastic dynamics",
+    "No installed neighbors/frame/browser checks; no canonical changes"
+  ]
+}

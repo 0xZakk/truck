@@ -1,0 +1,73 @@
+{
+  "status": "RESEARCH PROPOSAL; cheap exterior feasibility next, not integration-ready",
+  "issue": "https://github.com/0xZakk/truck/issues/36",
+  "baseline_commit": "74ca5288bb543871b1cc550e191e3f54ed62a8f1",
+  "manifest_sha256": "d172e97a054c37cbbb3d51a9117fae7c43624e2e4667750d7386dbf9d1a3b014",
+  "sources": [
+    {
+      "id": "ford-tsb-installation",
+      "url": "https://www.supermotors.net/getfile/1174826/fullsize/tsb870816intakeinstall49l.jpg",
+      "sha256": "78ff9b9e59f5e9544695a79ff91b6115548ec618b9603c86ca0660fa4dc0906b",
+      "applicability": "1987 Ford 4.9 comparison; not exact 1994 dimensions.",
+      "observation": "Actual image viewed: compact common plenum, direct twin-port front flange, six curved runners spreading toward a wider lower flange, separate upper/lower gasket and seven studs. No long front feed neck is depicted.",
+      "access": "Public comparison inspected directly; retain URL/hash, do not commit original image."
+    },
+    {
+      "id": "ford-intake-parts",
+      "url": "https://www.supermotors.net/getfile/905231/fullsize/1988-ford-f150-4.9l-intake-parts.jpg",
+      "sha256": "bf3b9927b7dfb77c396ee0fbdb5671216f33aa9ef2d89ba54bc5d41cc0fced25",
+      "applicability": "Multi-year Ford parts diagram includes 1990/94 gasket notation; undimensioned geometry.",
+      "observation": "Actual image viewed: direct front throttle gasket and housing, compact plenum, six runners, separate fuel rail and lower intake. No extended front duct is depicted.",
+      "access": "Public comparison inspected directly; retain URL/hash, do not commit original image."
+    },
+    {
+      "id": "upper-specimen",
+      "url": "https://i.ebayimg.com/images/g/-qoAAOSwDTdlcJqH/s-l1200.jpg",
+      "sha256": "d61e6f48716d40a0a7a147b5d7a529fd236e2e8ae1fa9473ca92689773cc6b4d",
+      "applicability": "Seller claims 1987\u20131996 F-150 4.9 OEM upper; visible casting comparison, not the owner\u2019s part.",
+      "observation": "Actual photo viewed: Ford EFI common plenum is shorter than the lower flange. All six runners are visible; outer runners spread at both ends. Perspective prevents calibrated ratios. Cast ribs, rounded corners and bosses are visible.",
+      "access": "Public comparison inspected directly; retain URL/hash, do not commit original image."
+    },
+    {
+      "id": "engine-bay-driver-side",
+      "path": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+      "observation": "Owner truck: cap is exposed ahead of common plenum; throttle body mounts at the plenum front beside curved inlet hoses. Oblique view supplies no exact CAD dimensions.",
+      "access": "Owner photo excluded from Git; authorized access required."
+    }
+  ],
+  "observations": [
+    "Viewed Ford1987 installation figure: runners have broad facing surfaces with rounded longitudinal edges, not six uniformly circular exterior tubes. Earlier-year undimensioned comparison.",
+    "Viewed owner driver/passenger bay photos: portions of broad runner faces visible, but hoses and perspective obscure section depth and individual transitions.",
+    "Viewed full specimen photo and close vacuum-tree photo: broad relatively flat runner faces blend into curved shoulders and compact plenum; this establishes a comparison silhouette, not bore or wall dimensions."
+  ],
+  "applicability_caveat": "Root separately inspected specimen casting mark RF-F5TE-9425-BA in seller gallery12. This later-marked casting is not established as the owner1994 part; seller broad87\u201396 listing/year90 metadata is not exact1994 evidence. The mark image has not been re-viewed by this contributor. Use only broad form corroborated by Ford figure and owner photographs.",
+  "proposal": {
+    "section": "Rounded-rectangle exterior loft surrounding existing circular passage; broad face in plane normal to runner path, transverse axis projected from engineX. Rounded edges and variable end shoulders.",
+    "trial_width_mm": [
+      42,
+      50,
+      56,
+      56,
+      54,
+      44
+    ],
+    "trial_depth_mm": [
+      42,
+      44,
+      44,
+      44,
+      46,
+      44
+    ],
+    "class": "Inferred feasibility estimates, not calibrated photo dimensions",
+    "immutable": "Current lower flange/stud seats, all six air volumes, throttle/EGR/vacuum seats/passages, plenum data and cap withdrawal envelope. No global frame or support bracket changes."
+  },
+  "pcv_coordination": "pump_seal_finish confirms no accepted PCV receiver station/envelope. Rejected(-100,25,445) trial must not be preserved or modeled. Leave plenum wall and central source-supported vacuum interface unchanged; new PCV evidence may require later coordination.",
+  "limits": [
+    "Cross-section depth, casting wall thickness and exact transition stations unknown.",
+    "Current circular air passages are preserved as project datums, not confirmed factory cross-sections.",
+    "Later F5TE specimen cannot determine exact1994 boss details or hidden PCV receiver.",
+    "No photos/manual originals in Git or CAD releases."
+  ]
+}

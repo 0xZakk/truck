@@ -1,0 +1,36 @@
+{
+  "status": "PASS fault controls",
+  "controls": {
+    "air": {
+      "unchanged_overlap_mm3": 0.0,
+      "plugged_overlap_mm3": 5654.8667764616275
+    },
+    "neighbor": {
+      "prior_overlap_mm3": 18.371123906548227,
+      "new_overlap_mm3": 404.56502950260676,
+      "added_overlap_mm3": 386.1939055960585
+    },
+    "cap": {
+      "unchanged_overlap_mm3": 0.0,
+      "intrusion_overlap_mm3": 4438.707688613533
+    },
+    "interface": {
+      "unchanged_difference_mm3": 0,
+      "cut_seat_difference_mm3": 434.5737896208759
+    }
+  },
+  "input_sha256_before": {
+    "scripts/check-intake-runner-exterior-controls.py": "a9fe3edf9d50a66da4950f4f2662472c9e6e833e7cf0c79151d7a30999292d6b",
+    "cad/engine/generated/intake-runner-exterior-study/runner-exterior.step": "95fe3ffef2815fcc5e9812736cf1019e87d249c90b6bd6dce210a4ddc25ea04f",
+    "cad/engine/generated/intake-runner-exterior-study/baseline.step": "35b4a463f19bd28e47a6a5350ee39b3441364073ad6eb854e8f1cc810f248c1a",
+    "cad/engine/intake_runner_exterior_candidate.py": "f6f4679fdbde608cc66851a2b3e9d282a0e8e7c4c9ae0d04e1ebe0af2c7586f2",
+    "scripts/check-intake-runner-exterior-candidate.py": "8503c5c46fda3d6e7cc010eb0c63520f1e7cd71a93fc9014ba67424de6e4b9c9"
+  },
+  "input_sha256_after": {
+    "scripts/check-intake-runner-exterior-controls.py": "a9fe3edf9d50a66da4950f4f2662472c9e6e833e7cf0c79151d7a30999292d6b",
+    "cad/engine/generated/intake-runner-exterior-study/runner-exterior.step": "95fe3ffef2815fcc5e9812736cf1019e87d249c90b6bd6dce210a4ddc25ea04f",
+    "cad/engine/generated/intake-runner-exterior-study/baseline.step": "35b4a463f19bd28e47a6a5350ee39b3441364073ad6eb854e8f1cc810f248c1a",
+    "cad/engine/intake_runner_exterior_candidate.py": "f6f4679fdbde608cc66851a2b3e9d282a0e8e7c4c9ae0d04e1ebe0af2c7586f2",
+    "scripts/check-intake-runner-exterior-candidate.py": "8503c5c46fda3d6e7cc010eb0c63520f1e7cd71a93fc9014ba67424de6e4b9c9"
+  }
+}

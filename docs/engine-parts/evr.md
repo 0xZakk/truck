@@ -4,7 +4,7 @@ Engine parent: [#1](https://github.com/0xZakk/truck/issues/1). Component ticket:
 
 **In review** — Existing provisional geometry/candidate and evidence await acceptance triage; listed failures and omissions remain open.
 
-Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d`. Quantities below count current modeled instances, not verified production quantities.
+Baseline manifest: `73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1`. Quantities below count current modeled instances, not verified production quantities.
 
 ## Existing modeled parts
 
@@ -12,34 +12,84 @@ Baseline manifest: `0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7
 
 Acceptance checkboxes remain unchecked until the common quality gates pass for the agreed scope.
 
-- [ ] **EVR body and hose ports** — `evr-body`; modeled quantity **1**; provisional.
+- [ ] **EVR winding insulator · illustrative** — `evr-bobbin-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-bobbin-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR chamber and ports** — `evr-body`; modeled quantity **1**; provisional.
   - Instances: `evr-body`
-  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.
-  - Open: Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.
   - Open: Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.
-- [ ] **EVR upper cap** — `evr-cap`; modeled quantity **1**; provisional.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR vent cap and illustrative capture** — `evr-cap`; modeled quantity **1**; provisional.
   - Instances: `evr-cap`
-  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.
-  - Open: Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.
   - Open: Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.
-- [ ] **EVR power terminal** — `evr-terminal-supply`; modeled quantity **1**; provisional.
-  - Instances: `evr-terminal-supply`
-  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm. Resolve in `inventory/engine/full-assembly.json` / evidence records.
-  - Open: Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.
-  - Open: Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.
-  - Open: Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR hollow core · illustrative** — `evr-core-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-core-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR vent disc · illustrative** — `evr-disc-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-disc-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR disc spring · illustrative** — `evr-disc-spring-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-disc-spring-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR magnetic shell · illustrative** — `evr-magnetic-shell-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-magnetic-shell-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
 - [ ] **EVR control terminal** — `evr-terminal-control`; modeled quantity **1**; provisional.
   - Instances: `evr-terminal-control`
-  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
   - Open: Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.
-  - Open: Solenoid winding, magnetic circuit, moving valve, atmospheric bleed/filter, terminal straps and seals remain unmodeled; this is an exterior reconstruction, not a complete internal replica.
   - Open: Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR supply terminal** — `evr-terminal-supply`; modeled quantity **1**; provisional.
+  - Instances: `evr-terminal-supply`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exterior dimensions, mounting ears, hose diameters and installed datum are provisional. Factory EVTM locates the unit below EVP at the left rear of the engine.
+  - Open: Port routing is source-supported. No calibrated vacuum response or electrical simulation is claimed. Mounting bracket and fasteners remain unfinished.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR filter · illustrative** — `evr-vent-filter-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-vent-filter-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
+- [ ] **EVR continuous winding · illustrative** — `evr-winding-illustrative`; modeled quantity **1**; provisional.
+  - Instances: `evr-winding-illustrative`
+  - Source IDs: ford-evr-factory, standard-vs52, truck-egr-evtm, evr-detail-mechanism-comparison. Resolve in `inventory/engine/full-assembly.json` / evidence records.
+  - Open: Exact1994 supports filtered vent and electromagnetic disc/orifice operation. Complete hidden arrangement is an explicitly illustrative positive-gain comparison, not a factory internal replica.
+  - Open: All new dimensions, fifteen winding turns, wire size, spring rate/preload, filter permeability pattern and cap bead/groove are uncalibrated estimates. Actual installed identity remains unknown.
+  - Open: Five discrete disc/spring poses illustrate vent opening only; no PCM duty-cycle, pressure, resistance, force, flow or elastic simulation. Mounting bracket, fasteners and vehicle hose routing remain unfinished.
 
 ## Additional known scope and reconciliation
 
-- [ ] Coil, valve, seat, filter/vent and internal connections: applicability/decomposition pending
+- [ ] Eleven comparative component models include coil, disc/seat, spring, filter/vent and electrical connections. Verify installed identity, production internals, dimensions and calibration; browser acceptance remains pending.
 - [ ] Mounting bracket, hardware, vacuum and electrical connectors
 
 ## Cross-system boundaries

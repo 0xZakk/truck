@@ -1,0 +1,67 @@
+{
+  "input_guard": {
+    "file_count": 1499,
+    "before_sha256": "0f32260e4a520020ba816ae3d6843c09c15227c3f1f2e6a35cf4012bc1055e43",
+    "after_sha256": "0f32260e4a520020ba816ae3d6843c09c15227c3f1f2e6a35cf4012bc1055e43"
+  },
+  "status": "PASS installed runner exterior; browser pending",
+  "manifest_sha256": "2df0e1b64ae048a5f4c57d518bf9104936d7a1bcba8c87dd89850b54921f41c4",
+  "installation_record_sha256": "12a60b4772920e81282fe739ac72100352ac050985404fbeec31b19fe7590017",
+  "source_sha256": {
+    "scripts/install-intake-runner-exterior.py": "35bdb263fc9c6bee75039d856b53cb36d87517d26a756d2537a2aa1000669aa3",
+    "cad/engine/intake_runner_exterior_integration.py": "d4f48689f1e8e9a8d278ebab82dd6f33442ea6036681bc6a09c334b83f6b9324",
+    "inventory/engine/intake-runner-exterior-learning.json": "4d6eeb901b6cf84ecfb028e53bf656e52ef1ab0641b6f68d7bef2f99778dcaa7",
+    "reference/engine/intake-runner-exterior-review.json": "5279ae58ef3ed3b226d2c1e4b75530d03813ead216a3783de5e493a9dd8bc729",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "inventory/engine/intake-runner-exterior-candidate-validation.json": "5233381bfdbe7deff11f613053bf119e4defa8746d68cb3377aa2dce192155b3",
+    "inventory/engine/intake-runner-exterior-context-validation.json": "ccd9e009bc7356d43a44d52ffb22bb4fa86fec3f1bea3b34c355a40a3f75ef74",
+    "inventory/engine/intake-runner-exterior-controls-validation.json": "2fd663500c829a8d203eaa8d45aa6cfee35f8427b9d66e6a5ea0b6f50f19ca03",
+    "inventory/engine/intake-runner-exterior-render-validation.json": "b246a1fbe480bbf5da8404d10b940a761ae3e9771f688224853ac6c3254aacd7"
+  },
+  "geometry_difference_mm3": 0,
+  "exports": {
+    "triangles": 435346,
+    "bytes": 8707120,
+    "watertight": true,
+    "bounds_error_mm": 1.348985898630417e-05,
+    "linear_deflection_mm": 0.07,
+    "angular_deflection_rad": 0.08
+  },
+  "replay": {
+    "repeat_difference_mm3": 0,
+    "partial_refresh_difference_mm3": 0,
+    "changed_frame_rejected": true,
+    "changed_geometry_rejected": true
+  },
+  "context_report_sha256": "ccd9e009bc7356d43a44d52ffb22bb4fa86fec3f1bea3b34c355a40a3f75ef74",
+  "inherited_context_scope": {
+    "cable-exact-shape": {
+      "pairs": 235,
+      "exact_pairs": 0
+    },
+    "rocker": {
+      "pairs": 2172,
+      "exact_pairs": 0
+    },
+    "spring-exact-shape": {
+      "pairs": 47,
+      "exact_pairs": 0
+    },
+    "static": {
+      "pairs": 1340,
+      "exact_pairs": 248
+    },
+    "throttle-rigid": {
+      "pairs": 517,
+      "exact_pairs": 0
+    }
+  },
+  "new_static_or_motion_pairs_rerun_here": 0,
+  "learning_valid": true,
+  "input_guard_pass": true,
+  "limits": [
+    "Broad runner faces follow owner/Ford comparisons and a later F5TE-marked specimen; the specimen is not established as the owner1994 casting.",
+    "Runner widths34\u201356mm, depths34\u201346mm, R9 edges and transition stations are inferred exterior estimates. Existing circular air passages are preserved project datums, not measured factory sections.",
+    "No PCV receiver or unresolved intake support lower anchor is inferred from these exterior faces."
+  ]
+}

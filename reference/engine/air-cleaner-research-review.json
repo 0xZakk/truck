@@ -1,0 +1,117 @@
+{
+  "status": "RESEARCH ONLY; no geometry or application acceptance",
+  "issue": 80,
+  "date": "2026-09-26",
+  "baseline_commit": "796b621244d8e341fe2f3c4de7af99488af01548",
+  "manifest_sha256": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+  "review_method": "Manufacturer and Ford dealer catalog pages read through web retrieval; dealer exploded diagram downloaded once and visually inspected. Direct K&N HTML capture returned403; K&N/WIX images not inspected. Applicable local archived service pages and actual190226466 drawing subsequently found and inspected; remote failures did not imply missing local evidence.",
+  "sources": [
+    {
+      "url": "https://www.knfilters.com/air-filters/ford/f150/4.9l-l6-gas/1994",
+      "finding": "Manufacturer application page links33-2023 for1994 F1504.9L; replacement application, not owner-installed identity."
+    },
+    {
+      "url": "https://www.knfilters.com/33-2023-replacement-air-filter",
+      "part": "33-2023",
+      "dimensions_as_published": {
+        "height": "1.188 in (30 mm)",
+        "outside_length": "12.813 in (325 mm)",
+        "outside_width": "5.75 in (146 mm)"
+      },
+      "cross_reference_leads": [
+        "Motorcraft FA1046",
+        "Ford E6AZ9601AC",
+        "WIX46174"
+      ],
+      "limits": "Cotton-gauze aftermarket replacement; do not transfer its media or depth to original paper element. Rounded metric and imperial values are not exact equivalents. Product-box dimensions are packaging."
+    },
+    {
+      "url": "https://www.wixfilters.com/es-co/catalog/results/product.html/46174_wix.html",
+      "part": "46174",
+      "dimensions_mm": {
+        "height": 43.5,
+        "length": 326.7,
+        "width": 148.7
+      },
+      "limits": "Primary manufacturer dimensions; regional application table only explicitly displays4.9 4WD09/86\u201309/91. Exact1994 fit still needs independent confirmation. Do not adopt implausible page airflow/temperature fields as engineering specifications."
+    },
+    {
+      "url": "https://www.oemfordpartsdirect.com/v-1994-ford-f-150--xl--4-9l-l6-gas/engine--air-intake",
+      "kind": "Ford parts catalog reproduced by dealer",
+      "application": "1994 F150 XL4.9L, assembly specifically listed for federal emissions; owner emissions applicability unconfirmed",
+      "assembly_lead": "F4TZ-9600-C",
+      "filter_leads": [
+        "E7TZ-9601-B",
+        "FA-1046"
+      ],
+      "diagram_url": "https://cdn-illustrations.revolutionparts.io/strapr1/9d929410b9bac5e1721f8adcb726e962/932d97994709cd0f1ccf0effed4d082f.png",
+      "local_private_capture": "cad/engine/generated/air-cleaner-reference/dealer-air-intake.png",
+      "sha256": "ed30118dd38db219fcc373f84758c8743831fba470057435fdd0f81c5bcc80c8",
+      "visually_reviewed": true,
+      "observations": [
+        "Separate twin-outlet upper closure, rectangular panel filter and deep lower tray with side inlet",
+        "Separate formed mounting bracket shown beside housing; exact attachment faces and hardware not resolved",
+        "Twin bellows outlet duct and separate lower fresh-air snorkel shown",
+        "Drawing has ribbed closure/tray and retaining features; do not infer exact counts or dimensions from this small generic catalog illustration"
+      ],
+      "limits": "No dimensional scale. XL catalog illustration is comparison evidence for XLT; federal applicability and installed assembly identity still unconfirmed. No original media committed or redistributed."
+    },
+    {
+      "kind": "Applicable archived1994 2WD4.9 service information",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/",
+      "capture_sha256": {
+        "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/index.html": "2982b6892fd14cfd7602405ac906a237ecc6f8e333a680156079dc6c6b395505",
+        "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Specifications/index.html": "6692d170557e3496f64fa073ac0458cff68a281e86327998b26f8c0351df3fa1",
+        "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Air%20Filter%20Element/Description%20and%20Operation/index.html": "6272adcdf4a1ce96ad64c1c903e2336a7e0477526ea2bb664aba72aa23ff7eaf",
+        "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/190226466.png": "9e0ad3b5ca853b081ea9257f9da5ac20d165d25d9b6e0be34c28383b6fffdb39"
+      },
+      "reviewed": "All three text pages read; actual190226466 diagram pixels inspected",
+      "facts": {
+        "duct_base_number": "9R504",
+        "housing_base_number": "9600",
+        "bracket_base_number": "9647",
+        "snorkel_base_number": "9A675",
+        "housing_mounting_screws": {
+          "part": "N611062-S2",
+          "quantity": 2
+        },
+        "grommets": {
+          "base": "17C431",
+          "quantity": 2
+        },
+        "bracket_screws": {
+          "part": "N610959-S2",
+          "quantity": 4
+        },
+        "duct_clamps_quantity": 4,
+        "duct_clamp_torque_Nm": [
+          1,
+          2
+        ],
+        "filter_material": "Chemically treated pleated paper"
+      },
+      "observations": [
+        "Bracket ties housing to left fender; separate snorkel runs toward radiator support",
+        "Duct orientation marks must match throttle locating marks and housing marks; housing end orientation tolerance2degrees",
+        "Both throttle ends seat fully around the stop flange",
+        "Separate crankcase ventilation hose shown; do not confuse with manifold PCV hose"
+      ],
+      "limits": "Exact-year topology and nominal hardware IDs/quantities, not dimensional drawings. Figure rounded torque conversion differs slightly from text; use published SI1\u20132Nm. Original archive/media excluded from Git. No seal plane, dimensions or owner assembly identity inferred."
+    }
+  ],
+  "gaps": [
+    "Actual installed element identity and seal plane",
+    "Housing lower contour, inlet snorkel, body mounting datums",
+    "Twin duct diameters, routing and bellows/clamps",
+    "Fresh-air breather port location distinct from manifold PCV return",
+    "Cover screw count, locations and retention geometry; no clip assumption"
+  ],
+  "failed_access": [
+    "Exact1994 2WD CHARM Air Cleaner Housing service URL unavailable through web retrieval",
+    "Direct K&N HTML curl403",
+    "WIX image cache miss; pixels not viewed",
+    "Verified Powertrain Management service link: web cache miss and direct curl30-second connection timeout; contents not reviewed."
+  ],
+  "next_manual_link_from_index": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/",
+  "independent_review": "pump_seal_finish inspected190226466: listed quantities confirmed; cover screws supported by service text, clip/latch construction not established."
+}

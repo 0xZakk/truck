@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "readiness": "Numerical, artifact and automated viewer checks passed; browser acceptance NOT RUN",
+  "engine_complete": false,
+  "runner": {
+    "manifest_sha256": "2df0e1b64ae048a5f4c57d518bf9104936d7a1bcba8c87dd89850b54921f41c4",
+    "installed_report": "inventory/engine/intake-runner-exterior-installed-validation.json",
+    "installed_report_sha256": "7273ecc06729b22ca7340393e5615f2016020421961fb40592fc9c94d386e4b9",
+    "actual_stage_render_reviewed": true,
+    "scope": "Broader rounded exterior faces only; factory dimensions remain inferred. Saved installation hashes revalidated after interruption."
+  },
+  "evr": {
+    "scope": "Comparative eleven-part mechanism; factory internal construction and calibration unresolved",
+    "render_reviewed": "cad/engine/generated/evr-mechanism-candidate/candidate-review.png",
+    "installation": "PASS installed after final exporter refresh; browser pending",
+    "historical_proof": "cad/engine/generated/evr-before-stop-hooks-20260930/sha256.json",
+    "installed_report": "inventory/engine/evr-mechanism-installed-validation.json",
+    "installed_report_sha256": "4d18996624d67005a41ad2560a695cab9992e6041c0de56eaf0411309d13978d",
+    "promotion_controls": "PASS five guard controls in a fresh separate stage; original post-install pre-install-stage mismatch retained in log",
+    "promotion_controls_report": "cad/engine/generated/evr-mechanism-promotion-controls/controls-validation.json",
+    "promotion_controls_sha256": "23e315454632ad91132084c84db2a2ede67a65ad01030e9c4c548eec600c8031"
+  },
+  "stops": {
+    "scope": "Source-supported idle-stop topology; illustrative WOT geometry and endpoint calibration",
+    "candidate_render_reviewed": true,
+    "installation": "PASS installed throttle stops; browser pending",
+    "installed_report": "inventory/engine/throttle-stop-installed-validation.json",
+    "installed_report_sha256": "46bb0f2aee51c3be430d894c7bf4ee6ea1c6b69867e434a696f32bc745bcdf3c",
+    "current_context_exact_pairs": 141,
+    "inherited_exact_pairs": 843,
+    "collisions": [],
+    "checkpoint_binding": "inventory/engine/throttle-stop-checkpoint-binding.json"
+  },
+  "browser": {
+    "status": "NOT RUN for this batch",
+    "reason": "cua.getTab for the existing localhost engine URL was rejected by browser URL security policy. No alternate surface or workaround attempted. CAD renders and Node tests are not browser acceptance."
+  },
+  "combined_step": {
+    "status": "PASS",
+    "report": "inventory/engine/combined-step-export.json",
+    "report_sha256": "e8dca1533989348367d034f3684c4c76df0cb2f7d310efe0716095a773281583",
+    "occurrences": 1349
+  },
+  "whole_static": {
+    "status": "PASS",
+    "report": "inventory/engine/atlas-static-validation.json",
+    "report_sha256": "f407970dcefd1f0c0a8ee1f1d52135b097ce76cf30b2bc5bcfc55b6fce0c200a",
+    "exact_pairs": 5287,
+    "collisions": 0,
+    "threshold_mm3": 0.1,
+    "scope": "All part pairs with overlapping bounding boxes at a single static pose; intentional fit interfaces may be included."
+  },
+  "limits": [
+    "Previous checkpoint reports retain their historical input hashes and do not certify this batch.",
+    "No Done transition or factory-exact claim."
+  ],
+  "manifest_sha256": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+  "definitions": 741,
+  "occurrences": 1349,
+  "cli_issue_updates": [
+    36,
+    43,
+    58,
+    80
+  ],
+  "source_integrity": {
+    "status": "PASS",
+    "captures": 194,
+    "report": "inventory/engine/source-record-validation.json"
+  },
+  "navigation": {
+    "status": "PASS",
+    "parts": 1349,
+    "links": 1548
+  },
+  "pull_request": "https://github.com/0xZakk/truck/pull/94"
+}

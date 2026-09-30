@@ -1,0 +1,566 @@
+{
+  "status": "ISOLATED CANDIDATE PASS:47 poses and thread controls; no canonical edits",
+  "issue": 43,
+  "parent_issue": 1,
+  "baseline_commit": "74ca5288bb543871b1cc550e191e3f54ed62a8f1",
+  "manifest_sha256": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+  "definitions": 733,
+  "occurrences": 1341,
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Description%20and%20Operation/index.html",
+      "sha256": "b9ecb1fe444d841d8d0aa482c3a794ea930fa2178372cff7fd6df05107f46b41",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Description%20and%20Operation/",
+      "classification": "verified applicable operation text",
+      "access": "Local HTML read",
+      "observed": "Dual-bore body description explicitly states a preset stop locates wide-open throttle. It does not supply stop contour, part count, contact position, angle or a separate WOT screw."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed/Adjustments/index.html",
+      "sha256": "6fc1c2a4b9a900b5f05a199ec063eb28307de08a306800929e011a899a6f22f3",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Idle%20Speed/Adjustments/",
+      "classification": "applicable archive page; shared multi-application procedure",
+      "access": "Local HTML read",
+      "observed": "Text explicitly requires contact between plate-stop screw and lever pad. It distinguishes PCM/IAC idle control from closed-plate airflow calibration; no production stop dimensions or angle are provided."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Testing%20and%20Inspection/Check%20Throttle%20Valves/index.html",
+      "sha256": "eddc5839bbc1820746fa8af7fe5aa451a76e5b78c5b52f7fc507feb3e5229360",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Testing%20and%20Inspection/Check%20Throttle%20Valves/",
+      "classification": "applicable diagnostic text",
+      "access": "Local HTML read",
+      "observed": "Calls for smooth travel from closed to open and checks for binding/damage; not a numeric angular specification."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/index.html",
+      "sha256": "8f98ec60d8bcbf3de4baeead501efd32363b84aea46555152061e52f97b719bb",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Throttle%20Body/Service%20and%20Repair/",
+      "classification": "applicable procedure",
+      "access": "Local HTML read",
+      "observed": "Removal/installation handles the throttle body assembly; no separate stop screw service part or installation dimensions."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Transmission%20Control%20Systems/Sensors%20and%20Switches%20-%20Transmission%20and%20Drivetrain/Sensors%20and%20Switches%20-%20M%2FT/Throttle%20Position%20Sensor%2FSwitch/Adjustments/index.html",
+      "sha256": "25cddd2dcc68af1fa7d17852f80045309a70bef0624cf2ba0282024b4ad6be1c",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Transmission%20Control%20Systems/Sensors%20and%20Switches%20-%20Transmission%20and%20Drivetrain/Sensors%20and%20Switches%20-%20M%2FT/Throttle%20Position%20Sensor%2FSwitch/Adjustments/",
+      "classification": "EXCLUDED cross-linked diesel FIPL page",
+      "access": "Local HTML read",
+      "observed": "Page discusses a fuel-injection-pump lever and FIPL sensor, not the gasoline4.9 throttle body. Do not transfer its0.515-inch gauge, maximum-travel screw or adjustment directions."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/689805816.png",
+      "sha256": "b612aefd74b61e1650d4d9778e1ee18bff981455def3f66d6152bceb3cfab1c2",
+      "url": "https://charm.li/images/DM05Q313/ford10/689805816/",
+      "classification": "Factory archive image directly viewed",
+      "observed": "External plate set screw is labeled on cable/lever side, opposite TPS.",
+      "limits": "No dimensions, thread specification, exact contact pad or distinct WOT stop clearly labeled."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/690090240.png",
+      "sha256": "80fb8776efe6de8e6c997e7129255f1a3c5ebf97e917f25d5bfccbd111f4f86c",
+      "url": "https://charm.li/images/DM05Q313/ford10/690090240/",
+      "classification": "Factory archive image directly viewed",
+      "observed": "Cable-side formed lever/spring bank shown in body removal view.",
+      "limits": "No WOT contact labeled; do not reinterpret spring/automatic linkage features as stops."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/186546902.png",
+      "sha256": "19a7e8e0277d37e09286125b369e7df3edd6d8c60bd594b80f07cb8711dd02aa",
+      "url": "https://charm.li/images/DM05Q313/ford10/186546902/",
+      "classification": "Factory archive image directly viewed",
+      "observed": "Shared decal-location illustration explicitly includes4.9 truck in its application list.",
+      "limits": "Generic examples; not a dimensioned4.9 lever drawing."
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/186295596.png",
+      "sha256": "a658bf4e0f37680eb1ab70efb66dc7b1e6e77317b57f63530c0529ec39ee605b",
+      "url": "https://charm.li/images/DM05Q313/ford10/186295596/",
+      "classification": "Factory archive image directly viewed",
+      "observed": "Twin-bore view labels external plate-stop screw adjacent to cable-side lever; separate bore orifices are shown.",
+      "limits": "Shared idle-service illustration; no stop angle/dimensions and no independently labeled WOT stop."
+    }
+  ],
+  "replacement_evidence": {
+    "prior_ledger": "reference/engine/throttle-linkage-review.json",
+    "prior_observation": "Earlier worker review of F2TE-FA comparison image recorded a stop screw on a casting pad adjacent to lever; exact manual application unverified.",
+    "refetch_url": "https://i.ebayimg.com/images/g/-wwAAeSw4UtouIZQ/s-l1200.jpg",
+    "refetch_result": "Web cache miss in this task; no new visual assertion from unavailable image",
+    "manual_specimen_lead": "https://www.ebay.com/itm/257472725875",
+    "lead_result": "Web cache miss; exact MT specimen remains unverified"
+  },
+  "current_geometry": {
+    "throttle-lever-estimated": {
+      "definition": "throttle-lever-estimated",
+      "step": "/cad/engine/generated/throttle-lever-estimated.step",
+      "sha256": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+      "parent": "throttle-moving",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "throttle-housing": {
+      "definition": "throttle-housing",
+      "step": "/cad/engine/generated/throttle-housing.step",
+      "sha256": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+      "parent": "throttle-assembly",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "accelerator-cable-bracket": {
+      "definition": "accelerator-cable-bracket",
+      "step": "/cad/engine/generated/accelerator-cable-bracket.step",
+      "sha256": "90d1c4cab4e828849623a62f066ddea66ab5a08ea7112dc72ae8c1ab459924d9",
+      "parent": "throttle-assembly",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "throttle-linkage-shield-estimated": {
+      "definition": "throttle-linkage-shield-estimated",
+      "step": "/cad/engine/generated/throttle-linkage-shield-estimated.step",
+      "sha256": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+      "parent": "throttle-assembly",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "inventory_findings": [
+    "No dedicated stop definition or occurrence exists in the current throttle assembly.",
+    "Lever remains an inferred flat arm/hub with a spring anchor; no source-shaped stop pad.",
+    "Housing has no explicit idle screw/boss or WOT lug in the applicable modeling adapters.",
+    "Slider endpoints0/90 are commanded limits, not CAD contact stops."
+  ],
+  "direct_cad_probe": {
+    "angles_deg": [
+      -2,
+      0,
+      2,
+      88,
+      90,
+      92
+    ],
+    "method": "Actual current STEP lever transformed using assembly_math against actual housing/bracket/shield. No geometry edits. The out-of-range probes are diagnostic only, not approved operating travel.",
+    "lever_housing_distance_mm": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "lever_bracket_distance_mm": [
+      9.162412079139983,
+      10,
+      10.619967105402806,
+      12,
+      12,
+      12
+    ],
+    "lever_shield_distance_mm": [
+      7.014620151541749,
+      7,
+      7.014620151541749,
+      18.439088914585774,
+      18.439088914585774,
+      18.439088914585774
+    ],
+    "all_overlap_volumes_mm3": 0,
+    "limits": "This proves these existing surfaces do not stop lever at0/90. Does not certify cable or spring travel beyond0\u201390."
+  },
+  "proposal": {
+    "idle": {
+      "topology": "One separate retained plate-stop screw through a stationary housing boss, contacting a formed/machined pad integrated with the moving lever.",
+      "supported": "Screw-to-lever-pad contact and cable-side location.",
+      "estimated": "Boss contour, pad contour, axis, thread, dimensions, locking and idealized0-degree contact datum."
+    },
+    "wot": {
+      "topology": "Minimal illustrative fixed casting lug contacting a distinct lever land at the existing90-degree endpoint.",
+      "supported": "Existence of a preset WOT stop only.",
+      "estimated": "Integral lug rather than second screw, contour, contact land, location and90-degree calibration.",
+      "not_claimed": "Do not present a second adjustable screw, shared idle/WOT adjuster or exact Ford travel angle as established."
+    },
+    "frame": {
+      "parent": "throttle-assembly for housing/stop screw; throttle-moving for lever land",
+      "shaft_origin_parent_cad_mm": [
+        394,
+        25,
+        490
+      ],
+      "shaft_axis": "Y",
+      "lever_plane_parent_y_mm": [
+        89,
+        91
+      ],
+      "ball_preserved_parent_cad_mm_at0": [
+        394,
+        95,
+        514
+      ],
+      "protected": "Retain shaft key/pin, ball center and stroke, all spring hooks/anchor holes, shield, cable bracket/retainer, existing733-part poses. No motion-table regeneration if these datums remain unchanged."
+    },
+    "first_feasibility": "Investigate cable-side boss attached to existing housing flange, with tangential screw/lever-pad contact. Do not choose dimensions or attach a screw in empty space merely to hit0 degrees.",
+    "acceptance": [
+      "Source/estimate labels precede geometry. Preserve existing ball/cable and spring motion.",
+      "Nominal idle screw/lever pad contact at0; clear at positive angles; deliberate small negative-angle penetration against the intended stop.",
+      "Nominal WOT lug/lever-land contact at90; clear below90; small overtravel penetration at intended stop.",
+      "Physical screw retention and boss-to-housing continuity; reject a detached screw/boss negative control.",
+      "Full checked0\u201390 dynamic clearance with actual cable, shaft spring, shield, bracket and mounting hardware.",
+      "Verify no bore, plate, shaft-support, keyed-end or source-protected anchor changes outside isolated allowed regions."
+    ]
+  },
+  "limits": [
+    "Idle-stop topology is sufficient for a bounded estimated candidate, but exact screw size/axis/pad geometry are unknown.",
+    "WOT existence is sufficient for an explicitly illustrative contact stop, not source-verified production architecture.",
+    "No CAD candidate built in this proposal; no thresholds, poses or frozen cable files changed.",
+    "No idle adjustment advice or factory calibration is delivered.",
+    "Restricted manual images and specimen images are not redistributed."
+  ],
+  "feasibility_checkpoint": {
+    "report": "inventory/engine/throttle-stop-candidate-validation.json",
+    "report_sha256": "ca8ae2892a6238d8eb20dd93769c59afcc3f8da2b29fa169c1627d1f90eefc49",
+    "input_hashes": {
+      "scripts/check-throttle-stop-candidate.py": "286aa9be60e74435c22c698196671ae16624eb03e446ee5afa223f9a2f591272",
+      "cad/engine/throttle_stop_candidate.py": "a4adb7a6b19a682abcb4b1998204e7dd52380db6cb131fe990d32a5b2a359b36",
+      "cad/engine/throttle_cable_candidate.py": "82c534adf51b35aa23f92d991e2848ec26d3f062d977cc0106f0bb90e02930f2",
+      "cad/engine/throttle_return_spring_candidate.py": "37141a853f7bcf28328272e8a4c0bff0dbe36ec938cbfba05cc94ebad1e08297",
+      "inventory/engine/full-assembly.json": "0656841ba587a3f05d193aa75fb711f320ddf732cc0343c68504836c9ea7537d",
+      "cad/engine/generated/throttle-housing.step": "daa14d521bbcf287aad500ad90bb91939934013f23107ef40cc575b8731ee9fe",
+      "cad/engine/generated/throttle-lever-estimated.step": "9d623a9ca7b0128c913ea9b777aa62e219f1500b5d9fa60083fbb492ad9512a3",
+      "cad/engine/generated/efi-upper-intake.step": "225f62afaafb3d9522e65eea74722c03fb18e9203f4c1f4b77f20cea66d92b4c",
+      "cad/engine/generated/throttle-shaft.step": "b31276ad5aec8a35d7b5d0fc1a87a6c0e3e3bbe4887810fdd6101dcc29ac1667",
+      "cad/engine/generated/accelerator-cable-bracket.step": "90d1c4cab4e828849623a62f066ddea66ab5a08ea7112dc72ae8c1ab459924d9",
+      "cad/engine/generated/throttle-lever-retaining-pin-estimated.step": "e4d9fd69f9df7934c937181ca0f2aa48d8ed579f554459cf56cf1ed6e7439d5a",
+      "cad/engine/generated/throttle-linkage-shield-estimated.step": "2aaed18fb92351631b89897a990e5526362f8976998cfb1c6a97405f50ce62ba",
+      "cad/engine/generated/throttle-cable-ball-stud-estimated.step": "60dfa0e31bd42e2f99ce5caa06a4ee8780358e567e8c3f8a9d0107e7fd0c0d82"
+    },
+    "parameters": {
+      "idle_axis_y": 90.0,
+      "idle_axis_z": 502.0,
+      "idle_tip_x": 389.0,
+      "screw_core_radius": 1.15,
+      "thread_major_radius": 1.45,
+      "thread_pitch": 0.5,
+      "thread_start_x": 378.25,
+      "thread_length": 6.5,
+      "thread_radial_clearance": 0.02,
+      "thread_axial_clearance": 0.02,
+      "idle_pad_x": -4.25,
+      "idle_pad_z": 12.0,
+      "wot_pad_y": 66.875,
+      "wot_pad_z": 12.0
+    },
+    "exact_pairs": 843,
+    "protected_regions": {
+      "original_housing_removed_mm3": 0.0,
+      "original_lever_removed_mm3": 0.0,
+      "lever_key_hook_ball_changes_mm3": 0.0,
+      "new_housing_in_flow_bores_mm3": 0.0
+    },
+    "contacts": [
+      {
+        "angle_deg": 0,
+        "idle_contact_mm2": 3.694166127612716,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 2,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 4,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 6,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 8,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 10,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 12,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 14,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 16,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 18,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 20,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 22,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 24,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 26,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 28,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 30,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 32,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 34,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 36,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 38,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 40,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 42,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 44,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 45,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 46,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 48,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 50,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 52,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 54,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 56,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 58,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 60,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 62,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 64,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 66,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 68,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 70,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 72,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 74,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 76,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 78,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 80,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 82,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 84,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 86,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 88,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 0.0
+      },
+      {
+        "angle_deg": 90,
+        "idle_contact_mm2": 0.0,
+        "wot_contact_mm2": 6.946349540849362
+      }
+    ],
+    "overtravel_sensitivity": [
+      {
+        "angle_deg": -1,
+        "idle_overlap_mm3": 0.7674324540172697,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "angle_deg": 1,
+        "idle_overlap_mm3": 0.0,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "angle_deg": 89,
+        "idle_overlap_mm3": 0.0,
+        "housing_overlap_mm3": 0.0
+      },
+      {
+        "angle_deg": 91,
+        "idle_overlap_mm3": 0.0,
+        "housing_overlap_mm3": 1.4394961215529127
+      }
+    ],
+    "thread_retention_status": "PASS",
+    "visuals": {
+      "pure_cad": "cad/engine/generated/throttle-stop-candidate/candidate-endpoints.png",
+      "local_restricted_comparison": "cad/engine/generated/throttle-stop-candidate/candidate-source-comparison.png",
+      "review": "Both directly viewed; external screw/pad topology compared, no dimensional correspondence claimed. Block boss and WOT lug remain illustrative."
+    },
+    "next": "Scoped staged installer/current-neighbor checks and learning; no installed acceptance yet.",
+    "retention_controls": {
+      "detached_screw_contact_mm2": 0.0,
+      "capture_witnesses": [
+        {
+          "delta_x_mm": 0.125,
+          "center_mm": [
+            380.0,
+            91.12583302491977,
+            501.35
+          ],
+          "radius_mm": 0.03,
+          "exact_containment": true,
+          "overlap_lower_bound_mm3": 0.00011309733552923254
+        },
+        {
+          "delta_x_mm": -0.125,
+          "center_mm": [
+            380.0,
+            88.87416697508023,
+            501.35
+          ],
+          "radius_mm": 0.03,
+          "exact_containment": true,
+          "overlap_lower_bound_mm3": 0.00011309733552923254
+        }
+      ],
+      "positive_axial_capture_mm3": 0.00011309733552923254,
+      "negative_axial_capture_mm3": 0.00011309733552923254,
+      "quarter_turn_thread_path_overlap_mm3": 0.0
+    }
+  }
+}

@@ -26,7 +26,12 @@ for(const [identifier,ratio] of [['oil-pump-intermediate-rotation',-.5],['oil-pu
 }
 assert.equal(manifest.occurrences.find(part=>part.id==='oil-pump-drive-retainer').parent,'oil-pump-intermediate-rotation');
 assert.equal(nav.parts('oil-pickup-assembly').length,3);
-assert.equal(nav.parts('induction').length,229);
+assert.equal(nav.parts('induction').length,237);
+assert.equal(nav.parts('egr-vacuum-regulator').length,11);
+for(const id of ['evr-disc-illustrative','evr-disc-spring-illustrative','evr-winding-illustrative','evr-vent-filter-illustrative']){
+  assert.ok(nav.ancestors(id).some(node=>node.id==='egr-vacuum-regulator'));
+  assert.equal(nav.fromUrl(nav.url(id)),id);
+}
 assert.equal(nav.parts('intake-head-locator').length,1);
 assert.ok(nav.ancestors('intake-head-locating-dowel').some(node=>node.id==='induction'));
 assert.equal(nav.parts('fuel-test-valve').length,8);
@@ -36,8 +41,8 @@ for(const identifier of ['front-manifold-lifting-eye','front-manifold-stud13','f
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
 assert.equal(nav.parts('intake-studs').length,7);
-assert.equal(nav.parts('throttle-assembly').length,52);
-for(const identifier of ['throttle-lever-estimated','throttle-cable-ball-stud-estimated','throttle-lever-retaining-pin-estimated','throttle-linkage-shield-estimated','throttle-shield-pushpin-estimated','throttle-return-spring-illustrative']){
+assert.equal(nav.parts('throttle-assembly').length,53);
+for(const identifier of ['throttle-idle-stop-screw-illustrative','throttle-lever-estimated','throttle-cable-ball-stud-estimated','throttle-lever-retaining-pin-estimated','throttle-linkage-shield-estimated','throttle-shield-pushpin-estimated','throttle-return-spring-illustrative']){
   assert.ok(nav.ancestors(identifier).some(node=>node.id==='throttle-assembly'));
   assert.equal(nav.fromUrl(nav.url(identifier)),identifier);
 }
@@ -76,7 +81,7 @@ assert.equal(nav.parts('oil-pan-assembly').length,54);
 assert.equal(nav.parts('pushrod-cover-assembly').length,14);
 assert.equal(nav.parts('cam-retention-assembly').length,7);
 assert.equal(nav.parts('block-plugs').length,1);
-assert.equal(nav.parts('egr').length,40);
+assert.equal(nav.parts('egr').length,47);
 assert.equal(nav.parts('egr-valve-assembly').length,12);
 assert.equal(nav.parts('egr-position-sensor').length,16);
 assert.equal(nav.search('EVP wiper contact')[0].id,'evp-wiper');
@@ -144,11 +149,9 @@ assert.equal(nav.parts('water-pump-pulley-assembly').length,5);
 assert.deepEqual(nav.ancestors('tensioner-pulley-wheel').map(node=>node.id),['engine','accessory-drive','tensioner-pulley-assembly','tensioner-pulley-wheel']);
 assert.ok(nav.ancestors('water-pump-pulley-bolt-1').some(node=>node.id==='water-pump-assembly'));
 assert.deepEqual(nav.ancestors('damper-elastomer').map(n=>n.id),['engine','rotating','damper-assembly','damper-elastomer']);
-console.log(`Navigation verified: ${all.length} parts reachable once, ${nav.nodes.size} deep links, search and legacy links.`);
 
 assert.equal(nav.parts('egr-exhaust-line').length,4);
 
-assert.equal(nav.parts('egr-vacuum-regulator').length,4);
 
 assert.equal(nav.parts('egr-vacuum-lines').length,1);
 
@@ -171,3 +174,4 @@ assert.ok(learning['pushrod-cover-bolt-1'].summary.includes('stud'));
 const lessonFixture={assemblies:[{id:'root'}],occurrences:[{id:'copy-a',definition:'shared'},{id:'copy-b',definition:'shared'}]};
 assert.deepEqual(resolveEngineLearning(lessonFixture,[],{shared:{summary:'default'},'copy-a':{summary:'specific'}}),{'copy-a':{summary:'specific'},'copy-b':{summary:'default'}});
 assert.throws(()=>resolveEngineLearning(lessonFixture,[],{missing:{}}),/absent/);
+console.log(`Navigation verified: ${all.length} parts reachable once, ${nav.nodes.size} deep links, search and legacy links.`);

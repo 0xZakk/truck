@@ -1,0 +1,41 @@
+{
+  "component_id": "air-cleaner-candidate",
+  "readiness": "candidate",
+  "function": "Separate incoming dust, dirt and debris from air before it reaches the twin throttle inlets. Exact-year description specifies chemically treated pleated paper.",
+  "path": [
+    "snorkel (not modeled)",
+    "rectangular lower-tray inlet",
+    "dirty-air volume below filter",
+    "porous paper element (pores not modeled)",
+    "upper clean-air chamber",
+    "two round outlet necks",
+    "flexible ducts and throttle (not modeled)"
+  ],
+  "parts": {
+    "air-cleaner-lower-tray-candidate": "Receives unfiltered air and supports the element perimeter.",
+    "air-cleaner-twin-outlet-cover-candidate": "Collects filtered air and divides it between the twin ducts; retention unresolved.",
+    "air-cleaner-paper-element-candidate": "Pleated paper representation increases available filtering surface. Porosity and flow resistance are not simulated.",
+    "air-cleaner-perimeter-seal-candidate": "Illustrates the continuous perimeter needed to prevent dirty air bypassing the media."
+  },
+  "diagnostics": [
+    {
+      "condition": "Missing or displaced seal",
+      "mechanism": "May permit dirt-laden air to bypass the filter.",
+      "check": "Inspect seating around the complete perimeter; candidate negative controls detect missing or 3 mm shifted geometry.",
+      "evidence": "General engineering inference; not a factory diagnostic threshold"
+    },
+    {
+      "condition": "Damaged or disconnected outlet duct",
+      "check": "Exact-year service diagram requires circumferential throttle-stop seating and alignment marks; inspect the four clamp locations.",
+      "limits": "Ducts and clamps not modeled; no leak test or engine-motion claim"
+    }
+  ],
+  "sources": [
+    "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/"
+  ],
+  "limits": [
+    "No replacement interval inferred",
+    "No media filtration efficiency or airflow pressure drop claimed",
+    "Owner filter identity, cover screw pattern and body datums unknown"
+  ]
+}

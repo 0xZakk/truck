@@ -1,0 +1,27 @@
+{
+  "status": "PASS unchanged geometry and metadata; definition/occurrence array order only",
+  "checker_sha256": "78ba6e7c22053a2512cbb2b635ad6ea7babc34c16fd1234ba83ed623dd189dba",
+  "current_manifest_sha256": "73de806af847c528e766151590d7b8235620893414c280711aa6ff382ca8a7e1",
+  "original_report_sha256": "46bb0f2aee51c3be430d894c7bf4ee6ea1c6b69867e434a696f32bc745bcdf3c",
+  "stage_manifest_sha256": "eeafadb96e186266dab83ec10b96c54fc73197d75dc615e2688f566cdffc2f69",
+  "changed_array_order": {
+    "definitions": true,
+    "occurrences": true,
+    "assemblies": false
+  },
+  "source_dependencies_verified": {
+    "scripts/install-throttle-stops.py": "b996c606524fe6869707ba2e80fbef1e778b1c803fee1fb3624f818446786e64",
+    "cad/engine/throttle_stop_integration.py": "b7725d9fb4628f97755fbb4a49c0be0684e2782313f4ed8dbd19eeeea2264573",
+    "inventory/engine/throttle-stop-candidate-validation.json": "ca8ae2892a6238d8eb20dd93769c59afcc3f8da2b29fa169c1627d1f90eefc49",
+    "cad/engine/throttle_stop_candidate.py": "a4adb7a6b19a682abcb4b1998204e7dd52380db6cb131fe990d32a5b2a359b36",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/full_engine.py": "da52e8f3669ec8f5ed1d57e1805cfd5d78ceb3e238e4ad10be61c1f22c2690b5",
+    "scripts/install-intake-cap-coordination.py": "74fc02f340edbec0c35441e208d259e377851614d74e839c768b91fbf782d56b",
+    "reference/engine/throttle-stop-review.json": "4eb12c11d26bbc25b569afbedfd2a193c2817e890022bf34cde8ca6fcf972ae3",
+    "inventory/engine/throttle-stop-learning.json": "122090d519610b401d307c7acaac4be05e0901ba09815e50bc6f8cb3b68aff32",
+    "inventory/engine/completion-plan.json": "2e07ab06fe78d5e2882268fe9a777bd40bee66d7c4815818f232e8dc7c763cbe"
+  },
+  "context_artifact_count": 746,
+  "scope": "All manifest fields identical after indexing unique IDs; installed stop exports and every recorded context artifact/source dependency retain original hashes. Prior installed scope transfers without repeating unchanged CAD sweeps. Browser remains NOT RUN."
+}
