@@ -1,0 +1,3427 @@
+{
+  "manifest_sha256": "9b8253b318e800e18b999a0a74caa749d9525978f2c19bc7286c07bb79a7c100",
+  "definitions": [
+    {
+      "id": "ignition-lead-1-jacket",
+      "before": {
+        "id": "ignition-lead-1-jacket",
+        "name": "Ignition lead 1 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-1-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-1-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 6827.438056230027,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 23340,
+        "model_bounds_mm": [
+          30.89600020000006,
+          124.1963539621638,
+          72.55599777976096
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-jacket",
+        "name": "Ignition lead 1 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-jacket.step",
+          "sha256": "ac17ea9acf8827eeda0b4c48508aed5f875579248b2c7df8b5eae7b96be7e095"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-jacket.glb",
+          "sha256": "0701c86849740d8596758978423c201a875719384e51de695ec0229da6651235"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-1-carbon-core",
+      "before": {
+        "id": "ignition-lead-1-carbon-core",
+        "name": "Ignition lead 1 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-1-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-1-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 612.4636597851771,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 15720,
+        "model_bounds_mm": [
+          25.89600020000114,
+          120.84129705300714,
+          67.7067662278019
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-carbon-core",
+        "name": "Ignition lead 1 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-carbon-core.step",
+          "sha256": "1701bdd1d90d23ef5bdcd31500a8f19c33f325adbe8373a1970c526a5841c557"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-carbon-core.glb",
+          "sha256": "212aab68750e8fa016ba0e7d18f0e36b89cd3073b28c0106b136e888213f7de0"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-1-cap-boot",
+      "before": {
+        "id": "ignition-lead-1-cap-boot",
+        "name": "Ignition lead 1 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-1-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-1-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.6279601974584,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.82605927390506
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-cap-boot",
+        "name": "Ignition lead 1 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-boot.step",
+          "sha256": "c35236779fbfba01857fd377aab41c33fe3055a9ea6b577c6ee5f4b0539b4805"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-boot.glb",
+          "sha256": "123c3964fbad4889637caf97405eaf8e1cea49b0bca3feb775a322dc07606fc3"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-1-cap-contact",
+      "before": {
+        "id": "ignition-lead-1-cap-contact",
+        "name": "Ignition lead 1 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-1-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-1-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199456,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-cap-contact",
+        "name": "Ignition lead 1 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-contact.step",
+          "sha256": "42724105d93e4ddcbb3f33e0a0bfe3c1b0e78921362da0779f42a15c45934997"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-contact.glb",
+          "sha256": "762ca1f82aa7c7ebe4e7c66fd3999856eaa3ee105d09d1111f493da5b2cf177d"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-2-jacket",
+      "before": {
+        "id": "ignition-lead-2-jacket",
+        "name": "Ignition lead 2 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-2-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-2-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 8920.431428134945,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 26418,
+        "model_bounds_mm": [
+          47.396000200005744,
+          152.62610390106346,
+          84.55599777976568
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-jacket",
+        "name": "Ignition lead 2 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-jacket.step",
+          "sha256": "002fc7f13a4e3d8c6a857fdb448ed7f608b22e6b926af1996b478c5b027d5c1e"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-jacket.glb",
+          "sha256": "fa862793e700a2a406bc85851f66f2b45968ddce91cb565a9597ab94b6d9361a"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-2-carbon-core",
+      "before": {
+        "id": "ignition-lead-2-carbon-core",
+        "name": "Ignition lead 2 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-2-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-2-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 800.2176458401777,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 18236,
+        "model_bounds_mm": [
+          42.39600020000324,
+          149.27105266276504,
+          79.70676622780127
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-carbon-core",
+        "name": "Ignition lead 2 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-carbon-core.step",
+          "sha256": "213c19b3ff5b3ca41278675aa210c4e09c1098a34bab582eac543a3ed40d3783"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-carbon-core.glb",
+          "sha256": "ee3f120b1bba8619860b2af6bd3bec126d5bb2d470ab115cc519059df00772c7"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-2-cap-boot",
+      "before": {
+        "id": "ignition-lead-2-cap-boot",
+        "name": "Ignition lead 2 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-2-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-2-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.627960197458,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.826059273905116
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-cap-boot",
+        "name": "Ignition lead 2 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-boot.step",
+          "sha256": "10a979103cd32b3d9c19e3b9c91cf22420436ba50a34874cdac49e4425b13ae7"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-boot.glb",
+          "sha256": "bae1200ce9a10930655682abb7f92388085c26eb1682ab9d241e7732876dc3aa"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-2-cap-contact",
+      "before": {
+        "id": "ignition-lead-2-cap-contact",
+        "name": "Ignition lead 2 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-2-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-2-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199476,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-cap-contact",
+        "name": "Ignition lead 2 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-contact.step",
+          "sha256": "07fc0b307ebe27b5bbc00fa93ec22086116f990cb6c566b2c2fd143e5ab26b93"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-contact.glb",
+          "sha256": "e1215bcfa9b25e7924e9cd978399e53ac505dc32ab5f961b3e1b8e25441ee669"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-3-jacket",
+      "before": {
+        "id": "ignition-lead-3-jacket",
+        "name": "Ignition lead 3 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-3-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-3-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 10344.998230800058,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 32086,
+        "model_bounds_mm": [
+          161.18800020000046,
+          96.92420519481605,
+          96.55599777976465
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-jacket",
+        "name": "Ignition lead 3 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-jacket.step",
+          "sha256": "7a82dd2ee1ff6b41899ce816cc597152e933901cb1410d2a8a075c0d54628df9"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-jacket.glb",
+          "sha256": "7e8d10fd83500a6770dd92602fd207bd1a7973470232e00600a5a95fe53b8a69"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-3-carbon-core",
+      "before": {
+        "id": "ignition-lead-3-carbon-core",
+        "name": "Ignition lead 3 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-3-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-3-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 928.0104647816086,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 24492,
+        "model_bounds_mm": [
+          156.18800020000023,
+          93.56915787115346,
+          91.70676622780087
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-carbon-core",
+        "name": "Ignition lead 3 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-carbon-core.step",
+          "sha256": "221baa2b19658786443aa1d5704bf191a6e684da8107998571f87e957135eb55"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-carbon-core.glb",
+          "sha256": "f2cf8895be2364221a6eb073abb498d9b348159fb4aaeb85cb12e0b783dd13f6"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-3-cap-boot",
+      "before": {
+        "id": "ignition-lead-3-cap-boot",
+        "name": "Ignition lead 3 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-3-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-3-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.627960197458,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.826059273905116
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-cap-boot",
+        "name": "Ignition lead 3 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-boot.step",
+          "sha256": "742f756c3acbc3fa051336ff771411a6cf3e80a80c6fbbe9e5e911afdc21de51"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-boot.glb",
+          "sha256": "2067d5ff01b76dbc7fe86c5c49d294622804e36ee120b667f22729e21888de5c"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-3-cap-contact",
+      "before": {
+        "id": "ignition-lead-3-cap-contact",
+        "name": "Ignition lead 3 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-3-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-3-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199447,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-cap-contact",
+        "name": "Ignition lead 3 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-contact.step",
+          "sha256": "82ffe5045ce167c625e31f1c61ade1d8e5543a6a1cb86e8f7e8a935485395f5e"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-contact.glb",
+          "sha256": "f13275cd86f1713c7f77d4910ddfcfc8d275c606e48fe9d9e5d037f6d552b4b0"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-4-jacket",
+      "before": {
+        "id": "ignition-lead-4-jacket",
+        "name": "Ignition lead 4 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-4-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-4-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 16596.13367381737,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 47324,
+        "model_bounds_mm": [
+          307.98000020000006,
+          173.47121014548713,
+          108.55599777976391
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-jacket",
+        "name": "Ignition lead 4 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-jacket.step",
+          "sha256": "02ca4b1442e3d4a6ee9ff04ee8242ec6b72d1b16d2860840f96aff30d9d47091"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-jacket.glb",
+          "sha256": "642f1fd92681f4b4263796d40bdbee63777c32da2770cfb617527a229007fe7d"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-4-carbon-core",
+      "before": {
+        "id": "ignition-lead-4-carbon-core",
+        "name": "Ignition lead 4 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-4-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-4-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 1488.7763203460036,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 36256,
+        "model_bounds_mm": [
+          302.9800002000001,
+          170.1161597871686,
+          103.70676622780047
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-carbon-core",
+        "name": "Ignition lead 4 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-carbon-core.step",
+          "sha256": "867400dff3e2417c5c03f61dae6f0ea033eab611eb4c1c728806dbe0ebb0b2e9"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-carbon-core.glb",
+          "sha256": "2c4fb9aa5ee9988f2661268b45850d1b671421b07a3c59af4e6f8532db78ee12"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-4-cap-boot",
+      "before": {
+        "id": "ignition-lead-4-cap-boot",
+        "name": "Ignition lead 4 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-4-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-4-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.627960197458,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.826059273905116
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-cap-boot",
+        "name": "Ignition lead 4 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-boot.step",
+          "sha256": "c90ab021451426d36899a49a6df3ee0744fee0b1f89a190bd9179216caeefe67"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-boot.glb",
+          "sha256": "e55a7f8d3947f81c113a0839cbf9c740321c10a8167ff9b34a0048221d978b68"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-4-cap-contact",
+      "before": {
+        "id": "ignition-lead-4-cap-contact",
+        "name": "Ignition lead 4 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-4-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-4-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199476,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-cap-contact",
+        "name": "Ignition lead 4 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-contact.step",
+          "sha256": "77b4ccf87453984a18aa2e36af79816f352bcf5ed5c6107e50218ab7ebdb4f81"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-contact.glb",
+          "sha256": "7586f487bad40cdb83fb482328869e9ecb9ea5ab56b5f49a154284bfa62486e5"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-5-jacket",
+      "before": {
+        "id": "ignition-lead-5-jacket",
+        "name": "Ignition lead 5 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-5-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-5-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 18697.244310841386,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 46730,
+        "model_bounds_mm": [
+          421.7720002000001,
+          97.66063545287504,
+          120.55599777976664
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-jacket",
+        "name": "Ignition lead 5 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-jacket.step",
+          "sha256": "a932517d8c05e84ad1637715ab623777d67eec5a2133da6dbadf4c119d1d8e49"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-jacket.glb",
+          "sha256": "ae9839199dc672a2947434b188800ced5b9af2b4a771e10e4ff0192aac09463a"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-5-carbon-core",
+      "before": {
+        "id": "ignition-lead-5-carbon-core",
+        "name": "Ignition lead 5 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-5-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-5-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 1677.25816575562,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 33268,
+        "model_bounds_mm": [
+          416.77200020000004,
+          94.30558451288726,
+          115.7067662277999
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-carbon-core",
+        "name": "Ignition lead 5 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-carbon-core.step",
+          "sha256": "3b7d37d98ade045256b328eb07fe50e0c9f5d2e62fd696bc1331209c03b30d42"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-carbon-core.glb",
+          "sha256": "155e9900c706762c2127b1afd2bd33e56e8627263200134eb29d35263c95ddcf"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-5-cap-boot",
+      "before": {
+        "id": "ignition-lead-5-cap-boot",
+        "name": "Ignition lead 5 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-5-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-5-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.627960197458,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.826059273905116
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-cap-boot",
+        "name": "Ignition lead 5 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-boot.step",
+          "sha256": "21b6ccf1e484115b49d035e41a7cf575ec7e4c833ff1fa773d9a804dbb9612ba"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-boot.glb",
+          "sha256": "00a049e788859b1c27484f3a03c00a0fd88e7324ee83a75100fbf29453ccf9d0"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-5-cap-contact",
+      "before": {
+        "id": "ignition-lead-5-cap-contact",
+        "name": "Ignition lead 5 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-5-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-5-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199447,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-cap-contact",
+        "name": "Ignition lead 5 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-contact.step",
+          "sha256": "f1b0a36e0bb179e79bf1d0347cabef3f26ae102f73afc572cb3dd8d0a1191616"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-contact.glb",
+          "sha256": "210c4683df7971cc38d78eb1d41adf3ce16d8ecd516feb684a6c29ab1e9bc965"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-6-jacket",
+      "before": {
+        "id": "ignition-lead-6-jacket",
+        "name": "Ignition lead 6 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-6-jacket.glb",
+        "step": "/cad/engine/generated/ignition-lead-6-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 21455.839224464733,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 56096,
+        "model_bounds_mm": [
+          486.0640002000003,
+          126.21475505578532,
+          132.5559977797688
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-jacket",
+        "name": "Ignition lead 6 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-jacket.step",
+          "sha256": "fcb203acbbb817fe6ec0bad1d909cf2600961bd5a36f4a776090b633b9bcd969"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-jacket.glb",
+          "sha256": "576d4c5cbe1de0f1bf6c226b083ed462ac2380b57266b31d97d4afaf42194021"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-6-carbon-core",
+      "before": {
+        "id": "ignition-lead-6-carbon-core",
+        "name": "Ignition lead 6 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-lead-6-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-lead-6-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 1924.7232315065125,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 39850,
+        "model_bounds_mm": [
+          481.0640002000001,
+          122.85970568215947,
+          127.70676622780263
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-carbon-core",
+        "name": "Ignition lead 6 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-carbon-core.step",
+          "sha256": "94d2217e0c65732df1070c838d0a36536393ef389491f1393a35f13a79d43a35"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-carbon-core.glb",
+          "sha256": "3051124869f3ad4164b3078fc509ca9ef26e57df7ed964c6a8c9268a8a45208a"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-6-cap-boot",
+      "before": {
+        "id": "ignition-lead-6-cap-boot",
+        "name": "Ignition lead 6 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-lead-6-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-lead-6-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.6279601974584,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.82605927390506
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-cap-boot",
+        "name": "Ignition lead 6 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-boot.step",
+          "sha256": "e264cf7032d55eed9e63f0141d63da6d1768111a903768cf0f57570b2cfd9d6d"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-boot.glb",
+          "sha256": "6e6e80aae776808069a37fa824b1e588929415ff719a0b4c5bbbef0baede855f"
+        }
+      }
+    },
+    {
+      "id": "ignition-lead-6-cap-contact",
+      "before": {
+        "id": "ignition-lead-6-cap-contact",
+        "name": "Ignition lead 6 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-lead-6-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-lead-6-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199447,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-cap-contact",
+        "name": "Ignition lead 6 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-contact.step",
+          "sha256": "2f099a4e32b1c38dcb564885a031592496d78b3b0dde1e10ce3b1226d14abd78"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-contact.glb",
+          "sha256": "509a0327e9e9f88af79e10ca76313379a310cbaee7f9b059f045c63697dafc8c"
+        }
+      }
+    },
+    {
+      "id": "ignition-coil-lead-jacket",
+      "before": {
+        "id": "ignition-coil-lead-jacket",
+        "name": "Ignition coil lead jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-coil-lead-jacket.glb",
+        "step": "/cad/engine/generated/ignition-coil-lead-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 14848.851425048922,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 42216,
+        "model_bounds_mm": [
+          209.0840001,
+          97.11293404972037,
+          150.000000199999
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-jacket",
+        "name": "Ignition coil lead jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-jacket.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-jacket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 196800
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-jacket.step",
+          "sha256": "0ca50cde052d61238734a2c72cfcf0f8b98061f451839915f2d7edf3dd4b587d"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-jacket.glb",
+          "sha256": "fcf17a9ce1caaaa1b6e9c8da4f46eddf81ce178312a38b430637d528f79e3c18"
+        }
+      }
+    },
+    {
+      "id": "ignition-coil-lead-carbon-core",
+      "before": {
+        "id": "ignition-coil-lead-carbon-core",
+        "name": "Ignition coil lead carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/models/engine/ignition-coil-lead-carbon-core.glb",
+        "step": "/cad/engine/generated/ignition-coil-lead-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 1332.0346964916432,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 33234,
+        "model_bounds_mm": [
+          206.5840001,
+          92.26370249775619,
+          145.0000002000024
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-carbon-core",
+        "name": "Ignition coil lead carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "system": "ignition",
+        "color": "#45423c",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-carbon-core.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-carbon-core.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 98400
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-carbon-core.step",
+          "sha256": "e87ec422fde22fc0ffb141fbee21435be5bd46478063f754db06036ad72f9ee5"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-carbon-core.glb",
+          "sha256": "c13e392ec038bb43efa41f6fa2ef2adf44600c9874d12f6a77597e370eb08c2b"
+        }
+      }
+    },
+    {
+      "id": "ignition-coil-lead-cap-boot",
+      "before": {
+        "id": "ignition-coil-lead-cap-boot",
+        "name": "Ignition coil lead cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/models/engine/ignition-coil-lead-cap-boot.glb",
+        "step": "/cad/engine/generated/ignition-coil-lead-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 2483.6279601974584,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1044,
+        "model_bounds_mm": [
+          16.0,
+          21.980506607498796,
+          30.82605927390506
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-cap-boot",
+        "name": "Ignition coil lead cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "system": "ignition",
+        "color": "#343c45",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-boot.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-boot.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2104
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-boot.step",
+          "sha256": "ea9c5ed0e1ec060fd60682e7691de9c1b6f222a9498fdb747e8ba2d6c097d31f"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-boot.glb",
+          "sha256": "6f66f9e579c1894bb371dca32255f44f6b6fe3550902776eb45f6fabad21b866"
+        }
+      }
+    },
+    {
+      "id": "ignition-coil-lead-cap-contact",
+      "before": {
+        "id": "ignition-coil-lead-cap-contact",
+        "name": "Ignition coil lead cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/models/engine/ignition-coil-lead-cap-contact.glb",
+        "step": "/cad/engine/generated/ignition-coil-lead-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated."
+        ],
+        "volume_mm3": 198.65337546199447,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 750,
+        "model_bounds_mm": [
+          7.399999999999977,
+          9.005846253770613,
+          11.072824910155134
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-cap-contact",
+        "name": "Ignition coil lead cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "system": "ignition",
+        "color": "#b9a576",
+        "glb": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-contact.glb",
+        "step": "/cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-contact.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+          "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+        ],
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1576
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-contact.step",
+          "sha256": "a57c219e7f04cbe60bef9f37f9ad5684fe03fb83b368d06986645bbdbd245559"
+        },
+        "glb": {
+          "from": "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-contact.glb",
+          "sha256": "426d0dd5868f5a19ea58f231a2f820184129c5c556f43c72cbea4bf6c24711d1"
+        }
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "ignition-lead-1-jacket",
+      "before": {
+        "id": "ignition-lead-1-jacket",
+        "definition": "ignition-lead-1-jacket",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-jacket",
+        "definition": "ignition-lead-1-jacket",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-1-carbon-core",
+      "before": {
+        "id": "ignition-lead-1-carbon-core",
+        "definition": "ignition-lead-1-carbon-core",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-carbon-core",
+        "definition": "ignition-lead-1-carbon-core",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-1-cap-boot",
+      "before": {
+        "id": "ignition-lead-1-cap-boot",
+        "definition": "ignition-lead-1-cap-boot",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-cap-boot",
+        "definition": "ignition-lead-1-cap-boot",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-1-cap-contact",
+      "before": {
+        "id": "ignition-lead-1-cap-contact",
+        "definition": "ignition-lead-1-cap-contact",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-1-cap-contact",
+        "definition": "ignition-lead-1-cap-contact",
+        "parent": "ignition-lead-1-assembly",
+        "name": "Ignition lead 1 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-2-jacket",
+      "before": {
+        "id": "ignition-lead-2-jacket",
+        "definition": "ignition-lead-2-jacket",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-jacket",
+        "definition": "ignition-lead-2-jacket",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-2-carbon-core",
+      "before": {
+        "id": "ignition-lead-2-carbon-core",
+        "definition": "ignition-lead-2-carbon-core",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-carbon-core",
+        "definition": "ignition-lead-2-carbon-core",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-2-cap-boot",
+      "before": {
+        "id": "ignition-lead-2-cap-boot",
+        "definition": "ignition-lead-2-cap-boot",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-cap-boot",
+        "definition": "ignition-lead-2-cap-boot",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-2-cap-contact",
+      "before": {
+        "id": "ignition-lead-2-cap-contact",
+        "definition": "ignition-lead-2-cap-contact",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-2-cap-contact",
+        "definition": "ignition-lead-2-cap-contact",
+        "parent": "ignition-lead-2-assembly",
+        "name": "Ignition lead 2 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-3-jacket",
+      "before": {
+        "id": "ignition-lead-3-jacket",
+        "definition": "ignition-lead-3-jacket",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-jacket",
+        "definition": "ignition-lead-3-jacket",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-3-carbon-core",
+      "before": {
+        "id": "ignition-lead-3-carbon-core",
+        "definition": "ignition-lead-3-carbon-core",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-carbon-core",
+        "definition": "ignition-lead-3-carbon-core",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-3-cap-boot",
+      "before": {
+        "id": "ignition-lead-3-cap-boot",
+        "definition": "ignition-lead-3-cap-boot",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-cap-boot",
+        "definition": "ignition-lead-3-cap-boot",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-3-cap-contact",
+      "before": {
+        "id": "ignition-lead-3-cap-contact",
+        "definition": "ignition-lead-3-cap-contact",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-3-cap-contact",
+        "definition": "ignition-lead-3-cap-contact",
+        "parent": "ignition-lead-3-assembly",
+        "name": "Ignition lead 3 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-4-jacket",
+      "before": {
+        "id": "ignition-lead-4-jacket",
+        "definition": "ignition-lead-4-jacket",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-jacket",
+        "definition": "ignition-lead-4-jacket",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-4-carbon-core",
+      "before": {
+        "id": "ignition-lead-4-carbon-core",
+        "definition": "ignition-lead-4-carbon-core",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-carbon-core",
+        "definition": "ignition-lead-4-carbon-core",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-4-cap-boot",
+      "before": {
+        "id": "ignition-lead-4-cap-boot",
+        "definition": "ignition-lead-4-cap-boot",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-cap-boot",
+        "definition": "ignition-lead-4-cap-boot",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-4-cap-contact",
+      "before": {
+        "id": "ignition-lead-4-cap-contact",
+        "definition": "ignition-lead-4-cap-contact",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-4-cap-contact",
+        "definition": "ignition-lead-4-cap-contact",
+        "parent": "ignition-lead-4-assembly",
+        "name": "Ignition lead 4 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-5-jacket",
+      "before": {
+        "id": "ignition-lead-5-jacket",
+        "definition": "ignition-lead-5-jacket",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-jacket",
+        "definition": "ignition-lead-5-jacket",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-5-carbon-core",
+      "before": {
+        "id": "ignition-lead-5-carbon-core",
+        "definition": "ignition-lead-5-carbon-core",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-carbon-core",
+        "definition": "ignition-lead-5-carbon-core",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-5-cap-boot",
+      "before": {
+        "id": "ignition-lead-5-cap-boot",
+        "definition": "ignition-lead-5-cap-boot",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-cap-boot",
+        "definition": "ignition-lead-5-cap-boot",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-5-cap-contact",
+      "before": {
+        "id": "ignition-lead-5-cap-contact",
+        "definition": "ignition-lead-5-cap-contact",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-5-cap-contact",
+        "definition": "ignition-lead-5-cap-contact",
+        "parent": "ignition-lead-5-assembly",
+        "name": "Ignition lead 5 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-6-jacket",
+      "before": {
+        "id": "ignition-lead-6-jacket",
+        "definition": "ignition-lead-6-jacket",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-jacket",
+        "definition": "ignition-lead-6-jacket",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-6-carbon-core",
+      "before": {
+        "id": "ignition-lead-6-carbon-core",
+        "definition": "ignition-lead-6-carbon-core",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-carbon-core",
+        "definition": "ignition-lead-6-carbon-core",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-6-cap-boot",
+      "before": {
+        "id": "ignition-lead-6-cap-boot",
+        "definition": "ignition-lead-6-cap-boot",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-cap-boot",
+        "definition": "ignition-lead-6-cap-boot",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-lead-6-cap-contact",
+      "before": {
+        "id": "ignition-lead-6-cap-contact",
+        "definition": "ignition-lead-6-cap-contact",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-lead-6-cap-contact",
+        "definition": "ignition-lead-6-cap-contact",
+        "parent": "ignition-lead-6-assembly",
+        "name": "Ignition lead 6 cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    },
+    {
+      "id": "ignition-coil-lead-jacket",
+      "before": {
+        "id": "ignition-coil-lead-jacket",
+        "definition": "ignition-coil-lead-jacket",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-jacket",
+        "definition": "ignition-coil-lead-jacket",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead jacket",
+        "function": "Hollow rubber insulation surrounds the separate carbon core. Route and diameter are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-coil-lead-carbon-core",
+      "before": {
+        "id": "ignition-coil-lead-carbon-core",
+        "definition": "ignition-coil-lead-carbon-core",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-carbon-core",
+        "definition": "ignition-coil-lead-carbon-core",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead carbon core",
+        "function": "Aggregate carbon-impregnated fiber conductor carries the secondary ignition signal. Individual fibers, resistance and voltage are not simulated.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          280,
+          30
+        ]
+      }
+    },
+    {
+      "id": "ignition-coil-lead-cap-boot",
+      "before": {
+        "id": "ignition-coil-lead-cap-boot",
+        "definition": "ignition-coil-lead-cap-boot",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-cap-boot",
+        "definition": "ignition-coil-lead-cap-boot",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead cap boot",
+        "function": "Separate insulating boot encloses the terminal and cable entry. Production contour and sealing compression remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          100
+        ]
+      }
+    },
+    {
+      "id": "ignition-coil-lead-cap-contact",
+      "before": {
+        "id": "ignition-coil-lead-cap-contact",
+        "definition": "ignition-coil-lead-cap-contact",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      },
+      "after": {
+        "id": "ignition-coil-lead-cap-contact",
+        "definition": "ignition-coil-lead-cap-contact",
+        "parent": "ignition-coil-lead-assembly",
+        "name": "Ignition coil lead cap contact",
+        "function": "Conductive terminal cup joins the cable core to its coil, cap or plug contact. Clip construction and dimensions are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          180,
+          170
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Uninstalled candidate. World-aligned original definition frames, millimetre STEP and metre GLTF with existing axis conversion. All occurrence transforms unchanged; connector shift is baked in assets.",
+    "Routes and connector dimensions remain estimated. Static q0/axial0 neighbor audit only. Coplanar Boolean replay and fixed-tail subtraction are untrusted; separately scoped source/curve identity and actual boundary probes retained."
+  ]
+}

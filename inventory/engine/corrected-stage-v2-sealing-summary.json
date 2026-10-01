@@ -1,0 +1,393 @@
+{
+  "status": "FAIL v2 composed static stage",
+  "fresh_pairs": 62,
+  "fresh_conflicts": 7,
+  "metric_errors": 0,
+  "retained_v1_conflicts": [
+    {
+      "a": "block",
+      "b": "ac-compressor-rear-cylinder",
+      "overlap_mm3": 3773.224468631977
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-swashplate-shaft",
+      "overlap_mm3": 3200.293502022581
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-piston-5",
+      "overlap_mm3": 312.4320795299648
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-shoe-5-rear",
+      "overlap_mm3": 349.30666133068667
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-shoe-5-front",
+      "overlap_mm3": 34.18003502267591
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-case-bolt-5",
+      "overlap_mm3": 282.74333882308133
+    },
+    {
+      "a": "timing-cover",
+      "b": "water-pump-housing",
+      "overlap_mm3": 2550.3952214270903
+    },
+    {
+      "a": "timing-cover",
+      "b": "water-pump-gasket",
+      "overlap_mm3": 61.13067189528523
+    },
+    {
+      "a": "timing-cover",
+      "b": "ps-ac-support-bracket",
+      "overlap_mm3": 575.9514419711361
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-front-cylinder",
+      "overlap_mm3": 17596.47419930056
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-swashplate-shaft",
+      "overlap_mm3": 1608.3966322038234
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-case-bolt-4",
+      "overlap_mm3": 84.82300164692444
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-piston-5",
+      "overlap_mm3": 3769.6314368560934
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-shoe-5-front",
+      "overlap_mm3": 332.9132415558495
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-piston-5-front-seal",
+      "overlap_mm3": 24.282026829419348
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-case-bolt-5",
+      "overlap_mm3": 197.92033717615692
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "timing-cover-mounting-screw-3",
+      "overlap_mm3": 19.26567147488726
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-1-jacket",
+      "overlap_mm3": 24.738047001502014
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-1-carbon-core",
+      "overlap_mm3": 1.387135389883766
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-1-cap-boot",
+      "overlap_mm3": 527.6417787194283
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-1-cap-contact",
+      "overlap_mm3": 82.96175344247364
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-2-jacket",
+      "overlap_mm3": 24.738047001366354
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-2-carbon-core",
+      "overlap_mm3": 1.3871353898812382
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-2-cap-boot",
+      "overlap_mm3": 527.6417787197009
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-2-cap-contact",
+      "overlap_mm3": 82.96175344231067
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-3-jacket",
+      "overlap_mm3": 24.738047001473113
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-3-carbon-core",
+      "overlap_mm3": 1.3871353899031624
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-3-cap-boot",
+      "overlap_mm3": 524.3178043298493
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-3-cap-contact",
+      "overlap_mm3": 82.96175344246925
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-4-jacket",
+      "overlap_mm3": 24.73804700136989
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-4-carbon-core",
+      "overlap_mm3": 1.3871353898788545
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-4-cap-boot",
+      "overlap_mm3": 527.6417787197887
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-4-cap-contact",
+      "overlap_mm3": 82.96175344223956
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-5-jacket",
+      "overlap_mm3": 24.738047001478385
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-5-carbon-core",
+      "overlap_mm3": 1.3871353899041057
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-5-cap-boot",
+      "overlap_mm3": 524.3178044605702
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-5-cap-contact",
+      "overlap_mm3": 82.96175344246514
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-6-jacket",
+      "overlap_mm3": 24.738047001499968
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-6-carbon-core",
+      "overlap_mm3": 1.3871353898838328
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-6-cap-boot",
+      "overlap_mm3": 527.6417787194079
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-lead-6-cap-contact",
+      "overlap_mm3": 82.96175344236127
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-coil-lead-jacket",
+      "overlap_mm3": 24.738047001481217
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-coil-lead-carbon-core",
+      "overlap_mm3": 1.387135389912309
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-coil-lead-cap-boot",
+      "overlap_mm3": 527.6417787194538
+    },
+    {
+      "a": "distributor-cap",
+      "b": "ignition-coil-lead-cap-contact",
+      "overlap_mm3": 82.96175344225858
+    },
+    {
+      "a": "distributor-terminal-1",
+      "b": "ignition-lead-1-jacket",
+      "overlap_mm3": 6.612986237062854
+    },
+    {
+      "a": "distributor-terminal-1",
+      "b": "ignition-lead-1-carbon-core",
+      "overlap_mm3": 0.41739665493057587
+    },
+    {
+      "a": "distributor-terminal-1",
+      "b": "ignition-lead-1-cap-boot",
+      "overlap_mm3": 65.46208301194136
+    },
+    {
+      "a": "distributor-terminal-1",
+      "b": "ignition-lead-1-cap-contact",
+      "overlap_mm3": 60.532499319153224
+    },
+    {
+      "a": "distributor-terminal-2",
+      "b": "ignition-lead-4-jacket",
+      "overlap_mm3": 6.612986236962672
+    },
+    {
+      "a": "distributor-terminal-2",
+      "b": "ignition-lead-4-carbon-core",
+      "overlap_mm3": 0.41739665492303984
+    },
+    {
+      "a": "distributor-terminal-2",
+      "b": "ignition-lead-4-cap-boot",
+      "overlap_mm3": 65.4620830117494
+    },
+    {
+      "a": "distributor-terminal-2",
+      "b": "ignition-lead-4-cap-contact",
+      "overlap_mm3": 60.53249931918394
+    },
+    {
+      "a": "distributor-terminal-3",
+      "b": "ignition-lead-2-jacket",
+      "overlap_mm3": 6.6129862369613805
+    },
+    {
+      "a": "distributor-terminal-3",
+      "b": "ignition-lead-2-carbon-core",
+      "overlap_mm3": 0.4173966549229854
+    },
+    {
+      "a": "distributor-terminal-3",
+      "b": "ignition-lead-2-cap-boot",
+      "overlap_mm3": 65.46208301180528
+    },
+    {
+      "a": "distributor-terminal-3",
+      "b": "ignition-lead-2-cap-contact",
+      "overlap_mm3": 60.5324993191719
+    },
+    {
+      "a": "distributor-terminal-4",
+      "b": "ignition-lead-6-jacket",
+      "overlap_mm3": 6.61298623706179
+    },
+    {
+      "a": "distributor-terminal-4",
+      "b": "ignition-lead-6-carbon-core",
+      "overlap_mm3": 0.41739665493056705
+    },
+    {
+      "a": "distributor-terminal-4",
+      "b": "ignition-lead-6-cap-boot",
+      "overlap_mm3": 65.46208301192253
+    },
+    {
+      "a": "distributor-terminal-4",
+      "b": "ignition-lead-6-cap-contact",
+      "overlap_mm3": 60.53249931922198
+    },
+    {
+      "a": "distributor-terminal-5",
+      "b": "ignition-lead-3-jacket",
+      "overlap_mm3": 6.612986237048541
+    },
+    {
+      "a": "distributor-terminal-5",
+      "b": "ignition-lead-3-carbon-core",
+      "overlap_mm3": 0.4173966549291499
+    },
+    {
+      "a": "distributor-terminal-5",
+      "b": "ignition-lead-3-cap-boot",
+      "overlap_mm3": 65.46208301190757
+    },
+    {
+      "a": "distributor-terminal-5",
+      "b": "ignition-lead-3-cap-contact",
+      "overlap_mm3": 60.532499319154574
+    },
+    {
+      "a": "distributor-terminal-6",
+      "b": "ignition-lead-5-jacket",
+      "overlap_mm3": 6.612986237048527
+    },
+    {
+      "a": "distributor-terminal-6",
+      "b": "ignition-lead-5-carbon-core",
+      "overlap_mm3": 0.41739665492787664
+    },
+    {
+      "a": "distributor-terminal-6",
+      "b": "ignition-lead-5-cap-boot",
+      "overlap_mm3": 65.4620830119262
+    },
+    {
+      "a": "distributor-terminal-6",
+      "b": "ignition-lead-5-cap-contact",
+      "overlap_mm3": 60.532499319067725
+    },
+    {
+      "a": "distributor-coil-terminal",
+      "b": "ignition-coil-lead-jacket",
+      "overlap_mm3": 6.612986237040159
+    },
+    {
+      "a": "distributor-coil-terminal",
+      "b": "ignition-coil-lead-carbon-core",
+      "overlap_mm3": 0.4173966549231148
+    },
+    {
+      "a": "distributor-coil-terminal",
+      "b": "ignition-coil-lead-cap-boot",
+      "overlap_mm3": 65.46208301194102
+    },
+    {
+      "a": "distributor-coil-terminal",
+      "b": "ignition-coil-lead-cap-contact",
+      "overlap_mm3": 60.53249931913688
+    },
+    {
+      "a": "ac-compressor-swashplate-shaft",
+      "b": "timing-cover-mounting-screw-6",
+      "overlap_mm3": 250.30242196508271
+    },
+    {
+      "a": "ac-compressor-piston-5",
+      "b": "timing-cover-mounting-screw-6",
+      "overlap_mm3": 199.23512410236762
+    }
+  ],
+  "combined_known_conflict_pairs": 82,
+  "resolved_scope": "Old front seal deleted; all affected case/elastomer/spring/hub broadphase neighbor pairs clear at q0. Dynamic proof not implied.",
+  "new_failure_scope": "Main-cover gasket against water-pump gasket and six compressor parts.",
+  "bindings": {
+    "inventory/engine/corrected-stage-changed-neighbors.json": "4c1b03dbbc937662d9645541eb28a8951c7d950143b8174cc53915ad3a23ee88",
+    "inventory/engine/corrected-stage-v2-sealing-neighbors.json": "e718e6593adbf83baa7a8810baf748d0d5cc33b74f43cddbf1bb10af4cd63991",
+    "scripts/check-corrected-stage-v2-sealing-neighbors.py": "67b0cb2e1c42e27407a3b713a851a0978dc68f722b81c4593f29fd48bfa20435",
+    "scripts/summarize-corrected-stage-v2-sealing.py": "a4e099688d2204a6125a0a0a0ffd900aa1c73b1e561d1c2ddd9dc6bbe3f890a1"
+  },
+  "canonicalModified": false
+}

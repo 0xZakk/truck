@@ -1,0 +1,154 @@
+{
+  "status": "FAIL remaining v3 static interfaces; ignition correction passes scoped replay",
+  "remaining_known_pairs": [
+    {
+      "a": "block",
+      "b": "ac-compressor-rear-cylinder",
+      "overlap_mm3": 3773.224468631977
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-swashplate-shaft",
+      "overlap_mm3": 3200.293502022581
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-piston-5",
+      "overlap_mm3": 312.4320795299648
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-shoe-5-rear",
+      "overlap_mm3": 349.30666133068667
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-shoe-5-front",
+      "overlap_mm3": 34.18003502267591
+    },
+    {
+      "a": "block",
+      "b": "ac-compressor-case-bolt-5",
+      "overlap_mm3": 282.74333882308133
+    },
+    {
+      "a": "timing-cover",
+      "b": "water-pump-housing",
+      "overlap_mm3": 2550.3952214270903
+    },
+    {
+      "a": "timing-cover",
+      "b": "water-pump-gasket",
+      "overlap_mm3": 61.13067189528523
+    },
+    {
+      "a": "timing-cover",
+      "b": "ps-ac-support-bracket",
+      "overlap_mm3": 575.9514419711361
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-front-cylinder",
+      "overlap_mm3": 17596.47419930056
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-swashplate-shaft",
+      "overlap_mm3": 1608.3966322038234
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-case-bolt-4",
+      "overlap_mm3": 84.82300164692444
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-piston-5",
+      "overlap_mm3": 3769.6314368560934
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-shoe-5-front",
+      "overlap_mm3": 332.9132415558495
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-piston-5-front-seal",
+      "overlap_mm3": 24.282026829419348
+    },
+    {
+      "a": "timing-cover",
+      "b": "ac-compressor-case-bolt-5",
+      "overlap_mm3": 197.92033717615692
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "timing-cover-mounting-screw-3",
+      "overlap_mm3": 19.26567147488726
+    },
+    {
+      "a": "ac-compressor-swashplate-shaft",
+      "b": "timing-cover-mounting-screw-6",
+      "overlap_mm3": 250.30242196508271
+    },
+    {
+      "a": "ac-compressor-piston-5",
+      "b": "timing-cover-mounting-screw-6",
+      "overlap_mm3": 199.23512410236762
+    },
+    {
+      "a": "water-pump-gasket",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 40.320315501498264
+    },
+    {
+      "a": "ac-compressor-rear-cylinder",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 173.56832555708357
+    },
+    {
+      "a": "ac-compressor-front-cylinder",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 52.825142560846466
+    },
+    {
+      "a": "ac-compressor-case-seal",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 75.4644893726524
+    },
+    {
+      "a": "ac-compressor-swashplate-shaft",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 243.57077812385538
+    },
+    {
+      "a": "ac-compressor-shoe-5-front",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 50.50764694618474
+    },
+    {
+      "a": "ac-compressor-case-bolt-5",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 22.619467105846823
+    }
+  ],
+  "remaining_count": 26,
+  "superseded_ignition_pairs": 56,
+  "fresh_ignition_pairs": 365,
+  "bindings": {
+    "inventory/engine/corrected-stage-v2-sealing-summary.json": "8175a0bea08dbc4d18250d68caeaea0073e8c3c1ce05d6ed77ce97c915db17c2",
+    "inventory/engine/corrected-stage-v2-sealing-neighbors.json": "e718e6593adbf83baa7a8810baf748d0d5cc33b74f43cddbf1bb10af4cd63991",
+    "inventory/engine/shifted-ignition-lead-neighbor-validation.json": "bf7bd5475dbaf4fa27cf39d4df993d88e163f226f30f97197bd317122d02ebef",
+    "inventory/engine/shifted-ignition-lead-integration-proposal.json": "c74737208bca054c5ca25639e2eef88d61b3a078b4684ac7c7c9617688be99ac",
+    "inventory/engine/corrected-stage-v3-ignition-replay.json": "0a5f1ac17e9da9a494e08d98ef093e2707528d16b6a45d81e375b3c921f35137",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "inventory/engine/engine-stage-v3-navigation-validation.json": "e278eb2a39018e3d7e0c57b3810a31f71a3010630d97639e21daac5a08b1f33c",
+    "scripts/summarize-corrected-stage-v3-ignition.py": "43b661b5fc42d7e386a7dad4630fd9ac128d23c8c39a9208a2786bd66d8b3410"
+  },
+  "limits": [
+    "Known static pairs only, not a complete production BOM or motion-clearance acceptance",
+    "Inherited rod-bolt motion conflicts remain",
+    "Pump architecture, dimensional/source gaps and browser acceptance remain",
+    "No canonical installation"
+  ]
+}

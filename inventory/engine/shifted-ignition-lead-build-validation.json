@@ -1,0 +1,977 @@
+{
+  "status": "PASS seven local re-registered cap joints; mesh/neighborhood and visuals pending",
+  "inputs": {
+    "scripts/check-shifted-ignition-lead-candidate.py": "a20ff96fcdc10637abaf44ef7e17b16b4fb86b3fcbb29c15f05359e8b8dcc859",
+    "cad/engine/shifted_ignition_lead_candidate.py": "0739eb444e83810e0160de22c25880b831f32c8a51731e6cd1a0109a9f49b532",
+    "cad/engine/ignition_leads.py": "2486908ee1c1acaeaa3eda042d52e361dcb3334aa20e045735e3e07405c78d82",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/distributor-cap.step": "94d852b28a458000b3770cc4f942aa46c2bf9e07fde0a4ed55333a116da590cf",
+    "cad/engine/generated/distributor-cap-terminal.step": "ce4280f9b90dff814285ffd1706a403e51c306ed8d1401152ad0ffdd52832354",
+    "cad/engine/generated/ignition-lead-1-jacket.step": "a0a357c84b65fbf6a9300598a1eab5ada76235979ee5ef9a4923354e66c06b3a",
+    "cad/engine/generated/ignition-lead-1-carbon-core.step": "c9c0134b59ffa89fd82f41430437c0206d3e4566c45100195a9edb246893a4dd",
+    "cad/engine/generated/ignition-lead-1-cap-boot.step": "71a516b227e5640cc5426ad87ffbffe6351a15b4bfb6fc1d6f0fe2641e285ae3",
+    "cad/engine/generated/ignition-lead-1-cap-contact.step": "8a40f2518f0e12faa6db05e699f3c69d58e48294a85f204e11e5a8b501b37684",
+    "cad/engine/generated/ignition-lead-2-jacket.step": "bf1cda489f440615c69dcdd1a25eb898a37470fe028c8fbf1e371390078e0d57",
+    "cad/engine/generated/ignition-lead-2-carbon-core.step": "be6ac0f672496bfab4b1c289d53d45c148e907656aeaaf376c71694f757baef2",
+    "cad/engine/generated/ignition-lead-2-cap-boot.step": "aa9d7221718fc2047baa760bc70c873f5a6e543d65087477a1b8d382aca8a24d",
+    "cad/engine/generated/ignition-lead-2-cap-contact.step": "de154600abc82a804a5ebccad660b0d98f577c2cb26add3eaedc9f5187d768b0",
+    "cad/engine/generated/ignition-lead-3-jacket.step": "fcd06769fa6fff4c8592eb698bc4b8b2cef8276e02487430f86e6607ca14a19b",
+    "cad/engine/generated/ignition-lead-3-carbon-core.step": "82bcf366217d3ede2044701ec0b1dc798c73d7a3ed7481a02909eeb9a4e8c934",
+    "cad/engine/generated/ignition-lead-3-cap-boot.step": "421440e935024490dc2f1c6df98ca3389ae61bf380cb5571752d65e5397cca4f",
+    "cad/engine/generated/ignition-lead-3-cap-contact.step": "0d2c55dec2df9faa7a19faed03d94c9add788243ce2ef3839731bb066e0452ee",
+    "cad/engine/generated/ignition-lead-4-jacket.step": "b09b8ae901cb7fc37298b95ab26501e61d432164028b1f5bfe37d4f3ee384c91",
+    "cad/engine/generated/ignition-lead-4-carbon-core.step": "a8726611fb8ae7d2618e25817209550e51afd17a10a8d3d834712be9807a781e",
+    "cad/engine/generated/ignition-lead-4-cap-boot.step": "531f91216380eca2797b9f20970d8b84f7ca84a150732f3eceb9834a82e7ddf2",
+    "cad/engine/generated/ignition-lead-4-cap-contact.step": "c1e289a0fcf178712bbd85e2408083beb8ea34cfb6ef2e563d7fe5ee077b8473",
+    "cad/engine/generated/ignition-lead-5-jacket.step": "ebaac3bd62aa843eb9462fe06d3cfc92ea7593410bde6fb34f3d1a8d70b462d8",
+    "cad/engine/generated/ignition-lead-5-carbon-core.step": "dc10a2b1d5a5b7bcc58b287a63060bd851d2c7776003d14eaf22d1c32a60c7c6",
+    "cad/engine/generated/ignition-lead-5-cap-boot.step": "3c11a9b5230c42a983445295525b7d9c4b95a35543cd3e885419f30174c638f8",
+    "cad/engine/generated/ignition-lead-5-cap-contact.step": "7e77f9e4215b884ebc39efd21b9a9cd8670efbdecb4f5db5aa2759730dc75d80",
+    "cad/engine/generated/ignition-lead-6-jacket.step": "60a73b9cfefbf1f1995a83465ed640303adb27a87d7db302582091e1a00f933d",
+    "cad/engine/generated/ignition-lead-6-carbon-core.step": "2ab8228b3cef27266a0931befe114415c72e94c75b95698d3a4f0bcf14d88912",
+    "cad/engine/generated/ignition-lead-6-cap-boot.step": "f072b31d356cc063c6bdd5f2685ca0af1226ed208d9d0578d6cb08fa4088c075",
+    "cad/engine/generated/ignition-lead-6-cap-contact.step": "322a6cd9bf9b7be503a3a8e2b76adaeac67983b9224f3432820236ca97559c1f",
+    "cad/engine/generated/ignition-coil-lead-jacket.step": "53354650f22387be2cd3841902dfe626750a1257ffb6e03bf7144585499aaddf",
+    "cad/engine/generated/ignition-coil-lead-carbon-core.step": "cd60f1f83a6ed05329e9aa9030d9118043151fe71d750a4e18fd50d6af717e6b",
+    "cad/engine/generated/ignition-coil-lead-cap-boot.step": "016d0f2c8b8d027da01001498e8be9a41818f2a9817e1fb1c77d99e5574358d2",
+    "cad/engine/generated/ignition-coil-lead-cap-contact.step": "6b3b88934d573c21f488fef15444ff453105bb69199acbcd9aec71423f806cd5"
+  },
+  "families": [
+    {
+      "prefix": "ignition-lead-1",
+      "controls_old": [
+        [
+          260.584,
+          219.59457447947995,
+          322.8012086603303
+        ],
+        [
+          260.584,
+          226.43497734599333,
+          341.5950610760484
+        ],
+        [
+          266.55800000000005,
+          200.0,
+          352.0
+        ],
+        [
+          272.53200000000004,
+          200.0,
+          352.0
+        ]
+      ],
+      "controls_new": [
+        [
+          260.584,
+          224.70439546964104,
+          326.8890654524592
+        ],
+        [
+          260.584,
+          231.54479833615443,
+          345.6829178681773
+        ],
+        [
+          266.55800000000005,
+          200.0,
+          352.0
+        ],
+        [
+          272.53200000000004,
+          200.0,
+          352.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 6.548361852765083e-10,
+          "replay_bounds_error_mm": 6.59383658785373e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 5.090547750784213e-06,
+          "radial_fault_0_2mm_distance_mm": 0.19999871442500317,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 3.4560798667371273e-10
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 8.071765478234738e-12,
+          "replay_bounds_error_mm": 4.433786671143025e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 4.848140786488437e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000006838713358,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 1.3096723705530167e-10
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.192326403222978e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.581135388230905e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-1-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-1-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        284.48,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 3968.8238326997357,
+      "fixed_path_surface_max_error_mm": 6.462903184437047e-06,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589794
+      },
+      "stale_cap_boot_overlap_mm3": 527.6417787052023
+    },
+    {
+      "prefix": "ignition-lead-2",
+      "controls_old": [
+        [
+          211.084,
+          246.44989796400927,
+          313.0266702803715
+        ],
+        [
+          211.084,
+          253.29030083052265,
+          331.8205226960896
+        ],
+        [
+          200.985,
+          245.0,
+          364.0
+        ],
+        [
+          190.886,
+          245.0,
+          364.0
+        ]
+      ],
+      "controls_new": [
+        [
+          211.084,
+          251.55971895417036,
+          317.1145270725004
+        ],
+        [
+          211.084,
+          258.40012182068375,
+          335.9083794882185
+        ],
+        [
+          200.985,
+          245.0,
+          364.0
+        ],
+        [
+          190.886,
+          245.0,
+          364.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 1.1641532182693481e-09,
+          "replay_bounds_error_mm": 5.5706550483591855e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 1.3462704097483607e-05,
+          "radial_fault_0_2mm_distance_mm": 0.2000074370987457,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 8.74933903105557e-10
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 1.3346834748517722e-10,
+          "replay_bounds_error_mm": 4.661160346586257e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 1.282162152599196e-05,
+          "radial_fault_0_2mm_distance_mm": 0.20000212488750208,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 1.6132162272697315e-10
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.2150637707673013e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5555558497435413e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-2-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-2-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        170.688,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 5395.105957137586,
+      "fixed_path_surface_max_error_mm": 7.526548854181613e-06,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589794
+      },
+      "stale_cap_boot_overlap_mm3": 527.6417787055408
+    },
+    {
+      "prefix": "ignition-lead-3",
+      "controls_old": [
+        [
+          211.084,
+          192.73925099495062,
+          332.5757470402891
+        ],
+        [
+          211.084,
+          199.579653861464,
+          351.3695994560072
+        ],
+        [
+          172.537,
+          155.0,
+          376.0
+        ],
+        [
+          133.99,
+          155.0,
+          376.0
+        ]
+      ],
+      "controls_new": [
+        [
+          211.084,
+          197.84907198511172,
+          336.663603832418
+        ],
+        [
+          211.084,
+          204.6894748516251,
+          355.4574562481361
+        ],
+        [
+          172.537,
+          155.0,
+          376.0
+        ],
+        [
+          133.99,
+          155.0,
+          376.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 1.8935679690912366e-09,
+          "replay_bounds_error_mm": 4.945377440890297e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 9.919637202837281e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000347610044328,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 7.185008144006133e-10
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 1.8553691916167736e-10,
+          "replay_bounds_error_mm": 4.774847184307873e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 6.3348797529180265e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000099316719935,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 7.980816008057445e-11
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.205968823749572e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5925040720030665e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-3-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-3-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        56.896,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 0.0,
+      "fixed_path_surface_max_error_mm": 8.125008631485417e-06,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589793
+      },
+      "stale_cap_boot_overlap_mm3": 524.317804286451
+    },
+    {
+      "prefix": "ignition-lead-4",
+      "controls_old": [
+        [
+          244.084,
+          246.44989796400927,
+          313.0266702803715
+        ],
+        [
+          244.084,
+          253.29030083052265,
+          331.8205226960896
+        ],
+        [
+          153.594,
+          270.0,
+          388.0
+        ],
+        [
+          93.594,
+          270.0,
+          388.0
+        ]
+      ],
+      "controls_new": [
+        [
+          244.084,
+          251.55971895417036,
+          317.1145270725004
+        ],
+        [
+          244.084,
+          258.40012182068375,
+          335.9083794882185
+        ],
+        [
+          153.594,
+          270.0,
+          388.0
+        ],
+        [
+          93.594,
+          270.0,
+          388.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 3.1250237952917814e-09,
+          "replay_bounds_error_mm": 6.821210263296962e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 9.402724319994014e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000070523269173,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 4.383764462545514e-09
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 2.9535840440075845e-09,
+          "replay_bounds_error_mm": 7.503331289626658e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 8.954976604072899e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000035778565114,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 2.878778104786761e-09
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.2150637707673013e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5555558497435413e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-4-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-4-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        -56.896,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 0.0,
+      "fixed_path_surface_max_error_mm": 1.0493772882265795e-05,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589794
+      },
+      "stale_cap_boot_overlap_mm3": 527.6417787055059
+    },
+    {
+      "prefix": "ignition-lead-5",
+      "controls_old": [
+        [
+          244.084,
+          192.73925099495062,
+          332.5757470402891
+        ],
+        [
+          244.084,
+          199.579653861464,
+          351.3695994560072
+        ],
+        [
+          96.69800000000001,
+          180.0,
+          400.0
+        ],
+        [
+          36.69800000000001,
+          180.0,
+          400.0
+        ]
+      ],
+      "controls_new": [
+        [
+          244.084,
+          197.84907198511172,
+          336.663603832418
+        ],
+        [
+          244.084,
+          204.6894748516251,
+          355.4574562481361
+        ],
+        [
+          96.69800000000001,
+          180.0,
+          400.0
+        ],
+        [
+          36.69800000000001,
+          180.0,
+          400.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 3.2923708204180002e-09,
+          "replay_bounds_error_mm": 4.035882739117369e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 4.578773070520511e-06,
+          "radial_fault_0_2mm_distance_mm": 0.19999998069344313,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 5.20230969414115e-10
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 1.2337295629549772e-09,
+          "replay_bounds_error_mm": 5.9685589803848416e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 4.360736365417787e-06,
+          "radial_fault_0_2mm_distance_mm": 0.20000109438623045,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 2.6723228074843064e-09
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.2241587177850306e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5925040720030665e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-5-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-5-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        -170.688,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 0.0,
+      "fixed_path_surface_max_error_mm": 3.2595442547341303e-06,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589793
+      },
+      "stale_cap_boot_overlap_mm3": 524.3178042862659
+    },
+    {
+      "prefix": "ignition-lead-6",
+      "controls_old": [
+        [
+          194.584,
+          219.59457447947995,
+          322.8012086603303
+        ],
+        [
+          194.584,
+          226.43497734599333,
+          341.5950610760484
+        ],
+        [
+          15.051999999999992,
+          220.0,
+          412.0
+        ],
+        [
+          -44.94800000000001,
+          220.0,
+          412.0
+        ]
+      ],
+      "controls_new": [
+        [
+          194.584,
+          224.70439546964104,
+          326.8890654524592
+        ],
+        [
+          194.584,
+          231.54479833615443,
+          345.6829178681773
+        ],
+        [
+          15.051999999999992,
+          220.0,
+          412.0
+        ],
+        [
+          -44.94800000000001,
+          220.0,
+          412.0
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 3.7325662560760975e-09,
+          "replay_bounds_error_mm": 5.115907697472721e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 1.0124476194598029e-05,
+          "radial_fault_0_2mm_distance_mm": 0.19999989017426037,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 1.2878444977104664e-08
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 1.8760601960821077e-09,
+          "replay_bounds_error_mm": 4.519051799434237e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 9.642368147388708e-06,
+          "radial_fault_0_2mm_distance_mm": 0.2000028505031361,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 4.747789716930129e-09
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.2150637707673013e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5839775591739453e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-lead-6-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-lead-6-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        -284.48,
+        101.22586055615179,
+        286.2329265929808
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 0.0,
+      "fixed_path_surface_max_error_mm": 1.1805074971811592e-05,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589794
+      },
+      "stale_cap_boot_overlap_mm3": 527.6417787051942
+    },
+    {
+      "prefix": "ignition-coil-lead",
+      "controls_old": [
+        [
+          130.0,
+          300.0,
+          400.0
+        ],
+        [
+          150.0,
+          300.0,
+          400.0
+        ],
+        [
+          227.584,
+          246.95618594553346,
+          397.9766183232028
+        ],
+        [
+          227.584,
+          229.85517877925,
+          350.9919872839075
+        ]
+      ],
+      "controls_new": [
+        [
+          130.0,
+          300.0,
+          400.0
+        ],
+        [
+          150.0,
+          300.0,
+          400.0
+        ],
+        [
+          227.584,
+          252.06600693569456,
+          402.0644751153317
+        ],
+        [
+          227.584,
+          234.9649997694111,
+          355.0798440760364
+        ]
+      ],
+      "parts": {
+        "jacket": {
+          "replay_volume_error_mm3": 4.2928149923682213e-10,
+          "replay_bounds_error_mm": 5.6559201766503975e-12,
+          "bidirectional_edge_and_circle_samples": 708,
+          "max_surface_error_mm": 2.0852413928630297e-05,
+          "radial_fault_0_2mm_distance_mm": 0.1999977582001985,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 4.511093720793724e-10
+        },
+        "carbon-core": {
+          "replay_volume_error_mm3": 6.109530659159645e-10,
+          "replay_bounds_error_mm": 5.9117155615240335e-12,
+          "bidirectional_edge_and_circle_samples": 354,
+          "max_surface_error_mm": 1.9859441744291216e-05,
+          "radial_fault_0_2mm_distance_mm": 0.20000471780586215,
+          "coplanar_symmetric_difference": "UNTRUSTED retained separate failure",
+          "step_volume_error_mm3": 3.526565706124529e-10
+        },
+        "cap-boot": {
+          "step_volume_error_mm3": 3.2105162972584367e-10
+        },
+        "cap-contact": {
+          "step_volume_error_mm3": 3.5839775591739453e-11
+        }
+      },
+      "pairs": [
+        {
+          "part": "ignition-coil-lead-jacket",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-jacket",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-carbon-core",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-carbon-core",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-cap-boot",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-cap-boot",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-cap-contact",
+          "neighbor": "cap",
+          "overlap_mm3": 0.0
+        },
+        {
+          "part": "ignition-coil-lead-cap-contact",
+          "neighbor": "terminal",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "fixed_endpoint_mm": [
+        22.0,
+        210.0,
+        257.0
+      ],
+      "fixed_jacket_interior_subtraction_mm3_untrusted": 0.0,
+      "fixed_path_surface_max_error_mm": 2.057379332190169e-05,
+      "fixed_path_surface_samples": 1056,
+      "fixed_wall_interior_samples": 248,
+      "actual_contact_area_mm2": {
+        "terminal": 122.52211349000193,
+        "core": 3.141592653589771
+      },
+      "stale_cap_boot_overlap_mm3": 527.6417787052538
+    }
+  ],
+  "artifacts": {
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-jacket.step": "ac17ea9acf8827eeda0b4c48508aed5f875579248b2c7df8b5eae7b96be7e095",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-carbon-core.step": "1701bdd1d90d23ef5bdcd31500a8f19c33f325adbe8373a1970c526a5841c557",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-boot.step": "c35236779fbfba01857fd377aab41c33fe3055a9ea6b577c6ee5f4b0539b4805",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-1-cap-contact.step": "42724105d93e4ddcbb3f33e0a0bfe3c1b0e78921362da0779f42a15c45934997",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-jacket.step": "002fc7f13a4e3d8c6a857fdb448ed7f608b22e6b926af1996b478c5b027d5c1e",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-carbon-core.step": "213c19b3ff5b3ca41278675aa210c4e09c1098a34bab582eac543a3ed40d3783",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-boot.step": "10a979103cd32b3d9c19e3b9c91cf22420436ba50a34874cdac49e4425b13ae7",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-2-cap-contact.step": "07fc0b307ebe27b5bbc00fa93ec22086116f990cb6c566b2c2fd143e5ab26b93",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-jacket.step": "7a82dd2ee1ff6b41899ce816cc597152e933901cb1410d2a8a075c0d54628df9",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-carbon-core.step": "221baa2b19658786443aa1d5704bf191a6e684da8107998571f87e957135eb55",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-boot.step": "742f756c3acbc3fa051336ff771411a6cf3e80a80c6fbbe9e5e911afdc21de51",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-3-cap-contact.step": "82ffe5045ce167c625e31f1c61ade1d8e5543a6a1cb86e8f7e8a935485395f5e",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-jacket.step": "02ca4b1442e3d4a6ee9ff04ee8242ec6b72d1b16d2860840f96aff30d9d47091",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-carbon-core.step": "867400dff3e2417c5c03f61dae6f0ea033eab611eb4c1c728806dbe0ebb0b2e9",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-boot.step": "c90ab021451426d36899a49a6df3ee0744fee0b1f89a190bd9179216caeefe67",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-4-cap-contact.step": "77b4ccf87453984a18aa2e36af79816f352bcf5ed5c6107e50218ab7ebdb4f81",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-jacket.step": "a932517d8c05e84ad1637715ab623777d67eec5a2133da6dbadf4c119d1d8e49",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-carbon-core.step": "3b7d37d98ade045256b328eb07fe50e0c9f5d2e62fd696bc1331209c03b30d42",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-boot.step": "21b6ccf1e484115b49d035e41a7cf575ec7e4c833ff1fa773d9a804dbb9612ba",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-5-cap-contact.step": "f1b0a36e0bb179e79bf1d0347cabef3f26ae102f73afc572cb3dd8d0a1191616",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-jacket.step": "fcb203acbbb817fe6ec0bad1d909cf2600961bd5a36f4a776090b633b9bcd969",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-carbon-core.step": "94d2217e0c65732df1070c838d0a36536393ef389491f1393a35f13a79d43a35",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-boot.step": "e264cf7032d55eed9e63f0141d63da6d1768111a903768cf0f57570b2cfd9d6d",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-lead-6-cap-contact.step": "2f099a4e32b1c38dcb564885a031592496d78b3b0dde1e10ce3b1226d14abd78",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-jacket.step": "0ca50cde052d61238734a2c72cfcf0f8b98061f451839915f2d7edf3dd4b587d",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-carbon-core.step": "e87ec422fde22fc0ffb141fbee21435be5bd46478063f754db06036ad72f9ee5",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-boot.step": "ea9c5ed0e1ec060fd60682e7691de9c1b6f222a9498fdb747e8ba2d6c097d31f",
+    "cad/engine/generated/shifted-ignition-lead-candidate/ignition-coil-lead-cap-contact.step": "a57c219e7f04cbe60bef9f37f9ad5684fe03fb83b368d06986645bbdbd245559"
+  },
+  "resumed_from_checker_sha256": "a6dcdad147eeb686c63a806dcad67ce22809694c92c5fe1daf255b2b07c267d8"
+}
