@@ -14,6 +14,8 @@ The October 2026 research round replaces several missing owner-photo inputs with
 - [[notes/online-oilpump-two-flange-patterns|The identified oil-pump replacement shows two flange patterns.]] [[notes/online-oilpump-aperture-identity|Aperture functions still need separate identification.]]
 - [[notes/online-rod-head-style-needs-application-matching|A replacement head photograph challenges a generic hex representation.]] It does not supply the OEM seat dimensions.
 
+- [[notes/online-heater-metric-scale-needs-joint-validation|The photos do not jointly validate inherited pump scale.]] A follow-up camera/proportion audit qualifies the earlier axial hypothesis; a static clearance pass does not establish physical dimensions.
+
 ## Sources
 
 [[sources/online-heater-gmb-gallery|GMB product gallery]], [[sources/online-heater-carter-hub|Carter hub datum]], [[sources/online-airbox-e7te-duct-specimen|Identified duct specimen]], [[sources/online-airbox-ford-1994-catalog|1994 parts illustration]], [[sources/online-airbox-complete-salvage-assembly|Complete airbox assembly]], [[sources/online-oilpump-ronyu-identified-flanges|Identified pump catalog]], and [[sources/online-rod-arp-head-style-catalog|ARP head photographs]].

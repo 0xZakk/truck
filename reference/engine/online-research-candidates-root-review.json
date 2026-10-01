@@ -1,0 +1,150 @@
+{
+  "status": "Accepted for candidate preservation only; no installation",
+  "baseline_commit": "b0aa34900f3ce369ce2fc2774f63582b6c0d8dc8",
+  "worker_deliveries": [
+    {
+      "path": "inventory/engine/online-heater-route-delivery.json",
+      "sha256": "3fa3d99ebaea248cb94260d388b801c3683bb09d61471da08c4ff9b6d309f50a",
+      "verified_files": 37,
+      "status": "PASS"
+    },
+    {
+      "path": "reference/engine/online-airbox-duct-delivery.json",
+      "sha256": "5e5ec3f6cdc08fc45ec852d97c1fa835191a46e25d46fac6033145f8d326627c",
+      "verified_files": 38,
+      "status": "PASS"
+    },
+    {
+      "path": "reference/engine/online-heater-radial-registration-delivery.json",
+      "sha256": "6765d64334e2b93bcd86c83e38da217319b4467c28410cf4e976ee8b939fd594",
+      "verified_files": 7,
+      "status": "PASS"
+    }
+  ],
+  "kb_structure": {
+    "status": "PASS",
+    "pages": [
+      {
+        "path": "kb/maps/online-engine-reconstruction-evidence.md",
+        "sha256": "4ed77623dbcc430524bf1b58371b271e223037fb2e1677325274ff0513af0174"
+      },
+      {
+        "path": "kb/notes/online-airbox-box-attachments-need-isolators.md",
+        "sha256": "e609a5a2ec2a03f4919f96c9480e8533ee9cc1ac6e2834fc49aacfe6094cf2f6"
+      },
+      {
+        "path": "kb/notes/online-airbox-ducts-have-distinct-branches.md",
+        "sha256": "6ccb6515ca84f10ead5a9f17ddf95426cfb63289ca57872ae174786efb4ffc9b"
+      },
+      {
+        "path": "kb/notes/online-airbox-support-is-formed.md",
+        "sha256": "c0514ebb6af4c6e4cc25c1b63926630189b5d50d10358ad71b14a011b35520bd"
+      },
+      {
+        "path": "kb/notes/online-heater-bearing-alternatives.md",
+        "sha256": "261a96bb922d3bcf3e6177eaf48ceafcd4f125de3bcb64523fbd31d246944c5e"
+      },
+      {
+        "path": "kb/notes/online-heater-gallery-route.md",
+        "sha256": "1aa041866ee9ae9810af84bea5d99b15ce48a29aab6221c3c45e1164c78ce2f5"
+      },
+      {
+        "path": "kb/notes/online-heater-hub-datum.md",
+        "sha256": "78827e1e31cd2397f28e51d091be150c4a65caf4523a255170b362a50c34112b"
+      },
+      {
+        "path": "kb/notes/online-heater-metric-scale-needs-joint-validation.md",
+        "sha256": "a54251a7a867acbbfb2c7fdc24663a115f308493416e56146bfacabb79bc528b"
+      },
+      {
+        "path": "kb/notes/online-heater-seal-boundary.md",
+        "sha256": "a7275bbf60bc4d44f690325b52263b3ec58153203f9532bf2d877245e8954aad"
+      },
+      {
+        "path": "kb/notes/online-oilpump-aperture-identity.md",
+        "sha256": "bc88e97426369616e34dd77a0cb131745324e141dbe0e402bca39c1d115979bb"
+      },
+      {
+        "path": "kb/notes/online-oilpump-two-flange-patterns.md",
+        "sha256": "d0a1eb353aebad11c7ab0a03b7bd3bde2ef7ba001d0cd41df185122fe37458db"
+      },
+      {
+        "path": "kb/notes/online-rod-head-style-needs-application-matching.md",
+        "sha256": "ec2a13987a61c9c5695ddb95f4b0393936d302a8ee83f62bdce7bbcb2ed1d292"
+      },
+      {
+        "path": "kb/sources/online-airbox-complete-salvage-assembly.md",
+        "sha256": "dec4c07bb2be6114ed0767ae3dc1d9d495ab2c9be8922f288a678964761b1019"
+      },
+      {
+        "path": "kb/sources/online-airbox-e7te-duct-specimen.md",
+        "sha256": "979634fc5c62759d6188fe168300d1b357d5b0c94cc3716c6665c7c74fd2dda2"
+      },
+      {
+        "path": "kb/sources/online-airbox-ford-1994-catalog.md",
+        "sha256": "14a843af4991d0a7b1eb7f8725ad4d259236c0ca1abc7f98ea832123cca810b8"
+      },
+      {
+        "path": "kb/sources/online-heater-carter-hub.md",
+        "sha256": "9c7a42c2f87b3a41925119425d54540ef1ed3f066aef210da66b1a91602d1057"
+      },
+      {
+        "path": "kb/sources/online-heater-gmb-bearing.md",
+        "sha256": "f6ecb640a3dd79255261d62fa85f35d6336ede3da64a2c0c8900d9d1e8512b98"
+      },
+      {
+        "path": "kb/sources/online-heater-gmb-gallery.md",
+        "sha256": "5588d1010e534ea97959f97e2dd217cb2fe42241c6385bea6d82118ca9a0866e"
+      },
+      {
+        "path": "kb/sources/online-heater-gmb-seal.md",
+        "sha256": "ad4b669b25ff25b15d3a9d1c7a0d9cf23ecf4c10593d52843e15938520c6920d"
+      },
+      {
+        "path": "kb/sources/online-oilpump-ronyu-identified-flanges.md",
+        "sha256": "85079650e4579224668127c4d901fcf1a80e3a904a368b4c371915b5fa54e87a"
+      },
+      {
+        "path": "kb/sources/online-rod-arp-head-style-catalog.md",
+        "sha256": "315fdabbabcd6e3f023606e0b28bb3b79b52a6a43b6a32fecabf7938562e6980"
+      }
+    ],
+    "source_pages": 9,
+    "atomic_notes": 11,
+    "maps": 1,
+    "semantic_index_notes": 365,
+    "backlinker": "Dry-run reviewed; authored cross-links retained; no unrelated note rewrites"
+  },
+  "root_checks": [
+    "Actual source photographs and exported CAD renders visually reviewed",
+    "Corrected four-view landmark overlay visually reviewed; source-containing overlay excluded from distribution",
+    "Deterministic numerical registration rerun, final report hash unchanged",
+    "Archive exact member/hash verification PASS",
+    "Navigation1349 occurrences/1548 links PASS",
+    "Changed Python sources compile PASS"
+  ],
+  "geometry_evidence": "Frozen workers performed CAD checks; no redundant root rerun. Airbox8192 completed probes reused only for byte-identical tubes, retainer correction freshly checked.19 local pairs clear. Heater62 scoped pairs clear with explicit coordinated neighbor substitutions.",
+  "limitations": [
+    "Heater inherited scale conflicts with scaled-orthographic photo ratios; candidate is conditional",
+    "Duct dimensions/profiles estimated; no body/world placement or accepted insertion interfaces",
+    "Oil-pump aperture functions and rod OEM dimensions remain unknown",
+    "Browser NOT RUN; no installed geometry changed",
+    "Project column writes lack scope; no new component Done"
+  ],
+  "canonical_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "private_v4_sha256": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+  "usage": "Unavailable; not estimated",
+  "component_issue_routing": {
+    "47": "Heater and water-pump candidates",
+    "80": "Paired airbox duct specimen",
+    "73": "Oil-pump source patterns",
+    "22": "Rod-head replacement evidence",
+    "32": "Historical coordination issue; not owner of all component work"
+  },
+  "preservation": {
+    "scripts/online-research-candidates-package.py": "12421865ec276ef5c08cf92ef7c722eceb3244dc063c77af1665c04f9ba8666c",
+    "docs/online-research-candidates-checkpoint.json": "26c93846b3a97786709c4ae138c4b2723a55b9e9bc592e1cb59b321c2d50df0f",
+    "docs/components/online-research-candidates-checkpoint.md": "367354dac3dd2848cbda366052b1548a5890090b57d8595f7a3e1f9dbe26ca3d"
+  },
+  "preservation_review": "Six excluded ingest/OCR logs were incorrectly classified as required repository inputs; corrected before commit. Authored archive bytes unchanged. Root verify-only passes."
+}

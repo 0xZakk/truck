@@ -1,0 +1,102 @@
+{
+  "status": "PASS export only",
+  "parts": {
+    "nominal": {
+      "step": "cad/engine/generated/online-heater-route-candidate/nominal-tube.step",
+      "step_sha256": "5c2f41fab9c9024b457b173c2f76f7a3b240d34c63a6bb7c07bd4cbfef52f967",
+      "glb_sha256": "beaef3d34b8f8284d267807b97dc12a8c83193a80eba5e47a3bf081dbb5991c5",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          340.9413044893535,
+          -178.51809564213968,
+          216.86386640946787
+        ],
+        [
+          433.0000000999966,
+          -65.58156397772191,
+          419.60232167409515
+        ]
+      ],
+      "bounds_error_mm": 0.0011044548550103173,
+      "endpoint_mm": [
+        348.0333333333333,
+        -171.0,
+        415.0
+      ]
+    },
+    "rear-limit": {
+      "step": "cad/engine/generated/online-heater-route-candidate/rear-limit-tube.step",
+      "step_sha256": "6d2ef851a7f368b3398e3779323a84ae9691c25c648aef69557f8676333e833e",
+      "glb_sha256": "fbe86b20235668c7c8538837e24fc6dfcbac1e27872b3239c153f1df6ef8635f",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          333.0329711560235,
+          -178.51809564213968,
+          216.86386640946787
+        ],
+        [
+          433.0000000999966,
+          -65.58156397772191,
+          419.60232167409515
+        ]
+      ],
+      "bounds_error_mm": 0.0012159643671623144,
+      "endpoint_mm": [
+        340.125,
+        -171.0,
+        415.0
+      ]
+    },
+    "front-limit": {
+      "step": "cad/engine/generated/online-heater-route-candidate/front-limit-tube.step",
+      "step_sha256": "fd889e566d22a24111b47aa6ebbb2297cd9006ba7412cfdeb7655280d9b99176",
+      "glb_sha256": "05388ab06de444020cf96ca478be20bdcda3daadc7109e2651cdbd4cf1b0293c",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "bounds_mm": [
+        [
+          348.50579724297353,
+          -178.51809564213968,
+          216.86386640946787
+        ],
+        [
+          433.0000000999966,
+          -65.58156397772191,
+          419.60232167409515
+        ]
+      ],
+      "bounds_error_mm": 0.0011044548550103173,
+      "endpoint_mm": [
+        355.5978260869565,
+        -171.0,
+        415.0
+      ]
+    }
+  },
+  "root_mm": [
+    410.0,
+    -80.0,
+    230.3
+  ],
+  "terminal_direction": [
+    -0.4627216846446909,
+    -0.3418295882915606,
+    0.8179493719833772
+  ],
+  "housing_unchanged": "cad/engine/generated/waterpump-heater-source-candidate/housing.step",
+  "input_sha256": {
+    "scripts/build-online-heater-route.py": "f8102790c9d5d7e5202527d4386ba63ca07ef372d1cbcf093e7ca4d9ed19b447",
+    "cad/engine/online_heater_route_candidate.py": "e7f53d27f0a38db03dd503d721c4d35c0e894b771c9fff6c381bd45060ff5573",
+    "cad/engine/waterpump_heater_source_candidate.py": "258ca0e66b7408914feda1a33856bdbbe8f214bcfc84328fcda214863586511c",
+    "docs/components/online-heater-research.md": "a0f52e52dfcf91dc6ca452052fb977d0cdbd855fa5ffbf154984f728b1401061",
+    "reference/engine/online-heater-captures/gmb-1251810-view3.jpeg": "0d44273e4028264f1ea719905849b1e24b2d97293738ae3f2d928bccc7e58f3d",
+    "cad/engine/generated/waterpump-heater-source-candidate/housing.step": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82"
+  }
+}

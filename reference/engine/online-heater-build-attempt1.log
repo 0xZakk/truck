@@ -1,0 +1,12 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/build-online-heater-route.py", line 9, in <module>
+    s=c.tube(variant);p=c.O/(variant+'-tube.step');b.export_step(s,p);s=b.import_step(p)
+                                                   ~~~~~~~~~~~~~^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/.venv-cad/lib/python3.13/site-packages/build123d/exporters3d.py", line 295, in export_step
+    doc = _create_xde(to_export, unit)
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/.venv-cad/lib/python3.13/site-packages/build123d/exporters3d.py", line 111, in _create_xde
+    _root_label = shape_tool.AddShape(to_export.wrapped, is_assembly)
+                                      ^^^^^^^^^^^^^^^^^
+AttributeError: 'ShapeList' object has no attribute 'wrapped'
