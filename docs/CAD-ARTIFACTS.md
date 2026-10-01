@@ -128,6 +128,12 @@ tar -xzf /tmp/truck-active-cad-20260926-intake-attachments.tar.gz
 
 This archive includes prior frozen fixtures plus the new candidate/staging outputs and intake frame-contract solids. It excludes the in-progress intake exterior, IAC closure and accelerator-cable studies, purchased manuals and owner photographs. Restricted reference captures must be obtained separately with appropriate access.
 
+## Timing support supplement (uninstalled)
+
+The timing-support supplement preserves frozen journal-support/machining checks, pump/pan collision witnesses, the revised pan male fastener, rejected cover attachment v2, valve-linkage contract and rejected pedestal-only adapter. It does not replace canonical parts. Active pump-foot, pan-wall and inclined-linkage revisions are excluded.
+
+Restore the neck-core base, timing-fit and timing-proof supplements first. Then download `truck-timing-support-20260930.tar.gz` from release `studies-2026-09-30-timing-support`, verify SHA-256 **498a3840c818dc75362da722284996a56557068a6ac636cc05e70bd9a13ceb91**, and extract at the repository root after preserving newer local work. The 19,381,804-byte archive contains 98 files; `docs/cad-timing-support-checkpoint.json` lists individual hashes and the required predecessor. Only project-authored renders are included; source originals and owner photographs are excluded.
+
 ## Previous linkage and dipstick checkpoint
 
 The [linkage/dipstick release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-linkage-dipstick) records **718 definitions /1,322 occurrences**, still provisional and unfinished. Download with an account that can access the repository:

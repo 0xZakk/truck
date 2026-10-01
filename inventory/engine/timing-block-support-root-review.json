@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "inputs": {
+    "inventory/engine/timing-block-support-machining-validation.json": "10431dd48c15d78c00a34f75b6c3bbfd98e15f0ae86a2cc06ff36819c3cefc25",
+    "inventory/engine/timing-block-support-machining-core-validation.json": "adc3ba2039cd1e72846044e1da013167a82e44970ca64a50037ca10fb6948682",
+    "inventory/engine/timing-block-support-machining-attachments.json": "92a8246393a1b0ece34d031e31976f0eb98d8a11cc7993e9940deb0d74fd99fc",
+    "inventory/engine/timing-pump-foot-pan-witnesses.json": "65f5b379cfbec26348345f927e0afeb5d2542261f2af204e9f0ba5406899e355"
+  },
+  "reviewed": [
+    "Source backing shells and analytic cutters",
+    "Actual exported block render",
+    "Actual journal support sections",
+    "Actual pump/pan conflict section and strict interior cube evidence",
+    "Physical pan8 and carrier interface evidence"
+  ],
+  "decision": "Accept bounded journal-support and machining study; overall attachment FAIL retained. Approve separate estimated local pump-foot revision with fixed pump frame and mounting datums.",
+  "unresolved": [
+    "Inherited crankgear/front-lower-casting overlap",
+    "Pump-foot/pan collision",
+    "Full valvetrain and final coordinated front interfaces",
+    "Factory dimensions and bearing oil feed holes"
+  ],
+  "installed": false,
+  "browser": "NOT RUN"
+}

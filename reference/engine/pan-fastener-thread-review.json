@@ -1,0 +1,70 @@
+{
+  "status": "Isolated candidate, local validation PASS, root review pending; not installed",
+  "baseline": "eb502ce755d12fe896b3ea915f3ada4361e52a9c",
+  "branch": "engine/timing-interface-reconciliation",
+  "source_claims": [
+    {
+      "claim": "25 screw-and-washer assemblies, 5/16-18 x 0.87 in",
+      "source": "1994 factory oil pan service drawing 350379654, Fig. 34",
+      "evidence_ledger": "reference/engine/ford-oil-pan-hardware-reviewed.json",
+      "class": "Exact-year nominal callout; head, washer and detailed thread profile not dimensioned"
+    },
+    {
+      "claim": "One-turn loft technique reference",
+      "source": "https://github.com/gumyr/bd_warehouse/blob/main/src/bd_warehouse/thread.py",
+      "symbol": "Thread._make_thread_loop",
+      "license": "Apache-2.0",
+      "class": "Algorithmic technique only; independently expressed 13-section loft, not vehicle evidence"
+    }
+  ],
+  "estimated_features": {
+    "root_radius_mm": 3.2,
+    "crest_width_mm": 0.2,
+    "flank_included_angle_deg": 60,
+    "runout_z_mm": [
+      1.6,
+      1.7
+    ],
+    "head_af_mm": 12.7,
+    "head_height_mm": 5.3,
+    "washer_od_id_thickness_mm": [
+      15,
+      8.3,
+      1.6
+    ],
+    "female": "Zero-clearance conjugate coupon, not manufacturing fit or installed insert"
+  },
+  "visual_review": {
+    "image": "cad/engine/generated/pan-fastener-thread-candidate/thread-review.png",
+    "reviewer": "Candidate worker",
+    "finding": "Actual matched section coincides, wrong axial phase crosses the female profile; silhouette retains existing hex head and separate washer. Flat color obscures some helical relief in the 3D panel; section is the primary geometry inspection."
+  },
+  "development_rejections": [
+    "Long additive sweep was unreliable; not promoted.",
+    "Coincident thread/collar seam produced nonwatertight mesh; estimated 0.1 mm runout avoids that seam.",
+    "Frozen earlier attachment study is rejected and unchanged. Its legacy thread Boolean controls were not reliable."
+  ],
+  "limits": [
+    "Five proposed female sockets have not been regenerated or accepted.",
+    "All 25 installed interfaces remain NOT RUN.",
+    "No thread class, strength, preload, factory runout, production crest/root geometry or installation claim.",
+    "Learning/diagnostics content and browser integration NOT RUN."
+  ],
+  "sha256": {
+    "cad/engine/pan_fastener_thread_candidate.py": "041a7d6136e60cc310def6f79c5314ae7b9e15836e2ffe9401b7cc4f242cada0",
+    "scripts/check-pan-fastener-thread-candidate.py": "d4c3e4d044ea2fcb1e1d3effa8ac5b4e39dd2621c407fbeea9555d541f0ab1b6",
+    "scripts/render-pan-fastener-thread-candidate.py": "49ef91ff31ef7d244d1334504d8fd984242085926b93d16998900496c1035f9f",
+    "inventory/engine/pan-fastener-thread-validation.json": "aba1bf601d26f7023e95f36ac141e0f9343215cc9e26f23ec561d170a2d8fbc8",
+    "reference/engine/ford-oil-pan-hardware-reviewed.json": "1f51d5330da5354f81b77f063b82b959a3a35d3ebb27d299ff71253702eb8080",
+    "inventory/engine/timing-cover-attachment-validation.json": "3b08515dca5f03b08f078cadf27a9c671fb34e0dbb8df45cb9bc2f0f9ea0b754",
+    "cad/engine/generated/pan-fastener-thread-candidate/candidate.glb": "186b914e1b0d05cfb038ecd60dafc5cfabb939fa0e50c91d20b745ff398e4a6d",
+    "cad/engine/generated/pan-fastener-thread-candidate/existing-pan-washer.glb": "2080ceb3e38bd235f170b58075ef8fea9971b4dfa226c6613a035030a168f67d",
+    "cad/engine/generated/pan-fastener-thread-candidate/existing-pan-washer.step": "82078f21119a08baf05be947deffe9f40ec6498695262dcb9be4c6aec26a7cab",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.glb": "2bbda167f89a13ce4093a29e2f0b88735ed9b00537b51505f73ca9d78cb26700",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.glb": "22b3ba49c3da1832b7944fb9e357883430aa44e17b78a179a5bdc50c6d3f5335",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/pan-fastener-thread-candidate/preview.npz": "553e784a1f2fa863d4265803ac873a8f7ffd211fb79725070d63478fcd928c5d",
+    "cad/engine/generated/pan-fastener-thread-candidate/thread-review.png": "1512fd28b2d995740339f6e89218709da2f34c5652f32fcbd88d221359569d1d"
+  }
+}

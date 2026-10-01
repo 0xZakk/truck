@@ -1,0 +1,200 @@
+{
+  "status": "FAIL one or more attachment gates",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-support-machining-candidate/block.step": "2880d7873e14c8407d40b219d06753be554c069db51da3bdf2ef300724544cfb",
+    "cad/engine/generated/timing-block-support-machining-candidate/base.step": "fee74aacd826cf4b77b8210be78032bf8ea933ab642b1fead4ec0b54e6e8771b",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc",
+    "cad/engine/generated/carrier-block-stud-1.step": "a871179c3f577d5248f88d9d4cfbe7be1416d33ec0278fe9c14dcc92ab3c9a97",
+    "cad/engine/generated/carrier-block-stud-2.step": "aa02d2ee9598f4239dac80ea4d8917277175a1e6c0def58b2cb7167088a1b2f2",
+    "cad/engine/generated/oil-pan.step": "57a1eea73d09075fb159afd633675f483793b2eb32aa079fc0e0399dbcb9e6ea",
+    "cad/engine/generated/oil-pan-molded-gasket.step": "958b6ed42e670333e3420bac2aeeeab9d633430a075cb98f7616701330e7488a",
+    "cad/engine/generated/oil-pan-mounting-screw.step": "eb151db3bef2ea33016c242c7893ea66e470677183aa61720d2fbf74542211b0",
+    "cad/engine/generated/oil-pan-mounting-washer.step": "89dfd958fc84025474dfd159c2f7ee3c167ec0e8abc2e904f383357916ee2c17",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "scripts/check-timing-block-support-machining-attachments.py": "56e8a95eb639e2450ff3681adff45f7d2278141efc185e9d075b69fced983ef4",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/timing_block_support_machining_candidate.py": "f51a87e0da229f4a13e521e9695313363748cf631b08c92c10e3c19360db3c11",
+    "inventory/engine/timing-block-support-machining-validation.json": "10431dd48c15d78c00a34f75b6c3bbfd98e15f0ae86a2cc06ff36819c3cefc25"
+  },
+  "neighbors": [
+    {
+      "part": "ps-ac-support-bracket",
+      "baseline_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0.0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "carrier-block-stud-1",
+      "baseline_overlap_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "carrier-block-stud-2",
+      "baseline_overlap_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "oil-pan",
+      "baseline_overlap_mm3": 0,
+      "candidate_overlap_mm3": null,
+      "candidate_integration_error": "Volume integration did not converge: 0.028620247982462647; added material: Volume integration did not converge: 0.028620247982462647",
+      "added_material_overlap_mm3": null,
+      "inferred_overlap_upper_bound_mm3": null,
+      "no_new_overlap": false,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "oil-pan-molded-gasket",
+      "baseline_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0.0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "oil-pan-mounting-screw-8",
+      "baseline_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0.0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "oil-pan-mounting-washer-8",
+      "baseline_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0.0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    },
+    {
+      "part": "crankshaft",
+      "baseline_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 0,
+      "candidate_integration_error": null,
+      "added_material_overlap_mm3": 0,
+      "inferred_overlap_upper_bound_mm3": 0.0,
+      "no_new_overlap": true,
+      "proof": "Any new intersection is contained in (candidate minus canonical) intersect neighbor; removals cannot create overlap"
+    }
+  ],
+  "carrier_supports": [
+    {
+      "station": 1,
+      "x_mm": 292,
+      "removed_mm3": 458.12460665758476,
+      "min_removed_to_socket_mm": 5.668275349653214,
+      "minimum_5mm_pass": true,
+      "seat_backing_changed_mm3": 0,
+      "support_region_solid_count": 1,
+      "block_solid_count": 1,
+      "baseline_carrier_face_contact_mm2": 520.7189823325082,
+      "candidate_carrier_face_contact_mm2": 520.7189823325082,
+      "contact_preserved": true
+    },
+    {
+      "station": 2,
+      "x_mm": 340,
+      "removed_mm3": 427.1101054756532,
+      "min_removed_to_socket_mm": 5.6682753496532,
+      "minimum_5mm_pass": true,
+      "seat_backing_changed_mm3": 0,
+      "support_region_solid_count": 1,
+      "block_solid_count": 1,
+      "baseline_carrier_face_contact_mm2": 520.7189823325082,
+      "candidate_carrier_face_contact_mm2": 520.7189823325082,
+      "contact_preserved": true
+    }
+  ],
+  "pan_socket8": {
+    "station": [
+      191.1111111111111,
+      116.6,
+      -39.6
+    ],
+    "original_radius12_guard_added_mm3": 0.004783590749992498,
+    "added_bounds_mm": [
+      [
+        186.94831300569405,
+        105.08814674760113,
+        -32.78849347740061
+      ],
+      [
+        187.7233041022803,
+        105.34517389983496,
+        -31.9999999
+      ]
+    ],
+    "actual_radius10_boss_change_mm3": 0,
+    "distance_added_to_actual_boss_mm": 1.9721552342485822,
+    "distance_added_to_socket_bore_mm": 7.822155234248585,
+    "source_boss_z_range": [
+      -32.0,
+      -14.600000000000001
+    ],
+    "source_bore_radius_mm": 4.15,
+    "oversize_bore_negative_control_removed_mm3": 343.4300967230427,
+    "physical_interface_pass": true
+  },
+  "crank_rotation_envelopes": [
+    {
+      "journal": 1,
+      "x_mm": -334.0,
+      "support_min_radius_about_crank_mm": 92.65235,
+      "crank_containing_radius_mm": 92.55235,
+      "crank_material_outside_cylinder_mm3": 0,
+      "conservative_all_rotation_clearance_mm": 0.1
+    },
+    {
+      "journal": 2,
+      "x_mm": -110.0,
+      "support_min_radius_about_crank_mm": 92.65235,
+      "crank_containing_radius_mm": 92.55235,
+      "crank_material_outside_cylinder_mm3": 0,
+      "conservative_all_rotation_clearance_mm": 0.1
+    },
+    {
+      "journal": 3,
+      "x_mm": 110.0,
+      "support_min_radius_about_crank_mm": 92.65235,
+      "crank_containing_radius_mm": 92.55235,
+      "crank_material_outside_cylinder_mm3": 0,
+      "conservative_all_rotation_clearance_mm": 0.1
+    },
+    {
+      "journal": 4,
+      "x_mm": 360.5,
+      "support_min_radius_about_crank_mm": 92.65235,
+      "crank_containing_radius_mm": 92.55235,
+      "crank_material_outside_cylinder_mm3": 0,
+      "conservative_all_rotation_clearance_mm": 0.1
+    }
+  ],
+  "limits": [
+    "5mm carrier criterion and2mm backing are geometric educational criteria, not production strength evidence",
+    "Original radius12 pan guard remains a measured historical change, not a zero result or tolerance waiver",
+    "Crank envelope covers rigid crankshaft only; no full valvetrain/rod/piston motion acceptance",
+    "No front land union or canonical installation"
+  ]
+}

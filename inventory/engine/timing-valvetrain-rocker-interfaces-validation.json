@@ -1,0 +1,17 @@
+{
+  "status": "PASS exact protected contact neighborhoods",
+  "input_sha256": {
+    "scripts/check-timing-valvetrain-rocker-interfaces.py": "8f88f07186f4a37094f1c54ccf798bafa49667f9838f80a5767d245b59173c39",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "cad/engine/generated/timing-valvetrain-adapter-candidate/pedestal-only-v2/rocker-arm.step": "0458f167570e4393153828f5e00e8ea98f17e1a4cc4869618a27421fa4df4a2b"
+  },
+  "symmetric_difference_mm3": {
+    "fulcrum_R15p05": 0.0,
+    "aligned_ball_socket_Rplus0p05": 0.0,
+    "aligned_pad_bottom_patch": 0.0
+  },
+  "limits": [
+    "Only declared contact neighborhoods; entire estimated rocker contour intentionally differs."
+  ]
+}
