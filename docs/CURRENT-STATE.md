@@ -1,6 +1,6 @@
 # Current engine integration — 2026-10-01
 
-Active branch: `engine/timing-drive-fit`, baseline merged [PR104](https://github.com/0xZakk/truck/pull/104), `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
+Active branch: `engine/timing-drive-fit`, baseline merged [PR105](https://github.com/0xZakk/truck/pull/105), `3dcbd364ac24396e671d5d16b930571713b7be0a`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
 
 ## Installed baseline
 
@@ -41,7 +41,11 @@ Frozen private stage v2 (`inventory/engine/corrected-engine-stage-v2.json`) has 
 - Combined moving geometry also confirms six inherited rod-bolt/block collisions. Exact-year/ARP comparison research indicates the current assumed bolt architecture needs revision; no defensible complete dimensional repair exists yet.
 - Pickup reconnection study passes its bounded geometric gates, but later Ford pump drawings show a flange/gasket architecture missing from the current pump. It remains an illustrative study. See `oil-pump-discharge-source-audit.md` under component handoffs.
 
-Three workers currently handle distributor-end ignition connections, compressor/block interface provenance, and bounded water-pump rear-flange geometry. Root owns combined manifest/runtime, visual review, archival preservation and CLI tracking. Rear pump/cover contact estimates must preserve axes and complete attachment lands; forward inlet interference remains separate. Active repairs cannot overwrite frozen audit inputs.
+Root v2 sealing delta checked62 fresh pairs: seal/hub affected static neighbors clear, but the new main gasket has seven conflicts (water-pump gasket and six compressor parts). Seventy-five unchanged v1 failures remain, for82 known v2 static conflicting pairs. See `corrected-stage-v2-sealing-summary.json`.
+
+V3 now incorporates the28 ignition definition corrections with unchanged transforms. Root replay passes28 world mesh/STEP checks (max0.006735mm), four corruption controls and all navigation/learning checks. Its365 clear affected-neighbor comparisons supersede56 ignition pairs, leaving26 known static pairs. See `corrected-stage-v3-remaining-conflicts.json`. Canonical remains unchanged.
+
+Three workers currently handle source-supported oil-pump topology, compressor/cover common contour, and water-pump inlet orientation. Root owns combined manifest/runtime, visual review, archival preservation and CLI tracking. Rear pump/cover contact estimates must preserve axes and complete attachment lands; forward inlet interference remains separate. Active repairs cannot overwrite frozen audit inputs.
 
 Root reviewed actual composed cam, front-joint, gasket/terminal and pickup renders. Scoped review records are `cam-composed-drive-root-review.json` and `composed-stage-root-visual-review.json`. Appearance does not waive collisions, unknown production contours or browser checks.
 
@@ -49,6 +53,6 @@ Root reviewed actual composed cam, front-joint, gasket/terminal and pickup rende
 
 Installed checkpoint: [neck-core](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). Follow the ordered private study archive chain in `docs/CAD-ARTIFACTS.md`; these preserve candidates, not accepted installations.
 
-Latest merged PR104 is `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Its cam/cover archive is published: 62 files / 22,441,296 bytes; SHA `f67121592b2de92346eecb1d750cd49bc2bbfc3cb35bbc14a95dfd8c2b075b3f`. The next composed-engine archive is locally packaged; publication is not yet confirmed. Its exact file allowlist and hashes are in `docs/cad-composed-engine-checkpoint.json`.
+Latest merged PR104 is `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Its cam/cover archive is published: 62 files / 22,441,296 bytes; SHA `f67121592b2de92346eecb1d750cd49bc2bbfc3cb35bbc14a95dfd8c2b075b3f`. PR105 merged after both CI checks passed (16 seconds each). Its [composed-engine archive](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-composed-engine) is published; server digest/size verified: 181 files / 60,749,763 bytes, SHA `11596222af342b6bdfc461bdbe9b52f39a358a30966879eeac6e30fa208b33d0`. Supplemental guard render is a separate verified release asset. Its exact file allowlist and hashes are in `docs/cad-composed-engine-checkpoint.json`.
 
 Project-column writes lack Projects token scope. `inventory/engine/project-status-pending.json` holds desired changes, not observed statuses. CLI issue/PR/release updates work. No new component is Done. Do not imply autonomous execution continues after the goal/session actually stops.

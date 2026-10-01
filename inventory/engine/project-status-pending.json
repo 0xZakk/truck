@@ -76,8 +76,28 @@
       "issue": 34,
       "desired_status": "In progress",
       "reason": "Expanded-seat pan v2 clears paired block and screws with support checks. Full perimeter and containment remain under review; not installed."
+    },
+    {
+      "issue": 47,
+      "desired_status": "In progress",
+      "reason": "Active interface work with timing issue #32. Rear-flange candidate preserves axes and clears rear collisions, but recorded tool/removal and seal-route failures remain; it is not installed. Independent front/rear replacement-photo registration now indicates the current positive-Y inlet direction is likely wrong. A source-oriented analytic candidate is next; photo-derived orientation is explicitly not a measured production angle. See docs/components/timing-pump-rear-flange-candidate.md and ongoing neck registration evidence. No Done transition."
+    },
+    {
+      "issue": 51,
+      "desired_status": "In progress",
+      "reason": "Shifted ignition connections are corrected in private engine stage v3:28 definition replacements with original occurrence transforms retained. Root replay passes all28 world STEP/mesh bounds (max0.006735mm), four corruption controls, and navigation/learning checks.365 actual affected-neighbor intersections are clear, superseding56 earlier cap/lead conflicts. Source routing, installed browser acceptance and other engine interface failures remain open; canonical is unchanged. See docs/components/corrected-stage-v3-ignition.md and shifted-ignition-lead-candidate.md. This is a reviewed candidate, not Done."
+    },
+    {
+      "issue": 73,
+      "desired_status": "In progress",
+      "reason": "Active source/topology correction. Primary Ford drawings show raised drive-neck mounting flange and separate two-bolt pickup flange/gasket, unlike the current illustrative feet/tube insertion. An earlier pickup reconnection passes its geometric study but is not a production architecture fix. New contract will separate verified topology, inherited dimensions, estimates and unknown block-discharge/gasket datums; unknown passages will not be invented. See docs/components/oil-pump-discharge-source-audit.md. No installed acceptance or Done transition."
+    },
+    {
+      "issue": 76,
+      "desired_status": "In progress",
+      "reason": "Active common-interface investigation with timing #32. Original future front land creates most block/FS10 overlaps; station-six support adds one piston conflict and mixed shaft interference. Actual compressor front/rear orientation, belt-facing pulley and carrier contact are deliberate, so a rigid axial shift is not a coherent fix. Independent gasket-source registration is being compared before any cover/land contour revision. Installed solid clearance and accessory-removed tool access are separate gates. Canonical remains unchanged; no Done transition."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",
-  "last_cli_scope_check": "2026-09-30: gh project field-list still reports missing read:project scope"
+  "last_cli_scope_check": "2026-10-01: gh project field-list reports missing read:project scope; no board writes performed"
 }
