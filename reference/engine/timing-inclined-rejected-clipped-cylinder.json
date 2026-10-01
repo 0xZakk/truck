@@ -1,0 +1,21 @@
+{
+  "status": "REJECTED clipped oblique cylinder disappeared in OCC Boolean",
+  "files": {
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rejected-clipped-cylinder-v1/timing_valvetrain_inclined_candidate.py": "80053b3be160da49666d736784078fc7daa707afa4cee52b43aba86e0e29b688",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rejected-clipped-cylinder-v1/timing-valvetrain-inclined-rocker-interfaces-validation.json": "ff64f87465cdb95620416a5b641d644801998029e6b01f288c7260626b85db63",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rejected-clipped-cylinder-v1/timing-valvetrain-inclined-candidate-validation.json": "40950ddd4194613afc43418b8988cfc2d643f657a1cee8ca65f2f5a6a1493442",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rejected-clipped-cylinder-v1/rocker-arm.step": "068a13e29651b67baeca9cb7b3708a43bef7a8120b1599ad9418df94ebec008d",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rejected-clipped-cylinder-v1/cylinder-head.step": "16b2da23ec8abfcc6eead6a2b940d4784eeae0ad6de771b53cd32c670bbfcca4"
+  },
+  "witness": {
+    "point": [
+      259.48,
+      97,
+      254.75
+    ],
+    "intended_aperture_contains": true,
+    "actual_combined_aperture_contains": false,
+    "actual_gasket_contains": true
+  },
+  "consequence": "First-gate head Boolean-zero overlap result cannot be used as clearance; independent section controls caught failure before stack acceptance."
+}

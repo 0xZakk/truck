@@ -1,0 +1,49 @@
+{
+  "scope": "Nominal Tekton SHD03013 containing cylinder through90mm axial approach; no ratchet/vehicle access proof",
+  "source": "reference/engine/tekton-shd03013-access-review.json",
+  "radius_mm": 8.763,
+  "socket_length_mm": 48.26,
+  "mouth_local_z_mm": 0,
+  "approach_mm": 90,
+  "results": [
+    {
+      "station": 20,
+      "pan_distance_mm": 0.0,
+      "overlap_mm3": 997.8750515394038,
+      "volume_error": null
+    },
+    {
+      "station": 10,
+      "pan_distance_mm": 1.3346547669240856,
+      "overlap_mm3": 0.0,
+      "volume_error": null
+    },
+    {
+      "station": 21,
+      "pan_distance_mm": 1.5999999999999943,
+      "overlap_mm3": 0.0,
+      "volume_error": null
+    },
+    {
+      "station": 23,
+      "pan_distance_mm": 1.5999999999999943,
+      "overlap_mm3": 0.0,
+      "volume_error": null
+    },
+    {
+      "station": 22,
+      "pan_distance_mm": 1.5999999999999943,
+      "overlap_mm3": 0.0,
+      "volume_error": null
+    }
+  ],
+  "inputs": {
+    "scripts/check-timing-pan-nominal-tool.py": "2f388052c2957a6d13be2f75fbd7b5adeb5731fc448e0b2d3bef2fbb787c984b",
+    "reference/engine/tekton-shd03013-access-review.json": "11469fc87200f6f12837862b24e7f1e7f4d2337ab7dd395b84c9103b2d308a9e",
+    "cad/engine/generated/timing-pan-access-candidate/pan.step": "a36a305fffd5089c9457dd75163d277dede8ba4423771b5179b426b29f3c1f8f",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f"
+  },
+  "prior_R11_result": "Preserved unchanged; different estimated diameter and washer-overrun placement",
+  "status": "FAIL or unresolved nominal access",
+  "installed": false
+}

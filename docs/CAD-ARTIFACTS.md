@@ -134,6 +134,12 @@ The timing-support supplement preserves frozen journal-support/machining checks,
 
 Restore the neck-core base, timing-fit and timing-proof supplements first. Then download `truck-timing-support-20260930.tar.gz` from release `studies-2026-09-30-timing-support`, verify SHA-256 **498a3840c818dc75362da722284996a56557068a6ac636cc05e70bd9a13ceb91**, and extract at the repository root after preserving newer local work. The 19,381,804-byte archive contains 98 files; `docs/cad-timing-support-checkpoint.json` lists individual hashes and the required predecessor. Only project-authored renders are included; source originals and owner photographs are excluded.
 
+## Timing clearance supplement (uninstalled)
+
+The [timing-clearance supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-timing-clearance) preserves analytical and faceted pump feet, inclined linkage/passages, the detected peak rocker/cover conflict, rejected pan/access and capped-void checks, and the composed block. These are candidates and failed-test evidence, not installed or factory-approved parts. Active corrective revisions are excluded.
+
+Restore the neck-core base and timing-fit, timing-proof and timing-support supplements first. Download `truck-timing-clearance-20261001.tar.gz`; verify SHA-256 **fc1aee5ae6a6a65a21a0b35ec972c837070226780c248738aad5e69753b7b74d** before extracting at the repository root, preserving newer generated files. The archive has 92 files / 23,282,544 bytes. `docs/cad-timing-clearance-checkpoint.json` records all file hashes and the predecessor archive. Source originals, purchased manuals and owner photographs are excluded.
+
 ## Previous linkage and dipstick checkpoint
 
 The [linkage/dipstick release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-linkage-dipstick) records **718 definitions /1,322 occurrences**, still provisional and unfinished. Download with an account that can access the repository:

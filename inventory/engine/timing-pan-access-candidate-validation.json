@@ -1,0 +1,157 @@
+{
+  "scope": "Uninstalled estimated pan access candidate; no factory or full oil containment acceptance",
+  "hardware": [
+    {
+      "station": 20,
+      "screw_overlap_mm3": 0.0,
+      "washer_overlap_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "estimated_tool_overlap_mm3": null,
+      "estimated_tool_distance_mm": 0.0
+    },
+    {
+      "station": 10,
+      "screw_overlap_mm3": 0.0,
+      "washer_overlap_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "estimated_tool_overlap_mm3": 0.9077979239415342,
+      "estimated_tool_distance_mm": 0.0
+    },
+    {
+      "station": 21,
+      "screw_overlap_mm3": 0.0,
+      "washer_overlap_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "estimated_tool_overlap_mm3": 0.0,
+      "estimated_tool_distance_mm": 1.4210854715202004e-14
+    },
+    {
+      "station": 23,
+      "screw_overlap_mm3": 0.0,
+      "washer_overlap_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "estimated_tool_overlap_mm3": 0.0,
+      "estimated_tool_distance_mm": 0.0
+    },
+    {
+      "station": 22,
+      "screw_overlap_mm3": 0.0,
+      "washer_overlap_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "estimated_tool_overlap_mm3": 0.0,
+      "estimated_tool_distance_mm": 1.4210854715202004e-14
+    }
+  ],
+  "diagnostics": {
+    "20": {
+      "intersection_valid": true,
+      "nonadaptive_volume_diagnostic_only_mm3": 2636.4255884388726,
+      "bounds_mm": [
+        [
+          354.49999989867916,
+          -143.0,
+          -80.0
+        ],
+        [
+          376.5,
+          -121.0,
+          -30.4999999
+        ]
+      ]
+    },
+    "10": {
+      "intersection_valid": true,
+      "nonadaptive_volume_diagnostic_only_mm3": 0.9077979236504408,
+      "bounds_mm": [
+        [
+          357.37147474163766,
+          187.12588022535058,
+          -31.00891421198822
+        ],
+        [
+          359.00000010000133,
+          192.15343476235523,
+          -30.499999899999978
+        ]
+      ]
+    },
+    "wet_probe_frozen_overlap_mm3": 162.37755692298316
+  },
+  "preservation": {
+    "rear_removed_mm3": 0.0,
+    "rear_added_mm3": 0.0,
+    "full_front_flange_removed_mm3": 0.0
+  },
+  "sealing_neighbor_overlap_mm3": {
+    "cover": 0.0,
+    "main-gasket": 0.0,
+    "future-block-land": 0.0,
+    "front-terminal-sealant": 0.0,
+    "pan-gasket": 0.0
+  },
+  "wall_and_shoulder_missing_mm3": {
+    "front_y-110": 0.0,
+    "front_y-60": 0.0,
+    "front_y0": 0.0,
+    "front_y60": 0.0,
+    "front_y140": 0.0,
+    "front_y178": 0.0,
+    "side_x355": 0.0,
+    "side_x360": 0.0,
+    "side_x365": 0.0,
+    "side_x370": 0.0,
+    "side_x373": 0.0,
+    "shoulder_y-100": 0.0,
+    "shoulder_y0": 0.0,
+    "shoulder_y100": 0.0
+  },
+  "wet_channel_obstruction_mm3": 162.37755692298325,
+  "negative_controls": {
+    "missing_front_wall_detected_mm3": 7.2,
+    "frozen_tool_conflict_mm3": 2159.639763461398
+  },
+  "export": {
+    "valid": true,
+    "solids": 1,
+    "roundtrip_valid": true,
+    "volume_delta_mm3": 6.372574716806412e-07,
+    "watertight": true,
+    "bounds_delta_mm": 1.0000002248489182e-07
+  },
+  "volume_errors": [
+    "Volume integration did not converge: 0.00039327035812697266"
+  ],
+  "wall_coverage": "Explicit full-thickness rectangular samples. Unsampled corner blends and full top-to-bottom closed oil-envelope proof NOT RUN.",
+  "tool": "Estimated radius 11 mm axial socket insertion only; ratchet clearance unknown.",
+  "all_25_stations": "Five unchanged v2 transforms; twenty rear canonical stations unchanged by rear preservation.",
+  "input_sha256": {
+    "scripts/check-timing-pan-access-candidate.py": "4fc44059b211842d4cc80ee5b68b0948aeea044982809f48aed2e99b68865bae",
+    "cad/engine/timing_pan_access_candidate.py": "e9af51ff6e50fc3c86ea77651d250785ec234171ca16ec22fb4e388861173fed",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-cover-attachment-v2-validation.json": "71cea5e88baf86d3817ccfe41ac64e0884324ec36c938f4387486a198aec69cc",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-10.step": "783354a84e9a4abb65995ef11579e25d05d15d083670beb43e2d420429e433ba",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-10.step": "7e1e288abc15c4ac4e0ce282bdd195c5f688684089a177e169f8ac15bab55cfe",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-20.step": "f9b7055ef48478f7e3ed2c52d04fd10df9c6acf7ac422ea7255871f39577b11f",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-20.step": "1748867e597c371eac178ad25dd3bad1903ac84fab15c50bc63a5a4470b43c83",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-21.step": "a426e2c242906606ccd02753cd11b7b4dac5b4cf51c667082ae95c5f5bfb3024",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-21.step": "56c13a22703854470ba83dd533e8cdcea13a15fb0a180864ade496802d1d2f2b",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/pan.step": "f8c65829943b4a09380fc273b02cd2b8e589d855103c9e17860ec61bdcef3ef0",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-22.step": "0266613b865fa176fd890de61d346f50bc83f96bbb0d7adda738573391e0b5bb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-22.step": "12be7b18e306982654a45a3ecf054e948c6c43a21b343ea81cd481feea3d60eb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-23.step": "0fb18e2bfd9e3db07e3f89229d20a256da7b20fee948d39c627dc2c74b48412a",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-23.step": "23ee3b52a5d33bd6c95d724414fcab0fddc85e56035eafe2828aa7614fe41275",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd"
+  },
+  "browser": "NOT RUN; prior security rejection",
+  "installation": "NOT INSTALLED",
+  "local_status": "FAIL",
+  "output_sha256": {
+    "cad/engine/generated/timing-pan-access-candidate/pan.step": "a36a305fffd5089c9457dd75163d277dede8ba4423771b5179b426b29f3c1f8f",
+    "cad/engine/generated/timing-pan-access-candidate/pan.glb": "c3d818adaed3aa12e0668cf58e03925e6df45e66983c5ea6cbfa7f62cc600446",
+    "cad/engine/generated/timing-pan-access-candidate/pan-preview.npz": "23619b28efc5c1d7b07ef7230d81b9d6dd48531b9c8d8f6f5783a57cdb5d64e5"
+  }
+}

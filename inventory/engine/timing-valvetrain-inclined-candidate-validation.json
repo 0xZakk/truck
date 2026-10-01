@@ -1,0 +1,1578 @@
+{
+  "status": "PASS first mount/contact gates; deck and gasket checks separate",
+  "inputs": {
+    "scripts/check-timing-valvetrain-inclined-candidate.py": "abdd77e3e2184cbb200e6d86a9cbf622e73a9d2bd428f945bce778a0c887b373",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/cylinder-head.step": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0",
+    "cad/engine/generated/rocker-guide.step": "ae058fd3703833663e82cab0533e60b1fb980e60a6a8d14100b24b22e18d8800",
+    "cad/engine/generated/rocker-bolt.step": "9fa2d2d5e76b61501ec24ee0b7a86328b0820c3038c9d075e4cd980880096c95",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "cad/engine/generated/exhaust-valve.step": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d",
+    "cad/engine/generated/lifter-pushrod-cup.step": "e7e39eeac754ff25c1fd9ec6e9bb35a5108ac82a8299667af520570747304869",
+    "cad/engine/generated/lifter-body.step": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "cad/engine/generated/head-gasket.step": "1494c3c0f8c2c32b5734534b4ec5edc295677548c8d20b116add0c377224dc15",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2"
+  },
+  "failures": [],
+  "mounts": [
+    {
+      "id": "c1-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c1-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c2-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c2-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c3-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c3-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c4-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c4-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c5-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c5-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c6-intake",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    },
+    {
+      "id": "c6-exhaust",
+      "guide_head_gap_mm": 0.0,
+      "guide_fulcrum_gap_mm": 0.0,
+      "bolt_fulcrum_gap_mm": 0.0,
+      "bolt_head_overlap_mm3": 0.0,
+      "estimated_shank_insertion_mm": 15.0,
+      "radial_bore_clearance_mm": 0.1,
+      "true_thread_engagement": "NOT MODELED: retained smooth-shank bolt and smooth4.6mm-radius hole",
+      "support_annulus_missing_mm3": 0.0,
+      "up0p1_guide_fault_gap_mm": 0.10000000000002274
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c1-intake",
+      "crank_degrees": 318,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 318,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 372,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 372,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 5.684341886080802e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 468,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 468,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 6.355287432313019e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 564,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 564,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 618,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "crank_degrees": 618,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 96,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 96,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 150,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 150,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 246,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 246,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 342,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 342,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 396,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 396,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 78,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 78,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 132,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 132,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 228,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 228,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 324,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 324,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 378,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 378,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 576,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 576,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 630,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 630,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 6,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 6,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 102,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 102,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 156,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 156,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 558,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 558,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 612,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.728578676879116e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 612,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 6.07087979554246e-14,
+        "pushrod__lifter-pushrod-cup": 5.859285502108464e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 708,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 708,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 5.90221124448794e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 84,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.728578676879116e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 84,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 138,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 138,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.929642751054232e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 336,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 4.4938668397781776e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 336,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 4.4938668397781776e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 390,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 390,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 486,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 486,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 582,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 582,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 636,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 4.4938668397781776e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 636,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 4.4938668397781776e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 198,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 198,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 252,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 252,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 5.859285502108464e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 348,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 348,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 444,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 444,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 3.1776437161565096e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 498,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 498,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 696,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.8263897345803626e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 696,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.8263897345803626e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 30,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 30,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 7.105427357601002e-15,
+        "pushrod__lifter-pushrod-cup": 3.03543989777123e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 126,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 3.552713678800501e-15,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 126,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 222,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 222,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 3.552713678800501e-15,
+        "pushrod__lifter-pushrod-cup": 3.552713678800501e-15,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 276,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.8263897345803626e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 276,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.8263897345803626e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 438,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 438,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 492,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 492,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 588,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 588,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 684,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 684,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 18,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 18,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 216,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 216,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 270,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 270,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 366,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 366,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.859285502108464e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 462,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 462,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 516,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 516,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 3.1776437161565096e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 678,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 678,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 12,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 12,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 5.133671265866724e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 5.684341886080802e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 108,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.552713678800501e-15,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 108,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 1.4210854715202004e-13,
+        "rocker__pushrod": 6.355287432313019e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 204,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.652011860642233e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 204,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.709388682997087e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 258,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 258,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 7.105427357601002e-15,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 456,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 456,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 510,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 510,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.791748859601144e-13,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 606,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 1.580957587066223e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 606,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 6.039613253960852e-14,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 702,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 6.910028105266974e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 702,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 9.130474154517287e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 36,
+      "axial_mm": 0,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 36,
+      "axial_mm": -0.1,
+      "gaps_mm": {
+        "pad_valve": 3.087130551193695e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    }
+  ],
+  "head_change": {
+    "removed_mm3": 10525.862423966591,
+    "added_mm3": 4331.925506301936,
+    "removed_outside_allowed_mm3": 0.0,
+    "added_outside_allowed_mm3": 0.0
+  },
+  "exports": {
+    "rocker-arm": {
+      "step_sha256": "106b9c1a95c90898aa4218466d56b1b68c5a35b3b3799e16f3c5cb0a60d15b89",
+      "volume_mm3": 15991.940856740675,
+      "roundtrip_volume_error_mm3": 5.776009857072495e-06
+    },
+    "cylinder-head": {
+      "step_sha256": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c",
+      "volume_mm3": 8100235.1065559015,
+      "roundtrip_volume_error_mm3": 0.0014448892325162888
+    }
+  },
+  "lower_passage_probe": [
+    {
+      "id": "c1-intake",
+      "crank_degrees": 318,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 96,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 78,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 576,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 558,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 336,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 198,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 696,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 438,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 216,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 678,
+      "head_overlap_mm3": 0.0
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 456,
+      "head_overlap_mm3": 0.0
+    }
+  ],
+  "limits": [
+    "No source/manufacturer casting fidelity claim.",
+    "Smooth bolt insertion is not true thread engagement.",
+    "GLB/render and broad passage/neighbor/piston sweeps pending first-gate review.",
+    "Lower head passage expanded only in approved mask; deck/gasket checked separately."
+  ]
+}

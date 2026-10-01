@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-01",
+  "manufacturer": "Tekton",
+  "part": "SHD03013",
+  "url": "https://www.tekton.com/1-4-inch-drive-x-1-2-inch-deep-6-point-socket-shd03013",
+  "drawing_url": "https://images.tekton.com/assets/SHD03013_spec.jpg",
+  "local_ignored_path": "cad/engine/generated/timing-tool-reference/SHD03013_spec.jpg",
+  "sha256": "6b6098db584357246b9f446cbd364a30b2d95c778523f10fa9baa74fe87300e2",
+  "visual_review": "Root inspected actual manufacturer dimensional diagram",
+  "nominal_inches": {
+    "socket_size": 0.5,
+    "drive_size": 0.25,
+    "outside_diameter_both_ends": 0.69,
+    "overall_length": 1.9,
+    "hex_depth": 0.6
+  },
+  "nominal_mm": {
+    "socket_size": 12.7,
+    "drive_size": 6.35,
+    "outside_diameter": 17.526,
+    "overall_length": 48.26,
+    "hex_depth": 15.24
+  },
+  "limits": [
+    "Nominal published dimensions, no manufacturing tolerances",
+    "Comparison tool, not factory-required tool or proof owner has it",
+    "Modeled pan head AF12.7 is estimated; actual truck head not measured",
+    "Full ratchet/extension and vehicle access not established",
+    "Prior R11 tool probe reached1.6mm beyond modeled under-head plane, into washer thickness. A separate correctly positioned nominal envelope must not erase that prior failure."
+  ],
+  "artifact_policy": "Original image excluded from Git and releases; factual ledger only"
+}

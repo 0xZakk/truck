@@ -1,0 +1,39 @@
+{
+  "reviewer": "root integration agent",
+  "baseline": "4e480f8e40458384986b9e1792597e87e56daad7",
+  "verdict": "ACCEPT scoped evidence for preservation; REJECT installation",
+  "reports": {
+    "inventory/engine/timing-valvetrain-inclined-delivery-validation.json": "a67aa4434925a38b8d9af34d944fe31af421c49e967efd06bc0c7b0eb82bbb56",
+    "inventory/engine/timing-valvetrain-inclined-neighbors-validation.json": "d4d3cb6c13ebeb03e2ec6deb983b452bff07b38359ad46ef36a0d1c827e0afc7",
+    "inventory/engine/timing-pan-oil-boundary-validation.json": "ddf001e24cf63bebcd70895e5673cbe5616c0b1cd11a85096354396eea67d3e6",
+    "inventory/engine/timing-pan-nominal-tool-validation.json": "aa597ba90f8a87c4702826165f183d8b845241d7f81461aaf652c27be45c7af7",
+    "cad/engine/generated/timing-pan-oil-boundary/station20-head-wet-path.json": "9110d88477912363cdc69933378c8fa6421dd64a4053f510f7f2489bc407dcee",
+    "inventory/engine/timing-block-combined-validation.json": "1d0a232c922508c21a19c01d47fe50c007a4c47bf682fd94ca4d6c7d555c0bf0",
+    "inventory/engine/timing-block-combined-mesh-validation.json": "cf11eed4948c98dda9236f837d885222d5091137e2e9459eaa52038594982821"
+  },
+  "verified_input_hash_count": 57,
+  "findings": [
+    "Inclined lower passages/export/contact evidence reviewed; no factory acceptance.",
+    "Broader rocker/cover peak overlap is physical, supported by strict interior witnesses and actual section render. New correction required.",
+    "Pan global containment test invalid at roof subtraction in both candidate and baseline; no containment conclusion.",
+    "Station20 open positive-radius path contradicts dry-side isolation. Negative obstruction control detected.",
+    "Correctly placed manufacturer nominal socket clears four new stations but intersects pan at station20 by997.875mm3. Tool tolerance and ratchet not verified.",
+    "Combined deck/feet block locality and native mesh gates pass; actual exported overview reviewed, no factory silhouette approval."
+  ],
+  "visuals_reviewed": [
+    "cad/engine/generated/timing-valvetrain-inclined-neighbors/rocker-cover-conflict.png",
+    "cad/engine/generated/timing-pan-oil-boundary/roof-section-review.png",
+    "cad/engine/generated/timing-block-combined-candidate/block-glb-review.png"
+  ],
+  "limits": [
+    "No canonical changes",
+    "No browser acceptance",
+    "No Done promotion",
+    "Current candidate source geometry includes explicit estimates"
+  ],
+  "next": [
+    "Separate estimated rocker crest correction with protected socket backing",
+    "Revised dry-side pan wall route preserving flange and stations",
+    "Coordinated block/cover front region contract"
+  ]
+}

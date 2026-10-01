@@ -1,0 +1,34 @@
+{
+  "status": "PASS local composition",
+  "inputs": {
+    "scripts/check-timing-block-combined-candidate.py": "d700487ad7e06942d2a4ccdbf9523634bfe5f6622eb0d01ae8971d079d86d920",
+    "cad/engine/timing_block_combined_candidate.py": "2e79d72a18b47b0538ad9460fb2e44e5d89bf8e2a949d94a8e5bf6866fbe1d15",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/block.step": "6edd42727bfeab1f187cd26e661ab3aba74db8009b7c459fbf5595f0539feba9",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-pump-foot-faceted-validation.json": "c9ce2474a7c65a73b872fb83b7f1cac2218354e0309d45b8eeed4e8c4c9af256",
+    "inventory/engine/timing-valvetrain-inclined-delivery-validation.json": "a67aa4434925a38b8d9af34d944fe31af421c49e967efd06bc0c7b0eb82bbb56"
+  },
+  "metrics": {
+    "outside_deck_slab_difference_mm3": 0.0,
+    "deck_slab_difference_mm3": 0.0,
+    "omitted_deck_negative_control_mm3": 32032.982109565048,
+    "step_roundtrip_difference_mm3": 0.0
+  },
+  "gates": {
+    "one_valid_solid": true,
+    "outside_deck_unchanged": true,
+    "deck_matches": true,
+    "negative_control": true,
+    "roundtrip": true
+  },
+  "step_sha256": "72773d2ce6793180ff828d3d8ddf089daea3d85b738962084d335ca4a17c1a36",
+  "remaining": [
+    "Native mesh export NOT RUN",
+    "Front crankgear/block/cover unresolved",
+    "Broader valve motion separate",
+    "Browser NOT RUN",
+    "No installation/factory claim"
+  ]
+}

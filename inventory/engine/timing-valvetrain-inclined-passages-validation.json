@@ -1,0 +1,312 @@
+{
+  "status": "PASS exact scoped stack support and independent sampled interior controls",
+  "inputs": {
+    "scripts/check-timing-valvetrain-inclined-passages.py": "955dd629559efd3510ddbd9c4b16bbafaee46d896f57b450c4ec281734a7df9e",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/timing-block-support-machining-candidate/block.step": "2880d7873e14c8407d40b219d06753be554c069db51da3bdf2ef300724544cfb",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c",
+    "cad/engine/generated/head-gasket.step": "1494c3c0f8c2c32b5734534b4ec5edc295677548c8d20b116add0c377224dc15",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7"
+  },
+  "exports": {
+    "block": {
+      "sha256": "6edd42727bfeab1f187cd26e661ab3aba74db8009b7c459fbf5595f0539feba9",
+      "volume_error_mm3": 0.0005114525556564331,
+      "solid_count": 1,
+      "valid": true
+    },
+    "head-gasket": {
+      "sha256": "2a468f017d1a38cb88ca713216c87afe2c45c47eb18fcc2166d3fa26cfaa5c80",
+      "volume_error_mm3": 9.458744898438454e-09,
+      "solid_count": 1,
+      "valid": true
+    }
+  },
+  "support": [
+    {
+      "id": "c1-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.019236857464853,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004517672,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.018059527726305,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870588712,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368577882458,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.019229000444785,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595280169382,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870565945,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.019236857457984,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004485827,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277295459,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870613956,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574732784,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004573263,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277345796,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870632266,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574623367,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004598823,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277324191,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.018051687061246,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574741995,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004590532,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.01805952772918,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870612382,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574718453,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004584457,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.018059527732001,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870596361,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574614743,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004607432,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277267401,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870645064,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574528672,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004528548,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.018059527738309,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870671448,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368574568436,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004518925,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277315918,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870686376,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.0192368577860094,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.0192290004618827,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.018059527746944,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.018051687069062,
+        "missing_mm3": 0.0
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "block_passage_probe_overlap_mm3": 0.0,
+      "gasket_passage_probe_overlap_mm3": 0.0,
+      "head_passage_probe_overlap_mm3": 0.0,
+      "block": {
+        "probe_mm3": 1.019236857445767,
+        "missing_mm3": 0.0
+      },
+      "gasket-bottom": {
+        "probe_mm3": 1.019229000457605,
+        "missing_mm3": 0.0
+      },
+      "gasket-top": {
+        "probe_mm3": 1.0180595277390774,
+        "missing_mm3": 0.0
+      },
+      "head": {
+        "probe_mm3": 1.0180516870640146,
+        "missing_mm3": 0.0
+      }
+    }
+  ],
+  "sections": [],
+  "failures": [],
+  "changes": {
+    "block_removed_outside_mask_mm3": 0.0,
+    "block_added_outside_mask_mm3": 0.0,
+    "gasket_added_mm3": 0.0,
+    "gasket_removed_outside_mask_mm3": 0.0
+  },
+  "block_removed_inside_mask_mm3": 1917.1394992062963,
+  "negative_controls": {
+    "old_gasket_contains_tube_interior": true,
+    "old_block_missing_support_mm3": 0.64762850048401
+  },
+  "limits": [
+    "Estimated geometry, no production gasket/fluids-network certification.",
+    "Independent interior controls sample tube interior and are not exhaustive; analytic section containment report supplies broader phase coverage.",
+    "Browser, full neighbor sweep, fluid flow, staged disassembly and source comparison NOT RUN.",
+    "Block one-solid result establishes connectivity, not structural capacity."
+  ]
+}
