@@ -1,0 +1,142 @@
+{
+  "status": "SCOPE PROPOSAL ONLY; no neighbor CAD changes",
+  "inputs": {
+    "scripts/check-timing-valvetrain-inclined-scope.py": "2995173a8272e6df4f6dd77d58ca538a0f324580ce5a8f732b05b62964139da2",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-valvetrain-inclined-hypothesis-validation.json": "d877361be62efa1ebe8e5df083f1dcb1f3cd56dd732442d4f385758b17b33a2a",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/generated/lifter-body.step": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "cad/engine/generated/lifter-plunger-spring.step": "e33cc8c6d9915d6753bf3a5d49207958c6aa822bcbc6a163d3335c8928388fdf",
+    "cad/engine/generated/lifter-check-retainer.step": "cda47ec2bef7aed7cf4bf09f5933eadc65d384383f0b8030a55c349ff060f2cd",
+    "cad/engine/generated/lifter-check-spring.step": "88845c456bc7f0f11d87109fb18ec66b05000d61c26a01ad6248615545dae006",
+    "cad/engine/generated/lifter-check-ball.step": "6c0f4fc519f21f2ffdbdcc3627e756436743f0053e1ed810bcdedd051f21f4a0",
+    "cad/engine/generated/lifter-plunger.step": "77b115498bad2b90b703def022941f3ebbffffcb42f76c53452cd77457951cd7",
+    "cad/engine/generated/lifter-metering-disc.step": "e382265f91fd45b97f8d31981e00d541a50ed05fed9cfdd873ffbcb2bc01f874",
+    "cad/engine/generated/lifter-pushrod-cup.step": "e7e39eeac754ff25c1fd9ec6e9bb35a5108ac82a8299667af520570747304869",
+    "cad/engine/generated/lifter-lock-ring.step": "f6bdbc8ab3661043d5c609eda09167dd21cc76e7ae52afa1a1209391d958643b"
+  },
+  "lifter_bound": [
+    {
+      "id": "c1-intake-lifter-body",
+      "local_z_bounds_mm": [
+        -24.8,
+        26.0
+      ],
+      "rest_world_top_mm": 144.88785679212887,
+      "peak_world_top_mm": 151.16165679212887
+    },
+    {
+      "id": "c1-intake-lifter-plunger-spring",
+      "local_z_bounds_mm": [
+        -0.6478161543044518,
+        14.847816154304205
+      ],
+      "rest_world_top_mm": 113.38567294643306,
+      "peak_world_top_mm": 119.65947294643306
+    },
+    {
+      "id": "c1-intake-lifter-check-retainer",
+      "local_z_bounds_mm": [
+        -0.5,
+        0.5
+      ],
+      "rest_world_top_mm": 106.88785679212887,
+      "peak_world_top_mm": 113.16165679212887
+    },
+    {
+      "id": "c1-intake-lifter-check-spring",
+      "local_z_bounds_mm": [
+        -0.2987154978542477,
+        3.7987154978543587
+      ],
+      "rest_world_top_mm": 110.98657228998323,
+      "peak_world_top_mm": 117.26037228998322
+    },
+    {
+      "id": "c1-intake-lifter-check-ball",
+      "local_z_bounds_mm": [
+        -1.5,
+        1.5
+      ],
+      "rest_world_top_mm": 113.98785679212887,
+      "peak_world_top_mm": 120.26165679212886
+    },
+    {
+      "id": "c1-intake-lifter-plunger",
+      "local_z_bounds_mm": [
+        -11.5,
+        11.5
+      ],
+      "rest_world_top_mm": 136.38785679212887,
+      "peak_world_top_mm": 142.66165679212887
+    },
+    {
+      "id": "c1-intake-lifter-metering-disc",
+      "local_z_bounds_mm": [
+        -0.35,
+        0.3500000000000001
+      ],
+      "rest_world_top_mm": 137.13785679212887,
+      "peak_world_top_mm": 143.41165679212887
+    },
+    {
+      "id": "c1-intake-lifter-pushrod-cup",
+      "local_z_bounds_mm": [
+        -2.5,
+        2.5
+      ],
+      "rest_world_top_mm": 142.28785679212888,
+      "peak_world_top_mm": 148.56165679212887
+    },
+    {
+      "id": "c1-intake-lifter-lock-ring",
+      "local_z_bounds_mm": [
+        -0.4,
+        0.4
+      ],
+      "rest_world_top_mm": 143.2878567921289,
+      "peak_world_top_mm": 149.5616567921289
+    }
+  ],
+  "maximum_lifter_top_over_bounded_lift_mm": 151.16165679212887,
+  "proposed_backing_z_mm": [
+    244,
+    254
+  ],
+  "minimum_backing_to_lifter_z_gap_mm": 92.83834320787113,
+  "proposed_oblique_passage_radius_mm": 5.0,
+  "proposed_passage_axis_y_at_z_mm": {
+    "244": 93.06115605875469,
+    "254": 92.85672325591992,
+    "255.5": 92.82605833549471,
+    "304": 91.83455924174609
+  },
+  "minimum_sampled_new_passage_sufficient_gap": {
+    "gap_mm": 0.9776210391331235,
+    "branch": "c1-exhaust",
+    "theta": 317,
+    "axial": -0.1,
+    "z_mm": 244.0
+  },
+  "minimum_sampled_unchanged_upper_passage_gap_at_304": {
+    "gap_mm": 0.1452570291358941,
+    "branch": "c1-exhaust",
+    "theta": 166,
+    "axial": -0.1
+  },
+  "negative_controls": {
+    "R3_passage_gap_mm": -1.0223789608668765,
+    "backing_bottom_at150_lifter_z_gap_mm": -1.1616567921288663
+  },
+  "limits": [
+    "Actual lifter STEP bounds plus analytic profile maximum bound lift continuously; rod clearance is sampled in crank/axial endpoints, not continuous phase proof.",
+    "Lower head and gasket would retain existingR6/Y90 hole and union an inclinedR5 aperture. Block support must clear this union, not solelyR5.",
+    "R5 aperture and244\u2013254 backing are estimated study choices, not factory dimensions.",
+    "No CAD fit, support continuity, fluid preservation, export, source shape, or browser acceptance claimed."
+  ]
+}

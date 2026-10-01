@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "gates": {
+    "native_valid_single": true,
+    "watertight": true,
+    "bounds": true
+  },
+  "input_sha256": {
+    "scripts/check-timing-block-combined-candidate.py": "d700487ad7e06942d2a4ccdbf9523634bfe5f6622eb0d01ae8971d079d86d920",
+    "cad/engine/timing_block_combined_candidate.py": "2e79d72a18b47b0538ad9460fb2e44e5d89bf8e2a949d94a8e5bf6866fbe1d15",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/block.step": "6edd42727bfeab1f187cd26e661ab3aba74db8009b7c459fbf5595f0539feba9",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-pump-foot-faceted-validation.json": "c9ce2474a7c65a73b872fb83b7f1cac2218354e0309d45b8eeed4e8c4c9af256",
+    "inventory/engine/timing-valvetrain-inclined-delivery-validation.json": "a67aa4434925a38b8d9af34d944fe31af421c49e967efd06bc0c7b0eb82bbb56",
+    "inventory/engine/timing-block-combined-validation.json": "1d0a232c922508c21a19c01d47fe50c007a4c47bf682fd94ca4d6c7d555c0bf0",
+    "scripts/check-timing-block-combined-mesh.py": "b3c7371af304186564f5c914aa0545a842b752f7e16a9be866dfe60bb8a03d4c"
+  },
+  "mesh_origin": "native composed CAD, no STEP healing",
+  "bounds_error_mm": 0.006842374801635742,
+  "triangles": 74460,
+  "mesh_sha256": "924198522a28f3cca2beeeb3b126632115df1a6eaceaae5dc3c5e7de2ae22c7b",
+  "remaining": [
+    "Actual mesh visual review pending",
+    "Front block/cover conflict",
+    "Not installed",
+    "Browser NOT RUN"
+  ]
+}

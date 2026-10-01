@@ -1,0 +1,2360 @@
+{
+  "status": "NUMERIC COMPARISON; no CAD adaptation or factory calibration",
+  "inputs": {
+    "scripts/check-timing-valvetrain-inclined-hypothesis.py": "6e9c0033f98575af37729ad084a6450dcab29f69cb1568a707506df0cae1407b",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  },
+  "hypotheses": [
+    {
+      "upper_socket_y_mm": 90.0,
+      "pivot_y_mm": 50.89473678378863,
+      "cup_local_z_mm": -1.3856140688197343,
+      "branches": [
+        {
+          "id": "c1-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 395,
+                "axial": -0.1,
+                "center_y": 92.9146505687169,
+                "positive_y": 96.87788549142192,
+                "R6_Y90_sufficient_gap": -0.877885491421925
+              },
+              "maximum_positive_y": {
+                "theta": 395,
+                "axial": -0.1,
+                "center_y": 92.9146505687169,
+                "positive_y": 96.87788549142192,
+                "R6_Y90_sufficient_gap": -0.877885491421925
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 542,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 542,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 388,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 388,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 551,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 551,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 551,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 551,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c1-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 173,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 173,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 320,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 320,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 166,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 166,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 329,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 329,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 329,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 329,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        },
+        {
+          "id": "c2-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 155,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              },
+              "maximum_positive_y": {
+                "theta": 155,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 302,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 302,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 148,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 148,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 311,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 311,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 311,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 311,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c2-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 653,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 653,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 80,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 80,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 646,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 646,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 89,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 89,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 89,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 89,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        },
+        {
+          "id": "c3-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 635,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              },
+              "maximum_positive_y": {
+                "theta": 635,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 62,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 62,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 628,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 628,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 71,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 71,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 71,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 71,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c3-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 413,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 413,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 560,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 560,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 406,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 406,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 569,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 569,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 569,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 569,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        },
+        {
+          "id": "c4-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 275,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              },
+              "maximum_positive_y": {
+                "theta": 275,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 422,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 422,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 268,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 268,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 431,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 431,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 431,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 431,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c4-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 53,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 53,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 200,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 200,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 46,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 46,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 209,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 209,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 209,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 209,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        },
+        {
+          "id": "c5-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 515,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              },
+              "maximum_positive_y": {
+                "theta": 515,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 662,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 662,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 508,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 508,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 671,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 671,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 671,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 671,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c5-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 293,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 293,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 440,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 440,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 286,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 286,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 449,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 449,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 449,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 449,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        },
+        {
+          "id": "c6-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 5.684341886080802e-14,
+          "tilt_range_degrees": [
+            -1.2356190138071437,
+            -1.1655267817299673
+          ],
+          "top_y_range_mm": [
+            89.71876152495166,
+            90.02453352731315
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005498842140411853,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 35,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              },
+              "maximum_positive_y": {
+                "theta": 35,
+                "axial": -0.1,
+                "center_y": 92.91465056871688,
+                "positive_y": 96.8778854914219,
+                "R6_Y90_sufficient_gap": -0.8778854914219107
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 182,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              },
+              "maximum_positive_y": {
+                "theta": 182,
+                "axial": -0.1,
+                "center_y": 92.88386715537393,
+                "positive_y": 96.84710096529567,
+                "R6_Y90_sufficient_gap": -0.8471009652956707
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 28,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              },
+              "maximum_positive_y": {
+                "theta": 28,
+                "axial": -0.1,
+                "center_y": 91.89131246862104,
+                "positive_y": 95.85453946353852,
+                "R6_Y90_sufficient_gap": 0.1454605364614876
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 191,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              },
+              "maximum_positive_y": {
+                "theta": 191,
+                "axial": -0.1,
+                "center_y": 91.28910299951346,
+                "positive_y": 95.25232752227555,
+                "R6_Y90_sufficient_gap": 0.747672477724449
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 191,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              },
+              "maximum_positive_y": {
+                "theta": 191,
+                "axial": -0.1,
+                "center_y": 91.2789023045471,
+                "positive_y": 95.24212682730919,
+                "R6_Y90_sufficient_gap": 0.7578731726908066
+              }
+            }
+          }
+        },
+        {
+          "id": "c6-exhaust",
+          "peak_valve_lift_mm": 10.033202686604398,
+          "nominal_peak_residual_mm": 0.0002026866043980391,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.2353394648275768,
+            -1.1655283896485213
+          ],
+          "top_y_range_mm": [
+            89.71998102027685,
+            90.02452651280238
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.005532872155129098,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 533,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              },
+              "maximum_positive_y": {
+                "theta": 533,
+                "axial": -0.1,
+                "center_y": 92.91485228670844,
+                "positive_y": 96.87808705599171,
+                "R6_Y90_sufficient_gap": -0.8780870559917071
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 680,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              },
+              "maximum_positive_y": {
+                "theta": 680,
+                "axial": -0.1,
+                "center_y": 92.8840640794039,
+                "positive_y": 96.84729774181793,
+                "R6_Y90_sufficient_gap": -0.8472977418179237
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 526,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              },
+              "maximum_positive_y": {
+                "theta": 526,
+                "axial": -0.1,
+                "center_y": 91.89151608056848,
+                "positive_y": 95.85474297086411,
+                "R6_Y90_sufficient_gap": 0.1452570291358941
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 689,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              },
+              "maximum_positive_y": {
+                "theta": 689,
+                "axial": -0.1,
+                "center_y": 91.28929772312178,
+                "positive_y": 95.25252216185083,
+                "R6_Y90_sufficient_gap": 0.7474778381491634
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 689,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              },
+              "maximum_positive_y": {
+                "theta": 689,
+                "axial": -0.1,
+                "center_y": 91.27909754803575,
+                "positive_y": 95.24232198676481,
+                "R6_Y90_sufficient_gap": 0.7576780132351901
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "upper_socket_y_mm": 88.0,
+      "pivot_y_mm": 49.676759529896955,
+      "cup_local_z_mm": -1.4345069755274835,
+      "branches": [
+        {
+          "id": "c1-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 532,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 532,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 404,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 404,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 394,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 394,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 468,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 546,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 468,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 546,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c1-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 183,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 183,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 310,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 310,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 172,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 172,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 246,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 324,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 246,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 324,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        },
+        {
+          "id": "c2-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 292,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 292,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 164,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 164,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 154,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 154,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 228,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 306,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 228,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 306,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c2-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 663,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 663,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 70,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 70,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 652,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 652,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 6,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 84,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 6,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 84,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        },
+        {
+          "id": "c3-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 52,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 52,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 52,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 52,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 634,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 634,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 708,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 66,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 708,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 66,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c3-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 423,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 423,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 550,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 550,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 412,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 412,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 486,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 564,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 486,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 564,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        },
+        {
+          "id": "c4-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 412,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 412,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 284,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 284,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 274,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 274,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 348,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 426,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 348,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 426,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c4-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 63,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 63,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 190,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 190,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 52,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 52,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 126,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 204,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 126,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 204,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        },
+        {
+          "id": "c5-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 652,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 652,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 524,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 524,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 514,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 514,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 588,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 666,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 588,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 666,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c5-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 303,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 303,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 430,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 430,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 292,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 292,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 366,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 444,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 366,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 444,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        },
+        {
+          "id": "c6-intake",
+          "peak_valve_lift_mm": 10.033000000000015,
+          "nominal_peak_residual_mm": 1.5987211554602254e-14,
+          "maximum_closure_error_mm": 8.526512829121202e-14,
+          "tilt_range_degrees": [
+            -1.693545337212792,
+            -1.6234954720722594
+          ],
+          "top_y_range_mm": [
+            87.72131226357912,
+            88.02683849634457
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.007976275397027166,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 172,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              },
+              "maximum_positive_y": {
+                "theta": 172,
+                "axial": -0.1,
+                "center_y": 92.06296274394727,
+                "positive_y": 96.02699260202513,
+                "R6_Y90_sufficient_gap": -0.02699260202512832
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 44,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              },
+              "maximum_positive_y": {
+                "theta": 44,
+                "axial": 0,
+                "center_y": 92.0199355552547,
+                "positive_y": 95.98396526808729,
+                "R6_Y90_sufficient_gap": 0.01603473191271121
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 34,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              },
+              "maximum_positive_y": {
+                "theta": 34,
+                "axial": -0.1,
+                "center_y": 90.63408056498992,
+                "positive_y": 94.59809016543927,
+                "R6_Y90_sufficient_gap": 1.4019098345607208
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 108,
+                "axial": 0,
+                "center_y": 89.6861814646636,
+                "positive_y": 93.65031301385153,
+                "R6_Y90_sufficient_gap": 1.7220499154756728
+              },
+              "maximum_positive_y": {
+                "theta": 186,
+                "axial": -0.1,
+                "center_y": 89.79405972398423,
+                "positive_y": 93.7580631269271,
+                "R6_Y90_sufficient_gap": 1.8300563210413725
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 108,
+                "axial": 0,
+                "center_y": 89.67139818808508,
+                "positive_y": 93.635529737273,
+                "R6_Y90_sufficient_gap": 1.707266638897146
+              },
+              "maximum_positive_y": {
+                "theta": 186,
+                "axial": -0.1,
+                "center_y": 89.77983410694087,
+                "positive_y": 93.74383750988373,
+                "R6_Y90_sufficient_gap": 1.815830703998007
+              }
+            }
+          }
+        },
+        {
+          "id": "c6-exhaust",
+          "peak_valve_lift_mm": 10.033233380876368,
+          "nominal_peak_residual_mm": 0.00023338087636837201,
+          "maximum_closure_error_mm": 1.1368683772161603e-13,
+          "tilt_range_degrees": [
+            -1.6932634543767262,
+            -1.6234954314589813
+          ],
+          "top_y_range_mm": [
+            87.72254168881747,
+            88.02683867348466
+          ],
+          "max_curve_change_from_vertical_hypothesis_mm": 0.008025678347678422,
+          "sections": {
+            "254.0": {
+              "minimum_sufficient_gap": {
+                "theta": 543,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              },
+              "maximum_positive_y": {
+                "theta": 543,
+                "axial": -0.1,
+                "center_y": 92.06324293611898,
+                "positive_y": 96.02727442048386,
+                "R6_Y90_sufficient_gap": -0.027274420483859085
+              }
+            },
+            "255.5": {
+              "minimum_sufficient_gap": {
+                "theta": 670,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              },
+              "maximum_positive_y": {
+                "theta": 670,
+                "axial": -0.1,
+                "center_y": 92.02021468585274,
+                "positive_y": 95.98424424914757,
+                "R6_Y90_sufficient_gap": 0.01575575085243086
+              }
+            },
+            "304.0": {
+              "minimum_sufficient_gap": {
+                "theta": 532,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              },
+              "maximum_positive_y": {
+                "theta": 532,
+                "axial": -0.1,
+                "center_y": 90.63436166808113,
+                "positive_y": 94.59837106639294,
+                "R6_Y90_sufficient_gap": 1.401628933607061
+              }
+            },
+            "333.5": {
+              "minimum_sufficient_gap": {
+                "theta": 606,
+                "axial": 0,
+                "center_y": 89.68708473041194,
+                "positive_y": 93.65121570302122,
+                "R6_Y90_sufficient_gap": 1.7229537578026597
+              },
+              "maximum_positive_y": {
+                "theta": 684,
+                "axial": -0.1,
+                "center_y": 89.79433200798124,
+                "positive_y": 93.75833524670247,
+                "R6_Y90_sufficient_gap": 1.8303287692600114
+              }
+            },
+            "334.0": {
+              "minimum_sufficient_gap": {
+                "theta": 606,
+                "axial": 0,
+                "center_y": 89.67230391587525,
+                "positive_y": 93.63643488848453,
+                "R6_Y90_sufficient_gap": 1.7081729432659674
+              },
+              "maximum_positive_y": {
+                "theta": 684,
+                "axial": -0.1,
+                "center_y": 89.78010711960263,
+                "positive_y": 93.74411035832387,
+                "R6_Y90_sufficient_gap": 1.8161038808814047
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Integer0..720 crank and both axial endpoints only; not continuous sweep or actual CAD contact proof.",
+    "Circular passage sufficient-containment bounds use current estimatedR6 atY90 and actual modeled tube diameter; gasket/cover source dimensions remain unknown.",
+    "UpperY88 is a sensitivity scenario, not a selected production datum or permission to move socket.",
+    "All original files/reports frozen; source rod length and valve axes unchanged."
+  ]
+}

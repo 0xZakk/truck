@@ -1,0 +1,70 @@
+{
+  "status": "PASS completed scoped evidence binding; UNINSTALLED CANDIDATE",
+  "reports": {
+    "inventory/engine/timing-valvetrain-inclined-hypothesis-validation.json": {
+      "sha256": "d877361be62efa1ebe8e5df083f1dcb1f3cd56dd732442d4f385758b17b33a2a",
+      "status": "NUMERIC COMPARISON; no CAD adaptation or factory calibration"
+    },
+    "inventory/engine/timing-valvetrain-inclined-scope-validation.json": {
+      "sha256": "ed9d6943666709c58d1d4e6d823b837e9f3091ee43ebae7151791aefa894de6d",
+      "status": "SCOPE PROPOSAL ONLY; no neighbor CAD changes"
+    },
+    "inventory/engine/timing-valvetrain-inclined-candidate-validation.json": {
+      "sha256": "af8861df1bf6b7e4ee32883bb3c30dd715a46de17d0f44a498a5ebe5f25e4064",
+      "status": "PASS first mount/contact gates; deck and gasket checks separate"
+    },
+    "inventory/engine/timing-valvetrain-inclined-passages-validation.json": {
+      "sha256": "b6d7abc7539120162fcb2c88a187826c116da30546a3cffbedfaea75631ee262",
+      "status": "PASS exact scoped stack support and independent sampled interior controls"
+    },
+    "inventory/engine/timing-valvetrain-inclined-rocker-interfaces-validation.json": {
+      "sha256": "e370e3d32031d5075a21426d46d4c6d85ee734b9b4b04f09e6c6345745a90415",
+      "status": "PASS exact protected contact neighborhoods"
+    },
+    "inventory/engine/timing-valvetrain-inclined-piston-envelope-validation.json": {
+      "sha256": "c1a71a0158d4cd797227faa4bed9cd239ea27f500160fe8e6026d174c2dd61ae",
+      "status": "PASS sampled conservative valve/piston Z envelopes; continuous motion NOT PROVEN"
+    },
+    "inventory/engine/timing-valvetrain-inclined-export-contacts-validation.json": {
+      "sha256": "2da2b305503f2e1e879a171738d80795db240a37a3f3030755d3a1f1dd5e72eb",
+      "status": "PASS reimported actual STEP linkage contacts"
+    },
+    "inventory/engine/timing-valvetrain-inclined-export-validation.json": {
+      "sha256": "5430e0a800bd7f50887af35527cb788a30f7633437d913abce33f01a8ce4ec0e",
+      "status": "PASS watertight bounded exports; candidate remains uninstalled"
+    }
+  },
+  "transitive_local_cad_source_sha256": {
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47"
+  },
+  "artifact_sha256": {
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rocker-arm.step": "106b9c1a95c90898aa4218466d56b1b68c5a35b3b3799e16f3c5cb0a60d15b89",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.step": "2a468f017d1a38cb88ca713216c87afe2c45c47eb18fcc2166d3fa26cfaa5c80",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/block.step": "6edd42727bfeab1f187cd26e661ab3aba74db8009b7c459fbf5595f0539feba9",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/block.glb": "b02dd72848bf197d178e1b853423cd55271ccc1052099dc185e4b533d0f1e36a",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.glb": "d0a1a298c12b36700d6c22fd837f8d788b8e6201c9149c663771a0c371cc4d3f",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rocker-arm.glb": "d67f3a8e29707963851966c8f79c6acf27224ee4bcc08682c36a7c24f206c837",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.glb": "4ad92431a315d759c9fd8e34e51bced5898c2954896b8406d90149802eeb6673",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/lower-stack-section.png": "cf225d96480098f0752545d2359d22373f05fb876c49c69d49a2e40ef988afaf",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/adapter-comparison.png": "aed4dbb3babd8890b626312f595a9c0b435c9e29f74e19e4dd937340d737f43e"
+  },
+  "checker_sha256": "342fe617645b456831e517cbe14cf8887bd8224561d004c7c614f91e05456936",
+  "remaining": [
+    "Full spring/cover/other-neighbor motion sweep and staged disassembly NOT RUN.",
+    "Production geometry/source comparison and true thread engagement unresolved.",
+    "Fluid-feature preservation is bounded spatially outside approved masks; no traced production network.",
+    "Browser acceptance NOT RUN; no installation or Done claim."
+  ]
+}

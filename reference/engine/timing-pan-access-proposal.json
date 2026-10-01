@@ -1,0 +1,40 @@
+{
+  "scope": "Unbuilt section proposal; no geometry changes",
+  "preferred_hypothesis": "Broad inward front-wall setback, pending root review",
+  "estimated_outer_inner_x_mm": [
+    378,
+    374
+  ],
+  "estimated_wall_mm": 4,
+  "estimated_tool_diameter_mm": 22,
+  "center_tool_to_outer_wall_clearance_mm": 1,
+  "fixed_front_axes": [
+    [
+      390,
+      -110
+    ],
+    [
+      390,
+      0
+    ],
+    [
+      390,
+      180
+    ]
+  ],
+  "actual_lower_body_center_section": {
+    "z_mm": -82,
+    "outer_x_mm": 363,
+    "inner_x_mm": 360
+  },
+  "station10": "Actual section shows steep transition intersecting head/washer; requires separately shaped pad/transition, not just front wall setback.",
+  "minimum_wall_3d": "NOT RUN",
+  "oil_volume_continuity": "NOT RUN",
+  "full_tool_sweep": "NOT RUN",
+  "source_limit": "No source establishes these recess dimensions. Broad wall versus local dimples is an explicit estimated stamping comparison.",
+  "input_sha256": {
+    "cad/engine/generated/timing-cover-attachment-v2/preview.npz": "2be097a81c47d4104cd2a299c72cce5416bd75d60d41e32369da03dfd1a0ecc6",
+    "cad/engine/generated/timing-cover-attachment-v2/names.json": "4017dd58e8adecdde328feea53b18a60bd64b2c669da20b8baa2c0bc0f7557f7",
+    "inventory/engine/timing-cover-attachment-v2-validation.json": "71cea5e88baf86d3817ccfe41ac64e0884324ec36c938f4387486a198aec69cc"
+  }
+}

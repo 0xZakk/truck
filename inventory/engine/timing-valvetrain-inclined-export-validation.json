@@ -1,0 +1,37 @@
+{
+  "exports": {
+    "rocker-arm": {
+      "glb_sha256": "d67f3a8e29707963851966c8f79c6acf27224ee4bcc08682c36a7c24f206c837",
+      "watertight": true,
+      "triangles": 3602,
+      "maximum_bounds_error_mm": 3.746016830064036e-07
+    },
+    "cylinder-head": {
+      "glb_sha256": "d0a1a298c12b36700d6c22fd837f8d788b8e6201c9149c663771a0c371cc4d3f",
+      "watertight": true,
+      "triangles": 82746,
+      "maximum_bounds_error_mm": 5.364418020903372e-06
+    },
+    "head-gasket": {
+      "glb_sha256": "4ad92431a315d759c9fd8e34e51bced5898c2954896b8406d90149802eeb6673",
+      "watertight": true,
+      "triangles": 12428,
+      "maximum_bounds_error_mm": 4.053115842950206e-06
+    },
+    "block": {
+      "glb_sha256": "b02dd72848bf197d178e1b853423cd55271ccc1052099dc185e4b533d0f1e36a",
+      "watertight": true,
+      "triangles": 73724,
+      "maximum_bounds_error_mm": 0.006842374801641071
+    }
+  },
+  "input_sha256": {
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rocker-arm.step": "106b9c1a95c90898aa4218466d56b1b68c5a35b3b3799e16f3c5cb0a60d15b89",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.step": "2a468f017d1a38cb88ca713216c87afe2c45c47eb18fcc2166d3fa26cfaa5c80",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/block.step": "6edd42727bfeab1f187cd26e661ab3aba74db8009b7c459fbf5595f0539feba9"
+  },
+  "render_sha256": "aed4dbb3babd8890b626312f595a9c0b435c9e29f74e19e4dd937340d737f43e",
+  "stack_render_sha256": "cf225d96480098f0752545d2359d22373f05fb876c49c69d49a2e40ef988afaf",
+  "status": "PASS watertight bounded exports; candidate remains uninstalled"
+}
