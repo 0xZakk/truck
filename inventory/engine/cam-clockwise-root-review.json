@@ -1,0 +1,20 @@
+{
+  "reviewer": "root integration owner",
+  "baseline": "26d0fdc4e7cdd3de0c621309499d1535d8c5131e",
+  "delivery_sha256": "30ff76d46c8f1e0b6729548a2000f7e59221eaa0b61f10cdb6457fa202094bed",
+  "verified_bindings": 37,
+  "visual": "cad/engine/generated/cam-clockwise-candidate/cam-clockwise-review.png",
+  "verdict": "Accept bounded corrected-lobe candidate for combined-motion review; not installed",
+  "findings": [
+    "Actual full shaft mesh and lobe section show retained shaft/journal/end structure and opposite contact side under corrected spin.",
+    "Positive source replay and independent4096-point sections distinguish intended phase changes from unreliable Boolean changed-volume diagnostics.",
+    "120 actual cam/lifter samples preserve contact and zero overlap; wrong-spin/lobe controls remain explicit.",
+    "Linkage frame API preserves positive event time; it does not certify all engine neighbors or crossed-drive gear compatibility."
+  ],
+  "remaining": [
+    "Combined corrected crank/cam/linkage checks",
+    "Crossed-drive tooth correction",
+    "Coordinated canonical geometry/frames/viewer migration",
+    "Production profile identity and browser acceptance"
+  ]
+}

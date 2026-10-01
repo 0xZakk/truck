@@ -1,0 +1,50 @@
+{
+  "actual_step_lead": {
+    "cam": {
+      "actual_helical_edges": 304,
+      "minimum_slope_rad_per_mm": 0.05555555101056017,
+      "maximum_slope_rad_per_mm": 0.055555551010622956
+    },
+    "distributor": {
+      "actual_helical_edges": 304,
+      "minimum_slope_rad_per_mm": 0.05555555101054937,
+      "maximum_slope_rad_per_mm": 0.05555555101061983
+    }
+  },
+  "distributor_inner_connection_removed_mm3": 0,
+  "distributor_inner_connection_added_mm3": 0,
+  "actual_cam_adjacent_shaft_sections": [
+    {
+      "x_mm": 220.584,
+      "y_bounds": [
+        80.109820990161,
+        110.109820990161
+      ],
+      "z_bounds": [
+        61.087856792129045,
+        91.08785679212905
+      ]
+    },
+    {
+      "x_mm": 234.584,
+      "y_bounds": [
+        80.109820990161,
+        110.109820990161
+      ],
+      "z_bounds": [
+        61.087856792129045,
+        91.08785679212905
+      ]
+    }
+  ],
+  "candidate_cam_R15_core_missing_mm3": 0,
+  "actual_cam_R15_core_missing_mm3": 0,
+  "scope": "Actual STEP helix slope and distributor connection material/void preservation; full camshaft integration remains caller-owned",
+  "input_sha256": {
+    "scripts/check-crossed-oil-drive-connection-lead.py": "9ef6d2d3ee9ee6aec03906bae79fa70757459664c73dabf5552202c1358fcee6",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step": "a8c0288344579f739983e3b7a29858c4806f364351917be11b3cf82bf5b23b29",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step": "b875ee0a6669664c9d3246c175e188c3db561334e42ffc5d9aee937bc60b08f8",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761"
+  }
+}

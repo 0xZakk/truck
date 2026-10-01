@@ -1,0 +1,94 @@
+{
+  "rows": [
+    {
+      "station": 1,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 1.3322676295501878e-15
+    },
+    {
+      "station": 2,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 0.0
+    },
+    {
+      "station": 3,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 0.0
+    },
+    {
+      "station": 4,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 0.0
+    },
+    {
+      "station": 5,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 0.0
+    },
+    {
+      "station": 6,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 0.0
+    },
+    {
+      "station": 7,
+      "cover_overlap": 0.0,
+      "block_overlap": 0.0,
+      "full_head_seat_missing": 0.0,
+      "tool_obstruction": 0.0,
+      "head_cover_distance_mm": 0.0,
+      "male_block_distance_mm": 1.7763568394002505e-15
+    },
+    {
+      "part": "pan",
+      "block_overlap": 0.0
+    },
+    {
+      "part": "pan-gasket",
+      "block_overlap": 0.0
+    }
+  ],
+  "status": "PASS",
+  "inputs_sha256": {
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-2.step": "30a00f8399fee7a1ddec2dfac57a0924a624a95fba7452ddbfc8b7062d0168b4",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-5.step": "b064d49b42f1426d06ba602a44a1c9107f3ff4acf47c96a04a958b8c5da380ae",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-6.step": "6f8ecba958091ab4240e6063f667992de4d01871b0ce5cc4e1a0cd3cafc7c305",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-7.step": "088b54b80374a49d472011af88be931f5c1d5bc73cd318740cd5235e7939d603",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "scripts/check-timing-pan21-main-joint.py": "d34026ab22b5a57913c0a327515e668303ce334e8400cd42a6579daf67a24e56"
+  },
+  "limits": [
+    "Seven-screw trial block unchanged; exact1994 head/length/thread transfer and complete block wet/material guards remain unverified",
+    "Distance0 plus complete seating/source female checks establishes nominal geometric contact, not load capacity"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "region": "retired21",
+      "actual_upper_gasket_unbacked_mm3": 0,
+      "actual_lower_gasket_unbacked_mm3": 0
+    },
+    {
+      "region": "new21",
+      "actual_upper_gasket_unbacked_mm3": 0,
+      "actual_lower_gasket_unbacked_mm3": 0
+    }
+  ],
+  "status": "PASS",
+  "earlier_probe_limitation": "FullR10 bottom disk extends toX400 although actual gasket front isX399 at newY\u221295. Its0.1174518138mm3 absent material is an overbroad analytic witness, retained in interface report; this check tests complete actual gasket withinR12 at both changed locations. No geometry or threshold change.",
+  "inputs_sha256": {
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "scripts/check-timing-pan21-actual-gasket-contact.py": "e1ad1c09b8ca93265e2c02e8f1dcbe461b80e8a64f5b7aa4b3d8aeaed39bbf20"
+  }
+}

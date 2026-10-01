@@ -1,0 +1,13 @@
+built
+{'station': 1, 'axis_yz_mm': [-119.19951535908172, -6.8728541983332425], 'screw_cover_overlap_mm3': 68.13496234854487, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 1063.7641870818668}
+{'station': 2, 'axis_yz_mm': [-60.17905521045717, 19.04719901657343], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+{'station': 3, 'axis_yz_mm': [-6.627940493863827, 98.99106943536769], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+{'station': 4, 'axis_yz_mm': [97.5478052976514, 198.56723454396885], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+{'station': 5, 'axis_yz_mm': [222.86727322987147, 158.35846880484021], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+{'station': 6, 'axis_yz_mm': [251.91680672464793, 74.42369033067094], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+{'station': 7, 'axis_yz_mm': [217.24482469086223, -7.893399845733515], 'screw_cover_overlap_mm3': 0.0, 'screw_block_overlap_mm3': 0.0, 'female_material_missing_mm3': 0, 'floor_missing_mm3': 0.0, 'seat_missing_mm3': 0.0, 'access_envelope_blocked_mm3': 0.0}
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/check-timing-cover-seven-fastener-candidate.py", line 36, in <module>
+    for n,g in d['pan_guards'].items():panrows.append({'station':n,'added_mm3':measure(f'panadd-{n}',cover.cut(d['oldcover']).intersect(g)),'removed_mm3':measure(f'panremoved-{n}',d['oldcover'].cut(cover).intersect(g))})
+                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ShapeList' object has no attribute 'intersect'

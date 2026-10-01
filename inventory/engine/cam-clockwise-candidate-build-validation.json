@@ -1,0 +1,151 @@
+{
+  "status": "PASS bounded source replay, phase-only revision and export",
+  "inputs": {
+    "scripts/check-cam-clockwise-candidate.py": "3c6ee880be2acc41b34f5e3518a7a110d034d3742e374e6992aa8bc83654d1dc",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/candidates/valve-motion/profile.json": "d3c8fc43f1f2d35fc8630c8cd929ddfa7b384e0e5e816b1e195dbd4477802f50",
+    "cad/engine/generated/timing-coupled-core-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af"
+  },
+  "replay_difference_mm3": 0.0,
+  "outside_masks_difference_mm3": 0.0,
+  "stations": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "x_mm": 259.48,
+      "old_phase_deg": 234.0,
+      "new_phase_deg": -234.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 3358.0477587388987
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "x_mm": 309.48,
+      "old_phase_deg": 123.0,
+      "new_phase_deg": -123.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 3336.6545908116664
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "x_mm": 145.688,
+      "old_phase_deg": 474.0,
+      "new_phase_deg": -474.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 32154.3260844312
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "x_mm": 195.688,
+      "old_phase_deg": 363.0,
+      "new_phase_deg": -363.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 13459.80999863825
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "x_mm": 31.896,
+      "old_phase_deg": 354.0,
+      "new_phase_deg": -354.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 16082.221542212688
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "x_mm": 81.896,
+      "old_phase_deg": 243.0,
+      "new_phase_deg": -243.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 0.023704941173491534
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "x_mm": -81.896,
+      "old_phase_deg": 534.0,
+      "new_phase_deg": -534.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 0.0
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "x_mm": -31.896,
+      "old_phase_deg": 423.0,
+      "new_phase_deg": -423.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 0.0079773602988098
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "x_mm": -195.688,
+      "old_phase_deg": 294.0,
+      "new_phase_deg": -294.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 32154.32608949606
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "x_mm": -145.688,
+      "old_phase_deg": 183.0,
+      "new_phase_deg": -183.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 13301.731647073842
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "x_mm": -309.48,
+      "old_phase_deg": 414.0,
+      "new_phase_deg": -414.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 3358.0477631242184
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "x_mm": -259.48,
+      "old_phase_deg": 303.0,
+      "new_phase_deg": -303.0,
+      "core_difference_mm3": 0.0,
+      "boolean_changed_mm3_untrusted": 3336.654595969885
+    }
+  ],
+  "protected_region_fault_mm3": 0.5235987755982987,
+  "exports": {
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.step": "81933607c28c521f8f077239e16174a5d718c9aec0f1e4450ac041b1931fbc68",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft.step": "25c15afaa9d2334c03265914169e1b2a5014403566ce98db9f79bf8f41e3a178",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.glb": "798770680f49a91872cb65a6bf604e2981ef74d83cc00ecfe8f81a94eac2ec93"
+  },
+  "roundtrip_volume_error_mm3": 4.6496279537677765e-07,
+  "mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "triangles": 37432,
+    "bounds_error_mm": 0.007964158415894929
+  },
+  "limits": [
+    "Crossed-drive geometry unchanged but corrected handedness unsupported",
+    "No whole-engine or browser acceptance"
+  ]
+}

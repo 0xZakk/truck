@@ -1,0 +1,54 @@
+{
+  "scope": "Local geometric phase/backlash bracket at rest; not torque contact or production backlash specification",
+  "rows": [
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": -1,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.13678320305291716,
+      "metric_error": null
+    },
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": -0.75,
+      "distance_mm": 0.012409234755420134,
+      "overlap_mm3": 0,
+      "metric_error": null
+    },
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": -0.5,
+      "distance_mm": 0.06461836765034695,
+      "overlap_mm3": 0,
+      "metric_error": null
+    },
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": 0.5,
+      "distance_mm": 0.06461836763945951,
+      "overlap_mm3": 0,
+      "metric_error": null
+    },
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": 0.75,
+      "distance_mm": 0.012409234744497948,
+      "overlap_mm3": 0,
+      "metric_error": null
+    },
+    {
+      "fixed_cam_degrees": 0,
+      "distributor_phase_error_degrees": 1,
+      "distance_mm": 0.0,
+      "overlap_mm3": 0.1367831985319358,
+      "metric_error": null
+    }
+  ],
+  "input_sha256": {
+    "scripts/check-crossed-oil-drive-backlash.py": "95f86ae468ac689447d2e07de97720135cbd5ec12e9f9cdfd6c09d70756c6456",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step": "a8c0288344579f739983e3b7a29858c4806f364351917be11b3cf82bf5b23b29",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step": "b875ee0a6669664c9d3246c175e188c3db561334e42ffc5d9aee937bc60b08f8",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b"
+  }
+}

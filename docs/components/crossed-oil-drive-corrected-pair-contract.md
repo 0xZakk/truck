@@ -1,0 +1,11 @@
+# Corrected crossed-drive pair — contract before CAD
+
+Root authorized a separate bounded pair after the frozen direction mismatch. Issues #32/#34, branch `engine/timing-motion-integration`, baseline `dafb8175e4e7b328d2a16bdc47914307f044b0c8`. Own new pair module/check/report/generated folder only. Preserve all discovery failures. No shared transform writes or whole cam/shaft mirror.
+
+Keep both actual axes and the declared connected-branch translation,16 teeth each,18mm pitch radius,12mm face width, original tooth thickness/root/tip/involute law and all shaft/bore/cross-pin/shoulder connection surfaces. These gear dimensions and20° axis tilt remain estimates. Generate only reversed local tooth twist, k=+1/18rad/mm, then register tooth phase for the existing contact side. This is a functional estimated correction, not proof of factory tooth hand.
+
+Before CAD: with cam axis a and distributor axis d, contact vectors18n/−18n, new tangents are tcam=a+d and tdist=d+a. Common transverse normal is proportional to a−d. Relative pitch velocity along that normal vanishes exactly when **ωdistributor=−ωcam**. Thus the proposed+q/2 cam and preserved−q/2 distributor are compatible with this new signed lead. Reversing only one tooth twist would destroy tangent alignment; moving the centerline or reversing event time is not a repair.
+
+Build pair-level solids first; do not modify the full camshaft while the root's cam/lobe rephasing work is active. Cam gear connection is its root cylinder/face envelope; distributor gear must preserve actual axial bore, cross-pin bore, collar and mounting frame. A future full-cam adapter must replace only old tooth material outside the unchanged root cylinder over its12mm face and prove everything else unchanged.
+
+Phase is a tooth registration freedom only. Select it from actual fit around one22.5° tooth period, retain rejected trials, and sample interstitial phases (at most1.40625° spacing) to defeat the demonstrated11.25° endpoint alias. Check finite surface clearance, collision, positive contact onset under bounded phase perturbation/backlash, tooth periodicity, validity/export, exact connection surfaces and corrected/incorrect ratio controls. Contact under torque, production backlash specification and full assembly motion remain unverified. Root must review before any shaft integration.

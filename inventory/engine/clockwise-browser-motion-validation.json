@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Isolated numerical browser helper versus CAD candidate; not loaded or browser-accepted",
+  "rows": 3768,
+  "sliderRows": 942,
+  "sliderMaximum": 1.2789769243681803e-13,
+  "shaftRows": 314,
+  "shaftMaximum": 1.7763568394002505e-15,
+  "maximumNumericDifference": 1.7053025658242404e-13,
+  "maximumClosureMm": 8.526512829121202e-14,
+  "legacyLowerBallFaultMm": 5.109820990161097,
+  "omittedAxialPhaseFaultMm": 0.005938608367537679,
+  "bindings": {
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/crossed_oil_drive_endplay_candidate.py": "1e6a337b50df96a257944bb3e2f7dbe4bb5dc03cd6b9b701bf0f6aa89e2534e3",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/crank-clockwise-candidate-validation.json": "9ad5dde4a1d4220fc858e634539fa9d92aea12147f01cac034b43aeb5c091bfd",
+    "viewer/engine-clockwise-motion-candidate.js": "53b127fe0e797b0ca4f86d5baf076639dc57dcefc32cb228133ccb77cbb53514",
+    "viewer/engine-valve-motion.js": "6b86b8bf1601b7df10966bf20c57e25bf7cdb4d48f6243bfb5da55bfc16d3348",
+    "viewer/engine-valve-source.js": "b123cbae4474a19e5320a3ef0c08326671d6217aea2518a64feb63bb1acee9ac",
+    "scripts/check-clockwise-browser-motion.mjs": "1c53aefdf8f67034bab29b1141a13cc44178dbb828dc59d82a66a89654b113b9",
+    "scripts/export-clockwise-motion-reference.py": "c65ed850caa5548570d5ad5eefec572b77cf883768c1e041069996240c4bbd33"
+  },
+  "limitations": [
+    "No live browser check",
+    "No installed manifest/geometry revision",
+    "No spring mesh/contact verification",
+    "Atlas runtime and installation remain pending"
+  ]
+}

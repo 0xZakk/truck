@@ -1,0 +1,191 @@
+{
+  "status": "SCOPED comparison trial; no integration",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/timing_cover_seven_fastener_candidate.py": "fa39342ab3f2db82c8fd90f71bf63b7b2f580396ede2f118133d10189049de55",
+    "scripts/check-timing-cover-seven-fastener-candidate.py": "532c09a1690d34d8c057e9191e548824e66a650500a3ae00c7b5cbd4787bce6b"
+  },
+  "validity": {
+    "block": {
+      "valid": true,
+      "solids": 1
+    },
+    "cover": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-1": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-2": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-3": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-4": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-5": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-6": {
+      "valid": true,
+      "solids": 1
+    },
+    "main-cover-screw-7": {
+      "valid": true,
+      "solids": 1
+    }
+  },
+  "stations": [
+    {
+      "station": 1,
+      "axis_yz_mm": [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      "screw_cover_overlap_mm3": 68.13496234854487,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 1063.7641870818668
+    },
+    {
+      "station": 2,
+      "axis_yz_mm": [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    },
+    {
+      "station": 3,
+      "axis_yz_mm": [
+        -6.627940493863827,
+        98.99106943536769
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    },
+    {
+      "station": 4,
+      "axis_yz_mm": [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    },
+    {
+      "station": 5,
+      "axis_yz_mm": [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    },
+    {
+      "station": 6,
+      "axis_yz_mm": [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    },
+    {
+      "station": 7,
+      "axis_yz_mm": [
+        217.24482469086223,
+        -7.893399845733515
+      ],
+      "screw_cover_overlap_mm3": 0.0,
+      "screw_block_overlap_mm3": 0.0,
+      "female_material_missing_mm3": 0,
+      "floor_missing_mm3": 0.0,
+      "seat_missing_mm3": 0.0,
+      "access_envelope_blocked_mm3": 0.0
+    }
+  ],
+  "protected_pan_sockets": [
+    {
+      "station": 21,
+      "added_mm3": 0,
+      "removed_mm3": 0
+    },
+    {
+      "station": 23,
+      "added_mm3": 0,
+      "removed_mm3": 0
+    },
+    {
+      "station": 22,
+      "added_mm3": 0,
+      "removed_mm3": 0
+    }
+  ],
+  "measurement_errors": {},
+  "artifacts": {
+    "main-cover-screw-7.step": "088b54b80374a49d472011af88be931f5c1d5bc73cd318740cd5235e7939d603",
+    "cover.step": "6239fde960aa95f357a2f5482c7be232a271a4f6b7a141915014ef00f5d52017",
+    "main-cover-screw-6.step": "6f8ecba958091ab4240e6063f667992de4d01871b0ce5cc4e1a0cd3cafc7c305",
+    "main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "head-cover-1.step": "631370657e32c2f6b9028dd802aaf8659fc500aabe2dc40f24b2855b34e53e84",
+    "main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "access-cover-1.step": "cbe5853d4342005d2263f23308e988770d0c077cbf7efc5a9cb71b28e740147b",
+    "main-cover-screw-2.step": "30a00f8399fee7a1ddec2dfac57a0924a624a95fba7452ddbfc8b7062d0168b4",
+    "main-cover-screw-5.step": "b064d49b42f1426d06ba602a44a1c9107f3ff4acf47c96a04a958b8c5da380ae",
+    "block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba"
+  },
+  "not_run": [
+    "full assembly neighbors and wet/core locality pending initial head/tool feasibility",
+    "GLB/render pending initial feasibility",
+    "exact1994 BOM, strength, torque, browser and installation"
+  ],
+  "assumptions": {
+    "seat_x_mm": 379.8,
+    "nominal_comparison_length_mm": 22.225,
+    "head_radius_height_estimate_mm": [
+      8.75,
+      5.3
+    ],
+    "source_application": "Ford1986 4.9 comparison;1994 transfer unverified"
+  },
+  "initial_gates": {
+    "cad": true,
+    "joint_and_access": false,
+    "pan_socket_preserved": true
+  },
+  "local_status": "FAIL initial gates"
+}

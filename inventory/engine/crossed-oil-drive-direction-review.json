@@ -1,0 +1,201 @@
+{
+  "source_construction": {
+    "teeth_each": 16,
+    "pitch_radius_mm": 18,
+    "face_width_mm": 12,
+    "signed_twist_deg_across_face": -38.19718634205488,
+    "lead_slope_rad_per_mm": -0.05555555555555555,
+    "factory_hand": "UNKNOWN; geometric signed lead only"
+  },
+  "axes": {
+    "cam": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "distributor": [
+      0.0,
+      0.3420201433256687,
+      0.9396926207859084
+    ],
+    "dot": 0.0,
+    "common_normal_cam_to_distributor": [
+      0.0,
+      0.9396926207859084,
+      -0.3420201433256687
+    ],
+    "shift_mm": [
+      0.0,
+      5.109820990161097,
+      4.087856792128875
+    ],
+    "old_drive_origin_mm": [
+      227.584,
+      123.8289343482927,
+      59.687274840275926
+    ],
+    "shifted_drive_origin_mm": [
+      227.584,
+      128.9387553384538,
+      63.7751316324048
+    ],
+    "shifted_axis_spacing_mm": 36.0,
+    "unshifted_axis_spacing_mm": 32.5964682879474,
+    "unshifted_axial_registration_error_mm": -5.588990569816467
+  },
+  "lead_tangent_check": {
+    "cam": [
+      1.0,
+      -0.3420201433256687,
+      -0.9396926207859084
+    ],
+    "distributor": [
+      -1.0,
+      0.3420201433256687,
+      0.9396926207859084
+    ],
+    "parallel_cross_norm": 0.0,
+    "normal_velocity_same_signed_rates": 0.0,
+    "normal_velocity_opposite_signed_rates": 25.45584412271571,
+    "units": "mm/s per1rad/s shaft rate",
+    "conclusion": "Current two signed leads require equal signed cam/distributor angular rates for this contact side; proposed opposite rates incompatible"
+  },
+  "actual_manifest_motion": {
+    "cam-motion": {
+      "type": "cam"
+    },
+    "distributor-rotation": {
+      "type": "distributor"
+    },
+    "oil-pump-inner-rotation": {
+      "type": "rotary",
+      "axis": "z",
+      "ratio": -0.5
+    },
+    "oil-pump-outer-rotation": {
+      "type": "rotary",
+      "axis": "z",
+      "ratio": -0.4
+    },
+    "oil-pump-intermediate-rotation": {
+      "type": "rotary",
+      "axis": "z",
+      "ratio": -0.5
+    }
+  },
+  "actual_tooth_fit_samples": [
+    {
+      "cam_angle_deg": 0,
+      "distributor_angle_deg": 0,
+      "overlap_mm3": 0,
+      "distance_mm": 0.16909870728237936,
+      "metric_error": null
+    },
+    {
+      "cam_angle_deg": 0,
+      "distributor_angle_deg": 0,
+      "overlap_mm3": 0,
+      "distance_mm": 0.16909870728237936,
+      "metric_error": null
+    },
+    {
+      "cam_angle_deg": 5.625,
+      "distributor_angle_deg": 5.625,
+      "overlap_mm3": 0,
+      "distance_mm": 0.17019406063709805,
+      "metric_error": null
+    },
+    {
+      "cam_angle_deg": 5.625,
+      "distributor_angle_deg": -5.625,
+      "overlap_mm3": 114.10496281999266,
+      "distance_mm": 0.0,
+      "metric_error": null
+    },
+    {
+      "cam_angle_deg": 11.25,
+      "distributor_angle_deg": 11.25,
+      "overlap_mm3": 0,
+      "distance_mm": 0.16909870728244433,
+      "metric_error": null
+    },
+    {
+      "cam_angle_deg": 11.25,
+      "distributor_angle_deg": -11.25,
+      "overlap_mm3": 0,
+      "distance_mm": 0.1690987072831907,
+      "metric_error": null
+    }
+  ],
+  "attachment_axes": {
+    "distributor-shaft": {
+      "origin_mm": [
+        227.584,
+        158.01046752113564,
+        143.649004399207
+      ],
+      "axis": [
+        0.0,
+        0.3420201433256687,
+        0.9396926207859084
+      ],
+      "distance_from_drive_axis_mm": 0.0
+    },
+    "oil-pump-intermediate-shaft": {
+      "origin_mm": [
+        227.584,
+        71.54503912726,
+        -93.91280767643693
+      ],
+      "axis": [
+        0.0,
+        0.3420201433256687,
+        0.9396926207859084
+      ],
+      "distance_from_drive_axis_mm": 7.105427357601002e-15
+    },
+    "oil-pump-rotor-shaft": {
+      "origin_mm": [
+        227.584,
+        67.44079740735197,
+        -105.18911912586782
+      ],
+      "axis": [
+        0.0,
+        0.3420201433256687,
+        0.9396926207859084
+      ],
+      "distance_from_drive_axis_mm": 0.0
+    }
+  },
+  "same_direction_attachment_contacts": {
+    "distributor-shaft / oil-pump-intermediate-shaft": {
+      "rest_distance_mm": 0.03999999999884793,
+      "rest_overlap_mm3": 0
+    },
+    "oil-pump-intermediate-shaft / oil-pump-rotor-shaft": {
+      "rest_distance_mm": 0.03999999999887194,
+      "rest_overlap_mm3": 0
+    }
+  },
+  "limits": [
+    "No factory hand/count/phase assertion",
+    "Sampled gear fit only; baseline meshing never accepted",
+    "Rigid translation preserves shaft/pump attachment, not surrounding neighbor acceptance",
+    "No pump pressure/flow direction or blanket ratio change claim"
+  ],
+  "input_sha256": {
+    "scripts/check-crossed-oil-drive-direction.py": "3d9624617d686d658a5f909bd577d20e70252fc675306fd00e46de50a32c8317",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a",
+    "cad/engine/generated/oil-pump-intermediate-shaft.step": "1a1fb02a45835ce7521f58d1decb496a592971c3c98d74295fd8d810ff358952",
+    "cad/engine/generated/oil-pump-rotor-shaft.step": "e70378f97719491e12dc2106dd63f93c11dda3909aac4d0b95959db25b83a2bf",
+    "cad/engine/generated/oil-pump-inner-rotor.step": "09ba28b0e860c3c038d0563bb6539d0a49df6d7f402b38a135c7d6049454b56f",
+    "cad/engine/generated/oil-pump-outer-rotor.step": "580d8282dd8554ed7f95ab0e60defb082ec409589a5e7b2e1bf2c570a7b4f894"
+  }
+}

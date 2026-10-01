@@ -1,0 +1,28 @@
+{
+  "status": "READ-ONLY preflight; candidate not built",
+  "new_station21_mm": [
+    390.0,
+    -95.0,
+    -32.1
+  ],
+  "source_status": "Explicit estimated feasibility datum, not measured Ford geometry",
+  "new_stock_source_cover_cavity_overlap_mm3": 5026.548245743667,
+  "new_stock_cavity_currently_void_mm3": 1671.6944454465824,
+  "new_stock_main1_head_overlap_mm3": 0.0,
+  "new_stock_main1_access_overlap_mm3": 0.0,
+  "new_stock_other_pan23_guard_overlap_mm3": 0.0,
+  "new_stock_missing_from_existing_cover_mm3": 1671.6944454465824,
+  "new_r6p2_wall_envelope_missing_from_existing_cover_mm3": 695.888389403221,
+  "analytic_separation_mm": {
+    "stock_to_pan_upper_wall_front_x": 2,
+    "stock_to_arch_radial_y_limit": 25.6,
+    "stock_to_main1_access_y": 3.6995153590817154,
+    "new_clearance_bore_to_pan_upper_wall_x": 7.699999999999989
+  },
+  "inputs_sha256": {
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/cover.step": "6239fde960aa95f357a2f5482c7be232a271a4f6b7a141915014ef00f5d52017",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "cad/engine/timing_cover_seven_fastener_candidate.py": "fa39342ab3f2db82c8fd90f71bf63b7b2f580396ede2f118133d10189049de55",
+    "scripts/research-timing-pan21-lateral-datum.py": "c3fd777a7756300e36017cc073c2749c722edfc5ce6848f0b53162e983e7f8c6"
+  }
+}

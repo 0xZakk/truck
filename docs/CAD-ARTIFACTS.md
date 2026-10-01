@@ -199,3 +199,9 @@ Expected SHA-256: **5b46ae082c6ea9fe23d67b44b26578e1473fe2d2a13ac92cbae8953904b5
 The [motion/contact supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-motion-contact) contains the corrected crank throw-phase candidate, bounded lower/upper pan contact evidence and guarded pan/fastener integration assets. It is not an installed engine update. Active corrected cam, crossed-drive and main-cover-seat work is excluded.
 
 Restore predecessors through pan-seal first. Download `truck-motion-contact-20261001.tar.gz`, verify SHA-256 **2be3c16b8274c0b06c30eb0aa78c2e3ead383d80eb009fc46ae82368c6468f93**, then extract from the repository root after preserving newer work. The archive has 89 files / 6,756,376 bytes. `docs/cad-motion-contact-checkpoint.json` records every file hash and predecessor binding. Only project-authored renders are included; source originals and owner photographs remain excluded.
+
+## Cam/cover candidate supplement
+
+The cam/cover supplement (`studies-2026-10-01-cam-cover`) preserves corrected cam and crossed-drive geometry/endplay, rejected cover-fastener trials, and the coordinated pan21 candidate. No canonical replacement or installed acceptance. Restore predecessors through motion-contact first.
+
+Download `truck-cam-cover-20261001.tar.gz` from the private repository release, verify SHA-256 **f67121592b2de92346eecb1d750cd49bc2bbfc3cb35bbc14a95dfd8c2b075b3f**, then extract at the repository root after preserving newer work. The archive has 62 files / 22,441,296 bytes. `docs/cad-cam-cover-checkpoint.json` records all hashes. Publication is pending this checkpoint's review; do not assume availability until verified. Original references/photos are excluded.
