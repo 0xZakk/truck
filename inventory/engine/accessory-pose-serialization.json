@@ -1,0 +1,385 @@
+{
+  "status": "PASS pose-only candidate serialization; no geometry installation",
+  "input_sha256": {
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "inventory/engine/accessory-constrained-layout-envelopes.json": "be840a14cd0bb304284237f135e24c48a07c443d3fefc74b7da5c6f1367d6969",
+    "inventory/engine/accessory-constrained-layout-step-check.json": "dd878d49453d9d79e04fd70695ddf37def77f8c5544ac44fd498feed2bea6d0e",
+    "scripts/check-accessory-pose-serialization.py": "44809cd121705180271c9d95b3b514cb873c0913cc06594dc9fa691d7ba6427f",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a"
+  },
+  "moving_group_counts": {
+    "ALT": 28,
+    "AP": 17,
+    "PS": 49,
+    "AC": 71,
+    "TENS": 8
+  },
+  "edits": [
+    {
+      "table": "assemblies",
+      "id": "tensioner-pulley-assembly",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        -37.50181014323476,
+        -33.72225338556751
+      ]
+    },
+    {
+      "table": "assemblies",
+      "id": "tensioner-support-assembly",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        -37.50181014323476,
+        -33.72225338556751
+      ]
+    },
+    {
+      "table": "assemblies",
+      "id": "alternator-assembly",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        62.98796098825028,
+        -76.43015331067244
+      ]
+    },
+    {
+      "table": "assemblies",
+      "id": "power-steering-pump-assembly",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        9.501109043944268,
+        -63.43625338556751
+      ]
+    },
+    {
+      "table": "assemblies",
+      "id": "thermactor-pump-assembly",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        78.16748851222079,
+        24.39372811097425
+      ]
+    },
+    {
+      "table": "assemblies",
+      "id": "ac-compressor",
+      "before": [
+        373.56,
+        280,
+        100
+      ],
+      "after": [
+        373.56,
+        337.43537535946626,
+        140.0
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ps-bracket-bolt-1",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        9.501109043944268,
+        -63.43625338556751
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ps-bracket-bolt-2",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        9.501109043944268,
+        -63.43625338556751
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ps-bracket-bolt-3",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        9.501109043944268,
+        -63.43625338556751
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ac-bracket-bolt-1",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        57.43537535946626,
+        40.0
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ac-bracket-bolt-2",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        57.43537535946626,
+        40.0
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ac-bracket-bolt-3",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        57.43537535946626,
+        40.0
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "ac-bracket-bolt-4",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        57.43537535946626,
+        40.0
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "alt-bracket-bolt-1",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        62.98796098825028,
+        -76.43015331067244
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "alt-bracket-bolt-2",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        62.98796098825028,
+        -76.43015331067244
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "thermactor-engine-bolt-1",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        -78.16748851222079,
+        -24.39372811097425
+      ]
+    },
+    {
+      "table": "occurrences",
+      "id": "thermactor-engine-bolt-2",
+      "before": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0.0,
+        -78.16748851222079,
+        -24.39372811097425
+      ]
+    }
+  ],
+  "states": [
+    {
+      "degrees": 0,
+      "axial_mm": 0,
+      "throttle_degrees": 0,
+      "compressor_degrees": 0,
+      "compressor_engaged": true
+    },
+    {
+      "degrees": 55,
+      "axial_mm": 0,
+      "throttle_degrees": 30,
+      "compressor_degrees": 73,
+      "compressor_engaged": true
+    },
+    {
+      "degrees": 120,
+      "axial_mm": -0.1,
+      "throttle_degrees": 90,
+      "compressor_degrees": 180,
+      "compressor_engaged": true
+    },
+    {
+      "degrees": 240,
+      "axial_mm": 0,
+      "throttle_degrees": 0,
+      "compressor_degrees": 359,
+      "compressor_engaged": false
+    },
+    {
+      "degrees": 360,
+      "axial_mm": -0.1,
+      "throttle_degrees": 45,
+      "compressor_degrees": 90,
+      "compressor_engaged": false
+    },
+    {
+      "degrees": 719,
+      "axial_mm": 0,
+      "throttle_degrees": 90,
+      "compressor_degrees": 270,
+      "compressor_engaged": true
+    }
+  ],
+  "occurrence_frame_comparisons": 8166,
+  "tolerance": 1e-08,
+  "fixed_bolt_negative_control": {
+    "thermactor-engine-bolt-1": 78.16748851222079
+  },
+  "double_compressor_translation_negative_control": {
+    "ac-bracket-bolt-1": 57.43537535946626,
+    "ac-bracket-bolt-2": 57.43537535946626,
+    "ac-bracket-bolt-3": 57.43537535946626,
+    "ac-bracket-bolt-4": 57.43537535946626,
+    "ac-compressor-rear-cylinder": 57.43537535946626,
+    "ac-compressor-rear-valve-plate": 57.43537535946626,
+    "ac-compressor-rear-suction-reed": 57.43537535946626,
+    "ac-compressor-rear-discharge-reed": 57.43537535946626,
+    "ac-compressor-rear-head": 57.43537535946626,
+    "ac-compressor-rear-head-seal": 57.43537535946626,
+    "ac-compressor-rear-plenum-seal": 57.43537535946626,
+    "ac-compressor-rear-thrust-1": 57.43537535946626,
+    "ac-compressor-rear-thrust-2": 57.43537535946626,
+    "ac-compressor-rear-thrust-3": 57.43537535946626,
+    "ac-compressor-front-cylinder": 57.43537535946626,
+    "ac-compressor-front-valve-plate": 57.43537535946626,
+    "ac-compressor-front-suction-reed": 57.43537535946626,
+    "ac-compressor-front-discharge-reed": 57.43537535946626,
+    "ac-compressor-front-head": 57.43537535946626,
+    "ac-compressor-front-head-seal": 57.43537535946626,
+    "ac-compressor-front-plenum-seal": 57.43537535946626,
+    "ac-compressor-front-thrust-1": 57.43537535946626,
+    "ac-compressor-front-thrust-2": 57.43537535946626,
+    "ac-compressor-front-thrust-3": 57.43537535946626,
+    "ac-compressor-case-seal": 57.43537535946626,
+    "ac-compressor-swashplate-shaft": 66.62059080568918,
+    "ac-compressor-piston-1": 57.43537535946626,
+    "ac-compressor-shoe-1-rear": 66.62059080568918,
+    "ac-compressor-piston-1-rear-seal": 57.43537535946626,
+    "ac-compressor-shoe-1-front": 66.62059080568918,
+    "ac-compressor-piston-1-front-seal": 57.43537535946626,
+    "ac-compressor-case-bolt-1": 57.43537535946626,
+    "ac-compressor-piston-2": 57.43537535946626,
+    "ac-compressor-shoe-2-rear": 66.62059080568918,
+    "ac-compressor-piston-2-rear-seal": 57.43537535946626,
+    "ac-compressor-shoe-2-front": 66.62059080568918,
+    "ac-compressor-piston-2-front-seal": 57.43537535946626,
+    "ac-compressor-case-bolt-2": 57.43537535946626,
+    "ac-compressor-piston-3": 57.43537535946626,
+    "ac-compressor-shoe-3-rear": 66.62059080568918,
+    "ac-compressor-piston-3-rear-seal": 57.43537535946626,
+    "ac-compressor-shoe-3-front": 66.62059080568918,
+    "ac-compressor-piston-3-front-seal": 57.43537535946626,
+    "ac-compressor-case-bolt-3": 57.43537535946626,
+    "ac-compressor-piston-4": 57.43537535946626,
+    "ac-compressor-shoe-4-rear": 66.62059080568918,
+    "ac-compressor-piston-4-rear-seal": 57.43537535946626,
+    "ac-compressor-shoe-4-front": 66.62059080568918,
+    "ac-compressor-piston-4-front-seal": 57.43537535946626,
+    "ac-compressor-case-bolt-4": 57.43537535946626,
+    "ac-compressor-piston-5": 57.43537535946626,
+    "ac-compressor-shoe-5-rear": 66.62059080568918,
+    "ac-compressor-piston-5-rear-seal": 57.43537535946626,
+    "ac-compressor-shoe-5-front": 66.62059080568918,
+    "ac-compressor-piston-5-front-seal": 57.43537535946626,
+    "ac-compressor-case-bolt-5": 57.43537535946626,
+    "ac-compressor-shaft-seal": 57.43537535946626,
+    "ac-compressor-seal-retainer": 57.43537535946626,
+    "ac-compressor-pulley-bearing": 57.43537535946626,
+    "ac-compressor-clutch-coil": 57.43537535946626,
+    "ac-compressor-clutch-coil-carrier": 57.43537535946626,
+    "ac-compressor-clutch-pulley": 66.62059080568918,
+    "ac-compressor-pulley-snap-ring": 57.43537535946626,
+    "ac-compressor-armature-hub": 66.62059080568918,
+    "ac-compressor-hub-bolt": 66.62059080568918,
+    "ac-compressor-rear-manifold": 57.43537535946626,
+    "ac-compressor-manifold-suction-seal": 57.43537535946626,
+    "ac-compressor-manifold-discharge-seal": 57.43537535946626,
+    "ac-compressor-manifold-bolt": 57.43537535946626,
+    "ac-compressor-front-shaft-bearing": 57.43537535946626,
+    "ac-compressor-rear-shaft-bearing": 57.43537535946626
+  },
+  "limits": [
+    "No solid collision/source/retention/belt/hoses/browser acceptance",
+    "Replacement carriers required; original carrier shapes would be incompatible with this pose-only proposal",
+    "Only six declared motion states; no full continuous-motion proof"
+  ]
+}

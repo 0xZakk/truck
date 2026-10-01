@@ -1,0 +1,1615 @@
+{
+  "status": "NUMERICAL ENVELOPE FEASIBLE; exactSTEP/support/belt acceptance pending",
+  "reserve_mm": 1.0,
+  "domains": {
+    "ALT": [
+      [
+        -500,
+        -80
+      ],
+      [
+        180,
+        450
+      ]
+    ],
+    "AP": [
+      [
+        -450,
+        -70
+      ],
+      [
+        20,
+        220
+      ]
+    ],
+    "PS": [
+      [
+        120,
+        500
+      ],
+      [
+        220,
+        520
+      ]
+    ],
+    "AC": [
+      [
+        120,
+        500
+      ],
+      [
+        20,
+        169
+      ]
+    ],
+    "TENS": [
+      [
+        20,
+        350
+      ],
+      [
+        180,
+        480
+      ]
+    ]
+  },
+  "objective": "sum squaredYZ deviations/100mm from weak priors + squaredPS-ACcolumn offset/100mm; no length target",
+  "best": {
+    "seed": 0,
+    "solver_success": true,
+    "message": "Optimization terminated successfully",
+    "objective": 0.6259849264916801,
+    "minimum_constraint_mm": 0.0,
+    "numerically_feasible": true,
+    "centers_yz_mm": {
+      "ALT": [
+        -325.0,
+        320.0
+      ],
+      "AP": [
+        -280.0,
+        100.0
+      ],
+      "PS": [
+        312.30028189999996,
+        410.0
+      ],
+      "AC": [
+        344.6005638,
+        100.0
+      ],
+      "TENS": [
+        167.0,
+        350.0
+      ]
+    },
+    "active_or_failed_constraints": [
+      {
+        "margin_mm": 0.0,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover",
+          "x_slab": [
+            400.0,
+            425.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 10.298381783627946,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-lower-intake",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 10.298381783627946,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-lower-intake",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 14.794067982271997,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-upper-intake-gasket",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 14.794067982271997,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-upper-intake-gasket",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 15.497275010644074,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-upper-intake",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 15.497275010644074,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-upper-intake",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 19.157005065943622,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover",
+          "x_slab": [
+            375.0,
+            400.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 19.157005081343073,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover-main-gasket",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 19.157005081343073,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 19.157005081343073,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "block",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 21.39690277167159,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover-mounting-screw-6",
+          "x_slab": [
+            375.0,
+            400.0
+          ]
+        }
+      }
+    ],
+    "cord_route_length_mm": 2937.7340974242825,
+    "catalog_effective2491_residual_mm": 446.7340974242825,
+    "wrap_degrees": {
+      "ALT": 98.69181520173139,
+      "TENS": 74.36748793416984,
+      "PS": 151.06279008855736,
+      "AC": 130.7243533947159,
+      "WP": 200.67514335584616,
+      "CS": 189.03396906706263,
+      "AP": 65.52970353794866
+    },
+    "delta_from_weak_prior_mm": {
+      "ALT": [
+        0.0,
+        0.0
+      ],
+      "AP": [
+        0.0,
+        0.0
+      ],
+      "PS": [
+        32.30028189999996,
+        0.0
+      ],
+      "AC": [
+        64.60056379999997,
+        0.0
+      ],
+      "TENS": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6259849264916801,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          320.0
+        ],
+        "AP": [
+          -280.0,
+          100.0
+        ],
+        "PS": [
+          312.30028189999996,
+          410.0
+        ],
+        "AC": [
+          344.6005638,
+          100.0
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298381783627946,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298381783627946,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794067982271997,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794067982271997,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497275010644074,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497275010644074,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005065943622,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 21.39690277167159,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-mounting-screw-6",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        }
+      ],
+      "cord_route_length_mm": 2937.7340974242825,
+      "catalog_effective2491_residual_mm": 446.7340974242825,
+      "wrap_degrees": {
+        "ALT": 98.69181520173139,
+        "TENS": 74.36748793416984,
+        "PS": 151.06279008855736,
+        "AC": 130.7243533947159,
+        "WP": 200.67514335584616,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "delta_from_weak_prior_mm": {
+        "ALT": [
+          0.0,
+          0.0
+        ],
+        "AP": [
+          0.0,
+          0.0
+        ],
+        "PS": [
+          32.30028189999996,
+          0.0
+        ],
+        "AC": [
+          64.60056379999997,
+          0.0
+        ],
+        "TENS": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6259849264916801,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          320.0
+        ],
+        "AP": [
+          -280.0,
+          100.0
+        ],
+        "PS": [
+          312.30028189999996,
+          410.00000000000006
+        ],
+        "AC": [
+          344.6005638,
+          100.0
+        ],
+        "TENS": [
+          167.0,
+          350.00000000000006
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298381783627946,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298381783627946,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794067982271997,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794067982271997,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497275010644074,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497275010644074,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005065943622,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157005081343073,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 21.39690277167159,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-mounting-screw-6",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6450192455054594,
+      "minimum_constraint_mm": 5.684341886080802e-14,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -324.99411256978743,
+          319.9840078599795
+        ],
+        "AP": [
+          -279.9932443224144,
+          99.98207366364034
+        ],
+        "PS": [
+          310.2721036413885,
+          409.9904755230565
+        ],
+        "AC": [
+          340.5431895773818,
+          130.8540903592216
+        ],
+        "TENS": [
+          167.0043626716762,
+          349.99055617244704
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 5.684341886080802e-14,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298837828371632,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298837828371632,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.796364909732546,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.796364909732546,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.499571938104623,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.499571938104623,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.221294545086778,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.221294545086778,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.221294545086778,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.221294545086778,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 28.031310428209167,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6259849537416663,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0025490199616,
+          320.0005282355408
+        ],
+        "AP": [
+          -280.00840166693416,
+          99.98928161903247
+        ],
+        "PS": [
+          312.29848531819573,
+          409.99578918756856
+        ],
+        "AC": [
+          344.6005638,
+          99.9942292961016
+        ],
+        "TENS": [
+          166.99524869126935,
+          349.9995648949665
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.30055373597338,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.30055373597338,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79607188568852,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79607188568852,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.499278914060596,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.499278914060596,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.15516247162111,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.155162487098153,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.155162487098153,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.155162487098153,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 21.39528450313321,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-mounting-screw-6",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "solver_success": false,
+      "message": "Positive directional derivative for linesearch",
+      "objective": 9.106106700173687,
+      "minimum_constraint_mm": -116.78041911521234,
+      "numerically_feasible": false,
+      "centers_yz_mm": {
+        "ALT": [
+          -124.86269379528953,
+          195.38545913800897
+        ],
+        "AP": [
+          -279.99999999938194,
+          100.00000000000986
+        ],
+        "PS": [
+          229.3301020493577,
+          415.42153335765664
+        ],
+        "AC": [
+          141.55217394150367,
+          167.833223137008
+        ],
+        "TENS": [
+          129.89196984456615,
+          344.57846664361597
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -116.78041911521234,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265654535,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265505486,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265299241,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109264422602,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -78.06148421867626,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "heater-pump-return-elbow",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -76.53303178640564,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -76.10441032167347,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "block",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -62.734594414018346,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -60.47482327869952,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover-grommet-6",
+            "x_slab": [
+              275.0,
+              300.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -55.35081495849633,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -55.25391390431878,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover",
+            "x_slab": [
+              275.0,
+              300.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6450191575945048,
+      "minimum_constraint_mm": 5.684341886080802e-14,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.00006269754914,
+          319.9999964550321
+        ],
+        "AP": [
+          -279.9999963080795,
+          100.00000027028719
+        ],
+        "PS": [
+          310.27085391927176,
+          409.99999065040015
+        ],
+        "AC": [
+          340.5416874491545,
+          130.85851093525105
+        ],
+        "TENS": [
+          167.0000928636056,
+          349.99993293602023
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 5.684341886080802e-14,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298441333267874,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298441333267874,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794125024851638,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.794125024851638,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497332053223715,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497332053223715,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.22129454508672,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.22129454508672,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.22129454508672,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 25.22129454508672,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 28.036735688948795,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6259849264931211,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -324.9999848818914,
+          320.0000875633948
+        ],
+        "AP": [
+          -279.9999999441211,
+          100.00000007369428
+        ],
+        "PS": [
+          312.3002986249049,
+          410.00000800822573
+        ],
+        "AC": [
+          344.6005638,
+          100.00001165337778
+        ],
+        "TENS": [
+          166.99994467496404,
+          349.9999481056022
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298335301897737,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.298335301897737,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79401357780904,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79401357780904,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497220606181116,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.497220606181116,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157008786884433,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.15700880228377,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.15700880228377,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.15700880228377,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 21.39690603960821,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-mounting-screw-6",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 0.6259849275513384,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -324.9991834076357,
+          320.0006143650126
+        ],
+        "AP": [
+          -279.99997297721825,
+          100.00049383929766
+        ],
+        "PS": [
+          312.3002820741728,
+          409.9993338330844
+        ],
+        "AC": [
+          344.6005638,
+          100.000260384978
+        ],
+        "TENS": [
+          167.00069016357438,
+          350.00288440694334
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.297395693441672,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 10.297395693441672,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79305866643378,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.79305866643378,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.496265694805857,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 15.496265694805857,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157088207253707,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157088222649634,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157088222649634,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 19.157088222649634,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 21.39697579098174,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-mounting-screw-6",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Conservative axial slab convex hulls, staticq0",
+    "Carrier solids deliberately need matched reconstruction; no unsupported seat accepted",
+    "Outside envelope/cord/effective mismatch retained",
+    "Unverified factory dimensions; not installed"
+  ],
+  "input_sha256": {
+    "scripts/accessory-constrained-layout-solve.py": "4e6ce384ad2f59d395e1ab152ccec2d2b51502b8ca719e03599b98edd01e33e1",
+    "inventory/engine/accessory-constrained-layout-envelopes.json": "be840a14cd0bb304284237f135e24c48a07c443d3fefc74b7da5c6f1367d6969",
+    "cad/engine/generated/accessory-constrained-layout/obstacles.json": "ba8feddb7402f8dab9f70e379f0638c8c887f767df573218f83a98f122cc935c",
+    "cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "inventory/engine/accessory-common-layout-families.json": "8cc26482511ad07a519e748ce0b1f140d77162374e37d0781646223ef8b90708"
+  }
+}

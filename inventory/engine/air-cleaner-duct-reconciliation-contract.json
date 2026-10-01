@@ -1,0 +1,126 @@
+{
+  "status": "INTERFACE CONTRACT; installed duct CAD blocked by unknown body placement",
+  "baseline": "0861e87558151b4b1bbc0d257edde17013e253f3",
+  "inputs": {
+    "cad/engine/air_cleaner_candidate.py": "ab016e88bcfdf5fddb85a5e3b5e860ddf88c4b3b60f25e3991c26a2bd9efb637",
+    "cad/engine/throttle.py": "ecf3e3a0511dad6672d5bbc249e3c7d4e334f4ff174563cf44369f6dad04f60c",
+    "reference/engine/intake-cap-frame-contract.json": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+    "reference/engine/air-cleaner-candidate-review.json": "8ed316485a3718b3c0a39df7ef5c49faef355c59ee96cd7db7cee45ffd690215",
+    "reference/engine/air-cleaner-research-review.json": "9be69c9bf0919772199b73827113946e09c64c6a259abfa3a076e9d586de2464",
+    "inventory/engine/air-cleaner-candidate-validation.json": "9c2f1fa904690a8d83b20a9e0d90860c4c5aedcbeaa625703f31e0c3ef1f08d0",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "cad/engine/generated/throttle-housing.step": "79e0563cff55f5e86ea21eda4c79ab38e87ad30a1033cabc98083998e6ad90b1",
+    "cad/engine/generated/air-cleaner-candidate/air-cleaner-twin-outlet-cover-candidate.step": "3a8dd53ae19eafc84067ac95fe1263571aec4f304c436e5a524793aa983c5d94",
+    "cad/engine/generated/air-cleaner-candidate/candidate-review.png": "9477b7569f692f99b97e88be7998ada93a4eba203c854690fd89a843e900593f"
+  },
+  "endpoints": {
+    "airbox": {
+      "owner": "air-cleaner-twin-outlet-cover-candidate",
+      "frame": "candidate local seal-top center;Xlong,Ywidth,Zup",
+      "world_transform": null,
+      "outward_normal": [
+        -1,
+        0,
+        0
+      ],
+      "tip_centers_mm": [
+        [
+          -198,
+          -37,
+          30
+        ],
+        [
+          -198,
+          37,
+          30
+        ]
+      ],
+      "tip_plane_x": -198,
+      "neck_od_mm": 60,
+      "lumen_id_mm": 54,
+      "center_spacing_mm": 74,
+      "bead_od_mm": 64,
+      "bead_x_range_mm": [
+        -192,
+        -189
+      ],
+      "actual_tip_face_area_mm2_each": 537.2123437638552,
+      "evidence": "ActualSTEPface bounds/area agree with source estimates; not factory dimensions"
+    },
+    "throttle": {
+      "owner": "throttle-housing",
+      "frame": "definitioncoordinates; occurrence at identity under throttle parent\u2212167X",
+      "tip_centers_definition_mm": [
+        [
+          422.5,
+          -2,
+          490
+        ],
+        [
+          422.5,
+          52,
+          490
+        ]
+      ],
+      "tip_centers_world_mm": [
+        [
+          255.5,
+          -2,
+          490
+        ],
+        [
+          255.5,
+          52,
+          490
+        ]
+      ],
+      "outward_normal": [
+        1,
+        0,
+        0
+      ],
+      "neck_od_mm": 48,
+      "lumen_id_mm": 40,
+      "center_spacing_mm": 54,
+      "actual_tip_face_area_mm2_each": 552.920307031804,
+      "stop_and_insertion_datum": null,
+      "evidence": "ActualSTEPendfaces agree with nominalsource; canonical/v3 parent identical; no factory-dimensional claim"
+    }
+  },
+  "required_vehicle_interface": {
+    "box_to_engine_transform": null,
+    "body_reference": "Left fender and radiator support from exactyear illustration; no current engine/world transform established",
+    "required_measurements": [
+      "Three noncollinear bracket/box mounting anchors with engine-referenced coordinates, or equivalent rigid-body6DOF survey",
+      "Airbox lid installed clocking and paired outlet assignment",
+      "Throttle hose-stop shoulder and insertion length",
+      "Box insertion length relative to bead and end tip",
+      "Duct nominal wall/thickness, endpoint seal interference, clamp width/type/clocking",
+      "Vehicle/body-side neighbors and engine-to-body movement envelope"
+    ],
+    "root_approval_required_before_CAD": "Accept measured pose or explicitlylabelled estimated body pose with uncertainty; do not let tube feasibility choose airbox pose"
+  },
+  "source_supported": {
+    "topology": "Two flexible outlet ducts with corrugated sections and four clamps; throttle stop-flange seating and orientation arrows; body-mounted cleaner bracket",
+    "photo_review": "Ownerdriver/passenger actual images and exactyear190226466 viewed; broad topology consistent with frozen candidate render",
+    "not_supported": [
+      "Exact installedboxpose",
+      "Exact bendradii/centerline/ductlength",
+      "Corrugationpitch/count/wall",
+      "Clampdimensions/mechanism",
+      "Serviceflexibility/engine-motionclearance"
+    ]
+  },
+  "future_gate_plan": [
+    "Closed continuous duct wall and lumen fromeachboxoutlettoassignedthrottleinlet",
+    "Independent minimumwallandsectioncontrols through bends/corrugations",
+    "Fullcircumferenceendseat/overlap length and clampband backedbyhost",
+    "Wrongendpointorblockedlumennegativecontrols",
+    "Actualstaticneighbors includingintake/rail/hood/body/booster/hoses wherepresent; missingbodycontextreported",
+    "Separate engine-to-bodymotion scope; no rigidductacceptance",
+    "Actualexportedmeshes andsourceview comparison before refinement"
+  ],
+  "new_geometry": false,
+  "reason": "Source-supported topology pluslocalspigots does not determine an installedpair ofducts; bodyframe andthrottle stopdatum missing"
+}

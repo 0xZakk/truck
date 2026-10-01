@@ -1,0 +1,87 @@
+{
+  "rows": [
+    {
+      "pump": "nominal",
+      "component": "ALT band",
+      "overlap_mm3": 0,
+      "distance_mm": 92.1272922247076
+    },
+    {
+      "pump": "nominal",
+      "component": "AP band",
+      "overlap_mm3": 239.4545678405088,
+      "distance_mm": 0.0,
+      "witness": "cad/engine/generated/accessory-matched-carriers/trial0-nominal-AP-band-overlap.step"
+    },
+    {
+      "pump": "nominal",
+      "component": "AP mandatory boss0",
+      "overlap_mm3": 0,
+      "distance_mm": 146.6973258356219
+    },
+    {
+      "pump": "nominal",
+      "component": "AP mandatory boss1",
+      "overlap_mm3": 0,
+      "distance_mm": 10.973401089715475
+    },
+    {
+      "pump": "low-offset",
+      "component": "ALT band",
+      "overlap_mm3": 0,
+      "distance_mm": 92.1272922247076
+    },
+    {
+      "pump": "low-offset",
+      "component": "AP band",
+      "overlap_mm3": 1214.2185399410394,
+      "distance_mm": 0.0,
+      "witness": "cad/engine/generated/accessory-matched-carriers/trial0-low-offset-AP-band-overlap.step"
+    },
+    {
+      "pump": "low-offset",
+      "component": "AP mandatory boss0",
+      "overlap_mm3": 0,
+      "distance_mm": 140.14981433209377
+    },
+    {
+      "pump": "low-offset",
+      "component": "AP mandatory boss1",
+      "overlap_mm3": 0,
+      "distance_mm": 5.24164916410861
+    },
+    {
+      "pump": "high-offset",
+      "component": "ALT band",
+      "overlap_mm3": 0,
+      "distance_mm": 92.1272922247076
+    },
+    {
+      "pump": "high-offset",
+      "component": "AP band",
+      "overlap_mm3": 2.286932446241454,
+      "distance_mm": 0.0,
+      "witness": "cad/engine/generated/accessory-matched-carriers/trial0-high-offset-AP-band-overlap.step"
+    },
+    {
+      "pump": "high-offset",
+      "component": "AP mandatory boss0",
+      "overlap_mm3": 0,
+      "distance_mm": 153.01296230315145
+    },
+    {
+      "pump": "high-offset",
+      "component": "AP mandatory boss1",
+      "overlap_mm3": 0,
+      "distance_mm": 16.831849881463253
+    }
+  ],
+  "inputs": {
+    "scripts/accessory-matched-carriers-band-diagnostic.py": "c467349deeb728c0be2684bd1ec8f109d764f37f28d7d482f8015a704c77e8c5",
+    "cad/engine/accessory_matched_carriers_candidate.py": "c8110da20e6f9fa029ff677a46c11d575ad7f4a7c8b43c96bedf39c944960239",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/nominal-housing.step": "943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/low-offset-housing.step": "16fcbc1db08182769a3f17fae3d828fa09843569ec8c34dfd8ecad4faa6613ff",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/high-offset-housing.step": "1a886584e24c721194a55e913437f7501a403ab173afd9bda85e6aedbb9688dd"
+  }
+}

@@ -227,3 +227,10 @@ The64-file supplement `truck-waterpump-studies-20261001.tar.gz` is19,508,529byte
 The later independent `inventory/engine/waterpump-prerequisite-archive-audit.json` resolves the draft's unverified691-member provenance gap: all691 expected canonical STEP members match the checksum-verified neck-core archive. No extraction or full rebuild was performed. Remaining source access, whole-engine, browser and production-fidelity limits remain. This archive does not install any pump candidate.
 
 Published after [PR109](https://github.com/0xZakk/truck/pull/109) merged; uploaded digest/size verified. Download from [the private release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-waterpump). The draft-named inventory remains the frozen packaging snapshot; this publication note supersedes its NOT RUN field.
+
+
+## Accessory layout checkpoint — publication pending
+
+The locally verified archive `truck-accessory-layout-studies-20261001.tar.gz` contains96 project-authored artifacts (22,027,686bytes; SHA256 `dd374011c14bec494f0647c3e84b8ff56ff3fd4e337e0f2fc6ad57bf9ac47d7b`). Its exact member/source allowlists and prerequisite chain are in `docs/accessory-layout-checkpoint-draft.json`; reproduction instructions are in `docs/components/accessory-layout-checkpoint-handoff.md`. Publication has not yet been verified; do not assume a release asset exists.
+
+The handoff's historical waterpump-draft statement is superseded by published `studies-2026-10-01-waterpump` (PR109). Restore that supplement and the listed predecessor chain before this package. This preserves constrained-layout hypotheses, ALT/AP trial6 and rejected studies; it does not install or accept them. PS/AC candidate files are excluded.

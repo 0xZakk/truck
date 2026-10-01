@@ -1,0 +1,471 @@
+{
+  "status": "COMPLETE proposal-family screen; no candidate selected",
+  "sampling_reason": "0/25/50/75mm is an explicitly inferred diagnostic grid, not source measurements or a clearance-optimized chosen pose",
+  "source_priority": "Shared column retains schematic near-vertical PS-over-AC relationship; staggered family quantifies that visual departure. Both retain source ordering and shared-carrier topology only if matched support is rebuilt.",
+  "belt_limits": "Outside radii treated as path radii plus prior comparison offset; profiles/length/tensioner preload are not verified. No belt geometry installed.",
+  "actual_radial_envelope_nodes": [
+    {
+      "id": "ALT",
+      "center": [
+        -325.0,
+        319.9999999999999
+      ],
+      "radius": 35.000000000000085,
+      "side": 1
+    },
+    {
+      "id": "TENS",
+      "center": [
+        167.0,
+        350.0
+      ],
+      "radius": 45.0,
+      "side": -1
+    },
+    {
+      "id": "PS",
+      "center": [
+        280.0,
+        409.9999999999999
+      ],
+      "radius": 65.65900000000008,
+      "side": 1
+    },
+    {
+      "id": "AC",
+      "center": [
+        280.0,
+        100.00000000000001
+      ],
+      "radius": 72.50000000000003,
+      "side": 1
+    },
+    {
+      "id": "WP",
+      "center": [
+        -32.0,
+        170.0
+      ],
+      "radius": 75.0,
+      "side": -1
+    },
+    {
+      "id": "CS",
+      "center": [
+        0,
+        0
+      ],
+      "radius": 81.53399999999999,
+      "side": 1
+    },
+    {
+      "id": "AP",
+      "center": [
+        -280.0,
+        99.99999999999996
+      ],
+      "radius": 70.00000000000004,
+      "side": 1
+    }
+  ],
+  "families": [
+    {
+      "family": "shared_column",
+      "delta_y_mm": 0,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          280.0,
+          409.9999999999999
+        ],
+        "AC": [
+          280.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 0.0,
+      "estimated_barrel_station6_R8_guard_margin_mm": -35.01561688216859,
+      "analytic_cord_route_length_mm": 2876.8879134565686,
+      "catalog2491_residual_mm": 385.88791345656864,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 95.86930341414994,
+        "PS": 178.506234163953,
+        "AC": 131.80515926247153,
+        "WP": 207.6975778190173,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "shared_column",
+      "delta_y_mm": 25,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          305.0,
+          409.9999999999999
+        ],
+        "AC": [
+          305.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 0.0,
+      "estimated_barrel_station6_R8_guard_margin_mm": -14.076549450920652,
+      "analytic_cord_route_length_mm": 2900.6031396986627,
+      "catalog2491_residual_mm": 409.60313969866274,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 78.12974478109109,
+        "PS": 160.76667553089416,
+        "AC": 128.7611884745393,
+        "WP": 204.65360703108504,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "shared_column",
+      "delta_y_mm": 50,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          330.0,
+          409.9999999999999
+        ],
+        "AC": [
+          330.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 0.0,
+      "estimated_barrel_station6_R8_guard_margin_mm": 9.16527665855817,
+      "analytic_cord_route_length_mm": 2930.9335065496784,
+      "catalog2491_residual_mm": 439.93350654967844,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 66.78758589449038,
+        "PS": 149.42451664429345,
+        "AC": 126.14643789903666,
+        "WP": 202.03885645558242,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "shared_column",
+      "delta_y_mm": 75,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          355.0,
+          409.9999999999999
+        ],
+        "AC": [
+          355.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 0.0,
+      "estimated_barrel_station6_R8_guard_margin_mm": 33.20872069724315,
+      "analytic_cord_route_length_mm": 2965.5431861902125,
+      "catalog2491_residual_mm": 474.5431861902125,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 58.64606161244149,
+        "PS": 141.28299236224453,
+        "AC": 123.87510408787708,
+        "WP": 199.76752264442283,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "compressor_only_matched_lower_carrier",
+      "delta_y_mm": 0,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          280.0,
+          409.9999999999999
+        ],
+        "AC": [
+          280.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 0.0,
+      "estimated_barrel_station6_R8_guard_margin_mm": -35.01561688216859,
+      "analytic_cord_route_length_mm": 2876.8879134565686,
+      "catalog2491_residual_mm": 385.88791345656864,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 95.86930341414994,
+        "PS": 178.506234163953,
+        "AC": 131.80515926247153,
+        "WP": 207.6975778190173,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "compressor_only_matched_lower_carrier",
+      "delta_y_mm": 25,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          280.0,
+          409.9999999999999
+        ],
+        "AC": [
+          305.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 4.610649318660611,
+      "estimated_barrel_station6_R8_guard_margin_mm": -14.076549450920652,
+      "analytic_cord_route_length_mm": 2897.8768448444816,
+      "catalog2491_residual_mm": 406.87684484448164,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 95.86930341414994,
+        "PS": 173.89967745670407,
+        "AC": 133.3677451817882,
+        "WP": 204.65360703108504,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "compressor_only_matched_lower_carrier",
+      "delta_y_mm": 50,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          280.0,
+          409.9999999999999
+        ],
+        "AC": [
+          330.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 9.162347045721713,
+      "estimated_barrel_station6_R8_guard_margin_mm": 9.16527665855817,
+      "analytic_cord_route_length_mm": 2921.602726049743,
+      "catalog2491_residual_mm": 430.60272604974307,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 95.86930341414994,
+        "PS": 169.36002317773378,
+        "AC": 135.29264888525586,
+        "WP": 202.03885645558242,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    },
+    {
+      "family": "compressor_only_matched_lower_carrier",
+      "delta_y_mm": 75,
+      "centers_yz_mm": {
+        "ALT": [
+          -325.0,
+          319.9999999999999
+        ],
+        "TENS": [
+          167.0,
+          350.0
+        ],
+        "PS": [
+          280.0,
+          409.9999999999999
+        ],
+        "AC": [
+          355.0,
+          100.00000000000001
+        ],
+        "WP": [
+          -32.0,
+          170.0
+        ],
+        "CS": [
+          0,
+          0
+        ],
+        "AP": [
+          -280.0,
+          99.99999999999996
+        ]
+      },
+      "ps_ac_column_angle_from_vertical_deg": 13.600542516658749,
+      "estimated_barrel_station6_R8_guard_margin_mm": 33.20872069724315,
+      "analytic_cord_route_length_mm": 2947.8611862308676,
+      "catalog2491_residual_mm": 456.8611862308676,
+      "wrap_degrees": {
+        "ALT": 98.69181520173149,
+        "TENS": 95.86930341414994,
+        "PS": 164.94115504644927,
+        "AC": 137.4401832053808,
+        "WP": 199.76752264442283,
+        "CS": 189.03396906706263,
+        "AP": 65.52970353794866
+      },
+      "source_order_pass": true,
+      "scope": "No geometry movement/export. Rigid branch internal fit retained by definition; carrier seats/hoses must be revised separately; exact clearances NOT RUN."
+    }
+  ],
+  "input_sha256": {
+    "scripts/study-accessory-common-layout-families.py": "4d530df37f75b0a7e014bc0cb798a65489cbec1b8452ff98601168ea902d0cb4",
+    "inventory/engine/accessory-common-layout-datums.json": "1968cc2c8e9a8a15b22d233700c772d40e675b896d045678e150f75015af9343",
+    "cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942"
+  }
+}

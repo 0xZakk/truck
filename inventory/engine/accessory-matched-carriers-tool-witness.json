@@ -1,0 +1,65 @@
+{
+  "contract": "EstimatedR11 +X tool from head frontX391 to431; fixed bolt unchanged",
+  "rows": [
+    {
+      "hypothesis": "nominal",
+      "overlap_mm3": 1689.8469522870096,
+      "bounds": [
+        [
+          405.94595567097656,
+          -111.0000001047924,
+          78.9999999
+        ],
+        [
+          420.6276309218653,
+          -88.99999988603868,
+          101.00000010827326
+        ]
+      ],
+      "witness": "cad/engine/generated/accessory-matched-carriers/lower-engine-bolt-nominal-tool-overlap.step",
+      "sha256": "ebc81dbf33cb430ae4eb9ce1d9e3a09b9ee51c3146d8878d6b000e65948d28c3"
+    },
+    {
+      "hypothesis": "low-offset",
+      "overlap_mm3": 1576.070147606381,
+      "bounds": [
+        [
+          405.7220522600834,
+          -111.00000010513222,
+          78.9999999
+        ],
+        [
+          413.56950994886074,
+          -88.99999989628466,
+          101.00000009671781
+        ]
+      ],
+      "witness": "cad/engine/generated/accessory-matched-carriers/lower-engine-bolt-low-offset-tool-overlap.step",
+      "sha256": "70cc70ddaaef5865a006c5a82d09fbf03bd11d8f82dfd7e7cfb1952ced7b7882"
+    },
+    {
+      "hypothesis": "high-offset",
+      "overlap_mm3": 2316.756726337376,
+      "bounds": [
+        [
+          406.12491116485705,
+          -111.00000010952668,
+          78.9999999
+        ],
+        [
+          431.00000010000014,
+          -88.99999990053294,
+          101.00000010000001
+        ]
+      ],
+      "witness": "cad/engine/generated/accessory-matched-carriers/lower-engine-bolt-high-offset-tool-overlap.step",
+      "sha256": "ca07a9e09936e1753d4366406837d7a330ce28aff22e86e9f14a2de2dd45c3ee"
+    }
+  ],
+  "inputs": {
+    "scripts/accessory-matched-carriers-tool-witness.py": "e1a050f148f00bf029abba6f907b358340c1ed93143846f7f475f5774de891df",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/nominal-housing.step": "943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/low-offset-housing.step": "16fcbc1db08182769a3f17fae3d828fa09843569ec8c34dfd8ecad4faa6613ff",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/high-offset-housing.step": "1a886584e24c721194a55e913437f7501a403ab173afd9bda85e6aedbb9688dd"
+  }
+}
