@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "baseline": "a66b33c",
+  "decision": "Coordinated physical crank-direction correction justified by exact-year diagram interpreted with explicit near-surface assumption, corroborated by Ford manufacturer front-face comparison.",
+  "sources": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/193734596.png",
+      "sha256": "6fcdad59874cbf7e20dd50f36d5a75cfba250711febfe3a66015a9b0374514dc"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/191786818.png",
+      "sha256": "86260537cdc5463df16cc5ba7ea685afd90cb9fea56471313fbb99057789bd50"
+    },
+    {
+      "path": "reference/engine/ford-csg649.pdf",
+      "sha256": "f7fb9d6aa8c837122368e1b5c6642cc5cd7b8a6bc20fa24f1924cb9adbbacddd"
+    }
+  ],
+  "view_evidence": [
+    {
+      "source": "193734596.png",
+      "classification": "exact-year captured manual",
+      "observation": "FRONT down, rotation right, BTDC14 left / TDC0 center / ATDC6 right; fixed pointer at lower edge.",
+      "assumption": "Visible strip is the near/top radial surface; the FRONT arrow alone does not mathematically exclude viewing its opposite side.",
+      "conditional_inference": "With radial normal toward image observer, indicated motion is clockwise looking rearward from engine front."
+    },
+    {
+      "source": "ford-csg649.pdf",
+      "page_pdf": 19,
+      "page_printed": "1-15",
+      "figure": 28,
+      "classification": "Ford industrial manufacturer comparison; adjustment caption 1978 and prior, not exact-year specification",
+      "observation": "Front damper face visible, curved arrow on upper-left moves up/right: clockwise. Text advances starter in 1/3 turns through 1-5-3-6-2-4; A upper-right, B left, C lower-right successively reach top pointer clockwise.",
+      "inference": "Corroborates the exact-year strip interpretation; no dimensional transfer."
+    },
+    {
+      "source": "191786818.png",
+      "classification": "exact-year captured manual",
+      "observation": "Distributor cap/top diagram clockwise arrow, with engine-front/cylinder-number reference."
+    }
+  ],
+  "seal_evidence": [
+    {
+      "url": "https://cad.timken.com/item/seals/oil-seals-inch/2692",
+      "observation": "Clockwise-Spiral Lip Design; product-specific viewing convention not found."
+    },
+    {
+      "url": "https://www.devriesintl.com/products/shaft/spechellipdgn.asp",
+      "observation": "Manufacturer convention specifies directional lip selection from air side.",
+      "limit": "Other manufacturer corroboration, not National2692-specific definition."
+    }
+  ],
+  "seal_verdict": "National OEM cross-reference supports application compatibility; CW front agrees with usual air-side convention. Exact National viewing definition and micro-rib geometry remain unknown.",
+  "distribution": "Ignored source originals remain local, not republished.",
+  "no_changes": [
+    "canonical viewer",
+    "frozen seal geometry",
+    "previous UNKNOWN motion report"
+  ]
+}

@@ -1,0 +1,1500 @@
+{
+  "schema": "truck-guarded-integration-proposal-v1",
+  "scope": "Uninstalled pan/gasket/threaded screw asset replacements plus10 poses; washer definition unchanged",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "definitions": [
+    {
+      "id": "oil-pan",
+      "before": {
+        "id": "oil-pan",
+        "name": "Oil pan",
+        "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+        "system": "closures",
+        "color": "#42686c",
+        "glb": "/models/engine/oil-pan.glb",
+        "step": "/cad/engine/generated/oil-pan.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "dorman-264011-pan",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Sump stamping, capacity, installed pan identity and production dimensions remain provisional."
+        ],
+        "volume_mm3": 1601472.6349777738,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 10994,
+        "model_bounds_mm": [
+          762.0000001000001,
+          266.6,
+          234.9500002000001
+        ]
+      },
+      "after": {
+        "id": "oil-pan",
+        "name": "Oil pan",
+        "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+        "system": "closures",
+        "color": "#42686c",
+        "glb": "/models/engine/oil-pan.glb",
+        "step": "/cad/engine/generated/oil-pan.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "dorman-264011-pan",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Sump stamping, capacity, installed pan identity and production dimensions remain provisional.",
+          "Coordinated timing candidate: estimated revised front seat and five relocated pan axes. Lower/upper contact evidence is bounded; overhangs, rear-cap ownership, production dimensions, pressure sealing and browser acceptance remain unresolved."
+        ],
+        "volume_mm3": 1707351.5062462734,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 21832,
+        "model_bounds_mm": [
+          780.0,
+          362.0000000000004,
+          242.45000020000762
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan.step",
+          "to": "cad/engine/generated/oil-pan.step",
+          "sha256": "2d9eddd32d778a049802cd85a2f1064b8f4e553f7413d18f27ab324c06985d42"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan.glb",
+          "to": "models/engine/oil-pan.glb",
+          "sha256": "5830d866148a921fdb18ef1919ec07eade058e26d754af35310e6917cd43e628"
+        }
+      }
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "before": {
+        "id": "oil-pan-molded-gasket",
+        "name": "Continuous molded pan gasket study",
+        "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+        "system": "closures",
+        "color": "#3e75bd",
+        "glb": "/models/engine/oil-pan-molded-gasket.glb",
+        "step": "/cad/engine/generated/oil-pan-molded-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved."
+        ],
+        "volume_mm3": 48535.46554913383,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 9874,
+        "model_bounds_mm": [
+          762.0000001000001,
+          266.6,
+          29.400000200014304
+        ]
+      },
+      "after": {
+        "id": "oil-pan-molded-gasket",
+        "name": "Continuous molded pan gasket study",
+        "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+        "system": "closures",
+        "color": "#3e75bd",
+        "glb": "/models/engine/oil-pan-molded-gasket.glb",
+        "step": "/cad/engine/generated/oil-pan-molded-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Coordinated timing candidate: estimated revised front seat and five relocated pan axes. Lower/upper contact evidence is bounded; overhangs, rear-cap ownership, production dimensions, pressure sealing and browser acceptance remain unresolved."
+        ],
+        "volume_mm3": 67988.59589646327,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 17952,
+        "model_bounds_mm": [
+          780.0,
+          362.0000000000004,
+          36.90000010000766
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan-molded-gasket.step",
+          "to": "cad/engine/generated/oil-pan-molded-gasket.step",
+          "sha256": "7bbf9143e0cbbbe9e43671f887ec574216fc749f304d5d5e8f854bb63576b1a0"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan-molded-gasket.glb",
+          "to": "models/engine/oil-pan-molded-gasket.glb",
+          "sha256": "9437e408e0d8ef8b24af9cb0409d3387906f94a65c2e91bf20a749fe304a79d7"
+        }
+      }
+    },
+    {
+      "id": "oil-pan-mounting-screw",
+      "before": {
+        "id": "oil-pan-mounting-screw",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/oil-pan-mounting-screw.glb",
+        "step": "/cad/engine/generated/oil-pan-mounting-screw.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved."
+        ],
+        "volume_mm3": 1605.2892647779702,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 14050,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          27.398000100000008
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/oil-pan-mounting-screw.glb",
+        "step": "/cad/engine/generated/oil-pan-mounting-screw.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Coordinated timing candidate: estimated revised front seat and five relocated pan axes. Lower/upper contact evidence is bounded; overhangs, rear-cap ownership, production dimensions, pressure sealing and browser acceptance remain unresolved."
+        ],
+        "volume_mm3": 1636.0644456792393,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 15876,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          27.398000100000157
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-screw.step",
+          "to": "cad/engine/generated/oil-pan-mounting-screw.step",
+          "sha256": "bba512c7d1aee2a7062efc95c070995ee564203c734f790feb81fa83c80eb5e4"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-screw.glb",
+          "to": "models/engine/oil-pan-mounting-screw.glb",
+          "sha256": "690cb8f26091cb028cdddd716959b584b35e157c9002ebd2dbe57106082dc7f2"
+        }
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "oil-pan-mounting-screw-10",
+      "before": {
+        "id": "oil-pan-mounting-screw-10",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          344.0,
+          116.6,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-10",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          365.5,
+          196.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-10",
+      "before": {
+        "id": "oil-pan-mounting-washer-10",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          344.0,
+          116.6,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-10",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          365.5,
+          196.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-20",
+      "before": {
+        "id": "oil-pan-mounting-screw-20",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          344.0,
+          -131.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-20",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          365.5,
+          -132.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-20",
+      "before": {
+        "id": "oil-pan-mounting-washer-20",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          344.0,
+          -131.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-20",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          365.5,
+          -132.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-21",
+      "before": {
+        "id": "oil-pan-mounting-screw-21",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          -85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-21",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          -110.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        -110.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-21",
+      "before": {
+        "id": "oil-pan-mounting-washer-21",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          -85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-21",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          -110.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        -110.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-22",
+      "before": {
+        "id": "oil-pan-mounting-screw-22",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-22",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          180.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-22",
+      "before": {
+        "id": "oil-pan-mounting-washer-22",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-22",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          180.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-23",
+      "before": {
+        "id": "oil-pan-mounting-screw-23",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-23",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-23",
+      "before": {
+        "id": "oil-pan-mounting-washer-23",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-23",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ]
+    }
+  ],
+  "preserved_occurrences": [
+    {
+      "id": "oil-pan",
+      "definition": "oil-pan",
+      "parent": "oil-pan-assembly",
+      "name": "Oil pan",
+      "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+      "position_cad_mm": [
+        0,
+        -12,
+        -96
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        -320
+      ]
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "definition": "oil-pan-molded-gasket",
+      "parent": "oil-pan-assembly",
+      "name": "Continuous molded pan gasket study",
+      "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ],
+      "explode_cad_mm": [
+        0,
+        0,
+        -210
+      ]
+    }
+  ],
+  "requirements": [
+    "Reject if manifest hash or any before object differs.",
+    "Copy only hash-verified staged assets; never apply world STEP directly to local canonical paths.",
+    "Apply all10 pose changes together with coordinated block/cover/seal changes owned by root.",
+    "Preserve all IDs/parents and remaining20 screw/washer poses.",
+    "Existing explosion stages retained but not revalidated for whole assembly."
+  ]
+}

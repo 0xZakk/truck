@@ -1,0 +1,116 @@
+{
+  "status": "PASS bounded crank phase/export/interface/axis-closure candidate; neighbors and installation pending",
+  "input_sha256": {
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/generated/rod.step": "a6ce2bf5a478b0c70406f102f1d4d6863faef6d82d60c87fc1a413a50a94b48f",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/crank_clockwise_candidate.py": "a34ccdd7c7145876d41a97dcc191df10c74f36f567813147435dcbb1312ea335",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "scripts/check-crank-clockwise-candidate.py": "43b3764ad65005f4fb1ea7587d3176a6ca8fe01a45f3a60d1c8a8c4dd192330c",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "reference/engine/engine-rotation-convention-review.json": "4d72896d7f4f3f5d98aa07a871ba11fbe940e7326d6bd3b8396c5667e431190c",
+    "cad/engine/flywheel.py": "f4fb7343ece7f5dffee3d89a0c4cad570c94bfe4a2525a8d2639f6ddf417b7f7",
+    "cad/engine/pilot_bearing.py": "610365062773b3de2d8cb38474b544bdbdb737522eaefec36dee1e7c1f8f0132",
+    "cad/engine/damper_attachment.py": "ca8106d3220e30c03f6237f1095548b94f07f4ee928c72cdfed0969eef7e275d"
+  },
+  "event_phases": [
+    0,
+    240,
+    120,
+    120,
+    240,
+    0
+  ],
+  "proposed_rest_phases": [
+    0,
+    120,
+    240,
+    240,
+    120,
+    0
+  ],
+  "baseline_reproduction": {
+    "missing_mm3": 0.0,
+    "added_mm3": 0.0,
+    "valid": true
+  },
+  "roundtrip_difference_mm3": 0.0,
+  "protected_regions": {
+    "front-end": 0.0,
+    "rear-end": 0.0,
+    "main-1": 0.0,
+    "main-2": 0.0,
+    "main-3": 0.0,
+    "main-4": 0.0,
+    "main-5": 0.0,
+    "main-6": 0.0,
+    "main-7": 0.0
+  },
+  "outside_changed_throw_bands_mm3": 0.0,
+  "mesh_bounds_error_mm": 0.0032549769472183243,
+  "mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "triangles": 10140,
+    "sha256": "b59c8d48f46eabba0c7eb595575b7e07a90bf20580aefa47d80e02ccde43ea5b"
+  },
+  "actual_axes": [
+    {
+      "r": 26.96464,
+      "yz": [
+        0.0,
+        50.546
+      ],
+      "x": 284.48
+    },
+    {
+      "r": 26.96464,
+      "yz": [
+        -43.77412005968,
+        -25.273
+      ],
+      "x": 170.688
+    },
+    {
+      "r": 26.96464,
+      "yz": [
+        43.774120059688,
+        -25.273
+      ],
+      "x": 56.896
+    },
+    {
+      "r": 26.96464,
+      "yz": [
+        43.774120059688,
+        -25.273
+      ],
+      "x": -56.896
+    },
+    {
+      "r": 26.96464,
+      "yz": [
+        -43.77412005968,
+        -25.273
+      ],
+      "x": -170.688
+    },
+    {
+      "r": 26.96464,
+      "yz": [
+        0.0,
+        50.546
+      ],
+      "x": -284.48
+    }
+  ],
+  "linkage": {
+    "poses_per_branch": 721,
+    "branches": 6,
+    "maximum_axis_closure_error_mm": 8.293794864839195e-12,
+    "wrong_rotation_fault_mm": 101.092,
+    "scope": "Actual exported cylinder axes and rigid pose identities, no whole-neighbor collision proof"
+  },
+  "candidate_step_sha256": "89ee59a0f904e213fd675a4863d9aec04296a79bc17820a6ec98915fcd43b1c7"
+}

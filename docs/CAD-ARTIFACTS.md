@@ -193,3 +193,9 @@ shasum -a 256 /tmp/truck-pan-seal-20261001.tar.gz
 ```
 
 Expected SHA-256: **5b46ae082c6ea9fe23d67b44b26578e1473fe2d2a13ac92cbae8953904b52fe8**. The archive contains 123 files / 33,127,925 bytes. Individual hashes and predecessor binding are in `docs/cad-pan-seal-checkpoint.json`. Preserve newer local work before extracting at the repository root. Only project-authored renders are included; no purchased manuals, reference originals or owner photographs.
+
+## Motion/contact candidate supplement
+
+The [motion/contact supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-motion-contact) contains the corrected crank throw-phase candidate, bounded lower/upper pan contact evidence and guarded pan/fastener integration assets. It is not an installed engine update. Active corrected cam, crossed-drive and main-cover-seat work is excluded.
+
+Restore predecessors through pan-seal first. Download `truck-motion-contact-20261001.tar.gz`, verify SHA-256 **2be3c16b8274c0b06c30eb0aa78c2e3ead383d80eb009fc46ae82368c6468f93**, then extract from the repository root after preserving newer work. The archive has 89 files / 6,756,376 bytes. `docs/cad-motion-contact-checkpoint.json` records every file hash and predecessor binding. Only project-authored renders are included; source originals and owner photographs remain excluded.
