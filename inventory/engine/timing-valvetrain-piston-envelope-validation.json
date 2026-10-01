@@ -1,0 +1,139 @@
+{
+  "status": "PASS sampled conservative valve/piston Z envelopes; continuous motion NOT PROVEN",
+  "inputs": {
+    "scripts/check-timing-valvetrain-piston-envelope.py": "116327b4687ba21b2051a6f142130d0ce0a4218f2624e8b615152447eb4c9d5d",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "cad/engine/generated/exhaust-valve.step": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d"
+  },
+  "rows": [
+    {
+      "id": "c1-intake",
+      "minimum_sample": {
+        "crank_degrees": 366,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c1-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 356,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    },
+    {
+      "id": "c2-intake",
+      "minimum_sample": {
+        "crank_degrees": 126,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c2-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 116,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    },
+    {
+      "id": "c3-intake",
+      "minimum_sample": {
+        "crank_degrees": 606,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c3-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 596,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    },
+    {
+      "id": "c4-intake",
+      "minimum_sample": {
+        "crank_degrees": 246,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c4-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 236,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    },
+    {
+      "id": "c5-intake",
+      "minimum_sample": {
+        "crank_degrees": 486,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c5-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 476,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    },
+    {
+      "id": "c6-intake",
+      "minimum_sample": {
+        "crank_degrees": 6,
+        "axial_mm": 0,
+        "z_gap_mm": 6.747394867683994
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -3.252605132316006
+    },
+    {
+      "id": "c6-exhaust",
+      "minimum_sample": {
+        "crank_degrees": 716,
+        "axial_mm": -0.1,
+        "z_gap_mm": 7.340273221083891
+      },
+      "sample_count": 1442,
+      "down10mm_valve_fault_bound_mm": -2.6597267789161094
+    }
+  ],
+  "coverage": "All12, integer crank0..720 and both axial endpoints; separating entire CAD bounds implies no intersection at those poses",
+  "limitations": [
+    "No between-sample or intermediate-axial certificate; no production minimum clearance.",
+    "Supplied piston/valve geometry and timing remain estimated/replacement hypotheses.",
+    "Fault detects failed envelope separation, not exact physical fault overlap."
+  ]
+}

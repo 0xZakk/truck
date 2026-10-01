@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "scope": "Read-only follow-up on unresolved main-cover hardware; no geometry changes",
+  "source": "https://www.dormanproducts.com/p-8021-635-109.aspx",
+  "input_sha256": {
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109.html": "b4eed8718d01630bdbebbcbd88b76617b7398eb833e045580a196f0836b6a2e0",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-001.jpg": "dcc615c322bc6ea22293a40cdcfbe8456119e04688a548f5f625925b5496bbb7",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-003.jpg": "1d8e6e915c423f80582f99d91849b9b5539f009722a7eb17261261bf9c5264f5",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-007.jpg": "7058b77c98803b3a7b4fed64d81f52dad9f078db1b537dab3394e08eb8917182",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494"
+  },
+  "actual_visual_review": "Root inspected images001,003,007,009. Perimeter bolt bosses seat near the rear flange and are recessed relative to the main front shell; exact depths cannot be measured from these oblique images.",
+  "manufacturer_table": {
+    "length_in": 14,
+    "width_in": 2,
+    "mounting_hardware_included": "Yes",
+    "package_contents": [
+      "Timing Cover",
+      "Gasket",
+      "Seal"
+    ],
+    "OE_cross": "E5TZ6019-H"
+  },
+  "cautions": [
+    "Hardware-included flag does not identify bolts; listed contents and reviewed photos do not show a fastener set.",
+    "14in and2in are catalog envelope labels, not axis-defined casting dimensions.",
+    "Current isolated candidate puts all seven head seats atX415,42mm from block face. That uniform full-depth choice is not supported by the inspected perimeter-boss appearance.",
+    "Future revision should model recessed perimeter head seats, retain gasket/gear/pan interfaces and preserve uncertainty; do not select bolt length merely to suit current incorrect boss heights."
+  ],
+  "unadopted_hardware_leads": {
+    "parts": [
+      "382781-S: catalog excerpt cover-to-block5/16-18\u00d77/8",
+      "56526-S: catalog excerpt cover/timing-pointer5/16-18\u00d72"
+    ],
+    "why_unadopted": "Search snippets came from mixed-engine/year catalog pages with inconsistent vehicle headings; exact1994 application, quantity and station map remain unverified. Exact-year selected FordPartsGiant page was inaccessible through web tool."
+  },
+  "next": "Source-supported boss-depth/bolt identification or clearly estimated coordinated hardware study; current candidate is not an accepted production attachment."
+}

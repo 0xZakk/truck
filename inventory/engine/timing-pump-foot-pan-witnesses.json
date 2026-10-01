@@ -1,0 +1,51 @@
+{
+  "status": "FAIL confirmed pump-support/pan collision, positive witnesses at both feet",
+  "input_sha256": {
+    "scripts/check-timing-pump-foot-pan-witnesses.py": "70de2d46fcb956f6c98d6f0728a836d5d5d32b5aac75acd51287853acb27c4cd",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pan.step": "57a1eea73d09075fb159afd633675f483793b2eb32aa079fc0e0399dbcb9e6ea",
+    "cad/engine/generated/timing-block-support-machining-candidate/base.step": "fee74aacd826cf4b77b8210be78032bf8ea933ab642b1fead4ec0b54e6e8771b",
+    "cad/engine/generated/timing-block-support-machining-candidate/block.step": "2880d7873e14c8407d40b219d06753be554c069db51da3bdf2ef300724544cfb",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9"
+  },
+  "witnesses": [
+    {
+      "region": 0,
+      "cube_center_mm": [
+        196.08399999999662,
+        107.35390354980497,
+        -103.21674347274052
+      ],
+      "witness_volume_mm3": 0.007999999999999924,
+      "outside_intersection_mm3": 0,
+      "outside_actual_pan_mm3": 0,
+      "outside_repaired_base_before_support_machining_mm3": 0,
+      "outside_new_candidate_mm3": 0,
+      "outside_identified_translated_pump_support_mm3": 0,
+      "source_support_index": 0,
+      "step_sha256": "70cbc4ce60b15643bb0455e21152132f13d2c809652d3e667642adbf53d570a0"
+    },
+    {
+      "region": 1,
+      "cube_center_mm": [
+        252.08399999999665,
+        107.35390354980497,
+        -103.21674347274053
+      ],
+      "witness_volume_mm3": 0.007999999999999924,
+      "outside_intersection_mm3": 0,
+      "outside_actual_pan_mm3": 0,
+      "outside_repaired_base_before_support_machining_mm3": 0,
+      "outside_new_candidate_mm3": 0,
+      "outside_identified_translated_pump_support_mm3": 0,
+      "source_support_index": 1,
+      "step_sha256": "6e0c8be1515403a328fdb7a150ac97e63d76351699a6dc76550df5fc9d8a366f"
+    }
+  ],
+  "limits": [
+    "Each0.008mm3 cube proves positive overlap; it is not the total overlap volume",
+    "Approximate131.526mm3 per region remains unaccepted due adaptive-volume nonconvergence",
+    "Collision already exists in repaired translated-drive base before support completion/final machining",
+    "No pan or pump-support repair applied"
+  ]
+}

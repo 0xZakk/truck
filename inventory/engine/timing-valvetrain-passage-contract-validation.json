@@ -1,0 +1,623 @@
+{
+  "status": "RESEARCH conflict map; no passage revision authorized by this checker",
+  "inputs": {
+    "scripts/check-timing-valvetrain-passage-contract.py": "36a580caee233d85dfa06f6bf1b15a81941c1bd1f27dc6749430bd1fd00695f7",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/cylinder-head.step": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "cad/engine/generated/head-gasket.step": "1494c3c0f8c2c32b5734534b4ec5edc295677548c8d20b116add0c377224dc15",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "cad/engine/generated/timing-block-support-machining-candidate/block.step": "2880d7873e14c8407d40b219d06753be554c069db51da3bdf2ef300724544cfb",
+    "cad/engine/generated/timing-valvetrain-adapter-candidate/rejected-upper-passage-v1/cylinder-head.step": "de0b824ba0c6795994b7a3d1fb565f080007cbd433200539dbf7f24209b511ad"
+  },
+  "rows": [
+    {
+      "id": "c1-intake",
+      "crank_degrees": 318,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806632282,
+        "head-gasket": 31.41583927641566,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          255.51760000000002,
+          94.54122139316065,
+          255.5
+        ],
+        [
+          263.4424,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          255.51760000000002,
+          94.54122139316065,
+          254.0
+        ],
+        [
+          263.4424,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            261.48,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            261.48,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.1162424862008,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921275,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055615,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055615
+    },
+    {
+      "id": "c1-exhaust",
+      "crank_degrees": 96,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            311.48,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            311.48,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620073,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921232,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055619,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055619
+    },
+    {
+      "id": "c2-intake",
+      "crank_degrees": 78,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806631613,
+        "head-gasket": 31.415839276415937,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          141.7256,
+          94.54122139316138,
+          255.5
+        ],
+        [
+          149.6504,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          141.7256,
+          94.54122139316136,
+          254.0
+        ],
+        [
+          149.6504,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            147.688,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            147.688,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620075,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921254,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055611,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055611
+    },
+    {
+      "id": "c2-exhaust",
+      "crank_degrees": 576,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            197.688,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            197.688,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620078,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921275,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055611,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055611
+    },
+    {
+      "id": "c3-intake",
+      "crank_degrees": 558,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806632225,
+        "head-gasket": 31.415839276416477,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          27.9336,
+          94.5412213931614,
+          255.5
+        ],
+        [
+          35.8584,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          27.9336,
+          94.54122139316154,
+          254.0
+        ],
+        [
+          35.8584,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            33.896,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            33.896,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620085,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.51490152992126,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055615,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055615
+    },
+    {
+      "id": "c3-exhaust",
+      "crank_degrees": 336,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            83.896,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            83.896,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.1162424862009,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.51490152992126,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055616,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055616
+    },
+    {
+      "id": "c4-intake",
+      "crank_degrees": 198,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806633089,
+        "head-gasket": 31.415839276415795,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          -85.8584,
+          94.5412213931614,
+          255.5
+        ],
+        [
+          -77.9336,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          -85.8584,
+          94.5412213931614,
+          254.0
+        ],
+        [
+          -77.9336,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -79.896,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -79.896,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620087,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.51490152992126,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055616,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055616
+    },
+    {
+      "id": "c4-exhaust",
+      "crank_degrees": 696,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -29.896,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -29.896,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620093,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.51490152992126,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055619,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055619
+    },
+    {
+      "id": "c5-intake",
+      "crank_degrees": 438,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806633193,
+        "head-gasket": 31.41583927641698,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          -199.6504,
+          94.54122139316154,
+          255.5
+        ],
+        [
+          -191.7256,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          -199.6504,
+          94.54122139316154,
+          254.0
+        ],
+        [
+          -191.7256,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -193.688,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -193.688,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620078,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921275,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055605,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055605
+    },
+    {
+      "id": "c5-exhaust",
+      "crank_degrees": 216,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -143.688,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -143.688,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620078,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921254,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055605,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055605
+    },
+    {
+      "id": "c6-intake",
+      "crank_degrees": 678,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 1526.8866806631497,
+        "head-gasket": 31.4158392764152,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "cylinder-head_overlap_bounds_mm": [
+        [
+          -313.4424,
+          94.54122139316067,
+          255.5
+        ],
+        [
+          -305.5176,
+          99.0722209901611,
+          333.5
+        ]
+      ],
+      "head-gasket_overlap_bounds_mm": [
+        [
+          -313.4424,
+          94.54122139316063,
+          254.0
+        ],
+        [
+          -305.5176,
+          99.0722209901611,
+          255.5
+        ]
+      ],
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -307.48,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -307.48,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": false
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620073,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921232,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.8796459430055621,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.8796459430055621
+    },
+    {
+      "id": "c6-exhaust",
+      "crank_degrees": 456,
+      "actual_rod_overlaps_mm3": {
+        "cylinder-head": 0.0,
+        "head-gasket": 0.0,
+        "block": 0.0,
+        "migrated-block": 0.0
+      },
+      "interior_collision_witnesses": {
+        "head-gasket": {
+          "point_mm": [
+            -257.48,
+            98.0,
+            254.75
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        },
+        "cylinder-head": {
+          "point_mm": [
+            -257.48,
+            98.0,
+            280.0
+          ],
+          "inside_pushrod": true,
+          "inside_neighbor": true,
+          "boolean_false_negative": true
+        }
+      },
+      "proposed_R6_gasket_removed_mm3": 89.11624248620086,
+      "proposed_circle_to_combustion_aperture_min_mm": 40.840622576738284,
+      "proposed_circle_to_head_bolt_aperture_min_mm": 29.514901529921275,
+      "proposed_circle_to_plusY_outer_edge_mm": 7.890179009838903,
+      "R6_to_R8_block_deck_support_probe_volume_mm3": 0.879645943005561,
+      "R6_to_R8_migrated_block_missing_support_mm3": 0.879645943005561
+    }
+  ],
+  "limits": [
+    "Block candidate separately uninstalled; guide bore continues through deck in supplied model.",
+    "No traced coolant network exists in supplied head/gasket; absence of a modeled coolant hole is not evidence of production separation.",
+    "Proposed radius6 envelope is a geometric study, not a measured port.",
+    "No new lower head/gasket/block CAD exported."
+  ],
+  "rejected_upper_passage_lost_cover_ledge_mm3": 279.10558475434243
+}

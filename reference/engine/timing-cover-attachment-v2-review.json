@@ -1,0 +1,71 @@
+{
+  "scope": "Attachment v2: five female socket interiors and audit of reusable male at 25 current positions. No canonical installation.",
+  "baseline": "8547c589d3c086bad91baf879219612bcd9a162f",
+  "source_claims": [
+    {
+      "claim": "25 screw-and-washer assemblies, 5/16-18 x 0.87 in",
+      "source": "1994 oil pan drawing 350379654, Fig. 34",
+      "ledger": "reference/engine/ford-oil-pan-hardware-reviewed.json",
+      "class": "Exact-year nominal callout"
+    },
+    {
+      "claim": "Detailed male and conjugate female profiles",
+      "source": "Accepted bounded pan-fastener-thread candidate",
+      "class": "Explicit educational estimate; no production thread class, manufacturing fit or strength claim"
+    }
+  ],
+  "preserved_proofs": {
+    "inventory/engine/pan-fastener-thread-validation.json": "aba1bf601d26f7023e95f36ac141e0f9343215cc9e26f23ec561d170a2d8fbc8",
+    "inventory/engine/timing-cover-front-joint-validation.json": "6a4490ed3d50956e9fd0db1297fa17a217c363e15d1b453bd64b2a8c94d11116",
+    "reference/engine/ford-oil-pan-hardware-reviewed.json": "1f51d5330da5354f81b77f063b82b959a3a35d3ebb27d299ff71253702eb8080",
+    "inventory/engine/timing-cover-attachment-validation.json": "3b08515dca5f03b08f078cadf27a9c671fb34e0dbb8df45cb9bc2f0f9ea0b754"
+  },
+  "excluded_interfaces": [
+    "Seven main-cover bolts: applicable dimensions and mixed hardware mapping remain unknown; uniform 42 mm boss heights are unsupported.",
+    "Front seal case/hub dimensions remain unresolved in this frozen sealing candidate; root owns source-led revision."
+  ],
+  "planned_gates": {
+    "volume_overlap_mm3": 0.1,
+    "material_preservation_mm3": 0.01,
+    "positive_flank_contact_area_mm2": 1,
+    "zero_contact_distance_mm": 1e-05,
+    "wrong_axial_phase_mm": 0.3,
+    "wrong_phase_overlap_min_mm3": 1,
+    "matched_angle_deg": 90,
+    "matched_advance_mm": 0.35277777777777775,
+    "thread_engagement_mm": 14.2,
+    "required_wall_outer_radius_mm": 6.2,
+    "female_coupon_outer_radius_mm": 4.17,
+    "tip_clearance_mm": 0.502
+  },
+  "status": "FAIL: four relocated head/washer stacks collide with frozen pan wall; thread sockets themselves pass.",
+  "visual_review": {
+    "path": "cad/engine/generated/timing-cover-attachment-v2/attachment-review.png",
+    "finding": "Center section shows pan inner front wall at X395 crossing the head and washer. Socket flanks match. This is a pan dry-side access failure, not nominal thread overlap."
+  },
+  "next_proposal": "Evaluate estimated outward stamped recesses at fixed stations, preserving washer seating planes and continuous oil boundary. No blind subtraction of head or washer from pan.",
+  "candidate_sha256": {
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "scripts/check-timing-cover-attachment-v2.py": "386a78416b375ece36d93d9559f8363f4fe5aadadc7974611d2782622523ce1f",
+    "scripts/render-timing-cover-attachment-v2.py": "eaf07d2e76efb3552041a8a5a2a6e7e15baf5917734dd08f3437b040507b94f0",
+    "inventory/engine/timing-cover-attachment-v2-validation.json": "71cea5e88baf86d3817ccfe41ac64e0884324ec36c938f4387486a198aec69cc",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-10.step": "783354a84e9a4abb65995ef11579e25d05d15d083670beb43e2d420429e433ba",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-10.step": "7e1e288abc15c4ac4e0ce282bdd195c5f688684089a177e169f8ac15bab55cfe",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-20.step": "f9b7055ef48478f7e3ed2c52d04fd10df9c6acf7ac422ea7255871f39577b11f",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-20.step": "1748867e597c371eac178ad25dd3bad1903ac84fab15c50bc63a5a4470b43c83",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-21.step": "a426e2c242906606ccd02753cd11b7b4dac5b4cf51c667082ae95c5f5bfb3024",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-21.step": "56c13a22703854470ba83dd533e8cdcea13a15fb0a180864ade496802d1d2f2b",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/pan.step": "f8c65829943b4a09380fc273b02cd2b8e589d855103c9e17860ec61bdcef3ef0",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-22.step": "0266613b865fa176fd890de61d346f50bc83f96bbb0d7adda738573391e0b5bb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-22.step": "12be7b18e306982654a45a3ecf054e948c6c43a21b343ea81cd481feea3d60eb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-23.step": "0fb18e2bfd9e3db07e3f89229d20a256da7b20fee948d39c627dc2c74b48412a",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-23.step": "23ee3b52a5d33bd6c95d724414fcab0fddc85e56035eafe2828aa7614fe41275",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-cover-attachment-v2/attachment-review.png": "d792c3b615339a105f696b7a0a9b063f61b245162ad0f978599f90912f693a88",
+    "docs/components/timing-cover-attachment-v2.md": "a7831e807686f9fa7d76bc27e4ecc9eda4c3ebf150733ac0dc2e348fa81f1741"
+  }
+}

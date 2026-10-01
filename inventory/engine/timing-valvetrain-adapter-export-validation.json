@@ -1,0 +1,22 @@
+{
+  "exports": {
+    "rocker-arm": {
+      "glb_sha256": "bb9740c62aff8c362864718df7b3cba14a560408fae0f7febe38cf82e5ccb58e",
+      "watertight": true,
+      "triangles": 3602,
+      "maximum_bounds_error_mm": 1.9645836207837775e-06
+    },
+    "cylinder-head": {
+      "glb_sha256": "cc40acd93092c5025cbd2d3e8d32cb757f71ec22173156eea88794662dcb101a",
+      "watertight": true,
+      "triangles": 82194,
+      "maximum_bounds_error_mm": 5.364418020903372e-06
+    }
+  },
+  "input_sha256": {
+    "cad/engine/generated/timing-valvetrain-adapter-candidate/pedestal-only-v2/rocker-arm.step": "0458f167570e4393153828f5e00e8ea98f17e1a4cc4869618a27421fa4df4a2b",
+    "cad/engine/generated/timing-valvetrain-adapter-candidate/pedestal-only-v2/cylinder-head.step": "d5776d25ecd3ce4b3ad413b8e876af54e7f71b9f2bfdca44663458e8b7799f6e"
+  },
+  "render_sha256": "10a19a1ba061c5ace329af1f87e60fa9b27177934b2db832cb82389e3a9cc2a5",
+  "status": "PASS watertight bounded exports; passage conflict remains"
+}

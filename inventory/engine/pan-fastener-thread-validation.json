@@ -1,0 +1,534 @@
+{
+  "local_status": "PASS",
+  "readiness": "Isolated reusable thread candidate; root review required, not installed",
+  "input_sha256": {
+    "scripts/check-pan-fastener-thread-candidate.py": "d4c3e4d044ea2fcb1e1d3effa8ac5b4e39dd2621c407fbeea9555d541f0ab1b6",
+    "cad/engine/pan_fastener_thread_candidate.py": "041a7d6136e60cc310def6f79c5314ae7b9e15836e2ffe9401b7cc4f242cada0",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pan-mounting-screw.step": "eb151db3bef2ea33016c242c7893ea66e470677183aa61720d2fbf74542211b0",
+    "cad/engine/generated/oil-pan-mounting-washer.step": "89dfd958fc84025474dfd159c2f7ee3c167ec0e8abc2e904f383357916ee2c17",
+    "reference/engine/ford-oil-pan-hardware-reviewed.json": "1f51d5330da5354f81b77f063b82b959a3a35d3ebb27d299ff71253702eb8080",
+    "inventory/engine/timing-cover-attachment-validation.json": "3b08515dca5f03b08f078cadf27a9c671fb34e0dbb8df45cb9bc2f0f9ea0b754"
+  },
+  "nominal_and_estimated_dimensions": {
+    "major_diameter_parameter_mm": 7.9375,
+    "mesh_observed_major_diameter_mm": 7.937615653076174,
+    "pitch_mm": 1.411111111111111,
+    "underhead_length_mm": 22.098,
+    "modeled_length_error_mm": 1.0000000116860974e-07,
+    "major_diameter_error_mm": 0.00011565307617367182,
+    "estimated_root_radius_mm": 3.2,
+    "estimated_thread_runout_interval_mm": [
+      1.6,
+      1.7
+    ],
+    "estimated_crest_width_mm": 0.2,
+    "estimated_embedded_root_width_mm": 1.3186161465549,
+    "estimated_flank_included_angle_deg": 60
+  },
+  "exports": {
+    "pan-screw": {
+      "valid": true,
+      "roundtrip_valid": true,
+      "solids": 1,
+      "raw_mesh_watertight": true,
+      "roundtrip_mesh_watertight": true,
+      "glb_watertight": true,
+      "euler": 2,
+      "roundtrip_volume_delta_mm3": 1.597488790139323e-07,
+      "bounds_mm": [
+        [
+          -7.332348418708248,
+          -6.35,
+          -5.3
+        ],
+        [
+          7.332348418708247,
+          6.3500000000000005,
+          22.0980001
+        ]
+      ]
+    },
+    "female-test-coupon": {
+      "valid": true,
+      "roundtrip_valid": true,
+      "solids": 1,
+      "raw_mesh_watertight": true,
+      "roundtrip_mesh_watertight": true,
+      "glb_watertight": true,
+      "euler": 0,
+      "roundtrip_volume_delta_mm3": 1.9895196601282805e-13,
+      "bounds_mm": [
+        [
+          -4.1700001,
+          -4.1700001,
+          7.7999999
+        ],
+        [
+          4.1700001,
+          4.1700001,
+          22.3
+        ]
+      ]
+    },
+    "existing-pan-washer": {
+      "valid": true,
+      "roundtrip_valid": true,
+      "solids": 1,
+      "raw_mesh_watertight": true,
+      "roundtrip_mesh_watertight": true,
+      "glb_watertight": true,
+      "euler": 0,
+      "roundtrip_volume_delta_mm3": 0.0,
+      "bounds_mm": [
+        [
+          -7.5,
+          -7.5,
+          0.0
+        ],
+        [
+          7.5,
+          7.5,
+          1.6
+        ]
+      ]
+    }
+  },
+  "matched_pose_tests": [
+    {
+      "angle_deg": -180,
+      "advance_mm": -0.7055555555555555,
+      "status": "DONE",
+      "overlap_mm3": 4.0887722056449384e-05
+    },
+    {
+      "angle_deg": -90,
+      "advance_mm": -0.35277777777777775,
+      "status": "DONE",
+      "overlap_mm3": 1.2938948260647952e-17
+    },
+    {
+      "angle_deg": 0,
+      "advance_mm": 0.0,
+      "status": "DONE",
+      "overlap_mm3": 0
+    },
+    {
+      "angle_deg": 90,
+      "advance_mm": 0.35277777777777775,
+      "status": "DONE",
+      "overlap_mm3": 8.61725174237204e-06
+    },
+    {
+      "angle_deg": 180,
+      "advance_mm": 0.7055555555555555,
+      "status": "DONE",
+      "overlap_mm3": 9.330586399904387e-05
+    }
+  ],
+  "wrong_phase_controls": [
+    {
+      "axial_only_shift_mm": -0.3,
+      "status": "DONE",
+      "overlap_mm3": 50.460244913907346
+    },
+    {
+      "axial_only_shift_mm": 0.3,
+      "status": "DONE",
+      "overlap_mm3": 51.18842654244565
+    }
+  ],
+  "independent_point_classification": [
+    {
+      "angle_deg": 0,
+      "advance_mm": 0,
+      "samples": 720,
+      "common_interior_points": 0
+    },
+    {
+      "angle_deg": 90,
+      "advance_mm": 0.35277777777777775,
+      "samples": 720,
+      "common_interior_points": 0
+    },
+    {
+      "angle_deg": 0,
+      "advance_mm": 0.3,
+      "samples": 720,
+      "common_interior_points": 152
+    },
+    {
+      "angle_deg": 0,
+      "advance_mm": -0.3,
+      "samples": 720,
+      "common_interior_points": 154
+    }
+  ],
+  "head_washer_support_missing_mm3": 0,
+  "male_washer_overlap_mm3": 0.0,
+  "preserved_interfaces": {
+    "head_and_collar_removed_mm3": 0,
+    "head_and_collar_added_mm3": 0
+  },
+  "proposed_reusable_definition": "oil-pan-mounting-screw",
+  "existing_occurrence_ids": [
+    "oil-pan-mounting-screw-1",
+    "oil-pan-mounting-screw-2",
+    "oil-pan-mounting-screw-3",
+    "oil-pan-mounting-screw-4",
+    "oil-pan-mounting-screw-5",
+    "oil-pan-mounting-screw-6",
+    "oil-pan-mounting-screw-7",
+    "oil-pan-mounting-screw-8",
+    "oil-pan-mounting-screw-9",
+    "oil-pan-mounting-screw-10",
+    "oil-pan-mounting-screw-11",
+    "oil-pan-mounting-screw-12",
+    "oil-pan-mounting-screw-13",
+    "oil-pan-mounting-screw-14",
+    "oil-pan-mounting-screw-15",
+    "oil-pan-mounting-screw-16",
+    "oil-pan-mounting-screw-17",
+    "oil-pan-mounting-screw-18",
+    "oil-pan-mounting-screw-19",
+    "oil-pan-mounting-screw-20",
+    "oil-pan-mounting-screw-21",
+    "oil-pan-mounting-screw-22",
+    "oil-pan-mounting-screw-23",
+    "oil-pan-mounting-screw-24",
+    "oil-pan-mounting-screw-25"
+  ],
+  "unchanged_existing_transforms": {
+    "oil-pan-mounting-screw-1": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-2": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-3": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-4": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-5": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-6": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-7": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-8": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-9": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-10": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        344.0,
+        116.6,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-11": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-12": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-13": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-14": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-15": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-16": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-17": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-18": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-19": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-20": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        344.0,
+        -131.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-21": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        371.0,
+        -85.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-22": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        371.0,
+        85.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-23": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        371.0,
+        0.0,
+        -67.0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-24": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "oil-pan-mounting-screw-25": {
+      "parent": "oil-pan-fastener-assembly",
+      "position_cad_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "female_limit": "Test coupon only. Ideal zero-clearance conjugate and estimated thread profile, not manufacturing fit/strength. No cover or land changes in this module.",
+  "five_relocated_socket_revalidation": "NOT RUN",
+  "all25_station_interfaces": "NOT RUN",
+  "installed": "NOT RUN",
+  "browser": "NOT RUN",
+  "learning": "NOT RUN"
+}

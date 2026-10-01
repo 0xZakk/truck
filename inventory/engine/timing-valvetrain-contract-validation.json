@@ -1,0 +1,1938 @@
+{
+  "status": "PASS phase/contact contract and numeric proposal; new rocker/head adapters NOT BUILT",
+  "inputs": {
+    "scripts/check-timing-valvetrain-contract.py": "cb79079bd7968ae8978019578e112ca39d9227ea60c6a140e60da3331c8b7bac",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/timing-coupled-core-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/cylinder-head.step": "98d5e5c02f70ee63194e11b1531264c823dfed5a54ecd02a970ed1d725b31850",
+    "cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "cad/engine/generated/exhaust-valve.step": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d",
+    "cad/engine/generated/lifter-body.step": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "cad/engine/generated/rocker-arm.step": "62ad3a2e8d018d99c864ae65f1eccc6a9c8b5c9d4ffdf4f5a055801827803c8f",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0",
+    "cad/engine/generated/lifter-pushrod-cup.step": "e7e39eeac754ff25c1fd9ec6e9bb35a5108ac82a8299667af520570747304869",
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b"
+  },
+  "phase_contract": {
+    "cam_angle_deg": "-theta/2+degrees(K*axial)",
+    "effective_crank": "theta-2*degrees(K*axial)",
+    "effective_crank_shift_at_minus0p1_deg": -0.06580655361308022,
+    "source": "Inherited hypothetical replacement envelope, not Ford/owner calibration"
+  },
+  "numeric": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "source_x_mm": 259.48,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274116616,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367531906,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "source_x_mm": 309.48,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367531906,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "source_x_mm": 145.688,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274059773,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "source_x_mm": 195.688,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "source_x_mm": 31.896,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274059773,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "source_x_mm": 81.896,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367531906,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "source_x_mm": -81.896,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274059773,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "source_x_mm": -31.896,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "source_x_mm": -195.688,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274059773,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367531906,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "source_x_mm": -145.688,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367531906,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "source_x_mm": -309.48,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 5.684341886080802e-14,
+      "max_curve_change_mm": 0.021810102274059773,
+      "max_pad_slide_mm": 0.99802352866684,
+      "omitted_rocker_min_ball_length_error_mm": 4.03196517934046,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.032999999999959,
+      "nominal_peak_residual_mm": -4.085620730620576e-14,
+      "retained_pivot_peak_valve_lift_mm": 8.950611485536456,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        -5.684341886080802e-14
+      ],
+      "rest_rocker_angle_delta_deg": 1.1486026574269762e-15
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "source_x_mm": -259.48,
+      "max_baseline_solver_error": 0.0,
+      "max_closure_error_mm": 1.1368683772161603e-13,
+      "max_curve_change_mm": 0.021948143115480434,
+      "max_pad_slide_mm": 0.9952723623352266,
+      "omitted_rocker_min_ball_length_error_mm": 4.031940862037857,
+      "omitted_axial_phase_max_lifter_error_mm": 0.005938608367537679,
+      "proposed_peak_valve_lift_mm": 10.03313443621255,
+      "nominal_peak_residual_mm": 0.0001344362125497156,
+      "retained_pivot_peak_valve_lift_mm": 8.95072882163015,
+      "pivot_delta_yz_mm": [
+        2.9366937073592396,
+        5.295985812381332e-05
+      ],
+      "rest_rocker_angle_delta_deg": 0.0006807364322854163
+    }
+  ],
+  "adapter_datums": {
+    "baseline": {
+      "PIVOT_Y": 51.0718402496357,
+      "PUSHROD_Y": 90.0,
+      "LOWER_BALL_Z": 139.7,
+      "CUP_Z": -5.4212455656279985
+    },
+    "proposed": {
+      "PIVOT_Y": 54.00853395699494,
+      "PUSHROD_Y": 95.1098209901611,
+      "LOWER_BALL_Z": 143.78785679212888,
+      "CUP_Z": -1.3333887734991094
+    },
+    "lifter_branch_delta_yz_mm": [
+      5.109820990161097,
+      4.087856792128875
+    ],
+    "valve_axis_change_mm": 0,
+    "pushrod_centers_mm": 250.003354434372
+  },
+  "cam_lifter_contacts": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 318,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 5.9401372709544376e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000593445
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 318,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 9.592326932761353e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000958664
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 372,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.476419235288631e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000448495
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 372,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.234906090365257e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917650396
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 468,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.595346242946107e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000358966
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 468,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 2.2453150450019166e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.099999999997749
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 564,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.0097183471152322e-14,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.0999999999999801
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 564,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.538876272723428e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914610694
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 618,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.2737367544323206e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000022169
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 618,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.836930773104541e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000383125
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 96,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.81750070837059e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000048118
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 96,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.270717444247566e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000826503
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 150,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 6.0822624195495896e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000607656
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 150,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.224247949328856e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917756977
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 246,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 8.483880264975596e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000084782
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 246,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 2.4442670110147446e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000243858
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 342,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.9184653865522705e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000191278
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 342,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.519691618857905e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146193,
+      "plus0p1_normal_fault_mm": 0.0999999991480254
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 396,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.2789769243681803e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000127329
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 396,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 4.703792910731863e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000469811
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 78,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.1227474610168248e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000111697
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 78,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 5.002220859751105e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000499654
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 132,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 7.005951374594588e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000700027
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 132,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.208758117689285e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917911874
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 228,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.789058039023075e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000478337
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 228,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 1.7053025658242404e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999828901
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 324,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 6.80699940858176e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000680132
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 324,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.470664170090458e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999915292815
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 378,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 7.489120434911456e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000748344
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 378,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 1.0828671292983927e-11,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000001082299
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 576,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 9.947598300641403e-14,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999989484
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 576,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.453237695794087e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000344755
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 630,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 5.684341886080802e-14,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000005116
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 630,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.280665042548208e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917192806
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 6,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.263256414560601e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999955378
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 6,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 6.45172804070171e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999354259
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 102,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.9895196601282805e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.09999999999978115
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 102,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.541007900930708e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914589378
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 156,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.931166586175095e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000492548
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 156,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.171241461241152e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000816556
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 558,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.694822225952521e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000003638
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 558,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.907985046680551e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000039023
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 612,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.1368683772161603e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999986642
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 612,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.28222823656688e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917177174
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 708,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.7000623958883807e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999972431
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 708,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 6.323830348264892e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999367049
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 84,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.2789769243681803e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.09999999999986642
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 84,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.539871032553492e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914600746
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 138,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 5.7127635955112055e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000570708
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 138,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 9.393374966748524e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000938769
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 336,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 5.144329406903125e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000515286
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 336,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.412825991399586e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000840714
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 390,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.462208380573429e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000447073
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 390,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.238885129685514e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917610605
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 486,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.9042545318370685e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000189857
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 486,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.936406756110955e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999605791
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 582,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.4210854715202004e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000013642
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 582,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.537028861610452e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914629168
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 636,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.5631940186722204e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.099999999999838
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 636,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.410605131648481e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000340492
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 198,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 7.275957614183426e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000727027
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 198,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 1.057287590811029e-11,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000001056719
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 252,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.2079226507921703e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000120224
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 252,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.268443707493134e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917315018
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 348,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 7.817261882493692e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000077591
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 348,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 5.5848659030743875e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999440945
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 444,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.106937012693379e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000410125
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 444,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.501501724822447e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914984439
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 498,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 8.526512829121202e-14,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999992326
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 498,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.510081114654895e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000035044
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 696,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.7000623958883807e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999972431
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 696,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.325340003357269e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000331966
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 30,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 6.679101716144942e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000066223
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 30,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.274696483567823e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917252492
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 126,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.590128071184647e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000458442
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 126,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 1.5063505998114124e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999848797
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 222,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.225864020350855e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000322018
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 222,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.502070159011055e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914978755
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 276,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 8.86757334228605e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000886189
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 276,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 1.2050804798491299e-11,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000001204512
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 438,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.396394276933279e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000339071
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 438,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 6.636469151999336e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000663078
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 492,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 0.0,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.0999999999999801
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 492,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.280949259642512e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917189963
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 588,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.268496584496461e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000032117
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 588,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 5.7127635955112055e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999428155
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 684,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.5631940186722204e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000015064
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 684,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.53759729579906e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914623484
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 18,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.4210854715202004e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000013642
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 18,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.680611371237319e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000367493
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 216,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.051699263830323e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000104592
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 216,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 4.504840944719035e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000449916
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 270,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.376943252282217e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000437126
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 270,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.239737780968426e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917602077
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 366,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 6.0111915445304476e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000600551
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 366,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.552713678800501e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999963904
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 462,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.206412995699793e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000420073
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 462,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.49752268550219e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146193,
+      "plus0p1_normal_fault_mm": 0.0999999991502423
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 516,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.263256414560601e-14,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.0999999999999659
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 516,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.552713678800501e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000354703
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 678,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.984279490192421e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.0999999999997101
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 678,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.268496584496461e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000326281
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 12,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.7053025658242404e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000016485
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 12,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.279386065623839e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917204173
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 108,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.0464124216397433e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000204068
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 108,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.922195901395753e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999607212
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 204,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 7.332801033044234e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.10000000000732712
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 204,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.464837719657226e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.0999999991535108
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 258,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 4.277467269275803e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000427178
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 258,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 7.830180948076304e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.1000000000078245
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 456,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.950617610826157e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000394493
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 456,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 7.16227077646181e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000715659
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 510,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.8474111129762605e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000017906
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 510,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.279243957076687e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999917207017
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 606,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 1.1368683772161603e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000009379
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 606,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 5.8832938520936295e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999411102
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 702,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 2.4158453015843406e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.807409184617839,
+      "plus0p1_normal_fault_mm": 0.09999999999975273
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 702,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 8.541576335119316e-10,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 3.8169067032146335,
+      "plus0p1_normal_fault_mm": 0.09999999914583693
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 36,
+      "axial_mm": 0,
+      "cam_surface_gap_mm": 3.126388037344441e-13,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.09999999999968168
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 36,
+      "axial_mm": -0.1,
+      "cam_surface_gap_mm": 3.240074875066057e-12,
+      "shifted_lifter_surface_gap_mm": 0.0,
+      "unshifted_lifter_witness_gap_mm": 0.2878567921288777,
+      "plus0p1_normal_fault_mm": 0.10000000000323439
+    }
+  ],
+  "guide_stem_datums": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "axis_y_mm": -12,
+      "guide_probe_world_z_mm": [
+        280,
+        300
+      ],
+      "bore_radius_mm": 4.36626,
+      "stem_radius_mm": 4.3434,
+      "diametral_clearance_mm": 0.04571999999999932,
+      "bore_intrusion_mm3": 0.0,
+      "annular_support_missing_mm3": 0.0,
+      "stem_outside_mm3": 0.0
+    }
+  ],
+  "installed_linkage_contacts": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 318,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.1776437161565096e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "crank_degrees": 468,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 96,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "crank_degrees": 246,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 78,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.1903289710504124e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "crank_degrees": 228,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 576,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "crank_degrees": 6,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 558,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.184785389154139e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "crank_degrees": 708,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 336,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "crank_degrees": 486,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 198,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.1903289710504124e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "crank_degrees": 348,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 696,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.695433295429594e-14,
+        "pushrod__lifter-pushrod-cup": 3.03543989777123e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "crank_degrees": 126,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 2.0097183471152322e-14,
+        "pushrod__lifter-pushrod-cup": 3.552713678800501e-15,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 438,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.1903289710504124e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "crank_degrees": 588,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 216,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "crank_degrees": 366,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 678,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 5.693223670277803e-12,
+        "rocker__pushrod": 3.1776437161565096e-13,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "crank_degrees": 108,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 8.638355915572957e-13,
+        "rocker__pushrod": 1.4210854715202004e-14,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 456,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 1.2917666936118621e-11,
+        "rocker__pushrod": 5.684341886080802e-14,
+        "pushrod__lifter-pushrod-cup": 2.842170943040401e-14,
+        "rocker__fulcrum": 0.0
+      }
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "crank_degrees": 606,
+      "contact_gaps_mm": {
+        "pad_valve_witness": 9.246956863677689e-13,
+        "rocker__pushrod": 0.0,
+        "pushrod__lifter-pushrod-cup": 0.0,
+        "rocker__fulcrum": 0.0
+      }
+    }
+  ],
+  "limits": [
+    "120 cam/lifter surface witnesses are sampled contacts, not continuous collision proof.",
+    "Common estimated rocker preserves nominal intake peak; exhaust residual reported, not scaled away.",
+    "No new rocker solid or head pedestal/passage/cover adaptation; remaining neighbors untested.",
+    "Valve guide CAD probes cover central20mm support; no production bore straightness/clearance claim.",
+    "Linkage springs, valve seats, piston clearance, hydraulic preload and oil-feed alignment require later coordinated checks."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "reviewer": "root integration owner",
+  "reports": {
+    "timing-valvetrain-adapter-candidate-validation": "4e62912eec25b0f79e725a97c21bd403afaea3cd606938effe73e1b04c7e644b",
+    "timing-valvetrain-passage-contract-validation": "82196d978c10ccbf4bfbf18775e0cf4852618b1862f0f38253d9c5e4ccbbf5f6",
+    "timing-valvetrain-piston-envelope-validation": "cbac8fc9c205b10e0a3087aaec76c20844d2e0aa6b1bec3a841779231897a339",
+    "timing-valvetrain-rocker-interfaces-validation": "2ac53a3e5d004622c8095c52a8a17dc443f75b098f0df1228025ddf0312d27ed",
+    "timing-valvetrain-adapter-export-validation": "0aacd9d9066b7cb3adca91361ba0b75bd231c3486ac90f22e8724746dc24f0b8"
+  },
+  "reviewed": [
+    "Actual exported rocker comparison and head/pushrod section",
+    "Pedestal-only scope, protected-region masks and original interface preservation",
+    "Independent strict interior witnesses overcoming Boolean false negatives",
+    "Sampled piston envelope and contact coverage"
+  ],
+  "decision": "Preserve rejected adapter; not integration-ready. Evaluate inclined pushrod hypothesis before changing cover sealing surfaces.",
+  "installed": false,
+  "browser": "NOT RUN",
+  "limits": [
+    "Actual source casting/rocker contour not established",
+    "Lower head/gasket passages conflict",
+    "Block-deck support missing under proposed gasket annulus",
+    "Sampled motion is not continuous proof"
+  ]
+}
