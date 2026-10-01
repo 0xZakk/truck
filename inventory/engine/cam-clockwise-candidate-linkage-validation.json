@@ -1,0 +1,67 @@
+{
+  "status": "PASS practical linkage API scoped frames and unchanged source law",
+  "inputs": {
+    "scripts/check-cam-clockwise-linkage.py": "5cb2174dd010c6d7c66ea57cf0fa7dbb9fdec5a3041656ffb58887ef855ecfdc",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  },
+  "samples": [
+    {
+      "event_deg": 0,
+      "axial_mm": 0,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 0,
+      "axial_mm": -0.1,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 372,
+      "axial_mm": 0,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 372,
+      "axial_mm": -0.1,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 468,
+      "axial_mm": 0,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 468,
+      "axial_mm": -0.1,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 720,
+      "axial_mm": 0,
+      "frame_count": 216,
+      "maximum_matrix_difference": 0.0
+    },
+    {
+      "event_deg": 720,
+      "axial_mm": -0.1,
+      "frame_count": 216,
+      "maximum_matrix_difference": 3.469446951953614e-18
+    }
+  ],
+  "identity": "Old(theta=q+4deg(Kx),x) has same effective event as New(q,x), both q+2deg(Kx)",
+  "excluded": [
+    "crank/cam general transforms",
+    "valve-spring compressed geometry (internal lifter springs remain rigid lifter members)"
+  ],
+  "limits": [
+    "Matrix replay of unchanged source law, not whole-engine actual neighbor check"
+  ]
+}

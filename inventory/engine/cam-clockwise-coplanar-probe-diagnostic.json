@@ -1,0 +1,29 @@
+{
+  "status": "REJECTED CHECKER: coplanar Boolean probes unreliable",
+  "source_replay_difference_mm3": 0,
+  "observed": [
+    {
+      "station": "c1-intake",
+      "core_difference_mm3": 0,
+      "changed_mm3": 3380.5849069507594
+    },
+    {
+      "station": "c1-exhaust",
+      "core_difference_mm3": 0,
+      "changed_mm3": 0,
+      "interpretation": "False zero suspected: placed phase changes from123 to-123 degrees"
+    },
+    {
+      "station": "c2-intake",
+      "core_difference": "failed <1e-5 gate; numeric output not retained",
+      "interpretation": "No acceptance; source guarantees full R18 base circle but coplanar intersection comparison unreliable"
+    }
+  ],
+  "action": "Use inset independent core material probes, per-station section controls and padded exterior mask; unchanged tolerances. No candidate accepted.",
+  "inset_trial": {
+    "status": "REJECTED change-volume metric",
+    "c2_intake_mm3": 32154.3260844312,
+    "c3_exhaust_mm3": 0.023704941173491534,
+    "interpretation": "Inset Boolean symmetric differences also inconsistent with rigid lobe phase change; excluded from acceptance. Independent BRep boundary comparison required."
+  }
+}

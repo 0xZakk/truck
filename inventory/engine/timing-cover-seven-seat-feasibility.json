@@ -1,0 +1,433 @@
+{
+  "status": "RESEARCH; no hardware or seat selected",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "scripts/research-timing-cover-seven-seat-feasibility.py": "f5af7a7de8f5fb72c2e88f011e1046762e8d7d548f47f0f15d43bd46c8ec7772",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+  },
+  "probe_thickness_mm": 0.02,
+  "probes_are_estimates_not_specifications": true,
+  "stations": [
+    {
+      "station": 1,
+      "axis_yz_mm": [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0.10390039007587631,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0.12207712195719643,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 1.1568078591450206,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.1568078591450206,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 0.977416603319473,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 2,
+      "axis_yz_mm": [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.306902543892165,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 1.306902543892165,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 3,
+      "axis_yz_mm": [
+        -6.627940493863827,
+        98.99106943536769
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 1.3069025438921646,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.3069025438921646,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 1.1858001312752653,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 4,
+      "axis_yz_mm": [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 5,
+      "axis_yz_mm": [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 6,
+      "axis_yz_mm": [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 1.306902543892166,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.306902543892166,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 1.306902543892166,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    },
+    {
+      "station": 7,
+      "axis_yz_mm": [
+        217.24482469086223,
+        -7.893399845733515
+      ],
+      "head_support_R4_2_to_9": {
+        "377.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "379.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "383.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "387.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "391.8": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        },
+        "415.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 3.981026210628986
+        }
+      },
+      "block_wall_R4_2_to_6_2": {
+        "354.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "358.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "362.0": {
+          "missing_mm3": 1.3069025438921655,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "366.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "370.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        },
+        "373.0": {
+          "missing_mm3": 0,
+          "complete_volume_mm3": 1.3069025438933541
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Annular material samples do not establish load capacity or socket threading",
+    "Existing rear plane373, cover rear373.8 and pocketfloor366 are model estimates",
+    "No cutter, union, export or canonical model mutation performed",
+    "CurrentX415 uniform seats remain unverified"
+  ]
+}

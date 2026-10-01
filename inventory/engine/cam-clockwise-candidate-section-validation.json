@@ -1,0 +1,163 @@
+{
+  "status": "PASS independent actual sections and material probes",
+  "inputs": {
+    "scripts/check-cam-clockwise-sections.py": "13f7b1181ee3ab371cf356dea2b509e5d66a97154e28efbc4a3a93cc92e3c6b7",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/generated/timing-coupled-core-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.step": "81933607c28c521f8f077239e16174a5d718c9aec0f1e4450ac041b1931fbc68",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.glb": "798770680f49a91872cb65a6bf604e2981ef74d83cc00ecfe8f81a94eac2ec93",
+    "inventory/engine/cam-clockwise-candidate-build-validation.json": "3cd98ac11e003ab1029c42c13d13d7a30467357fba9c9a8c21f7363a54929160"
+  },
+  "sections": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "x_mm": 259.48,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 1.8076495576610903e-06,
+      "expected_rigid_phase_rotation_deg": -468.0,
+      "boundary_hausdorff_mm": 1.669685903687009e-06,
+      "area_difference_mm2": 2.9410557544906624e-08,
+      "minimum_core_radius_mm": 17.99999973190666,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "x_mm": 309.48,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 3.64390609833102e-06,
+      "expected_rigid_phase_rotation_deg": -246.0,
+      "boundary_hausdorff_mm": 3.6439041713502968e-06,
+      "area_difference_mm2": 2.2629265004070476e-06,
+      "minimum_core_radius_mm": 17.999997092083596,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "x_mm": 145.688,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 4.076863499949355e-06,
+      "expected_rigid_phase_rotation_deg": -948.0,
+      "boundary_hausdorff_mm": 1.8076560716804314e-06,
+      "area_difference_mm2": 1.2880309441243298e-07,
+      "minimum_core_radius_mm": 17.99999909043854,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "x_mm": 195.688,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 1.8076495072944235e-06,
+      "expected_rigid_phase_rotation_deg": -726.0,
+      "boundary_hausdorff_mm": 1.8076486152071465e-06,
+      "area_difference_mm2": 5.752735887654126e-08,
+      "minimum_core_radius_mm": 17.99999994908558,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "x_mm": 31.896,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 4.4592277113588335e-06,
+      "expected_rigid_phase_rotation_deg": -708.0,
+      "boundary_hausdorff_mm": 7.648161886049801e-07,
+      "area_difference_mm2": 4.2205510908388533e-07,
+      "minimum_core_radius_mm": 17.999995750857384,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "x_mm": 81.896,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 3.64390285956761e-06,
+      "expected_rigid_phase_rotation_deg": -486.0,
+      "boundary_hausdorff_mm": 7.648237870157231e-07,
+      "area_difference_mm2": 5.107788183522644e-07,
+      "minimum_core_radius_mm": 17.999997036790653,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "x_mm": -81.896,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 3.6439062475878526e-06,
+      "expected_rigid_phase_rotation_deg": -1068.0,
+      "boundary_hausdorff_mm": 3.973421515432981e-06,
+      "area_difference_mm2": 1.568051857248065e-06,
+      "minimum_core_radius_mm": 17.999998163860408,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "x_mm": -31.896,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 7.648096479126064e-07,
+      "expected_rigid_phase_rotation_deg": -846.0,
+      "boundary_hausdorff_mm": 4.646281379226498e-06,
+      "area_difference_mm2": 1.8488215118850349e-06,
+      "minimum_core_radius_mm": 17.9999957508572,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "x_mm": -195.688,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 4.459251071705788e-06,
+      "expected_rigid_phase_rotation_deg": -588.0,
+      "boundary_hausdorff_mm": 4.459248515439527e-06,
+      "area_difference_mm2": 1.3654255326400744e-06,
+      "minimum_core_radius_mm": 17.999995750848527,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "x_mm": -145.688,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 4.39965583938161e-06,
+      "expected_rigid_phase_rotation_deg": -366.0,
+      "boundary_hausdorff_mm": 1.8076397932998752e-06,
+      "area_difference_mm2": 7.809694579918869e-08,
+      "minimum_core_radius_mm": 17.999999627594196,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "x_mm": -309.48,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 4.45922328063747e-06,
+      "expected_rigid_phase_rotation_deg": -828.0,
+      "boundary_hausdorff_mm": 4.26227662844321e-06,
+      "area_difference_mm2": 1.7352037957607536e-06,
+      "minimum_core_radius_mm": 17.999995750858194,
+      "strict_core_material_points": 144
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "x_mm": -259.48,
+      "section_sample_points": 4096,
+      "source_replay_boundary_error_mm": 1.2893934584585898e-08,
+      "expected_rigid_phase_rotation_deg": -606.0,
+      "boundary_hausdorff_mm": 1.1790395373604321e-08,
+      "area_difference_mm2": 1.4279294191510417e-08,
+      "minimum_core_radius_mm": 17.99999994908525,
+      "strict_core_material_points": 144
+    }
+  ],
+  "wrong_phase_boundary_fault_mm": 6.273804596429149,
+  "limits": [
+    "4096-point actual BRep section polygons approximate continuous boundary; <0.002mm comparison tolerance.",
+    "Solid per-station changed-volume diagnostics are not used as acceptance quantities; OCC clipping/subtraction can be unstable at coincident surfaces.",
+    "Core strict points supplement exact inset-cylinder containment; no production profile claim."
+  ]
+}

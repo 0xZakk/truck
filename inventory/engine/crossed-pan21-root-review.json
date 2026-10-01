@@ -1,0 +1,93 @@
+{
+  "baseline": "26d0fdc4e7cdd3de0c621309499d1535d8c5131e",
+  "reviewer": "root integration agent",
+  "reports": [
+    {
+      "report": "inventory/engine/timing-pan21-lateral-delivery-validation.json",
+      "sha256": "f07238f0492da400fb26e4c21f547d397ece078f16cff0e5d90f0ae67b040e4f",
+      "verified_bindings": [
+        "inventory/engine/timing-pan21-lateral-candidate-validation.json",
+        "inventory/engine/timing-pan21-lateral-interfaces.json",
+        "inventory/engine/timing-pan21-actual-gasket-contact.json",
+        "inventory/engine/timing-pan21-lateral-neighbors.json",
+        "inventory/engine/timing-pan21-main-joint.json",
+        "inventory/engine/timing-pan21-lateral-visual-review.json",
+        "cad/engine/generated/timing-pan21-lateral-candidate/cover.step",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan.glb",
+        "cad/engine/generated/timing-pan21-lateral-candidate/cover.glb",
+        "cad/engine/generated/timing-pan21-lateral-candidate/review.png",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan-preview.npz",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket-preview.npz",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan.step",
+        "cad/engine/generated/timing-pan21-lateral-candidate/cover-preview.npz",
+        "cad/engine/generated/timing-pan21-lateral-candidate/section-x390.json",
+        "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.glb"
+      ]
+    },
+    {
+      "report": "inventory/engine/crossed-oil-drive-corrected-pair-review.json",
+      "sha256": "0e92c7115728383b80ec05542defd4b30c3d748ccab0012a2708c1257557c54d",
+      "verified_bindings": [
+        "scripts/check-crossed-oil-drive-corrected-pair.py",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/completed-pose-cache.json",
+        "cad/engine/crossed_oil_drive_corrected_pair.py",
+        "cad/engine/oil_drive_layout.py",
+        "cad/engine/generated/distributor-drive-gear.step",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.glb",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.glb"
+      ]
+    },
+    {
+      "report": "inventory/engine/crossed-oil-drive-connection-lead-review.json",
+      "sha256": "ccb771e91405122d03269c2c94f4f9dfb8c40e3e227a3815d616e8cf066f4d1c",
+      "verified_bindings": [
+        "scripts/check-crossed-oil-drive-connection-lead.py",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step",
+        "cad/engine/generated/distributor-drive-gear.step",
+        "cad/engine/generated/timing-thrust-land-candidate/camshaft.step"
+      ]
+    },
+    {
+      "report": "inventory/engine/crossed-oil-drive-backlash-review.json",
+      "sha256": "a29d32269fd5ead44761bee0d8f5aa9faacf077ec66faec6bae37a1a28d8bd23",
+      "verified_bindings": [
+        "scripts/check-crossed-oil-drive-backlash.py",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step",
+        "cad/engine/oil_drive_layout.py",
+        "cad/engine/timing_coupled_core_candidate.py"
+      ]
+    },
+    {
+      "report": "inventory/engine/crossed-oil-drive-corrected-pair-render.json",
+      "sha256": "a797a7b7673cd656b90b96af8e2b66c507506062bbfb5231a44576063f9ba378",
+      "verified_bindings": [
+        "scripts/render-crossed-oil-drive-corrected-pair.py",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/render-input.npz",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/corrected-pair-review.png",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.glb",
+        "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.glb"
+      ]
+    }
+  ],
+  "actual_images_viewed": [
+    "cad/engine/generated/timing-pan21-lateral-candidate/review.png",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/corrected-pair-review.png"
+  ],
+  "observations": [
+    "Actual cover/pan/gasket meshes and X390 blind socket section reviewed; screw, washer, wall and floor visible. Datum Y\u221295 remains estimated.",
+    "Actual corrected tooth twist visible in both posed pair meshes; sampled clearance is not contact-pressure or factory accuracy."
+  ],
+  "verdict": "Accept bounded candidates for preservation only; not installed",
+  "open": [
+    "Combined rod-bolt/block interference found by worker, pending source/baseline audit",
+    "Seven main-cover block guards active",
+    "Crossed-drive endplay active",
+    "Full coordinated asset and runtime installation",
+    "Browser acceptance NOT RUN"
+  ]
+}

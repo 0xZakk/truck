@@ -1,0 +1,40 @@
+{
+  "status": "Primary historical application comparison; not exact1994 verification",
+  "source_url": "https://www.etotheipiplusone.net/stuff/1986%20FORD%20TRUCK%20SHOP%20MANUAL%20ENGINE%20LIGHT.pdf",
+  "pdf_sha256": "6be1705f0675e07c6c124d91fabee82e877696ea26e36aeaf8d6c0b87d534ea0",
+  "title": "1986 Ford Truck Shop Manual \u2014 Engine Light",
+  "application": "4.9L (300 CID) six-cylinder, 1986 truck",
+  "pdf_pages": [
+    62,
+    63
+  ],
+  "printed_pages": [
+    "21-11-9",
+    "21-11-10"
+  ],
+  "figures": [
+    "10 external exploded view",
+    "10A key"
+  ],
+  "review_method": "Rendered both full pages and visually followed callout51 from cover to bolt; verified table row. OCR5 suffix is actually S in image.",
+  "claim": {
+    "callout": 51,
+    "part_number": "382781-S",
+    "description": "washer-head bolt",
+    "nominal_thread": "5/16-18",
+    "nominal_length_in": 0.875,
+    "converted_nominal_length_mm": 22.225
+  },
+  "not_established": [
+    "exact1994 transfer",
+    "quantity per engine",
+    "mapping of all seven holes",
+    "washer-head OD/AF/height",
+    "cover seat depths",
+    "block thread depth",
+    "pointer/shared hardware station",
+    "torque"
+  ],
+  "comparison_relation": "Same part callout appears in earlier industrial source, now linked to size through explicit Ford4.9 diagram/key. This supports a declared comparison test, not a factory BOM claim.",
+  "original_policy": "Temporary research cache only; do not commit, bundle or redistribute PDF or page images. Reacquire from source URL and verify hash for reproduction."
+}

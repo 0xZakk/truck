@@ -1,0 +1,32 @@
+{
+  "nominal_sampled_clearance": "PASS",
+  "nominal_samples": 9,
+  "minimum_separation_mm": 0.16889251098937633,
+  "wrong_phase_penetration_controls_mm3": [
+    0.10338844236918872,
+    0.15395733310477788
+  ],
+  "omitted_correction": {
+    "event_degrees": 11.25,
+    "axial_mm": -0.1,
+    "label": "omitted-endplay",
+    "cam_degrees": 5.6579032768065405,
+    "distributor_degrees": -5.625,
+    "phase_error_degrees": 0.3512131629903308,
+    "registration_residual_rad": 0.006129826070524769,
+    "distance_mm": 0.09735319196503066,
+    "overlap_mm3": 0,
+    "metric_error": null
+  },
+  "actual_edge_translation_phase_fit": "PASS",
+  "scope_limits": [
+    "Only nine axial/event samples; prior zero-endplay17 samples remain separate",
+    "Finite backlash means nominal registration error need not cause collision",
+    "No pressure/contact force, factory identity, continuous solid sweep, installed motion or browser claim"
+  ],
+  "sha256": {
+    "inventory/engine/crossed-oil-drive-endplay-review.json": "235fbaa9d98dd9c17a46eabc2a404282d9a5249fe404e36a824721a3a2d34152",
+    "scripts/summarize-crossed-oil-drive-endplay.py": "f4132e1cf262efac29d1e995d1322daaff036ac0863cd35f3f698e31fbfd330e",
+    "docs/components/crossed-oil-drive-endplay-coupling.md": "1a0aa5e8d6f78e65d3e388974359beeb79e339a0b6aed274203c36982a19104d"
+  }
+}

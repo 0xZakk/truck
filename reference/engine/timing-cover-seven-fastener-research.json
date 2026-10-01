@@ -1,0 +1,86 @@
+{
+  "status": "RESEARCH ONLY; paused for coordinated pan/block integration; no hardware or seat CAD mutation",
+  "baseline": "70542fad9de467a5c03ad54a6f54def8550956eb",
+  "branch": "engine/timing-interface-integration",
+  "input_sha256": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Torque%20Specifications/index.html": "90e42ec143672fe38960c8105892c3a4dcf3a9c684b2acbc13b2ddfa474889c5",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407",
+    "reference/engine/ford-industrial-parts.pdf": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+    "reference/engine/timing-cover-perimeter-hardware-followup.json": "b6b98e469db7ee997736758d559be777be29f1aabcf3cc0e9f325cc76a850e35"
+  },
+  "exact_year_manual": {
+    "application": "1994 F150 2WD L6-300 4.9L",
+    "procedure": "Remove front oil-pan and front-cover attaching screws; loosen first six pan bolts on each side. No bolt sizing, seat depth or station BOM supplied.",
+    "torque_conflict": [
+      {
+        "label": "Front Cover",
+        "ft_lb": [
+          12,
+          18
+        ]
+      },
+      {
+        "label": "Timing Cover Attaching Bolts",
+        "ft_lb": [
+          15,
+          22
+        ]
+      }
+    ],
+    "adopted_torque": null
+  },
+  "industrial_comparison": {
+    "source": "https://www.numeralkod.com/cross/archivemanuals/ford/300%20cid%20gasoline%20engine%20parts%20list/300%20cid%20gasoline%20engine%20parts%20list.pdf",
+    "reviewed_pdf_pages": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "external_figure_page7": "Cover callout6019; nearby bolt callout382781-S (BB-544-W). This is an industrial comparison identity, not exact-year quantity or dimensions.",
+    "table_page9": "D2AZ-6019-A cover assembly, C8AZ-6020-A front-cover gasket, quantity one each, year70/. No bolt row in this cover table.",
+    "exact_year_transfer": false
+  },
+  "replacement_comparison": {
+    "source": "https://www.dormanproducts.com/p-8021-635-109.aspx",
+    "part": "635-109",
+    "adopted": "Photographic recessed perimeter mounting pads only; no measured seat depths or station-specific bolt lengths.",
+    "prior_ledger": "reference/engine/timing-cover-perimeter-hardware-followup.json"
+  },
+  "current_geometry_not_source_spec": {
+    "stations": 7,
+    "seat_x_mm": 415,
+    "block_mating_x_mm": 373,
+    "cover_rear_x_mm": 373.8,
+    "rear_flange_front_x_mm": 377.8,
+    "cover_clearance_radius_mm": 4.2,
+    "block_blind_radius_mm": 3.3,
+    "block_blind_x_mm": [
+      366,
+      373
+    ],
+    "boss_radius_mm": 9
+  },
+  "feasible_seat_contract": {
+    "preserve": [
+      "seven registered axes",
+      "main gasket plane and sealing outline",
+      "pan attachment and five relocated stations",
+      "crank seal mask agreed with seal worker"
+    ],
+    "unknowns": [
+      "per-station seat plane",
+      "thread specification",
+      "bolt lengths and quantities by length",
+      "head and washer dimensions",
+      "thread engagement and bottom clearance",
+      "pointer/bracket shared station",
+      "tool access envelope"
+    ],
+    "formula": "For rearward screw under-head length L and seat Xs, tip X= Xs-L; engagement e = 373-(Xs-L). Existing ideal blind pocket permits 0<e<7, less any explicit tip clearance. Added washer grip must be included separately.",
+    "comparison_warning": "Unverified7/8in bolt L22.225 at currentX415 gives tip392.775 and no engagement. At bare rear flangeX377.8 it gives tip355.575 beyond existing366floor. Even a plausible comparison length does not justify either seat.",
+    "proposal": "Parameterize each station seat and hardware together; validate actual support annulus, retained gasket contact, connected cover wall, tool clearance, exact mating thread envelope and tip clearance. No fixed seat depth or hardware chosen."
+  },
+  "source_originals": "Not for commit; local reviewed manufacturer/manual originals remain governed by artifact policy."
+}

@@ -1,0 +1,53 @@
+{
+  "validity": {
+    "cover": {
+      "valid": true,
+      "solids": 1
+    },
+    "pan": {
+      "valid": true,
+      "solids": 1
+    },
+    "pan-gasket": {
+      "valid": true,
+      "solids": 1
+    }
+  },
+  "checks": {
+    "main1_head_cover": 0.0,
+    "main1_access_cover": 0.0,
+    "pan21_male_cover": 0.0,
+    "pan21_male_pan": 0.0,
+    "pan21_male_gasket": 0.0,
+    "pan21_washer_pan": 0.0,
+    "pan21_washer_cover": 0.0,
+    "pan21_female_missing": 0,
+    "pan21_intended_void_filled": 0.0,
+    "pan21_wall_missing": 0.0,
+    "pan21_floor_missing": 0.0,
+    "cover_pan": 0.0,
+    "cover_gasket": 0.0,
+    "pan_gasket": 0.0
+  },
+  "measurement_errors": {},
+  "initial_status": "PASS",
+  "inputs_sha256": {
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/cover.step": "6239fde960aa95f357a2f5482c7be232a271a4f6b7a141915014ef00f5d52017",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/pan-fastener-thread-candidate/existing-pan-washer.step": "82078f21119a08baf05be947deffe9f40ec6498695262dcb9be4c6aec26a7cab",
+    "cad/engine/timing_pan21_lateral_candidate.py": "bc6f7973724d017379a6fd64f59d950e3a40ebf2f00ede751cec463586c853ee",
+    "scripts/check-timing-pan21-lateral-candidate.py": "c5b7add1b848cd76c7427324df06e6db2d952abb5e1dd402fcbe6848c342aaff"
+  },
+  "artifacts_sha256": {
+    "cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a"
+  },
+  "not_run": [
+    "full25 hardware/contact/BOM, changed-material locality, wet connectivity, moving core neighbors, mesh/render pending initial gates",
+    "browser/installation/factory/strength"
+  ]
+}
