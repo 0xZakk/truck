@@ -1,0 +1,31 @@
+{
+  "status": "PASS bounded lower-contact corridor; full-face rear failure retained",
+  "width_mm": 1.2813348908057511,
+  "all_25_holes_outside": true,
+  "all_1024_wet_boundary_vertices_inside": true,
+  "faults_destroy_enclosing_boundary": [
+    "fault-left",
+    "fault-front"
+  ],
+  "geometry_changes": false,
+  "containment": "NOT VERIFIED",
+  "sha256": {
+    "docs/components/timing-pan-perimeter-contact-study.md": "ddaf8b16bae272ee95ee9b9d2178ec7fc94d5c8367eeb16752a6f45a3d89ae42",
+    "inventory/engine/timing-pan-perimeter-inboard-review.json": "f6a3cc74dcffcaa8f610c92cb43c248cc8497a14e0c24eb0b5ab86a27e809e89",
+    "inventory/engine/timing-pan-perimeter-inboard-render-review.json": "ad0b0a8821c6946a7dfb8a96af70bd7f80507edbfed0bcdff5f4c8fc66e1ea33",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-route-deviation.json": "1a70e3a7dd0cd23e1c65aa0789946dc31c207ff0b29f0de9edd0ed4613cd0d27",
+    "cad/engine/generated/timing-pan-perimeter-contact/extraction.json": "10913d9b5d431cf8beca9a6cb5cebba8b75378981c291867ef2a74a5349fb377",
+    "cad/engine/generated/timing-pan-perimeter-contact/actual-contact.step": "b16aa99663edc8d54afc0ca76487f3349bd0d4636a781bc7c18e2711d3844805",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-route.npz": "2408c4bae9589874d1784ab9ef622709ba34f0b88b78fd9731a04de6948ec703",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-contact-review.png": "aa407dc19901261c4b395a0b685f82d24c6d6b6193231596460c3abbfbb820d1",
+    "cad/engine/generated/timing-pan-perimeter-contact/fault-left/route-review.json": "550b1db5c42c2aa240d69567e85dd184818e4c95a983ba018cc5967d7268863a",
+    "cad/engine/generated/timing-pan-perimeter-contact/fault-front/route-review.json": "7d7cff79fc1b3352c065bb4f29303f5e047208f7c650d04f3a791fac07f92164",
+    "scripts/check-timing-pan-perimeter-contact.py": "f2be7653f2475377bccfa33b9dce504f1a3dc9f5b7853555b597458c480dce00",
+    "scripts/analyze-timing-pan-perimeter-contact.py": "36f5fa87a7cdde1c87154bd5ef72b8af9ba21323bf0a3e546a58e9b1fa26e621",
+    "scripts/check-timing-pan-perimeter-inboard-deviation.py": "dfce5518a9110088eac4c0d673d985857f3020cffbe0da33fe7ea124e15e988b",
+    "scripts/render-timing-pan-perimeter-inboard.py": "68745256bccf11abc14565bb6faf4f55dea5f1068f136b201fea92b515f2c5df",
+    "scripts/analyze-timing-pan-perimeter-inboard.py": "ea7dbe033f760a2edac91f68f66650aef4319bad58dc4ef41942bea3b617691f",
+    "scripts/render-timing-pan-perimeter-contact.py": "34aea9913b0e645eeaa4efcb640ffd4db0258dca44f416c5235877ce1dd258a5",
+    "scripts/check-timing-pan-perimeter-route-deviation.py": "fd020d413ad7ed826c830b6c62d26393391f5c4bef09c5d00d9723c2baa38ece"
+  }
+}

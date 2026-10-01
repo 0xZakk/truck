@@ -1,0 +1,24 @@
+{
+  "status": "PASS bounded upper contact continuity; full-face backing FAIL retained",
+  "geometry_changed": false,
+  "unsupported_upper_area_mm2": 10108.936200124273,
+  "global_minimum_width": "NOT MEASURED; local3mm strip and2.5mm pad witnesses",
+  "rear_cap_ownership": "Unresolved illustrative owner mismatch: block owns rear pan arch",
+  "containment": "NOT VERIFIED",
+  "sha256": {
+    "docs/components/timing-pan-upper-contact-study.md": "4c3c8c6733d1a9ffc398a45c90bcd3545da9aae17ac4b2ea7fde8849cec47c51",
+    "scripts/diagnose-timing-pan-upper-contact.py": "bcd6a5e354427d99bd5c0094fba98938a9c0de34524d723f944e3624683d3f0d",
+    "scripts/check-timing-pan-upper-contact.py": "eb37bfd6735643da2a8c55934fe841d4a1fe0e7af2fbb99c64b614c08becf10c",
+    "scripts/render-timing-pan-upper-contact.py": "878b0161ecc24c71819df5ad8ee54b6f7fb9e62f92bb1d3faa1cf9d2407eac47",
+    "scripts/check-timing-pan-upper-contact-topology.py": "a23e2a7c3df1dbf42972216faa54e25847ce80c2cf3bc675c078f0dddc4f1e6b",
+    "inventory/engine/timing-pan-upper-contact-review.json": "e5c035bfc1bcabe784b348bb17c2b30c9ab67f94c124282ca2d8fae0baa42f6f",
+    "inventory/engine/timing-pan-upper-contact-render-review.json": "e82d5b29b6f4e38e326885777d5b472285efc5bd79a597f8e77ef5c53b6c63c0",
+    "inventory/engine/timing-pan-upper-contact-topology.json": "6bab592d5cd2bf8e772598ebeab933ab1ac80b15d2c373f04ce93c8de077bb87",
+    "inventory/engine/timing-pan-upper-contact-diagnostic.json": "1c2c1f8df049f33977d97bfcb2096ac557ee1b983f3289eb942cdcc6879fd602",
+    "cad/engine/generated/timing-pan-upper-contact/upper-contact-review.png": "155e1eed882ecd75b561507b3cb0c292e83f9c5f0b20ba69d1ae1f9f036d5747",
+    "cad/engine/generated/timing-pan-upper-contact/joined-upper-contact-surface.step": "8158294d8888cc067c3af715a0737289d06fea31fd92aba98789f37d57254a85",
+    "cad/engine/generated/timing-pan-upper-contact/unsupported-upper-faces.step": "a0d0b91d117f245f64846f00e35ec83874db62e76a21ad3df01a1fc4e3a21f58",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "reviewer": "root integration owner",
+  "baseline": "dafb8175e4e7b328d2a16bdc47914307f044b0c8",
+  "reports": {
+    "inventory/engine/timing-pan-perimeter-contact-summary.json": "fe706824c6e23c25309fe1b381484a5abb52385ffc661fdf170904d9271cf70f",
+    "inventory/engine/timing-pan-upper-contact-summary.json": "404d0e516372d266e604b14266118b3c6e3e410834da50e80c68814249e677ed",
+    "inventory/engine/engine-rotation-convention-diagnostic.json": "633ae12b04c5b444bc57bf509310c7e59a8577e0083447a78cdbd3173074a3b4",
+    "inventory/engine/engine-clockwise-pose-candidate-validation.json": "f9c9ed450f04b85a8a5d525e28aa562b66f09ea9f224fa583f3c06a78cc249dd",
+    "inventory/engine/crank-clockwise-candidate-validation.json": "9ad5dde4a1d4220fc858e634539fa9d92aea12147f01cac034b43aeb5c091bfd",
+    "inventory/engine/crank-clockwise-neighbors.json": "a080714e73d7286dc697baa3532be4cf61c4d990b88b0dd8869cc99d8c3cb1af",
+    "inventory/engine/crank-clockwise-render-review.json": "2734ebb3eb12a03d1fecc256948ad032fcdeaf46e37510ca3e0df8a9e001653b",
+    "inventory/engine/timing-pan-integration-stage-validation.json": "7a147561d5c3f38e11d34ce7b74e0664d83b4e03a2c5edbe664fb8a953424335",
+    "inventory/engine/timing-pan-integration-patch.json": "895e47b4a4d828c0034d0807eccca380868224bbf2d7ba58b39fae58a7b0b5e2"
+  },
+  "verified_bindings": 68,
+  "verdict": "Accept scoped evidence and corrected crank candidate for continued integration; not installed",
+  "findings": [
+    "Lower contact route excludes all25 bolt axes and surrounds the wet boundary with conservative1.2813mm width; physical fault controls break it.",
+    "Upper actual joined surface has annular topology, local retained support and terminal sealant bridge. Full-face overhang failure retained; rear arch owner still illustrative.",
+    "Actual source rotation diagrams justify coordinated correction; numeric report preserves firing order while legacy crank guard intentionally fails.",
+    "Corrected crank reproduces unchanged baseline exactly, changes only four throw bands, preserves protected interfaces, closes actual journal axes and passes48 sampled block/pan checks. Root reviewed actual complete shaded mesh comparison.",
+    "Root reviewed guarded pan patch: three asset replacements and ten pose changes preserve IDs and unrelated data; complete serialized world bounds/rejection-control report remains candidate evidence, not an applied patch."
+  ],
+  "limits": [
+    "Whole-engine continuous motion and corrected cam/drive integration incomplete",
+    "Rear pan ownership and production surfaces remain provisional",
+    "No pressure sealing, production fit or installed/browser acceptance"
+  ]
+}

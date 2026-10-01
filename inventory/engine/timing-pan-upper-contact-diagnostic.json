@@ -1,0 +1,171 @@
+{
+  "full_width_gap_witnesses": [
+    {
+      "name": "left-full-width",
+      "area_mm2": 22.0,
+      "gasket_contact_mm2": 22.0,
+      "owner_contact_mm2": {
+        "block": 6.0,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "right-backed-strip",
+      "area_mm2": 4.0,
+      "gasket_contact_mm2": 4.0,
+      "owner_contact_mm2": {
+        "block": 4.0,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "lifted-right-fault",
+      "area_mm2": 4.0,
+      "gasket_contact_mm2": 0,
+      "owner_contact_mm2": {
+        "block": 0,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-11",
+      "area_mm2": 0.5000000000001137,
+      "gasket_contact_mm2": 0.5000000000001137,
+      "owner_contact_mm2": {
+        "block": 0.5000000000001137,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-12",
+      "area_mm2": 0.5000000000001137,
+      "gasket_contact_mm2": 0.5000000000001137,
+      "owner_contact_mm2": {
+        "block": 0.5000000000001137,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-13",
+      "area_mm2": 0.4999999999999716,
+      "gasket_contact_mm2": 0.4999999999999716,
+      "owner_contact_mm2": {
+        "block": 0.4999999999999716,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-14",
+      "area_mm2": 0.4999999999999716,
+      "gasket_contact_mm2": 0.4999999999999716,
+      "owner_contact_mm2": {
+        "block": 0.4999999999999716,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-15",
+      "area_mm2": 0.5000000000000071,
+      "gasket_contact_mm2": 0.5000000000000071,
+      "owner_contact_mm2": {
+        "block": 0.5000000000000071,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-16",
+      "area_mm2": 0.5000000000000071,
+      "gasket_contact_mm2": 0.5000000000000071,
+      "owner_contact_mm2": {
+        "block": 0.5000000000000071,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-17",
+      "area_mm2": 0.4999999999999716,
+      "gasket_contact_mm2": 0.4999999999999716,
+      "owner_contact_mm2": {
+        "block": 0.4999999999999716,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-18",
+      "area_mm2": 0.4999999999999716,
+      "gasket_contact_mm2": 0.4999999999999716,
+      "owner_contact_mm2": {
+        "block": 0.4999999999999716,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    },
+    {
+      "name": "left-inboard-pad-19",
+      "area_mm2": 0.5000000000001137,
+      "gasket_contact_mm2": 0.5000000000001137,
+      "owner_contact_mm2": {
+        "block": 0.5000000000001137,
+        "cover": 0,
+        "main-gasket": 0,
+        "sealant": 0
+      },
+      "distance_to_block_mm": 0.0
+    }
+  ],
+  "front_terminal_owner_transitions": {
+    "block": {
+      "sealant_shared_face_area_mm2": 135.1465392409212,
+      "sealant_distance_mm": 0.0
+    },
+    "cover": {
+      "sealant_shared_face_area_mm2": 208.5800727061447,
+      "sealant_distance_mm": 0.0
+    },
+    "main-gasket": {
+      "sealant_shared_face_area_mm2": 63.631271691836346,
+      "sealant_distance_mm": 0.0
+    }
+  },
+  "scope": "Exact face contact and distance; no pressure or containment claim",
+  "input_sha256": {
+    "scripts/diagnose-timing-pan-upper-contact.py": "bcd6a5e354427d99bd5c0094fba98938a9c0de34524d723f944e3624683d3f0d",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e"
+  }
+}

@@ -1,0 +1,348 @@
+{
+  "status": "PASS bounded helper/gear diagnostics; preserved crank export FAIL corrected-firing compatibility",
+  "baseline": "9ab3c575",
+  "input_sha256": {
+    "scripts/check-engine-clockwise-pose-candidate.py": "485abab085a73519dbbbcb2fefe1980765ee5cc37076d6673bf9a134a5ab5dcb",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-gear-backlash-candidate-validation.json": "0a4023d5eb2d609fa122c797dcb9af2b3fb0dcec714f013d57eff9789576a5eb",
+    "inventory/engine/engine-rotation-convention-diagnostic.json": "633ae12b04c5b444bc57bf509310c7e59a8577e0083447a78cdbd3173074a3b4",
+    "cad/engine/generated/timing-gear-backlash-candidate/crank.step": "533208c5f28da3500021a1e8431aba26f1cd8f0b0e886a768a03041263c0e4a4",
+    "cad/engine/generated/timing-gear-backlash-candidate/cam.step": "78df586a13fa6d0a18dc10c8628e8a02900468fb33da94b147f9b7abb3b0a0be",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/rod.step": "a6ce2bf5a478b0c70406f102f1d4d6863faef6d82d60c87fc1a413a50a94b48f",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453"
+  },
+  "scope": "Read-only exported CAD and isolated corrected pose helper; no installed correction",
+  "gear_samples": [
+    {
+      "event_deg": 0.0,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284107484572426
+    },
+    {
+      "event_deg": 0.0,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284101413226261
+    },
+    {
+      "event_deg": 1.0344827586206897,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836627014986665
+    },
+    {
+      "event_deg": 1.0344827586206897,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283655137397028
+    },
+    {
+      "event_deg": 2.0689655172413794,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283142409623851
+    },
+    {
+      "event_deg": 2.0689655172413794,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283136608955062
+    },
+    {
+      "event_deg": 3.103448275862069,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032828661130694214
+    },
+    {
+      "event_deg": 3.103448275862069,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283865344170942
+    },
+    {
+      "event_deg": 4.137931034482759,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283415760257855
+    },
+    {
+      "event_deg": 4.137931034482759,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283407893338081
+    },
+    {
+      "event_deg": 5.172413793103448,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032830160271448604
+    },
+    {
+      "event_deg": 5.172413793103448,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0328301005977453
+    },
+    {
+      "event_deg": 6.206896551724138,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03347057493609484
+    },
+    {
+      "event_deg": 6.206896551724138,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.033470579011361606
+    },
+    {
+      "event_deg": 7.241379310344828,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283016026811792
+    },
+    {
+      "event_deg": 7.241379310344828,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032830222560474534
+    },
+    {
+      "event_deg": 8.275862068965518,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283415759906058
+    },
+    {
+      "event_deg": 8.275862068965518,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283423606470555
+    },
+    {
+      "event_deg": 9.310344827586206,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03282866112968426
+    },
+    {
+      "event_deg": 9.310344827586206,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032828663862461395
+    },
+    {
+      "event_deg": 10.344827586206897,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03283142409748551
+    },
+    {
+      "event_deg": 10.344827586206897,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032831484401147665
+    },
+    {
+      "event_deg": 11.379310344827587,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836627017790755
+    },
+    {
+      "event_deg": 11.379310344827587,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.032836702563252294
+    },
+    {
+      "event_deg": 12.413793103448276,
+      "axial_mm": 0.0,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0328410748454634
+    },
+    {
+      "event_deg": 12.413793103448276,
+      "axial_mm": -0.1,
+      "cam_extra_deg": 0,
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.03284101413209141
+    }
+  ],
+  "actual_geometry_axes": {
+    "journals": [
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          0.0,
+          50.546
+        ],
+        "station_x_mm": 284.48,
+        "measured_rest_phase_deg": 0.0
+      },
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          43.774120059688,
+          -25.273
+        ],
+        "station_x_mm": 170.688,
+        "measured_rest_phase_deg": 239.99999999999986
+      },
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          -43.77412005968,
+          -25.273
+        ],
+        "station_x_mm": 56.896,
+        "measured_rest_phase_deg": 120.00000000000468
+      },
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          -43.77412005968,
+          -25.273
+        ],
+        "station_x_mm": -56.896,
+        "measured_rest_phase_deg": 120.00000000000468
+      },
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          43.774120059688,
+          -25.273
+        ],
+        "station_x_mm": -170.688,
+        "measured_rest_phase_deg": 239.99999999999986
+      },
+      {
+        "radius_mm": 26.96464,
+        "axis_yz_mm": [
+          0.0,
+          50.546
+        ],
+        "station_x_mm": -284.48,
+        "measured_rest_phase_deg": 0.0
+      }
+    ],
+    "rod_big": {
+      "radius_mm": 28.47964,
+      "axis_yz_mm": [
+        0.0,
+        -2.997602166488e-15
+      ],
+      "station_x_mm": -3.552713678800501e-15
+    },
+    "rod_small": {
+      "radius_mm": 12.39504,
+      "axis_yz_mm": [
+        0.0,
+        157.7
+      ],
+      "station_x_mm": 0.0
+    },
+    "piston_pin": {
+      "radius_mm": 12.41504,
+      "axis_yz_mm": [
+        0.0,
+        -1.172395514004e-14
+      ],
+      "station_x_mm": 36.14
+    }
+  },
+  "linkage": {
+    "sample_step_deg": 5,
+    "poses_per_branch": 145,
+    "maxima": {
+      "legacy_cad_matching_pose_closure_mm": 7.144242703991511e-12,
+      "rod_small_to_piston_pin_mm": 5.859285502108464e-14,
+      "required_new_pose_vs_legacy_cad_mm": 87.54824011937627,
+      "double_phase_fault_mm": 87.54824011937639
+    },
+    "unrephased_cylinders_rejected": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "actual_export_corrected_firing_compatibility": "FAIL: preserved legacy crank needs bounded throw rephasing; matching old CAD poses alone do not preserve firing sequence"
+  },
+  "gear_faults": {
+    "wrong_cam_sign": {
+      "event_deg": 3,
+      "axial_mm": 0,
+      "cam_extra_deg": -3,
+      "overlap_mm3": 592.5353522613137,
+      "gap_mm": 0.0
+    },
+    "wrong_axial_compensation": {
+      "event_deg": 0,
+      "axial_mm": -0.1,
+      "cam_extra_deg": -0.06580655361308022,
+      "overlap_mm3": 1.3339405624473146,
+      "gap_mm": 0.0
+    },
+    "duplicated_phase": {
+      "event_deg": 0,
+      "axial_mm": 0,
+      "cam_extra_deg": 3.103448275862069,
+      "overlap_mm3": 590.4623304280178,
+      "gap_mm": 0.0
+    }
+  },
+  "gear_scope": {
+    "status": "PASS sampled clockwise crank / counterclockwise cam",
+    "angular_samples": 13,
+    "axial_endpoints_mm": [
+      0,
+      -0.1
+    ],
+    "tooth_counts": [
+      29,
+      58
+    ],
+    "center_distance_mm": 121.8,
+    "continuous_rotation": "NOT PROVEN; one negative tooth period sampled",
+    "axial_interpolation": "Inherited exact helical correction K*delta retains cross-section angle, unchanged exported pair; neutral common slab contains shifted overlap slab.",
+    "phase": "Exported local tooth phase applied exactly once; no additional gear phase",
+    "backlash": "Frozen geometry and relative poses unchanged in reverse traversal; preserved prior two-sided bracket, no loaded dynamics"
+  },
+  "unsupported": [
+    "Current crank export cannot preserve requested firing order with corrected rotation until throws are rephased",
+    "Cam lobe rephasing not performed",
+    "Crossed distributor/oil-drive handedness and contact unresolved",
+    "Whole-engine neighbors/endplay and browser NOT RUN"
+  ]
+}

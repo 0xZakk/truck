@@ -1,0 +1,722 @@
+{
+  "status": "PASS serialized local-coordinate stage; not installed",
+  "parts": [
+    {
+      "id": "oil-pan",
+      "source_step": "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step",
+      "source_coordinate_frame": "world",
+      "localization_translation_mm": [
+        0.0,
+        -12.0,
+        -96.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 5.4836273299940785e-06,
+      "volume_roundtrip_error_mm3": 8.242204785346985e-08,
+      "raw_mesh_watertight": true,
+      "welded_mesh_watertight": true,
+      "solids": 1,
+      "faces": 510,
+      "triangles": 21832,
+      "step": "cad/engine/generated/timing-pan-integration-stage/oil-pan.step",
+      "step_sha256": "2d9eddd32d778a049802cd85a2f1064b8f4e553f7413d18f27ab324c06985d42",
+      "glb": "cad/engine/generated/timing-pan-integration-stage/oil-pan.glb",
+      "glb_sha256": "5830d866148a921fdb18ef1919ec07eade058e26d754af35310e6917cd43e628"
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "source_step": "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step",
+      "source_coordinate_frame": "world",
+      "localization_translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 0.0,
+      "volume_roundtrip_error_mm3": 5.675246939063072e-10,
+      "raw_mesh_watertight": true,
+      "welded_mesh_watertight": true,
+      "solids": 1,
+      "faces": 340,
+      "triangles": 17952,
+      "step": "cad/engine/generated/timing-pan-integration-stage/oil-pan-molded-gasket.step",
+      "step_sha256": "7bbf9143e0cbbbe9e43671f887ec574216fc749f304d5d5e8f854bb63576b1a0",
+      "glb": "cad/engine/generated/timing-pan-integration-stage/oil-pan-molded-gasket.glb",
+      "glb_sha256": "9437e408e0d8ef8b24af9cb0409d3387906f94a65c2e91bf20a749fe304a79d7"
+    },
+    {
+      "id": "oil-pan-mounting-screw",
+      "source_step": "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step",
+      "source_coordinate_frame": "definition-local",
+      "localization_translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 0.0,
+      "volume_roundtrip_error_mm3": 8.64333348999935e-05,
+      "raw_mesh_watertight": true,
+      "welded_mesh_watertight": true,
+      "solids": 1,
+      "faces": 75,
+      "triangles": 15876,
+      "step": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-screw.step",
+      "step_sha256": "bba512c7d1aee2a7062efc95c070995ee564203c734f790feb81fa83c80eb5e4",
+      "glb": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-screw.glb",
+      "glb_sha256": "690cb8f26091cb028cdddd716959b584b35e157c9002ebd2dbe57106082dc7f2"
+    },
+    {
+      "id": "oil-pan-mounting-washer",
+      "source_step": "cad/engine/generated/oil-pan-mounting-washer.step",
+      "source_coordinate_frame": "definition-local",
+      "localization_translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 0.0,
+      "volume_roundtrip_error_mm3": 0.0,
+      "raw_mesh_watertight": false,
+      "welded_mesh_watertight": true,
+      "solids": 1,
+      "faces": 4,
+      "triangles": 464,
+      "step": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-washer.step",
+      "step_sha256": "23d1477d0851f5522ac3ad69e8a12024fac7bca7b88383107b757b8e7dfcf7b2",
+      "glb": "cad/engine/generated/timing-pan-integration-stage/oil-pan-mounting-washer.glb",
+      "glb_sha256": "81cc91da7c4b85dacf1390baef252ee3d5d2567e40feee0618690dcd7a1809ed"
+    }
+  ],
+  "all_25_screw_washer_poses": [
+    {
+      "id": "oil-pan-mounting-screw-1",
+      "world_position_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-1",
+      "world_position_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-2",
+      "world_position_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-2",
+      "world_position_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-3",
+      "world_position_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-3",
+      "world_position_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-4",
+      "world_position_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-4",
+      "world_position_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-5",
+      "world_position_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-5",
+      "world_position_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-6",
+      "world_position_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-6",
+      "world_position_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-7",
+      "world_position_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-7",
+      "world_position_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-8",
+      "world_position_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-8",
+      "world_position_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-9",
+      "world_position_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-9",
+      "world_position_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-10",
+      "world_position_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 8.643334263069846e-05,
+      "face_count": 75
+    },
+    {
+      "id": "oil-pan-mounting-washer-10",
+      "world_position_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 0.0,
+      "face_count": 4
+    },
+    {
+      "id": "oil-pan-mounting-screw-11",
+      "world_position_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-11",
+      "world_position_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-12",
+      "world_position_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-12",
+      "world_position_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-13",
+      "world_position_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-13",
+      "world_position_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-14",
+      "world_position_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-14",
+      "world_position_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-15",
+      "world_position_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-15",
+      "world_position_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-16",
+      "world_position_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-16",
+      "world_position_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-17",
+      "world_position_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-17",
+      "world_position_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-18",
+      "world_position_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-18",
+      "world_position_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-19",
+      "world_position_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-19",
+      "world_position_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-20",
+      "world_position_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 8.643334217595111e-05,
+      "face_count": 75
+    },
+    {
+      "id": "oil-pan-mounting-washer-20",
+      "world_position_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 0.0,
+      "face_count": 4
+    },
+    {
+      "id": "oil-pan-mounting-screw-21",
+      "world_position_mm": [
+        390.0,
+        -110.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 8.643334240332479e-05,
+      "face_count": 75
+    },
+    {
+      "id": "oil-pan-mounting-washer-21",
+      "world_position_mm": [
+        390.0,
+        -110.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 0.0,
+      "face_count": 4
+    },
+    {
+      "id": "oil-pan-mounting-screw-22",
+      "world_position_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 8.643334240332479e-05,
+      "face_count": 75
+    },
+    {
+      "id": "oil-pan-mounting-washer-22",
+      "world_position_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 0.0,
+      "face_count": 4
+    },
+    {
+      "id": "oil-pan-mounting-screw-23",
+      "world_position_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 8.643334263069846e-05,
+      "face_count": 75
+    },
+    {
+      "id": "oil-pan-mounting-washer-23",
+      "world_position_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "parent_preserved": true,
+      "relocated": true,
+      "frozen_world_bounds_error_mm": 0.0,
+      "frozen_world_volume_error_mm3": 0.0,
+      "face_count": 4
+    },
+    {
+      "id": "oil-pan-mounting-screw-24",
+      "world_position_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-24",
+      "world_position_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-25",
+      "world_position_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-25",
+      "world_position_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "parent_preserved": true,
+      "relocated": false
+    }
+  ],
+  "proof_reuse": {
+    "pan_report_status_retained": "FAIL or unresolved bounded gates",
+    "retained_20_fasteners": "PASS reused after input bindings",
+    "relocated_5_fasteners_tools_seats": "PASS reused after pose/world-shape comparison",
+    "block_v3_pair": "PASS",
+    "lower_upper_contact": "Bounded evidence only; original full-face failures retained"
+  },
+  "controls": {
+    "double_pan_placement_error_mm": 96.00000000000001,
+    "old_station20_pose_error_mm": 21.5
+  },
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-pan-expanded-seat-v2-candidate-validation.json": "9cf835c1c225277fc1981ea9430ed3981add39d2664c7f7a8b5b7f14db99f85d",
+    "cad/engine/generated/timing-pan-access-candidate/pan.step": "a36a305fffd5089c9457dd75163d277dede8ba4423771b5179b426b29f3c1f8f",
+    "scripts/check-timing-pan-expanded-seat-v2-candidate.py": "0fe7b492bd749c26dfb284f12466188bcbb5b809c71e5e250c834b715e529e16",
+    "cad/engine/timing_pan_expanded_seat_v2_candidate.py": "61f8e4c7735f4a4c1f1398838a13de5eb4c79ada6416dd3fe091f6671ae30b18",
+    "cad/engine/timing_pan_expanded_seat_v2_contract.py": "4fa9d104606158710bb221fcfc71ca5dcddb62bf00243338920e92adb8f9839e",
+    "reference/engine/tekton-shd03013-access-review.json": "11469fc87200f6f12837862b24e7f1e7f4d2337ab7dd395b84c9103b2d308a9e",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-10.step": "783354a84e9a4abb65995ef11579e25d05d15d083670beb43e2d420429e433ba",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-10.step": "7e1e288abc15c4ac4e0ce282bdd195c5f688684089a177e169f8ac15bab55cfe",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-20.step": "f9b7055ef48478f7e3ed2c52d04fd10df9c6acf7ac422ea7255871f39577b11f",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-20.step": "1748867e597c371eac178ad25dd3bad1903ac84fab15c50bc63a5a4470b43c83",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-21.step": "a426e2c242906606ccd02753cd11b7b4dac5b4cf51c667082ae95c5f5bfb3024",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-21.step": "56c13a22703854470ba83dd533e8cdcea13a15fb0a180864ade496802d1d2f2b",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/pan.step": "f8c65829943b4a09380fc273b02cd2b8e589d855103c9e17860ec61bdcef3ef0",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-22.step": "0266613b865fa176fd890de61d346f50bc83f96bbb0d7adda738573391e0b5bb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-22.step": "12be7b18e306982654a45a3ecf054e948c6c43a21b343ea81cd481feea3d60eb",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-screw-23.step": "0fb18e2bfd9e3db07e3f89229d20a256da7b20fee948d39c627dc2c74b48412a",
+    "cad/engine/generated/timing-cover-attachment-v2/oil-pan-mounting-washer-23.step": "23ee3b52a5d33bd6c95d724414fcab0fddc85e56035eafe2828aa7614fe41275",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/pan-fastener-thread-candidate/existing-pan-washer.step": "82078f21119a08baf05be947deffe9f40ec6498695262dcb9be4c6aec26a7cab",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.glb": "c4104072924b5efa1e4c7e83d98cf99356498bb1fc8b90ab3371bca7231f5886",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-preview.npz": "1ce4fea750eeebce7d3335df11b18f278ffc384bc46f98005f7043b7da1da107",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.glb": "8d3300bf957967420e57b1a8a952ce715a249374e152c3dc09d0f6fe8179c79b",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/gasket-preview.npz": "cdb8d0ca570c2510325514980b96f90d17c90dcc8e43ea24bb46214ef9764821",
+    "inventory/engine/timing-front-expanded-seat-v3-pair.json": "ed6b1947ff8b61cf2061f4afac22f3fd1f4dfd88efc1b41ccc77c12456832dc8",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/timing_front_block_expanded_seat_v3_candidate.py": "d454aa43964fa4fd74ad6ca033164e8b23cffcbad0ae221eac06db0595d0e4a5",
+    "scripts/check-timing-front-expanded-seat-v3-pair.py": "961b60c23ec1b6bdee9a4fa3f4107425b0917f6e34cae13b7d59ca290b491ace",
+    "inventory/engine/timing-pan-perimeter-contact-summary.json": "fe706824c6e23c25309fe1b381484a5abb52385ffc661fdf170904d9271cf70f",
+    "docs/components/timing-pan-perimeter-contact-study.md": "ddaf8b16bae272ee95ee9b9d2178ec7fc94d5c8367eeb16752a6f45a3d89ae42",
+    "inventory/engine/timing-pan-perimeter-inboard-review.json": "f6a3cc74dcffcaa8f610c92cb43c248cc8497a14e0c24eb0b5ab86a27e809e89",
+    "inventory/engine/timing-pan-perimeter-inboard-render-review.json": "ad0b0a8821c6946a7dfb8a96af70bd7f80507edbfed0bcdff5f4c8fc66e1ea33",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-route-deviation.json": "1a70e3a7dd0cd23e1c65aa0789946dc31c207ff0b29f0de9edd0ed4613cd0d27",
+    "cad/engine/generated/timing-pan-perimeter-contact/extraction.json": "10913d9b5d431cf8beca9a6cb5cebba8b75378981c291867ef2a74a5349fb377",
+    "cad/engine/generated/timing-pan-perimeter-contact/actual-contact.step": "b16aa99663edc8d54afc0ca76487f3349bd0d4636a781bc7c18e2711d3844805",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-route.npz": "2408c4bae9589874d1784ab9ef622709ba34f0b88b78fd9731a04de6948ec703",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-contact-review.png": "aa407dc19901261c4b395a0b685f82d24c6d6b6193231596460c3abbfbb820d1",
+    "cad/engine/generated/timing-pan-perimeter-contact/fault-left/route-review.json": "550b1db5c42c2aa240d69567e85dd184818e4c95a983ba018cc5967d7268863a",
+    "cad/engine/generated/timing-pan-perimeter-contact/fault-front/route-review.json": "7d7cff79fc1b3352c065bb4f29303f5e047208f7c650d04f3a791fac07f92164",
+    "scripts/check-timing-pan-perimeter-contact.py": "f2be7653f2475377bccfa33b9dce504f1a3dc9f5b7853555b597458c480dce00",
+    "scripts/analyze-timing-pan-perimeter-contact.py": "36f5fa87a7cdde1c87154bd5ef72b8af9ba21323bf0a3e546a58e9b1fa26e621",
+    "scripts/check-timing-pan-perimeter-inboard-deviation.py": "dfce5518a9110088eac4c0d673d985857f3020cffbe0da33fe7ea124e15e988b",
+    "scripts/render-timing-pan-perimeter-inboard.py": "68745256bccf11abc14565bb6faf4f55dea5f1068f136b201fea92b515f2c5df",
+    "scripts/analyze-timing-pan-perimeter-inboard.py": "ea7dbe033f760a2edac91f68f66650aef4319bad58dc4ef41942bea3b617691f",
+    "scripts/render-timing-pan-perimeter-contact.py": "34aea9913b0e645eeaa4efcb640ffd4db0258dca44f416c5235877ce1dd258a5",
+    "scripts/check-timing-pan-perimeter-route-deviation.py": "fd020d413ad7ed826c830b6c62d26393391f5c4bef09c5d00d9723c2baa38ece",
+    "inventory/engine/timing-pan-upper-contact-summary.json": "404d0e516372d266e604b14266118b3c6e3e410834da50e80c68814249e677ed",
+    "docs/components/timing-pan-upper-contact-study.md": "4c3c8c6733d1a9ffc398a45c90bcd3545da9aae17ac4b2ea7fde8849cec47c51",
+    "scripts/diagnose-timing-pan-upper-contact.py": "bcd6a5e354427d99bd5c0094fba98938a9c0de34524d723f944e3624683d3f0d",
+    "scripts/check-timing-pan-upper-contact.py": "eb37bfd6735643da2a8c55934fe841d4a1fe0e7af2fbb99c64b614c08becf10c",
+    "scripts/render-timing-pan-upper-contact.py": "878b0161ecc24c71819df5ad8ee54b6f7fb9e62f92bb1d3faa1cf9d2407eac47",
+    "scripts/check-timing-pan-upper-contact-topology.py": "a23e2a7c3df1dbf42972216faa54e25847ce80c2cf3bc675c078f0dddc4f1e6b",
+    "inventory/engine/timing-pan-upper-contact-review.json": "e5c035bfc1bcabe784b348bb17c2b30c9ab67f94c124282ca2d8fae0baa42f6f",
+    "inventory/engine/timing-pan-upper-contact-render-review.json": "e82d5b29b6f4e38e326885777d5b472285efc5bd79a597f8e77ef5c53b6c63c0",
+    "inventory/engine/timing-pan-upper-contact-topology.json": "6bab592d5cd2bf8e772598ebeab933ab1ac80b15d2c373f04ce93c8de077bb87",
+    "inventory/engine/timing-pan-upper-contact-diagnostic.json": "1c2c1f8df049f33977d97bfcb2096ac557ee1b983f3289eb942cdcc6879fd602",
+    "cad/engine/generated/timing-pan-upper-contact/upper-contact-review.png": "155e1eed882ecd75b561507b3cb0c292e83f9c5f0b20ba69d1ae1f9f036d5747",
+    "cad/engine/generated/timing-pan-upper-contact/joined-upper-contact-surface.step": "8158294d8888cc067c3af715a0737289d06fea31fd92aba98789f37d57254a85",
+    "cad/engine/generated/timing-pan-upper-contact/unsupported-upper-faces.step": "a0d0b91d117f245f64846f00e35ec83874db62e76a21ad3df01a1fc4e3a21f58",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "scripts/stage-timing-pan-assets.py": "645dfb48af0038f0cdf10f0d76bdefbe773ea96bd5c3dc26986479b6de62784c",
+    "scripts/stage-front-seal-2692-assets.py": "0ec4be84966e3dfb6803ac149fd6831f6f7634ec96ea89a074a938c86259d106",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.glb": "22b3ba49c3da1832b7944fb9e357883430aa44e17b78a179a5bdc50c6d3f5335",
+    "cad/engine/generated/oil-pan-mounting-washer.step": "89dfd958fc84025474dfd159c2f7ee3c167ec0e8abc2e904f383357916ee2c17",
+    "models/engine/oil-pan-mounting-washer.glb": "cea6959f4c880848deb5a18cc5abd6d76dcb2da5de9060d869674ef2d6066212"
+  },
+  "patch": "inventory/engine/timing-pan-integration-patch.json",
+  "patch_sha256": "895e47b4a4d828c0034d0807eccca380868224bbf2d7ba58b39fae58a7b0b5e2",
+  "canonical_modified": false,
+  "limits": [
+    "No installation/browser pass",
+    "Rear cap ownership remains illustrative",
+    "Whole-fluid containment/pressure/production dimensions unresolved",
+    "Existing explosion stages not revalidated for entireassembly"
+  ]
+}

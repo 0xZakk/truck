@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "baseline": "a66b33c",
+  "status": "PASS",
+  "scope": "Numeric coordinated proposal only; no CAD/export/installed/browser validation.",
+  "sampleCoverage": {
+    "eventRangeDeg": [
+      0,
+      720
+    ],
+    "stepDeg": 1,
+    "poses": 721,
+    "sliderBranches": 6,
+    "camBranches": 12
+  },
+  "maxima": {
+    "pistonHeightDifferenceMm": 0,
+    "rodLengthErrorMm": 5.684341886080802e-14,
+    "rephasedJournalClosureMm": 1.8198773652309366e-13,
+    "camSupportDifferenceMm": 0,
+    "camContactReflectionErrorMm": 4.408728476930472e-15,
+    "camEventLiftErrorMm": 7.993605777301127e-15
+  },
+  "negativeControls": {
+    "crankOnlySignJournalMismatchMm": 101.09200000000001,
+    "blanketTimeReverseLiftDifferenceMm": 6.2738
+  },
+  "firing": [
+    {
+      "cylinder": 1,
+      "eventDeg": 0,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 0
+    },
+    {
+      "cylinder": 5,
+      "eventDeg": 120,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 82.01614057813958
+    },
+    {
+      "cylinder": 3,
+      "eventDeg": 240,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 82.01614057813958
+    },
+    {
+      "cylinder": 6,
+      "eventDeg": 360,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 0
+    },
+    {
+      "cylinder": 2,
+      "eventDeg": 480,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 82.01614057813961
+    },
+    {
+      "cylinder": 4,
+      "eventDeg": 600,
+      "proposedTdcErrorMm": 0,
+      "unrephasedReverseTdcErrorMm": 82.01614057813956
+    }
+  ],
+  "distributor": {
+    "currentAndProposed": "-q/2 about CAD +Z; clockwise viewed from cap +Z",
+    "blanketTimeReverse": "would become counterclockwise; rejected",
+    "absoluteTerminalClocking": "unverified"
+  },
+  "continuousAlgebra": [
+    "cos(-t)=cos(t), sin(-t)=-sin(t): piston height unchanged and journal/rod coordinates reflected for all real q.",
+    "Rephased throw -phi and crank -q equal solver -(q+phi) identically.",
+    "Current support h is even and derivative odd: rephased oppositely rotating cam preserves height and reflects tangent contact for all q. This is specific to current symmetric profile."
+  ],
+  "notRun": [
+    "Rebuilt actual crank/cam geometry",
+    "Revised helical timing/distributor/pump contact",
+    "Whole-engine endplay",
+    "Browser and rendered corrected motion"
+  ],
+  "inputSha256": {
+    "viewer/engine-motion.js": "88c4c417f3f182afb1fc8f2dc07a6bf7d174c564a7cd016e095e9d55513fa6ea",
+    "viewer/engine-valve-motion.js": "6b86b8bf1601b7df10966bf20c57e25bf7cdb4d48f6243bfb5da55bfc16d3348",
+    "viewer/atlas.js": "801af01380aff5478e3e0672168b9877b15066a71f66f6746ade019b94480315",
+    "viewer/engine.js": "f347d325657970fffba64de00b820d3cc8a8998b14ead5b05cfa90fc4ff2ca02",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/distributor.py": "b02f54276d4d4d587f3aba45ad8a225c04565d99b4ee1fc2bed7eebb188b1abd",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "reference/engine/engine-rotation-convention-review.json": "4d72896d7f4f3f5d98aa07a871ba11fbe940e7326d6bd3b8396c5667e431190c",
+    "scripts/diagnose-engine-rotation-convention.mjs": "f8826e4182f8b639e047a53d5867af9687331178e35cf21707a6392bca049ec9"
+  }
+}
