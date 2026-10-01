@@ -70,12 +70,12 @@
     {
       "issue": 32,
       "desired_status": "In progress",
-      "reason": "PR100 preserves reviewed pump-foot and inclined-passage candidates, composed block and detected rocker/cover and pan failures. Front-region, rocker crest and dry-neck corrections active; no installed acceptance."
+      "reason": "Coordinated block/pan v3 pair and seal motion have bounded passes; cover hardware, direction convention, combined integration and browser acceptance remain open."
     },
     {
       "issue": 34,
       "desired_status": "In progress",
-      "reason": "Reusable male thread candidate passed local gates; pan revision failed station20 dry-side/tool checks. Separate dry-neck correction has bounded local passes; whole containment, integration and production details remain open."
+      "reason": "Expanded-seat pan v2 clears paired block and screws with support checks. Full perimeter and containment remain under review; not installed."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

@@ -1,0 +1,73 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-candidate/block-pan-overlap.step": "ddc31257ec763aec988e2ae0698ad8f5118c2ad7e9f86c5768554c5d99bbd277",
+    "cad/engine/generated/timing-front-block-expanded-seat-candidate/block-gasket-overlap.step": "ead5b6a4c9baa26e63f8bc0f0f89fbd241f18c14fed3e31322c758da6fcff0e4",
+    "scripts/diagnose-timing-front-expanded-seat-overlap.py": "8a42a774b6924e82082b339b9f3b46ebe1676926695ff47831684ba7cf715613"
+  },
+  "overlaps": [
+    {
+      "pair": "block-pan",
+      "solid": 0,
+      "volume_mm3": 143.79991356462773,
+      "bounds_mm": [
+        [
+          334.9999999,
+          -143.7577236772354,
+          -32.0000001
+        ],
+        [
+          345.34146351467086,
+          -124.82926819260001,
+          -28.768292582914018
+        ]
+      ],
+      "socket_guard_mm3": {
+        "20": 0,
+        "10": 0
+      }
+    },
+    {
+      "pair": "block-gasket",
+      "solid": 0,
+      "volume_mm3": 527.8675920420405,
+      "bounds_mm": [
+        [
+          334.99999989999986,
+          -146.4634147341415,
+          -29.961538561530002
+        ],
+        [
+          355.48780497807024,
+          -119.75609746090001,
+          -25.5975608755944
+        ]
+      ],
+      "socket_guard_mm3": {
+        "20": 0,
+        "10": 0
+      }
+    },
+    {
+      "pair": "block-gasket",
+      "solid": 1,
+      "volume_mm3": 22.009765676738375,
+      "bounds_mm": [
+        [
+          348.62962952962,
+          160.6148147148078,
+          -27.740740840741427
+        ],
+        [
+          355.4878049780463,
+          182.56097570974998,
+          -25.597560875606383
+        ]
+      ],
+      "socket_guard_mm3": {
+        "20": 0,
+        "10": 0
+      }
+    }
+  ],
+  "status": "Frozen failed pair diagnosis; no geometry change"
+}

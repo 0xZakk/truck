@@ -1,0 +1,717 @@
+{
+  "status": "CANDIDATE; scoped gates below",
+  "input_sha256": {
+    "cad/engine/generated/timing-block-combined-candidate/block.step": "72773d2ce6793180ff828d3d8ddf089daea3d85b738962084d335ca4a17c1a36",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/support-0.step": "bc5025aef9509d72a9a21bed0e566501e888997149de016f81d2bc7d1ae54aef",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/support-1.step": "f429ee7c1af26de7bd0d72c3cdf1f79e0d257b38c1ba9c4b766391ae8246fdc9",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-impeller.step": "c3cf2546d1adf027545ae20cc0aca3cba9e46ca9ae17c8f6f266033e17aded80",
+    "cad/engine/generated/water-pump-shaft.step": "5448c0838592e5699583e2cdc4834b78e8573c2e5411c12c865041f87816f72a",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "cad/engine/generated/oil-pump-mount-bolt.step": "a63c8eed415350590e37536bc5b6a7646c49aabbee204758b6d103c3bdcda4e1",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/validation.log": "40fd7e701dab7b1dead830578f0944a0a8a1b8822ffb49c769cf605027acfc25",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/oil_pan_fasteners.py": "0b8b894d1e8818436c2012131aac99a2d7664c54591c3268bdd1107a74ae4503",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/timing_front_block_contract.py": "4832715f3e54996bec3c56b258fc16a32e88e4de57ddb85e338e901a0a3497ed",
+    "cad/engine/timing_front_pan_transition_contract.py": "5cd6dbe7134553151ec83a7c2155b4158a44541b8bf1ce356825c96877fa3320",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/timing_front_block_adapter_candidate.py": "208a6817c1cc39cb69c57a0381c747acaf0e8600bc053110ced5c61057a25a28",
+    "cad/engine/timing_pan_expanded_seat_v2_contract.py": "4fa9d104606158710bb221fcfc71ca5dcddb62bf00243338920e92adb8f9839e",
+    "cad/engine/timing_front_block_expanded_seat_v3_candidate.py": "d454aa43964fa4fd74ad6ca033164e8b23cffcbad0ae221eac06db0595d0e4a5",
+    "cad/engine/timing_block_migration_candidate.py": "cd3c9456d181f6c54dbb61bd0489465618901b13a441d5f2ffc13be7405c1675",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "cad/engine/timing_block_fixed_stock_candidate.py": "53796ccfd332a292a6fa680f4bb31f561aaf95422c92346f8e44dce467b3ba96",
+    "cad/engine/timing_block_boolean_topology_candidate.py": "f22a6cf056d06d7ac993b88a27dc26f2c84221ce94f63e108d26c2b8e069d5f8",
+    "cad/engine/timing_block_support_machining_candidate.py": "f51a87e0da229f4a13e521e9695313363748cf631b08c92c10e3c19360db3c11",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/pushrod_cover.py": "1fcedc5e872005f2a9b7362a7157c0039c8fbbd195d3b10d0828f141dcc1b534",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/pan_fastener_thread_candidate.py": "041a7d6136e60cc310def6f79c5314ae7b9e15836e2ffe9401b7cc4f242cada0",
+    "cad/engine/first_assembly.py": "ecc1e01abc623d00aef1b5bdc3d47105ccf43b6d6bb1761e4317015d75ad9c5f",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "cad/engine/assembly_step.py": "992abe19b73da9074aebca430ab23cc3a4990477c8432db05b1296d80bc17cb1",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "cad/engine/valve_source_evidence.py": "7a366afe1ada4884755519fabf9165341aa4baecd4f03d5efcf557098a348d55",
+    "cad/engine/valve_source_definition_adapter.py": "3380698588f36f65fb7e693f6382197d37d4d1fe7d7a2e176309c510f8d59ce8",
+    "cad/engine/oil_pump.py": "ec6b0206297632faada63e7272ed11d078cb7bb95e18b3a9879bc50b1d3c559f",
+    "cad/engine/fuel_mounts.py": "8c780822fe39363e3c0838dd4960b49f14d66dc6a3476a770d2f58c33f43ca68",
+    "cad/engine/efi_intake.py": "36ccb7da5d29904894a451e360072fbdbcf08024e76f5225e2fe1bd7cc88ba30",
+    "cad/engine/throttle.py": "ecf3e3a0511dad6672d5bbc249e3c7d4e334f4ff174563cf44369f6dad04f60c",
+    "cad/engine/fuel_couplings.py": "cd380de5a1aa8f3772029bd50895176fb03604fc53988f04a4869f48d69f5309",
+    "cad/engine/fuel_test_valve.py": "eeff1918ac3767bf4aa52d8f790dae373ae02fbb31cd13b6f1aa43788ad56402",
+    "cad/engine/fuel_injection.py": "5f82dd8f6f946014c87bde4adb4c24520283060dee380b336d2dcb2a7f93bc3e",
+    "cad/engine/idle_air.py": "624e4b5dd693a6635ed903645d474c4d3e8af875a60d3af0fe08fd4f05e91409",
+    "cad/engine/throttle_sensor.py": "88210106a2fec8a1b3e7b934369cd1ae0d48d45730adc179670e1dea9599e45b",
+    "cad/engine/exhaust.py": "d6ef3e30848d4e0c8676c3fae1a17f7b013ce3545c56158fccc4a7882dfae8a8",
+    "cad/engine/damper.py": "c1f64869d1f09e6f04fa5a70f8d79308c25b5d1fdf80bdffa283dafdb7dc1db5",
+    "cad/engine/water_pump.py": "594f1d1b5797c69a158b21b2f56d01681f5a5d2640a31c8588065d694008504e",
+    "cad/engine/thermostat.py": "617d15c10bc71464403d44c792e1916713b9a58f050b608b7a6a706b0caa4021",
+    "cad/engine/coolant_outlet.py": "19d0feb0787e015d460e25fe8600add0f48f03d2ee27bb6d69d77dbafaa76787",
+    "cad/engine/distributor.py": "b02f54276d4d4d587f3aba45ad8a225c04565d99b4ee1fc2bed7eebb188b1abd",
+    "cad/engine/ignition_coil.py": "43c9d82b23741c0e1ec4513a98e5496c4e5c905429f9c1cb02751a1b1c2dd2ed",
+    "cad/engine/ignition_module.py": "e11ab3939af923317d700a8df562616d4c7f59a750448ab1202cf79de843d247",
+    "cad/engine/plug_mounts.py": "9f5bb43c762811acb3ffb754dbbd9e5e59c6d14c8a92c73df88bdbf1b96306fb",
+    "cad/engine/spark_plug.py": "85c640556fffa44211defe8733388e94d5648cfea1dc125520be076c2f2490a0",
+    "cad/engine/valve_cover.py": "3300155057bb6dfd1cc5190a7850b2e9add4bd0a9cb3d5f576f32cfb343b845d",
+    "cad/engine/timing_cover.py": "40eec460de85dd0427d5d12b02f3aa88fdae7eb4bbd2889189d0b90c95292cdc",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "cad/engine/oil_pump_drive.py": "aa064a85f0eec3d878315ee69cd998a0394d71e8bd1f5846ebffd7248e67b3ab",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/thermactor_pump.py": "cbe7c2958a421b20df80379080e50165b1652e7cc56d1e773a75fc2479e34896",
+    "cad/engine/oil_pump_motion.py": "07110f1a8e81e7e41d68696a9a5a160232b094edb1417e567c8d6f69769ea416",
+    "cad/engine/oil_filter.py": "c996d5e5e22cef03065a6b5cb423289fb5f8f24fa8119dd13594572dd17e67ee",
+    "cad/engine/oil_filter_adapter.py": "a3db9afe402f1786431b9484a85571e5b094e9caef99bb4dc5194748257062e4",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/manifold_lifting_eye.py": "725105651f569a137e84ecb41e6c3a653fb2c72808ba830bf841cea27bfbeb9e",
+    "cad/engine/intake_locating_dowel.py": "c764a0a60ed9fe01c02f05889ff124e33b88168821d8716f9a1c761f70996f81",
+    "cad/engine/exhaust_front_profile.py": "45747ee7653a6cc7ca569fb87fcf1cce300b71d838bf0bef484b3c388bf94449",
+    "cad/engine/egr_tube.py": "11dceaf48a02777bec239f64bb265c12bc77eaeb8f5024c8e8915e9639b3622c",
+    "cad/engine/exhaust_rear_entries.py": "65c189952c25bed75431cf1e765dca10960f47d47dbbc5226193ebb89552330b",
+    "cad/engine/rear_manifold_mounts_desktop_candidate.py": "0e21e1494b780cd60f92de0957f947de9fd14eb5fbaccaeed547eaac3e6902e7",
+    "cad/engine/exhaust_outlet_flanges_desktop.py": "6f5e6146d9644e9107bbcdcfe6dd2567f7697abe36cd4b124d64dac8d2090758",
+    "cad/engine/rear_cam_clearance_desktop.py": "df48428234e2eb69795f2f7a32063767c9690d32768fd4d0b7ea90d5fb69cc6c",
+    "cad/engine/cooling_connections.py": "89260620a2a17be990995da071e97b46213f755402238bce16bb60cff139d265",
+    "cad/engine/water_pump_inlet_v3_candidate.py": "e22fe3d9ad01e1d146b12ade6ec510c8bb26f4b5b107119cd6687320488749f4",
+    "cad/engine/water_pump_thermactor_foot_candidate.py": "734c9e2b43202b385a5353ecba5538d40c6486ee14b97215523895fb38ac85d2",
+    "cad/engine/water_pump_joint_integration_desktop.py": "907330b3899d0091ca1864694a05a284e5bc28b3de7eac4d66758ec9ebc1e3bc",
+    "cad/engine/coolant_outlet_head_candidate.py": "9aeaa1fd3d3693a64643a120808aa74820d8f58695daf62c79ef7c4bf1a95fc7",
+    "cad/engine/alternator_carrier_1994_candidate.py": "c35dfeb13d170f8ae1475be49746df54a483a93b1d4570d86b535efb22dff0b7",
+    "cad/engine/alt_thermactor_common_carrier_candidate.py": "5398131dc52a8b53c02a771f633d5757c9e7116578f3683158bc61c6ddcb9e94",
+    "cad/engine/explode_stages_candidate.py": "bd23e75d450a2d93fa7103755c0ea29211a30aa237734ac3285e9801ee4cb28b",
+    "cad/engine/tensioner_arm.py": "6bf5aa5539ce2fbc4cfa848bc8a0a435e865b02fce4ae63fa9917c2b0c0060cb",
+    "cad/engine/tensioner_pulley.py": "7126080e234a6420cf5473b761888eb25d45fbfde4ec2ea65e7f2afc38524e92",
+    "cad/engine/tensioner_engine_support.py": "d80e819d2c72425f2d39bd6ec0050823a1d79ad2f6b5b7ff4667eed01c745e8a",
+    "cad/engine/accessory_carrier_1994.py": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951",
+    "cad/engine/accessory_carrier_1994_integration.py": "4bd2eaaeee5ff4a5076bc14c9d08f5bc9096e42d9622551b412b09842aef855f",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "cad/engine/dipstick_tube_candidate.py": "ffc840477ea647c3b85ed33dc5d55f1df3f4817c4d45a09a467644295452e7ca",
+    "scripts/check-timing-front-block-expanded-seat-v3-delivery.py": "0ea7371c9e79425873555943b5ba230820f0076d7012d7a0424f97e6525819d7"
+  },
+  "cad_valid": true,
+  "solid_count": 1,
+  "step_valid": true,
+  "step_difference_mm3": 0,
+  "mesh_watertight": true,
+  "mesh_error": null,
+  "mesh_bounds_error_mm": 0.006842474801658227,
+  "added_mm3": 16885.545448098917,
+  "removed_mm3": null,
+  "unverified_metrics": {
+    "removed_mm3": "Strict volume integration failed: 2.3416443518736895e-05",
+    "future_land_missing_mm3": "Strict volume integration failed: 1.0003959042391857e-05"
+  },
+  "added_outside_declared_mm3": 0.0,
+  "removed_outside_declared_mm3": 0.0,
+  "source_female_missing_mm3": 0,
+  "support_height_estimate_mm": 10.0,
+  "gasket_backing_missing_mm3": 0.0,
+  "protected_interfaces": [
+    {
+      "name": "main-journal-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-2",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-3",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-4",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-5",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-6",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-7",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7--56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7-56",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "accessory-front-90-220",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "accessory-front--100-220",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "accessory-front--100-90",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "accessory-front--125-140",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "water-pump-front-interface",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-2",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-3",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-4",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-2",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-3",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-4",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-5",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-6",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-7",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-8",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-9",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-11",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-12",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-13",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-14",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-15",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-16",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-17",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-18",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-19",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-24",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "active-pan-interface-25",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-2",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-3",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-4",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-chamber-wall",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "pump-fifth-passage-wall",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-thrust-seat-backing",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-thrust-socket-wall-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "cam-thrust-socket-wall-2",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "deck-244-254",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "faceted-foot-0",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "faceted-foot-1",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "rear-through-300",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "front-from-365",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "complete-female-socket-20-outside-intended-void",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    },
+    {
+      "name": "complete-female-socket-10-outside-intended-void",
+      "added_mm3": 0.0,
+      "removed_mm3": 0.0,
+      "unchanged": true
+    }
+  ],
+  "neighbors": [
+    {
+      "name": "cover",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "main-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "pan-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "pan",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "front-terminal-sealant",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "actual-pan-male-10",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "actual-pan-male-20",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "cam-thrust-plate",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "cam-thrust-bolt-1",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.08124514522482984,
+      "clear": true
+    },
+    {
+      "name": "cam-thrust-bolt-2",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.08124514522483443,
+      "clear": true
+    },
+    {
+      "name": "cam-gear-spacer",
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.097649999999947,
+      "clear": true
+    },
+    {
+      "name": "camshaft",
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.525399999999387,
+      "clear": true
+    },
+    {
+      "name": "crank-timing-gear",
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.259374999999977,
+      "clear": true
+    },
+    {
+      "name": "cam-timing-gear",
+      "overlap_mm3": 0.0,
+      "distance_mm": 5.259374999999977,
+      "clear": true
+    },
+    {
+      "name": "cam-bearing-1",
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.105427357601002e-15,
+      "clear": true
+    },
+    {
+      "name": "cam-bearing-2",
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.105427357601002e-15,
+      "clear": true
+    },
+    {
+      "name": "cam-bearing-3",
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.105427357601002e-15,
+      "clear": true
+    },
+    {
+      "name": "cam-bearing-4",
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.105427357601002e-15,
+      "clear": true
+    },
+    {
+      "name": "water-pump-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "water-pump-housing",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0,
+      "clear": true
+    },
+    {
+      "name": "water-pump-impeller",
+      "overlap_mm3": 0.0,
+      "distance_mm": 7.99999999999999,
+      "clear": true
+    },
+    {
+      "name": "water-pump-shaft",
+      "overlap_mm3": 0.0,
+      "distance_mm": 26.220654603496143,
+      "clear": true
+    },
+    {
+      "name": "oil-pump-housing",
+      "overlap_mm3": 0.0,
+      "distance_mm": 6.653351596650979e-13,
+      "clear": true
+    },
+    {
+      "name": "oil-pump-mount-bolt-1",
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.0113696674044425e-12,
+      "clear": true
+    },
+    {
+      "name": "oil-pump-mount-bolt-2",
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.0113696674044425e-12,
+      "clear": true
+    }
+  ],
+  "future_land_missing_mm3": null,
+  "future_land_missing_outside_transition_mm3": 0.0,
+  "intended_socket_cavity_filled_mm3": 0.0,
+  "quadrature_refinements": [],
+  "limits": [
+    "Estimated sourceboundary andretired5socket restoration; notfactoryspec",
+    "BrowserNOTRUN; no canonicalinstallation",
+    "Retention, contact,sealingcontinuity stillrequirefurther scopedreview"
+  ],
+  "artifacts": {
+    "block.glb": "68899221bcb4ded05a9fe285aecb770bb23c03a805b9e1032c0000da813d0441",
+    "block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8"
+  },
+  "gates": {
+    "changed_material_volume_verified": false,
+    "cad": true,
+    "mesh": true,
+    "bounded_material": true,
+    "protected": true,
+    "neighbors": true,
+    "land_retained_outside_transition": true,
+    "socket_void": true,
+    "gasket_backing": true
+  },
+  "local_status": "FAIL"
+}

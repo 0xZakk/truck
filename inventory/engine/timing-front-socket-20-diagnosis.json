@@ -1,0 +1,85 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-front-block-expanded-seat-candidate/block.step": "e5a6eb972d5069179468d2f89ff4dbf331b7da9cea98d01ed4c6162cebc06887",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "scripts/diagnose-timing-front-socket-20.py": "d4bf8d05725bdc5b71170c092ababa5449b302d32a4f2bb16196b1e842d7927e",
+    "cad/engine/pan_fastener_thread_candidate.py": "041a7d6136e60cc310def6f79c5314ae7b9e15836e2ffe9401b7cc4f242cada0"
+  },
+  "cavity_definition": "Source declared female cylindrical regionR4.17 localZ7.8..22.3 minus source female coupon; no new neighbor carving",
+  "results": [
+    {
+      "owner": "future-land",
+      "station": 10,
+      "male_overlap_mm3": 0.0,
+      "overlap_bounds_mm": null,
+      "intended_cavity_filled_mm3": 0.0,
+      "female_material_missing_mm3": 0
+    },
+    {
+      "owner": "future-land",
+      "station": 20,
+      "male_overlap_mm3": 0.0,
+      "overlap_bounds_mm": null,
+      "intended_cavity_filled_mm3": 0.0,
+      "female_material_missing_mm3": 0
+    },
+    {
+      "owner": "frozen-adapter",
+      "station": 10,
+      "male_overlap_mm3": 0.0,
+      "overlap_bounds_mm": null,
+      "intended_cavity_filled_mm3": 0.0,
+      "female_material_missing_mm3": 0
+    },
+    {
+      "owner": "frozen-adapter",
+      "station": 20,
+      "male_overlap_mm3": 157.39360505104105,
+      "overlap_bounds_mm": [
+        [
+          361.5312499,
+          -132.7557195603412,
+          -24.5000007
+        ],
+        [
+          368.44223070331003,
+          -128.03124989816558,
+          -10.001999893461582
+        ]
+      ],
+      "intended_cavity_filled_mm3": 159.64667594632704,
+      "female_material_missing_mm3": 0
+    },
+    {
+      "owner": "expanded-adapter",
+      "station": 10,
+      "male_overlap_mm3": 0.0,
+      "overlap_bounds_mm": null,
+      "intended_cavity_filled_mm3": 0.0,
+      "female_material_missing_mm3": 0
+    },
+    {
+      "owner": "expanded-adapter",
+      "station": 20,
+      "male_overlap_mm3": 157.39360505104105,
+      "overlap_bounds_mm": [
+        [
+          361.5312499,
+          -132.7557195603412,
+          -24.5000007
+        ],
+        [
+          368.44223070331003,
+          -128.03124989816558,
+          -10.001999893461582
+        ]
+      ],
+      "intended_cavity_filled_mm3": 159.64667594632704,
+      "female_material_missing_mm3": 0
+    }
+  ],
+  "status": "DIAGNOSTIC; no model mutation"
+}

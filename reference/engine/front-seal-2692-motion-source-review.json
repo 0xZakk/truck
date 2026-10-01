@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-01",
+  "status": "Source facts with explicit registration and direction gaps",
+  "sources": [
+    {
+      "id": "exact-year-thrust-clearance",
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Engine%20Rebuilding%20Specifications/index.html",
+      "sha256": "727cdfb04dde6c1ea59416151ff21d98d6fc82dd2fd48e74ca41ed5918a3cbbe",
+      "claim": "Thrust bearing clearance0.0040\u20130.0080in",
+      "mm": [
+        0.1016,
+        0.2032
+      ],
+      "classification": "exact-application captured service specification; not owner measurement"
+    },
+    {
+      "id": "ford1996-corroboration",
+      "url": "https://www.diesel-dave.com/vehic/manual/stj/stj31a47.htm",
+      "claim": "Ford1996 4.9 crankshaft free end play0.004\u20130.008in",
+      "classification": "Ford-authored adjacent-year comparison, third-party mirror"
+    },
+    {
+      "id": "ford-industrial-measurement",
+      "path": "reference/engine/ford-csg649.pdf",
+      "sha256": "f7fb9d6aa8c837122368e1b5c6642cc5cd7b8a6bc20fa24f1924cb9adbbacddd",
+      "printed_page": "1-05",
+      "claim": "Dial indicator measures travel from rearward crank stop to forward stop",
+      "classification": "Ford-authored industrial comparison; not exactyear vehicle specification"
+    },
+    {
+      "id": "timken-lip",
+      "url": "https://cad.timken.com/item/seals/oil-seals-inch/2692",
+      "claim": "Clockwise-spiral lip design",
+      "limits": "Viewing direction and groove/shaft sign relationship unresolved in reviewed2692 table"
+    },
+    {
+      "id": "timken-catalog-convention-search",
+      "url": "https://www.timken.com/resources/national-industrial-seals-catalog/",
+      "claim": "Catalog footnote calls clockwise-spiral lip design; air-side convention was not established",
+      "classification": "Manufacturer primary catalog; no inferred compatibility"
+    }
+  ],
+  "rotation_conclusion": "Viewer is counterclockwise as viewed from front/+X with Z-up/Y-right. Exact-year crank direction and2692 spiral convention remain unresolved; no compatibility assertion.",
+  "artifact_policy": "Manual/PDF originals remain ignored and are not redistributed; factual ledger only."
+}

@@ -1,0 +1,514 @@
+{
+  "status": "PASS positive exported material bands and sampled spring seating",
+  "inputs": {
+    "scripts/check-front-seal-2692-contact-bands.py": "cff31984f63c45e26b38b76b36e32942beb8c9abd6bfba8fe8046defb3a930a6",
+    "cad/engine/front_seal_2692_candidate.py": "52826560d6bd072fbd69fe04d107d29752e1c11723187a3c3b0311bac19e5505",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.step": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.step": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.step": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.step": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5"
+  },
+  "positive_bands": {
+    "bond-metal": {
+      "probe_mm3": 2.3415813719630023,
+      "missing_mm3": 0.0
+    },
+    "bond-rubber": {
+      "probe_mm3": 2.3406483189455685,
+      "missing_mm3": 0.0
+    },
+    "lip-rubber": {
+      "probe_mm3": 0.26937523376344075,
+      "missing_mm3": 0.0
+    },
+    "lip-hub": {
+      "probe_mm3": 0.2692508266944458,
+      "missing_mm3": 0.0
+    }
+  },
+  "garter_contact_witnesses": [
+    {
+      "turn": 0,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 1,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 2,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 3,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 4,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 5,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 6,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 7,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 8,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 9,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 10,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 11,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 12,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 13,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 14,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 15,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 16,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 17,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 18,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 19,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 20,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 21,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 22,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 23,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 24,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 25,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 26,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 27,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 28,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 29,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 30,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 31,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 32,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 33,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 34,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 35,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 36,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 37,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 38,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 39,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 40,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 41,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 42,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 43,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 44,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 45,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 46,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 47,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 48,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 49,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 50,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 51,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 52,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 53,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 54,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 55,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 56,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 57,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 58,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 59,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 60,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 61,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 62,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 63,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 64,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 65,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 66,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 67,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 68,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 69,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 70,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 71,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 72,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 73,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 74,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 75,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 76,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 77,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 78,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 79,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 80,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 81,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 82,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 83,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 84,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 85,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 86,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 87,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 88,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 89,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 90,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 91,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 92,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 93,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 94,
+      "wire_inside": true,
+      "rubber_inside": true
+    },
+    {
+      "turn": 95,
+      "wire_inside": true,
+      "rubber_inside": true
+    }
+  ],
+  "negative_control_shifted_rubber_accepts_old_witness": false,
+  "coverage": "Complete annular bond/lip positive bands; 96 sampled winding groove witnesses. Nominal axisymmetric track supports arbitrary crank angle; endplay/preload unknown."
+}

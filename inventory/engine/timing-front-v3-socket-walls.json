@@ -1,0 +1,27 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "scripts/check-timing-front-v3-socket-walls.py": "9b28dd3350b3ee20997b1f199232ed92b3cbea0ca77add6cd7c8e43f0e7cd478"
+  },
+  "guards": [
+    {
+      "station": 10,
+      "wall_minimum_radial_thickness_mm": 2.03,
+      "declared_wall_missing_in_source_mm3": 0,
+      "declared_wall_missing_in_candidate_mm3": 0,
+      "declared_floor_missing_in_source_mm3": 0,
+      "declared_floor_missing_in_candidate_mm3": 0
+    },
+    {
+      "station": 20,
+      "wall_minimum_radial_thickness_mm": 2.03,
+      "declared_wall_missing_in_source_mm3": 0,
+      "declared_wall_missing_in_candidate_mm3": 0,
+      "declared_floor_missing_in_source_mm3": 0,
+      "declared_floor_missing_in_candidate_mm3": 0
+    }
+  ],
+  "scope": "Existing estimated physical annular wall/floor, not strength minimum or factory specification",
+  "local_status": "PASS"
+}

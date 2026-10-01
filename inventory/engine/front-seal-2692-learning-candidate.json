@@ -1,0 +1,110 @@
+{
+  "front-seal-case": {
+    "summary": "The stationary metal case locates the sealing element in the timing cover. Its flange and cylindrical outside surface belong to the stationary side of the seal assembly.",
+    "limits": "This is an uninstalled 2692 replacement construction study. Catalog overall dimensions are distinguished from the estimated case section, flange thickness and axial position. A separate free-case comparison is a state of this same part, not an extra component in the engine.",
+    "steps": [
+      {
+        "title": "Locate the case in the cover",
+        "text": "The National table gives a nominal 65.0494 mm housing bore and 65.151 mm free case diameter. Their 0.1016 mm diameter difference describes the nominal interference in this replacement comparison; it is not a complete tolerance or installation-force specification.",
+        "part": "timing-cover",
+        "source": "front-crank-seal-national-dimensions"
+      },
+      {
+        "title": "Compare free and installed states",
+        "text": "The candidate installed case uses the nominal housing diameter so the seated interface can be shown. The larger free-case diameter is preserved as a separate comparison. The visualization does not solve press-fit stress or actual deformation.",
+        "part": "front-seal-case",
+        "source": "front-crank-seal-national-dimensions"
+      },
+      {
+        "title": "Find the supported sealing element",
+        "text": "The representative type 76 section provides qualitative evidence for a flanged metal case surrounding an elastomer sealing element. Internal wall dimensions in this candidate are estimates.",
+        "part": "front-seal-elastomer",
+        "source": "front-crank-seal-type76-section"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Separate outer and inner leak paths",
+        "text": "Oil can pass at the stationary case-to-cover boundary or at the rotating lip interface. That distinction follows from the construction; oil visible nearby does not by itself identify which path leaked.",
+        "part": "front-seal-case"
+      }
+    ],
+    "sources": [
+      "front-crank-seal-national-dimensions",
+      "front-crank-seal-type76-section",
+      "front-crank-seal-timken-dimensions"
+    ]
+  },
+  "front-seal-elastomer": {
+    "summary": "The flexible sealing element bridges the stationary case and the rotating damper-hub surface. Its contact lip is the dynamic sealing interface.",
+    "limits": "The National 2692 table specifies polyacrylate and the replacement envelope. Lip profile, bond geometry, contact-band width and installed axial station here are estimated. No elastomer stress, wear or leakage simulation is claimed.",
+    "steps": [
+      {
+        "title": "Follow the rotating sealing track",
+        "text": "The catalog 47.625 mm shaft dimension describes the surface under the lip. It does not describe the crankshaft bore inside the damper hub. Both parts need a common axial contact region.",
+        "part": "damper-hub",
+        "source": "front-crank-seal-national-dimensions"
+      },
+      {
+        "title": "Identify the flexible region",
+        "text": "In the construction study, the outer element stays with the case while the inner lip meets the rotating track. The qualitative section comes from type 76; the modeled cross-section is not a measurement of the truck\u2019s removed seal.",
+        "part": "front-seal-elastomer",
+        "source": "front-crank-seal-type76-section"
+      },
+      {
+        "title": "See the spring-supported lip",
+        "text": "The spring ring acts around the flexible lip. Its circumferential tension provides an inward load in the model\u2019s mechanical explanation; this is not a calculated pressure or calibrated spring force.",
+        "part": "front-seal-garter-spring"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Inspect the complete contact relationship",
+        "text": "As a geometric check, confirm that the lip is concentric with the hub track and overlaps it axially. A seal ring displayed beside the hub cannot demonstrate sealing, even if the part diameters look plausible.",
+        "part": "damper-hub"
+      },
+      {
+        "title": "Keep surface condition separate from dimensions",
+        "text": "Matching the nominal catalog diameter does not establish that a particular hub surface is unworn or that a particular lip is undamaged. This explorer represents geometry, not the condition of the owner\u2019s installed seal.",
+        "part": "front-seal-elastomer"
+      }
+    ],
+    "sources": [
+      "front-crank-seal-national-dimensions",
+      "front-crank-seal-type76-section",
+      "front-crank-seal-timken-dimensions"
+    ]
+  },
+  "front-seal-garter-spring": {
+    "summary": "The garter spring is a closed spring ring around the lip. Its tension helps maintain inward contact as the flexible lip follows the rotating surface.",
+    "limits": "A spring is visible in the representative type 76 section, but wire diameter, coil diameter, turn count, preload and end joint are not established for this truck. The candidate coil is an illustrative construction; export validity and assembled contact are separate gates.",
+    "steps": [
+      {
+        "title": "Find the ring behind the lip",
+        "text": "The spring belongs with the seal element, not on the crankshaft bore or the outer cover seat. The candidate places it in an estimated groove on the oil side of the flexible element.",
+        "part": "front-seal-elastomer",
+        "source": "front-crank-seal-type76-section"
+      },
+      {
+        "title": "Follow force around the circumference",
+        "text": "Tension around the closed ring produces inward loading on the surrounding lip contact. The model explains this relationship without assigning an unsupported preload or seal pressure.",
+        "part": "front-seal-garter-spring"
+      },
+      {
+        "title": "Keep the hub contact separate",
+        "text": "The flexible lip is the intended hub-contacting element. The candidate spring must fit its own groove without becoming an unintended rubbing ring on the rotating hub.",
+        "part": "damper-hub"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Check model placement before claiming operation",
+        "text": "The spring\u2019s solid, groove relationship and clearance to the hub must all pass. A visible coil or successful file export alone does not prove the seal assembly works. Actual spring condition and service replacement decisions require the applicable service information.",
+        "part": "front-seal-garter-spring"
+      }
+    ],
+    "sources": [
+      "front-crank-seal-type76-section"
+    ]
+  }
+}

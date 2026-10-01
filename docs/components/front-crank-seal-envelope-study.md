@@ -38,3 +38,7 @@ Root inspected the actual cover section with the source-sized probes in `cad/eng
 Quality gates: source identity/cross-reference and dimensions PASS for a replacement comparison; envelope checks PASS; physical CAD, installed fit, motion and browser NOT RUN; learning N/A for this diagnostic. No part was marked Done.
 
 Report SHA-256: `0798390cbb171d169369494581e810af8005b4e14d2a5d17375348f620ab135a`.
+
+## Learning candidate — 2026-10-01
+
+Root prepared `inventory/engine/front-crank-seal-learning-candidate.json` and its companion `front-crank-seal-learning-sources.json` from the reviewed source ledger. They explain stationary case, rotating hub, flexible lip and representative spring, distinguish seal-surface diameter from hub bore, and label leak localization as an inference. Part targets and source IDs were checked against the current manifest and companion registry. These files are NOT loaded into the viewer; register them during the coordinated seal/cover/hub update and run navigation/browser gates then. No geometry or canonical manifest changed.

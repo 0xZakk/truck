@@ -1,0 +1,47 @@
+{
+  "status": "PASS native mesh and rendered exported section; visual review pending",
+  "inputs": {
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.step": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.step": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.step": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.step": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5",
+    "scripts/render-front-seal-2692-candidate.py": "716d504e2ff9305c01963a95d49c197fd306c5a5cf28d7b6541f349e226cf49b"
+  },
+  "meshes": {
+    "cover": {
+      "sha256": "dc9050a9ccdb234829078260ac0a0749d274638dcc8037ad8cd494b6f2cf6754",
+      "watertight": true,
+      "bounds_error_mm": 1.4758064326159115e-05,
+      "triangles": 54960
+    },
+    "damper-hub": {
+      "sha256": "2d8c39f4986cea73e72dc6de9d2ebc5e3fbb373d50335a8f036e9ed472c1a145",
+      "watertight": true,
+      "bounds_error_mm": 0.017095655202865878,
+      "triangles": 3060
+    },
+    "seal-case-installed": {
+      "sha256": "78f0de80a606350a1bfa8d4ca5a57e977dfbe4c3eea859ffab0d45db7b422ff5",
+      "watertight": true,
+      "bounds_error_mm": 0.012474954843522124,
+      "triangles": 2520
+    },
+    "seal-elastomer": {
+      "sha256": "d6f685a71264145253eee353e7b47fdd4775c5e4f8abd43c98064a535806b2d8",
+      "watertight": true,
+      "bounds_error_mm": 0.008577799797061109,
+      "triangles": 33418
+    },
+    "seal-garter-spring": {
+      "sha256": "7f1835557f4dcf2f5eb3d87bc26cbceb28179fdfb20078efbab0a844e9874b43",
+      "watertight": true,
+      "bounds_error_mm": 1.008497013677001e-05,
+      "triangles": 239616
+    }
+  },
+  "render": {
+    "path": "cad/engine/generated/front-seal-2692-candidate/seal-cover-hub-section.png",
+    "sha256": "784c5ac63079b77a160536a17eeb907b1e55d6c1bc9eab2995093d6106be60ec"
+  }
+}

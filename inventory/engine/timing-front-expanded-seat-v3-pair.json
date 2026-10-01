@@ -1,0 +1,54 @@
+{
+  "status": "coherent estimated expanded seat pair",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/timing_pan_expanded_seat_v2_contract.py": "4fa9d104606158710bb221fcfc71ca5dcddb62bf00243338920e92adb8f9839e",
+    "cad/engine/timing_front_block_expanded_seat_v3_candidate.py": "d454aa43964fa4fd74ad6ca033164e8b23cffcbad0ae221eac06db0595d0e4a5",
+    "scripts/check-timing-front-expanded-seat-v3-pair.py": "961b60c23ec1b6bdee9a4fa3f4107425b0917f6e34cae13b7d59ca290b491ace",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d"
+  },
+  "pairs": [
+    {
+      "pair": "block-pan",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "pan-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-male-10",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-male-20",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    }
+  ],
+  "analytic_upper_backing_missing_mm3": 0.0,
+  "analytic_lower_backing_missing_mm3": 0.0,
+  "actual_upper_translation_unbacked_mm3": 0.0,
+  "actual_lower_translation_unbacked_mm3": 0.0,
+  "limits": [
+    "10mm block backing is estimated, no strength/factory claim",
+    "Translation checks include sloped side edges; any nonzero requires localized diagnosis, no automatic threshold relaxation",
+    "Whole oil containment and installed/browser acceptance remain open"
+  ],
+  "gates": {
+    "no_overlap": true,
+    "analytic_seat_support": true,
+    "actual_gasket_support": true
+  },
+  "local_status": "PASS"
+}

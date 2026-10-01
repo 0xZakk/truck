@@ -1,0 +1,52 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-candidate/block.step": "e5a6eb972d5069179468d2f89ff4dbf331b7da9cea98d01ed4c6162cebc06887",
+    "cad/engine/timing_front_block_expanded_seat_candidate.py": "b60dee004edb75e537087987bd9f8b31ded1702eba118ef5350744d0dd2a386d",
+    "cad/engine/timing_pan_expanded_seat_contract.py": "cb566ccb6b3fff9409f142bab5b0523d751bd466324d6f5b29ac7f6766ab4bac",
+    "scripts/diagnose-timing-front-expanded-seat-backing.py": "90af6df2cb4b77a10e2969e13057303a124230a52f2382be282fd226daa5eb81"
+  },
+  "analytic_backing_thickness_mm": 0.02,
+  "missing": [
+    {
+      "index": 0,
+      "volume_mm3": 1.082887849388673,
+      "bounds_mm": [
+        [
+          355.4999998991691,
+          -141.98749227771904,
+          -25.59615394614501
+        ],
+        [
+          365.0000001000031,
+          -122.01250772220001,
+          -24.499999899991895
+        ]
+      ],
+      "inside_socket_guard_mm3": {
+        "20": 1.082887849388673,
+        "10": 0
+      }
+    },
+    {
+      "index": 1,
+      "volume_mm3": 1.0824782336277494,
+      "bounds_mm": [
+        [
+          355.49999989999986,
+          186.01250772228002,
+          -25.59615394614501
+        ],
+        [
+          365.00000010000014,
+          205.987492277719,
+          -24.49999989999235
+        ]
+      ],
+      "inside_socket_guard_mm3": {
+        "20": 0,
+        "10": 1.0824782336277494
+      }
+    }
+  ],
+  "status": "DIAGNOSTIC; no geometry or threshold changes"
+}

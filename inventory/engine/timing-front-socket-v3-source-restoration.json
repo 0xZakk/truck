@@ -1,0 +1,25 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "cad/engine/timing_front_block_expanded_seat_v3_candidate.py": "d454aa43964fa4fd74ad6ca033164e8b23cffcbad0ae221eac06db0595d0e4a5",
+    "scripts/check-timing-front-socket-v3-source-restoration.py": "377b95e981671c3a360b7511f5eeff539b07297e196cf62a74704a23a971ddb1"
+  },
+  "old_intended_void_fill_mm3": 168.46925446194788,
+  "new_intended_void_fill_mm3": 0.0,
+  "source_intended_void_fill_mm3": 0.0,
+  "source_female_missing_mm3": 0,
+  "floor_material_difference_from_source_mm3": 0,
+  "complete_bore_floor_material_difference_from_source_mm3": 0,
+  "unchanged_outside_cavity_and_belowseat_in_socket_neighborhood_mm3": 0,
+  "gates": {
+    "old_union_negative_control": true,
+    "intended_void_restored": true,
+    "female_and_floor_retained": true,
+    "bore_matches_intended_source": true,
+    "bounded_socket_repair": true
+  },
+  "local_status": "PASS"
+}
