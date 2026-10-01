@@ -1,0 +1,359 @@
+{
+  "status": "Known static baseline reconciled; not whole-engine acceptance",
+  "superseded_known_pairs": [
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-rear-cylinder",
+        "overlap_mm3": 3773.224468631977
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -69.24000010003056,
+          9.81896465108457,
+          -179.00000010000002
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-swashplate-shaft",
+        "overlap_mm3": 3200.293502022581
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -74.44000010003055,
+          29.31896465108457,
+          -158.20012257455488
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-piston-5",
+        "overlap_mm3": 312.4320795299648
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -46.155011293925554,
+          26.829873548164528,
+          -138.23362889187
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-shoe-5-rear",
+        "overlap_mm3": 349.30666133068667
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -12.519690411488227,
+          33.62987354816386,
+          -131.13996799149865
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-shoe-5-front",
+        "overlap_mm3": 34.18003502267591
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -1.6444341426135338,
+          33.62987354816386,
+          -131.43362889187304
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "block",
+        "b": "ac-compressor-case-bolt-5",
+        "overlap_mm3": 282.74333882308133
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -82.44000010003055,
+          35.80950774691257,
+          -166.73200276812085
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ps-ac-support-bracket",
+        "overlap_mm3": 575.9514419711361
+      },
+      "v4_evidence": {
+        "kind": "fresh exact pair",
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-front-cylinder",
+        "overlap_mm3": 17596.47419930056
+      },
+      "v4_evidence": {
+        "kind": "fresh exact pair",
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-swashplate-shaft",
+        "overlap_mm3": 1608.3966322038234
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -123.56000000000097,
+          29.31896465108457,
+          -113.3394843488896
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-case-bolt-4",
+        "overlap_mm3": 84.82300164692444
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -97.56000000000097,
+          14.376503170752585,
+          -55.90735920621353
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-piston-5",
+        "overlap_mm3": 3769.6314368560934
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -47.84498880610596,
+          26.829873548164528,
+          -93.37299066620471
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-shoe-5-front",
+        "overlap_mm3": 332.9132415558495
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -14.209667923668235,
+          33.62987354816386,
+          -86.57299066620774
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-piston-5-front-seal",
+        "overlap_mm3": 24.282026829419348
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -33.766211193895,
+          26.729873548164562,
+          -93.47299066620471
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "timing-cover",
+        "b": "ac-compressor-case-bolt-5",
+        "overlap_mm3": 197.92033717615692
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -97.56000000000097,
+          35.80950774691257,
+          -121.87136454245555
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-swashplate-shaft",
+        "b": "timing-cover-mounting-screw-6",
+        "overlap_mm3": 250.30242196508271
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -86.54000000000002,
+          31.2685686347383,
+          12.626187194774076
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-piston-5",
+        "b": "timing-cover-mounting-screw-6",
+        "overlap_mm3": 199.23512410236762
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -55.26998890610537,
+          28.77947753181826,
+          32.59268087745896
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-rear-cylinder",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 173.56832555708357
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -0.4600000000000364,
+          9.81896465108457,
+          -134.13936187433472
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-front-cylinder",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 52.825142560846466
+      },
+      "v4_evidence": {
+        "kind": "fresh exact pair",
+        "overlap_mm3": 0.0
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-case-seal",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 75.4644893726524
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -0.34000000000003183,
+          9.81896465108457,
+          -134.1393618743347
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-swashplate-shaft",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 243.57077812385538
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -75.24000000000001,
+          29.31896465108457,
+          -113.3394843488896
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-shoe-5-front",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 50.50764694618474
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -2.444434042582998,
+          33.62987354816386,
+          -86.57299066620774
+        ]
+      }
+    },
+    {
+      "prior": {
+        "a": "ac-compressor-case-bolt-5",
+        "b": "timing-cover-main-gasket",
+        "overlap_mm3": 22.619467105846823
+      },
+      "v4_evidence": {
+        "kind": "actual posed STEP AABB separation",
+        "axis_gaps_mm": [
+          -83.24000000000001,
+          35.80950774691257,
+          -121.26799733188993
+        ]
+      }
+    }
+  ],
+  "remaining_known_pairs": [
+    {
+      "a": "timing-cover",
+      "b": "water-pump-housing",
+      "overlap_mm3": 2550.3952214270903
+    },
+    {
+      "a": "timing-cover",
+      "b": "water-pump-gasket",
+      "overlap_mm3": 61.13067189528523
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "timing-cover-mounting-screw-3",
+      "overlap_mm3": 19.26567147488726
+    },
+    {
+      "a": "water-pump-gasket",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 40.320315501498264
+    }
+  ],
+  "remaining_count": 4,
+  "input_sha256": {
+    "inventory/engine/corrected-stage-v3-remaining-conflicts.json": "8a0b8a3f5c80ea7f4f8a4b7c54e17d043819f9008b6a668dbb916a67893675f3",
+    "inventory/engine/accessory-stage-v4-solids.json": "ad84a41d2137b22b54ba91ce025b1533a7dcef699bd32c7db4b3fa4bdd9244bb",
+    "inventory/engine/accessory-stage-v4-composition.json": "c36e8383a7ec47c8a85a7b3a63e73e7169381f0b3ae1e8171a43326664232f1a",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "scripts/reconcile-accessory-stage-v4-conflicts.py": "67f5c067227e7f8cad5d70491c6fe4acd48bbc7c07bd26b5ec31aa2b7eeeef37"
+  },
+  "limits": [
+    "Four unchanged baseline pairs are inherited findings, not new Boolean measurements",
+    "Only q0 affected-pair coverage; rod motion and tool-access failures remain",
+    "Source fidelity, complete BOM, belt/hoses and browser acceptance unresolved"
+  ]
+}

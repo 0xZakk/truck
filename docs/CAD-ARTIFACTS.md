@@ -234,3 +234,10 @@ Published after [PR109](https://github.com/0xZakk/truck/pull/109) merged; upload
 The locally verified archive `truck-accessory-layout-studies-20261001.tar.gz` contains96 project-authored artifacts (22,027,686bytes; SHA256 `dd374011c14bec494f0647c3e84b8ff56ff3fd4e337e0f2fc6ad57bf9ac47d7b`). Its exact member/source allowlists and prerequisite chain are in `docs/accessory-layout-checkpoint-draft.json`; reproduction instructions are in `docs/components/accessory-layout-checkpoint-handoff.md`. Publication has not yet been verified; do not assume a release asset exists.
 
 The handoff's historical waterpump-draft statement is superseded by published `studies-2026-10-01-waterpump` (PR109). Restore that supplement and the listed predecessor chain before this package. This preserves constrained-layout hypotheses, ALT/AP trial6 and rejected studies; it does not install or accept them. PS/AC candidate files are excluded.
+
+Publication verified after PR111 merged (`1ba91c4ba3cafddb770270527908c6df28fc0ec5`): [accessory-layout release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-accessory-layout), release ID401248087. Server asset digest and size matched the values above before publication. This supersedes publication-pending statements in the frozen metadata/handoff.
+
+
+## Coordinated accessory v4 — publication pending
+
+`docs/accessory-stage-v4-checkpoint-draft.json` binds46 authored artifacts and55 source/report files. Archive `truck-accessory-stage-v4-20261001.tar.gz`:17,986,617bytes; SHA256 `9671be99527ad49387a09877b824f858277e551deae81e2659a0adc6ebadb943`. Restore published accessory-layout and its predecessor chain first. Follow `docs/components/accessory-stage-v4-checkpoint-handoff.md`; this is a noninstalled candidate, with retained static/motion/service/source limitations. Original source images and manuals are excluded. Publication remains pending until a later verified note.

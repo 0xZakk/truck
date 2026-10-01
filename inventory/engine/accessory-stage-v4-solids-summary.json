@@ -1,0 +1,67 @@
+{
+  "status": "PASS bounded affected-solid q0 only; no installation acceptance",
+  "report": "inventory/engine/accessory-stage-v4-solids.json",
+  "report_sha256": "ad84a41d2137b22b54ba91ce025b1533a7dcef699bd32c7db4b3fa4bdd9244bb",
+  "stage_sha256": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+  "verified_input_bindings": 769,
+  "scope": "q=0 axial=0 compressor=0; 173 moved occurrences plus two replaced carriers versus entire stage; no motion, retention, distance or containment acceptance",
+  "exact_pairs": 971,
+  "already_computed_unchanged_internal_pairs": 705,
+  "fresh_changed_interfaces": 266,
+  "overlaps_above_0_1_mm3": 0,
+  "metric_errors": 0,
+  "maximum_reported_overlap_mm3": 0.0,
+  "broadphase_pair_padding_mm": 2.0,
+  "bounds_separated_affected_pairs": 221804,
+  "unaffected_pairs_out_of_scope": 702705,
+  "control": {
+    "one_mm_cube_overlap_mm3": 0.9999999999999998,
+    "detected": true
+  },
+  "completed_process": {
+    "session_id": 71863,
+    "exit_code": 0,
+    "log": "cad/engine/generated/accessory-stage-v4-solids.log"
+  },
+  "aborted_runs": [
+    {
+      "session_id": 23437,
+      "scope": "interrupted actual-shape loading before pair checks to retain 2mm broadphase padding"
+    },
+    {
+      "session_id": 59690,
+      "scope": "redundant restart stopped during loading after completed first result discovered",
+      "exit_code": 130
+    }
+  ],
+  "preserved_limits": [
+    "PS/AC installed straight tool access: three PS and four AC bolts blocked by pulleys. Conditional pulley removal is not a proven service sequence.",
+    "ALT/AP lower engine bolt tool access fails nominal/low/high new pump hypotheses; current v3 pump approach clears.",
+    "Six inherited rod-bolt/block motion conflicts remain; this scope cannot repair them.",
+    "V3 26 static conflicts are a baseline, not automatically the new count; reclassify all affected pairs and retain unrelated failures.",
+    "Heater route candidate remains rejected and uninstalled.",
+    "PS/AC raw pump distance result is defective; reuse only exact bound partition certificate with unchanged hashes/frames.",
+    "Factory contours, exact carrier dimensions, threaded retention/loads, belt effective radii/stop/preload, connected hoses/wires and browser remain unverified."
+  ],
+  "not_run": [
+    "1mm nonmating carrier reserve recomputation",
+    "named contact/fastener/tool replay",
+    "continuous motion",
+    "belt and hose/wiring connectivity",
+    "factory silhouette and structural validation",
+    "browser integration"
+  ],
+  "input_sha256": {
+    "inventory/engine/accessory-stage-v4-solids.json": "ad84a41d2137b22b54ba91ce025b1533a7dcef699bd32c7db4b3fa4bdd9244bb",
+    "scripts/check-accessory-stage-v4-solids.py": "cae909fbaf45b9df7020f866c6df91d2a64b58b33b38df7446c162ddc6db2b73",
+    "cad/engine/generated/accessory-stage-v4-solids.log": "ca8bda040566b95a39251a03c96edec18b16b4d59cbca43bc96d322044002d0f",
+    "inventory/engine/accessory-stage-v4-solids-fault.json": "1e717d0b273e587f68eef2a3a6493e3d779d03f47c2af057c6c8f997fd8b3d52"
+  },
+  "actual_pipeline_fault_control": {
+    "report": "inventory/engine/accessory-stage-v4-solids-fault.json",
+    "sha256": "1e717d0b273e587f68eef2a3a6493e3d779d03f47c2af057c6c8f997fd8b3d52",
+    "wrong_old_ac_front_cylinder_overlap_mm3": 17596.474199263692,
+    "entered_same_2mm_broadphase": true,
+    "status": "PASS fault detected"
+  }
+}

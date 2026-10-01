@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE actual cylindrical-axis and axial-envelope survey; effective belt pitch/production alignment remain unknown",
+  "rows": [
+    {
+      "occurrence": "ps-pump-pulley",
+      "group": "PS",
+      "coaxial_cylinder_faces": 12,
+      "maximum_coaxial_radius_mm": 65.659,
+      "crest_x_span_mm": [
+        460.06,
+        487.06
+      ],
+      "crest_midplane_X_mm": 473.56,
+      "offset_from_estimated_beltplane_mm": 0.0,
+      "X_envelope_change_mm": 0.0,
+      "expected_axis_yz_mm": [
+        289.50110904394427,
+        346.5637466144325
+      ]
+    },
+    {
+      "occurrence": "ac-compressor-clutch-pulley",
+      "group": "AC",
+      "coaxial_cylinder_faces": 14,
+      "maximum_coaxial_radius_mm": 72.5,
+      "crest_x_span_mm": [
+        461.56,
+        485.56
+      ],
+      "crest_midplane_X_mm": 473.56,
+      "offset_from_estimated_beltplane_mm": 0.0,
+      "X_envelope_change_mm": 0.0,
+      "expected_axis_yz_mm": [
+        337.43537535946626,
+        140.0
+      ]
+    },
+    {
+      "occurrence": "tensioner-pulley-wheel",
+      "group": "TENS",
+      "coaxial_cylinder_faces": 4,
+      "maximum_coaxial_radius_mm": 45.0,
+      "crest_x_span_mm": [
+        454.81,
+        492.31
+      ],
+      "crest_midplane_X_mm": 473.56,
+      "offset_from_estimated_beltplane_mm": 0.0,
+      "X_envelope_change_mm": 0.0,
+      "expected_axis_yz_mm": [
+        129.49818985676524,
+        316.2777466144325
+      ]
+    }
+  ],
+  "inputs": {
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "scripts/accessory-psac-carrier-pulley-datums.py": "8612b93057058dc8f41ada4246673ada9c1466e6757b770a2714b6156f8eecf6",
+    "cad/engine/accessory_psac_carrier_trial1.py": "13b51a64d89d5f03a7fc84b70233a93215beec6b986cf011027c19c10e542aa2",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/generated/ps-pump-pulley.step": "4bfcfc4e8a7125b638f6c9441178617ce7a51ab72df0cd03afbf51f97d0a3ad6",
+    "cad/engine/generated/ac-compressor-clutch-pulley.step": "d1a971d879a3b04d474504d5ac48db920a19198b3365588468b4f6fc0e853ea0",
+    "cad/engine/generated/tensioner-pulley-wheel.step": "46b91d74dd79e9af8cd3f9fb5987fc219721df0ee674118849b20287e2cb1bed"
+  }
+}

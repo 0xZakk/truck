@@ -1,6 +1,6 @@
 # Engine integration — 2026-10-01
 
-**Engine unfinished.** Latest merged checkpoint: [PR110](https://github.com/0xZakk/truck/pull/110), `9cd23763a0d2cb446f9fe7d5646f82d64fd42f3b` (head488c9d76ef2eff541cd8586588720cfc01034ab6; CI15s/15sPASS). Local focused branch is `engine/timing-drive-fit`; root alone owns shared manifests/builders/viewer. Consult `inventory/engine/completion-plan.json` for the full eight-system scope; occurrence counts and candidate checks are not completion percentages.
+**Engine unfinished.** Latest preservation checkpoint is [PR111](https://github.com/0xZakk/truck/pull/111), merge `1ba91c4ba3cafddb770270527908c6df28fc0ec5` (CI29s/20sPASS), published accessory archive ID401248087. Latest installed-content checkpoint: [PR110](https://github.com/0xZakk/truck/pull/110), `9cd23763a0d2cb446f9fe7d5646f82d64fd42f3b` (head488c9d76ef2eff541cd8586588720cfc01034ab6; CI15s/15sPASS). Local focused branch is `engine/timing-drive-fit`; root alone owns shared manifests/builders/viewer. Consult `inventory/engine/completion-plan.json` for the full eight-system scope; occurrence counts and candidate checks are not completion percentages.
 
 ## Installed viewer
 
@@ -40,6 +40,10 @@ Restore artifacts via `docs/CAD-ARTIFACTS.md`, starting with installed neck-core
 
 - PR107 block closures/topology:13files/361,986bytes; SHA `9def0caead5bf2cb64711df05cbfccf47ac909fe78a8cae8dc998c7d9eddb96a`.
 - PR109 water-pump studies:64files/19,508,529bytes; SHA `b13f2bf787e405454b3ab14017e5cb7aa07bb14d15c1ba6eb4c273c08cbe29fc`. Server digest/size verified. Independent audit matches all691 referenced canonical STEP members in checksum-verified neck-core; this closes member provenance, not full rebuild/source-access gaps.
-- Accessory layout/ALT-AP checkpoint is locally verified:96 artifacts/22,027,686bytes, SHA `dd374011c14bec494f0647c3e84b8ff56ff3fd4e337e0f2fc6ad57bf9ac47d7b`; publication pending. Frozen package excludes all PS/AC work. Pose-only serialization passes8,166 occurrence frames over six states with two negative controls; no new manifest is installed.
+- Accessory layout/ALT-AP checkpoint is locally verified:96 artifacts/22,027,686bytes, SHA `dd374011c14bec494f0647c3e84b8ff56ff3fd4e337e0f2fc6ad57bf9ac47d7b`; published as `studies-2026-10-01-accessory-layout`. Frozen package excludes all PS/AC work. Pose-only serialization passes8,166 occurrence frames over six states with two negative controls; no new manifest is installed.
 
 Engine system parent is #1. Affected component issues include timing #32, water pump #47, oil pump #73, wiring #82. CLI issue/PR/release updates work. Project-column writes lack Projects scope (last checked2026-10-01); `project-status-pending.json` holds desired statuses with `applied:false`, not observed board state. Issues47/73/82 updated after PR109. No new component is Done.
+
+Private v4 is now composed locally at SHA `9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9`:17 guarded pose edits and both carrier replacements. Actual exports and8,166 frames pass; candidate navigation1361parts/1561nodes/174lessons/417links passes. Combined solids, interface rebinding and actual render are assigned to three workers; verify their live state before assuming they run. New files remain uncommitted. See `accessory-stage-v4-integration.md`. This does not supersede v3 failures or install factory castings.
+
+V4 scoped checks completed:971 exact affected q0 comparisons (266 changed interfaces/705 unchanged internal), zero overlaps above0.1mm³ and zero reported errors. Actual wrong-AC-pose control detects17,596.474199mm³. Root reconciliation supersedes22 known v3 pairs and retains4 unchanged pump/cover/gasket pairs; motion/tool/source failures remain. Independent interface rebind and actual219-occurrence matched renders completed. Candidate packaging is now assigned; do not restart the finished solid checker.
