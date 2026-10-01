@@ -1,0 +1,156 @@
+{
+  "status": "New primary image evidence supports conditional axial-route candidate; bearing dimensions remain unknown",
+  "baseline": "dbe1e3c435c137fe2d30f6420db28476127c0f55",
+  "sources": [
+    {
+      "id": "gmb-gallery",
+      "url": "https://gmb.net/product/125-1810/",
+      "type": "web",
+      "actually_resolves": "New four-view primary manufacturer specimen. Side view supports shallower route hypothesis; no numerical tube dimensions.",
+      "source_page": "kb/sources/online-heater-gmb-gallery.md",
+      "source_sha256": "5588d1010e534ea97959f97e2dd217cb2fe42241c6385bea6d82118ca9a0866e",
+      "processed": true
+    },
+    {
+      "id": "gmb-bearing",
+      "url": "https://www.gmb.jp/wp/wp-content/uploads/2024/02/news_letter_en_200612.pdf",
+      "type": "pdf",
+      "actually_resolves": "Two generic row architectures. Not a Gates44009/125-1810 bearing identification.",
+      "source_page": "kb/sources/online-heater-gmb-bearing.md",
+      "source_sha256": "f6ecb640a3dd79255261d62fa85f35d6336ede3da64a2c0c8900d9d1e8512b98",
+      "processed": true
+    },
+    {
+      "id": "carter-hub",
+      "url": "https://carterengineered.com/media/pdf/Carter_How_to_Measure_Hub_Height_072420.pdf",
+      "type": "pdf",
+      "actually_resolves": "Primary axial datum definition, not a numerical Ford height.",
+      "source_page": "kb/sources/online-heater-carter-hub.md",
+      "source_sha256": "9c7a42c2f87b3a41925119425d54540ef1ed3f066aef210da66b1a91602d1057",
+      "processed": true
+    },
+    {
+      "id": "gmb-seal",
+      "url": "https://gmb.net/wp-content/uploads/2021/07/GMB_WaterPumpManual_Updated.pdf",
+      "type": "pdf",
+      "actually_resolves": "Primary generic wet chamber/mechanical seal/weep/bearing boundary.",
+      "source_page": "kb/sources/online-heater-gmb-seal.md",
+      "source_sha256": "ad4b669b25ff25b15d3a9d1c7a0d9cf23ecf4c10593d52843e15938520c6920d",
+      "processed": true
+    }
+  ],
+  "manufacturer_images": [
+    {
+      "path": "reference/engine/online-heater-captures/gmb-1251810-front.jpeg",
+      "url": "https://gmb.net/wp-content/uploads/2021/08/c9a9f9d1-d03a-47f2-817f-b81de969c0ea-600x600.jpeg",
+      "sha256": "3dd7983c25540b39ddded8d4fdd85be4aa54fbc2c78bc42739f2874ca53c56f9",
+      "actual_pixels_reviewed": true
+    },
+    {
+      "path": "reference/engine/online-heater-captures/gmb-1251810-view2.jpeg",
+      "url": "https://gmb.net/wp-content/uploads/2021/08/a7c8c710-2d50-46bb-ad18-11de6a7e047e-600x600.jpeg",
+      "sha256": "e54a8a63443156abea80aa52bbef0c7a3f923ef7796600be03bff9f9872f9d62",
+      "actual_pixels_reviewed": true
+    },
+    {
+      "path": "reference/engine/online-heater-captures/gmb-1251810-view3.jpeg",
+      "url": "https://gmb.net/wp-content/uploads/2021/08/c61cbaa4-0e52-4875-a38d-f88784ef3586-600x600.jpeg",
+      "sha256": "0d44273e4028264f1ea719905849b1e24b2d97293738ae3f2d928bccc7e58f3d",
+      "actual_pixels_reviewed": true
+    },
+    {
+      "path": "reference/engine/online-heater-captures/gmb-1251810-view4.jpeg",
+      "url": "https://gmb.net/wp-content/uploads/2021/08/a72f3a0d-614d-458a-8725-b8bd357c9f27-600x600.jpeg",
+      "sha256": "24a145ab412729267e02ff1dedb9819661c59f403f6b106b77cc240d3fa30558",
+      "actual_pixels_reviewed": true
+    }
+  ],
+  "side_view_landmarks_pixels": {
+    "image": "gmb-1251810-view3.jpeg",
+    "rear_mounting_plane_y": 404,
+    "pulley_mating_plane_y": 224,
+    "root": [
+      380,
+      360
+    ],
+    "forward_crest": [
+      418,
+      341
+    ],
+    "terminal": [
+      558,
+      438
+    ]
+  },
+  "landmark_class": "Hand-read approximate uncalibrated projections; radial parallax and camera parameters unknown",
+  "conditional_axial_derivation": {
+    "preserved_root_x_mm": 410,
+    "inherited_reference_span_mm": 143,
+    "nominal_terminal_x_mm": 348.0333333333333,
+    "sensitivity_x_mm": [
+      340.125,
+      355.5978260869565
+    ],
+    "meaning": "Source landmark sensitivity, not a physical confidence bound or production tolerance"
+  },
+  "construction_note": "Initial quintic sweep outer/inner each valid but bore subtraction split material; rejected prototype retained. Two tangent-continuous cubic spans preserve root/end, forward crest X425 and radial endpoints. Intermediate radial interpolation differs from old deep-rear curve and is explicitly estimated. No neighbor geometry informed routing.",
+  "not_adopted": [
+    {
+      "url": "https://www.autopartsprime.com/gmb/engine-coolant-water-pump/mp-1251810",
+      "lead": "3.88in hub height and3.24in pilot; conflicting aluminum/reverse metadata. Secondary source only; no model dimensional claim."
+    },
+    {
+      "url": "https://www.finditparts.com/products/15614489/carter-fuel-pumps-w9046m",
+      "lead": "3.88in and98.43mm dual fields disagree with exact conversion98.552mm; malformed M5/16-24 and standard/metric labels. Corroborating inquiry lead only."
+    },
+    {
+      "url": "https://www.foleyengines.com/tech-tip-221-ford-300-water-pump-identification/",
+      "lead": "Industrial CSG649i pump variants not interchangeable with truck pumps; already ingested, no duplicate page."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0RBrHCktkpI",
+      "lead": "Identifiable The F-Series inline6 replacement video2014-03-30. Description only inspected; no transcript or video frames obtained, no route/torque claim extracted."
+    }
+  ],
+  "retrieval_failures_and_fallbacks": [
+    "Web four GMB image cache misses; sandbox requests DNS failed; authorized escalated requests succeeded. Images inspected locally, no browser used.",
+    "PDF ingestion lacked pypdf: public PDFs retrieved; pdftotext for Carter/manual. GMB bulletin image-only; pdftoppm+tesseract OCR then local ingest successful.",
+    "YouTube ingestion failed missing yt-dlp; no packages installed; web open internal error. Metadata lead retained, no unviewed contents claimed.",
+    "Semantic embedding attempted before note authorship; cached BAAI model unavailable and DNS failed, no embeddings written. Root owns final backlink run; new notes manually cross-linked."
+  ],
+  "files": {
+    "kb/sources/online-heater-gmb-bearing.md": "f6ecb640a3dd79255261d62fa85f35d6336ede3da64a2c0c8900d9d1e8512b98",
+    "kb/sources/online-heater-gmb-seal.md": "ad4b669b25ff25b15d3a9d1c7a0d9cf23ecf4c10593d52843e15938520c6920d",
+    "kb/sources/online-heater-gmb-gallery.md": "5588d1010e534ea97959f97e2dd217cb2fe42241c6385bea6d82118ca9a0866e",
+    "kb/sources/online-heater-carter-hub.md": "9c7a42c2f87b3a41925119425d54540ef1ed3f066aef210da66b1a91602d1057",
+    "kb/notes/online-heater-bearing-alternatives.md": "261a96bb922d3bcf3e6177eaf48ceafcd4f125de3bcb64523fbd31d246944c5e",
+    "kb/notes/online-heater-hub-datum.md": "78827e1e31cd2397f28e51d091be150c4a65caf4523a255170b362a50c34112b",
+    "kb/notes/online-heater-seal-boundary.md": "a7275bbf60bc4d44f690325b52263b3ec58153203f9532bf2d877245e8954aad",
+    "kb/notes/online-heater-gallery-route.md": "1aa041866ee9ae9810af84bea5d99b15ce48a29aab6221c3c45e1164c78ce2f5",
+    "reference/engine/online-heater-captures/online-heater-gmb-waterpump-manual.txt": "99559b9b577000243d8944c1e7d69fdc1094b5ad7f6d98dcbebf4c15303a4f5e",
+    "reference/engine/online-heater-captures/gmb-1251810-view2.jpeg": "e54a8a63443156abea80aa52bbef0c7a3f923ef7796600be03bff9f9872f9d62",
+    "reference/engine/online-heater-captures/gmb-waterpump-manual.pdf": "1a9acd2f01c61f13504ce3e17388da811e62d1adabfd65e50d7d00efe3705a45",
+    "reference/engine/online-heater-captures/gmb-1251810-view3.jpeg": "0d44273e4028264f1ea719905849b1e24b2d97293738ae3f2d928bccc7e58f3d",
+    "reference/engine/online-heater-captures/online-heater-carter-hub-height.txt": "b1a9c2988a00008c664f5dc6e1d255a3644fe48a7aa6611ba129ff1fa45303b9",
+    "reference/engine/online-heater-captures/carter-hub-height.pdf": "6ecfc37924b980b357607532f2fa1dde686d7cf9de7ad83c6173167ec35254ce",
+    "reference/engine/online-heater-captures/gmb-1251810-view4.jpeg": "24a145ab412729267e02ff1dedb9819661c59f403f6b106b77cc240d3fa30558",
+    "reference/engine/online-heater-captures/online-heater-gmb-bearing-bulletin.txt": "892a0cd18fe5f4ed4aebd55cacde8df243ae6c79fc2840c0ee9de93db1e3f539",
+    "reference/engine/online-heater-captures/gmb-bearing-bulletin.pdf": "894deb38bfcd1dede2ebff71e932544c936e673195ccffff877a70a2fb698a36",
+    "reference/engine/online-heater-captures/gmb-1251810-front.jpeg": "3dd7983c25540b39ddded8d4fdd85be4aa54fbc2c78bc42739f2874ca53c56f9",
+    "reference/engine/online-heater-ingest-foley.log": "c688ecc9dca12f108756b64b22c21f2f9a3a5a0660b15d4397ef7dd75f60344c",
+    "reference/engine/online-heater-ingest-hub.log": "f017b078b3fc804589eabcfdb28ca452ccf38c933fa768dcdb04b7d6d4dcc4b6",
+    "reference/engine/online-heater-ingest-bearing.log": "226926509bb5890cd5ec693adc830201342ba5a152d90b2e036becb28a240e0b",
+    "reference/engine/online-heater-ingest-gmb.log": "4e55aafa8b7ac1576bace8832d1ba47fcc8f9de4ffdd00ba4a44aa383a8ca6bf",
+    "reference/engine/online-heater-ingest-manual.log": "86b7f7f098771728f06ca9300da169fe099161147d2eba785083b72732020708"
+  },
+  "redistribution": "Original manufacturer images/PDFs/raw captures are local evidence, not approved redistribution; publish URLs/checksums and authored summaries only.",
+  "radial_projection_gate": {
+    "retained_root_to_tip_yz_mm": 205.9006799405966,
+    "photo_horizontal_px": 178,
+    "inherited_scale_mm_per_pixel": 0.7944444444444444,
+    "same_scale_projected_radial_mm": 141.4111111111111,
+    "required_orthographic_projection_factor": 0.6867928321164792,
+    "status": "UNREGISTERED; no full3D source fidelity claim",
+    "interpretation": "An unknown camera radial azimuth may explain projected shortening, but the four views have not been jointly registered. This finite candidate tests axial interpretation only."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "online-airbox-research-v1",
+  "issue": 32,
+  "baseline": "d4a4ce94089e148e66d4fc27e91b6d056195baf4",
+  "scope": "Public-source observations; no installed geometry claim",
+  "sources": [
+    {
+      "id": "online-airbox-ford-1994-catalog",
+      "url": "https://ford.oempartsonline.com/v-1994-ford-f-150--xl--4-9l-l6-gas/engine--air-intake",
+      "author": "Ford dealer catalog reproduction",
+      "derived_observations": "The selected 1994 F-150 XL 4.9L catalog illustrates a twin-outlet lid, paired ducts, a separate fresh-air inlet and a formed support (item 2). The support has raised walls and mounting tabs; it is not a flat shelf. F4TZ-9600-C is listed for the federal 4.9L configuration. The owner\u2019s emissions calibration remains unknown. No dimensioned support drawing or body mounting coordinates are supplied.",
+      "source_page": "kb/sources/online-airbox-ford-1994-catalog.md"
+    },
+    {
+      "id": "online-airbox-e7te-duct-specimen",
+      "url": "https://www.ebay.com/itm/196038453283",
+      "author": "Heavy Metal Vintage",
+      "derived_observations": "Photos 4, 6 and 12 show two unequal ducts joined by a web, localized corrugations near the large cuffs, long smooth narrow ends, four worm-drive clamps and an external open retainer. Moldings identify E7TE-9R504-AF and individual E7TE-9B659-AF/BF tubes. The seller describes 4.9L use; its broad fitment table is not application proof. A visible tape supports only a coarse projected span: about 22 \u00b1 2 inches for the longer tube and 21 \u00b1 2 inches for the shorter. Perspective, off-plane ruler and free-state flex prevent interpreting these as installed reach or centerline length.",
+      "source_page": "kb/sources/online-airbox-e7te-duct-specimen.md"
+    },
+    {
+      "id": "online-airbox-complete-salvage-assembly",
+      "url": "https://www.ebay.com/itm/257361997805",
+      "author": "waffledeals",
+      "derived_observations": "Photos 1 and 5 show the large duct cuffs on the twin-outlet lid, a separate flattened fresh-air inlet and a formed metal support around the lower box. Two opposing attachment points visibly include rubber-like isolators and cup/washer/bolt stacks. Their detailed construction and dimensions remain unverified. The seller identifies a 1992\u20131996 F-150 4.9L assembly and lists F3TE-9A675-BB and E7TE-9643-CA; these are specimen claims, not proof of the owner\u2019s exact parts. The listing\u2019s generic package/part dimensions are unusable as mounting datums.",
+      "source_page": "kb/sources/online-airbox-complete-salvage-assembly.md"
+    }
+  ],
+  "image_observations": [
+    {
+      "id": "catalog",
+      "url": "https://cdn-illustrations.revolutionparts.io/strapr1/9d929410b9bac5e1721f8adcb726e962/932d97994709cd0f1ccf0effed4d082f.png",
+      "sha256": "ed30118dd38db219fcc373f84758c8743831fba470057435fdd0f81c5bcc80c8",
+      "bytes": 52652,
+      "actual_viewed": true,
+      "redistributed": false
+    },
+    {
+      "id": "duct-photo4",
+      "url": "https://i.ebayimg.com/images/g/ALwAAOSwQCdlMMa1/s-l1600.webp",
+      "sha256": "c5a4426175c7b4333253d312fa2e3ddf949bb73bdbf70c105941d8818d10b22e",
+      "bytes": 251764,
+      "actual_viewed": true,
+      "redistributed": false
+    },
+    {
+      "id": "duct-photo6",
+      "url": "https://i.ebayimg.com/images/g/8~4AAOSwIn1lMMa1/s-l1600.webp",
+      "sha256": "d863123b46e7e70d68f878dcfe11aed3077ae4f10015066611c987a717fb1ee6",
+      "bytes": 253248,
+      "actual_viewed": true,
+      "redistributed": false
+    },
+    {
+      "id": "duct-photo12",
+      "url": "https://i.ebayimg.com/images/g/myYAAOSwGChlMMa2/s-l1600.webp",
+      "sha256": "4007e7b4a0a39d89cf1722b1ee41b5fcf9eb874ce291620839f81e88aed9f42e",
+      "bytes": 245810,
+      "actual_viewed": true,
+      "redistributed": false
+    },
+    {
+      "id": "assembly-photo1",
+      "url": "https://i.ebayimg.com/images/g/0FwAAeSwdW5pkg8h/s-l1600.webp",
+      "sha256": "f3e0c1fd265eae0b0efc8ce0aed16ae81cb1fa20bc02538c09c8c416be66103f",
+      "bytes": 288370,
+      "actual_viewed": true,
+      "redistributed": false
+    },
+    {
+      "id": "assembly-photo5",
+      "url": "https://i.ebayimg.com/images/g/j2UAAeSwNwtpkgz~/s-l1600.webp",
+      "sha256": "72e88635e579bb5e5d227af6e5a2d72533aa17edd744abd2c68b7793e4336667",
+      "bytes": 406792,
+      "actual_viewed": true,
+      "redistributed": false
+    }
+  ],
+  "projected_envelope_only": {
+    "long_mm": 558.8,
+    "short_mm": 533.4,
+    "uncertainty_each_mm": 50.8,
+    "datum": "Image-plane outermost tube extents, not centerline or installed reach",
+    "method": "Photo 4 tape 0 hook approximately pixel330; 10in approximately862; 20in approximately1418. Tube image extents approximately292..1483 and380..1494. Photo12 is an independent coarse perspective comparison.",
+    "limitations": [
+      "Ruler and tube not coplanar",
+      "Free-state flexible geometry",
+      "Perspective and cuff ovality",
+      "No insertion diameter or installed reach measured"
+    ]
+  },
+  "rejected_or_limited_leads": [
+    {
+      "url": "https://www.ebay.com/itm/196039445414",
+      "reason": "Narrow three-aperture brace is not demonstrated to be the broad main support; no OEM identity; do not model it as tray."
+    },
+    {
+      "url": "https://www.fordpartscatalog.com/v-1996-ford-f-350--xl--4-9l-l6-gas/engine--air-intake",
+      "reason": "F6TZ-9647-EA and F3TZ-9A675-B are later/different-vehicle replacement comparison, not exact1994 body datums."
+    },
+    {
+      "url": "https://www.dormanproducts.com/p-7589-41109.aspx",
+      "reason": "Hold-down clamp, not structural bracket."
+    }
+  ],
+  "next_model_contract": {
+    "status": "Root authorized local specimen only",
+    "supported_topology": [
+      "two unequal tubes",
+      "connecting web",
+      "localized corrugations",
+      "four worm-drive clamps",
+      "external open retainer"
+    ],
+    "estimated": [
+      "cuff profiles and diameters",
+      "wall thickness",
+      "free-state bends",
+      "corrugation pitch/depth",
+      "retainer details"
+    ],
+    "unknown": [
+      "vehicle/body frame",
+      "installed reach",
+      "airbox/throttle insertion fit",
+      "precise main-support dimensions",
+      "isolator sleeve construction"
+    ],
+    "prohibited": [
+      "generic shelf substitution",
+      "moving existing throttle or airbox",
+      "world installation from projected tape span"
+    ]
+  },
+  "kb_pipeline": {
+    "capture": "Local ingestion of explicitly authored observation extracts after URL fetch failures",
+    "processed": true,
+    "semantic_backlinks": "Root owns coordinated run; not run by this worker"
+  },
+  "owned_kb_files": [
+    "kb/sources/online-airbox-ford-1994-catalog.md",
+    "kb/sources/online-airbox-e7te-duct-specimen.md",
+    "kb/sources/online-airbox-complete-salvage-assembly.md",
+    "kb/notes/online-airbox-support-is-formed.md",
+    "kb/notes/online-airbox-ducts-have-distinct-branches.md",
+    "kb/notes/online-airbox-box-attachments-need-isolators.md"
+  ]
+}
