@@ -1,0 +1,51 @@
+{
+  "status": "PASS completed scoped evidence binding; UNINSTALLED CANDIDATE",
+  "reports": {
+    "inventory/engine/timing-rocker-crest-candidate-validation.json": {
+      "sha256": "2af88478b726972511cf64a112b8b5f174560a2f1b1eb88c5076c4dadf8b4eca",
+      "status": "PASS scoped crest CAD/backing and48 actual exported rest/peak poses; broader sweep NOT RUN"
+    },
+    "inventory/engine/timing-rocker-crest-neighbors-validation.json": {
+      "sha256": "2cbe95d982c3de905d19f5fbc7cb74563b949acedc673d44f9f50fbd5d0eb614",
+      "status": "PASS bounded neighbor scope"
+    },
+    "inventory/engine/timing-rocker-crest-render-validation.json": {
+      "sha256": "75c1134cc91bad35ffa0441d4645a7901d57e48ffa1be34c96fb436c2a8178f3",
+      "status": "RENDERED candidate clearance; not a source comparison"
+    },
+    "inventory/engine/timing-rocker-crest-springs-validation.json": {
+      "sha256": "c7eab131afd3aaa50d5dcb344a679f94b1f18a0b1977af57dee61b18ed79d5ed",
+      "status": "PASS sampled actual spring seat/retainer contact and continuous ideal-helix coil bound"
+    }
+  },
+  "transitive_local_cad_source_sha256": {
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_rocker_crest_candidate.py": "a1fd22e271607b0a309ddb3d2190edb0f004ee3865ded7f98ea88a1da7cf8835"
+  },
+  "artifact_sha256": {
+    "cad/engine/generated/timing-rocker-crest-candidate/intake-spring-peak.step": "6d1172d11c2cdc81f7a91b1d958c486a2b4642b281a5d5986e182d538c543073",
+    "cad/engine/generated/timing-rocker-crest-candidate/exhaust-spring-peak.step": "bd579fee5ca05714ef9d18e6795499624fee1f8cbbcfebf1d31d3497c200b269",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.step": "f5ac82eed1abd73a88cbff7bd5de270050b51e8013ee2565a14e36ac9cee2588",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.glb": "3c276505df453d1b6d5ff5685d82c13d3f3e0de4ff156c2fe8923a7f16070d89",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-crest-cover-comparison.png": "2233c0d8531c1578c622537ff0e4ae3fcbe5c2e34a8cc866ba083d9a797a8021"
+  },
+  "checker_sha256": "7247ca1da5129ef57525ef485ff8e9a0fd82ad6d9c2cad080de18c4d02048f53",
+  "source_review_sha256": "ca971dce46e8f02005bc27c6d06726eaec496cb475693e567eb098f4a5bc1726",
+  "remaining": [
+    "120 target-branch poses and60 spring seat levels pass; continuous full-neighbor motion and staged disassembly NOT RUN.",
+    "6mm rocker crest is an estimated solid-profile hypothesis; production shape, structural capacity and true thread engagement unresolved.",
+    "Cover and all previous inclined candidate parts remain frozen; only rocker crest changed.",
+    "Browser acceptance NOT RUN; no installation or Done claim."
+  ]
+}

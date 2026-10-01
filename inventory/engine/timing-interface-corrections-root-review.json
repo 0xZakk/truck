@@ -1,0 +1,51 @@
+{
+  "reviewer": "root integration agent",
+  "baseline": "70542fad9de467a5c03ad54a6f54def8550956eb",
+  "verdict": "Accept bounded candidate evidence for coordinated integration checks; NOT installed acceptance",
+  "reports": {
+    "inventory/engine/timing-rocker-crest-delivery-validation.json": "e63652c40451307965e99c043f296307a59c188be56c2abb860f2bc48b8f5fb4",
+    "inventory/engine/timing-pan-dry-neck-candidate-validation.json": "d8bd646cac015000e52f18d0d7fec866a98b5ed495508e3661fdac58592e0b44",
+    "inventory/engine/timing-front-block-dry-neck-pair.json": "85c5c314865cd3ac23b0e4148cc5855422cdd9c4e66c2d07a42c2c65a0abaa73"
+  },
+  "verified_input_hash_count": 46,
+  "visuals_reviewed": [
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-crest-cover-comparison.png",
+    "cad/engine/generated/timing-pan-dry-neck-candidate/review.png",
+    "cad/engine/generated/timing-pan-dry-neck-candidate/shaded-glb-review.png"
+  ],
+  "findings": [
+    "Rocker estimated crest-only removal preserves contact neighborhoods and socket backing; source/forming accuracy remains unresolved.",
+    "48 actual rest/peak placements and120 target-branch neighbor poses pass; sampling is not continuous whole-motion proof.",
+    "Isolated spring guard extension changes only nominal domain constant; geometry law unchanged and60 sampled seat/retainer contacts checked. Ideal helix coil gap bound excludes manufacturing variation.",
+    "Dry-neck analytic4mm normal-offset walls preserve flange and rear. Sourced nominal socket envelope clears all5 relocated stations. Actual sections and positive-radius controlled paths support bounded wet/dry separation.",
+    "Wholepan mesh panel too flat; requested separate shaded view before full visual acceptance.",
+    "Supplemental shaded pan GLB overview inspected; front transition has unsupported upright material and combined block/pan collision1252.7685mm3 remains. Revision requires common seat boundary; no installed acceptance.",
+    "Independent GLB check: composedblock, dryneckpan and crestrocker are watertight with consistent winding and positive mesh volume. No mesh repair performed."
+  ],
+  "remaining": [
+    "Whole oil containment unverified",
+    "Coordinated frontblock/pan fit in progress",
+    "Factory contours/dimensions unknown",
+    "Browser NOT RUN",
+    "No canonical changes/Done claims"
+  ],
+  "front_block_review": {
+    "bindings_verified": 119,
+    "reports": {
+      "inventory/engine/timing-front-block-adapter-validation.json": "1d7696731ee3b528e7d67f2772af0410f020e2b2e5bfe1719135e4bb1e1b3b29",
+      "inventory/engine/timing-front-block-material-bounds-diagnosis.json": "0924602148755b748d1def1f9e8add95168519b95d97c8fa57118e5ded43b4e4",
+      "inventory/engine/timing-front-block-physical-guard-diagnosis.json": "32e154e7390d966d7aeb9e8c95c250c7c195420cab2ab137d95c9c222f8eec00",
+      "inventory/engine/timing-front-block-pan-contact-diagnosis.json": "cb787171b45b53519d0565a873cdf8ae57a0b312039d3b176baebaa5e6bf8f95",
+      "inventory/engine/timing-front-block-dry-neck-pair.json": "85c5c314865cd3ac23b0e4148cc5855422cdd9c4e66c2d07a42c2c65a0abaa73"
+    },
+    "verdict": "Scoped valid candidate; reject installation pending shared pan-seat revision",
+    "findings": [
+      "Exact native/STEP and direct watertight mesh reports preserved. Actual exported overview inspected.",
+      "Original compound-mask difference is not accepted as zero: supplemental sequential and fused SAME-operand checks independently return zero. No expanded mask or relaxed threshold.",
+      "Broad pump/accessory additions remain recorded; physical bore/seat/backing checks distinguish real preserved interfaces from oversized guards. No strength or factory acceptance.",
+      "Both actual pan overlaps remain failures, including revised dryneck1252.76851294mm3. Shared seat contract must resolve unsupported material."
+    ],
+    "visual": "cad/engine/generated/timing-front-block-adapter-candidate/block-glb-review.png",
+    "next": "Pan worker owns common analytic transition API; block worker derives new candidate against it; root checks combined result."
+  }
+}

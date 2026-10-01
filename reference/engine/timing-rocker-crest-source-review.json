@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE-INFORMED HYPOTHESIS; numerical crest/cover dimensions remain unknown",
+  "reviewed": "2026-10-01",
+  "local_input_sha256": {
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_cover.py": "3300155057bb6dfd1cc5190a7850b2e9add4bd0a9cb3d5f576f32cfb343b845d",
+    "reference/engine/oil-fill-neck-review.json": "4a93e1f740bc0854da26d2283c6535f3fd3ea599eceb9201d332135c62b963ec",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/289449564.png": "e8d649d620ad2f789983e1ba37a36ec0a62a90917803d10ceb59bd2e23c9b1d0"
+  },
+  "visual_observation": "Actual exact-model Fig24 shows a formed open trough with separate fulcrum/guide/bolt, no scale or thickness dimensions. Restricted original is not redistributed.",
+  "public_primary_sources": [
+    {
+      "url": "https://enginequest.com/product/ford-valve-cover-4-9-300-87-to-98-new/",
+      "facts": "EQ-VC300N lists1987\u20131998 Ford4.9L/tall filler neck and C5AZ6582K,F1TZ6582C interchange. No internal roof measurement.",
+      "capture_hash": "Unavailable; web tool page read."
+    },
+    {
+      "url": "https://melling.com/aftermarket/valve-train/",
+      "facts": "General overview distinguishes stamped and cast rocker construction, not applicable thickness or identity.",
+      "capture_hash": "Unavailable; web tool page read."
+    }
+  ],
+  "causal_conclusion": "No evidence singles out a wrong production datum. Current cover roof and rocker upper material are both model estimates. Select only bounded estimated crest material change to preserve all established datums/interfaces; no factory-strength claim.",
+  "selected_parameter": {
+    "old_estimated_end_profile_thickness_mm": 8,
+    "new_estimated_end_profile_thickness_mm": 6,
+    "reduction_mm": 2,
+    "class": "inferred candidate clearance adjustment"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "status": "PASS scoped crest CAD/backing and48 actual exported rest/peak poses; broader sweep NOT RUN",
+  "inputs": {
+    "scripts/check-timing-rocker-crest-candidate.py": "4b7bef75710de6746ceda8ff322b0f825a3376dae7a3d7c429ce4366d4614add",
+    "cad/engine/timing_rocker_crest_candidate.py": "a1fd22e271607b0a309ddb3d2190edb0f004ee3865ded7f98ea88a1da7cf8835",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/rocker-arm.step": "106b9c1a95c90898aa4218466d56b1b68c5a35b3b3799e16f3c5cb0a60d15b89",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "reference/engine/oil-fill-neck-review.json": "4a93e1f740bc0854da26d2283c6535f3fd3ea599eceb9201d332135c62b963ec",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "cad/engine/generated/pushrod.step": "891297a50d190ba5beeadab87d0967d6688d45b7422a55e208d16ee1fa6baed7",
+    "cad/engine/generated/intake-valve.step": "7a680b8271f4ec7814b92b6ba6611cb81ad815910e8914d627482dbdd326777b",
+    "cad/engine/generated/exhaust-valve.step": "24420aceb80cd1bf946cc66171fea31ed175da0c96bf31cdb2646fab65c9a33d",
+    "cad/engine/generated/rocker-fulcrum.step": "18aa660c029bf0ee4b3aca65e388b7a4e6e18725f431e3ea6398b93df65645c0"
+  },
+  "poses": [
+    {
+      "id": "c1-intake",
+      "theta": 318,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754235,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "theta": 318,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754235,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c1-intake",
+      "theta": 468,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962399,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.4116620165382783e-13,
+        "fulcrum": 0.0,
+        "valve": 8.32754862412201e-11
+      }
+    },
+    {
+      "id": "c1-intake",
+      "theta": 468,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.42300357997102,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.7288250917028504e-13,
+        "fulcrum": 0.0,
+        "valve": 4.96174630644473e-11
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "theta": 96,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 6.033305994732613,
+      "contacts_mm": {
+        "pushrod": 2.2737367544323206e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "theta": 96,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 6.033305994732613,
+      "contacts_mm": {
+        "pushrod": 2.2737367544323206e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "theta": 246,
+      "axial": 0,
+      "old_overlap_mm3": 95.41842698971183,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.5579538487363607e-13,
+        "fulcrum": 0.0,
+        "valve": 1.075282067840269e-10
+      }
+    },
+    {
+      "id": "c1-exhaust",
+      "theta": 246,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092009,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 1.4310041314758063e-09
+      }
+    },
+    {
+      "id": "c2-intake",
+      "theta": 78,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "theta": 78,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c2-intake",
+      "theta": 228,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962397,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 1.9742159234989527e-10
+      }
+    },
+    {
+      "id": "c2-intake",
+      "theta": 228,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.42300357997104,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.8198773652309366e-13,
+        "fulcrum": 0.0,
+        "valve": 6.572113385043384e-11
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "theta": 576,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791591,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "theta": 576,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791591,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "theta": 6,
+      "axial": 0,
+      "old_overlap_mm3": 95.4184269897118,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 5.7645991051502205e-11
+      }
+    },
+    {
+      "id": "c2-exhaust",
+      "theta": 6,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092009,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.360884497795176e-13,
+        "fulcrum": 0.0,
+        "valve": 1.3752969919976805e-10
+      }
+    },
+    {
+      "id": "c3-intake",
+      "theta": 558,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "theta": 558,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c3-intake",
+      "theta": 708,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962406,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.399068395126013e-13,
+        "fulcrum": 0.0,
+        "valve": 6.074151201486173e-11
+      }
+    },
+    {
+      "id": "c3-intake",
+      "theta": 708,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.4230035799711,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.7989505211591227e-13,
+        "fulcrum": 0.0,
+        "valve": 4.619758421158001e-10
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "theta": 336,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "theta": 336,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "theta": 486,
+      "axial": 0,
+      "old_overlap_mm3": 95.41842698971189,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 7.27162687403432e-11
+      }
+    },
+    {
+      "id": "c3-exhaust",
+      "theta": 486,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092016,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.360884497795176e-13,
+        "fulcrum": 0.0,
+        "valve": 7.203474065478782e-10
+      }
+    },
+    {
+      "id": "c4-intake",
+      "theta": 198,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "theta": 198,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754233,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c4-intake",
+      "theta": 348,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962397,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 1.1240651640877903e-10
+      }
+    },
+    {
+      "id": "c4-intake",
+      "theta": 348,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.42300357997102,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.8198773652309366e-13,
+        "fulcrum": 0.0,
+        "valve": 8.030350868830602e-10
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "theta": 696,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2872965534503283e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "theta": 696,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2872965534503283e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "theta": 126,
+      "axial": 0,
+      "old_overlap_mm3": 95.41842698971182,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.4001203874568283e-13,
+        "fulcrum": 0.0,
+        "valve": 6.691652442486715e-11
+      }
+    },
+    {
+      "id": "c4-exhaust",
+      "theta": 126,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092009,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.360884497795176e-13,
+        "fulcrum": 0.0,
+        "valve": 8.172264470616073e-11
+      }
+    },
+    {
+      "id": "c5-intake",
+      "theta": 438,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754235,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "theta": 438,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227960414754235,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c5-intake",
+      "theta": 588,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962397,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 1.9742159234989527e-10
+      }
+    },
+    {
+      "id": "c5-intake",
+      "theta": 588,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.42300357997104,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.8198773652309366e-13,
+        "fulcrum": 0.0,
+        "valve": 6.572113385043384e-11
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "theta": 216,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791591,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "theta": 216,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791591,
+      "contacts_mm": {
+        "pushrod": 2.2914314707516465e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "theta": 366,
+      "axial": 0,
+      "old_overlap_mm3": 95.4184269897118,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 5.7645991051502205e-11
+      }
+    },
+    {
+      "id": "c5-exhaust",
+      "theta": 366,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092009,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.360884497795176e-13,
+        "fulcrum": 0.0,
+        "valve": 1.3752969919976805e-10
+      }
+    },
+    {
+      "id": "c6-intake",
+      "theta": 678,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 6.033588634580452,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "theta": 678,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 6.033588634580452,
+      "contacts_mm": {
+        "pushrod": 2.3437142008433856e-13,
+        "fulcrum": 0.0,
+        "valve": 0.0
+      }
+    },
+    {
+      "id": "c6-intake",
+      "theta": 108,
+      "axial": 0,
+      "old_overlap_mm3": 95.42333855962397,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6434265619838584,
+      "contacts_mm": {
+        "pushrod": 2.4116620165382783e-13,
+        "fulcrum": 0.0,
+        "valve": 8.32754862412201e-11
+      }
+    },
+    {
+      "id": "c6-intake",
+      "theta": 108,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.42300357997102,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.643429156379284,
+      "contacts_mm": {
+        "pushrod": 1.7288250917028504e-13,
+        "fulcrum": 0.0,
+        "valve": 4.96174630644473e-11
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "theta": 456,
+      "axial": 0,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2737367544323206e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "theta": 456,
+      "axial": -0.1,
+      "old_overlap_mm3": 0.0,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 7.227125088791607,
+      "contacts_mm": {
+        "pushrod": 2.2737367544323206e-13,
+        "fulcrum": 0.0,
+        "valve": 3.7227192706268397e-07
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "theta": 606,
+      "axial": 0,
+      "old_overlap_mm3": 95.41842698971183,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445417691679154,
+      "contacts_mm": {
+        "pushrod": 2.5579538487363607e-13,
+        "fulcrum": 0.0,
+        "valve": 1.075282067840269e-10
+      }
+    },
+    {
+      "id": "c6-exhaust",
+      "theta": 606,
+      "axial": -0.1,
+      "old_overlap_mm3": 95.41809177092009,
+      "new_overlap_mm3": 0.0,
+      "cover_distance_mm": 0.6445443637103381,
+      "contacts_mm": {
+        "pushrod": 2.382173337059642e-13,
+        "fulcrum": 0.0,
+        "valve": 1.4310041314758063e-09
+      }
+    }
+  ],
+  "failures": [],
+  "changes": {
+    "removed_mm3": 698.7894746754921,
+    "added_mm3": 0.0,
+    "removed_outside_mask_mm3": 0.0
+  },
+  "protected_difference_mm3": {
+    "fulcrum": 0.0,
+    "socket": 0.0,
+    "pad": 0.0
+  },
+  "socket_backing": {
+    "axial_sphere_top_to_crest_mm": 4.5376,
+    "R2_height4_cap_volume_mm3": 50.26548245743669,
+    "missing_cap_mm3": 0.0
+  },
+  "export": {
+    "step_sha256": "f5ac82eed1abd73a88cbff7bd5de270050b51e8013ee2565a14e36ac9cee2588",
+    "roundtrip_volume_error_mm3": 3.54702933691442e-10
+  },
+  "limits": [
+    "2mm reduction and6mm profile remain estimates, not production dimensions or strength validation.",
+    "Entire cover and frozen kinematics unchanged.",
+    "Source morphology remains a simplified solid profile, not a faithful stamped trough.",
+    "No full-curve sidewall/spring/disassembly/browser acceptance."
+  ]
+}

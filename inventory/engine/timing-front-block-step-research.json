@@ -1,0 +1,1137 @@
+{
+  "status": "RESEARCH ONLY; no candidate cut",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "cad/engine/timing_block_support_machining_candidate.py": "f51a87e0da229f4a13e521e9695313363748cf631b08c92c10e3c19360db3c11",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "scripts/research-timing-front-block-contract.py": "2fd61f7f0c9aac3e2bc9630d0fe9987627234f90608c0c83a5033e4957ddf168",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "inventory/engine/timing-front-block-contract-research.json": "f0f887ebf964225020070791ccaa2ade32708e5cc2001d31d064c9f25fd02773",
+    "scripts/research-timing-front-block-step.py": "2b1c2d17927297bc98721993bf4b7a85038b3d6d1acca74de5b653ba1193b6bf",
+    "cad/engine/timing_front_block_contract.py": "4832715f3e54996bec3c56b258fc16a32e88e4de57ddb85e338e901a0a3497ed"
+  },
+  "boundary_mm": {
+    "main": 373,
+    "lower": 365,
+    "lower_step_top_z": -14.5
+  },
+  "regions": [
+    {
+      "region": "main-plane-only",
+      "material_mm3": 14461.051280827915,
+      "bounds_mm": [
+        [
+          372.99999999999574,
+          -94.79795897113276,
+          -59.40000000000001
+        ],
+        [
+          381.0,
+          94.79795897113358,
+          -14.6
+        ]
+      ],
+      "cover_overlap_contained_mm3": 9479.903079236843,
+      "material_outside_retired_pan_additions_mm3": 0,
+      "guards": [
+        {
+          "name": "main-journal-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front-90-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-90",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--125-140",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "water-pump-front-interface",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-8",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-9",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-10",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-11",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-12",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-13",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-14",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-15",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-16",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-17",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-18",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-19",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-20",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-21",
+          "removed_mm3": 1072.8059123582284,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-22",
+          "removed_mm3": 1072.805912358204,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-23",
+          "removed_mm3": 682.3848642603394,
+          "unchanged": false
+        },
+        {
+          "name": "active-pan-boss-24",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-25",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-chamber-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-fifth-passage-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "future-block-land",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-gasket",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pan-gasket",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "front-terminal-sealant",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-seat-backing",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "region": "source-upper-band-supplement",
+      "material_mm3": 17454.244870224615,
+      "bounds_mm": [
+        [
+          364.99999999999994,
+          -131.6491106406735,
+          -59.4
+        ],
+        [
+          373.0,
+          107.6491106406736,
+          -14.499999999999973
+        ]
+      ],
+      "cover_overlap_contained_mm3": 15385.181850196635,
+      "material_outside_retired_pan_additions_mm3": 15130.628619833731,
+      "guards": [
+        {
+          "name": "main-journal-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front-90-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-90",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--125-140",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "water-pump-front-interface",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-8",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-9",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-10",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-11",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-12",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-13",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-14",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-15",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-16",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-17",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-18",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-19",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-20",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-21",
+          "removed_mm3": 1161.808125221592,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-22",
+          "removed_mm3": 1161.8081252216016,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-23",
+          "removed_mm3": 567.1670791936914,
+          "unchanged": false
+        },
+        {
+          "name": "active-pan-boss-24",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-25",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-chamber-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-fifth-passage-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "future-block-land",
+          "removed_mm3": 1994.7957136912905,
+          "unchanged": false
+        },
+        {
+          "name": "main-gasket",
+          "removed_mm3": 0.0,
+          "unchanged": true
+        },
+        {
+          "name": "pan-gasket",
+          "removed_mm3": 0.0,
+          "unchanged": true
+        },
+        {
+          "name": "front-terminal-sealant",
+          "removed_mm3": 11.504823320470926,
+          "unchanged": false
+        },
+        {
+          "name": "cam-thrust-seat-backing",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "region": "stepped-lower-region",
+      "material_mm3": 30026.646466108865,
+      "bounds_mm": [
+        [
+          364.99999999999994,
+          -131.64911064067354,
+          -59.4
+        ],
+        [
+          373.0,
+          107.6491106406736,
+          -14.499999999999417
+        ]
+      ],
+      "cover_overlap_contained_mm3": 15385.181850197263,
+      "material_outside_retired_pan_additions_mm3": 27703.030215914823,
+      "guards": [
+        {
+          "name": "main-journal-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-1-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-2-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-3-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-4-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-5-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-6-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-journal-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7--56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "main-cap-socket-7-56",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front-90-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-220",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--100-90",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "accessory-front--125-140",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "water-pump-front-interface",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-bearing-backing-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-5",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-6",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-7",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-8",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-9",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-10",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-11",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-12",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-13",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-14",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-15",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-16",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-17",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-18",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-19",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-20",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "retired-pan-boss-21",
+          "removed_mm3": 1161.8081252215925,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-22",
+          "removed_mm3": 1161.8081252215916,
+          "unchanged": false
+        },
+        {
+          "name": "retired-pan-boss-23",
+          "removed_mm3": 1058.6794536095608,
+          "unchanged": false
+        },
+        {
+          "name": "active-pan-boss-24",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "active-pan-boss-25",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-3",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-entire-mount-4",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-chamber-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "pump-fifth-passage-wall-guard",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "future-block-land",
+          "removed_mm3": 1994.7957146542385,
+          "unchanged": false
+        },
+        {
+          "name": "main-gasket",
+          "removed_mm3": 0.0,
+          "unchanged": true
+        },
+        {
+          "name": "pan-gasket",
+          "removed_mm3": 0.0,
+          "unchanged": true
+        },
+        {
+          "name": "front-terminal-sealant",
+          "removed_mm3": 11.504823320470926,
+          "unchanged": false
+        },
+        {
+          "name": "cam-thrust-seat-backing",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-1",
+          "removed_mm3": 0,
+          "unchanged": true
+        },
+        {
+          "name": "cam-thrust-socket-wall-2",
+          "removed_mm3": 0,
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "combinations": {
+    "main-plus-upper-band": {
+      "remaining_cover_overlap_mm3": 0,
+      "bounds_mm": null
+    },
+    "main-plus-lower-step": {
+      "remaining_cover_overlap_mm3": 0,
+      "bounds_mm": null
+    }
+  },
+  "limits": [
+    "Functional source-boundary masks, not neighboring part subtraction",
+    "Cam-thrust backing/socket probes added before any construction",
+    "Retiredpan material provenance is additive-source envelope only; outside volume identifies original lowerfrontweb needing explicit adaptation",
+    "No activepart changed; no production or installed acceptance"
+  ]
+}

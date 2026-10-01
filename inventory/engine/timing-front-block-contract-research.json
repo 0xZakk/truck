@@ -1,0 +1,854 @@
+{
+  "status": "RESEARCH ONLY; candidate NOT BUILT",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "cad/engine/timing_block_support_machining_candidate.py": "f51a87e0da229f4a13e521e9695313363748cf631b08c92c10e3c19360db3c11",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "scripts/research-timing-front-block-contract.py": "2fd61f7f0c9aac3e2bc9630d0fe9987627234f90608c0c83a5033e4957ddf168",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4"
+  },
+  "overlap_mm3": 24865.084929435154,
+  "overlap_bounds_mm": [
+    [
+      364.9999999999999,
+      -103.71214694013634,
+      -59.4
+    ],
+    [
+      381.0,
+      107.64911064067388,
+      -14.499999999871923
+    ]
+  ],
+  "axial_overlap_bands": [
+    {
+      "x_mm": [
+        -500,
+        363
+      ],
+      "overlap_mm3": 0,
+      "bounds_mm": null
+    },
+    {
+      "x_mm": [
+        363,
+        365
+      ],
+      "overlap_mm3": 0,
+      "bounds_mm": null
+    },
+    {
+      "x_mm": [
+        365,
+        373
+      ],
+      "overlap_mm3": 15385.181850197276,
+      "bounds_mm": [
+        [
+          364.9999999999999,
+          -103.71214694013634,
+          -59.4
+        ],
+        [
+          373.0,
+          107.64911064067388,
+          -14.499999999871923
+        ]
+      ]
+    },
+    {
+      "x_mm": [
+        373,
+        373.8
+      ],
+      "overlap_mm3": 908.1695452932072,
+      "bounds_mm": [
+        [
+          372.99999999999574,
+          -94.79795897113276,
+          -59.31879214744624
+        ],
+        [
+          373.8,
+          94.79795897113358,
+          -14.6
+        ]
+      ]
+    },
+    {
+      "x_mm": [
+        373.8,
+        378.009375
+      ],
+      "overlap_mm3": 5184.023178642348,
+      "bounds_mm": [
+        [
+          373.80000000000007,
+          -94.59999999999998,
+          -59.4
+        ],
+        [
+          378.0093750000001,
+          94.59999999999998,
+          -14.6
+        ]
+      ]
+    },
+    {
+      "x_mm": [
+        378.009375,
+        381
+      ],
+      "overlap_mm3": 3387.7103553011443,
+      "bounds_mm": [
+        [
+          378.009375,
+          -92.1322270091028,
+          -59.4
+        ],
+        [
+          381.0,
+          92.13222700910279,
+          -14.6
+        ]
+      ]
+    },
+    {
+      "x_mm": [
+        381,
+        420
+      ],
+      "overlap_mm3": 0,
+      "bounds_mm": null
+    }
+  ],
+  "source_analytic_region": {
+    "seat_x_mm": 373,
+    "front_limit_mm": 420,
+    "source": "timing_cover_front_joint_candidate source-outline outer profile and analytic lower-seat band",
+    "estimate": true
+  },
+  "proposed_material_volume_mm3": 14461.051280827915,
+  "proposed_material_bounds_mm": [
+    [
+      372.99999999999574,
+      -94.79795897113276,
+      -59.40000000000001
+    ],
+    [
+      381.0,
+      94.79795897113358,
+      -14.6
+    ]
+  ],
+  "overlap_remaining_outside_proposal_mm3": 15385.181850197781,
+  "remaining_overlap_bounds_mm": [
+    [
+      364.9999999999999,
+      -103.71214694013634,
+      -59.4
+    ],
+    [
+      373.0,
+      107.64911064067388,
+      -14.499999999871923
+    ]
+  ],
+  "guards": [
+    {
+      "name": "main-journal-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 14.83505387008741,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 30.40481340870265,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 30.404813408706033,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 127.9964628547539,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 138.5843060626427,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 138.5843060626436,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-3",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 241.75059195652116,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 251.64162036642273,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 251.64162036642324,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-4",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 355.5289600684147,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 365.1478214501024,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 365.14782145010287,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-5",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 469.31393833054693,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 478.7879278553165,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 478.7879278553168,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-6",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 583.1016570919074,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 592.4857165683339,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 592.4857165683342,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-journal-7",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 696.8907739548059,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7--56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 706.2135791342828,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7-56",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 706.213579134283,
+      "protected_unchanged": true
+    },
+    {
+      "name": "accessory-front-90-220",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 221.6,
+      "protected_unchanged": true
+    },
+    {
+      "name": "accessory-front--100-220",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 221.65766816975326,
+      "protected_unchanged": true
+    },
+    {
+      "name": "accessory-front--100-90",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 91.72927590156463,
+      "protected_unchanged": true
+    },
+    {
+      "name": "accessory-front--125-140",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 144.5224532640015,
+      "protected_unchanged": true
+    },
+    {
+      "name": "water-pump-front-interface",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 104.58791192757862,
+      "protected_unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 698.7154378219503,
+      "protected_unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 475.99502418693396,
+      "protected_unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-3",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 259.4055956426535,
+      "protected_unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-4",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 61.55902087200419,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 707.3313941220085,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 630.9264768646328,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-3",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 554.5322618522672,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-4",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 478.1537736930876,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-5",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 401.7997632860018,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-6",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 325.4869438396248,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-7",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 249.2516925771855,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-8",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 173.1908755758839,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-9",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 97.67478747237875,
+      "protected_unchanged": true
+    },
+    {
+      "name": "retired-pan-boss-10",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 26.281248504212176,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-11",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 710.9133567323121,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-12",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 634.5777486226765,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-13",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 558.2715572657697,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-14",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 482.0085536597839,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-15",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 405.81267401091105,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-16",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 329.72948826689225,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-17",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 253.85762186634892,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-18",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 178.45661399877483,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-19",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 104.4859571374508,
+      "protected_unchanged": true
+    },
+    {
+      "name": "retired-pan-boss-20",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 39.38521073204247,
+      "protected_unchanged": true
+    },
+    {
+      "name": "retired-pan-boss-21",
+      "proposed_material_in_guard_mm3": 1072.8059123582284,
+      "proposed_intersection_bounds_mm": [
+        [
+          372.99999999999574,
+          -94.79795897113276,
+          -24.5
+        ],
+        [
+          381.0,
+          -75.20204102886,
+          -14.6
+        ]
+      ],
+      "existing_block_cover_overlap_in_guard_mm3": 2234.6140375798504,
+      "minimum_proposed_distance_mm": 0.0,
+      "protected_unchanged": false
+    },
+    {
+      "name": "retired-pan-boss-22",
+      "proposed_material_in_guard_mm3": 1072.805912358204,
+      "proposed_intersection_bounds_mm": [
+        [
+          372.99999999999574,
+          75.202041028867,
+          -24.5
+        ],
+        [
+          381.0,
+          94.79795897113358,
+          -14.6
+        ]
+      ],
+      "existing_block_cover_overlap_in_guard_mm3": 2234.6140375798086,
+      "minimum_proposed_distance_mm": 0.0,
+      "protected_unchanged": false
+    },
+    {
+      "name": "retired-pan-boss-23",
+      "proposed_material_in_guard_mm3": 682.3848642603394,
+      "proposed_intersection_bounds_mm": [
+        [
+          372.9999999999974,
+          -6.708203932499369,
+          -59.40000000000001
+        ],
+        [
+          378.0,
+          6.708203932501475,
+          -42.0
+        ]
+      ],
+      "existing_block_cover_overlap_in_guard_mm3": 949.5139143077444,
+      "minimum_proposed_distance_mm": 0.0,
+      "protected_unchanged": false
+    },
+    {
+      "name": "active-pan-boss-24",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 734.0,
+      "protected_unchanged": true
+    },
+    {
+      "name": "active-pan-boss-25",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 734.0,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-chamber-wall-guard",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 128.5879119275786,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-fifth-passage-wall-guard",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 247.1489426041699,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 118.60259632256164,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 185.2326482951228,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-3",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 179.93047118133026,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-entire-mount-4",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 246.66035093882448,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-water-pump-gasket",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 119.10259632256164,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-water-pump-housing",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0.0,
+      "minimum_proposed_distance_mm": 117.1196741179074,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pump-gasket-rear-support",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 119.10259632256164,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-thrust-plate",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 46.688730026995415,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-thrust-bolt-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 118.41152864913497,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-thrust-bolt-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 48.492462762249005,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-thrust-washer-1",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 118.21100696171136,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-thrust-washer-2",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 48.24149232297918,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-cam-gear-spacer",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 71.63839301403797,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-camshaft",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 65.06614301403796,
+      "protected_unchanged": true
+    },
+    {
+      "name": "actual-crank-timing-gear",
+      "proposed_material_in_guard_mm3": 61.0129325618065,
+      "proposed_intersection_bounds_mm": [
+        [
+          378.25937489999995,
+          -27.030078660740003,
+          -43.17997748993559
+        ],
+        [
+          381.00000070000004,
+          27.979453133229423,
+          -31.999999899995785
+        ]
+      ],
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 0.0,
+      "protected_unchanged": false
+    },
+    {
+      "name": "actual-cam-timing-gear",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 6.795847125054731,
+      "protected_unchanged": true
+    },
+    {
+      "name": "future-block-land",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0.0,
+      "minimum_proposed_distance_mm": 3.5062312844456627,
+      "protected_unchanged": true
+    },
+    {
+      "name": "main-gasket",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0.0,
+      "minimum_proposed_distance_mm": 3.5062312844456627,
+      "protected_unchanged": true
+    },
+    {
+      "name": "pan-gasket",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0.0,
+      "minimum_proposed_distance_mm": 0.0,
+      "protected_unchanged": true
+    },
+    {
+      "name": "front-terminal-sealant",
+      "proposed_material_in_guard_mm3": 0,
+      "proposed_intersection_bounds_mm": null,
+      "existing_block_cover_overlap_in_guard_mm3": 0,
+      "minimum_proposed_distance_mm": 8.769074404069997,
+      "protected_unchanged": true
+    }
+  ],
+  "limits": [
+    "No candidate created; source-defined diagnostic region only",
+    "Broad chamber guard includesfluidvoid andsupport; actualmaterial overlap reported",
+    "Retiredpanstations remain geometry until explicitlycoordinated",
+    "No production wall or flow approval",
+    "Actual cam/core surface probes do not by themselves prove backing strength"
+  ],
+  "artifacts": {
+    "overlap-outside-proposal.step": "e5454c5d6b4677e068c884d46ad9fa5c18688d430a4870a5c6f41f425b394d36",
+    "existing-shared-cover-material.step": "71ce2841b256c05f6b6319306aee35eabaeb7d6a6bb0f44c72fe36b33230df15",
+    "source-dry-prism.step": "25b0bc27ad1872a64dc7637881fa1e110934aab0a6384abe9c6d4b9b331483c4",
+    "sections.json": "9d430fff1e1c4b4cddc634e4453b0df2c33050e411dd675a1e1fc2a0b0e83cb1",
+    "proposed-material-region.step": "79f8e9817f80e4feb5b4e618df210d23ef084655e48df8582a2c9b8fd5c0c12b"
+  }
+}

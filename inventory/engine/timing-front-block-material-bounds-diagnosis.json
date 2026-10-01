@@ -1,0 +1,35 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-block-combined-candidate/block.step": "72773d2ce6793180ff828d3d8ddf089daea3d85b738962084d335ca4a17c1a36",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/timing_front_block_adapter_candidate.py": "208a6817c1cc39cb69c57a0381c747acaf0e8600bc053110ced5c61057a25a28",
+    "scripts/diagnose-timing-front-block-material-bounds.py": "3b63c57a3d0678b5ef2ab0de9542e1d7ffe3973de97477ee92bdb20b8fa785f4"
+  },
+  "original_compound_difference_mm3": 145.30187644139252,
+  "regions": [
+    {
+      "index": 0,
+      "volume_mm3": 145.30187644139252,
+      "bounds_mm": [
+        [
+          339.84999988146745,
+          -135.1500001,
+          -20.484375105791422
+        ],
+        [
+          348.15000010000006,
+          -126.8499999,
+          -16.501999899999998
+        ]
+      ],
+      "valid": true
+    }
+  ],
+  "sequential_source_operand_difference_mm3": 0,
+  "fused_source_operand_difference_mm3": 0,
+  "limits": [
+    "Same source operands and strict1e-5mm\u00b3 criterion; no expandedmask",
+    "Diagnoseoverlappingcompoundoperand behavior beforeacceptance"
+  ]
+}

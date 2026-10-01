@@ -1,0 +1,32 @@
+{
+  "status": "FAIL block/dry-neck overlap",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-pan-dry-neck-candidate/pan.step": "b519c1e37e6cacec5ed2326d92264c61ce7dd7f9f1a40eec7a57afeca1eb0caf",
+    "scripts/check-timing-front-block-dry-neck-pair.py": "513220d49267db8e1cbe7112366489eb06429037eedc079b5f3841fa950783bc",
+    "inventory/engine/timing-pan-dry-neck-candidate-validation.json": "d8bd646cac015000e52f18d0d7fec866a98b5ed495508e3661fdac58592e0b44"
+  },
+  "overlap_mm3": 1252.7685129398321,
+  "distance_mm": 0.0,
+  "regions": [
+    {
+      "bounds_mm": [
+        [
+          334.9999999,
+          99.9999999,
+          -32.00000010000001
+        ],
+        [
+          343.5828210291023,
+          126.59129439167239,
+          1e-07
+        ]
+      ],
+      "volume_mm3": 1252.7685129398321
+    }
+  ],
+  "limits": [
+    "Frozen v2pan failure retained separately",
+    "Static paironly; no sealing or wholeassembly acceptance"
+  ]
+}

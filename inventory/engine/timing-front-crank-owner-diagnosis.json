@@ -1,0 +1,502 @@
+{
+  "status": "RESEARCH ONLY; no cut",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-front-crank-clearance-research/proposed-removal.step": "31af8f1416f12fd42f366d3fad943e1e65b02a1868530ae6fc3929bf0a11fddc",
+    "cad/engine/generated/timing-front-crank-clearance-research/analytic-envelope.step": "08b5cdf52ff591dfd070e77e532b4000da76539a8b03c2f84d83fd32c5ab3119",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "scripts/diagnose-timing-front-crank-owner.py": "4851e39b4811747e8f9e20120768fd72fd87de394787d76191b0275029841897",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "inventory/engine/timing-front-crank-clearance-research.json": "2a6804a9059300c5aee4cf46eba677717c90c08dff3f0ee77599b3abc646bbb9"
+  },
+  "actual_cover_valid": true,
+  "gear_cover_overlap_mm3": 0,
+  "gear_cover_distance_mm": 0.2200226100644116,
+  "block_cover_overlap_mm3": 24865.084929435154,
+  "local_center_block_cover_overlap_mm3": 93.76070982095179,
+  "local_shared_bounds_mm": [
+    [
+      380.0,
+      -4.358898943540809,
+      -59.4
+    ],
+    [
+      381.0000000000007,
+      4.358898943542474,
+      -43.4
+    ]
+  ],
+  "proposed_block_removal_already_shared_with_cover_mm3": 4.324736524460651,
+  "shared_removal_bounds_mm": [
+    [
+      379.9999998999998,
+      -4.358899043540718,
+      -44.1800001
+    ],
+    [
+      381.0000001000001,
+      4.3588990435407,
+      -43.3999999
+    ]
+  ],
+  "regions": [
+    {
+      "name": "actual-center-socket",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 0.2200226100644116,
+      "proposed_block_removal_overlap_mm3": 4.324736524460651,
+      "analytic_envelope_overlap_mm3": 101.27571935705026
+    },
+    {
+      "name": "thread-wall",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 1.5542514425108933,
+      "proposed_block_removal_overlap_mm3": 0,
+      "analytic_envelope_overlap_mm3": 0,
+      "missing_from_actual_cover_mm3": 0
+    },
+    {
+      "name": "one-mm-tip-floor",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 0.24267297147000022,
+      "proposed_block_removal_overlap_mm3": 0,
+      "analytic_envelope_overlap_mm3": 31.434384627421572,
+      "missing_from_actual_cover_mm3": 0
+    },
+    {
+      "name": "main-gasket",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 4.986345684657931,
+      "proposed_block_removal_overlap_mm3": 0.0,
+      "analytic_envelope_overlap_mm3": 0
+    },
+    {
+      "name": "pan-gasket",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 16.205693831514406,
+      "proposed_block_removal_overlap_mm3": 0.0,
+      "analytic_envelope_overlap_mm3": 0
+    },
+    {
+      "name": "terminal-sealant",
+      "gear_overlap_mm3": 0,
+      "gear_distance_mm": 63.18949712578765,
+      "proposed_block_removal_overlap_mm3": 0,
+      "analytic_envelope_overlap_mm3": 0
+    }
+  ],
+  "mount_ownership": [
+    {
+      "station": 1,
+      "canonical_xyz_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 2,
+      "canonical_xyz_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 3,
+      "canonical_xyz_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 4,
+      "canonical_xyz_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 5,
+      "canonical_xyz_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 6,
+      "canonical_xyz_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 7,
+      "canonical_xyz_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 8,
+      "canonical_xyz_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 9,
+      "canonical_xyz_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 10,
+      "canonical_xyz_mm": [
+        344.0,
+        116.6,
+        -39.6
+      ],
+      "classification": "retired canonical location; relocated in candidate",
+      "candidate_xyz_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "candidate_owner": "future-block-land"
+    },
+    {
+      "station": 11,
+      "canonical_xyz_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 12,
+      "canonical_xyz_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 13,
+      "canonical_xyz_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 14,
+      "canonical_xyz_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 15,
+      "canonical_xyz_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 16,
+      "canonical_xyz_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 17,
+      "canonical_xyz_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 18,
+      "canonical_xyz_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 19,
+      "canonical_xyz_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 20,
+      "canonical_xyz_mm": [
+        344.0,
+        -131.0,
+        -39.6
+      ],
+      "classification": "retired canonical location; relocated in candidate",
+      "candidate_xyz_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "candidate_owner": "future-block-land"
+    },
+    {
+      "station": 21,
+      "canonical_xyz_mm": [
+        371.0,
+        -85.0,
+        -39.6
+      ],
+      "classification": "retired canonical location; relocated in candidate",
+      "candidate_xyz_mm": [
+        390.0,
+        -110.0,
+        -32.1
+      ],
+      "candidate_owner": "cover"
+    },
+    {
+      "station": 22,
+      "canonical_xyz_mm": [
+        371.0,
+        85.0,
+        -39.6
+      ],
+      "classification": "retired canonical location; relocated in candidate",
+      "candidate_xyz_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "candidate_owner": "cover"
+    },
+    {
+      "station": 23,
+      "canonical_xyz_mm": [
+        371.0,
+        0.0,
+        -67.0
+      ],
+      "classification": "retired canonical location; relocated in candidate",
+      "candidate_xyz_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "candidate_owner": "cover"
+    },
+    {
+      "station": 24,
+      "canonical_xyz_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    },
+    {
+      "station": 25,
+      "canonical_xyz_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "classification": "unchanged active",
+      "candidate_xyz_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "candidate_owner": "block"
+    }
+  ],
+  "unchanged_station_count": 20,
+  "socket_contract": {
+    "thread_wall_radii_mm": [
+      4.18,
+      6.2
+    ],
+    "thread_wall_world_z_mm": [
+      -59.2,
+      -44.7
+    ],
+    "floor_radius_mm": 3.95,
+    "floor_world_z_mm": [
+      -44.4,
+      -43.4
+    ],
+    "owner": "cover",
+    "all_estimated": true
+  },
+  "limits": [
+    "No proposed cut applied to any part",
+    "Actual cover wall remains owned by cover; no neighbor-shaped subtraction",
+    "Old socket23 X371 is retired in proposed joint; future socket23 X390 is active cover owner",
+    "Estimated 1mm floor probe and2.02mm annular wall do not certify production strength",
+    "20unchanged block mounts require protection in any future transition contract"
+  ],
+  "artifacts": {
+    "actual-center-socket.step": "55345ab258415a6ad60d52c3f727dba14d642c7e53692c8111fcad6dd6e9ad36",
+    "thread-wall-guard.step": "2fa7d6365df6f3f7ed4b4ed89d2b7fdb3a647a42ef2716689cdfccedcd3dd153",
+    "proposed-removal-shared-with-cover.step": "6c09a9d9043edea46b1a9cd2833c374363fa4bdf0f23a90153e9d2cdbe61a2f6",
+    "local-shared-material.step": "40e35d2cdba58eec27957f29f427615938b36f41befa45500b8a784b58af6f76",
+    "tip-floor-guard.step": "5462508f7e9c9809d16e894a5c3ffdc1a816111b50848d53c3e3cfeb2e188af6"
+  }
+}

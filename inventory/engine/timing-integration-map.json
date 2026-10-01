@@ -1,0 +1,1272 @@
+{
+  "status": "DEPENDENCY MAP ONLY; no staged or installed geometry",
+  "input_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/research-timing-integration-map.py": "348c8cc70ff037b947d55423a4f40dfe4148664868f25f3710eec7068a223243",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47"
+  },
+  "pose_comparison": {
+    "crank_degrees": 0,
+    "axial_mm": 0,
+    "changed_occurrences": 188,
+    "rows": [
+      {
+        "id": "c1-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061744144468548
+      },
+      {
+        "id": "c1-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.0617406058646
+      },
+      {
+        "id": "c1-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c1-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c1-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061744144468548
+      },
+      {
+        "id": "c2-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-valve",
+        "definition": "exhaust-valve",
+        "role": "valve",
+        "max_matrix_difference": 0.0003962088991897872
+      },
+      {
+        "id": "c2-exhaust-retainer",
+        "definition": "spring-retainer",
+        "role": "valve",
+        "max_matrix_difference": 0.0003962088991897872
+      },
+      {
+        "id": "c2-exhaust-keeper-1",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0003962088991897872
+      },
+      {
+        "id": "c2-exhaust-keeper-2",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0003962088991897872
+      },
+      {
+        "id": "c2-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.0589642246219455
+      },
+      {
+        "id": "c2-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c2-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c2-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-valve",
+        "definition": "intake-valve",
+        "role": "valve",
+        "max_matrix_difference": 0.0007765418088752085
+      },
+      {
+        "id": "c3-intake-retainer",
+        "definition": "spring-retainer",
+        "role": "valve",
+        "max_matrix_difference": 0.0007765418088752085
+      },
+      {
+        "id": "c3-intake-keeper-1",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0007765418088752085
+      },
+      {
+        "id": "c3-intake-keeper-2",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0007765418088752085
+      },
+      {
+        "id": "c3-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.0590296692085985
+      },
+      {
+        "id": "c3-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.0617406058646
+      },
+      {
+        "id": "c3-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c3-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c3-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061744144468548
+      },
+      {
+        "id": "c4-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-valve",
+        "definition": "exhaust-valve",
+        "role": "valve",
+        "max_matrix_difference": 1.7580206304046442e-06
+      },
+      {
+        "id": "c4-exhaust-retainer",
+        "definition": "spring-retainer",
+        "role": "valve",
+        "max_matrix_difference": 1.7580206304046442e-06
+      },
+      {
+        "id": "c4-exhaust-keeper-1",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 1.7580206304046442e-06
+      },
+      {
+        "id": "c4-exhaust-keeper-2",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 1.7580206304046442e-06
+      },
+      {
+        "id": "c4-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061740665575542
+      },
+      {
+        "id": "c4-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c4-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c4-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061744144468548
+      },
+      {
+        "id": "c5-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.0617406058646
+      },
+      {
+        "id": "c5-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c5-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c5-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-valve",
+        "definition": "intake-valve",
+        "role": "valve",
+        "max_matrix_difference": 0.003906561136545861
+      },
+      {
+        "id": "c6-intake-retainer",
+        "definition": "spring-retainer",
+        "role": "valve",
+        "max_matrix_difference": 0.003906561136545861
+      },
+      {
+        "id": "c6-intake-keeper-1",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.003906561136545861
+      },
+      {
+        "id": "c6-intake-keeper-2",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.003906561136545861
+      },
+      {
+        "id": "c6-intake-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061868372981962
+      },
+      {
+        "id": "c6-intake-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-intake-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-intake-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-intake-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-intake-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-intake-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-valve",
+        "definition": "exhaust-valve",
+        "role": "valve",
+        "max_matrix_difference": 0.0013594155506666539
+      },
+      {
+        "id": "c6-exhaust-retainer",
+        "definition": "spring-retainer",
+        "role": "valve",
+        "max_matrix_difference": 0.0013594155506666539
+      },
+      {
+        "id": "c6-exhaust-keeper-1",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0013594155506666539
+      },
+      {
+        "id": "c6-exhaust-keeper-2",
+        "definition": "valve-keeper",
+        "role": "valve",
+        "max_matrix_difference": 0.0013594155506666539
+      },
+      {
+        "id": "c6-exhaust-pushrod",
+        "definition": "pushrod",
+        "role": "pushrod",
+        "max_matrix_difference": 4.061785909976038
+      },
+      {
+        "id": "c6-exhaust-rocker",
+        "definition": "rocker-arm",
+        "role": "rocker",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-exhaust-fulcrum",
+        "definition": "rocker-fulcrum",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-exhaust-rocker-bolt",
+        "definition": "rocker-bolt",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-exhaust-guide",
+        "definition": "rocker-guide",
+        "role": "stationary linkage attachment",
+        "max_matrix_difference": 0.17710346584706826
+      },
+      {
+        "id": "c6-exhaust-lifter-body",
+        "definition": "lifter-body",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-plunger-spring",
+        "definition": "lifter-plunger-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-check-retainer",
+        "definition": "lifter-check-retainer",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-check-spring",
+        "definition": "lifter-check-spring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-check-ball",
+        "definition": "lifter-check-ball",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-plunger",
+        "definition": "lifter-plunger",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-metering-disc",
+        "definition": "lifter-metering-disc",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-pushrod-cup",
+        "definition": "lifter-pushrod-cup",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      },
+      {
+        "id": "c6-exhaust-lifter-lock-ring",
+        "definition": "lifter-lock-ring",
+        "role": "lifter",
+        "max_matrix_difference": 5.109820990161097
+      }
+    ]
+  },
+  "coupled_core_world_candidate_ids": [
+    "cam-bearing-1",
+    "cam-bearing-2",
+    "cam-bearing-3",
+    "cam-bearing-4",
+    "cam-gear-spacer",
+    "cam-thrust-bolt-1",
+    "cam-thrust-bolt-2",
+    "cam-thrust-plate",
+    "cam-thrust-washer-1",
+    "cam-thrust-washer-2",
+    "cam-timing-gear",
+    "cam-timing-key",
+    "camshaft",
+    "crank-timing-gear",
+    "rear-cam-plug"
+  ],
+  "rigid_drive_hypothesis": {
+    "translation_mm": [
+      0,
+      5.109820990161097,
+      4.087856792128875
+    ],
+    "groups": {
+      "distributor-assembly": [
+        "distributor-hold-down-clamp",
+        "distributor-hold-down-bolt",
+        "distributor-drive-gear",
+        "distributor-drive-pin",
+        "distributor-thrust-washer",
+        "distributor-housing",
+        "distributor-shaft",
+        "distributor-vane",
+        "distributor-rotor",
+        "distributor-rotor-contact",
+        "distributor-cap",
+        "distributor-hall-sensor",
+        "distributor-connector",
+        "distributor-o-ring",
+        "distributor-center-contact",
+        "distributor-bushing-1",
+        "distributor-bushing-2",
+        "distributor-terminal-1",
+        "distributor-terminal-2",
+        "distributor-terminal-3",
+        "distributor-terminal-4",
+        "distributor-terminal-5",
+        "distributor-terminal-6",
+        "distributor-coil-terminal",
+        "distributor-cap-screw-1",
+        "distributor-cap-screw-2",
+        "distributor-vane-screw-1",
+        "distributor-vane-screw-2",
+        "distributor-rotor-center-leaf"
+      ],
+      "oil-pump-assembly": [
+        "oil-pump-housing",
+        "oil-pump-inner-rotor",
+        "oil-pump-outer-rotor",
+        "oil-pump-rotor-shaft",
+        "oil-pump-cover",
+        "oil-pump-cover-bolt-1",
+        "oil-pump-cover-bolt-2",
+        "oil-pump-cover-bolt-3",
+        "oil-pump-cover-bolt-4",
+        "oil-pump-relief-plunger",
+        "oil-pump-relief-spring",
+        "oil-pump-relief-cap",
+        "oil-pump-mount-bolt-1",
+        "oil-pump-mount-bolt-2"
+      ],
+      "oil-drive-assembly": [
+        "oil-pump-intermediate-shaft",
+        "oil-pump-drive-retainer"
+      ]
+    },
+    "requires": "Validate connected interfaces and external neighbor motion before applying"
+  },
+  "external_drive_dependencies": {
+    "oil-pickup-assembly": [
+      "oil-pickup-tube",
+      "oil-pickup-bell",
+      "oil-pickup-screen"
+    ],
+    "review": [
+      "Pump outlet passage and block joint",
+      "Distributor clamp/seat, harness and ignition wire reach",
+      "Pickup screen clearance to revised pan and retained drain region"
+    ]
+  },
+  "relocated_pan_stacks": [
+    "oil-pan-mounting-screw-20",
+    "oil-pan-mounting-washer-20",
+    "oil-pan-mounting-screw-10",
+    "oil-pan-mounting-washer-10",
+    "oil-pan-mounting-screw-21",
+    "oil-pan-mounting-washer-21",
+    "oil-pan-mounting-screw-23",
+    "oil-pan-mounting-washer-23",
+    "oil-pan-mounting-screw-22",
+    "oil-pan-mounting-washer-22"
+  ],
+  "geometry_replacement_candidates": [
+    "block",
+    "cylinder-head",
+    "head-gasket",
+    "rocker-arm",
+    "oil-pan",
+    "timing-cover",
+    "oil-pan-gasket",
+    "oil-pan-mounting-screw"
+  ],
+  "unresolved_new_parts": [
+    "Main cover gasket and actual attachment hardware",
+    "Front terminal sealant representation",
+    "Source-sized front seal case/lip/spring and matching hub seat"
+  ],
+  "coordinate_caution": "Core exports and block are world-space; head and rocker exports local. Never apply existing frames twice.",
+  "limits": [
+    "Rest-pose discovery only",
+    "No full BOM guarantee",
+    "Front block/pan and seal contracts unresolved",
+    "Browser NOT RUN"
+  ]
+}
