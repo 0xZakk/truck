@@ -1,0 +1,55 @@
+{
+  "status": "PASS actual runtime rest/peak CAD against frozen qualified springs",
+  "rows": [
+    {
+      "kind": "intake",
+      "state": "rest",
+      "height_mm": 41.65599999999999,
+      "frozen_asset_volume_difference_mm3": 3.651621227618307e-09,
+      "frozen_bounds_difference_mm": 3.248956659263058e-12,
+      "faces": 5,
+      "frozen_faces": 5
+    },
+    {
+      "kind": "intake",
+      "state": "peak",
+      "height_mm": 31.622999999999976,
+      "frozen_asset_volume_difference_mm3": 5.052243068348616e-09,
+      "frozen_bounds_difference_mm": 4.0749625895841746e-12,
+      "faces": 5,
+      "frozen_faces": 5
+    },
+    {
+      "kind": "exhaust",
+      "state": "rest",
+      "height_mm": 37.337999999999994,
+      "frozen_asset_volume_difference_mm3": 1.722582965157926e-09,
+      "frozen_bounds_difference_mm": 2.5374157139879117e-06,
+      "faces": 5,
+      "frozen_faces": 5
+    },
+    {
+      "kind": "exhaust",
+      "state": "peak",
+      "height_mm": 27.304797313395596,
+      "frozen_asset_volume_difference_mm3": 6.962181942071766e-09,
+      "frozen_bounds_difference_mm": 3.709033080667723e-12,
+      "faces": 5,
+      "frozen_faces": 5
+    }
+  ],
+  "bindings": {
+    "cad/engine/generated/intake-spring.step": "da49a9d6ed3178e0482795eafa4bee52da394dc7ce8c1ea5887e77420331ba11",
+    "cad/engine/generated/timing-rocker-crest-candidate/intake-spring-peak.step": "6d1172d11c2cdc81f7a91b1d958c486a2b4642b281a5d5986e182d538c543073",
+    "cad/engine/generated/exhaust-spring.step": "c0ab3b3594e19c1e805336a10f5b5e7db7683e58511bc455467655572551093c",
+    "cad/engine/generated/timing-rocker-crest-candidate/exhaust-spring-peak.step": "bd579fee5ca05714ef9d18e6795499624fee1f8cbbcfebf1d31d3497c200b269",
+    "scripts/check-clockwise-spring-shapes.py": "1322d5898e0fff4682f500fcbbee9ba83acd52e8597ad6de0c584aba29102469",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4"
+  },
+  "limits": [
+    "Bounds/volume and unchanged construction; not new full assembly collision proof",
+    "Estimated coil geometry, no factory rate or strength claim"
+  ]
+}

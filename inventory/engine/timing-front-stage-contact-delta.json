@@ -1,0 +1,27 @@
+{
+  "contact_studies_modify_geometry": false,
+  "lower_route_reuse": {
+    "old_width_mm": 1.2813348908057511,
+    "new_hole_center_minimum_xy_segment_distance_mm": 11.133747839166878,
+    "new_hole_edge_clearance_lower_mm": 6.833747839166878,
+    "new_hole_winding": 1.4135798584282298e-15,
+    "required_halfwidth_plus_original_allowance_mm": 0.8406674454028755,
+    "proof": "Exact XYpoint-to-segment lowerbound; oldroute retained onunchangedcontact outside onlynewR4.3hole. Fillingretiredhole cannotremovecontact."
+  },
+  "changed_contact_bridge": {
+    "upper_owner_missing_mm3": 0,
+    "lower_owner_missing_mm3": 0,
+    "gasket_missing_mm3": 0
+  },
+  "old_overhangs_and_rear_ownership": "Preserved; studiesareanalysis-only, norepairassetexists",
+  "inputs_sha256": {
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "inventory/engine/timing-pan-perimeter-contact-summary.json": "fe706824c6e23c25309fe1b381484a5abb52385ffc661fdf170904d9271cf70f",
+    "inventory/engine/timing-pan-upper-contact-summary.json": "404d0e516372d266e604b14266118b3c6e3e410834da50e80c68814249e677ed",
+    "cad/engine/generated/timing-pan-perimeter-contact/inboard-route.npz": "2408c4bae9589874d1784ab9ef622709ba34f0b88b78fd9731a04de6948ec703",
+    "scripts/check-timing-front-stage-contact-delta.py": "3a87524eadcae99e8e877413c7d3a10c1bf6bd9a052c77837e2100cfcbf1f2c2"
+  },
+  "status": "PASS changedcontact/reuse scope"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS numeric serialized linkage stage",
+  "occurrence_updates": 228,
+  "neutral_linkage_frames": 216,
+  "matrix_checks": 2592,
+  "maximum_matrix_error": 1.1368683772161603e-13,
+  "wrong_rest_negative_control_mm": 1.0,
+  "canonical_modified": false,
+  "bindings": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/clockwise-linkage-pose-patch.json": "c6f3296bc510f57cefefb2d042a4760ae27b934fa6072e290b6582a325ca7a29",
+    "scripts/stage-clockwise-linkage-poses.py": "88c3fc506d74264bded65c541cd4c24f27b78729d85a4de85e8655336a46185a",
+    "viewer/engine-clockwise-motion-candidate.js": "53b127fe0e797b0ca4f86d5baf076639dc57dcefc32cb228133ccb77cbb53514",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a"
+  },
+  "limitations": [
+    "Not loaded by legacy runtime",
+    "Requires coordinated candidate geometry",
+    "Spring height/mesh acceptance separate",
+    "No collision or browser claim"
+  ]
+}

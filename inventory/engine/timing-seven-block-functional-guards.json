@@ -1,0 +1,45 @@
+{
+  "pan_sockets": [
+    {
+      "station": 10,
+      "actual_male_overlap_mm3": 0.0,
+      "source_female_missing_mm3": 0,
+      "wall_missing_mm3": 0.0,
+      "floor_missing_mm3": 0.0,
+      "functional_neighborhood_added_mm3": 0,
+      "functional_neighborhood_removed_mm3": 0
+    },
+    {
+      "station": 20,
+      "actual_male_overlap_mm3": 0.0,
+      "source_female_missing_mm3": 0,
+      "wall_missing_mm3": 0.0,
+      "floor_missing_mm3": 0.0,
+      "functional_neighborhood_added_mm3": 0,
+      "functional_neighborhood_removed_mm3": 0
+    }
+  ],
+  "pump_declared_fluid_spaces": [
+    {
+      "name": "pump-chamber",
+      "old_obstruction_mm3": 0.0,
+      "new_obstruction_mm3": 0.0
+    },
+    {
+      "name": "pump-fifth",
+      "old_obstruction_mm3": 0.0,
+      "new_obstruction_mm3": 0.0
+    }
+  ],
+  "status": "PASS functional interfaces only",
+  "scope": "Does not erase prior broadR12pan20/R85pump guard failures. Exact functional female/wall/floor and declared fluid-space checks are distinct evidence; root must decide whether exterior stock change is acceptable.",
+  "input_sha256": {
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "scripts/check-timing-seven-block-functional-guards.py": "b04f7e89407c8f1691d45b87eabf997703945833606d6e57c0027cece804678a",
+    "cad/engine/generated/pan-fastener-thread-candidate/female-test-coupon.step": "8a1b79072d178677f9e9afb4df96310badfebb2799091a1fc1ec2d06a3f1dda8",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/timing_cover_attachment_v2.py": "6a3cf5e940aceffde4cdff2af4bf41af964430090685c34d9a6b290f6115ef5f",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a"
+  }
+}

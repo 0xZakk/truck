@@ -1,0 +1,43 @@
+{
+  "status": "UNRESOLVED replacement dimensions; inherited interference confirmed; research only",
+  "reviewed": "2026-10-01",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/292722974.png": "5e9499745e929733304281803f039fdc731fef83086f26e1d5d9c590c757cc47",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Connecting%20Rod/Service%20and%20Repair/index.html": "3993438c4a5f133d35ab7fe5741ae9dbc2ec95cce9a9c4396e9680355f772329",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Connecting%20Rod/Parts%20Information/index.html": "2b6dfaa35e09bc7a95c0b076b56ee4324a60f2ad4172d9d67d14a7359ce10b51",
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": "62477dbe354f5f4209de4f4293cd83db3646d06011f7be9bdd3ea82e49754990",
+    "docs/components/rod-bolt-source-datum-audit.md": "84c61726945389b1f2539f576c70219c52b4e1fd4ef7b52e8406a98a301455a2"
+  },
+  "public_sources": [
+    {
+      "url": "https://arp-bolts.com/kit/152-6002",
+      "scope": "Manufacturer application index; direct page timed out, search indexed application available"
+    },
+    {
+      "url": "https://www.tzr-motorsport.de/WebRoot/Store20/Shops/61911476/MediaGallery/PDF/ARP/Ford/152-6002.pdf",
+      "author": "ARP",
+      "host": "distributor",
+      "page": 1,
+      "scope": "Press-fit replacement architecture only; dimensional drawing absent"
+    },
+    {
+      "url": "https://arpcatalog.com/49/",
+      "edition": 2026,
+      "scope": "4.9L152-6002 styleM distinct from240-300152-6001 styleG; verification caveat retained"
+    },
+    {
+      "url": "https://arpcatalog.com/46/",
+      "edition": 2026,
+      "scope": "Head-style reference; actual photo not inspected; no shape inference"
+    }
+  ],
+  "unknowns": [
+    "Exact original bolt identity",
+    "Applicable physical head outline and orientation",
+    "Head thickness and underhead radius",
+    "Shank/thread/press-shoulder dimensions",
+    "Mating rod boss/seat dimensions",
+    "Actual crankcase contour"
+  ],
+  "decision": "No geometry change; physical/source bolt and mating-rod dimensions required before a defensible corrective contract"
+}

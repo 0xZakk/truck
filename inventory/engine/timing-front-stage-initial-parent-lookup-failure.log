@@ -1,0 +1,13 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+staged block
+staged timing-cover
+staged oil-pan
+staged oil-pan-molded-gasket
+staged oil-pan-mounting-screw
+staged timing-cover-mounting-screw
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/stage-timing-front-coordinated-assets.py", line 35, in <module>
+    parent=poses['closures']
+           ~~~~~^^^^^^^^^^^^
+KeyError: 'closures'

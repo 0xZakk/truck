@@ -1,0 +1,35 @@
+{
+  "reviewed": "2026-10-01",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Pump/Service%20and%20Repair/index.html": "bfad2924515ffd7db053399708806966213d9ba3bc8a0c17029cef19fa342580",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/354634388.png": "302d3b539982e0db7052066994585136a402101142d4c855c36da1c579a3443c",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Oil%20Pick%20Up%2FStrainer/Parts%20Information/index.html": "0be884cff2472ed8e2d2a044a761cd742b7141a4b9f337b69e3b0ddaff9bacd3"
+  },
+  "claims": [
+    {
+      "class": "exactyear application",
+      "claim": "Pump installation uses a new gasket at pump mounting interface; dimensions and complete stack unspecified",
+      "source": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Pump/Service%20and%20Repair/index.html"
+    },
+    {
+      "class": "exactyear qualitative schematic",
+      "claim": "Pickup feeds pump and pump connects to engine lubrication network; schematic shows relative topology, not passage drilling coordinates or gasket outline",
+      "source": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/354634388.png",
+      "visual_review": "Viewed actual image; pump/shaft/pickup and adjacent gallery relationships inspected"
+    },
+    {
+      "class": "service identity",
+      "claim": "E3TZ6622F pickup service assembly, not individual tube bend dimensions",
+      "source": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Oil%20Pick%20Up%2FStrainer/Parts%20Information/index.html"
+    }
+  ],
+  "unknowns": [
+    "Pump discharge port shape/position",
+    "Pump mounting gasket outline and thickness",
+    "Pump-to-block sealing face",
+    "Deeper block gallery passage geometry",
+    "Production pickup insertion and retention",
+    "Tube OD/ID and exact bends"
+  ],
+  "model_decision": "Retain these unknowns separately from estimated upstream tube reconnection"
+}

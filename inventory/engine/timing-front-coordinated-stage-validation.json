@@ -1,0 +1,1025 @@
+{
+  "status": "PASS assetandpose stage; dependencycomposition/browserpending",
+  "parts": [
+    {
+      "id": "block",
+      "source_step": "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step",
+      "source_sha256": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+      "local_to_source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_world_bounds_error_mm": 1.4758064310171903e-05,
+      "volume_serialization_error_mm3": 0.04138512536883354,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 2015,
+      "triangles": 201684,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/block.step",
+      "step_sha256": "35af664cb1f13593ac105d0d37c98b14ea34b933fb112e45a86da734f94b057e",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/block.glb",
+      "glb_sha256": "520521d9539107410c8dc03036ad0eed36410b05a8aed250c7f57462da72c9d1"
+    },
+    {
+      "id": "timing-cover",
+      "source_step": "cad/engine/generated/timing-pan21-lateral-candidate/cover.step",
+      "source_sha256": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+      "local_to_source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          403.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_world_bounds_error_mm": 1.4758064310171903e-05,
+      "volume_serialization_error_mm3": 1.6298145055770874e-09,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 1027,
+      "triangles": 49476,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step",
+      "step_sha256": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/timing-cover.glb",
+      "glb_sha256": "6c77d355f594ee4636f1ecd62975f807321efbc4970d7edd638277723329c925"
+    },
+    {
+      "id": "oil-pan",
+      "source_step": "cad/engine/generated/timing-pan21-lateral-candidate/pan.step",
+      "source_sha256": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+      "local_to_source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -12.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -96.0
+        ]
+      ],
+      "step_bounds_error_mm": 2.842170943040401e-14,
+      "mesh_world_bounds_error_mm": 1.2159347534179688e-05,
+      "volume_serialization_error_mm3": 2.3283064365386963e-08,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 506,
+      "triangles": 21812,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/oil-pan.step",
+      "step_sha256": "165fd0d3e50c69b0d71370e56f690abe73fbf49ab7a83b054a5a0467b0dab063",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/oil-pan.glb",
+      "glb_sha256": "e48f090c6c70831329088356341f39805cb806b49e231edc8bed4a132ec8d831"
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "source_step": "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step",
+      "source_sha256": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+      "local_to_source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_bounds_error_mm": 2.842170943040401e-14,
+      "mesh_world_bounds_error_mm": 1.2159347534179688e-05,
+      "volume_serialization_error_mm3": 1.3096723705530167e-09,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 337,
+      "triangles": 17940,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-molded-gasket.step",
+      "step_sha256": "950b39975b7eaf17c2e85859a2408311b2b1b4e6fda381ce2be7745ec0aaab07",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-molded-gasket.glb",
+      "glb_sha256": "038b4e8a4d777c59e7baf9d5c756d6be2bd0c7de88011a030883307e2695fd2c"
+    },
+    {
+      "id": "oil-pan-mounting-screw",
+      "source_step": "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step",
+      "source_sha256": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+      "local_to_source_transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_world_bounds_error_mm": 8.699729576733262e-07,
+      "volume_serialization_error_mm3": 8.64333348999935e-05,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 75,
+      "triangles": 15876,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-mounting-screw.step",
+      "step_sha256": "b5604ee90be3b7d823743b94ba7f7b0f88d686f7a2a5fff612245f43325ca446",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-mounting-screw.glb",
+      "glb_sha256": "22b3ba49c3da1832b7944fb9e357883430aa44e17b78a179a5bdc50c6d3f5335"
+    },
+    {
+      "id": "timing-cover-mounting-screw",
+      "source_step": "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step",
+      "source_sha256": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+      "local_to_source_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          -119.19951535908172
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          -6.8728541983332425
+        ]
+      ],
+      "step_bounds_error_mm": 1.7195134205394424e-12,
+      "mesh_world_bounds_error_mm": 0.003916174173111742,
+      "volume_serialization_error_mm3": 9.907184630719712e-05,
+      "valid": true,
+      "watertight": true,
+      "solids": 1,
+      "faces": 79,
+      "triangles": 16488,
+      "step": "cad/engine/generated/timing-front-coordinated-stage/timing-cover-mounting-screw.step",
+      "step_sha256": "1b8667182ffe0be26ac5bc4355b73d5049b5f3951085c0f5b5c5250b51f11b59",
+      "glb": "cad/engine/generated/timing-front-coordinated-stage/timing-cover-mounting-screw.glb",
+      "glb_sha256": "7a4410cd320ba1d94486e878bc2115d275a805d51e355d2a7530909e675e190f"
+    }
+  ],
+  "poses": [
+    {
+      "id": "oil-pan-mounting-screw-1",
+      "world_xyz_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-1",
+      "world_xyz_mm": [
+        -344.0,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-2",
+      "world_xyz_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-2",
+      "world_xyz_mm": [
+        -267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-3",
+      "world_xyz_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-3",
+      "world_xyz_mm": [
+        -191.11111111111111,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-4",
+      "world_xyz_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-4",
+      "world_xyz_mm": [
+        -114.66666666666666,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-5",
+      "world_xyz_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-5",
+      "world_xyz_mm": [
+        -38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-6",
+      "world_xyz_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-6",
+      "world_xyz_mm": [
+        38.22222222222223,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-7",
+      "world_xyz_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-7",
+      "world_xyz_mm": [
+        114.66666666666669,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-8",
+      "world_xyz_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-8",
+      "world_xyz_mm": [
+        191.1111111111111,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-9",
+      "world_xyz_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-9",
+      "world_xyz_mm": [
+        267.55555555555554,
+        116.6,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-10",
+      "world_xyz_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-10",
+      "world_xyz_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-11",
+      "world_xyz_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-11",
+      "world_xyz_mm": [
+        -344.0,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-12",
+      "world_xyz_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-12",
+      "world_xyz_mm": [
+        -267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-13",
+      "world_xyz_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-13",
+      "world_xyz_mm": [
+        -191.11111111111111,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-14",
+      "world_xyz_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-14",
+      "world_xyz_mm": [
+        -114.66666666666666,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-15",
+      "world_xyz_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-15",
+      "world_xyz_mm": [
+        -38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-16",
+      "world_xyz_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-16",
+      "world_xyz_mm": [
+        38.22222222222223,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-17",
+      "world_xyz_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-17",
+      "world_xyz_mm": [
+        114.66666666666669,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-18",
+      "world_xyz_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-18",
+      "world_xyz_mm": [
+        191.1111111111111,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-19",
+      "world_xyz_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-19",
+      "world_xyz_mm": [
+        267.55555555555554,
+        -131.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-20",
+      "world_xyz_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-20",
+      "world_xyz_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-21",
+      "world_xyz_mm": [
+        390.0,
+        -95.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-21",
+      "world_xyz_mm": [
+        390.0,
+        -95.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-22",
+      "world_xyz_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-22",
+      "world_xyz_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-23",
+      "world_xyz_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-washer-23",
+      "world_xyz_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ],
+      "unchanged": false
+    },
+    {
+      "id": "oil-pan-mounting-screw-24",
+      "world_xyz_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-24",
+      "world_xyz_mm": [
+        -371.0,
+        -85.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-screw-25",
+      "world_xyz_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "oil-pan-mounting-washer-25",
+      "world_xyz_mm": [
+        -371.0,
+        85.0,
+        -39.6
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "timing-cover-mounting-screw-1",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -119.19951535908172
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          -6.8728541983332425
+        ]
+      ],
+      "actual_source_bounds_error_mm": 1.7195134205394424e-12
+    },
+    {
+      "id": "timing-cover-mounting-screw-2",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -60.17905521045717
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          19.04719901657343
+        ]
+      ],
+      "actual_source_bounds_error_mm": 7.282352498805267e-11
+    },
+    {
+      "id": "timing-cover-mounting-screw-3",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -6.627940493863827
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          98.99106943536769
+        ]
+      ],
+      "actual_source_bounds_error_mm": 8.01607669131954e-11
+    },
+    {
+      "id": "timing-cover-mounting-screw-4",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          97.5478052976514
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          198.56723454396885
+        ]
+      ],
+      "actual_source_bounds_error_mm": 8.040501597861294e-11
+    },
+    {
+      "id": "timing-cover-mounting-screw-5",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          222.86727322987147
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          158.35846880484021
+        ]
+      ],
+      "actual_source_bounds_error_mm": 8.145661922753789e-11
+    },
+    {
+      "id": "timing-cover-mounting-screw-6",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          251.91680672464793
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          74.42369033067094
+        ]
+      ],
+      "actual_source_bounds_error_mm": 8.799361239653081e-11
+    },
+    {
+      "id": "timing-cover-mounting-screw-7",
+      "world_transform": [
+        [
+          3.3306690738754696e-16,
+          0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          217.24482469086223
+        ],
+        [
+          1.0,
+          0.0,
+          3.3306690738754696e-16,
+          -7.893399845733515
+        ]
+      ],
+      "actual_source_bounds_error_mm": 8.222400538215879e-11
+    }
+  ],
+  "scope_approval": {
+    "authorization": "Root expressly permits only recorded exterior deltas in originalpumpR85/pan20R12 guards for integrationcandidate; originalguardFAIL permanent.",
+    "parent_block_sha256": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "new_block_sha256": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "whole_signed_deltas": [
+      {
+        "sign": 1,
+        "path": "cad/engine/generated/timing-front-coordinated-stage/block-added.step",
+        "sha256": "c5aaf4a2dda21fbc4bcc3a80b4c5c1d8fa4264fa11ca54052bd6f40b1d4ad2b9",
+        "bounds_mm": [
+          [
+            354.57499989999997,
+            -124.0000001,
+            -15.893399945733998
+          ],
+          [
+            373.0000001,
+            259.91680682464,
+            200.74973146874913
+          ]
+        ]
+      },
+      {
+        "sign": -1,
+        "path": "cad/engine/generated/timing-front-coordinated-stage/block-removed.step",
+        "sha256": "f7131aa7e7b40e18dcb8b0e9af900847a8e4e120805dc0bc42d025e096e458fb",
+        "bounds_mm": [
+          [
+            356.575,
+            -123.16826546086288,
+            -11.86214994573
+          ],
+          [
+            373.00000010000076,
+            255.885556826477,
+            202.56723464396
+          ]
+        ]
+      }
+    ],
+    "broad_guard_signed_witnesses": [
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-added.step",
+        "sha256": "1f768c77d1f4ec1e252fa61310f84297334439083519001a05b732bdd530c3c7",
+        "sign": 1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-removed.step",
+        "sha256": "1cfe9f4d9b3b4f08b93a00f1cf1208b102007eca6368612892252282f730c93b",
+        "sign": -1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-added.step",
+        "sha256": "834642fe65e157f1c940ec0a996e1dc0f6afee559d1c4344d9ee7d5cb66f75f1",
+        "sign": 1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-removed.step",
+        "sha256": "96b6c95c27148897730a70980318162808146ba69d60889f62997a5775f87c73",
+        "sign": -1
+      }
+    ],
+    "seven_supports": [
+      {
+        "station": 1,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -119.19951535908172,
+          -6.8728541983332425
+        ]
+      },
+      {
+        "station": 2,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -60.17905521045717,
+          19.04719901657343
+        ]
+      },
+      {
+        "station": 3,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -6.627940493863827,
+          98.99106943536769
+        ]
+      },
+      {
+        "station": 4,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          97.5478052976514,
+          198.56723454396885
+        ]
+      },
+      {
+        "station": 5,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          222.86727322987147,
+          158.35846880484021
+        ]
+      },
+      {
+        "station": 6,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          251.91680672464793,
+          74.42369033067094
+        ]
+      },
+      {
+        "station": 7,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          217.24482469086223,
+          -7.893399845733515
+        ]
+      }
+    ],
+    "functional_guard_report": "inventory/engine/timing-seven-block-functional-guards.json"
+  },
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/stage-timing-front-coordinated-assets.py": "719eb54ccd1e1a31e8ad0f28616210dc2cc5b3fabe1c94cd9d7dfb131a0bbc3e",
+    "inventory/engine/timing-seven-block-delivery-validation.json": "c66637d364f0ee59916da7e789e397a224b498127dec9306e669a012d6fb230f",
+    "inventory/engine/timing-pan21-lateral-delivery-validation.json": "f07238f0492da400fb26e4c21f547d397ece078f16cff0e5d90f0ae67b040e4f",
+    "inventory/engine/timing-front-stage-contact-delta.json": "98401eb151b558b371f7c62fdfd00fb8fa78fac2dd34ce2f8a1dd7600b5d9249",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-2.step": "30a00f8399fee7a1ddec2dfac57a0924a624a95fba7452ddbfc8b7062d0168b4",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-5.step": "b064d49b42f1426d06ba602a44a1c9107f3ff4acf47c96a04a958b8c5da380ae",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-6.step": "6f8ecba958091ab4240e6063f667992de4d01871b0ce5cc4e1a0cd3cafc7c305",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-7.step": "088b54b80374a49d472011af88be931f5c1d5bc73cd318740cd5235e7939d603",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-added.step": "1f768c77d1f4ec1e252fa61310f84297334439083519001a05b732bdd530c3c7",
+    "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-removed.step": "1cfe9f4d9b3b4f08b93a00f1cf1208b102007eca6368612892252282f730c93b",
+    "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-added.step": "834642fe65e157f1c940ec0a996e1dc0f6afee559d1c4344d9ee7d5cb66f75f1",
+    "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-removed.step": "96b6c95c27148897730a70980318162808146ba69d60889f62997a5775f87c73"
+  },
+  "patch": "inventory/engine/timing-front-coordinated-patch.json",
+  "patch_sha256": "428de87e0e535575faf08c700ab2b3eb517d45d46e656d2234811b8ffd5a98c8",
+  "canonical_modified": false,
+  "contact_studies": "Bothanalysis-only; noadditionalpanrepairasset. Changedcontact/routeproof separatelybound."
+}

@@ -1,0 +1,222 @@
+{
+  "schema": "truck-guarded-integration-proposal-v1",
+  "scope": "CONDITIONAL drive branch, not ready installation",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "definitions": [
+    {
+      "id": "distributor-drive-gear",
+      "before": {
+        "id": "distributor-drive-gear",
+        "name": "Distributor helical drive gear \u00b7 provisional",
+        "function": "Transfers camshaft rotation to the distributor shaft. Sixteen representative helical teeth illustrate the mechanism; count, profile, material and installed mesh remain unverified.",
+        "system": "ignition",
+        "color": "#8b969c",
+        "glb": "/models/engine/distributor-drive-gear.glb",
+        "step": "/cad/engine/generated/distributor-drive-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "system-4fe310c18acd",
+          "system-2ea2c28d7cca",
+          "system-0452beae4961",
+          "fsm-2f144bda5e08",
+          "ford-1996-distributor-drive",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
+          "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
+          "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions."
+        ],
+        "volume_mm3": 12978.130873823162,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 4700,
+        "model_bounds_mm": [
+          39.18198814132914,
+          39.18198814132914,
+          30.000000200000002
+        ]
+      },
+      "after": {
+        "id": "distributor-drive-gear",
+        "name": "Distributor helical drive gear \u00b7 provisional",
+        "function": "Transfers camshaft rotation to the distributor shaft. Sixteen representative helical teeth illustrate the mechanism; count, profile, material and installed mesh remain unverified.",
+        "system": "ignition",
+        "color": "#8b969c",
+        "glb": "/models/engine/distributor-drive-gear.glb",
+        "step": "/cad/engine/generated/distributor-drive-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "system-4fe310c18acd",
+          "system-2ea2c28d7cca",
+          "system-0452beae4961",
+          "fsm-2f144bda5e08",
+          "ford-1996-distributor-drive",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Factory references establish closed-bowl Hall-effect architecture with remote ignition module, not these dimensions or installed casting identity.",
+          "All dimensions, shaft station, bushings, cap contacts, vane widths, connector layout and mounting position are provisional. Gear tooth count/profile, pin dimensions and cam/pump engagement remain unverified.",
+          "Rotation is clockwise viewed from the cap, following the factory firing-order diagram, at half crank speed. Terminal indexing and absolute timing remain unverified; harness and plug leads remain outstanding.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+          "Estimated corrected tooth lead. Connected drive translation and endplay phase are conditional on external pickup/outlet/clamp interface resolution."
+        ],
+        "volume_mm3": 12978.130873819448,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 7974,
+        "model_bounds_mm": [
+          39.18198814132914,
+          39.18198814132914,
+          30.000000200000002
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/distributor-drive-gear.step",
+          "to": "cad/engine/generated/distributor-drive-gear.step",
+          "sha256": "20848de6266bc7b768a15380c43638084a385f6f1fd38a0da9e9ee30ea0dfe87"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/distributor-drive-gear.glb",
+          "to": "models/engine/distributor-drive-gear.glb",
+          "sha256": "77db9259b3055774016eb7d67d03ba233ec5307237708cc2eae1d46e1802bbf7"
+        }
+      }
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "distributor-assembly",
+      "before": {
+        "id": "distributor-assembly",
+        "name": "Distributor \u00b7 closed-bowl study",
+        "parent": "ignition",
+        "motion": null,
+        "position_cad_mm": [
+          227.584,
+          152.90064653097454,
+          139.56114760707814
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "distributor-assembly",
+        "name": "Distributor \u00b7 closed-bowl study",
+        "parent": "ignition",
+        "motion": null,
+        "position_cad_mm": [
+          227.584,
+          158.01046752113564,
+          143.649004399207
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oil-pump-assembly",
+      "before": {
+        "id": "oil-pump-assembly",
+        "name": "Oil pump",
+        "parent": "lubrication",
+        "motion": null,
+        "position_cad_mm": [
+          224.084,
+          60.62087570056252,
+          -113.97543902192623
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "oil-pump-assembly",
+        "name": "Oil pump",
+        "parent": "lubrication",
+        "motion": null,
+        "position_cad_mm": [
+          224.084,
+          65.73069669072362,
+          -109.88758222979736
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "oil-drive-assembly",
+      "before": {
+        "id": "oil-drive-assembly",
+        "name": "Oil pump intermediate drive \u00b7 constrained study",
+        "parent": "lubrication",
+        "motion": null,
+        "position_cad_mm": [
+          227.584,
+          123.8289343482927,
+          59.687274840275926
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "oil-drive-assembly",
+        "name": "Oil pump intermediate drive \u00b7 constrained study",
+        "parent": "lubrication",
+        "motion": null,
+        "position_cad_mm": [
+          227.584,
+          128.9387553384538,
+          63.7751316324048
+        ],
+        "rotation_cad_deg": [
+          -20.0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "occurrences": [],
+  "requires_core_patch": true,
+  "unresolved": [
+    "Pickup inlet endpoint is not moved: connection displacement equals DELTA; tube rerouting or another coordinated solution required",
+    "Pump outlet/block oil path not established",
+    "Distributor clamp/seat, harness and ignition wire reach need coordinated checks",
+    "Pump foot candidate supports require exact chosen block binding",
+    "Pickup/screen pan-floor placement must not be inferred from branch rigid translation"
+  ],
+  "motion_contract": {
+    "distributor_intermediate_inner": "\u2212q/2 + degrees((1/18\u2212K)*x)",
+    "pump_outer": "4/5 of inner rotor angle",
+    "no_distributor_axial_translation": true
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "status": "PASS coordinatedassetstage; dependencies/browser/installation remainopen",
+  "gates": {
+    "bound_inputs_current": true,
+    "signed_delta_assets_current": true,
+    "explicit_scope_record_retains_original_fail": true,
+    "changed_contact": true,
+    "replay": true,
+    "restored_step_exact": true,
+    "six_valid_assets": true,
+    "block_delta_above_upper_gasket_contact": true,
+    "no_canonical_mutation": true
+  },
+  "input_mismatches": [],
+  "block_delta_to_front_gasket_top_separation_mm": 8.606600054266002,
+  "reports_sha256": {
+    "inventory/engine/timing-front-stage-contact-delta.json": "98401eb151b558b371f7c62fdfd00fb8fa78fac2dd34ce2f8a1dd7600b5d9249",
+    "inventory/engine/timing-front-coordinated-stage-validation.json": "631a1cbad2056bada6f2875ec9f4eaa6edcd4f2c2c4c32282fe83fe1c333b390",
+    "inventory/engine/timing-front-coordinated-patch-replay.json": "8a6d08f37aa83986dde2c6b946802de304f2e2a207aef7e146ff03b68bd3aea6",
+    "inventory/engine/timing-front-stage-step-equivalence.json": "58ad84284d042d7b2b5ef0484717be14c8bf76434936625db0f5b3d1993cb9fe",
+    "inventory/engine/timing-front-coordinated-stage-visual.json": "16860e7917d07e68a24596c052a3c939eb191da13cac5bebd34de5e78d25fc88"
+  },
+  "original_guard_failure_sha256": "c66637d364f0ee59916da7e789e397a224b498127dec9306e669a012d6fb230f",
+  "patch_sha256": "428de87e0e535575faf08c700ab2b3eb517d45d46e656d2234811b8ffd5a98c8",
+  "signed_delta_records": [
+    {
+      "sign": 1,
+      "path": "cad/engine/generated/timing-front-coordinated-stage/block-added.step",
+      "sha256": "c5aaf4a2dda21fbc4bcc3a80b4c5c1d8fa4264fa11ca54052bd6f40b1d4ad2b9",
+      "bounds_mm": [
+        [
+          354.57499989999997,
+          -124.0000001,
+          -15.893399945733998
+        ],
+        [
+          373.0000001,
+          259.91680682464,
+          200.74973146874913
+        ]
+      ]
+    },
+    {
+      "sign": -1,
+      "path": "cad/engine/generated/timing-front-coordinated-stage/block-removed.step",
+      "sha256": "f7131aa7e7b40e18dcb8b0e9af900847a8e4e120805dc0bc42d025e096e458fb",
+      "bounds_mm": [
+        [
+          356.575,
+          -123.16826546086288,
+          -11.86214994573
+        ],
+        [
+          373.00000010000076,
+          255.885556826477,
+          202.56723464396
+        ]
+      ]
+    },
+    {
+      "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-added.step",
+      "sha256": "1f768c77d1f4ec1e252fa61310f84297334439083519001a05b732bdd530c3c7",
+      "sign": 1
+    },
+    {
+      "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-removed.step",
+      "sha256": "1cfe9f4d9b3b4f08b93a00f1cf1208b102007eca6368612892252282f730c93b",
+      "sign": -1
+    },
+    {
+      "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-added.step",
+      "sha256": "834642fe65e157f1c940ec0a996e1dc0f6afee559d1c4344d9ee7d5cb66f75f1",
+      "sign": 1
+    },
+    {
+      "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-removed.step",
+      "sha256": "96b6c95c27148897730a70980318162808146ba69d60889f62997a5775f87c73",
+      "sign": -1
+    }
+  ],
+  "checker_sha256": "d0dac8fd080074408af7577938eebf83c5a75e15eab81b200b26b17ec1db3e82",
+  "limits": [
+    "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+    "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+    "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+    "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed.",
+    "Main cover gasket andterminalsealant fromfrozenattachment-v2 requireseparatedefinitions/occurrences; notfusedintoassets.",
+    "Frontseal2692stage supplieshub/case/elastomer/garterspringandoldfront-sealalias.",
+    "Correctedcrank/cam/core integration remainsroot-owned."
+  ]
+}

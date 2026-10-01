@@ -1,0 +1,46 @@
+{
+  "status": "FAIL original broad stock guard; assess separately bound functional evidence",
+  "gates": {
+    "inputs_current": true,
+    "declared_stock_cavity_locality": true,
+    "seven_source_female_wall_floor": true,
+    "original_broad_stock_guards": false,
+    "functional_pan_pump_guards": true,
+    "actual_neighbors": true,
+    "all_angle_new_support_bounds": true,
+    "metrics_verified": true,
+    "valid_mesh": true
+  },
+  "input_mismatches": [],
+  "broad_guard_failures": [
+    {
+      "name": "water-pump-front-interface",
+      "added_mm3": 1288.4523504143224,
+      "removed_mm3": 398.74692687198024,
+      "unchanged": false
+    },
+    {
+      "name": "active-pan-interface-20",
+      "added_mm3": 67.46523520592449,
+      "removed_mm3": 47.020142838117685,
+      "unchanged": false
+    }
+  ],
+  "reports_sha256": {
+    "inventory/engine/timing-seven-block-guard-study.json": "7e52a9f0c68a41cab3974d10d5505a8ad6a33c13f33253711dcd7952d7ecb619",
+    "inventory/engine/timing-seven-block-functional-guards.json": "b69cdf3d83277626bb71ef98d124ea863ae9ee52c449d4defb1a353caf364fa2",
+    "inventory/engine/timing-seven-block-neighbors.json": "9fa78b30431fb645f7519668e1714ff9ce8c5beeb41a3045c78e47e821f2da59",
+    "inventory/engine/timing-seven-block-mesh-review.json": "44336db283601542390f191c76d48195182dc1a6a2e9ba1c1c1061ed6147d3a8",
+    "inventory/engine/timing-seven-block-visual-review.json": "c92ac1adb26756d21494fa16866fab5505de84e48190f4314ec8ec056279a646",
+    "inventory/engine/timing-seven-block-guard-localization.json": "b143c182f9ac385fb891b23624b07732bd45f26a972ef94134fa6954f00bb147",
+    "inventory/engine/timing-seven-block-failure-location-visual.json": "77739995b7ea0c565d12dfa97205d4d570f2590880b645671a900e7864940616",
+    "inventory/engine/timing-seven-block-added-location-visual.json": "d4b16434598924a716c0cbc3d0d0d416e9c5e7a592e9d612e0a92d12e11d1360"
+  },
+  "checker_sha256": "7d5443fa41c76cb2ed07fbcdb8e8ab639e2b911692ef46b2bd6c7501130ec499",
+  "limits": [
+    "Root must explicitly assess changes in exterior pan20R12 andpumpR85 stock; original strictguardFAIL remains",
+    "Measured CAD volumes do not resolve inheritedV3 metric gaps",
+    "Only local changed-support motion envelopes qualified; no wholeassembly continuous collision/flow/strength/factory claim",
+    "No canonical installation/browser"
+  ]
+}

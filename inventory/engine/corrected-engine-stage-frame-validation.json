@@ -1,0 +1,21 @@
+{
+  "status": "PASS composed manifest motion matrices; geometry gaps remain",
+  "occurrences": 1356,
+  "matrix_checks": 2788,
+  "branch_checks": 180,
+  "maximum_matrix_error": 5.684341886080802e-14,
+  "bindings": {
+    "inventory/engine/corrected-engine-stage.json": "c09eca9a670b9d6241f04b8e082929cdf864e5c8498bed9b65bc0211d530f342",
+    "scripts/check-corrected-engine-stage-frames.py": "deef81e92a4c555196419b8efa47050d6bcb61fc366a5e96a203dd5f2eed98ae",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "inventory/engine/timing-core-drive-stage-review.json": "3d6df718025215eb55f5e2781eb95750e955fd65f9e45c00819a82b632e7c6c7",
+    "inventory/engine/clockwise-linkage-pose-patch.json": "c6f3296bc510f57cefefb2d042a4760ae27b934fa6072e290b6582a325ca7a29"
+  },
+  "limits": [
+    "Inherited rod-bolt/block interference",
+    "Shifted pump pickup connection and missing pump gasket/discharge joint",
+    "Main cover gasket and terminal sealant dependency",
+    "2692 case/elastomer/spring and hub replacement dependency",
+    "Full assembly collision/motion and browser acceptance"
+  ]
+}

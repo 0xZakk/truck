@@ -1,0 +1,14 @@
+"""Terminal stage binding; no canonical promotion or originalFAIL relabeling."""
+from pathlib import Path
+import json,hashlib
+R=Path(__file__).resolve().parents[1];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+names=['timing-front-stage-contact-delta','timing-front-coordinated-stage-validation','timing-front-coordinated-patch-replay','timing-front-stage-step-equivalence','timing-front-coordinated-stage-visual'];reports={n:json.loads((R/'inventory/engine'/f'{n}.json').read_text())for n in names};mismatch=[]
+for name,r in reports.items():
+ for p,h in r.get('input_sha256',r.get('inputs_sha256',r.get('inputs',{}))).items():
+  if sha(R/p)!=h:mismatch.append({'report':name,'path':p})
+contact,stage,replay,equiv,visual=[reports[n]for n in names];pp=R/stage['patch'];assert sha(pp)==stage['patch_sha256'];patch=json.loads(pp.read_text());signed=patch['scope_approval']['whole_signed_deltas']+patch['scope_approval']['broad_guard_signed_witnesses'];signed_current=all(sha(R/e['path'])==e['sha256']for e in signed)
+oldguard=R/'inventory/engine/timing-seven-block-delivery-validation.json';g=json.loads(oldguard.read_text());assert g['gates']['original_broad_stock_guards']is False
+# GasketmaximumworldZ=-24.5 isfixedflatfront datum; support/cavity lowerbounds certify uppercontact unchanged by sevenblockdelta.
+minimum_delta_z=min(e['bounds_mm'][0][2]for e in patch['scope_approval']['whole_signed_deltas']);upper_contact_gap=minimum_delta_z-(-24.5)
+gates={'bound_inputs_current':not mismatch,'signed_delta_assets_current':signed_current,'explicit_scope_record_retains_original_fail':not g['gates']['original_broad_stock_guards']and g['gates']['functional_pan_pump_guards'],'changed_contact':contact['status'].startswith('PASS'),'replay':replay['status'].startswith('PASS'),'restored_step_exact':equiv['status'].startswith('PASS'),'six_valid_assets':len(stage['parts'])==6 and all(p['valid']and p['watertight']and p['solids']==1 for p in stage['parts']),'block_delta_above_upper_gasket_contact':upper_contact_gap>0,'no_canonical_mutation':stage['canonical_modified']is False and replay['canonical_modified']is False}
+r={'status':'PASS coordinatedassetstage; dependencies/browser/installation remainopen'if all(gates.values())else'FAIL stagebinding','gates':gates,'input_mismatches':mismatch,'block_delta_to_front_gasket_top_separation_mm':upper_contact_gap,'reports_sha256':{f'inventory/engine/{name}.json':sha(R/'inventory/engine'/f'{name}.json')for name in names},'original_guard_failure_sha256':sha(oldguard),'patch_sha256':sha(pp),'signed_delta_records':signed,'checker_sha256':sha(Path(__file__)),'limits':patch['limits']+patch['dependencies']};(R/'inventory/engine/timing-front-coordinated-delivery-validation.json').write_text(json.dumps(r,indent=2)+'\n');print(r['status']);print(gates)

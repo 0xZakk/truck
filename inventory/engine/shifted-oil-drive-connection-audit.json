@@ -1,0 +1,64 @@
+{
+  "status": "AUDIT; shifted external interfaces not accepted",
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/oil_pump.py": "ec6b0206297632faada63e7272ed11d078cb7bb95e18b3a9879bc50b1d3c559f",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "scripts/check-shifted-oil-drive-connections.py": "825701806767d0c563fbd67975162f6ccefc0e635afc1ffcbb25814d4c32bdab",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a",
+    "cad/engine/generated/oil-pickup-bell.step": "95601f09ded4554a87459e9b04b8fca69d5d892bfce22c45ae2846f945711f4c",
+    "cad/engine/generated/oil-pickup-screen.step": "3596fa329f490d946bf36d30f6d11cf114548b1c5b354cee671e9bec4fe5ce70"
+  },
+  "delta_mm": [
+    0.0,
+    5.109820990161097,
+    4.087856792128875
+  ],
+  "inlet": {
+    "old_center_mm": [
+      190.084,
+      62.33097641719087,
+      -109.2769759179967
+    ],
+    "shifted_center_mm": [
+      190.084,
+      67.44079740735197,
+      -105.18911912586783
+    ],
+    "stale_endpoint_error_mm": 6.543763726208717,
+    "old_axis_world": [
+      -1,
+      0,
+      0
+    ],
+    "shifted_axis_world": [
+      -1,
+      0,
+      0
+    ],
+    "actual_tube_circular_edges_nearest_inlet": []
+  },
+  "actual_CAD": {
+    "old_pump_tube_overlap_mm3": 0,
+    "shifted_pump_stale_tube_overlap_mm3": 0,
+    "old_pump_tube_distance_mm": 4.672174826074215e-11,
+    "shifted_pump_stale_tube_distance_mm": 4.035883239499546e-11,
+    "old_inlet_lumen_probe_pump_overlap_mm3": 0,
+    "shifted_inlet_lumen_probe_pump_overlap_mm3": 0,
+    "shifted_shaft_passage_probe_block_overlap_mm3": 0
+  },
+  "routing": {
+    "pickup": "Existing estimated tube remains at old endpoint; downstream bell/screen fixed",
+    "pump_discharge": "No complete discharge passage defined by pump source; do not reinterpret shaft bore as fluid outlet",
+    "block_support": "Frozen moved pump feet provide mechanical mounting only; oil discharge sealing/routing absent"
+  },
+  "limits": [
+    "Static endpoint and actual solids audit only",
+    "Tube outer radius6 and bore4.8 are estimates",
+    "Shaft clearance probe is not whole pump/block interface acceptance",
+    "No new geometry or fluid-pressure claim"
+  ]
+}

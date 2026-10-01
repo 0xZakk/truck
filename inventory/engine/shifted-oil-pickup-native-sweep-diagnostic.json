@@ -1,0 +1,25 @@
+{
+  "status": "EXPERIMENT only",
+  "valid": true,
+  "solid_count": 1,
+  "outside_mask_difference_mm3": 0.0,
+  "prior_candidate_difference_mm3": 0.0,
+  "mesh": {
+    "watertight": false,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "triangles": 286126
+  },
+  "inputs": {
+    "scripts/probe-shifted-oil-pickup-native-sweep.py": "87f6a76845457de7b8e6203f1f72c07a8fdcde0cda59f4bbf4dc674bd117aa31",
+    "cad/engine/shifted_oil_pickup_candidate.py": "b8ad00864b8730a49e2428619c4f27309393cf68edb7cb8c2be5c1c2b9ef2651",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube-world.step": "25a60b588ea4e7dd27d83b284d601cfa3d6190719d74df2690748817b80ba1bd"
+  },
+  "artifacts": {
+    "cad/engine/generated/shifted-oil-pickup-native-sweep/oil-pickup-tube-world.step": "c360e583e9291f8a9e5da6d9532281e84920906bb1fb459bf6b2b35b76ca094a",
+    "cad/engine/generated/shifted-oil-pickup-native-sweep/oil-pickup-tube.glb": "34271982dbefe94d8bb4ee0d02ddfa0614dd57a47c5b890206af256d4ac41a93",
+    "cad/engine/generated/shifted-oil-pickup-native-sweep/oil-pickup-tube.step": "19b8c29c5da6273267ea8796ac590b5adb38f052365a7816d9c3f9c01a960d22"
+  }
+}

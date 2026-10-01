@@ -1,0 +1,492 @@
+{
+  "status": "CANDIDATE serialized asset proposal; not installed",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "pose_patch_sha256": "c6f3296bc510f57cefefb2d042a4760ae27b934fa6072e290b6582a325ca7a29",
+  "definitions": [
+    {
+      "id": "cylinder-head",
+      "before": {
+        "id": "cylinder-head",
+        "name": "Cylinder head",
+        "function": "Closes the cylinders and carries the valves, intake and exhaust passages and rocker supports. Port and chamber shapes here are provisional.",
+        "system": "head",
+        "color": "#a1afb6",
+        "glb": "/models/engine/cylinder-head.glb",
+        "step": "/cad/engine/generated/cylinder-head.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-1b7a4041a45d",
+          "allied-12952-head-photos",
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca",
+          "ford-accessory-brackets",
+          "ford-accessory-routing",
+          "ford-cii-pump-study",
+          "ford-alternator-study",
+          "ford-manifold-fastener-topology",
+          "ford-1996-manifold-comparison",
+          "ford-1996-manifold-fastener-table",
+          "ford-intake-manifold-dowel",
+          "dorman-674185-profile-specification",
+          "dorman-674185-head-facing-photo",
+          "dorman-674185-opposite-photo",
+          "dorman-674185-application",
+          "dorman-674186-profile-specification",
+          "dorman-674186-head-facing-photo",
+          "dorman-674186-opposite-photo",
+          "dorman-674186-overview-photo",
+          "dorman-674186-catalog-application",
+          "ford-tsb-94-10-19-accessory",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications",
+          "dorman-902-1002",
+          "motorad-244-192",
+          "water-pump-mounting-topology",
+          "ford-cooling-connections",
+          "ford-ect-construction",
+          "ford-cooling-sensor-circuits",
+          "gates-1994-drive",
+          "truck-cooling-hose-photos"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Photograph-informed chamber outline and plug wells remain provisional. Plug datums are shared with the installed study for geometric coherence, not verified production fit. Chamber volume/profile, port routing, coolant passages, casting identity and valve stations remain unverified.",
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Ford identifies a shared power-steering/A/C bracket attached to block and head and a separate alternator bracket. These castings reconstruct that load-path topology, not a measured production casting.",
+          "All boss coordinates, bolt counts, web sections, material colors, hole sizes and mounting-face locations are illustrative interfaces to the current component studies. Casting ribs, part numbers, dowels and factory contours remain unknown.",
+          "Engine feet touch provisional front-face seats. Explicit interface adapters add isolated blind support bosses and 16 mm deep smooth thread-envelope bores; 14 mm bolt engagement is illustrative, not a verified thread specification. These are dry blind attachments, not coolant or oil passages.",
+          "Accessory bolt shanks use clearance through the candidate mounting ears. Threads, grades, preload, bracket stiffness and belt-load deflection are not simulated.",
+          "The Thermactor and tensioner engine brackets remain separate unresolved load paths. No unsupported air-pump attachment is added to these castings.",
+          "Ford 1994 identifies front stud13 and bolt14 before intake installation; the recovered 1996 factory figure shows a two-foot spanning eye.",
+          "All station coordinates, lug sections, eye outline, socket depths and clearances are provisional adaptations to current castings, not production dimensions.",
+          "Stud total axial length90.678 mm and bolt underhead length33.274 mm compare the 1996 labels3/8-16x3.57 and3/8-16x1.31; 1994 identity is not established.",
+          "Smooth nominal thread envelopes do not simulate thread engagement, preload, lifting strength or fatigue. The projecting stud end has no invented downstream retaining nut.",
+          "Remaining fourteen manifold fastener stations and shared clamping details are not completed by this subset.",
+          "The provisional bolt axes are above the intake gasket strip. The casting webs lie outside its sealing plane instead of cutting the gasket into disconnected pieces.",
+          "Bolt14 and its eye foot use assumed X49 mm, revised from X45 after the whole-engine audit found1.7265 mm3 overlap with injector3 connector. This clearance-driven adaptation is not a recovered Ford station.",
+          "The simplified head needs explicit8 mm radius internal mounting bosses ending at worldY-109 to surround the provisional blind sockets. These assumed bosses are not traced production castings or verified against recovered coolant-gallery geometry.",
+          "Ford1994 specifies one locating dowel through the intake gasket into the lower intake. The1996 factory comparison table gives5/16 inch diameter by1 inch length; identity and dimensions on the1994 truck remain unverified.",
+          "The7.9375 by25.4 mm comparison pin replaces the earlier arbitrary6 by23.5 mm candidate. WorldX0/Z298 and axial centerY-132.7 are dry-interface assumptions, not measured Ford datums.",
+          "Head and intake sockets use0.05 mm radial clearance for geometric checking. They do not establish the real press/sliding fits or retention.",
+          "The dowel locates the joint but does not clamp it. The front lifting-eye stud/bolt study is separate; fourteen other manifold attachment stations and shared clamping details remain unresolved.",
+          "Dorman674-185 manufacturer photos/specifications establish rectangular entries and a blended collector for its1994F1504.9L front application, not the installed truck casting identity.",
+          "Entry28x28mm with3mm corners, outer pad36x36mm with6mm corners, runner radii15/18mm and collector radii18/24mm are dimensional study assumptions.",
+          "The three port stations, rectangular-to-round transitions, collector centerline and outlet station retain provisional engine datums. Wall thickness, thermal stress, flow and casting manufacturability are unverified.",
+          "Existing provisional lifting-eye lugs are retained. Other manifold clamping stations, production flange outline and downstream pipe joint remain incomplete.",
+          "Rear manifold and intake port shape are not inferred from the front replacement photograph.",
+          "Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.",
+          "Entry28x28mm, corner3mm, outer36x36mm and transition stations reuse provisional front study dimensions; no pixel scaling is used.",
+          "This incremental entry correction retains the old collector and EGR end connection. Both remain unsupported form/routing studies pending joint reconstruction; this is not a completed rear manifold.",
+          "The provisional EGR fitting insertion envelope is shortened from19mm to12.5mm so its tip ends0.5mm before the collector inner wall rather than intruding into the collector and rear runner. This is a geometric clearance assumption, not a verified thread engagement or retention specification.",
+          "Production flange lands, head attachment, outlet flange, auxiliary ports, wall thickness and thermal/flow performance remain unverified.",
+          "Ford1994 explicitly installs rear bolts15/16 before the intake; these two fasteners do not complete the remaining shared manifold clamps.",
+          "Nominal3/8-16 diameter and1.31in underhead length are1996 comparison dimensions, not established1994 installed identity.",
+          "All mounting stations, casting webs, head bosses, clearance holes, socket depths and hex-head dimensions are provisional adaptations to the existing reconstruction.",
+          "Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.",
+          "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+          "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,167,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+          "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+          "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+          "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+          "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Automotive front-face photograph establishes the head-front outlet, two diagonal fasteners and adjacent smaller opening, not calibrated positions or dimensions.",
+          "Dorman902-1002 establishes two .313-inch holes, 1.5-inch catalog outside diameter and separate gasket/main/secondary apertures; neck contours and measurement station remain uncertain.",
+          "All modeled hole coordinates, gasket contour, neck curvature, bolt engagement and receiver depths are assumptions. Only thermostat flange53.85mmOD/1.27mmthickness are manufacturer dimensions.",
+          "The head adapter creates bounded local blind coolant receiver pockets with modeled wall material. It does not reconstruct or validate the complete head water jacket.",
+          "The current longblock front plane X373 and outlet center Y0/Z295 are provisional reference datums. Placement corrects the floating joint without optimizing a belt length.",
+          "The illustrative thermostat piston front is shortened0.01mm to seat exactly against the existing bridge; this corrects an inherited interference, not a sourced actuator dimension.",
+          "The adjacent heater-supply passage remains separate from the thermostat-controlled radiator chamber. Its thread and deeper head-jacket connectivity remain unverified.",
+          "The heater-supply/ECT elbow follows the relocated secondary outlet while retaining the existing engine-side vehicle endpoint(488,-57,335). New bend control points, collar, shoulder and sensor station are provisional; the boss is located1mm farther forward than the rejected trial to clear the outlet casting.",
+          "Source-sized replacement envelopes are not installed-part identification. Absolute cam/deck/station datums, lifter socket/internal offsets and rocker geometry remain assumptions.",
+          "Guide bore and separate spring load-test heights are service-reference constraints; spring wire/turns, keeper/groove construction and casting contours remain illustrative."
+        ],
+        "volume_mm3": 8106428.98791327,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 54690,
+        "model_bounds_mm": [
+          746.0000001000001,
+          268.00000009999997,
+          119.63429385112889
+        ]
+      },
+      "after": {
+        "id": "cylinder-head",
+        "name": "Cylinder head",
+        "function": "Closes the cylinders and carries the valves, intake and exhaust passages and rocker supports. Port and chamber shapes here are provisional.",
+        "system": "head",
+        "color": "#a1afb6",
+        "glb": "/models/engine/cylinder-head.glb",
+        "step": "/cad/engine/generated/cylinder-head.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-1b7a4041a45d",
+          "allied-12952-head-photos",
+          "fsm-be886ffa4807",
+          "fsm-2f144bda5e08",
+          "system-f1571449160a",
+          "system-2ea2c28d7cca",
+          "ford-accessory-brackets",
+          "ford-accessory-routing",
+          "ford-cii-pump-study",
+          "ford-alternator-study",
+          "ford-manifold-fastener-topology",
+          "ford-1996-manifold-comparison",
+          "ford-1996-manifold-fastener-table",
+          "ford-intake-manifold-dowel",
+          "dorman-674185-profile-specification",
+          "dorman-674185-head-facing-photo",
+          "dorman-674185-opposite-photo",
+          "dorman-674185-application",
+          "dorman-674186-profile-specification",
+          "dorman-674186-head-facing-photo",
+          "dorman-674186-opposite-photo",
+          "dorman-674186-overview-photo",
+          "dorman-674186-catalog-application",
+          "ford-tsb-94-10-19-accessory",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications",
+          "dorman-902-1002",
+          "motorad-244-192",
+          "water-pump-mounting-topology",
+          "ford-cooling-connections",
+          "ford-ect-construction",
+          "ford-cooling-sensor-circuits",
+          "gates-1994-drive",
+          "truck-cooling-hose-photos"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Photograph-informed chamber outline and plug wells remain provisional. Plug datums are shared with the installed study for geometric coherence, not verified production fit. Chamber volume/profile, port routing, coolant passages, casting identity and valve stations remain unverified.",
+          "Firing sequence and clockwise distributor sweep follow Ford references. Tower 1 at local +X is an explicit model phase; surveyed cap clocking and absolute ignition timing are unverified.",
+          "Ford describes a carbon-impregnated multifilament synthetic-fiber core and heat-resistant rubber insulation. The 7 mm jacket, 2 mm aggregate core and all boot/contact dimensions are illustrative; individual fibers and electrical resistance are not simulated.",
+          "Lead lengths, bends, terminal clip construction, seal compression and support arrangement are provisional. These routes are not an installation guide.",
+          "Coil bracket geometry, two head mounting bosses and fasteners are a fit study. Four coil screws follow existing provisional core holes, not a verified factory screw count.",
+          "Electrical paths and firing order are represented; ignition voltage, dielectric breakdown, spark timing, flexing and thermal behavior are not simulated.",
+          "Ford identifies a shared power-steering/A/C bracket attached to block and head and a separate alternator bracket. These castings reconstruct that load-path topology, not a measured production casting.",
+          "All boss coordinates, bolt counts, web sections, material colors, hole sizes and mounting-face locations are illustrative interfaces to the current component studies. Casting ribs, part numbers, dowels and factory contours remain unknown.",
+          "Engine feet touch provisional front-face seats. Explicit interface adapters add isolated blind support bosses and 16 mm deep smooth thread-envelope bores; 14 mm bolt engagement is illustrative, not a verified thread specification. These are dry blind attachments, not coolant or oil passages.",
+          "Accessory bolt shanks use clearance through the candidate mounting ears. Threads, grades, preload, bracket stiffness and belt-load deflection are not simulated.",
+          "The Thermactor and tensioner engine brackets remain separate unresolved load paths. No unsupported air-pump attachment is added to these castings.",
+          "Ford 1994 identifies front stud13 and bolt14 before intake installation; the recovered 1996 factory figure shows a two-foot spanning eye.",
+          "All station coordinates, lug sections, eye outline, socket depths and clearances are provisional adaptations to current castings, not production dimensions.",
+          "Stud total axial length90.678 mm and bolt underhead length33.274 mm compare the 1996 labels3/8-16x3.57 and3/8-16x1.31; 1994 identity is not established.",
+          "Smooth nominal thread envelopes do not simulate thread engagement, preload, lifting strength or fatigue. The projecting stud end has no invented downstream retaining nut.",
+          "Remaining fourteen manifold fastener stations and shared clamping details are not completed by this subset.",
+          "The provisional bolt axes are above the intake gasket strip. The casting webs lie outside its sealing plane instead of cutting the gasket into disconnected pieces.",
+          "Bolt14 and its eye foot use assumed X49 mm, revised from X45 after the whole-engine audit found1.7265 mm3 overlap with injector3 connector. This clearance-driven adaptation is not a recovered Ford station.",
+          "The simplified head needs explicit8 mm radius internal mounting bosses ending at worldY-109 to surround the provisional blind sockets. These assumed bosses are not traced production castings or verified against recovered coolant-gallery geometry.",
+          "Ford1994 specifies one locating dowel through the intake gasket into the lower intake. The1996 factory comparison table gives5/16 inch diameter by1 inch length; identity and dimensions on the1994 truck remain unverified.",
+          "The7.9375 by25.4 mm comparison pin replaces the earlier arbitrary6 by23.5 mm candidate. WorldX0/Z298 and axial centerY-132.7 are dry-interface assumptions, not measured Ford datums.",
+          "Head and intake sockets use0.05 mm radial clearance for geometric checking. They do not establish the real press/sliding fits or retention.",
+          "The dowel locates the joint but does not clamp it. The front lifting-eye stud/bolt study is separate; fourteen other manifold attachment stations and shared clamping details remain unresolved.",
+          "Dorman674-185 manufacturer photos/specifications establish rectangular entries and a blended collector for its1994F1504.9L front application, not the installed truck casting identity.",
+          "Entry28x28mm with3mm corners, outer pad36x36mm with6mm corners, runner radii15/18mm and collector radii18/24mm are dimensional study assumptions.",
+          "The three port stations, rectangular-to-round transitions, collector centerline and outlet station retain provisional engine datums. Wall thickness, thermal stress, flow and casting manufacturability are unverified.",
+          "Existing provisional lifting-eye lugs are retained. Other manifold clamping stations, production flange outline and downstream pipe joint remain incomplete.",
+          "Rear manifold and intake port shape are not inferred from the front replacement photograph.",
+          "Manufacturer674-186 photos and catalog application support three rounded-rectangular rear entries, not their dimensions or installed casting identity.",
+          "Entry28x28mm, corner3mm, outer36x36mm and transition stations reuse provisional front study dimensions; no pixel scaling is used.",
+          "This incremental entry correction retains the old collector and EGR end connection. Both remain unsupported form/routing studies pending joint reconstruction; this is not a completed rear manifold.",
+          "The provisional EGR fitting insertion envelope is shortened from19mm to12.5mm so its tip ends0.5mm before the collector inner wall rather than intruding into the collector and rear runner. This is a geometric clearance assumption, not a verified thread engagement or retention specification.",
+          "Production flange lands, head attachment, outlet flange, auxiliary ports, wall thickness and thermal/flow performance remain unverified.",
+          "Ford1994 explicitly installs rear bolts15/16 before the intake; these two fasteners do not complete the remaining shared manifold clamps.",
+          "Nominal3/8-16 diameter and1.31in underhead length are1996 comparison dimensions, not established1994 installed identity.",
+          "All mounting stations, casting webs, head bosses, clearance holes, socket depths and hex-head dimensions are provisional adaptations to the existing reconstruction.",
+          "Smooth envelopes do not model female threads, preload, thermal expansion or retention. Added head bosses are not verified against production coolant jackets.",
+          "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+          "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,167,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+          "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+          "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+          "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+          "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Automotive front-face photograph establishes the head-front outlet, two diagonal fasteners and adjacent smaller opening, not calibrated positions or dimensions.",
+          "Dorman902-1002 establishes two .313-inch holes, 1.5-inch catalog outside diameter and separate gasket/main/secondary apertures; neck contours and measurement station remain uncertain.",
+          "All modeled hole coordinates, gasket contour, neck curvature, bolt engagement and receiver depths are assumptions. Only thermostat flange53.85mmOD/1.27mmthickness are manufacturer dimensions.",
+          "The head adapter creates bounded local blind coolant receiver pockets with modeled wall material. It does not reconstruct or validate the complete head water jacket.",
+          "The current longblock front plane X373 and outlet center Y0/Z295 are provisional reference datums. Placement corrects the floating joint without optimizing a belt length.",
+          "The illustrative thermostat piston front is shortened0.01mm to seat exactly against the existing bridge; this corrects an inherited interference, not a sourced actuator dimension.",
+          "The adjacent heater-supply passage remains separate from the thermostat-controlled radiator chamber. Its thread and deeper head-jacket connectivity remain unverified.",
+          "The heater-supply/ECT elbow follows the relocated secondary outlet while retaining the existing engine-side vehicle endpoint(488,-57,335). New bend control points, collar, shoulder and sensor station are provisional; the boss is located1mm farther forward than the rejected trial to clear the outlet casting.",
+          "Source-sized replacement envelopes are not installed-part identification. Absolute cam/deck/station datums, lifter socket/internal offsets and rocker geometry remain assumptions.",
+          "Guide bore and separate spring load-test heights are service-reference constraints; spring wire/turns, keeper/groove construction and casting contours remain illustrative."
+        ],
+        "volume_mm3": 8100235.039741089,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 82746,
+        "model_bounds_mm": [
+          746.0000001000001,
+          268.00000009999997,
+          119.63429385112889
+        ]
+      },
+      "asset_frame": "Existing definition-local CAD frame; no extra world offset",
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step",
+          "to": "cad/engine/generated/cylinder-head.step",
+          "sha256": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.glb",
+          "to": "models/engine/cylinder-head.glb",
+          "sha256": "d0a1a298c12b36700d6c22fd837f8d788b8e6201c9149c663771a0c371cc4d3f"
+        }
+      }
+    },
+    {
+      "id": "head-gasket",
+      "before": {
+        "id": "head-gasket",
+        "name": "Head gasket",
+        "function": "Seals combustion, coolant and oil interfaces between block and head. Fire rings and passage pattern need further evidence.",
+        "system": "head",
+        "color": "#bba67f",
+        "glb": "/models/engine/head-gasket.glb",
+        "step": "/cad/engine/generated/head-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Rear cam journal and bearing move from assumedX-330to-334mm to clear the complete cylinder6 intake follower. Journal width23mm, bearing width22mm and axial coordinates remain unverified; source radial dimensions are preserved.",
+          "The existing continuous cam bore supports the revised bearing location; actual bearing retention, oil-feed indexing and axial production layout remain unresolved.",
+          "The head gasket pushrod openings retain their old clearance and gain a6mm-radius cut at the revisedY90axis. Hole contours and sealing lands remain provisional; positive passage checks do not establish a production gasket."
+        ],
+        "volume_mm3": 189923.53951089116,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 8092,
+        "model_bounds_mm": [
+          746.0,
+          242.0,
+          1.5
+        ]
+      },
+      "after": {
+        "id": "head-gasket",
+        "name": "Head gasket",
+        "function": "Seals combustion, coolant and oil interfaces between block and head. Fire rings and passage pattern need further evidence.",
+        "system": "head",
+        "color": "#bba67f",
+        "glb": "/models/engine/head-gasket.glb",
+        "step": "/cad/engine/generated/head-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Rear cam journal and bearing move from assumedX-330to-334mm to clear the complete cylinder6 intake follower. Journal width23mm, bearing width22mm and axial coordinates remain unverified; source radial dimensions are preserved.",
+          "The existing continuous cam bore supports the revised bearing location; actual bearing retention, oil-feed indexing and axial production layout remain unresolved.",
+          "The head gasket pushrod openings retain their old clearance and gain a6mm-radius cut at the revisedY90axis. Hole contours and sealing lands remain provisional; positive passage checks do not establish a production gasket."
+        ],
+        "volume_mm3": 189641.93348591583,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 12428,
+        "model_bounds_mm": [
+          746.0,
+          242.0,
+          1.5
+        ]
+      },
+      "asset_frame": "Existing definition-local CAD frame; no extra world offset",
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.step",
+          "to": "cad/engine/generated/head-gasket.step",
+          "sha256": "2a468f017d1a38cb88ca713216c87afe2c45c47eb18fcc2166d3fa26cfaa5c80"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.glb",
+          "to": "models/engine/head-gasket.glb",
+          "sha256": "4ad92431a315d759c9fd8e34e51bced5898c2954896b8406d90149802eeb6673"
+        }
+      }
+    },
+    {
+      "id": "rocker-arm",
+      "before": {
+        "id": "rocker-arm",
+        "name": "Rocker arm",
+        "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+        "system": "valvetrain",
+        "color": "#929da7",
+        "glb": "/models/engine/rocker-arm.glb",
+        "step": "/cad/engine/generated/rocker-arm.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-c69f7255fa10",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Source-sized replacement envelopes are not installed-part identification. Absolute cam/deck/station datums, lifter socket/internal offsets and rocker geometry remain assumptions.",
+          "Guide bore and separate spring load-test heights are service-reference constraints; spring wire/turns, keeper/groove construction and casting contours remain illustrative."
+        ],
+        "volume_mm3": 15996.456972016811,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1882,
+        "model_bounds_mm": [
+          17.000000200000002,
+          118.0,
+          18.578754534372315
+        ]
+      },
+      "after": {
+        "id": "rocker-arm",
+        "name": "Rocker arm",
+        "function": "Pivots on its fulcrum: a rising pushrod pushes the opposite end down against the valve. Stamped contours and exact leverage remain provisional.",
+        "system": "valvetrain",
+        "color": "#929da7",
+        "glb": "/models/engine/rocker-arm.glb",
+        "step": "/cad/engine/generated/rocker-arm.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-c69f7255fa10",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Source-sized replacement envelopes are not installed-part identification. Absolute cam/deck/station datums, lifter socket/internal offsets and rocker geometry remain assumptions.",
+          "Guide bore and separate spring load-test heights are service-reference constraints; spring wire/turns, keeper/groove construction and casting contours remain illustrative."
+        ],
+        "volume_mm3": 15293.151367425684,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 3602,
+        "model_bounds_mm": [
+          17.000000200000002,
+          118.0,
+          18.578754534372315
+        ]
+      },
+      "asset_frame": "Existing definition-local CAD frame; no extra world offset",
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.step",
+          "to": "cad/engine/generated/rocker-arm.step",
+          "sha256": "f5ac82eed1abd73a88cbff7bd5de270050b51e8013ee2565a14e36ac9cee2588"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.glb",
+          "to": "models/engine/rocker-arm.glb",
+          "sha256": "3c276505df453d1b6d5ff5685d82c13d3f3e0de4ff156c2fe8923a7f16070d89"
+        }
+      }
+    }
+  ],
+  "world_mesh_checks": [
+    {
+      "id": "cylinder-head",
+      "world_bounds_error_mm": 5.364418029785156e-06
+    },
+    {
+      "id": "head-gasket",
+      "world_bounds_error_mm": 4.0531158447265625e-06
+    },
+    {
+      "id": "c1-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c1-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    },
+    {
+      "id": "c2-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c2-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    },
+    {
+      "id": "c3-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c3-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    },
+    {
+      "id": "c4-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c4-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    },
+    {
+      "id": "c5-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c5-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    },
+    {
+      "id": "c6-intake-rocker",
+      "world_bounds_error_mm": 3.746016830064036e-07
+    },
+    {
+      "id": "c6-exhaust-rocker",
+      "world_bounds_error_mm": 3.745491454765215e-07
+    }
+  ],
+  "bindings": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/clockwise-linkage-pose-patch.json": "c6f3296bc510f57cefefb2d042a4760ae27b934fa6072e290b6582a325ca7a29",
+    "scripts/stage-clockwise-linkage-assets.py": "aa2baf30e7c5e6b2ff7cd1fe2274cdaeb2620d40f582461af0cc7917ebac56bb",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.glb": "d0a1a298c12b36700d6c22fd837f8d788b8e6201c9149c663771a0c371cc4d3f",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.step": "2a468f017d1a38cb88ca713216c87afe2c45c47eb18fcc2166d3fa26cfaa5c80",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/head-gasket.glb": "4ad92431a315d759c9fd8e34e51bced5898c2954896b8406d90149802eeb6673",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.step": "f5ac82eed1abd73a88cbff7bd5de270050b51e8013ee2565a14e36ac9cee2588",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.glb": "3c276505df453d1b6d5ff5685d82c13d3f3e0de4ff156c2fe8923a7f16070d89"
+  },
+  "canonical_modified": false,
+  "limits": [
+    "Neutral rest geometry bounds only, not motion collisions",
+    "Requires all coordinated lower block/core/drive updates",
+    "Geometry remains source-qualified estimates, not OEM-certified",
+    "Browser NOT RUN"
+  ]
+}

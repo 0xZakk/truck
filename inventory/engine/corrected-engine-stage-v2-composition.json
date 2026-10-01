@@ -1,0 +1,44 @@
+{
+  "status": "PASS isolated sealing composition; broad assembly failures remain",
+  "definitions": 747,
+  "occurrences": 1361,
+  "new_lessons": 13,
+  "new_sources": 7,
+  "applied_rows": {
+    "definitions": 8,
+    "assemblies": 1,
+    "occurrences": 7
+  },
+  "bindings": {
+    "inventory/engine/corrected-engine-stage.json": "c09eca9a670b9d6241f04b8e082929cdf864e5c8498bed9b65bc0211d530f342",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/compose-corrected-engine-sealing-stage.py": "a0d56774b14fb63471dc30e886e5e5900920cbc654e5282c806de25983cf1944",
+    "inventory/engine/front-seal-2692-composition-patch.json": "4e7aa90bb7e1edb1b1adab8f590da05245abbd4b3f0e1665f410fbe2016804a5",
+    "cad/engine/generated/front-seal-2692-integration-stage/damper-hub.step": "8866684445ac10388a35dab2f808342cef33416b275b1ac5ff1ca219f18e4f04",
+    "cad/engine/generated/front-seal-2692-integration-stage/damper-hub.glb": "2a51e55744ebe1190092a152ed32c02b8f88db92029b6a78d6f45a45d6a3d73a",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-case.step": "f6ea6d55867bfca52dad3464f824174006a393070ad6bfb5fc5d6acb85c09bf9",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-case.glb": "e28295b33a13b4e9e145d6c1e4abb3d4ab0e5df321b868430ca5ef5c85c370f6",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-elastomer.step": "e91f4ae49161d07e154a17fe22777088d79dfde78bd1201161bd4148d4d6dcd8",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-elastomer.glb": "030e4a574a3cefe8bbc192c2c0412904ef5457e895020f9c75687fea804947da",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-garter-spring.step": "862aa6cf373226d76019c284b29d86e35162d7fb4c0f139fb73ff87ac8f9d001",
+    "cad/engine/generated/front-seal-2692-integration-stage/front-seal-garter-spring.glb": "6269af5a0474a2933ce1b536ed254075b9e28ebc36bd41bf54bf0522d8c51904",
+    "inventory/engine/timing-front-sealing-patch.json": "3ebafc0d27a3f3443a5ab5012a20db3aac470feeaf5aee7d11da11f3591c9b10",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-main-gasket.step": "3807f9d126282008a27562502f6ca08541fec59086c24b25ae6afc4f62daad8c",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-main-gasket.glb": "e004ab40392b558ed8d71589cac2aee2182b6b0c967183d1a40d05cd5dd0fe09",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-1.step": "1ebb1e50c1a8f87139d57259001d4db9c1162b373a59dcf00f6028e54cff00f5",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-1.glb": "684c272c75dbeff12b9f0f34e3b2a17ea9f1ce5a56f8220a81c1447d785b3c8e",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-2.step": "8cd90baf71adb0c20a07c38f42a036240954b1447761d6cc59410d284497bbd0",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-2.glb": "b16f5c235e1ec87820cd3a21137b14d3950af498dd603d600696e4235f364a35",
+    "inventory/engine/timing-front-sealing-learning.json": "fcaef46e204986759494fb9874cc288da8bf8c9b384f1bdefd743c8b4a8ffe96",
+    "inventory/engine/timing-front-sealing-sources.json": "b3884609e50e655be5ac0f5de31cf21781ae71b9fba61de19d9764aa84d1abdc"
+  },
+  "stage_sha256": "9b8253b318e800e18b999a0a74caa749d9525978f2c19bc7286c07bb79a7c100",
+  "v1_manifest_unchanged": true,
+  "canonical_modified": false,
+  "open": [
+    "Inherited rod-bolt/block interference",
+    "Shifted pump pickup connection and missing pump gasket/discharge joint",
+    "Full assembly collision/motion and browser acceptance",
+    "Fresh v1 audit reports cover/water-pump/support/FS10 and shifted ignition-lead conflicts; v2 requires scoped recheck"
+  ]
+}

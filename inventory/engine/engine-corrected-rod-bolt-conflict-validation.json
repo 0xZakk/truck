@@ -1,0 +1,214 @@
+{
+  "status": "CONFIRMED inherited placeholder bolt-head/block interference; no geometry change",
+  "inputs": {
+    "scripts/check-engine-corrected-rod-bolt-conflict.py": "92f8739beed59609edd70dc8f4cf7880b0e77995ec4e8c5e0258d4f66054fe81",
+    "cad/engine/first_assembly.py": "ecc1e01abc623d00aef1b5bdc3d47105ccf43b6d6bb1761e4317015d75ad9c5f",
+    "inventory/engine/dimensions.json": "6a39abadf62a0b625d708ca162d56fe6656b7323f3be1f7d629bce697cd28de2",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "inventory/engine/engine-corrected-combined-motion-validation.json": "f980058d6e603a1e8b427c43d49ce0ad10dd55106e5289294eff4cb444871f73",
+    "cad/engine/generated/rod-bolt.step": "ff61f3d3f3b6c6f55f7b6643dc7ed2bd8268a38827b8fd850f73f64c1d8ea5c8",
+    "cad/engine/generated/block.step": "cd58029dde82a707027d168fb409db89182c22845b2ed55d25853ff28ff8985e",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8"
+  },
+  "bolt_source_replay_difference_mm3": 0.0,
+  "old_new_pose_matrix_difference": 0.0,
+  "canonical_block_overlap_mm3": 2.716027965353429,
+  "candidate_block_overlap_mm3": 2.716027965353429,
+  "local_block_region_difference_mm3": 0.0,
+  "strict_witness_world_mm": [
+    284.48000000000144,
+    -73.36260011256176,
+    65.2474860468778
+  ],
+  "strict_witness_bolt_local_mm": [
+    1.4210854715202004e-12,
+    -5.855617708515467,
+    26.592893509176804
+  ],
+  "witness_radius_from_crank_axis_mm": 98.17996501686666,
+  "declared_crankcase_clearance_radius_mm": 98.0,
+  "phase_scan": [
+    {
+      "local_crank_deg": 45,
+      "event_deg": 315,
+      "overlap_mm3": 13.345377972978861
+    },
+    {
+      "local_crank_deg": 46,
+      "event_deg": 314,
+      "overlap_mm3": 12.996469289338766
+    },
+    {
+      "local_crank_deg": 47,
+      "event_deg": 313,
+      "overlap_mm3": 12.412685355893661
+    },
+    {
+      "local_crank_deg": 48,
+      "event_deg": 312,
+      "overlap_mm3": 11.610267088282937
+    },
+    {
+      "local_crank_deg": 49,
+      "event_deg": 311,
+      "overlap_mm3": 10.612522550570144
+    },
+    {
+      "local_crank_deg": 50,
+      "event_deg": 310,
+      "overlap_mm3": 9.449827176761294
+    },
+    {
+      "local_crank_deg": 51,
+      "event_deg": 309,
+      "overlap_mm3": 8.159606949546934
+    },
+    {
+      "local_crank_deg": 52,
+      "event_deg": 308,
+      "overlap_mm3": 6.786302047336139
+    },
+    {
+      "local_crank_deg": 53,
+      "event_deg": 307,
+      "overlap_mm3": 5.381307025003756
+    },
+    {
+      "local_crank_deg": 54,
+      "event_deg": 306,
+      "overlap_mm3": 4.002882039422218
+    },
+    {
+      "local_crank_deg": 55,
+      "event_deg": 305,
+      "overlap_mm3": 2.716027965353429
+    },
+    {
+      "local_crank_deg": 56,
+      "event_deg": 304,
+      "overlap_mm3": 1.5923164801687455
+    },
+    {
+      "local_crank_deg": 57,
+      "event_deg": 303,
+      "overlap_mm3": 0.7096643527827275
+    },
+    {
+      "local_crank_deg": 58,
+      "event_deg": 302,
+      "overlap_mm3": 0.15203929858627077
+    },
+    {
+      "local_crank_deg": 59,
+      "event_deg": 301,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 60,
+      "event_deg": 300,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 61,
+      "event_deg": 299,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 62,
+      "event_deg": 298,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 63,
+      "event_deg": 297,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 64,
+      "event_deg": 296,
+      "overlap_mm3": 0.0
+    },
+    {
+      "local_crank_deg": 65,
+      "event_deg": 295,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "largest_sample": {
+    "local_crank_deg": 45,
+    "event_deg": 315,
+    "overlap_mm3": 13.345377972978861
+  },
+  "dimensions": {
+    "shank_diameter_mm": 8,
+    "shank_axial_mm": [
+      -31,
+      23
+    ],
+    "head_axial_mm": [
+      22,
+      27
+    ],
+    "hex_circumradius_mm": 7,
+    "hex_across_flats_mm": 12.124355652982143,
+    "bolt_spacing_half_mm": 34.5
+  },
+  "evidence_claims": {
+    "bolt_diameter": {
+      "id": "bolt_diameter",
+      "value": 8,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Illustrative smooth-shank hardware; thread pitch/type not verified.",
+      "original": null
+    },
+    "bolt_spacing_half": {
+      "id": "bolt_spacing_half",
+      "value": 34.5,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional hardware placement.",
+      "original": null
+    },
+    "rod_width": {
+      "id": "rod_width",
+      "value": 23,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional big-end axial width.",
+      "original": null
+    },
+    "rod_outer_radius": {
+      "id": "rod_outer_radius",
+      "value": 39,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [],
+      "note": "Provisional forging envelope.",
+      "original": null
+    },
+    "rod_length": {
+      "id": "rod_length",
+      "value": 157.7,
+      "unit": "mm",
+      "status": "assumed",
+      "source_ids": [
+        "ford-industrial-csg649"
+      ],
+      "note": "Provisional installed center distance. It falls within the visually reviewed Ford CSG649 industrial comparison range 6.2082-6.2112 in (157.68828-157.76448 mm), PDF page 100, printed 8-03. This narrows the evidence gap but does not verify 1994 truck applicability, rod identity or pin offset; see reference/engine/ford-csg649-rod-length-reviewed.json.",
+      "original": null
+    }
+  },
+  "limits": [
+    "Head size/height and shank length are literal illustrative source-code values, not primary sourced dimensions",
+    "No factory rod bolt identity, thread or pressed shoulder dimensions established",
+    "R98 crankcase cutter is also an estimate; current evidence cannot choose a physical correction",
+    "Phase scan is21 samples, not global maximum proof",
+    "No clearance-only block cut or bolt resizing performed"
+  ]
+}

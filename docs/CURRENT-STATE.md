@@ -1,6 +1,6 @@
 # Current engine integration — 2026-10-01
 
-Active branch: `engine/timing-drive-fit`, baseline merged [PR103](https://github.com/0xZakk/truck/pull/103), `26d0fdc4e7cdd3de0c621309499d1535d8c5131e`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
+Active branch: `engine/timing-drive-fit`, baseline merged [PR104](https://github.com/0xZakk/truck/pull/104), `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
 
 ## Installed baseline
 
@@ -32,23 +32,23 @@ Root review: `inventory/engine/timing-motion-contact-root-review.json`. New moti
 
 ## Current integration work
 
-Frozen corrected cam/contact/sections and crossed-drive pair/endplay are candidate deliveries. Root reviewed actual cam, crossed-gear and pan21 renders plus bound reports. Corrected pair clears 17 nominal samples and nine endplay samples; wrong-phase controls penetrate. The bounded −0.1 mm rear-stop correction is −0.351213° at the distributor. This is inferred gear registration, not a production setting.
+Frozen private stage v2 (`inventory/engine/corrected-engine-stage-v2.json`) has **747 definitions / 1,361 occurrences**, 13 new lessons and seven source records. It composes corrected crank/cam, inclined linkage poses, relocated drive branch, coordinated front joint, seven main-cover screws, gasket/terminal sealant and a three-part 2692 front seal. Canonical remains unchanged. The stage is an incomplete candidate, not an installed engine.
 
-Root's isolated JS helper matches CAD across 3,768 valve/linkage states, 942 rod/piston frames and 314 shaft-angle pairs. It is not loaded by atlas. See `docs/components/clockwise-browser-motion-candidate.md`.
+- Corrected CAD runtime passes 3,696 independent frame checks; staged manifest checks pass 2,788 comparisons, including 180 distributor/pump branch checks. JS helper matches CAD over 3,768 valve/linkage states, 942 slider frames and 314 shaft pairs. Neither candidate JS helper nor navigation is loaded by atlas.
+- Candidate navigation passes 1,361 parts / 1,561 nodes, 174 resolved lessons and 417 links. Old `front-seal` links resolve to its new three-part assembly. `stage=timing` links are preparatory, not a live viewer mode. See `docs/components/engine-stage-navigation.md`.
+- Independent v1 changed-neighbor audit finished **2,212 exact comparisons / 77 positive overlaps / zero metric exceptions**. All 74 comparable pairs freshly clear in canonical; three new screw pairs have no canonical equivalent. Private stage remains FAIL. See `docs/components/corrected-engine-changed-neighbor-audit.md`; preserve its v1 input hash.
+- Failures comprise 56 shifted distributor/lead pairs, six block/compressor pairs, twelve cover-neighbor pairs and three main-screw-neighbor pairs. Block/compressor conflicts are mostly inherited from earlier V3 candidate stock; one piston conflict is entirely new station-six support and shaft conflict is mixed. Canonical is not implicated by those candidate overlaps.
+- Combined moving geometry also confirms six inherited rod-bolt/block collisions. Exact-year/ARP comparison research indicates the current assumed bolt architecture needs revision; no defensible complete dimensional repair exists yet.
+- Pickup reconnection study passes its bounded geometric gates, but later Ford pump drawings show a flange/gasket architecture missing from the current pump. It remains an illustrative study. See `oil-pump-discharge-source-audit.md` under component handoffs.
 
-Three workers remain active: combined moving assembly/rod-bolt conflict, full cam composition with corrected crossed gear, and broader seven-main-cover-block guards. Six repeated rod-bolt/block collisions were found and confirmed in the inherited baseline; assumed bolt geometry is being audited before repair. Pan21 Y−95 candidate passes its local gates, but main-cover support changes touch broader protected stock zones and require explicit review. No failure is waived or silently repaired.
+Three workers currently handle distributor-end ignition connections, compressor/block interface provenance, and bounded water-pump rear-flange geometry. Root owns combined manifest/runtime, visual review, archival preservation and CLI tracking. Rear pump/cover contact estimates must preserve axes and complete attachment lands; forward inlet interference remains separate. Active repairs cannot overwrite frozen audit inputs.
 
-Root owns eventual combined manifest, placement, lessons and runtime. Installation still requires matched complete neighborhood and affected checks; browser acceptance remains NOT RUN. No promotion from worker PASS.
+Root reviewed actual composed cam, front-joint, gasket/terminal and pickup renders. Scoped review records are `cam-composed-drive-root-review.json` and `composed-stage-root-visual-review.json`. Appearance does not waive collisions, unknown production contours or browser checks.
 
 ## Archives and GitHub tracking
 
-Current installed archive: [neck-core](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). Published study chain: timing-fit → timing-proof → timing-support → timing-clearance → timing-interfaces → [pan-seal](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-pan-seal). Restore instructions/checksums: `docs/CAD-ARTIFACTS.md`.
+Installed checkpoint: [neck-core](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-30-neck-core). Follow the ordered private study archive chain in `docs/CAD-ARTIFACTS.md`; these preserve candidates, not accepted installations.
 
-PR102 final-head CI passed; private pan/seal archive digest/size and non-draft publication verified (123 files / 33,127,925 bytes; SHA-256 `5b46ae082c6ea9fe23d67b44b26578e1473fe2d2a13ac92cbae8953904b52fe8`). Issues [32](https://github.com/0xZakk/truck/issues/32#issuecomment-5934674332) and [34](https://github.com/0xZakk/truck/issues/34#issuecomment-5934687416) record that checkpoint.
+Latest merged PR104 is `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Its cam/cover archive is published: 62 files / 22,441,296 bytes; SHA `f67121592b2de92346eecb1d750cd49bc2bbfc3cb35bbc14a95dfd8c2b075b3f`. The next composed-engine archive is locally packaged; publication is not yet confirmed. Its exact file allowlist and hashes are in `docs/cad-composed-engine-checkpoint.json`.
 
 Project-column writes lack Projects token scope. `inventory/engine/project-status-pending.json` holds desired changes, not observed statuses. CLI issue/PR/release updates work. No new component is Done. Do not imply autonomous execution continues after the goal/session actually stops.
-
-
-Latest checkpoint: PR103 head `1440853952cd132e17693c6355c38bcb0f9276b4` merged as `26d0fdc4e7cdd3de0c621309499d1535d8c5131e`. Published motion/contact archive has 89 files / 6,756,376 bytes, SHA-256 `2be3c16b8274c0b06c30eb0aa78c2e3ead383d80eb009fc46ae82368c6468f93`. Canonical manifest remains unchanged.
-
-Next preservation checkpoint: cam/cover archive prepared with 62 files / 22,441,296 bytes; publication pending. Active combined motion, composed cam and broader block guards are excluded. Last issue32 CLI update: https://github.com/0xZakk/truck/issues/32#issuecomment-5935432381 .

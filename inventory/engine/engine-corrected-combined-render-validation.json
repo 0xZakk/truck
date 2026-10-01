@@ -1,0 +1,28 @@
+{
+  "status": "PASS actual mesh/section render; interference retained",
+  "inputs": {
+    "scripts/render-engine-corrected-combined.py": "27d421053d55de110ae571ad56c0aaba34bcc402f7c26a779e625cdffcdef9b9",
+    "cad/engine/generated/engine-corrected-combined-candidate/combined-q55-layout.json": "fa624a8110ba04ae7281b9b32177124780298be73a1d76770f6e94e3533345fa",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/rod-bolt.step": "ff61f3d3f3b6c6f55f7b6643dc7ed2bd8268a38827b8fd850f73f64c1d8ea5c8",
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": "62477dbe354f5f4209de4f4293cd83db3646d06011f7be9bdd3ea82e49754990",
+    "models/engine/exhaust-valve.glb": "556aa1a612db09e4ae8d9754c7631c80e0e576e8ba1b2c59bf1a81854574b60b",
+    "cad/engine/generated/crank-clockwise-candidate/crankshaft.glb": "b59c8d48f46eabba0c7eb595575b7e07a90bf20580aefa47d80e02ccde43ea5b",
+    "models/engine/intake-valve.glb": "025170fa8f0ab192ac05a57172a0f398dfd10506dfc8ac6ce0b41fe647a0fce0",
+    "models/engine/pushrod.glb": "b6d40d7b971d5ffa729fe40d887cbe33c957066bd909b3f88ec8556139da0e3d",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-timing-gear.glb": "a01da6b7144043186f2aa55173cf09277aaed7805fb017bef2b98efbbafce61d",
+    "models/engine/rod.glb": "c95d4461cb8d3ed8d753552be844ab21579195750c7e548406873abf71e76fba",
+    "models/engine/rod-cap.glb": "0d5fe4f4cf46d49dbc505803beea1a50371fcb8597864a1b2860449576210de0",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.glb": "798770680f49a91872cb65a6bf604e2981ef74d83cc00ecfe8f81a94eac2ec93",
+    "cad/engine/generated/timing-coupled-core-candidate/crank-timing-gear.glb": "e03a2b62f917461c0254def74a5698f1485a65384c9f6cccbb214168fc2e627a",
+    "models/engine/lifter-body.glb": "570a755d5c40cd9f7700535b20aa45711ff143895f0256947f3ad058fc4f52a6",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.glb": "3c276505df453d1b6d5ff5685d82c13d3f3e0de4ff156c2fe8923a7f16070d89",
+    "models/engine/piston.glb": "aea83082c8bd8b77a1912ef1008765bf2c2b80f0a2e6d21aaf9aa233ee7bb2f6"
+  },
+  "render_sha256": "81b49d0421c0248a51338785bfbc6996bb32462f1fb77b21b3ac4044b1cfaca7",
+  "render": "cad/engine/generated/engine-corrected-combined-candidate/combined-motion-review.png",
+  "limits": [
+    "Projection shows selected moving meshes; full static context lives in named STEP",
+    "No visual clearance override of six measured failures"
+  ]
+}

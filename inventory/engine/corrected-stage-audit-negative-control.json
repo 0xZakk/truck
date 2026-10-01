@@ -1,0 +1,23 @@
+{
+  "scope": "Artificial raised-crank fault, not actual staged collision",
+  "fault_translation_mm": [
+    0,
+    0,
+    100
+  ],
+  "detected_overlap_mm3": 716014.5242332047,
+  "strict_interior_witness": [
+    -345.0412680985916,
+    -5.043796796354035e-07,
+    81.68816822732872
+  ],
+  "input_sha256": {
+    "scripts/check-corrected-stage-audit-control.py": "740bd477d304f157c476be7a5250e08f0464c24cef6034fc15e75d08be09a9de",
+    "inventory/engine/corrected-engine-stage.json": "c09eca9a670b9d6241f04b8e082929cdf864e5c8498bed9b65bc0211d530f342",
+    "cad/engine/generated/timing-front-coordinated-stage/block.step": "35af664cb1f13593ac105d0d37c98b14ea34b933fb112e45a86da734f94b057e",
+    "cad/engine/generated/timing-core-drive-integration-stage/crankshaft.step": "ef0e1e183909da5d7fb4a83878735cdd0b8aa8f5d68a4d8c574eb063e3eb4ea5",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af"
+  }
+}
