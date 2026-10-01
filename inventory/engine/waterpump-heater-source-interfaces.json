@@ -1,0 +1,113 @@
+{
+  "status": "Diagnostic; no factoryfit claim",
+  "metrics": {
+    "housing_tube_overlap_mm3": 0.0,
+    "fluid_probe_obstruction_mm3": 0.0,
+    "blocked_probe_negative_control_mm3": 5.964908265450548,
+    "tube_nominal1_3mm_wall_missing_mm3": 0.0,
+    "rear_added_mm3": 0.0,
+    "rear_removed_mm3": 0.0,
+    "bearing_added_mm3": 0.0,
+    "bearing_removed_mm3": 0.0,
+    "added_outside_heater_mask_mm3": 0.0,
+    "removed_outside_heater_mask_mm3": 0.0
+  },
+  "socket_contact": {
+    "housing": {
+      "expected_mm2": 603.1857894892407,
+      "missing_mm2": 0.0,
+      "actual_mm2": 603.1857894892407
+    },
+    "tube": {
+      "expected_mm2": 603.1857894892407,
+      "missing_mm2": 0.0,
+      "actual_mm2": 603.1857894892407
+    }
+  },
+  "tube_curvature_sampled": {
+    "samples": 1001,
+    "min_centerline_radius_mm": 23.472784345836864,
+    "outer_radius_mm": 8,
+    "note": "Analytic cubic derivatives sampled; valid solid export separately checks modeled tube topology. Straight/curve tangents continuous by construction."
+  },
+  "tools": [
+    {
+      "type": "pump",
+      "station": 1,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "pump",
+      "station": 2,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "pump",
+      "station": 3,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "pump",
+      "station": 4,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 1,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 2,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 3,
+      "housing_overlap_mm3": 61.107062794477194,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 4,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 5,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 6,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    },
+    {
+      "type": "main",
+      "station": 7,
+      "housing_overlap_mm3": 0.0,
+      "tube_overlap_mm3": 0.0
+    }
+  ],
+  "inputs": {
+    "scripts/check-waterpump-heater-source-interfaces.py": "49793d554b37543b8b5c965cdc78fc9539ddc09d0561dfb6d0dfc49dfa425882",
+    "cad/engine/waterpump_heater_source_candidate.py": "258ca0e66b7408914feda1a33856bdbbe8f214bcfc84328fcda214863586511c",
+    "cad/engine/generated/waterpump-heater-source-candidate/housing.step": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube.step": "d838a6f3c1f4de56bb096be9d58efd2204ccf0d90c0a6f94ae73124225dbda79",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/nominal-housing.step": "943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb"
+  },
+  "limits": [
+    "Nominal matching socket is not a sourced press-fit/retention/sealing specification.",
+    "Fluid probe and wall gauge do not establish hydraulic capacity.",
+    "Main3 rear tool remains outside this repair."
+  ]
+}

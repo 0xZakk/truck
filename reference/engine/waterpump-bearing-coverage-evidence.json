@@ -1,0 +1,154 @@
+{
+  "status": "RESEARCH ONLY; production bearing identity unresolved",
+  "baseline": "9df77dd0cec845ab68722d387e708e9cdbf07fb4",
+  "issue": 47,
+  "parent_issue": 32,
+  "inputs": {
+    "cad/engine/water_pump.py": "594f1d1b5797c69a158b21b2f56d01681f5a5d2640a31c8588065d694008504e",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/water-pump-evidence.json": "19e1bd906ff4fb7ea882128388bc1e7ab2405f456e7754129fe6a3f7ccb256c0",
+    "reference/engine/water-pump-internal-construction-reviewed.json": "35574f5886079fe2fec4e420b3c7cf4100af309a15dc9b40d97aad99d879e262",
+    "reference/engine/schaeffler-water-pump-bearings-tpi131.pdf": "bb06502734d035fcd74471749daf9cded3382b371d2543d3b6ec8a03603b5f72",
+    "cad/engine/generated/water-pump-bearing.step": "03d3d6be74a7daf1726020fbee170f28a24d5d5330b00d3a22b44be8d877372c",
+    "cad/engine/generated/water-pump-shaft.step": "5448c0838592e5699583e2cdc4834b78e8573c2e5411c12c865041f87816f72a"
+  },
+  "existing": {
+    "bearing_id": "water-pump-bearing",
+    "shaft_id": "water-pump-shaft",
+    "bearing_mm": {
+      "x_min": 34,
+      "x_max": 68,
+      "od": 47.8,
+      "id": 16.1
+    },
+    "shaft_mm": {
+      "x_min": -75,
+      "x_max": 79,
+      "diameter": 16
+    },
+    "evidence_class": "inherited illustrative CAD; actual exported STEP bounds checked",
+    "parts": 2,
+    "missing_features": [
+      "Shaft raceways",
+      "Outer-ring raceways",
+      "Rolling elements",
+      "Cages",
+      "Bearing grease seals"
+    ],
+    "not_missing": [
+      "Separate coolant mechanical seal study",
+      "Slinger",
+      "Drive hub"
+    ]
+  },
+  "primary_generic": {
+    "source": "Schaeffler TPI131",
+    "url": "https://www.schaeffler.com/remotemedien/media/_shared_media/08_media_library/01_publications/schaeffler_2/tpi/downloads_8/tpi131_de_en.pdf",
+    "reviewed_pages": [
+      {
+        "pdf": 7,
+        "printed": 5,
+        "figure": 2
+      },
+      {
+        "pdf": 8,
+        "printed": 6,
+        "figure": 3
+      },
+      {
+        "pdf": 15,
+        "printed": 13,
+        "figure": 9
+      }
+    ],
+    "architecture": "Integral shaft raceways, common outer ring, rolling rows, cages and seals; offered variants do not establish Ford/Gates choice.",
+    "standard_comparison": {
+      "near_16mm_shaft": {
+        "shaft_diameter": 15.918,
+        "outer_diameter": 30,
+        "one_available_outer_length": 34
+      },
+      "near_48mm_outer": {
+        "outer_diameter": 47,
+        "shaft_diameter": 24,
+        "outer_lengths": [
+          38,
+          50
+        ]
+      },
+      "conclusion": "Neither row matches inherited47.8OD/16shaft/34length. Do not identify or resize bearing by nearest table row."
+    }
+  },
+  "missing_physical_breakdown": [
+    {
+      "candidate_id": "water-pump-bearing-outer-ring",
+      "quantity": 1,
+      "status": "cartridge refinement, not additive full cartridge",
+      "application": "generic architecture only"
+    },
+    {
+      "candidate_id": "water-pump-bearing-rolling-element-row-R-element-N",
+      "quantity": null,
+      "status": "absent; row type/count and elements per row unknown"
+    },
+    {
+      "candidate_id": "water-pump-bearing-cage-row-R",
+      "quantity": null,
+      "status": "absent; number and construction unknown"
+    },
+    {
+      "candidate_id": "water-pump-bearing-seal-end-N",
+      "quantity": null,
+      "status": "absent; end seal stack/material/lips unknown"
+    }
+  ],
+  "protected_contract": {
+    "shaft_axis": "existing pump-localX",
+    "retain_ids": [
+      "water-pump-shaft",
+      "water-pump-bearing"
+    ],
+    "protected_neighbors": [
+      "water-pump-housing",
+      "water-pump-drive-hub",
+      "water-pump-slinger",
+      "water-pump-mechanical-seal-assembly",
+      "water-pump-impeller"
+    ],
+    "rules": [
+      "Do not add separate inner rings if integral shaft design is established",
+      "Do not duplicate existing shaft when introducing unitized bearing assembly",
+      "Do not substitute coolant face seal parts for bearing grease seals",
+      "No housing/tube/shaft revision without root-coordinated dimensional evidence"
+    ]
+  },
+  "searches": [
+    {
+      "url": "https://www.gates.com/content/dam/documents-library/catalogs/masterproductscatalog.pdf",
+      "result": "Manufacturer generic unitized bearing/shaft description; no44009 component dimensions established"
+    },
+    {
+      "url": "https://gmb.net/product/125-1420p/",
+      "result": "Manufacturer generic steel-bearing/durability claims; package dimensions only, application unresolved; rejected as internal dimensional evidence"
+    },
+    {
+      "query": "Gates44009/F6TZ8501KB bearing/shaft drawing",
+      "result": "No applicable dimensioned internal bearing identity recovered in focused search"
+    }
+  ],
+  "next_measurements": [
+    "Marking/supplier number on actual applicable pump bearing",
+    "Outer diameter/length and bearing seat interference specification",
+    "Full shaft stepped diameters and impeller/hub/seal axial stations",
+    "Row type/count, pitch diameters, ball/roller sizes/counts and cage geometry",
+    "Bearing end seal dimensions/retention; keep weep cavity distinct"
+  ],
+  "build_readiness": "NOT READY for production or installed internals; isolated generic teaching specimen would require explicit new scope",
+  "validation": {
+    "existing_STEP_bounds": "PASS source-bound geometry inspection only",
+    "source_visual": "PASS generic architecture; no application match",
+    "CAD": "NOT RUN no new geometry",
+    "browser": "NOT RUN"
+  }
+}

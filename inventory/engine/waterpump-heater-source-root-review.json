@@ -1,0 +1,30 @@
+{
+  "reviewer": "root integration agent",
+  "date": "2026-10-01",
+  "verdict": "FAIL installed route; preserve bounded local study",
+  "delivery_sha256": "b55294d85f241522f0cc5815b093e286f78b95e43d0e8760d10bb79d2034abfe",
+  "verified_bindings": {
+    "inventory/engine/waterpump-heater-source-registration.json": "5d3c4ea7db8350e4f8adbb0b67a9ebb16d270bf16879d25e9c8752b32359c758",
+    "inventory/engine/waterpump-heater-source-export.json": "a98a52eb35b978a9ce1d71310ffb1f26fa41ac4323ea1113cd2f14274ff815d0",
+    "inventory/engine/waterpump-heater-source-interfaces.json": "6dad69fb1c1973a7710e302334d8441b5061d4a31f41b290de0a93796719a48e",
+    "inventory/engine/waterpump-heater-source-neighbors.json": "39c659dd7a53da8534a7cd367c286f9a46fb580eb7a82d6ab7ccee063fc533c4",
+    "inventory/engine/waterpump-heater-source-stud.json": "f15c0dc82ca98b28a20b7aef536091f402845800ba0a5efdbb0e2f5920c170dd",
+    "inventory/engine/waterpump-heater-source-visual.json": "aa66414a4c65d5800acb23606b56b9d6bfbb113ed8af9fab3b2d7b8e41b07606",
+    "inventory/engine/waterpump-heater-source-context.json": "a65f4ed62fbab59717cc88c8f9878a0c894c59523c81b0d8f0e6fc5672efca5d",
+    "scripts/check-waterpump-heater-source-delivery.py": "22ab4651b17c561936e709fbd5fbfaf8ad008d622ec30490f46ad9b148d0b087",
+    "docs/components/waterpump-heater-source-candidate.md": "9a4b0c41dacb6810255cea9a2c31c7d972d85858eb511823a85523486c500d93",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube__cylinder-head.step": "ac89a0602a4aeb6265b0a6db6e454e8d1dbc0085da99b94ff1f5f5388ac344e1",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube__fuel-supply-rail.step": "08ce57b2c08ebddaf486b997e2a0c6c3df0ed4b14b7c4bad4e931128d2c4c799",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube__exhaust-front.step": "ddaee6b268395ad58a298fe22840df41aaa4ecd63f8eb6a95db4855859cba39d",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube__front-manifold-lifting-eye.step": "8e448182d2fa190f8e3a8fc90e242be7a9f4bfed98880ec45fc98cb1aa8c7392",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube__front-manifold-stud13.step": "07e41f5ab1bced3b8599129a69ef03b8321831018bf03ede9b45f8af4d6a3f90"
+  },
+  "visual_review": "Inspected actual context.png full assembled views; tube visibly crosses fixed head/manifold/rail region. Source metric projection is weak and does not override physical conflicts.",
+  "scope": "Review of reported local checks and actual mesh context, not independent rerun of all CAD intersections.",
+  "remaining": [
+    "Five actual tube/engine collisions above unchanged0.1mm3 audit threshold",
+    "Inherited main3 tool failure",
+    "Production root/tube dimensions and full3D routing unresolved"
+  ],
+  "next_action": "Preserve frozen failure; assess independent source/photo geometry before changing route. No neighbor carving."
+}

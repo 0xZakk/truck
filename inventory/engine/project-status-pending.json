@@ -80,7 +80,7 @@
     {
       "issue": 47,
       "desired_status": "In progress",
-      "reason": "Active interface work with timing issue #32. Rear-flange candidate preserves axes and clears rear collisions, but recorded tool/removal and seal-route failures remain; it is not installed. Independent front/rear replacement-photo registration now indicates the current positive-Y inlet direction is likely wrong. A source-oriented analytic candidate is next; photo-derived orientation is explicitly not a measured production angle. See docs/components/timing-pump-rear-flange-candidate.md and ongoing neck registration evidence. No Done transition."
+      "reason": "Source-located heater root passes local gates; tube intersects five engine neighbors. Bearing internals and source-specific pump dimensions remain unresolved. Frozen studies preserved, no installed acceptance."
     },
     {
       "issue": 51,
@@ -90,7 +90,7 @@
     {
       "issue": 73,
       "desired_status": "In progress",
-      "reason": "Active source/topology correction. Primary Ford drawings show raised drive-neck mounting flange and separate two-bolt pickup flange/gasket, unlike the current illustrative feet/tube insertion. An earlier pickup reconnection passes its geometric study but is not a production architecture fix. New contract will separate verified topology, inherited dimensions, estimates and unknown block-discharge/gasket datums; unknown passages will not be invented. See docs/components/oil-pump-discharge-source-audit.md. No installed acceptance or Done transition."
+      "reason": "Source topology contradicts old mounting feet; two gasket interfaces, dowel and conditional pickup hardware are absent. Measurement contract records required mount/discharge evidence. Not Done."
     },
     {
       "issue": 76,
@@ -101,6 +101,11 @@
       "issue": 24,
       "desired_status": "In progress",
       "reason": "Replacement-kit closure coverage reconciled; two isolated cup envelope candidates reviewed. Host bores/placements, plug threads and industrial application gaps remain; no accepted installation."
+    },
+    {
+      "issue": 82,
+      "desired_status": "In progress",
+      "reason": "Fourteen electrical interfaces mapped and11 existing-part lessons integrated in PR108. Physical harness/terminals plus MAP/IAT/HO2S models remain absent; source-specific sensor research underway."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

@@ -1,0 +1,299 @@
+{
+  "status": "FAIL bounded rear candidate gates",
+  "gates": {
+    "rear_no_overlap": true,
+    "complete_gasket_faces": true,
+    "locality": true,
+    "main_actual_seats_and_rear_tools": false,
+    "pump_seats_and_tools": false,
+    "connected_3mm_strip": true
+  },
+  "pairs": {
+    "cover__housing": {
+      "full_overlap_mm3": 1803.6451313012185,
+      "rear_overlap_mm3": 0.0,
+      "old_rear_negative_control_mm3": 746.7499830009695
+    },
+    "cover__pump-gasket": {
+      "full_overlap_mm3": 0.0,
+      "rear_overlap_mm3": 0.0,
+      "old_rear_negative_control_mm3": 61.13067189528511
+    },
+    "main-gasket__pump-gasket": {
+      "full_overlap_mm3": 0.0,
+      "rear_overlap_mm3": 0.0,
+      "old_rear_negative_control_mm3": 40.32031550148467
+    },
+    "main-gasket__housing": {
+      "full_overlap_mm3": 0.0,
+      "rear_overlap_mm3": 0.0,
+      "old_rear_negative_control_mm3": 0.0
+    }
+  },
+  "gasket_face_support": {
+    "main-block": {
+      "face_mm2": 11506.165723495764,
+      "contact_mm2": 11506.165723496637,
+      "missing_mm2": 0.0
+    },
+    "main-cover": {
+      "face_mm2": 11506.165723495822,
+      "contact_mm2": 11506.165723495837,
+      "missing_mm2": 0.0
+    },
+    "pump-block": {
+      "face_mm2": 2877.3910925637465,
+      "contact_mm2": 2877.3910925636014,
+      "missing_mm2": 0.0
+    },
+    "pump-housing": {
+      "face_mm2": 2877.3910925625005,
+      "contact_mm2": 2877.3910925625005,
+      "missing_mm2": 0.0
+    }
+  },
+  "locality": {
+    "housing": {
+      "added_mm3": 0.0,
+      "removed_outside_mask_mm3": 0.0,
+      "removed_mm3": 1356.782497749101
+    },
+    "pump-gasket": {
+      "added_mm3": 0.0,
+      "removed_outside_mask_mm3": 0.0,
+      "removed_mm3": 50.71735985612327
+    },
+    "cover": {
+      "added_mm3": 0.0,
+      "removed_outside_mask_mm3": 0.0,
+      "removed_mm3": 1021.2093517950302
+    },
+    "main-gasket": {
+      "added_mm3": 0.0,
+      "removed_outside_mask_mm3": 0.0,
+      "removed_mm3": 67.0689570380635
+    }
+  },
+  "main_hardware": [
+    {
+      "station": 1,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 0.0,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 2,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 0.0,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 3,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 61.10706279451155,
+      "tool_pump_full_mm3": 61.10706279451155,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 4,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 1454.9515948619223,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 5,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 0.0,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 6,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 0.0,
+      "R9_land_removed_mm3": 0.0
+    },
+    {
+      "station": 7,
+      "cover_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "pump_overlap_mm3": 0.0,
+      "headseat_missing_mm3": 0.0,
+      "tool_cover_mm3": 0.0,
+      "tool_pump_rear_mm3": 0.0,
+      "tool_pump_full_mm3": 0.0,
+      "R9_land_removed_mm3": 0.0
+    }
+  ],
+  "pump_hardware": [
+    {
+      "station": 1,
+      "housing_overlap_mm3": 0.0,
+      "cover_overlap_mm3": 0.0,
+      "headseat_mm2": 96.09281078211319,
+      "headseat_missing_mm2": 7.822565707438585,
+      "headseat_contact_mm2": 88.27024507467465,
+      "tool_housing_mm3": 0.0,
+      "tool_cover_mm3": 0.0
+    },
+    {
+      "station": 2,
+      "housing_overlap_mm3": 0.0,
+      "cover_overlap_mm3": 0.0,
+      "headseat_mm2": 96.09281078211319,
+      "headseat_missing_mm2": 7.822565707438585,
+      "headseat_contact_mm2": 88.27024507467465,
+      "tool_housing_mm3": 7604.41715096846,
+      "tool_cover_mm3": 0.0
+    },
+    {
+      "station": 3,
+      "housing_overlap_mm3": 0.0,
+      "cover_overlap_mm3": 0.0,
+      "headseat_mm2": 96.09281078211319,
+      "headseat_missing_mm2": 7.822565707438585,
+      "headseat_contact_mm2": 88.27024507467465,
+      "tool_housing_mm3": 504.58727070297937,
+      "tool_cover_mm3": 0.0
+    },
+    {
+      "station": 4,
+      "housing_overlap_mm3": 0.0,
+      "cover_overlap_mm3": 0.0,
+      "headseat_mm2": 96.09281078211319,
+      "headseat_missing_mm2": 7.822565707438585,
+      "headseat_contact_mm2": 88.27024507467465,
+      "tool_housing_mm3": 0.0,
+      "tool_cover_mm3": 0.0
+    }
+  ],
+  "strip": {
+    "main-gasket": {
+      "method": "Exact CAD planar inwardoffset1.52mm, testing connected3.04mmstrip; not pressure proof.",
+      "valid": true,
+      "holes": 7,
+      "old_holes": 7,
+      "eroded_components": 1,
+      "old_eroded_components": 1,
+      "eroded_area_mm2": 8999.208054064235,
+      "empty": false
+    },
+    "pump-gasket": {
+      "method": "Exact CAD planar inwardoffset1.52mm, testing connected3.04mmstrip; not pressure proof.",
+      "valid": true,
+      "holes": 6,
+      "old_holes": 6,
+      "eroded_components": 1,
+      "old_eroded_components": 1,
+      "eroded_area_mm2": 1263.2120712622886,
+      "empty": false
+    }
+  },
+  "sensitivity": [
+    {
+      "radius_offset_mm": -0.25,
+      "R9_nominal_margin_mm": 0.4056338977114393,
+      "R8_75_nominal_margin_mm": 0.6556338977114393,
+      "R9_guard_material_removed_mm3": 0.0,
+      "required_headseat_removed_mm3": 0.0
+    },
+    {
+      "radius_offset_mm": 0,
+      "R9_nominal_margin_mm": 0.15563389771143932,
+      "R8_75_nominal_margin_mm": 0.4056338977114393,
+      "R9_guard_material_removed_mm3": 0.0,
+      "required_headseat_removed_mm3": 0.0
+    },
+    {
+      "radius_offset_mm": 0.1,
+      "R9_nominal_margin_mm": 0.05563389771143931,
+      "R8_75_nominal_margin_mm": 0.30563389771143934,
+      "R9_guard_material_removed_mm3": 0.0,
+      "required_headseat_removed_mm3": 0.0
+    },
+    {
+      "radius_offset_mm": 0.16,
+      "R9_nominal_margin_mm": -0.004366102288560686,
+      "R8_75_nominal_margin_mm": 0.24563389771143931,
+      "R9_guard_material_removed_mm3": 0.009188503718789993,
+      "required_headseat_removed_mm3": 0.0
+    },
+    {
+      "radius_offset_mm": 0.25,
+      "R9_nominal_margin_mm": -0.09436610228856068,
+      "R8_75_nominal_margin_mm": 0.15563389771143932,
+      "R9_guard_material_removed_mm3": 0.9222640432536935,
+      "required_headseat_removed_mm3": 0.0
+    },
+    {
+      "radius_offset_mm": 0.5,
+      "R9_nominal_margin_mm": -0.3443661022885607,
+      "R8_75_nominal_margin_mm": -0.09436610228856068,
+      "R9_guard_material_removed_mm3": 6.4096739352664205,
+      "required_headseat_removed_mm3": 0.0030367732651247373
+    },
+    {
+      "radius_offset_mm": 1.0,
+      "R9_nominal_margin_mm": -0.8443661022885607,
+      "R8_75_nominal_margin_mm": -0.5943661022885607,
+      "R9_guard_material_removed_mm3": 24.456353379634127,
+      "required_headseat_removed_mm3": 0.04769665615501322
+    }
+  ],
+  "inputs": {
+    "scripts/check-timing-pump-rear-flange-candidate.py": "5cdecf971f89250abeb6811c69147008ce4594603a95384f4320bd70278d6f37",
+    "cad/engine/timing_pump_rear_flange_candidate.py": "d14d89d328d6ddb04340e01ecd2a38558e396eae46510f8da9969e4722493f9b",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/housing.step": "1ac507ee6b9cc1b66cfe7e5ccabc85c057c0da4625be2ba7dea82dea4a3efa47",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/pump-gasket.step": "26da82705c358d3cb789882e5414bef00fbc3687ae6c98b9d25256acbb78f1f3",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/cover.step": "7c633b7091ab848283ea0e56c060ea5712ec0efb798e392b0686acb9da5f64bc",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/main-gasket.step": "682b19e67482afdb672219cb909dd0d2ea6a8711a604184d716b052f0ba51052",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-2.step": "30a00f8399fee7a1ddec2dfac57a0924a624a95fba7452ddbfc8b7062d0168b4",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-5.step": "b064d49b42f1426d06ba602a44a1c9107f3ff4acf47c96a04a958b8c5da380ae",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-6.step": "6f8ecba958091ab4240e6063f667992de4d01871b0ce5cc4e1a0cd3cafc7c305",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-7.step": "088b54b80374a49d472011af88be931f5c1d5bc73cd318740cd5235e7939d603",
+    "cad/engine/generated/water-pump-mounting-screw.step": "ad70120cc89d6ab64be813b9ed248f1d6f41b61136f8a92aff3142fdb5605c3f"
+  },
+  "limits": [
+    "Forward inlet remains independent knownFAIL.",
+    "R10.5 tool envelopes are declared estimates; preserve obstruction failures.",
+    "0.1556mm nominalguardmargin is not production clearance.",
+    "No force, fluid pressure, tolerance class or factory-contour claim."
+  ]
+}

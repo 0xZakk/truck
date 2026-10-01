@@ -1,0 +1,63 @@
+{
+  "status": "RESEARCH COMPLETE; physical3D route envelope UNKNOWN; no CAD repair authorized by this evidence",
+  "views": {
+    "retailer_side": {
+      "rear_y": 307.0,
+      "hub_y": 65.0,
+      "root_y": 249.0,
+      "tip_y": 543.0,
+      "image": "reference/engine/gates44009-3.jpg",
+      "root_X_under_invalid_1D_projection": 409.27272727272725,
+      "tip_X_under_invalid_1D_projection": 235.54545454545453
+    },
+    "manufacturer_catalog_oblique": {
+      "rear_y": 117.0,
+      "hub_y": 37.0,
+      "root_y": 94.0,
+      "tip_y": 143.0,
+      "image": "PDF309 first embedded image307x170px; rear-center partly hidden estimate",
+      "root_X_under_invalid_1D_projection": 416.1125,
+      "tip_X_under_invalid_1D_projection": 328.525
+    }
+  },
+  "front_rear_projected_root_disagreement_model_mm": 0.5988339239445354,
+  "front_rear_projected_tip_disagreement_model_mm": 51.851785700274895,
+  "naive_tipX_estimator_spread_mm": [
+    235.54545454545453,
+    328.525
+  ],
+  "physical_guaranteed_envelope": "UNKNOWN; observed-estimator interval is not a conservative physical bound",
+  "source_application": {
+    "primary_url": "https://cms.gates.com/~/media/Files/Gates/Industrial/Fluid%20Power/Catalogs/Water%20Pump%20Catalog%20Full%20Version.pdf",
+    "application": "1993\u20131996 FordF-series4.9L \u219244009, PDF55",
+    "photo": "Printed289/PDF309 explicitly identifies44009 with long formed tube",
+    "dimensions": "None for tube route"
+  },
+  "owner_review": {
+    "observed": "Paired red/orange hoses toward engine front; short exposed metal portions.",
+    "obscured": "Casting insertion and complete tube route; no secure hose-to-pump trace or metric axial datum.",
+    "not_claimed": "Neither frozen boundary validated; no identity from hose color."
+  },
+  "controls": {
+    "wrong_mirror_and_index": "Existing hash-bound registration report retains controls; no new axis flip.",
+    "independent_photo_same_naive_calibration": "Large axial endpoint disagreement rejects unique1D projection interpretation.",
+    "frozen_failures_retained": "Five actual tube-neighbor intersections remain; no CAD or stage writes."
+  },
+  "inputs": {
+    "scripts/waterpump-heater-route-evidence.py": "5343fc3c24f86c0785c8c0256791f00596dcad295ed1cc16f36ab1e81396a484",
+    "inventory/engine/waterpump-heater-source-registration.json": "5d3c4ea7db8350e4f8adbb0b67a9ebb16d270bf16879d25e9c8752b32359c758",
+    "docs/components/waterpump-heater-route-evidence.md": "0d144614b5daba53c04a05e8d2bbf114dd5515b7a318970301b6f575a69af623",
+    "inventory/engine/waterpump-heater-source-delivery.json": "b55294d85f241522f0cc5815b093e286f78b95e43d0e8760d10bb79d2034abfe",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "reference/engine/research-2026-09-23/gates-water-pumps-2011.pdf": "a221d76bc109be8e0b1fbf447a7637c10ef40dd4e6876d117675a7dc16a47c09",
+    "reference/engine/gates44009-1.jpg": "a3cc0fece42700d33cd3ab0e111cbc3cbb5fb14b774b42c004fcfed86a3a85ba",
+    "reference/engine/gates44009-2.jpg": "b55f5df937963b3a329f3a116e19b2cd0f0e3a756ec04839ee2f2dc42bca3207",
+    "reference/engine/gates44009-3.jpg": "9b78df353dbfb0a27b6a2abfd7bcef1e588187e6a5b170da5fa3e31741722b94",
+    "reference/photos/2026-09-23/engine-bay-driver-side.jpg": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474",
+    "reference/photos/2026-09-23/engine-bay-passenger-side.jpg": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b"
+  },
+  "diagram": {
+    "path": "cad/engine/generated/waterpump-heater-route-evidence/review.png",
+    "sha256": "8d6a587f4bb87c76a75942510744f623dd7861e3c0dbe9398d32f57b0e28f9eb"
+  }
+}

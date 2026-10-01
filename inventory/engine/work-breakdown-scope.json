@@ -422,7 +422,9 @@
         "Six illustrative mechanical-seal pieces are integrated; identify the actual seal variant, dimensions, materials and production component count before claiming truck-specific completeness",
         "Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence",
         "Cast inlet exists: verify production contour and coolant path",
-        "Verify impeller, hub, pulley, fasteners and gland interfaces"
+        "Verify impeller, hub, pulley, fasteners and gland interfaces",
+        "Plain bearing envelope has no raceways/rolling elements/cages/grease seals; generic bearing tables do not identify the actual shaft/bearing assembly",
+        "Source-located heater root passes local gates but separate tube candidate fails five engine-neighbor checks; axial route cannot be recovered uniquely from current photos"
       ],
       "related_system_issues": [
         8
@@ -841,7 +843,10 @@
       ],
       "remaining": [
         "Verify actual rotor profile/count, clearances and pump-to-block outlet gallery",
-        "Pressure relief operation and production mounting"
+        "Pressure relief operation and production mounting",
+        "Pump-to-block gasket and locating dowel absent; mounting-face/outlet geometry unknown",
+        "Separate pickup-flange gasket/screws/lockwashers and pickup-support nut/washer are absent; industrial comparison quantities are not verified truck counts",
+        "Cover lockwasher presence/count is source-revision dependent; relief cap and intermediate-drive retainer already modeled, not additional missing parts"
       ],
       "related_system_issues": [],
       "existing_issue": null
@@ -1024,7 +1029,10 @@
         "ECT/TPS/IAC/EVP/EVR/distributor/coil/switch mating connectors",
         "Engine harness branches, loom, splices, clips, grounds and bonding straps",
         "Intake-air sensor and separate gauge-temperature sender: verify exact location/applicability",
-        "PCM and body-side wiring remain Electrical scope"
+        "PCM and body-side wiring remain Electrical scope",
+        "MAP C1011, ACT/IAT C164 and HO2S C1025 physical sensors are absent;14 connector interfaces are source-mapped, not14 modeled harness assemblies",
+        "ACT serviceF2DZ12A697A is tag-qualified;3/8-18NPTF/25mmhex are applicable replacement dimensions, probe reach/connector envelope/installed depth unknown",
+        "HO2S F4UZ-9F472-C service identity from exact-year Ford bulletin; exhaust pipe/bung host and sensor geometry remain missing"
       ],
       "related_system_issues": [
         11

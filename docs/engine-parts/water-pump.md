@@ -178,6 +178,8 @@ Current-state correction: the cast inlet neck is present in this manifest. Older
 - [ ] Bearing cartridge internals: identify races/rollers/seals/retention from applicable evidence
 - [ ] Cast inlet exists: verify production contour and coolant path
 - [ ] Verify impeller, hub, pulley, fasteners and gland interfaces
+- [ ] Plain bearing envelope has no raceways/rolling elements/cages/grease seals; generic bearing tables do not identify the actual shaft/bearing assembly
+- [ ] Source-located heater root passes local gates but separate tube candidate fails five engine-neighbor checks; axial route cannot be recovered uniquely from current photos
 
 ## Cross-system boundaries
 

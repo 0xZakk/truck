@@ -1,0 +1,74 @@
+{
+  "status": "Research only; no geometry edit",
+  "rows": [
+    {
+      "station": 1,
+      "overlap_mm3": 0.0,
+      "source_port_regions_mm3": {
+        "large-inlet": 0.0,
+        "heater-boss": 0.0
+      }
+    },
+    {
+      "station": 2,
+      "overlap_mm3": 7604.417155761159,
+      "source_port_regions_mm3": {
+        "large-inlet": 7604.417155761159,
+        "heater-boss": 0.0
+      },
+      "witness": "cad/engine/generated/waterpump-port-access-research/pump-tool-2-obstruction.step",
+      "witness_sha256": "daef71e590a098da1a0ca18f7bda8d90b6aeb085d308b277285003b3b917ed23",
+      "bounds_mm": [
+        [
+          402.764280408253,
+          23.79999987702535,
+          166.39217397541103
+        ],
+        [
+          449.0000001,
+          44.80000010122306,
+          186.80000010004179
+        ]
+      ]
+    },
+    {
+      "station": 3,
+      "overlap_mm3": 504.58727080357477,
+      "source_port_regions_mm3": {
+        "large-inlet": 0.0,
+        "heater-boss": 504.58727080357477
+      },
+      "witness": "cad/engine/generated/waterpump-port-access-research/pump-tool-3-obstruction.step",
+      "witness_sha256": "f9083f77fb9c1ec520a7d22385816ac9b33cee7defd448f1b8fcdc13a0cd3a84",
+      "bounds_mm": [
+        [
+          426.01393048653716,
+          -93.00000010000022,
+          172.9999999
+        ],
+        [
+          449.00000010000105,
+          -87.69999988661492,
+          184.4219516455855
+        ]
+      ]
+    },
+    {
+      "station": 4,
+      "overlap_mm3": 0.0,
+      "source_port_regions_mm3": {
+        "large-inlet": 0.0,
+        "heater-boss": 0.0
+      }
+    }
+  ],
+  "interpretation": "Test whether guessed port orientation, rather than missing drilled access tunnels, owns current obstructions. Source photos must decide architecture.",
+  "inputs": {
+    "scripts/localize-waterpump-port-access.py": "5349f69de44aca6804b22f071e69b7bbeb4f8a0f0fa65165b492625bfb5d6518",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/water_pump_inlet_v3_candidate.py": "e22fe3d9ad01e1d146b12ade6ec510c8bb26f4b5b107119cd6687320488749f4",
+    "cad/engine/cooling_connections.py": "89260620a2a17be990995da071e97b46213f755402238bce16bb60cff139d265"
+  }
+}

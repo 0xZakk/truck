@@ -219,3 +219,9 @@ Download `truck-cam-cover-20261001.tar.gz` from the private repository release, 
 `docs/cad-block-closures-checkpoint.json` binds13 files /361,986bytes in `truck-block-closures-20261001.tar.gz`, SHA-256 `9def0caead5bf2cb64711df05cbfccf47ac909fe78a8cae8dc998c7d9eddb96a`. It preserves two catalog-envelope cups and three separate illustrative pump topology assets with project-authored review images. Restore the installed neck-core checkpoint for inherited pump inputs; no later timing studies are needed for these isolated assets. Source catalogs/manual access remains separate. No installed acceptance; no reference originals or owner photographs.
 
 Published after [PR107](https://github.com/0xZakk/truck/pull/107) merged at `6b1608257e8c2eaa12512ac0c256d882854f3996`; server digest and size verified. Download from [the private release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-block-closures).
+
+## Water-pump studies (publication pending)
+
+The64-file supplement `truck-waterpump-studies-20261001.tar.gz` is19,508,529bytes, SHA-256 `b13f2bf787e405454b3ab14017e5cb7aa07bb14d15c1ba6eb4c273c08cbe29fc`. Exact frozen allowlist and prerequisite chain are in `docs/waterpump-studies-checkpoint-draft.json`; restore through ignition-connections first. It preserves rear-flange, inlet-orientation/offset and heater-route candidates, including failed trials and project-authored renders. Originals are excluded.
+
+The later independent `inventory/engine/waterpump-prerequisite-archive-audit.json` resolves the draft's unverified691-member provenance gap: all691 expected canonical STEP members match the checksum-verified neck-core archive. No extraction or full rebuild was performed. Remaining source access, whole-engine, browser and production-fidelity limits remain. This archive does not install any pump candidate.

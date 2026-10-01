@@ -1,0 +1,138 @@
+{
+  "status": "SOURCE/DATUM CONTRACT; no geometry edits",
+  "source_fits": {
+    "front": {
+      "correct_parity": 1,
+      "pixels_root_firstbend_secondbend_tip": [
+        [
+          414,
+          343
+        ],
+        [
+          410,
+          244
+        ],
+        [
+          450,
+          172
+        ],
+        [
+          609,
+          22
+        ]
+      ],
+      "model_yz_NOT_MEASURED": [
+        [
+          -47.68368436448738,
+          60.39470062627153
+        ],
+        [
+          -87.8184178334464,
+          86.71758679378254
+        ],
+        [
+          -104.91520935551219,
+          122.76833738880697
+        ],
+        [
+          -119.21008749185587,
+          227.68788344170105
+        ]
+      ],
+      "root_radial_deg": 128.2923007180809,
+      "initial_stem_angle_deg": 146.74061401872999,
+      "fit_rms_model_mm": 0.584233912541151,
+      "wrong_mirror_rms_model_mm": 66.23277759725445
+    },
+    "rear": {
+      "correct_parity": -1,
+      "pixels_root_firstbend_secondbend_tip": [
+        [
+          260,
+          353
+        ],
+        [
+          246,
+          275
+        ],
+        [
+          178,
+          213
+        ],
+        [
+          21,
+          18
+        ]
+      ],
+      "model_yz_NOT_MEASURED": [
+        [
+          -48.24996073344116,
+          60.19993630091567
+        ],
+        [
+          -84.01947650405468,
+          86.18407202941214
+        ],
+        [
+          -98.6322680946121,
+          135.399000302498
+        ],
+        [
+          -158.41104117462282,
+          261.6274313271516
+        ]
+      ],
+      "root_radial_deg": 128.71200758239942,
+      "initial_stem_angle_deg": 144.00412951313106,
+      "fit_rms_model_mm": 1.990422897925233,
+      "wrong_mirror_rms_model_mm": 64.80337451552799
+    }
+  },
+  "corrected_prior_landmark": "Frozen front(440,364) selected adjacent casting feature; actual visible tube entry is(414,343). Rear old(267,357) refinedto(260,353).",
+  "side_axial_projection": {
+    "axial_pixels_y": {
+      "rear": 307.0,
+      "hub": 65.0,
+      "root": 249.0,
+      "tip": 543.0
+    },
+    "retained_model_x_mm": {
+      "rear": 375.0,
+      "hub": 518.0
+    },
+    "estimated_root_world_x": 409.27272727272725,
+    "estimated_tip_world_x": 235.54545454545453,
+    "note": "Uncalibrated side photo; sign of rearward tube departure clearer than absolute coordinate."
+  },
+  "provisional_root_world_mm": [
+    409.27272727272725,
+    -80.0,
+    230.3
+  ],
+  "old_boundary_world_mm": [
+    438.0,
+    -132.0,
+    270.0
+  ],
+  "old_boundary_simple_route_test": {
+    "initial_angle_deg": 145,
+    "bend_radius_mm": 20.0,
+    "required_rise_mm": 46.82213299793982,
+    "available_rise_mm": 39.69999999999999,
+    "vertical_terminal_length_mm": -7.122132997939829,
+    "result": "FAIL negative final straight; does not prove all 3D routes impossible"
+  },
+  "proposed_boundary_scope": "Source shows long formed tube departing toward rear in side view. Old X438/Z270 endpoint would reverse axial departure and shorten source silhouette. Prefer a new source-estimated endpoint with vehicle hose routing gap rather than asserting source fidelity for an arbitrary short S bend.",
+  "limits": [
+    "All millimeter normalization inherits provisional model pattern and hub/rear spacing.",
+    "Front/rear side photographs are uncalibrated; they cannot triangulate production3D coordinates.",
+    "No manufacturing tolerance, precise hydraulic flow or routing claim."
+  ],
+  "inputs": {
+    "scripts/research-waterpump-heater-source.py": "da9403112b9c7848b056202f536e01c171c0664f47a1f3bdb98971be6272ec1d",
+    "inventory/engine/waterpump-neck-registration-research.json": "f1054a84f016e617c47351cbcc55ce712343ba59cb74fb907df0609a2b57de70",
+    "reference/engine/gates44009-1.jpg": "a3cc0fece42700d33cd3ab0e111cbc3cbb5fb14b774b42c004fcfed86a3a85ba",
+    "reference/engine/gates44009-2.jpg": "b55f5df937963b3a329f3a116e19b2cd0f0e3a756ec04839ee2f2dc42bca3207",
+    "reference/engine/gates44009-3.jpg": "9b78df353dbfb0a27b6a2abfd7bcef1e588187e6a5b170da5fa3e31741722b94"
+  }
+}

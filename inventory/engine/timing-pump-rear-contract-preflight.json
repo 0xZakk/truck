@@ -1,0 +1,89 @@
+{
+  "status": "PREFLIGHT ONLY; full candidate not exported",
+  "contract": {
+    "pump_axis_yz_mm": [
+      -32,
+      170
+    ],
+    "bottom_mount_yz_mm": [
+      -24.3,
+      103.5
+    ],
+    "boss_radius_mm": 8.75,
+    "gasket_lug_radius_mm": 8.75,
+    "cover_separation_radius_mm": 66.25,
+    "window_mm": [
+      [
+        373,
+        -25,
+        90
+      ],
+      [
+        386,
+        35,
+        150
+      ]
+    ],
+    "all_axes_fixed": true,
+    "forward_inlet_unchanged": true
+  },
+  "checks": {
+    "housing_rear_overlap_mm3": 0.0,
+    "pump_gasket_overlap_mm3": 0.0,
+    "two_gaskets_overlap_mm3": 0.0,
+    "source_bore_R59_preserved_mm3": 0.0,
+    "main_hole_R9_guards_removed_mm3": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    },
+    "gasket_block_contact_mm2": 11506.165723496753,
+    "gasket_cover_contact_mm2": 11552.755963877858,
+    "pump_gasket_block_contact_mm2": 2877.391092561888,
+    "pump_gasket_housing_contact_mm2": 2877.391092562093,
+    "valid_connected": {
+      "cover": true,
+      "main-gasket": true,
+      "housing": true,
+      "pump-gasket": true
+    },
+    "removed_mm3": {
+      "cover": 1021.2093517947923,
+      "main-gasket": 67.06895703801561,
+      "housing": 1356.782497749337,
+      "pump-gasket": 50.71735985610658
+    },
+    "main3_to_pump_axis_mm": 75.40563389771144,
+    "main3_to_bottom_mount_mm": 18.238205559349673,
+    "main_screw_rear_pump_overlap_mm3": {
+      "3": 0.0
+    },
+    "lower_pump_screw_housing_clearance_mm3": 0.0,
+    "pump_boss_full_R8_75_stock_unchanged_mm3": 0.0,
+    "main_gasket_width_samples_mm": {
+      "112": 19.500000000000277,
+      "115": 16.600000000000236,
+      "120": 14.650000000000208,
+      "125": 14.650000000000208,
+      "130": 16.500000000000238,
+      "135": 16.000000000000227,
+      "140": 14.500000000000199
+    }
+  },
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/check-timing-pump-rear-contract-preflight.py": "2b1e479c98ce6a032d0fdb026c7bc6ffa189eceeb58f5623f2b10a818f1bb3c8",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "cad/engine/generated/water-pump-mounting-screw.step": "ad70120cc89d6ab64be813b9ed248f1d6f41b61136f8a92aff3142fdb5605c3f",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a"
+  }
+}

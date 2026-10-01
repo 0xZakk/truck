@@ -1,0 +1,30 @@
+{
+  "status": "FAIL \u2014 frozen orientation-only trial",
+  "nominal_static_neighbors_pass": true,
+  "fluid_wall_rear_locality_pass": true,
+  "valid_exports_pass": true,
+  "access_pass": false,
+  "source_angle_endpoints_fit_pass": false,
+  "failures": [
+    "Nominal pump station1 tool overlap7925.1532201mm3",
+    "Inherited heater station3 tool504.5872707mm3",
+    "Inherited main3 tool61.1070628mm3",
+    "Low-angle carrier3181.6290986mm3; high-angle cover310.0676216mm3"
+  ],
+  "visual_review": "Actual saved mesh reviewed; port, four mounting holes and unchanged cover visible.",
+  "limits": [
+    "No continuous motion, hydraulic performance, source dimensional fidelity or radiator hose fit claim.",
+    "Retained25mm offset remains arbitrary old packaging estimate."
+  ],
+  "files": {
+    "inventory/engine/waterpump-source-oriented-inlet-visual.json": "72049c3151a350ded3384b0c273c99c0c038c61615673156b56630f6d1ccf2ec",
+    "inventory/engine/waterpump-source-oriented-inlet-interfaces.json": "ebaff26b0e070c594245bda20471a6d1a2edfb675d42c63797395e4a422eb455",
+    "inventory/engine/waterpump-source-oriented-inlet-neighbors.json": "ff5b3741f749281564cfbcffef60fdcfed58fb2798272122c7be34e7d89acfb7",
+    "inventory/engine/waterpump-source-oriented-inlet-export.json": "5f5ec44a1c36688353c69b62d29b71a780378055b9bbea84a7b721269a85298b",
+    "cad/engine/waterpump_source_oriented_inlet_candidate.py": "e61e6f8e23f27d7c7741dffb6c9e2aebedd6490b304cd8673f842856e8161da6",
+    "scripts/build-waterpump-source-oriented-inlet.py": "e3578846e4c3f6c7e04d7e170b517f18e4a85349683c6a50b340682af8b2cc5b",
+    "scripts/check-waterpump-source-oriented-inlet-interfaces.py": "114215abbb10250b680adb1b6cc7b56a5032ae5847d025d2b481eb4b26dcb6a1",
+    "scripts/check-waterpump-source-oriented-inlet-neighbors.py": "4b6759e26c3196303ba84c454dc5e4ecf9df5c87be1342d93e8f6503e1200044",
+    "scripts/render-waterpump-source-oriented-inlet.py": "6b22768b6e2c39c618f7cd96d091bdc40823f86b99c9ef3fc98ead18c894fe26"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "readiness": "research; dimensionally incomplete",
+  "baseline_commit": "9df77dd0cec845ab68722d387e708e9cdbf07fb4",
+  "scope": "ACT/IAT identity only; no CAD or shared modifications",
+  "source_inputs": [
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Sensors%20and%20Switches/Sensors%20and%20Switches%20-%20Powertrain%20Management/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Parts%20Information/index.html",
+      "sha256": "73307fbfdb3ec8e8088c49fdbd6a4760d27b82c2096232a335f6a383cc3446f1",
+      "redistribute": false
+    },
+    {
+      "path": "inventory/engine/engine-sensor-coverage-evidence.json",
+      "sha256": "e211fa651f152c5e96fde0fc389e4a6df13f40bf9da8978c570671ef54f3a4d9"
+    }
+  ],
+  "service_identity": {
+    "part": "F2DZ-12A697-A",
+    "source": "Exact-year Parts and Labor, Air Intake Temp Sensor, manufacturer FOR",
+    "qualification": "Order By Tag Number; actual installed tag unknown",
+    "exact_engineering_stamp": null
+  },
+  "manufacturer_bridges": [
+    {
+      "manufacturer": "MTE-THOMSON",
+      "part": "5041",
+      "url": "https://cate.mte-thomson.com.br/pt/br/produto/detalhes/5041/plug-eletronico--ar",
+      "bridge": "Explicit Ford F2DZ12A697A in OE list",
+      "dimensions": {
+        "thread_designation": "3/8-18 NPTF",
+        "hex_mm": 25,
+        "pins": 2
+      },
+      "seal_form": "Tapered dryseal thread family; sensor-specific coating/port class/installed gauge plane unknown",
+      "not_dimensions": "6x3.3x3.3cm is packaging"
+    },
+    {
+      "manufacturer": "Tomco",
+      "part": "12100",
+      "url": "https://tomco-inc.com/Catalog/iat%20sensors.pdf",
+      "page_printed": 176,
+      "bridge": "F150 1987-1995 4.9L(Y), E4AF-12A697AA/BA, F1AF-BA, F2DF-AA, F2DZ-A",
+      "limitation": "Family cross-reference does not identify owner engineering stamp; full PDF fetch timed out, indexed manufacturer table inspected"
+    },
+    {
+      "manufacturer": "Walker Products",
+      "part": "210-1002",
+      "url": "https://www.walkerproducts.com/wp-content/uploads/2021/06/Commercial-Vehicle-Products-Buyers-Guide.pdf",
+      "bridge": "Manufacturer OEM interchange F2DZ12A697A; not a dimensional drawing"
+    }
+  ],
+  "unknown_dimensions": [
+    "overall sensor length",
+    "probe reach from declared gauge plane",
+    "threaded length and NPTF class",
+    "installed engagement/depth",
+    "hex thickness",
+    "connector length/diameter/key/latch",
+    "terminal diameter/spacing/recess",
+    "female intake port gauge plane and wall",
+    "sensor-specific sealing compound/washer policy"
+  ],
+  "variants": [
+    "Tomco separate 1995 F4TZ-12A697A ->12125",
+    "Later F57Z-12A697A is not substituted for this target",
+    "Earlier generic sensor report thread conflicts remain frozen; MTE5041 dimensions now have service-number bridge, not proof every AX3/TS4052 catalog field is correct"
+  ],
+  "verdict": "Service identity and applicable replacement thread/hex resolved; full build contract remains unresolved. No CAD authorized by these incomplete dimensions."
+}
