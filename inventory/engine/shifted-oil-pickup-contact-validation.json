@@ -1,0 +1,54 @@
+{
+  "status": "PASS actual local insertion and bore; complete fluid circuit unresolved",
+  "inputs": {
+    "scripts/check-shifted-oil-pickup-contact.py": "cb7336d0d372baee5de5be2a359a54bf940f765cddbc498cb4a1f9cbb357bdd7",
+    "cad/engine/shifted_oil_pickup_candidate.py": "b8ad00864b8730a49e2428619c4f27309393cf68edb7cb8c2be5c1c2b9ef2651",
+    "inventory/engine/shifted-oil-pickup-candidate-validation.json": "d2eea03fb3a9e00610af661bde5c40f94ba5f34baf08267c23eec5208ee3b994",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube-world.step": "25a60b588ea4e7dd27d83b284d601cfa3d6190719d74df2690748817b80ba1bd",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  },
+  "sample_count_per_ring": 24,
+  "section_probes": [
+    {
+      "local_x_mm": -32.8,
+      "tube_wall": 24,
+      "pump_backing": 24,
+      "tube_lumen": 0,
+      "pump_lumen": 0,
+      "stale_tube_wall": 0
+    },
+    {
+      "local_x_mm": -32,
+      "tube_wall": 24,
+      "pump_backing": 24,
+      "tube_lumen": 0,
+      "pump_lumen": 0,
+      "stale_tube_wall": 0
+    },
+    {
+      "local_x_mm": -31.2,
+      "tube_wall": 24,
+      "pump_backing": 24,
+      "tube_lumen": 0,
+      "pump_lumen": 0,
+      "stale_tube_wall": 0
+    }
+  ],
+  "actual_volume_and_face_controls": {
+    "lumen_tube_overlap_mm3": 0.0,
+    "lumen_pump_overlap_mm3": 0.0,
+    "wall_missing_from_tube_mm3": 0.0,
+    "backing_missing_from_pump_mm3": 0.0,
+    "stale_wall_missing_mm3": 61.072561185785744,
+    "whole_revised_curve_lumen_overlap_mm3": 0.0,
+    "actual_shared_cylindrical_face_area_mm2": 103.05868599385862
+  },
+  "limits": [
+    "1.8mm test band within estimated3mm insertion; nominal radius6 contact does not prove pressure seal or retention",
+    "Remaining tube continuity follows retained tail plus valid single-solid head join; no flow simulation",
+    "Downstream bell clearance inherited, not repaired",
+    "Pump discharge and block gasket/gallery unresolved"
+  ]
+}

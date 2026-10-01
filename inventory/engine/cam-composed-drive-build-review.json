@@ -1,0 +1,33 @@
+{
+  "status": "PASS bounded composed fullcam",
+  "outside_exact_mask_difference_mm3": 0,
+  "actual_gear_window_difference_mm3": 0,
+  "R15_core_missing_mm3": 0,
+  "protected_notch_control_mm3": 0.5235987755982989,
+  "positive_helix_edge_count": 304,
+  "lead_range_rad_per_mm": [
+    0.05555555101054036,
+    0.055555551010643
+  ],
+  "local_world_roundtrip_difference_mm3": 0,
+  "mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "triangles": 37432,
+    "local_bounds_error_mm": 0.007964158415894929,
+    "world_bounds_error_mm": 0.00796415841600151
+  },
+  "input_sha256": {
+    "scripts/check-cam-composed-drive.py": "aa4d3f62a844f62a2883cfc0202a218b22ee2edca122fcfefbd3afcc4507092d",
+    "cad/engine/cam_composed_drive_candidate.py": "960cc045982c4c71efb7946c709a3abe65ec88311d565c95c7fc32b34a4a8fb3",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.step": "81933607c28c521f8f077239e16174a5d718c9aec0f1e4450ac041b1931fbc68",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step": "a8c0288344579f739983e3b7a29858c4806f364351917be11b3cf82bf5b23b29",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b"
+  },
+  "output_sha256": {
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft-local.glb": "8c0b13698e6122da1d341791965427d3755866dd69776a367cd4f526cd311a77",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft.step": "87b9d4053d26af8ca663eb92fcc5960fc4d77188a384f5877bfe36993b9e3a65",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft-local.step": "58434e1a4a96b1cf9fef0075277ed3a114ff90ac2a5093b5956c6cb305c84c38"
+  }
+}

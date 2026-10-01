@@ -1,0 +1,2268 @@
+{
+  "schema": "truck-guarded-integration-proposal-v2",
+  "scope": "Uninstalled coordinatedfront assets andhardwareposes; requiredseal/gasketdependenciesexplicit",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "definitions": [
+    {
+      "id": "block",
+      "before": {
+        "id": "block",
+        "name": "Cylinder block",
+        "function": "Holds the cylinders and crankshaft supports. An estimated rear-side dipstick boss and passage connect the guide to the crankcase without cutting the protected main/cylinder regions.",
+        "system": "structure",
+        "color": "#477176",
+        "glb": "/models/engine/block.glb",
+        "step": "/cad/engine/generated/block.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-ed8704e3446e",
+          "fsm-2e5473b2bf99",
+          "ford-engine-side-layout",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions",
+          "ford-accessory-brackets",
+          "ford-accessory-routing",
+          "ford-cii-pump-study",
+          "ford-alternator-study",
+          "ford-thermactor-study",
+          "fsm-d975f341ee63",
+          "fsm-6f023139b5f8",
+          "wix-51515-envelope",
+          "enginequest-oil-filter-adapter",
+          "ford-tsb-94-10-19-accessory",
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology",
+          "water-pump-mounting-topology",
+          "gates-water-pumps-2011",
+          "dipstick-specimen-e9te",
+          "dipstick-service-catalog",
+          "dipstick-tube-1995-adjacent-study"
+        ],
+        "dimension_claims": [
+          "bore",
+          "lifter_bore_diameter_range"
+        ],
+        "unresolved": [
+          "Bore pitch 113.792 mm, deck height 254 mm and casting envelope are assumptions. The side-cover opening, perimeter rail and six fastener webs are provisional fit-study geometry. The rear cam plug seat and support boss are provisional. Water jackets, oil drillings, other bosses/plugs and deck passages need reconstruction.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+          "Ford identifies a shared power-steering/A/C bracket attached to block and head and a separate alternator bracket. These castings reconstruct that load-path topology, not a measured production casting.",
+          "All boss coordinates, bolt counts, web sections, material colors, hole sizes and mounting-face locations are illustrative interfaces to the current component studies. Casting ribs, part numbers, dowels and factory contours remain unknown.",
+          "Engine feet touch provisional front-face seats. Explicit interface adapters add isolated blind support bosses and 16 mm deep smooth thread-envelope bores; 14 mm bolt engagement is illustrative, not a verified thread specification. These are dry blind attachments, not coolant or oil passages.",
+          "Accessory bolt shanks use clearance through the candidate mounting ears. Threads, grades, preload, bracket stiffness and belt-load deflection are not simulated.",
+          "The Thermactor and tensioner engine brackets remain separate unresolved load paths. No unsupported air-pump attachment is added to these castings.",
+          "Ford identifies a belt-driven positive-displacement vane pump and illustrates its body, inlet, outlet and three-hole pulley hub. This interim model reconstructs the exterior interfaces, not the full internal pumping mechanism.",
+          "The generic Ford truck description covers 19 and 22 cubic-inch pumps without assigning one to this installed engine. Neither displacement nor vane count is claimed. The pumping cartridge is one explicitly unresolved envelope.",
+          "All dimensions, rotor-envelope form, bearing cartridges, shaft, pulley diameter/profile, six grooves, case fastener count and mounting-ear positions are illustrative. No aftermarket part identity or published generic comparison dimensions are treated as verified installed geometry.",
+          "Station (473.56,-280,100) follows the labeled lower-RH A/P topology and provisional belt plane, not measured engine datums. Inlet filter, hoses, bypass/diverter valves and air-injection manifold connections remain unfinished.",
+          "A separate assumed support connects the current pump ears to dry blind front-block bosses. Bracket casting, two mount bolts, two engine bolts and 14 mm smooth engagement envelopes are not factory dimensional evidence.",
+          "No threads, bearing rolling elements, dynamic vane contact, pressure/flow, pump speed ratio or thermal/friction simulation. Collision-free geometry does not verify an emissions-system repair or production fit.",
+          "The insert is a hollow stepped comparison envelope, not a reconstructed E4TZ-6890-A anti-drainback service insert. No unsourced valve mechanism is added.",
+          "Filter position, inclined boss, gallery routing, insert lengths, block-end thread diameter and sealing lands are provisional. Filter-side 3/4-16 uses coincident nominal male/female envelopes, not helical thread contact.",
+          "Two deliberately open side interfaces bound this gallery study. They are not production external ports and remain disconnected from the pump and main oil gallery. The engine lubrication circuit is incomplete.",
+          "No separate adapter gasket or additional bypass valve is inferred. The existing filter gasket, internal flap and illustrative bypass remain separate components; seal compression and anti-drainback performance are not simulated.",
+          "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+          "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,167,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+          "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+          "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+          "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+          "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length.",
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "The continuous inset pan neck uses assumed746x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "ATK DFF8 automotive block-front photo supports pump flange directly on block face, four mounting holes and a larger fifth opening; exact hole coordinates and installed lateral axis offset remain unmeasured.",
+          "The casting now reaches modeled blockfrontX373 through its rear flange and2mmgasket; tapered chamber depth83mm is assumed to preserve the existing provisional hub/bearing/heater-return datums. This is not a verified Gates44009 dimension.",
+          "All four fasteners are unthreaded8mm\u00d731.75mm illustrative envelopes with13mmhex heads. Production bolt thread, length, head, washer construction and socket depth are unverified; these are not replacement specifications.",
+          "The receiver cuts only the demonstrated front opening into the existing modeled cavity while retaining the front cylinder wall. Deeper coolant jacket, fifth-opening function, circulation and hydraulic performance remain unresolved.",
+          "The larger gasket opening is retained as an unidentified passage with a provisional short pump-chamber connection; its actual cast routing is unverified. Radiator inlet neck remains a separate missing reconstruction.",
+          "Impeller, mechanical seal, bearing cartridge and internal shaft geometry remain simplified. Existing belt plane and pumpY\u221232/Z170 coordinates are not factory dimensions.",
+          "The provisional Thermactor upper support foot and blind socket move together to Y-125/Z140; casting, load capacity and production coordinates remain unverified.",
+          "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+          "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+          "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+          "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+          "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated."
+        ],
+        "volume_mm3": 20094113.3293252,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 45696,
+        "model_bounds_mm": [
+          762.0000001000001,
+          324.2925651931532,
+          365.5951025923334
+        ]
+      },
+      "after": {
+        "id": "block",
+        "name": "Cylinder block",
+        "function": "Holds the cylinders and crankshaft supports. An estimated rear-side dipstick boss and passage connect the guide to the crankcase without cutting the protected main/cylinder regions.",
+        "system": "structure",
+        "color": "#477176",
+        "glb": "/models/engine/block.glb",
+        "step": "/cad/engine/generated/block.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-ed8704e3446e",
+          "fsm-2e5473b2bf99",
+          "ford-engine-side-layout",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions",
+          "ford-accessory-brackets",
+          "ford-accessory-routing",
+          "ford-cii-pump-study",
+          "ford-alternator-study",
+          "ford-thermactor-study",
+          "fsm-d975f341ee63",
+          "fsm-6f023139b5f8",
+          "wix-51515-envelope",
+          "enginequest-oil-filter-adapter",
+          "ford-tsb-94-10-19-accessory",
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology",
+          "water-pump-mounting-topology",
+          "gates-water-pumps-2011",
+          "dipstick-specimen-e9te",
+          "dipstick-service-catalog",
+          "dipstick-tube-1995-adjacent-study"
+        ],
+        "dimension_claims": [
+          "bore",
+          "lifter_bore_diameter_range"
+        ],
+        "unresolved": [
+          "Bore pitch 113.792 mm, deck height 254 mm and casting envelope are assumptions. The side-cover opening, perimeter rail and six fastener webs are provisional fit-study geometry. The rear cam plug seat and support boss are provisional. Water jackets, oil drillings, other bosses/plugs and deck passages need reconstruction.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+          "Ford identifies a shared power-steering/A/C bracket attached to block and head and a separate alternator bracket. These castings reconstruct that load-path topology, not a measured production casting.",
+          "All boss coordinates, bolt counts, web sections, material colors, hole sizes and mounting-face locations are illustrative interfaces to the current component studies. Casting ribs, part numbers, dowels and factory contours remain unknown.",
+          "Engine feet touch provisional front-face seats. Explicit interface adapters add isolated blind support bosses and 16 mm deep smooth thread-envelope bores; 14 mm bolt engagement is illustrative, not a verified thread specification. These are dry blind attachments, not coolant or oil passages.",
+          "Accessory bolt shanks use clearance through the candidate mounting ears. Threads, grades, preload, bracket stiffness and belt-load deflection are not simulated.",
+          "The Thermactor and tensioner engine brackets remain separate unresolved load paths. No unsupported air-pump attachment is added to these castings.",
+          "Ford identifies a belt-driven positive-displacement vane pump and illustrates its body, inlet, outlet and three-hole pulley hub. This interim model reconstructs the exterior interfaces, not the full internal pumping mechanism.",
+          "The generic Ford truck description covers 19 and 22 cubic-inch pumps without assigning one to this installed engine. Neither displacement nor vane count is claimed. The pumping cartridge is one explicitly unresolved envelope.",
+          "All dimensions, rotor-envelope form, bearing cartridges, shaft, pulley diameter/profile, six grooves, case fastener count and mounting-ear positions are illustrative. No aftermarket part identity or published generic comparison dimensions are treated as verified installed geometry.",
+          "Station (473.56,-280,100) follows the labeled lower-RH A/P topology and provisional belt plane, not measured engine datums. Inlet filter, hoses, bypass/diverter valves and air-injection manifold connections remain unfinished.",
+          "A separate assumed support connects the current pump ears to dry blind front-block bosses. Bracket casting, two mount bolts, two engine bolts and 14 mm smooth engagement envelopes are not factory dimensional evidence.",
+          "No threads, bearing rolling elements, dynamic vane contact, pressure/flow, pump speed ratio or thermal/friction simulation. Collision-free geometry does not verify an emissions-system repair or production fit.",
+          "The insert is a hollow stepped comparison envelope, not a reconstructed E4TZ-6890-A anti-drainback service insert. No unsourced valve mechanism is added.",
+          "Filter position, inclined boss, gallery routing, insert lengths, block-end thread diameter and sealing lands are provisional. Filter-side 3/4-16 uses coincident nominal male/female envelopes, not helical thread contact.",
+          "Two deliberately open side interfaces bound this gallery study. They are not production external ports and remain disconnected from the pump and main oil gallery. The engine lubrication circuit is incomplete.",
+          "No separate adapter gasket or additional bypass valve is inferred. The existing filter gasket, internal flap and illustrative bypass remain separate components; seal compression and anti-drainback performance are not simulated.",
+          "Ford Fig4 establishes a shared P/S\u2013A/C\u2013tensioner carrier, front-head bolt#1, side-head bolt#2 and two side-block nuts#3. It does not dimension any modeled hole, web, casting, stud or fastening fit.",
+          "PS and A/C stations stay unchanged. The tensioner wheel is provisionally at(473.56,167,350) with its75mm assumed arm below the pivot; source drawings establish relative arrangement only.",
+          "Smooth shafts and nut bores represent stud engagement without production thread pitches, grades, preload or load analysis.",
+          "Adapters add dry external side bosses. Passage proximity, casting wall thickness and original old front block boss cleanup require independent source work.",
+          "The original separate tensioner engine support must not be installed. This candidate replaces the PS/AC carrier and its two provisional front-axis attachment bolts.",
+          "Catalog belt fit and moving tensioner travel remain unresolved. This architecture correction does not match centers to a target belt length.",
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "The continuous inset pan neck uses assumed746x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "ATK DFF8 automotive block-front photo supports pump flange directly on block face, four mounting holes and a larger fifth opening; exact hole coordinates and installed lateral axis offset remain unmeasured.",
+          "The casting now reaches modeled blockfrontX373 through its rear flange and2mmgasket; tapered chamber depth83mm is assumed to preserve the existing provisional hub/bearing/heater-return datums. This is not a verified Gates44009 dimension.",
+          "All four fasteners are unthreaded8mm\u00d731.75mm illustrative envelopes with13mmhex heads. Production bolt thread, length, head, washer construction and socket depth are unverified; these are not replacement specifications.",
+          "The receiver cuts only the demonstrated front opening into the existing modeled cavity while retaining the front cylinder wall. Deeper coolant jacket, fifth-opening function, circulation and hydraulic performance remain unresolved.",
+          "The larger gasket opening is retained as an unidentified passage with a provisional short pump-chamber connection; its actual cast routing is unverified. Radiator inlet neck remains a separate missing reconstruction.",
+          "Impeller, mechanical seal, bearing cartridge and internal shaft geometry remain simplified. Existing belt plane and pumpY\u221232/Z170 coordinates are not factory dimensions.",
+          "The provisional Thermactor upper support foot and blind socket move together to Y-125/Z140; casting, load capacity and production coordinates remain unverified.",
+          "Educational interface estimates, not production dimensions or machining instructions. Exact1994 tube/indicator identity and upper support station remain unverified.",
+          "Lower and upper mating threads are clearance envelopes. Thread engagement, sealing construction, bracket manufacturing joint, clamp load and retention strength are unvalidated.",
+          "The pilot692.15mm approximate axial route comprises558.476126mm guide and133.673874mm free extension. Estimated waves add6.572804mm of material centerline; the material length is698.722804mm.",
+          "Blade sections, waves, handle and stamp placement are inherited estimates. E9TE-6750-DA is specimen evidence, not owner identification; no ADD/FULL mark or oil calibration is reconstructed.",
+          "The inserted blade is a rigid flexed display pose. Elastic insertion/withdrawal, twist, wave compression, handle retention force and service removal are not simulated.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 20141746.993255533,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 201684,
+        "model_bounds_mm": [
+          754.0000002000306,
+          411.6164108083817,
+          360.31017519862746
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/block.step",
+          "to": "cad/engine/generated/block.step",
+          "sha256": "35af664cb1f13593ac105d0d37c98b14ea34b933fb112e45a86da734f94b057e"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/block.glb",
+          "to": "models/engine/block.glb",
+          "sha256": "520521d9539107410c8dc03036ad0eed36410b05a8aed250c7f57462da72c9d1"
+        }
+      }
+    },
+    {
+      "id": "timing-cover",
+      "before": {
+        "id": "timing-cover",
+        "name": "Timing cover",
+        "function": "Encloses the two timing gears and carries the front crankshaft seal. Its two-lobe cavity clears the modeled gear envelopes; production contours, bosses and mounting interfaces remain provisional.",
+        "system": "closures",
+        "color": "#8fa1aa",
+        "glb": "/models/engine/timing-cover.glb",
+        "step": "/cad/engine/generated/timing-cover.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "ford-engine-side-layout"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Outer radii52/88mm, inner radii48/84mm and24mmdepth are assumed clearance-study dimensions, not a production casting trace. Block flange, bolt pattern and pump interfaces remain unfinished."
+        ],
+        "volume_mm3": 177664.81227234285,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 712,
+        "model_bounds_mm": [
+          24.000000000000007,
+          230.0,
+          212.0
+        ]
+      },
+      "after": {
+        "id": "timing-cover",
+        "name": "Timing cover",
+        "function": "Encloses the two timing gears and carries the front crankshaft seal. Its two-lobe cavity clears the modeled gear envelopes; production contours, bosses and mounting interfaces remain provisional.",
+        "system": "closures",
+        "color": "#8fa1aa",
+        "glb": "/models/engine/timing-cover.glb",
+        "step": "/cad/engine/generated/timing-cover.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "ford-engine-side-layout"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Outer radii52/88mm, inner radii48/84mm and24mmdepth are assumed clearance-study dimensions, not a production casting trace. Block flange, bolt pattern and pump interfaces remain unfinished.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 531810.1509665558,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 49476,
+        "model_bounds_mm": [
+          67.61120000000096,
+          411.6164107083817,
+          268.5393618743347
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step",
+          "to": "cad/engine/generated/timing-cover.step",
+          "sha256": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/timing-cover.glb",
+          "to": "models/engine/timing-cover.glb",
+          "sha256": "6c77d355f594ee4636f1ecd62975f807321efbc4970d7edd638277723329c925"
+        }
+      }
+    },
+    {
+      "id": "oil-pan",
+      "before": {
+        "id": "oil-pan",
+        "name": "Oil pan",
+        "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+        "system": "closures",
+        "color": "#42686c",
+        "glb": "/models/engine/oil-pan.glb",
+        "step": "/cad/engine/generated/oil-pan.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "dorman-264011-pan",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Sump stamping, capacity, installed pan identity and production dimensions remain provisional."
+        ],
+        "volume_mm3": 1601472.6349777738,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 10994,
+        "model_bounds_mm": [
+          762.0000001000001,
+          266.6,
+          234.9500002000001
+        ]
+      },
+      "after": {
+        "id": "oil-pan",
+        "name": "Oil pan",
+        "function": "Stores returning oil in a deeper rear sump. The forward section clears the crankcase region; transition and flange geometry remain provisional. Drain dimensions beyond the published thread, sealing details and the pickup-to-floor interface remain provisional.",
+        "system": "closures",
+        "color": "#42686c",
+        "glb": "/models/engine/oil-pan.glb",
+        "step": "/cad/engine/generated/oil-pan.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "dorman-264011-pan",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Sump stamping, capacity, installed pan identity and production dimensions remain provisional.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 1707351.511119627,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 21812,
+        "model_bounds_mm": [
+          780.0,
+          362.00000000000034,
+          242.45000020000762
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan.step",
+          "to": "cad/engine/generated/oil-pan.step",
+          "sha256": "165fd0d3e50c69b0d71370e56f690abe73fbf49ab7a83b054a5a0467b0dab063"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan.glb",
+          "to": "models/engine/oil-pan.glb",
+          "sha256": "e48f090c6c70831329088356341f39805cb806b49e231edc8bed4a132ec8d831"
+        }
+      }
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "before": {
+        "id": "oil-pan-molded-gasket",
+        "name": "Continuous molded pan gasket study",
+        "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+        "system": "closures",
+        "color": "#3e75bd",
+        "glb": "/models/engine/oil-pan-molded-gasket.glb",
+        "step": "/cad/engine/generated/oil-pan-molded-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved."
+        ],
+        "volume_mm3": 48535.46554913383,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 9874,
+        "model_bounds_mm": [
+          762.0000001000001,
+          266.6,
+          29.400000200014304
+        ]
+      },
+      "after": {
+        "id": "oil-pan-molded-gasket",
+        "name": "Continuous molded pan gasket study",
+        "function": "A continuous seal crosses both long rails and the front/rear end bridges. Shape is a provisional interface study informed by the exact replacement image.",
+        "system": "closures",
+        "color": "#3e75bd",
+        "glb": "/models/engine/oil-pan-molded-gasket.glb",
+        "step": "/cad/engine/generated/oil-pan-molded-gasket.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 67988.59589653769,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 17940,
+        "model_bounds_mm": [
+          780.0,
+          362.00000000000034,
+          36.90000010000766
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-molded-gasket.step",
+          "to": "cad/engine/generated/oil-pan-molded-gasket.step",
+          "sha256": "950b39975b7eaf17c2e85859a2408311b2b1b4e6fda381ce2be7745ec0aaab07"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-molded-gasket.glb",
+          "to": "models/engine/oil-pan-molded-gasket.glb",
+          "sha256": "038b4e8a4d777c59e7baf9d5c756d6be2bd0c7de88011a030883307e2695fd2c"
+        }
+      }
+    },
+    {
+      "id": "oil-pan-mounting-screw",
+      "before": {
+        "id": "oil-pan-mounting-screw",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/oil-pan-mounting-screw.glb",
+        "step": "/cad/engine/generated/oil-pan-mounting-screw.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved."
+        ],
+        "volume_mm3": 1605.2892647779702,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 14050,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          27.398000100000008
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/oil-pan-mounting-screw.glb",
+        "step": "/cad/engine/generated/oil-pan-mounting-screw.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "truck-oil-pan-hardware",
+          "fel-pro-vin-y-gaskets",
+          "felpro-os34601r-topology"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact OS34601R product photo supports a continuous gasket and10holes per long rail plus3and2at its ends. Hole coordinates, central rail offset and photo-end orientation remain unmeasured.",
+          "All gasket thicknesses, radii, pads, compression, washers, head geometry, clearances and blind sockets are provisional. This is a matched geometric study, not a production gasket or dimensional drawing.",
+          "V9 narrows the complete shallow shell to726mm length with720mm inner cavity; the original rear sump profile, floor depth and drain datum remain. This keeps the continuous front end wall behind the bolt extraction corridor; overall stamping remains unmeasured.",
+          "The continuous inset pan neck uses assumed726x242-to726x232mm envelopes between Z-90and-76, with its center shifted5mm toward+Y and a wider flat flange; it reconciles bolt clearance with the existing provisional starter and does not establish production stamping or capacity. Front and rear end lands are illustrative dry block extensions. The actual timing-cover/block/pan junction and local sealant remain unresolved.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 1636.0644456792393,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 15876,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          27.398000100000157
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-mounting-screw.step",
+          "to": "cad/engine/generated/oil-pan-mounting-screw.step",
+          "sha256": "b5604ee90be3b7d823743b94ba7f7b0f88d686f7a2a5fff612245f43325ca446"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/oil-pan-mounting-screw.glb",
+          "to": "models/engine/oil-pan-mounting-screw.glb",
+          "sha256": "22b3ba49c3da1832b7944fb9e357883430aa44e17b78a179a5bdc50c6d3f5335"
+        }
+      }
+    },
+    {
+      "id": "timing-cover-mounting-screw",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw",
+        "name": "Timing-cover screw \u00b71986comparison",
+        "function": "Clamps the estimated recessed cover seat to a modeled blind female socket; exact1994 hardware remains unverified.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/timing-cover-mounting-screw.glb",
+        "step": "/cad/engine/generated/timing-cover-mounting-screw.step",
+        "geometry_status": "candidate",
+        "sources": [],
+        "dimension_claims": [],
+        "unresolved": [
+          "Ford1986callout51comparison5/16-18\u00d77/8in;1994transfer andheadgeometry unverified.",
+          "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+          "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+          "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+          "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+        ],
+        "volume_mm3": 1802.4835927556037,
+        "solid_count": 1,
+        "triangle_count": 16488,
+        "model_bounds_mm": [
+          17.5,
+          17.5,
+          27.52500010000036
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/timing-cover-mounting-screw.step",
+          "to": "cad/engine/generated/timing-cover-mounting-screw.step",
+          "sha256": "1b8667182ffe0be26ac5bc4355b73d5049b5f3951085c0f5b5c5250b51f11b59"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-coordinated-stage/timing-cover-mounting-screw.glb",
+          "to": "models/engine/timing-cover-mounting-screw.glb",
+          "sha256": "7a4410cd320ba1d94486e878bc2115d275a805d51e355d2a7530909e675e190f"
+        }
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "oil-pan-mounting-screw-10",
+      "before": {
+        "id": "oil-pan-mounting-screw-10",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          344.0,
+          116.6,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-10",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          365.5,
+          196.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-10",
+      "before": {
+        "id": "oil-pan-mounting-washer-10",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          344.0,
+          116.6,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-10",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          365.5,
+          196.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              25,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        196.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-20",
+      "before": {
+        "id": "oil-pan-mounting-screw-20",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          344.0,
+          -131.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-20",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          365.5,
+          -132.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-20",
+      "before": {
+        "id": "oil-pan-mounting-washer-20",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          344.0,
+          -131.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-20",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          365.5,
+          -132.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -25,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              0,
+              -25,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        365.5,
+        -132.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-21",
+      "before": {
+        "id": "oil-pan-mounting-screw-21",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          -85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-21",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          -95.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        -95.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-21",
+      "before": {
+        "id": "oil-pan-mounting-washer-21",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          -85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-21",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          -95.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        -95.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-22",
+      "before": {
+        "id": "oil-pan-mounting-screw-22",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-22",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          180.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-22",
+      "before": {
+        "id": "oil-pan-mounting-washer-22",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          85.0,
+          -39.6
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-22",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          180.0,
+          -32.1
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        180.0,
+        -32.1
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-screw-23",
+      "before": {
+        "id": "oil-pan-mounting-screw-23",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          371.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-screw-23",
+        "definition": "oil-pan-mounting-screw",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting screw \u00b7 5/16-18 \u00d7 .87",
+        "function": "Clamps the flange through its washer; nominal size and total count follow Ford service evidence.",
+        "position_cad_mm": [
+          390.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -360
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -360
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ]
+    },
+    {
+      "id": "oil-pan-mounting-washer-23",
+      "before": {
+        "id": "oil-pan-mounting-washer-23",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          371.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "after": {
+        "id": "oil-pan-mounting-washer-23",
+        "definition": "oil-pan-mounting-washer",
+        "parent": "oil-pan-fastener-assembly",
+        "name": "Pan mounting washer",
+        "function": "Distributes clamp load; captive construction and dimensions remain illustrative.",
+        "position_cad_mm": [
+          390.0,
+          0.0,
+          -67.0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          25,
+          0,
+          -340
+        ],
+        "explode_stages": [
+          {
+            "at": 0,
+            "offset_cad_mm": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "at": 0.35,
+            "offset_cad_mm": [
+              0,
+              0,
+              -137
+            ]
+          },
+          {
+            "at": 0.6,
+            "offset_cad_mm": [
+              25,
+              0,
+              -217
+            ]
+          },
+          {
+            "at": 1,
+            "offset_cad_mm": [
+              25,
+              0,
+              -340
+            ]
+          }
+        ]
+      },
+      "world_target_mm": [
+        390.0,
+        0.0,
+        -67.0
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-1",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-1",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw1 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          -119.19951535908172,
+          -6.8728541983332425
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          -119.19951535908172
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          -6.8728541983332425
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-2",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-2",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw2 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          -60.17905521045717,
+          19.04719901657343
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          -60.17905521045717
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          19.04719901657343
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-3",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-3",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw3 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          -6.627940493863827,
+          98.99106943536769
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          -6.627940493863827
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          98.99106943536769
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-4",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-4",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw4 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          97.5478052976514,
+          198.56723454396885
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          97.5478052976514
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          198.56723454396885
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-5",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-5",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw5 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          222.86727322987147,
+          158.35846880484021
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          222.86727322987147
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          158.35846880484021
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-6",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-6",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw6 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          251.91680672464793,
+          74.42369033067094
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          251.91680672464793
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          74.42369033067094
+        ]
+      ]
+    },
+    {
+      "id": "timing-cover-mounting-screw-7",
+      "before": null,
+      "after": {
+        "id": "timing-cover-mounting-screw-7",
+        "definition": "timing-cover-mounting-screw",
+        "parent": "closures",
+        "name": "Timing-cover screw7 \u00b7comparison",
+        "function": "Clamps estimatedrecessedseat; productionhardware unknown.",
+        "position_cad_mm": [
+          379.8,
+          217.24482469086223,
+          -7.893399845733515
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          -89.99999999999999,
+          0.0
+        ],
+        "explode_cad_mm": [
+          280,
+          0,
+          0
+        ]
+      },
+      "world_target_transform": [
+        [
+          2.220446049250313e-16,
+          -0.0,
+          -1.0,
+          379.8
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          217.24482469086223
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          -7.893399845733515
+        ]
+      ]
+    }
+  ],
+  "scope_approval": {
+    "authorization": "Root expressly permits only recorded exterior deltas in originalpumpR85/pan20R12 guards for integrationcandidate; originalguardFAIL permanent.",
+    "parent_block_sha256": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "new_block_sha256": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "whole_signed_deltas": [
+      {
+        "sign": 1,
+        "path": "cad/engine/generated/timing-front-coordinated-stage/block-added.step",
+        "sha256": "c5aaf4a2dda21fbc4bcc3a80b4c5c1d8fa4264fa11ca54052bd6f40b1d4ad2b9",
+        "bounds_mm": [
+          [
+            354.57499989999997,
+            -124.0000001,
+            -15.893399945733998
+          ],
+          [
+            373.0000001,
+            259.91680682464,
+            200.74973146874913
+          ]
+        ]
+      },
+      {
+        "sign": -1,
+        "path": "cad/engine/generated/timing-front-coordinated-stage/block-removed.step",
+        "sha256": "f7131aa7e7b40e18dcb8b0e9af900847a8e4e120805dc0bc42d025e096e458fb",
+        "bounds_mm": [
+          [
+            356.575,
+            -123.16826546086288,
+            -11.86214994573
+          ],
+          [
+            373.00000010000076,
+            255.885556826477,
+            202.56723464396
+          ]
+        ]
+      }
+    ],
+    "broad_guard_signed_witnesses": [
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-added.step",
+        "sha256": "1f768c77d1f4ec1e252fa61310f84297334439083519001a05b732bdd530c3c7",
+        "sign": 1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/active-pan-interface-20-removed.step",
+        "sha256": "1cfe9f4d9b3b4f08b93a00f1cf1208b102007eca6368612892252282f730c93b",
+        "sign": -1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-added.step",
+        "sha256": "834642fe65e157f1c940ec0a996e1dc0f6afee559d1c4344d9ee7d5cb66f75f1",
+        "sign": 1
+      },
+      {
+        "path": "cad/engine/generated/timing-seven-block-guard-study/water-pump-front-interface-removed.step",
+        "sha256": "96b6c95c27148897730a70980318162808146ba69d60889f62997a5775f87c73",
+        "sign": -1
+      }
+    ],
+    "seven_supports": [
+      {
+        "station": 1,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -119.19951535908172,
+          -6.8728541983332425
+        ]
+      },
+      {
+        "station": 2,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -60.17905521045717,
+          19.04719901657343
+        ]
+      },
+      {
+        "station": 3,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          -6.627940493863827,
+          98.99106943536769
+        ]
+      },
+      {
+        "station": 4,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          97.5478052976514,
+          198.56723454396885
+        ]
+      },
+      {
+        "station": 5,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          222.86727322987147,
+          158.35846880484021
+        ]
+      },
+      {
+        "station": 6,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          251.91680672464793,
+          74.42369033067094
+        ]
+      },
+      {
+        "station": 7,
+        "x_mm": [
+          354.575,
+          373
+        ],
+        "radius_mm": 8,
+        "axis_yz_mm": [
+          217.24482469086223,
+          -7.893399845733515
+        ]
+      }
+    ],
+    "functional_guard_report": "inventory/engine/timing-seven-block-functional-guards.json"
+  },
+  "dependencies": [
+    "Main cover gasket andterminalsealant fromfrozenattachment-v2 requireseparatedefinitions/occurrences; notfusedintoassets.",
+    "Frontseal2692stage supplieshub/case/elastomer/garterspringandoldfront-sealalias.",
+    "Correctedcrank/cam/core integration remainsroot-owned."
+  ],
+  "requirements": [
+    "Rejectstale manifest/beforeobjects/assets.",
+    "Applyfivepanpairposes andsevenmainhardwareoccurrences togetherwithfrontassets.",
+    "Do notpromote thispartialdependencyproposal alone.",
+    "PreserveallunpatchedIDs/parents/metadata."
+  ],
+  "limits": [
+    "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+    "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+    "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+    "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+  ]
+}

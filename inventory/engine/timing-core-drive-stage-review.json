@@ -1,0 +1,914 @@
+{
+  "status": "PASS local serialization, branch conditional",
+  "core_parts": [
+    {
+      "occurrence": "crankshaft",
+      "definition": "crankshaft",
+      "source_world_step": "cad/engine/generated/crank-clockwise-candidate/crankshaft.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_bounds_error_mm": 0.0032549769472183243,
+      "mesh_world_vertex_error_mm": 0.0,
+      "volume_roundtrip_error_mm3": 4.0978193283081055e-08,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 140
+    },
+    {
+      "occurrence": "cam-bearing-1",
+      "definition": "cam-bearing",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-1.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -334.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.012153040909893775,
+      "mesh_world_vertex_error_mm": 6.242553354240954e-07,
+      "volume_roundtrip_error_mm3": 7.275957614183426e-12,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "cam-bearing-2",
+      "definition": "cam-bearing",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-2.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.012153040909893775,
+      "mesh_world_vertex_error_mm": null,
+      "volume_roundtrip_error_mm3": 7.275957614183426e-12,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "cam-bearing-3",
+      "definition": "cam-bearing",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-3.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          110.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.012153040909893775,
+      "mesh_world_vertex_error_mm": null,
+      "volume_roundtrip_error_mm3": 7.275957614183426e-12,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "cam-bearing-4",
+      "definition": "cam-bearing",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-4.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          360.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.012153040909893775,
+      "mesh_world_vertex_error_mm": null,
+      "volume_roundtrip_error_mm3": 7.275957614183426e-12,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "cam-gear-spacer",
+      "definition": "cam-gear-spacer",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-gear-spacer.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          373.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 1.0942358130705543e-12,
+      "mesh_world_bounds_error_mm": 0.008523228764659052,
+      "mesh_world_vertex_error_mm": 6.242553354240954e-07,
+      "volume_roundtrip_error_mm3": 1.7985257727559656e-10,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "cam-thrust-bolt-1",
+      "definition": "cam-thrust-bolt",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-1.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          361.109375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          111.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.79651906871004e-12,
+      "mesh_world_bounds_error_mm": 1.0630488418428286e-05,
+      "mesh_world_vertex_error_mm": 9.08970832824707e-07,
+      "volume_roundtrip_error_mm3": 0.0001788131842204166,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 25
+    },
+    {
+      "occurrence": "cam-thrust-bolt-2",
+      "definition": "cam-thrust-bolt",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-2.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          361.109375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          41.087856792128875
+        ]
+      ],
+      "step_world_bounds_error_mm": 1.0942358130705543e-12,
+      "mesh_world_bounds_error_mm": 1.0630488418428286e-05,
+      "mesh_world_vertex_error_mm": null,
+      "volume_roundtrip_error_mm3": 0.00017881318467516394,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 25
+    },
+    {
+      "occurrence": "cam-thrust-plate",
+      "definition": "cam-thrust-plate",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-plate.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          373.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 1.0942358130705543e-12,
+      "mesh_world_bounds_error_mm": 0.00395277142537509,
+      "mesh_world_vertex_error_mm": 1.735769913580043e-06,
+      "volume_roundtrip_error_mm3": 1.215994416270405e-09,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 13
+    },
+    {
+      "occurrence": "cam-thrust-washer-1",
+      "definition": "cam-thrust-washer",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-1.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          378.159375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          111.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.79651906871004e-12,
+      "mesh_world_bounds_error_mm": 0.0015401095063083403,
+      "mesh_world_vertex_error_mm": 1.5859404811635613e-07,
+      "volume_roundtrip_error_mm3": 1.1368683772161603e-13,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 6
+    },
+    {
+      "occurrence": "cam-thrust-washer-2",
+      "definition": "cam-thrust-washer",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-2.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          1.0,
+          378.159375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          -1.0,
+          0.0,
+          2.220446049250313e-16,
+          41.087856792128875
+        ]
+      ],
+      "step_world_bounds_error_mm": 1.0942358130705543e-12,
+      "mesh_world_bounds_error_mm": 0.0015401095153180222,
+      "mesh_world_vertex_error_mm": null,
+      "volume_roundtrip_error_mm3": 5.684341886080802e-14,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 6
+    },
+    {
+      "occurrence": "cam-timing-gear",
+      "definition": "cam-timing-gear",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-timing-gear.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          385.259375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.00022806536728126048,
+      "mesh_world_vertex_error_mm": 3.714830384637935e-06,
+      "volume_roundtrip_error_mm3": 5.820766091346741e-11,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 1357
+    },
+    {
+      "occurrence": "cam-timing-key",
+      "definition": "cam-timing-key",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/cam-timing-key.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.881784197001252e-12,
+      "mesh_world_bounds_error_mm": 0.002787134051189355,
+      "mesh_world_vertex_error_mm": 1.2687523565091396e-07,
+      "volume_roundtrip_error_mm3": 2.5579538487363607e-13,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 4
+    },
+    {
+      "occurrence": "camshaft",
+      "definition": "camshaft",
+      "source_world_step": "cad/engine/generated/cam-composed-drive-candidate/camshaft.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.895995051716454e-12,
+      "mesh_world_bounds_error_mm": 0.00796415841600151,
+      "mesh_world_vertex_error_mm": 0.0,
+      "volume_roundtrip_error_mm3": 1.1641532182693481e-10,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 377
+    },
+    {
+      "occurrence": "crank-timing-gear",
+      "definition": "crank-timing-gear",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/crank-timing-gear.step",
+      "target_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          385.259375
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_bounds_error_mm": 0.012899087812272114,
+      "mesh_world_vertex_error_mm": 2.3841835172788706e-08,
+      "volume_roundtrip_error_mm3": 2.1827872842550278e-11,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 684
+    },
+    {
+      "occurrence": "rear-cam-plug",
+      "definition": "rear-cam-plug",
+      "source_world_step": "cad/engine/generated/timing-coupled-core-candidate/rear-cam-plug.step",
+      "target_world_matrix": [
+        [
+          2.220446049250313e-16,
+          0.0,
+          -1.0,
+          -363.7878
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          95.1098209901611
+        ],
+        [
+          1.0,
+          0.0,
+          2.220446049250313e-16,
+          76.08785679212887
+        ]
+      ],
+      "step_world_bounds_error_mm": 8.79651906871004e-12,
+      "mesh_world_bounds_error_mm": 0.012469883608687837,
+      "mesh_world_vertex_error_mm": 6.242553354240954e-07,
+      "volume_roundtrip_error_mm3": 2.2737367544323206e-12,
+      "repeated_definition_difference_mm3": 0,
+      "solids": 1,
+      "faces": 5
+    }
+  ],
+  "definition_count": 11,
+  "conditional_branch_occurrences": [
+    {
+      "id": "distributor-hold-down-clamp",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-hold-down-bolt",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-drive-gear",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-drive-pin",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-thrust-washer",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-housing",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-shaft",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-vane",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-rotor",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-rotor-contact",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-cap",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-hall-sensor",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-connector",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-o-ring",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-center-contact",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-bushing-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-bushing-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-3",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-4",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-5",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-terminal-6",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-coil-terminal",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-cap-screw-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-cap-screw-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-vane-screw-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-vane-screw-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "distributor-rotor-center-leaf",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-housing",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-inner-rotor",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-outer-rotor",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-rotor-shaft",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-cover",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-cover-bolt-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-cover-bolt-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-cover-bolt-3",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-cover-bolt-4",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-relief-plunger",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-relief-spring",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-relief-cap",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-mount-bolt-1",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-mount-bolt-2",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-intermediate-shaft",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    },
+    {
+      "id": "oil-pump-drive-retainer",
+      "matrix_error": 0.0,
+      "parent_preserved": true
+    }
+  ],
+  "distributor_original_frame_reconstruction_error_mm": 2.842170943040401e-14,
+  "pickup_unmoved_connection_displacement_mm": 6.543763726208726,
+  "input_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/cam-composed-drive-proof-binding.json": "ad90c3a7e0b9c974087ecd0b808678ef212b2d02fb6cfce711ac7912966a761a",
+    "inventory/engine/cam-composed-drive-build-review.json": "c70e4807094408759815ea7108ca65606f1ee2ec2f8588f2c7c09ac52618fd47",
+    "inventory/engine/cam-composed-drive-section-review.json": "e92c15487c8039b31b64c2ee08f8e3f3feadd9cce3139e6ac1cb865f317bc4fe",
+    "inventory/engine/cam-composed-drive-pair-review.json": "b0f79d7fccfebfeb8c3356a2b672a4a452b3c52506e3d0029eb42efc8ba63e72",
+    "inventory/engine/cam-composed-drive-render-review.json": "45e11576ca2cc76e55370c1936de5aea94142153e4f69159d5142d1e55b2d534",
+    "inventory/engine/cam-clockwise-candidate-delivery-validation.json": "30ff76d46c8f1e0b6729548a2000f7e59221eaa0b61f10cdb6457fa202094bed",
+    "inventory/engine/crossed-oil-drive-corrected-pair-review.json": "0e92c7115728383b80ec05542defd4b30c3d748ccab0012a2708c1257557c54d",
+    "inventory/engine/crossed-oil-drive-endplay-review.json": "235fbaa9d98dd9c17a46eabc2a404282d9a5249fe404e36a824721a3a2d34152",
+    "scripts/check-cam-composed-drive.py": "aa4d3f62a844f62a2883cfc0202a218b22ee2edca122fcfefbd3afcc4507092d",
+    "cad/engine/cam_composed_drive_candidate.py": "960cc045982c4c71efb7946c709a3abe65ec88311d565c95c7fc32b34a4a8fb3",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.step": "81933607c28c521f8f077239e16174a5d718c9aec0f1e4450ac041b1931fbc68",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step": "a8c0288344579f739983e3b7a29858c4806f364351917be11b3cf82bf5b23b29",
+    "cad/engine/timing_coupled_core_candidate.py": "38e6745cf6ee74878b02696f5e901553e9eb4c291f950333788a1209af482d4b",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft-local.glb": "8c0b13698e6122da1d341791965427d3755866dd69776a367cd4f526cd311a77",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft.step": "87b9d4053d26af8ca663eb92fcc5960fc4d77188a384f5877bfe36993b9e3a65",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft-local.step": "58434e1a4a96b1cf9fef0075277ed3a114ff90ac2a5093b5956c6cb305c84c38",
+    "scripts/check-cam-composed-drive-sections.py": "ff11f5316abee27ec6935ec2015c5748f2212ce20f0fee74c3a628f25020efb0",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "scripts/check-cam-composed-drive-pair.py": "492d5dca1e445c93e9b3f722e1f204e73c657b66288a732c93b9f1801a6cd0c3",
+    "cad/engine/crossed_oil_drive_endplay_candidate.py": "1e6a337b50df96a257944bb3e2f7dbe4bb5dc03cd6b9b701bf0f6aa89e2534e3",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.step": "b875ee0a6669664c9d3246c175e188c3db561334e42ffc5d9aee937bc60b08f8",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "scripts/render-cam-composed-drive.py": "441a343c0c40028e1bece5c455c8ed758ac76a4ad66c6f25c75a4edacc548ccd",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.glb": "798770680f49a91872cb65a6bf604e2981ef74d83cc00ecfe8f81a94eac2ec93",
+    "cad/engine/generated/cam-composed-drive-candidate/render-input.npz": "0b425077702223a665ce3833abb10311156de362ffa922ed63edb8f1d35bbcd3",
+    "cad/engine/generated/cam-composed-drive-candidate/cam-composed-drive-review.png": "d6161d8fcd3928056de1e0596d261a047b807b4b342e2e33419e8ecbcb965491",
+    "inventory/engine/cam-clockwise-candidate-build-validation.json": "3cd98ac11e003ab1029c42c13d13d7a30467357fba9c9a8c21f7363a54929160",
+    "inventory/engine/cam-clockwise-candidate-contact-validation.json": "28ea1fabaf268657d732dff5e76b9c2182b79001edef887228acb8c7f73c44fc",
+    "inventory/engine/cam-clockwise-candidate-section-validation.json": "83172686495db8c65165ba5c984890611c5b19fdbf9d54fe6dd0240ae622c47a",
+    "inventory/engine/cam-clockwise-candidate-linkage-validation.json": "a543a237480c57db4036bc7110c59b2f4cf6488b46c58e0d5292e0c451061757",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft.step": "25c15afaa9d2334c03265914169e1b2a5014403566ce98db9f79bf8f41e3a178",
+    "cad/engine/generated/lifter-body.step": "e3ede7acde30c91113ec564f8b7d715558b5a731afdabe6955e2bd0dae720765",
+    "cad/engine/generated/timing-coupled-core-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/cam-clockwise-candidate/cam-clockwise-mesh-section.png": "68c7e4a532a4af6e569442faab17a9418a7b37c33d7fef7f60f9d5d1b394313b",
+    "cad/engine/generated/cam-clockwise-candidate/cam-clockwise-review.png": "55fd0b2746dff724f37236bd9de671f8f66cffbb2f66fe36fc5dab2627490372",
+    "scripts/render-cam-clockwise-candidate.py": "9f63442a5de0bc786f3530303dfb8e326c1dc661bc775ede96fff609acb298fa",
+    "docs/components/cam-clockwise-candidate.md": "ae1419d199b7fd82ed5455446c9f54c022a4d722bffa19a736a200632e50081a",
+    "inventory/engine/cam-clockwise-coplanar-probe-diagnostic.json": "6b00ae41497888882729e5a32ea46d074aa9e24da5068eb26112f1f0535f50be",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/timing_axis_kinematic_candidate.py": "4be023357194ff353ce2a8fe32b39bf8823bb6d04e79ed4e6bc4715187b9b4f6",
+    "cad/engine/timing_valvetrain_adapter_candidate.py": "c3c52437a1bc1e1742b9ef75c388bf690b9f2538a850e2ca0a73064ef985e429",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/valvetrain_dispatch.py": "2dbc0efbc1082ae1b7ad0a1395297d4cbc7906222d6982b5424a2c7b3871a89c",
+    "cad/engine/valve_layout_integration.py": "21a19f0c616668423affe9d7e31183cbe71dcf37aa66c9952cc889191f7d775b",
+    "cad/engine/valve_layout_candidate.py": "76d88ed5adfdc64e5b04d6b4787cadf77d161ce4325a8b10fed3d77b869cb615",
+    "cad/engine/valve_motion_candidate.py": "8b1d09ce78e3c88baca264cd77526ef920eff44a24ee2cd79a03061bcc3009d3",
+    "cad/engine/valve_source_integration.py": "4431ab61636c5b1d377dc83ece450075f83947e837cca09c8455c5d1dcc24e2f",
+    "cad/engine/valve_source_layout.py": "27698e5d295c29b895be4228d179a9f3dc458ea49f8d7e33f5b232ed3d70f99e",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/valve_dimensions_candidate.py": "b27e8465557a77eacf6bad3ab7c002b50905687c608ca853379cb17e89f6663e",
+    "cad/engine/timing_valvetrain_contract.py": "0e42301deab43aeb90a24fb154bbac1d8c15cd19c9c8a12cb6083b17ed9ee3f1",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/timing_valvetrain_inclined_hypothesis.py": "98511fa5327a4d0f707299c638fc48c674c5711d853b3be2af8041cfc4b8ea47",
+    "scripts/check-crossed-oil-drive-corrected-pair.py": "42e856e24f01b9e457265f996a76288ff46c46117de9d629c7781ef7104321de",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/completed-pose-cache.json": "d647c96fc2e88abd06169cbe36cb7718b61372b7911544601438e1c93b4097ef",
+    "cad/engine/crossed_oil_drive_corrected_pair.py": "ce53fdfe5330a524ee1134d99a5cbeb99584ba9379b641a5db529f9f237d26e5",
+    "cad/engine/generated/distributor-drive-gear.step": "60d2e5416dde96e1bfd150fea803c0c5c3ee884b62ed242f1520f39d054745a2",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/distributor-drive-gear-local.glb": "8a5a7710e778359bd6fa99ebf97bf4847dd77b40743a05702c2d469e5af35ef0",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.glb": "606ec79e0ad89f4e10714b9ad69104a11208bf1c4a32da9755bb4c6bfabae932",
+    "scripts/check-crossed-oil-drive-endplay.py": "fbae224937ef528d6a8942c9562ef9d7b7f46fac497e141523d2a3720b2f5049",
+    "inventory/engine/cam-composed-drive-delivery.json": "d7c1aee9de8b73e890dc17a282587409a86c9a8b607b19ac4b1d5134b334183c",
+    "docs/components/cam-composed-drive-candidate.md": "bfaa508e981c28413f064a59a2c05ae6a9441b580ef7823f3673ac5b230a1c18",
+    "inventory/engine/timing-coupled-core-candidate-validation.json": "f1b575540747e7475d7a71da84a39f1c58bdd7b35b01b870266eca82434763d4",
+    "scripts/check-timing-coupled-core-candidate.py": "93015926e8ba354a02bad344af1a8f7f95dde0670b480799de7fd34dad334f60",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/cam_retention.py": "5a7f6103209ff5a0bdac113a44f9b92c42a48e77edb947345746faf2bd4fe163",
+    "inventory/engine/timing-thrust-land-candidate-validation.json": "b5ccd40a0c2190918b1b586e79e18f9e7d6bb7342f2ebf78f2edd2e7f6beb928",
+    "inventory/engine/timing-gear-backlash-candidate-validation.json": "0a4023d5eb2d609fa122c797dcb9af2b3fb0dcec714f013d57eff9789576a5eb",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Crankshaft%20Gear%2FSprocket/Service%20and%20Repair/Timing%20Gear/index.html": "78fdc8b66751189437e464fdaf78a79ba9604aa89ec86d8a1a811d0c1b2d03a6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-1.glb": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-2.glb": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-3.glb": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-bearing-4.glb": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-gear-spacer.glb": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-1.glb": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-bolt-2.glb": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-plate.glb": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-1.glb": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-thrust-washer-2.glb": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.step": "7fbfd7fbb3f3f31834847400b3cddde56a9a4619aa948682f2e8c24f2f169bc4",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-gear.glb": "787d78d23105d797d5fb4912f7bb2aab52578014c476817c9a7f604c287afb36",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-key.step": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+    "cad/engine/generated/timing-thrust-land-candidate/cam-timing-key.glb": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.step": "3ed6d5ab5d5337d05f886b88d9541162d56542557b2c987c1f575f5b6d780761",
+    "cad/engine/generated/timing-thrust-land-candidate/camshaft.glb": "873d54fd30cee0101a47dc2b47d8d7b3808b29718e1f8b54ddf50b1e47e62bd1",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.glb": "dd452eb2681ce3b82c343f0055b70b1a9e510c42c66106d819d922ea4c37c05d",
+    "cad/engine/generated/timing-thrust-land-candidate/rear-cam-plug.step": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+    "cad/engine/generated/timing-thrust-land-candidate/rear-cam-plug.glb": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+    "cad/engine/generated/timing-gear-backlash-candidate/crank.step": "533208c5f28da3500021a1e8431aba26f1cd8f0b0e886a768a03041263c0e4a4",
+    "cad/engine/generated/timing-gear-backlash-candidate/crank.glb": "f435281f938a9a4c9e299f89c14d1c9ef58688aff76750f0e112911c54eb216c",
+    "cad/engine/generated/timing-gear-backlash-candidate/cam.step": "78df586a13fa6d0a18dc10c8628e8a02900468fb33da94b147f9b7abb3b0a0be",
+    "cad/engine/generated/timing-gear-backlash-candidate/cam.glb": "07fd302629f47b033ff03b02ef19b8ba22299f9a60af8e4d2445814e13e16d90",
+    "inventory/engine/crank-clockwise-candidate-validation.json": "9ad5dde4a1d4220fc858e634539fa9d92aea12147f01cac034b43aeb5c091bfd",
+    "cad/engine/generated/rod.step": "a6ce2bf5a478b0c70406f102f1d4d6863faef6d82d60c87fc1a413a50a94b48f",
+    "cad/engine/generated/piston.step": "3cc4506674005214a214937899e5084b8bbf309baa76d4af6b3c217ff05a0453",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/crank_clockwise_candidate.py": "a34ccdd7c7145876d41a97dcc191df10c74f36f567813147435dcbb1312ea335",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "scripts/check-crank-clockwise-candidate.py": "43b3764ad65005f4fb1ea7587d3176a6ca8fe01a45f3a60d1c8a8c4dd192330c",
+    "reference/engine/engine-rotation-convention-review.json": "4d72896d7f4f3f5d98aa07a871ba11fbe940e7326d6bd3b8396c5667e431190c",
+    "cad/engine/flywheel.py": "f4fb7343ece7f5dffee3d89a0c4cad570c94bfe4a2525a8d2639f6ddf417b7f7",
+    "cad/engine/pilot_bearing.py": "610365062773b3de2d8cb38474b544bdbdb737522eaefec36dee1e7c1f8f0132",
+    "cad/engine/damper_attachment.py": "ca8106d3220e30c03f6237f1095548b94f07f4ee928c72cdfed0969eef7e275d",
+    "inventory/engine/crank-clockwise-render-review.json": "2734ebb3eb12a03d1fecc256948ad032fcdeaf46e37510ca3e0df8a9e001653b",
+    "scripts/render-crank-clockwise-candidate.py": "112d265ccb8a74b28e78ca73501555ec926a95d000cf6bf9dc015a7cdc8e23c1",
+    "models/engine/crankshaft.glb": "ce4a6b48021f66dcca68ddcf1d9f45337eb0f82a1b55d2d623e3e033b83250d9",
+    "cad/engine/generated/crank-clockwise-candidate/crankshaft.glb": "b59c8d48f46eabba0c7eb595575b7e07a90bf20580aefa47d80e02ccde43ea5b",
+    "cad/engine/generated/crank-clockwise-candidate/render-meshes.npz": "db78f830071bff3c73248a6cc6f68cd8a4db50df90162d561608fed978bfae87",
+    "cad/engine/generated/crank-clockwise-candidate/crank-phase-comparison.png": "beee973f8270412c67e6076995e2b1b0a2b322637961e79b839d39ca30f3d2c6",
+    "inventory/engine/crossed-oil-drive-direction-review.json": "1701213ce58cb346c2054cb12cbd2cca84f0aa2110147727616261c859657f7a",
+    "scripts/check-crossed-oil-drive-direction.py": "3d9624617d686d658a5f909bd577d20e70252fc675306fd00e46de50a32c8317",
+    "cad/engine/generated/distributor-shaft.step": "8ac45411db0f55632f4eddf033b4e7757934531f6b01696368713f5eb58e986a",
+    "cad/engine/generated/oil-pump-intermediate-shaft.step": "1a1fb02a45835ce7521f58d1decb496a592971c3c98d74295fd8d810ff358952",
+    "cad/engine/generated/oil-pump-rotor-shaft.step": "e70378f97719491e12dc2106dd63f93c11dda3909aac4d0b95959db25b83a2bf",
+    "cad/engine/generated/oil-pump-inner-rotor.step": "09ba28b0e860c3c038d0563bb6539d0a49df6d7f402b38a135c7d6049454b56f",
+    "cad/engine/generated/oil-pump-outer-rotor.step": "580d8282dd8554ed7f95ab0e60defb082ec409589a5e7b2e1bf2c570a7b4f894",
+    "scripts/stage-timing-core-drive-assets.py": "c3579cf58f2f604300c18dbcf613cf439fd85e5f3663cd6b5d3de67be579d714",
+    "scripts/stage-front-seal-2692-assets.py": "0ec4be84966e3dfb6803ac149fd6831f6f7634ec96ea89a074a938c86259d106",
+    "cad/engine/generated/crank-clockwise-candidate/crankshaft.step": "89ee59a0f904e213fd675a4863d9aec04296a79bc17820a6ec98915fcd43b1c7",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-1.step": "4e60302748d66d4d207f3b3de4c03b6dfea0b716b78fb062ae9881c4569c42e8",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-1.glb": "6fe0136102df5b0bc18d50dffed0792233616ad0b8b40b24f89106dc2822a934",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-2.step": "33cefef63c73cc7a01779e0a81b7bcbd9416cc5bf1dfd505eb0d5821bcccf8c2",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-2.glb": "31010b5886ee73ecffd058383a1164955b8097f72dea0a433892008775a5e47e",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-3.step": "350a6eedb9e07e6a3dcf056da8bbdbf8ff871d603a505e326f14744194387bd3",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-3.glb": "45e072c107c44bc814664e323b924470a90d268cc3890683718f6567568cbd13",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-4.step": "b62239009c83072c005d9b9d1df8507c9f674de526bd7152963f9d3f13f13d62",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-bearing-4.glb": "255d56dda8612206877b9a5e4ee0fee16ceafc72a2b1331b3fc6f418fa4ca997",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-gear-spacer.step": "39841052b2398575ed9abcc88ba28982e9179faaaf634a94f71fdb1f17b76fd1",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-gear-spacer.glb": "42c9784e17926ed9f73994a1230145ef0fafe42b121ecbc6dcbe7b0152197f6b",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-1.step": "acb7ede5e5b306b9c188c5690e5f5f94e503cb03c767f89cd384a61724140874",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-1.glb": "72fe8f1755ec24ea5192b4f75cf2326255355027c012674100e620ee2690634d",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-2.step": "dbe95466c29b8765398fa7c3897b321fef81d2feffd1f1cfa48c9ae8418a084b",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-bolt-2.glb": "aab2b440f745667d7dedec7aa44c6c5586020ce202a3ba143b9e928f8a40846b",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-plate.step": "21e3e5ed0d469ff92ef80dd3d2307f8c45afb3d41b3bfbbbab56b2339ccb24c6",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-plate.glb": "d0090bec5b67d48241b0150f8fb00a238914d2a75fed34df7827ae7da7a4b65a",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-1.step": "27f1e70d49d10486bb5e9b4164407ba3fdd4f34b777c7730b71da8f53edf083c",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-1.glb": "eab2fe6b3dac66b564c63f1ba904bd68c8f2f423ac035e248678a6d4abb3d2a9",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-2.step": "818d695f74ceb9dbd4e10b9517a4ba02f1edfec22347583eeca50f128abce849",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-thrust-washer-2.glb": "a73d728bab694f3d5e2836c61de6b6dfc91fdd185bef5fe4af24f30cd844a454",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-timing-gear.step": "b64832c685697b36b008951820a39d5f7d4a3590396b18565539b7845dcc0bf6",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-timing-gear.glb": "a01da6b7144043186f2aa55173cf09277aaed7805fb017bef2b98efbbafce61d",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-timing-key.step": "c15f92e5bd99bcfef3abb30dc0f3d7e3e6a13f4826e92bc0fff880bfeaf3b365",
+    "cad/engine/generated/timing-coupled-core-candidate/cam-timing-key.glb": "2f51e21d3ee3aef4b4c8d5f97d784447d35176b0b6e39003703ec81065c52ed5",
+    "cad/engine/generated/timing-coupled-core-candidate/crank-timing-gear.step": "2f1cab37c7e4867ad8ab055c933bd71e979d75a2135a329c7f7510c821a49866",
+    "cad/engine/generated/timing-coupled-core-candidate/crank-timing-gear.glb": "e03a2b62f917461c0254def74a5698f1485a65384c9f6cccbb214168fc2e627a",
+    "cad/engine/generated/timing-coupled-core-candidate/rear-cam-plug.step": "bde6fdc63a15b56caff503dfbfa83df757e74e01a844572df4366925e3dacc9a",
+    "cad/engine/generated/timing-coupled-core-candidate/rear-cam-plug.glb": "b8419381d1ed932cebf196b751776480475849c8238e92283b30b08dfac6d436",
+    "inventory/engine/timing-integration-map.json": "5a970c2e6e91f212784946fc9991de48adbcaac593e35025dfb2e8f8f9e2c13c"
+  },
+  "patches_sha256": {
+    "inventory/engine/timing-core-integration-patch.json": "56ed3818d6c7d6034532d1ac5f3930d82d3f0c9aea572c6613514ce6120995a8",
+    "inventory/engine/timing-conditional-drive-integration-patch.json": "fb7f7b741a14c3670d9542f0cbc6f39806ccac77289713169b0774017a7d97d9"
+  },
+  "canonical_modified": false
+}

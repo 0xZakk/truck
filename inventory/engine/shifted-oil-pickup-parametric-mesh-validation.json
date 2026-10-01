@@ -1,0 +1,41 @@
+{
+  "status": "PASS bounded parametric mesh; native tessellation failures retained",
+  "inputs": {
+    "scripts/mesh-shifted-oil-pickup-parametric.py": "c48bdf06d774763918dab5e8a0f5f2b1ef8c61a5df6849b2a032aba7695c34a7",
+    "cad/engine/shifted_oil_pickup_candidate.py": "b8ad00864b8730a49e2428619c4f27309393cf68edb7cb8c2be5c1c2b9ef2651",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube-world.step": "25a60b588ea4e7dd27d83b284d601cfa3d6190719d74df2690748817b80ba1bd",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube.step": "5c78913438352c021263901b288f65195a5a3cb6bef705df4867b0c40e62f616",
+    "models/engine/oil-pickup-tube.glb": "a4c750485fb877ec9064449b98074317017ca108d73fc748ab8450db4e492371"
+  },
+  "artifact": "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube-parametric.glb",
+  "sha256": "3ef9ceb4f16698cd4fad6d40e0b3626790a6623a0235a780736c658ba87cf7ad",
+  "mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "triangles": 262400,
+    "bounds_error_mm": 5.860464341367333e-06
+  },
+  "construction": {
+    "axial_intervals": 1024,
+    "angular_segments": 64,
+    "outer_radius_mm": 6,
+    "inner_radius_mm": 4.8,
+    "method": "Explicit annular ring connectivity on exact same source centerline; no hole filling or component geometry changes"
+  },
+  "actual_STEP_shell_checks": {
+    "vertex_sample_count": 528,
+    "max_vertex_distance_mm": 1.2530611913068005e-05,
+    "chord_midpoint_samples": 512,
+    "max_chord_distance_mm": 0.007474330663513861,
+    "radial_fault_0_2mm_distance_mm": 0.19999991123373329
+  },
+  "canonical_mesh_watertight": false,
+  "limits": [
+    "Finite actual STEP shell samples and full mesh bounds; not manufacturing tolerance",
+    "Native CAD tessellation failures remain in prior diagnostic",
+    "No circuit pressure, gasket or bell-retention acceptance"
+  ]
+}

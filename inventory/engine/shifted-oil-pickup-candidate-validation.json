@@ -1,0 +1,97 @@
+{
+  "status": "CANDIDATE built; contact/passage and visual gates pending",
+  "inputs": {
+    "scripts/check-shifted-oil-pickup-candidate.py": "25d423407ca02469dad174b48c9029af2a30cb93a46f42457483bc76267ee7f4",
+    "cad/engine/shifted_oil_pickup_candidate.py": "b8ad00864b8730a49e2428619c4f27309393cf68edb7cb8c2be5c1c2b9ef2651",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/oil-pickup-tube.step": "7a4212ee21f3a90a8c1c787edf4a08e54cf772874d1e8b2fd670fe43025d067a",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "cad/engine/generated/oil-pump-inner-rotor.step": "09ba28b0e860c3c038d0563bb6539d0a49df6d7f402b38a135c7d6049454b56f",
+    "cad/engine/generated/oil-pump-outer-rotor.step": "580d8282dd8554ed7f95ab0e60defb082ec409589a5e7b2e1bf2c570a7b4f894",
+    "cad/engine/generated/oil-pump-cover.step": "28345bdb153b5d9d6d91edd7830f93c56a856bdc30a402fc77a37b51983ce443",
+    "cad/engine/generated/oil-pickup-bell.step": "95601f09ded4554a87459e9b04b8fca69d5d892bfce22c45ae2846f945711f4c",
+    "cad/engine/generated/oil-pickup-screen.step": "3596fa329f490d946bf36d30f6d11cf114548b1c5b354cee671e9bec4fe5ce70",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f"
+  },
+  "valid": true,
+  "solid_count": 1,
+  "change_mask_world_x_mm": [
+    54.0,
+    200.0
+  ],
+  "outside_mask_difference_mm3": 0.0,
+  "splice_mm": [
+    60.000120602468435,
+    48.00001535369112,
+    -129.99996022031414
+  ],
+  "inlet_mm": [
+    193.084,
+    67.44079740735197,
+    -105.18911912586783
+  ],
+  "insertion_estimate_mm": 3.0,
+  "neighbors": [
+    {
+      "neighbor": "oil-pump-housing",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "neighbor": "oil-pump-inner-rotor",
+      "overlap_mm3": 0.0,
+      "distance_mm": 17.15185093331407
+    },
+    {
+      "neighbor": "oil-pump-outer-rotor",
+      "overlap_mm3": 0.0,
+      "distance_mm": 1.6999999999999993
+    },
+    {
+      "neighbor": "oil-pump-cover",
+      "overlap_mm3": 0.0,
+      "distance_mm": 15.092999139225332
+    },
+    {
+      "neighbor": "oil-pickup-bell",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.4161787849088675
+    },
+    {
+      "neighbor": "oil-pickup-screen",
+      "overlap_mm3": 0.0,
+      "distance_mm": 2.000000000070145
+    },
+    {
+      "neighbor": "block",
+      "overlap_mm3": 0.0,
+      "distance_mm": 19.121856742554872
+    },
+    {
+      "neighbor": "pan",
+      "overlap_mm3": 0.0,
+      "distance_mm": 8.485507077758342
+    }
+  ],
+  "roundtrip_volume_error_mm3": 3.4669938031584024e-09,
+  "mesh": {
+    "watertight": false,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "bounds_error_mm": 0.0009440138865741687,
+    "triangles": 291118
+  },
+  "artifacts": {
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube-world.step": "25a60b588ea4e7dd27d83b284d601cfa3d6190719d74df2690748817b80ba1bd",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube.step": "5c78913438352c021263901b288f65195a5a3cb6bef705df4867b0c40e62f616",
+    "cad/engine/generated/shifted-oil-pickup-candidate/oil-pickup-tube.glb": "c67483583c058268ad3e35335057ee7707a0ba500d94f66a7b921d6f3c6be4a6"
+  },
+  "limits": [
+    "Incomplete pump discharge/gasket/block gallery unchanged",
+    "No fluid performance or factory dimensions",
+    "Contact and passage acceptance pending independent actual probes"
+  ]
+}

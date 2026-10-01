@@ -1,0 +1,522 @@
+{
+  "status": "FAIL actual pump/cover interference; diagnosis only",
+  "stage_sha256": "c09eca9a670b9d6241f04b8e082929cdf864e5c8498bed9b65bc0211d530f342",
+  "pump_poses": {
+    "water-pump-housing": {
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -109.7000001,
+          91.9999999
+        ],
+        [
+          511.0000001,
+          113.0000001,
+          250.5000001
+        ]
+      ],
+      "transform_unchanged": true,
+      "definition_unchanged": true
+    },
+    "water-pump-gasket": {
+      "world_bounds_mm": [
+        [
+          373.0,
+          -107.7,
+          94.0
+        ],
+        [
+          375.0,
+          43.8,
+          250.5
+        ]
+      ],
+      "transform_unchanged": true,
+      "definition_unchanged": true
+    }
+  },
+  "chronology": {
+    "canonical": {
+      "water-pump-housing": {
+        "volume_mm3": 0.0,
+        "bounds_mm": null,
+        "solids": 0
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 0.0,
+        "bounds_mm": null,
+        "solids": 0
+      }
+    },
+    "shell": {
+      "water-pump-housing": {
+        "volume_mm3": 3062.977643460436,
+        "bounds_mm": [
+          [
+            375.0,
+            -16.68,
+            94.99727676809742
+          ],
+          [
+            415.00000010000105,
+            113.0000001,
+            196.68000010000003
+          ]
+        ],
+        "solids": 3,
+        "adaptive_volume_mm3": 3062.9866842795254,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/shell__water-pump-housing.step",
+        "witness_sha256": "77a3fb9ef88a5fad4d7331b7985ed9c1bbea35ebd1a6bf1eb03fc8117cbc3507"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 14.987075388366794,
+        "bounds_mm": [
+          [
+            373.8,
+            -16.54965655986018,
+            98.00616922722571
+          ],
+          [
+            375.0,
+            13.227796138255837,
+            123.31545805647902
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 14.987075388366872,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/shell__water-pump-gasket.step",
+        "witness_sha256": "05e9a1a882568578555b66a232b450aacf5b290dee55ba09213bbecfacf90957"
+      }
+    },
+    "front-joint": {
+      "water-pump-housing": {
+        "volume_mm3": 3709.226552400088,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.1393619743347
+          ]
+        ],
+        "solids": 3,
+        "adaptive_volume_mm3": 3709.283500055851,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/front-joint__water-pump-housing.step",
+        "witness_sha256": "4db99b18edd6ab9255909c56a188a75033688172d7523768510be28486b58309"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/front-joint__water-pump-gasket.step",
+        "witness_sha256": "d647609370fe21c4e8cebb10c8f7c901a27e4fc3c90273e8f8ceff8b1aed7b2c"
+      }
+    },
+    "attachment-v2": {
+      "water-pump-housing": {
+        "volume_mm3": 3709.226552400219,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.1393619743347
+          ]
+        ],
+        "solids": 3,
+        "adaptive_volume_mm3": 3709.2835000553077,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/attachment-v2__water-pump-housing.step",
+        "witness_sha256": "7af86856eddaeb5acaca2c842f065a7cbaeb301805eed4285faddcbc041abf82"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/attachment-v2__water-pump-gasket.step",
+        "witness_sha256": "00d025f76c46f809e3143b3537aed43d028950e505877e99bfbb53abc26c8f12"
+      }
+    },
+    "seal2692": {
+      "water-pump-housing": {
+        "volume_mm3": 3709.226552399552,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.13936197433472
+          ]
+        ],
+        "solids": 3,
+        "adaptive_volume_mm3": 3709.2835000553005,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/seal2692__water-pump-housing.step",
+        "witness_sha256": "d79d02157b469101b234cc75ade7ff644990032950a8d6040757650e7c0903de"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/seal2692__water-pump-gasket.step",
+        "witness_sha256": "17d52ac06e48df3e071fe60c3c4705bc95e5684d23c8bc90e3e79f7d24a0cc7e"
+      }
+    },
+    "seven-main": {
+      "water-pump-housing": {
+        "volume_mm3": 2550.3952958096,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.1393619743347
+          ]
+        ],
+        "solids": 5,
+        "adaptive_volume_mm3": 2550.3952211907595,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/seven-main__water-pump-housing.step",
+        "witness_sha256": "4c9b8669024439af9c3751269263b4ce992a3d50354d0b1a6b54e16c0fdaa66f"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/seven-main__water-pump-gasket.step",
+        "witness_sha256": "c2756e20af711120e70a8bc82313685f1112c7252debe1b2c55e9496f100acfd"
+      }
+    },
+    "pan21": {
+      "water-pump-housing": {
+        "volume_mm3": 2550.3951143021877,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.1393619743347
+          ]
+        ],
+        "solids": 5,
+        "adaptive_volume_mm3": 2550.39522142709,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/pan21__water-pump-housing.step",
+        "witness_sha256": "2b3b9a02f620e53f866083170de28bd895f1177d8f17e33645d4e8d53a014364"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/pan21__water-pump-gasket.step",
+        "witness_sha256": "2f69cbac0009244fde315c60a8b7ed05fd3fd291a9277fa6a4d82286c833dfca"
+      }
+    },
+    "serialized-stage": {
+      "water-pump-housing": {
+        "volume_mm3": 2550.3951143021877,
+        "bounds_mm": [
+          [
+            375.0,
+            -15.949155752230673,
+            95.59345838248491
+          ],
+          [
+            415.0000001,
+            113.00000010000005,
+            209.1393619743347
+          ]
+        ],
+        "solids": 5,
+        "adaptive_volume_mm3": 2550.3952214270903,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/serialized-stage__water-pump-housing.step",
+        "witness_sha256": "6ae8e2621affe37d97d3438be028cd0fe40fd169dca65e27999546136a8b8b33"
+      },
+      "water-pump-gasket": {
+        "volume_mm3": 61.13067189528511,
+        "bounds_mm": [
+          [
+            373.8,
+            -15.601464002691799,
+            99.68090697893683
+          ],
+          [
+            375.0,
+            18.821197983710064,
+            129.4758610763838
+          ]
+        ],
+        "solids": 2,
+        "adaptive_volume_mm3": 61.13067189528523,
+        "witness_step": "cad/engine/generated/timing-waterpump-cover-datum-audit/serialized-stage__water-pump-gasket.step",
+        "witness_sha256": "38c4c9a16155614dc3477c484424e390c7cd818eb777f85e87c095e68e6567f0"
+      }
+    }
+  },
+  "changed_regions": {
+    "canonical\u2192front-joint": {
+      "added": {
+        "water-pump-housing": {
+          "volume_mm3": 3709.2265524000845,
+          "bounds_mm": [
+            [
+              375.0,
+              -15.949155752230673,
+              95.59345838248491
+            ],
+            [
+              415.0000001,
+              113.00000010000005,
+              209.1393619743347
+            ]
+          ],
+          "solids": 3
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 61.13067189528511,
+          "bounds_mm": [
+            [
+              373.8,
+              -15.601464002691799,
+              99.68090697893683
+            ],
+            [
+              375.0,
+              18.821197983710064,
+              129.4758610763838
+            ]
+          ],
+          "solids": 2
+        }
+      },
+      "removed": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      }
+    },
+    "front-joint\u2192attachment-v2": {
+      "added": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      },
+      "removed": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      }
+    },
+    "attachment-v2\u2192seal2692": {
+      "added": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      },
+      "removed": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      }
+    },
+    "seal2692\u2192seven-main": {
+      "added": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      },
+      "removed": {
+        "water-pump-housing": {
+          "volume_mm3": 1158.8722628829494,
+          "bounds_mm": [
+            [
+              379.8,
+              -15.949155752230673,
+              95.59345838248491
+            ],
+            [
+              415.0000001,
+              108.04780541503014,
+              209.05039582816408
+            ]
+          ],
+          "solids": 2
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      }
+    },
+    "seven-main\u2192pan21": {
+      "added": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      },
+      "removed": {
+        "water-pump-housing": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        },
+        "water-pump-gasket": {
+          "volume_mm3": 0.0,
+          "bounds_mm": null,
+          "solids": 0
+        }
+      }
+    }
+  },
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/corrected-engine-stage.json": "c09eca9a670b9d6241f04b8e082929cdf864e5c8498bed9b65bc0211d530f342",
+    "scripts/check-timing-waterpump-cover-datums.py": "05a356c1eee4aaf89e1a90fcee060c813fc49f5947f966ce5951727252a30dd4",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-cover.step": "9012c3609084ac505760d25f31f5dc837ad60100de5618a1ec1511f543ddc167",
+    "cad/engine/generated/timing-cover-shell-candidate/timing-cover-shell-candidate.step": "910a002ecaf90aaa6aa6b1a9b59958dc476a4f827d273922074b580384fef632",
+    "cad/engine/generated/timing-cover-front-joint-candidate/cover.step": "da95fc5f84dad6c16025e19b65bf8395cdbdb9396835a16cf7bf05c428d1e223",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/cover.step": "6239fde960aa95f357a2f5482c7be232a271a4f6b7a141915014ef00f5d52017",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5",
+    "reference/engine/timing-cover-registration-review.json": "8c0a0a3661437b68be32d85ee0710caec31512f497b6257ca0ebc435765f7958"
+  },
+  "canonical_or_stage_modified": false,
+  "limitations": [
+    "No geometry repair, hydraulic interpretation or source-measured dimensional claim.",
+    "Shell and front-joint differ in estimated registration; not a pure local edit."
+  ]
+}

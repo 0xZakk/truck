@@ -1,0 +1,4804 @@
+{
+  "schema": "truck-guarded-integration-proposal-v1",
+  "scope": "Physical slider neutral phase contract; requires corrected runtime, preserves event phases",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "definitions": [],
+  "occurrences": [],
+  "assemblies": [
+    {
+      "id": "piston-group-1",
+      "before": {
+        "id": "piston-group-1",
+        "name": "Cylinder 1 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-1",
+        "name": "Cylinder 1 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0,
+          "event_phase_deg": 0,
+          "physical_rest_phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-1",
+      "before": {
+        "id": "rod-group-1",
+        "name": "Cylinder 1 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-1",
+        "name": "Cylinder 1 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0,
+          "event_phase_deg": 0,
+          "physical_rest_phase_deg": 0
+        },
+        "position_cad_mm": [
+          284.48,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "piston-group-2",
+      "before": {
+        "id": "piston-group-2",
+        "name": "Cylinder 2 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-2",
+        "name": "Cylinder 2 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240,
+          "event_phase_deg": 240,
+          "physical_rest_phase_deg": -240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-2",
+      "before": {
+        "id": "rod-group-2",
+        "name": "Cylinder 2 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-2",
+        "name": "Cylinder 2 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240,
+          "event_phase_deg": 240,
+          "physical_rest_phase_deg": -240
+        },
+        "position_cad_mm": [
+          170.688,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          -0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "piston-group-3",
+      "before": {
+        "id": "piston-group-3",
+        "name": "Cylinder 3 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-3",
+        "name": "Cylinder 3 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120,
+          "event_phase_deg": 120,
+          "physical_rest_phase_deg": -120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-3",
+      "before": {
+        "id": "rod-group-3",
+        "name": "Cylinder 3 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-3",
+        "name": "Cylinder 3 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120,
+          "event_phase_deg": 120,
+          "physical_rest_phase_deg": -120
+        },
+        "position_cad_mm": [
+          56.896,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "piston-group-4",
+      "before": {
+        "id": "piston-group-4",
+        "name": "Cylinder 4 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-4",
+        "name": "Cylinder 4 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 120,
+          "event_phase_deg": 120,
+          "physical_rest_phase_deg": -120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-4",
+      "before": {
+        "id": "rod-group-4",
+        "name": "Cylinder 4 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-4",
+        "name": "Cylinder 4 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 120,
+          "event_phase_deg": 120,
+          "physical_rest_phase_deg": -120
+        },
+        "position_cad_mm": [
+          -56.896,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "piston-group-5",
+      "before": {
+        "id": "piston-group-5",
+        "name": "Cylinder 5 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-5",
+        "name": "Cylinder 5 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 240,
+          "event_phase_deg": 240,
+          "physical_rest_phase_deg": -240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-5",
+      "before": {
+        "id": "rod-group-5",
+        "name": "Cylinder 5 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-5",
+        "name": "Cylinder 5 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 240,
+          "event_phase_deg": 240,
+          "physical_rest_phase_deg": -240
+        },
+        "position_cad_mm": [
+          -170.688,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          -0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "piston-group-6",
+      "before": {
+        "id": "piston-group-6",
+        "name": "Cylinder 6 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "piston-group-6",
+        "name": "Cylinder 6 \u00b7 Piston",
+        "parent": "rotating",
+        "motion": {
+          "type": "piston",
+          "phase_deg": 0,
+          "event_phase_deg": 0,
+          "physical_rest_phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    },
+    {
+      "id": "rod-group-6",
+      "before": {
+        "id": "rod-group-6",
+        "name": "Cylinder 6 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rod-group-6",
+        "name": "Cylinder 6 \u00b7 Connecting rod",
+        "parent": "rotating",
+        "motion": {
+          "type": "rod",
+          "phase_deg": 0,
+          "event_phase_deg": 0,
+          "physical_rest_phase_deg": 0
+        },
+        "position_cad_mm": [
+          -284.48,
+          0,
+          0
+        ]
+      },
+      "neutral_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "runtime_requirement": "Root adapter must consume physical_rest_phase_deg once; existing phase_deg remains event metadata."
+    }
+  ],
+  "neutral_occurrence_frames": [
+    {
+      "id": "c1-piston-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-1",
+        "name": "Piston \u00b7 cylinder 1",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c1-top-ring-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          245.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-1",
+        "name": "Top compression ring \u00b7 cylinder 1",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c1-second-ring-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          240.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-1",
+        "name": "Second compression ring \u00b7 cylinder 1",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c1-oil-rail-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          235.37724999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-1",
+        "name": "Oil-control rail 1 \u00b7 cylinder 1",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c1-oil-rail-2",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          231.11475
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-1",
+        "name": "Oil-control rail 2 \u00b7 cylinder 1",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c1-oil-expander-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          233.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-1",
+        "name": "Oil-ring expander \u00b7 cylinder 1",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c1-wrist-pin-1",
+      "parent": "piston-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-1",
+        "name": "Wrist pin \u00b7 cylinder 1",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c1-connecting-rod-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-1",
+        "name": "Connecting rod \u00b7 cylinder 1",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-cap-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-1",
+        "name": "Rod cap \u00b7 cylinder 1",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-bearing-upper-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-1",
+        "name": "Upper bearing shell \u00b7 cylinder 1",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-bearing-lower-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-1",
+        "name": "Lower bearing shell \u00b7 cylinder 1",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-bolt-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-1",
+        "name": "Rod bolt 1 \u00b7 cylinder 1",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-nut-1",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          22.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-1",
+        "name": "Rod nut 1 \u00b7 cylinder 1",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-bolt-2",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-1",
+        "name": "Rod bolt 2 \u00b7 cylinder 1",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c1-rod-nut-2",
+      "parent": "rod-group-1",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          22.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c1-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-1",
+        "name": "Rod nut 2 \u00b7 cylinder 1",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c2-piston-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-2",
+        "name": "Piston \u00b7 cylinder 2",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c2-top-ring-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          163.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-2",
+        "name": "Top compression ring \u00b7 cylinder 2",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c2-second-ring-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          158.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-2",
+        "name": "Second compression ring \u00b7 cylinder 2",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c2-oil-rail-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          153.3611094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-2",
+        "name": "Oil-control rail 1 \u00b7 cylinder 2",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c2-oil-rail-2",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          149.0986094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-2",
+        "name": "Oil-control rail 2 \u00b7 cylinder 2",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c2-oil-expander-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          151.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-2",
+        "name": "Oil-ring expander \u00b7 cylinder 2",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c2-wrist-pin-1",
+      "parent": "piston-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-2",
+        "name": "Wrist pin \u00b7 cylinder 2",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c2-connecting-rod-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-2",
+        "name": "Connecting rod \u00b7 cylinder 2",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-cap-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-2",
+        "name": "Rod cap \u00b7 cylinder 2",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-bearing-upper-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-2",
+        "name": "Upper bearing shell \u00b7 cylinder 2",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-bearing-lower-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-2",
+        "name": "Lower bearing shell \u00b7 cylinder 2",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-bolt-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -76.9183727550223
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -15.696543804316802
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-2",
+        "name": "Rod bolt 1 \u00b7 cylinder 2",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-nut-1",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -84.69056908775072
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -42.59622715125461
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-2",
+        "name": "Rod nut 1 \u00b7 cylinder 2",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-bolt-2",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -10.62986736435414
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -34.84945619568324
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-2",
+        "name": "Rod bolt 2 \u00b7 cylinder 2",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c2-rod-nut-2",
+      "parent": "rod-group-2",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -18.40206369708255
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -61.74913954262105
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c2-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-2",
+        "name": "Rod nut 2 \u00b7 cylinder 2",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c3-piston-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-3",
+        "name": "Piston \u00b7 cylinder 3",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c3-top-ring-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          163.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-3",
+        "name": "Top compression ring \u00b7 cylinder 3",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c3-second-ring-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          158.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-3",
+        "name": "Second compression ring \u00b7 cylinder 3",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c3-oil-rail-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          153.3611094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-3",
+        "name": "Oil-control rail 1 \u00b7 cylinder 3",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c3-oil-rail-2",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          149.0986094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-3",
+        "name": "Oil-control rail 2 \u00b7 cylinder 3",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c3-oil-expander-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          151.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-3",
+        "name": "Oil-ring expander \u00b7 cylinder 3",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c3-wrist-pin-1",
+      "parent": "piston-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-3",
+        "name": "Wrist pin \u00b7 cylinder 3",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c3-connecting-rod-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-3",
+        "name": "Connecting rod \u00b7 cylinder 3",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-cap-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-3",
+        "name": "Rod cap \u00b7 cylinder 3",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-bearing-upper-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-3",
+        "name": "Upper bearing shell \u00b7 cylinder 3",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-bearing-lower-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-3",
+        "name": "Lower bearing shell \u00b7 cylinder 3",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-bolt-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          10.629867364354155
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -34.84945619568322
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-3",
+        "name": "Rod bolt 1 \u00b7 cylinder 3",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-nut-1",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          18.402063697082568
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -61.74913954262102
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-3",
+        "name": "Rod nut 1 \u00b7 cylinder 3",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-bolt-2",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          76.91837275502232
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -15.69654380431677
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-3",
+        "name": "Rod bolt 2 \u00b7 cylinder 3",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c3-rod-nut-2",
+      "parent": "rod-group-3",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          84.69056908775073
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -42.596227151254574
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c3-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-3",
+        "name": "Rod nut 2 \u00b7 cylinder 3",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c4-piston-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-4",
+        "name": "Piston \u00b7 cylinder 4",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c4-top-ring-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          163.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-4",
+        "name": "Top compression ring \u00b7 cylinder 4",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c4-second-ring-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          158.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-4",
+        "name": "Second compression ring \u00b7 cylinder 4",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c4-oil-rail-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          153.3611094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-4",
+        "name": "Oil-control rail 1 \u00b7 cylinder 4",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c4-oil-rail-2",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          149.0986094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-4",
+        "name": "Oil-control rail 2 \u00b7 cylinder 4",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c4-oil-expander-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          151.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-4",
+        "name": "Oil-ring expander \u00b7 cylinder 4",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c4-wrist-pin-1",
+      "parent": "piston-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-4",
+        "name": "Wrist pin \u00b7 cylinder 4",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c4-connecting-rod-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-4",
+        "name": "Connecting rod \u00b7 cylinder 4",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-cap-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-4",
+        "name": "Rod cap \u00b7 cylinder 4",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-bearing-upper-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-4",
+        "name": "Upper bearing shell \u00b7 cylinder 4",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-bearing-lower-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          43.77412005968824
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -25.272999999999993
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-4",
+        "name": "Lower bearing shell \u00b7 cylinder 4",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-bolt-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          10.629867364354155
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -34.84945619568322
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-4",
+        "name": "Rod bolt 1 \u00b7 cylinder 4",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-nut-1",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          18.402063697082568
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -61.74913954262102
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-4",
+        "name": "Rod nut 1 \u00b7 cylinder 4",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-bolt-2",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          76.91837275502232
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -15.69654380431677
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-4",
+        "name": "Rod bolt 2 \u00b7 cylinder 4",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c4-rod-nut-2",
+      "parent": "rod-group-4",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -56.896
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          -0.2775784404545862,
+          84.69056908775073
+        ],
+        [
+          0.0,
+          0.2775784404545862,
+          0.9607029766763502,
+          -42.596227151254574
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c4-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-4",
+        "name": "Rod nut 2 \u00b7 cylinder 4",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c5-piston-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-5",
+        "name": "Piston \u00b7 cylinder 5",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c5-top-ring-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          163.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-5",
+        "name": "Top compression ring \u00b7 cylinder 5",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c5-second-ring-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          158.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-5",
+        "name": "Second compression ring \u00b7 cylinder 5",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c5-oil-rail-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          153.3611094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-5",
+        "name": "Oil-control rail 1 \u00b7 cylinder 5",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c5-oil-rail-2",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          149.0986094218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-5",
+        "name": "Oil-control rail 2 \u00b7 cylinder 5",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c5-oil-expander-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          151.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-5",
+        "name": "Oil-ring expander \u00b7 cylinder 5",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c5-wrist-pin-1",
+      "parent": "piston-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          126.2298594218604
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-5",
+        "name": "Wrist pin \u00b7 cylinder 5",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c5-connecting-rod-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-5",
+        "name": "Connecting rod \u00b7 cylinder 5",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-cap-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-5",
+        "name": "Rod cap \u00b7 cylinder 5",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-bearing-upper-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-5",
+        "name": "Upper bearing shell \u00b7 cylinder 5",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-bearing-lower-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -43.77412005968822
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -25.27300000000002
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-5",
+        "name": "Lower bearing shell \u00b7 cylinder 5",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-bolt-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -76.9183727550223
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -15.696543804316802
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-5",
+        "name": "Rod bolt 1 \u00b7 cylinder 5",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-nut-1",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -84.69056908775072
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -42.59622715125461
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-5",
+        "name": "Rod nut 1 \u00b7 cylinder 5",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-bolt-2",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -10.62986736435414
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -34.84945619568324
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-5",
+        "name": "Rod bolt 2 \u00b7 cylinder 5",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c5-rod-nut-2",
+      "parent": "rod-group-5",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -170.688
+        ],
+        [
+          0.0,
+          0.9607029766763502,
+          0.2775784404545861,
+          -18.40206369708255
+        ],
+        [
+          0.0,
+          -0.2775784404545861,
+          0.9607029766763502,
+          -61.74913954262105
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c5-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-5",
+        "name": "Rod nut 2 \u00b7 cylinder 5",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c6-piston-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-piston-1",
+        "definition": "piston",
+        "parent": "piston-group-6",
+        "name": "Piston \u00b7 cylinder 6",
+        "function": "Receives combustion force at the crown and transfers it through the wrist pin. D-shaped dish, underside and ring grooves are modeled; skirt profile and pin offset remain provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c6-top-ring-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          245.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-top-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-6",
+        "name": "Top compression ring \u00b7 cylinder 6",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          37
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          110
+        ]
+      }
+    },
+    {
+      "id": "c6-second-ring-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          240.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-second-ring-1",
+        "definition": "compression-ring",
+        "parent": "piston-group-6",
+        "name": "Second compression ring \u00b7 cylinder 6",
+        "function": "Seals combustion gases and transfers heat toward the bore. Individual split ring; exact section profile is not yet reconstructed.",
+        "position_cad_mm": [
+          0,
+          0,
+          32
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "id": "c6-oil-rail-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          235.37724999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-oil-rail-1",
+        "definition": "oil-rail",
+        "parent": "piston-group-6",
+        "name": "Oil-control rail 1 \u00b7 cylinder 6",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          27.13125
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          75
+        ]
+      }
+    },
+    {
+      "id": "c6-oil-rail-2",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          231.11475
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-oil-rail-2",
+        "definition": "oil-rail",
+        "parent": "piston-group-6",
+        "name": "Oil-control rail 2 \u00b7 cylinder 6",
+        "function": "One of two thin rails in the provisional three-piece oil-control pack.",
+        "position_cad_mm": [
+          0,
+          0,
+          22.86875
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          55
+        ]
+      }
+    },
+    {
+      "id": "c6-oil-expander-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          233.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-oil-expander-1",
+        "definition": "oil-expander",
+        "parent": "piston-group-6",
+        "name": "Oil-ring expander \u00b7 cylinder 6",
+        "function": "Loads the oil rails outward. A split band represents this component; actual corrugations and oil-drain windows remain unmodeled.",
+        "position_cad_mm": [
+          0,
+          0,
+          25
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c6-wrist-pin-1",
+      "parent": "piston-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          -0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          208.24599999999998
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-wrist-pin-1",
+        "definition": "pin",
+        "parent": "piston-group-6",
+        "name": "Wrist pin \u00b7 cylinder 6",
+        "function": "Connects piston and rod at their small-end joint. Retainer configuration and offset need confirmation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          100,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c6-connecting-rod-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-connecting-rod-1",
+        "definition": "rod",
+        "parent": "rod-group-6",
+        "name": "Connecting rod \u00b7 cylinder 6",
+        "function": "Transfers force between wrist pin and crank journal. Its angle is solved from the mechanism; center distance and forging profile are provisional.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-cap-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-cap-1",
+        "definition": "rod-cap",
+        "parent": "rod-group-6",
+        "name": "Rod cap \u00b7 cylinder 6",
+        "function": "Closes the big end around the crank journal and lower bearing shell.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          0,
+          -80
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-bearing-upper-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-bearing-upper-1",
+        "definition": "upper-bearing",
+        "parent": "rod-group-6",
+        "name": "Upper bearing shell \u00b7 cylinder 6",
+        "function": "Supports the loaded side of the crank-journal interface. Separate from the rod forging.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          20
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-bearing-lower-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-bearing-lower-1",
+        "definition": "lower-bearing",
+        "parent": "rod-group-6",
+        "name": "Lower bearing shell \u00b7 cylinder 6",
+        "function": "Fits inside the removable cap. Oil film is an explanation, not a fluid simulation.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          65,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-bolt-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-bolt-1",
+        "definition": "rod-bolt",
+        "parent": "rod-group-6",
+        "name": "Rod bolt 1 \u00b7 cylinder 6",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-nut-1",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          22.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-nut-1",
+        "definition": "rod-nut",
+        "parent": "rod-group-6",
+        "name": "Rod nut 1 \u00b7 cylinder 6",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          -34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -34.5,
+          -100
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-bolt-2",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          50.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-bolt-2",
+        "definition": "rod-bolt",
+        "parent": "rod-group-6",
+        "name": "Rod bolt 2 \u00b7 cylinder 6",
+        "function": "Clamps the cap to the rod. Smooth-shank placeholder; thread, grade and dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          65
+        ]
+      }
+    },
+    {
+      "id": "c6-rod-nut-2",
+      "parent": "rod-group-6",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -284.48
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          34.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          22.546
+        ]
+      ],
+      "preserved_occurrence": {
+        "id": "c6-rod-nut-2",
+        "definition": "rod-nut",
+        "parent": "rod-group-6",
+        "name": "Rod nut 2 \u00b7 cylinder 6",
+        "function": "Retains its cap bolt. Threads and locking details are not yet modeled.",
+        "position_cad_mm": [
+          0,
+          34.5,
+          -28
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          34.5,
+          -100
+        ]
+      }
+    }
+  ],
+  "requirements": [
+    "Apply with corrected crank/core asset patch and root runtime adapter.",
+    "Do not negate event phase inputs or use unchanged legacy phase handler.",
+    "Do not apply neutral world matrices as additional transforms on top of dynamic motion."
+  ]
+}

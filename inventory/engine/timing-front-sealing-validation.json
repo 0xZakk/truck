@@ -1,0 +1,193 @@
+{
+  "status": "PASS scoped exports and actual contact; integration pending",
+  "parts": [
+    {
+      "id": "timing-cover-main-gasket",
+      "world_bounds_mm": [
+        [
+          373.0,
+          -140.9099652337,
+          -24.000000000009052
+        ],
+        [
+          373.8,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_bounds_error_mm": 1.4758064310171903e-05,
+      "watertight": true,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "id": "timing-cover-terminal-sealant-1",
+      "world_bounds_mm": [
+        [
+          371.79999999999995,
+          -141.0182182560309,
+          -24.5
+        ],
+        [
+          375.8,
+          -103.56703337516882,
+          -24.0
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_bounds_error_mm": 6.414447653924071e-06,
+      "watertight": true,
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "id": "timing-cover-terminal-sealant-2",
+      "world_bounds_mm": [
+        [
+          371.79999999999995,
+          164.17448286194,
+          -24.50000000000044
+        ],
+        [
+          375.8,
+          206.72830857143,
+          -23.999999999997307
+        ]
+      ],
+      "step_bounds_error_mm": 0.0,
+      "mesh_bounds_error_mm": 8.46386001285282e-07,
+      "watertight": true,
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "contacts": {
+    "timing-cover-main-gasket": {
+      "contact_area_mm2": {
+        "block": 11590.001919794064,
+        "cover": 11636.592160174632,
+        "pan": 0,
+        "pan-gasket": 0
+      },
+      "overlap_mm3": {
+        "block": 0.0,
+        "cover": 0.0,
+        "pan": 0.0,
+        "pan-gasket": 0.0
+      }
+    },
+    "timing-cover-terminal-sealant-1": {
+      "contact_area_mm2": {
+        "block": 63.48012689446601,
+        "cover": 97.49335864041424,
+        "pan": 0,
+        "pan-gasket": 149.2242852636,
+        "main-gasket": 29.87434548679831
+      },
+      "overlap_mm3": {
+        "block": 0.0,
+        "cover": 0.0,
+        "pan": 0.0,
+        "pan-gasket": 0.0
+      }
+    },
+    "timing-cover-terminal-sealant-2": {
+      "contact_area_mm2": {
+        "block": 71.66641234645516,
+        "cover": 111.08671406573045,
+        "pan": 0,
+        "pan-gasket": 167.71173759772,
+        "main-gasket": 33.75692620503804
+      },
+      "overlap_mm3": {
+        "block": 0.0,
+        "cover": 0.0,
+        "pan": 0.0,
+        "pan-gasket": 0.0
+      }
+    }
+  },
+  "negative_control_shifted_main_gasket_block_area_mm2": 0,
+  "serialized_world_bounds_errors_mm": {
+    "timing-cover-main-gasket": 0.0,
+    "timing-cover-terminal-sealant-1": 0.0,
+    "timing-cover-terminal-sealant-2": 0.0
+  },
+  "main_screw_overlap_mm3": {
+    "1": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "2": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "3": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "4": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "5": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "6": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    },
+    "7": {
+      "timing-cover-main-gasket": 0,
+      "timing-cover-terminal-sealant-1": 0,
+      "timing-cover-terminal-sealant-2": 0
+    }
+  },
+  "learning_occurrences": [
+    "timing-cover-mounting-screw-1",
+    "timing-cover-mounting-screw-2",
+    "timing-cover-mounting-screw-3",
+    "timing-cover-mounting-screw-4",
+    "timing-cover-mounting-screw-5",
+    "timing-cover-mounting-screw-6",
+    "timing-cover-mounting-screw-7",
+    "timing-cover-main-gasket",
+    "timing-cover-terminal-sealant-1",
+    "timing-cover-terminal-sealant-2"
+  ],
+  "canonical_modified": false,
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/timing-front-coordinated-patch.json": "428de87e0e535575faf08c700ab2b3eb517d45d46e656d2234811b8ffd5a98c8",
+    "scripts/stage-timing-front-sealing-dependencies.py": "8b1a880a69024f4500ecd23fd4f95dc07b85798ac609a6650745fb68451b0269",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-2.step": "30a00f8399fee7a1ddec2dfac57a0924a624a95fba7452ddbfc8b7062d0168b4",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-3.step": "a17c8c2f42cb6c0f529ccfb905383e978d2a4f1f1dbdcabb3b63e7a6ec97938f",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-5.step": "b064d49b42f1426d06ba602a44a1c9107f3ff4acf47c96a04a958b8c5da380ae",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-6.step": "6f8ecba958091ab4240e6063f667992de4d01871b0ce5cc4e1a0cd3cafc7c305",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-7.step": "088b54b80374a49d472011af88be931f5c1d5bc73cd318740cd5235e7939d603",
+    "reference/engine/ford-1986-main-cover-fastener-comparison.json": "58ddcf5ee2f04cbcea096339bcb2b3f79f419851dfbd5f0e2b54b4dc53295773",
+    "reference/engine/timing-cover-joint-review.json": "f593d0a83c340e79a46bb72509fb878dfaef71614c543b0866fdb81482592906"
+  },
+  "patch_sha256": "3ebafc0d27a3f3443a5ab5012a20db3aac470feeaf5aee7d11da11f3591c9b10",
+  "limits": [
+    "Candidate geometry only; inherited rear/upper contact gaps unchanged.",
+    "No factory material, torque, strength, pressure or installation claim.",
+    "Browser integration NOT RUN."
+  ]
+}

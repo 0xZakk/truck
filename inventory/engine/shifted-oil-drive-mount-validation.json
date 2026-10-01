@@ -1,0 +1,31 @@
+{
+  "status": "PASS retained mechanical support and shaft passage; fluid joint NOT MODELED",
+  "inputs": {
+    "scripts/check-shifted-oil-drive-mounts.py": "1e800b626965ce91b06676c0e7c2e6b3df7195d776560e78271deb3f5c81d3d9",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "inventory/engine/timing-pump-foot-faceted-validation.json": "c9ce2474a7c65a73b872fb83b7f1cac2218354e0309d45b8eeed4e8c4c9af256",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/support-0.step": "bc5025aef9509d72a9a21bed0e566501e888997149de016f81d2bc7d1ae54aef",
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/support-1.step": "f429ee7c1af26de7bd0d72c3cdf1f79e0d257b38c1ba9c4b766391ae8246fdc9"
+  },
+  "actual_support_containment": [
+    {
+      "support": 0,
+      "missing_from_current_block_mm3": 0.0
+    },
+    {
+      "support": 1,
+      "missing_from_current_block_mm3": 0.0
+    }
+  ],
+  "shaft_probe_overlap_mm3": 0.0,
+  "shaft_probe_shift_2mm_control_overlap_mm3": 464.0589295241775,
+  "reuse_scope": "Frozen support report positive pump seats and bolt seats apply only to unchanged rigid pump/bolts and these retained supports; static mechanical topology",
+  "limits": [
+    "Shaft bore is not a pump discharge passage",
+    "Source-supported pump gasket missing",
+    "Pump outlet/block sealing face and gallery are unmodeled",
+    "No pressure/strength/production or whole oil-system acceptance"
+  ]
+}

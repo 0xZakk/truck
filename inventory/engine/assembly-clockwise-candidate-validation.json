@@ -1,0 +1,27 @@
+{
+  "status": "PASS independent motion contracts",
+  "fixture_scope": "Neutral valve patch and declared corrected axis/physical phases; not complete core asset stage",
+  "matrix_checks": 3696,
+  "maximum_matrix_error": 5.684341886080802e-14,
+  "rejected_controls": [
+    "legacy-manifest",
+    "missing-physical-phase",
+    "mixed-valve-revision",
+    "out-of-range-endplay"
+  ],
+  "bindings": {
+    "scripts/check-assembly-clockwise-candidate.py": "df031856021233acc55361bc6c274fd9b3362c89e2cf0d24c9f66df555a8d099",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/engine_clockwise_pose_candidate.py": "deb7c2c140e0070536a3e916a4d7b4d5b31701041283f14cacd32b4e53e08e7a",
+    "cad/engine/crossed_oil_drive_endplay_candidate.py": "1e6a337b50df96a257944bb3e2f7dbe4bb5dc03cd6b9b701bf0f6aa89e2534e3",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/clockwise-linkage-pose-patch.json": "c6f3296bc510f57cefefb2d042a4760ae27b934fa6072e290b6582a325ca7a29"
+  },
+  "limits": [
+    "Distributor/oil-pump downstream matrices require staged branch audit",
+    "No springshape deformation here",
+    "No asset/CAD interference or browser acceptance"
+  ]
+}

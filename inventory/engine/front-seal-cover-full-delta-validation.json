@@ -1,0 +1,184 @@
+{
+  "scope": "Alternative fullshape delta first; clipped coplanar failure retained",
+  "rows": [
+    {
+      "delta": "removed",
+      "parts": [
+        {
+          "volume_mm3": 9351.516489562146,
+          "bounds_mm": [
+            [
+              379.7999999,
+              -129.699515359,
+              -24.5000001
+            ],
+            [
+              415.0000001,
+              -102.49999989999998,
+              3.627145801667
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 401.5932061777243,
+          "bounds_mm": [
+            [
+              385.8499999,
+              -99.1500001,
+              -24.5
+            ],
+            [
+              394.1500001,
+              -90.8499999,
+              -14.499999899999999
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 8761.947867074803,
+          "bounds_mm": [
+            [
+              379.8,
+              206.74482469086,
+              -18.393399845734002
+            ],
+            [
+              415.0,
+              227.3822948907329,
+              2.6066001542660002
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 8679.981433262566,
+          "bounds_mm": [
+            [
+              379.8,
+              212.36727322987,
+              147.85846880484
+            ],
+            [
+              415.0,
+              232.7195917038491,
+              168.85846880484
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 8639.356378210048,
+          "bounds_mm": [
+            [
+              379.8,
+              87.047805297651,
+              188.06723454396
+            ],
+            [
+              415.0,
+              108.047805297651,
+              209.05039572816386
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 8003.510023472134,
+          "bounds_mm": [
+            [
+              379.8,
+              -16.072161278157147,
+              88.491069435368
+            ],
+            [
+              415.0,
+              3.8720595061360017,
+              109.44547016723754
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 8845.796504609796,
+          "bounds_mm": [
+            [
+              379.8,
+              241.41680672464,
+              63.92369033067099
+            ],
+            [
+              415.0,
+              262.41680672463997,
+              84.923690330671
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 7609.401920094022,
+          "bounds_mm": [
+            [
+              379.8,
+              -70.67905521045,
+              8.547199016573
+            ],
+            [
+              415.0,
+              -49.67905521045,
+              29.547199016573
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        }
+      ],
+      "total_mm3": 60293.10382246324,
+      "seal_region_intersection_mm3": 0
+    },
+    {
+      "delta": "added",
+      "parts": [
+        {
+          "volume_mm3": 1464.9343416904967,
+          "bounds_mm": [
+            [
+              379.9999999,
+              -102.50000010000012,
+              -24.5
+            ],
+            [
+              400.0,
+              -84.9999999,
+              -8.5
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        },
+        {
+          "volume_mm3": 398.3065503827462,
+          "bounds_mm": [
+            [
+              385.8499999,
+              -114.1500001,
+              -24.5
+            ],
+            [
+              394.1500001,
+              -105.8499999,
+              -14.499999899999699
+            ]
+          ],
+          "seal_region_intersection_mm3": 0
+        }
+      ],
+      "total_mm3": 1863.2408920732428,
+      "seal_region_intersection_mm3": 0
+    }
+  ],
+  "bindings": {
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "scripts/check-front-seal-cover-region.py": "f923ccc207486b4c314497f5c94f10f43370b8ed233ff598c6d98748d6331ede"
+  }
+}

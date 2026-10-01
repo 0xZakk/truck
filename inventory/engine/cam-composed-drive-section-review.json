@@ -1,0 +1,131 @@
+{
+  "status": "PASS sampled actual sections and core continuity",
+  "lobes": [
+    {
+      "cylinder": 1,
+      "kind": "intake",
+      "x_mm": 259.48,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 1,
+      "kind": "exhaust",
+      "x_mm": 309.48,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 2,
+      "kind": "intake",
+      "x_mm": 145.688,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 2,
+      "kind": "exhaust",
+      "x_mm": 195.688,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 3,
+      "kind": "intake",
+      "x_mm": 31.896,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 3,
+      "kind": "exhaust",
+      "x_mm": 81.896,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 4,
+      "kind": "intake",
+      "x_mm": -81.896,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 4,
+      "kind": "exhaust",
+      "x_mm": -31.896,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 5,
+      "kind": "intake",
+      "x_mm": -195.688,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 5,
+      "kind": "exhaust",
+      "x_mm": -145.688,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 6,
+      "kind": "intake",
+      "x_mm": -309.48,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    },
+    {
+      "cylinder": 6,
+      "kind": "exhaust",
+      "x_mm": -259.48,
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0
+    }
+  ],
+  "gear_shaft_sections": {
+    "221.583": {
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0,
+      "compared_to": "old shaft"
+    },
+    "221.585": {
+      "boundary_error_mm": 1.0032909601845024e-11,
+      "area_error_mm2": 2.7262103685643524e-10,
+      "compared_to": "frozen corrected gear"
+    },
+    "227.584": {
+      "boundary_error_mm": 8.24810097034998e-12,
+      "area_error_mm2": 2.686419975361787e-10,
+      "compared_to": "frozen corrected gear"
+    },
+    "233.583": {
+      "boundary_error_mm": 1.5105657013805225e-11,
+      "area_error_mm2": 2.817159838741645e-10,
+      "compared_to": "frozen corrected gear"
+    },
+    "233.585": {
+      "boundary_error_mm": 0.0,
+      "area_error_mm2": 0.0,
+      "compared_to": "old shaft"
+    }
+  },
+  "strict_R15_inset_core_points": 1008,
+  "wrong_old_gear_section_boundary_mm": 0.9588644285119494,
+  "limits": [
+    "4096 sampled boundary points per section; not continuous Hausdorff proof",
+    "No full assembly neighbor or browser inference"
+  ],
+  "input_sha256": {
+    "scripts/check-cam-composed-drive-sections.py": "ff11f5316abee27ec6935ec2015c5748f2212ce20f0fee74c3a628f25020efb0",
+    "cad/engine/cam_composed_drive_candidate.py": "960cc045982c4c71efb7946c709a3abe65ec88311d565c95c7fc32b34a4a8fb3",
+    "cad/engine/cam_clockwise_candidate.py": "c86deee08fc4eff8dc491bd7286d6c8c725eeb3ca8e52985d93f0622dd855bf4",
+    "cad/engine/generated/cam-clockwise-candidate/camshaft-local.step": "81933607c28c521f8f077239e16174a5d718c9aec0f1e4450ac041b1931fbc68",
+    "cad/engine/generated/crossed-oil-drive-corrected-pair/cam-drive-gear-local.step": "a8c0288344579f739983e3b7a29858c4806f364351917be11b3cf82bf5b23b29",
+    "cad/engine/generated/cam-composed-drive-candidate/camshaft-local.step": "58434e1a4a96b1cf9fef0075277ed3a114ff90ac2a5093b5956c6cb305c84c38",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  }
+}

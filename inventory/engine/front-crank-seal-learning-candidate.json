@@ -1,0 +1,44 @@
+{
+  "front-seal": {
+    "summary": "The front crankshaft seal keeps engine oil inside the timing cover while the damper hub rotates through it. Its outer case stays with the cover; its flexible inner lip follows the rotating sealing surface.",
+    "limits": "The displayed plain ring is an unfinished placeholder. The identified replacement envelope differs from its dimensions, and its lip, case and spring have not yet been built or fitted. The seal shaft diameter describes the rotating sealing surface, not the bore inside the damper hub.",
+    "steps": [
+      {
+        "title": "Find the stationary side",
+        "text": "The seal case fits into the timing cover. The National 2692 replacement table distinguishes the free case diameter from the housing bore; that difference is not a manufacturing tolerance specification.",
+        "part": "timing-cover",
+        "source": "front-crank-seal-national-dimensions"
+      },
+      {
+        "title": "Follow the rotating surface",
+        "text": "The damper hub is the adjacent rotating component. Its sealing track and the seal lip must overlap at the same axial location. Their present model placement is unresolved.",
+        "part": "damper-hub"
+      },
+      {
+        "title": "Look inside the seal",
+        "text": "National\u2019s representative type 76 section shows a flanged case, an elastomer element and a spring section. These are evidence for the construction study, not measured internals from this truck.",
+        "part": "front-seal",
+        "source": "front-crank-seal-national-cross"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Distinguish the two sealing interfaces",
+        "text": "As an inference from the construction, oil can cross the outer case-to-cover interface or the inner lip-to-hub interface. Oil near the front cover alone does not identify which interface is leaking. This model cannot diagnose the truck or supply installation depth.",
+        "part": "front-seal"
+      },
+      {
+        "title": "Match the replacement before measuring the model",
+        "text": "The exact-year parts entry identifies E6DZ6700A. National\u2019s cross-reference points to 2692, whose table gives a 47.625 mm sealing surface and 65.0494 mm nominal housing bore when converted from inches. These replacement dimensions do not establish the installed seal\u2019s identity or internal profile.",
+        "part": "front-seal",
+        "source": "front-crank-seal-national-cross"
+      }
+    ],
+    "sources": [
+      "front-crank-seal-exact-year-parts",
+      "front-crank-seal-national-cross",
+      "front-crank-seal-national-dimensions",
+      "front-crank-seal-timken-dimensions"
+    ]
+  }
+}

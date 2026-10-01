@@ -1,0 +1,39 @@
+# Component contract and handoff: oil-pump discharge and mounting source audit
+
+Engine #32, root integration owner; inclined-linkage worker. Baseline `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`, branch `engine/timing-drive-fit`. New research only until applicable source geometry establishes a defensible contract. Own this handoff and `reference/engine/oil-pump-discharge-source-review.json`, with any separately declared diagnostic files. Preserve frozen pickup, pump/drive stages, canonical housing/block, current manifest and all IDs.
+
+Scope: establish applicable pump and gasket identities, distinguish pickup inlet, drive bore and pressurized discharge, compare actual mounting topology against the modeled two outboard feet, and identify missing block-gallery datums. Exactyear manual proves a mounting gasket exists but does not dimension its outline. Do not draw a gasket around existing estimated feet merely to close a gap. Search primary manufacturer catalogs/technical drawings and existing exactyear sources first; replacement photos are shape comparisons only. Unknown dimensions remain unknown.
+
+## Reviewed evidence
+
+Exactyear parts listing identifies oil pump service assembly **C5AZ6600A** and pickup assembly **E3TZ6622F**. The exactyear installation procedure calls for a new pump gasket. The source does not dimension the sealing face or locate discharge relative to drive bore. The pump gasket is distinct from a pump cover plate or a drive-retainer ring.
+
+Ford Power Products300 industrial parts book, **PDF page8 / printed5, figureP-7852**, was inspected at full page and pump detail. It shows a body with a raised neck/flange receiving the intermediate drive, a separate pickup attaching flange, gasket callout6626 at that pickup flange, and separate rotor/shaft6608 and cover6616. This establishes useful topology for the same service assembly but is not a truck production casting survey. The drawing does not resolve the hidden pressure passage or its mounting-face aperture. Do not infer hole identity solely from the perspective image.
+
+**PDF page18 / printed15** lists C5AZ-6600-A pump assembly including gasket, pump-to-block dowel378644-S with1/2×13/32 notation, four cover screws42911-S (1/4-20×5/8), separate D5TZ-6626-A inlet-tube gasket, and an industrial pickup C5TZ-6622-B. The latter differs from exactyear E3TZ6622F: industrial tube bends cannot transfer directly. The dowel notation converts to12.7×10.31875 mm, but the listed text does not establish a hollow flow dowel, interference, installed axis or which dimension identifies the locating interface. No new dowel or oil drilling is created from it.
+
+Exactyear lubrication schematic354634388, already inspected and bound in the prior connection source ledger, establishes pump-to-engine lubrication topology. It does not dimension the discharge passage. A shaft-clearance hole cannot substitute for a pressurized oil route.
+
+Public manufacturer research on2026-10-01 identified **Melling M-74** as a300 inline-six replacement comparison in the manufacturer industrial catalog search index, with M-74HV listed separately. The high-volume part is not silently substituted. The original catalog URL now returns404. Its new2026 marine catalog is accessible but does not identify M-74; it cannot validate this truck part. Generic Melling technical pages supply no applicable discharge drawing.
+
+Manufacturer Fel-Pro catalog search-index entries distinguish **70374, to block** for the Ford240/300 family. Full PDFs were inaccessible (403 or tool size limit), and the exactyear application page could not be visually verified. MAHLE's primary numerical index identifies **B25676** with Ford Truck pages39/40, but its full application/drawing was unavailable. These remain research leads, not accepted geometry or a proven original Ford gasket identity. Retailer dimensions/images were not adopted as primary dimensional authority. An image search returned unrelated gasket numbers and was rejected; no unviewed product image is claimed reviewed.
+
+Primary links: [Melling catalog index](https://melling.com/catalogs/), [historical manufacturer industrial catalog](https://www.melling.com/wp-content/uploads/2018/02/ag-marine-catalog.pdf), [Fel-Pro manufacturer catalog](https://www.drivparts.com/content/dam/marketing/North-America/catalogs/fel-pro/pdf/fel-pro-1909-to-1990.pdf), [MAHLE numerical/application catalog](https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/gaskets/ga-20-17.pdf). Retrieval limitations above are retained. Local source hashes/pages and actual CAD/source inputs are in `reference/engine/oil-pump-discharge-source-review.json`. No manual artwork or new third-party source files are redistributed.
+
+## Reconciliation with current CAD
+
+The modeled housing is a32 mm high cylinder with four cover ears, a long horizontal relief envelope, a local drive hole atX3.5/Y0, and a side inlet atY0/Z5. Its two mounting bolts use the cover-ear rowX±28/Y28. The separate block support feet land at pump-localZ16..24. There is no raised mounting neck/flange carrying a defined discharge aperture. The inlet is currently an estimated inserted circular tube; the source comparison instead has a separate gasketed pickup flange. These observations do not erase the frozen candidate's numerical fit results; they limit their physical fidelity.
+
+Current block support geometry has a mechanical intermediate-shaft bore and two retained pump feet. No named discharge-face datum or continuous pump-to-filter/gallery route exists. The prior shifted mount report proves retained support and shaft clearance only. A gasket drawn around those two feet would falsely imply the missing discharge face existed.
+
+## Decision and future contract
+
+**Research complete; physical interface remains unresolved. No gasket, discharge drilling or pump housing candidate is built.** Source evidence justifies reconsidering mounting architecture, not choosing dimensions or cutting a guessed gallery. The smallest defensible next modeling scope is a coordinated pump-neck/mounting-face and mating-block reconstruction, including the independent pickup flange; a standalone gasket addition is insufficient.
+
+Required datums before that candidate: an applicable pump mounting-face view or measurement with the drive-axis origin, bolt axes, locating dowel axis, discharge opening and face normal; axial distance to rotor/cover and pickup flange; gasket outline, apertures and thickness; and the mating block seat/gallery entry. Preserve crank/cam/shaft drive datums and rotor engagement unless a sourced change is explicitly coordinated. Protect cylinders, journals, pan envelope and existing gallery/filter interfaces. Any estimated dimensions must be declared and reviewed before geometry.
+
+Acceptance then needs actual two-sided gasket backing, separate drive and discharge openings, connected open oil passage with wall stock, dowel/fastener seating, pickup flange continuity, rotor/shaft engagement, neighbor clearance and exported CAD/mesh. Positive fault controls must detect a blocked discharge, wrong gasket registration and unsupported mounting. No source image may be scaled into an exact dimension without a physical reference.
+
+## Delivery and tracking
+
+New evidence/handoff only. Application identity PASS scoped to exactyear service listings; mounting topology comparison PASS qualitative; dimensions UNKNOWN; CAD/export N/A (no new geometry); installed interface unresolved; motion/browser NOT RUN; learning no canonical changes; reproduction local hashes and public retrieval record. Existing frozen pickup and staged branch manifest are unchanged. Root owns issue32/PR integration; issue remains open. No running process. Model/usage unavailable. Next action: obtain an applicable mounting-face drawing or measured pump/block sample; do not fabricate a gasket merely to close the visual gap.

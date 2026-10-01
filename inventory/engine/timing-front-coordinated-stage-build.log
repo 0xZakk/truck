@@ -1,0 +1,11 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+staged block
+staged timing-cover
+staged oil-pan
+staged oil-pan-molded-gasket
+staged oil-pan-mounting-screw
+staged timing-cover-mounting-screw
+/Users/zacharyfleischmann/projects/truck/truck-build/scripts/stage-timing-front-coordinated-assets.py:37: DeprecationWarning: to_tuple is deprecated and will be removed in a future version. Use 'tuple(Location)' instead.
+  world=c.main.frame(*axis);target=parent.inverse()*world;position,rotation=target.to_tuple();q={'id':f'timing-cover-mounting-screw-{n}','definition':'timing-cover-mounting-screw','parent':'closures','name':f'Timing-cover screw{n} ·comparison','function':'Clamps estimatedrecessedseat; productionhardware unknown.','position_cad_mm':list(position),'rotation_cad_deg':list(rotation),'explode_cad_mm':[280,0,0]};assert q['id']not in occ;new['occurrences'].append(q);proposals.append({'id':q['id'],'before':None,'after':q,'world_target_transform':matrix(world).tolist()})
+PASS assetandpose stage; dependencycomposition/browserpending

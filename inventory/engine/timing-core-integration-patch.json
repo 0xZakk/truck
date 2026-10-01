@@ -1,0 +1,1172 @@
+{
+  "schema": "truck-guarded-integration-proposal-v1",
+  "scope": "Ready neutral core serialization only",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "definitions": [
+    {
+      "id": "crankshaft",
+      "before": {
+        "id": "crankshaft",
+        "name": "Crankshaft",
+        "function": "Six throws turn reciprocating piston force into rotation. The seven main journals support the shaft; paired throws follow the 1\u20135\u20133\u20136\u20132\u20134 firing order.",
+        "system": "rotating",
+        "color": "#637f8b",
+        "glb": "/models/engine/crankshaft.glb",
+        "step": "/cad/engine/generated/crankshaft.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-2e5473b2bf99",
+          "fsm-2f144bda5e08",
+          "hicengine-ffm68",
+          "timken-pilot-dimensions"
+        ],
+        "dimension_claims": [
+          "stroke",
+          "rod_journal_diameter_range",
+          "main_journal_diameter_range"
+        ],
+        "unresolved": [
+          "Journal widths, axial stations, counterweight contours, fillets, oil drillings and flange holes remain provisional.",
+          "Front crank nose length and damper key/retaining bore are provisional attachment-study geometry.",
+          "Front crank nose length and damper key/retaining bore are provisional attachment-study geometry."
+        ],
+        "volume_mm3": 5299591.659141303,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 10140,
+        "model_bounds_mm": [
+          888.0,
+          161.54824011936802,
+          156.546
+        ]
+      },
+      "after": {
+        "id": "crankshaft",
+        "name": "Crankshaft",
+        "function": "Six throws turn reciprocating piston force into rotation. The seven main journals support the shaft; paired throws follow the 1\u20135\u20133\u20136\u20132\u20134 firing order.",
+        "system": "rotating",
+        "color": "#637f8b",
+        "glb": "/models/engine/crankshaft.glb",
+        "step": "/cad/engine/generated/crankshaft.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-2e5473b2bf99",
+          "fsm-2f144bda5e08",
+          "hicengine-ffm68",
+          "timken-pilot-dimensions"
+        ],
+        "dimension_claims": [
+          "stroke",
+          "rod_journal_diameter_range",
+          "main_journal_diameter_range"
+        ],
+        "unresolved": [
+          "Journal widths, axial stations, counterweight contours, fillets, oil drillings and flange holes remain provisional.",
+          "Front crank nose length and damper key/retaining bore are provisional attachment-study geometry.",
+          "Front crank nose length and damper key/retaining bore are provisional attachment-study geometry.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 5299591.6591413105,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 10140,
+        "model_bounds_mm": [
+          888.0,
+          161.54824011936802,
+          156.546
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/crankshaft.step",
+          "to": "cad/engine/generated/crankshaft.step",
+          "sha256": "ef0e1e183909da5d7fb4a83878735cdd0b8aa8f5d68a4d8c574eb063e3eb4ea5"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/crankshaft.glb",
+          "to": "models/engine/crankshaft.glb",
+          "sha256": "7cfe8b1d3df64681f286b2b7715fa0f93e6056fce4e9c961e11876eccb71a170"
+        }
+      }
+    },
+    {
+      "id": "cam-bearing",
+      "before": {
+        "id": "cam-bearing",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "system": "valvetrain",
+        "color": "#b7a77e",
+        "glb": "/models/engine/cam-bearing.glb",
+        "step": "/cad/engine/generated/cam-bearing.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [
+          "camshaft_bearing_inside_diameter_range"
+        ],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements."
+        ],
+        "volume_mm3": 5473.423778594293,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 464,
+        "model_bounds_mm": [
+          22.00000000000001,
+          54.2953,
+          54.295300000000005
+        ]
+      },
+      "after": {
+        "id": "cam-bearing",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "system": "valvetrain",
+        "color": "#b7a77e",
+        "glb": "/models/engine/cam-bearing.glb",
+        "step": "/cad/engine/generated/cam-bearing.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [
+          "camshaft_bearing_inside_diameter_range"
+        ],
+        "unresolved": [
+          "Exact production contours, dimensions and tolerances need applicable drawings or measurements.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 5473.423778594406,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 840,
+        "model_bounds_mm": [
+          22.00000000000001,
+          54.2953,
+          54.295300000000005
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-bearing.step",
+          "to": "cad/engine/generated/cam-bearing.step",
+          "sha256": "2702f75e0eceae45e47f0e1575e589ec0ee7babe2bb707156e4ab9a13bf675a7"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-bearing.glb",
+          "to": "models/engine/cam-bearing.glb",
+          "sha256": "a9f6863260d648dbba26b9d09e0e42d49b2734bd0a218e8c1610981ac1fffb7e"
+        }
+      }
+    },
+    {
+      "id": "cam-gear-spacer",
+      "before": {
+        "id": "cam-gear-spacer",
+        "name": "Cam timing-gear spacer",
+        "function": "Sets the shoulder-to-hub distance around the thrust plate, allowing controlled axial clearance rather than clamping the plate rigidly.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-gear-spacer.glb",
+        "step": "/cad/engine/generated/cam-gear-spacer.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed."
+        ],
+        "volume_mm3": 1832.1631954164004,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 464,
+        "model_bounds_mm": [
+          38.1,
+          38.1,
+          5.259375
+        ]
+      },
+      "after": {
+        "id": "cam-gear-spacer",
+        "name": "Cam timing-gear spacer",
+        "function": "Sets the shoulder-to-hub distance around the thrust plate, allowing controlled axial clearance rather than clamping the plate rigidly.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-gear-spacer.glb",
+        "step": "/cad/engine/generated/cam-gear-spacer.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 1832.1631954164998,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 840,
+        "model_bounds_mm": [
+          38.1,
+          38.1,
+          5.259375
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-gear-spacer.step",
+          "to": "cad/engine/generated/cam-gear-spacer.step",
+          "sha256": "a5183de69b65f377178401d59acab59eb2bc13642997885562ab0b1436772332"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-gear-spacer.glb",
+          "to": "models/engine/cam-gear-spacer.glb",
+          "sha256": "cb383e8761169275b1d7c13d41d92e31db1bea8b3a0953bfdd9822b9447e32f6"
+        }
+      }
+    },
+    {
+      "id": "cam-thrust-bolt",
+      "before": {
+        "id": "cam-thrust-bolt",
+        "name": "Cam thrust-plate bolt",
+        "function": "Fastens the stationary thrust plate to the block. The industrial comparison specifies5/16-18 \u00d73/4-inch.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-bolt.glb",
+        "step": "/cad/engine/generated/cam-thrust-bolt.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed."
+        ],
+        "volume_mm3": 1559.0908569830735,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 5188,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          24.350000100246906
+        ]
+      },
+      "after": {
+        "id": "cam-thrust-bolt",
+        "name": "Cam thrust-plate bolt",
+        "function": "Fastens the stationary thrust plate to the block. The industrial comparison specifies5/16-18 \u00d73/4-inch.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-bolt.glb",
+        "step": "/cad/engine/generated/cam-thrust-bolt.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 1559.0915913137815,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 9194,
+        "model_bounds_mm": [
+          14.664696837418973,
+          12.700000000000003,
+          24.350000100246906
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-bolt.step",
+          "to": "cad/engine/generated/cam-thrust-bolt.step",
+          "sha256": "c83cb470cd93d2b1ae9cabf9f63a2d0ef5f4b07f2d1d5183782fd00d0a37e828"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-bolt.glb",
+          "to": "models/engine/cam-thrust-bolt.glb",
+          "sha256": "abe5a8d0e4cc9e345c4d1dd1d162da814932ce8d8adc1c94af8c9844f840fcac"
+        }
+      }
+    },
+    {
+      "id": "cam-thrust-plate",
+      "before": {
+        "id": "cam-thrust-plate",
+        "name": "Camshaft thrust plate",
+        "function": "Fixed to the block, this plate limits axial camshaft movement between the shaft shoulder and timing-gear hub.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-plate.glb",
+        "step": "/cad/engine/generated/cam-thrust-plate.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed."
+        ],
+        "volume_mm3": 7936.431343154068,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 1136,
+        "model_bounds_mm": [
+          88.0,
+          56.0,
+          5.159375
+        ]
+      },
+      "after": {
+        "id": "cam-thrust-plate",
+        "name": "Camshaft thrust plate",
+        "function": "Fixed to the block, this plate limits axial camshaft movement between the shaft shoulder and timing-gear hub.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-plate.glb",
+        "step": "/cad/engine/generated/cam-thrust-plate.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 7936.431343153712,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2044,
+        "model_bounds_mm": [
+          88.0,
+          56.0,
+          5.159375
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-plate.step",
+          "to": "cad/engine/generated/cam-thrust-plate.step",
+          "sha256": "1877cd7ad611cb50be7bc9146c81194f228816879b5faa9a556906a97a36ff41"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-plate.glb",
+          "to": "models/engine/cam-thrust-plate.glb",
+          "sha256": "0c09137eb13236af9dfd96d2079b454c8288e71e72d16b2debd97522517174db"
+        }
+      }
+    },
+    {
+      "id": "cam-thrust-washer",
+      "before": {
+        "id": "cam-thrust-washer",
+        "name": "Cam thrust-plate washer",
+        "function": "Separate washer shown under each retaining bolt in the industrial exploded drawing; its section is provisional.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-washer.glb",
+        "step": "/cad/engine/generated/cam-thrust-washer.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed."
+        ],
+        "volume_mm3": 232.66405286991133,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 444,
+        "model_bounds_mm": [
+          15.0,
+          14.962405778299999,
+          2.0
+        ]
+      },
+      "after": {
+        "id": "cam-thrust-washer",
+        "name": "Cam thrust-plate washer",
+        "function": "Separate washer shown under each retaining bolt in the industrial exploded drawing; its section is provisional.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-thrust-washer.glb",
+        "step": "/cad/engine/generated/cam-thrust-washer.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 232.66405286990397,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 808,
+        "model_bounds_mm": [
+          15.000000000000002,
+          14.962405778299999,
+          2.0
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-washer.step",
+          "to": "cad/engine/generated/cam-thrust-washer.step",
+          "sha256": "bd24c4a305f3b711bbe2bccaf106212cc68d23e2c8ad68a0cbb243a727b11799"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-thrust-washer.glb",
+          "to": "models/engine/cam-thrust-washer.glb",
+          "sha256": "f24ac9834128e6cbfeeb68f697dbb0eef7c0ab092a16551338f0b930390ee220"
+        }
+      }
+    },
+    {
+      "id": "cam-timing-gear",
+      "before": {
+        "id": "cam-timing-gear",
+        "name": "Cam Timing Gear",
+        "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+        "system": "closures",
+        "color": "#b29c72",
+        "glb": "/models/engine/cam-timing-gear.glb",
+        "step": "/cad/engine/generated/cam-timing-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact tooth count, pressure angle, material and timing-mark stations are unverified."
+        ],
+        "volume_mm3": 199781.85871762907,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 4348,
+        "model_bounds_mm": [
+          14.000000000000014,
+          160.00350986366004,
+          160.00350986366004
+        ]
+      },
+      "after": {
+        "id": "cam-timing-gear",
+        "name": "Cam Timing Gear",
+        "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+        "system": "closures",
+        "color": "#b29c72",
+        "glb": "/models/engine/cam-timing-gear.glb",
+        "step": "/cad/engine/generated/cam-timing-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact tooth count, pressure angle, material and timing-mark stations are unverified.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 196513.4036876209,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 10380,
+        "model_bounds_mm": [
+          14.000000200000027,
+          167.89398744250036,
+          167.89399997018336
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-timing-gear.step",
+          "to": "cad/engine/generated/cam-timing-gear.step",
+          "sha256": "4de216dd31b45bbf37b243c3c15dffd45a99202eb087c1c1bdddbfce52973ed5"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-timing-gear.glb",
+          "to": "models/engine/cam-timing-gear.glb",
+          "sha256": "c475b7b10282eaeeb150baa54710f31f05c5c1ac9ae323d080947960cd2c69c8"
+        }
+      }
+    },
+    {
+      "id": "cam-timing-key",
+      "before": {
+        "id": "cam-timing-key",
+        "name": "Camshaft timing-gear key",
+        "function": "Registers the gear to the cam nose through matching shaft and hub seats. The woodruff-form dimensions remain provisional.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-timing-key.glb",
+        "step": "/cad/engine/generated/cam-timing-key.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed."
+        ],
+        "volume_mm3": 201.0995307668193,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 116,
+        "model_bounds_mm": [
+          12.700000000000045,
+          3.175000000000001,
+          6.35
+        ]
+      },
+      "after": {
+        "id": "cam-timing-key",
+        "name": "Camshaft timing-gear key",
+        "function": "Registers the gear to the cam nose through matching shaft and hub seats. The woodruff-form dimensions remain provisional.",
+        "system": "closures",
+        "color": "#a3adb3",
+        "glb": "/models/engine/cam-timing-key.glb",
+        "step": "/cad/engine/generated/cam-timing-key.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "ford-industrial-parts",
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Plate bore/thickness and spacer bore/OD follow an industrial comparison, not verified installed identities.",
+          "Plate outline, bolt stations, washer section, key size, nose/hub profile and axial stations remain assumed. Female threads and press fits are not represented.",
+          "The spacer provides an illustrative0.1mm axial allowance; no wear or thrust-load simulation is performed.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 201.09953076682862,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 212,
+        "model_bounds_mm": [
+          12.700000000000045,
+          3.175000000000001,
+          6.35
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-timing-key.step",
+          "to": "cad/engine/generated/cam-timing-key.step",
+          "sha256": "e4be6c1e1d4ecd7b90cf85290aca8429ad79b9cc00900b4da81c3c77f4c89e1d"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/cam-timing-key.glb",
+          "to": "models/engine/cam-timing-key.glb",
+          "sha256": "8dacbc7c2c951e78fb165fcfe30cc7dc9bf0002a85b4ee811cd9d6346760f6a0"
+        }
+      }
+    },
+    {
+      "id": "camshaft",
+      "before": {
+        "id": "camshaft",
+        "name": "Camshaft",
+        "function": "Twelve hypothetical replacement-catalog lobes coordinate valve motion through a720degree engine cycle. Installed cam identity and full production timing remain unverified.",
+        "system": "valvetrain",
+        "color": "#729093",
+        "glb": "/models/engine/camshaft.glb",
+        "step": "/cad/engine/generated/camshaft.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [
+          "camshaft_journal_diameter_range"
+        ],
+        "unresolved": [
+          "Journal diameter uses the midpoint of the factory range. Front journal, nose and key seat now meet the retention study; axial stations and key dimensions remain assumed. Lobe profiles, timing events and distributor drive remain unresolved.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Rear cam journal and bearing move from assumedX-330to-334mm to clear the complete cylinder6 intake follower. Journal width23mm, bearing width22mm and axial coordinates remain unverified; source radial dimensions are preserved.",
+          "The existing continuous cam bore supports the revised bearing location; actual bearing retention, oil-feed indexing and axial production layout remain unresolved.",
+          "The head gasket pushrod openings retain their old clearance and gain a6mm-radius cut at the revisedY90axis. Hole contours and sealing lands remain provisional; positive passage checks do not establish a production gasket."
+        ],
+        "volume_mm3": 736585.7582081202,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 16008,
+        "model_bounds_mm": [
+          747.2593750999999,
+          51.2445,
+          51.24450000000001
+        ]
+      },
+      "after": {
+        "id": "camshaft",
+        "name": "Camshaft",
+        "function": "Twelve hypothetical replacement-catalog lobes coordinate valve motion through a720degree engine cycle. Installed cam identity and full production timing remain unverified.",
+        "system": "valvetrain",
+        "color": "#729093",
+        "glb": "/models/engine/camshaft.glb",
+        "step": "/cad/engine/generated/camshaft.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5",
+          "fsm-2e5473b2bf99",
+          "ford-industrial-csg649",
+          "fsm-a3698a10af15",
+          "melling-intermediate-shaft-dimensions",
+          "melling-camshaft-specifications",
+          "melling-stock-valve-specifications",
+          "melling-pushrod-specifications"
+        ],
+        "dimension_claims": [
+          "camshaft_journal_diameter_range"
+        ],
+        "unresolved": [
+          "Journal diameter uses the midpoint of the factory range. Front journal, nose and key seat now meet the retention study; axial stations and key dimensions remain assumed. Lobe profiles, timing events and distributor drive remain unresolved.",
+          "20 degree lean, X227.584 station, gear-axis spacing, distributor lower extension, mounting bosses and pickup bends are constrained fit-study assumptions, not surveyed Ford geometry.",
+          "Melling IS-74 length 114.808 mm and hex across flats 7.9248 mm remain unchanged. Ten mm upper and nine mm lower engagement are assumed.",
+          "Cam-to-distributor crossed-helical tooth geometry, working backlash and angular phase remain unverified; this is a connected spatial study, not validated power transmission.",
+          "Oil galleries and pump mounting architecture require a production reference. Proposed block cuts and supports must not be used as machining instructions.",
+          "Coordinated motion is a teaching construction. The smooth lobe law fits selected Melling SYB-38 scalars; the installed cam, full lift law, advertised checking height and production timing remain unverified.",
+          "Rigid linkage and constant-wire spring deformation explain motion; hydraulic lash adjustment, spring dynamics, lubrication, fatigue and running-engine performance are not simulated.",
+          "Rear cam journal and bearing move from assumedX-330to-334mm to clear the complete cylinder6 intake follower. Journal width23mm, bearing width22mm and axial coordinates remain unverified; source radial dimensions are preserved.",
+          "The existing continuous cam bore supports the revised bearing location; actual bearing retention, oil-feed indexing and axial production layout remain unresolved.",
+          "The head gasket pushrod openings retain their old clearance and gain a6mm-radius cut at the revisedY90axis. Hole contours and sealing lands remain provisional; positive passage checks do not establish a production gasket.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 736585.7582076743,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 37432,
+        "model_bounds_mm": [
+          747.2593750999999,
+          51.2445,
+          51.24450000000013
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/camshaft.step",
+          "to": "cad/engine/generated/camshaft.step",
+          "sha256": "2ed4b6c99e347629f246a92981871715bba5f507224232e37b62dceec9bb2a3b"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/camshaft.glb",
+          "to": "models/engine/camshaft.glb",
+          "sha256": "537a756e36eaeb5419278668e7562e15b4155f5cee6976c43d3ff7ff9a1a1dee"
+        }
+      }
+    },
+    {
+      "id": "crank-timing-gear",
+      "before": {
+        "id": "crank-timing-gear",
+        "name": "Crank Timing Gear",
+        "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+        "system": "closures",
+        "color": "#b29c72",
+        "glb": "/models/engine/crank-timing-gear.glb",
+        "step": "/cad/engine/generated/crank-timing-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact tooth count, pressure angle, material and timing-mark stations are unverified."
+        ],
+        "volume_mm3": 43925.92259118926,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 2056,
+        "model_bounds_mm": [
+          14.000000000000009,
+          82.94222129468866,
+          82.94222129468585
+        ]
+      },
+      "after": {
+        "id": "crank-timing-gear",
+        "name": "Crank Timing Gear",
+        "function": "The direct gear mesh maintains a 2:1 crank-to-cam speed ratio. These are 20-degree involute teaching gears; tooth count and pitch are not verified for the truck.",
+        "system": "closures",
+        "color": "#b29c72",
+        "glb": "/models/engine/crank-timing-gear.glb",
+        "step": "/cad/engine/generated/crank-timing-gear.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "fsm-33bfe47109d5"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Exact tooth count, pressure angle, material and timing-mark stations are unverified.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 49865.23064691458,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 6864,
+        "model_bounds_mm": [
+          14.000000200000013,
+          86.3599552660001,
+          86.35995544629353
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/crank-timing-gear.step",
+          "to": "cad/engine/generated/crank-timing-gear.step",
+          "sha256": "7cf2c7a6b3f9eb08e08762494dabe77fe02ae24397a9a31cae69ad6b08b50425"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/crank-timing-gear.glb",
+          "to": "models/engine/crank-timing-gear.glb",
+          "sha256": "e67180ad92294d67604ffc579b9d8d9ad352fd85c686231b6c35d55769b8f4c8"
+        }
+      }
+    },
+    {
+      "id": "rear-cam-plug",
+      "before": {
+        "id": "rear-cam-plug",
+        "name": "Rear camshaft bore plug",
+        "function": "Closes the rear access opening of the camshaft tunnel. The cup is a separate stationary seal; it does not support or retain the rotating camshaft.",
+        "system": "structure",
+        "color": "#b0a895",
+        "glb": "/models/engine/rear-cam-plug.glb",
+        "step": "/cad/engine/generated/rear-cam-plug.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "melling-expansion-plug-guide",
+          "ford-industrial-parts"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Melling MPC-147 replacement envelope: OD2.194in and height.343in; kit identifies its camshaft application. Installed identity is not verified.",
+          "Uniform1mm cup wall, square internal corner, supporting boss, .5mm recess and clearance-fit seat are assumptions. Actual press fit, stamp radii and bore size remain unresolved."
+        ],
+        "volume_mm3": 3765.07799216771,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 460,
+        "model_bounds_mm": [
+          55.7276,
+          55.7276,
+          8.7122
+        ]
+      },
+      "after": {
+        "id": "rear-cam-plug",
+        "name": "Rear camshaft bore plug",
+        "function": "Closes the rear access opening of the camshaft tunnel. The cup is a separate stationary seal; it does not support or retain the rotating camshaft.",
+        "system": "structure",
+        "color": "#b0a895",
+        "glb": "/models/engine/rear-cam-plug.glb",
+        "step": "/cad/engine/generated/rear-cam-plug.step",
+        "geometry_status": "provisional",
+        "sources": [
+          "melling-expansion-plug-guide",
+          "ford-industrial-parts"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Melling MPC-147 replacement envelope: OD2.194in and height.343in; kit identifies its camshaft application. Installed identity is not verified.",
+          "Uniform1mm cup wall, square internal corner, supporting boss, .5mm recess and clearance-fit seat are assumptions. Actual press fit, stamp radii and bore size remain unresolved.",
+          "Coordinated corrected-direction timing candidate. Dimensions retain source/estimate limits; full assembly, corrected motion implementation and browser acceptance remain pending."
+        ],
+        "volume_mm3": 3765.0779921677477,
+        "volume_method": "default",
+        "solid_count": 1,
+        "triangle_count": 836,
+        "model_bounds_mm": [
+          55.7276,
+          55.7276,
+          8.7122
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/rear-cam-plug.step",
+          "to": "cad/engine/generated/rear-cam-plug.step",
+          "sha256": "5057b74fc15c00aa179553ba8062f85d1fa5b9c38d4910d46e36a0822b9c233f"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-core-drive-integration-stage/rear-cam-plug.glb",
+          "to": "models/engine/rear-cam-plug.glb",
+          "sha256": "36d7182a106fcbedecb034fe5c3c3b8f4d813906bb71856470873c5a82a16672"
+        }
+      }
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "cam-motion",
+      "before": {
+        "id": "cam-motion",
+        "name": "Camshaft",
+        "parent": "valvetrain",
+        "motion": {
+          "type": "cam"
+        },
+        "position_cad_mm": [
+          0,
+          90,
+          72
+        ]
+      },
+      "after": {
+        "id": "cam-motion",
+        "name": "Camshaft",
+        "parent": "valvetrain",
+        "motion": {
+          "type": "cam"
+        },
+        "position_cad_mm": [
+          0.0,
+          95.1098209901611,
+          76.08785679212887
+        ]
+      }
+    },
+    {
+      "id": "cam-retention-assembly",
+      "before": {
+        "id": "cam-retention-assembly",
+        "name": "Camshaft thrust plate, spacer & key",
+        "parent": "closures",
+        "motion": null,
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "cam-retention-assembly",
+        "name": "Camshaft thrust plate, spacer & key",
+        "parent": "closures",
+        "motion": null,
+        "position_cad_mm": [
+          0.0,
+          5.109820990161097,
+          4.087856792128875
+        ]
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "cam-bearing-1",
+      "before": {
+        "id": "cam-bearing-1",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          -334.0,
+          90,
+          72
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      },
+      "after": {
+        "id": "cam-bearing-1",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          -334.0,
+          95.1098209901611,
+          76.08785679212887
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cam-bearing-2",
+      "before": {
+        "id": "cam-bearing-2",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          -110,
+          90,
+          72
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      },
+      "after": {
+        "id": "cam-bearing-2",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          -110.0,
+          95.1098209901611,
+          76.08785679212887
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cam-bearing-3",
+      "before": {
+        "id": "cam-bearing-3",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          110,
+          90,
+          72
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      },
+      "after": {
+        "id": "cam-bearing-3",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          110.0,
+          95.1098209901611,
+          76.08785679212887
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      }
+    },
+    {
+      "id": "cam-bearing-4",
+      "before": {
+        "id": "cam-bearing-4",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          360.5,
+          90,
+          72
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      },
+      "after": {
+        "id": "cam-bearing-4",
+        "definition": "cam-bearing",
+        "parent": "valvetrain",
+        "name": "Camshaft bearing",
+        "function": "Supports a camshaft journal in the block. Inside diameter uses the factory-range midpoint; shell thickness, width, axial stations and oil-feed holes remain provisional.",
+        "position_cad_mm": [
+          360.5,
+          95.1098209901611,
+          76.08785679212887
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          0,
+          -100,
+          0
+        ]
+      }
+    },
+    {
+      "id": "rear-cam-plug",
+      "before": {
+        "id": "rear-cam-plug",
+        "definition": "rear-cam-plug",
+        "parent": "block-plugs",
+        "name": "Rear camshaft bore plug",
+        "function": "Closes the rear access opening of the camshaft tunnel. The cup is a separate stationary seal; it does not support or retain the rotating camshaft.",
+        "position_cad_mm": [
+          -363.7878,
+          90,
+          72
+        ],
+        "rotation_cad_deg": [
+          0,
+          -90,
+          0
+        ],
+        "explode_cad_mm": [
+          -125,
+          0,
+          0
+        ]
+      },
+      "after": {
+        "id": "rear-cam-plug",
+        "definition": "rear-cam-plug",
+        "parent": "block-plugs",
+        "name": "Rear camshaft bore plug",
+        "function": "Closes the rear access opening of the camshaft tunnel. The cup is a separate stationary seal; it does not support or retain the rotating camshaft.",
+        "position_cad_mm": [
+          -363.7878,
+          95.1098209901611,
+          76.08785679212887
+        ],
+        "rotation_cad_deg": [
+          0,
+          -90,
+          0
+        ],
+        "explode_cad_mm": [
+          -125,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "requirements": [
+    "Neutral serialization only; current canonical motion tags still need root corrected crank/cam/endplay implementation.",
+    "Preserve existing IDs, parents, explode fields and stationary thrust hardware.",
+    "Coordinate block/frontjoint and valvetrain/spring assets owned by other stages; this patch alone is not an installation."
+  ],
+  "motion_contract": {
+    "event": "q crank event degrees",
+    "crank": "\u2212q about +X",
+    "cam": "q/2 + degrees(K*x) about +X; x\u2208[\u22120.1,0]mm",
+    "stationary": [
+      "cam-bearing-1",
+      "cam-bearing-2",
+      "cam-bearing-3",
+      "cam-bearing-4",
+      "rear-cam-plug",
+      "cam-thrust-plate",
+      "cam-thrust-bolt-1",
+      "cam-thrust-bolt-2",
+      "cam-thrust-washer-1",
+      "cam-thrust-washer-2"
+    ]
+  }
+}

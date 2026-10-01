@@ -1,0 +1,70 @@
+{
+  "status": "RESEARCH complete; discharge/mounting geometry unresolved; no CAD changes",
+  "baseline": "8c2d2d9a1400acf784e04581a61e6a6ede38d3ba",
+  "reviewed": "2026-10-01",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Oil%20Pump/Parts%20Information/index.html": "ffc4515ed115b438b0488ae91c98cd283dfbc04765f0af64c084fe6e780bd5fe",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Oil%20Pick%20Up%2FStrainer/Parts%20Information/index.html": "0be884cff2472ed8e2d2a044a761cd742b7141a4b9f337b69e3b0ddaff9bacd3",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Engine%20Lubrication/Oil%20Pump/Service%20and%20Repair/index.html": "bfad2924515ffd7db053399708806966213d9ba3bc8a0c17029cef19fa342580",
+    "reference/engine/ford-industrial-parts.pdf": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+    "reference/engine/shifted-oil-drive-connection-sources.json": "4126a4721c84d3d8f4197304f63a7c7c6883c8945e19528af9d6379dff1bab57",
+    "cad/engine/oil_pump.py": "ec6b0206297632faada63e7272ed11d078cb7bb95e18b3a9879bc50b1d3c559f",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "inventory/engine/shifted-oil-drive-mount-validation.json": "6fd48172bd75bb405ff4795ce120398b7d51c915edab817179b0105fdbfd6974",
+    "inventory/engine/shifted-oil-drive-connection-delivery.json": "83b05cb2ea099456d15e5c4b913810318eefe31cd699c7da4554d976a063b95b",
+    "docs/components/oil-pump-discharge-source-audit.md": "1035c22c76b98f0c7705da86d770433751afe2ef9c40a3f2185a67755c6c7593"
+  },
+  "local_visuals": [
+    {
+      "source": "reference/engine/ford-industrial-parts.pdf",
+      "pdf_page": 8,
+      "printed_page": 5,
+      "figure": "P-7852",
+      "review": "Actual full page and pump detail viewed; raised mounting neck/flange, separate pickup flange/gasket6626, rotor6608 and cover6616; hidden discharge not resolved"
+    },
+    {
+      "source": "reference/engine/ford-industrial-parts.pdf",
+      "pdf_page": 18,
+      "printed_page": 15,
+      "review": "Actual table viewed; pumpC5AZ6600A includes gasket, dowel378644-S 1/2x13/32, separate inletgasketD5TZ6626A, industrialpickupC5TZ6622B differs exactyearE3TZ6622F"
+    }
+  ],
+  "identities": {
+    "exactyear_pump_service": "C5AZ6600A",
+    "exactyear_pickup_service": "E3TZ6622F",
+    "industrial_same_pump": "C5AZ6600A",
+    "industrial_inlet_gasket": "D5TZ6626A",
+    "replacement_pump_lead": "Melling M-74",
+    "replacement_block_gasket_leads": [
+      "Fel-Pro70374",
+      "MAHLEB25676"
+    ]
+  },
+  "public_retrieval": [
+    {
+      "url": "https://www.melling.com/wp-content/uploads/2018/02/ag-marine-catalog.pdf",
+      "result": "Manufacturer search index lists300/M-74; currentfetch404; not dimensional evidence"
+    },
+    {
+      "url": "https://melling.com/wp-content/uploads/2026/01/Marine-2026_Updated-01122026.pdf",
+      "result": "Accessible text, noM-74 match; screenshotcachemiss; no targetvisual accepted"
+    },
+    {
+      "url": "https://www.drivparts.com/content/dam/marketing/North-America/catalogs/fel-pro/pdf/fel-pro-1909-to-1990.pdf",
+      "result": "Manufacturer search index70374 toblock; direct403; alternateofficialCDN size limit; exactyearpage not inspected"
+    },
+    {
+      "url": "https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/gaskets/ga-20-17.pdf",
+      "result": "Manufacturer indexB25676 FordTruck39/40; fullfetch unavailable; dimensions unknown"
+    }
+  ],
+  "rejected_shortcut": "Do not place invented gasket on existing outboard estimated support feet or label mechanical shaft bore a discharge passage",
+  "next_required": [
+    "Applicable mounting face with drive/bolt/dowel/discharge datums",
+    "Rotor-to-mount axial stack and pickup flange",
+    "Gasket thickness/outline/openings",
+    "Mating block gallery entry and routing"
+  ],
+  "scope_limit": "Existing pickup and feet remain connected fit-study estimates, not factory-supported mounting architecture"
+}

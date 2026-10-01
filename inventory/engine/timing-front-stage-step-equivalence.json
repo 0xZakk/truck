@@ -1,0 +1,54 @@
+{
+  "rows": [
+    {
+      "id": "block",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    },
+    {
+      "id": "timing-cover",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    },
+    {
+      "id": "oil-pan",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    },
+    {
+      "id": "oil-pan-molded-gasket",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    },
+    {
+      "id": "oil-pan-mounting-screw",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    },
+    {
+      "id": "timing-cover-mounting-screw",
+      "added_mm3": 0.0,
+      "missing_mm3": 0.0
+    }
+  ],
+  "measurement_errors": {},
+  "status": "PASS strict restoredSTEP equivalence",
+  "input_sha256": {
+    "inventory/engine/timing-front-coordinated-stage-validation.json": "631a1cbad2056bada6f2875ec9f4eaa6edcd4f2c2c4c32282fe83fe1c333b390",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/check-timing-front-stage-step-equivalence.py": "9a1bc0d3aa5464690185661c840c3fa31c573b5e1820428fbdbace149ca64ac3",
+    "cad/engine/generated/timing-front-coordinated-stage/block.step": "35af664cb1f13593ac105d0d37c98b14ea34b933fb112e45a86da734f94b057e",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/block.step": "f5f74b3d051b2265cd761090ef8650f493b32585fbce47d88aded933b87e1334",
+    "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-front-coordinated-stage/oil-pan.step": "165fd0d3e50c69b0d71370e56f690abe73fbf49ab7a83b054a5a0467b0dab063",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan.step": "ab542e57be0d1b99373e481839b507aa8041a262d7d3649f7b0c6a83bbf8a20a",
+    "cad/engine/generated/timing-front-coordinated-stage/oil-pan-molded-gasket.step": "950b39975b7eaf17c2e85859a2408311b2b1b4e6fda381ce2be7745ec0aaab07",
+    "cad/engine/generated/timing-pan21-lateral-candidate/pan-gasket.step": "f6aa000aaf72b27b682509dafeee73b2cf7580fd78d6e8661e1b44916b403fe5",
+    "cad/engine/generated/timing-front-coordinated-stage/oil-pan-mounting-screw.step": "b5604ee90be3b7d823743b94ba7f7b0f88d686f7a2a5fff612245f43325ca446",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d",
+    "cad/engine/generated/timing-front-coordinated-stage/timing-cover-mounting-screw.step": "1b8667182ffe0be26ac5bc4355b73d5049b5f3951085c0f5b5c5250b51f11b59",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-1.step": "0160fc0384ac1073e89e664a9d74db81d414e8558c412eee944fd6c961cc8e59"
+  },
+  "note": "Default whole-volume differences in stage report are serialization diagnostics; this independent Boolean material comparison retains strict1e-7integration/1e-5mm3difference gates."
+}

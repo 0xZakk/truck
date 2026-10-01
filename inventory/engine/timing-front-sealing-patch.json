@@ -1,0 +1,262 @@
+{
+  "schema": "truck-guarded-integration-proposal-v2",
+  "scope": "Existing main gasket and two separate terminal deposits; seven screw lessons",
+  "manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "front_patch_sha256": "428de87e0e535575faf08c700ab2b3eb517d45d46e656d2234811b8ffd5a98c8",
+  "definitions": [
+    {
+      "id": "timing-cover-main-gasket",
+      "before": null,
+      "after": {
+        "id": "timing-cover-main-gasket",
+        "name": "Main timing-cover gasket",
+        "function": "Closes a static boundary at the front cover joint.",
+        "system": "closures",
+        "color": "#586b5e",
+        "glb": "/models/engine/timing-cover-main-gasket.glb",
+        "step": "/cad/engine/generated/timing-cover-main-gasket.step",
+        "geometry_status": "candidate",
+        "sources": [
+          "timing-front-joint-review"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Inherited estimated registration and section; no pressure or factory material specification."
+        ],
+        "volume_mm3": 9272.001535831694,
+        "solid_count": 1,
+        "triangle_count": 5664,
+        "model_bounds_mm": [
+          0.8000000000000114,
+          403.5263759420817,
+          233.13936187434376
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-main-gasket.step",
+          "to": "cad/engine/generated/timing-cover-main-gasket.step",
+          "sha256": "3807f9d126282008a27562502f6ca08541fec59086c24b25ae6afc4f62daad8c"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-main-gasket.glb",
+          "to": "models/engine/timing-cover-main-gasket.glb",
+          "sha256": "e004ab40392b558ed8d71589cac2aee2182b6b0c967183d1a40d05cd5dd0fe09"
+        }
+      }
+    },
+    {
+      "id": "timing-cover-terminal-sealant-1",
+      "before": null,
+      "after": {
+        "id": "timing-cover-terminal-sealant-1",
+        "name": "Timing-cover terminal sealant 1",
+        "function": "Closes a static boundary at the front cover joint.",
+        "system": "closures",
+        "color": "#586b5e",
+        "glb": "/models/engine/timing-cover-terminal-sealant-1.glb",
+        "step": "/cad/engine/generated/timing-cover-terminal-sealant-1.step",
+        "geometry_status": "candidate",
+        "sources": [
+          "timing-front-joint-review"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Inherited estimated registration and section; no pressure or factory material specification."
+        ],
+        "volume_mm3": 74.67443465611163,
+        "solid_count": 1,
+        "triangle_count": 16,
+        "model_bounds_mm": [
+          4.000000000000057,
+          37.45118488086209,
+          0.5
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-1.step",
+          "to": "cad/engine/generated/timing-cover-terminal-sealant-1.step",
+          "sha256": "1ebb1e50c1a8f87139d57259001d4db9c1162b373a59dcf00f6028e54cff00f5"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-1.glb",
+          "to": "models/engine/timing-cover-terminal-sealant-1.glb",
+          "sha256": "684c272c75dbeff12b9f0f34e3b2a17ea9f1ce5a56f8220a81c1447d785b3c8e"
+        }
+      }
+    },
+    {
+      "id": "timing-cover-terminal-sealant-2",
+      "before": null,
+      "after": {
+        "id": "timing-cover-terminal-sealant-2",
+        "name": "Timing-cover terminal sealant 2",
+        "function": "Closes a static boundary at the front cover joint.",
+        "system": "closures",
+        "color": "#586b5e",
+        "glb": "/models/engine/timing-cover-terminal-sealant-2.glb",
+        "step": "/cad/engine/generated/timing-cover-terminal-sealant-2.step",
+        "geometry_status": "candidate",
+        "sources": [
+          "timing-front-joint-review"
+        ],
+        "dimension_claims": [],
+        "unresolved": [
+          "Inherited estimated registration and section; no pressure or factory material specification."
+        ],
+        "volume_mm3": 84.12409215565971,
+        "solid_count": 1,
+        "triangle_count": 12,
+        "model_bounds_mm": [
+          4.000000000000057,
+          42.55382570949001,
+          0.5000000000031335
+        ]
+      },
+      "copy_assets": {
+        "step": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-2.step",
+          "to": "cad/engine/generated/timing-cover-terminal-sealant-2.step",
+          "sha256": "8cd90baf71adb0c20a07c38f42a036240954b1447761d6cc59410d284497bbd0"
+        },
+        "glb": {
+          "from": "cad/engine/generated/timing-front-sealing-stage/timing-cover-terminal-sealant-2.glb",
+          "to": "models/engine/timing-cover-terminal-sealant-2.glb",
+          "sha256": "b16f5c235e1ec87820cd3a21137b14d3950af498dd603d600696e4235f364a35"
+        }
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "timing-cover-main-gasket",
+      "before": null,
+      "after": {
+        "id": "timing-cover-main-gasket",
+        "definition": "timing-cover-main-gasket",
+        "parent": "closures",
+        "name": "Main timing-cover gasket",
+        "function": "Closes a static boundary at the front cover joint.",
+        "position_cad_mm": [
+          403.0,
+          0.0,
+          0.0
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "explode_cad_mm": [
+          180,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "timing-cover-terminal-sealant-1",
+      "before": null,
+      "after": {
+        "id": "timing-cover-terminal-sealant-1",
+        "definition": "timing-cover-terminal-sealant-1",
+        "parent": "closures",
+        "name": "Timing-cover terminal sealant 1",
+        "function": "Closes a static boundary at the front cover joint.",
+        "position_cad_mm": [
+          403.0,
+          0.0,
+          0.0
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "explode_cad_mm": [
+          180,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "timing-cover-terminal-sealant-2",
+      "before": null,
+      "after": {
+        "id": "timing-cover-terminal-sealant-2",
+        "definition": "timing-cover-terminal-sealant-2",
+        "parent": "closures",
+        "name": "Timing-cover terminal sealant 2",
+        "function": "Closes a static boundary at the front cover joint.",
+        "position_cad_mm": [
+          403.0,
+          0.0,
+          0.0
+        ],
+        "rotation_cad_deg": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "explode_cad_mm": [
+          180,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "learning": {
+    "path": "inventory/engine/timing-front-sealing-learning.json",
+    "sha256": "fcaef46e204986759494fb9874cc288da8bf8c9b384f1bdefd743c8b4a8ffe96"
+  },
+  "sources": {
+    "path": "inventory/engine/timing-front-sealing-sources.json",
+    "sha256": "b3884609e50e655be5ac0f5de31cf21781ae71b9fba61de19d9764aa84d1abdc"
+  },
+  "main_screw_source_enrichment": {
+    "id": "timing-cover-mounting-screw",
+    "before": {
+      "id": "timing-cover-mounting-screw",
+      "name": "Timing-cover screw \u00b71986comparison",
+      "function": "Clamps the estimated recessed cover seat to a modeled blind female socket; exact1994 hardware remains unverified.",
+      "system": "closures",
+      "color": "#a3adb3",
+      "glb": "/models/engine/timing-cover-mounting-screw.glb",
+      "step": "/cad/engine/generated/timing-cover-mounting-screw.step",
+      "geometry_status": "candidate",
+      "sources": [],
+      "dimension_claims": [],
+      "unresolved": [
+        "Ford1986callout51comparison5/16-18\u00d77/8in;1994transfer andheadgeometry unverified.",
+        "Estimated coordinatedfront candidate, not factoryspecification/strength/installation.",
+        "OriginalpumpR85/pan20R12guardFAIL retained; root permits only signed/bound exterior deltas, narrowerfunctionalinterfaces intact.",
+        "Rear/uppercontactstudies analysis-only: fullfaceoverhang/rearowner/pressure limitations retained.",
+        "Requiresmain-gasket/terminalsealant and2692seal stage; browser/canonicalintegrationnotperformed."
+      ],
+      "volume_mm3": 1802.4835927556037,
+      "solid_count": 1,
+      "triangle_count": 16488,
+      "model_bounds_mm": [
+        17.5,
+        17.5,
+        27.52500010000036
+      ]
+    },
+    "append_sources": [
+      "timing-main-screw-1986-comparison"
+    ]
+  },
+  "requirements": [
+    "Compose only with bound coordinated front proposal.",
+    "Reject duplicate IDs, stale assets, stale before objects and stale source hashes.",
+    "No geometry repair; preserve existing pan gasket and2692 physical definitions."
+  ],
+  "limits": [
+    "Candidate geometry only; inherited rear/upper contact gaps unchanged.",
+    "No factory material, torque, strength, pressure or installation claim.",
+    "Browser integration NOT RUN."
+  ]
+}
