@@ -1,0 +1,109 @@
+{
+  "scope": "Online evidence and proposed topology contract only; no CAD/shared edits",
+  "date": "2026-10-01",
+  "baseline": "dbe1e3c435c137fe2d30f6420db28476127c0f55",
+  "issue": "engine #32; integration owner root",
+  "new_primary_observation": {
+    "url": "https://www.ronyu-china.com/templets/default/pdf/oil-pump-catalogue.pdf",
+    "host": "RONYU manufacturer/supplier website; PDF pages branded LIZHONG",
+    "pdf_sha256": "37c83f4d149b5b9811017c7881c23900c080b73e8a71b0102f10c46da3da8574",
+    "bytes": 6641767,
+    "pdf_page_1based": 21,
+    "printed_page": "033",
+    "row": "RY-FO132",
+    "evidence_class": "identified replacement catalog; visual topology, not metric or exact Ford casting",
+    "observations": [
+      "C5AZ6600A and M74 identity bridge",
+      "Separate three- and four-aperture gasket silhouettes",
+      "Neck flange and separate side flange visible"
+    ],
+    "unresolved": [
+      "unlabeled aperture functions",
+      "pattern-to-face assignment requires corroboration",
+      "dimensions, thickness, bolt centers, block passage and face pose"
+    ]
+  },
+  "new_contract_proposal": {
+    "status": "proposed topology study, not installable geometry",
+    "faces": [
+      "mount/discharge face M",
+      "pickup face P"
+    ],
+    "aperture_correspondence": "retain two distinct pattern candidates; no blind one-to-one function assignment",
+    "geometry_improvement": "replace generic feet/ring and inserted-tube assumptions with separate flange templates and independent gasket/contact tests",
+    "scale": "unknown; no pixel-to-mm calibration authorized",
+    "negative_controls": [
+      "swap interior apertures",
+      "mirror flange",
+      "single-hole substitute",
+      "blocked discharge",
+      "unsupported gasket"
+    ]
+  },
+  "search_results": [
+    {
+      "url": "https://www.melling.com/wp-content/uploads/2018/02/ag-marine-catalog.pdf",
+      "class": "manufacturer indexed catalog",
+      "result": "M74 versus M74HV industrial application; old URL not fully retrievable; already known, no new metric authority"
+    },
+    {
+      "url": "https://www.drivparts.com/content/dam/marketing/North-America/catalogs/fel-pro/pdf/fel-pro-1909-to-1990.pdf",
+      "class": "manufacturer indexed catalog",
+      "result": "70374 to-block; full fetch 403; prior lead retained"
+    },
+    {
+      "url": "https://specsearch.melling.com/default.aspx",
+      "class": "manufacturer portal",
+      "result": "portal text accessible; no M74 drawing retrieved"
+    },
+    {
+      "url": "https://melling.mypartfinder.com",
+      "class": "manufacturer portal",
+      "result": "web fetch failed"
+    },
+    {
+      "url": "https://www.jegs.com/i/Melling/689/M74/10002/-1",
+      "class": "retailer lead only",
+      "result": "identified gallery links found; image fetch cache misses; no pixels reviewed; height/unit and inlet-field ambiguities excluded from dimensional contract"
+    },
+    {
+      "url": "https://www.ford-trucks.com/forums/1226095-how-to-change-oil-pan-gasket-pump-pickup-with-motor-still-in-truck-300-straight-six.html",
+      "class": "firsthand rebuild lead",
+      "result": "403; no photo review"
+    },
+    {
+      "url": "https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/gaskets/ga-20-17.pdf",
+      "class": "manufacturer numerical index",
+      "result": "B25676 Ford Truck 39/40 only; no new drawing"
+    }
+  ],
+  "validation": {
+    "source_pixels": "PASS scoped to RY-FO132 row",
+    "identity": "PASS replacement bridge; not exact casting",
+    "dimensions": "UNKNOWN",
+    "CAD_export": "N/A research only",
+    "installed_contact_flow_motion": "NOT RUN",
+    "browser_integration": "NOT RUN",
+    "semantic_backlinker": "DEFERRED root owns shared run",
+    "originals_committed": false,
+    "KB_links_and_no_H1": "PASS"
+  },
+  "files": [
+    {
+      "path": "kb/notes/online-oilpump-aperture-identity.md",
+      "sha256": "bc88e97426369616e34dd77a0cb131745324e141dbe0e402bca39c1d115979bb"
+    },
+    {
+      "path": "kb/notes/online-oilpump-two-flange-patterns.md",
+      "sha256": "d0a1eb353aebad11c7ab0a03b7bd3bde2ef7ba001d0cd41df185122fe37458db"
+    },
+    {
+      "path": "kb/sources/online-oilpump-ronyu-identified-flanges.md",
+      "sha256": "85079650e4579224668127c4d901fcf1a80e3a904a368b4c371915b5fa54e87a"
+    }
+  ],
+  "handoff": {
+    "path": "docs/components/online-oilpump-research.md",
+    "sha256": "ab620630507c271fcf508cf8cfb58af36890f4d661a342d623de2980b1d55229"
+  }
+}
