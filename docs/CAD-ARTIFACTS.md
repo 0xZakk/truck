@@ -241,3 +241,5 @@ Publication verified after PR111 merged (`1ba91c4ba3cafddb770270527908c6df28fc0e
 ## Coordinated accessory v4 — publication pending
 
 `docs/accessory-stage-v4-checkpoint-draft.json` binds46 authored artifacts and55 source/report files. Archive `truck-accessory-stage-v4-20261001.tar.gz`:17,986,617bytes; SHA256 `9671be99527ad49387a09877b824f858277e551deae81e2659a0adc6ebadb943`. Restore published accessory-layout and its predecessor chain first. Follow `docs/components/accessory-stage-v4-checkpoint-handoff.md`; this is a noninstalled candidate, with retained static/motion/service/source limitations. Original source images and manuals are excluded. Publication remains pending until a later verified note.
+
+Publication verified after PR112 merged (`95f987449203c9ebaa88266149829324d29125c8`): [coordinated accessory v4](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-accessory-v4), release ID401260946. Server digest/size match the values above. This supersedes publication-pending fields in frozen snapshots.
