@@ -1,3 +1,4 @@
+import {engineLearningSupplements,supplementEngineLearning,engineSourceUrl} from '../viewer/engine-learning-supplements.js';
 import {engineLearningModules,resolveEngineLearning} from '../viewer/engine-learning-modules.js';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -55,12 +56,25 @@ const results=nav.search('cylinder 4 lifter');
 assert.ok(results.some(n=>n.id==='c4-intake-lifter-body'));
 assert.ok(results.every(n=>nav.ancestors(n.id).some(a=>a.id==='valvetrain-cylinder-4')));
 assert.equal(nav.search('timing cover')[0].id,'timing-cover','Exact part names outrank broad ancestor matches');
-const learning=resolveEngineLearning(manifest,nav.nodes.keys(),...await Promise.all(engineLearningModules.map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+let learning=resolveEngineLearning(manifest,nav.nodes.keys(),...await Promise.all(engineLearningModules.map(async name=>JSON.parse(await readFile(new URL(`../inventory/engine/${name}-learning.json`,import.meta.url))))));
+const mechanicalLearning=structuredClone(learning);
+const supplements=await Promise.all(engineLearningSupplements.map(async spec=>Object.fromEntries(await Promise.all(['lessons','sources'].map(async key=>[key,JSON.parse(await readFile(new URL(`../inventory/engine/${spec[key]}`,import.meta.url)))])))));
+const supplemented=supplementEngineLearning(learning,manifest.sources,nav.nodes.keys(),supplements);
+learning=supplemented.learning;
+for(const id of Object.keys(supplements[0].lessons)) {
+  const old=mechanicalLearning[id];if(!old)continue;
+  assert.deepEqual(learning[id].steps.slice(0,old.steps.length),old.steps,'Electrical additions preserve mechanical steps');
+  assert.ok(learning[id].limits.startsWith(old.limits),'Mechanical uncertainty remains visible');
+}
+assert.equal(JSON.stringify(manifest),original,'Learning supplements must not mutate the geometry manifest');
+assert.equal(engineSourceUrl(supplements[0].sources['engine-control-evtm-76']),'/manuals/evtm/1994-Bronco-F-Series-EVTM.pdf#page=76');
+assert.throws(()=>supplementEngineLearning({}, {},nav.nodes.keys(),[{sources:{},lessons:{'absent-map-sensor':{sources:[]}}}]),/target is absent/);
+assert.throws(()=>supplementEngineLearning({}, {collision:{title:'original'}},nav.nodes.keys(),[{sources:{collision:{title:'changed'}},lessons:{}}]),/Conflicting learning source/);
 for(const [id,entry] of Object.entries(learning)){
   assert.ok(nav.nodes.has(id));
   for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.part)assert.ok(nav.nodes.has(step.part),step.part);
-  for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.source)assert.ok(manifest.sources[step.source],step.source);
-  for(const source of entry.sources)assert.ok(manifest.sources[source],source);
+  for(const step of [...(entry.steps||[]),...(entry.troubleshooting||[])])if(step.source)assert.ok(supplemented.sources[step.source],step.source);
+  for(const source of entry.sources)assert.ok(supplemented.sources[source],source);
 }
 const pumpEvidence=JSON.parse(await readFile(new URL('../inventory/engine/oil-pump-evidence.json',import.meta.url)));
 const comparison=pumpEvidence.comparison_dimensions;

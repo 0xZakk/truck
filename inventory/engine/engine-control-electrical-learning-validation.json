@@ -1,0 +1,46 @@
+{
+  "status": "PASS isolated learning content and reference guards",
+  "lesson_count": 11,
+  "part_links_checked_across_two_manifests": 40,
+  "negative_controls": {
+    "odd_injector_sent_to_even_driver": {
+      "rejected": true,
+      "reason": "Electrical contract mismatch fuel-injector-1"
+    },
+    "sensor_return_replaced_by_chassis_ground": {
+      "rejected": true,
+      "reason": "Electrical contract mismatch throttle-sensor"
+    },
+    "oxygen_ground_narrative_replaced_by_sensor_return": {
+      "rejected": true,
+      "reason": "Wrong oxygen/heater ground explanation"
+    },
+    "phantom_map_part_link": {
+      "rejected": true,
+      "reason": "Broken part link map-sensor-nonexistent"
+    },
+    "wrong_narrative_injector_group": {
+      "rejected": true,
+      "reason": "Wrong narrative injector group"
+    }
+  },
+  "bindings": {
+    "inventory/engine/engine-control-electrical-learning-candidate.json": "1fc9606e7148fbfd4c018202cd489607dce3d87af133a5084f67510d95429207",
+    "inventory/engine/engine-control-electrical-learning-sources.json": "76e20aca77ecc129dd6765759d21b7ad1e7744c208771011666b8a46aadcae08",
+    "reference/engine/engine-control-electrical-map.json": "90f2bb7c261b47299f0be495483a476162a8038f721429b89e22389b2bec0481",
+    "inventory/engine/engine-control-electrical-map-root-review.json": "2eaf8c2f8e9ac231a7f2c4269fa913fc0378c070ce5f1533dc7d72b92883c2ae",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "scripts/check-engine-control-electrical-learning.py": "af69356a0b363d4f0325fc79e30e856701f24bb481a2102721815e3dffd9df02"
+  },
+  "missing_physical_targets": [
+    "MAP C1011",
+    "IAT C164",
+    "HO2S C1025"
+  ],
+  "limits": [
+    "Candidate not loaded; no replacement of existing lessons yet",
+    "Private purchased-page URLs require authorized local PDF; public availability NOT RUN",
+    "No browser, live electrical diagnostic, installed harness or calibration validation"
+  ]
+}

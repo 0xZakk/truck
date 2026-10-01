@@ -1,6 +1,6 @@
 # Current engine integration — 2026-10-01
 
-Active branch: `engine/timing-drive-fit`, baseline merged [PR105](https://github.com/0xZakk/truck/pull/105), `3dcbd364ac24396e671d5d16b930571713b7be0a`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
+Active branch: `engine/timing-drive-fit`, baseline merged [PR107](https://github.com/0xZakk/truck/pull/107), `6b1608257e8c2eaa12512ac0c256d882854f3996`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
 
 ## Installed baseline
 
@@ -45,7 +45,13 @@ Root v2 sealing delta checked62 fresh pairs: seal/hub affected static neighbors 
 
 V3 now incorporates the28 ignition definition corrections with unchanged transforms. Root replay passes28 world mesh/STEP checks (max0.006735mm), four corruption controls and all navigation/learning checks. Its365 clear affected-neighbor comparisons supersede56 ignition pairs, leaving26 known static pairs. See `corrected-stage-v3-remaining-conflicts.json`. Canonical remains unchanged.
 
-Three workers currently handle source-supported oil-pump topology, compressor/cover common contour, and water-pump inlet orientation. Root owns combined manifest/runtime, visual review, archival preservation and CLI tracking. Rear pump/cover contact estimates must preserve axes and complete attachment lands; forward inlet interference remains separate. Active repairs cannot overwrite frozen audit inputs.
+Three workers currently handle engine-control learning, a constrained accessory layout, and water-pump heater-route source reconciliation. Root owns shared assembly/runtime, evidence review, preservation and CLI tracking. No source uncertainty may be hidden by moving neighboring parts.
+
+- Closure coverage: PR107 preserves MPS126/MPS59A isolated cup candidates and an MPE107R replacement-kit comparison. Five MPS126, one MPS59A and two MPP554 are missing from installed coverage; existing MPC147 is counted once. Cup walls are estimated; plug sites/host interfaces remain unknown. This is not a complete OEM BOM.
+- Oil pump: the source-supported raised-neck/flanged-pickup architecture contradicts the current installed mounting-foot/tube-insertion assumptions. The new topology study deliberately omits unknown discharge and mount details and is noninstallable. Rod-fastener architecture remains measurement-dependent; see `rod-fastener-architecture-contract.md`.
+- Electrical map: root independently inspected EVTM pages74–78/81/82/298 and accepted14 connector interfaces/33 contact mappings as bounded research. Supply361, sensor return359, oxygen ground89 and heater ground57 remain distinct. The manual's conflicting S122/S136 supply reference is preserved explicitly. See `engine-control-electrical-map-root-review.json`.
+- Water pump: corrected heater root/contact/wall and all four pump-tool envelopes pass locally. The frozen source-estimated tube intersects the head, rail, exhaust, lifting eye and stud13. Side-photo axial calibration is uncertain; source reconciliation precedes another route. See `waterpump-heater-source-delivery.json`. Earlier inlet-angle/offset sensitivities and main3 tool failure remain open.
+- Accessories: both source gasket images corroborate the broad cover contour, so narrowing it to clear the compressor was rejected. A new coupled center-layout study has47 clear scoped STEP comparisons, but replacement carriers are excluded obligations and belt effective-radius/tensioner assumptions remain inferred. No layout has been installed.
 
 Root reviewed actual composed cam, front-joint, gasket/terminal and pickup renders. Scoped review records are `cam-composed-drive-root-review.json` and `composed-stage-root-visual-review.json`. Appearance does not waive collisions, unknown production contours or browser checks.
 
@@ -56,3 +62,10 @@ Installed checkpoint: [neck-core](https://github.com/0xZakk/truck/releases/tag/c
 Latest merged PR104 is `8c2d2d9a1400acf784e04581a61e6a6ede38d3ba`. Its cam/cover archive is published: 62 files / 22,441,296 bytes; SHA `f67121592b2de92346eecb1d750cd49bc2bbfc3cb35bbc14a95dfd8c2b075b3f`. PR105 merged after both CI checks passed (16 seconds each). Its [composed-engine archive](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-composed-engine) is published; server digest/size verified: 181 files / 60,749,763 bytes, SHA `11596222af342b6bdfc461bdbe9b52f39a358a30966879eeac6e30fa208b33d0`. Supplemental guard render is a separate verified release asset. Its exact file allowlist and hashes are in `docs/cad-composed-engine-checkpoint.json`.
 
 Project-column writes lack Projects token scope. `inventory/engine/project-status-pending.json` holds desired changes, not observed statuses. CLI issue/PR/release updates work. No new component is Done. Do not imply autonomous execution continues after the goal/session actually stops.
+
+Latest merged checkpoint: PR106 head `68205ab3b258c0fdd74719f79165d1c4a0d8523c`, squash `e6dc8fcd68e28ff201ee2cd9b69aee0bb8a588eb`. CI19s/16sPASS. Ignition archive64files/17,370,033bytes, SHA `25bae3deb1d29d8395c9f17b2cf035f959b0c6b7b51d166de32766fb7919d920`, published and verified. V3 remains a private candidate, not loaded in atlas; canonical741/1349unchanged. CLI issues32/47/51/73/76 updated; Projects scope rechecked2026-10-01 and still absent.
+
+
+Latest preservation checkpoint: PR107 merged at `6b1608257e8c2eaa12512ac0c256d882854f3996` after both CI checks passed. The block-closures/oil-pump topology archive is published and server-verified:13files/361,986bytes, SHA `9def0caead5bf2cb64711df05cbfccf47ac909fe78a8cae8dc998c7d9eddb96a`. It preserves candidate assets, not new installed geometry.
+
+Electrical viewer content now adds11 existing component lessons without replacing mechanical content or changing the canonical manifest. Page-specific manual links and navigation pass automated checks. Browser verification remains NOT RUN; see `docs/components/engine-control-electrical-integration.md`. MAP/IAT/O2 physical models remain missing.

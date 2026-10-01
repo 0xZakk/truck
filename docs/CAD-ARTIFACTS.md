@@ -214,6 +214,8 @@ Download `truck-cam-cover-20261001.tar.gz` from the private repository release, 
 
 `docs/cad-ignition-connections-checkpoint.json` binds64 files /17,370,033 bytes in `truck-ignition-connections-20261001.tar.gz`, SHA-256 `25bae3deb1d29d8395c9f17b2cf035f959b0c6b7b51d166de32766fb7919d920`. It requires the composed-engine predecessor. Contains28 STEP/GLB pairs, the actual ignition mesh review and seven v2 gasket intersection witnesses. Candidate-only:26 known v3 static conflicts and other gates remain. [Private release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-ignition-connections) published after PR106 merged; server digest/size verified.
 
-## Block closures and oil-pump topology (publication pending)
+## Block closures and oil-pump topology (published)
 
 `docs/cad-block-closures-checkpoint.json` binds13 files /361,986bytes in `truck-block-closures-20261001.tar.gz`, SHA-256 `9def0caead5bf2cb64711df05cbfccf47ac909fe78a8cae8dc998c7d9eddb96a`. It preserves two catalog-envelope cups and three separate illustrative pump topology assets with project-authored review images. Restore the installed neck-core checkpoint for inherited pump inputs; no later timing studies are needed for these isolated assets. Source catalogs/manual access remains separate. No installed acceptance; no reference originals or owner photographs.
+
+Published after [PR107](https://github.com/0xZakk/truck/pull/107) merged at `6b1608257e8c2eaa12512ac0c256d882854f3996`; server digest and size verified. Download from [the private release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-block-closures).
