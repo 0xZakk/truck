@@ -1,0 +1,382 @@
+{
+  "status": "PASS continuous declared hub/seal geometry and conservative axial sensitivity; handedness compatibility UNKNOWN",
+  "inputs": {
+    "scripts/check-front-seal-2692-motion-study.py": "e0afe4e6273321c86686d2d26238c81d78c6fa45b27107072790f20c57498f6a",
+    "cad/engine/front_seal_2692_candidate.py": "52826560d6bd072fbd69fe04d107d29752e1c11723187a3c3b0311bac19e5505",
+    "cad/engine/front_crank_seal_envelope_candidate.py": "10fed0442011c0ab34db09fd0d3c9e56e9e8b068c5b221c9f7aceeab1a3cf4d3",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "viewer/atlas.js": "801af01380aff5478e3e0672168b9877b15066a71f66f6746ade019b94480315",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/front-seal-2692-delivery-validation.json": "59daed7dd2059496bfd3c54c3eb706f288dd4a61d597ed13b77daa8fbc1d3e73",
+    "reference/engine/front-seal-2692-motion-source-review.json": "ca245def161d9e500465406fd334c6b40279df0d79c0f772283ce6432889fb32",
+    "docs/components/front-seal-2692-motion-study.md": "638cdbbc19bd8291be5aa06b7649ad1d63c79021b2fcdf433ec12159e6b6cbe7",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.step": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.step": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.step": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.step": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Specifications/Engine%20Rebuilding%20Specifications/index.html": "727cdfb04dde6c1ea59416151ff21d98d6fc82dd2fd48e74ca41ed5918a3cbbe",
+    "reference/engine/ford-csg649.pdf": "f7fb9d6aa8c837122368e1b5c6642cc5cd7b8a6bc20fa24f1924cb9adbbacddd"
+  },
+  "continuous_proofs": {
+    "actual_track_annulus": {
+      "domain_x_mm": [
+        419,
+        435.5
+      ],
+      "inner_radius_mm": 21.05,
+      "outer_radius_mm": 23.8125,
+      "ideal_volume_mm3": 6424.207719845335,
+      "missing_mm3": 0.0,
+      "excess_mm3": 0.0
+    },
+    "remaining_hub_axial_separation": {
+      "remaining_hub_min_x": 435.5,
+      "stationary_max_x": 433.4112,
+      "offset_range_mm": [
+        -0.2032,
+        0.2032
+      ],
+      "minimum_axial_gap_mm": 1.8856000000000108,
+      "reason": "Rotation about X preserves every X coordinate; translation extrema bound the entire interval."
+    },
+    "cover_radial_clearance": {
+      "cover_inside_R24_mm3": 0.0,
+      "axial_domain_mm": [
+        418.7968,
+        435.7032
+      ],
+      "minimum_clearance_mm": 0.1875
+    },
+    "lip_track_support": {
+      "lip_x_mm": [
+        427.9,
+        428.2
+      ],
+      "relative_track_required_x_mm": [
+        427.6968,
+        428.40319999999997
+      ],
+      "probe_mm3": 0.9509939198845814,
+      "missing_mm3": 0.0,
+      "rear_margin_mm": 8.696799999999996,
+      "front_margin_mm": 7.09680000000003,
+      "source_width_rear_margin_mm": 0.7968000000000188,
+      "source_width_front_margin_mm": 1.8856000000000108
+    },
+    "stationary_seal_invariant_track_relation": {
+      "common_track_interval_mm": [
+        419.2032,
+        435.2968
+      ],
+      "parts": {
+        "seal-case-installed": {
+          "actual_axial_bounds_mm": [
+            420.0,
+            433.4112
+          ],
+          "rear_margin_mm": 0.7968000000000188,
+          "front_margin_mm": 1.8856000000000108
+        },
+        "seal-elastomer": {
+          "actual_axial_bounds_mm": [
+            426.2,
+            429.4000000000002
+          ],
+          "rear_margin_mm": 6.9968000000000075,
+          "front_margin_mm": 5.896799999999814
+        },
+        "seal-garter-spring": {
+          "actual_axial_bounds_mm": [
+            426.02999989999995,
+            427.17000010000004
+          ],
+          "rear_margin_mm": 6.826799899999969,
+          "front_margin_mm": 8.12679989999998
+        }
+      },
+      "proof": "Actual annular hub equality and full stationary-part containment make relative radial contact/clearance independent of angle and every offset in the interval."
+    },
+    "seal-case-installed": {
+      "intersection_with_full_rotational_axial_envelope_mm3": 0.0
+    },
+    "spring-conservative-envelope": {
+      "intersection_with_full_rotational_axial_envelope_mm3": 0.0
+    }
+  },
+  "sample_controls": [
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 0,
+      "stationary_part": "cover",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.1875
+    },
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 0,
+      "stationary_part": "seal-case-installed",
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.7874999999999948
+    },
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 0,
+      "stationary_part": "seal-elastomer",
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.202033256836064e-15
+    },
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 137,
+      "stationary_part": "cover",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.1875
+    },
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 137,
+      "stationary_part": "seal-case-installed",
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.787499999999998
+    },
+    {
+      "offset_mm": -0.2032,
+      "angle_deg": 137,
+      "stationary_part": "seal-elastomer",
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.2058997109416368e-15
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 0,
+      "stationary_part": "cover",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.18749999999999858
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 0,
+      "stationary_part": "seal-case-installed",
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.7874999999999948
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 0,
+      "stationary_part": "seal-elastomer",
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.2922721842775756e-15
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 223,
+      "stationary_part": "cover",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.18749999999999628
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 223,
+      "stationary_part": "seal-case-installed",
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.787499999999994
+    },
+    {
+      "offset_mm": 0.2032,
+      "angle_deg": 223,
+      "stationary_part": "seal-elastomer",
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0
+    }
+  ],
+  "track_material_witnesses": [
+    {
+      "x": 419.01,
+      "angle_deg": 0,
+      "inside": true
+    },
+    {
+      "x": 419.01,
+      "angle_deg": 31,
+      "inside": true
+    },
+    {
+      "x": 419.01,
+      "angle_deg": 79,
+      "inside": true
+    },
+    {
+      "x": 419.01,
+      "angle_deg": 141,
+      "inside": true
+    },
+    {
+      "x": 419.01,
+      "angle_deg": 217,
+      "inside": true
+    },
+    {
+      "x": 419.01,
+      "angle_deg": 293,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 0,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 31,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 79,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 141,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 217,
+      "inside": true
+    },
+    {
+      "x": 420,
+      "angle_deg": 293,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 0,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 31,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 79,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 141,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 217,
+      "inside": true
+    },
+    {
+      "x": 427.9,
+      "angle_deg": 293,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 0,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 31,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 79,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 141,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 217,
+      "inside": true
+    },
+    {
+      "x": 428.2,
+      "angle_deg": 293,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 0,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 31,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 79,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 141,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 217,
+      "inside": true
+    },
+    {
+      "x": 435.49,
+      "angle_deg": 293,
+      "inside": true
+    }
+  ],
+  "negative_controls": {
+    "notched_track_missing_probe_mm3": 0.012661325081939486,
+    "rearward10mm_forward_track_margin_mm": -2.6999999999999886
+  },
+  "viewer_direction": {
+    "front_observer": "+X looking toward -X; Z up; Y right",
+    "positive1deg_top_marker_cad": [
+      0,
+      -0.01745240643728351,
+      0.9998476951563913
+    ],
+    "screen_direction": "counterclockwise",
+    "basis_determinant": 1,
+    "source_compatibility": "UNKNOWN exact-year crank direction and2692 spiral viewing convention"
+  },
+  "endplay_interpretation": {
+    "source_total_range_mm": [
+      0.1016,
+      0.2032
+    ],
+    "checked_sensitivity_offset_mm": [
+      -0.2032,
+      0.2032
+    ],
+    "centered_interpretation_offset_mm": [
+      -0.1016,
+      0.1016
+    ],
+    "nominal_registration": "estimated; neither thrust stop nor midpoint sourced",
+    "does_not_claim_total_endplay_mm": 0.4064
+  },
+  "limits": [
+    "Only candidate hub moved mathematically; no exported geometry, canonical or timing-gear pose changed.",
+    "A real crank shift carries rigid crank-group parts and crank gear; coupled helical engagement, thrust stack, clutch/rod/rear-seal/belt effects remain unchecked.",
+    "Fixed seal support reused from frozen delivery; axial range is a sensitivity about estimated registration.",
+    "No source-level rotation handedness acceptance or hydrodynamic pumping claim."
+  ]
+}

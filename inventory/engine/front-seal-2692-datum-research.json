@@ -1,0 +1,227 @@
+{
+  "status": "PROPOSED DATUM CONTRACT; no new seal or neighbor CAD",
+  "inputs": {
+    "scripts/research-front-seal-2692-datums.py": "07de7cfda98b242dcf6d4b6c393fbce4e359b9fa59a73667c926d53d1b751921",
+    "cad/engine/front_crank_seal_envelope_candidate.py": "10fed0442011c0ab34db09fd0d3c9e56e9e8b068c5b221c9f7aceeab1a3cf4d3",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "reference/engine/front-crank-seal-envelope-review.json": "e5b4f015648df6535c8a08088fcaf34c567ef03b884317fd95a044c8bfa7d156",
+    "cad/engine/damper.py": "c1f64869d1f09e6f04fa5a70f8d79308c25b5d1fdf80bdffa283dafdb7dc1db5",
+    "cad/engine/damper_attachment.py": "ca8106d3220e30c03f6237f1095548b94f07f4ee928c72cdfed0969eef7e275d",
+    "cad/engine/generated/damper-hub.step": "1460c506cf60a4836b36d3809387dca0c8abc5cf39b750d7801b02dbbf277edc",
+    "cad/engine/generated/damper-key.step": "e60da6a9a55c001d5f7c149f590e6d0ad6067fc94a8eb47f9215796562035b96",
+    "cad/engine/generated/damper-bolt.step": "af84ce32147268cdfe6f704e0790f2c821d2726674a51f89dce3464e32902e63",
+    "cad/engine/generated/damper-washer.step": "a319196671020591b0ca060c14288f623656d19278873530940e7d5ff08d471a",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+  },
+  "world_bounds_mm": {
+    "damper-hub": [
+      [
+        419.0,
+        -55.0,
+        -55.0
+      ],
+      [
+        490.12,
+        55.0,
+        55.0
+      ]
+    ],
+    "damper-key": [
+      [
+        445.0,
+        -3.0,
+        19.0
+      ],
+      [
+        485.0,
+        3.0,
+        23.0
+      ]
+    ],
+    "damper-bolt": [
+      [
+        458.32,
+        -13.000000000002597,
+        -11.2583302491905
+      ],
+      [
+        501.32,
+        13.0,
+        11.258330249198002
+      ]
+    ],
+    "damper-washer": [
+      [
+        490.12,
+        -28.0,
+        -28.0
+      ],
+      [
+        493.32,
+        28.0,
+        28.0
+      ]
+    ],
+    "crankshaft": [
+      [
+        -398.0,
+        -80.77412005968,
+        -69.0
+      ],
+      [
+        490.0,
+        80.774120059688,
+        87.54599999999999
+      ]
+    ],
+    "cover": [
+      [
+        364.99999999999903,
+        -149.0,
+        -59.4
+      ],
+      [
+        418.0,
+        262.6164107083817,
+        209.1393618743347
+      ]
+    ],
+    "crank-gear": [
+      [
+        378.25937489999995,
+        -43.179983679525165,
+        -43.17997748993559
+      ],
+      [
+        392.2593751,
+        43.1799714497955,
+        43.17997797970914
+      ]
+    ]
+  },
+  "alternatives": [
+    {
+      "name": "cover-plane",
+      "selected": false,
+      "overall_interval_mm": [
+        401.5888,
+        415
+      ],
+      "possible_hub_axial_overlap_mm": 0,
+      "full_envelope_within_existing_hub_axial_interval": false
+    },
+    {
+      "name": "old-seal-center",
+      "selected": false,
+      "overall_interval_mm": [
+        407.2944,
+        420.7056
+      ],
+      "possible_hub_axial_overlap_mm": 1.705600000000004,
+      "full_envelope_within_existing_hub_axial_interval": false
+    },
+    {
+      "name": "whole-envelope-on-hub",
+      "selected": false,
+      "overall_interval_mm": [
+        420.0,
+        433.4112
+      ],
+      "possible_hub_axial_overlap_mm": 13.411200000000008,
+      "full_envelope_within_existing_hub_axial_interval": true
+    }
+  ],
+  "mounting_land_bounds": [
+    {
+      "axis_yz_mm": [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      "R9_land_gap_to_R43_boss_mm": 67.39748986754915
+    },
+    {
+      "axis_yz_mm": [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      "R9_land_gap_to_R43_boss_mm": 11.121426444593347
+    },
+    {
+      "axis_yz_mm": [
+        -6.627940493863827,
+        98.99106943536769
+      ],
+      "R9_land_gap_to_R43_boss_mm": 47.21270797205359
+    },
+    {
+      "axis_yz_mm": [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      "R9_land_gap_to_R43_boss_mm": 169.23408632674133
+    },
+    {
+      "axis_yz_mm": [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      "R9_land_gap_to_R43_boss_mm": 221.39938939056123
+    },
+    {
+      "axis_yz_mm": [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      "R9_land_gap_to_R43_boss_mm": 210.6803441309974
+    },
+    {
+      "axis_yz_mm": [
+        217.24482469086223,
+        -7.893399845733515
+      ],
+      "R9_land_gap_to_R43_boss_mm": 165.3881772684248
+    }
+  ],
+  "source_dimensions_mm": {
+    "shaft": 47.625,
+    "free_case_OD": 65.151,
+    "housing_bore": 65.04939999999999,
+    "overall_width": 13.4112,
+    "flange_OD": 80.264
+  },
+  "proposed_cover_mask": {
+    "x_mm": [
+      406,
+      434.4112
+    ],
+    "radial_mm": [
+      24,
+      43
+    ]
+  },
+  "proposed_hub_mask": {
+    "x_mm": [
+      419,
+      435.5
+    ],
+    "radial_mm": [
+      23.8125,
+      27
+    ]
+  },
+  "protected_bounds": {
+    "gear_front_to_cover_mask_mm": 13.7406249,
+    "hub_mask_to_key_cut_rear_mm": 9.449999999999989,
+    "remaining_nominal_hub_track_wall_mm": 2.7624999999999993,
+    "nominal_diametral_case_fit_mm": 0.1016000000000048
+  },
+  "limits": [
+    "Actual hub bore/strength, cover shoulder and lip axial position remain unknown.",
+    "All alternatives are unselected pending root coordination.",
+    "No OEM or vendor CAD drawings downloaded; independent source-envelope study only.",
+    "No geometry/installed support/contact/motion/browser acceptance."
+  ]
+}

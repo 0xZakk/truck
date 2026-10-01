@@ -1,0 +1,262 @@
+{
+  "status": "PASS asset coordinate stage only; not installed",
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/front-seal-2692-delivery-validation.json": "59daed7dd2059496bfd3c54c3eb706f288dd4a61d597ed13b77daa8fbc1d3e73",
+    "inventory/engine/front-seal-2692-candidate-validation.json": "bc4a9d3a45d6bd70dfb896f1cbbfc1cfbf569d3a0003a2b77366e13c36a9f266",
+    "inventory/engine/front-seal-2692-contact-bands-validation.json": "2d4c0a91d20ae1ef059f404e42f5e47e8567b96ef19779fe545c05eebcffee5b",
+    "inventory/engine/front-seal-2692-internal-clearance-validation.json": "13480d8dc60020a92af7faed5cb92f5f91c55756a42d4b521efe8688b989a57e",
+    "inventory/engine/front-seal-2692-render-validation.json": "2d12bcf3018e1d170dc16d379a5065c6a0ba565b876191b81f529f11005a99bc",
+    "inventory/engine/front-seal-2692-exploded-validation.json": "e5487dcce71e9a6670bc167c4d95b690ff840a45d86ece7190791918a7c651e0",
+    "scripts/check-front-seal-2692-candidate.py": "7f0c28cf7a402ace950a7fa4dc07038bc1b3423044e17bda01a8fd42bf4a4dad",
+    "cad/engine/front_seal_2692_candidate.py": "52826560d6bd072fbd69fe04d107d29752e1c11723187a3c3b0311bac19e5505",
+    "cad/engine/front_crank_seal_envelope_candidate.py": "10fed0442011c0ab34db09fd0d3c9e56e9e8b068c5b221c9f7aceeab1a3cf4d3",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "reference/engine/front-crank-seal-envelope-review.json": "e5b4f015648df6535c8a08088fcaf34c567ef03b884317fd95a044c8bfa7d156",
+    "cad/engine/generated/damper-hub.step": "1460c506cf60a4836b36d3809387dca0c8abc5cf39b750d7801b02dbbf277edc",
+    "cad/engine/generated/damper-key.step": "e60da6a9a55c001d5f7c149f590e6d0ad6067fc94a8eb47f9215796562035b96",
+    "cad/engine/generated/damper-bolt.step": "af84ce32147268cdfe6f704e0790f2c821d2726674a51f89dce3464e32902e63",
+    "cad/engine/generated/damper-washer.step": "a319196671020591b0ca060c14288f623656d19278873530940e7d5ff08d471a",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-pan-dry-neck-candidate/pan.step": "b519c1e37e6cacec5ed2326d92264c61ce7dd7f9f1a40eec7a57afeca1eb0caf",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "scripts/check-front-seal-2692-contact-bands.py": "cff31984f63c45e26b38b76b36e32942beb8c9abd6bfba8fe8046defb3a930a6",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.step": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.step": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.step": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.step": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5",
+    "scripts/check-front-seal-2692-internal-clearance.py": "d04023ba2bd581f90312fffdd70e5be9d3270188b2fe23d33ea46dc69522bcc9",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "scripts/render-front-seal-2692-candidate.py": "716d504e2ff9305c01963a95d49c197fd306c5a5cf28d7b6541f349e226cf49b",
+    "cad/engine/generated/front-seal-2692-candidate/cover.glb": "dc9050a9ccdb234829078260ac0a0749d274638dcc8037ad8cd494b6f2cf6754",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.glb": "2d8c39f4986cea73e72dc6de9d2ebc5e3fbb373d50335a8f036e9ed472c1a145",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.glb": "78f0de80a606350a1bfa8d4ca5a57e977dfbe4c3eea859ffab0d45db7b422ff5",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.glb": "d6f685a71264145253eee353e7b47fdd4775c5e4f8abd43c98064a535806b2d8",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.glb": "7f1835557f4dcf2f5eb3d87bc26cbceb28179fdfb20078efbab0a844e9874b43",
+    "scripts/render-front-seal-2692-exploded.py": "b18311a9ee462e38ec31478c7a6fd56e09e8dad0e2eaa870adb3a212ab0cf23d",
+    "docs/components/front-seal-2692-datum-contract.md": "5b8ef0bdcd4b44bfb13a7f314676116c58d910bea481f251c12bd7146e40590e",
+    "inventory/engine/front-seal-2692-spring-construction-diagnostics.json": "4c30fcae15c654d4a7422d365dfcd442d61d9fbb88d300c1db864c7ec6753206",
+    "cad/requirements-engine-lock.txt": "a4886fb6c207af256d744c80a6e6634e2e17ed53de33b5ee15d0a8f8e263ba44",
+    "scripts/check-front-seal-2692-delivery.py": "e5c5bc0f25e92b7297b9cc58a9fdb981d1f165233b8d512c54875f49e30993de",
+    "cad/engine/generated/front-seal-2692-candidate/seal-cover-hub-section.png": "784c5ac63079b77a160536a17eeb907b1e55d6c1bc9eab2995093d6106be60ec",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-free.step": "13c318f1d8f7578cdf7b52e864de5b3e562ab477664f2999e189bcedc37c2b12",
+    "cad/engine/generated/front-seal-2692-candidate/seal-internals-exploded.png": "38444a534b1d725b1f2dfcbb49606cb771ab52eca798049ae46e18668c2b344c"
+  },
+  "checker_sha256": "0ec4be84966e3dfb6803ac149fd6831f6f7634ec96ea89a074a938c86259d106",
+  "parts": [
+    {
+      "id": "timing-cover",
+      "source_world_asset": "cover",
+      "world_frame_translation_mm": [
+        403.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 8.642673243741683e-07,
+      "double_placement_fault_mm": 403.0000000670553,
+      "solid_count": 1,
+      "volume_roundtrip_error_mm3": 1.30385160446167e-08,
+      "face_count": 1010,
+      "triangles": 54960,
+      "step": "cad/engine/generated/front-seal-2692-integration-stage/timing-cover.step",
+      "step_sha256": "44bacaec45719c49c6d599449388e459056a3d22102ba5700244bf1b617dce40",
+      "glb": "cad/engine/generated/front-seal-2692-integration-stage/timing-cover.glb",
+      "glb_sha256": "1cf033d02567aa08c8c25f9f2ca4ecdf0656a5519125f5c245601584500c47b9",
+      "preserved_occurrence": {
+        "id": "timing-cover",
+        "definition": "timing-cover",
+        "parent": "closures",
+        "name": "Timing cover",
+        "function": "Encloses the gear drive and carries the front crankshaft seal. Casting profile, mounting pattern and water-pump interface remain provisional.",
+        "position_cad_mm": [
+          403,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          245,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "damper-hub",
+      "source_world_asset": "damper-hub",
+      "world_frame_translation_mm": [
+        454.56,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 4.494190020132294e-07,
+      "double_placement_fault_mm": 454.55999955058104,
+      "solid_count": 1,
+      "volume_roundtrip_error_mm3": 1.4842953532934189e-09,
+      "face_count": 17,
+      "triangles": 3060,
+      "step": "cad/engine/generated/front-seal-2692-integration-stage/damper-hub.step",
+      "step_sha256": "8866684445ac10388a35dab2f808342cef33416b275b1ac5ff1ca219f18e4f04",
+      "glb": "cad/engine/generated/front-seal-2692-integration-stage/damper-hub.glb",
+      "glb_sha256": "2a51e55744ebe1190092a152ed32c02b8f88db92029b6a78d6f45a45d6a3d73a",
+      "preserved_occurrence": {
+        "id": "damper-hub",
+        "definition": "damper-hub",
+        "parent": "damper-assembly",
+        "name": "Damper hub",
+        "function": "Connects the damper assembly to the crankshaft. The modeled keyway and retaining joint illustrate the attachment; production dimensions remain unverified.",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ],
+        "explode_cad_mm": [
+          180,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "front-seal-case",
+      "source_world_asset": "seal-case-installed",
+      "world_frame_translation_mm": [
+        414.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 8.046627253399663e-07,
+      "double_placement_fault_mm": 414.0000001266598,
+      "solid_count": 1,
+      "volume_roundtrip_error_mm3": 1.0277290130034089e-10,
+      "face_count": 10,
+      "triangles": 2520,
+      "step": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-case.step",
+      "step_sha256": "f6ea6d55867bfca52dad3464f824174006a393070ad6bfb5fc5d6acb85c09bf9",
+      "glb": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-case.glb",
+      "glb_sha256": "e28295b33a13b4e9e145d6c1e4abb3d4ab0e5df321b868430ca5ef5c85c370f6",
+      "proposed_occurrence": {
+        "id": "front-seal-case",
+        "definition": "front-seal-case",
+        "parent": "front-seal-assembly",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "front-seal-elastomer",
+      "source_world_asset": "seal-elastomer",
+      "world_frame_translation_mm": [
+        414.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 1.2665984927551222e-07,
+      "double_placement_fault_mm": 414.0000001266598,
+      "solid_count": 1,
+      "volume_roundtrip_error_mm3": 4.0608938434161246e-10,
+      "face_count": 9,
+      "triangles": 33418,
+      "step": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-elastomer.step",
+      "step_sha256": "e91f4ae49161d07e154a17fe22777088d79dfde78bd1201161bd4148d4d6dcd8",
+      "glb": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-elastomer.glb",
+      "glb_sha256": "030e4a574a3cefe8bbc192c2c0412904ef5457e895020f9c75687fea804947da",
+      "proposed_occurrence": {
+        "id": "front-seal-elastomer",
+        "definition": "front-seal-elastomer",
+        "parent": "front-seal-assembly",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "front-seal-garter-spring",
+      "source_world_asset": "seal-garter-spring",
+      "world_frame_translation_mm": [
+        414.0,
+        0.0,
+        0.0
+      ],
+      "step_world_bounds_error_mm": 0.0,
+      "mesh_world_vertex_error_mm": 1.2665984927551222e-07,
+      "double_placement_fault_mm": 414.0000001266598,
+      "solid_count": 1,
+      "volume_roundtrip_error_mm3": 6.572520305780927e-14,
+      "face_count": 4608,
+      "triangles": 239616,
+      "step": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-garter-spring.step",
+      "step_sha256": "862aa6cf373226d76019c284b29d86e35162d7fb4c0f139fb73ff87ac8f9d001",
+      "glb": "cad/engine/generated/front-seal-2692-integration-stage/front-seal-garter-spring.glb",
+      "glb_sha256": "6269af5a0474a2933ce1b536ed254075b9e28ebc36bd41bf54bf0522d8c51904",
+      "proposed_occurrence": {
+        "id": "front-seal-garter-spring",
+        "definition": "front-seal-garter-spring",
+        "parent": "front-seal-assembly",
+        "position_cad_mm": [
+          0,
+          0,
+          0
+        ],
+        "rotation_cad_deg": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "proposed_seal_assembly": {
+    "id": "front-seal-assembly",
+    "parent": "closures",
+    "position_cad_mm": [
+      414,
+      0,
+      0
+    ],
+    "motion": null
+  },
+  "required_navigation_alias": {
+    "front-seal": "front-seal-assembly"
+  },
+  "canonical_modified": false,
+  "limits": [
+    "No full manifest or geometry promotion.",
+    "Free case is a comparison state, not a fourth seal part.",
+    "Coordinated timing integration and old-link handling remain required.",
+    "Browser NOT RUN."
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "scripts/diagnose-timing-front-v3-material-integration.py": "37ea51c21d5f3aa004c7477a8faf42639ac99e3303cd015ac0d427c901d028af"
+  },
+  "solids": [
+    {
+      "delta": "added",
+      "solid": 0,
+      "valid": true,
+      "bounds_mm": [
+        [
+          299.99999989999776,
+          -149.0000001,
+          -32.000000100034235
+        ],
+        [
+          365.0000001000149,
+          -114.9999999,
+          -14.49999989997765
+        ]
+      ],
+      "conservative_box_volume_mm3": 38675.00078863524,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 1.0263749176467555e-13,
+          "diagnostic_mass_not_accepted_if_unconverged": 5491.442637513589
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "added",
+      "solid": 1,
+      "valid": true,
+      "bounds_mm": [
+        [
+          334.9999999,
+          105.9999999,
+          -32.0000001
+        ],
+        [
+          336.2328768123279,
+          109.0000001,
+          -31.614725927389998
+        ]
+      ],
+      "conservative_box_volume_mm3": 1.4249869919804716,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 9.413375446122766e-14,
+          "diagnostic_mass_not_accepted_if_unconverged": 0.23749765423808572
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "added",
+      "solid": 2,
+      "valid": true,
+      "bounds_mm": [
+        [
+          334.9999999,
+          109.87997562121001,
+          -32.00000010000001
+        ],
+        [
+          343.45975185103487,
+          126.58539602752757,
+          -29.356327477799997
+        ]
+      ],
+      "conservative_box_volume_mm3": 373.61363059582936,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 6.255058836200164e-15,
+          "diagnostic_mass_not_accepted_if_unconverged": 65.56992854061482
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "added",
+      "solid": 3,
+      "valid": true,
+      "bounds_mm": [
+        [
+          357.8510466710581,
+          202.44154585264,
+          -25.324879230259995
+        ],
+        [
+          365.0000001,
+          213.00000010000267,
+          -14.730769130759997
+        ]
+      ],
+      "conservative_box_volume_mm3": 799.6635347107232,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 1.547882499118886e-13,
+          "diagnostic_mass_not_accepted_if_unconverged": 103.22769038757444
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "added",
+      "solid": 4,
+      "valid": true,
+      "bounds_mm": [
+        [
+          299.9999999,
+          108.99999989999827,
+          -32.00000010003402
+        ],
+        [
+          365.0000001000001,
+          200.71015426967173,
+          -15.339652600383248
+        ]
+      ],
+      "conservative_box_volume_mm3": 99314.99797353419,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 6.346998999681251e-16,
+          "diagnostic_mass_not_accepted_if_unconverged": 11225.067693743407
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 0,
+      "valid": true,
+      "bounds_mm": [
+        [
+          299.9999999,
+          -146.4634147341415,
+          -32.000000100034235
+        ],
+        [
+          355.48780497807024,
+          -119.75609746090001,
+          -25.597560875595818
+        ]
+      ],
+      "conservative_box_volume_mm3": 9487.969416985483,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 1.5547072312427608e-14,
+          "diagnostic_mass_not_accepted_if_unconverged": 1469.7251981445415
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 1,
+      "valid": true,
+      "bounds_mm": [
+        [
+          299.9999999,
+          104.9999999,
+          -32.00000010003402
+        ],
+        [
+          314.6647616158747,
+          109.0000001,
+          -30.3079120327774
+        ]
+      ],
+      "conservative_box_volume_mm3": 99.25627819718677,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 2.0653955704849203e-15,
+          "diagnostic_mass_not_accepted_if_unconverged": 40.026108310812546
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 2,
+      "valid": true,
+      "bounds_mm": [
+        [
+          363.9999999999948,
+          -115.5,
+          -32.0
+        ],
+        [
+          365.0,
+          -114.99999999990938,
+          -24.499999999971696
+        ]
+      ],
+      "conservative_box_volume_mm3": 3.7500000007132197,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 2.811092602948761e-14,
+          "diagnostic_mass_not_accepted_if_unconverged": 1.5702662723368142
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 3,
+      "valid": true,
+      "bounds_mm": [
+        [
+          348.6296295296231,
+          160.61481471481,
+          -27.74074084074115
+        ],
+        [
+          355.4878049780463,
+          182.56097570974998,
+          -25.597560875605485
+        ]
+      ],
+      "conservative_box_volume_mm3": 322.5713507306194,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 6.897271318809812e-15,
+          "diagnostic_mass_not_accepted_if_unconverged": 22.009765671505917
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 4,
+      "valid": true,
+      "bounds_mm": [
+        [
+          355.4999999,
+          -139.59934217674927,
+          -25.59375009783098
+        ],
+        [
+          359.00000010002634,
+          -124.4006578232,
+          -24.499999899999995
+        ]
+      ],
+      "conservative_box_volume_mm3": 58.18247738977931,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 4.26903780790968e-14,
+          "diagnostic_mass_not_accepted_if_unconverged": 14.625017148463323
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 5,
+      "valid": true,
+      "bounds_mm": [
+        [
+          357.72300982993,
+          188.40065782321,
+          -24.8990594968947
+        ],
+        [
+          359.0000001000027,
+          192.15343476235398,
+          -24.499999899999995
+        ]
+      ],
+      "conservative_box_volume_mm3": 1.9123971989719832,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 1.265644080252008e-14,
+          "diagnostic_mass_not_accepted_if_unconverged": 0.4342717437979864
+        }
+      ],
+      "strict_converged": true
+    },
+    {
+      "delta": "removed",
+      "solid": 6,
+      "valid": true,
+      "bounds_mm": [
+        [
+          361.3499999,
+          -132.7882809793463,
+          -24.5000001
+        ],
+        [
+          368.5752926279452,
+          -127.85,
+          -9.4999999
+        ]
+      ],
+      "conservative_box_volume_mm3": 535.2078918654194,
+      "measurements": [
+        {
+          "requested": 1e-09,
+          "reported_error": 7.710552060773882e-10,
+          "diagnostic_mass_not_accepted_if_unconverged": 168.4692550295043
+        }
+      ],
+      "strict_converged": true
+    }
+  ],
+  "status": "Diagnostic only; no threshold relaxation or geometric healing"
+}

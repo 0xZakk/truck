@@ -1,0 +1,76 @@
+{
+  "inputs": {
+    "scripts/check-front-seal-2692-internal-clearance.py": "d04023ba2bd581f90312fffdd70e5be9d3270188b2fe23d33ea46dc69522bcc9",
+    "cad/engine/front_seal_2692_candidate.py": "52826560d6bd072fbd69fe04d107d29752e1c11723187a3c3b0311bac19e5505",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/generated/front-seal-2692-candidate/cover.step": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.step": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.step": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.step": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.step": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5"
+  },
+  "pairs": [
+    {
+      "pair": [
+        "cover",
+        "damper-hub"
+      ],
+      "gap_mm": 0.1875,
+      "overlap_mm3": 0.0,
+      "method": "exported solid pair"
+    },
+    {
+      "pair": [
+        "cover",
+        "seal-elastomer"
+      ],
+      "gap_mm": 4.924699999999997,
+      "overlap_mm3": 0.0,
+      "method": "exported solid pair"
+    },
+    {
+      "pair": [
+        "seal-case-installed",
+        "damper-hub"
+      ],
+      "gap_mm": 3.787499999999997,
+      "overlap_mm3": 0.0,
+      "method": "exported solid pair"
+    },
+    {
+      "pair": [
+        "seal-garter-spring",
+        "cover"
+      ],
+      "conservative_gap_mm": 6.028999999999996,
+      "envelope_overlap_mm3": 0.0,
+      "method": "conservative continuous winding envelope against exported neighbor"
+    },
+    {
+      "pair": [
+        "seal-garter-spring",
+        "damper-hub"
+      ],
+      "conservative_gap_mm": 1.2165000000000035,
+      "envelope_overlap_mm3": 0.0,
+      "method": "conservative continuous winding envelope against exported neighbor"
+    },
+    {
+      "pair": [
+        "seal-garter-spring",
+        "seal-case-installed"
+      ],
+      "conservative_gap_mm": 1.429000000000002,
+      "envelope_overlap_mm3": 0.0,
+      "method": "conservative continuous winding envelope against exported neighbor"
+    }
+  ],
+  "spring_bound": {
+    "minor_radius_mm": 0.5710000000000001,
+    "major_arc_sagitta_bound_mm": 6.082029393335021e-06,
+    "basis": "ruled endpoint-disk convex hull plus major-frame sagitta; nominal section radii from bound source code",
+    "continuous": true
+  },
+  "negative_control_displaced_spring_case_overlap_mm3": 14.002579595819686,
+  "status": "PASS all six non-contact internal pairs; four intended contact pairs checked separately"
+}

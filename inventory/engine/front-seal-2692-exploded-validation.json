@@ -1,0 +1,47 @@
+{
+  "inputs": {
+    "cad/engine/generated/front-seal-2692-candidate/cover.glb": "dc9050a9ccdb234829078260ac0a0749d274638dcc8037ad8cd494b6f2cf6754",
+    "cad/engine/generated/front-seal-2692-candidate/damper-hub.glb": "2d8c39f4986cea73e72dc6de9d2ebc5e3fbb373d50335a8f036e9ed472c1a145",
+    "cad/engine/generated/front-seal-2692-candidate/seal-case-installed.glb": "78f0de80a606350a1bfa8d4ca5a57e977dfbe4c3eea859ffab0d45db7b422ff5",
+    "cad/engine/generated/front-seal-2692-candidate/seal-elastomer.glb": "d6f685a71264145253eee353e7b47fdd4775c5e4f8abd43c98064a535806b2d8",
+    "cad/engine/generated/front-seal-2692-candidate/seal-garter-spring.glb": "7f1835557f4dcf2f5eb3d87bc26cbceb28179fdfb20078efbab0a844e9874b43",
+    "scripts/render-front-seal-2692-exploded.py": "b18311a9ee462e38ec31478c7a6fd56e09e8dad0e2eaa870adb3a212ab0cf23d"
+  },
+  "meshes": {
+    "cover": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_signed_volume_mm3": 590204.6994491563,
+      "triangles": 54960
+    },
+    "damper-hub": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_signed_volume_mm3": 110421.30928637894,
+      "triangles": 3060
+    },
+    "seal-case-installed": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_signed_volume_mm3": 5377.922032652183,
+      "triangles": 2520
+    },
+    "seal-elastomer": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_signed_volume_mm3": 1557.2459433046704,
+      "triangles": 33418
+    },
+    "seal-garter-spring": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_signed_volume_mm3": 14.131823108825367,
+      "triangles": 239616
+    }
+  },
+  "render": {
+    "path": "cad/engine/generated/front-seal-2692-candidate/seal-internals-exploded.png",
+    "sha256": "38444a534b1d725b1f2dfcbb49606cb771ab52eca798049ae46e18668c2b344c"
+  },
+  "status": "PASS actual GLB watertightness, winding and positive volume; exploded rendering generated"
+}

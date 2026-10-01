@@ -1,0 +1,22 @@
+{
+  "status": "Actual exported meshes visually reviewed; candidate only",
+  "sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.step": "66917915d9244f49cd96c2965315cba4bbb7007b236d36de67ac7c32fe4635b8",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block.glb": "68899221bcb4ded05a9fe285aecb770bb23c03a805b9e1032c0000da813d0441",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block-glb-review.png": "0e2d170976d757ceca8ce22fd06e99cb1714264fee031bc4d548975bf2c45ab7",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/pair-glb-review.png": "b7500ca76f8a38489e7f7e697de25a809bad279077b0393310f3e59914a48b6a",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/pair-render-input-hashes.json": "043889c23c99e04fd5c36b81c39c43fe73e70c9542f3ba092845c965821381d7",
+    "scripts/render-timing-front-block-expanded-seat-v3.py": "6fc96fc9b1fce93e7b6484d4920b1da2d6d40da1194d9b1fdcc538fd7ac06e86",
+    "scripts/render-timing-front-expanded-seat-v3-pair.py": "1537faa6ed15c0a68953a1579328ff97b33615d2233b7633d072ae6def56fbd6"
+  },
+  "review": [
+    "Two shaded full block views show preserved deck/feet/cam side and front land.",
+    "Matched block/pan/gasket mesh detail shows transition and frontarch; cropping selects face centroids for viewing only, producing open cut boundaries and triangles at crop edges. No section or watertightness claim is based on this visual crop.",
+    "Separate GLB readback confirms one watertight connected component, consistent winding and positive volume."
+  ],
+  "limits": [
+    "Mesh/render is not factory surface evidence.",
+    "Browser not run; security block retained.",
+    "Exact intersections and backing support rely on independently hashed CAD checks, not this visualization."
+  ]
+}

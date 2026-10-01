@@ -1,0 +1,54 @@
+{
+  "status": "coherent estimated expanded seat pair",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-candidate/block.step": "e5a6eb972d5069179468d2f89ff4dbf331b7da9cea98d01ed4c6162cebc06887",
+    "cad/engine/generated/timing-pan-expanded-seat-candidate/pan.step": "2d5731d75b91430ed9ec50d8d728a9a3c2c9389f4c67de738f8dfac9ffbe6700",
+    "cad/engine/generated/timing-pan-expanded-seat-candidate/pan-gasket.step": "e0c651693f7ef68e9be01eb297f7d2337967baa07c1ef6c550a83abb5b213872",
+    "cad/engine/timing_pan_expanded_seat_contract.py": "cb566ccb6b3fff9409f142bab5b0523d751bd466324d6f5b29ac7f6766ab4bac",
+    "cad/engine/timing_front_block_expanded_seat_candidate.py": "b60dee004edb75e537087987bd9f8b31ded1702eba118ef5350744d0dd2a386d",
+    "scripts/check-timing-front-expanded-seat-pair.py": "f6885860203f948b636350eeb700331bba3f2232af2bc0995c1cb512efd7154b",
+    "cad/engine/generated/pan-fastener-thread-candidate/pan-screw.step": "a42b742b74017bb4f0eed164eac711dda3349228635ee0d7c2a278939e11d42d"
+  },
+  "pairs": [
+    {
+      "pair": "block-pan",
+      "overlap_mm3": 143.79991356430975,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-gasket",
+      "overlap_mm3": 549.8773577196541,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "pan-gasket",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-male-10",
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    {
+      "pair": "block-male-20",
+      "overlap_mm3": 157.39360505104105,
+      "distance_mm": 0.0
+    }
+  ],
+  "analytic_upper_backing_missing_mm3": 2.1653660830164227,
+  "analytic_lower_backing_missing_mm3": 0.0,
+  "actual_upper_translation_unbacked_mm3": 1.0865336474609797,
+  "actual_lower_translation_unbacked_mm3": 0.0,
+  "limits": [
+    "10mm block backing is estimated, no strength/factory claim",
+    "Translation checks include sloped side edges; any nonzero requires localized diagnosis, no automatic threshold relaxation",
+    "Whole oil containment and installed/browser acceptance remain open"
+  ],
+  "gates": {
+    "no_overlap": false,
+    "analytic_seat_support": false,
+    "actual_gasket_support": false
+  },
+  "local_status": "FAIL"
+}

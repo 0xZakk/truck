@@ -1,0 +1,30 @@
+{
+  "scope": "Rear arch-to-flat-land contact corridor only; not whole perimeter or fluid containment",
+  "corridor_x_mm": [
+    -378,
+    -374
+  ],
+  "corridor_width_mm": 4,
+  "radius_mm": 53.1,
+  "flat_join_z_mm": -34,
+  "join_y_mm": [
+    -40.78737549781795,
+    40.78737549781795
+  ],
+  "flat_endpoints_y_mm": [
+    -60,
+    60
+  ],
+  "route_area_mm2": 525.7857998365155,
+  "pan_missing_area_mm2": 0,
+  "gasket_missing_area_mm2": 0,
+  "fault_missing_area_mm2": 12.001596538770649,
+  "inherited_full_face_unbacked_area_mm2": 25.535584654528463,
+  "status": "PASS bounded rear contact corridor",
+  "input_sha256": {
+    "scripts/check-timing-pan-rear-seal-route.py": "724314563b3fbcff5126ff11051e2b8494d080527a57c971a6e3d78b0aa81951",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan.step": "d7f495ec95b0cc465880c72ae38f6e873f5ee30cdbebecf4a1613a7cbe6e5b3f",
+    "cad/engine/generated/timing-pan-expanded-seat-v2-candidate/pan-gasket.step": "8e968afca78cf09e81e678307b24d59a78cbe251210983a4eb5f6981619d6936",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202"
+  }
+}

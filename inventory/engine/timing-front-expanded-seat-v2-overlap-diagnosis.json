@@ -1,0 +1,51 @@
+{
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-expanded-seat-v2-candidate/block-gasket-overlap.step": "5d9d34df4427b338d74ded19243f7a93d3e78537c9148f5deacc9692e870f6cb",
+    "scripts/diagnose-timing-front-expanded-seat-v2-overlap.py": "60aafcdac44ffe48a3e89b05188c805d47f04dd31dcd754bdcfd0f7ce7222a8c"
+  },
+  "overlaps": [
+    {
+      "pair": "block-gasket",
+      "solid": 0,
+      "volume_mm3": 14.625017149353372,
+      "bounds_mm": [
+        [
+          355.4999999,
+          -139.59934217674927,
+          -25.59375009783098
+        ],
+        [
+          359.00000010002634,
+          -124.4006578232,
+          -24.499999899999995
+        ]
+      ],
+      "socket_guard_mm3": {
+        "20": 14.625017149353372,
+        "10": 0
+      }
+    },
+    {
+      "pair": "block-gasket",
+      "solid": 1,
+      "volume_mm3": 0.4342717438052865,
+      "bounds_mm": [
+        [
+          357.72300982993,
+          188.40065782321,
+          -24.8990594968947
+        ],
+        [
+          359.0000001000027,
+          192.15343476235398,
+          -24.499999899999995
+        ]
+      ],
+      "socket_guard_mm3": {
+        "20": 0,
+        "10": 0.4342717438052865
+      }
+    }
+  ],
+  "status": "Frozen failed pair diagnosis; no geometry change"
+}

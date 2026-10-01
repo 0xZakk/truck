@@ -1,0 +1,7 @@
+# Front seal component lessons — candidate handoff
+
+Root integration owner; #32 / Engine #1. Baseline70542fad9de467a5c03ad54a6f54def8550956eb, branch engine/timing-interface-integration. Scope: proposed individual lessons for reserved IDs `front-seal-case`, `front-seal-elastomer`, `front-seal-garter-spring`. Existing `front-seal` remains untouched. No geometry, viewer registration or installed acceptance.
+
+`inventory/engine/front-seal-2692-learning-candidate.json` follows the existing part-lesson schema. Its source registry is `front-seal-2692-learning-sources.json`. National type76 construction is correctly separated at PDF244/printed230 from the OEM cross-reference at PDF309/printed295. Replacement free case, installed housing and shaft-surface dimensions are distinguished; modeled internals and axial position remain estimates. Spring loading explanation is mechanical reasoning, not sourced preload. The free-case model is a comparison state, never a fourth installed seal part.
+
+All proposed part/source references were checked against the canonical registry plus the three reserved IDs. Content is not loaded in the viewer. Before registration, verify candidate fit/export gates, update tense/status to match the actual installation, add stable deep-link migration for the old front-seal page, and validate every lesson link and source display. Browser NOT RUN. Source originals are excluded. Model/usage unavailable. Root owns these lesson/source files; seal worker owns CAD contract and geometry.

@@ -1,0 +1,41 @@
+{
+  "reviewer": "root integration agent",
+  "baseline": "a66b33cdbb33c77fb74167bbe814b8e646660e47",
+  "reviewed_reports": {
+    "inventory/engine/front-seal-2692-motion-validation.json": "b012507776641873d4dc704bc37e651f91dad358e87137b89432ca894ba5f16f",
+    "inventory/engine/timing-pan-rear-seal-route-review.json": "10047684d4f08986189a7a4867923a87bc36cb7e4a52d954ae8ef3c9304c27f1",
+    "inventory/engine/timing-pan-rear-seal-render-review.json": "fbc3ed5780040f77d903247131d31571b0be796bce29b9d5303385a0b73b7b22",
+    "inventory/engine/timing-front-expanded-seat-v3-pair.json": "ed6b1947ff8b61cf2061f4afac22f3fd1f4dfd88efc1b41ccc77c12456832dc8",
+    "inventory/engine/timing-front-socket-v3-source-restoration.json": "1579d685249f3e1f2cd087cbe46ed6ff957b6092f36704770b76429a6cd73aae",
+    "inventory/engine/timing-front-v3-socket-walls.json": "fe22eef61e98b1a274bb5801eb4932666e90c5dc14204c8f4b611cf8cc00ff79",
+    "inventory/engine/timing-front-v3-visual-review.json": "3776060beff64a602eb48e017282d40c0d21dc2764ab40afbef1aaf92705d40a",
+    "inventory/engine/front-seal-2692-stage-validation.json": "e3d027fb8a3a003b0d084ff456092ac7acdf66180ad24d10c7c44ae4257621c5",
+    "inventory/engine/timing-front-block-expanded-seat-v3-delivery-validation.json": "154635a0a2ada559cf7c8165eda42698415e28a52ff821076a644df94e5e8370"
+  },
+  "verified_binding_counts": [
+    16,
+    4,
+    8
+  ],
+  "verdict": "Accept bounded research results; no installed acceptance",
+  "findings": [
+    "Actual rear STEP section render confirms continuous outer arch/flat contact at X-376 while preserving unsupported inboard patches at X-367.5. No whole-perimeter or oil-containment inference.",
+    "Read seal motion checker: actual annulus equality, positive material witnesses, stationary-part interval containment, cover radial exclusion and far-hub separation support continuous local rotation/translation coverage. Endpoint samples supplement the proof.",
+    "Endplay sensitivity +/-0.2032mm around estimated nominal is explicitly not a factory0.4064mm total travel. Crank/cam helical coupling, other crank-group neighbors and operating handedness remain unresolved.",
+    "Root inspected actual V3 block and paired pan/gasket meshes. New seat visibly follows the coordinated pan transition; broad block casting remains provisional. Paired contact report preserves zero pan/gasket/screw interference with bounded support checks.",
+    "Five seal/cover/hub assets are localized in existing assembly frames with unchanged reconstructed STEP bounds and less than0.000001mm mesh-vertex difference; no full-engine manifest promotion.",
+    "V3 delivery aggregate remains FAIL because two changed-volume metrics cannot converge at the existing strict criterion. CAD roundtrip difference is zero; mesh, bounded change region, protected interfaces, tested neighbors, retained land, socket void and gasket backing gates pass independently. No thresholds changed. This is sufficient to preserve a bounded candidate, not declare installation accepted."
+  ],
+  "visuals": [
+    "cad/engine/generated/timing-pan-rear-seal-review/rear-contact-review.png",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/block-glb-review.png",
+    "cad/engine/generated/timing-front-block-expanded-seat-v3-candidate/pair-glb-review.png"
+  ],
+  "remaining": [
+    "Explicitly unresolved total-volume metrics in V3 delivery",
+    "Full pan/gasket perimeter and block-side support",
+    "Source rotation convention and coupled crank/cam motion",
+    "Main cover attachment hardware",
+    "Coordinated installation and browser acceptance"
+  ]
+}

@@ -1,0 +1,1210 @@
+{
+  "status": "PASS scoped nominal-installed seal/cover/hub candidate; not production or installation acceptance",
+  "inputs": {
+    "scripts/check-front-seal-2692-candidate.py": "7f0c28cf7a402ace950a7fa4dc07038bc1b3423044e17bda01a8fd42bf4a4dad",
+    "cad/engine/front_seal_2692_candidate.py": "52826560d6bd072fbd69fe04d107d29752e1c11723187a3c3b0311bac19e5505",
+    "cad/engine/front_crank_seal_envelope_candidate.py": "10fed0442011c0ab34db09fd0d3c9e56e9e8b068c5b221c9f7aceeab1a3cf4d3",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "reference/engine/front-crank-seal-envelope-review.json": "e5b4f015648df6535c8a08088fcaf34c567ef03b884317fd95a044c8bfa7d156",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/damper-hub.step": "1460c506cf60a4836b36d3809387dca0c8abc5cf39b750d7801b02dbbf277edc",
+    "cad/engine/generated/damper-key.step": "e60da6a9a55c001d5f7c149f590e6d0ad6067fc94a8eb47f9215796562035b96",
+    "cad/engine/generated/damper-bolt.step": "af84ce32147268cdfe6f704e0790f2c821d2726674a51f89dce3464e32902e63",
+    "cad/engine/generated/damper-washer.step": "a319196671020591b0ca060c14288f623656d19278873530940e7d5ff08d471a",
+    "cad/engine/generated/crankshaft.step": "7c7997f4ba717cbbe5b3cb4d703340560816821df84226e85b04efa8b38db0ac",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "cad/engine/generated/timing-pan-dry-neck-candidate/pan.step": "b519c1e37e6cacec5ed2326d92264c61ce7dd7f9f1a40eec7a57afeca1eb0caf",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82"
+  },
+  "exports": {
+    "cover": {
+      "sha256": "76f2210c143596b4b5c4d4c1361b1cbcc0cd91dde6e1088b6cf3e2b02713c66b",
+      "volume_mm3": 590240.0174584952,
+      "roundtrip_volume_error_mm3": 2.1871994249522686e-05,
+      "bounds_mm": [
+        [
+          364.99999999999903,
+          -149.0,
+          -59.4
+        ],
+        [
+          432.6112,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ]
+    },
+    "damper-hub": {
+      "sha256": "9429c664256516ca182929da94f9f36581a7836702c44579f834dffed2aef29f",
+      "volume_mm3": 110468.2424705269,
+      "roundtrip_volume_error_mm3": 0.0,
+      "bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ]
+    },
+    "seal-case-installed": {
+      "sha256": "1c5616a27963c6405f59688887e46046744fbbf68e41dcd55d8582de504c1e8c",
+      "volume_mm3": 5380.114285345167,
+      "roundtrip_volume_error_mm3": 1.2187229003757238e-10,
+      "bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ]
+    },
+    "seal-case-free": {
+      "sha256": "13c318f1d8f7578cdf7b52e864de5b3e562ab477664f2999e189bcedc37c2b12",
+      "volume_mm3": 5511.138727990685,
+      "roundtrip_volume_error_mm3": 1.000444171950221e-10,
+      "bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ]
+    },
+    "seal-elastomer": {
+      "sha256": "b6b30e9f21dc839bfe971f311cf90b87aec77503aae2e1a292e354f0d6a46ebb",
+      "volume_mm3": 1557.0858845782395,
+      "roundtrip_volume_error_mm3": 1.6761987353675067e-09,
+      "bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ]
+    },
+    "seal-garter-spring": {
+      "sha256": "64e289ad649e69d459b4fad7395b925889a0100ba73f461d2a33bdec8e6bb1a5",
+      "volume_mm3": 14.232976507656387,
+      "roundtrip_volume_error_mm3": 1.0719247711676871e-10,
+      "bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ]
+    }
+  },
+  "interfaces": {
+    "flange-cover": {
+      "probe_mm3": 17.13599443765191,
+      "missing_mm3": 0.0
+    },
+    "flange-case": {
+      "probe_mm3": 17.13599443765191,
+      "missing_mm3": 0.0
+    },
+    "rear-shoulder-cover": {
+      "probe_mm3": 7.613842692584296,
+      "missing_mm3": 0.0
+    },
+    "rear-case": {
+      "probe_mm3": 7.613842692584299,
+      "missing_mm3": 0.0
+    },
+    "seal-case-installed__cover": {
+      "gap_mm": 0.0,
+      "overlap_mm3": 0.0
+    },
+    "seal-elastomer__seal-case-installed": {
+      "gap_mm": 3.3554049278084753e-16,
+      "overlap_mm3": 0.0
+    },
+    "seal-elastomer__damper-hub": {
+      "gap_mm": 1.2471527205568197e-15,
+      "overlap_mm3": 0.0
+    },
+    "seal-garter-spring__seal-elastomer": {
+      "gap_mm": 0.0,
+      "overlap_mm3": 0.0
+    }
+  },
+  "neighbors": [
+    {
+      "candidate": "cover",
+      "neighbor": "damper-key",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          364.99999999999903,
+          -149.0,
+          -59.4
+        ],
+        [
+          432.6112,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          445.0,
+          -3.0,
+          19.0
+        ],
+        [
+          485.0,
+          3.0,
+          23.0
+        ]
+      ]
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "damper-bolt",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          364.99999999999903,
+          -149.0,
+          -59.4
+        ],
+        [
+          432.6112,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          458.32,
+          -13.000000000002597,
+          -11.2583302491905
+        ],
+        [
+          501.32,
+          13.0,
+          11.258330249198002
+        ]
+      ]
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "damper-washer",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          364.99999999999903,
+          -149.0,
+          -59.4
+        ],
+        [
+          432.6112,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          490.12,
+          -28.0,
+          -28.0
+        ],
+        [
+          493.32,
+          28.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "block",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "block-land",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "pan",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "pan-gasket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "cover",
+      "neighbor": "crank-gear",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "damper-key",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "damper-bolt",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "damper-washer",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          490.12,
+          -28.0,
+          -28.0
+        ],
+        [
+          493.32,
+          28.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "block",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0000001,
+          -149.0000001,
+          -106.31017509862744
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          254.0000001
+        ]
+      ]
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "block-land",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          334.9999999,
+          -149.0000001,
+          -32.0000001
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ]
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "pan",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -268.9500001
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          1.000000089928065e-07
+        ]
+      ]
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "pan-gasket",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -61.4
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          -24.4999999
+        ]
+      ]
+    },
+    {
+      "candidate": "damper-hub",
+      "neighbor": "crank-gear",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          419.0,
+          -55.0,
+          -55.0
+        ],
+        [
+          490.12,
+          55.0,
+          55.0
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          378.25937489999995,
+          -43.179983679525165,
+          -43.17997748993559
+        ],
+        [
+          392.2593751,
+          43.1799714497955,
+          43.17997797970914
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "damper-key",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          445.0,
+          -3.0,
+          19.0
+        ],
+        [
+          485.0,
+          3.0,
+          23.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "damper-bolt",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          458.32,
+          -13.000000000002597,
+          -11.2583302491905
+        ],
+        [
+          501.32,
+          13.0,
+          11.258330249198002
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "damper-washer",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          490.12,
+          -28.0,
+          -28.0
+        ],
+        [
+          493.32,
+          28.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "block",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0000001,
+          -149.0000001,
+          -106.31017509862744
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          254.0000001
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "block-land",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          334.9999999,
+          -149.0000001,
+          -32.0000001
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "pan",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -268.9500001
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          1.000000089928065e-07
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "pan-gasket",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -61.4
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          -24.4999999
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-case-installed",
+      "neighbor": "crank-gear",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          420.0,
+          -40.132,
+          -40.132
+        ],
+        [
+          433.4112,
+          40.132,
+          40.132
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          378.25937489999995,
+          -43.179983679525165,
+          -43.17997748993559
+        ],
+        [
+          392.2593751,
+          43.1799714497955,
+          43.17997797970914
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "damper-key",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          445.0,
+          -3.0,
+          19.0
+        ],
+        [
+          485.0,
+          3.0,
+          23.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "damper-bolt",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          458.32,
+          -13.000000000002597,
+          -11.2583302491905
+        ],
+        [
+          501.32,
+          13.0,
+          11.258330249198002
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "damper-washer",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          490.12,
+          -28.0,
+          -28.0
+        ],
+        [
+          493.32,
+          28.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "block",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0000001,
+          -149.0000001,
+          -106.31017509862744
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          254.0000001
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "block-land",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          334.9999999,
+          -149.0000001,
+          -32.0000001
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "pan",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -268.9500001
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          1.000000089928065e-07
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "pan-gasket",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -61.4
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          -24.4999999
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-elastomer",
+      "neighbor": "crank-gear",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.2,
+          -27.6,
+          -27.6
+        ],
+        [
+          429.4000000000002,
+          27.6,
+          27.6
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          378.25937489999995,
+          -43.179983679525165,
+          -43.17997748993559
+        ],
+        [
+          392.2593751,
+          43.1799714497955,
+          43.17997797970914
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "damper-key",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          445.0,
+          -3.0,
+          19.0
+        ],
+        [
+          485.0,
+          3.0,
+          23.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "damper-bolt",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          458.32,
+          -13.000000000002597,
+          -11.2583302491905
+        ],
+        [
+          501.32,
+          13.0,
+          11.258330249198002
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "damper-washer",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          490.12,
+          -28.0,
+          -28.0
+        ],
+        [
+          493.32,
+          28.0,
+          28.0
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "block",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0000001,
+          -149.0000001,
+          -106.31017509862744
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          254.0000001
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "block-land",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          334.9999999,
+          -149.0000001,
+          -32.0000001
+        ],
+        [
+          373.00000010003055,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "pan",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -268.9500001
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          1.000000089928065e-07
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "pan-gasket",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          -381.0,
+          -149.0000001,
+          -61.4
+        ],
+        [
+          399.0000001,
+          213.0000001,
+          -24.4999999
+        ]
+      ]
+    },
+    {
+      "candidate": "seal-garter-spring",
+      "neighbor": "crank-gear",
+      "method": "continuous axis-aligned bound separation",
+      "candidate_bounds_mm": [
+        [
+          426.02999989999995,
+          -26.170000100000003,
+          -26.170000100000003
+        ],
+        [
+          427.17000010000004,
+          26.170000100000003,
+          26.170000100000003
+        ]
+      ],
+      "neighbor_bounds_mm": [
+        [
+          378.25937489999995,
+          -43.179983679525165,
+          -43.17997748993559
+        ],
+        [
+          392.2593751,
+          43.1799714497955,
+          43.17997797970914
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "cover_change": {
+    "added_mm3": 54639.439676060734,
+    "removed_mm3": 0.0,
+    "added_outside_mask_mm3": 0.0,
+    "removed_outside_mask_mm3": 0.0
+  },
+  "damper-hub_change": {
+    "added_mm3": 0.0,
+    "removed_mm3": 8395.6547938695,
+    "added_outside_mask_mm3": 0.0,
+    "removed_outside_mask_mm3": 0.0
+  },
+  "nominal_fit": {
+    "free_OD_mm": 65.151,
+    "installed_OD_mm": 65.04939999999999,
+    "diametral_difference_mm": 0.1016000000000048,
+    "free_case_cover_overlap_mm3": 131.02444264551377,
+    "classification": "Intentional nominal press allowance; not a manufacturing tolerance or accidental collision"
+  },
+  "negative_controls": {
+    "lip_back20_hub_gap_mm": 9.65065574196906,
+    "flange_front1_missing_mm3": 17.13599443765191
+  },
+  "limits": [
+    "Lip/spring/case internals, absolute seat and boss contour are estimates; no force/deformation/tolerance claim.",
+    "Garter96 turns/.12wire/.45winding are illustrative; actual join/preload unknown.",
+    "Clockwise micro-spiral texture, crank endplay, actual hub bore/strength, disassembly and browser NOT RUN.",
+    "Free-case nominal interference intentionally retained separately."
+  ]
+}

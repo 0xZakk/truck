@@ -1,0 +1,48 @@
+{
+  "status": "Rejected CAD construction diagnostics; never delivered as accepted geometry",
+  "nominal_parameters": {
+    "turns": 96,
+    "coil_radius_mm": 0.45,
+    "wire_radius_mm": 0.12,
+    "major_radius_mm": 25.6
+  },
+  "trials": [
+    {
+      "construction": "single periodic spline sweep,12 samples per turn",
+      "valid": false,
+      "solids": 1
+    },
+    {
+      "construction": "periodic spline24 samples per turn, Frenet sweep",
+      "valid": false,
+      "signed_volume_mm3": -8.993598662141082
+    },
+    {
+      "construction": "nonperiodic closed endpoints,24 samples per turn",
+      "valid": false,
+      "signed_volume_mm3": -8.993588984559251
+    },
+    {
+      "construction": "piecewise96 winding edges, Frenet sweep",
+      "valid": false,
+      "volume_mm3": 13.454745218469032
+    },
+    {
+      "construction": "sweep with explicit10000 maximum spans and1e-6 tolerance",
+      "valid": false,
+      "signed_volume_mm3": -8.957067448561492
+    },
+    {
+      "construction": "overlapped winding solids fused",
+      "valid": false,
+      "solids": 3,
+      "volume_mm3": 7.952102912079472
+    },
+    {
+      "construction": "49 circle full-turn loft",
+      "valid": false,
+      "error": "BRep_API: command not done"
+    }
+  ],
+  "selected_construction": "48 consecutive ruled circular-section side faces per winding,96 rotationally repeated windings, sewn closed shell. Valid single solid14.2329676281mm3. Retains declared nominal parameters; curvature between circular stations is an approximation, not a smooth exact toroidal helix."
+}

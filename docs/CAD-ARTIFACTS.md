@@ -180,3 +180,16 @@ XDG_CACHE_HOME=/tmp/truck-cache .venv-cad/bin/python scripts/export-engine-assem
 ```
 
 Installers default to dry-run/staging and preserve unrelated inventory: `install-engine-component-interfaces.py`, `install-throttle-linkage.py` (linkage/shield/spring stages), `install-dipstick.py`, `install-intake-cap-coordination.py`, `install-iac-attachment.py`, and `install-throttle-plate-fasteners.py` under `scripts/`. Read their candidate/input guards before applying; a saved report is evidence for its recorded inputs, not a fresh validation of a changed engine. Use a new branch/worktree for further changes and retain explicit provisional labels.
+
+## Pan-seat and front-seal candidate supplement
+
+The [pan/seal supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-pan-seal) preserves the expanded-seat trials, corrected block v3 pair, bounded rear gasket contact study, separate 2692 seal parts and their localized integration-stage assets. It does not replace the installed engine. The block's aggregate report retains FAIL for two unverified volume metrics; its functional, locality and export results are reported separately. Active whole-perimeter and operating-direction studies are excluded.
+
+Restore predecessors through timing-interfaces, then download and verify this supplement:
+
+```sh
+gh release download studies-2026-10-01-pan-seal --repo 0xZakk/truck --pattern truck-pan-seal-20261001.tar.gz --dir /tmp
+shasum -a 256 /tmp/truck-pan-seal-20261001.tar.gz
+```
+
+Expected SHA-256: **5b46ae082c6ea9fe23d67b44b26578e1473fe2d2a13ac92cbae8953904b52fe8**. The archive contains 123 files / 33,127,925 bytes. Individual hashes and predecessor binding are in `docs/cad-pan-seal-checkpoint.json`. Preserve newer local work before extracting at the repository root. Only project-authored renders are included; no purchased manuals, reference originals or owner photographs.
