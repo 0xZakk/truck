@@ -1,0 +1,95 @@
+{
+  "status": "PASS fault detected; deliberately wrong pose not an accepted candidate",
+  "fault": "Only AC front cylinder restored to v3 world frame; v4 actual asset and timing-cover pose retained",
+  "q": 0,
+  "axial_mm": 0,
+  "pair": [
+    "ac-compressor-front-cylinder",
+    "timing-cover"
+  ],
+  "correct_v4_frame": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      373.56
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      337.43537535946626
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      140.0
+    ]
+  ],
+  "wrong_v3_frame": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      373.56
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      280.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      100.0
+    ]
+  ],
+  "wrong_bounds_mm": [
+    [
+      373.65999999999997,
+      199.0,
+      35.0
+    ],
+    [
+      443.36,
+      361.0,
+      165.0
+    ]
+  ],
+  "cover_bounds_mm": [
+    [
+      364.99999999999903,
+      -149.0,
+      -59.4
+    ],
+    [
+      432.6112,
+      262.6164107083817,
+      209.1393618743347
+    ]
+  ],
+  "broadphase_pair_padding_mm": 2.0,
+  "broadphase_extent_mm": [
+    58.95120000000003,
+    63.61641070838169,
+    130.0
+  ],
+  "entered_broadphase": true,
+  "threshold_mm3": 0.1,
+  "overlap_mm3": 17596.474199263692,
+  "witness_step": "cad/engine/generated/accessory-stage-v4-solids/fault-old-ac-front-cylinder__timing-cover.step",
+  "witness_sha256": "a79f7407b3a0fdcfb80b41fed9d2d733dce02b3c85bcc440bbaf8dda27faf54e",
+  "input_sha256": {
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "inventory/engine/accessory-stage-v4-solids.json": "ad84a41d2137b22b54ba91ce025b1533a7dcef699bd32c7db4b3fa4bdd9244bb",
+    "scripts/check-accessory-stage-v4-solids-fault.py": "ef9886633b0cbe4a6b60a4be0205e71bd98944cfcdeb20a9ea9b1cd4b02638dd",
+    "cad/engine/assembly_clockwise_candidate.py": "a00e2592906108aa35caaca80c016ddf939cd67b2122e9bfc952e278e0277d50",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af",
+    "cad/engine/generated/ac-compressor-front-cylinder.step": "abd8fca95e1e6c5944c1ce22653ae930924b2fff90593e11e3f84dfb0a5e7e81",
+    "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e"
+  }
+}

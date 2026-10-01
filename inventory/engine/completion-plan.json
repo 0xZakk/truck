@@ -136,15 +136,27 @@
     "A reconciled physical BOM covering hardware and nonserviceable assembly internals"
   ],
   "active_integration_candidate": {
-    "manifest": "inventory/engine/corrected-engine-stage-v3.json",
-    "sha256": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "manifest": "inventory/engine/corrected-engine-stage-v4.json",
+    "sha256": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
     "readiness": "candidate; not installed",
-    "review": "inventory/engine/corrected-stage-v3-remaining-conflicts.json",
-    "known_static_conflicting_pairs": 26,
+    "review": "inventory/engine/accessory-stage-v4-remaining-conflicts.json",
+    "known_static_conflicting_pairs": 4,
+    "prior_candidate": {
+      "manifest": "inventory/engine/corrected-engine-stage-v3.json",
+      "sha256": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+      "readiness": "candidate; not installed",
+      "review": "inventory/engine/corrected-stage-v3-remaining-conflicts.json",
+      "known_static_conflicting_pairs": 26,
+      "limits": [
+        "Static pair count is not completion percentage or full BOM coverage.",
+        "Inherited rod-bolt/block motion conflicts remain.",
+        "Production geometry, pump architecture, accessory layout and browser gates remain unresolved."
+      ]
+    },
     "limits": [
-      "Static pair count is not completion percentage or full BOM coverage.",
-      "Inherited rod-bolt/block motion conflicts remain.",
-      "Production geometry, pump architecture, accessory layout and browser gates remain unresolved."
+      "Scoped q0 audit supersedes22 of26 known v3 conflicts; four unchanged pump/cover/gasket conflicts remain. This is not a full-engine acceptance count.",
+      "Seven PS/AC tool approaches and conditional ALT/AP/new-pump tool conflicts remain.",
+      "Inherited rod motion conflicts, production geometry, belt/hoses/physical coverage and browser gates remain unresolved."
     ]
   }
 }

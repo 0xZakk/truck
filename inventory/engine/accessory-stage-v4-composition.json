@@ -1,0 +1,61 @@
+{
+  "status": "PASS guarded composition/export/frame checks only",
+  "input_sha256": {
+    "inventory/engine/accessory-coordinated-stage-contract.json": "f345e0daf260b578f36c2560894a3fb1704d28070277c38e2b8b0f940f62e09c",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "scripts/compose-accessory-stage-v4.py": "8fc072ac9a5dc34f40ad724e18d10f30c0318c3086a02ef55da57a36bc3aaec5"
+  },
+  "stage_sha256": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+  "exports": [
+    {
+      "id": "alternator-thermactor-common-carrier",
+      "step_sha256": "f824e8ed427e595ba29305c9a683d244038c00a3ce3f78d0cb1e17696ea84680",
+      "glb_sha256": "34a337afaf281fdb6b6285ae5f6d6b4b4378e2f8981e519c003cc54862a77e11",
+      "bounds_mm": [
+        [
+          373.0,
+          -350.0120390117,
+          42.493353882930414
+        ],
+        [
+          461.29688503598373,
+          -84.0,
+          331.56984668932
+        ]
+      ],
+      "bounds_error_mm": 0.010963499164972745,
+      "volume_mm3": 210756.1502266816,
+      "triangle_count": 8012
+    },
+    {
+      "id": "ps-ac-support-bracket",
+      "step_sha256": "11f8047def0f76b43a08e080fc28bd2cac98e661f1612fcca82c82a23d86c8b9",
+      "glb_sha256": "30e1b495a3f3a7894a04f84190f65a038d9b413393e32c81967ecee22057436a",
+      "bounds_mm": [
+        [
+          276.0,
+          74.0,
+          41.0
+        ],
+        [
+          446.994126833328,
+          436.43537535946,
+          425.56374661443
+        ]
+      ],
+      "bounds_error_mm": 0.018113775227107,
+      "volume_mm3": 484097.98375007854,
+      "triangle_count": 11268
+    }
+  ],
+  "guarded_pose_edits": 17,
+  "frame_comparisons": 8166,
+  "world_carrier_double_translation_control": {
+    "alternator-thermactor-common-carrier": 76.43015331067244
+  },
+  "limits": [
+    "Combined solid/contact/tool checks pending",
+    "No browser or factory fidelity acceptance",
+    "Canonical manifest unchanged"
+  ]
+}

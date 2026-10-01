@@ -1,0 +1,70 @@
+{
+  "status": "PASS conservative exact-CAD partition separation; raw OCC zero retained as invalid result",
+  "partition": "Y120, with both exact subvolumes valid and total volume conserved",
+  "pump_bounds": [
+    [
+      374.9999999,
+      -109.7000001,
+      91.9999999
+    ],
+    [
+      511.0000001,
+      113.0000001,
+      250.5000001
+    ]
+  ],
+  "rows": [
+    {
+      "part": "low-Y",
+      "volume_mm3": 34078.494247270166,
+      "bounds": [
+        [
+          373.0,
+          74.0,
+          284.0
+        ],
+        [
+          400.56,
+          120.00000000000003,
+          421.8356324942638
+        ]
+      ],
+      "axis_gaps_mm": [
+        0.0,
+        0.0,
+        33.499999900000006
+      ],
+      "minimum_distance_lower_bound_mm": 33.499999900000006
+    },
+    {
+      "part": "high-Y",
+      "volume_mm3": 450019.489531259,
+      "bounds": [
+        [
+          276.0,
+          119.99999999999999,
+          41.0
+        ],
+        [
+          446.994126833328,
+          436.43537535946,
+          425.56374661443
+        ]
+      ],
+      "axis_gaps_mm": [
+        0.0,
+        6.999999899999992,
+        0.0
+      ],
+      "minimum_distance_lower_bound_mm": 6.999999899999992
+    }
+  ],
+  "partition_volume_error_mm3": 2.8450624085962772e-05,
+  "minimum_distance_lower_bound_mm": 6.999999899999992,
+  "inputs": {
+    "cad/engine/generated/accessory-psac-carrier/trial1-carrier.step": "11f8047def0f76b43a08e080fc28bd2cac98e661f1612fcca82c82a23d86c8b9",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "scripts/accessory-psac-carrier-pump-separation.py": "00afdbbfe7aa32b9ad900a0da447e2388394675cf78fd7e75fa4250016ecd344"
+  }
+}

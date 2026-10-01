@@ -1,0 +1,100 @@
+{
+  "status": "Independent qualitative exterior review; no installed acceptance",
+  "baseline": "0861e87558151b4b1bbc0d257edde17013e253f3",
+  "owner_sources": [
+    {
+      "file": "reference/photos/2026-09-23/engine-bay-passenger-side.jpg",
+      "sha256": "a5c7d04421ac50afeb90c52c0c5f133c5f84cf9dbb24e20e165e58ee9bc9892b"
+    },
+    {
+      "file": "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+      "sha256": "12a5d70d154b20c24bb2d8a884a297be9182a077410dfe1626f975c61fb67474"
+    }
+  ],
+  "primary_assembly_reference": {
+    "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/190226466.png",
+    "sha256": "9e0ad3b5ca853b081ea9257f9da5ac20d165d25d9b6e0be34c28383b6fffdb39",
+    "reviewed": "Actual image independently viewed; paired ducts, air cleaner, bracket and body references; no dimensions inferred"
+  },
+  "render_report": "inventory/engine/engine-exterior-fidelity-audit-render.json",
+  "render_report_sha256": "89cff2081292fb605c58aad5b4c7cfc58bee301af3478e1240578a5a6b1cc948",
+  "comparison_method": "Owner driver/passenger photos viewed separately; actual full canonical/v3 GLB renders at high front and front-side orthographic angles. No image compositing, camera calibration, pixel measurement or metric registration.",
+  "findings": [
+    {
+      "rank": 1,
+      "topic": "Air cleaner and paired inlet ducts",
+      "confidence": "high absence; dimensions unknown",
+      "owner_observation": "Large rectangular driver-side airbox with paired corrugated ducts to throttle body dominates foreground of driver view.",
+      "mesh_observation": "Neither canonical nor v3 includes the airbox/paired ducts; front throttle mouths remain exposed.",
+      "action": "Integrate a source-supported body-mounted airbox/duct/bracket assembly after vehicle anchors and endpoints are established; retain existing separate air-cleaner candidate limitations.",
+      "required": "Shared pump/throttle/front-body datum, airbox mounting bracket/fender/radiator-support anchors, duct endpoint axes and lengths. Existing exact-year diagram190226466 supports decomposition.",
+      "scope": "Engine/body interface; source topology known, body placement unknown"
+    },
+    {
+      "rank": 2,
+      "topic": "Large coolant/heater hoses and wiring overlay",
+      "confidence": "high visible absence; exact routes unknown",
+      "owner_observation": "Large radiator hose crosses front; prominent heater hoses and loom/cable runs bridge engine and body, obscuring much of the manifold/accessories.",
+      "mesh_observation": "Short metal takeoffs and selected modeled leads do not reproduce these large cross-engine routes; both scenes look unusually bare.",
+      "action": "Declare engine-side hose/loom boundaries, model source-supported connected routes after body-side endpoints and clips are established.",
+      "required": "Accessible owner side/front views with shared landmarks; hose endpoint IDs/diameters and supported clamp/clip locations. Avoid copying photo curves as exact3D.",
+      "scope": "Some vehicle-side hoses intentionally outside current engine scope; visual mismatch still real"
+    },
+    {
+      "rank": 3,
+      "topic": "Accessory carrier silhouettes and missing belt",
+      "confidence": "high missing belt; medium contour/placement suspicion",
+      "owner_observation": "Accessories sit in visually dense cast supports with belt/shroud context; much of their rear support is hidden.",
+      "mesh_observation": "Open geometric braces/plates and separated clean cylindrical units remain conspicuous; no continuous drive belt links visible pulley grooves in either render.",
+      "action": "Finish source-matched common carriers/belt routing before changing individual accessory centers; use existing accessory source studies and belt-label evidence.",
+      "required": "Orthogonal donor front view with crank/pump/accessory axes and belt plane, rear carrier surfaces and actual bracket identity. Photos alone do not justify shifting compressor or alternator.",
+      "scope": "No new clearance-driven accessory shift proposed"
+    },
+    {
+      "rank": 4,
+      "topic": "Upper intake and valve-cover exterior contour",
+      "confidence": "medium qualitative contour; no calibrated size conclusion",
+      "owner_observation": "Owner intake has rounded casting transitions and a broad molded/cast central cover; runners partly hidden by hoses. Valve-cover cap/vent and shoulder regions have smooth irregular forms.",
+      "mesh_observation": "Repeated runner sweeps, straight plenum walls and regular cover edge appear more geometric and exposed. Current trim/color emphasizes edges.",
+      "action": "Compare orthographic silhouette and section landmarks of identified intake/cover specimen; refine visible contour without disturbing verified attachment ports.",
+      "required": "Plan and two side specimen views with scale and fixed bolt/port datums; current perspective does not establish width, height or22mm lean correction.",
+      "scope": "Candidate contour study only until measurements; do not claim wrong engine based on one oblique view"
+    },
+    {
+      "rank": 5,
+      "topic": "Engine-bay context and fan shroud",
+      "confidence": "high scope difference",
+      "owner_observation": "Fan shroud/radiator, battery, reservoirs, booster and firewall frame the actual engine and hide lower/front geometry.",
+      "mesh_observation": "Isolated engine floats without those neighbors, making fan/accessories and lower block appear much more prominent.",
+      "action": "Provide a clearly scoped engine-bay context view when body/radiator reference frames exist, while retaining isolated engine for learning.",
+      "required": "Vehicle body/radiator-support anchors and overall compartment registration; do not add fake collision-free context shells.",
+      "scope": "Truck-system work, not evidence engine dimensions are wrong"
+    },
+    {
+      "rank": 6,
+      "topic": "Material and surface appearance",
+      "confidence": "high presentation difference",
+      "owner_observation": "Owner engine is weathered metal/rubber with subdued contrast and visible age; existing lead/hoses colors vary.",
+      "mesh_observation": "Uniform clean gray, green, gold and black teaching colors make individual parts stand apart.",
+      "action": "Offer source-consistent material appearance separately from educational system coloring after geometry priorities; do not hide geometry errors with texture.",
+      "required": "Existing authorized photos suffice for qualitative palette; exact material/paint identity remains unverified.",
+      "scope": "Presentation; not a geometry acceptance substitute"
+    }
+  ],
+  "canonical_vs_v3": "Both share major external missing context and top silhouette; internal timing/crank/valvetrain corrections and limited sealing/lead changes do not solve exterior identity. V3 remains uninstalled; no active newer water-pump tube/carrier trial substituted.",
+  "uncertainty": [
+    "Photos rotated in stored files; orientation judged from radiator/firewall landmarks, not filename alone.",
+    "No exact accessory displacement, casting dimension or scale error inferred from perspective.",
+    "Observed absence in rendered scope is not a claim part is absent from the actual truck.",
+    "Owner reports no known modifications; this is not proof all parts are original.",
+    "No further emissions-label request: owner record already marks VECI missing."
+  ],
+  "next_actions": [
+    "Prioritize airbox/twin ducts and engine-side large hose/loom topology to restore recognizable exterior.",
+    "Root assess existing carrier candidates against actual front view before any placements change.",
+    "Collect bounded intake/cover specimen views only for remaining visible contour mismatch."
+  ],
+  "distribution": "Do not commit owner photos or source diagram; authored mesh render only",
+  "browser": "NOT RUN; no bypass",
+  "geometry_changes": false
+}
