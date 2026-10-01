@@ -1,0 +1,61 @@
+{
+  "status": "UNRESOLVED paired bolt/rod seat dimensions; no repair",
+  "baseline": "3dcbd364ac24396e671d5d16b930571713b7be0a",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/292722974.png": "5e9499745e929733304281803f039fdc731fef83086f26e1d5d9c590c757cc47",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Cylinder%20Block%20Assembly/Connecting%20Rod/Service%20and%20Repair/index.html": "3993438c4a5f133d35ab7fe5741ae9dbc2ec95cce9a9c4396e9680355f772329",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Parts%20and%20Labor/Engine%2C%20Cooling%20and%20Exhaust/Engine/Connecting%20Rod/Parts%20Information/index.html": "2b6dfaa35e09bc7a95c0b076b56ee4324a60f2ad4172d9d67d14a7359ce10b51",
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": "62477dbe354f5f4209de4f4293cd83db3646d06011f7be9bdd3ea82e49754990",
+    "docs/components/rod-bolt-source-datum-audit.md": "84c61726945389b1f2539f576c70219c52b4e1fd4ef7b52e8406a98a301455a2",
+    "reference/engine/rod-bolt-source-datum-review.json": "8085b5aaf2bd189ad077b3269c75df017c42b328a482503ecec26029707274ba",
+    "cad/engine/first_assembly.py": "ecc1e01abc623d00aef1b5bdc3d47105ccf43b6d6bb1761e4317015d75ad9c5f",
+    "inventory/engine/dimensions.json": "6a39abadf62a0b625d708ca162d56fe6656b7323f3be1f7d629bce697cd28de2",
+    "docs/components/rod-fastener-architecture-contract.md": "571679fac62a7c25e5c008274c61284b5e15aa07f87abcdd18138fb62dae4ffa"
+  },
+  "actual_visual_review": {
+    "image": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/292722974.png",
+    "findings": [
+      "Head above rod split, nut below cap; current direction not contradicted",
+      "Rod numbered side toward camshaft",
+      "Elevation does not establish head plan outline or thickness"
+    ]
+  },
+  "primary_retrievals": [
+    {
+      "url": "https://arpcatalog.com/49/",
+      "edition": 2026,
+      "result": "1526002 styleM;1526001 styleG; headstyle verification required"
+    },
+    {
+      "url": "https://arpcatalog.com/46/",
+      "result": "Text retrieved, actual style photos not obtained"
+    },
+    {
+      "url": "https://arp-bolts.com/kit/152-6002",
+      "result": "Indexed application; direct timed out"
+    },
+    {
+      "url": "https://www.tzr-motorsport.de/WebRoot/Store20/Shops/61911476/MediaGallery/PDF/ARP/Ford/152-6002.pdf",
+      "author": "ARP",
+      "result": "Press-fit and underhead chamfer requirements; no dimensions"
+    },
+    {
+      "url": "https://www.mitsubishilinks.com/fsm/arp_catalog_rodbolts.pdf",
+      "author": "ARP old excerpt",
+      "result": "Indexed different styleletterC; PDF timed out; do not equate lettercodes across editions"
+    },
+    {
+      "url": "https://www.coulsoncompression.com/resources/docs/194-203%20CSG649%20Parts.pdf",
+      "result": "Indexed E3TZ6200E/C4OZ6214B research lead; visual table and exactyear applicability not verified"
+    }
+  ],
+  "required_measurements": [
+    "head plan and orthogonal elevations with rod orientation",
+    "seatZ and underhead radius/chamfer/contact footprint",
+    "press shoulder/grip/thread and matching rod/cap bores",
+    "bolt centers and rod shoulder contours tied to bigend bore",
+    "actual crankcase section near frozen collision witness"
+  ],
+  "geometry_changed": false,
+  "block_cut_authorized": false
+}

@@ -1,0 +1,42 @@
+{
+  "status": "MPS-59A uninstalled inch-column envelope PASS; MPP-554 thread unresolved/no CAD",
+  "bindings": {
+    "cad/engine/block_closures_coverage_candidate.py": "b135369f70749d0c47775151b751a40bfdb4820b396697beca93d088a80d4c6c",
+    "scripts/check-block-closures-additional-candidate.py": "6e5eb0b21eaf0355e31abc0771cbb27cd3d4512ffebed577da1adcc7c5c5b837",
+    "cad/engine/block_closures_additional_candidate.py": "bee269e6cf6ae53bc9ba1ede9baff3418add60e4b1c44fec9d80b8f8edd6d00f",
+    "reference/engine/research-2026-09-23/melling-expansion-plug-guide.pdf": "e931b0dc1efa68e95cd64ee25b11390bfe287f48119ba4cb634937c51a231ec8",
+    "cad/engine/generated/block-closures-additional-candidate/block-core-cup-mps59a.step": "1229f8f5b6cdc714d7f547a9fb0701ead3423a2ea87122cfdbbb4949ff919cad",
+    "cad/engine/generated/block-closures-additional-candidate/block-core-cup-mps59a.glb": "268f2b9df9d377cd76dd56a22455e3d68b3e6a31c651a4823cebbe348394bd04",
+    "cad/engine/generated/block-closures-additional-candidate/cup-section.png": "734bdb43a2da00d097c4129112d083563c699f17b15f2b8148480a634649d1df",
+    "inventory/engine/block-closures-coverage-delivery.json": "4a97fb9c0cd8aa602bec77a4e97975b868bc2fb3c76d6e5eb8195c9d2599fe97",
+    "inventory/engine/block-closures-additional-candidate-validation.json": "9322cede90ced5e3372295880077bc1c77affd6a7ec8bf3bb49bbcc7b996475b",
+    "inventory/engine/block-closures-additional-learning-candidate.json": "815b6a7d50448152f4112b86691f774ace32d769f8e07981a85886f26a1334ae",
+    "docs/components/block-closures-additional-handoff.md": "71eb1f4b370fdd16037b9c191de23c89393bf2dadab3356559c5bd80bf1d30df"
+  },
+  "frozen_mps126_delivery_unchanged": true,
+  "MPP554": {
+    "nominal_pipe_size_in": 0.375,
+    "length_in": 0.375,
+    "key_fraction_in": 0.3125,
+    "key_decimal_printed_in": 0.312,
+    "thread_standard": null,
+    "pitch": null,
+    "taper": null,
+    "actual_od": null,
+    "socket_depth": null,
+    "geometry": null
+  },
+  "MPS59A": {
+    "selected_od_mm": 52.578,
+    "printed_metric_od_mm": 52.48,
+    "discrepancy_mm": 0.098,
+    "od_limits_mm": [
+      52.451,
+      52.705
+    ],
+    "height_mm": 8.7122,
+    "wall_mm": 1,
+    "wall_status": "estimated"
+  },
+  "installed_acceptance": false
+}

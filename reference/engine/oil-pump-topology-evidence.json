@@ -1,0 +1,86 @@
+{
+  "status": "RESEARCH interface contract; no dimensional CAD candidate",
+  "baseline": "3dcbd364ac24396e671d5d16b930571713b7be0a",
+  "reviewed": "2026-10-01",
+  "inputs": {
+    "reference/engine/ford-csg649.pdf": "f7fb9d6aa8c837122368e1b5c6642cc5cd7b8a6bc20fa24f1924cb9adbbacddd",
+    "reference/engine/ford-industrial-parts.pdf": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+    "reference/engine/oil-pump-discharge-source-review.json": "66ac33bbe2e98af55e5aedeae962a6c1e5c77cbe504fbbd028e4a229b315af04",
+    "docs/components/oil-pump-discharge-source-audit.md": "1035c22c76b98f0c7705da86d770433751afe2ef9c40a3f2185a67755c6c7593",
+    "cad/engine/oil_pump.py": "ec6b0206297632faada63e7272ed11d078cb7bb95e18b3a9879bc50b1d3c559f",
+    "cad/engine/oil_drive_layout.py": "6f6f7cec1fd18940171a6636ddb4b8e3d1c0d1050e4e5db0d065e57eba71adc9",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "docs/components/oil-pump-topology-contract.md": "88f4f0c1bce7abf9dd3767aa8f5744a76061789fd353d3fbad04f30cf34a504b"
+  },
+  "actual_primary_visuals": [
+    {
+      "file": "reference/engine/ford-csg649.pdf",
+      "pdf_page": 28,
+      "printed_page": "1-24",
+      "figure": "51 / A2164-A",
+      "findings": "Installed raised neck and independent pickup; front arrow left; hidden mounting face unresolved"
+    },
+    {
+      "file": "reference/engine/ford-csg649.pdf",
+      "pdf_page": 36,
+      "printed_page": "1-32",
+      "figure": "65 / A2165-B",
+      "findings": "Raised drive neck, separate pickup gasket6626/screws, relief branch and bottom rotor cover; no datum dimensions"
+    }
+  ],
+  "required_production_parameters": {
+    "neck_outer_diameter_mm": null,
+    "neck_bore_mm": null,
+    "shaft_support_length_mm": null,
+    "mount_face_origin_pump_mm": null,
+    "mount_face_normal_pump": null,
+    "mount_outline": null,
+    "mount_bolt_axes": null,
+    "mount_threads_and_engagement": null,
+    "dowel_axis_fit_and_lumen": null,
+    "outlet_aperture": null,
+    "outlet_path_and_wall": null,
+    "mount_gasket_thickness_mm": null,
+    "pickup_flange_frame": null,
+    "pickup_flange_bolt_pattern": null,
+    "pickup_aperture": null,
+    "pickup_gasket_thickness_mm": null,
+    "block_seat_frame": null,
+    "block_gallery_path": null
+  },
+  "retained_hypothesis": {
+    "frame": "oil_drive_layout.PUMP_FRAME then world DELTA",
+    "delta_world_mm": [
+      0,
+      5.109820990161097,
+      4.087856792128875
+    ],
+    "drive_axis_origin_pump_mm": [
+      3.5,
+      0,
+      0
+    ],
+    "drive_axis_direction_pump": [
+      0,
+      0,
+      1
+    ]
+  },
+  "retrievals": [
+    {
+      "url": "https://melling.com/parts-lookup-part-number-dimension/",
+      "result": "Official linked spec portal inspected; no visible oil-pump category"
+    },
+    {
+      "url": "https://specsearch.melling.com/default.aspx",
+      "result": "Intermediate shaft and valvetrain categories visible, no pump drawing retrieved"
+    },
+    {
+      "url": "https://melling.mypartfinder.com/",
+      "result": "403; no bypass attempted"
+    }
+  ],
+  "rejected_dimensional_shortcut": "Secondary M74 height4.680in vs124mm inconsistent; .315in variously labeled inlet and bolt hole; no accepted dimension",
+  "geometry_created": false,
+  "block_change_authorized": false
+}

@@ -96,6 +96,11 @@
       "issue": 76,
       "desired_status": "In progress",
       "reason": "Active common-interface investigation with timing #32. Original future front land creates most block/FS10 overlaps; station-six support adds one piston conflict and mixed shaft interference. Actual compressor front/rear orientation, belt-facing pulley and carrier contact are deliberate, so a rigid axial shift is not a coherent fix. Independent gasket-source registration is being compared before any cover/land contour revision. Installed solid clearance and accessory-removed tool access are separate gates. Canonical remains unchanged; no Done transition."
+    },
+    {
+      "issue": 24,
+      "desired_status": "In progress",
+      "reason": "Replacement-kit closure coverage reconciled; two isolated cup envelope candidates reviewed. Host bores/placements, plug threads and industrial application gaps remain; no accepted installation."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

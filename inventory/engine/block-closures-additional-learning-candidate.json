@@ -1,0 +1,59 @@
+{
+  "block-core-cup-mps59a": {
+    "summary": "This separate shallow cup is the single MPS-59A block closure listed in the applicable MPE-107R replacement kit. Its host opening has not been located.",
+    "limits": "Uninstalled inch-column envelope. Catalog2.070in gives52.578mm but its metric column says52.48mm; discrepancy remains. Uniform1mm wall and corners are estimated; bore, interference and location unknown.",
+    "steps": [
+      {
+        "title": "Read the free envelope",
+        "text": "The catalog gives free OD2.065\u20132.075in and height.343in. Candidate OD52.578mm is an explicit selection within that range, not a measured installed diameter.",
+        "part": "block-core-cup-mps59a"
+      },
+      {
+        "title": "Separate cup construction from size",
+        "text": "The wall parameter changes the hollow section while preserving OD and height. Actual sheet thickness, drawn radii and seating depth need evidence.",
+        "part": "block-core-cup-mps59a"
+      },
+      {
+        "title": "Identify the correct host",
+        "text": "One kit cup does not identify one engine bore. Verify casting opening, bore size and specified fit before assigning an occurrence.",
+        "part": "block"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Do not diagnose from an isolated model",
+        "text": "The uninstalled cup has no pressure, corrosion or leakage simulation. A nearby leak requires inspection of the actual closure and fluid path.",
+        "part": "block-core-cup-mps59a"
+      }
+    ],
+    "sources": [
+      "melling-expansion-plug-guide"
+    ]
+  },
+  "block-pipe-plug-mpp554": {
+    "summary": "Two MPP-554 threaded closures are listed in the applicable replacement kit. They close threaded openings, but their engine locations and exact thread definition are unresolved.",
+    "limits": "No CAD or installed occurrence. Nominal3/8pipe size is not actual OD. The manufacturer table lacks a part-specific thread standard, taper and pitch, so NPT or NPTF must not be assumed.",
+    "steps": [
+      {
+        "title": "Distinguish pipe size from measured diameter",
+        "text": "The row supplies nominal3/8 size,9.525mm length and5/16in key. Those dimensions do not fully define the outside threaded surface.",
+        "part": "block-pipe-plug-mpp554"
+      },
+      {
+        "title": "Establish the thread and host together",
+        "text": "A part-specific thread drawing and identified mating gallery port are required before modeling engagement, sealing or installed depth.",
+        "part": "block"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "Avoid plausible but mismatched threads",
+        "text": "A generic plug with the same nominal label may use a different thread/sealing form. This evidence row is not a fit recommendation or installation instruction.",
+        "part": "block-pipe-plug-mpp554"
+      }
+    ],
+    "sources": [
+      "melling-expansion-plug-guide"
+    ]
+  }
+}

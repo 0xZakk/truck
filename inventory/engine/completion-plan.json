@@ -28,13 +28,13 @@
     {
       "system": "Rotating and valve train",
       "items": [
-        "Rod length and pin offset verification",
+        "Rod length and pin offset verification Six inherited rod-bolt/block motion conflicts are documented; exact-year evidence supports current bolt direction, while press shoulder/under-head construction and dimensions remain unverified. Five required measurements are specified in docs/components/rod-fastener-architecture-contract.md; no clearance-driven block cut is accepted.",
         "Crank counterweights, fillets, drillings and keys",
         "Correct thrust bearing construction",
         "Intake/exhaust-specific springs, retainers and seals",
         "Cam spacer, thrust plate, key and two washer/bolt pairs are integrated as a7-part study. Industrial dimensions constrain selected features; installed identities, hub/key dimensions and axial stations remain provisional.",
         "Replacement catalog evidence supports a 58/29 timing pair. Isolated helical/hub/key/mark and thrust-land studies exist; axes, helix/profile and widths remain estimates. The original pair fails a newly checked exact-year backlash range under explicit pitch-circle interpretation; a separate reduced-clearance candidate must coordinate cam axial travel with rotation. Block, valvetrain, drive and cover migration remain uninstalled.",
-        "Sourced cam profile and coordinated valve motion"
+        "Corrected physical crank/cam direction, composed cam lobes/drive gear and inclined valve linkage have a coordinated private v3 candidate with scoped CAD/JS frame and geometry checks. Broad integrated static failures and source limits remain; it is not loaded in the viewer. See docs/components/corrected-engine-composition-stage.md."
       ],
       "dependency": "Application-specific dimensions and timing data; current linkage is idealized."
     },
@@ -71,7 +71,7 @@
     {
       "system": "Lubrication",
       "items": [
-        "Pump feet, two bolts and block mounting interfaces are represented; complete pump outlet-to-block oil-gallery connection and production mounting dimensions remain unresolved.",
+        "Current pump feet/tube-insertion architecture is contradicted by the reviewed Ford raised-neck mount and separate pickup flange/gasket topology. A separate three-asset topology study preserves known rotor/shaft/cover/relief geometry but is not installable. Mounting face, bolts/dowel, pickup gasket and block discharge/gallery datums remain unknown; do not build new gaskets around the old feet. See docs/components/oil-pump-topology-contract.md and oil-pump-topology-study.md.",
         "IS-74 intermediate drive and retainer are integrated with a reconciled provisional tilted axis, cam gear, block bore, pump socket, mounting feet/bolts and pickup tube. Source shaft dimensions are retained. Coordinated shaft, retainer and gerotor motion is integrated; production mounting geometry, gear construction and retainer details remain unresolved.",
         "Analytic conjugate four/five gerotor study replaces the nonconjugate profiles, with a provisional D-flat coupling. Actual production tooth count, profile, dimensions and running clearance remain unverified; rigid-body animation is not hydraulic validation.",
         "Pickup support and fasteners",
@@ -101,7 +101,7 @@
         "Sensor package and shutter/vane exist; internal electronics, vane profile/indexing and calibrated signal timing remain unverified.",
         "Rotor, contact envelope, cap and seven terminals exist. Center brush/contact-spring construction and production electrical geometry remain unfinished.",
         "Cap, clamp and vane fasteners exist; thread geometry, dimensions and production fit remain provisional.",
-        "Six spark plugs plus seven six-part secondary leads and a seven-part coil mount are represented. Cable diameter/routing, clips, boots, bracket, head bosses and hardware remain illustrative; absolute distributor clocking is unverified.",
+        "Six spark plugs plus seven six-part secondary leads and a seven-part coil mount are represented. Cable diameter/routing, clips, boots, bracket, head bosses and hardware remain illustrative; absolute distributor clocking is unverified. Private v3 corrects28 lead-end definitions without moving occurrences; root replay plus365 affected-neighbor checks supersede56 connector conflicts. Factory routing and browser/installed acceptance remain open; see docs/components/corrected-stage-v3-ignition.md.",
         "Coil production dimensions/internal winding construction, capacitor and primary electrical connections; DG470 exterior study and provisional mounting bracket present",
         "Remote module package, connector shell, heat sink and four screws exist. Harness contacts/pinout, fender attachment, installed push-start/CCD identity and electronics remain unresolved."
       ],
@@ -131,5 +131,17 @@
     "Correct installed casting and service-part identities rather than generic or superseded catalog matches",
     "Dimensioned intake/exhaust, pump, distributor and accessory mounting interfaces",
     "A reconciled physical BOM covering hardware and nonserviceable assembly internals"
-  ]
+  ],
+  "active_integration_candidate": {
+    "manifest": "inventory/engine/corrected-engine-stage-v3.json",
+    "sha256": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "readiness": "candidate; not installed",
+    "review": "inventory/engine/corrected-stage-v3-remaining-conflicts.json",
+    "known_static_conflicting_pairs": 26,
+    "limits": [
+      "Static pair count is not completion percentage or full BOM coverage.",
+      "Inherited rod-bolt/block motion conflicts remain.",
+      "Production geometry, pump architecture, accessory layout and browser gates remain unresolved."
+    ]
+  }
 }

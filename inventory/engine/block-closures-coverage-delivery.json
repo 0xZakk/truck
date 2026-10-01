@@ -1,0 +1,32 @@
+{
+  "status": "Coverage audit and isolated MPS-126 replacement envelope; no installed acceptance",
+  "bindings": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/completion-plan.json": "1cceb0c69165ed00fbc42d5686a22e8d4a4944fea78773b4f0f85e9b3baf0cdf",
+    "reference/engine/ford-block-plugs-reviewed.json": "65925ebdfd783542ba022e6aa1e06298b61abeb72c38cc532e635caee9e66189",
+    "inventory/engine/replacement-specs-2026-09-23.json": "7626d9a9094c9a367800ddd248d893137dafac7c7c49f8a8d3d316d3ed99bce9",
+    "inventory/engine/research-2026-09-23.json": "03b3fca2f52505f72e22e68ffa8db7d93ed21b19e977149cd0eb17528fa082bc",
+    "cad/engine/expansion_plugs.py": "0867bd1c8a0a8d7f55ba990fd79a86fdc5ea5540ee6f7ed449afdf2c61e25f79",
+    "docs/components/block-closures-coverage-handoff.md": "ec45020f139ace4b8d964e487e2c521a004c1fd300bb5dc12585ef4fbcb8e437",
+    "inventory/engine/block-closures-coverage-learning-candidate.json": "4818b23e511542397cfa36815c4f572d903d74837b3de951e4e0da167987479f",
+    "inventory/engine/block-closures-coverage-candidate-validation.json": "430635dfaadf3c7e04e1c6629362a77ac6d4a3818cd3c2f3cf3a4f7c03c6925c",
+    "scripts/check-block-closures-coverage-candidate.py": "7a7264527fcd1d085cfc5f9280667a86c64b2957d19a00bbc1ddedcfcb0445fe",
+    "cad/engine/block_closures_coverage_candidate.py": "b135369f70749d0c47775151b751a40bfdb4820b396697beca93d088a80d4c6c",
+    "reference/engine/research-2026-09-23/melling-expansion-plug-guide.pdf": "e931b0dc1efa68e95cd64ee25b11390bfe287f48119ba4cb634937c51a231ec8",
+    "cad/engine/generated/block-closures-coverage-candidate/block-core-cup-mps126.step": "d0d9c30c1fa112725338c1b01d3eec8bde78566d58e9f2c94a5a88908e3e8d9b",
+    "cad/engine/generated/block-closures-coverage-candidate/block-core-cup-mps126.glb": "6b3933b589ffc3a243c72ced106c93945560867c4252079e2b05a9e95cb85792",
+    "cad/engine/generated/block-closures-coverage-candidate/cup-section.png": "aa84d403cf2dd4aeaa55cf4c7cb1ac5c8ec7f7f18897d5bc48a5dde5894f5a57"
+  },
+  "canonical_missing_replacement_kit_occurrences": {
+    "MPS-126": 5,
+    "MPS-59A": 1,
+    "MPP-554": 2
+  },
+  "canonical_present_replacement_kit_occurrences": {
+    "MPC-147": 1
+  },
+  "counts_are": "Applicable replacement-kit coverage only, not complete OEM BOM; industrial families not additive",
+  "candidate_definition": "block-core-cup-mps126",
+  "candidate_occurrences": [],
+  "host_interfaces_unresolved": true
+}

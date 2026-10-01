@@ -1,0 +1,29 @@
+{
+  "status": "PASS uninstalled replacement envelope only",
+  "inputs": {
+    "scripts/check-block-closures-coverage-candidate.py": "7a7264527fcd1d085cfc5f9280667a86c64b2957d19a00bbc1ddedcfcb0445fe",
+    "cad/engine/block_closures_coverage_candidate.py": "b135369f70749d0c47775151b751a40bfdb4820b396697beca93d088a80d4c6c",
+    "reference/engine/research-2026-09-23/melling-expansion-plug-guide.pdf": "e931b0dc1efa68e95cd64ee25b11390bfe287f48119ba4cb634937c51a231ec8"
+  },
+  "artifacts": {
+    "cad/engine/generated/block-closures-coverage-candidate/block-core-cup-mps126.step": "d0d9c30c1fa112725338c1b01d3eec8bde78566d58e9f2c94a5a88908e3e8d9b",
+    "cad/engine/generated/block-closures-coverage-candidate/block-core-cup-mps126.glb": "6b3933b589ffc3a243c72ced106c93945560867c4252079e2b05a9e95cb85792",
+    "cad/engine/generated/block-closures-coverage-candidate/cup-section.png": "aa84d403cf2dd4aeaa55cf4c7cb1ac5c8ec7f7f18897d5bc48a5dde5894f5a57"
+  },
+  "free_od_mm": 41.65599999999999,
+  "free_od_range_mm": [
+    41.65599999999999,
+    41.706799999999994
+  ],
+  "height_mm": 9.270999999999999,
+  "estimated_wall_mm": 1,
+  "step_roundtrip_volume_error_mm3": 2.864908310584724e-11,
+  "mesh_bounds_error_mm": 0.006473353385924696,
+  "valid_solids": 1,
+  "watertight": true,
+  "winding_consistent": true,
+  "positive_volume": true,
+  "negative_control": "Floor point present at1mmwall, absent at.25mmwall",
+  "host_bore": null,
+  "occurrence_transforms": null
+}
