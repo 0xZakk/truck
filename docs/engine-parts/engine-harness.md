@@ -20,6 +20,9 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
 - [ ] Engine harness branches, loom, splices, clips, grounds and bonding straps
 - [ ] Intake-air sensor and separate gauge-temperature sender: verify exact location/applicability
 - [ ] PCM and body-side wiring remain Electrical scope
+- [ ] MAP C1011, ACT/IAT C164 and HO2S C1025 physical sensors are absent;14 connector interfaces are source-mapped, not14 modeled harness assemblies
+- [ ] ACT serviceF2DZ12A697A is tag-qualified;3/8-18NPTF/25mmhex are applicable replacement dimensions, probe reach/connector envelope/installed depth unknown
+- [ ] HO2S F4UZ-9F472-C service identity from exact-year Ford bulletin; exhaust pipe/bung host and sensor geometry remain missing
 
 ## Cross-system boundaries
 

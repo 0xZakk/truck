@@ -1,0 +1,27 @@
+{
+  "status": "FAIL actual tube neighbor",
+  "neighbor": "front-manifold-stud13",
+  "overlap_mm3": 261.4087393547875,
+  "bounds_mm": [
+    [
+      341.7499998999991,
+      -148.4929026741321,
+      310.2374998949425
+    ],
+    [
+      354.76250010000024,
+      -129.84919509615284,
+      322.14470968122004
+    ]
+  ],
+  "solids": 2,
+  "prior_report_error": "ShapeList bounding_box method unavailable; normalized to Compound. Original report retained.",
+  "inputs": {
+    "scripts/check-waterpump-heater-source-stud.py": "506c4c1886eee6bf11c6b9e2178a8b6de18ccc64ef3d7cb67037ac1c3673d1a5",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "cad/engine/generated/front-manifold-stud13.step": "85092e9ad80a34bb473e01c5a3df3f6de4e1e6092e5b14591212a272748ae8c0",
+    "cad/engine/generated/waterpump-heater-source-candidate/tube.step": "d838a6f3c1f4de56bb096be9d58efd2204ccf0d90c0a6f94ae73124225dbda79"
+  },
+  "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__front-manifold-stud13.step",
+  "witness_sha256": "07e41f5ab1bced3b8599129a69ef03b8321831018bf03ede9b45f8af4d6a3f90"
+}

@@ -1,0 +1,194 @@
+{
+  "status": "Diagnosticinterface gates, preserveallaccessfailures",
+  "variants": {
+    "nominal": {
+      "angle_deg": -130.0,
+      "fluid_probe_obstruction_mm3": 0.0,
+      "blocked_probe_negative_control_mm3": 33.13261834232988,
+      "neck_bore_obstruction_mm3": 0.0,
+      "nominal3_8mm_wall_missing_mm3": 0.0,
+      "rear_belowX389_added_mm3": 0.0,
+      "rear_belowX389_removed_mm3": 0.0,
+      "pump_gasket_contact_reuse": "Exactrearstockproof only; frozenrearcontactreport remainsbound",
+      "pump_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 7925.1532200965985
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 504.58727070297937
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        }
+      ],
+      "main_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 61.107062794477194
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 5,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 6,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 7,
+          "housing_overlap_mm3": 0.0
+        }
+      ]
+    },
+    "low-angle": {
+      "angle_deg": -147.14379790833655,
+      "fluid_probe_obstruction_mm3": 0.0,
+      "blocked_probe_negative_control_mm3": 33.132619000768734,
+      "neck_bore_obstruction_mm3": 0.0,
+      "nominal3_8mm_wall_missing_mm3": 0.0,
+      "rear_belowX389_added_mm3": 0.0,
+      "rear_belowX389_removed_mm3": 0.0,
+      "pump_gasket_contact_reuse": "Exactrearstockproof only; frozenrearcontactreport remainsbound",
+      "pump_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 1010.1920822492555
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 504.58727070297937
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        }
+      ],
+      "main_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 61.107062794477194
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 5,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 6,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 7,
+          "housing_overlap_mm3": 0.0
+        }
+      ]
+    },
+    "high-angle": {
+      "angle_deg": -119.62711351597319,
+      "fluid_probe_obstruction_mm3": 0.0,
+      "blocked_probe_negative_control_mm3": 33.132618810638476,
+      "neck_bore_obstruction_mm3": 0.0,
+      "nominal3_8mm_wall_missing_mm3": 0.0,
+      "rear_belowX389_added_mm3": 0.0,
+      "rear_belowX389_removed_mm3": 0.0,
+      "pump_gasket_contact_reuse": "Exactrearstockproof only; frozenrearcontactreport remainsbound",
+      "pump_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 7437.4678044113425
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 504.58727070297937
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        }
+      ],
+      "main_tools": [
+        {
+          "station": 1,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 2,
+          "housing_overlap_mm3": 925.1579068719703
+        },
+        {
+          "station": 3,
+          "housing_overlap_mm3": 2130.1495029324838
+        },
+        {
+          "station": 4,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 5,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 6,
+          "housing_overlap_mm3": 0.0
+        },
+        {
+          "station": 7,
+          "housing_overlap_mm3": 0.0
+        }
+      ]
+    }
+  },
+  "inputs": {
+    "scripts/check-waterpump-source-oriented-inlet-interfaces.py": "114215abbb10250b680adb1b6cc7b56a5032ae5847d025d2b481eb4b26dcb6a1",
+    "cad/engine/waterpump_source_oriented_inlet_candidate.py": "e61e6f8e23f27d7c7741dffb6c9e2aebedd6490b304cd8673f842856e8161da6",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/housing.step": "1ac507ee6b9cc1b66cfe7e5ccabc85c057c0da4625be2ba7dea82dea4a3efa47",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/cover.step": "7c633b7091ab848283ea0e56c060ea5712ec0efb798e392b0686acb9da5f64bc",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/pump-gasket.step": "26da82705c358d3cb789882e5414bef00fbc3687ae6c98b9d25256acbb78f1f3",
+    "cad/engine/generated/waterpump-source-oriented-inlet-candidate/nominal-housing.step": "0b57150adb981a7a75d7e23f13dd48c50265ae6d95c40b09b2a05b5e872c74c3",
+    "cad/engine/generated/waterpump-source-oriented-inlet-candidate/low-angle-housing.step": "144bdf9d24c9528d037413edc561d45641239c06302525d631bd2ba671bbc8d8",
+    "cad/engine/generated/waterpump-source-oriented-inlet-candidate/high-angle-housing.step": "600db65b9eaf7e3f080e6c7417dea0d4cfe2ca1032cd525a11984c4abc7ed9ee"
+  },
+  "limits": [
+    "OpenR2probe andwallstock establishnominalgeometricpassage, notfullvoluteorflowcapacity.",
+    "Alltool envelopes remainR10.5; no silent reduction.",
+    "Source25mmoffset retained inthisfirstorientationtrial; notmeasured."
+  ]
+}

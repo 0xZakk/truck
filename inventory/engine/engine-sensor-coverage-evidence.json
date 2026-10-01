@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "status": "research; not build-ready",
+  "baseline_commit": "6b1608257e8c2eaa12512ac0c256d882854f3996",
+  "scope": "MAP, ACT/IAT and heated oxygen sensor coverage; no CAD or canonical changes",
+  "inputs": [
+    {
+      "path": "inventory/engine/full-assembly.json",
+      "sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+      "redistribute": true
+    },
+    {
+      "path": "reference/engine/engine-control-electrical-map.json",
+      "sha256": "90f2bb7c261b47299f0be495483a476162a8038f721429b89e22389b2bec0481",
+      "redistribute": true
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Manifold%20Pressure%2FVacuum%20Sensor/Service%20and%20Repair/index.html",
+      "sha256": "fbb982a25f418e387578936abf27d5ab294a229c6d6bc966dc28cf5397c8ec1b",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Manifold%20Pressure%2FVacuum%20Sensor/Description%20and%20Operation/index.html",
+      "sha256": "dc3f7787b38d7fed88edd523966e2c224b2e9028a554ccc21a0a155b4fd08004",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Service%20and%20Repair/index.html",
+      "sha256": "36725f49d010e150d64fe3ea1256fbeb0d07833a87be97e8bf0bb63826e87447",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Description%20and%20Operation/index.html",
+      "sha256": "f92d0794e5e7e5ff905be1784d85b217926f38c5cca901ae7e7aae04c2c573c1",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Locations/index.html",
+      "sha256": "858996972849409d1c829d85fbc19f782eb69381d0ea5fecca2990cfb8b70f85",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Service%20and%20Repair/index.html",
+      "sha256": "fc32891a4c8026f9d26e33f2a048c594d24967ca0025e6f62387677bcf8f3fae",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Description%20and%20Operation/index.html",
+      "sha256": "d179a4ee93d9af2a179b877000157dcda676de47fa40e3b7a7f12cee9bcfadd4",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/147826554.png",
+      "sha256": "c489ec4aacfbbbf094facd4bc00e9136275cb0ac528a1e08661ffb4997c271ed",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/149329109.png",
+      "sha256": "811c6767661b7c22c88cff3619acbc780b6704d94f970de4224a0204519ab75b",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/150757959.png",
+      "sha256": "312a780c47e5095c1a0f5565c15c7dc8de7cfdb9676efcd0acabeb9b78b07e6e",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/151274980.png",
+      "sha256": "8d8fdcc8183de757c4449504dd68b02001495b6083136b1707c0266f7c36b871",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/151291782.png",
+      "sha256": "092afa77e7405c26ca2c1a7202c5e185e1106b7c339b09489a066b370dacc694",
+      "redistribute": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Technical%20Service%20Bulletins/All%20Technical%20Service%20Bulletins/Heated%20Exhaust%20Gas%20Oxygen%20Sensor%20-%20Application%20Chart/index.html",
+      "sha256": "ceccd86a36d66f082bd630c81261c583d0fd64b23bd647eb5330bdf1d5fa2657",
+      "redistribute": false
+    }
+  ],
+  "identity": {
+    "map": {
+      "connector": "C1011",
+      "contacts": 3,
+      "manual_callout": "9S428",
+      "mount": "below cowl drip rail on bracket",
+      "metric_pose": null
+    },
+    "iat-act": {
+      "connector": "C164",
+      "contacts": 2,
+      "manual_callout": "12A697",
+      "mount": "lower intake manifold, source figure 147826554",
+      "torque_Nm": [
+        16,
+        24
+      ],
+      "metric_pose": null
+    },
+    "heated-oxygen-sensor": {
+      "connector": "C1025",
+      "contacts": 4,
+      "engineering_number": "F4UF-9F472-CA",
+      "service_number": "F4UZ-9F472-C",
+      "authority": "Ford TSB 94-16-9, 1994 F-Series 4.9L row",
+      "mount": "exhaust pipe per service illustration; generic description says manifold",
+      "torque_Nm": [
+        36,
+        46
+      ],
+      "metric_pose": null
+    }
+  },
+  "qualified_comparisons": [
+    {
+      "part": "Bosch 15718",
+      "source": "https://www.boschautopartes.mx/o/commerce-media/accounts/-1/attachments/9650200?download=true",
+      "pages": [
+        3,
+        46
+      ],
+      "oe_cross_reference": "F4UZ-9F472-C",
+      "catalog_length_mm": 481,
+      "length_datum": "catalog Length; substitution discussion concerns harness lengths, endpoints not dimensioned",
+      "thread": null,
+      "connector_dimensions": null
+    },
+    {
+      "part": "MTE-THOMSON 5041",
+      "source": "https://cate.mte-thomson.com.br/pt/br/produto/detalhes/5041/plug-eletronico--ar",
+      "thread": "3/8-18 NPTF",
+      "hex_mm": 25,
+      "contacts": 2,
+      "qualification": "Manufacturer lists historical Ford 12A697 OE numbers and other Ford applications, but no exact F150 4.9 application in reviewed page. Do not transfer these dimensions to target as verified."
+    }
+  ],
+  "gates": {
+    "service_identity_and_topology": "PASS with stated MAP/ACT service-number gaps",
+    "external_dimensions": "NOT VERIFIED",
+    "connector_dimensions_and_cavity_geometry": "NOT VERIFIED",
+    "target_threads": "NOT VERIFIED",
+    "installed_pose": "NOT VERIFIED",
+    "CAD_export": "N/A research only",
+    "interfaces_motion_browser": "NOT RUN; no geometry authored"
+  },
+  "conflicts": [
+    "ACT retail AX3 M18x1.5 versus TS4052 M16x1.5 and 3/8-18 Dryseal; no target thread selected",
+    "HO2S generic manifold description versus applicable pipe service illustration",
+    "Three-wire Bosch13953 application lead does not supersede exact-year four-contact EVTM and Ford TSB identity",
+    "Packaging dimensions are not sensor dimensions"
+  ],
+  "buildability": "No installed CAD justified. ACT host exists but port geometry needs source/measurement. MAP cowl/bracket and HO2S exhaust pipe are missing host obligations."
+}

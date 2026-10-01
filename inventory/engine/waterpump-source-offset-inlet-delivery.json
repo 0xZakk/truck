@@ -1,0 +1,136 @@
+{
+  "status": "FAIL bounded candidate; nominal inlet feasibility only",
+  "gates": {
+    "valid_exports": true,
+    "source_replay": true,
+    "nominal_all_actual_q0_neighbors": true,
+    "all_offsets_fluid_wall_rear": true,
+    "nominal_inlet_owned_pump_tools": true,
+    "all_access": false,
+    "full_source_offset_sensitivity": false
+  },
+  "parts": {
+    "nominal": {
+      "angle_deg": -130.0,
+      "offset_mm": 6.0,
+      "step_sha256": "943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb",
+      "glb_sha256": "b3bc09a3afe7ce3b65b3ecb8b1ba9b6fdd1686d98504589b2d63076d2815cd9d",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 0.0017431067062361194,
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -138.99300348065023,
+          39.63992735714583
+        ],
+        [
+          511.0000001,
+          45.8000001,
+          250.5000001
+        ]
+      ],
+      "hose_free_end_world_mm": [
+        430.0,
+        -120.60793674583434,
+        55.066830089628944
+      ],
+      "hose_outward_direction": [
+        0,
+        -0.6427876096865394,
+        -0.766044443118978
+      ]
+    },
+    "low-offset": {
+      "angle_deg": -130.0,
+      "offset_mm": -1.0714774533552998,
+      "step_sha256": "16fcbc1db08182769a3f17fae3d828fa09843569ec8c34dfd8ecad4faa6613ff",
+      "glb_sha256": "12fd17165969babb5021046e91aee8e2f276b4d93d53c32e7ff8beac648b74cb",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 0.0017431067062361194,
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -144.41006948845026,
+          44.18538544633983
+        ],
+        [
+          511.0000001,
+          45.8000001,
+          250.5000001
+        ]
+      ],
+      "hose_free_end_world_mm": [
+        430.0,
+        -126.02500275361831,
+        59.612288178823455
+      ],
+      "hose_outward_direction": [
+        0,
+        -0.6427876096865394,
+        -0.766044443118978
+      ]
+    },
+    "high-offset": {
+      "angle_deg": -130.0,
+      "offset_mm": 12.777418688313674,
+      "step_sha256": "1a886584e24c721194a55e913437f7501a403ab173afd9bda85e6aedbb9688dd",
+      "glb_sha256": "73249d488591c05c5f2148df4a9779e0898ab7e7f0a87397da0846282cdfaf40",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 0.0017431067062361194,
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -133.80119955575023,
+          35.28348659863982
+        ],
+        [
+          511.0000001,
+          45.8000001,
+          250.5000001
+        ]
+      ],
+      "hose_free_end_world_mm": [
+        430.0,
+        -115.41613282096094,
+        50.71038933112292
+      ],
+      "hose_outward_direction": [
+        0,
+        -0.6427876096865394,
+        -0.766044443118978
+      ]
+    }
+  },
+  "nominal_exact_pairs": 30,
+  "occurrences_checked": 1360,
+  "failures": [
+    "Heater pump3 tool504.5872707mm3 inherited",
+    "Rear main3 tool61.1070628mm3 inherited",
+    "High offset pump1 tool680.4620480mm3",
+    "Low offset actual carrier conflict confirmed by0.216mm3 interior cube; adaptive total volume NOT VERIFIED"
+  ],
+  "visual_review": "Actual saved mesh image inspected; geometry, four mounts and unchanged cover visible.",
+  "limits": [
+    "Photo normalized coordinates remain estimates; perspective/application and old dimensional uncertainty remain.",
+    "Staticq0 only; no continuous motion or installation/browser verification.",
+    "R2 passage and wall gauge do not establish full volute/hydraulic capacity.",
+    "Radiator hose not modeled; nominal free end changed.",
+    "Inherited rear gasket strip topology failure retained in its frozen report."
+  ],
+  "files": {
+    "inventory/engine/waterpump-source-offset-inlet-export.json": "79b758d9d829758d2cb16dfc7d2de7042899b813bd1ff74dd1b7f7ead10012e9",
+    "inventory/engine/waterpump-source-offset-inlet-interfaces.json": "ff7b132292f0e7e634194ad48e4741bd3cca5ea006b82cfb680512a6f57912f3",
+    "inventory/engine/waterpump-source-offset-inlet-neighbors.json": "2c1c438cdc9e78199927cdacacccad3e7b934053bbe64ea65b04fff8c52b963e",
+    "inventory/engine/waterpump-source-offset-inlet-visual.json": "d144ae0aa8c9000178eaf86010ee749f8312e5a15869583e7d9b08ab10d8dde5",
+    "inventory/engine/waterpump-source-offset-residual.json": "804bee08ff0c2b129248bfdcc153124b4bfcecd203b3955b823a548fa6f07371",
+    "scripts/check-waterpump-source-offset-inlet-delivery.py": "78b47df7276d595c97b4294a1e2f6603a72ae87b3603562412fb96b8560b2909",
+    "inventory/engine/waterpump-neck-registration-research.json": "f1054a84f016e617c47351cbcc55ce712343ba59cb74fb907df0609a2b57de70",
+    "docs/components/waterpump-source-offset-inlet-candidate.md": "4a50405010f0f7de144e8346ffb6e194cc2e7b18bab79afe948afa8770ea077c"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "FAIL finite interior witness exceeds original0.1mm3 gate",
+  "adaptive_failure_preserved": "waterpump-source-offset-inlet-neighbors.json",
+  "bounds_mm": [
+    [
+      407.0650108957627,
+      -140.22844718193758,
+      79.99999999999886
+    ],
+    [
+      429.1640854659036,
+      -118.14703773934903,
+      88.70956514309904
+    ]
+  ],
+  "conservative_bbox_volume_bound_mm3": 4250.08239703268,
+  "diagnostic_default_volume_mm3": 384.72087568276834,
+  "claim": "Bounding box product is an upper bound, not measured overlap volume. Default volume is diagnostic only.",
+  "inputs": {
+    "scripts/check-waterpump-source-offset-residual.py": "fa897e1096dec983bcb49b72192bee1e36f012dab9e85c2f6b8da42dee67ec9e",
+    "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+    "cad/engine/generated/alternator-thermactor-common-carrier.step": "ee488165f629ce8ab0a85ca8dc9499af09c594cf1d595bdf37d9d1b936c855fa",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/low-offset-housing.step": "16fcbc1db08182769a3f17fae3d828fa09843569ec8c34dfd8ecad4faa6613ff"
+  },
+  "witness": "cad/engine/generated/waterpump-source-offset-inlet-candidate/low-offset__carrier-residual.step",
+  "witness_sha256": "7847266e55fdc5ace3ea4a919c5185b55b58d310cadd77e46e0dbe7d24b5f950",
+  "strict_interior_cube": {
+    "center_mm": [
+      418.6308437853448,
+      -130.90181317405072,
+      81.61946004545688
+    ],
+    "cube_edge_mm": 0.6,
+    "cube_volume_mm3": 0.216,
+    "missing_from_intersection_mm3": 0
+  }
+}

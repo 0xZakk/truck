@@ -1,0 +1,48 @@
+{
+  "status": "FAIL pump3.04mm separationstrip inherited; mainstripPASS",
+  "rows": {
+    "main-gasket": {
+      "old": {
+        "before_holes": 7,
+        "eroded_components": 1,
+        "eroded_holes": 7,
+        "eroded_valid": true,
+        "same_separation_topology": true
+      },
+      "candidate": {
+        "before_holes": 7,
+        "eroded_components": 1,
+        "eroded_holes": 7,
+        "eroded_valid": true,
+        "same_separation_topology": true
+      }
+    },
+    "pump-gasket": {
+      "old": {
+        "before_holes": 6,
+        "eroded_components": 1,
+        "eroded_holes": 2,
+        "eroded_valid": true,
+        "same_separation_topology": false
+      },
+      "candidate": {
+        "before_holes": 6,
+        "eroded_components": 1,
+        "eroded_holes": 2,
+        "eroded_valid": true,
+        "same_separation_topology": false
+      }
+    }
+  },
+  "meaning": "Connected eroded stock alone does not prove a closed3.04mm sealing path around each opening. Pump erosion merges openings already in oldgeometry. No threshold reduced; originalconnectedstrip metric remainstrue but insufficient.",
+  "inputs": {
+    "scripts/check-timing-pump-rear-flange-strip-topology.py": "81204e66318c77b31dce5c3275c353edb9533822569963f7f434caa91c8c47c1",
+    "cad/engine/timing_pump_rear_flange_candidate.py": "d14d89d328d6ddb04340e01ecd2a38558e396eae46510f8da9969e4722493f9b",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/main-gasket.step": "682b19e67482afdb672219cb909dd0d2ea6a8711a604184d716b052f0ba51052",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/pump-gasket.step": "26da82705c358d3cb789882e5414bef00fbc3687ae6c98b9d25256acbb78f1f3"
+  }
+}

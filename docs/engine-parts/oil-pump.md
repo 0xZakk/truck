@@ -114,6 +114,9 @@ Acceptance checkboxes remain unchecked until the common quality gates pass for t
 
 - [ ] Verify actual rotor profile/count, clearances and pump-to-block outlet gallery
 - [ ] Pressure relief operation and production mounting
+- [ ] Pump-to-block gasket and locating dowel absent; mounting-face/outlet geometry unknown
+- [ ] Separate pickup-flange gasket/screws/lockwashers and pickup-support nut/washer are absent; industrial comparison quantities are not verified truck counts
+- [ ] Cover lockwasher presence/count is source-revision dependent; relief cap and intermediate-drive retainer already modeled, not additional missing parts
 
 ## Acceptance and handoff
 

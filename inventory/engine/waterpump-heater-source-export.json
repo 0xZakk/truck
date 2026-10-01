@@ -1,0 +1,72 @@
+{
+  "status": "PASS export only",
+  "source_replay": {
+    "added_mm3": 0.0,
+    "removed_mm3": 0.0
+  },
+  "parts": {
+    "housing": {
+      "step_sha256": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+      "glb_sha256": "503847ee3c71494107b267e7860b3648fb57191398ecfc034d8ebcceb2fce8fb",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 2.2511346458031767e-05,
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -138.99300348065023,
+          39.63992735714583
+        ],
+        [
+          511.0000001,
+          45.8000001,
+          250.5000001
+        ]
+      ]
+    },
+    "tube": {
+      "step_sha256": "d838a6f3c1f4de56bb096be9d58efd2204ccf0d90c0a6f94ae73124225dbda79",
+      "glb_sha256": "494c8a805f121969e3b8da3dd0972c3a9ac3288aedf03d792653255b9c9e0b3f",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 0.0006797926032220403,
+      "world_bounds_mm": [
+        [
+          230.1606153011922,
+          -178.67659956379768,
+          216.86386640946787
+        ],
+        [
+          418.00000009999735,
+          -65.58156397772191,
+          420.91366261097386
+        ]
+      ]
+    }
+  },
+  "root_world_mm": [
+    410.0,
+    -80.0,
+    230.3
+  ],
+  "hose_boundary_world_mm": [
+    236.0,
+    -171.0,
+    415.0
+  ],
+  "hose_boundary_direction": [
+    -0.683529287266815,
+    -0.28145323593339444,
+    0.6734773859834795
+  ],
+  "inputs": {
+    "scripts/build-waterpump-heater-source.py": "cd916899a962fde2a991a32a1a22e17b6ab56d034acd1a30c9e4503cae94cf42",
+    "cad/engine/waterpump_heater_source_candidate.py": "258ca0e66b7408914feda1a33856bdbbe8f214bcfc84328fcda214863586511c",
+    "cad/engine/waterpump_source_offset_inlet_candidate.py": "d643630f592cd7c10e3b7d4f63be835956f1c619536c187c35870be82de04d6e",
+    "cad/engine/generated/waterpump-source-offset-inlet-candidate/nominal-housing.step": "943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "inventory/engine/waterpump-heater-source-registration.json": "5d3c4ea7db8350e4f8adbb0b67a9ebb16d270bf16879d25e9c8752b32359c758"
+  }
+}

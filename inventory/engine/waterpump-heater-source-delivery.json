@@ -1,0 +1,200 @@
+{
+  "status": "FAIL whole-engine tube route; bounded local root/contact gates pass",
+  "gates": {
+    "exports": true,
+    "source_replay": true,
+    "functional_wall_locality": true,
+    "tube_insertion_contact": true,
+    "all_four_pump_tools": true,
+    "housing_q0_neighbors": true,
+    "tube_q0_neighbors": false,
+    "main3_inherited_tool": false
+  },
+  "parts": {
+    "housing": {
+      "step_sha256": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+      "glb_sha256": "503847ee3c71494107b267e7860b3648fb57191398ecfc034d8ebcceb2fce8fb",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 2.2511346458031767e-05,
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -138.99300348065023,
+          39.63992735714583
+        ],
+        [
+          511.0000001,
+          45.8000001,
+          250.5000001
+        ]
+      ]
+    },
+    "tube": {
+      "step_sha256": "d838a6f3c1f4de56bb096be9d58efd2204ccf0d90c0a6f94ae73124225dbda79",
+      "glb_sha256": "494c8a805f121969e3b8da3dd0972c3a9ac3288aedf03d792653255b9c9e0b3f",
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "mesh_bounds_error_mm": 0.0006797926032220403,
+      "world_bounds_mm": [
+        [
+          230.1606153011922,
+          -178.67659956379768,
+          216.86386640946787
+        ],
+        [
+          418.00000009999735,
+          -65.58156397772191,
+          420.91366261097386
+        ]
+      ]
+    }
+  },
+  "neighbors_checked": 1359,
+  "exact_pairs_including_resolved_stud": 61,
+  "conflicts": [
+    {
+      "variant": "tube",
+      "neighbor": "cylinder-head",
+      "overlap_mm3": 735.2771913846633,
+      "bounds_mm": [
+        [
+          340.2056230927523,
+          -133.00000070000002,
+          283.53047322299193
+        ],
+        [
+          372.80456721089666,
+          -123.15689474221483,
+          321.9404576799272
+        ]
+      ],
+      "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__cylinder-head.step",
+      "witness_sha256": "ac89a0602a4aeb6265b0a6db6e454e8d1dbc0085da99b94ff1f5f5388ac344e1"
+    },
+    {
+      "variant": "tube",
+      "neighbor": "fuel-supply-rail",
+      "overlap_mm3": 158.04005085427815,
+      "bounds_mm": [
+        [
+          267.6994104917799,
+          -164.26383358874273,
+          363.37169793859516
+        ],
+        [
+          297.4181875350456,
+          -156.99999988546674,
+          375.000000105239
+        ]
+      ],
+      "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__fuel-supply-rail.step",
+      "witness_sha256": "08ce57b2c08ebddaf486b997e2a0c6c3df0ed4b14b7c4bad4e931128d2c4c799"
+    },
+    {
+      "variant": "tube",
+      "neighbor": "exhaust-front",
+      "overlap_mm3": 324.62761095495495,
+      "bounds_mm": [
+        [
+          340.98651309163057,
+          -143.00000070000021,
+          306.4999999
+        ],
+        [
+          358.50000015998404,
+          -132.9999998999999,
+          323.5000001133015
+        ]
+      ],
+      "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__exhaust-front.step",
+      "witness_sha256": "ddaee6b268395ad58a298fe22840df41aaa4ecd63f8eb6a95db4855859cba39d"
+    },
+    {
+      "variant": "tube",
+      "neighbor": "front-manifold-lifting-eye",
+      "overlap_mm3": 922.9274642844789,
+      "bounds_mm": [
+        [
+          280.9694787840549,
+          -147.0000007,
+          305.9999998999993
+        ],
+        [
+          360.0000001000018,
+          -142.99999930000004,
+          372.9192584375244
+        ]
+      ],
+      "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__front-manifold-lifting-eye.step",
+      "witness_sha256": "8e448182d2fa190f8e3a8fc90e242be7a9f4bfed98880ec45fc98cb1aa8c7392"
+    },
+    {
+      "status": "FAIL actual tube neighbor",
+      "neighbor": "front-manifold-stud13",
+      "overlap_mm3": 261.4087393547875,
+      "bounds_mm": [
+        [
+          341.7499998999991,
+          -148.4929026741321,
+          310.2374998949425
+        ],
+        [
+          354.76250010000024,
+          -129.84919509615284,
+          322.14470968122004
+        ]
+      ],
+      "solids": 2,
+      "prior_report_error": "ShapeList bounding_box method unavailable; normalized to Compound. Original report retained.",
+      "inputs": {
+        "scripts/check-waterpump-heater-source-stud.py": "506c4c1886eee6bf11c6b9e2178a8b6de18ccc64ef3d7cb67037ac1c3673d1a5",
+        "inventory/engine/corrected-engine-stage-v3.json": "f512d6024ed4d3d0d86c45c39492b4ab525e039a9c50fb71b67940633b8a2055",
+        "cad/engine/generated/front-manifold-stud13.step": "85092e9ad80a34bb473e01c5a3df3f6de4e1e6092e5b14591212a272748ae8c0",
+        "cad/engine/generated/waterpump-heater-source-candidate/tube.step": "d838a6f3c1f4de56bb096be9d58efd2204ccf0d90c0a6f94ae73124225dbda79"
+      },
+      "witness": "cad/engine/generated/waterpump-heater-source-candidate/tube__front-manifold-stud13.step",
+      "witness_sha256": "07e41f5ab1bced3b8599129a69ef03b8321831018bf03ede9b45f8af4d6a3f90"
+    }
+  ],
+  "original_error": "Neighbor report retains ShapeList container error; supplementary stud report resolves exact two-solid intersection.",
+  "source_class": "Gates44009 replacement topology; every new3D dimension inferred, not measured Ford1994 geometry.",
+  "boundary": {
+    "old_world_mm": [
+      438,
+      -132,
+      270
+    ],
+    "new_world_mm": [
+      236.0,
+      -171.0,
+      415.0
+    ],
+    "new_direction": [
+      -0.683529287266815,
+      -0.28145323593339444,
+      0.6734773859834795
+    ],
+    "status": "Changed only in candidate; no vehicle heater hose geometry exists."
+  },
+  "visual_review": "review.png and context.png inspected against original three pump photos; separate root radialangle/stem tangent retained; whole route conflict clearly visible.",
+  "limits": [
+    "Nominal source topology study, not production tolerance or physical fit specification.",
+    "Source side axial scaling and tip position remain weak, perspective dependent.",
+    "No browser installation, full moving-engine sweep, pressure/retention/flow capacity validation.",
+    "Frozen offset sensitivity failures and rear main3/strip failures remain unchanged."
+  ],
+  "files": {
+    "inventory/engine/waterpump-heater-source-registration.json": "5d3c4ea7db8350e4f8adbb0b67a9ebb16d270bf16879d25e9c8752b32359c758",
+    "inventory/engine/waterpump-heater-source-export.json": "a98a52eb35b978a9ce1d71310ffb1f26fa41ac4323ea1113cd2f14274ff815d0",
+    "inventory/engine/waterpump-heater-source-interfaces.json": "6dad69fb1c1973a7710e302334d8441b5061d4a31f41b290de0a93796719a48e",
+    "inventory/engine/waterpump-heater-source-neighbors.json": "39c659dd7a53da8534a7cd367c286f9a46fb580eb7a82d6ab7ccee063fc533c4",
+    "inventory/engine/waterpump-heater-source-stud.json": "f15c0dc82ca98b28a20b7aef536091f402845800ba0a5efdbb0e2f5920c170dd",
+    "inventory/engine/waterpump-heater-source-visual.json": "aa66414a4c65d5800acb23606b56b9d6bfbb113ed8af9fab3b2d7b8e41b07606",
+    "inventory/engine/waterpump-heater-source-context.json": "a65f4ed62fbab59717cc88c8f9878a0c894c59523c81b0d8f0e6fc5672efca5d",
+    "scripts/check-waterpump-heater-source-delivery.py": "22ab4651b17c561936e709fbd5fbfaf8ad008d622ec30490f46ad9b148d0b087",
+    "docs/components/waterpump-heater-source-candidate.md": "9a4b0c41dacb6810255cea9a2c31c7d972d85858eb511823a85523486c500d93"
+  }
+}

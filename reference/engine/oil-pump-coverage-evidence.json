@@ -1,0 +1,242 @@
+{
+  "status": "RESEARCH; no CAD or installation",
+  "baseline": "fbd453c66cff813cfc84fb18f88e1d1ecc560ee4",
+  "issue": 32,
+  "inputs": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/completion-plan.json": "1cceb0c69165ed00fbc42d5686a22e8d4a4944fea78773b4f0f85e9b3baf0cdf",
+    "inventory/engine/work-breakdown.json": "87f8f37ab2c5951a8c53286ff3f0aa29e08d88ec75a87d1bdf74ab4e8739b6f0",
+    "reference/engine/ford-industrial-parts.pdf": "9d620022e37420a31f3e998c68c4ebddadd19e8569cdb48470851fec10fb5db8",
+    "reference/engine/ford-csg649.pdf": "f7fb9d6aa8c837122368e1b5c6642cc5cd7b8a6bc20fa24f1924cb9adbbacddd",
+    "reference/engine/oil-pump-discharge-source-review.json": "66ac33bbe2e98af55e5aedeae962a6c1e5c77cbe504fbbd028e4a229b315af04",
+    "reference/engine/oil-pump-topology-evidence.json": "9f78ba6b8c31529cbf362a9422744c142b1efdd33f8cdb0658a6397b5e085a41",
+    "inventory/engine/oil-pump-topology-delivery.json": "fb72b9479a2ccc1bbe0d5b0e8f0702dbbec4a855ca3a3949a22b20d778da654c"
+  },
+  "canonical_occurrences": [
+    {
+      "id": "oil-pump-housing",
+      "definition": "oil-pump-housing",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-inner-rotor",
+      "definition": "oil-pump-inner-rotor",
+      "parent": "oil-pump-inner-rotation"
+    },
+    {
+      "id": "oil-pump-outer-rotor",
+      "definition": "oil-pump-outer-rotor",
+      "parent": "oil-pump-outer-rotation"
+    },
+    {
+      "id": "oil-pump-rotor-shaft",
+      "definition": "oil-pump-rotor-shaft",
+      "parent": "oil-pump-inner-rotation"
+    },
+    {
+      "id": "oil-pump-cover",
+      "definition": "oil-pump-cover",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-cover-bolt-1",
+      "definition": "oil-pump-cover-bolt",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-cover-bolt-2",
+      "definition": "oil-pump-cover-bolt",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-cover-bolt-3",
+      "definition": "oil-pump-cover-bolt",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-cover-bolt-4",
+      "definition": "oil-pump-cover-bolt",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-relief-plunger",
+      "definition": "oil-pump-relief-plunger",
+      "parent": "oil-pump-relief"
+    },
+    {
+      "id": "oil-pump-relief-spring",
+      "definition": "oil-pump-relief-spring",
+      "parent": "oil-pump-relief"
+    },
+    {
+      "id": "oil-pump-relief-cap",
+      "definition": "oil-pump-relief-cap",
+      "parent": "oil-pump-relief"
+    },
+    {
+      "id": "oil-pickup-tube",
+      "definition": "oil-pickup-tube",
+      "parent": "oil-pickup-assembly"
+    },
+    {
+      "id": "oil-pickup-bell",
+      "definition": "oil-pickup-bell",
+      "parent": "oil-pickup-assembly"
+    },
+    {
+      "id": "oil-pickup-screen",
+      "definition": "oil-pickup-screen",
+      "parent": "oil-pickup-assembly"
+    },
+    {
+      "id": "oil-pump-intermediate-shaft",
+      "definition": "oil-pump-intermediate-shaft",
+      "parent": "oil-pump-intermediate-rotation"
+    },
+    {
+      "id": "oil-pump-drive-retainer",
+      "definition": "oil-pump-drive-retainer",
+      "parent": "oil-pump-intermediate-rotation"
+    },
+    {
+      "id": "oil-pump-mount-bolt-1",
+      "definition": "oil-pump-mount-bolt",
+      "parent": "oil-pump-assembly"
+    },
+    {
+      "id": "oil-pump-mount-bolt-2",
+      "definition": "oil-pump-mount-bolt",
+      "parent": "oil-pump-assembly"
+    }
+  ],
+  "canonical_counts": {
+    "oil_pump_group_definitions": 10,
+    "oil_pump_group_occurrences": 14,
+    "intermediate_drive_occurrences": 2,
+    "pickup_occurrences": 3,
+    "total_selected_occurrences": 19
+  },
+  "coverage_rows": [
+    {
+      "candidate_id": "oil-pump-block-gasket",
+      "source_quantity": 1,
+      "source": "Exact-year service procedure requires new pump gasket; industrial pump assembly includes gasket",
+      "canonical_status": "absent",
+      "dimensional_evidence": null,
+      "blocking_gap": "Mount outline, apertures, thickness and block seat unknown; do not wrap old feet"
+    },
+    {
+      "candidate_id": "oil-pickup-flange-gasket",
+      "source_quantity": 1,
+      "source": "Ford industrial parts PDF18/15 D5TZ-6626-A; CSG PDF36/1-32 Fig65 gasket6626",
+      "canonical_status": "absent canonical; separate illustrative topology candidate",
+      "dimensional_evidence": null,
+      "blocking_gap": "Truck pickup E3TZ6622F differs industrial C5TZ6622B; applicability and all dimensions"
+    },
+    {
+      "candidate_id": "oil-pump-block-dowel",
+      "source_quantity": 1,
+      "source": "Industrial parts PDF18/15 378644-S",
+      "canonical_status": "absent",
+      "dimensional_evidence": {
+        "raw_inch_notation": "1/2 x 13/32",
+        "converted_values_mm": [
+          12.7,
+          10.31875
+        ],
+        "dimension_roles": null
+      },
+      "blocking_gap": "Dimension order, split/wall/chamfer construction, fit, axis and truck applicability"
+    },
+    {
+      "candidate_id": "oil-pickup-flange-screw",
+      "source_quantity": 2,
+      "source": "CSG Fig65 two pickup attachment stations,20346-S; figure-derived comparison count",
+      "canonical_status": "absent",
+      "dimensional_evidence": null,
+      "blocking_gap": "Truck pattern/thread/length and flange stack"
+    },
+    {
+      "candidate_id": "oil-pickup-flange-lockwasher",
+      "source_quantity": 2,
+      "source": "CSG Fig65 washer34806-S at pickup attachment; station-count comparison",
+      "canonical_status": "absent",
+      "dimensional_evidence": null,
+      "blocking_gap": "Actual washer dimensions and truck attachment revision"
+    },
+    {
+      "candidate_id": "oil-pickup-support-nut",
+      "source_quantity": 1,
+      "source": "Industrial parts PDF18/15 33799-S8 screen-to-stud",
+      "canonical_status": "absent",
+      "dimensional_evidence": {
+        "nominal_thread": "3/8-16"
+      },
+      "blocking_gap": "Truck support architecture; nut class, height/AF, stud host"
+    },
+    {
+      "candidate_id": "oil-pickup-support-washer",
+      "source_quantity": 1,
+      "source": "Industrial parts PDF18/15 34807-S8",
+      "canonical_status": "absent",
+      "dimensional_evidence": {
+        "nominal_size_inch": "3/8"
+      },
+      "blocking_gap": "OD,ID,thickness and applicable truck support"
+    },
+    {
+      "candidate_id": "oil-pump-cover-lockwasher",
+      "source_quantity": null,
+      "source": "CSG Fig65 34805-S; industrial list has four42911-S cover bolts but no separate washer row",
+      "canonical_status": "absent",
+      "dimensional_evidence": null,
+      "blocking_gap": "Truck/revision identity; do not turn single drawing symbol into exact count. Four is conditional on washer at each four-bolt station"
+    },
+    {
+      "candidate_id": "oil-pump-relief-cap",
+      "source_quantity": 1,
+      "source": "CSG Fig65 cap6666 and staked-cap removal text",
+      "canonical_status": "present provisional",
+      "dimensional_evidence": null,
+      "blocking_gap": "Actual cup/retention dimensions; no extra screw or pin justified"
+    },
+    {
+      "candidate_id": "oil-pump-drive-retainer",
+      "source_quantity": 1,
+      "source": "Industrial parts PDF18/15 C4AZ6629A",
+      "canonical_status": "present provisional",
+      "dimensional_evidence": null,
+      "blocking_gap": "Working retaining-ring construction/fit; not absent"
+    }
+  ],
+  "non_additive_notes": [
+    "Rotor/shaft6608 is a service assembly, not an extra occurrence on top of inner rotor and shaft. Outer race is already outer rotor.",
+    "Raised drive neck and mounting/pickup flanges belong to housing/tube construction, not automatically separate physical plates.",
+    "Relief-cap extraction screw/hole is service tooling, not an installed fastener or factory hole. No separate pressure-relief retaining pin or extra gallery plug established.",
+    "Industrial screen/tube assembly support applies conditionally; exactyear pickup differs.",
+    "No total factory BOM inferred from selected19 canonical occurrences or missing-row sum."
+  ],
+  "actionable_candidate": {
+    "id": "oil-pump-block-dowel",
+    "readiness": "measurement-ready, not CAD-ready",
+    "reason": "Only absent local pump piece with two primary nominal dimensions, but role/order and construction remain unspecified.",
+    "required": [
+      "Applicable part drawing or measured sample defining OD and length order",
+      "Split/solid construction, wall or slit width, end chamfer",
+      "For installation: host bore fit and locating axis"
+    ]
+  },
+  "search_lead": {
+    "url": "https://squarebirds.org/Manuals/1965/1965-72FordPartsTextCatalog/09-1965Text-Engine.pdf",
+    "date": "2026-10-01",
+    "result": "Search index says same378644-S is split dowel1/2x13/32; direct PDF403. Unreviewed older-car comparison lead only, not adopted dimensional evidence."
+  },
+  "validation": {
+    "canonical_id_count": 19,
+    "missing_candidate_ids_checked": true,
+    "source_visual": "actual industrial partsPDF18 and CSGPDF36 inspected",
+    "cad": "N/A evidence only",
+    "installed": "NOT RUN",
+    "browser": "NOT RUN"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "status": "PASS world-coordinate exports only; gates pending",
+  "parts": {
+    "housing": {
+      "step_sha256": "1ac507ee6b9cc1b66cfe7e5ccabc85c057c0da4625be2ba7dea82dea4a3efa47",
+      "glb_sha256": "d30eab6e6df8233f666139dee8f7b04d2e8967a43b10c583593fbb34ff32b386",
+      "world_bounds_mm": [
+        [
+          374.9999999,
+          -109.7000001,
+          94.75
+        ],
+        [
+          511.0000001,
+          113.0000001,
+          250.5000001
+        ]
+      ],
+      "mesh_bounds_error_mm": 6.16312026977539e-05,
+      "watertight": true,
+      "components": 1,
+      "euler_number": -22,
+      "faces": 67,
+      "solids": 1,
+      "valid": true
+    },
+    "pump-gasket": {
+      "step_sha256": "26da82705c358d3cb789882e5414bef00fbc3687ae6c98b9d25256acbb78f1f3",
+      "glb_sha256": "a1abd0a077a2fa9f32a76002d1332801870b6e0cabe73451dc5490d3b80d4f92",
+      "world_bounds_mm": [
+        [
+          372.99999999999517,
+          -107.7,
+          94.75
+        ],
+        [
+          375.0,
+          43.8,
+          250.5
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.0018243789672851562,
+      "watertight": true,
+      "components": 1,
+      "euler_number": -10,
+      "faces": 19,
+      "solids": 1,
+      "valid": true
+    },
+    "cover": {
+      "step_sha256": "7c633b7091ab848283ea0e56c060ea5712ec0efb798e392b0686acb9da5f64bc",
+      "glb_sha256": "b54322bda245c0c9c9df21ba791066fada0b3a70a06cc41908bfb6bbf4d243b1",
+      "world_bounds_mm": [
+        [
+          364.99999999999903,
+          -149.0,
+          -59.4
+        ],
+        [
+          432.6112,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "mesh_bounds_error_mm": 1.4758064310171903e-05,
+      "watertight": true,
+      "components": 1,
+      "euler_number": -30,
+      "faces": 1027,
+      "solids": 1,
+      "valid": true
+    },
+    "main-gasket": {
+      "step_sha256": "682b19e67482afdb672219cb909dd0d2ea6a8711a604184d716b052f0ba51052",
+      "glb_sha256": "ab383fa2a2f840144370e91e79322eccb8f0d61266c6ef84ec1ca4654176f81e",
+      "world_bounds_mm": [
+        [
+          373.0,
+          -140.9099652337,
+          -24.000000000009052
+        ],
+        [
+          373.8,
+          262.6164107083817,
+          209.1393618743347
+        ]
+      ],
+      "mesh_bounds_error_mm": 1.4758064310171903e-05,
+      "watertight": true,
+      "components": 1,
+      "euler_number": -12,
+      "faces": 300,
+      "solids": 1,
+      "valid": true
+    }
+  },
+  "frame": "All exported shapes use worldCAD coordinates, millimeters; no canonical installer",
+  "inputs": {
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/timing_pump_rear_flange_candidate.py": "d14d89d328d6ddb04340e01ecd2a38558e396eae46510f8da9969e4722493f9b",
+    "scripts/build-timing-pump-rear-flange-candidate.py": "d51ba8b9e025f397fb3f3f3627e9cec6bd98d3dc637b33b7c0176d7c446e6223",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  }
+}

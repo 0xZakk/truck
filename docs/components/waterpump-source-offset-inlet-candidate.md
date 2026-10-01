@@ -1,0 +1,23 @@
+# Component contract: source-normalized water-pump inlet offset
+
+Issue32/47. Worker pump_foot_resume; root owns integration. Baseline8c2d2d9a1400acf784e04581a61e6a6ede38d3ba. New isolated module/scripts/reports/exports only; frozen orientation-only FAIL and rear candidate unchanged.
+
+Root authorizes nominal angle−130° with transverse offset6mm instead of inherited25mm. Front/rear four-hole/large-fifth correspondence and handedness controls are in waterpump-neck-registration-research.json. Neck-line offsets normalized to the retained estimated bolt pattern are −1.0714774533552998 and12.777418688313674mm. Their difference reflects perspective, axial parallax, landmark uncertainty and application limits; neither is a measured dimension or manufacturing tolerance. Nominal6mm is a declared source-ratio estimate, not an optimization to tool clearance.
+
+Build all three offsets analytically with unchanged radii/lengths/axial profile, four mounting axes, bore/bearing/hub, heater port and frozen rear mask. Check valid one-solid STEP/watertight mesh, full actual q0 engine neighbors, unchanged rear contacts, positive fluid witness and nominal neck wall, unchanged R10.5 pump/main tools and free hose-end boundary. Heater station3 and rear main3 failures remain independently open. No actual-neighbor cuts or arbitrary bolt tunnels. No canonical/private manifest writes. No production, flow-capacity, continuous-motion or radiator-hose installation claim.
+
+Owned names: waterpump_source_offset_inlet_candidate.py, scripts/*waterpump-source-offset-inlet*, inventory/engine/waterpump-source-offset-inlet*, generated/waterpump-source-offset-inlet-candidate and this handoff. Contract recorded before build; results pending.
+
+## Review and inherited limits
+
+Actual STEP-derived meshes were inspected in `generated/waterpump-source-offset-inlet-candidate/review.png`; the three analytical offset variants preserve the cover and mounting pattern. The photo-normalized high bound reintroduces pump1 tool interference680.462048mm³ despite the nominal/low offsets clearing it. This is recorded as sensitivity failure, not narrowed into an artificial acceptable range. All retain inherited heater pump3 overlap504.587271mm³ and main3 overlap61.107063mm³. No tool size reduction or procedure waiver.
+
+Next source-supported heater proposal should jointly rebuild the casting root and formed tube. Photo fits place its root in localYZ approximately(−47.9421,55.7126) rear and(−32.0824,64.7211) front, compared with old(−45,15). These are perspective-sensitive inherited-model coordinates; neither fixes an axial depth or tube bend radius. Preserve the existing external heater boundary at world(438,−132,270) unless root approves a broader hose contract, and validate the intervening tube analytically from a declared root estimate. This delivery does not implement that proposal.
+
+## Frozen delivery
+
+Overall FAIL, with nominal inlet feasibility established. Nominal6mm export passes all1,360 actual other engine occurrences at q0, valid STEP/GLB, open fluid witness, neck wall and exact unchanged rear interface. High12.7774mm offset fails pump1 tool680.462048mm³. Low−1.0715mm offset conflicts with alternator/Thermactor carrier: strict adaptive total volume did not converge and stays NOT VERIFIED; a fully contained0.6mm cube proves at least0.216mm³ physical overlap, exceeding unchanged0.1mm³ gate. Default kernel volume384.720876mm³ is diagnostic only. Do not claim source-range robustness.
+
+Nominal STEP SHA943ea6b408c56e949dc118858a07446a0dce92aac41d5a5891a4076d53bc07fb. Nominal hose free end world(430,−120.6079367,55.0668301), direction(0,−0.64278761,−0.76604444); radiator hose remains unmodeled. Four mounting axes, bore/bearing/hub and rear source geometry are retained by construction, and rear exact delta is zero.
+
+Reproduce using CAD Python on scripts/build-waterpump-source-offset-inlet.py, check-waterpump-source-offset-inlet-interfaces.py, check-waterpump-source-offset-inlet-neighbors.py and check-waterpump-source-offset-residual.py; render-waterpump-source-offset-inlet.py --extract with CAD Python then without flag using system Matplotlib; finally system Python scripts/check-waterpump-source-offset-inlet-delivery.py. Environment Python3.13.12/build123d0.10.0/trimesh4.7.4. Report inventory/engine/waterpump-source-offset-inlet-delivery.json binds input hashes, separate statuses and reviewed image; exported solids/meshes/logs are in generated/waterpump-source-offset-inlet-candidate. No canonical or stage edits. Baseline inherited8c2d2d9a; concurrent root checkpoint advanced HEAD to e6dc8fcd during execution, with bound source/stage hashes unchanged.

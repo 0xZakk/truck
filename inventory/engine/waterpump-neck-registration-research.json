@@ -1,0 +1,1761 @@
+{
+  "scope": "Source landmark registration audit only; modelscale used asreference, not physicalmeasurement",
+  "landmarks": {
+    "order": [
+      "mount1bottom",
+      "mount2right",
+      "mount3left",
+      "mount4top",
+      "larger-fifth-aperture"
+    ],
+    "model_relative_yz_mm": [
+      [
+        7.7,
+        -66.5
+      ],
+      [
+        66.3,
+        6.3
+      ],
+      [
+        -66.2,
+        5.3
+      ],
+      [
+        17.0,
+        64.9
+      ],
+      [
+        -10.9,
+        69.0
+      ]
+    ],
+    "rear_pixels_xy": [
+      [
+        421.0,
+        539.0
+      ],
+      [
+        257.0,
+        584.0
+      ],
+      [
+        362.0,
+        369.0
+      ],
+      [
+        200.0,
+        450.0
+      ],
+      [
+        219.0,
+        408.0
+      ]
+    ],
+    "front_pixels_xy": [
+      [
+        268.0,
+        587.0
+      ],
+      [
+        461.0,
+        600.0
+      ],
+      [
+        298.0,
+        378.0
+      ],
+      [
+        499.0,
+        447.0
+      ]
+    ],
+    "rear_neck_root_tip_pixels": [
+      [
+        552.0,
+        432.0
+      ],
+      [
+        622.0,
+        411.0
+      ]
+    ],
+    "front_neck_tip_root_pixels": [
+      [
+        31.0,
+        476.0
+      ],
+      [
+        109.0,
+        480.0
+      ]
+    ],
+    "uncertainty_pixels": {
+      "mounts": 4,
+      "neck": 8
+    }
+  },
+  "fits": {
+    "rear": {
+      "-1": {
+        "parity": -1,
+        "scale_model_mm_per_pixel_NOT_MEASUREMENT": 0.5578954950910158,
+        "rotation_matrix_row_convention": [
+          [
+            -0.4355509936980944,
+            -0.900164058318595
+          ],
+          [
+            -0.9001640583185949,
+            0.43555099369809425
+          ]
+        ],
+        "rms_model_mm": 1.990422897925233,
+        "residuals_model_mm": [
+          1.7853237304852556,
+          2.303565605379582,
+          1.2186170800759761,
+          2.701187418609173,
+          1.591753807502417
+        ],
+        "predicted_model_yz": [
+          [
+            6.037067340694117,
+            -65.85035718025391
+          ],
+          [
+            68.48663133645918,
+            5.575391211271549
+          ],
+          [
+            -64.9999787669719,
+            5.087923060813708
+          ],
+          [
+            15.042710381496446,
+            66.76156676478463
+          ],
+          [
+            -10.666430291677822,
+            67.42547614338406
+          ]
+        ],
+        "heater_root_model_yz_estimate": [
+          -47.942114402392086,
+          55.71258624099781
+        ],
+        "heater_root_radial_angle_deg": 130.7128423480467,
+        "neck_model_yz_estimate": [
+          [
+            -79.53000604995874,
+            -105.63808885295119
+          ],
+          [
+            -107.0855885911741,
+            -135.68908127886826
+          ]
+        ],
+        "neck_outward_direction_deg": -132.51960387781943,
+        "neck_line_signed_offset_model_mm_NOT_MEASUREMENT": 12.777418688313674,
+        "neck_center_radial_angle_deg": -127.71437915801472
+      },
+      "1": {
+        "parity": 1,
+        "scale_model_mm_per_pixel_NOT_MEASUREMENT": 0.07852963812816711,
+        "rotation_matrix_row_convention": [
+          [
+            0.6027822631182231,
+            -0.797905723296978
+          ],
+          [
+            0.797905723296978,
+            0.602782263118223
+          ]
+        ],
+        "rms_model_mm": 64.80337451552799,
+        "residuals_model_mm": [
+          71.00713720185043,
+          72.58301026234763,
+          79.38105012869678,
+          45.799270790307176,
+          47.8346684549385
+        ],
+        "predicted_model_yz": [
+          [
+            4.572358378611062,
+            4.438222359251194
+          ],
+          [
+            -6.010456539190942,
+            12.58420669916581
+          ],
+          [
+            12.431590382892583,
+            16.18228438296238
+          ],
+          [
+            -0.31228490651650276,
+            22.498844399716127
+          ],
+          [
+            3.218792684203794,
+            23.296442158904497
+          ]
+        ],
+        "heater_root_model_yz_estimate": [
+          8.686555421112036,
+          22.702948191411387
+        ],
+        "heater_root_radial_angle_deg": 69.06225236577185,
+        "neck_model_yz_estimate": [
+          [
+            17.47794964572838,
+            1.2948421193470523
+          ],
+          [
+            22.107332957150007,
+            -2.0972434875685195
+          ]
+        ],
+        "neck_outward_direction_deg": -36.23133223982296,
+        "neck_line_signed_offset_model_mm_NOT_MEASUREMENT": 11.374755209984196,
+        "neck_center_radial_angle_deg": -1.1612375550699048
+      }
+    },
+    "front": {
+      "-1": {
+        "parity": -1,
+        "scale_model_mm_per_pixel_NOT_MEASUREMENT": 0.036931351557873617,
+        "rotation_matrix_row_convention": [
+          [
+            0.954204740730187,
+            0.2991543293486442
+          ],
+          [
+            0.2991543293486442,
+            -0.9542047407301871
+          ]
+        ],
+        "rms_model_mm": 66.23277759725445,
+        "residuals_model_mm": [
+          70.99776765001853,
+          58.372199811897666,
+          71.30320063237194,
+          63.363871175955424
+        ],
+        "predicted_model_yz": [
+          [
+            1.2722053798183683,
+            4.206198226228943
+          ],
+          [
+            7.929912774076881,
+            6.796616671320487
+          ],
+          [
+            4.638475806773304,
+            -2.8275313468161203
+          ],
+          [
+            10.959406039331444,
+            1.8247164492666896
+          ]
+        ],
+        "heater_root_model_yz_estimate": [
+          9.797240283484248,
+          -1.7520516707221407
+        ],
+        "heater_root_radial_angle_deg": -10.139091661932078,
+        "neck_model_yz_estimate": [
+          [
+            -5.853344103607377,
+            -2.3238667943143563
+          ],
+          [
+            -3.1488112808648143,
+            -1.321148962197665
+          ]
+        ],
+        "neck_outward_direction_deg": -159.6575092798528,
+        "neck_line_signed_offset_model_mm_NOT_MEASUREMENT": 0.144126014635366,
+        "neck_center_radial_angle_deg": -157.95673956173374
+      },
+      "1": {
+        "parity": 1,
+        "scale_model_mm_per_pixel_NOT_MEASUREMENT": 0.4844207447683421,
+        "rotation_matrix_row_convention": [
+          [
+            0.5817412808059026,
+            0.8133738883233887
+          ],
+          [
+            -0.8133738883233887,
+            0.5817412808059026
+          ]
+        ],
+        "rms_model_mm": 0.584233912541151,
+        "residuals_model_mm": [
+          0.7207206434893644,
+          0.556222608414195,
+          0.6095419595675314,
+          0.40614507471631883
+        ],
+        "predicted_model_yz": [
+          [
+            7.312119217626019,
+            -65.89255720877051
+          ],
+          [
+            66.82317270998715,
+            6.488875370643691
+          ],
+          [
+            -66.58282806121775,
+            4.825675136622921
+          ],
+          [
+            17.24753613360459,
+            64.57800670150388
+          ]
+        ],
+        "heater_root_model_yz_estimate": [
+          -32.08236932732328,
+          64.72113699522654
+        ],
+        "heater_root_radial_angle_deg": 116.36768717181403,
+        "neck_model_yz_estimate": [
+          [
+            -103.21195433935678,
+            -127.9935185554537
+          ],
+          [
+            -79.65490512851203,
+            -98.38756432247004
+          ]
+        ],
+        "neck_outward_direction_deg": -128.50878192551542,
+        "neck_line_signed_offset_model_mm_NOT_MEASUREMENT": -1.0714774533552998,
+        "neck_center_radial_angle_deg": -128.9306988049711
+      }
+    }
+  },
+  "rear_wrong_index_controls": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rms_model_mm": 1.990422897925233
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "rms_model_mm": 35.85181672359233
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "rms_model_mm": 35.99202411706027
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "rms_model_mm": 46.15598285766711
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "rms_model_mm": 50.0594032846493
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "rms_model_mm": 53.037767947145504
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "rms_model_mm": 56.02355387716376
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "rms_model_mm": 56.046939985927274
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "rms_model_mm": 56.81747317759475
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "rms_model_mm": 57.31778742829093
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "rms_model_mm": 57.34103181496859
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "rms_model_mm": 58.43179717380581
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "rms_model_mm": 58.859358631928465
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "rms_model_mm": 59.285218885038354
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "rms_model_mm": 59.6834114483288
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "rms_model_mm": 59.68877253037676
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "rms_model_mm": 62.67452011941756
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "rms_model_mm": 63.26419234821985
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "rms_model_mm": 63.56344096857737
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "rms_model_mm": 63.72777104787697
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "rms_model_mm": 63.761406004473415
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "rms_model_mm": 64.36348376246733
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "rms_model_mm": 64.4618196958683
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "rms_model_mm": 65.10582114142012
+    }
+  ],
+  "wrong_fifth_identity_controls": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        4,
+        3
+      ],
+      "rms_model_mm": 16.942534381677692
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        4,
+        1,
+        3
+      ],
+      "rms_model_mm": 22.52368518135946
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "rms_model_mm": 24.741062734637417
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        3,
+        0,
+        1
+      ],
+      "rms_model_mm": 32.188057338995485
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        1,
+        2,
+        0
+      ],
+      "rms_model_mm": 33.395981535618446
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        4,
+        3,
+        1
+      ],
+      "rms_model_mm": 33.55462189421356
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      "rms_model_mm": 35.44822862143836
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      "rms_model_mm": 42.03151422537726
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        0,
+        2,
+        3
+      ],
+      "rms_model_mm": 42.90988191246987
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      "rms_model_mm": 43.247011860305854
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        1,
+        2,
+        0
+      ],
+      "rms_model_mm": 43.51366907349219
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        4,
+        0,
+        1
+      ],
+      "rms_model_mm": 44.09873224310066
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        1,
+        0,
+        2
+      ],
+      "rms_model_mm": 44.16660418824972
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        1,
+        0,
+        3
+      ],
+      "rms_model_mm": 45.92971361164821
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      "rms_model_mm": 47.382152910375126
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        1,
+        3,
+        0
+      ],
+      "rms_model_mm": 47.71145603092212
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        4,
+        3,
+        2
+      ],
+      "rms_model_mm": 48.36799823890483
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        4,
+        1,
+        0
+      ],
+      "rms_model_mm": 50.52780671384613
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        1,
+        0,
+        2
+      ],
+      "rms_model_mm": 50.99559787095724
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        4,
+        1
+      ],
+      "rms_model_mm": 51.38911473644983
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        0,
+        2,
+        1
+      ],
+      "rms_model_mm": 52.040632858725026
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        2,
+        1,
+        3
+      ],
+      "rms_model_mm": 52.5068249532434
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "rms_model_mm": 52.8966981748292
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        4,
+        2
+      ],
+      "rms_model_mm": 52.89778425541373
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        3,
+        0,
+        1
+      ],
+      "rms_model_mm": 52.946881124334475
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "rms_model_mm": 53.05905153058975
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "rms_model_mm": 53.29516503504487
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        3,
+        2,
+        0
+      ],
+      "rms_model_mm": 53.67724857620658
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        3,
+        2,
+        1
+      ],
+      "rms_model_mm": 54.4885554194334
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        2,
+        1,
+        3
+      ],
+      "rms_model_mm": 54.52292439033922
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        4,
+        3
+      ],
+      "rms_model_mm": 54.566086046046664
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        4,
+        0
+      ],
+      "rms_model_mm": 55.0495980469781
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        4,
+        2
+      ],
+      "rms_model_mm": 55.20170311671829
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        0,
+        1,
+        2
+      ],
+      "rms_model_mm": 55.317276062519134
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        2,
+        3,
+        1
+      ],
+      "rms_model_mm": 55.3777530340399
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        0,
+        1
+      ],
+      "rms_model_mm": 55.75238978180225
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "rms_model_mm": 55.95177311568114
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        4,
+        3
+      ],
+      "rms_model_mm": 57.318331570637056
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        0,
+        2,
+        1
+      ],
+      "rms_model_mm": 57.35753643556455
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        3,
+        1,
+        0
+      ],
+      "rms_model_mm": 57.57445328253976
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        4,
+        3
+      ],
+      "rms_model_mm": 57.78798958434886
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        2,
+        3,
+        1
+      ],
+      "rms_model_mm": 57.82925045812939
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        3,
+        1,
+        2
+      ],
+      "rms_model_mm": 57.91065224199394
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      "rms_model_mm": 58.14749445460505
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        3,
+        0,
+        2
+      ],
+      "rms_model_mm": 58.44226760484638
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        2,
+        3,
+        0
+      ],
+      "rms_model_mm": 58.509065274431904
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        4,
+        3
+      ],
+      "rms_model_mm": 58.5732633050105
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        4,
+        3,
+        0
+      ],
+      "rms_model_mm": 58.82380823730376
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        1,
+        3,
+        2
+      ],
+      "rms_model_mm": 58.863081839294686
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        4,
+        3,
+        1
+      ],
+      "rms_model_mm": 59.10008448256726
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        4,
+        2,
+        1
+      ],
+      "rms_model_mm": 59.17477061945652
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        0,
+        3,
+        2
+      ],
+      "rms_model_mm": 59.394458354223474
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        4,
+        1,
+        0
+      ],
+      "rms_model_mm": 59.484067998355464
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        0,
+        1,
+        2
+      ],
+      "rms_model_mm": 59.6168669757212
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "rms_model_mm": 60.456099166735015
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        1,
+        0,
+        3
+      ],
+      "rms_model_mm": 61.05570157303885
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        4,
+        1,
+        2
+      ],
+      "rms_model_mm": 61.13946748206823
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        4,
+        1
+      ],
+      "rms_model_mm": 61.15888731148258
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "rms_model_mm": 61.32742554765675
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        3,
+        2,
+        0
+      ],
+      "rms_model_mm": 61.52760910605386
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "rms_model_mm": 61.577008443197585
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        1,
+        2,
+        3
+      ],
+      "rms_model_mm": 61.729315590349906
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "rms_model_mm": 61.74188219028376
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        0,
+        3,
+        1
+      ],
+      "rms_model_mm": 61.927862207023445
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        0,
+        2,
+        3
+      ],
+      "rms_model_mm": 62.01649725740385
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "rms_model_mm": 62.04997831133679
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        4,
+        1
+      ],
+      "rms_model_mm": 62.19117492324349
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "rms_model_mm": 62.21048594167036
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        4,
+        1
+      ],
+      "rms_model_mm": 62.30873955364616
+    },
+    {
+      "permutation": [
+        1,
+        4,
+        2,
+        0,
+        3
+      ],
+      "rms_model_mm": 62.502144979306344
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        2,
+        0,
+        1
+      ],
+      "rms_model_mm": 62.741423883952415
+    },
+    {
+      "permutation": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "rms_model_mm": 62.996770706119726
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        3,
+        0,
+        2
+      ],
+      "rms_model_mm": 63.172324272823666
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        4,
+        3,
+        2
+      ],
+      "rms_model_mm": 63.193228758675986
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        4,
+        0,
+        3
+      ],
+      "rms_model_mm": 63.21953711479577
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "rms_model_mm": 63.375104274970525
+    },
+    {
+      "permutation": [
+        3,
+        4,
+        2,
+        1,
+        0
+      ],
+      "rms_model_mm": 63.562147955667676
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        2,
+        0,
+        1
+      ],
+      "rms_model_mm": 63.59830036288846
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        4,
+        0
+      ],
+      "rms_model_mm": 63.598748312840335
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        4,
+        0
+      ],
+      "rms_model_mm": 63.75839270449145
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        4,
+        2,
+        1
+      ],
+      "rms_model_mm": 63.788519899176386
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        4,
+        3,
+        0
+      ],
+      "rms_model_mm": 63.801985517870975
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        4,
+        2
+      ],
+      "rms_model_mm": 63.86013633511768
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        2,
+        0,
+        3
+      ],
+      "rms_model_mm": 63.919113694409276
+    },
+    {
+      "permutation": [
+        4,
+        0,
+        1,
+        3,
+        2
+      ],
+      "rms_model_mm": 63.93732462746599
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        3,
+        1,
+        2
+      ],
+      "rms_model_mm": 63.971336435664035
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        4,
+        2,
+        3
+      ],
+      "rms_model_mm": 64.31144251091206
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        4,
+        2
+      ],
+      "rms_model_mm": 64.32642653267501
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        4,
+        1
+      ],
+      "rms_model_mm": 64.71783740758507
+    },
+    {
+      "permutation": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "rms_model_mm": 64.72403114005736
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        4,
+        0,
+        2
+      ],
+      "rms_model_mm": 64.77233850396652
+    },
+    {
+      "permutation": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "rms_model_mm": 64.79149827386199
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        4,
+        3
+      ],
+      "rms_model_mm": 64.81129958890725
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ],
+      "rms_model_mm": 64.9035162651791
+    },
+    {
+      "permutation": [
+        0,
+        4,
+        3,
+        2,
+        1
+      ],
+      "rms_model_mm": 65.3499620808376
+    },
+    {
+      "permutation": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "rms_model_mm": 65.37252134442957
+    }
+  ],
+  "front_index_controls": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rms_model_mm": 0.584233912541151
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "rms_model_mm": 11.134266586097219
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "rms_model_mm": 11.245131063214766
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "rms_model_mm": 13.766206595421139
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "rms_model_mm": 49.39533312410134
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "rms_model_mm": 53.41693284450733
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "rms_model_mm": 53.531074240328856
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "rms_model_mm": 55.62242252399063
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "rms_model_mm": 55.81068393502591
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "rms_model_mm": 55.94174791411092
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "rms_model_mm": 56.07904238371673
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "rms_model_mm": 57.37908920564931
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "rms_model_mm": 58.39150267632514
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "rms_model_mm": 58.468211156129385
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "rms_model_mm": 59.39972526856443
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "rms_model_mm": 59.59692092882777
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "rms_model_mm": 60.453213861277916
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "rms_model_mm": 60.69274818387044
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "rms_model_mm": 60.79332050936291
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "rms_model_mm": 60.796764844092365
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "rms_model_mm": 66.13573118142692
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "rms_model_mm": 66.25453373761495
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "rms_model_mm": 66.40707044869498
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "rms_model_mm": 66.42518669791197
+    }
+  ],
+  "rear_pixel_sensitivity_angle_deg": {
+    "min": -147.14379790833655,
+    "max": -119.62711351597319,
+    "samples": 1000,
+    "seed": 44009
+  },
+  "limits": [
+    "Similarityfit does not correctperspective, lensdistortion oraxialparallax; angleisestimated.",
+    "Metriccoordinates inheritprovisionalgasketpattern; no productiondimension inferred.",
+    "Frontfourholes usephysicalcorrespondence fromrear/branch/heaterposition; nearfourfoldpatternalone isambiguous.",
+    "Forwardneckmustberebuilt withfunctionalpassage andallactualneighbors afterrootcontract; noCADedited."
+  ],
+  "inputs": {
+    "scripts/research-waterpump-neck-registration.py": "f7cda60ef429a9fa3fd1b246a0a3ede7b927665014ba56658719876c6adc9a2a",
+    "reference/engine/gates44009-1.jpg": "a3cc0fece42700d33cd3ab0e111cbc3cbb5fb14b774b42c004fcfed86a3a85ba",
+    "reference/engine/gates44009-2.jpg": "b55f5df937963b3a329f3a116e19b2cd0f0e3a756ec04839ee2f2dc42bca3207",
+    "reference/engine/gates44009-3.jpg": "9b78df353dbfb0a27b6a2abfd7bcef1e588187e6a5b170da5fa3e31741722b94",
+    "reference/engine/felpro-13816.jpg": "360a98ae9e5c4293781663ee5d24151109292d6bd8d819271ab62dcbeed9bc4d",
+    "reference/engine/water-pump-mounting-topology-reviewed.json": "ac7bd8b50d281f84271a262ba035623e9ac192453e211725b0f3935289b1f1c5",
+    "reference/engine/water-pump-inlet-v3-topology-reviewed.json": "0c4cb008eec438698052ce6e22a1bc44b120e6d858b51aa9df4f2faf3bad87db"
+  }
+}

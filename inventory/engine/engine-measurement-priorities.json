@@ -1,0 +1,213 @@
+{
+  "status": "Evidence acquisition plan; no owner request sent and no disassembly authorized",
+  "baseline": "2c4c65de787834445ec999757cb7a2572a1f1bde",
+  "priority_basis": "Engineering consequence, not easiest acquisition; start low-burden owner photo bundle for priorities3/4 in parallel with spare-part evidence1/2.",
+  "owner_minimum_bundle": [
+    "One wide pump/heater-tube context view plus accessible front/side close views with common landmarks",
+    "One ACT location view and accessible connector/tag close-up",
+    "Any existing oil-pump/rod-bolt/water-pump replacement receipts or part labels; none required if unavailable"
+  ],
+  "capture_rules": [
+    "Do not dismantle or unplug the truck for this plan; only accessible views with engine off and cool.",
+    "Use the same specimen in all views; record part number, revision, donor year/engine and replacement status.",
+    "Keep camera square to measured face; place scale in that face plane; include one wide orientation view.",
+    "Record measurements inmm with instrument type/resolution and repeated values; distinguish measured, photo-estimated and inaccessible.",
+    "No geometric tolerance is inferred from camera pixel agreement or caliper display resolution."
+  ],
+  "priorities": [
+    {
+      "priority": 1,
+      "id": "oil-pump-mount-discharge",
+      "impact": "Unlock correct pump mounting, pickup joint and pressure outlet; current physical decomposition is wrong.",
+      "evidence": [
+        "docs/components/oil-pump-topology-contract.md",
+        "docs/components/oil-pump-coverage-contract.md",
+        "reference/engine/oil-pump-topology-evidence.json",
+        "inventory/engine/oil-pump-topology-delivery.json"
+      ],
+      "owner_no_disassembly": [
+        "Only any already available service receipts or part labels; installed exterior photos cannot expose this internal joint."
+      ],
+      "bench_required": [
+        "Applicable spare pump with pickup flange exposed: square-on mounting face and two perpendicular side views; retain drive axis and front orientation.",
+        "Measure drive-axis-to-mount-face distance; face outline; bolt/dowel/outlet center coordinates from drive axis; port diameters; gasket thickness/openings.",
+        "Separate pickup flange: inlet diameter, bolt centers/thread and stack thickness, tube departure direction.",
+        "Matching donor block mounting seat/gallery entry, tied to crank axis and front block face; passage identity must be directly established."
+      ],
+      "datum": "Pump drive axis is primary; mounting face is axial zero; signed front direction fixes clocking. Matching block datum ties to crank axis/front face.",
+      "uncertainty": "Existing drive lean and block feet are estimates. A pump alone cannot establish block outlet routing. Record tool resolution, repeat measurements and inaccessible features; photos cannot establish hidden passage shape.",
+      "affected": [
+        "oil-pump-housing",
+        "oil-pump-mount-bolt",
+        "oil-pickup-tube",
+        "oil-pump-block-gasket",
+        "oil-pump-block-dowel",
+        "block",
+        "oil-pump-intermediate-shaft"
+      ],
+      "alternatives": [
+        "Dimensioned manufacturer drawing for identified C5AZ6600A/M74 production revision",
+        "Identified spare/donor pump plus matching block; qualified shop survey"
+      ],
+      "exact_fidelity_user_dependency": "Exact installed revision needs owner records/identification or an identified specimen from this truck. A donor/replacement can support only that specimen until equivalence is established."
+    },
+    {
+      "priority": 2,
+      "id": "rod-fastener-seat",
+      "impact": "Resolve six frozen rod-bolt/block motion failures without clearance-driven geometry changes.",
+      "evidence": [
+        "docs/components/rod-fastener-architecture-contract.md",
+        "docs/components/rod-bolt-source-datum-audit.md",
+        "reference/engine/rod-fastener-architecture-evidence.json",
+        "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json",
+        "inventory/engine/engine-corrected-combined-motion-validation.json"
+      ],
+      "owner_no_disassembly": [
+        "Existing rebuild receipts, rod/bolt kit part numbers or prior teardown images if already available; no request to open the engine."
+      ],
+      "bench_required": [
+        "Applicable spare rod/cap/bolt assembly: head plan and two elevations with scale; mark engine-front and numbered/cam side.",
+        "Measure head outline/height/clocking, under-head radius and seat plane relative to split; both bolt axes relative to big-end bore.",
+        "Measure press shoulder/grip/thread extents and matching rod/cap bores; preserve paired parts. Bolt extraction/reinstallation belongs to a qualified spare-part survey, not an owner photo task.",
+        "Donor block inner surface around frozen witness tied to crank axis/cylinder station to distinguish bolt error from estimated crankcase cavity."
+      ],
+      "datum": "Big-end bore center/axis, rod split plane, small-end axis and front/cam-side orientation.",
+      "uncertainty": "OEM versus ARP replacement cannot be mixed. Existing current head direction is source-supported; plan outline, seating dimensions and block cavity are not.",
+      "affected": [
+        "rod",
+        "rod-bolt",
+        "rod-nut",
+        "block"
+      ],
+      "alternatives": [
+        "Applicable OEM forging/fastener drawing",
+        "ARP152-6002 dimensional drawing plus applicable rod-seat survey",
+        "Machine-shop donor rod and block section measurements"
+      ],
+      "exact_fidelity_user_dependency": "Actual internal fastener identity cannot be known from an exterior owner photo. Original-truck fidelity requires trustworthy rebuild history or inspection during separately planned service; replacement study can proceed from an identified spare."
+    },
+    {
+      "priority": 3,
+      "id": "heater-return-tube-route",
+      "impact": "Resolve source-estimated tube route that collides with head, rail and front manifold/lifting hardware.",
+      "evidence": [
+        "docs/components/waterpump-heater-source-candidate.md",
+        "inventory/engine/waterpump-heater-source-delivery.json",
+        "inventory/engine/waterpump-heater-source-neighbors.json",
+        "inventory/engine/waterpump-heater-source-stud.json"
+      ],
+      "owner_no_disassembly": [
+        "Engine off/cool: wide view showing pump, heater tube, intake/fuel rail and exhaust-side landmarks.",
+        "Accessible front and side views of the same tube, including casting entry and hose/bead end; do not remove components for visibility.",
+        "A ruler beside a safely reachable straight portion and in the same depth plane; an unscaled view is still useful for topology."
+      ],
+      "bench_required": [
+        "Identified replacement pump/tube: square-on front, side and top views with in-plane scales.",
+        "Measure tube OD, entry point relative to shaft axis/rear mounting face, centerline bend stations, hose-end axis and reach, bead and insertion dimensions."
+      ],
+      "datum": "Pump shaft axis plus rear mounting face and fixed mounting-hole pattern; engine-front direction visible in every view.",
+      "uncertainty": "Perspective and hidden depth dominate current projected axial endpoint. A single oblique picture cannot define3D routing; do not infer millimetre accuracy from the existing0.60mm projected agreement.",
+      "affected": [
+        "water-pump-housing",
+        "heater-pump-return-elbow",
+        "cylinder-head",
+        "fuel-supply-rail",
+        "exhaust-front",
+        "front-manifold-lifting-eye",
+        "front-manifold-stud13"
+      ],
+      "alternatives": [
+        "Identified assembled1994 VIN-Y donor engine photos with common landmarks",
+        "Manufacturer orthographic pump/tube drawing",
+        "Measured Gates44009 spare including tube"
+      ],
+      "exact_fidelity_user_dependency": "Owner photos are the minimal route to actual installed routing and modifications; donor images establish only the donor. Hidden dimensions may remain estimated even after photos."
+    },
+    {
+      "priority": 4,
+      "id": "act-iat-sensor",
+      "impact": "Build the missing identified temperature sensor and connector interface without guessed probe reach.",
+      "evidence": [
+        "docs/components/act-sensor-identity.md",
+        "inventory/engine/act-sensor-identity-evidence.json",
+        "reference/engine/engine-control-electrical-map.json"
+      ],
+      "owner_no_disassembly": [
+        "Accessible wide location view and closer connector/hex/visible stamp view, without unplugging or removing sensor.",
+        "Record any readable part tag/engineering number; service source says Order By Tag Number."
+      ],
+      "bench_required": [
+        "Identified spare F2DZ12A697A or documented MTE5041 comparison: overall length, hex thickness, probe reach from explicit thread gauge plane.",
+        "Connector keyed face and two orthogonal sides with terminal pitch/recess, latch and shell dimensions; mating connector identification.",
+        "Host port location/axis/gauge plane and internal wall/airflow clearance from an applicable donor manifold or drawing."
+      ],
+      "datum": "Sensor axis, declared tapered-thread gauge plane and connector key direction; host manifold datums independently surveyed.",
+      "uncertainty": "Replacement5041 supports3/8-18NPTF and25mmhex only. Package dimensions are excluded. Torque does not establish axial depth or hex seating.",
+      "affected": [
+        "future ACT/IAT component",
+        "intake manifold host",
+        "future C164 harness connector"
+      ],
+      "alternatives": [
+        "Manufacturer5041 or Walker210-1002 dimensioned drawing with interchange proof",
+        "Measured identified spare sensor and donor manifold"
+      ],
+      "exact_fidelity_user_dependency": "Replacement comparison does not identify the truck engineering stamp. Owner-readable tag/photo can resolve identity; hidden installed depth requires later authorized service evidence or remains unknown."
+    },
+    {
+      "priority": 5,
+      "id": "water-pump-bearing",
+      "impact": "Replace cartridge placeholder with credible internal physical pieces only after bearing identity is known.",
+      "evidence": [
+        "docs/components/waterpump-bearing-coverage-contract.md",
+        "reference/engine/waterpump-bearing-coverage-evidence.json",
+        "reference/engine/water-pump-internal-construction-reviewed.json"
+      ],
+      "owner_no_disassembly": [
+        "Existing pump receipt/box label or accessible casting/brand markings; no external photograph reveals bearing rows."
+      ],
+      "bench_required": [
+        "Identified applicable spare or retired pump: bearing marking and supplier number, preferably before any destructive section.",
+        "Qualified bench survey of outer ringOD/width, shaft steps/axial stations, row types/counts, element/cage construction and bearing end seals.",
+        "If no component drawing exists, sectioning or teardown is a separate spare-part task; preserve orientation and record disassembly damage."
+      ],
+      "datum": "Pump shaft axis and rear mounting face; hub/impeller/coolant-seal axial stations and outer-ring faces.",
+      "uncertainty": "No Gates44009/Ford bearing identity established. Generic Schaeffler sizes do not match the inherited envelope and cannot select a production bearing.",
+      "affected": [
+        "water-pump-bearing",
+        "water-pump-shaft",
+        "water-pump-housing",
+        "water-pump-drive-hub",
+        "water-pump-impeller",
+        "water-pump mechanical seal"
+      ],
+      "alternatives": [
+        "Manufacturer bearing bill of materials/drawing for an identified pump revision",
+        "Retired/donor applicable pump supplied to a bearing specialist"
+      ],
+      "exact_fidelity_user_dependency": "Exact installed internal revision cannot be resolved without supplier traceability or an identified retired original. No request to dismantle the running truck; generic construction must remain labeled if no specimen becomes available."
+    }
+  ],
+  "bindings": {
+    "docs/components/act-sensor-identity.md": "470b90e08856f989f7b63fd5be5a85b1aaa648a3553e7b27e36fb3fda43987b8",
+    "docs/components/oil-pump-coverage-contract.md": "36c4a8eed89411450b4f5d3e8070e1ce3d76e8809363fc6b0e56e8fef1462080",
+    "docs/components/oil-pump-topology-contract.md": "88f4f0c1bce7abf9dd3767aa8f5744a76061789fd353d3fbad04f30cf34a504b",
+    "docs/components/rod-bolt-source-datum-audit.md": "84c61726945389b1f2539f576c70219c52b4e1fd4ef7b52e8406a98a301455a2",
+    "docs/components/rod-fastener-architecture-contract.md": "571679fac62a7c25e5c008274c61284b5e15aa07f87abcdd18138fb62dae4ffa",
+    "docs/components/waterpump-bearing-coverage-contract.md": "5c8f162eca80469e60531f81bd007b40a548821e922e2dd63fb9253b23a0cc77",
+    "docs/components/waterpump-heater-source-candidate.md": "9a4b0c41dacb6810255cea9a2c31c7d972d85858eb511823a85523486c500d93",
+    "inventory/engine/act-sensor-identity-evidence.json": "d94283e2c9ae2d85ee813321bd759546ae595a290c9b5202c690cb60c0ecbacd",
+    "inventory/engine/engine-corrected-combined-motion-validation.json": "f980058d6e603a1e8b427c43d49ce0ad10dd55106e5289294eff4cb444871f73",
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": "62477dbe354f5f4209de4f4293cd83db3646d06011f7be9bdd3ea82e49754990",
+    "inventory/engine/oil-pump-topology-delivery.json": "fb72b9479a2ccc1bbe0d5b0e8f0702dbbec4a855ca3a3949a22b20d778da654c",
+    "inventory/engine/waterpump-heater-source-delivery.json": "b55294d85f241522f0cc5815b093e286f78b95e43d0e8760d10bb79d2034abfe",
+    "inventory/engine/waterpump-heater-source-neighbors.json": "39c659dd7a53da8534a7cd367c286f9a46fb580eb7a82d6ab7ccee063fc533c4",
+    "inventory/engine/waterpump-heater-source-stud.json": "f15c0dc82ca98b28a20b7aef536091f402845800ba0a5efdbb0e2f5920c170dd",
+    "reference/engine/engine-control-electrical-map.json": "90f2bb7c261b47299f0be495483a476162a8038f721429b89e22389b2bec0481",
+    "reference/engine/oil-pump-topology-evidence.json": "9f78ba6b8c31529cbf362a9422744c142b1efdd33f8cdb0658a6397b5e085a41",
+    "reference/engine/rod-fastener-architecture-evidence.json": "e94773df57178ce9c3cab2341d761f329e5d6e8e92a51f5bc04ea9b956137d04",
+    "reference/engine/water-pump-internal-construction-reviewed.json": "35574f5886079fe2fec4e420b3c7cf4100af309a15dc9b40d97aad99d879e262",
+    "reference/engine/waterpump-bearing-coverage-evidence.json": "2a1d88b63f03ddc9c99f4bccb6cedfdd754ffcbc7a888bc5d58528411699dad8"
+  },
+  "stop_rule": "Do not repeat general catalog/image searches. Resume each CAD task only after its named identity/datum evidence arrives or root explicitly authorizes a bounded illustrative scope."
+}

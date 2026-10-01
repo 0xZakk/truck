@@ -1,0 +1,46 @@
+{
+  "status": "FAIL access, inherited pump strip topology and forward inlet remain; rearfit/contact/export gates individually pass",
+  "gates": {
+    "inputs_current": true,
+    "valid_exports": true,
+    "rear_part_fit": true,
+    "full_gasket_face_contact": true,
+    "connected_3mm_stock": true,
+    "closed_3mm_separation_topology": false,
+    "exact_changed_material_locality": true,
+    "nominal_pump_head_bearing_support": true,
+    "all7_main_headseats_and_rear_lands": true,
+    "declared_main3_rear_tool_access": false,
+    "all_pump_nominal_tool_access": false,
+    "main3_continuous_screw_withdrawal": true,
+    "source_justifies_pump_absent_access": false,
+    "forward_inlet_fit": false
+  },
+  "input_mismatches": [],
+  "reports_sha256": {
+    "inventory/engine/timing-pump-rear-flange-export.json": "df55f503779bde4d970b4e526b62881ca9f925e82d22d3b9cd42569d81278fef",
+    "inventory/engine/timing-pump-rear-flange-validation.json": "9e7b43e2f8de7be945012d3271ab04756e072567e5e5f8dfd923e1478643d1e7",
+    "inventory/engine/timing-pump-rear-flange-access-evidence.json": "f66748d1c0642823ea7dbdd7efc693f363a77e7e1303301e6c9f20f2c5705b4f",
+    "inventory/engine/timing-pump-rear-flange-visual-review.json": "10b14f33f9baf857270e0ca24bfd89ba8d7fb4ae028c3e1b03f3e9b8e628e63e",
+    "inventory/engine/timing-pump-rear-flange-strip-topology.json": "40d53a2523824c8dc34eec533afb87ed479ccd3982d665c3f892f3da5c5a255a"
+  },
+  "artifacts_sha256": {
+    "cad/engine/generated/timing-pump-rear-flange-candidate/housing.step": "1ac507ee6b9cc1b66cfe7e5ccabc85c057c0da4625be2ba7dea82dea4a3efa47",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/cover.step": "7c633b7091ab848283ea0e56c060ea5712ec0efb798e392b0686acb9da5f64bc",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/main-gasket.glb": "ab383fa2a2f840144370e91e79322eccb8f0d61266c6ef84ec1ca4654176f81e",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/review-data.npz": "a537d5ec9bc86b1ebe10e4c7ea8e688aa5431a4ad3b5a9bf8b80fb2a33563b30",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/main-gasket.step": "682b19e67482afdb672219cb909dd0d2ea6a8711a604184d716b052f0ba51052",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/cover.glb": "b54322bda245c0c9c9df21ba791066fada0b3a70a06cc41908bfb6bbf4d243b1",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/review.png": "65d701ee6f82f344d4e33568db822014482780f3471104c92735dccdc29d4a12",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/housing.glb": "d30eab6e6df8233f666139dee8f7b04d2e8967a43b10c583593fbb34ff32b386",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/pump-gasket.glb": "a1abd0a077a2fa9f32a76002d1332801870b6e0cabe73451dc5490d3b80d4f92",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/pump-gasket.step": "26da82705c358d3cb789882e5414bef00fbc3687ae6c98b9d25256acbb78f1f3"
+  },
+  "checker_sha256": "ab6a2ad14e459eabac34020358a1bebedc2fa64665b1244fcd75e02f7f9751c1",
+  "limits": [
+    "No canonical/private-stage changes or installation claim.",
+    "NominalR9guardmargin0.1556339mm; +0.16mmradius violatesstockguard, +0.5mm begins headseatloss.",
+    "Originalrawheadfacegap retained and explained asclearanceannulus; actualbearingfaces supported.",
+    "Whole-sourcepump axis, inlet, core andmainholes unchanged; earlier failures retained."
+  ]
+}

@@ -1,6 +1,6 @@
 # Current engine integration — 2026-10-01
 
-Active branch: `engine/timing-drive-fit`, baseline merged [PR107](https://github.com/0xZakk/truck/pull/107), `6b1608257e8c2eaa12512ac0c256d882854f3996`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
+Active branch: `engine/timing-drive-fit`, baseline merged [PR108](https://github.com/0xZakk/truck/pull/108), `2c4c65de787834445ec999757cb7a2572a1f1bde`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
 
 ## Installed baseline
 
@@ -69,3 +69,5 @@ Latest merged checkpoint: PR106 head `68205ab3b258c0fdd74719f79165d1c4a0d8523c`,
 Latest preservation checkpoint: PR107 merged at `6b1608257e8c2eaa12512ac0c256d882854f3996` after both CI checks passed. The block-closures/oil-pump topology archive is published and server-verified:13files/361,986bytes, SHA `9def0caead5bf2cb64711df05cbfccf47ac909fe78a8cae8dc998c7d9eddb96a`. It preserves candidate assets, not new installed geometry.
 
 Electrical viewer content now adds11 existing component lessons without replacing mechanical content or changing the canonical manifest. Page-specific manual links and navigation pass automated checks. Browser verification remains NOT RUN; see `docs/components/engine-control-electrical-integration.md`. MAP/IAT/O2 physical models remain missing.
+
+PR108 electrical-content integration merged after CI22s/18sPASS and independent runtime review. Five prior mechanical lessons preserved, six injector lessons added;30 supplemental part links resolve in canonical and privatev3. Both geometry manifests unchanged. Local preview is listening at127.0.0.1:8001 (server session47993); this process observation is not browser acceptance. Three workers continue ALT/AP carrier geometry, pump-bearing coverage and frozen pump artifact preservation.

@@ -1,0 +1,103 @@
+{
+  "status": "FAIL access unresolved; nominal bearing support passes",
+  "pump_bearing_faces": [
+    {
+      "station": 1,
+      "raw_headface_area_mm2": 96.09281078211319,
+      "clearance_hole_excluded_area_mm2": 7.822565707438542,
+      "required_bearing_face_area_mm2": 88.27024507467465,
+      "required_bearing_missing_mm2": 0.0,
+      "old_required_bearing_missing_mm2": 0.0,
+      "old_tool_housing_overlap_mm3": 0.0,
+      "new_tool_housing_overlap_mm3": 0.0
+    },
+    {
+      "station": 2,
+      "raw_headface_area_mm2": 96.09281078211319,
+      "clearance_hole_excluded_area_mm2": 7.822565707438542,
+      "required_bearing_face_area_mm2": 88.27024507467465,
+      "required_bearing_missing_mm2": 0.0,
+      "old_required_bearing_missing_mm2": 0.0,
+      "old_tool_housing_overlap_mm3": 7604.417150969422,
+      "new_tool_housing_overlap_mm3": 7604.41715096846
+    },
+    {
+      "station": 3,
+      "raw_headface_area_mm2": 96.09281078211319,
+      "clearance_hole_excluded_area_mm2": 7.822565707438542,
+      "required_bearing_face_area_mm2": 88.27024507467465,
+      "required_bearing_missing_mm2": 0.0,
+      "old_required_bearing_missing_mm2": 0.0,
+      "old_tool_housing_overlap_mm3": 504.58727070297937,
+      "new_tool_housing_overlap_mm3": 504.58727070297937
+    },
+    {
+      "station": 4,
+      "raw_headface_area_mm2": 96.09281078211319,
+      "clearance_hole_excluded_area_mm2": 7.822565707438542,
+      "required_bearing_face_area_mm2": 88.27024507467465,
+      "required_bearing_missing_mm2": 0.0,
+      "old_required_bearing_missing_mm2": 0.0,
+      "old_tool_housing_overlap_mm3": 0.0,
+      "new_tool_housing_overlap_mm3": 0.0
+    }
+  ],
+  "screw_withdrawal": [
+    {
+      "station": 3,
+      "method": "ConservativeR8.75 axialboundingcylinder covers actual screw during+Xwithdrawal until headrearX449.7; exact cylinder/actualpump intersection",
+      "envelope_pump_overlap_mm3": 0.0
+    },
+    {
+      "station": 4,
+      "method": "ConservativeR8.75 axialboundingcylinder covers actual screw during+Xwithdrawal until headrearX449.7; exact cylinder/actualpump intersection",
+      "envelope_pump_overlap_mm3": 1997.3177000216426
+    }
+  ],
+  "main4_actual_withdrawal_samples": [
+    {
+      "dx_mm": 0,
+      "actual_screw_pump_overlap_mm3": 0.0
+    },
+    {
+      "dx_mm": 10,
+      "actual_screw_pump_overlap_mm3": 0.0
+    },
+    {
+      "dx_mm": 20,
+      "actual_screw_pump_overlap_mm3": 0.0
+    },
+    {
+      "dx_mm": 30,
+      "actual_screw_pump_overlap_mm3": 358.30679984582827
+    },
+    {
+      "dx_mm": 40,
+      "actual_screw_pump_overlap_mm3": 162.65445173930374
+    }
+  ],
+  "sequence_evidence": {
+    "verdict": "NOT JUSTIFIED; retain in-place tool FAIL",
+    "1994_cover": "Steps1..6 remove coolant, shroud/radiator, belt and PS/ACassembly, damper, pan/frontcover screws then cover; no pump removal prerequisite stated.",
+    "1994_pump": "Separately removes fan/pulley/hoses then pump bolts/pump; does not establish cover-before-pump assemblyorder.",
+    "1986_comparison": "PDF70, printed21-11-17 has separate pump and frontcover procedures. Frontcover removal lists belts/fan/pulleys/damper then screws/cover, no pump prerequisite. Historical comparison only.",
+    "limit": "Missing instruction is not proof universal access is possible; it supplies no justification to waive a blocked declared envelope. No exacttoolOD supplied.",
+    "physical_vs_tool": "Main3 installedmale is clear and its fullwithdrawal boundingcylinder can establish positivephysicalcorridor independently; R10.5tool remainsblocked. Main4forwardinlet is separate openfailure."
+  },
+  "inputs": {
+    "scripts/check-timing-pump-rear-flange-access-evidence.py": "42da291af06e5b90268d7b792fb1b613c4c66a09048897cd1f75e3cacb0d3fd6",
+    "cad/engine/timing_pump_rear_flange_candidate.py": "d14d89d328d6ddb04340e01ecd2a38558e396eae46510f8da9969e4722493f9b",
+    "cad/engine/generated/water-pump-mounting-screw.step": "ad70120cc89d6ab64be813b9ed248f1d6f41b61136f8a92aff3142fdb5605c3f",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/housing.step": "1ac507ee6b9cc1b66cfe7e5ccabc85c057c0da4625be2ba7dea82dea4a3efa47",
+    "cad/engine/generated/timing-pump-rear-flange-candidate/cover.step": "7c633b7091ab848283ea0e56c060ea5712ec0efb798e392b0686acb9da5f64bc",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/timing-pan21-lateral-candidate/cover.step": "c27ac0620982322ae414ed277518d87c5611d3c91b9a253dd8599b003cc69f40",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Water%20Pump/Service%20and%20Repair/index.html": "b024e92cf5a4f173395764c5757281409d7c5c0d4ed3f15446cc238bb65d365a",
+    "reference/engine/ford-1986-main-cover-fastener-comparison.json": "58ddcf5ee2f04cbcea096339bcb2b3f79f419851dfbd5f0e2b54b4dc53295773",
+    "cad/engine/generated/timing-cover-seven-fastener-candidate/main-cover-screw-4.step": "908ef51b99fc7440d1a04901cceb26d21be3cfb35d9fe1f0396b1eb5918991ba"
+  },
+  "explanation": "Raw7.8225657mm\u00b2 headface gap is theR4shaft-toR4.3clearance annulus, present onall4oldheads. Required bearing region excludes declaredclearance opening; preserve rawfailure asdiagnostic, notstockloss."
+}
