@@ -140,6 +140,12 @@ The [timing-clearance supplement](https://github.com/0xZakk/truck/releases/tag/s
 
 Restore the neck-core base and timing-fit, timing-proof and timing-support supplements first. Download `truck-timing-clearance-20261001.tar.gz`; verify SHA-256 **fc1aee5ae6a6a65a21a0b35ec972c837070226780c248738aad5e69753b7b74d** before extracting at the repository root, preserving newer generated files. The archive has 92 files / 23,282,544 bytes. `docs/cad-timing-clearance-checkpoint.json` records all file hashes and the predecessor archive. Source originals, purchased manuals and owner photographs are excluded.
 
+## Timing interface supplement (uninstalled)
+
+The [timing-interfaces supplement](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-timing-interfaces) preserves front-block region research, both failed pan pairs, the dry-neck local checks, and the crest/neighbor/spring correction. It does not replace the installed engine. Active shared pan-seat and2692 seal work are excluded.
+
+Restore all predecessors through timing-clearance first. Download `truck-timing-interfaces-20261001.tar.gz`, verify SHA-256 **a86d3c16b218840655f395b2c65cbe2cdd8a598581756b2f5bb49d10897d9b18**, then extract at the repository root after preserving newer work. This archive contains81files/17,519,969bytes. Individual hashes and predecessor binding are in `docs/cad-timing-interfaces-checkpoint.json`. Only project-authored images are included; no purchased manuals, reference originals or owner photos.
+
 ## Previous linkage and dipstick checkpoint
 
 The [linkage/dipstick release](https://github.com/0xZakk/truck/releases/tag/checkpoint-2026-09-26-linkage-dipstick) records **718 definitions /1,322 occurrences**, still provisional and unfinished. Download with an account that can access the repository:

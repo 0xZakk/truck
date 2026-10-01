@@ -1,0 +1,707 @@
+{
+  "status": "RESEARCH ONLY; no block cut performed",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-thrust-land-candidate/crank-timing-gear.step": "d8ac80ba9eeeca3e9ff3ce11ee9d2988097a9011c23253a77cfb2c232dffbe82",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "scripts/research-timing-front-crank-clearance.py": "9f205c772292c328f0287ee72102dc0b2ba5abdacfebf65c9a0ba3916b1f79d5",
+    "cad/engine/timing_block_axis_feature_candidate.py": "68bbf3a8f9f9579c1a3f66c293b0698cce7ff1259988436d8bfd9d19e709e09f",
+    "cad/engine/timing_block_support_machining_candidate.py": "f51a87e0da229f4a13e521e9695313363748cf631b08c92c10e3c19360db3c11",
+    "cad/engine/oil_pan_joint_v9_candidate.py": "e8cddf66c4f0d0dca417814a380d69cca5f3abdd611b406f090f70505bf8a202",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "inventory/engine/timing-pump-foot-faceted-validation.json": "c9ce2474a7c65a73b872fb83b7f1cac2218354e0309d45b8eeed4e8c4c9af256"
+  },
+  "block_valid": true,
+  "gear_valid": true,
+  "collision_mm3": 61.01293184296368,
+  "collision_bounds_mm": [
+    [
+      378.25937489999995,
+      -27.030078660740003,
+      -43.17997748993559
+    ],
+    [
+      381.00000070000004,
+      27.979453133229423,
+      -31.999999899995785
+    ]
+  ],
+  "collision_outside_envelope_mm3": 0,
+  "estimated_envelope": {
+    "radius_mm": 44.18,
+    "x_mm": [
+      378.009375,
+      392.509375
+    ],
+    "axis_yz_mm": [
+      0,
+      0
+    ]
+  },
+  "proposed_removal_mm3": 412.21063596152584,
+  "proposed_removal_bounds_mm": [
+    [
+      378.009375,
+      -30.460998013853747,
+      -44.18
+    ],
+    [
+      381.0,
+      30.460998013853725,
+      -31.999999999995786
+    ]
+  ],
+  "guards": [
+    {
+      "name": "main-journal-1",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 19.66411671596311,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 45.73102154136992,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-1-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 45.73102154136992,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-2",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 133.00280736217192,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 146.77349466383058,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-2-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 146.77349466383058,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-3",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 246.75910231280022,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 258.469886810672,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-3-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 258.469886810672,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-4",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 360.5379326925518,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 371.42801336342956,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-4-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 371.42801336342956,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-5",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 474.3230816376313,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 484.77334327831886,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-5-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 484.77334327831886,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-6",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 588.110881693426,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 598.2872123200277,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-6-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 598.2872123200277,
+      "unchanged": true
+    },
+    {
+      "name": "main-journal-7",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 701.9000435149003,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7--56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 711.8894245572086,
+      "unchanged": true
+    },
+    {
+      "name": "main-cap-socket-7-56",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 711.8894245572086,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-1",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 715.1296069141043,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-2",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 639.2864248749305,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-3",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 563.6023413560066,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-4",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 488.14958731913833,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-5",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 413.0513735883364,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-6",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 338.5356427754504,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-7",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 265.07275162943097,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-8",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 193.7933155081818,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-9",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 128.07131716748881,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-10",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 80.60974706293035,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-11",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 716.9757393139095,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-12",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 641.3468990387645,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-13",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 565.9327111625693,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-14",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 490.82976538059614,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-15",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 416.2018606294612,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-16",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 342.34926289354576,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-17",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 269.88201956262725,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-18",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 200.22406075902674,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-19",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 137.35908793989157,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-20",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 94.1354253219016,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-21",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 42.98758110278622,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-22",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 42.98758110278623,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-23",
+      "proposed_removed_material_mm3": 109.92302214011784,
+      "intersection_bounds_mm": [
+        [
+          378.0093748999987,
+          -9.740054622918427,
+          -44.1800001
+        ],
+        [
+          381.0000001000001,
+          9.740054622918425,
+          -40.85500372928114
+        ]
+      ],
+      "distance_from_proposed_removal_mm": 0.0,
+      "unchanged": false
+    },
+    {
+      "name": "pan-socket-24",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 738.9923745122419,
+      "unchanged": true
+    },
+    {
+      "name": "pan-socket-25",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 738.9923745122419,
+      "unchanged": true
+    },
+    {
+      "name": "pan-front-end-land",
+      "proposed_removed_material_mm3": 349.75645913345835,
+      "intersection_bounds_mm": [
+        [
+          378.009375,
+          -26.96057121056601,
+          -44.18
+        ],
+        [
+          381.0,
+          26.960571210565995,
+          -34.99999999999999
+        ]
+      ],
+      "distance_from_proposed_removal_mm": 7.105427357601002e-15,
+      "unchanged": false
+    },
+    {
+      "name": "pan-rear-end-land",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 742.009375,
+      "unchanged": true
+    },
+    {
+      "name": "old-front-entire-annular-support",
+      "proposed_removed_material_mm3": 412.2106359615258,
+      "intersection_bounds_mm": [
+        [
+          378.009375,
+          -30.460998013853747,
+          -44.18
+        ],
+        [
+          381.0,
+          30.460998013853725,
+          -31.999999999995786
+        ]
+      ],
+      "distance_from_proposed_removal_mm": 0.0,
+      "unchanged": false
+    },
+    {
+      "name": "old-front-outer-2mm-seal-backing",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 13.219999999999986,
+      "unchanged": true
+    },
+    {
+      "name": "future-block-land",
+      "proposed_removed_material_mm3": 0.0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 45.20016266963662,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-1",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 717.1296069141043,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-2",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 641.2864248749306,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-3",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 565.6023413560066,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-4",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 490.14958731913833,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-5",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 415.0513735883364,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-6",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 340.5356427754504,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-7",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 267.07275162943097,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-8",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 195.7933155081818,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-9",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 130.07131716748881,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-10",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 82.60974706293035,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-11",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 721.9757393139095,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-12",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 646.3468990387645,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-13",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 570.9327111625693,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-14",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 495.82976538059614,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-15",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 421.20186062946124,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-16",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 347.34926289354576,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-17",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 274.8820195626273,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-18",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 205.22406075902674,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-19",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 142.35908793989157,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-20",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 99.13542532190158,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-21",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 44.987581102786216,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-22",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 44.98758110278623,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-23",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 0.009374999999977263,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-24",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 740.9923745122419,
+      "unchanged": true
+    },
+    {
+      "name": "physical-pan-boss-25",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 740.9923745122419,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-1",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 707.6610139429948,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-2",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 486.73186730974123,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-3",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 274.6339120626358,
+      "unchanged": true
+    },
+    {
+      "name": "cam-bearing-backing-4",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 97.01720867880894,
+      "unchanged": true
+    },
+    {
+      "name": "future-front-fastener-boss-1",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 92.61085313363247,
+      "unchanged": true
+    },
+    {
+      "name": "future-front-fastener-boss-2",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 156.19115221986124,
+      "unchanged": true
+    },
+    {
+      "name": "future-front-fastener-boss-3",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 70.44694105062403,
+      "unchanged": true
+    },
+    {
+      "name": "future-front-fastener-boss-4",
+      "proposed_removed_material_mm3": 4.32473652446065,
+      "intersection_bounds_mm": [
+        [
+          379.9999998999998,
+          -4.3588990435407275,
+          -44.1800001
+        ],
+        [
+          381.0000001000001,
+          4.3588990435407,
+          -43.3999999
+        ]
+      ],
+      "distance_from_proposed_removal_mm": 0.0,
+      "unchanged": false
+    },
+    {
+      "name": "future-front-fastener-boss-5",
+      "proposed_removed_material_mm3": 0,
+      "intersection_bounds_mm": null,
+      "distance_from_proposed_removal_mm": 140.0106114707797,
+      "unchanged": true
+    }
+  ],
+  "negative_control_no_cutter_collision_mm3": 61.01293184296368,
+  "limits": [
+    "No geometry candidate or installation approval",
+    "Entire old front support and broad guards remain reported even if exact sealing band stays clear",
+    "2mm seal-support band is an estimated inspection guard, not manufacturer strength evidence",
+    "Future front land/fasteners are uninstalled estimates"
+  ],
+  "artifacts": {
+    "analytic-envelope.step": "08b5cdf52ff591dfd070e77e532b4000da76539a8b03c2f84d83fd32c5ab3119",
+    "proposed-removal.step": "31af8f1416f12fd42f366d3fad943e1e65b02a1868530ae6fc3929bf0a11fddc",
+    "collision.step": "b364abbccd192917e27fece88fdbdedcfdc5b2ba78b93a37eb40e74baccfcc5d"
+  }
+}

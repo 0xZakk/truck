@@ -1,0 +1,26 @@
+{
+  "status": "FAIL actual pan overlap; no repair performed",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-cover-attachment-v2/pan.step": "f8c65829943b4a09380fc273b02cd2b8e589d855103c9e17860ec61bdcef3ef0",
+    "scripts/diagnose-timing-front-block-pan-contact.py": "179be332dce30d759d8e5dbda2396b366cfce7631fa864f25ab5f487781a5ea3"
+  },
+  "regions": [
+    {
+      "index": 0,
+      "volume_mm3": 5.164992826875682,
+      "bounds_mm": [
+        [
+          338.7499998999956,
+          -127.43902449023633,
+          -32.0000001
+        ],
+        [
+          340.29411774708063,
+          -126.249999899949,
+          1e-07
+        ]
+      ]
+    }
+  ]
+}

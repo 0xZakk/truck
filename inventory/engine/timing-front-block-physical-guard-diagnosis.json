@@ -1,0 +1,107 @@
+{
+  "status": "SUPPLEMENTAL PHYSICAL DIAGNOSIS; original broadguard failures retained",
+  "input_sha256": {
+    "cad/engine/generated/timing-front-block-adapter-candidate/block.step": "661dcdfce65f64ff19aeaeb01c8b4ac46f67379eb37d4f29e80aa4dfad594502",
+    "cad/engine/generated/timing-block-combined-candidate/block.step": "72773d2ce6793180ff828d3d8ddf089daea3d85b738962084d335ca4a17c1a36",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "scripts/diagnose-timing-front-block-physical-guards.py": "51fa558a1f2d8511ae3c90e6a5bcf6b0c7fe0851a98210486b2f536eaeb1f3e7"
+  },
+  "physical_interfaces": [
+    {
+      "name": "accessory-entire-radius12-boss",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 9498.165565198817,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "accessory-radius5.2-socket",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "pump-actual-radius59-fluid-opening",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "pump-actual-fifth-passage",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "actual-water-pump-gasket",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 0,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "actual-pump-gasket-2mm-rear-backing",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 5805.499544972355,
+      "changed_bounds_mm": null
+    },
+    {
+      "name": "actual-water-pump-housing",
+      "added_mm3": 0,
+      "removed_mm3": 0,
+      "candidate_overlap_mm3": 0.0,
+      "changed_bounds_mm": null
+    }
+  ],
+  "broad_changed_regions": [
+    {
+      "name": "accessory-broad-addition",
+      "volume_mm3": 0.03152353470438111,
+      "bounds_mm": [
+        [
+          372.8579847001639,
+          94.9999999,
+          207.9999999
+        ],
+        [
+          373.0000001,
+          96.98903435835169,
+          209.13936197433057
+        ]
+      ],
+      "distance_actual_accessory_boss_mm": 0.47437249389064967,
+      "distance_actual_pump_fluid_opening_mm": 73.56319247815368
+    },
+    {
+      "name": "pump-chamber-wall-addition",
+      "volume_mm3": 0.26985467067988067,
+      "bounds_mm": [
+        [
+          363.0,
+          7.80107651978681,
+          123.77366218413927
+        ],
+        [
+          364.0,
+          9.326322778810681,
+          125.13202650462634
+        ]
+      ],
+      "distance_actual_accessory_boss_mm": 112.53182160198094,
+      "distance_actual_pump_fluid_opening_mm": 1.790414132585367
+    }
+  ],
+  "limits": [
+    "No threshold changed",
+    "Addedmaterial in broadguard remains explicitly reported",
+    "Dry/strength/production clearance not established by modeldistance"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "RENDERED candidate clearance; not a source comparison",
+  "inputs": {
+    "scripts/render-timing-rocker-crest-candidate.py": "e54845dcd3b2001046eb755503e31339ee2f96e1e3b59df93e89fb823ed200a4",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "cad/engine/generated/timing-rocker-crest-candidate/rocker-arm.step": "f5ac82eed1abd73a88cbff7bd5de270050b51e8013ee2565a14e36ac9cee2588",
+    "cad/engine/generated/valve-cover.step": "a795f6b7e8115fd1d9be5b090f48eedc36ce09c6cd7f825a79b798813b2bb1d2",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6"
+  },
+  "render": "cad/engine/generated/timing-rocker-crest-candidate/rocker-crest-cover-comparison.png",
+  "render_sha256": "2233c0d8531c1578c622537ff0e4ae3fcbe5c2e34a8cc866ba083d9a797a8021",
+  "mesh": {
+    "sha256": "3c276505df453d1b6d5ff5685d82c13d3f3e0de4ff156c2fe8923a7f16070d89",
+    "watertight": true,
+    "triangles": 3602,
+    "max_bounds_error_mm": 3.746016830064036e-07
+  }
+}

@@ -70,12 +70,12 @@
     {
       "issue": 32,
       "desired_status": "In progress",
-      "reason": "PR97 preserves isolated timing-fit studies and failed block trial. Block topology, pan fastener revision and rotating-core clearance work continue; no installed acceptance."
+      "reason": "PR100 preserves reviewed pump-foot and inclined-passage candidates, composed block and detected rocker/cover and pan failures. Front-region, rocker crest and dry-neck corrections active; no installed acceptance."
     },
     {
       "issue": 34,
       "desired_status": "In progress",
-      "reason": "Current pan screw mesh is non-watertight and detailed wrong-phase thread control inconsistent. Rejected evidence preserved in PR98; isolated reusable screw revision active. No Done acceptance."
+      "reason": "Reusable male thread candidate passed local gates; pan revision failed station20 dry-side/tool checks. Separate dry-neck correction has bounded local passes; whole containment, integration and production details remain open."
     }
   ],
   "reconcile": "Read current board state after Projects authorization, then use scripts/set-engine-project-status.py with an inspected --expect state and --apply. Remove entries only after verified writes.",

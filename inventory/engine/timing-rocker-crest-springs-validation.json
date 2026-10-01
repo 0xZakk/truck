@@ -1,0 +1,538 @@
+{
+  "status": "PASS sampled actual spring seat/retainer contact and continuous ideal-helix coil bound",
+  "inputs": {
+    "scripts/check-timing-rocker-crest-springs.py": "0462e7307cbfa6bb99e59f030e25347a6e10d7726147dbf6ba26b97dc30168a0",
+    "cad/engine/valve_spring_seating_candidate.py": "3547d3b448fe70ba3934b1863ff78874566c9cdb2a311a70b632e2ec29484c97",
+    "cad/engine/timing_valvetrain_inclined_candidate.py": "e4cc87415140ba754be84949b7a5d8a52490fd1c6bf069813d6aa9c8c8c18b47",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/spring-retainer.step": "bab8c35d7411a40df217a2e75bb6454a8f1efb15a1af66f8e49869445d6f096b",
+    "cad/engine/generated/intake-spring.step": "da49a9d6ed3178e0482795eafa4bee52da394dc7ce8c1ea5887e77420331ba11",
+    "cad/engine/generated/exhaust-spring.step": "c0ab3b3594e19c1e805336a10f5b5e7db7683e58511bc455467655572551093c",
+    "cad/engine/generated/timing-valvetrain-inclined-candidate/cylinder-head.step": "548b0dbb8ce4b17b67dac8b7f8fcc534966e46fd57764d4fb1b81bc56b68f99c"
+  },
+  "guard_extension": {
+    "old_mm": 10.0330001,
+    "new_mm": 10.033202786604397,
+    "ast_constants_changed": 1,
+    "actual_exhaust_peak_mm": 10.033202686604398,
+    "geometry_law_unchanged": true
+  },
+  "rows": [
+    {
+      "id": "c1-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999335005406e-05
+    },
+    {
+      "id": "c2-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000010409653e-05
+    },
+    {
+      "id": "c3-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999335005394e-05
+    },
+    {
+      "id": "c4-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999335005391e-05
+    },
+    {
+      "id": "c5-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000010409653e-05
+    },
+    {
+      "id": "c6-intake",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999335005422e-05
+    },
+    {
+      "id": "c1-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999320957989e-05
+    },
+    {
+      "id": "c2-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.99999932095798e-05
+    },
+    {
+      "id": "c3-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.99999932095799e-05
+    },
+    {
+      "id": "c4-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999320957989e-05
+    },
+    {
+      "id": "c5-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.99999932095798e-05
+    },
+    {
+      "id": "c6-intake",
+      "lift_mm": 2.508250000000004,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999999320957997e-05
+    },
+    {
+      "id": "c1-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009539667653e-05
+    },
+    {
+      "id": "c2-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000010299707614e-05
+    },
+    {
+      "id": "c3-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009539667653e-05
+    },
+    {
+      "id": "c4-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009539667647e-05
+    },
+    {
+      "id": "c5-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000010299707614e-05
+    },
+    {
+      "id": "c6-intake",
+      "lift_mm": 5.016500000000008,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000953966766e-05
+    },
+    {
+      "id": "c1-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.99999417975962e-05
+    },
+    {
+      "id": "c2-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999994179759602e-05
+    },
+    {
+      "id": "c3-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999994179759612e-05
+    },
+    {
+      "id": "c4-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999994935737984e-05
+    },
+    {
+      "id": "c5-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.999994179759602e-05
+    },
+    {
+      "id": "c6-intake",
+      "lift_mm": 7.524750000000012,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 1.1368683772161603e-13,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 8.99999417975962e-05
+    },
+    {
+      "id": "c1-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000440031221e-05
+    },
+    {
+      "id": "c2-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000004400312202e-05
+    },
+    {
+      "id": "c3-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000515253633e-05
+    },
+    {
+      "id": "c4-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000004400312202e-05
+    },
+    {
+      "id": "c5-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000004400312202e-05
+    },
+    {
+      "id": "c6-intake",
+      "lift_mm": 10.033000000000015,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000004400312228e-05
+    },
+    {
+      "id": "c1-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014659133371e-05
+    },
+    {
+      "id": "c2-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014659133344e-05
+    },
+    {
+      "id": "c3-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014659133344e-05
+    },
+    {
+      "id": "c4-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00001542035924e-05
+    },
+    {
+      "id": "c5-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014659133344e-05
+    },
+    {
+      "id": "c6-exhaust",
+      "lift_mm": 0.0,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014659133361e-05
+    },
+    {
+      "id": "c1-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786257e-05
+    },
+    {
+      "id": "c2-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786248e-05
+    },
+    {
+      "id": "c3-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786248e-05
+    },
+    {
+      "id": "c4-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786255e-05
+    },
+    {
+      "id": "c5-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786248e-05
+    },
+    {
+      "id": "c6-exhaust",
+      "lift_mm": 2.5083006716510994,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009530786257e-05
+    },
+    {
+      "id": "c1-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014635175845e-05
+    },
+    {
+      "id": "c2-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014635175827e-05
+    },
+    {
+      "id": "c3-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014635175825e-05
+    },
+    {
+      "id": "c4-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000015388415935e-05
+    },
+    {
+      "id": "c5-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014635175827e-05
+    },
+    {
+      "id": "c6-exhaust",
+      "lift_mm": 5.016601343302199,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 5.684341886080802e-14,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000014635175837e-05
+    },
+    {
+      "id": "c1-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c2-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c3-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c4-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c5-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c6-exhaust",
+      "lift_mm": 7.524902014953298,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 0.0
+    },
+    {
+      "id": "c1-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00000949893869e-05
+    },
+    {
+      "id": "c2-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00001024540228e-05
+    },
+    {
+      "id": "c3-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009498938661e-05
+    },
+    {
+      "id": "c4-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000009498938667e-05
+    },
+    {
+      "id": "c5-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.00001024540228e-05
+    },
+    {
+      "id": "c6-exhaust",
+      "lift_mm": 10.033202686604398,
+      "head_gap_mm": 0.0,
+      "retainer_gap_mm": 0.0,
+      "head_overlap_mm3": 0.0,
+      "retainer_overlap_mm3": 9.000010245402297e-05
+    }
+  ],
+  "coil_bounds": {
+    "intake": {
+      "peak_lift_mm": 10.033000000000015,
+      "minimum_height_mm": 31.622999999999976,
+      "minimum_pitch_mm": 5.270499999999996,
+      "adjacent_turn_centerline_min_mm": 5.259561696921063,
+      "minimum_wire_gap_mm": 1.2595616969210628,
+      "delta_radians": 6.257130877581577,
+      "coverage": "Continuous lift0..peak for ideal constant-pitch six-turn helix; ground end topology sampled separately."
+    },
+    "exhaust": {
+      "peak_lift_mm": 10.033202686604398,
+      "minimum_height_mm": 27.304797313395596,
+      "minimum_pitch_mm": 4.5507995522326,
+      "adjacent_turn_centerline_min_mm": 4.543752772199638,
+      "minimum_wire_gap_mm": 0.543752772199638,
+      "delta_radians": 6.263741104583405,
+      "coverage": "Continuous lift0..peak for ideal constant-pitch six-turn helix; ground end topology sampled separately."
+    }
+  },
+  "rest_equivalence": {
+    "intake": 0.0,
+    "exhaust": 0.0
+  },
+  "failures": [],
+  "conservative_pair_bound_count": 54,
+  "negative_controls": {
+    "raised_spring_head_gap_mm": 0.10000000000002274,
+    "compressed_fault_pitch_mm": 3.9,
+    "same_angular_position_wire_gap_mm": -0.10000000000000009
+  },
+  "limits": [
+    "Spring six-turn geometry and4mm wire remain estimates; no spring rate, stress or production coil-bind claim.",
+    "Five scalar lift levels eachkind, all12 station contacts; not full continuous arbitrary-neighbor sweep.",
+    "Guard extension is isolated and does not alter frozen source, cam lift, valve lift or wire geometry."
+  ]
+}

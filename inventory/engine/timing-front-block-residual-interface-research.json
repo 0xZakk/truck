@@ -1,0 +1,72 @@
+{
+  "status": "RESEARCH conditional witness differences only; no blockcandidate",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-cover-attachment-v2/cover.step": "31c87d358bc4a8e4e0e99d8dd0afdc8183b74ab84d497a7339a5497163608472",
+    "cad/engine/generated/timing-cover-attachment-v2/main-gasket.step": "47a586fe0b00212529a41c492aefbf6e2225d62e4020107b925ae3534117a96b",
+    "cad/engine/generated/timing-cover-attachment-v2/pan-gasket.step": "76f6e3a85e769b6c98a959430170558e7a2256781b7cd14cae5e0b66b1cb602e",
+    "cad/engine/generated/timing-cover-attachment-v2/front-terminal-sealant.step": "79d1c9627f737c678f2aacfdcdd237ea4949de37e8e40040c55f95d15ccd7b0e",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "scripts/research-timing-front-block-residual-interfaces.py": "9b0ce4a039df73c4eaa8e51af22adf711ec02064ba94570b5fd035e901fdd062",
+    "cad/engine/timing_front_block_contract.py": "4832715f3e54996bec3c56b258fc16a32e88e4de57ddb85e338e901a0a3497ed"
+  },
+  "interfaces": [
+    {
+      "name": "cover",
+      "original_overlap_mm3": 24865.084929435154,
+      "overlap_remaining_after_proposed_region_removal_mm3": 0.0,
+      "remaining_bounds_mm": null
+    },
+    {
+      "name": "main-gasket",
+      "original_overlap_mm3": 0.0,
+      "overlap_remaining_after_proposed_region_removal_mm3": 0.0,
+      "remaining_bounds_mm": null
+    },
+    {
+      "name": "pan-gasket",
+      "original_overlap_mm3": 2835.5480926486907,
+      "overlap_remaining_after_proposed_region_removal_mm3": 2835.548091778678,
+      "remaining_bounds_mm": [
+        [
+          334.99999989999986,
+          -138.00000009986056,
+          -59.4000001
+        ],
+        [
+          381.0000001,
+          126.58539602752809,
+          -24.4999999
+        ]
+      ]
+    },
+    {
+      "name": "front-terminal-sealant",
+      "original_overlap_mm3": 11.504823320470932,
+      "overlap_remaining_after_proposed_region_removal_mm3": 0.0,
+      "remaining_bounds_mm": null
+    },
+    {
+      "name": "future-block-land",
+      "original_overlap_mm3": 59816.03918669199,
+      "overlap_remaining_after_proposed_region_removal_mm3": 57821.24347955979,
+      "remaining_bounds_mm": [
+        [
+          334.9999999,
+          -138.00000009986056,
+          -32.0000007
+        ],
+        [
+          373.0000001,
+          126.58539602752809,
+          209.13936197433466
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "No native block cut performed",
+    "Futureland is intendedblockmaterial; its overlap is attachment not collision",
+    "Gasket or sealant residuals forbid calling the proposed regionmask a completeadapter"
+  ]
+}

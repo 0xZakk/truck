@@ -1,0 +1,94 @@
+{
+  "status": "RESEARCH ONLY; no land union",
+  "input_sha256": {
+    "cad/engine/generated/timing-pump-foot-faceted-candidate/block.step": "7c7e9e0c5c6db1233fca045d20312dda2ad9bcaca9654965346d85edd0bc9a2e",
+    "cad/engine/generated/timing-cover-attachment-v2/future-block-land.step": "f4b8e8127b56bb78ee2c7509ae23a7093e37ac5debf3f83cd91c9f33fd330abd",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "cad/engine/generated/water-pump-gasket.step": "b0dc04a02df5928d546da6c23a94354c7fb93b0c2d3c296d23c6df6d016bfe88",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b",
+    "cad/engine/generated/water-pump-impeller.step": "c3cf2546d1adf027545ae20cc0aca3cba9e46ca9ae17c8f6f266033e17aded80",
+    "cad/engine/generated/water-pump-shaft.step": "5448c0838592e5699583e2cdc4834b78e8573c2e5411c12c865041f87816f72a",
+    "scripts/research-timing-front-land-wet-interface.py": "32eb996f21b50b712df062d6f44684820df5efd9e238d8b49d19c8a8d24b3fdd",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/cad_metrics.py": "67ead7094f893598f577bfb93a24e2f0acf9a71224aab775985969ac0ce317af"
+  },
+  "future_land_new_material_mm3": 72691.79013840282,
+  "interfaces": [
+    {
+      "name": "pump-chamber-fluid-void",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 1.790414132585367
+    },
+    {
+      "name": "pump-fifth-passage-fluid-void",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 110.1690342083419
+    },
+    {
+      "name": "water-pump-gasket",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 0.0
+    },
+    {
+      "name": "water-pump-housing",
+      "future_land_overlap_mm3": 0.0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 2.0
+    },
+    {
+      "name": "water-pump-impeller",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 9.790414132585376
+    },
+    {
+      "name": "water-pump-shaft",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 52.790414132585354
+    },
+    {
+      "name": "pump-blind-socket-1",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 5.347326050066377
+    },
+    {
+      "name": "pump-blind-socket-2",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 13.067414017083694
+    },
+    {
+      "name": "pump-blind-socket-3",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 106.15163541742939
+    },
+    {
+      "name": "pump-blind-socket-4",
+      "future_land_overlap_mm3": 0,
+      "new_land_material_overlap_mm3": 0,
+      "overlap_bounds_mm": null,
+      "distance_to_land_mm": 87.73629346486061
+    }
+  ],
+  "limits": [
+    "Pump chamber is inherited analyticfluidopening, notverifiedhydraulicrouting",
+    "Any blocked passage or actual movingpart overlap prohibitsblindfuturelandunion",
+    "No blockorcovergeometrymodified"
+  ]
+}
