@@ -1,0 +1,72 @@
+{
+  "status": "TOPOLOGY ONLY; production dimensions and installed interfaces unresolved",
+  "inputs": {
+    "cad/engine/oil_pump_topology_candidate.py": "8d596e8927833bb24d78276c0d90d2c2203c4cc59d8e841947536ed256170347",
+    "scripts/build-oil-pump-topology-candidate.py": "b446db7e183d96b7761f886918dfd2f2e34adb9077f00aa6b5999af850a0eba4",
+    "cad/engine/generated/oil-pump-housing.step": "22d5e1037015d3eafa256641220e130ef90e348fdb1178057e413bdd64b06440",
+    "reference/engine/oil-pump-topology-evidence.json": "9f78ba6b8c31529cbf362a9422744c142b1efdd33f8cdb0658a6397b5e085a41"
+  },
+  "display_estimates_mm": {
+    "neck_radius": 13.0,
+    "neck_top": 44.0,
+    "mount_blank_width": 60.0,
+    "mount_blank_depth": 32.0,
+    "mount_blank_bottom": 40.0,
+    "mount_blank_top": 46.0,
+    "pickup_flange_width_y": 40.0,
+    "pickup_flange_height_z": 26.0,
+    "pickup_bolt_y": 13.0,
+    "pickup_bolt_radius": 3.2,
+    "pickup_gasket_thickness": 0.5
+  },
+  "parts": [
+    {
+      "id": "oil-pump-topology-housing",
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 131712.78394344295,
+      "roundtrip_volume_difference_mm3": 8.575327228754759e-06,
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "artifacts": {
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-housing.step": "0944f5bd0986cab822160f83e75f1a8ef6cc01faacb8defd599a39e32cadf2e9",
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-housing.glb": "fa8b408e850fcec3ac01dd15797518854943fe740799caf58d042e6ec89ea5d9"
+      }
+    },
+    {
+      "id": "oil-pump-topology-pickup-gasket",
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 431.28142346262416,
+      "roundtrip_volume_difference_mm3": 2.3305801732931286e-12,
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "artifacts": {
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-gasket.step": "e992a0b90ff97cec383cdb52f808f13760983f5eb765b3c21cd85ba79df51a45",
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-gasket.glb": "4b9c1a4d666a4f8f82df410476a47382a11917dea0316ad4281303544cd8764d"
+      }
+    },
+    {
+      "id": "oil-pump-topology-pickup-tube-flange",
+      "valid_solid": true,
+      "solid_count": 1,
+      "volume_mm3": 4312.814234626241,
+      "roundtrip_volume_difference_mm3": 2.3646862246096134e-11,
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "artifacts": {
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-tube-flange.step": "6d09dbf7174c36074960b7b38333d83381023dd4fc06d1b80c97ce7bd60587af",
+        "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-tube-flange.glb": "f2499c264483a4e1d2819d1b6cada687d62551df7bd48d9896ffb2c99f83255d"
+      }
+    }
+  ],
+  "limits": [
+    "No block occurrence or material changes",
+    "Mount flange is unperforated blank except inherited drive bore; bolt/dowel/outlet geometry intentionally absent",
+    "Pickup flange and gasket dimensions and holes are explicit display estimates; no mounting bolts or tube continuity modeled",
+    "Inherited rotor pocket, cover ears, relief and drive clearances are illustrative source geometry; no hydraulic function proven"
+  ]
+}

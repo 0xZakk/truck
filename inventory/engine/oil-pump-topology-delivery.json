@@ -1,0 +1,72 @@
+{
+  "status": "TOPOLOGY ONLY; not installable; no hydraulic function claimed",
+  "bindings": {
+    "cad/engine/oil_pump_topology_candidate.py": "8d596e8927833bb24d78276c0d90d2c2203c4cc59d8e841947536ed256170347",
+    "scripts/build-oil-pump-topology-candidate.py": "b446db7e183d96b7761f886918dfd2f2e34adb9077f00aa6b5999af850a0eba4",
+    "scripts/render-oil-pump-topology-candidate.py": "7c6303f8b4801d943ae5c037695d7d8aed8b22028d27dca8e4e3d647b36f232e",
+    "docs/components/oil-pump-topology-contract.md": "88f4f0c1bce7abf9dd3767aa8f5744a76061789fd353d3fbad04f30cf34a504b",
+    "docs/components/oil-pump-topology-study.md": "b843e7073d17b71cca070cfc121fd1ffb2f29b04fdc2d5dc7bdec3775bf54315",
+    "reference/engine/oil-pump-topology-evidence.json": "9f78ba6b8c31529cbf362a9422744c142b1efdd33f8cdb0658a6397b5e085a41",
+    "inventory/engine/oil-pump-topology-candidate-validation.json": "1f879fa82fa499be60de6fc3c10123c1cf6a7172d8ae7fffa620aaf4b8684358",
+    "inventory/engine/oil-pump-topology-render.json": "f33b5f51075e3a2111c8fd062c50424e82291c878d3f2f7689c4afb5caeac11f",
+    "cad/engine/generated/oil-pump-topology-candidate/topology-review.png": "4a5190fbaa7f64e8d74383cd3fdca61f113dbb8a28c088e60ea1eaf76fcddf49",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-housing.step": "0944f5bd0986cab822160f83e75f1a8ef6cc01faacb8defd599a39e32cadf2e9",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-housing.glb": "fa8b408e850fcec3ac01dd15797518854943fe740799caf58d042e6ec89ea5d9",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-gasket.step": "e992a0b90ff97cec383cdb52f808f13760983f5eb765b3c21cd85ba79df51a45",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-gasket.glb": "4b9c1a4d666a4f8f82df410476a47382a11917dea0316ad4281303544cd8764d",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-tube-flange.step": "6d09dbf7174c36074960b7b38333d83381023dd4fc06d1b80c97ce7bd60587af",
+    "cad/engine/generated/oil-pump-topology-candidate/oil-pump-topology-pickup-tube-flange.glb": "f2499c264483a4e1d2819d1b6cada687d62551df7bd48d9896ffb2c99f83255d"
+  },
+  "unchanged_identity_references": [
+    {
+      "id": "oil-pump-inner-rotor",
+      "step": "/cad/engine/generated/oil-pump-inner-rotor.step",
+      "sha256": "09ba28b0e860c3c038d0563bb6539d0a49df6d7f402b38a135c7d6049454b56f",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-outer-rotor",
+      "step": "/cad/engine/generated/oil-pump-outer-rotor.step",
+      "sha256": "580d8282dd8554ed7f95ab0e60defb082ec409589a5e7b2e1bf2c570a7b4f894",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-rotor-shaft",
+      "step": "/cad/engine/generated/oil-pump-rotor-shaft.step",
+      "sha256": "e70378f97719491e12dc2106dd63f93c11dda3909aac4d0b95959db25b83a2bf",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-cover",
+      "step": "/cad/engine/generated/oil-pump-cover.step",
+      "sha256": "28345bdb153b5d9d6d91edd7830f93c56a856bdc30a402fc77a37b51983ce443",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-relief-plunger",
+      "step": "/cad/engine/generated/oil-pump-relief-plunger.step",
+      "sha256": "87419f9b73036f58d8965dda3d40b55bc3857b302b1b7ce89fee664a1176b8a3",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-relief-spring",
+      "step": "/cad/engine/generated/oil-pump-relief-spring.step",
+      "sha256": "27a6ec750c37b0445b51a3183d8e190cdc754010f04d8aa860002780e663634b",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    },
+    {
+      "id": "oil-pump-relief-cap",
+      "step": "/cad/engine/generated/oil-pump-relief-cap.step",
+      "sha256": "0816e54d8d69e7d817a43011b95dbb8d4422990f8f83b101ee5d7508e7240373",
+      "role": "Unchanged existing component; source dimensional limits inherited; not exported anew"
+    }
+  ],
+  "unresolved_required_interfaces": [
+    "block mounting face and screws",
+    "dowel",
+    "pressure outlet and block gallery",
+    "production pickup flange dimensions/fasteners",
+    "shaft support and neck height"
+  ],
+  "integration_proposal": null
+}

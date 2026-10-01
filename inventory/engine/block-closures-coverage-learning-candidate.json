@@ -1,0 +1,39 @@
+{
+  "block-core-cup-mps126": {
+    "summary": "A separate shallow metal cup closes a casting access opening in the block. This uninstalled MPS-126 replacement envelope shows the closed floor and open rim; it does not establish a particular bore or installation.",
+    "limits": "Five are listed in the applicable MPE-107R replacement kit, not a complete OEM plug inventory. Free OD and height are published; 1 mm uniform wall, square corners and all host interfaces remain unknown or estimated. No engine positions or press-fit deformation are modeled.",
+    "steps": [
+      {
+        "title": "Identify the separate closure",
+        "text": "The plug is a physical part distinct from the block casting. The cup floor closes the opening; the rim and outer wall would meet its host bore.",
+        "part": "block-core-cup-mps126"
+      },
+      {
+        "title": "Keep nominal size separate from free diameter",
+        "text": "Melling lists nominal 1.625 in, free OD 1.640\u20131.642 in and height 0.365 in. The candidate uses 41.656 mm free OD and 9.271 mm height; neither nominal size nor free OD specifies the host bore.",
+        "part": "block-core-cup-mps126"
+      },
+      {
+        "title": "Resolve the installed interface",
+        "text": "A measured bore axis, diameter, seating depth and applicable installation specification are needed before placement. Wall thickness, stamping radii and interference also remain unresolved.",
+        "part": "block"
+      }
+    ],
+    "troubleshooting": [
+      {
+        "title": "A nearby leak does not identify the plug",
+        "text": "Trace the fluid path and inspect the actual closure and surrounding casting. This model has no pressure or leakage simulation and cannot diagnose a failed seal.",
+        "part": "block-core-cup-mps126"
+      },
+      {
+        "title": "Do not infer a bore from the kit",
+        "text": "The replacement kit count identifies candidate parts to reconcile, not their engine locations. A cup can have the correct free envelope while being assigned to the wrong opening.",
+        "part": "block"
+      }
+    ],
+    "sources": [
+      "melling-expansion-plug-guide",
+      "ford-industrial-parts"
+    ]
+  }
+}

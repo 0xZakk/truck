@@ -1,0 +1,33 @@
+{
+  "status": "PASS uninstalled replacement envelope only",
+  "inputs": {
+    "cad/engine/block_closures_coverage_candidate.py": "b135369f70749d0c47775151b751a40bfdb4820b396697beca93d088a80d4c6c",
+    "scripts/check-block-closures-additional-candidate.py": "6e5eb0b21eaf0355e31abc0771cbb27cd3d4512ffebed577da1adcc7c5c5b837",
+    "cad/engine/block_closures_additional_candidate.py": "bee269e6cf6ae53bc9ba1ede9baff3418add60e4b1c44fec9d80b8f8edd6d00f",
+    "reference/engine/research-2026-09-23/melling-expansion-plug-guide.pdf": "e931b0dc1efa68e95cd64ee25b11390bfe287f48119ba4cb634937c51a231ec8"
+  },
+  "artifacts": {
+    "cad/engine/generated/block-closures-additional-candidate/block-core-cup-mps59a.step": "1229f8f5b6cdc714d7f547a9fb0701ead3423a2ea87122cfdbbb4949ff919cad",
+    "cad/engine/generated/block-closures-additional-candidate/block-core-cup-mps59a.glb": "268f2b9df9d377cd76dd56a22455e3d68b3e6a31c651a4823cebbe348394bd04",
+    "cad/engine/generated/block-closures-additional-candidate/cup-section.png": "734bdb43a2da00d097c4129112d083563c699f17b15f2b8148480a634649d1df"
+  },
+  "free_od_mm": 52.577999999999996,
+  "free_od_range_mm": [
+    52.45099999999999,
+    52.705
+  ],
+  "height_mm": 8.712200000000001,
+  "estimated_wall_mm": 1,
+  "step_roundtrip_volume_error_mm3": 2.7284841053187847e-11,
+  "mesh_bounds_error_mm": 0.008170317053796339,
+  "valid_solids": 1,
+  "watertight": true,
+  "winding_consistent": true,
+  "positive_volume": true,
+  "negative_control": "Floor point present at1mmwall, absent at.25mmwall",
+  "frozen_mps126_replay_difference_mm3": 0.0,
+  "printed_metric_od_mm": 52.48,
+  "inch_metric_disagreement_mm": 0.098,
+  "host_bore": null,
+  "occurrence_transforms": null
+}

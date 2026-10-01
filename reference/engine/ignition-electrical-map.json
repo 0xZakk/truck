@@ -1,0 +1,281 @@
+{
+  "status": "Primary EVTM connection map with explicit unresolved variant/labels",
+  "vehicle_scope": "1994 F-series4.9L gasoline, manual gearbox; VIN-Y application context; calibration not verified",
+  "source": {
+    "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+    "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+    "redistribution": "Purchased original and page images excluded; short derived facts only"
+  },
+  "reviewed_pages": [
+    {
+      "pdf_page": 72,
+      "printed_page": "21-1",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 73,
+      "printed_page": "21-2",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 77,
+      "printed_page": "23-4",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 79,
+      "printed_page": "23-6",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 81,
+      "printed_page": "23-8",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 82,
+      "printed_page": "23-9",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 298,
+      "printed_page": "150-1",
+      "actual_image_viewed": true
+    },
+    {
+      "pdf_page": 313,
+      "printed_page": "151-2",
+      "actual_image_viewed": true
+    }
+  ],
+  "nets": [
+    {
+      "circuit": 395,
+      "color": "GY/O",
+      "function": "PIP",
+      "nodes": [
+        "C178:8",
+        "C101:18",
+        "S145",
+        "C1021:1",
+        "C185:56"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298,
+        77,
+        81,
+        82
+      ]
+    },
+    {
+      "circuit": 929,
+      "color": "PK",
+      "function": "SPOUT",
+      "nodes": [
+        "C185:36",
+        "C1019:un-numbered side A",
+        "C1019:un-numbered side B",
+        "C1021:2"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298,
+        77,
+        81,
+        82
+      ]
+    },
+    {
+      "circuit": 382,
+      "color": "Y/BK",
+      "function": "UNRESOLVED: START label vs PCM ICM circuit",
+      "nodes": [
+        "C185:4",
+        "C1021:3"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298,
+        77,
+        81,
+        82
+      ]
+    },
+    {
+      "circuit": 259,
+      "color": "O/R",
+      "function": "ignition ground",
+      "nodes": [
+        "C185:16",
+        "C101:19",
+        "C178:7"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298,
+        77,
+        81,
+        82
+      ]
+    },
+    {
+      "circuit": 16,
+      "color": "R/LG",
+      "function": "start/run supply",
+      "nodes": [
+        "fuse U20A",
+        "S148",
+        "C1021:4",
+        "C101:24",
+        "S199",
+        "C178:1",
+        "C1008:BATT",
+        "C1017"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298
+      ]
+    },
+    {
+      "circuit": 11,
+      "color": "T/Y",
+      "function": "coil switched primary",
+      "nodes": [
+        "C1021:5",
+        "C101:25",
+        "S171",
+        "C1008:switched"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298
+      ]
+    },
+    {
+      "circuit": 648,
+      "color": "W/PK",
+      "function": "tach branch",
+      "nodes": [
+        "S171",
+        "C101:16",
+        "C202:unknown cavity",
+        "C250:9"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298
+      ]
+    },
+    {
+      "circuit": 570,
+      "color": "BK/W",
+      "function": "ICM/distributor ground link",
+      "nodes": [
+        "C1021:6",
+        "C101:30",
+        "C178:3"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298
+      ]
+    },
+    {
+      "circuit": 48,
+      "color": null,
+      "function": "shield",
+      "nodes": [
+        "C101:31",
+        "C178:2"
+      ],
+      "page_refs": [
+        72,
+        73,
+        298
+      ]
+    },
+    {
+      "circuit": 481,
+      "color": "GY/Y",
+      "function": "manual clutch input",
+      "nodes": [
+        "C261:unknown cavity",
+        "C202:unknown cavity",
+        "C185:30"
+      ],
+      "page_refs": [
+        79,
+        82
+      ]
+    }
+  ],
+  "connector_terminals": {
+    "C1021": {
+      "1": 395,
+      "2": 929,
+      "3": 382,
+      "4": 16,
+      "5": 11,
+      "6": 570
+    },
+    "C178": {
+      "1": 16,
+      "2": 48,
+      "3": 570,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": 259,
+      "8": 395
+    },
+    "C185_ignition_subset": {
+      "4": 382,
+      "16": 259,
+      "36": 929,
+      "56": 395
+    },
+    "C101_ignition_subset": {
+      "16": 648,
+      "18": 395,
+      "19": 259,
+      "24": 16,
+      "25": 11,
+      "30": 570,
+      "31": 48
+    }
+  },
+  "conflicts": [
+    {
+      "circuit": 382,
+      "observations": "21-1 C1021/3 START;23-8 C185/4 ICM",
+      "IDM_assignment": null,
+      "push_start_or_CCD": null
+    },
+    {
+      "circuit": 259,
+      "schematic_color": "O/R",
+      "C101_face_table_color": "O/Y",
+      "color_not_resolved": true
+    },
+    {
+      "circuit": 395,
+      "schematic_role": "distributor PIP",
+      "PCM_table_role": "CKP pickup",
+      "no_separate_sensor_inferred": true
+    }
+  ],
+  "host_geometry": null,
+  "wire_routes": null,
+  "handoff_sha256": "55b9a8a17807c9480c1cdc8f28c3e7f76f27ad4bf7b00f32302db8618d07a2a3",
+  "node_list_semantics": "Electrical net memberships, not ordered wire routes or a geometric harness path; different-circuit splice S171 explicitly joins11 and648."
+}
