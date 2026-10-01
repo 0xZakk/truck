@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "status": "research-only; no harness installation",
+  "baseline_commit": "fbd453c66cff813cfc84fb18f88e1d1ecc560ee4",
+  "issue": 32,
+  "applicability": "1994 F-Series 4.9L VIN Y, manual transmission; actual emissions calibration unverified",
+  "source": {
+    "path": "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf",
+    "sha256": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54",
+    "pages": [
+      {
+        "pdf_page_1_based": 74,
+        "printed": "23-1",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 75,
+        "printed": "23-2",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 76,
+        "printed": "23-3",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 77,
+        "printed": "23-4",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 78,
+        "printed": "23-5",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 81,
+        "printed": "23-8",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 82,
+        "printed": "23-9",
+        "visual_review": true
+      },
+      {
+        "pdf_page_1_based": 298,
+        "printed": "150-1",
+        "visual_review": true
+      }
+    ],
+    "redistribution": "No purchased pages or bulk text delivered"
+  },
+  "components": [
+    {
+      "id": "injector-1",
+      "connector": "C190",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "555",
+          "color": "T",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 58,
+          "c101_cavity": 12,
+          "path_from_component": [
+            "S160",
+            "C125 (cavity unknown)",
+            "C101/12",
+            "C185/58"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injector-2",
+      "connector": "C191",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "556",
+          "color": "W",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 59,
+          "c101_cavity": 13,
+          "path_from_component": [
+            "S159",
+            "C125 (cavity unknown)",
+            "C101/13",
+            "C185/59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injector-3",
+      "connector": "C192",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "555",
+          "color": "T",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 58,
+          "c101_cavity": 12,
+          "path_from_component": [
+            "S160",
+            "C125 (cavity unknown)",
+            "C101/12",
+            "C185/58"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injector-4",
+      "connector": "C193",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "556",
+          "color": "W",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 59,
+          "c101_cavity": 13,
+          "path_from_component": [
+            "S159",
+            "C125 (cavity unknown)",
+            "C101/13",
+            "C185/59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injector-5",
+      "connector": "C194",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "555",
+          "color": "T",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 58,
+          "c101_cavity": 12,
+          "path_from_component": [
+            "S160",
+            "C125 (cavity unknown)",
+            "C101/12",
+            "C185/58"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injector-6",
+      "connector": "C195",
+      "contact_count": 2,
+      "source_pages": [
+        "23-3",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S158",
+            "C125 (cavity unknown)",
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "556",
+          "color": "W",
+          "role": "group driver",
+          "component_cavity": null,
+          "pcm_c185_cavity": 59,
+          "c101_cavity": 13,
+          "path_from_component": [
+            "S159",
+            "C125 (cavity unknown)",
+            "C101/13",
+            "C185/59"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iac",
+      "connector": "C1007",
+      "contact_count": 2,
+      "source_pages": [
+        "23-2",
+        "23-8",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "264",
+          "color": "W/LB",
+          "role": "actuator control",
+          "component_cavity": null,
+          "pcm_c185_cavity": 21,
+          "c101_cavity": 4,
+          "path_from_component": [
+            "C101/4",
+            "C185/21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evr",
+      "connector": "C180",
+      "contact_count": 2,
+      "source_pages": [
+        "23-2",
+        "23-8",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "361",
+          "color": "R",
+          "role": "relay supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": 23,
+          "path_from_component": [
+            "S144",
+            "C101/23",
+            "continuation K; source splice discrepancy"
+          ]
+        },
+        {
+          "circuit": "360",
+          "color": "BR/PK",
+          "role": "actuator control",
+          "component_cavity": null,
+          "pcm_c185_cavity": 33,
+          "c101_cavity": 3,
+          "path_from_component": [
+            "C101/3",
+            "C185/33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "connector": "C1011",
+      "contact_count": 3,
+      "source_pages": [
+        "23-4",
+        "23-8",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "351",
+          "color": "BR/W",
+          "role": "reference voltage",
+          "component_cavity": null,
+          "pcm_c185_cavity": 26,
+          "c101_cavity": null,
+          "path_from_component": [
+            "S163",
+            "C185/26"
+          ]
+        },
+        {
+          "circuit": "359",
+          "color": "GY/R",
+          "role": "sensor signal return",
+          "component_cavity": null,
+          "pcm_c185_cavity": 46,
+          "c101_cavity": null,
+          "path_from_component": [
+            "S137",
+            "C185/46"
+          ]
+        },
+        {
+          "circuit": "358",
+          "color": "LG/BK",
+          "role": "sensor signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 45,
+          "c101_cavity": null,
+          "path_from_component": [
+            "C185/45"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evp",
+      "connector": "C182",
+      "contact_count": 3,
+      "source_pages": [
+        "23-4",
+        "23-8",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "351",
+          "color": "BR/W",
+          "role": "reference voltage",
+          "component_cavity": null,
+          "pcm_c185_cavity": 26,
+          "c101_cavity": 38,
+          "path_from_component": [
+            "S135",
+            "C101/38",
+            "S163",
+            "C185/26"
+          ]
+        },
+        {
+          "circuit": "359",
+          "color": "GY/R",
+          "role": "sensor signal return",
+          "component_cavity": null,
+          "pcm_c185_cavity": 46,
+          "c101_cavity": 39,
+          "path_from_component": [
+            "S161",
+            "C101/39",
+            "S137",
+            "C185/46"
+          ]
+        },
+        {
+          "circuit": "352",
+          "color": "BR/LG",
+          "role": "sensor signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 27,
+          "c101_cavity": 27,
+          "path_from_component": [
+            "C101/27",
+            "C185/27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tps",
+      "connector": "C1026",
+      "contact_count": 3,
+      "source_pages": [
+        "23-4",
+        "23-8",
+        "23-9",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "351",
+          "color": "BR/W",
+          "role": "reference voltage",
+          "component_cavity": null,
+          "pcm_c185_cavity": 26,
+          "c101_cavity": 38,
+          "path_from_component": [
+            "S135",
+            "C101/38",
+            "S163",
+            "C185/26"
+          ]
+        },
+        {
+          "circuit": "359",
+          "color": "GY/R",
+          "role": "sensor signal return",
+          "component_cavity": null,
+          "pcm_c185_cavity": 46,
+          "c101_cavity": 39,
+          "path_from_component": [
+            "S161",
+            "C101/39",
+            "S137",
+            "C185/46"
+          ]
+        },
+        {
+          "circuit": "355",
+          "color": "GY/W",
+          "role": "sensor signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 47,
+          "c101_cavity": 37,
+          "path_from_component": [
+            "C101/37",
+            "C185/47"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ect",
+      "connector": "C183",
+      "contact_count": 2,
+      "source_pages": [
+        "23-4",
+        "23-5",
+        "23-8",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "359",
+          "color": "GY/R",
+          "role": "sensor signal return",
+          "component_cavity": null,
+          "pcm_c185_cavity": 46,
+          "c101_cavity": 39,
+          "path_from_component": [
+            "S138",
+            "C125 (cavity unknown)",
+            "S161",
+            "C101/39",
+            "S137",
+            "C185/46"
+          ]
+        },
+        {
+          "circuit": "354",
+          "color": "LG/R",
+          "role": "temperature signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 7,
+          "c101_cavity": 5,
+          "path_from_component": [
+            "C125 (cavity unknown)",
+            "C101/5",
+            "C185/7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iat-act",
+      "connector": "C164",
+      "contact_count": 2,
+      "source_pages": [
+        "23-4",
+        "23-5",
+        "23-8",
+        "150-1"
+      ],
+      "contacts": [
+        {
+          "circuit": "359",
+          "color": "GY/R",
+          "role": "sensor signal return",
+          "component_cavity": null,
+          "pcm_c185_cavity": 46,
+          "c101_cavity": 39,
+          "path_from_component": [
+            "S138",
+            "C125 (cavity unknown)",
+            "S161",
+            "C101/39",
+            "S137",
+            "C185/46"
+          ]
+        },
+        {
+          "circuit": "743",
+          "color": "GY",
+          "role": "temperature signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 25,
+          "c101_cavity": 6,
+          "path_from_component": [
+            "C125 (cavity unknown)",
+            "C101/6",
+            "C185/25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heated-oxygen-sensor",
+      "connector": "C1025",
+      "contact_count": 4,
+      "source_pages": [
+        "23-3",
+        "23-4",
+        "23-8",
+        "23-9"
+      ],
+      "contacts": [
+        {
+          "circuit": "298",
+          "color": "P/O",
+          "role": "heater run supply",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": null,
+          "path_from_component": [
+            "C1003 (cavity unknown)",
+            "S105",
+            "engine compartment fuse E 15A"
+          ]
+        },
+        {
+          "circuit": "57",
+          "color": "BK",
+          "role": "heater chassis ground",
+          "component_cavity": null,
+          "pcm_c185_cavity": null,
+          "c101_cavity": null,
+          "path_from_component": [
+            "C1003 (cavity unknown)",
+            "S100",
+            "G101"
+          ]
+        },
+        {
+          "circuit": "74",
+          "color": "GY/LB",
+          "role": "oxygen signal",
+          "component_cavity": null,
+          "pcm_c185_cavity": 29,
+          "c101_cavity": null,
+          "path_from_component": [
+            "C1003 (cavity unknown)",
+            "S165",
+            "C185/29"
+          ]
+        },
+        {
+          "circuit": "89",
+          "color": "O",
+          "role": "oxygen sensor ground",
+          "component_cavity": null,
+          "pcm_c185_cavity": 49,
+          "c101_cavity": null,
+          "path_from_component": [
+            "C1003 (cavity unknown)",
+            "S122 on 23-4",
+            "C185/49"
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_count": {
+    "component_connector_interfaces": 14,
+    "component_contacts": 33,
+    "additional_shared_interfaces": [
+      "C101",
+      "C125",
+      "C1003",
+      "C185"
+    ],
+    "notes": "IDs denote mating connector interfaces, not counts of separately purchasable housings, terminals, locks or seals. C1003 is inline, not a second oxygen sensor. C103 unused branch retained, not counted as a sensor. C198 shared diagnostic return branch outside component count."
+  },
+  "source_conflicts": [
+    {
+      "id": "supply-splice-cross-reference",
+      "pages": [
+        "23-1",
+        "23-2",
+        "23-4"
+      ],
+      "fact": "23-2 continuation K says FROM S122 ON PAGE 23-1; actual 23-1 relay 361 R splice is S136. S122 on 23-4 is oxygen-ground circuit89 O.",
+      "handling": "Join circuit361 continuation K by matching circuit/color and page arrow; preserve conflicting splice text. Never join supply361 to oxygen-ground89 using S122 alone."
+    },
+    {
+      "id": "evr-function-label",
+      "pages": [
+        "23-2",
+        "23-9"
+      ],
+      "fact": "PCM33 table labels EGR Control Solenoid Input; schematic depicts PCM connection to EGR solenoid winding.",
+      "handling": "Retain actuator-control topology without using table wording to infer signal direction or diagnostic waveform."
+    }
+  ],
+  "boundaries": [
+    "Component cavities are not numbered in reviewed circuit sheets; null is intentional. No terminal orientation inferred from schematic top/bottom.",
+    "C101 cavity numbers use150-1; no C125 or C1003 cavity assignments established.",
+    "Injector grouping1/3/5 on555 and2/4/6 on556 does not establish firing or injection timing.",
+    "359 sensor signal return,89 oxygen ground and57 heater/chassis ground remain distinct nets; no external bridge inferred.",
+    "EVR is schematic EGR control solenoid; EVP is separate position sensor; IAT/ACT is one named temperature device here.",
+    "E4OD-only branches excluded from manual configuration. AIRD/AIRB, purge and knock are adjacent drawn branches, not newly counted target components.",
+    "C103 signal74 unused branch;89 branch atS122 marked all except Bronco applies to F-Series, still not used.",
+    "No wire gauge, length, three-dimensional route, terminal part numbers, seals, module calibration or test thresholds established."
+  ],
+  "validation": {
+    "unique_component_connectors": true,
+    "component_cavity_assignment": "NOT ESTABLISHED",
+    "cad": "N/A research only",
+    "installed_electrical_test": "NOT RUN",
+    "browser": "NOT RUN"
+  }
+}

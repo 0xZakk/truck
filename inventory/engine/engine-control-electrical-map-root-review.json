@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-01",
+  "reviewer": "root integration agent",
+  "status": "PASS for bounded electrical interface research; no installed harness acceptance",
+  "inputs": {
+    "reference/engine/engine-control-electrical-map.json": "90f2bb7c261b47299f0be495483a476162a8038f721429b89e22389b2bec0481",
+    "manuals/evtm/1994-Bronco-F-Series-EVTM.pdf": "1adf3f3fbe35b98746dd4e8ded5c5b32fb9daaec2eb8e6f02ac91d2efb2edb54"
+  },
+  "visual_review": {
+    "pdf_pages_1_based": [
+      74,
+      75,
+      76,
+      77,
+      78,
+      81,
+      82,
+      298
+    ],
+    "printed_pages": [
+      "23-1",
+      "23-2",
+      "23-3",
+      "23-4",
+      "23-5",
+      "23-8",
+      "23-9",
+      "150-1"
+    ],
+    "method": "Independently rendered actual PDF pages at2200px using pdftoppm; visually followed shared paths and compared all33 circuit/color/PCM/C101 tuples with structured map. Purchased images excluded from repository."
+  },
+  "verified": [
+    "14 unique component connector interfaces and33 contacts; unspecified component cavity orientation retained as null.",
+    "Odd injector group555T atPCM58 and even group556W atPCM59, common361R supply; no timing sequence inferred.",
+    "IAC264W/LB atPCM21 and EVR360BR/PK atPCM33; latter table direction-label conflict retained.",
+    "MAP/EVP/TPS351 reference and359 sensor return paths stay separate from89 oxygen ground and57 heater/chassis ground.",
+    "ECT354LG/R atPCM7 and IAT743GY atPCM25; no duplicate ACT sensor.",
+    "23-2 continuationK namesS122 while23-1 supply splice isS136.23-4 S122 is89 oxygen ground. Supply-to-ground merge prohibited.",
+    "C101 applicable pin/circuit tuples agree with150-1; connector faces are mirrored by mating half and not interchangeable views."
+  ],
+  "limits": [
+    "No connector terminal service part numbers, physical harness routes, wire lengths/gauges, sensor cavity orientations or electrical operating thresholds established.",
+    "No installed harness, CAD, browser or diagnostics acceptance.",
+    "Calibration and actual truck harness not identified by this common4.9L/manual map."
+  ]
+}

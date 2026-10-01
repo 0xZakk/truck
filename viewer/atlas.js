@@ -1,3 +1,4 @@
+import {engineLearningSupplements,supplementEngineLearning,engineSourceUrl} from './engine-learning-supplements.js';
 import { buildThrottleSpringMesh } from './throttle-return-spring-mesh.js';
 import { createThrottleCableMotion, cableAngle } from './throttle-cable-motion.js';
 import { createEvrDiscreteMotion } from './evr-discrete-motion.js';
@@ -38,7 +39,7 @@ function resetCamera(){camera.position.set(450,315,560);orbit.target.set(0,155,0
 resetCamera();
 const groups=new Map(),objects=new Map();
 void prewarmSourceSpringCache(96,12);
-let data,nav,learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
+let data,nav,learningSources={},learning={},current='engine',playing=false,ghost=false,section=false,angle=0,throttleAngle=0,explosion=0;
 let compressorAngle=0,compressorEngaged=true,compressorPlaying=false;
 let throttleSpringPaths=null;
 let evrMotion=null,evrFrame=null,evrPending=false,evrRequestSerial=0;
@@ -60,10 +61,10 @@ covers.push('starter-frame','starter-brush-end-plate','starter-drive-end-housing
 covers.push('evr-magnetic-shell-illustrative','evr-bobbin-illustrative');
 const story=document.createElement('section');story.id='assembly-story';$('parts').after(story);
 function lessonSource(id){
-  const source=data.sources[id];if(!source)return null;
+  const source=learningSources[id];if(!source)return null;
   const a=document.createElement('a');a.className='source';
   // Encode each on-disk segment: manual directory names contain literal %20.
-  a.href=source.path?'/'+source.path.replace(/^\//,'').split('/').map(encodeURIComponent).join('/'):source.url;
+  a.href=engineSourceUrl(source);
   a.target='_blank';a.rel='noopener';a.textContent=source.title;
   return a;
 }
@@ -407,6 +408,14 @@ try{
     if(throttleSpringPaths.schema!=='illustrative-throttle-spring-paths-v1'||throttleSpringPaths.frames.length!==91)throw new Error('Invalid throttle spring motion data');
   }
   const lessons=await Promise.all(engineLearningModules.map(async name=>{const response=await fetch(`/inventory/engine/${name}-learning.json`,{cache:'no-store'});if(!response.ok)throw new Error(`Learning notes: ${response.status}`);return response.json();}));learning=resolveEngineLearning(data,nav.nodes.keys(),...lessons);
+  const supplements=await Promise.all(engineLearningSupplements.map(async spec=>{
+    const entries=await Promise.all(['lessons','sources'].map(async key=>{
+      const response=await fetch(`/inventory/engine/${spec[key]}`,{cache:'no-store'});
+      if(!response.ok)throw new Error(`Electrical learning ${key}: ${response.status}`);
+      return [key,await response.json()];
+    }));return Object.fromEntries(entries);
+  }));
+  ({learning,sources:learningSources}=supplementEngineLearning(learning,data.sources,nav.nodes.keys(),supplements));
   for(const a of data.assemblies){const g=new THREE.Group();groups.set(a.id,g);}
   for(const a of data.assemblies)(a.parent?groups.get(a.parent):scene).add(groups.get(a.id));
   const loader=new GLTFLoader();
