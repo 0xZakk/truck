@@ -1,0 +1,502 @@
+{
+  "status": "PARTIAL radial constraint; inherited camera/scale conflict prevents all-four metric registration",
+  "scope": "Source pixels only, no engine clearance or CAD fitting",
+  "views": {
+    "rear": {
+      "file": "gmb-1251810-view2.jpeg",
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "mounts": [
+        [
+          451,
+          365
+        ],
+        [
+          363,
+          427
+        ],
+        [
+          371,
+          277
+        ],
+        [
+          297,
+          362
+        ],
+        [
+          294,
+          330
+        ]
+      ],
+      "root": [
+        303,
+        296
+      ],
+      "tip": [
+        78,
+        142
+      ],
+      "hub_center": null,
+      "correspondence": "Four small holes plus distinct larger fifth; all five visible. Body pattern determines affine map with residual degrees of freedom."
+    },
+    "front": {
+      "file": "gmb-1251810-front.jpeg",
+      "indices": [
+        3,
+        0,
+        2
+      ],
+      "mounts": [
+        [
+          315,
+          199
+        ],
+        [
+          466,
+          219
+        ],
+        [
+          381,
+          273
+        ]
+      ],
+      "root": [
+        307,
+        252
+      ],
+      "tip": [
+        40,
+        387
+      ],
+      "hub_center": [
+        400,
+        140
+      ],
+      "correspondence": "Provisional three visible small-hole identities from tube/inlet adjacency; rearward fourth is occluded. Three points interpolate affine map exactly and cannot validate it."
+    },
+    "oblique": {
+      "file": "gmb-1251810-view4.jpeg",
+      "indices": [
+        3,
+        0,
+        2
+      ],
+      "mounts": [
+        [
+          350,
+          201
+        ],
+        [
+          502,
+          263
+        ],
+        [
+          388,
+          320
+        ]
+      ],
+      "root": [
+        328,
+        276
+      ],
+      "tip": [
+        47,
+        330
+      ],
+      "hub_center": null,
+      "pilot_center": [
+        443,
+        194
+      ],
+      "correspondence": "Three visible small holes; tentative identities follow front-view inlet/tube adjacency. Fourth and larger fifth opening obscured. Pilot center is visible but is not the pulley seating-plane center; no hub-plane metric anchor assigned."
+    },
+    "side": {
+      "file": "gmb-1251810-view3.jpeg",
+      "indices": [],
+      "mounts": [],
+      "root": [
+        380,
+        360
+      ],
+      "tip": [
+        558,
+        438
+      ],
+      "hub_center": [
+        262,
+        228
+      ],
+      "correspondence": "Mounting holes are foreshortened/occluded; no false correspondence is assigned. Visible hub rim ellipse and mounting-plane silhouette provide a separate ratio test.",
+      "mount_plane_y": 404,
+      "pulley_plane_y": 224,
+      "hub_major_px": 140,
+      "hub_minor_px": 22
+    }
+  },
+  "model_pattern_yz_mm_inherited": [
+    [
+      7.7,
+      -66.5
+    ],
+    [
+      66.3,
+      6.3
+    ],
+    [
+      -66.2,
+      5.3
+    ],
+    [
+      17.0,
+      64.9
+    ],
+    [
+      -10.9,
+      69.0
+    ]
+  ],
+  "fits": {
+    "rear": {
+      "affine_yz_columns_px_per_estimated_mm": [
+        [
+          -0.05208041136498679,
+          -1.1669522073330933
+        ],
+        [
+          1.13079196036744,
+          -0.10803566887085153
+        ]
+      ],
+      "offset_px": [
+        373.7826284194575,
+        350.7633619183379
+      ],
+      "weak_perspective_axial_column_up_to_sign": [
+        0.19915442084291166,
+        -0.3373279463797665
+      ],
+      "mount_rms_px": 1.50208733885973,
+      "mount_residuals_px": [
+        1.654910008672904,
+        1.9458813456303958,
+        1.6682756295799612,
+        0.9886833266904784,
+        0.9977535883219105
+      ],
+      "depth_assumptions_mm": {
+        "root": 35,
+        "tip": -26.9666666667
+      },
+      "conditional_sign_solutions": [
+        {
+          "axis_sign": -1,
+          "root_yz_estimate_mm": [
+            -53.41794954795914,
+            57.0668207817005
+          ],
+          "tip_yz_estimate_mm": [
+            -151.2717005498457,
+            264.81928715854906
+          ],
+          "root_to_tip_radial_mm": 229.64416794424108,
+          "root_difference_from_inherited_mm": 6.309328423998421
+        },
+        {
+          "axis_sign": 1,
+          "root_yz_estimate_mm": [
+            -31.488317188349605,
+            68.03445519226653
+          ],
+          "tip_yz_estimate_mm": [
+            -168.16796014884193,
+            256.36898597935004
+          ],
+          "root_to_tip_radial_mm": 232.70414754919724,
+          "root_difference_from_inherited_mm": 18.233416201955407
+        }
+      ],
+      "warning": "Zero residual with three anchors is interpolation, not validation. Axial column assumes scaled orthographic camera and source pattern fidelity."
+    },
+    "front": {
+      "affine_yz_columns_px_per_estimated_mm": [
+        [
+          0.031527625214396435,
+          -1.151394268755676
+        ],
+        [
+          -0.8220693376500724,
+          -0.09402401187104116
+        ]
+      ],
+      "offset_px": [
+        389.1895184135983,
+        219.07733711048186
+      ],
+      "weak_perspective_axial_column_up_to_sign": [
+        0.10193882450744585,
+        -0.8077473407596477
+      ],
+      "mount_rms_px": 9.9773289962804e-13,
+      "mount_residuals_px": [
+        3.457650183405701e-13,
+        1.6807302292787106e-12,
+        2.0495186137532011e-13
+      ],
+      "depth_assumptions_mm": {
+        "root": 35,
+        "tip": -26.9666666667
+      },
+      "conditional_sign_solutions": [
+        {
+          "axis_sign": -1,
+          "root_yz_estimate_mm": [
+            -13.42619451471789,
+            67.91623481992133
+          ],
+          "tip_yz_estimate_mm": [
+            -264.8956244324467,
+            298.4094571859943
+          ],
+          "root_to_tip_radial_mm": 341.12167878902613,
+          "root_difference_from_inherited_mm": 35.40275495729542
+        },
+        {
+          "axis_sign": 1,
+          "root_yz_estimate_mm": [
+            -82.69854670712101,
+            72.21686848837862
+          ],
+          "tip_yz_estimate_mm": [
+            -211.522926409853,
+            295.0959213404835
+          ],
+          "root_to_tip_radial_mm": 257.4311422614697,
+          "root_difference_from_inherited_mm": 36.68788489618296
+        }
+      ],
+      "warning": "Zero residual with three anchors is interpolation, not validation. Axial column assumes scaled orthographic camera and source pattern fidelity."
+    },
+    "oblique": {
+      "affine_yz_columns_px_per_estimated_mm": [
+        [
+          0.39178277543312406,
+          -1.1845021294637097
+        ],
+        [
+          -1.1506234221733995,
+          -0.3904048871673492
+        ]
+      ],
+      "offset_px": [
+        420.2138810198306,
+        245.89787535410798
+      ],
+      "weak_perspective_axial_column_up_to_sign": [
+        0.040690665779153375,
+        -0.28608483450459193
+      ],
+      "mount_rms_px": 1.785899847927193e-12,
+      "mount_residuals_px": [
+        1.3248907203895516e-12,
+        2.790542955297855e-12,
+        1.6077746776921858e-13
+      ],
+      "depth_assumptions_mm": {
+        "root": 35,
+        "tip": -26.9666666667
+      },
+      "conditional_sign_solutions": [
+        {
+          "axis_sign": -1,
+          "root_yz_estimate_mm": [
+            -39.08013263166944,
+            63.72194951224243
+          ],
+          "tip_yz_estimate_mm": [
+            -168.14781794655553,
+            260.39105052674165
+          ],
+          "root_to_tip_radial_mm": 235.2386079843055,
+          "root_difference_from_inherited_mm": 9.55373080701694
+        },
+        {
+          "axis_sign": 1,
+          "root_yz_estimate_mm": [
+            -55.46199805737272,
+            60.708205585644784
+          ],
+          "tip_yz_estimate_mm": [
+            -155.52598068045046,
+            262.7130684663802
+          ],
+          "root_to_tip_radial_mm": 225.43017820570591,
+          "root_difference_from_inherited_mm": 7.473155077233833
+        }
+      ],
+      "warning": "Zero residual with three anchors is interpolation, not validation. Axial column assumes scaled orthographic camera and source pattern fidelity."
+    }
+  },
+  "rear_sensitivity": {
+    "seed": 440091810,
+    "samples": 2048,
+    "mount_pixel_box": 4,
+    "tube_pixel_box": 8,
+    "columns": [
+      "rootY",
+      "rootZ",
+      "tipY",
+      "tipZ",
+      "radial_length",
+      "radial_azimuth_deg"
+    ],
+    "min": [
+      -67.02917474096361,
+      42.817453795340484,
+      -193.7000301520457,
+      239.38446278303354,
+      203.89417894572878,
+      108.03280551776191
+    ],
+    "max": [
+      -29.980549825641873,
+      73.63104007693698,
+      -128.61096953073078,
+      288.1703622078428,
+      264.2868570755477,
+      130.46216269858567
+    ],
+    "meaning": "Finite perturbation spread conditional on inherited pattern, fixedrootdepth and prior axialrange; not manufacturing tolerance or physical guaranteed bound"
+  },
+  "rear_depth_ambiguity_witnesses": [
+    {
+      "tip_axial_mm": -100.0,
+      "tip_yz_estimated_mm": [
+        -128.3917841213302,
+        276.26218572690107
+      ],
+      "root_to_tip_radial_mm": 231.66286686496582,
+      "same_rear_tip_reprojection_error_px": 5.684341886080802e-14,
+      "scope": "Rear-camera ambiguity witness only; not claimed compatible with all four images or engine."
+    },
+    {
+      "tip_axial_mm": -26.9666666667,
+      "tip_yz_estimated_mm": [
+        -151.2717005498457,
+        264.81928715854906
+      ],
+      "root_to_tip_radial_mm": 229.64416794424108,
+      "same_rear_tip_reprojection_error_px": 8.987733679556355e-14,
+      "scope": "Rear-camera ambiguity witness only; not claimed compatible with all four images or engine."
+    },
+    {
+      "tip_axial_mm": 60.0,
+      "tip_yz_estimated_mm": [
+        -178.516658086152,
+        251.19330707417868
+      ],
+      "root_to_tip_radial_mm": 230.94323882328194,
+      "same_rear_tip_reprojection_error_px": 1.4210854715202004e-14,
+      "scope": "Rear-camera ambiguity witness only; not claimed compatible with all four images or engine."
+    }
+  ],
+  "side_circle_ratio_test": {
+    "camera_model": "Scaled orthographic; circular hub rim normal aligned with shaft. H/D independent of image scale. Perspective/noncircular rim errors remain possible.",
+    "observed_nominal_H_over_D": 1.3018891098082388,
+    "landmark_box_H_over_D": [
+      1.1852207971857698,
+      1.434654779019641
+    ],
+    "inherited_H_over_D": 2.0428571428571427,
+    "predicted_axial_span_with_inherited_ratio_px": 282.4467022144828,
+    "observed_axial_span_px": 180,
+    "result": "FAIL common inherited143mm height/70mm hub-diameter scaled-orthographic side model; do not assign all radial discrepancy to camera azimuth."
+  },
+  "rear_index_controls": [
+    {
+      "small_hole_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rms_px": 1.50208733885973
+    },
+    {
+      "small_hole_permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "rms_px": 19.864148987266105
+    },
+    {
+      "small_hole_permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "rms_px": 27.712521075058124
+    },
+    {
+      "small_hole_permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "rms_px": 39.267829040492714
+    },
+    {
+      "small_hole_permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "rms_px": 39.37841844218836
+    },
+    {
+      "small_hole_permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "rms_px": 47.58316062936579
+    }
+  ],
+  "wrong_index_example": {
+    "small_hole_permutation": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "rms_px": 51.20083975179044
+  },
+  "conclusions": [
+    "Rear five-hole correspondence supports a long radial route under inherited scale, rather than a141mm radial route obtained by treating side horizontal length as unforeshortened.",
+    "Front/oblique visible-anchor maps are underconstrained interpolation; inconsistent root estimates flag perspective, uncertain correspondence or differing estimated geometry. They cannot be combined as independent metric truth.",
+    "Side ellipse/axis ratio rejects the simultaneous inherited143mm height and70mm hub diameter in a scaled-orthographic camera. Either estimated proportions or camera model must change before jointfit.",
+    "Do not shorten/reclock frozen candidate from this study. Next bounded fit needs verified hub-diameter/height datum or a perspective joint model allowing explicit pump-proportion uncertainty."
+  ],
+  "input_sha256": {
+    "scripts/online-heater-radial-registration.py": "e6c8957781c5e0b5946715c4de548f0d7b0ccf1d9399b10b890ad5603a946364",
+    "cad/engine/water_pump.py": "594f1d1b5797c69a158b21b2f56d01681f5a5d2640a31c8588065d694008504e",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "reference/engine/online-heater-research.json": "729840496ece7f6bcdaeb52bacc8976ed30e8e6e3a577b16b45a33feffba9ffc",
+    "reference/engine/online-heater-captures/gmb-1251810-view2.jpeg": "e54a8a63443156abea80aa52bbef0c7a3f923ef7796600be03bff9f9872f9d62",
+    "reference/engine/online-heater-captures/gmb-1251810-front.jpeg": "3dd7983c25540b39ddded8d4fdd85be4aa54fbc2c78bc42739f2874ca53c56f9",
+    "reference/engine/online-heater-captures/gmb-1251810-view4.jpeg": "24a145ab412729267e02ff1dedb9819661c59f403f6b106b77cc240d3fa30558",
+    "reference/engine/online-heater-captures/gmb-1251810-view3.jpeg": "0d44273e4028264f1ea719905849b1e24b2d97293738ae3f2d928bccc7e58f3d"
+  },
+  "canonical_modified": false
+}
