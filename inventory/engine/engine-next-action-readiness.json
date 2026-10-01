@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "status": "bounded prioritization; not completion certification",
+  "baseline_commit": "488c9d76ef2eff541cd8586588720cfc01034ab6",
+  "input_hashes": {
+    "inventory/engine/completion-plan.json": "48baeab92e23aa4e5133c373935aa0f5e17b1e01342965d3294b1de706c66d89",
+    "docs/CURRENT-STATE.md": "b58ae2fa230b56bdda1e72617f9146e734b57435bb8d800748e9c4f6a2359e0e",
+    "docs/components/accessory-psac-carrier-contract.md": "729271a52e9b14a9456307d6ca3c9587d30b8415acf37039d09976f722541a8f",
+    "docs/components/accessory-matched-carriers-handoff.md": "24c24ec848c20348ea3c00de6d1e113ca5a1cc3bb3b7d21798bc73e353128dce",
+    "docs/components/air-cleaner-duct-reconciliation-contract.md": "2af9fcd7a6c13742d07ac14ea1fa81ebd425dd1f014e985c44d5d71f41e12c70",
+    "docs/components/rod-fastener-architecture-contract.md": "571679fac62a7c25e5c008274c61284b5e15aa07f87abcdd18138fb62dae4ffa",
+    "docs/components/waterpump-bearing-coverage-contract.md": "5c8f162eca80469e60531f81bd007b40a548821e922e2dd63fb9253b23a0cc77",
+    "docs/components/waterpump-heater-route-evidence.md": "0d144614b5daba53c04a05e8d2bbf114dd5515b7a318970301b6f575a69af623",
+    "docs/components/oil-pump-topology-contract.md": "88f4f0c1bce7abf9dd3767aa8f5744a76061789fd353d3fbad04f30cf34a504b",
+    "docs/components/oil-pump-coverage-contract.md": "36c4a8eed89411450b4f5d3e8070e1ce3d76e8809363fc6b0e56e8fef1462080",
+    "docs/components/act-sensor-identity.md": "470b90e08856f989f7b63fd5be5a85b1aaa648a3553e7b27e36fb3fda43987b8",
+    "docs/components/intake-support-candidate.md": "9d1c859c00ff648702e536e0e35a923e7e37041b6855d92a67ec5ea8a51134ca",
+    "docs/components/block-closures-additional-handoff.md": "71eb1f4b370fdd16037b9c191de23c89393bf2dadab3356559c5bd80bf1d30df"
+  },
+  "groups": [
+    {
+      "system": "Block and head",
+      "readiness": "evidence-blocked for production geometry",
+      "finite_next_action": "Review existing closure candidates and explicit missing host obligations; no justified new gallery or plug-seat cuts.",
+      "external_input": "Casting identifiers and datum-linked block/head section or survey: deck/bore pitch, wet jackets, oil galleries, closure seats, guide/seat/port and mounting interfaces."
+    },
+    {
+      "system": "Rotating and valve train",
+      "readiness": "candidate validation ready; physical collision repair blocked",
+      "finite_next_action": "Preserve/review existing corrected core and valve linkage checks. Do not alter rod heads or block cavity to clear six inherited motion conflicts.",
+      "external_input": "Applicable rod/cap/bolt/nut identity; head plan/two sides, under-head radius/press shoulder, grip/thread stack, rod boss/bolt centers, local crankcase section. Crank/rod production detail and timing profiles require drawings or survey."
+    },
+    {
+      "system": "Fuel and air",
+      "readiness": "box-frame gate reviewed and unresolved; duct CAD blocked",
+      "finite_next_action": "Resolve airbox six-degree-of-freedom contract and actual hose seating datums before generating two ducts/four clamps. ACT source identity is resolved, geometry still incomplete.",
+      "external_input": "Body-frame anchors/clocking and body-engine relationship; hose-stop/insertion datums. ACT probe reach/thread gauge plane/connector dimensions. Intake-support lower anchor/stack. MAP cowl bracket/pose, harness cavity geometry and actual routing/variant."
+    },
+    {
+      "system": "Exhaust",
+      "readiness": "evidence-blocked for new attachment/flow geometry",
+      "finite_next_action": "Preserve installed source-compared castings; no arbitrary EGR boss relocation or outlet hardware.",
+      "external_input": "Applicable EGR takeoff identity/location/seat/thread, manifold clamp/stud station stack, outlet flange/seal hardware, air-injection ports. HO2S front pipe/bung datum and sensor insertion/connector envelope."
+    },
+    {
+      "system": "Lubrication",
+      "readiness": "learning correction ready; physical repair blocked",
+      "finite_next_action": "Apply reviewed text correction; preserve isolated topology/closure studies. No gasket built around rejected feet; no assumed hollow dowel.",
+      "external_input": "Raised pump mount face relative to drive, bolt/dowel/discharge openings, block receiving passage, gasket outline/thickness, pickup flange/route/support; dowel dimension order/construction. Production gerotor and relief calibration need identified hardware/data."
+    },
+    {
+      "system": "Cooling",
+      "readiness": "frozen failures; physical repair evidence-blocked",
+      "finite_next_action": "Keep nominal/low/high inlet and heater failures as dependencies for supports. No extra tube reroute or generic bearing internals.",
+      "external_input": "Applicable pump-bearing marking/section: ring/shaft/rows/seals/fit; calibrated tube route/root-to-end 3D datums, pump flange/access architecture and service sequence. Deeper coolant passages and sender wet host remain unknown."
+    },
+    {
+      "system": "Ignition",
+      "readiness": "existing v3 fit candidate ready for combined review",
+      "finite_next_action": "Reuse hash-bound 28 corrected lead-end definitions and 365 affected-neighbor checks only at unchanged inputs; no speculative electronic internals.",
+      "external_input": "Installed distributor/TFI/coil variants and clocking; production cap brush/spring/shutter/gear/contact and terminal geometry, fender mounts and harness routing."
+    },
+    {
+      "system": "Front and rear interfaces",
+      "readiness": "PS/AC support candidate in flight; ALT/AP trial6 scoped",
+      "finite_next_action": "Finish root-authorized PS/AC support against fixed centers/anchors; evaluate true seats, actual hardware/tools, 1mm nonmating reserve, connected exports and source silhouette. Then combined private-stage validation, not automatic installation.",
+      "external_input": "Production carrier dimensions/retention and loads; belt effective-radius/tensioner travel source; accessory variants, unknown bearing/cartridge internals; bellhousing/index-plate starter/flywheel support datum and clutch boundary."
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "action": "Complete in-flight PS/AC estimated support and ALT/AP candidate obligations",
+      "scope": "Functional candidate gates only; factory/strength/retention not established",
+      "stop": "Do not shift anchors or shrink tools to clear new pump; preserve fixed-bolt access failures."
+    },
+    {
+      "rank": 2,
+      "action": "Package exact air-cleaner vehicle-frame evidence request",
+      "scope": "Current gate is unresolved: no numeric6DOF pose exists or is accepted",
+      "stop": "No duct generation or clearance-driven box placement before external vehicle-frame and hose-seat evidence."
+    },
+    {
+      "rank": 3,
+      "action": "Combine frozen candidates and revalidate changed interfaces only",
+      "scope": "Actual carrier/pump/gear/pan/fastener/pose interactions and serialized assets; root owned",
+      "stop": "Known heater, rod-bolt, tool or source failures prevent installed acceptance."
+    },
+    {
+      "rank": 4,
+      "action": "Close preservation and learning QC for known architecture gaps",
+      "scope": "Ready source-bound text/archive work, no new geometry credit",
+      "stop": "No repeated broad searches or extra generic component studies counted as coverage."
+    }
+  ],
+  "no_new_measurement_CAD_conclusion": "PS/AC and related scoped carrier refinement can meet declared estimated functional candidate gates with existing fixed datums. Air ducts are conditional on accepted box/seating frame. No additional missing production component in reviewed handoffs is fully dimensioned for all quality gates. Existing validation/serialization work is actionable without pretending it creates source fidelity.",
+  "do_not_repeat": [
+    "Generic oil pump/gasket/dowel construction without source interfaces",
+    "Bearing internals selected by matching one catalog dimension",
+    "Heater tube axial route tuned to avoid neighbors",
+    "Rod-head shrink/flip or crankcase clearance cut",
+    "Sensor CAD from packaging or nominal thread OD",
+    "Unlocated airbox duct generation",
+    "Counts or local collision passes as full engine completion"
+  ],
+  "independent_part_completion_without_scope_change": "None identified among the remaining missing physical parts in the reviewed eight-group contracts. Dimensioned comparison envelopes already have candidates; duplicating them is not new coverage. PS/AC is authorized estimated candidate work, not an independent production-fidelity completion opportunity.",
+  "inflight_input_revisions": [
+    {
+      "path": "docs/components/accessory-psac-carrier-contract.md",
+      "previous_hash_at_start": "67512f747aeaa93fbaabd42d7697534bf4ac52dddbf8443db3dd51f509477d28",
+      "note": "Worker appended trial0 failures and trial1 analytic route/socket-proxy revisions during report preparation; refreshed after reading appendix. Pulley approach failures remain separate."
+    }
+  ]
+}

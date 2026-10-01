@@ -1,0 +1,402 @@
+{
+  "status": "COMPLETE actual datum inventory; no movement",
+  "canonical_belt_occurrences": [],
+  "canonical_hose_occurrences": [
+    "egr-control-vacuum-hose",
+    "regulator-vacuum-hose"
+  ],
+  "rows": [
+    {
+      "id": "ac-compressor-clutch-pulley",
+      "parent": "ac-compressor-pulley-motion",
+      "definition": "ac-compressor-clutch-pulley",
+      "world_bounds": {
+        "min": [
+          461.56,
+          207.5,
+          27.499999999999996
+        ],
+        "max": [
+          485.56,
+          352.50000000000006,
+          172.50000000000003
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        280.0,
+        100.00000000000001
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "ps-pump-pulley",
+      "parent": "power-steering-pump-assembly",
+      "definition": "ps-pump-pulley",
+      "world_bounds": {
+        "min": [
+          460.06,
+          214.341,
+          344.34099999999984
+        ],
+        "max": [
+          487.06,
+          345.659,
+          475.659
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        280.0,
+        409.9999999999999
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "alternator-pulley",
+      "parent": "alternator-assembly",
+      "definition": "alternator-pulley",
+      "world_bounds": {
+        "min": [
+          461.56,
+          -360.0,
+          284.99999999999983
+        ],
+        "max": [
+          485.56,
+          -290.0,
+          355.0
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        -325.0,
+        319.9999999999999
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "thermactor-pulley",
+      "parent": "thermactor-pump-assembly",
+      "definition": "thermactor-pulley",
+      "world_bounds": {
+        "min": [
+          461.56,
+          -350.0,
+          29.999999999999915
+        ],
+        "max": [
+          485.56,
+          -210.0,
+          170.0
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        -280.0,
+        99.99999999999996
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "water-pump-pulley",
+      "parent": "water-pump-pulley-assembly",
+      "definition": "water-pump-pulley",
+      "world_bounds": {
+        "min": [
+          459.56,
+          -107.0,
+          95.0
+        ],
+        "max": [
+          524.5000000000236,
+          43.0,
+          245.0
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        -32.0,
+        170.0
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "tensioner-pulley-wheel",
+      "parent": "tensioner-pulley-assembly",
+      "definition": "tensioner-pulley-wheel",
+      "world_bounds": {
+        "min": [
+          454.81,
+          122.0,
+          305.0
+        ],
+        "max": [
+          492.31,
+          212.0,
+          395.0
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        167.0,
+        350.0
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "ac-compressor-manifold-suction-seal",
+      "parent": "ac-compressor",
+      "definition": "ac-compressor-manifold-suction-seal",
+      "world_bounds": {
+        "min": [
+          276.79469989999996,
+          286.3601999,
+          106.36019990000001
+        ],
+        "max": [
+          280.32530010000005,
+          313.6398001,
+          133.6398001
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        300.0,
+        120.0
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "ac-compressor-manifold-discharge-seal",
+      "parent": "ac-compressor",
+      "definition": "ac-compressor-manifold-discharge-seal",
+      "world_bounds": {
+        "min": [
+          276.79469989999996,
+          304.3601999,
+          62.3601999
+        ],
+        "max": [
+          280.32530010000005,
+          331.6398001,
+          89.63980009999999
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        318.0,
+        76.0
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    },
+    {
+      "id": "ps-pump-outlet-fitting",
+      "parent": "power-steering-pump-assembly",
+      "definition": "ps-pump-outlet-fitting",
+      "world_bounds": {
+        "min": [
+          359.167695154598,
+          314.0,
+          407.9999999999948
+        ],
+        "max": [
+          379.95230484542003,
+          348.0,
+          432.0
+        ]
+      },
+      "radial_bbox_center_yz_mm": [
+        331.0,
+        419.9999999999974
+      ],
+      "scope": "Radial bounds infer axis only for full circular pulley; fitting bounds are endpoint region, not bore axis"
+    }
+  ],
+  "group_ownership": {
+    "ac-compressor": [
+      "ac-compressor-rear-cylinder",
+      "ac-compressor-rear-valve-plate",
+      "ac-compressor-rear-suction-reed",
+      "ac-compressor-rear-discharge-reed",
+      "ac-compressor-rear-head",
+      "ac-compressor-rear-head-seal",
+      "ac-compressor-rear-plenum-seal",
+      "ac-compressor-rear-thrust-1",
+      "ac-compressor-rear-thrust-2",
+      "ac-compressor-rear-thrust-3",
+      "ac-compressor-front-cylinder",
+      "ac-compressor-front-valve-plate",
+      "ac-compressor-front-suction-reed",
+      "ac-compressor-front-discharge-reed",
+      "ac-compressor-front-head",
+      "ac-compressor-front-head-seal",
+      "ac-compressor-front-plenum-seal",
+      "ac-compressor-front-thrust-1",
+      "ac-compressor-front-thrust-2",
+      "ac-compressor-front-thrust-3",
+      "ac-compressor-case-seal",
+      "ac-compressor-swashplate-shaft",
+      "ac-compressor-piston-1",
+      "ac-compressor-shoe-1-rear",
+      "ac-compressor-piston-1-rear-seal",
+      "ac-compressor-shoe-1-front",
+      "ac-compressor-piston-1-front-seal",
+      "ac-compressor-case-bolt-1",
+      "ac-compressor-piston-2",
+      "ac-compressor-shoe-2-rear",
+      "ac-compressor-piston-2-rear-seal",
+      "ac-compressor-shoe-2-front",
+      "ac-compressor-piston-2-front-seal",
+      "ac-compressor-case-bolt-2",
+      "ac-compressor-piston-3",
+      "ac-compressor-shoe-3-rear",
+      "ac-compressor-piston-3-rear-seal",
+      "ac-compressor-shoe-3-front",
+      "ac-compressor-piston-3-front-seal",
+      "ac-compressor-case-bolt-3",
+      "ac-compressor-piston-4",
+      "ac-compressor-shoe-4-rear",
+      "ac-compressor-piston-4-rear-seal",
+      "ac-compressor-shoe-4-front",
+      "ac-compressor-piston-4-front-seal",
+      "ac-compressor-case-bolt-4",
+      "ac-compressor-piston-5",
+      "ac-compressor-shoe-5-rear",
+      "ac-compressor-piston-5-rear-seal",
+      "ac-compressor-shoe-5-front",
+      "ac-compressor-piston-5-front-seal",
+      "ac-compressor-case-bolt-5",
+      "ac-compressor-shaft-seal",
+      "ac-compressor-seal-retainer",
+      "ac-compressor-pulley-bearing",
+      "ac-compressor-clutch-coil",
+      "ac-compressor-clutch-coil-carrier",
+      "ac-compressor-clutch-pulley",
+      "ac-compressor-pulley-snap-ring",
+      "ac-compressor-armature-hub",
+      "ac-compressor-hub-bolt",
+      "ac-compressor-rear-manifold",
+      "ac-compressor-manifold-suction-seal",
+      "ac-compressor-manifold-discharge-seal",
+      "ac-compressor-manifold-bolt",
+      "ac-compressor-front-shaft-bearing",
+      "ac-compressor-rear-shaft-bearing"
+    ],
+    "power-steering-pump-assembly": [
+      "ps-pump-housing",
+      "ps-pump-reservoir",
+      "ps-pump-cap-dipstick",
+      "ps-pump-shaft",
+      "ps-pump-shaft-bushing",
+      "ps-pump-shaft-seal",
+      "ps-pump-shaft-seal-retainer",
+      "ps-pump-disc-spring",
+      "ps-pump-lower-plate",
+      "ps-pump-lower-outer-seal",
+      "ps-pump-lower-inner-seal",
+      "ps-pump-cam",
+      "ps-pump-rotor",
+      "ps-pump-rotor-clip",
+      "ps-pump-upper-plate",
+      "ps-pump-valve-cover",
+      "ps-pump-valve-cover-seal",
+      "ps-pump-cover-retaining-ring",
+      "ps-pump-reservoir-seal",
+      "ps-pump-flow-valve",
+      "ps-pump-flow-spring",
+      "ps-pump-outlet-fitting",
+      "ps-pump-outlet-seal",
+      "ps-pump-pulley",
+      "ps-pump-dowel-1",
+      "ps-pump-dowel-2",
+      "ps-pump-slipper-1",
+      "ps-pump-slipper-spring-1",
+      "ps-pump-slipper-2",
+      "ps-pump-slipper-spring-2",
+      "ps-pump-slipper-3",
+      "ps-pump-slipper-spring-3",
+      "ps-pump-slipper-4",
+      "ps-pump-slipper-spring-4",
+      "ps-pump-slipper-5",
+      "ps-pump-slipper-spring-5",
+      "ps-pump-slipper-6",
+      "ps-pump-slipper-spring-6",
+      "ps-pump-slipper-7",
+      "ps-pump-slipper-spring-7",
+      "ps-pump-slipper-8",
+      "ps-pump-slipper-spring-8",
+      "ps-pump-slipper-9",
+      "ps-pump-slipper-spring-9",
+      "ps-pump-slipper-10",
+      "ps-pump-slipper-spring-10"
+    ],
+    "alternator-assembly": [
+      "alternator-drive-housing",
+      "alternator-rear-housing",
+      "alternator-stator-core",
+      "alternator-stator-winding",
+      "alternator-rotor-front-pole",
+      "alternator-rotor-rear-pole",
+      "alternator-field-coil",
+      "alternator-shaft",
+      "alternator-front-bearing",
+      "alternator-rear-bearing",
+      "alternator-fan",
+      "alternator-pulley-spacer",
+      "alternator-pulley",
+      "alternator-pulley-nut",
+      "alternator-slip-ring-insulator",
+      "alternator-brush-holder",
+      "alternator-regulator",
+      "alternator-rectifier",
+      "alternator-slip-ring-1",
+      "alternator-brush-1",
+      "alternator-slip-ring-2",
+      "alternator-brush-2",
+      "alternator-case-bolt-1",
+      "alternator-case-bolt-2",
+      "alternator-case-bolt-3",
+      "alternator-case-bolt-4"
+    ],
+    "thermactor-pump-assembly": [
+      "thermactor-housing",
+      "thermactor-front-plate",
+      "thermactor-rear-plate",
+      "thermactor-shaft",
+      "thermactor-front-bearing",
+      "thermactor-rear-bearing",
+      "thermactor-pumping-cartridge",
+      "thermactor-pulley-hub",
+      "thermactor-pulley",
+      "thermactor-pulley-bolt-1",
+      "thermactor-pulley-bolt-2",
+      "thermactor-pulley-bolt-3",
+      "thermactor-case-bolt-1",
+      "thermactor-case-bolt-2",
+      "thermactor-case-bolt-3",
+      "thermactor-mount-bolt-1",
+      "thermactor-mount-bolt-2",
+      "thermactor-engine-bolt-1",
+      "thermactor-engine-bolt-2"
+    ],
+    "tensioner-pulley-assembly": [
+      "tensioner-pulley-wheel",
+      "tensioner-pulley-bearing"
+    ],
+    "tensioner-support-assembly": [
+      "tensioner-spring-cartridge",
+      "tensioner-moving-arm",
+      "tensioner-pivot-sleeve",
+      "tensioner-mounting-bolt",
+      "tensioner-pulley-bolt",
+      "tensioner-locating-bushing"
+    ]
+  },
+  "input_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/check-accessory-common-layout-datums.py": "2b48923925055236981f8b1b5e837f0754fe15b737ae8d068c1e58265979b84c",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/generated/ac-compressor-clutch-pulley.step": "d1a971d879a3b04d474504d5ac48db920a19198b3365588468b4f6fc0e853ea0",
+    "cad/engine/generated/ps-pump-pulley.step": "4bfcfc4e8a7125b638f6c9441178617ce7a51ab72df0cd03afbf51f97d0a3ad6",
+    "cad/engine/generated/alternator-pulley.step": "37a529b212321287361030fe3eb3dc8ffc321baa4b032137fd72b95e1f93be39",
+    "cad/engine/generated/thermactor-pulley.step": "d5f8c1cb6c17435a8325d40be143cd6efa99a5e7571e12da450d602acf714f1c",
+    "cad/engine/generated/water-pump-pulley.step": "507c398dbd158b75949636fc1f323e91f8efddba5582e6706b53d9f695cae79e",
+    "cad/engine/generated/tensioner-pulley-wheel.step": "46b91d74dd79e9af8cd3f9fb5987fc219721df0ee674118849b20287e2cb1bed",
+    "cad/engine/generated/ac-compressor-manifold-suction-seal.step": "ba3d152afda6509c421c1b75618bb038070e58a9f8b6fe8ab06e7b71bf5ba0c5",
+    "cad/engine/generated/ac-compressor-manifold-discharge-seal.step": "cb9ffbf0916e186c7ae610bba02c3e0df0a53e9eba0b5b6ec01a3e532fd879d8",
+    "cad/engine/generated/ps-pump-outlet-fitting.step": "123796e6fad171889b4a224cf8c723da93778f2e2ceaa626fdddcd1f6b0bca90"
+  }
+}

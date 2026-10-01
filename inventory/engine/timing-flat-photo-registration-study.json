@@ -1,0 +1,204 @@
+{
+  "status": "ALTERNATE UNVERIFIED PHOTO METRIC HYPOTHESIS; no CAD",
+  "method": "Seven-hole homography transfers primary outline/aperture into Dorman009 image only. Assume that separate gasket image near planar, align its terminal line, solve uniform scale solely from actual-axis cam cavity+6mm wall and2px edge reserve. Compressor is not an optimization target.",
+  "cautions": [
+    "Mapped outline is correspondence-derived, not independently traced009 boundary; hypothesis must be checked against actual009 pixels before adoption.",
+    "Aperture is not coplanar with flange in source002; systematic origin error remains unbounded.",
+    "Near-planarity of009 is assumed, not calibrated.",
+    "Pan terminal coordinates and other protected holes are NOT fixed by this alternative."
+  ],
+  "scale_mm_per_009_pixel": 0.8046227254890211,
+  "cam_guard_radius_mm": 90.947,
+  "guard_margin_mm": 1.6092454509780574,
+  "source009_crank_pixel": [
+    441.0740054937056,
+    211.7340832204468
+  ],
+  "source009_basis": [
+    [
+      -0.7611113327647505,
+      -0.6486212601642543
+    ],
+    [
+      -0.6486212601642543,
+      0.7611113327647505
+    ]
+  ],
+  "station_axes": [
+    {
+      "station": 1,
+      "old_yz_mm": [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      "alternate_yz_mm": [
+        -153.62875046969728,
+        -6.953059208510929
+      ],
+      "delta_mm": [
+        -34.429235110615565,
+        -0.08020501017768655
+      ],
+      "compressor_axis_distance_mm": 446.62383513194885
+    },
+    {
+      "station": 2,
+      "old_yz_mm": [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      "alternate_yz_mm": [
+        -73.07787294467282,
+        22.57740483395671
+      ],
+      "delta_mm": [
+        -12.898817734215648,
+        3.5302058173832798
+      ],
+      "compressor_axis_distance_mm": 361.4667932264035
+    },
+    {
+      "station": 3,
+      "old_yz_mm": [
+        -6.627940493863827,
+        98.99106943536768
+      ],
+      "alternate_yz_mm": [
+        10.203739609104094,
+        122.09377623813432
+      ],
+      "delta_mm": [
+        16.831680102967923,
+        23.102706802766647
+      ],
+      "compressor_axis_distance_mm": 270.6993850554021
+    },
+    {
+      "station": 4,
+      "old_yz_mm": [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      "alternate_yz_mm": [
+        168.68440954411608,
+        241.29393402980546
+      ],
+      "delta_mm": [
+        71.13660424646469,
+        42.726699485836605
+      ],
+      "compressor_axis_distance_mm": 179.8753359195226
+    },
+    {
+      "station": 5,
+      "old_yz_mm": [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      "alternate_yz_mm": [
+        296.259835721422,
+        173.46698251664648
+      ],
+      "delta_mm": [
+        73.39256249155054,
+        15.108513711806268
+      ],
+      "compressor_axis_distance_mm": 75.2447990082296
+    },
+    {
+      "station": 6,
+      "old_yz_mm": [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      "alternate_yz_mm": [
+        297.5502208531488,
+        75.19283818873765
+      ],
+      "delta_mm": [
+        45.633414128500874,
+        0.7691478580667166
+      ],
+      "compressor_axis_distance_mm": 30.387588405868144
+    },
+    {
+      "station": 7,
+      "old_yz_mm": [
+        217.24482469086223,
+        -7.893399845733515
+      ],
+      "alternate_yz_mm": [
+        235.34082164808822,
+        -10.594405524250922
+      ],
+      "delta_mm": [
+        18.095996957225992,
+        -2.701005678517407
+      ],
+      "compressor_axis_distance_mm": 119.27097192666088
+    }
+  ],
+  "terminal_y_range_mm": [
+    -186.3554562006172,
+    218.50988519978682
+  ],
+  "terminal_z_range_mm": [
+    -29.94744118442289,
+    -27.5007698174401
+  ],
+  "outline_max_displacement_mm": 89.89602604773727,
+  "input_sha256": {
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "inventory/engine/timing-cover-registration-validation.json": "1a45e5539d951568595396f9ddb9d78fc4f4fbcb2289cc7f2f15980d372dfcb4",
+    "scripts/study-timing-flat-photo-registration.py": "9ee750cb102b6e930d56a30f01faa40b73731721369d7d99fd79755a925c5c19"
+  },
+  "pump_and_terminal_anchored_hypothesis": {
+    "method": "Fix main3 YZ and mean terminalZ\u221224.5 using uniform scale/translation in independently aligned009 frame; aperture datum allowed to disagree; compressor not fitted",
+    "scale": 0.6590972195602511,
+    "crank_aperture_axis_error_mm": [
+      -14.986213498631297,
+      -1.02060795698781
+    ],
+    "cam_guard_minimum_margin_mm": -9.737665482388115,
+    "actual_tip_envelope_exclusion_lower_bound_mm": 2.737665482388115,
+    "station_axes_yz_mm": [
+      [
+        -140.82939325415353,
+        -6.716124435200784
+      ],
+      [
+        -74.84709157653784,
+        17.47340703855321
+      ],
+      [
+        -6.627940493863827,
+        98.99106943536768
+      ],
+      [
+        123.18963189042192,
+        196.63247339134585
+      ],
+      [
+        227.69153820505252,
+        141.07282569881863
+      ],
+      [
+        228.74854197283216,
+        60.57271896641025
+      ],
+      [
+        177.79044602587823,
+        -9.698890340428674
+      ]
+    ],
+    "terminal_y_range_mm": [
+      -167.63708842521186,
+      164.00358286099723
+    ],
+    "terminal_z_range_mm": [
+      -25.551701340661577,
+      -23.547539335200003
+    ],
+    "status": "REJECTED: negative cam guard and protected terminal mismatch; no replacement geometry"
+  }
+}

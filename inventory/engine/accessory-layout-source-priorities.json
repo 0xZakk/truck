@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE source priority review; no selected movement",
+  "inputs_sha256": {
+    "docs/components/accessory-layout-source-priorities.md": "77c9c941460c1de923d835cba3013e17cb2b1dcbfe35dcb2a796464761381c87",
+    "reference/engine/gates-38022-reviewed.json": "a9672f686b62b48af92cd3cb87903baa0dedbced8931670b4f5d118226a91a2d",
+    "reference/engine/gates-1994-drive-reviewed.json": "44f6b9b7afc3b6b26013cdd7caeebe0d062a6510974f34fea9e8ee16abb9496b",
+    "reference/engine/pk-belt-profile-reviewed.json": "d24214e946f666e9f43ad90ac20743bd6152c2fac5f76f8c9fd708cbb654f309",
+    "reference/engine/ford-alt-thermactor-shared-carrier-reviewed.json": "899ca12d2cc2e646d28170e3961e3ec3cffe3e60da8a97b8ae854499f962879c",
+    "inventory/engine/power-steering-pump-evidence.json": "18bd35dfe5113928b5ab194f00f8f21c0cf49d950968b62f25010a23a5fe5ccb",
+    "inventory/engine/research-2026-09-23.json": "03b3fca2f52505f72e22e68ffa8db7d93ed21b19e977149cd0eb17528fa082bc",
+    "cad/engine/damper.py": "c1f64869d1f09e6f04fa5a70f8d79308c25b5d1fdf80bdffa283dafdb7dc1db5",
+    "cad/engine/water_pump_pulley.py": "8773ed0df542d13c18a0766b21076505824ca769b76145eed99a407ef2783e79",
+    "cad/engine/alternator.py": "0a2c7f396fffd5a1b917713f186b34ef48189777743f47c455704a506a9e00b4",
+    "cad/engine/thermactor_pump.py": "cbe7c2958a421b20df80379080e50165b1652e7cc56d1e773a75fc2479e34896",
+    "cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "inventory/engine/accessory-common-layout-families.json": "8cc26482511ad07a519e748ce0b1f140d77162374e37d0781646223ef8b90708"
+  },
+  "installed_gates": "FAIL retained; not superseded by analytic routes",
+  "next_dimensions": [
+    "WP pulley identity/OD",
+    "ALT pulley identity/OD",
+    "AP pulley identity/OD",
+    "PS five-vs-six-groove comparison conflict"
+  ]
+}

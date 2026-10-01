@@ -1,0 +1,167 @@
+{
+  "status": "COMPLETE datum investigation, no trial installation",
+  "bounds": {
+    "ac-compressor-front-cylinder": {
+      "min": [
+        373.65999999999997,
+        199.0,
+        35.0
+      ],
+      "max": [
+        443.36,
+        361.0,
+        165.0
+      ]
+    },
+    "ac-compressor-rear-cylinder": {
+      "min": [
+        303.76,
+        215.0,
+        34.999999999999986
+      ],
+      "max": [
+        373.46000000000004,
+        345.0,
+        165.0
+      ]
+    },
+    "ac-compressor-front-head": {
+      "min": [
+        446.56,
+        215.0,
+        35.0
+      ],
+      "max": [
+        484.65999999999997,
+        345.0,
+        165.0
+      ]
+    },
+    "ac-compressor-rear-head": {
+      "min": [
+        278.56,
+        215.0,
+        34.999999999999986
+      ],
+      "max": [
+        300.56,
+        345.0,
+        165.0
+      ]
+    },
+    "ac-compressor-clutch-pulley": {
+      "min": [
+        461.56,
+        207.5,
+        27.499999999999996
+      ],
+      "max": [
+        485.56,
+        352.50000000000006,
+        172.50000000000003
+      ]
+    },
+    "ac-compressor-swashplate-shaft": {
+      "min": [
+        298.56,
+        234.5,
+        55.79987752544509
+      ],
+      "max": [
+        488.56,
+        325.5,
+        144.20012247455313
+      ]
+    },
+    "ps-ac-support-bracket": {
+      "min": [
+        276.0,
+        74.0,
+        40.999999999998295
+      ],
+      "max": [
+        443.79782279129,
+        364.0,
+        489.0
+      ]
+    }
+  },
+  "ear_material_witnesses": [
+    {
+      "axis_yz": [
+        210,
+        60
+      ],
+      "case_material_at_x432_55": 16,
+      "carrier_material_at_x432_57": 16,
+      "samples": 16
+    },
+    {
+      "axis_yz": [
+        210,
+        140
+      ],
+      "case_material_at_x432_55": 16,
+      "carrier_material_at_x432_57": 16,
+      "samples": 16
+    },
+    {
+      "axis_yz": [
+        350,
+        60
+      ],
+      "case_material_at_x432_55": 16,
+      "carrier_material_at_x432_57": 16,
+      "samples": 16
+    },
+    {
+      "axis_yz": [
+        350,
+        140
+      ],
+      "case_material_at_x432_55": 16,
+      "carrier_material_at_x432_57": 16,
+      "samples": 16
+    }
+  ],
+  "axial_shift_25mm_fault_material_count": 0,
+  "orientation": "+X is front; actual front cylinder/head/pulley bounds confirm no inversion",
+  "declared_belt_groove_x_mm": [
+    463.56,
+    467.56,
+    471.56,
+    475.56,
+    479.56,
+    483.56
+  ],
+  "source_estimated_ear_contact_x_mm": 432.56,
+  "rigid_axial_hypotheses": [
+    {
+      "shift_x_mm": 25,
+      "all_six_groove_plane_errors_mm": 25,
+      "case_ear_to_existing_carrier_seat_error_mm": 25,
+      "result": "Requires complete belt-plane and carrier revisions; rejected as isolated repair"
+    },
+    {
+      "shift_x_mm": 50,
+      "all_six_groove_plane_errors_mm": 50,
+      "case_ear_to_existing_carrier_seat_error_mm": 50,
+      "result": "Requires complete belt-plane and carrier revisions; rejected as isolated repair"
+    }
+  ],
+  "input_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/check-fs10-axial-mount-datums.py": "9303d85a194e4c07b988bd3a5755858245bb7d20316ec7402b054a5766406600",
+    "cad/engine/assembly_math.py": "03d2a34ce0826b6c214255258370c4a9198029796f30f2a03158883667d8b33a",
+    "cad/engine/ac_compressor.py": "a642b8c9e89de926db61f3515bf4eee31743bb599c280318f05c7c88f0931799",
+    "cad/engine/accessory_brackets.py": "8ad015b76f32ba14c639e090091f21bb7fbe7142d2644009e535226ade0d0d38",
+    "cad/engine/accessory_carrier_1994.py": "663c2de33cd56994f1c0ad9a9cfdc7c7257cd6f656fd3094138a24f7a6666951",
+    "cad/engine/generated/ac-compressor-front-cylinder.step": "abd8fca95e1e6c5944c1ce22653ae930924b2fff90593e11e3f84dfb0a5e7e81",
+    "cad/engine/generated/ac-compressor-rear-cylinder.step": "fd579c19369f2d38baf15f1f48fc5df65e38b3428d967d8fe20157f7c7776189",
+    "cad/engine/generated/ac-compressor-front-head.step": "dc660c983a227158438627fe7ddbf4a7521b423af29d16ea0fc5546df2398ab1",
+    "cad/engine/generated/ac-compressor-rear-head.step": "f646e6645b968c200c86ec239b01f71310cd3e98a4974929a51ca1e5c1dbb786",
+    "cad/engine/generated/ac-compressor-clutch-pulley.step": "d1a971d879a3b04d474504d5ac48db920a19198b3365588468b4f6fc0e853ea0",
+    "cad/engine/generated/ac-compressor-swashplate-shaft.step": "731f5feb3bbe701a5eb7b9652a77596db93f62803c2cf837d6a5ef6f9f5cec26",
+    "cad/engine/generated/ps-ac-support-bracket.step": "f8643ae7700323a747e85d5722886f71025e55573520353ce1679414aae21ebc"
+  }
+}

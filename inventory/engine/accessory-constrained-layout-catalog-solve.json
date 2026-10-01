@@ -1,0 +1,1519 @@
+{
+  "status": "NUMERICAL ENVELOPE + QUALIFIED CATALOG INTERVAL FEASIBLE; exactSTEP/support/working-tensioner acceptance pending",
+  "reserve_mm": 1.0,
+  "tensioner_motion_reserve_mm": 11.0,
+  "inferred_tensioner_trial_range_deg": [
+    -5,
+    5
+  ],
+  "radius_uncertainty_assumptions_mm": {
+    "grooved_effective_minus_outside": [
+      -3.45,
+      0
+    ],
+    "smooth_path_minus_outside": [
+      0,
+      2.7
+    ]
+  },
+  "catalog_gate": "2491mm must lie inside qualified effective-path interval over declared profile offsets and sampled tensioner trial range. These assumed bounds do not establish factory production fit.",
+  "domains": {
+    "ALT": [
+      [
+        -500,
+        -80
+      ],
+      [
+        180,
+        450
+      ]
+    ],
+    "AP": [
+      [
+        -450,
+        -70
+      ],
+      [
+        20,
+        220
+      ]
+    ],
+    "PS": [
+      [
+        120,
+        500
+      ],
+      [
+        220,
+        520
+      ]
+    ],
+    "AC": [
+      [
+        120,
+        500
+      ],
+      [
+        20,
+        169
+      ]
+    ],
+    "TENS": [
+      [
+        20,
+        350
+      ],
+      [
+        180,
+        480
+      ]
+    ]
+  },
+  "objective": "sum squaredYZ deviations/100mm from weak priors + squaredPS-ACcolumn offset/100mm; no length target",
+  "best": {
+    "seed": 2,
+    "solver_success": true,
+    "message": "Optimization terminated successfully",
+    "objective": 1.9518574915857583,
+    "minimum_constraint_mm": -5.002220859751105e-11,
+    "numerically_feasible": true,
+    "centers_yz_mm": {
+      "ALT": [
+        -273.06559715936555,
+        269.3858352911976
+      ],
+      "AP": [
+        -236.3457453056102,
+        125.34288463918416
+      ],
+      "PS": [
+        292.18581574502895,
+        355.1175276253005
+      ],
+      "AC": [
+        327.3955304987917,
+        169.0
+      ],
+      "TENS": [
+        150.0574778696598,
+        354.1175276253005
+      ]
+    },
+    "active_or_failed_constraints": [
+      {
+        "margin_mm": -5.002220859751105e-11,
+        "constraint": {
+          "ordering_or_length_row": 7
+        }
+      },
+      {
+        "margin_mm": 0.0,
+        "constraint": {
+          "ordering_or_length_row": 5
+        }
+      },
+      {
+        "margin_mm": 0.0,
+        "constraint": {
+          "group": "AC",
+          "neighbor": "timing-cover",
+          "x_slab": [
+            400.0,
+            425.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 0.0,
+        "constraint": {
+          "ordering_or_length_row": 0
+        }
+      },
+      {
+        "margin_mm": 0.6407212207646467,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-upper-stud-1",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 3.3138633135689304,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-lower-intake",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 6.06414956290277,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-lower-intake",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 8.047806188512794,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "efi-lower-intake",
+          "x_slab": [
+            300.0,
+            325.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 8.199693903599098,
+        "constraint": {
+          "group": "ALT",
+          "other_group": "AP",
+          "x_slab": [
+            400.0,
+            425.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 9.065833258751667,
+        "constraint": {
+          "group": "ALT",
+          "other_group": "AP",
+          "x_slab": [
+            425.0,
+            450.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 14.897701901686673,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "front-manifold-stud13",
+          "x_slab": [
+            350.0,
+            375.0
+          ]
+        }
+      },
+      {
+        "margin_mm": 14.897701901686673,
+        "constraint": {
+          "group": "ALT",
+          "neighbor": "front-manifold-stud13",
+          "x_slab": [
+            325.0,
+            350.0
+          ]
+        }
+      }
+    ],
+    "qualified_effective_window_mm": [
+      2491.00000000005,
+      2520.7183488184946
+    ],
+    "cord_route_length_mm": 2538.2082005739985,
+    "catalog_effective2491_residual_mm": 47.20820057399851,
+    "wrap_degrees": {
+      "ALT": 90.3269390940564,
+      "TENS": 52.54579768699214,
+      "PS": 130.11959483918378,
+      "AC": 127.54000787607453,
+      "WP": 191.91457235294226,
+      "CS": 197.5665614087641,
+      "AP": 58.90726682185551
+    },
+    "delta_from_weak_prior_mm": {
+      "ALT": [
+        51.93440284063445,
+        -50.61416470880238
+      ],
+      "AP": [
+        43.654254694389806,
+        25.342884639184163
+      ],
+      "PS": [
+        12.185815745028947,
+        -54.88247237469949
+      ],
+      "AC": [
+        47.395530498791686,
+        69.0
+      ],
+      "TENS": [
+        -16.942522130340194,
+        4.117527625300511
+      ]
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.9518574919524054,
+      "minimum_constraint_mm": -4.547473508864641e-13,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.0657774818075,
+          269.385415684283
+        ],
+        "AP": [
+          -236.34617226910382,
+          125.34154852733674
+        ],
+        "PS": [
+          292.1857585417138,
+          355.11684363259826
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.0572071349566,
+          354.11684363259826
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -4.547473508864641e-13,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6411590975382921,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.314318488884993,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.064598013459204,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.048238406408842,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.200453822893763,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.06659317802962,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.898057896475606,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.898057896475606,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.9518574929495465,
+      "minimum_constraint_mm": -9.094947017729282e-12,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.0653261255608,
+          269.38625013888014
+        ],
+        "AP": [
+          -236.34525974118424,
+          125.34360134614383
+        ],
+        "PS": [
+          292.18648583109353,
+          355.1168620946114
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.060475999695,
+          354.1168620946114
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -9.094947017729282e-12,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6402289763912563,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.3133698156170794,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.0636541021716255,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.04731668020301,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.199492999409301,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.065632354570994,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897268012852152,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897268012852152,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.9518574915857583,
+      "minimum_constraint_mm": -5.002220859751105e-11,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.06559715936555,
+          269.3858352911976
+        ],
+        "AP": [
+          -236.3457453056102,
+          125.34288463918416
+        ],
+        "PS": [
+          292.18581574502895,
+          355.1175276253005
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.0574778696598,
+          354.1175276253005
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -5.002220859751105e-11,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6407212207646467,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.3138633135689304,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.06414956290277,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.047806188512794,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.199693903599098,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.065833258751667,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897701901686673,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897701901686673,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ],
+      "qualified_effective_window_mm": [
+        2491.00000000005,
+        2520.7183488184946
+      ],
+      "cord_route_length_mm": 2538.2082005739985,
+      "catalog_effective2491_residual_mm": 47.20820057399851,
+      "wrap_degrees": {
+        "ALT": 90.3269390940564,
+        "TENS": 52.54579768699214,
+        "PS": 130.11959483918378,
+        "AC": 127.54000787607453,
+        "WP": 191.91457235294226,
+        "CS": 197.5665614087641,
+        "AP": 58.90726682185551
+      },
+      "delta_from_weak_prior_mm": {
+        "ALT": [
+          51.93440284063445,
+          -50.61416470880238
+        ],
+        "AP": [
+          43.654254694389806,
+          25.342884639184163
+        ],
+        "PS": [
+          12.185815745028947,
+          -54.88247237469949
+        ],
+        "AC": [
+          47.395530498791686,
+          69.0
+        ],
+        "TENS": [
+          -16.942522130340194,
+          4.117527625300511
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.951857492249055,
+      "minimum_constraint_mm": 0.0,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.0653940733801,
+          269.38759407346265
+        ],
+        "AP": [
+          -236.34546113359363,
+          125.34411471607784
+        ],
+        "PS": [
+          292.18559096752165,
+          355.1169252665476
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.05752864688958,
+          354.1169252665476
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.6392394312892407,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.3122145746760623,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.062580325268442,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.046365152765162,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.20021502898453,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.066354384133547,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.896697980133425,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.896697980133425,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "solver_success": false,
+      "message": "Iteration limit reached",
+      "objective": 9.24672598834717,
+      "minimum_constraint_mm": -116.78041911521211,
+      "numerically_feasible": false,
+      "centers_yz_mm": {
+        "ALT": [
+          -124.86269379529371,
+          195.3854591380101
+        ],
+        "AP": [
+          -298.91734022322294,
+          100.3614972504682
+        ],
+        "PS": [
+          237.40283740496676,
+          421.479727164689
+        ],
+        "AC": [
+          141.55217394150392,
+          167.8332231370081
+        ],
+        "TENS": [
+          126.72308546831798,
+          350.7139215551999
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -116.78041911521211,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265654518,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              375.0,
+              400.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265505469,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.47109265299224,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -101.4710926442259,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover-main-gasket",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -78.06148421867503,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "heater-pump-return-elbow",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -76.53303178640144,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "block",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -76.1044103216692,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "block",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -62.73459441401806,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "block",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -60.47482327869949,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover-grommet-6",
+            "x_slab": [
+              275.0,
+              300.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -55.35081495849607,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": -55.25391390431854,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "pushrod-cover",
+            "x_slab": [
+              275.0,
+              300.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.9518574915859712,
+      "minimum_constraint_mm": -2.0463630789890885e-11,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.0656009386668,
+          269.3858288425637
+        ],
+        "AP": [
+          -236.3457274587478,
+          125.34288685961454
+        ],
+        "PS": [
+          292.1858245905704,
+          355.11754065864733
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.05748378279716,
+          354.11754065864733
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -2.0463630789890885e-11,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6407285950030825,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.3138707814155453,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.064157020986613,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.047813506850957,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.199693863153925,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.065833218307176,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897708263127114,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897708263127114,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.951857491586165,
+      "minimum_constraint_mm": -9.094947017729282e-13,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.06560378730836,
+          269.3858279500278
+        ],
+        "AP": [
+          -236.34572874521376,
+          125.3428864206258
+        ],
+        "PS": [
+          292.18582411559345,
+          355.1175371566921
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.05748488409958,
+          354.1175371566921
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -9.094947017729282e-13,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6407311032508858,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.313872905264958,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.064159359383325,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.047816079032316,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.19969402061298,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.06583337576626,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.89771119775871,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.89771119775871,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "solver_success": true,
+      "message": "Optimization terminated successfully",
+      "objective": 1.951857491585816,
+      "minimum_constraint_mm": -3.54702933691442e-11,
+      "numerically_feasible": true,
+      "centers_yz_mm": {
+        "ALT": [
+          -273.0656023190954,
+          269.3858262140772
+        ],
+        "AP": [
+          -236.34573033704697,
+          125.34288343217551
+        ],
+        "PS": [
+          292.18582377445557,
+          355.1175373395709
+        ],
+        "AC": [
+          327.3955304987917,
+          169.0
+        ],
+        "TENS": [
+          150.05748591466826,
+          354.1175373395709
+        ]
+      },
+      "active_or_failed_constraints": [
+        {
+          "margin_mm": -3.54702933691442e-11,
+          "constraint": {
+            "ordering_or_length_row": 7
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 5
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "group": "AC",
+            "neighbor": "timing-cover",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 0.0,
+          "constraint": {
+            "ordering_or_length_row": 0
+          }
+        },
+        {
+          "margin_mm": 0.6407314984032269,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-upper-stud-1",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 3.3138737503137747,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 6.0641599710489515,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.047816382534108,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "efi-lower-intake",
+            "x_slab": [
+              300.0,
+              325.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 8.199694050346096,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              400.0,
+              425.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 9.065833405499262,
+          "constraint": {
+            "group": "ALT",
+            "other_group": "AP",
+            "x_slab": [
+              425.0,
+              450.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897710714720418,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              350.0,
+              375.0
+            ]
+          }
+        },
+        {
+          "margin_mm": 14.897710714720418,
+          "constraint": {
+            "group": "ALT",
+            "neighbor": "front-manifold-stud13",
+            "x_slab": [
+              325.0,
+              350.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Conservative axial slab convex hulls, staticq0",
+    "Carrier solids deliberately need matched reconstruction; no unsupported seat accepted",
+    "Outside envelope/cord/effective mismatch retained",
+    "Unverified factory dimensions; not installed"
+  ],
+  "input_sha256": {
+    "scripts/accessory-constrained-layout-catalog-solve.py": "ff86ed9d0eebe7a450d78196704a4b810b8500fb9d89a75aeb72c5b34d50e843",
+    "inventory/engine/accessory-constrained-layout-envelopes.json": "be840a14cd0bb304284237f135e24c48a07c443d3fefc74b7da5c6f1367d6969",
+    "cad/engine/generated/accessory-constrained-layout/obstacles.json": "ba8feddb7402f8dab9f70e379f0638c8c887f767df573218f83a98f122cc935c",
+    "cad/engine/accessory_belt.py": "99ec68e3198a7541323936639be311aa3eb6e96e9c683cd9ee56a14aab203729",
+    "cad/engine/accessory_belt_profile.py": "7a5a8d4ed461dabd188304223d08b55801f547d57813107c7f3e90e0a8898942",
+    "inventory/engine/accessory-common-layout-families.json": "8cc26482511ad07a519e748ce0b1f140d77162374e37d0781646223ef8b90708"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "status": "FEASIBLE local analytic corridor; no replacement contour built",
+  "declared_estimates": {
+    "cam_cavity_radius": 84.947,
+    "crank_cavity_radius": 44.18,
+    "wall_mm": 6.0,
+    "common_land_halfwidth_mm": 9.0,
+    "compressor_barrel_radius_mm": 65.0,
+    "external_clearance_mm": 1.0
+  },
+  "scope": "Actual axes; inherited envelope radii. Section feasibility alone does not preserve whole seal topology, exact gear fit, support stock or source shape. No compressor Boolean used.",
+  "sections": [
+    {
+      "z_mm": -24.5,
+      "minimum_axis_y_mm": 53.87042231132033,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    },
+    {
+      "z_mm": 0,
+      "minimum_axis_y_mm": 159.91754319809314,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    },
+    {
+      "z_mm": 25,
+      "minimum_axis_y_mm": 181.01345128240737,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    },
+    {
+      "z_mm": 35,
+      "minimum_axis_y_mm": 186.22069209361126,
+      "maximum_axis_y_mm": 242.58342613226057,
+      "corridor_width_mm": 56.36273403864931
+    },
+    {
+      "z_mm": 50,
+      "minimum_axis_y_mm": 191.59208120929867,
+      "maximum_axis_y_mm": 224.09830056250524,
+      "corridor_width_mm": 32.506219353206575
+    },
+    {
+      "z_mm": 74.42369033067094,
+      "minimum_axis_y_mm": 195.0429654367788,
+      "maximum_axis_y_mm": 209.49572790462565,
+      "corridor_width_mm": 14.452762467846867
+    },
+    {
+      "z_mm": 100,
+      "minimum_axis_y_mm": 192.15420370346533,
+      "maximum_axis_y_mm": 205.0,
+      "corridor_width_mm": 12.845796296534672
+    },
+    {
+      "z_mm": 125,
+      "minimum_axis_y_mm": 182.27062098541532,
+      "maximum_axis_y_mm": 209.28932188134524,
+      "corridor_width_mm": 27.018700895929925
+    },
+    {
+      "z_mm": 150,
+      "minimum_axis_y_mm": 162.38833089799982,
+      "maximum_axis_y_mm": 224.09830056250524,
+      "corridor_width_mm": 61.70996966450542
+    },
+    {
+      "z_mm": 175,
+      "minimum_axis_y_mm": 109.45522914139875,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    },
+    {
+      "z_mm": 190,
+      "minimum_axis_y_mm": 40.54352141990351,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    },
+    {
+      "z_mm": 200,
+      "minimum_axis_y_mm": 37.011321534948166,
+      "maximum_axis_y_mm": null,
+      "corridor_width_mm": null
+    }
+  ],
+  "source_stations": [
+    {
+      "station": 1,
+      "axis_yz_mm": [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      "right_corridor_lower_mm": 150.84960248378573,
+      "right_corridor_upper_mm": null,
+      "inboard_change_to_upper_mm": null,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 2,
+      "axis_yz_mm": [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      "right_corridor_lower_mm": 177.1815345675683,
+      "right_corridor_upper_mm": null,
+      "inboard_change_to_upper_mm": null,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 3,
+      "axis_yz_mm": [
+        -6.627940493863827,
+        98.99106943536768
+      ],
+      "right_corridor_lower_mm": 192.3972593345773,
+      "right_corridor_upper_mm": 205.00678657961276,
+      "inboard_change_to_upper_mm": -211.6347270734766,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 4,
+      "axis_yz_mm": [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      "right_corridor_lower_mm": 37.616633145462245,
+      "right_corridor_upper_mm": null,
+      "inboard_change_to_upper_mm": null,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 5,
+      "axis_yz_mm": [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      "right_corridor_lower_mm": 151.8632280073078,
+      "right_corridor_upper_mm": 232.89066845353787,
+      "inboard_change_to_upper_mm": -10.023395223666398,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 6,
+      "axis_yz_mm": [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      "right_corridor_lower_mm": 195.0429654367788,
+      "right_corridor_upper_mm": 209.49572790462565,
+      "inboard_change_to_upper_mm": 42.421078820022274,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    },
+    {
+      "station": 7,
+      "axis_yz_mm": [
+        217.24482469086223,
+        -7.893399845733515
+      ],
+      "right_corridor_lower_mm": 149.2997770939032,
+      "right_corridor_upper_mm": null,
+      "inboard_change_to_upper_mm": null,
+      "scope": "Right-side corridor relevant to stations5/6/7 only; other stations protected unchanged"
+    }
+  ],
+  "registration_pixel_corner_sensitivity": [
+    {
+      "station6_yz_mm": [
+        271.0378548090894,
+        76.15715167396223
+      ],
+      "inboard_change_to_corridor_upper_mm": 62.147056630664935
+    },
+    {
+      "station6_yz_mm": [
+        259.06195608143713,
+        77.67507460424085
+      ],
+      "inboard_change_to_corridor_upper_mm": 50.662219391524104
+    },
+    {
+      "station6_yz_mm": [
+        245.91099412922134,
+        71.41000695222247
+      ],
+      "inboard_change_to_corridor_upper_mm": 35.247941693474786
+    },
+    {
+      "station6_yz_mm": [
+        235.29903644529247,
+        72.9115285692708
+      ],
+      "inboard_change_to_corridor_upper_mm": 25.23625626097123
+    }
+  ],
+  "source_assessment": {
+    "seven_hole_homography_residual_px": [
+      0.25574333822171263,
+      1.0296588950312893,
+      1.0992429665022647,
+      0.4349959250165523,
+      0.9077335612808257,
+      2.1655722576722947,
+      1.4158511643903706
+    ],
+    "flat009_similarity_rms_px": 24.946174935424928,
+    "flat009_homography_rms_px": 1.4616809331203613,
+    "conclusion": "Broad asymmetric right lobe exists in both manufacturer photos. Exact width/axis registration remains estimated; correspondence residual cannot identify physical parallax or justify40mm recontouring. Corner pixel-only perturbations do not remove station6 intrusion."
+  },
+  "service_state": {
+    "timing_cover_manual_step3": "Remove belt and PS pump/AC compressor/bracket assembly before cover screws",
+    "installed_access_tool_gate": "NOT CLAIMED; original installed tool failures retained",
+    "service_tool_gate": "Candidate must check exact tool against remaining engine/pump/cover; not run because no contour yet"
+  },
+  "input_sha256": {
+    "scripts/check-timing-right-contour-feasibility.py": "1bd993635972d11685d35a9ab2c905791ddb13bc04b385e9501045188c0e8dcc",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "inventory/engine/timing-cover-registration-validation.json": "1a45e5539d951568595396f9ddb9d78fc4f4fbcb2289cc7f2f15980d372dfcb4",
+    "cad/engine/timing_cover_shell_candidate.py": "8329fcf692ca23df4b7b3bee5d1f0dcab44145116398dfa7a3e4f94d625118ec",
+    "reference/engine/timing-cover-registration-review.json": "8c0a0a3661437b68be32d85ee0710caec31512f497b6257ca0ebc435765f7958",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Timing%20Components/Timing%20Cover/Service%20and%20Repair/index.html": "00f0c45d65aae035c6ce7b364a40c61fa6d62c61a2009ec86d3f9c1947276407"
+  }
+}

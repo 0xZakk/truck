@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-01",
+  "scope": "Bounded search for applicable near-front EFI4.9 accessory photograph; no new geometry",
+  "queries": [
+    "1994 Ford 4.9 engine front accessories air conditioning power steering photo",
+    "Ford 4.9 EFI engine front accessory brackets compressor photo",
+    "1994 Ford 4.9 engine front serpentine accessories",
+    "Ford 4.9 EFI engine front on stand accessories compressor",
+    "1994 4.9 inline six engine rebuilt accessories front view"
+  ],
+  "reviewed_local_images": [
+    "reference/photos/2026-09-23/engine-bay-driver-side.jpg",
+    "reference/photos/2026-09-23/engine-bay-passenger-side.jpg"
+  ],
+  "leads": [
+    {
+      "url": "https://www.ford-trucks.com/forums/1307933-power-steering-bracket-1993-f150-4-9l.html",
+      "status": "403 Forbidden via web fetch; search snippet alone not adopted as dimensional source"
+    },
+    {
+      "url": "https://www.ford-trucks.com/forums/1462579-4-9-ac-compressor-mounts-again.html",
+      "status": "403 Forbidden via web fetch; image search returned routing illustration, not qualified metric photograph"
+    },
+    {
+      "url": "https://www.ebay.com/itm/336461854053",
+      "status": "Search lead loose bracket; no installed frame qualified"
+    },
+    {
+      "url": "https://www.powertrainproducts.net/product/1987-1996-2/",
+      "status": "Search lead remanufactured long block; no complete accessory plane qualified"
+    }
+  ],
+  "rejections": [
+    "V8/5.0/Sanden conversions and 1974\u201386 carbureted bracket layouts not applicable",
+    "Bare remanufactured long blocks do not define installed accessory centers",
+    "Brazilian4.9i seller label alone does not establish sameUS1994brackets",
+    "Existing owner images too occluded/oblique for calibrated pulley centers"
+  ],
+  "outcome": "No adequate new near-front photograph qualified in this bounded search. Not a claim that none exists. Preserve layout underdetermined; do not repeat length-only fit.",
+  "required_next_evidence": [
+    "Identifiable EFI4.9 F-series with correct1994shared brackets and AC/AP retained",
+    "Visible front faces of at least3non-collinear known pulley circles and sufficient center/rim visibility",
+    "Explicit lens/perspective rectification and circle-fit/pixel/diameter uncertainty",
+    "Check pulley axial coplanarity and source replacement diameter applicability before metric scaling"
+  ],
+  "geometry_changed": false
+}
