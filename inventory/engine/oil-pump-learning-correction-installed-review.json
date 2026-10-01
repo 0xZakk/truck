@@ -1,0 +1,20 @@
+{
+  "status": "Applied source correction; browser NOT RUN",
+  "baseline_commit": "2c4c65de787834445ec999757cb7a2572a1f1bde",
+  "target": "inventory/engine/lubrication-learning.json",
+  "before_sha256": "2d44fd53a7019b6d6e7340af3078c36735df08f067ef16190dab24d3a4371f1d",
+  "after_sha256": "9a9c7b9857d83c476bf70c9f1567e650d81339d73390002d2190dd5d158c9f75",
+  "proposal_sha256": "3874bae96c0ac4dd686957a3ea1a58334a7a3da4b5524f68ed97db7636497d83",
+  "changes": 9,
+  "scope": "Six text fields and three source lists; no geometry, source registry or navigation IDs changed. Every before-value and complete original file hash checked.",
+  "review": "Root reviewed all nine replacements against frozen Ford topology/coverage evidence and confirmed distinct mechanical-drive versus pressure-outlet claims.",
+  "checks": [
+    "Candidate source/semantic checker passed immediately before application",
+    "Canonical navigation passed after application"
+  ],
+  "limits": [
+    "Browser NOT RUN",
+    "Physical pump architecture still unresolved; no component acceptance",
+    "Frozen candidate checker expects the old lesson; reproduce against the recorded Git baseline, not the now-corrected installed lesson"
+  ]
+}

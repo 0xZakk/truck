@@ -1,6 +1,6 @@
 # Current engine integration — 2026-10-01
 
-Active branch: `engine/timing-drive-fit`, baseline merged [PR108](https://github.com/0xZakk/truck/pull/108), `2c4c65de787834445ec999757cb7a2572a1f1bde`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
+Active branch: `engine/timing-drive-fit`, baseline merged [PR109](https://github.com/0xZakk/truck/pull/109), `e35b247ca5c617b398510262364f194f0185c2e3`. Root is the sole shared assembly/viewer integration owner. **Engine unfinished; current timing/motion candidates are not installed.**
 
 ## Installed baseline
 
@@ -71,3 +71,5 @@ Latest preservation checkpoint: PR107 merged at `6b1608257e8c2eaa12512ac0c256d88
 Electrical viewer content now adds11 existing component lessons without replacing mechanical content or changing the canonical manifest. Page-specific manual links and navigation pass automated checks. Browser verification remains NOT RUN; see `docs/components/engine-control-electrical-integration.md`. MAP/IAT/O2 physical models remain missing.
 
 PR108 electrical-content integration merged after CI22s/18sPASS and independent runtime review. Five prior mechanical lessons preserved, six injector lessons added;30 supplemental part links resolve in canonical and privatev3. Both geometry manifests unchanged. Local preview is listening at127.0.0.1:8001 (server session47993); this process observation is not browser acceptance. Three workers continue ALT/AP carrier geometry, pump-bearing coverage and frozen pump artifact preservation.
+
+PR109 preserves98 source/evidence/tracking files and the published64-file water-pump study archive (19,508,529bytes; SHA b13f2bf787e405454b3ab14017e5cb7aa07bb14d15c1ba6eb4c273c08cbe29fc). Merge e35b247ca5c617b398510262364f194f0185c2e3, CI24s/18sPASS.691 prerequisite STEP payloads independently matched the checksum-verified neck-core archive. Current local oil-pump lessons now explicitly disclose the known old-feet/pickup-joint mismatch and unverified pressure path; geometry remains unchanged. New ALT/AP trial6 clears47 scoped neighbors and eight named seats but retains new-inlet tool access/retention/factory-silhouette gaps; PS/AC support is next.

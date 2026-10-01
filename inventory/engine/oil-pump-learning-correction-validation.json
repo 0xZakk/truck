@@ -1,0 +1,100 @@
+{
+  "status": "PASS scoped textual patch; integration/browser NOT RUN",
+  "changes": 9,
+  "lesson_checks": {
+    "lubrication": {
+      "stable_part_targets": true,
+      "all_source_ids_resolve": true,
+      "part_targets": [
+        "oil-pickup-assembly",
+        "oil-pump-rotors",
+        "oil-pump-relief",
+        "oil-filter-assembly",
+        "valvetrain",
+        "oil-pump-assembly",
+        null
+      ],
+      "sources": [
+        "fsm-6f023139b5f8",
+        "fsm-59c6d1fb5ae3",
+        "fsm-6e630ca15230",
+        "fsm-d975f341ee63",
+        "motorcraft-filter-construction",
+        "truck-oil-pressure-evtm",
+        "ford-industrial-parts",
+        "ford-industrial-csg649"
+      ]
+    },
+    "oil-drive-assembly": {
+      "stable_part_targets": true,
+      "all_source_ids_resolve": true,
+      "part_targets": [
+        "distributor-drive-gear",
+        "oil-pump-intermediate-shaft",
+        "oil-pump-drive-retainer"
+      ],
+      "sources": [
+        "ford-industrial-csg649",
+        "melling-intermediate-shaft-dimensions",
+        "fsm-a3698a10af15"
+      ]
+    },
+    "oil-pan-assembly": {
+      "stable_part_targets": true,
+      "all_source_ids_resolve": true,
+      "part_targets": [
+        "oil-pan",
+        "oil-pan-molded-gasket",
+        "oil-pan-fastener-assembly",
+        "oil-pickup-assembly",
+        "oil-pan-drain-plug",
+        "oil-pan",
+        null
+      ],
+      "sources": [
+        "truck-oil-pan-hardware",
+        "dorman-264011-pan",
+        "fel-pro-vin-y-gaskets",
+        "felpro-os34601r-topology",
+        "ford-industrial-parts",
+        "ford-industrial-csg649"
+      ]
+    },
+    "oil-pump-assembly": {
+      "stable_part_targets": true,
+      "all_source_ids_resolve": true,
+      "part_targets": [
+        "oil-pump-rotors",
+        "oil-pump-housing",
+        "oil-pump-relief",
+        "oil-pump-cover",
+        "oil-pump-relief"
+      ],
+      "sources": [
+        "fsm-6f023139b5f8",
+        "fsm-59c6d1fb5ae3",
+        "fsm-3ceaca21ab73",
+        "fsm-76412d392bb7",
+        "ford-industrial-parts",
+        "ford-industrial-csg649"
+      ]
+    }
+  },
+  "gerotor_profile_and_speed_limits_preserved": true,
+  "service_clearance_and_relief_calibration_limits_preserved": true,
+  "all_other_lessons_unchanged": true,
+  "inputs": {
+    "inventory/engine/lubrication-learning.json": "2d44fd53a7019b6d6e7340af3078c36735df08f067ef16190dab24d3a4371f1d",
+    "inventory/engine/oil-pump-learning-correction-candidate.json": "3874bae96c0ac4dd686957a3ea1a58334a7a3da4b5524f68ed97db7636497d83",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "scripts/oil-pump-learning-correction-check.py": "ae06cc3feac52ed98bdd351d524541d448dfa70cfa90241e1b07bb2b3fefef18",
+    "docs/components/oil-pump-topology-contract.md": "88f4f0c1bce7abf9dd3767aa8f5744a76061789fd353d3fbad04f30cf34a504b",
+    "docs/components/oil-pump-coverage-contract.md": "36c4a8eed89411450b4f5d3e8070e1ce3d76e8809363fc6b0e56e8fef1462080",
+    "docs/components/oil-pump-discharge-source-audit.md": "1035c22c76b98f0c7705da86d770433751afe2ef9c40a3f2185a67755c6c7593",
+    "reference/engine/oil-pump-topology-evidence.json": "9f78ba6b8c31529cbf362a9422744c142b1efdd33f8cdb0658a6397b5e085a41",
+    "reference/engine/oil-pump-coverage-evidence.json": "f35e6a294877b918d1636e94f4e5eb82fd14eca785ce028df434cd95f06fb8f2",
+    "reference/engine/oil-pump-discharge-source-review.json": "66ac33bbe2e98af55e5aedeae962a6c1e5c77cbe504fbbd028e4a229b315af04"
+  },
+  "rendering": "NOT RUN; no canonical/viewer edits",
+  "source_links": "Existing stable source IDs resolved against canonical registry; no live URL availability claim"
+}

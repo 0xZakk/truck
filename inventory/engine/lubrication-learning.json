@@ -1,11 +1,11 @@
 {
   "lubrication": {
     "summary": "Follow the oil from the sump, through the pickup and pump, toward the filter and engine bearings.",
-    "limits": "Pump, pickup and filter are component studies at provisional mounting locations. A connected intermediate drive and illustrative pump mounts are now present, but their installed dimensions are not factory-verified. The filter adapter and full oil galleries remain unfinished. No oil-flow or pressure simulation is running.",
+    "limits": "The visible pump feet and inserted pickup tube are older illustrative geometry. Ford comparison drawings for the same pump service assembly show a raised drive neck and a separate gasketed pickup flange. These interfaces, the pump-to-block gasket and the pressure outlet are not reconstructed here. The model does not establish a complete sealed route from sump to engine galleries or simulate oil pressure.",
     "steps": [
       {
         "title": "1 \u00b7 Collect oil",
-        "text": "The strainer intercepts larger debris. Its tube supplies the pump inlet from the sump.",
+        "text": "The strainer intercepts larger debris before oil reaches the pump. Ford comparison drawings show a gasketed pickup flange; the visible inserted-tube connection does not reproduce that joint.",
         "part": "oil-pickup-assembly"
       },
       {
@@ -46,7 +46,9 @@
       "fsm-6e630ca15230",
       "fsm-d975f341ee63",
       "motorcraft-filter-construction",
-      "truck-oil-pressure-evtm"
+      "truck-oil-pressure-evtm",
+      "ford-industrial-parts",
+      "ford-industrial-csg649"
     ]
   },
   "oil-drive-assembly": {
@@ -60,7 +62,7 @@
       },
       {
         "title": "Bridge the two sockets",
-        "text": "The intermediate shaft fits inside the distributor and pump sockets. Its sourced external dimensions are preserved while the surrounding illustrative mounting layout is reconciled around a common axis.",
+        "text": "The intermediate shaft bridges the distributor and pump sockets. Its sourced external dimensions are preserved in an illustrative drive layout. That mechanical connection does not validate the pump mounting face or create the separate pressurized outlet into the block.",
         "part": "oil-pump-intermediate-shaft"
       },
       {
@@ -78,7 +80,7 @@
   },
   "oil-pump-assembly": {
     "summary": "Explore the housing, rotor set, cover and spring-loaded relief valve as individual components.",
-    "limits": "Architecture follows the factory lubrication and inspection references. Manufacturing dimensions, rotor curves, cover hardware and installed position remain provisional. An exploded study does not imply that Ford supplies every internal part separately: the 1994 inspection text directs replacement of an out-of-spec pump assembly.",
+    "limits": "The rotors, cover and relief valve illustrate pump function. The visible outboard mounting feet and inserted pickup tube do not reproduce the raised neck and gasketed pickup flange in Ford comparison drawings. Truck pickup routing differs from the industrial example. Mounting, gasket, dowel and pressure-outlet interfaces remain unresolved; there is no verified complete pressure path. Rotor profiles, dimensions and installed position are provisional. Ford directs replacement of an out-of-spec pump assembly, not separate servicing of every illustrated internal part.",
     "steps": [
       {
         "title": "Rotor set",
@@ -87,7 +89,7 @@
       },
       {
         "title": "Housing and cover",
-        "text": "The housing locates the rotors and the cover closes their end face. Select Cutaway or Explode to inspect the pocket and separate end surfaces.",
+        "text": "The housing locates the rotors and the cover closes their end face. The current housing omits the source-supported raised neck and pickup-flange construction. Cutaway and Explode show the older study, not a verified mounting or sealing arrangement.",
         "part": "oil-pump-housing"
       },
       {
@@ -112,7 +114,9 @@
       "fsm-6f023139b5f8",
       "fsm-59c6d1fb5ae3",
       "fsm-3ceaca21ab73",
-      "fsm-76412d392bb7"
+      "fsm-76412d392bb7",
+      "ford-industrial-parts",
+      "ford-industrial-csg649"
     ]
   },
   "oil-filter-assembly": {
@@ -246,7 +250,7 @@
       },
       {
         "title": "Keep the pickup above the floor",
-        "text": "The screen needs a clear inlet and a sealed route to the pump. Its placement here is a clearance study, not a recovered factory dimension.",
+        "text": "The screen needs a clear inlet and a sealed route to the pump. Its placement is a clearance study. The visible inserted tube does not reproduce the gasketed pickup flange shown in Ford comparison drawings, and its complete sealed connection remains unresolved.",
         "part": "oil-pickup-assembly"
       },
       {
@@ -271,7 +275,9 @@
       "truck-oil-pan-hardware",
       "dorman-264011-pan",
       "fel-pro-vin-y-gaskets",
-      "felpro-os34601r-topology"
+      "felpro-os34601r-topology",
+      "ford-industrial-parts",
+      "ford-industrial-csg649"
     ]
   },
   "pushrod-cover-assembly": {
