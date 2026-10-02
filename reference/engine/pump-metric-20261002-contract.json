@@ -1,0 +1,102 @@
+{
+  "status": "Proposed next coordinated height candidate only; no CAD created",
+  "metric_value": {
+    "frame_origin_world_mm": [
+      375.0,
+      -32.0,
+      170.0
+    ],
+    "axis": "+X toward fan",
+    "height_mm": 98.43,
+    "hub_pulley_face_local_x": 98.43,
+    "hub_pulley_face_world_x": 473.43,
+    "front_stack_translation_mm": -48.56999999999999,
+    "belt_center_world_x": 473.56,
+    "new_pulley_face_to_belt_center_signed_mm": 0.12999999999999545,
+    "shaft_world_x_bounds": [
+      365.0,
+      470.43
+    ],
+    "shaft_length_mm": 105.43,
+    "protected": [
+      "mounting faceX375, gasket/blockfaceX373 and existing four mountaxes",
+      "impeller existingX369..384 and rearshaft endpointX365",
+      "shaft axisYZ(-32,170)",
+      "belt centerX473.56 as existing estimated global anchor, not factory datum"
+    ],
+    "rebuild": [
+      "housing chamber/taper joining retained rear flange to relocated frontwall/nose; no uniform solid scaling",
+      "shaft length keeping rear engagement and matched relocated hub/bearing/seal stations",
+      "pulley dish between fixed belt rim and new hub mating face; its old48.44mm dish is not retained",
+      "heater/inlet root geometry coordinated with rebuilt chamber; frozen source-route not rigidly adopted"
+    ],
+    "translate_front_stack": [
+      "drive hub with pilot",
+      "bearing cartridge",
+      "all six named seal components",
+      "slinger",
+      "frontwall, bearing bore and weep passage together",
+      "pulley mounting web and four bolts only; rim remains at belt datum",
+      "fan clutch and fan rigid subgroup, subject to radiator/body clearance NOT RUN"
+    ],
+    "gates_open": [
+      "replacement-to-GMB dimensional transfer",
+      "hub OD/bolt-circle/pilot and fan identity",
+      "bearing and mechanical seal internals/pressfits",
+      "housing fluidwall and port connections",
+      "pulley dish manufacturability/rim-to-hub backing",
+      "heater radialroute and metric camera calibration",
+      "whole-stage static/motion/service and radiator context"
+    ]
+  },
+  "inch_conversion_sensitivity": {
+    "frame_origin_world_mm": [
+      375.0,
+      -32.0,
+      170.0
+    ],
+    "axis": "+X toward fan",
+    "height_mm": 98.55199999999999,
+    "hub_pulley_face_local_x": 98.55199999999999,
+    "hub_pulley_face_world_x": 473.552,
+    "front_stack_translation_mm": -48.44799999999998,
+    "belt_center_world_x": 473.56,
+    "new_pulley_face_to_belt_center_signed_mm": 0.007999999999981355,
+    "shaft_world_x_bounds": [
+      365.0,
+      470.552
+    ],
+    "shaft_length_mm": 105.55200000000002,
+    "protected": [
+      "mounting faceX375, gasket/blockfaceX373 and existing four mountaxes",
+      "impeller existingX369..384 and rearshaft endpointX365",
+      "shaft axisYZ(-32,170)",
+      "belt centerX473.56 as existing estimated global anchor, not factory datum"
+    ],
+    "rebuild": [
+      "housing chamber/taper joining retained rear flange to relocated frontwall/nose; no uniform solid scaling",
+      "shaft length keeping rear engagement and matched relocated hub/bearing/seal stations",
+      "pulley dish between fixed belt rim and new hub mating face; its old48.44mm dish is not retained",
+      "heater/inlet root geometry coordinated with rebuilt chamber; frozen source-route not rigidly adopted"
+    ],
+    "translate_front_stack": [
+      "drive hub with pilot",
+      "bearing cartridge",
+      "all six named seal components",
+      "slinger",
+      "frontwall, bearing bore and weep passage together",
+      "pulley mounting web and four bolts only; rim remains at belt datum",
+      "fan clutch and fan rigid subgroup, subject to radiator/body clearance NOT RUN"
+    ],
+    "gates_open": [
+      "replacement-to-GMB dimensional transfer",
+      "hub OD/bolt-circle/pilot and fan identity",
+      "bearing and mechanical seal internals/pressfits",
+      "housing fluidwall and port connections",
+      "pulley dish manufacturability/rim-to-hub backing",
+      "heater radialroute and metric camera calibration",
+      "whole-stage static/motion/service and radiator context"
+    ]
+  },
+  "difference_is_catalog_conversion_not_tolerance": true
+}

@@ -252,3 +252,10 @@ Publication verified after PR112 merged (`95f987449203c9ebaa88266149829324d29125
 This preserves conditional heater-route candidates and an estimated local paired-duct specimen, including failed constructions/checks. Later radial-registration analysis in the repository qualifies the heater physical scale; its source overlay is local review only. No candidate is installed or production-accurate. Publication remains pending until a verified note below.
 
 Publication verified after [PR115](https://github.com/0xZakk/truck/pull/115) merged (`2916df6880e5fd68a41b52e80ce2ea67873fc6a0`; CI18s/17sPASS): [online research candidate release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-01-online-research), release ID401293444. The server-reported SHA256 and byte count match the archive above. This supersedes publication-pending fields in frozen metadata/handoffs. Code and reports restore from PR115 or later; the packaging baseline is a provenance snapshot, not the final source revision.
+
+
+## ACT replacement specimen — publication pending
+
+`docs/act-online-20261002-package.json` records17 authored artifacts in `truck-act-online-20261002.tar.gz` (574,114bytes; SHA256 `63082663c14d3f4da96083c1f344165dad91b150c1af450d6da8c955e110a773`). Exact source/report inputs and two tracked identity prerequisites are listed separately. No generated predecessor is required. Follow `docs/components/act-online-20261002-package.md`; preservation verification streams members without extraction.
+
+This preserves a six-region replacement-comparison specimen and rejected thread construction. It is not an installed component, complete electrical circuit or verified factory geometry. Source photographs/HTML/PDF are excluded. Publication must be verified separately.

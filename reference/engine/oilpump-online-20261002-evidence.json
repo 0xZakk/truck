@@ -1,0 +1,69 @@
+{
+  "status": "New identified industrial exploded-view evidence; no CAD/installation",
+  "baseline_commit": "917af4ffa75f07aa0511c163068e36056efb1e3d",
+  "issue": 73,
+  "source": {
+    "url": "https://carsandracingstuff.com/library/reports/5974.pdf",
+    "local_path": "reference/engine/oilpump-online-20261002-captures/tm10-3930-633-24p.pdf",
+    "sha256": "2ff27ebf524da1c23ddf8faa40ccbabe19220de8b7aa8c3deb4e29128678fe0b",
+    "bytes": 1381848,
+    "manual": "TM10-3930-633-24P, May1993",
+    "pdf_pages_1based": [
+      36,
+      37
+    ],
+    "figure": 13,
+    "printed_table_page": "13-1",
+    "application": "Clark/MHE-228 industrial tractor; C5AZ-6600-A explicitly listed; not exact1994 truck"
+  },
+  "hardware_groups": [
+    {
+      "role": "pump mount",
+      "screw": "MS90728-61",
+      "washer": "MS35338-46",
+      "quantity_each": 2
+    },
+    {
+      "role": "cover",
+      "screw": "MS90725-5",
+      "washer": "MS35338-44",
+      "quantity_each": 4
+    },
+    {
+      "role": "inlet",
+      "screw": "MS90725-31",
+      "washer": "MS35338-45",
+      "quantity_each": 2
+    }
+  ],
+  "pin": {
+    "identifier": "378644S",
+    "observed_form": "annular in exploded figure",
+    "dimension_mm": null,
+    "hydraulic_function": null
+  },
+  "gasket_correspondence": {
+    "status": "cross-source hypothesis; not measured common frame",
+    "three_apertures": "two-fastener inlet plus fluid aperture",
+    "four_apertures": "two mounting fasteners plus two distinct interior openings",
+    "unknown": [
+      "interior aperture identity/order",
+      "handedness",
+      "dimensions",
+      "thickness",
+      "face pose",
+      "block gallery connection"
+    ]
+  },
+  "prior_source_ledger": {
+    "path": "reference/engine/online-oilpump-research.json",
+    "sha256": "292b3f0b47ae1d149892521258ea58d149ef9a62e200a1479f0618863df07804"
+  },
+  "source_review": "Actual rendered PDF36/37 and prior RONYU gasket detail inspected by root",
+  "source_captures_excluded": true,
+  "cad_modified": false,
+  "browser": "NOT RUN",
+  "dimensional_standard_lookup": "DLA MS90725 transient PDF cache miss/network reset; no dimensional adoption",
+  "ingestion": "Poppler selected pages -> local ingester; source page records true PDF origin",
+  "next_action": "Obtain identified mounting face registering shaft and pin apertures; retrieve referenced hardware standards before dimensions"
+}

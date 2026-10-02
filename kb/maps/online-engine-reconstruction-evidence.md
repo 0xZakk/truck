@@ -23,3 +23,11 @@ The October 2026 research round replaces several missing owner-photo inputs with
 ## Reconstruction status
 
 These notes are evidence inputs, not an installed-accuracy claim. Candidate geometry and acceptance reports live outside the knowledge base under the corresponding online-heater and online-airbox component handoffs. The existing engine and its failure evidence are preserved while those candidates are checked.
+
+## October 2 follow-up
+
+[[notes/pump-metric-20261002-height|Carter application and hub-height evidence]] challenges the modeled pump stack, giving a concrete target for coordinated housing/shaft/hub/pulley reconstruction. A camera fit alone does not supply the remaining physical dimensions.
+
+[[notes/oilpump-online-20261002-separate-attachment-groups|The Army comparison separates three attachment groups]] and [[notes/oilpump-online-20261002-annular-pin|illustrates the separate pin as annular]]. These refine the prior gasket-pattern hypothesis without proving pressure flow or exact truck hardware.
+
+[[notes/act-online-20261002-visible-probe|The identified MTE sensor has an open guard and visible encapsulated element]]. This supports a detailed local replacement specimen; hidden electrical construction and manifold placement remain unresolved.

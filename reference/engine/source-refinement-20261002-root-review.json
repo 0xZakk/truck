@@ -1,0 +1,30 @@
+{
+  "baseline": "917af4ffa75f07aa0511c163068e36056efb1e3d",
+  "scope": "Online-source research and ACT specimen preservation, not installation",
+  "frozen_delivery_hash_checks": {
+    "act": 31,
+    "pump_metric": 20
+  },
+  "act_archive": {
+    "path": "cad/engine/generated/act-online-20261002-package/truck-act-online-20261002.tar.gz",
+    "sha256": "63082663c14d3f4da96083c1f344165dad91b150c1af450d6da8c955e110a773",
+    "size_bytes": 574114,
+    "members": 17,
+    "verification": "PASS exact member names/hash/order",
+    "publication": "NOT RUN"
+  },
+  "review": [
+    "Root inspected actual corrected sensor render and manufacturer side/end photos; ineffectual original thread cutter rejected and preserved. Corrected material removal102.4705467mm3 with536profile probes; smooth control rejected.",
+    "Root independently viewed Carter catalog PDF162/printed128 and reviewed actual mounting/pulley faces and fit plot. Research numerical replay matches frozen hashes.",
+    "Root inspected Army manual PDF36/37 for separate mounting, cover and inlet hardware groups and annular depicted pin. Industrial comparison, not truck measurement."
+  ],
+  "canonical_manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "canonical_changed": false,
+  "browser": "NOT RUN; prior localhost policy rejection preserved; no bypass",
+  "gate_limits": [
+    "ACT candidate local exports/contact/threads only; no factory dimension, installed pose, gauge-fit or complete circuit acceptance",
+    "Pump coordinated candidate and duct refinement remain active, excluded",
+    "Source originals excluded; URLs/hashes/reacquisition recorded"
+  ],
+  "usage": "unavailable; no billing estimate"
+}
