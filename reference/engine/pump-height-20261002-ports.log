@@ -1,0 +1,9 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-height-20261002-ports.py", line 5, in <module>
+    import pump_height_20261002_ports as c
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/pump_height_20261002_ports.py", line 25
+    sections=[section(y,rootx if i==0 else403,a if i==0 else r,z if i==0 else r)for i,y in enumerate(ys)]
+                        ^^^^^^^^^^^^^
+SyntaxError: expected 'else' after 'if' expression

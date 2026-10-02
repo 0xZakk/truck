@@ -1,0 +1,400 @@
+{
+  "contact_probe_tolerance_mm": 1e-05,
+  "shifted_contact_control_gap_mm": 1.9926097002844658,
+  "status": "PASS independent construction/volume checks",
+  "rows": [
+    {
+      "tube": "online-airbox-duct-long",
+      "default_nonadaptive_BRep_volume_mm3": 343510.91993699304,
+      "default_relative_error": 0.0012125375124081282,
+      "adaptive_BRep_volume_mm3": 343094.90449482657,
+      "adaptive_requested_relative_tolerance": 1e-08,
+      "adaptive_estimated_relative_error": 2.4760933284813026e-09,
+      "independent_annular_integral_mm3": 343094.9044949768,
+      "relative_error": 4.378787642993367e-13,
+      "minimum_inner_radius_coefficient_bound_mm": 25.4997520661157,
+      "radial_wall_coefficient_error_mm": 1.4210854715202004e-14,
+      "same_axis_coefficient_error_mm": 0.0,
+      "linear_X_derivative_error": 1.8185453143360064e-13,
+      "interpretation": "Nonnegative B-spline basis and exact rational circles imply continuous positive-radius lumen in declared undeformed construction; actual STEP probes corroborate sampled sections. This is not installed flow/pressure or flexible-motion proof."
+    },
+    {
+      "tube": "online-airbox-duct-short",
+      "default_nonadaptive_BRep_volume_mm3": 329378.8687637364,
+      "default_relative_error": 0.0010794290876779467,
+      "adaptive_BRep_volume_mm3": 329023.7109992844,
+      "adaptive_requested_relative_tolerance": 1e-08,
+      "adaptive_estimated_relative_error": 2.059266536558994e-09,
+      "independent_annular_integral_mm3": 329023.71099954774,
+      "relative_error": 8.003418877397821e-13,
+      "minimum_inner_radius_coefficient_bound_mm": 25.4997520661157,
+      "radial_wall_coefficient_error_mm": 1.4210854715202004e-14,
+      "same_axis_coefficient_error_mm": 0.0,
+      "linear_X_derivative_error": 1.8185453143360064e-13,
+      "interpretation": "Nonnegative B-spline basis and exact rational circles imply continuous positive-radius lumen in declared undeformed construction; actual STEP probes corroborate sampled sections. This is not installed flow/pressure or flexible-motion proof."
+    }
+  ],
+  "actual_contact_boundary_probes": [
+    {
+      "interface": "web/long",
+      "point_mm": [
+        362,
+        -13.124086746977955,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        5.4740849197317845e-12,
+        5.470517654163428e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        362,
+        -13.190087107652236,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        5.5601603524506876e-12,
+        5.5601603524506876e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        362,
+        -13.124086746977955,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        5.451557256486624e-12,
+        5.4477823645387354e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        364,
+        -13.008351379540699,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        6.409416965448635e-12,
+        6.409416965448635e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        364,
+        -13.074496344819842,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        6.502997804375103e-12,
+        6.508575338069745e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        364,
+        -13.008351379540699,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        6.388566679527007e-12,
+        6.389815034064574e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        366,
+        -12.892775995833698,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.8936886990637047e-12,
+        2.8936886990637047e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        366,
+        -12.959052412127967,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.9645921524132797e-12,
+        2.966095203863052e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/long",
+      "point_mm": [
+        366,
+        -12.892775995833698,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.8697951958093073e-12,
+        2.8731907451757246e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        362,
+        -42.97138133794763,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        1.844800243952278e-12,
+        1.8449974165445937e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        362,
+        -42.90638203926177,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        1.7692514120426495e-12,
+        1.770164323808017e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        362,
+        -42.97138133794763,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        1.8590879175155304e-12,
+        1.8515111858293104e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        364,
+        -43.02283389646122,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.5714090580850884e-12,
+        2.573293233738704e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        364,
+        -42.957515911764176,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.5153212845907547e-12,
+        2.5107910075406486e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        364,
+        -43.02283389646122,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.5990232890375957e-12,
+        2.5946302299582732e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        366,
+        -43.05082498294094,
+        -2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.5996181242075286e-12,
+        2.6002090689306755e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        366,
+        -42.9852092998142,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.5366375666635577e-12,
+        2.5366375666635577e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "web/short",
+      "point_mm": [
+        366,
+        -43.05082498294094,
+        2.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.6136748868900433e-12,
+        2.627306567467194e-12
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        290,
+        58.684651251408646,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        1.8474111129762605e-13,
+        1.8474111129762605e-13
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        290,
+        25.203125000000004,
+        33.481526251408646
+      ],
+      "distances_to_actual_solids_mm": [
+        1.9197807555011502e-13,
+        1.9184653865522705e-13
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        290,
+        -8.278401251408646,
+        4.100304395435568e-15
+      ],
+      "distances_to_actual_solids_mm": [
+        1.146751908581189e-13,
+        6.449736405742472e-14
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        294,
+        57.91437363482936,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        2.842170943040401e-14,
+        2.842170943040401e-14
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        294,
+        24.486111111111114,
+        33.42826252371825
+      ],
+      "distances_to_actual_solids_mm": [
+        7.815970093361102e-14,
+        7.815970093361102e-14
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        294,
+        -8.942151412607142,
+        4.0937814700728984e-15
+      ],
+      "distances_to_actual_solids_mm": [
+        1.9011426317408742e-13,
+        1.933318688628231e-13
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        300,
+        56.66499806369508,
+        0.0
+      ],
+      "distances_to_actual_solids_mm": [
+        7.815970093361102e-14,
+        7.815970093361102e-14
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        300,
+        23.374782986111114,
+        33.290215077583966
+      ],
+      "distances_to_actual_solids_mm": [
+        1.4652521420047492e-13,
+        1.3518997541297357e-13
+      ],
+      "within_contact_tolerance": true
+    },
+    {
+      "interface": "retainer/long",
+      "point_mm": [
+        300,
+        -9.915432091472855,
+        4.076875533769016e-15
+      ],
+      "distances_to_actual_solids_mm": [
+        2.3098586917376744e-14,
+        2.3098586917376744e-14
+      ],
+      "within_contact_tolerance": true
+    }
+  ],
+  "inputs": {
+    "cad/engine/airbox_refined_20261002.py": "9eb22fbc869cfd0851984caa9cc84addfd380b414aabffcf204977114a20495c",
+    "scripts/check-airbox-refined-20261002-sections.py": "7626610aec57daad96db94a3de10857b94fd02e94eaca5552db3cafbe2dc4b51",
+    "reference/engine/airbox-refined-20261002-check.json": "e9213d31ecac1c2d9378062a61dd1f158e732ff35f18d131afe99861421c3a38",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-long.step": "6c59b040a3d2b26e597bfbcb4f202edb8ced45f946bfc905996408a7ac59080f",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-short.step": "cf1e57c09e2f093199fa6b1388755e50a88568a5bffa42e5fdd9d6d537a11455",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-joining-web.step": "816d70a18c018f67c8494d1c3a12bdadf87084ccd7e60be346ca34260cd9934f",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-retainer.step": "91e40888f5f81111b39c7ab2fb83c461b7753f85b2f6d3ce2bee36344fd81e12"
+  },
+  "negative_control": "Set inner coefficients equal to outer: radial wall error becomes3mm and fails1e-10mm identity bound; actual blocked/skin controls are in main checker."
+}

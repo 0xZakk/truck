@@ -1,0 +1,11 @@
+# Pump height preservation package
+
+Preservation only for issue47. The coordinated candidate remains FAIL: four fresh neighbor overlaps, rear-preservation contract violation, six mesh bounds failures and nonwatertight spring mesh. Local seat/path evidence has its separately bounded scope. Next work is source-driven housing/carrier interface review, not installed acceptance or a source-blocked declaration.
+
+`python3 scripts/pump-height-20261002-package.py` verifies the frozen delivery and all present guarded dependencies without CAD execution. It builds an exact sorted gzip/tar allowlist with zero timestamps, stable ownership/modes, then independently builds again and compares bytes. Every member is streamed and SHA-256 checked without extraction.
+
+The archive includes all581 generated trial assets, the two authored actual-mesh renders and serialized mesh arrays. These preserve rejected construction stages, overlap witnesses and final failed mesh exports. Source/scripts/contracts/reports/logs are inventoried separately for Git preservation; they are not third-party originals. Existing dependency archives supply inherited STEP assets, with exact member matching against prior package inventories or the previously checksum-verified neck-core member audit. That audit is reused by hash; no claim of freshly reopening its461MB archive.
+
+Owned new package files only: this handoff, `scripts/pump-height-20261002-package.py`, `reference/engine/pump-height-20261002-package.json`, and `cad/engine/generated/pump-height-20261002-package/`. The package report supplies exact archive/source/dependency inventories, release metadata references and hashes. Public manufacturer captures, raw ingestion text, source-containing overlays and all purchased/owner originals are excluded. Metric-height research is separately hash-bound as a prerequisite; its authored files should be preserved by root, while its original HTML/PDF/images stay excluded.
+
+No geometry, manifests, old reports or shared documentation changes; no publication or commit. Root owns review and publication. Generated files restore at repository-relative paths; preserve newer local work before extraction. Packaging is not a standalone CAD environment or production certificate.

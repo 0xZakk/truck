@@ -1,0 +1,58 @@
+{
+  "scope": "Research only; issue #73; no CAD or installed applicability claim",
+  "baseline": "1163acf633ddab3a5bed0cd126a6becca8ddd741",
+  "source": {
+    "url": "https://www.dtnaecomponents.com/Ford/PartsEngineeringIdentificationStandardUtilityPartsCatalog/FordPartsEngineeringAndIdentificationStandardAndUtilityPartsCatalog.pdf",
+    "index_url": "https://www.dtnaecomponents.com/Ford/Manuals.htm",
+    "title": "Ford PE&I Standard and Utility Parts Catalog FPS 3733",
+    "edition": "February 1996; inspected page footer also prints copyright1998",
+    "pdf_sha256": "93d592bf2c6cf31d82f144018a3882c00cfee018022b66c6f157656310bbdc58",
+    "bytes": 78832506,
+    "pdf_page": 216,
+    "printed_page": "205",
+    "section": "H-143 PIN\u2014DOWEL",
+    "render_sha256": "cf1b6dc48ed1039d183fd3d737e84ae3aba5137243ce2ef08bfcc2c5372853f7",
+    "originals_distribution": "excluded; reacquire public PDF then render page216; local /tmp paths are review conveniences, not repository prerequisites"
+  },
+  "verified_row": {
+    "part_number": "378644-S",
+    "locator": "NN-61-B",
+    "type": 1,
+    "nominal_diameter_inches": 0.5,
+    "nominal_length_inches": "13/32",
+    "nominal_diameter_mm": 12.7,
+    "nominal_length_mm": 10.31875,
+    "evidence": "Actual row visually inspected; OCR misreads suffix S as8, corrected against pixels"
+  },
+  "shape_limits": [
+    "Generic Type1 icon is an unstepped cylinder, not a part-specific section",
+    "Split construction remains unverified; blocked engine-catalog snippet not adopted",
+    "Root ArmyFigure13 same-part annular illustration remains a separate more specific topology comparison",
+    "No bore, wall, split gap, material, chamfer, press fit, insertion depth or hydraulic function resolved",
+    "No exact1994 F150 applicability from a general hardware catalog"
+  ],
+  "attempts": [
+    {
+      "url": "https://squarebirds.org/Manuals/1965/1965-72FordPartsTextCatalog/09-1965Text-Engine.pdf",
+      "result": "Parent reported403; not retried/bypassed. Search snippet split wording unverified."
+    },
+    {
+      "url": "https://www.garysgaragemahal.com/standard--utility-parts-catalog.html",
+      "result": "Public index accessible; OneDrive download rejected by web safety; not bypassed. Embed had no inspectable PDF text."
+    },
+    {
+      "url": "https://www.dtnaecomponents.com/Ford/PartsEngineeringIdentificationStandardUtilityPartsCatalog/FordPartsEngineeringAndIdentificationStandardAndUtilityPartsCatalog.pdf",
+      "result": "Direct public link from independent DTNAindex retrieved successfully; no login or access-control workaround"
+    }
+  ],
+  "reproduction": [
+    "curl -L --fail PUBLIC_PDF_URL -o ford-hardware.pdf",
+    "pdftotext -layout ford-hardware.pdf ford-hardware.txt",
+    "pdftoppm -f 216 -singlefile -scale-to 2200 -png ford-hardware.pdf page216",
+    ".venv-cad/bin/python tools/ingest.py ford-hardware.pdf --type pdf --pages 216 --title oilpump-dowel-20261002-ford-hardware"
+  ],
+  "root_context": {
+    "reference/engine/oilpump-online-20261002-evidence.json": "eba6b31dbc12aef5b364c5d20c076afe4a95369d5f4ef1c5c81098f1b220a7fb",
+    "docs/components/oilpump-online-20261002-evidence.md": "e970055aa60fa5f55fee7a8a1a8196cb3cf7fd58f6c76332ca56f5fcd1ff4c85"
+  }
+}

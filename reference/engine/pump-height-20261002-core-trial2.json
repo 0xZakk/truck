@@ -1,0 +1,2310 @@
+{
+  "status": "CORE CHECK COMPLETE; external ports/passages and affected stage neighbors remain required",
+  "variants": {
+    "nominal": {
+      "height_mm": 98.43,
+      "parts": {
+        "water-pump-drive-hub": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-drive-hub.step",
+          "sha256": "87b7b7c92334b41454dda07ae41c32b51a2b7d15adbbb77895199aa95a30ed7c",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.43,
+              -67.0,
+              135.0
+            ],
+            [
+              498.93,
+              3.0,
+              205.0
+            ]
+          ]
+        },
+        "water-pump-bearing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-bearing.step",
+          "sha256": "43a4ac40fb0c1cdff13adffc2383ff6da1d089bc3b77ec5d3890a2ce18581f00",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              425.43,
+              -55.9,
+              146.1
+            ],
+            [
+              459.43,
+              -8.100000000000001,
+              193.9
+            ]
+          ]
+        },
+        "water-pump-slinger": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-slinger.step",
+          "sha256": "2af6da734318ed0742cde7b0136ce25f9444d5be1fab5356d3c29853c291511a",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              419.83,
+              -49.0,
+              153.0
+            ],
+            [
+              421.03000000000003,
+              -15.0,
+              187.0
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-pulley-bolt-1.step",
+          "sha256": "71d5879d357e69be1aed817fd1cf9ed087e25717c488fec688b74948fcef4413",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.43,
+              -12.500000000000865,
+              165.236860279186
+            ],
+            [
+              479.93,
+              -1.4999999999991338,
+              174.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-pulley-bolt-2.step",
+          "sha256": "fefaadc822e28163c19d68a023da19123c48c6dc00da2c336f4ee9c76c20bb96",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.43,
+              -37.50000000000087,
+              190.236860279186
+            ],
+            [
+              479.93,
+              -26.499999999999133,
+              199.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-pulley-bolt-3.step",
+          "sha256": "50aacfae730f177dbe474c80f9f273f2e0a6359ba2ce3764e389c33a04e5ce2f",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.43,
+              -62.50000000000087,
+              165.236860279186
+            ],
+            [
+              479.93,
+              -51.49999999999913,
+              174.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-pulley-bolt-4.step",
+          "sha256": "b47b7db62f95d45459841726a7fd7f7597b05b697d7717c5c86b64b2520d027c",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.43,
+              -37.50000000000087,
+              140.236860279186
+            ],
+            [
+              479.93,
+              -26.499999999999133,
+              149.763139720814
+            ]
+          ]
+        },
+        "fan-clutch-input-shaft": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-input-shaft.step",
+          "sha256": "d8cd2463c1dfe4a97709d08204e370517aeebe698f82eafb5e7a1b2991709c89",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              481.43,
+              -52.7846096908264,
+              152.0
+            ],
+            [
+              525.4300000000001,
+              -11.215390309169601,
+              188.0
+            ]
+          ]
+        },
+        "fan-clutch-housing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-housing.step",
+          "sha256": "d1351713dd88f6e2b7b2ae6016e5fd29a2dba9b4bf51f26a6dc530bc1e5cfa62",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              504.43,
+              -123.44,
+              78.56
+            ],
+            [
+              545.4300000000001,
+              59.44,
+              261.44
+            ]
+          ]
+        },
+        "fan-clutch-bearing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-bearing.step",
+          "sha256": "f7a6502cf621e84c512aa5f21d0389039ba70f3f6472519134ae436b9abc61c9",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              505.43,
+              -53.95,
+              148.05
+            ],
+            [
+              517.4300000000001,
+              -10.05,
+              191.95
+            ]
+          ]
+        },
+        "fan-clutch-shaft-seal": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-shaft-seal.step",
+          "sha256": "b43033dea5b42ef089184b5269f9c4746f7d17424c2eee5d33fd3021b793c1cc",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              503.83,
+              -53.95,
+              148.05
+            ],
+            [
+              505.03000000000003,
+              -10.05,
+              191.95
+            ]
+          ]
+        },
+        "fan-clutch-drive-rotor": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-drive-rotor.step",
+          "sha256": "31134fed57db3e3282ee43a96655584b1125f1007d68c00ce2000bba193d3b87",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              521.4300000000001,
+              -111.0,
+              91.0
+            ],
+            [
+              530.4300000000001,
+              47.0,
+              249.0
+            ]
+          ]
+        },
+        "fan-clutch-reservoir-partition": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-reservoir-partition.step",
+          "sha256": "e780b5f42233b90070cb658b166776013f4d10d2a0adefa083fd837eb36148cb",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              528.4300000000001,
+              -116.95,
+              85.05
+            ],
+            [
+              535.4300000000001,
+              52.95,
+              254.95
+            ]
+          ]
+        },
+        "fan-clutch-front-cover": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-front-cover.step",
+          "sha256": "27484fa4e26bfb35a38f43ec48dbc39b0e422d124b139306817e283d7599b878",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              545.4300000000001,
+              -123.44,
+              78.56
+            ],
+            [
+              553.3120000000001,
+              59.44,
+              261.44
+            ]
+          ]
+        },
+        "fan-clutch-control-valve": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-control-valve.step",
+          "sha256": "07c4dd3f842b64f5abb8dbad73447a3d8d18423a4de62fe5ac42d3346a560322",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              533.4300000000001,
+              -34.5,
+              166.5
+            ],
+            [
+              551.4300000000001,
+              14.0,
+              173.5
+            ]
+          ]
+        },
+        "fan-clutch-thermal-spring": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-fan-clutch-thermal-spring.step",
+          "sha256": "86fb6ab999e3bb0314524d303a3af4b64bd224cac07b8c6030d7e2f71ced545f",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              550.9300000000001,
+              -45.4,
+              155.6
+            ],
+            [
+              552.4300000000001,
+              -16.6,
+              182.40000000000018
+            ]
+          ]
+        },
+        "cooling-fan-spider": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-spider.step",
+          "sha256": "4be1ff4ef75f70ae09d4ab1cc3d3493fde1d51fb64452347d0961a7697a5fc23",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              511.18,
+              -146.6577216247,
+              49.14095048459309
+            ],
+            [
+              513.1800000000001,
+              89.0,
+              290.8590495154358
+            ]
+          ]
+        },
+        "cooling-fan-blade-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-1.step",
+          "sha256": "2390aa314ef92cac9fce84772bc5a6578f4bfeeeabb80a064a2e968a3d5d136d",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              73.9999999,
+              129.9207532269957
+            ],
+            [
+              525.8751412709239,
+              208.0300001,
+              210.0792467730102
+            ]
+          ]
+        },
+        "cooling-fan-rivet-1-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-1-1.step",
+          "sha256": "8881540641efe40cc4dda6876e30971fca4620a4f496bfad9cff3e5f098ddbfb",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              74.8,
+              158.8
+            ],
+            [
+              514.3800000000001,
+              83.2,
+              167.2
+            ]
+          ]
+        },
+        "cooling-fan-rivet-1-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-1-2.step",
+          "sha256": "8c30cc6eea5109d3b80bfafe5718e705b1f9c610eabcab03822cfe58748fe90f",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              74.8,
+              172.8
+            ],
+            [
+              514.3800000000001,
+              83.2,
+              181.2
+            ]
+          ]
+        },
+        "cooling-fan-blade-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-2.step",
+          "sha256": "57f0e64292e98c929834ec6278844d2e00c0c7e303dd616b460bc8be1260984c",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              23.92610962496201,
+              244.7687696174303
+            ],
+            [
+              525.8751412709239,
+              143.6760268211674,
+              377.6672995560616
+            ]
+          ]
+        },
+        "cooling-fan-rivet-2-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-2-1.step",
+          "sha256": "d8ef512a12f375ca68b9b46fc5fcb46933c9a66d0f92085a73316d24287f24a7",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              38.480188383595994,
+              248.21886594094002
+            ],
+            [
+              514.3800000000001,
+              46.880188383596,
+              256.61886594094
+            ]
+          ]
+        },
+        "cooling-fan-rivet-2-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-2-2.step",
+          "sha256": "c14280923cc2b2ef5aca0276ce538772b607a7acd2894bfe6acd30ad25618418",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              27.534547629043,
+              256.94772316696003
+            ],
+            [
+              514.3800000000001,
+              35.934547629043,
+              265.34772316696
+            ]
+          ]
+        },
+        "cooling-fan-blade-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-3.step",
+          "sha256": "087100b20ab7a236fca72dcff9c42fdc7288c9d86a5324972f991b50d12698cf",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              -119.3667235951952,
+              270.4495864498537
+            ],
+            [
+              525.8751412709239,
+              -35.021574026838316,
+              409.3279190354354
+            ]
+          ]
+        },
+        "cooling-fan-rivet-3-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-3-1.step",
+          "sha256": "44e9c76baec2f31a02542b80b715c4c4ec00139df4a04bea15103e6c02d94c68",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -54.07532828387,
+              275.57464478987004
+            ],
+            [
+              514.3800000000001,
+              -45.675328283869995,
+              283.97464478987
+            ]
+          ]
+        },
+        "cooling-fan-rivet-3-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-3-2.step",
+          "sha256": "7ce2e9fdc19c451a9d52a70fc71f01b24177095d895cc892ed80bec291eeea52",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -67.72431905442,
+              272.45935171448
+            ],
+            [
+              514.3800000000001,
+              -59.324319054419995,
+              280.85935171448
+            ]
+          ]
+        },
+        "cooling-fan-blade-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-4.step",
+          "sha256": "fffa8598486ccd40b133cac24fad3edf289d1b38ff9a0337ed3e496721cb6467",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              -261.2452667531484,
+              204.27908096378837
+            ],
+            [
+              525.8751412709239,
+              -121.86221128909472,
+              304.8756245472896
+            ]
+          ]
+        },
+        "cooling-fan-rivet-4-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-4-1.step",
+          "sha256": "9a46ee5e262724e8837bb6376a81565c1929dc8c1e1270fc1f3d126562a7d772",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -133.1703581633,
+              220.26787711736
+            ],
+            [
+              514.3800000000001,
+              -124.7703581633,
+              228.66787711735998
+            ]
+          ]
+        },
+        "cooling-fan-rivet-4-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-4-2.step",
+          "sha256": "ffc2d0a666608688af951f80d815097ad1be7325020e06b61ec6245ba3935039",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -139.24473051089998,
+              207.65431296673
+            ],
+            [
+              514.3800000000001,
+              -130.8447305109,
+              216.05431296672998
+            ]
+          ]
+        },
+        "cooling-fan-blade-5": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-5.step",
+          "sha256": "e5093d894716d4be5fc77c0eb0f27a57567ad49752163a9e222e9ebd3218c6e2",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              -261.2452667531458,
+              35.124375452705
+            ],
+            [
+              525.8751412709239,
+              -121.86221128909472,
+              135.7209190362116
+            ]
+          ]
+        },
+        "cooling-fan-rivet-5-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-5-1.step",
+          "sha256": "97ba80ed97e01bb982e447dda3910155de800fd22d30c56b3e1c5859291e6459",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -139.24473051089998,
+              123.94568703326
+            ],
+            [
+              514.3800000000001,
+              -130.8447305109,
+              132.34568703326
+            ]
+          ]
+        },
+        "cooling-fan-rivet-5-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-5-2.step",
+          "sha256": "6586c76da04d10b40c08f8007c5c35bd7f10e262d68e38751f51adc82d814aeb",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -133.1703581633,
+              111.33212288263
+            ],
+            [
+              514.3800000000001,
+              -124.7703581633,
+              119.73212288263001
+            ]
+          ]
+        },
+        "cooling-fan-blade-6": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-6.step",
+          "sha256": "6b1964fcf2d5dd95afb2a76795049cc191124fbe7d198c8f2e31016966cdfc10",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              -119.36672359518849,
+              -69.32791903543671
+            ],
+            [
+              525.8751412709239,
+              -35.021574026833875,
+              69.55041355014622
+            ]
+          ]
+        },
+        "cooling-fan-rivet-6-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-6-1.step",
+          "sha256": "d35f9adc1eb3b07a90852139f0c12ea2b7a45cf30aae332e61df69a09e41e4bc",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -67.72431905442,
+              59.140648285512
+            ],
+            [
+              514.3800000000001,
+              -59.324319054419995,
+              67.540648285512
+            ]
+          ]
+        },
+        "cooling-fan-rivet-6-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-6-2.step",
+          "sha256": "10b273ef0105d28b9c7729d4ed4dd682454934449966bd65331d609266340e42",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              -54.07532828387,
+              56.025355210122996
+            ],
+            [
+              514.3800000000001,
+              -45.675328283869995,
+              64.425355210123
+            ]
+          ]
+        },
+        "cooling-fan-blade-7": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-blade-7.step",
+          "sha256": "c7f30fe1a8074ad82c0d8f93fd53a0913584b93ab70718b0939cd77825d9ef04",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.48485872907605,
+              23.926109624962017,
+              -37.667299556057834
+            ],
+            [
+              525.8751412709239,
+              143.67602682117206,
+              95.23123038256968
+            ]
+          ]
+        },
+        "cooling-fan-rivet-7-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-7-1.step",
+          "sha256": "f40a2f946a75c7bf5064ed36ad5f9d09f760989dfda5a24db5e1288d01ac72ab",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              27.534547629043,
+              74.652276833038
+            ],
+            [
+              514.3800000000001,
+              35.934547629043,
+              83.05227683303801
+            ]
+          ]
+        },
+        "cooling-fan-rivet-7-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-rivet-7-2.step",
+          "sha256": "a8bd41458f00a158ef7ec4dab052ec84b0bb391243318efe6d7a99bdd0f22d39",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              507.98,
+              38.480188383595994,
+              83.38113405906
+            ],
+            [
+              514.3800000000001,
+              46.880188383596,
+              91.78113405906001
+            ]
+          ]
+        },
+        "cooling-fan-bolt-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-bolt-1.step",
+          "sha256": "5e43e3dc55c4982efea9aa49bef5205c70bf05cf8c12ada3938eb0b5708e7dba",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.18,
+              -11.359231636794211,
+              191.484808319358
+            ],
+            [
+              519.1800000000001,
+              1.2407683632082125,
+              202.396728407042
+            ]
+          ]
+        },
+        "cooling-fan-bolt-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-bolt-2.step",
+          "sha256": "ac29bb28aba2e6047dede77e9e04373cc29bdcda8c8a21e194176a115d42058b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.18,
+              -65.24076836320121,
+              191.484808319358
+            ],
+            [
+              519.1800000000001,
+              -52.64076836319879,
+              202.396728407042
+            ]
+          ]
+        },
+        "cooling-fan-bolt-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-bolt-3.step",
+          "sha256": "7444d89c32f6ea2ce6e24df7a7567ea429bed90b79b0be4e151aa52b92092b9b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.18,
+              -65.24076836320121,
+              137.603271592948
+            ],
+            [
+              519.1800000000001,
+              -52.64076836319879,
+              148.515191680632
+            ]
+          ]
+        },
+        "cooling-fan-bolt-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-cooling-fan-bolt-4.step",
+          "sha256": "3ab3665691d2b25dfc364cdc32fa3e515e3e38038f56533e1ec1b8af4abd9c24",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.18,
+              -11.359231636794211,
+              137.603271592948
+            ],
+            [
+              519.1800000000001,
+              1.2407683632082125,
+              148.515191680632
+            ]
+          ]
+        },
+        "water-pump-seal-carrier": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-carrier.step",
+          "sha256": "990dd3a9e1ce47f6f1beb82a18be2f9be91a07f18d088dc43de8a51b235f5ecd",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              409.43,
+              -56.0,
+              146.0
+            ],
+            [
+              412.43,
+              -8.0,
+              194.0
+            ]
+          ]
+        },
+        "water-pump-seal-stationary-face": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-stationary-face.step",
+          "sha256": "a55005a4a344351c1dfbad10200dbc1c4263845fb8a22cf66f70789841aee961",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              404.93,
+              -50.0,
+              152.0
+            ],
+            [
+              406.93,
+              -14.0,
+              188.0
+            ]
+          ]
+        },
+        "water-pump-seal-rotating-face": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-rotating-face.step",
+          "sha256": "eb7d7b7aa6ab8c33fa0bae8a9dd4c0cdcac51db06ad3bb51ee4733b1dfd4b010",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              402.43,
+              -50.0,
+              152.0
+            ],
+            [
+              404.93,
+              -14.0,
+              188.0
+            ]
+          ]
+        },
+        "water-pump-seal-shaft-collar": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-shaft-collar.step",
+          "sha256": "f58d66679dab369751d66bfdeb52a271bc7d1a21a9e9af94338eae7d7d8845eb",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              402.43,
+              -41.0,
+              161.0
+            ],
+            [
+              404.93,
+              -23.0,
+              179.0
+            ]
+          ]
+        },
+        "water-pump-seal-bellows": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-bellows.step",
+          "sha256": "ad8517f23ad6e707d8a0c6ea752cba93c896f252a75a3dc37ff2b2507a99a32c",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              405.43,
+              -43.0,
+              159.0
+            ],
+            [
+              411.43,
+              -21.0,
+              181.0
+            ]
+          ]
+        },
+        "water-pump-seal-spring": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-seal-spring.step",
+          "sha256": "dfed1d332c8183124a38e6601c98b83b7e22c99e175a0b440fa7e254815884f9",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              406.1300825470494,
+              -47.89999916699156,
+              154.09999990000318
+            ],
+            [
+              412.2302681176556,
+              -16.100000833006014,
+              185.8999829769274
+            ]
+          ]
+        },
+        "water-pump-shaft": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-shaft.step",
+          "sha256": "7ed27a11115e933cd27e42167e751a99c6a7df56514acfa4fddcad899d2ca394",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              365.0,
+              -40.0,
+              162.0
+            ],
+            [
+              470.43,
+              -24.0,
+              178.0
+            ]
+          ]
+        },
+        "water-pump-housing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-housing.step",
+          "sha256": "50e0711b25088264d917e71410e187d4397dbc83fffc6f9a26f209c9a16aebe4",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              374.9999999,
+              -109.7000001,
+              94.75
+            ],
+            [
+              462.43000010000003,
+              45.8000001,
+              250.5000001
+            ]
+          ]
+        },
+        "water-pump-pulley": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/nominal-water-pump-pulley.step",
+          "sha256": "610c66e6841685769fdbff6d9e2ad74880f0420511de081241f8dfe64510fd1e",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              459.56,
+              -107.0,
+              95.0
+            ],
+            [
+              487.56,
+              43.0,
+              245.0
+            ]
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-shaft",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-shaft",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-housing",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "errors": [],
+      "conflicts": []
+    },
+    "inch-value": {
+      "height_mm": 98.552,
+      "parts": {
+        "water-pump-drive-hub": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-drive-hub.step",
+          "sha256": "7141e3f20a9c8bf4565ae851a1d9e7a474530ad717db9c08e4995046a3999e87",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.552,
+              -67.0,
+              135.0
+            ],
+            [
+              499.052,
+              3.0,
+              205.0
+            ]
+          ]
+        },
+        "water-pump-bearing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-bearing.step",
+          "sha256": "c653b34b80ec0f27b68cf30bb3ac245d878330731a9be1a1ae939347b2cd1352",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              425.552,
+              -55.9,
+              146.1
+            ],
+            [
+              459.552,
+              -8.100000000000001,
+              193.9
+            ]
+          ]
+        },
+        "water-pump-slinger": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-slinger.step",
+          "sha256": "152a5e615fc69ca6cfb82c85da9e8a5d546bd369e547046ba214140a2c545c73",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              419.952,
+              -49.0,
+              153.0
+            ],
+            [
+              421.15200000000004,
+              -15.0,
+              187.0
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-pulley-bolt-1.step",
+          "sha256": "526104f16f08510a0e81ce95179047bd7baa30f37d21ae4e56340eb0c19149ca",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.552,
+              -12.500000000000865,
+              165.236860279186
+            ],
+            [
+              480.052,
+              -1.4999999999991338,
+              174.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-pulley-bolt-2.step",
+          "sha256": "edf2ffb03c5438409832ace6ae080493292be3667cde3ad007eb503029349c07",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.552,
+              -37.50000000000087,
+              190.236860279186
+            ],
+            [
+              480.052,
+              -26.499999999999133,
+              199.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-pulley-bolt-3.step",
+          "sha256": "3dc3e65d530ae845736e36231b476c78e164e692ceb3e839e8f3b18b97f6bd21",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.552,
+              -62.50000000000087,
+              165.236860279186
+            ],
+            [
+              480.052,
+              -51.49999999999913,
+              174.763139720814
+            ]
+          ]
+        },
+        "water-pump-pulley-bolt-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-pulley-bolt-4.step",
+          "sha256": "d71bb0308a319b1a98f05eaf1e8e767150654744b431c2c016eb84cb6c78304b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              465.552,
+              -37.50000000000087,
+              140.236860279186
+            ],
+            [
+              480.052,
+              -26.499999999999133,
+              149.763139720814
+            ]
+          ]
+        },
+        "fan-clutch-input-shaft": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-input-shaft.step",
+          "sha256": "744d738da713362be39ef7e0fcaeaea4a7cd526797e28af7164f569f470a2f4d",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              481.552,
+              -52.7846096908264,
+              152.0
+            ],
+            [
+              525.552,
+              -11.215390309169601,
+              188.0
+            ]
+          ]
+        },
+        "fan-clutch-housing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-housing.step",
+          "sha256": "09afc7a25e2c85194ccd1ddab910b7af8c4f8a4f093c1b375ca904fe0dd1deb8",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              504.552,
+              -123.44,
+              78.56
+            ],
+            [
+              545.552,
+              59.44,
+              261.44
+            ]
+          ]
+        },
+        "fan-clutch-bearing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-bearing.step",
+          "sha256": "eb49dc261684d069060827b69c22f2a2c3f8186fc1977c0bda388febe2f657b7",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              505.552,
+              -53.95,
+              148.05
+            ],
+            [
+              517.552,
+              -10.05,
+              191.95
+            ]
+          ]
+        },
+        "fan-clutch-shaft-seal": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-shaft-seal.step",
+          "sha256": "cb7418246d7ae9c1d6d29aa4b173748d6c19e01a92f217c849ead9f3607df348",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              503.952,
+              -53.95,
+              148.05
+            ],
+            [
+              505.15200000000004,
+              -10.05,
+              191.95
+            ]
+          ]
+        },
+        "fan-clutch-drive-rotor": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-drive-rotor.step",
+          "sha256": "85764fcecb7d14d37f2e97abc2e9b4bc5cb99c564ace95f76cdda5d5b775f1fe",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              521.552,
+              -111.0,
+              91.0
+            ],
+            [
+              530.552,
+              47.0,
+              249.0
+            ]
+          ]
+        },
+        "fan-clutch-reservoir-partition": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-reservoir-partition.step",
+          "sha256": "858bbfdac62d0952442269edd97c8dbdbb75d78d85041caa02b169874940ec3b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              528.552,
+              -116.95,
+              85.05
+            ],
+            [
+              535.552,
+              52.95,
+              254.95
+            ]
+          ]
+        },
+        "fan-clutch-front-cover": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-front-cover.step",
+          "sha256": "977d30526f6c014637676ee2861f4fb651e665604013f1330405a2e2e2080a99",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              545.552,
+              -123.44,
+              78.56
+            ],
+            [
+              553.434,
+              59.44,
+              261.44
+            ]
+          ]
+        },
+        "fan-clutch-control-valve": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-control-valve.step",
+          "sha256": "40bb5cf37be4ec86a676c797cec0cd84417bb9913169f9ed086b3e5a0542f50f",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              533.552,
+              -34.5,
+              166.5
+            ],
+            [
+              551.552,
+              14.0,
+              173.5
+            ]
+          ]
+        },
+        "fan-clutch-thermal-spring": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-fan-clutch-thermal-spring.step",
+          "sha256": "3d869591ec29b2d47786bd5dde7b469e532b1276e6e8333f9020bf6289ab918a",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              551.052,
+              -45.4,
+              155.6
+            ],
+            [
+              552.552,
+              -16.6,
+              182.40000000000018
+            ]
+          ]
+        },
+        "cooling-fan-spider": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-spider.step",
+          "sha256": "d6e7dc804e6a4c7e8d3bfb7cad548a223f9fad5452ad620c048ef253aa18dbcd",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              511.302,
+              -146.6577216247,
+              49.14095048459309
+            ],
+            [
+              513.302,
+              89.0,
+              290.8590495154358
+            ]
+          ]
+        },
+        "cooling-fan-blade-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-1.step",
+          "sha256": "3bbcfd9be748201ba5e4b3211f29c4b6c7c0ccf1c24333e44bc6be3eba25fd94",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              73.9999999,
+              129.9207532269957
+            ],
+            [
+              525.9971412709239,
+              208.0300001,
+              210.0792467730102
+            ]
+          ]
+        },
+        "cooling-fan-rivet-1-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-1-1.step",
+          "sha256": "da0ee118bd78fb5fb3275efac673003c2d172f5a2a103f73eee77c180fb36ca5",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              74.8,
+              158.8
+            ],
+            [
+              514.5020000000001,
+              83.2,
+              167.2
+            ]
+          ]
+        },
+        "cooling-fan-rivet-1-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-1-2.step",
+          "sha256": "a782b5a76b73eb1e3c264c8d5c743e8f298b56a8193ac499bba24bca4bcf2dbd",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              74.8,
+              172.8
+            ],
+            [
+              514.5020000000001,
+              83.2,
+              181.2
+            ]
+          ]
+        },
+        "cooling-fan-blade-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-2.step",
+          "sha256": "e6647798074691f8a437f28834f6e1bb3cb3aa45f1b0f2e887b659fbce3a240b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              23.92610962496201,
+              244.7687696174303
+            ],
+            [
+              525.9971412709239,
+              143.6760268211674,
+              377.6672995560616
+            ]
+          ]
+        },
+        "cooling-fan-rivet-2-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-2-1.step",
+          "sha256": "e97eaa2becbde7edb7bcd2449065c135452330292683b457ef73595b806b1b48",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              38.480188383595994,
+              248.21886594094002
+            ],
+            [
+              514.5020000000001,
+              46.880188383596,
+              256.61886594094
+            ]
+          ]
+        },
+        "cooling-fan-rivet-2-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-2-2.step",
+          "sha256": "befb624e4b3290003202b9868a9dfffcc845af44bbff8d6d46cd856fa256bcda",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              27.534547629043,
+              256.94772316696003
+            ],
+            [
+              514.5020000000001,
+              35.934547629043,
+              265.34772316696
+            ]
+          ]
+        },
+        "cooling-fan-blade-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-3.step",
+          "sha256": "9c82c5dd5492223965ed40f0cb8f8f06e6a44f11899f602a17453614ea1e070b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              -119.3667235951952,
+              270.4495864498537
+            ],
+            [
+              525.9971412709239,
+              -35.021574026838316,
+              409.3279190354354
+            ]
+          ]
+        },
+        "cooling-fan-rivet-3-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-3-1.step",
+          "sha256": "d0c4ef1833b9d6425d537bf7dae2056bc53eb3b0b6b5c9ab1e8478df8f83ec10",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -54.07532828387,
+              275.57464478987004
+            ],
+            [
+              514.5020000000001,
+              -45.675328283869995,
+              283.97464478987
+            ]
+          ]
+        },
+        "cooling-fan-rivet-3-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-3-2.step",
+          "sha256": "3e8a52708395421e96f2fe386fb680f0db0edf6dde8b4498cee69fe16463aaa8",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -67.72431905442,
+              272.45935171448
+            ],
+            [
+              514.5020000000001,
+              -59.324319054419995,
+              280.85935171448
+            ]
+          ]
+        },
+        "cooling-fan-blade-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-4.step",
+          "sha256": "e479acc2a63736a9f3465e64abc23802fb785800a98fcc51cfc5ae5059470fa1",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              -261.2452667531484,
+              204.27908096378837
+            ],
+            [
+              525.9971412709239,
+              -121.86221128909472,
+              304.8756245472896
+            ]
+          ]
+        },
+        "cooling-fan-rivet-4-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-4-1.step",
+          "sha256": "43202d2e7eae5b6bc3c5867b4c24a49d92577089984f10684fa9d8778c4fff78",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -133.1703581633,
+              220.26787711736
+            ],
+            [
+              514.5020000000001,
+              -124.7703581633,
+              228.66787711735998
+            ]
+          ]
+        },
+        "cooling-fan-rivet-4-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-4-2.step",
+          "sha256": "4417f00b3b90971cbcf44bec25c575dcb04ce6a673664fb58b960f1a0ec983be",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -139.24473051089998,
+              207.65431296673
+            ],
+            [
+              514.5020000000001,
+              -130.8447305109,
+              216.05431296672998
+            ]
+          ]
+        },
+        "cooling-fan-blade-5": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-5.step",
+          "sha256": "d2873b506eaa902795c9ce0c06d9c5500d4acd4d4ac1828836531bd39df641b3",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              -261.2452667531458,
+              35.124375452705
+            ],
+            [
+              525.9971412709239,
+              -121.86221128909472,
+              135.7209190362116
+            ]
+          ]
+        },
+        "cooling-fan-rivet-5-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-5-1.step",
+          "sha256": "db4c1134d4454aa5d4613cbd1c266b081639c8e109297df1e273ed5c69f3139d",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -139.24473051089998,
+              123.94568703326
+            ],
+            [
+              514.5020000000001,
+              -130.8447305109,
+              132.34568703326
+            ]
+          ]
+        },
+        "cooling-fan-rivet-5-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-5-2.step",
+          "sha256": "f7d15a3c839bd3690a5fb37f21ce9008c1362414f1369db8df20f062eb8cc177",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -133.1703581633,
+              111.33212288263
+            ],
+            [
+              514.5020000000001,
+              -124.7703581633,
+              119.73212288263001
+            ]
+          ]
+        },
+        "cooling-fan-blade-6": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-6.step",
+          "sha256": "d46cb4ea2a4d02b01735b820ef1f991444c1a7d280cc5f82c03154234745e884",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              -119.36672359518849,
+              -69.32791903543671
+            ],
+            [
+              525.9971412709239,
+              -35.021574026833875,
+              69.55041355014622
+            ]
+          ]
+        },
+        "cooling-fan-rivet-6-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-6-1.step",
+          "sha256": "453ec245e7d4ccea04c1c28490217a3968f0959bc96b9221862b9cb7e7a641cf",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -67.72431905442,
+              59.140648285512
+            ],
+            [
+              514.5020000000001,
+              -59.324319054419995,
+              67.540648285512
+            ]
+          ]
+        },
+        "cooling-fan-rivet-6-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-6-2.step",
+          "sha256": "34653023defa6b39cb84db74eae7ceb1d88c932807631c14f749d94d6c5d8fce",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              -54.07532828387,
+              56.025355210122996
+            ],
+            [
+              514.5020000000001,
+              -45.675328283869995,
+              64.425355210123
+            ]
+          ]
+        },
+        "cooling-fan-blade-7": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-blade-7.step",
+          "sha256": "151a0985d03d8cbe2d1ca898a91bc25c73214faadbc338ddb01bc0de64311e2b",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              494.60685872907607,
+              23.926109624962017,
+              -37.667299556057834
+            ],
+            [
+              525.9971412709239,
+              143.67602682117206,
+              95.23123038256968
+            ]
+          ]
+        },
+        "cooling-fan-rivet-7-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-7-1.step",
+          "sha256": "f3bc7e8c5977bd0440ab084e963d96840e49b1cfde3b7ba3976c396a694ca08a",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              27.534547629043,
+              74.652276833038
+            ],
+            [
+              514.5020000000001,
+              35.934547629043,
+              83.05227683303801
+            ]
+          ]
+        },
+        "cooling-fan-rivet-7-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-rivet-7-2.step",
+          "sha256": "dc7552290dd667616b8dda07ec39a7a3fa65d5c9c001c465928ba5cf2a041158",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              508.10200000000003,
+              38.480188383595994,
+              83.38113405906
+            ],
+            [
+              514.5020000000001,
+              46.880188383596,
+              91.78113405906001
+            ]
+          ]
+        },
+        "cooling-fan-bolt-1": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-bolt-1.step",
+          "sha256": "020905574b5c04ec673aed426f2f8fd955991e8422f19b7bb318182a8e617392",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.302,
+              -11.359231636794211,
+              191.484808319358
+            ],
+            [
+              519.302,
+              1.2407683632082125,
+              202.396728407042
+            ]
+          ]
+        },
+        "cooling-fan-bolt-2": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-bolt-2.step",
+          "sha256": "e3c9d8fa2e9e0ba38fe5fb3ab38378a299d62989328ab3fed991c6443d548eff",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.302,
+              -65.24076836320121,
+              191.484808319358
+            ],
+            [
+              519.302,
+              -52.64076836319879,
+              202.396728407042
+            ]
+          ]
+        },
+        "cooling-fan-bolt-3": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-bolt-3.step",
+          "sha256": "d08028e0ed67fa545befc0b79848720667d6e2e26833da8086d9bfe0e6ba8e11",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.302,
+              -65.24076836320121,
+              137.603271592948
+            ],
+            [
+              519.302,
+              -52.64076836319879,
+              148.515191680632
+            ]
+          ]
+        },
+        "cooling-fan-bolt-4": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-cooling-fan-bolt-4.step",
+          "sha256": "e22eb59d4c3c1f5751928e0f92044470c0eab370511797fc1f712494c67c5495",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              506.302,
+              -11.359231636794211,
+              137.603271592948
+            ],
+            [
+              519.302,
+              1.2407683632082125,
+              148.515191680632
+            ]
+          ]
+        },
+        "water-pump-seal-carrier": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-carrier.step",
+          "sha256": "c747f2f3fa5ce33be6ffda55ead505c4776918f683f44516a0421ab7a4c2cc4a",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              409.552,
+              -56.0,
+              146.0
+            ],
+            [
+              412.552,
+              -8.0,
+              194.0
+            ]
+          ]
+        },
+        "water-pump-seal-stationary-face": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-stationary-face.step",
+          "sha256": "3e44083eb0a50690ea0d9c96fedb6f7a0c296d17fb7d39a370d2044b6708c739",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              405.052,
+              -50.0,
+              152.0
+            ],
+            [
+              407.052,
+              -14.0,
+              188.0
+            ]
+          ]
+        },
+        "water-pump-seal-rotating-face": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-rotating-face.step",
+          "sha256": "b7b3507d5e00e2f575f264f09ed1ba3e56a2ca50455b9e22873e880190837917",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              402.552,
+              -50.0,
+              152.0
+            ],
+            [
+              405.052,
+              -14.0,
+              188.0
+            ]
+          ]
+        },
+        "water-pump-seal-shaft-collar": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-shaft-collar.step",
+          "sha256": "a273d68650689e9247ce968e17e37a430f142c09e49f88edc82324849b95e173",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              402.552,
+              -41.0,
+              161.0
+            ],
+            [
+              405.052,
+              -23.0,
+              179.0
+            ]
+          ]
+        },
+        "water-pump-seal-bellows": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-bellows.step",
+          "sha256": "5ce3e93cd680022afa4afb52190dd8043c0c973d80d5c66b13ff684590b4a581",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              405.552,
+              -43.0,
+              159.0
+            ],
+            [
+              411.552,
+              -21.0,
+              181.0
+            ]
+          ]
+        },
+        "water-pump-seal-spring": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-seal-spring.step",
+          "sha256": "bdd3dcc153d0d5f22cfd21a6bb879bcfae71696117edc6aea13618ea95c83d08",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              406.25208254704944,
+              -47.89999916699156,
+              154.09999990000318
+            ],
+            [
+              412.3522681176556,
+              -16.100000833006014,
+              185.8999829769274
+            ]
+          ]
+        },
+        "water-pump-shaft": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-shaft.step",
+          "sha256": "a332f26e1dc99c2735efea5436dc5ebe6665222dad2a7ad344b7f1b2dd7bbdf2",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              365.0,
+              -40.0,
+              162.0
+            ],
+            [
+              470.552,
+              -24.0,
+              178.0
+            ]
+          ]
+        },
+        "water-pump-housing": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-housing.step",
+          "sha256": "fa88ca81685c1d2e373212e77390412ad7e2121f9d137b796659c361e91e12f2",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              374.9999999,
+              -109.7000001,
+              94.75
+            ],
+            [
+              462.55200010000004,
+              45.8000001,
+              250.5000001
+            ]
+          ]
+        },
+        "water-pump-pulley": {
+          "path": "cad/engine/generated/pump-height-20261002-trial2/inch-value-water-pump-pulley.step",
+          "sha256": "a2f5cb0797483b0340c3be48a42aaa3275b66c9fdd68cdd8cfae9c6150a58673",
+          "valid": true,
+          "solids": 1,
+          "bounds": [
+            [
+              459.56,
+              -107.0,
+              95.0
+            ],
+            [
+              487.56,
+              43.0,
+              245.0
+            ]
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-drive-hub",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-bearing",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-slinger",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-1",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-2",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-3",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-pulley-bolt-4",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-carrier",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-stationary-face",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-rotating-face",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-shaft-collar",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-bellows",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-shaft",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-seal-spring",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-shaft",
+          "b": "water-pump-housing",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-shaft",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        },
+        {
+          "a": "water-pump-housing",
+          "b": "water-pump-pulley",
+          "overlap_mm3": 0.0
+        }
+      ],
+      "errors": [],
+      "conflicts": []
+    }
+  },
+  "inputs": {
+    "scripts/pump-height-20261002-core-trial2.py": "fea8fdaf4db1a9cf34b64a402af3ebad408f1770485fc634934f5ef545caf9d1",
+    "cad/engine/pump_height_20261002_trial2.py": "813cd11e9f47c00badce849eccc47cadb804d8da7de90839437c407fc62564b7",
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "cad/engine/generated/waterpump-heater-source-candidate/housing.step": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+    "docs/components/pump-height-20261002-handoff.md": "7a9b2deb61610116ac99d09abe9f47cbf2be91a4e86dbf03da413b10d2506164",
+    "cad/engine/generated/water-pump-drive-hub.step": "cfb89c5448c502135bd2d7b79d09a102739ae2fae70cacbff8d0c3327e20ba03",
+    "cad/engine/generated/water-pump-bearing.step": "03d3d6be74a7daf1726020fbee170f28a24d5d5330b00d3a22b44be8d877372c",
+    "cad/engine/generated/water-pump-slinger.step": "aa131297221ea0107faa0e6b69dd2cb9c746641039b17e548d0f2906ca79fb52",
+    "cad/engine/generated/water-pump-pulley-bolt.step": "5cedad41c4720828a27b233d097a1d95281e81e9c9e37f22fa66d895f216b411",
+    "cad/engine/generated/fan-clutch-input-shaft.step": "0e161db04d9d4c054a8f5151d7c496573eaac00058ed612f40e5ff1d6619f04e",
+    "cad/engine/generated/fan-clutch-housing.step": "e1456cde9981dd94f2a3d802379472e5f1290b92ec5786badd93edd6182eeb4e",
+    "cad/engine/generated/fan-clutch-bearing.step": "9cacf4cfa463f3e617f4050d42ea240e5c47078bf672de6d3fe197937b27488f",
+    "cad/engine/generated/fan-clutch-shaft-seal.step": "ffdd54fdd757e5f6a3cb08a083383dcbb9f178935cc6c02f1782c57dd104beea",
+    "cad/engine/generated/fan-clutch-drive-rotor.step": "62fb683650274888593f03e7eba2c113da70b51e4e7c7d188f9978f6f4ee00df",
+    "cad/engine/generated/fan-clutch-reservoir-partition.step": "48f228c63de380650959002ddb1000783494a07cd09b987bda3ae4ed5112a2bb",
+    "cad/engine/generated/fan-clutch-front-cover.step": "be5f949c00848c83e0d4259eb9c72ed6c8ec0e088ef8aab45a6a67cbab24fd5c",
+    "cad/engine/generated/fan-clutch-control-valve.step": "31e1b34a396a98a51ee72e6342b4c5e5b92d7af8debe00f5513542617edbdf73",
+    "cad/engine/generated/fan-clutch-thermal-spring.step": "25c73a8f309ada1f24f1081158abf23837627262307fad47f2d6aeed9f1b22d7",
+    "cad/engine/generated/cooling-fan-spider.step": "f833f9c241a124468ac1ece3164f8cf93655d79fedd370479e8058f320893505",
+    "cad/engine/generated/cooling-fan-blade.step": "f509bb339bc923d986ffd73e7d219945f8054f5ebf17cbb942f6f29ea784ede4",
+    "cad/engine/generated/cooling-fan-rivet.step": "117d13dfe94c298b3950bb88beb03eb31e1546b46b571b12b0f1a0f28325a67c",
+    "cad/engine/generated/cooling-fan-bolt.step": "4b52f15b383777d5d860348540f0f26699de8598a7912d660c24b1427925c085",
+    "cad/engine/generated/water-pump-seal-carrier.step": "f9ae39cfee9069c7e17a86c16537acff05c8d6ae5d3cd743edc31015e77d3a52",
+    "cad/engine/generated/water-pump-seal-stationary-face.step": "edcab064f78e42818a8409e5a0dae2e83022b42e8e0625c4aaf82eda85ca8d56",
+    "cad/engine/generated/water-pump-seal-rotating-face.step": "9599c357e8cfaa062648cd7cface97ca7f3d374483406c0bbe50e8e38f46ab51",
+    "cad/engine/generated/water-pump-seal-shaft-collar.step": "1e78ae6952427d52a476413b8bca83731fa39bd15049fa4abb0bea0f292f2928",
+    "cad/engine/generated/water-pump-seal-bellows.step": "aed880a28ca0deb61e3f78c917aba099fa39fc4240206bd1159201028d584ea0",
+    "cad/engine/generated/water-pump-seal-spring.step": "2c9f1bccc3a4851c7e3ff6a3afb7b7067c3f0ca7e8625ac40b7df92565a34183",
+    "cad/engine/generated/water-pump-housing.step": "eb1210428b06759483a99fade22a1c1b613954c76aced701383aa0f08fb5498b"
+  }
+}

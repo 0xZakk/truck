@@ -31,3 +31,7 @@ These notes are evidence inputs, not an installed-accuracy claim. Candidate geom
 [[notes/oilpump-online-20261002-separate-attachment-groups|The Army comparison separates three attachment groups]] and [[notes/oilpump-online-20261002-annular-pin|illustrates the separate pin as annular]]. These refine the prior gasket-pattern hypothesis without proving pressure flow or exact truck hardware.
 
 [[notes/act-online-20261002-visible-probe|The identified MTE sensor has an open guard and visible encapsulated element]]. This supports a detailed local replacement specimen; hidden electrical construction and manifold placement remain unresolved.
+
+Ford’s hardware catalog now supplies the nominal exterior dimensions of the identified dowel; [[notes/oilpump-dowel-20261002-nominal-dimensions|dowel dimensions]] keeps its bore, split form and truck applicability unresolved.
+
+The ACT host source contract identifies the [[notes/act-host-online-20261002-front-runner|front terminal lower-intake runner]] while leaving numerical pose and thread engagement unresolved.

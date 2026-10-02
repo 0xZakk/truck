@@ -1,0 +1,9 @@
+# Short-chamber port candidate parameter freeze
+
+Before CAD,2026-10-02. Extends frozen trial2 core; no changes to old module/assets. Full pump scope remains incomplete until both ports and affected neighbors checked. No source dimension claim for these contours.
+
+Large inlet radial orientation−130° and offset6mm reuse the source-sector hypothesis. Analytic radial loft starts at radius-coordinate20 with axial center halfway between reartransition389 and newfrontwall409.43, axial semiaxis10/transverse29; joins round outerR24 at radial60, then96 and145. Circular outlet axial center403 = mounting375 + outer24 + declared4mm rear clearance from mounting plane. This allowance is a local mounting-plane constraint, not a neighbor subtraction. Bore beginsradial10 with axial semiaxis7/transverse20 and joins circularR20 at60..146. Estimated3mm root axialwall and4mm nominal roundwall, beadR25.5 at140..143. This changes the old inlet junction, not its radial source-sector correspondence.
+
+Heaterroot X=375+(404−360)*H/180; tipX=375+(404−438)*H/180; forwardcrestX=375+(404−335)*H/180, using declared source-view landmarks and qualified CarterH. Retain radial rootYZ(-80,230.3), tipYZ(-171,415), rootdirection145°, OD16/bore13/12mminsertion/beadR8.5. All radial geometry and retention remain inherited estimates. Recompute axial tangent from source slope76/100 and existing conditional radialspan205.9/178. This is an axial hypothesis only; perspective study did not validate GMB physicalscale.
+
+Checks before installation consideration: valid single housing/tube, positive rootseat contact, empty lumen probes and blockedcontrols, no solids overlap0.1mm³, whole affectedv4 staticneighbors2mmpad including proposed fan positions and both frozen accessorycarriers. Old port assets not included concurrently. No pressure, motion or vehiclehose/radiator acceptance. Actual candidate render required.

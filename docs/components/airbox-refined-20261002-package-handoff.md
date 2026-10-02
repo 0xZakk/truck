@@ -1,0 +1,9 @@
+# Refined paired-duct specimen preservation
+
+Issue80; root publishes. This is an unpublished deterministic archive of authored candidate geometry and review witnesses, not installation. Exact generated members, current source/report hashes and predecessor inputs are recorded in `docs/airbox-refined-20261002-package.json`.
+
+Run `python3 scripts/airbox-refined-20261002-package.py` from repository root. It verifies worker report and render dependencies, binds the frozen predecessor member hashes to `docs/online-research-candidates-checkpoint.json`, writes a gzip/tar archive with normalized metadata, and stream-verifies every member. No extraction, original-image download, source mutation or publication occurs. The archive excludes photos, manuals, raw captures and composites containing source pixels. Historical authored logs/source are distinctly named and preserve rejected export/diagnostic attempts; only final STEP/GLB files are current geometry.
+
+Restore source code from the integration checkpoint containing this delivery, then the published `studies-2026-10-01-online-research` archive for the eight reused clamp STEPs and twelve previous-view GLBs, then this archive. Exact required predecessor member hashes are recorded; the broad predecessor release's unrelated engine studies are not newly certified by this package. `scripts/engine_qc_raster.py` and the frozen public evidence ledger are repository inputs. Public photos may be reacquired by their ledger URLs for independent visual review; they are not needed to rebuild or display this local candidate.
+
+The package check proves preservation integrity only. It does not rerun CAD, convert inferred contours into source dimensions, establish a vehicle frame or approve installation. See `airbox-refined-20261002-handoff.md` for retained limitations. Root reviewed the source and actual rendered shape; publication remains root's action.

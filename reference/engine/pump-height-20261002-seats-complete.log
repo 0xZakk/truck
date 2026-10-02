@@ -1,0 +1,28 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+{
+  "hub_pulley_named_seat": {
+    "water-pump-drive-hub": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0,
+      "done": true
+    },
+    "water-pump-pulley": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0,
+      "done": true
+    }
+  },
+  "entire_rear_slice_added_mm3": 13428.927226224985,
+  "entire_rear_slice_removed_mm3": 2078.817820360491,
+  "protected_joint_footprint_added_mm3": 598.2294222333666,
+  "protected_joint_footprint_removed_mm3": 2078.8178203605694,
+  "limitation": "Initial contract said exact fullrearX<=389. Port additions are assessed explicitly; jointfootprint result does not erase broader failure. Inherited bearing outerR23.9 vsboreR24 andshaftR8 vsbearingbore8.05 leave estimated radialgaps; no pressed-fit support PASS.",
+  "inputs": {
+    "cad/engine/generated/pump-height-20261002-ports-trial3/nominal-water-pump-housing.step": "a6863f8dbc3dbaa67e97f94311ed67e0a4da6d5b298a45d7c7618137a97bf6de",
+    "cad/engine/generated/pump-height-20261002-ports-trial3/nominal-water-pump-drive-hub.step": "49ba8bb98c439babc2e8d4182a0a45aac14368a188f4c23e99556639d11272e4",
+    "cad/engine/generated/pump-height-20261002-ports-trial3/nominal-water-pump-pulley.step": "62f7f055e680763a4cc298ac82d8417ff3b3857f92e4247d8590e61f94a70a50",
+    "cad/engine/generated/waterpump-heater-source-candidate/housing.step": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+    "scripts/pump-height-20261002-seats.py": "843d7b9c2e2e3ca50254d6e9e6f75f0261d8f30c4ee57d0a569b5f8ad55cce94"
+  }
+}

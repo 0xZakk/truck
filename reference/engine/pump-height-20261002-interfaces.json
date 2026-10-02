@@ -1,0 +1,66 @@
+{
+  "scope": "Local finite passage/seat witnesses only; no containment/pressure claim",
+  "variants": {
+    "nominal": {
+      "valid": true,
+      "solid_counts": [
+        1,
+        1
+      ],
+      "socket": {
+        "housing": {
+          "area_mm2": 603.1857894892407,
+          "missing_mm2": 0.0,
+          "boolean_done": true
+        },
+        "tube": {
+          "area_mm2": 603.1857894892407,
+          "missing_mm2": 0.0,
+          "boolean_done": true
+        }
+      },
+      "passage_obstruction_mm3": {
+        "inlet": 0.0,
+        "heater": 0.0
+      },
+      "blocked_heater_control_mm3": 5.964908911635708,
+      "shaft_axial_gauge_obstruction_mm3": 0.0,
+      "body_tube_overlap_mm3": 0.0
+    },
+    "inch-value": {
+      "valid": true,
+      "solid_counts": [
+        1,
+        1
+      ],
+      "socket": {
+        "housing": {
+          "area_mm2": 603.1857894892407,
+          "missing_mm2": 0.0,
+          "boolean_done": true
+        },
+        "tube": {
+          "area_mm2": 603.1857894892407,
+          "missing_mm2": 0.0,
+          "boolean_done": true
+        }
+      },
+      "passage_obstruction_mm3": {
+        "inlet": 0.0,
+        "heater": 0.0
+      },
+      "blocked_heater_control_mm3": 5.964908911603829,
+      "shaft_axial_gauge_obstruction_mm3": 0.0,
+      "body_tube_overlap_mm3": 0.0
+    }
+  },
+  "inputs": {
+    "scripts/pump-height-20261002-interfaces.py": "24da5f3ba0a0b5e2c3c856e05a036b5d04ee6e12bf54a56d99a00c72b5f6a4a8",
+    "cad/engine/pump_height_20261002_ports_trial2.py": "7eb7742b2b765f71507888f9a0c0f5307b177a46725d33b91b7bcf0e6297c570",
+    "reference/engine/pump-height-20261002-ports-trial2.json": "9251ed4e3b9fc0eb57eb9722cefdf92acb2f997ab4419dd73b07952ecce1fba6",
+    "cad/engine/generated/pump-height-20261002-ports-trial2/nominal-water-pump-housing.step": "5f87f078ea6e9a91f39b59bdeb18e6c2a8bc48bed0110df1fe1fd137cfa2d7af",
+    "cad/engine/generated/pump-height-20261002-ports-trial2/nominal-heater-pump-return-elbow.step": "b88d9611e9d1ec0f60bec20d3607a68e5a90b94d9c68c14a6f7f7ffba60a2daf",
+    "cad/engine/generated/pump-height-20261002-ports-trial2/inch-value-water-pump-housing.step": "26a4b030265e0794ca7dd67a6f7e2edd82521813fa17f61a331aee617d263428",
+    "cad/engine/generated/pump-height-20261002-ports-trial2/inch-value-heater-pump-return-elbow.step": "3718cdd431050171a9cdda303f5c69c5a00f576924af521265296e51a0e73294"
+  }
+}

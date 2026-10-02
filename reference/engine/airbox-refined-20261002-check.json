@@ -1,0 +1,536 @@
+{
+  "inputs": {
+    "cad/engine/airbox_refined_20261002.py": "9eb22fbc869cfd0851984caa9cc84addfd380b414aabffcf204977114a20495c",
+    "reference/engine/online-airbox-research.json": "f33e0c4adfedec7e01cfa52791bfd8633e0c306b91039e1a0b41a6c3bf460a01",
+    "docs/components/airbox-refined-20261002-contract.md": "14a24c0b999295e38b2a7aa1e29c8969870fb2141bdbd0487fe0d0726bf3fdb8"
+  },
+  "parts": {
+    "online-airbox-duct-long": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-long.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-long.glb",
+      "volume_mm3": 343510.91993699304,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          0.0,
+          -14.018380716823081,
+          -44.00174956070141
+        ],
+        [
+          559.0,
+          107.29781404555014,
+          44.00174956070777
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.0017497991263510926
+    },
+    "online-airbox-duct-short": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-short.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-short.glb",
+      "volume_mm3": 329378.8687637364,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          26.0,
+          -107.87311385281284,
+          -44.00169408084474
+        ],
+        [
+          559.0,
+          -2.7402988785217492,
+          44.00169408084853
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.0016943192671092788
+    },
+    "online-airbox-joining-web": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-joining-web.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-joining-web.glb",
+      "volume_mm3": 7758.721753591074,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          342.33709174316,
+          -43.19215465654,
+          -3.500000100000003
+        ],
+        [
+          393.704603122725,
+          -11.295396846919209,
+          3.5000001
+        ]
+      ],
+      "mesh_bounds_error_mm": 9.95476176512966e-06
+    },
+    "online-airbox-retainer": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-retainer.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-retainer.glb",
+      "volume_mm3": 24399.60652434609,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          260.0,
+          -13.956489118019999,
+          -35.500320986882635
+        ],
+        [
+          328.0,
+          62.679904613889,
+          57.0
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.001076058522649248
+    },
+    "online-airbox-clamp-1-band": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-band.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-band.glb",
+      "volume_mm3": 2274.7200452486754,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          7.0,
+          16.799999999999997,
+          -43.199999999999996
+        ],
+        [
+          19.0,
+          103.2,
+          47.500000000000476
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.007149052619936924
+    },
+    "online-airbox-clamp-1-screw": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-screw.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-screw.glb",
+      "volume_mm3": 249.37962484195782,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          10.9,
+          51.0,
+          43.4
+        ],
+        [
+          15.1,
+          69.0,
+          47.6
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.0004161357879652883
+    },
+    "online-airbox-clamp-2-band": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-band.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-band.glb",
+      "volume_mm3": 2274.720045248676,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          33.0,
+          -91.2,
+          -43.199999999999996
+        ],
+        [
+          45.0,
+          -4.799999999999997,
+          47.500000000000476
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.007146731764080982
+    },
+    "online-airbox-clamp-2-screw": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-screw.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-screw.glb",
+      "volume_mm3": 249.37962484195774,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          36.9,
+          -57.0,
+          43.4
+        ],
+        [
+          41.1,
+          -39.0,
+          47.6
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.0004161357879652883
+    },
+    "online-airbox-clamp-3-band": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-band.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-band.glb",
+      "volume_mm3": 1663.6361808627676,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          545.0,
+          -9.199999999999996,
+          -29.199999999999996
+        ],
+        [
+          557.0,
+          49.199999999999996,
+          33.5
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.005799588561053781
+    },
+    "online-airbox-clamp-3-screw": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-screw.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-screw.glb",
+      "volume_mm3": 249.37962484195862,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          548.9,
+          11.0,
+          29.399999999999995
+        ],
+        [
+          553.1,
+          29.0,
+          33.6
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.00041571855545541325
+    },
+    "online-airbox-clamp-4-band": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-band.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-band.glb",
+      "volume_mm3": 1663.6361808627676,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          545.0,
+          -95.19999999999999,
+          -29.199999999999996
+        ],
+        [
+          557.0,
+          -36.800000000000004,
+          33.5
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.005799588561053781
+    },
+    "online-airbox-clamp-4-screw": {
+      "step": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-screw.step",
+      "glb": "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-screw.glb",
+      "volume_mm3": 249.37962484195862,
+      "valid": true,
+      "solids": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          548.9,
+          -75.0,
+          29.399999999999995
+        ],
+        [
+          553.1,
+          -57.0,
+          33.6
+        ]
+      ],
+      "mesh_bounds_error_mm": 0.00041571855545541325
+    }
+  },
+  "asset_hashes": {
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-long.step": "6c59b040a3d2b26e597bfbcb4f202edb8ced45f946bfc905996408a7ac59080f",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-long.glb": "43a56c8af7ab09c654e53ed1caf1cf3a00294bcbb52b6c280cf3dc3a7df44f9f",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-short.step": "cf1e57c09e2f093199fa6b1388755e50a88568a5bffa42e5fdd9d6d537a11455",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-duct-short.glb": "d437ee6edd925b20ef2ea6f38759bf9c240cf1bdd90aab5bd27032dd8943a751",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-joining-web.step": "816d70a18c018f67c8494d1c3a12bdadf87084ccd7e60be346ca34260cd9934f",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-joining-web.glb": "320469c3e086f58249c94ea7cc417e16dc40d5b7d15f039344f3c92da4a12ce5",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-retainer.step": "91e40888f5f81111b39c7ab2fb83c461b7753f85b2f6d3ce2bee36344fd81e12",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-retainer.glb": "cd42ed81918937b5d526ce43d06d0c8957ac59ae1e062f7756e37a03ce73de76",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-band.step": "87b0653e31c4f7cb97b797ad719ca54a3a29b3e3cfc669bd6e6161ca737221ea",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-band.glb": "caff77d6e33b57f393681304b60bf944ccee1640f0e3a1b507458644de2e1e45",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-screw.step": "bc47770decc7c370b2a39926ef6fe6ab5f637c2664aaaaaa43a39ba710b594a8",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-1-screw.glb": "76867b82743540d4ae5c35e939573d4ad48ce1a8f122917c6c3c673d80279519",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-band.step": "97c14aaed74447ec4bfc3343e6e50729abb3ef1c6a1db9530b2fdf98e3d4649b",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-band.glb": "d52f03159a9d81b387f955052373204cfd923de672e2ab58a92989f9c24dd1a7",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-screw.step": "3df629d5aa464b93a1c1dbde57dc262b4921c162b38b283636317963c48ffadb",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-2-screw.glb": "bf8aa2cd49ef4194d4ad20652c176a3920278abc060aca72f80916e2557b5d3d",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-band.step": "001e01cba9975e3f6bfbb84ffcf01ca73c5276312e2461b1f1ccca7ef7047c09",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-band.glb": "11107cb99c5d5f4ece14ede05d65fa8edfbcedc1e6b0fb2fb872d42fa5f474d7",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-screw.step": "89e237c841f4fcb8f3af7b5001111668d8eb6df82ca0d141b7dc6102ba592973",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-3-screw.glb": "a3504ee4e63e0466f5543f82b8f7152836c9a9a416ca0f2b756d2db307b6954b",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-band.step": "c1f2e240c32ef8a6c279c88e8abca2c17db232fdac00424104dde4bfe8eb0e1d",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-band.glb": "3fd23f043a33b313b7bf5e5ffade1e7a8c26c8fa4066f9fdf5435e514084f851",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-screw.step": "da6232bf84833795ac75742d6e4f11a42ef6f0405c45c0c78ec1a589430424ae",
+    "cad/engine/generated/airbox-refined-20261002/online-airbox-clamp-4-screw.glb": "9a526386895bac5e94be0074a021ac8c010607a1edf366ef967416bf8ec86c60"
+  },
+  "probes": {
+    "online-airbox-duct-long": {
+      "axial_sections": 39,
+      "radial_points": 936,
+      "axis_points": 39,
+      "coverage": "Sampled crests/valleys every half pitch, cuff and smooth-shoulder stations; not continuous flexibility",
+      "locations_x_mm": [
+        8,
+        24,
+        61,
+        86,
+        92,
+        98,
+        104,
+        110,
+        116,
+        122,
+        128,
+        134,
+        140,
+        146,
+        152,
+        158,
+        164,
+        170,
+        176,
+        182,
+        188,
+        194,
+        200,
+        206,
+        212,
+        218,
+        224,
+        230,
+        236,
+        242,
+        248,
+        254,
+        270,
+        286,
+        350,
+        380,
+        440,
+        490,
+        550
+      ]
+    },
+    "online-airbox-duct-short": {
+      "axial_sections": 41,
+      "radial_points": 984,
+      "axis_points": 41,
+      "coverage": "Sampled crests/valleys every half pitch, cuff and smooth-shoulder stations; not continuous flexibility",
+      "locations_x_mm": [
+        34,
+        50,
+        85,
+        110,
+        116,
+        122,
+        128,
+        134,
+        140,
+        146,
+        152,
+        158,
+        164,
+        170,
+        176,
+        182,
+        188,
+        194,
+        200,
+        206,
+        212,
+        218,
+        224,
+        230,
+        236,
+        242,
+        248,
+        254,
+        260,
+        266,
+        272,
+        278,
+        284,
+        290,
+        306,
+        322,
+        350,
+        380,
+        440,
+        490,
+        550
+      ]
+    }
+  },
+  "local_pairs": [
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-duct-short",
+      "overlap_mm3": 0,
+      "gap_mm": 13.277529519622918
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-joining-web",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-retainer",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-clamp-1-band",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-clamp-1-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.8999999999999986
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-clamp-2-band",
+      "overlap_mm3": 0,
+      "gap_mm": 22.37552388846728
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-clamp-3-band",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-long",
+      "b": "online-airbox-clamp-3-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.8999999999999986
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-joining-web",
+      "overlap_mm3": 0,
+      "gap_mm": 7.105427357601002e-15
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-retainer",
+      "overlap_mm3": 0,
+      "gap_mm": 20.286793459331193
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-clamp-2-band",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-clamp-2-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.8999999999999986
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-clamp-3-band",
+      "overlap_mm3": 0,
+      "gap_mm": 28.300000000000004
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-clamp-4-band",
+      "overlap_mm3": 0,
+      "gap_mm": 0.0
+    },
+    {
+      "a": "online-airbox-duct-short",
+      "b": "online-airbox-clamp-4-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.8999999999999986
+    },
+    {
+      "a": "online-airbox-clamp-1-band",
+      "b": "online-airbox-clamp-1-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.09999999999992958
+    },
+    {
+      "a": "online-airbox-clamp-2-band",
+      "b": "online-airbox-clamp-2-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.09999999999993031
+    },
+    {
+      "a": "online-airbox-clamp-3-band",
+      "b": "online-airbox-clamp-3-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.09999999999993056
+    },
+    {
+      "a": "online-airbox-clamp-4-band",
+      "b": "online-airbox-clamp-4-screw",
+      "overlap_mm3": 0,
+      "gap_mm": 0.09999999999993056
+    }
+  ],
+  "checker_sha256": "dc5eca0eb0baeb2072a9126a57db1c3edcb881e801f98b9e945966891bee1589",
+  "negative_controls": {
+    "blocked_cuff_detected": true,
+    "half_mm_wall_detected": true
+  },
+  "status": "PASS local only",
+  "reused_clamps": {
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-1-band.step": "9ce9172275aebf94b5596bc437d0affd470ed399d32dd12cb7d6e99e3266160f",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-1-screw.step": "b02ffcc15e654af0b9417cf96ab380ffdd92dbc039cc37f5a5f40f98e538b71c",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-2-band.step": "9b22385ecf3854b52f292b2cc3d1fc141839f00448cd8037f12c0c81c462191a",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-2-screw.step": "b44ab5f95d764beb5afcaad0654a3f15f7b322ba60811d6ea275312b9e4b6ca8",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-3-band.step": "984e187767e8f62ec8c21e39cc76099c7b8066bf04ab7444e14714df9724042d",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-3-screw.step": "4b486773c8fc0308b358d24e5552cf1bf12e38a4efab9e82fe9e60c4b7ee39ae",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-4-band.step": "f93daf047ac3f9d5a4230c6af28fb0aa378a402d32eb6cde32162222dcd5eee3",
+    "cad/engine/generated/online-airbox-duct-specimen/online-airbox-clamp-4-screw.step": "b5b97215bb93de4fcb8abbde87ea88bced6d6a3273935c658e42f1fc148ee256"
+  },
+  "scope_limits": [
+    "all physical dimensions estimated",
+    "no source-calibrated ellipse",
+    "no installed frame/fit",
+    "sampled solid probes not continuous deformation",
+    "clamp thread engagement omitted"
+  ]
+}
