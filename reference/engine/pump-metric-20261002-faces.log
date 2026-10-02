@@ -1,0 +1,6 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-metric-20261002-faces.py", line 8, in <module>
+    o=next(q for q in m['occurrences']if q['id']==n);p=R/defs[o['definition']]['step'].lstrip('/');s=ts[n]*b.import_step(p);planes=[]
+StopIteration

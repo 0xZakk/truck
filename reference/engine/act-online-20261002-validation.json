@@ -1,0 +1,287 @@
+{
+  "status": "PASS local specimen geometry only; source dimensions/installed interface NOT VERIFIED",
+  "parameters": {
+    "hex_AF_mm": 25,
+    "pitch_mm": 1.411111111111111,
+    "thread_span_mm": 15,
+    "cut_helix_height_mm": 12,
+    "estimated_runouts_mm": 1.5,
+    "hex_height_mm": 5.5,
+    "collar_height_mm": 2,
+    "connector_above_collar_mm": 22,
+    "connector_OD_mm": 18.5,
+    "guard_reach_mm": 10,
+    "thread_crest_upper_diameter_estimate_mm": 17.1,
+    "thread_profile": "illustrative60deg taper; truncations/gauge/start unverified",
+    "frame": "Z0 threaded probe-side end, NOT gauge plane; +Z connector; mm; no vehicle pose"
+  },
+  "actual_thread_check": {
+    "actual_removed_mm3": 102.47054668374722,
+    "crest_samples_inside": 345,
+    "root_samples_outside": 191,
+    "sample_count": 536,
+    "smooth_negative_control_detected": true,
+    "scope": "Actual helical surface with18TPI; gauge,truncations,1.5mmrunouts unverified"
+  },
+  "parts": {
+    "act-online-metal-shell": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-metal-shell.step",
+      "step_sha256": "2e41b7ee514e8b44b400bad337f148cb2336e30b41768877f5edb64d2af717cc",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-metal-shell.glb",
+      "glb_sha256": "9bf67a7d3d3b32b67cd2c6526c4cad4f62ae0561289e4174925c5a5bb8c0c271",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 5456.860696135282,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          -14.433756729742983,
+          -12.500000000000004,
+          -10.0
+        ],
+        [
+          14.433756729743235,
+          12.500000000000002,
+          22.5
+        ]
+      ],
+      "bounds_error_mm": 8.940696716308594e-07
+    },
+    "act-online-contact-1": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-contact-1.step",
+      "step_sha256": "2ddcc69b336efb0bfe412dbcb3888bad8f8cff6ac8f71d0fcec4c6a461099c68",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-contact-1.glb",
+      "glb_sha256": "c51c5063085599bb2b7c937f1a52e1e94d593337416267d8a18d0dda3080ec81",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 36.85873580824224,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.55,
+          -0.95,
+          24.0
+        ],
+        [
+          -1.6500000000000001,
+          0.95,
+          37.0
+        ]
+      ],
+      "bounds_error_mm": 0.00018776189535851806
+    },
+    "act-online-contact-2": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-contact-2.step",
+      "step_sha256": "bd1dbbf33bc86ed09d4881886d4fcac28bb7e47a46d290893ac28a5403bbabd2",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-contact-2.glb",
+      "glb_sha256": "3483e42777128157d6b33bdb50e5ca88ea5a890d6033ffaeaed34d8bf77436a4",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 36.85873580824224,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          1.6500000000000001,
+          -0.95,
+          24.0
+        ],
+        [
+          3.55,
+          0.95,
+          37.0
+        ]
+      ],
+      "bounds_error_mm": 0.00018776189535851806
+    },
+    "act-online-insulator": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-insulator.step",
+      "step_sha256": "c298aaef92644c8910ba367979153db6af70d40487560d0c6eabd2733291b41b",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-insulator.glb",
+      "glb_sha256": "c2c16471af27a27175f416a32e131b1eccfd5e56869a5c4a37210da652a63845",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4953.125196580137,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          -9.25,
+          -10.35,
+          -1.0
+        ],
+        [
+          9.25,
+          10.0,
+          44.5
+        ]
+      ],
+      "bounds_error_mm": 7.748603820800781e-07
+    },
+    "act-online-mouth-liner": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-mouth-liner.step",
+      "step_sha256": "6d3081803cc283caa50c4d6c18d2deff69202765b999d21d76cae0274fdac5e3",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-mouth-liner.glb",
+      "glb_sha256": "e7f99f8d23084e6d8fea46a19e1682faa141a0148bc2475753ca9a8a25950a7b",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 200.74777056439228,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          -7.6,
+          -7.6,
+          40.0
+        ],
+        [
+          7.6,
+          7.6,
+          44.5
+        ]
+      ],
+      "bounds_error_mm": 0.0015020951628681445
+    },
+    "act-online-visible-sensing-encapsulation": {
+      "step": "cad/engine/generated/act-online-20261002-specimen/act-online-visible-sensing-encapsulation.step",
+      "step_sha256": "51a310a4dbd6a8eda8f78ab2be4249e1bc5a6d22991684d7e4066cd57f19b508",
+      "glb": "cad/engine/generated/act-online-20261002-specimen/act-online-visible-sensing-encapsulation.glb",
+      "glb_sha256": "aa34ec0a3b18bf5ff33e6e9184c7ed547c166ab210a09978dc679219c055e538",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 20.809909737378916,
+      "watertight": true,
+      "winding_consistent": true,
+      "bounds_mm": [
+        [
+          -1.2,
+          -1.2,
+          -6.0
+        ],
+        [
+          1.2,
+          1.2,
+          -1.0
+        ]
+      ],
+      "bounds_error_mm": 0.00023719742894168228
+    }
+  },
+  "exact_local_pairs": [
+    {
+      "a": "act-online-metal-shell",
+      "b": "act-online-contact-1",
+      "overlap_mm3": 0,
+      "distance_mm": 4.025232912515746
+    },
+    {
+      "a": "act-online-metal-shell",
+      "b": "act-online-contact-2",
+      "overlap_mm3": 0,
+      "distance_mm": 4.025232912515746
+    },
+    {
+      "a": "act-online-metal-shell",
+      "b": "act-online-insulator",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-metal-shell",
+      "b": "act-online-mouth-liner",
+      "overlap_mm3": 0,
+      "distance_mm": 17.577613603672145
+    },
+    {
+      "a": "act-online-metal-shell",
+      "b": "act-online-visible-sensing-encapsulation",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-contact-1",
+      "b": "act-online-contact-2",
+      "overlap_mm3": 0,
+      "distance_mm": 3.3000000000000003
+    },
+    {
+      "a": "act-online-contact-1",
+      "b": "act-online-insulator",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-contact-1",
+      "b": "act-online-mouth-liner",
+      "overlap_mm3": 0,
+      "distance_mm": 4.278142120126446
+    },
+    {
+      "a": "act-online-contact-1",
+      "b": "act-online-visible-sensing-encapsulation",
+      "overlap_mm3": 0,
+      "distance_mm": 25.004049672003134
+    },
+    {
+      "a": "act-online-contact-2",
+      "b": "act-online-insulator",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-contact-2",
+      "b": "act-online-mouth-liner",
+      "overlap_mm3": 0,
+      "distance_mm": 4.278142120126446
+    },
+    {
+      "a": "act-online-contact-2",
+      "b": "act-online-visible-sensing-encapsulation",
+      "overlap_mm3": 0,
+      "distance_mm": 25.004049672003134
+    },
+    {
+      "a": "act-online-insulator",
+      "b": "act-online-mouth-liner",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-insulator",
+      "b": "act-online-visible-sensing-encapsulation",
+      "overlap_mm3": 0,
+      "distance_mm": 0.0
+    },
+    {
+      "a": "act-online-mouth-liner",
+      "b": "act-online-visible-sensing-encapsulation",
+      "overlap_mm3": 0,
+      "distance_mm": 41.35408081435253
+    }
+  ],
+  "guards": {
+    "contacts_separate": true,
+    "guard_window_open": true,
+    "insulator_shell_support": true,
+    "encapsulation_insulator_contact": true,
+    "pin_insulator_support": true
+  },
+  "negative_controls": {
+    "bridged_contacts_detected": true,
+    "filled_guard_detected": true
+  },
+  "missing": [
+    "hidden leads and electrical continuity",
+    "potting and calibrated thermistor internal",
+    "thread gauge/truncations and actual host fit",
+    "installed pose and harness mating fit",
+    "dynamic/tool/browser checks"
+  ],
+  "inputs": {
+    "scripts/act-online-20261002-check.py": "ca31221603f25d725c82f5f75515446bd5028286e66e55967f488843cbe30d1b",
+    "cad/engine/act_online_20261002_specimen.py": "7fa35c043172d06b4a1840c419bef9dffab4a5040f709cc5bdd9841819956885",
+    "docs/components/act-online-20261002-specimen.md": "25c57a5c35a6dd778d19738cdcea258ebb88d7a169e82e597df3eeab55e76ce9"
+  }
+}

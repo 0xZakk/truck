@@ -1,0 +1,91 @@
+{
+  "fits": [
+    {
+      "label": "primary-height-free-diameter",
+      "minimum_fitted_feature_camera_depth_mm": [
+        501.31620100120955,
+        977.0248965652054,
+        938.0761434706459,
+        506.0444512146487
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.19096320690273785,
+      "heldout_px": 120.73272331784203,
+      "active_bound_indices": []
+    },
+    {
+      "label": "primary-height-70mm",
+      "minimum_fitted_feature_camera_depth_mm": [
+        829.7457308168962,
+        779.2280038970453,
+        704.143029710703,
+        500.5520095431143
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.7832658479417615,
+      "heldout_px": 109.08693147205864,
+      "active_bound_indices": []
+    },
+    {
+      "label": "inherited143-70",
+      "minimum_fitted_feature_camera_depth_mm": [
+        781.258919864553,
+        704.5607023606162,
+        406.5592791168523,
+        647.4250747544804
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.8021617113664135,
+      "heldout_px": 388.71621553744785,
+      "active_bound_indices": []
+    },
+    {
+      "label": "inch-conversion-free-diameter",
+      "minimum_fitted_feature_camera_depth_mm": [
+        501.9386110865322,
+        978.2393195480923,
+        939.2400595467096,
+        507.99935975488165
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.19096320691618363,
+      "heldout_px": 128.82993466490606,
+      "active_bound_indices": []
+    },
+    {
+      "label": "primary-height-free-diameter-all-tube-views",
+      "minimum_fitted_feature_camera_depth_mm": [
+        526.282418468273,
+        1016.8957985046784,
+        1011.4734452696249,
+        205.46175762613234
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.20238248401270598,
+      "heldout_px": 2.476938184745766,
+      "active_bound_indices": [
+        0
+      ]
+    },
+    {
+      "label": "primary-height-70mm-all-tube-views",
+      "minimum_fitted_feature_camera_depth_mm": [
+        782.4186220394953,
+        833.1077844694582,
+        499.650557881539,
+        500.7678548279764
+      ],
+      "positive_depth": true,
+      "weighted_rms": 0.8143271055924935,
+      "heldout_px": 4.639188100927984,
+      "active_bound_indices": []
+    }
+  ],
+  "visual": "reference/engine/pump-metric-20261002-fit.png",
+  "visual_sha256": "a3b469cb41f3a768f903b6c4589d54d45a419ec1fd041d3b8dc5015e182ffea7",
+  "inputs": {
+    "reference/engine/pump-metric-20261002-fit.json": "33c33d40b1992b0c41c4e056602980a8c768463ea1dc0335554c7aef1814f320",
+    "scripts/pump-metric-20261002-review.py": "4d984d18df631810880935bedddd6883aaf3b5b73913645af67641994cb211c4"
+  },
+  "conclusion": "Low training residual does not establish a unique pump. H98.43 with D70 and D115 remain distinct conditional hypotheses; free diameter hits its declared bound. Side held-out failures and imperfect fifth-hole prediction retained."
+}

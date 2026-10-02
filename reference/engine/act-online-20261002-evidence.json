@@ -1,0 +1,114 @@
+{
+  "baseline": "54c2abf7aae73a8a5818321ee48ad81c8b7346ad",
+  "issue": 82,
+  "selected_comparison": "MTE5041; F2DZ12A697A interchange, not original Ford dimensional certification",
+  "sources": [
+    {
+      "name": "manufacturer page",
+      "url": "https://cate.mte-thomson.com.br/en/al/produto/detalhes/5041/air-charge-temperature-sensor",
+      "sha256": "15962412eae40c0301f27d9acceff68883daf27a58b9eb1934acb62dc5ed19b7",
+      "bytes": 156752,
+      "local_review_path": "/tmp/act-online-20261002-mte.html",
+      "redistribution": "excluded original",
+      "actually_inspected": true
+    },
+    {
+      "name": "side photo",
+      "url": "https://cdn.mte-thomson.com.br/catalogo/Images/1000x1000/TEMPERATURA/Plug%20Eletronico/5041_2.jpg",
+      "sha256": "773f2b1e1bc342a19f00a78e6970f6160d49bec7c71f89b5446349aed7743c5b",
+      "bytes": 72058,
+      "local_review_path": "/tmp/act-online-20261002-5041-side.jpg",
+      "redistribution": "excluded original",
+      "actually_inspected": true
+    },
+    {
+      "name": "oblique photo",
+      "url": "https://cdn.mte-thomson.com.br/catalogo/Images/1000x1000/TEMPERATURA/Plug%20Eletronico/5041.jpg",
+      "sha256": "49c6e4d7ec31e61cd367b4d204367494b920aaa5d3d72347268b349611a9f36d",
+      "bytes": 79841,
+      "local_review_path": "/tmp/act-online-20261002-5041-main.jpg",
+      "redistribution": "excluded original",
+      "actually_inspected": true
+    },
+    {
+      "name": "connector photo",
+      "url": "https://cdn.mte-thomson.com.br/catalogo/Images/1000x1000/TEMPERATURA/Plug%20Eletronico/5041_CON.jpg",
+      "sha256": "6150fbd57fe1c64bc05fbc1c3ad4555bcc29cb9de9cd201d5eb304c1f8f073b9",
+      "bytes": 97395,
+      "local_review_path": "/tmp/act-online-20261002-5041-con.jpg",
+      "redistribution": "excluded original",
+      "actually_inspected": true
+    },
+    {
+      "name": "manufacturer catalog, distributor-hosted",
+      "url": "https://admin.serva.com.mx/storage/files/mte1517.pdf",
+      "sha256": "471ff27d75b4c7ab99750e0d57e3af189caae7e75f06be7c8a783a29c8f02342",
+      "bytes": 31013469,
+      "local_review_path": "/tmp/act-online-20261002-mte-catalog.pdf",
+      "redistribution": "excluded original",
+      "actually_inspected": true
+    }
+  ],
+  "primary_dimensions": {
+    "hex_AF_mm": 25,
+    "thread": "3/8-18NPTF",
+    "terminals": 2,
+    "connector_color": "white"
+  },
+  "photo_side_landmarks_px": {
+    "image_size": [
+      1000,
+      1000
+    ],
+    "hex_extreme_x": [
+      272,
+      726
+    ],
+    "thread_z_image_y": [
+      555,
+      800
+    ],
+    "connector_height_y": [
+      57,
+      406
+    ],
+    "guard_y": [
+      800,
+      962
+    ],
+    "connector_width_x": [
+      360,
+      650
+    ]
+  },
+  "estimated_scale": {
+    "method": "25mmAF regularhex silhouette orientation uncertainty25..28.867mm /454px; perspective unresolved",
+    "pixels_per_mm_range": [
+      15.73,
+      18.16
+    ],
+    "not": "manufacturing tolerance or calibrated orthographic survey"
+  },
+  "new_observations": [
+    "Open metal U guard around exposed blue encapsulation",
+    "Round connector mouth with dark inner ring and asymmetric external keys",
+    "Two round separated contact ends, visibly recessed in shell"
+  ],
+  "unknown": [
+    "actual installed thread gauge plane and engagement",
+    "manufacturer thread crest/root truncation",
+    "connector terminal spacing/depth dimensions",
+    "dark ring material and production separation",
+    "hidden lead/potting/chip geometry; electrical circuit incomplete",
+    "full original sensor engineering stamp"
+  ],
+  "capture_reproduction": "Download each public URL to a local excluded folder and compare SHA256. HTML itself records1000x1000 photo URLs. PDF269/printed267 reviewed; do not transfer its regional application rows to exact-year target.",
+  "thread_family_reference": "https://www.parker.com/content/dam/Parker-com/Literature/South-Korea/Parker-Industrial-Tube-Fitting-Europ_CAT-4100-9.pdf",
+  "thread_family_limit": "Generic60deg/1deg47min form; no sensor gauge/truncation verification",
+  "existing_identity_inputs": {
+    "docs/components/act-sensor-identity.md": "470b90e08856f989f7b63fd5be5a85b1aaa648a3553e7b27e36fb3fda43987b8",
+    "inventory/engine/act-sensor-identity-evidence.json": "d94283e2c9ae2d85ee813321bd759546ae595a290c9b5202c690cb60c0ecbacd"
+  },
+  "ingest": "python3 tools/ingest.py <downloaded manufacturer HTML> --type local --title act-online-20261002-mte5041; ignored kb/.raw capture",
+  "semantic_links": "root owns shared run"
+}
