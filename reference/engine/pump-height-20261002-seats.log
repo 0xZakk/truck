@@ -1,0 +1,7 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-height-20261002-seats.py", line 21, in <module>
+    r={'hub_pulley_named_seat':seats,'entire_rear_slice_added_mm3':vol(rearnew.cut(rearold)),'entire_rear_slice_removed_mm3':vol(rearold.cut(rearnew)),'protected_joint_footprint_added_mm3':vol(rearnew.cut(rearold).intersect(foot)),'protected_joint_footprint_removed_mm3':vol(rearold.cut(rearnew).intersect(foot)),'limitation':'Initial contract said exact fullrearX<=389. Port additions are assessed explicitly; jointfootprint result does not erase broader failure. Inherited bearing outerR23.9 vsboreR24 andshaftR8 vsbearingbore8.05 leave estimated radialgaps; no pressed-fit support PASS.','inputs':{**inputs,str(c.core.REAR.relative_to(R)):sha(c.core.REAR),str(Path(__file__).relative_to(R)):sha(Path(__file__))}}
+                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ShapeList' object has no attribute 'intersect'

@@ -259,3 +259,14 @@ Publication verified after [PR115](https://github.com/0xZakk/truck/pull/115) mer
 `docs/act-online-20261002-package.json` records17 authored artifacts in `truck-act-online-20261002.tar.gz` (574,114bytes; SHA256 `63082663c14d3f4da96083c1f344165dad91b150c1af450d6da8c955e110a773`). Exact source/report inputs and two tracked identity prerequisites are listed separately. No generated predecessor is required. Follow `docs/components/act-online-20261002-package.md`; preservation verification streams members without extraction.
 
 This preserves a six-region replacement-comparison specimen and rejected thread construction. It is not an installed component, complete electrical circuit or verified factory geometry. Source photographs/HTML/PDF are excluded. Publication must be verified separately.
+
+Published after [PR117](https://github.com/0xZakk/truck/pull/117) merged at `1934fc9393b912aa8e8de09a47ea31fe4624252a` (CI21s/26sPASS). [ACT specimen release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-02-act-specimen), ID401897025, has matching server-reported SHA256 and byte count. This supersedes publication-pending fields in the frozen package metadata.
+
+
+## October2 duct and pump-height candidates — publication pending
+
+The refined duct supplement `truck-airbox-refined-20261002.tar.gz` contains31 authored files,30,445,366bytes, SHA256 `c05c425cd8c434be3bfca96c5e7a3b8fca1f4ad1cb64bb2a91e8a75d974403b4`. Restore the online-research candidate predecessor for inherited clamp assets. Exact source/dependency/member lists are in `docs/airbox-refined-20261002-package.json`. Local shape/passages/contact checks pass; numeric contours and host fit remain estimates.
+
+The failed coordinated pump-height supplement `truck-pump-height-20261002.tar.gz` contains584 authored files,16,788,862bytes, SHA256 `a1ddb616c29bbaacd1671235832a1d079b841923fb2f6f16448f718770ab4a41`. Restore the predecessor chain enumerated in `reference/engine/pump-height-20261002-package.json`;810 external dependencies are bound to nine metadata records. All failed trials, final selected assets and actual renders are retained. This candidate FAILS integration, rear-stock preservation and aggregate mesh checks; no installation.
+
+Both archives were independently streamed by root and matched exact member hashes. Source originals are excluded. Package handoffs describe reproduction. Publication remains pending until a verified note.

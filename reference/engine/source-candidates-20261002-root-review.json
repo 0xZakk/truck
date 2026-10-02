@@ -1,0 +1,43 @@
+{
+  "scope": "Root preservation review; no installed geometry acceptance",
+  "baseline": "1934fc9393b912aa8e8de09a47ea31fe4624252a",
+  "duct": {
+    "delivery_files_verified": 39,
+    "archive": {
+      "path": "cad/engine/generated/airbox-refined-20261002-package/truck-airbox-refined-20261002.tar.gz",
+      "sha256": "c05c425cd8c434be3bfca96c5e7a3b8fca1f4ad1cb64bb2a91e8a75d974403b4",
+      "size_bytes": 30445366,
+      "members": 31,
+      "stream_member_verification": "PASS"
+    },
+    "source_inputs_verified": true,
+    "actual_render_inspected": "cad/engine/generated/airbox-refined-20261002/airbox-refined-20261002-source-view.png",
+    "review": "Rounded crests and shoulders, waisted bridge and flared channel improve source silhouette. Numeric contours remain estimated. Circular cuffs/host placement unverified. Exact local passage/contact/section checks do not establish vehicle fit."
+  },
+  "pump": {
+    "authored_hashes_verified": 55,
+    "generated_hashes_verified": 581,
+    "actual_render_inspected": "reference/engine/pump-height-20261002-review-full.png",
+    "decision": "Preserve FAIL study, do not install",
+    "retained_failures": [
+      "4 actual neighbor overlaps",
+      "rear protected slice and joint-footprint stock changed",
+      "6 mesh bounds failures, seal spring nonwatertight",
+      "bearing/shaft radial support gaps"
+    ],
+    "next": "Source and functional-interface review of shortened housing/port junction and estimated carrier; no clearance-only carving or reverting supported height.",
+    "archive": {
+      "path": "cad/engine/generated/pump-height-20261002-package/truck-pump-height-20261002.tar.gz",
+      "sha256": "a1ddb616c29bbaacd1671235832a1d079b841923fb2f6f16448f718770ab4a41",
+      "size_bytes": 16788862,
+      "members": 584,
+      "repeat_byte_identity": true,
+      "streamed_member_hash_check": "PASS"
+    },
+    "archive_root_member_verification": "PASS584"
+  },
+  "dowel": "Actual Ford catalog PDF216/printed205 viewed; nominal part-specific diameter/length verified, generic Type1 does not establish bore/split",
+  "canonical_manifest_sha256": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+  "browser": "NOT RUN; no installation",
+  "usage": "unavailable"
+}

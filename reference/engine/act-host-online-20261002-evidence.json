@@ -1,0 +1,65 @@
+{
+  "scope": "Issue82 research-only ACT host contract; no CAD or numeric pose",
+  "baseline": "1934fc9393b912aa8e8de09a47ea31fe4624252a",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Locations/index.html": "877938933366b3571c7bbffee0ffd76bd27954396d4d95c6c40b32b8547376fd",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Service%20and%20Repair/index.html": "69bb781becc6592308e86d7781e08f747e6675aed28fdf22b0da60c800e791ec",
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/147826554.png": "c489ec4aacfbbbf094facd4bc00e9136275cb0ac528a1e08661ffb4997c271ed",
+    "cad/engine/efi_intake.py": "36ccb7da5d29904894a451e360072fbdbcf08024e76f5225e2fe1bd7cc88ba30",
+    "docs/components/act-sensor-identity.md": "470b90e08856f989f7b63fd5be5a85b1aaa648a3553e7b27e36fb3fda43987b8",
+    "reference/engine/act-online-20261002-delivery.json": "64b8b3d578e4c076d701c1024729aaf6262229bca6cedc5241de7ea86889357d"
+  },
+  "sources": [
+    {
+      "url": "https://www.supermotors.net/registry/media/1174826",
+      "image_url": "https://www.supermotors.net/getfile/1174826/original/tsb870816intakeinstall49l.jpg",
+      "html_sha256": "5d2206526cdef7ea8ad612a70f2f5d9d59ee31d6921ed388ac6ec3d0a5eded8b",
+      "image_sha256": "985822c9bf2fee1d58898684e7a97a195ca78c0190345bf004873f8e3d81530f",
+      "class": "Publicly hosted Ford-style illustration; annotated reproduction, page contextualizes1987TSB87-08-16; not exact1994 engineering drawing",
+      "actual_image_review": true,
+      "observations": [
+        "Lower manifold front terminal runner has dedicated sensor boss",
+        "Runner2,3,4,5 labels and front-of-engine arrow establish which end; do not mirror by generic right-front text",
+        "Exact-year retained image calls12A697; reproduction calls12A967, a transposed identifier preserved as discrepancy",
+        "Exploded leader is assembly correspondence, not metrically calibrated 3Daxis"
+      ]
+    },
+    {
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Air%20Temperature%20Sensor%20%28%20Ambient%20%2F%20Intake%20%29/Service%20and%20Repair/",
+      "class": "Exact-year retained service reproduction; public refetch unavailable in bounded attempt",
+      "actual_local_image_review": true,
+      "image_id": "DM05Q313/ford10/147826554",
+      "observations": [
+        "Dedicated boss on terminal lower runner; sensor12A697",
+        "Disconnect harness before unscrewing",
+        "Installation16\u201324Nm; no installed shoulder offset, clocking, turns or sealant instruction supplied here"
+      ]
+    }
+  ],
+  "interface_contract": {
+    "owner": "efi-lower-intake",
+    "topological_station": "front / cylinder1 terminal lower runner; dedicated boss on its end/outer wall",
+    "flow_requirement": "Probe guard must enter the intake-air space, not solid wall or adjacent runner; quantify opening and wall from actual constructed host",
+    "frame": "Local sensor+Z points from probe toward connector. Align with chosen outward port axis only after source-registered host axis contract; current numeric transform unresolved",
+    "engagement": "Do not bottom hex by assumption. Source torque16\u201324Nm does not locate gauge plane. Existing replacement thread representation is not a gauged female-male interface",
+    "roll": "Connector roll around thread axis remains unspecified; no arbitrary signal-pin assignment",
+    "required_guards": [
+      "Preserve upper/lower sealing flange and seven studs",
+      "Preserve injector sockets and fuel-rail supports",
+      "Verify actualair exposure and female thread/root wall",
+      "Check shell-to-host material interface plus25mmhex tool and axial removal with harness unplugged",
+      "Check alternator/support/heatshield and full installed neighbors once pose is authorized"
+    ]
+  },
+  "unknowns": [
+    "Portcenter in mm",
+    "Port3Daxis and bossflat normal",
+    "Female thread class/gauge datum and available wall",
+    "Engaged depth/probe projection",
+    "Connector roll/harness branch reach",
+    "Source manifold variant dimension correspondence"
+  ],
+  "readiness": "Topology/location contract usable; numerical installation not authorized by this evidence alone",
+  "excluded_originals": true,
+  "no_cad_changes": true
+}
