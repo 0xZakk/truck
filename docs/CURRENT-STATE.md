@@ -1,6 +1,6 @@
 # Engine integration — 2026-10-03 resumed
 
-Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR127, `5c5a11d18607efd31d554aff90d5fe3b97a3b094`. Current branch `engine/component-fit-followup-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
+Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR128, `1ba1593ba3509c1378a4e6fa08e44070f558e866`. Current branch `engine/functional-fit-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
 
 ## Installed versus candidate
 
@@ -14,9 +14,9 @@ Live registry confirmed three newly dispatched workers; prior modeling processes
 
 | Owner | Scope | Current action |
 |---|---|---|
-| resume_pump_fit | pump-cover-candidate-20261003 | Ford nominal254mm deck rejects current photo frame (~290mm implied). Separate analytic inlet successor clears sampled flow and preserves protected regions; root reviewed actual mesh and38input hashes. Coupled59part pose retains14clashes; independent front datum needed. |
-| resume_fuel_fit | fuel-rail-candidate-20261003 | r4 both signs tested85,280pairs: plus4/minus17overlaps. Approved tabs and straight hose socket remove two collision classes. Hose mesh seam and regulator external pressure enclosure FAIL; source-backed shell-clamp amendment under review. Neither sign selected. |
-| resume_exhaust_fit | ho2s-host-candidate-20261003 | Attempt16 reports minwall1.44446mm, open gas branches, receiver seats and negative controls. Root review pending. Front manifold mesh defect inherited; four other meshes pass. Context audit underway; do not install yet. |
+| resume_pump_fit | rod-fastener-reconciliation-20261003 | Pump checkpoint mergedPR128 with verified279-member archive; frame remains open. Piston1.776in replacement reference independently corroborated for1987–96VINY; no dimension change. Worker now researches rod-fastener geometry behind six motion conflicts. |
+| resume_fuel_fit | fuel-rail-candidate-20261003 | r5 diaphragm shell contacts corrected; original-shell and pierced-diaphragm controls detected. Lower O-ring clearance stillFAIL. Hose seam traced to centerline radius below outerradius6; numerical correction proposal pending. Neither transverse sign selected; fresh context checks underway. |
+| resume_exhaust_fit | ho2s-host-candidate-20261003 | Attempt16minwall1.44446mm,210contextpairs0clashes,757inputhashes independently matched. Front runner radius16.497<outer18 causes self-fold risk; isolated21.323mm-minradius proposal authorized with protected interfaces. Four other meshes pass. No installed change. |
 | root | intake-gasket-outline-20261003 | PR127merged: full traced gasket validSTEP/watertightGLB, six1mm diagnostic sealing bands covered. Estimated scale and overhang retained; not installed. Knowledge base391notes embedded; selected semantic links reviewed, not bulk-applied. |
 
 Workers own their prefixes only; root reviews significant interface amendments before coupled CAD. Use public source research where evidence is missing. Source dimensions, replacement comparisons, estimates and unknowns remain distinct. Existing contracts are under `docs/components/`; original source images/manuals are excluded from commits/releases.
