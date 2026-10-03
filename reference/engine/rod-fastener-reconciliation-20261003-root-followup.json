@@ -1,0 +1,22 @@
+{
+  "scope": "Bounded further public-source search; no new geometry constraints adopted",
+  "date": "2026-10-03",
+  "queries": [
+    "635-027 Length Dorman connecting rod bolt",
+    "152-6002 dimensions rod bolt ARP",
+    "C4OZ-6214-B length",
+    "site:dormanproducts.com 635-027"
+  ],
+  "leads": [
+    {
+      "url": "https://arp-bolts.com/kit/152-6002",
+      "result": "Search confirms Ford inline6 4.9 kit identity; direct page retrieval failed. No individual bolt dimensions acquired."
+    },
+    {
+      "url": "https://squarebirds.org/Manuals/1965/1965-72FordPartsTextCatalog/09-1965Text-Engine.pdf",
+      "result": "Search index includes C4OZ6214B; web retrieval and public curl bothHTTP403. No page raster acquired; no index-only length adopted."
+    }
+  ],
+  "decision": "Existing 3/8-24 thread and9/16AF replacement nut constraints stand; press shoulder, bolt head, nut height and paired seats still unknown. No bore enlargement or block clearance cut authorized by these findings.",
+  "next_evidence": "An accessible Ford catalog raster for C4OZ6214B or identified Dorman635027/ARP1526002 engineering drawing; generic neighboring numbers are not transferable."
+}
