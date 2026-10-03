@@ -1,0 +1,26 @@
+{
+  "status": "REJECTED before pose interpretation",
+  "reason": "Radial first brightness crossing captured reflections inside view5 apertures and escaped view6 port6; actual local overlay inspection caught this. Replaced by connected component outer boundary with holes filled.",
+  "initial_report_sha256": "d917a1b80861df1b488cb7add649b95b871a2f244c98eed7529fb17c875685b1",
+  "initial_thresholds": [
+    80,
+    100,
+    120
+  ],
+  "initial_sensor_rms_coordinate_px": [
+    {
+      "sensor_base": 95.53723127760244,
+      "connector_center": 73.95626502873894
+    },
+    {
+      "sensor_base": 73.29518432162558,
+      "connector_center": 58.266208278263235
+    },
+    {
+      "sensor_base": 153.1324866433551,
+      "connector_center": 123.25469191106275
+    }
+  ],
+  "superseded_by": "scripts/act-host-registration-20261003-fit.py",
+  "original_pixels_distributed": false
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "baseline": "4f1fe9da2ec177e1ff61668df66ca422e37b0b7c",
+  "issue": 82,
+  "sources": [
+    {
+      "url": "https://www.drivparts.com/content/dam/marketing/North-America/catalogs/fel-pro/pdf/fel-pro-master-gasket-900-16.pdf",
+      "sha256": "44b84daa9b26ad9867b818577b4cb35dc337fc9aa7ed06c7067ab4a688fcfc7c",
+      "bytes": 14481238,
+      "class": "manufacturer catalog",
+      "review": "PDF305/printed279 model index and PDF354/printed328 engine42 visually inspected",
+      "local_review_path": "/tmp/intake-joint-online-20261003-felpro.pdf",
+      "original_distributed": false
+    },
+    {
+      "url": "https://images.carid.com/fel-pro/items/ms-93838.jpg",
+      "sha256": "de5ea8c38f38609b3e1185de40826e2c6b408ed35bba548c13881cd28963c3f3",
+      "bytes": 53096,
+      "class": "identified retailer-hosted product photo",
+      "review": "Actual1500x1500 pixels inspected; manufacturer-original authorship not independently established",
+      "local_review_path": "/tmp/intake-joint-online-20261003-ms93838.jpg",
+      "original_distributed": false
+    }
+  ],
+  "product_page": "https://www.carid.com/fel-pro/upper-fuel-injection-plenum-gasket-set-mpn-ms-93838.html",
+  "verified_replacement": "Fel-Pro MS93838; manufacturer table42 Ford Truck4.9MFI VINY1991\u201397",
+  "photo_observations": {
+    "large_apertures": 6,
+    "small_apertures": 9,
+    "small_pair_locations": "between photo ports2/3 and4/5, counted left-to-right",
+    "offsets": "opposite terminal ears and center small hole offset from port row",
+    "end_mapping": "right photo end inferred ACT/front by casting pattern; no printed FRONT marker"
+  },
+  "metric_dimensions": "none verified; package28x5x0.2in explicitly excluded",
+  "secondary_leads_not_application_basis": [
+    {
+      "url": "https://newparts.com/product/fel-pro/MS93838",
+      "lead": "MAHLE MS16054 / Ford E7TZ9H486B / Victor71-14734-00 crossrefs; secondary search only"
+    },
+    {
+      "url": "https://www.mahle-aftermarket.com/media/local-media-north-america/pdfs-%26-thumbnails/catalogs-and-literature/gaskets/ga-20-17.pdf",
+      "outcome": "download returned25775-byte HTML, notPDF; not ingested as catalog"
+    },
+    {
+      "url": "https://www.finditparts.com/products/7884885/mahle-ms16054",
+      "outcome": "web cachemiss; directdownload4580-byte accesspage; no image inspected"
+    },
+    {
+      "url": "https://www.oreillyauto.com/detail/c/fel-pro/fel-pro-plenum-gasket-set/fel0/ms93838",
+      "outcome": "403; no repeat"
+    }
+  ],
+  "source_to_notes": "two authored captures ingested, two source pages processed, two atomic notes; root owns semantic processing",
+  "no_cad_changes": true
+}
