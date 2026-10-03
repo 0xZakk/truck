@@ -1,0 +1,40 @@
+{
+  "source_sha256": "e6cfe4bfc69c89420de1b315a61e37b1a5bb1725812897fbfcd872d0614c9256",
+  "image_pixels": [
+    2000,
+    2000
+  ],
+  "coordinate_system": "pixel origin top-left; approximate manual feature regions, not calibrated centers",
+  "pick_allowance_pixels": 20,
+  "landmarks": {
+    "outlet_mouth": [
+      64,
+      1230
+    ],
+    "outlet_side_bend": [
+      489,
+      1008
+    ],
+    "common_trunk_bend": [
+      1188,
+      753
+    ],
+    "visible_bung": [
+      1108,
+      726
+    ],
+    "near_inlet_mouth_A": [
+      1501,
+      900
+    ],
+    "branch_junction_region": [
+      1637,
+      940
+    ],
+    "far_inlet_mouth_B": [
+      1918,
+      881
+    ]
+  },
+  "limits": "Single oblique photograph. These picks support topology/view matching only; no pixel-to-mm scale, 3D centerline, depth or inlet-to-engine assignment is accepted. Catalog Length endpoint unresolved."
+}
