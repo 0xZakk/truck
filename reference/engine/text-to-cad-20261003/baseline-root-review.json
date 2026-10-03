@@ -1,0 +1,27 @@
+{
+  "scope": "isolated assumed-section replacement candidate only",
+  "checks": {
+    "valid_one_solid": true,
+    "step_envelope": true,
+    "analytic_section_probes": true,
+    "floor_control": true,
+    "opening_control": true,
+    "mesh_topology": true,
+    "mesh_bounds": true,
+    "mesh_volume": true
+  },
+  "pass": true,
+  "probe_count": 640,
+  "failed_probes": [],
+  "mesh_bounds_error_mm": 0.005195772750475669,
+  "step_volume_mm3": 3350.5996070153233,
+  "relative_mesh_volume_error": 0.00028302393879026436,
+  "hashes": {
+    "cad/engine/generated/text-to-cad-20261003/baseline/block-core-cup-mps59a.step": "1d98baf4315dc9da6d14c766403f085cccfd8aa3ab2be28b8a7eb1425d336639",
+    "cad/engine/generated/text-to-cad-20261003/baseline/block-core-cup-mps59a.glb": "265c8d82d2fd431e73000066b27c93ae8a18aeebc87a1c98fb021738724e0324",
+    "docs/benchmarks/text-to-cad-20261003/review.py": "2fdf2f8cfaf83664ff435a20781fc8a868737fd64392457e6139e1d5da9b0a26"
+  },
+  "installed_interfaces": "NOT RUN",
+  "browser_engine_integration": "NOT RUN",
+  "factory_section_fidelity": "UNKNOWN"
+}

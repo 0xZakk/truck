@@ -1,0 +1,1316 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-03T18:24:20.484637+00:00",
+  "finished_utc": "2026-10-03T18:24:21.431957+00:00",
+  "parameters_mm": {
+    "OD": 52.578,
+    "H": 8.7122,
+    "T": 1.0,
+    "outer_radius": 1.5,
+    "inner_radius": 0.5
+  },
+  "environment": {
+    "python": "3.13.12 (main, Apr  6 2026, 11:54:17) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "build123d": "0.10.0",
+      "cadquery-ocp": "7.8.1.1.post1",
+      "numpy": "2.5.3",
+      "trimesh": "4.7.4"
+    }
+  },
+  "checks": {
+    "valid_one_positive_solid": true,
+    "bounds": true,
+    "mesh_watertight": true,
+    "mesh_winding": true,
+    "mesh_one_component": true,
+    "cad_probes": true,
+    "mesh_probes": true,
+    "controls": true
+  },
+  "bounds_error_mm": {
+    "cad_nominal": 1.0000000116860974e-07,
+    "step_roundtrip": 0.0,
+    "mesh_cad": 0.005195772750475669
+  },
+  "cad_volume_mm3": 3350.5996070153233,
+  "mesh_volume_mm3": 3349.6513071172426,
+  "mesh_faces": 26540,
+  "export_helper": {
+    "triangle_count": 26540,
+    "mesh_bounds_error_mm": 0.005195772750475669,
+    "watertight": true,
+    "linear_deflection_mm": 0.07,
+    "angular_deflection_rad": 0.08
+  },
+  "cad_probes": [
+    {
+      "name": "floor-center",
+      "xyz_mm": [
+        0,
+        0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        12.0,
+        0.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        24.0,
+        0.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        25.789,
+        0.0,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        26.589000000000002,
+        0.0,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        10.392304845413264,
+        5.999999999999999,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        20.784609690826528,
+        11.999999999999998,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        22.33392913819689,
+        12.894499999999999,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        23.026749461224444,
+        13.2945,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        6.000000000000002,
+        10.392304845413264,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        12.000000000000004,
+        20.784609690826528,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        12.894500000000004,
+        22.33392913819689,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        13.294500000000005,
+        23.02674946122444,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        7.347880794884119e-16,
+        12.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        1.4695761589768238e-15,
+        24.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        1.5791208151605547e-15,
+        25.789,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        1.6281066871264489e-15,
+        26.589000000000002,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -5.999999999999998,
+        10.392304845413264,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -11.999999999999996,
+        20.784609690826528,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -12.894499999999997,
+        22.33392913819689,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -13.294499999999998,
+        23.026749461224444,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -10.392304845413262,
+        6.0000000000000036,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -20.784609690826525,
+        12.000000000000007,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -22.333929138196886,
+        12.89450000000001,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -23.026749461224437,
+        13.29450000000001,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -12.0,
+        1.4695761589768238e-15,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -24.0,
+        2.9391523179536475e-15,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -25.789,
+        3.1582416303211093e-15,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -26.589000000000002,
+        3.2562133742528977e-15,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -10.392304845413266,
+        -5.999999999999997,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -20.78460969082653,
+        -11.999999999999995,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -22.333929138196893,
+        -12.894499999999995,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -23.026749461224444,
+        -13.294499999999996,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -6.000000000000005,
+        -10.39230484541326,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -12.00000000000001,
+        -20.78460969082652,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -12.894500000000011,
+        -22.333929138196883,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -13.294500000000014,
+        -23.026749461224433,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -2.204364238465236e-15,
+        -12.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -4.408728476930472e-15,
+        -24.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -4.737362445481664e-15,
+        -25.789,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -4.884320061379347e-15,
+        -26.589000000000002,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        5.999999999999992,
+        -10.392304845413268,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        11.999999999999984,
+        -20.784609690826535,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        12.894499999999983,
+        -22.3339291381969,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        13.294499999999983,
+        -23.02674946122445,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        10.39230484541326,
+        -6.000000000000005,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        20.78460969082652,
+        -12.00000000000001,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        22.333929138196883,
+        -12.894500000000011,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        23.026749461224433,
+        -13.294500000000014,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "mesh_probes": [
+    {
+      "name": "floor-center",
+      "xyz_mm": [
+        0,
+        0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        12.0,
+        0.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        24.0,
+        0.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        25.789,
+        0.0,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        26.589000000000002,
+        0.0,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        10.392304845413264,
+        5.999999999999999,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        20.784609690826528,
+        11.999999999999998,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        22.33392913819689,
+        12.894499999999999,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        23.026749461224444,
+        13.2945,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        6.000000000000002,
+        10.392304845413264,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        12.000000000000004,
+        20.784609690826528,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        12.894500000000004,
+        22.33392913819689,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        13.294500000000005,
+        23.02674946122444,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        7.347880794884119e-16,
+        12.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        1.4695761589768238e-15,
+        24.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        1.5791208151605547e-15,
+        25.789,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        1.6281066871264489e-15,
+        26.589000000000002,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -5.999999999999998,
+        10.392304845413264,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -11.999999999999996,
+        20.784609690826528,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -12.894499999999997,
+        22.33392913819689,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -13.294499999999998,
+        23.026749461224444,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -10.392304845413262,
+        6.0000000000000036,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -20.784609690826525,
+        12.000000000000007,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -22.333929138196886,
+        12.89450000000001,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -23.026749461224437,
+        13.29450000000001,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -12.0,
+        1.4695761589768238e-15,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -24.0,
+        2.9391523179536475e-15,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -25.789,
+        3.1582416303211093e-15,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -26.589000000000002,
+        3.2562133742528977e-15,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -10.392304845413266,
+        -5.999999999999997,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -20.78460969082653,
+        -11.999999999999995,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -22.333929138196893,
+        -12.894499999999995,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -23.026749461224444,
+        -13.294499999999996,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -6.000000000000005,
+        -10.39230484541326,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -12.00000000000001,
+        -20.78460969082652,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -12.894500000000011,
+        -22.333929138196883,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -13.294500000000014,
+        -23.026749461224433,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        -2.204364238465236e-15,
+        -12.0,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        -4.408728476930472e-15,
+        -24.0,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        -0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        -4.737362445481664e-15,
+        -25.789,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        -4.884320061379347e-15,
+        -26.589000000000002,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        5.999999999999992,
+        -10.392304845413268,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        11.999999999999984,
+        -20.784609690826535,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        12.894499999999983,
+        -22.3339291381969,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        13.294499999999983,
+        -23.02674946122445,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "floor",
+      "xyz_mm": [
+        10.39230484541326,
+        -6.000000000000005,
+        0.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "cavity",
+      "xyz_mm": [
+        20.78460969082652,
+        -12.00000000000001,
+        2
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "opening",
+      "xyz_mm": [
+        0.0,
+        -0.0,
+        8.5122
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wall",
+      "xyz_mm": [
+        22.333929138196883,
+        -12.894500000000011,
+        4
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "outside",
+      "xyz_mm": [
+        23.026749461224433,
+        -13.294500000000014,
+        4
+      ],
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "negative_controls": {
+    "missing-floor": {
+      "rejected": true,
+      "failed_probe_names": [
+        "floor-center",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor",
+        "floor"
+      ]
+    },
+    "blocked-opening": {
+      "rejected": true,
+      "failed_probe_names": [
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening",
+        "opening"
+      ]
+    }
+  },
+  "hashes": {
+    "cad/engine/generated/text-to-cad-20261003/baseline/block-core-cup-mps59a.step": "1d98baf4315dc9da6d14c766403f085cccfd8aa3ab2be28b8a7eb1425d336639",
+    "cad/engine/generated/text-to-cad-20261003/baseline/block-core-cup-mps59a.glb": "265c8d82d2fd431e73000066b27c93ae8a18aeebc87a1c98fb021738724e0324",
+    "docs/benchmarks/text-to-cad-20261003/baseline/build_check.py": "b7af46cd14e6c235be00a17525e26e4fc2002c9787d1d6e2aab1449e28294917",
+    "cad/engine/intake_runner_exterior_integration.py": "d4f48689f1e8e9a8d278ebab82dd6f33442ea6036681bc6a09c334b83f6b9324",
+    "docs/benchmarks/text-to-cad-20261003/BRIEF.md": "6a8e893e85153eb7f8c7058b2cd44bdbd598aa10e2c721f330ec860faa38608a",
+    "reference/engine/research-2026-09-23/melling-expansion-plug-guide.pdf": "e931b0dc1efa68e95cd64ee25b11390bfe287f48119ba4cb634937c51a231ec8"
+  }
+}

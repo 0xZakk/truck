@@ -1,0 +1,11 @@
+Using Python 3.13.12 environment at: /private/tmp/truck-cadgen-pilot-20261003
+WARN Retry attempt #0. Sleeping 933.402342ms before the next attempt
+WARN Retry attempt #1. Sleeping 1.615130617s before the next attempt
+WARN Retry attempt #2. Sleeping 3.029695122s before the next attempt
+error: Failed to fetch: `https://pypi.org/simple/trimesh/`
+  Caused by: Could not connect, are you offline?
+  Caused by: Request failed after 3 retries
+  Caused by: error sending request for url (https://pypi.org/simple/trimesh/)
+  Caused by: client error (Connect)
+  Caused by: dns error: failed to lookup address information: nodename nor servname provided, or not known
+  Caused by: failed to lookup address information: nodename nor servname provided, or not known

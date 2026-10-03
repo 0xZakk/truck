@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/docs/benchmarks/text-to-cad-20261003/plugin/check.py", line 38, in <module>
+    report={'step_valid':s.is_valid,'solid_count':len(s.solids()),'volume_mm3':s.volume,'step_bounds_mm':b.tolist(),'dimension_error_mm':float(np.max(abs(b-expected))),'roundtrip_error_mm':float(np.max(abs(bounds(r)-b))),'native_glb_bounds':m.bounds.tolist(),'glb_inverse_converted_bounds_mm':converted.tolist(),'mesh_bounds_error_mm':float(np.max(abs(converted-b))),'mesh':{'vertices':len(m.vertices),'faces':len(m.faces),'watertight':bool(m.is_watertight),'consistent_winding':bool(m.is_winding_consistent),'components':len(m.split(only_watertight=False))},'probes':p,'controls':controls,'control_rejections':{n:not passes(v) for n,v in controls.items()},'tolerance_mm':.025,'sampling':'36 floor,108 cavity,72 wall points; CAD interiors, away from boundaries','hashes':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (STEP,GLB,OUT/'roundtrip.step',Path(__file__),HERE/'block_core_cup_mps59a.py')}}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/base.py", line 1458, in split
+    return graph.split(self, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/graph.py", line 397, in split
+    return mesh.submesh(
+           ~~~~~~~~~~~~^
+        components, only_watertight=only_watertight, repair=repair, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/base.py", line 2943, in submesh
+    return util.submesh(
+           ~~~~~~~~~~~~^
+        mesh=self,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/util.py", line 1688, in submesh
+    watertight = [len(i.faces) >= 4 and i.fill_holes() for i in result]
+                                        ~~~~~~~~~~~~^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/base.py", line 1985, in fill_holes
+    return repair.fill_holes(self)
+           ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/repair.py", line 246, in fill_holes
+    holes = nx.cycle_basis(nx.from_edgelist(boundary))
+            ^^^^^^^^^^^^^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/trimesh/exceptions.py", line 35, in __getattribute__
+    raise exc_type(*exc_args)
+ModuleNotFoundError: No module named 'networkx'

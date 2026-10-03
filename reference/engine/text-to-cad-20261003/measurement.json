@@ -1,0 +1,33 @@
+{
+  "experiment": "paired isolated MPS59A candidate",
+  "baseline_dispatch_utc": "2026-10-03T18:21:38.032Z",
+  "plugin_dispatch_utc": "2026-10-03T18:21:51.437Z",
+  "dispatch_timestamp_precision": "session metadata timestamp; replaces approximate prompt clock",
+  "acceptance": {
+    "baseline": {
+      "utc": "2026-10-03T18:27:59.092232+00:00",
+      "verdict": "Accepted isolated frozen-section candidate; not installed",
+      "evidence": "baseline-root-review.json; baseline/actual-renders.png; baseline/HANDOFF.md",
+      "worker_submission_utc": "2026-10-03T18:27:19.161060Z"
+    },
+    "plugin": {
+      "utc": "2026-10-03T18:32:09.812274+00:00",
+      "verdict": "Accepted isolated frozen-section candidate; not installed",
+      "worker_submission_utc": "2026-10-03T18:31:15.893033Z",
+      "verified_hash_entries": 32,
+      "evidence": "plugin-root-review.json; plugin CAD opening,section,mesh snapshots; plugin/HANDOFF.md"
+    }
+  },
+  "setup_excluded": "plugin installation and shared source research before dispatch",
+  "root_overhead_start": "reference/engine/text-to-cad-20261003/root-token-start.json",
+  "root_rework": [
+    "Initial independent checker report serialization failed on numpy boolean. Converted to native bool; rerun unchanged geometry passed."
+  ],
+  "baseline_manifest_verified_entries": 16,
+  "plugin_native_viewer": {
+    "loaded": true,
+    "screenshot_visually_reviewed": true,
+    "observed_utc": "2026-10-03T18:28:00Z",
+    "note": "Approximate observation minute; native screenshot shows open cup and continuous floor; separate saved snapshots reviewed later."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "step_valid": true,
+  "solid_count": 1,
+  "volume_mm3": 3350.5996070153233,
+  "step_bounds_mm": [
+    [
+      -26.289,
+      -26.289000100000003,
+      0.0
+    ],
+    [
+      26.289000100000003,
+      26.289000100000003,
+      8.7122
+    ]
+  ],
+  "dimension_error_mm": 1.0000000116860974e-07,
+  "roundtrip_error_mm": 0.0,
+  "native_glb_bounds": [
+    [
+      -0.026288999244570732,
+      0.0,
+      -0.026288999244570732
+    ],
+    [
+      0.026288999244570732,
+      0.008712200447916985,
+      0.026288999244570732
+    ]
+  ],
+  "glb_inverse_converted_bounds_mm": [
+    [
+      -26.288999244570732,
+      -26.288999244570732,
+      0.0
+    ],
+    [
+      26.288999244570732,
+      26.288999244570732,
+      8.712200447916985
+    ]
+  ],
+  "mesh_bounds_error_mm": 8.554292705298394e-07,
+  "mesh": {
+    "vertices": 68246,
+    "faces": 134864,
+    "watertight": false,
+    "consistent_winding": true,
+    "components": 3
+  },
+  "probes": {
+    "floor": {
+      "passed": 36,
+      "total": 36
+    },
+    "cavity": {
+      "passed": 108,
+      "total": 108
+    },
+    "wall": {
+      "passed": 72,
+      "total": 72
+    }
+  },
+  "controls": {
+    "missing_floor": {
+      "floor": {
+        "passed": 0,
+        "total": 36
+      },
+      "cavity": {
+        "passed": 108,
+        "total": 108
+      },
+      "wall": {
+        "passed": 72,
+        "total": 72
+      }
+    },
+    "blocked_opening": {
+      "floor": {
+        "passed": 36,
+        "total": 36
+      },
+      "cavity": {
+        "passed": 72,
+        "total": 108
+      },
+      "wall": {
+        "passed": 72,
+        "total": 72
+      }
+    }
+  },
+  "control_rejections": {
+    "missing_floor": true,
+    "blocked_opening": true
+  },
+  "tolerance_mm": 0.025,
+  "sampling": "36 floor,108 cavity,72 wall points; CAD interiors, away from boundaries",
+  "hashes": {
+    "block_core_cup_mps59a.step": "90abf139236d1065104792b5dde858a261a8f2d4e44a5b243ac0270dfe1c10e5",
+    "block_core_cup_mps59a.glb": "f5c8fd4cc819c05edf19deb561363f0fff00cee652e9497ae9315da1cfa25531",
+    "roundtrip.step": "28302577ee3bc0faac97723af9a19c51be6b539de81ff263a2f42d67bcbef1b9",
+    "check.py": "19f196a80eb004a108f6f1298aa07b2a018e61378545c525b93e19d034e1a039",
+    "block_core_cup_mps59a.py": "98ce609a98ee683c121efcd56fc0f8e87dc206412773a72b46fda5265f5d3af1"
+  },
+  "pass": false
+}
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/docs/benchmarks/text-to-cad-20261003/plugin/check.py", line 42, in <module>
+    assert report['pass']
+           ~~~~~~^^^^^^^^
+AssertionError
