@@ -1,0 +1,89 @@
+{
+  "capture_utc": "2026-10-03T18:32:10.001402+00:00",
+  "workers": {
+    "plugin": {
+      "session_id": "01a10300-43ad-70f3-9838-745a6a83f8dc",
+      "start_utc": "2026-10-03T18:21:51.437Z",
+      "first_counter": {
+        "timestamp": "2026-10-03T18:22:09.624Z",
+        "usage": {
+          "input_tokens": 31783,
+          "cached_input_tokens": 31360,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 152,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 31935
+        }
+      },
+      "last_counter": {
+        "timestamp": "2026-10-03T18:31:32.975Z",
+        "usage": {
+          "input_tokens": 1998134,
+          "cached_input_tokens": 1944448,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 10639,
+          "reasoning_output_tokens": 448,
+          "total_tokens": 2008773
+        }
+      },
+      "last_final_message_utc": "2026-10-03T18:31:32.986Z",
+      "settings": [
+        {
+          "model": "gpt-6-astra",
+          "effort": "medium"
+        }
+      ]
+    },
+    "baseline": {
+      "session_id": "01a10300-0f4b-78e1-a682-6b7786535fd4",
+      "start_utc": "2026-10-03T18:21:38.032Z",
+      "first_counter": {
+        "timestamp": "2026-10-03T18:21:47.232Z",
+        "usage": {
+          "input_tokens": 31710,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 65,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 31775
+        }
+      },
+      "last_counter": {
+        "timestamp": "2026-10-03T18:27:41.880Z",
+        "usage": {
+          "input_tokens": 813991,
+          "cached_input_tokens": 748288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7026,
+          "reasoning_output_tokens": 361,
+          "total_tokens": 821017
+        }
+      },
+      "last_final_message_utc": "2026-10-03T18:27:41.972Z",
+      "settings": [
+        {
+          "model": "gpt-6-astra",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Cumulative fresh-session worker usage includes their full assignment and rework.",
+    "Input includes cached input; reasoning is a subset of output. Do not add either subset again.",
+    "Coordinator is shared overhead, not assigned twice to individual arms. Final report-writing after this snapshot is excluded."
+  ],
+  "coordinator": {
+    "start_counter_utc": "2026-10-03T18:20:18.556Z",
+    "end_counter_utc": "2026-10-03T18:31:52.143Z",
+    "usage_delta": {
+      "input_tokens": 4847723,
+      "cached_input_tokens": 4776064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 12300,
+      "reasoning_output_tokens": 2017,
+      "total_tokens": 4860023
+    },
+    "scope": "paired brief, dispatch, shared tracking, independent QC, viewer and result preparation after restart; excludes earlier installation/research"
+  }
+}

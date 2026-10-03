@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/docs/benchmarks/text-to-cad-20261003/plugin/block_core_cup_mps59a.py", line 36, in <module>
+    block_core_cup_mps59a()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/authoring.py", line 583, in model
+    code = _build(current)
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/authoring.py", line 899, in _build
+    return run_model_argv([*target, *argv], prog=f"python {defn.script_path.name}")
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/cli/_run_model.py", line 151, in run_model_argv
+    with build_tree(json_lines=bool(args.json)), executors.root_context():
+                                                 ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/zacharyfleischmann/.pyenv/versions/3.13.12/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/daemon/executors.py", line 265, in root_context
+    private = broker.PrivateBroker()
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/daemon/broker.py", line 358, in __init__
+    self._server = transport.Server(self.address, self.key, backlog=64)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/truck-cadgen-pilot-20261003/lib/python3.13/site-packages/cadgen/daemon/transport.py", line 424, in __init__
+    self._listener = mpc.Listener(address, family=self._family, authkey=authkey, backlog=backlog)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/.pyenv/versions/3.13.12/lib/python3.13/multiprocessing/connection.py", line 464, in __init__
+    self._listener = SocketListener(address, family, backlog)
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/.pyenv/versions/3.13.12/lib/python3.13/multiprocessing/connection.py", line 608, in __init__
+    self._socket.bind(address)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^
+PermissionError: [Errno 1] Operation not permitted

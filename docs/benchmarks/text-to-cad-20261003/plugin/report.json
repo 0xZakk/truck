@@ -1,0 +1,111 @@
+{
+  "step_valid": true,
+  "solid_count": 1,
+  "volume_mm3": 3350.5996070153233,
+  "step_bounds_mm": [
+    [
+      -26.289,
+      -26.289000100000003,
+      0.0
+    ],
+    [
+      26.289000100000003,
+      26.289000100000003,
+      8.7122
+    ]
+  ],
+  "dimension_error_mm": 1.0000000116860974e-07,
+  "roundtrip_error_mm": 0.0,
+  "native_glb_bounds": [
+    [
+      -0.026288999244570732,
+      0.0,
+      -0.026288999244570732
+    ],
+    [
+      0.026288999244570732,
+      0.008712200447916985,
+      0.026288999244570732
+    ]
+  ],
+  "glb_inverse_converted_bounds_mm": [
+    [
+      -26.288999244570732,
+      -26.288999244570732,
+      0.0
+    ],
+    [
+      26.288999244570732,
+      26.288999244570732,
+      8.712200447916985
+    ]
+  ],
+  "mesh_bounds_error_mm": 8.554292705298394e-07,
+  "mesh": {
+    "raw_vertices": 68262,
+    "weld_digits_meters": 8,
+    "vertices": 67434,
+    "faces": 134864,
+    "watertight": true,
+    "consistent_winding": true,
+    "components": 1
+  },
+  "probes": {
+    "floor": {
+      "passed": 36,
+      "total": 36
+    },
+    "cavity": {
+      "passed": 108,
+      "total": 108
+    },
+    "wall": {
+      "passed": 72,
+      "total": 72
+    }
+  },
+  "controls": {
+    "missing_floor": {
+      "floor": {
+        "passed": 0,
+        "total": 36
+      },
+      "cavity": {
+        "passed": 108,
+        "total": 108
+      },
+      "wall": {
+        "passed": 72,
+        "total": 72
+      }
+    },
+    "blocked_opening": {
+      "floor": {
+        "passed": 36,
+        "total": 36
+      },
+      "cavity": {
+        "passed": 72,
+        "total": 108
+      },
+      "wall": {
+        "passed": 72,
+        "total": 72
+      }
+    }
+  },
+  "control_rejections": {
+    "missing_floor": true,
+    "blocked_opening": true
+  },
+  "tolerance_mm": 0.025,
+  "sampling": "36 floor,108 cavity,72 wall points; CAD interiors, away from boundaries",
+  "hashes": {
+    "block_core_cup_mps59a.step": "90abf139236d1065104792b5dde858a261a8f2d4e44a5b243ac0270dfe1c10e5",
+    "block_core_cup_mps59a.glb": "f5c8fd4cc819c05edf19deb561363f0fff00cee652e9497ae9315da1cfa25531",
+    "roundtrip.step": "e273927a4b27e9c5ce4fe21fb9b67224e5671d788a2747175305e7f67ecdbf6c",
+    "check.py": "0a3b388f87366775920cfdfda3ee8ebd65f77a49a542e4f57f2d86b75f80226a",
+    "block_core_cup_mps59a.py": "98ce609a98ee683c121efcd56fc0f8e87dc206412773a72b46fda5265f5d3af1"
+  },
+  "pass": true
+}
