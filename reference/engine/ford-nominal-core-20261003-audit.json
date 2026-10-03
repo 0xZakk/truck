@@ -1,0 +1,53 @@
+{
+  "source": "https://www.trackey.ford.com/download/pdfs/EngineDimensions.pdf",
+  "page": 1,
+  "row": "300 I-6 1965\u201396",
+  "source_class": "Ford manufacturer nominal table, inches; no factory tolerance or exact owner casting measurement",
+  "dimensional_claims_sha256": "6a39abadf62a0b625d708ca162d56fe6656b7323f3be1f7d629bce697cd28de2",
+  "comparisons": [
+    {
+      "field": "bore",
+      "ford_nominal_inches": 4.0,
+      "ford_nominal_mm": 101.6,
+      "existing_model_mm": 101.6,
+      "model_minus_nominal_mm": 0.0,
+      "existing_evidence_status": "published",
+      "interpretation": "No automatic geometry change; manufacturer family nominal versus current evidence must be reconciled."
+    },
+    {
+      "field": "stroke",
+      "ford_nominal_inches": 3.98,
+      "ford_nominal_mm": 101.092,
+      "existing_model_mm": 101.092,
+      "model_minus_nominal_mm": 0.0,
+      "existing_evidence_status": "published",
+      "interpretation": "No automatic geometry change; manufacturer family nominal versus current evidence must be reconciled."
+    },
+    {
+      "field": "rod_length",
+      "ford_nominal_inches": 6.21,
+      "ford_nominal_mm": 157.73399999999998,
+      "existing_model_mm": 157.7,
+      "model_minus_nominal_mm": -0.033999999999991815,
+      "existing_evidence_status": "assumed",
+      "interpretation": "No automatic geometry change; manufacturer family nominal versus current evidence must be reconciled."
+    },
+    {
+      "field": "compression_height",
+      "ford_nominal_inches": 1.757,
+      "ford_nominal_mm": 44.62779999999999,
+      "existing_model_mm": 45.1104,
+      "model_minus_nominal_mm": 0.482600000000005,
+      "existing_evidence_status": "replacement-reference",
+      "interpretation": "No automatic geometry change; manufacturer family nominal versus current evidence must be reconciled."
+    }
+  ],
+  "additional_nominal_mm": {
+    "deck_height": 254,
+    "bore_spacing": 113.792,
+    "main_journal_diameter": 60.934599999999996,
+    "rod_journal_diameter": 53.924200000000006
+  },
+  "next_action": "Reconcile replacement piston compression-height difference with exact-year piston application; rod length is consistent to rounding but pin offset and production tolerance remain unverified. Do not invalidate existing measured journal ranges from rounded catalog nominals.",
+  "geometry_changed": false
+}
