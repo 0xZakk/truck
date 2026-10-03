@@ -36,3 +36,7 @@ GitHub issue/PR/release operations work. Project-column writes remain unapplied 
 CAD plugin comparison and measured tokens/time: `docs/benchmarks/text-to-cad-20261003/RESULTS.md`. Both isolated cups passed; first-run plugin slower/more total tokens with setup friction and denser mesh. Retain existing pipeline; use plugin inspection selectively. Generated archive release402640308 checksum verified. Earlier artifacts/reproduction are indexed in `docs/CAD-ARTIFACTS.md` and component handoffs.
 
 Prior detailed checkpoint, including original failure history and source dependencies: `docs/history/engine-state-before-resume-20261003-pr126.md`. Read selectively. No system is Done.
+
+## Latest review checkpoint — 20:23 UTC onward
+
+Viewer HTTP200 reverified on port8001; app open queued. Spring worker reports all24 closed/peak occurrence checks passed; independent final context review pending. Exhaust tail preservation process exited137 after45/202 capsule steps; proof remains incomplete and slab-partition alternative requested. Fuel r6b/r7 frozen with four conflicts; root approved only estimated8mm screw successor and rejected collision-sized return counterbore. No canonical installation changed. Melling stock spring application/dimensions now captured in KB source and atomic note; link checks PASS, semantic embedding attempt failed because the CAD runtime lacks sentence_transformers.
