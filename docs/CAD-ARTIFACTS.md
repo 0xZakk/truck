@@ -324,3 +324,12 @@ Published after [PR124](https://github.com/0xZakk/truck/pull/124) merged at `aca
 Private release [studies-2026-10-03-intake-gasket-outline](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-intake-gasket-outline) preserves the corrected full-outline gasket candidate. Download `intake-gasket-outline-20261003.tar.gz`, verify SHA256 `46460c73e1906db743a7c4579c7d393a5d8ddb0e41d3aafc00caa9d6811673df`, then extract from repository root. Manifest: `reference/engine/intake-gasket-outline-20261003-package.json`; all four members and server checksum/bytes verified. No source pixels or originals included.
 
 The mesh/STEP and illustrative contact bands pass; full-footprint casting support and production seal requirements remain unresolved. This is not an installed engine change. Reproduction and exact source dependencies: `docs/components/intake-gasket-outline-20261003.md`.
+
+
+## Coordinated pump/cover candidate and local inlet successor
+
+The [reviewed pump archive](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-pump-cover-reviewed) contains279 authored/generated members,45,517,580bytes, SHA256 `e1d2e5b3b3ac5987935b205f49d2b0a7fa10c5e6fc065e798608a5c351d186ff`. Publication confirmation is recorded in `reference/engine/pump-cover-candidate-20261003-publication.json`. Source pixels and manual originals are excluded.
+
+Restore predecessor dependencies listed in `reference/engine/pump-cover-candidate-20261003-resume-package.json`, verify the archive checksum and member paths, preserve newer local work, then extract at the repository root. The archive includes authored snapshots; do not overwrite newer source blindly. Follow `docs/components/pump-cover-candidate-20261003-handoff.md` for individual checks.
+
+This is not an installed engine update. The separate analytic inlet successor clears the sampled inlet paths and preserves checked local features. The coupled photo frame still conflicts with Ford nominal deck height; fourteen neighbor clashes and service/motion/source gaps remain. Root independently checked38 report input hashes and the actual mesh review.

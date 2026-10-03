@@ -1,0 +1,29 @@
+Cannot create cache home directory: '/Users/zacharyfleischmann/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+TOOL pump1_socket_R10_5
+TOOL pump1_head_withdrawal
+TOOL pump2_socket_R10_5
+TOOL pump2_head_withdrawal
+TOOL pump3_socket_R10_5
+CONFLICT {'tool': 'pump3_socket_R10_5', 'neighbor': 'alt-engine-bracket-bolt-1', 'overlap_mm3': 30.469850362435704}
+TOOL pump3_head_withdrawal
+TOOL pump4_socket_R10_5
+CONFLICT {'tool': 'pump4_socket_R10_5', 'neighbor': 'coolant-outlet-housing', 'overlap_mm3': 1456.5265628539532}
+TOOL pump4_head_withdrawal
+CONFLICT {'tool': 'pump4_head_withdrawal', 'neighbor': 'coolant-outlet-housing', 'overlap_mm3': 516.0403829767816}
+TOOL cover1_socket_R10_5
+TOOL cover1_head_withdrawal
+TOOL cover2_socket_R10_5
+TOOL cover2_head_withdrawal
+TOOL cover3_socket_R10_5
+TOOL cover3_head_withdrawal
+TOOL cover4_socket_R10_5
+TOOL cover4_head_withdrawal
+TOOL cover5_socket_R10_5
+TOOL cover5_head_withdrawal
+TOOL cover6_socket_R10_5
+CONFLICT {'tool': 'cover6_socket_R10_5', 'neighbor': 'ps-ac-support-bracket', 'overlap_mm3': 646.7320949004531}
+TOOL cover6_head_withdrawal
+TOOL cover7_socket_R10_5
+TOOL cover7_head_withdrawal
+FAIL 48 4 0

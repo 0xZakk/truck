@@ -1,0 +1,88 @@
+{
+  "status": "CANDIDATE FAIL; source datum and local flow work remain",
+  "baseline": "5584306a595f87b60b29eca9ea82b527ade5ae98",
+  "reports": {
+    "build": {
+      "path": "reference/engine/pump-cover-candidate-20261003-build.json",
+      "sha256": "d5a6ccacc7e4ca620964049d4a0d9cec7989f1584e2e01ef8e7e28339839e3f3",
+      "checked_input_or_export_hashes": 94,
+      "mismatches": []
+    },
+    "check": {
+      "path": "reference/engine/pump-cover-candidate-20261003-check.json",
+      "sha256": "98d576f51ad17c99e2941c8ca15b497518fed0a85fedd85792a4be9f453fb9c1",
+      "checked_input_or_export_hashes": 35,
+      "mismatches": []
+    },
+    "neighbors": {
+      "path": "reference/engine/pump-cover-candidate-20261003-neighbors.json",
+      "sha256": "0129ba5c8d1571d8ff26112bc806ee4e811cb90c275a329b3ec072b49ebca348",
+      "checked_input_or_export_hashes": 812,
+      "mismatches": []
+    },
+    "tools": {
+      "path": "reference/engine/pump-cover-candidate-20261003-tools.json",
+      "sha256": "eec157e4f65e0f0bb88a49498e78e0fc0d43b7c7824dc5b5a78521bf7fe5236b",
+      "checked_input_or_export_hashes": 21,
+      "mismatches": []
+    },
+    "rotor-containment": {
+      "path": "reference/engine/pump-cover-candidate-20261003-rotor-containment.json",
+      "sha256": "600bff4968d4a0e610b87a01038d5f5faef89d0723736d014f8f4f31a96c511f",
+      "checked_input_or_export_hashes": 3,
+      "mismatches": []
+    },
+    "non-spring-mesh": {
+      "path": "reference/engine/pump-cover-candidate-20261003-non-spring-mesh.json",
+      "sha256": "75ed5ff3a7074f6406c0f8b5c83bfe1427dfe64e3042fe554f3662209b3ee412",
+      "checked_input_or_export_hashes": 2,
+      "mismatches": []
+    },
+    "spring-mesh": {
+      "path": "reference/engine/pump-cover-candidate-20261003-spring-mesh.json",
+      "sha256": "98c7904e83ea7f616620127d944163ec1d3db41d8977454b69d404ac6c12bf93",
+      "checked_input_or_export_hashes": 3,
+      "mismatches": []
+    },
+    "source-compare": {
+      "path": "reference/engine/pump-cover-candidate-20261003-source-compare.json",
+      "sha256": "f3e4b0ee8a685486fc779d9e51b6406de4fa2b86f47d97ca34bcee3e08c1ea3c",
+      "checked_input_or_export_hashes": 4,
+      "mismatches": []
+    },
+    "deck-registration": {
+      "path": "reference/engine/pump-cover-candidate-20261003-deck-registration.json",
+      "sha256": "661aec54f74b11887d049f7e9e611ef01735d1a9f5b9a2176341b9ff599674c2",
+      "checked_input_or_export_hashes": 5,
+      "mismatches": []
+    }
+  },
+  "hashes_current": true,
+  "part_count": 59,
+  "neighbors": {
+    "pairs": 788,
+    "conflicts": 14,
+    "errors": 0
+  },
+  "tools": {
+    "checks": 48,
+    "conflicts": 4
+  },
+  "mesh": {
+    "non_spring_count": 58,
+    "watertight_count": 58,
+    "consistent_winding_count": 58,
+    "max_cad_bounds_error_mm": 0.0010291309729950626
+  },
+  "inlet_flow_obstruction_mm3": 16.24331452696924,
+  "rotor_actual_outside_swept_volume_mm3": 0.0,
+  "source_shape_verdict": "Source exterior fidelity remains FAIL/open: modeled arm too narrow/short under conditional rear comparison. This candidate tests coordinated joint, not shape acceptance.",
+  "dimensions_verdict": "FAIL installed registration: fourth axis Z260.259 > Ford nominal block deck254; primary source supports preserving deck",
+  "unrun": [
+    "Fresh installed browser integration",
+    "Continuous coupled engine/pump motion",
+    "Revised downstream belt/hose and accessory carrier integration"
+  ],
+  "frozen_spring": "Unchanged; separate analytic illustration mesh only. No new physical spring claim.",
+  "script_sha256": "f814cf392673c0bc80f52ffbd61a9d8ec8abe2cff425297fe635d4becae99655"
+}

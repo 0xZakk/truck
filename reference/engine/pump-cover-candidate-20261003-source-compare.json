@@ -1,0 +1,161 @@
+{
+  "scope": "Actual exported STEP display triangles against frozen authored Carter pixel measurements. No source pixels redistributed.",
+  "bolt_rms_px": 2.301817959537086,
+  "scale_px_per_estimated_candidate_mm": 4.89513855006132,
+  "source_registration": "Proper 2D similarity with current four bolt axes; source fifth/azimuth/source uncertainties preserved in prior frozen report",
+  "outline": [
+    {
+      "x_px": 1100,
+      "source_width_px": 414.0,
+      "source_bounds_px": [
+        1393.0,
+        1807.0
+      ],
+      "candidate_bounds_px": [
+        1475.5710238871695,
+        1775.8825718423382
+      ],
+      "candidate_width_px": 300.31154795516863
+    },
+    {
+      "x_px": 1150,
+      "source_width_px": 412.0,
+      "source_bounds_px": [
+        1400.0,
+        1812.0
+      ],
+      "candidate_bounds_px": [
+        1521.7418210042981,
+        1778.628103238043
+      ],
+      "candidate_width_px": 256.88628223374485
+    },
+    {
+      "x_px": 1200,
+      "source_width_px": 408.0,
+      "source_bounds_px": [
+        1407.0,
+        1815.0
+      ],
+      "candidate_bounds_px": [
+        1527.4094078319613,
+        1781.509863200697
+      ],
+      "candidate_width_px": 254.10045536873577
+    },
+    {
+      "x_px": 1250,
+      "source_width_px": 400.0,
+      "source_bounds_px": [
+        1416.0,
+        1816.0
+      ],
+      "candidate_bounds_px": [
+        1533.0769946596247,
+        1784.4952907955053
+      ],
+      "candidate_width_px": 251.4182961358806
+    },
+    {
+      "x_px": 1300,
+      "source_width_px": 378.0,
+      "source_bounds_px": [
+        1431.0,
+        1809.0
+      ],
+      "candidate_bounds_px": [
+        1538.210305403212,
+        1788.557105144289
+      ],
+      "candidate_width_px": 250.3467997410769
+    },
+    {
+      "x_px": 1350,
+      "source_width_px": 354.0,
+      "source_bounds_px": [
+        1450.0,
+        1804.0
+      ],
+      "candidate_bounds_px": [
+        1542.475573465803,
+        1792.8171751594068
+      ],
+      "candidate_width_px": 250.3416016936037
+    },
+    {
+      "x_px": 1400,
+      "source_width_px": 331.0,
+      "source_bounds_px": [
+        1469.0,
+        1800.0
+      ],
+      "candidate_bounds_px": [
+        1546.7408415283942,
+        1797.077245174525
+      ],
+      "candidate_width_px": 250.33640364613075
+    },
+    {
+      "x_px": 1450,
+      "source_width_px": 263.0,
+      "source_bounds_px": [
+        1507.0,
+        1770.0
+      ],
+      "candidate_bounds_px": [
+        1551.0061095909853,
+        1801.3373151896428
+      ],
+      "candidate_width_px": 250.33120559865756
+    },
+    {
+      "x_px": 1500,
+      "source_width_px": 264.0,
+      "source_bounds_px": [
+        1510.0,
+        1774.0
+      ],
+      "candidate_bounds_px": [
+        1555.2713776535763,
+        1813.4457775093354
+      ],
+      "candidate_width_px": 258.174399855759
+    },
+    {
+      "x_px": 1550,
+      "source_width_px": 265.0,
+      "source_bounds_px": [
+        1514.0,
+        1779.0
+      ],
+      "candidate_bounds_px": null,
+      "candidate_width_px": null
+    },
+    {
+      "x_px": 1600,
+      "source_width_px": 265.0,
+      "source_bounds_px": [
+        1518.0,
+        1783.0
+      ],
+      "candidate_bounds_px": null,
+      "candidate_width_px": null
+    }
+  ],
+  "verdict": "Source exterior fidelity remains FAIL/open: modeled arm too narrow/short under conditional rear comparison. This candidate tests coordinated joint, not shape acceptance.",
+  "limits": [
+    "Rear photo projection does not measure actual crosssections or prove depth.",
+    "Carter tower/ribs remain underspecified, not production contours.",
+    "Clocking is derived from common-face layout; camera roll is fitted separately."
+  ],
+  "inputs": {
+    "reference/engine/pump-source-registration-20261003-measurements.json": "745dcd3e841cb11c457aeb0e22f5e3dd40d29917f92108b61c4a8dfa17af1e2d",
+    "reference/engine/pump-cover-joint-20261003-datums.json": "34c901e75423d43487233b6f9cb8d4ca2c2a5400be23ff831153720196abc619",
+    "reference/engine/pump-cover-candidate-20261003-display-data.npz": "ef0159802ed1d3f2cc9c7dd488a2266f884aa71778cfe30c6c54815bef210cb0",
+    "scripts/pump-cover-candidate-20261003-source-compare.py": "86c5855791cacbe78ca6b37ca2c39bc0ba44e6c933d6b3e18cd4a39d92c62190"
+  },
+  "image": {
+    "path": "reference/engine/pump-cover-candidate-20261003-source-compare.png",
+    "sha256": "cb83b7e76a6f81caf99cecdc4823de8c8753d90ce9628d06e87d693505fffdcc"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "status": "RESEARCH amendment; no new CAD; prior option B invalid for installed head interfaces",
+  "baseline": "5584306a595f87b60b29eca9ea82b527ade5ae98",
+  "source": {
+    "url": "https://www.ebay.com/itm/146111774717",
+    "image_url": "https://i.ebayimg.com/images/g/bBwAAOSw8FVnEovT/s-l1200.jpg",
+    "sha256": "70616ce77f9adbee7ff6415545bdace98b786ba405e20524a8b9b9ce7d87ae45",
+    "identity": "Seller ATK DFF8; ATK catalog1987\u201396 VIN Y family comparison; not owner engine",
+    "seam_identification": "Visible horizontal joint between separate head-front face and machined block-front face, above fifth opening and top pump screw. Both mating surfaces and interface depth are not measured.",
+    "coplanarity_limit": "Seam projection treated as block front X373 for this diagnostic; head frontage/recess depth unknown. Outlet extrema are qualitative held-out features, not a thermostat flange calibration."
+  },
+  "primary_deck_source": {
+    "url": "https://www.trackey.ford.com/download/pdfs/EngineDimensions.pdf",
+    "download_sha256": "0e81983110834897b86bbb06023f5f1df4381ab9e9174c35a18a425f4430049c",
+    "page": 1,
+    "row": "300 I-6, 1965\u201396",
+    "column": "DECK HEIGHT",
+    "inches": 10.0,
+    "mm": 254.0,
+    "class": "manufacturer nominal reference dimension; no production tolerance or this-casting measurement",
+    "visual_review": "PDF page raster reviewed; deck-height column verified; raw PDF excluded"
+  },
+  "observations": {
+    "deck_seam_pixels": [
+      [
+        470,
+        414
+      ],
+      [
+        530,
+        414
+      ],
+      [
+        590,
+        415
+      ],
+      [
+        660,
+        415
+      ],
+      [
+        727,
+        416
+      ]
+    ],
+    "pan_pixels": [
+      [
+        450,
+        977
+      ],
+      [
+        950,
+        980
+      ]
+    ],
+    "outlet_extrema_pixels": [
+      [
+        563,
+        320
+      ],
+      [
+        620,
+        264
+      ],
+      [
+        678,
+        320
+      ],
+      [
+        620,
+        375
+      ]
+    ],
+    "manual_selection_uncertainty_px": 3,
+    "optionB_deck_yz_mm": [
+      [
+        -56.107456812888,
+        290.0845819998778
+      ],
+      [
+        -22.760684296007007,
+        290.17934819619893
+      ],
+      [
+        10.567937716881692,
+        289.72676532182345
+      ],
+      [
+        49.42242197177391,
+        289.83738618431266
+      ],
+      [
+        86.5904367363061,
+        289.3962664866386
+      ]
+    ],
+    "optionB_pan_yz_mm": [
+      [
+        -67.04572455176275,
+        -24.453491849471508
+      ],
+      [
+        215.81323722431068,
+        -24.507530104327344
+      ]
+    ],
+    "optionB_outlet_extrema_yz_mm": [
+      [
+        -4.663265638520162,
+        341.5146747849396
+      ],
+      [
+        26.682596039624517,
+        371.97283218356296
+      ],
+      [
+        58.96222728894814,
+        341.66440059640087
+      ],
+      [
+        27.079576331812355,
+        311.63256618996274
+      ]
+    ]
+  },
+  "fit_audit": {
+    "original_training_rms_px": 1.040887329543761,
+    "original_heldout_fifth_error_px": 2.0414695369860882,
+    "original_leave_one_cover_out_errors_px": [
+      2.9906061996139788,
+      0.7737870093531761,
+      1.7733703978214856,
+      0.4903037458460886,
+      1.4533036660120544,
+      1.786141803563854,
+      0.8396574914232716
+    ],
+    "normalized_homography_condition_number": 7.816856817422622,
+    "local_inverse_Jacobians": [
+      {
+        "pixel": [
+          470,
+          414
+        ],
+        "singular_values_mm_per_px": [
+          0.5559802367560958,
+          0.547602366905661
+        ],
+        "condition_number": 1.0152991848771138
+      },
+      {
+        "pixel": [
+          530,
+          414
+        ],
+        "singular_values_mm_per_px": [
+          0.555608216922646,
+          0.5474471634827217
+        ],
+        "condition_number": 1.0149074723266547
+      },
+      {
+        "pixel": [
+          590,
+          415
+        ],
+        "singular_values_mm_per_px": [
+          0.5553391012946449,
+          0.547248079745087
+        ],
+        "condition_number": 1.0147849245141745
+      },
+      {
+        "pixel": [
+          660,
+          415
+        ],
+        "singular_values_mm_per_px": [
+          0.5551100432717005,
+          0.5468660330267376
+        ],
+        "condition_number": 1.015075008771956
+      },
+      {
+        "pixel": [
+          727,
+          416
+        ],
+        "singular_values_mm_per_px": [
+          0.5550129013160893,
+          0.5464376345862269
+        ],
+        "condition_number": 1.0156930383031828
+      },
+      {
+        "pixel": [
+          450,
+          977
+        ],
+        "singular_values_mm_per_px": [
+          0.5704673298304559,
+          0.5665093353393666
+        ],
+        "condition_number": 1.0069866359549362
+      },
+      {
+        "pixel": [
+          950,
+          980
+        ],
+        "singular_values_mm_per_px": [
+          0.5703737932079472,
+          0.5622160031594731
+        ],
+        "condition_number": 1.014510063752419
+      },
+      {
+        "pixel": [
+          563,
+          320
+        ],
+        "singular_values_mm_per_px": [
+          0.5536394467827812,
+          0.5437566632233736
+        ],
+        "condition_number": 1.018175011411948
+      },
+      {
+        "pixel": [
+          620,
+          264
+        ],
+        "singular_values_mm_per_px": [
+          0.5523384119426226,
+          0.5413886293521196
+        ],
+        "condition_number": 1.0202253649168926
+      },
+      {
+        "pixel": [
+          678,
+          320
+        ],
+        "singular_values_mm_per_px": [
+          0.5532312515120162,
+          0.5431688821045992
+        ],
+        "condition_number": 1.0185253053680625
+      },
+      {
+        "pixel": [
+          620,
+          375
+        ],
+        "singular_values_mm_per_px": [
+          0.5544584494504314,
+          0.5455772417057623
+        ],
+        "condition_number": 1.0162785524500653
+      }
+    ],
+    "new_observations_used_to_refit_homography": false
+  },
+  "conditional_pan_deck_scale_hypothesis": {
+    "method": "Uniform similarity of coupled source footprints constrained to primary deck254 and inherited pan\u221224.5; no overlap term. NOT approved geometry.",
+    "scale_relative_optionB": 0.8860245375520982,
+    "z_translation_mm": -2.809666582653623,
+    "pump_axes_yz_mm": [
+      [
+        -18.667641829887906,
+        106.26033205540298
+      ],
+      [
+        43.48210591253884,
+        168.64009072904233
+      ],
+      [
+        -81.81750677690354,
+        179.46089351688107
+      ],
+      [
+        2.6095299757706742,
+        227.1515695836302
+      ]
+    ],
+    "cover_axes_yz_mm": [
+      [
+        -105.11637910991276,
+        -9.102110293755072
+      ],
+      [
+        -53.41245280384854,
+        13.82163466296144
+      ],
+      [
+        -6.141286071443889,
+        85.48086029194215
+      ],
+      [
+        86.44685049509059,
+        173.2148814795943
+      ],
+      [
+        197.65175609347216,
+        137.79642444625478
+      ],
+      [
+        222.9074078422586,
+        62.71944935012199
+      ],
+      [
+        192.44848676052115,
+        -9.927683243525557
+      ]
+    ],
+    "mapped_optionB_crank_origin_yz_mm": [
+      0,
+      -2.809666582653623
+    ],
+    "why_not_installable": "Changes cover scale, source seal-origin registration and all coupled mounts; preserving the real crank/seal/gear interfaces requires independent source calibration. No automatic gear/hardware scaling.",
+    "fixed_camera_selection_sensitivity_p2_5_p50_p97_5": [
+      [
+        289.04686166712554,
+        0.8816333125950047,
+        -3.9451196427294035
+      ],
+      [
+        289.83398165756046,
+        0.8859737655194676,
+        -2.7977011628914656
+      ],
+      [
+        290.65928317302615,
+        0.8906870802101802,
+        -1.720635861913181
+      ]
+    ],
+    "sensitivity_columns": [
+      "optionB_mean_deckZ",
+      "scale",
+      "Ztranslation"
+    ],
+    "uncertainty_limit": "Pixel-selection only under frozen homography; excludes camera, pattern, depth, scale and pan-datum uncertainty.",
+    "sampled_cam_outer_arch_margin_mm": -7.212624117046007,
+    "sampled_cam_limit": "Same360point R86.947 ring and outer45point trace as prior option study; fails feasibility, not an actual CAD collision test. Never scale gears to force fit."
+  },
+  "negative_controls": {
+    "seam_shift20px_Z_displacement_mm": -10.953306327247617,
+    "forbidden_controls": "Forward crank/cam hubs remain excluded from coplanar fit."
+  },
+  "inputs": {
+    "reference/engine/pump-cover-joint-20261003-joint-fit.json": "00143efd214153ecb9b40a5def60cb79464b4af6889532efb063508af3e1f275",
+    "reference/engine/pump-cover-joint-20261003-measurements.json": "f559e00fca01f22279e4fb789833751dce39b3fedec8f4130849b68f5918c2bc",
+    "scripts/pump-cover-candidate-20261003-deck-registration.py": "99306ff50ab04dc75aa9034656f2e46f3feb55450f0a28a703cabc1efb6631a3",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "reference/engine/pump-cover-candidate-20261003-display-data.npz": "ef0159802ed1d3f2cc9c7dd488a2266f884aa71778cfe30c6c54815bef210cb0"
+  },
+  "visual": {
+    "path": "reference/engine/pump-cover-candidate-20261003-deck-registration.png",
+    "sha256": "d698506d3ed0d74c6a4331b639d15b50ebdb6ad765fc9f5db32a4a90297361d8",
+    "source_pixels_redistributed": false
+  }
+}

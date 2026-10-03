@@ -1,0 +1,699 @@
+{
+  "status": "FAIL",
+  "scope": "Estimated socket cylinders and actual modeled head cross-section straight withdrawal sweeps. No wrench swing or helical thread-unwinding claim.",
+  "threshold_mm3": 0.1,
+  "tools": {
+    "pump1_socket_R10_5": {
+      "bounds": [
+        [
+          389.0,
+          -31.461914536047047,
+          111.90770930717008
+        ],
+        [
+          435.0,
+          -10.461914536047052,
+          132.90770930717008
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-1"
+    },
+    "pump1_head_withdrawal": {
+      "bounds": [
+        [
+          389.0,
+          -27.79933539187574,
+          114.93850734356842
+        ],
+        [
+          426.05,
+          -14.124493680218368,
+          129.87691127077179
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-1"
+    },
+    "pump2_socket_R10_5": {
+      "bounds": [
+        [
+          389.0,
+          38.04540017360928,
+          182.70432247656282
+        ],
+        [
+          435.0,
+          59.04540017360928,
+          203.70432247656282
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-2"
+    },
+    "pump2_head_withdrawal": {
+      "bounds": [
+        [
+          389.0,
+          41.70797931778059,
+          185.73512051296112
+        ],
+        [
+          426.05,
+          55.38282102943796,
+          200.67352444016453
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-2"
+    },
+    "pump3_socket_R10_5": {
+      "bounds": [
+        [
+          389.0,
+          -102.04312105131291,
+          195.47541096666765
+        ],
+        [
+          435.0,
+          -81.04312105131291,
+          216.47541096666765
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-3"
+    },
+    "pump3_head_withdrawal": {
+      "bounds": [
+        [
+          389.0,
+          -98.38054190714159,
+          198.50620900306595
+        ],
+        [
+          426.05,
+          -84.70570019548423,
+          213.44461293026936
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-3"
+    },
+    "pump4_socket_R10_5": {
+      "bounds": [
+        [
+          389.0,
+          -7.923833287424561,
+          249.75919975809973
+        ],
+        [
+          435.0,
+          13.076166712575436,
+          270.7591997580997
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-4"
+    },
+    "pump4_head_withdrawal": {
+      "bounds": [
+        [
+          389.0,
+          -4.261254143253246,
+          252.78999779449802
+        ],
+        [
+          426.05,
+          9.413587568404125,
+          267.7284017217014
+        ]
+      ],
+      "owner_excluded": "water-pump-mounting-screw-4"
+    },
+    "cover1_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          -129.69951535908172,
+          -17.372854198333243
+        ],
+        [
+          435.0,
+          -108.69951535908172,
+          3.6271458016667575
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-1"
+    },
+    "cover1_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          -127.94951535908172,
+          -15.622854198333243
+        ],
+        [
+          407.32500000000005,
+          -110.44951535908172,
+          1.8771458016667575
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-1"
+    },
+    "cover2_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          -70.67905521045716,
+          8.54719901657343
+        ],
+        [
+          435.0,
+          -49.67905521045717,
+          29.54719901657343
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-2"
+    },
+    "cover2_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          -68.92905521045716,
+          10.29719901657343
+        ],
+        [
+          407.32500000000005,
+          -51.42905521045717,
+          27.79719901657343
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-2"
+    },
+    "cover3_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          -17.127940493863825,
+          88.49106943536769
+        ],
+        [
+          435.0,
+          3.872059506136173,
+          109.49106943536769
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-3"
+    },
+    "cover3_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          -15.377940493863827,
+          90.24106943536769
+        ],
+        [
+          407.32500000000005,
+          2.122059506136173,
+          107.74106943536769
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-3"
+    },
+    "cover4_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          87.0478052976514,
+          188.06723454396885
+        ],
+        [
+          435.0,
+          108.0478052976514,
+          209.06723454396885
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-4"
+    },
+    "cover4_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          88.7978052976514,
+          189.81723454396885
+        ],
+        [
+          407.32500000000005,
+          106.2978052976514,
+          207.31723454396885
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-4"
+    },
+    "cover5_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          212.36727322987147,
+          147.85846880484021
+        ],
+        [
+          435.0,
+          233.36727322987147,
+          168.85846880484021
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-5"
+    },
+    "cover5_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          214.11727322987147,
+          149.60846880484021
+        ],
+        [
+          407.32500000000005,
+          231.61727322987147,
+          167.10846880484021
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-5"
+    },
+    "cover6_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          241.41680672464793,
+          63.92369033067094
+        ],
+        [
+          435.0,
+          262.4168067246479,
+          84.92369033067094
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-6"
+    },
+    "cover6_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          243.16680672464793,
+          65.67369033067094
+        ],
+        [
+          407.32500000000005,
+          260.6668067246479,
+          83.17369033067094
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-6"
+    },
+    "cover7_socket_R10_5": {
+      "bounds": [
+        [
+          379.8,
+          206.74482469086223,
+          -18.393399845733516
+        ],
+        [
+          435.0,
+          227.74482469086223,
+          2.606600154266485
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-7"
+    },
+    "cover7_head_withdrawal": {
+      "bounds": [
+        [
+          379.8,
+          208.49482469086223,
+          -16.643399845733516
+        ],
+        [
+          407.32500000000005,
+          225.99482469086223,
+          0.8566001542664853
+        ]
+      ],
+      "owner_excluded": "timing-cover-mounting-screw-7"
+    }
+  },
+  "checks": [
+    {
+      "tool": "pump1_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump1_socket_R10_5",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump1_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump1_head_withdrawal",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump2_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump2_socket_R10_5",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump2_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump2_head_withdrawal",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_socket_R10_5",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_socket_R10_5",
+      "neighbor": "alt-engine-bracket-bolt-1",
+      "overlap_mm3": 30.469850362435704
+    },
+    {
+      "tool": "pump3_socket_R10_5",
+      "neighbor": "alternator-thermactor-common-carrier",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_head_withdrawal",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_head_withdrawal",
+      "neighbor": "alt-engine-bracket-bolt-1",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump3_head_withdrawal",
+      "neighbor": "alternator-thermactor-common-carrier",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump4_socket_R10_5",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump4_socket_R10_5",
+      "neighbor": "coolant-outlet-housing",
+      "overlap_mm3": 1456.5265628539532
+    },
+    {
+      "tool": "pump4_socket_R10_5",
+      "neighbor": "thermostat-frame",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump4_head_withdrawal",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "pump4_head_withdrawal",
+      "neighbor": "coolant-outlet-housing",
+      "overlap_mm3": 516.0403829767816
+    },
+    {
+      "tool": "cover1_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover1_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover2_socket_R10_5",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover2_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover2_socket_R10_5",
+      "neighbor": "damper-hub",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover2_head_withdrawal",
+      "neighbor": "crankshaft",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover2_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover3_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover3_socket_R10_5",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover3_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover3_head_withdrawal",
+      "neighbor": "water-pump-housing",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover4_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover4_socket_R10_5",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover4_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover4_head_withdrawal",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover5_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover5_socket_R10_5",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover5_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover5_head_withdrawal",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover6_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover6_socket_R10_5",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 646.7320949004531
+    },
+    {
+      "tool": "cover6_socket_R10_5",
+      "neighbor": "ac-compressor-front-cylinder",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover6_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover6_head_withdrawal",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover6_head_withdrawal",
+      "neighbor": "ac-compressor-front-cylinder",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover7_socket_R10_5",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    },
+    {
+      "tool": "cover7_head_withdrawal",
+      "neighbor": "timing-cover",
+      "overlap_mm3": 0.0
+    }
+  ],
+  "conflicts": [
+    {
+      "tool": "pump3_socket_R10_5",
+      "neighbor": "alt-engine-bracket-bolt-1",
+      "overlap_mm3": 30.469850362435704
+    },
+    {
+      "tool": "pump4_socket_R10_5",
+      "neighbor": "coolant-outlet-housing",
+      "overlap_mm3": 1456.5265628539532
+    },
+    {
+      "tool": "pump4_head_withdrawal",
+      "neighbor": "coolant-outlet-housing",
+      "overlap_mm3": 516.0403829767816
+    },
+    {
+      "tool": "cover6_socket_R10_5",
+      "neighbor": "ps-ac-support-bracket",
+      "overlap_mm3": 646.7320949004531
+    }
+  ],
+  "errors": [],
+  "gear_checks": [
+    {
+      "a": "crank-timing-gear",
+      "b": "timing-cover",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "block",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "water-pump-housing",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "water-pump-gasket",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "crank-timing-gear",
+      "b": "water-pump-impeller",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "timing-cover",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "timing-cover-main-gasket",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "block",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "water-pump-housing",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "water-pump-gasket",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    },
+    {
+      "a": "cam-timing-gear",
+      "b": "water-pump-impeller",
+      "overlap_mm3": 0.0,
+      "scope": "FreshactualXdependentq0 only; no fullmotion claim"
+    }
+  ],
+  "inputs": {
+    "cad/engine/generated/timing-front-coordinated-stage/timing-cover.step": "14bff6fa4dd3d562c7b248ea1849b303a822a1feaefcd25fcdcceac9d7f7b75e",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-housing.step": "29318b02a494fb131f60b41471bbb9f43100484fab1b39009e0859a0323f3159",
+    "cad/engine/generated/alt-engine-bracket-bolt-1.step": "bb793f88291dea0beb4e5a8fe3ec7134ced44ded238b0cd56251f8a1ef3c3c27",
+    "cad/engine/generated/accessory-matched-carriers/trial6-carrier.step": "f824e8ed427e595ba29305c9a683d244038c00a3ce3f78d0cb1e17696ea84680",
+    "cad/engine/generated/coolant-outlet-housing.step": "1ae122b328b3a9464e80ea1d4385d51f0b3f22d6119432b17cd5d8b58bbf7295",
+    "cad/engine/generated/thermostat-frame.step": "b880dbdc9ce655aab5976be5152adb1f79c486b87e71c70decf96de86110a6e4",
+    "cad/engine/generated/timing-core-drive-integration-stage/crankshaft.step": "ef0e1e183909da5d7fb4a83878735cdd0b8aa8f5d68a4d8c574eb063e3eb4ea5",
+    "cad/engine/generated/front-seal-2692-integration-stage/damper-hub.step": "8866684445ac10388a35dab2f808342cef33416b275b1ac5ff1ca219f18e4f04",
+    "cad/engine/generated/accessory-psac-carrier/trial1-carrier.step": "11f8047def0f76b43a08e080fc28bd2cac98e661f1612fcca82c82a23d86c8b9",
+    "cad/engine/generated/ac-compressor-front-cylinder.step": "abd8fca95e1e6c5944c1ce22653ae930924b2fff90593e11e3f84dfb0a5e7e81",
+    "cad/engine/generated/timing-core-drive-integration-stage/crank-timing-gear.step": "7cf2c7a6b3f9eb08e08762494dabe77fe02ae24397a9a31cae69ad6b08b50425",
+    "cad/engine/generated/timing-front-sealing-stage/timing-cover-main-gasket.step": "3807f9d126282008a27562502f6ca08541fec59086c24b25ae6afc4f62daad8c",
+    "cad/engine/generated/pump-cover-candidate-20261003/block.step": "511e9cc0ade4a47c0dcb16a4e47ae4383e1fe2aa017fd49738189eb84e02062a",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-gasket.step": "6be76159ddb1382c25b863e786d3e9d914d168f669f68b05bb727da75f0c7cce",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-impeller.step": "7ba4f29235170bc9ce386737f2d6bb375db4c51a4895e3c099caab3eca1a34d5",
+    "cad/engine/generated/timing-core-drive-integration-stage/cam-timing-gear.step": "4de216dd31b45bbf37b243c3c15dffd45a99202eb087c1c1bdddbfce52973ed5",
+    "scripts/pump-cover-candidate-20261003-tools.py": "413f21869d7ee56e8735c8a25e7353643296bc72982ed541cae1e1bb2f52b9c0",
+    "cad/engine/pump_cover_candidate_20261003.py": "df82f5e70e46fc8eb52ddd0ef418612a30b50ab20c188357a70be8313aad6b4a",
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "reference/engine/pump-cover-candidate-20261003-build.json": "d5a6ccacc7e4ca620964049d4a0d9cec7989f1584e2e01ef8e7e28339839e3f3",
+    "inventory/engine/accessory-stage-v4-solids.json": "ad84a41d2137b22b54ba91ce025b1533a7dcef699bd32c7db4b3fa4bdd9244bb"
+  }
+}

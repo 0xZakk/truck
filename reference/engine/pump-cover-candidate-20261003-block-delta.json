@@ -1,0 +1,64 @@
+{
+  "status": "COMPLETE; actual interface failures retained",
+  "changes": {
+    "added": {
+      "volume_mm3": 55146.4598084458,
+      "bounds": [
+        [
+          350.0,
+          -102.5,
+          99.2
+        ],
+        [
+          373.0,
+          58.630847177023,
+          279.71110136005206
+        ]
+      ],
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/block-delta-added.step",
+      "sha256": "f3b9f68b7ce4755174627a5807143a0d6e73360ff87661fe5d63b1c09938c508"
+    },
+    "removed": {
+      "volume_mm3": 39267.86864381518,
+      "bounds": [
+        [
+          356.0,
+          -95.84312105130999,
+          150.95353853480475
+        ],
+        [
+          373.0000001,
+          52.845400173609,
+          254.0000001
+        ]
+      ],
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/block-delta-removed.step",
+      "sha256": "0b8224ccdcd346c6b2a50448b0d83fb7fd6845159fef201a72e48c7f4e2bec99"
+    }
+  },
+  "host_conflicts": {
+    "cylinder-head": {
+      "original_v4_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 10904.369829064168,
+      "delta_mm3": 10904.369829064168
+    },
+    "head-gasket": {
+      "original_v4_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 1034.4787085085616,
+      "delta_mm3": 1034.4787085085616
+    },
+    "thermostat-frame": {
+      "original_v4_overlap_mm3": 0.0,
+      "candidate_overlap_mm3": 26.943764839572225,
+      "delta_mm3": 26.943764839572225
+    }
+  },
+  "inputs": {
+    "scripts/pump-cover-candidate-20261003-block-delta.py": "837131857b957bbd6f63e3d6573783decbaef9f289e01062d6fed36c26794cf3",
+    "cad/engine/pump_cover_candidate_20261003.py": "5d7a63fc74a4d8e8440eff21d0ebcc52cd2c1c010f898bf03f5e8a25ae9ee6b2",
+    "cad/engine/generated/pump-cover-candidate-20261003/block.step": "511e9cc0ade4a47c0dcb16a4e47ae4383e1fe2aa017fd49738189eb84e02062a",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-old_block.step": "aac437bb7cea7c6ad75210097ac1bf41121bc11a41d4d79d61ffd42ca26137df"
+  },
+  "unchanged_x_below_350": true,
+  "cylinder_wall_limit": "Only X<350 is proven unchanged by difference bounds; deeper coolant passage and all wall thicknesses are not established"
+}

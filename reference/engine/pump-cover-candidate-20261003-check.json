@@ -1,0 +1,195 @@
+{
+  "status": "FINISHED; inspect every named metric",
+  "checks": {
+    "seal_land_face": {
+      "missing_mm2": 0.0
+    },
+    "seal_backing": {
+      "missing_mm3": 0.0
+    },
+    "dry_boss_1": {
+      "missing_mm3": 0.0
+    },
+    "dry_bore_1": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_1": {
+      "missing_mm2": 0.0
+    },
+    "dry_boss_2": {
+      "missing_mm3": 0.0
+    },
+    "dry_bore_2": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_2": {
+      "missing_mm2": 0.0
+    },
+    "dry_boss_3": {
+      "missing_mm3": 0.0
+    },
+    "dry_bore_3": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_3": {
+      "missing_mm2": 0.0
+    },
+    "dry_boss_4": {
+      "missing_mm3": 0.0
+    },
+    "dry_bore_4": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_4": {
+      "missing_mm2": 0.0
+    },
+    "fifth_aperture": {
+      "obstruction_mm3": 0.0
+    },
+    "gasket_block_backing": {
+      "required_area_mm2": 3331.5778857940186,
+      "missing_mm2": 0.0
+    },
+    "actual_screw_1": {
+      "seat_area_mm2": 88.2702450746746,
+      "missing_seat_mm2": 0.0,
+      "block_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0,
+      "socket_obstruction_mm3": 0.0,
+      "one_mm_blind_floor_missing_mm3": 0.0,
+      "nominal_tip_x": 357.25,
+      "nominal_engagement_mm": 15.75,
+      "clearance_socket_radius_mm": 4.3,
+      "smooth_shank_radius_mm": 4.0,
+      "thread_engagement_status": "NOT MODELED / unverified"
+    },
+    "actual_screw_2": {
+      "seat_area_mm2": 88.2702450746746,
+      "missing_seat_mm2": 0.0,
+      "block_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0,
+      "socket_obstruction_mm3": 0.0,
+      "one_mm_blind_floor_missing_mm3": 0.0,
+      "nominal_tip_x": 357.25,
+      "nominal_engagement_mm": 15.75,
+      "clearance_socket_radius_mm": 4.3,
+      "smooth_shank_radius_mm": 4.0,
+      "thread_engagement_status": "NOT MODELED / unverified"
+    },
+    "actual_screw_3": {
+      "seat_area_mm2": 88.27024507467462,
+      "missing_seat_mm2": 0.0,
+      "block_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0,
+      "socket_obstruction_mm3": 0.0,
+      "one_mm_blind_floor_missing_mm3": 0.0,
+      "nominal_tip_x": 357.25,
+      "nominal_engagement_mm": 15.75,
+      "clearance_socket_radius_mm": 4.3,
+      "smooth_shank_radius_mm": 4.0,
+      "thread_engagement_status": "NOT MODELED / unverified"
+    },
+    "actual_screw_4": {
+      "seat_area_mm2": 88.2702450746746,
+      "missing_seat_mm2": 0.0,
+      "block_overlap_mm3": 0.0,
+      "housing_overlap_mm3": 0.0,
+      "socket_obstruction_mm3": 0.0,
+      "one_mm_blind_floor_missing_mm3": 0.0,
+      "nominal_tip_x": 357.25,
+      "nominal_engagement_mm": 15.75,
+      "clearance_socket_radius_mm": 4.3,
+      "smooth_shank_radius_mm": 4.0,
+      "thread_engagement_status": "NOT MODELED / unverified"
+    },
+    "rotor": {
+      "containment_proof": "Inherited functional exact containment under common rigid transform; no new Boolean containment claimed",
+      "housing_overlap_mm3": 0.0,
+      "block_overlap_mm3": 0.0,
+      "housing_guard_overlap_mm3": 0.0,
+      "block_guard_overlap_mm3": 0.0
+    },
+    "inlet_path": {
+      "obstruction_mm3": 16.24331452696924
+    },
+    "heater_path": {
+      "obstruction_mm3": 0.0
+    },
+    "fifth_path": {
+      "obstruction_mm3": 0.0
+    },
+    "housing_tube": {
+      "overlap_mm3": 0.0
+    },
+    "dry_axial_bore": {
+      "obstruction_mm3": 0.0
+    },
+    "block_chamber": {
+      "obstruction_mm3": 0.0
+    },
+    "block_fifth": {
+      "obstruction_mm3": 0.0
+    },
+    "hub_seat_water-pump-drive-hub": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0
+    },
+    "hub_seat_water-pump-pulley": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0
+    },
+    "height": {
+      "mounting_x": 375,
+      "hub_seat_x": 473.43,
+      "difference_mm": 98.43,
+      "source": "Carterreplacement comparison, not factory measurement"
+    }
+  },
+  "controls": {
+    "missing_boss_mm3": 593.7358555053895,
+    "shifted_face_mm2": 3331.577885801693,
+    "plugged_bore_mm3": 813.2326743082557,
+    "blocked_fifth_mm3": 1.468091157602795
+  },
+  "inputs": {
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-housing.step": "29318b02a494fb131f60b41471bbb9f43100484fab1b39009e0859a0323f3159",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-gasket.step": "6be76159ddb1382c25b863e786d3e9d914d168f669f68b05bb727da75f0c7cce",
+    "cad/engine/generated/pump-cover-candidate-20261003/block.step": "511e9cc0ade4a47c0dcb16a4e47ae4383e1fe2aa017fd49738189eb84e02062a",
+    "cad/engine/generated/pump-cover-candidate-20261003/heater-pump-return-elbow.step": "001c140282346c0f716c3a500122e29e9c4680836d551bd1d8589417a7ec986a",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-seal_land_face.step": "f53f247b693e72880a94a06048f67bab36289b47f50f40bd89b8cb9cf20ddb7f",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-seal_backing.step": "01e560eb3bd7164efab1d2a20a600ab9eed3ad7d1d371a12c4dd7a7943099be2",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_boss_1.step": "8dd7be9251b8be01e0c68ed9ae96c723fd9ddb5344d9e3893db8e90b347e193c",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_bore_1.step": "277821896f95ca6c35eed23ab890986b6975933241beb0a9f6738fcad1300252",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-bolt_seat_1.step": "e00d5b415b69198144e73aacaa368168709b9acb473dff2796b9d98f2bb7ec9e",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_boss_2.step": "67a9708e921f3efea9d83259df8b5973951896b65dfd12962443c05774595c26",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_bore_2.step": "1b0539fd7857ee7bd5d85d8f434cece0ac20107748bf2aeb55f61b1bcca399d4",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-bolt_seat_2.step": "ae4fd699875884e5308db7710290789b46ff438fcf5f7f8aab58bedfff00ff1c",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_boss_3.step": "7277fcf560954f83dcdf44f4e713a20f6d8d67abc212c6353b97a784d42acef9",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_bore_3.step": "5818dd43fefbfd1a6bf7c8117d207709b79898c004a6cc97e519927c4b83c895",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-bolt_seat_3.step": "584ec053d116cc2521f9cc1ed2e248e2b50b2b7a61fdfa0362a75ea471b1de1a",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_boss_4.step": "6373df061397fd1e242d655a2cbf47f6fba50df97ff4ae4e4887392bddf575fa",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-dry_bore_4.step": "3fca0a655eb9899250ee88f27daee79dd525a29a9e84ce7ef4c1c560d3b366c1",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-bolt_seat_4.step": "994c2c2c96bf6bd6a1c75f84bbc6d9baa2d11a3fd1c078e8c27acbca2a34bf58",
+    "cad/engine/generated/pump-cover-candidate-20261003/regions-fifth_aperture.step": "f164f166532b64044eccd2fed46ddeed1965afb3f569a50ede5ff7fd8b81d054",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-1.step": "5b1f02d48b59efcbd29d8c6f03b35c2ccb89ac4176aa2b00b6ac713e33538560",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_socket_1.step": "f72cab7bc84622a905deaa295d3e3b93211acc6954e9270c3190a41219fc597f",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-2.step": "58928260dc144008f07aeedd6c7656e6000b49d3c5034155d7eb1082f2ddf7a0",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_socket_2.step": "9702fa587f030363c529691129538b0e8b6880b3b5f9d607d32160b4d780ac67",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-3.step": "a4e7e8455f91563537ca9308c6dfffd44992afed59aec6fb7ea26ac62799ceab",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_socket_3.step": "9b4e2e73951519884dc91e24bd97dbcc72c1a9fd4e2570c8dc4f61d456429625",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-4.step": "a536bf3b0b137f011cf7baae2c9db5abfd608ec3ccb9125030d2c33513b8659e",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_socket_4.step": "fd2873678a52a8693211adb44cf890f0f70e2276dca72bdad3bbc2cbd5a4c059",
+    "reference/engine/pump-functional-20261003-check.json": "a5090c8a78acf1c84bd3d99fed51dcd0c19ddaf729e071827405a451bc6d88e6",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_chamber.step": "7e4fcc98e18a7a08c972c59d863a9428f40c81e7c2af3335646ee03e378f9c89",
+    "cad/engine/generated/pump-cover-candidate-20261003/block_features-new_void_fifth.step": "a105c4a4093637a49a69ccb4b1095fd4cc8a67bb5757c7115d8a434e71c5042e",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-drive-hub.step": "693a0340679931ae7b5c2a001739d1fbf8f22cbd86f3572925d987ebf5400dbd",
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley.step": "aacd580787fd4d49e99ec9804ba0f7b6e70a0fef354db3f66c9457c58ba0597d",
+    "scripts/pump-cover-candidate-20261003-check.py": "507f100e891fe4bd18cf61e84dac7f0ff4c6ec3ca60d5a23a8669a94be968234",
+    "cad/engine/pump_cover_candidate_20261003.py": "df82f5e70e46fc8eb52ddd0ef418612a30b50ab20c188357a70be8313aad6b4a",
+    "reference/engine/pump-cover-candidate-20261003-build.json": "d5a6ccacc7e4ca620964049d4a0d9cec7989f1584e2e01ef8e7e28339839e3f3"
+  },
+  "limits": [
+    "Finite nominal geometry only, no pressure/strength or factory dimensions",
+    "Smooth pump sockets and inherited bearing gaps are not verified threads/press fits"
+  ]
+}
