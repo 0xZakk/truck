@@ -1,0 +1,32 @@
+{
+  "status": "r6 hose functional coverage FAIL; do not install or publish as accepted",
+  "root_context_report": "reference/engine/fuel-rail-candidate-20261003-r6-root-context-review.json",
+  "root_context_report_sha256": "42cbedd7fdc728b269893eb460cd167513368409dc80364d8df314a91a6d6c56",
+  "reported_fragment_bounds_mm": [
+    [
+      169.986,
+      -143.15,
+      420
+    ],
+    [
+      178.286,
+      -134.85,
+      430
+    ]
+  ],
+  "reported_fragment_volume_mm3": 69.187,
+  "finding_source": "Worker actual exported visual review; root independently checking saved STEP next",
+  "required_endpoints_mm": [
+    [
+      174.136,
+      -139,
+      420
+    ],
+    [
+      0,
+      -55,
+      460
+    ]
+  ],
+  "scope": "plus variant endpoints; minus inletY\u2212187. The existing overlap and watertight checks did not test completeness."
+}

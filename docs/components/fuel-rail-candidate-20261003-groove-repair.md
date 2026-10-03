@@ -1,0 +1,5 @@
+# Groove topology repair before second build
+
+The approved geometric study's return stem outer radius4.5 and cutter torus major4.25/minor.25 create an enclosed torus tangent to the outer wall. Attempt1 returned is_valid=true but STEP reimport reverses that enclosed cavity contribution: adaptive volume14218.357879 versus14228.844334mm³, difference10.486455mm³ (twice torus volume). Directional difference tests return invalid solids. Bypass-negative cavity cuts produce negative oriented volumes. These are failures, not numerical export tolerance or passes.
+
+Revision2 increases only groove cutter minor radius to.30, opening it0.05mm outside the radius4.5 stem; retained O-ring remains major4.25/minor.25. This is an estimated geometric groove repair, not a new manufacturing specification or clearance optimization. Tube paths, flange passages, protected interfaces and both transverse variants unchanged. Original parameters/amendment/builder, logs, reports and STEP attempts remain preserved. Use parameters-r2.json for subsequent geometry. All export and seated/open/bypass tests must rerun.
