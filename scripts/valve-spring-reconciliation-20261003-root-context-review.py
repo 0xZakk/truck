@@ -1,9 +1,10 @@
 """Independent coverage/provenance audit; not a repeat of CAD collision Booleans."""
 from pathlib import Path
-import json,hashlib
+import json,hashlib,sys
 R=Path(__file__).resolve().parents[1]
 P=R/'reference/engine/valve-spring-reconciliation-20261003'
-f=Path(str(P)+'-v4-context.json');d=json.loads(f.read_text())
+suffix='-r2' if '--r2' in sys.argv else ''
+f=Path(str(P)+'-v4-context'+suffix+'.json');d=json.loads(f.read_text())
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 for name,h in d['input_sha256'].items():
     assert sha(R/name)==h,name
@@ -27,6 +28,6 @@ for r in d['states']:
     assert abs(r['retainer_bottom_relative_z_mm']-r['spring_height_mm'])<1e-8
     rows.append({'target':r['target'],'state':r['state'],'neighbors_accounted':len(ids),'exact_or_equivalent':len(exact),'bounds_separated':len(separated)})
 assert d['negative_control']['detected'] and d['negative_control']['overlap_mm3']>.1
-out={'status':'PASS coverage and current recorded input hashes','report_sha256':sha(f),'input_hash_count':len(d['input_sha256']),'states':rows,'negative_control':d['negative_control'],'limits':['No independent collision Boolean replay in this coverage audit.','Endpoints only, not complete crank-cycle neighbor sweep.','Worker must bind audit.json and preserve checkpoint checker provenance.','No canonical installation or browser acceptance.']}
-Path(str(P)+'-root-context-review.json').write_text(json.dumps(out,indent=2)+'\n')
+out={'status':'PASS coverage and current recorded input hashes','report_sha256':sha(f),'input_hash_count':len(d['input_sha256']),'states':rows,'negative_control':d['negative_control'],'limits':['No independent collision Boolean replay in this coverage audit.','Endpoints only, not complete crank-cycle neighbor sweep.','Historical r1 provenance incomplete; r2 is a fresh run with explicit input ledger.' if suffix else 'Worker must bind audit.json and preserve checkpoint checker provenance.','No canonical installation or browser acceptance.']}
+Path(str(P)+'-root-context-review'+suffix+'.json').write_text(json.dumps(out,indent=2)+'\n')
 print(out['status'],len(rows),'states;',len(expected_neighbors),'neighbors per state')

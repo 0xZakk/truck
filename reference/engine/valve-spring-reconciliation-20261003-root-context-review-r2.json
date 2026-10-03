@@ -1,0 +1,186 @@
+{
+  "status": "PASS coverage and current recorded input hashes",
+  "report_sha256": "06c074b839e96468d7326a585642ca075ad9cb5958e667bc7bc5411bcdd97cbf",
+  "input_hash_count": 1473,
+  "states": [
+    {
+      "target": "c1-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c1-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c1-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c1-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c2-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c2-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c2-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c2-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c3-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c3-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c3-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c3-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c4-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c4-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c4-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c4-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c5-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c5-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c5-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c5-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c6-intake-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c6-intake-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c6-exhaust-spring",
+      "state": "closed",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    },
+    {
+      "target": "c6-exhaust-spring",
+      "state": "peak",
+      "neighbors_accounted": 98,
+      "exact_or_equivalent": 7,
+      "bounds_separated": 91
+    }
+  ],
+  "negative_control": {
+    "fault": "spring lowered1mm into actualhead",
+    "overlap_mm3": 237.91725896988265,
+    "detected": true
+  },
+  "limits": [
+    "No independent collision Boolean replay in this coverage audit.",
+    "Endpoints only, not complete crank-cycle neighbor sweep.",
+    "Historical r1 provenance incomplete; r2 is a fresh run with explicit input ledger.",
+    "No canonical installation or browser acceptance."
+  ]
+}
