@@ -14,10 +14,10 @@ Live registry confirmed three newly dispatched workers; prior modeling processes
 
 | Owner | Scope | Current action |
 |---|---|---|
-| resume_pump_fit | rod-fastener-reconciliation-20261003 | Pump checkpoint mergedPR128 with verified279-member archive; frame remains open. Piston1.776in replacement reference independently corroborated for1987–96VINY; no dimension change. Worker now researches rod-fastener geometry behind six motion conflicts. |
-| resume_fuel_fit | fuel-rail-candidate-20261003 | r5 diaphragm shell contacts corrected; original-shell and pierced-diaphragm controls detected. Lower O-ring clearance stillFAIL. Hose seam traced to centerline radius below outerradius6; numerical correction proposal pending. Neither transverse sign selected; fresh context checks underway. |
-| resume_exhaust_fit | ho2s-host-candidate-20261003 | Attempt16minwall1.44446mm,210contextpairs0clashes,757inputhashes independently matched. Front runner radius16.497<outer18 causes self-fold risk; isolated21.323mm-minradius proposal authorized with protected interfaces. Four other meshes pass. No installed change. |
-| root | intake-gasket-outline-20261003 | PR127merged: full traced gasket validSTEP/watertightGLB, six1mm diagnostic sealing bands covered. Estimated scale and overhang retained; not installed. Knowledge base391notes embedded; selected semantic links reviewed, not bulk-applied. |
+| resume_pump_fit | valve-spring-reconciliation-20261003 | Manufacturer intake/exhaust specifications audited; current spring geometry and volume conservation need correction. Inferred end-form comparison now proceeds to continuous transitions and global contact checks; no installed change. |
+| resume_fuel_fit | fuel-rail-candidate-20261003 | r6 hose rejected: exported STEP contained only a socket fragment, invalidating its apparent clearance improvement. r6b complete hose independently replayed; both779-input context guards match. Export/coverage pass but full hose collides with upper intake by2894.916/3968.147mm³ in the two hypotheses. Source-led routing review continues; installation rejected. Lower regulator seal architecture remains unresolved. |
+| resume_exhaust_fit | ho2s-host-candidate-20261003 | Corrected runner mesh passes, but inherited outlet-neck opening fails wall integrity. Root reviewed and authorized a separate estimated additive transition at Z205…230, preserving gas and outlet interfaces; new CAD and checks pending. |
+| root | integration and independent review | Viewer HTTP200 verified19:47UTC. Reviewed exhaust neck contract and actual section; spring continuous-transition study dispatched. Canonical installation remains unchanged. |
 
 Workers own their prefixes only; root reviews significant interface amendments before coupled CAD. Use public source research where evidence is missing. Source dimensions, replacement comparisons, estimates and unknowns remain distinct. Existing contracts are under `docs/components/`; original source images/manuals are excluded from commits/releases.
 
@@ -27,7 +27,7 @@ Workers own their prefixes only; root reviews significant interface amendments b
 
 ## Checks, preview and tracking
 
-Viewer restarted on127.0.0.1:8001 via scripts/serve.py, process session26022; HTTP200 verified18:39UTC. This is a checkpoint, not perpetual liveness. Browser interaction acceptance remains NOT RUN after earlier browser security denial; do not bypass it. Native text-to-cad viewer worked for the isolated plug, not the engine website.
+Viewer restarted on127.0.0.1:8001 via scripts/serve.py, process session26022; HTTP200 verified19:47UTC. This is a checkpoint, not perpetual liveness. Browser interaction acceptance remains NOT RUN after earlier browser security denial; do not bypass it. Native text-to-cad viewer worked for the isolated plug, not the engine website.
 
 Navigation lastPASS1,349parts/1,548links. Whole-model counts/static passes do not prove factory fidelity or dynamic acceptance. Recheck input hashes before reusing reports. Use `.venv-cad` and existing exporter mmXYZ→meter(X,Z,-Y); plugin runtime differs and is optional, not a silent kernel replacement.
 

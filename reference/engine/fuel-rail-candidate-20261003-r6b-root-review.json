@@ -1,0 +1,104 @@
+{
+  "scope": "Independent saved STEP replay and context hash audit; not installation acceptance",
+  "variants": {
+    "plus": {
+      "step_sha256": "7f6d922d92bdaea9d89d6a61f1a3a60c3ab58b56a14468dbcf0bf6188507bd3e",
+      "coverage_hash_matches": true,
+      "volume_mm3": 14276.02199896906,
+      "coverage_volume_difference_mm3": 0.0,
+      "bounds": [
+        [
+          -6.0000001,
+          -145.0000001000594,
+          419.9999999
+        ],
+        [
+          180.1360001000641,
+          -54.9999999,
+          466.0000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "endpoint_wall_present": [
+        true,
+        true
+      ],
+      "endpoint_bores_empty": [
+        true,
+        true
+      ],
+      "context_inputs_verified": 779,
+      "changed_context_inputs": [],
+      "context_failures": [
+        {
+          "part": "regulator-vacuum-hose",
+          "neighbor": "efi-upper-intake",
+          "placement": "frozen intake/fuel candidate",
+          "aabb_distance_lower_mm": 0.0,
+          "IsDone": true,
+          "null": false,
+          "valid": true,
+          "solid_count": 2,
+          "face_count": 20,
+          "overlap_mm3": 2894.9158907448473,
+          "status": "OVERLAP"
+        }
+      ],
+      "context_report_sha256": "74fe96294cb9b71db784858d8057678e672b4be61961e1b5c25ee05e67b8370c",
+      "acceptance": "FAIL upper intake collision; complete hose confirmed"
+    },
+    "minus": {
+      "step_sha256": "75744eb589f5d73d37042411d8ea3fc1abb7931b2a626ede301af0965b856b30",
+      "coverage_hash_matches": true,
+      "volume_mm3": 15433.644558753394,
+      "coverage_volume_difference_mm3": 0.0,
+      "bounds": [
+        [
+          -6.0000001,
+          -193.0000001,
+          419.9999999
+        ],
+        [
+          180.1360001000006,
+          -54.9999999,
+          466.0000001
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1,
+      "endpoint_wall_present": [
+        true,
+        true
+      ],
+      "endpoint_bores_empty": [
+        true,
+        true
+      ],
+      "context_inputs_verified": 779,
+      "changed_context_inputs": [],
+      "context_failures": [
+        {
+          "part": "regulator-vacuum-hose",
+          "neighbor": "efi-upper-intake",
+          "placement": "frozen intake/fuel candidate",
+          "aabb_distance_lower_mm": 0.0,
+          "IsDone": true,
+          "null": false,
+          "valid": true,
+          "solid_count": 3,
+          "face_count": 39,
+          "overlap_mm3": 3968.147005976106,
+          "status": "OVERLAP"
+        }
+      ],
+      "context_report_sha256": "0ceaf8a732c3e08a517528b887d590fe72b9d502ec0b1788a2d7b2d84640eb21",
+      "acceptance": "FAIL upper intake collision; complete hose confirmed"
+    }
+  },
+  "visual_review": {
+    "path": "cad/engine/generated/fuel-rail-candidate-20261003-r6b/actual-hose.png",
+    "sha256": "ad979347267350a5b97fe766aa1fbbee9fe0bb97b193bb1c502d624e32659f07",
+    "finding": "Complete exported tube visible for both hypotheses; image excludes intake, so it does not demonstrate installed clearance."
+  }
+}
