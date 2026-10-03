@@ -1,0 +1,34 @@
+{
+  "status": "PASS saved screw bounds/rail clearance witness",
+  "rows": [
+    {
+      "id": "regulator-screw-1",
+      "sha256": "7044e0fb76285e81328463ab456af4f7b29b6319fa9e51f3656d6a6fb480464d",
+      "rail_overlap_mm3": 0.0,
+      "min_z": 378.0,
+      "max_z": 388.0
+    },
+    {
+      "id": "regulator-screw-2",
+      "sha256": "4546d7c773c724529a5edb15875f01689cbf66796e2b83b2d22c948edb516029",
+      "rail_overlap_mm3": 0.0,
+      "min_z": 378.0,
+      "max_z": 388.0
+    },
+    {
+      "id": "regulator-screw-3",
+      "sha256": "010139dc23eff6a72d89c5b6644e45880b6e2e6d866883b70d2af5e62bc150a2",
+      "rail_overlap_mm3": 0.0,
+      "min_z": 378.0,
+      "max_z": 388.0
+    }
+  ],
+  "previous_screw_negative_mm3": 3.051847367982597,
+  "rail_sha256": "63b102b6375978a688bbf1bebc5830c1550ace45b5e0543a0103b5e62cbd15d9",
+  "actual_visual": "Reviewed actual-screw.png: complete estimated shank/head and hex recess; threads absent.",
+  "limits": [
+    "Estimated8mm length; factory length/thread engagement unknown.",
+    "Three other fullcontext conflicts remain.",
+    "Not installed acceptance."
+  ]
+}
