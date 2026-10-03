@@ -279,3 +279,10 @@ Both supplements were published after [PR118](https://github.com/0xZakk/truck/pu
 `reference/engine/host-research-20261003-package.json` binds three authored ACT registration illustration/log outputs in `truck-host-research-20261003.tar.gz` (103,132bytes; SHA256 `dcb1631f446b177c7d3741145695bbcf5f91ab8d632a8e97230b8ff9ea1e2830`). The numerical study establishes single-view ambiguity, not an installed pose. Repository scripts/contracts/reports and the separately hash-bound installed host STEP/manual are required for full numerical replay; archive integrity verification is independent of those originals. Manufacturer/manual pixels are excluded.
 
 Published after [PR119](https://github.com/0xZakk/truck/pull/119) merged at `16fffb7eefb7ce6e66c0922ad30b789c5f93d964` (CI17s/17sPASS): [host research release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-host-research), ID402592725. Server SHA256/size match the frozen three-member archive.
+
+
+## Airbox body screw — publication pending
+
+`reference/engine/airbox-screw-online-20261002-delivery.json` binds56 authored/source members in `airbox-screw-online-20261002-authored.tar.gz` (4,161,139bytes; SHA256 `4c664c8146cb743cbd4e0313b51a8b03bc44f7009ec5eb72e9dae73eeb6c8c69`). Root streamed and verified every member and inspected the actual render/catalog. Preserve newer repository dependency files before extraction; exact source/build prerequisites are listed in the ledger. Original photographs/PDFs are excluded.
+
+This is a catalog-sized isolated replacement screw with explicit estimated head/thread/point details and preserved failed constructions. It is not installed: four body coordinates, pilot/clip and sheet stack remain unresolved. See `docs/components/airbox-screw-online-20261002-handoff.md` for build, local geometry checks and limits.
