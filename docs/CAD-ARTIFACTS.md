@@ -277,3 +277,5 @@ Both supplements were published after [PR118](https://github.com/0xZakk/truck/pu
 ## Host research illustration — publication pending
 
 `reference/engine/host-research-20261003-package.json` binds three authored ACT registration illustration/log outputs in `truck-host-research-20261003.tar.gz` (103,132bytes; SHA256 `dcb1631f446b177c7d3741145695bbcf5f91ab8d632a8e97230b8ff9ea1e2830`). The numerical study establishes single-view ambiguity, not an installed pose. Repository scripts/contracts/reports and the separately hash-bound installed host STEP/manual are required for full numerical replay; archive integrity verification is independent of those originals. Manufacturer/manual pixels are excluded.
+
+Published after [PR119](https://github.com/0xZakk/truck/pull/119) merged at `16fffb7eefb7ce6e66c0922ad30b789c5f93d964` (CI17s/17sPASS): [host research release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-host-research), ID402592725. Server SHA256/size match the frozen three-member archive.
