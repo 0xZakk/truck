@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "issue": 82,
+  "scope": "pre-CAD exterior dimension estimates; no CAD or installed interface",
+  "dependencies_sha256": {
+    "reference/engine/ho2s-online-20261003-evidence.json": "eb5d092130706b6017366e9d89fb4166c20c40a623f9a98d92aeefb66a8dcd45",
+    "reference/engine/ho2s-online-20261003-delivery.json": "168c15ec2d2dac6f3f27ffe53ec89a8e0873bf0daa62524f90dfbfeed18165b3",
+    "docs/components/ho2s-online-20261003-contract.md": "0427f810d2f2e18852d83f48c0896a276328d2e8f07843161cb3ba53133ddc8c"
+  },
+  "sources": [
+    {
+      "id": "ntk-catalog",
+      "url": "https://ngksparkplugs.com/wp-content/uploads/2021/01/2019-Digital-O2Catalog_opt_secured.pdf",
+      "sha256": "d3f563ba2fc387146e05ef57b6fc9786a0a0ecb7d1fa7ec0d41d992d820e1239",
+      "pages_1_based": [
+        258,
+        529
+      ],
+      "printed_pages": [
+        259,
+        530
+      ],
+      "pixels_reviewed": true,
+      "claims": [
+        "Bosch15718 maps toNTK22503 among several alternatives; guide-only limitation",
+        "22503 has558mm lead and different body/protection tube appearance",
+        "No thread pitch found in reviewed primary catalog"
+      ]
+    },
+    {
+      "id": "bosch-universal",
+      "url": "https://www.boschautoparts.com/p/universal-oxygen-o2-sensors-15729-",
+      "sha256": "72c19d85565db190ea38e856369e7274b5a3b2d71c94715fc00b1fc32f0301c1",
+      "locator": "productResponse JSON:22mmhex; no thread pitch in exposed attributes; linked installation PDF",
+      "claims": [
+        "Linked universal route does not close mounting pitch"
+      ]
+    },
+    {
+      "id": "bosch-universal-install",
+      "url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/F00HL00055IN00WHCO0000.PDF",
+      "sha256": "d62752783707734b9f20bd4ee41159b454d6a35dc8cdea9d475d25ff33b391f9",
+      "locator": "Harness connection instructions; no target mounting pitch found",
+      "claims": [
+        "Do not use wire-cutting lengths as body dimensions"
+      ]
+    },
+    {
+      "id": "bosch-target-right",
+      "url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/large/0258005718PHRIWHCO0000NA_lg.jpg",
+      "sha256": "1773573055fbf53cd0d7f742e5f51ab869dc9a564f2066786fe02391619a92b2",
+      "pixels_reviewed": true,
+      "locator": "1400x1400 side photograph; landmarks committed separately",
+      "claims": [
+        "External region proportions only, with analyst-selected camera sensitivity"
+      ]
+    }
+  ],
+  "originals_distributed": false,
+  "rejected_inferences": [
+    "NTK cross-reference as identical sensor drawing",
+    "M18x1.5 as primary-confirmed thread",
+    "Retail data as manufacturer confirmation",
+    "Package dimensions as part dimensions",
+    "Known22mmhex as calibrated perspective camera",
+    "Photographic bounds as guaranteed manufacturing tolerance",
+    "Brochure thimble internals as target-specific dimensions"
+  ],
+  "exact_next_primary_lead": "NTK22503 primary specification sheet or manufacturer catalog record giving thread diameter and pitch; interchange bridge is now primary-verified. Reviewed2019PDF and Boschuniversal instructions omit it.",
+  "capture_pipeline": "authored observations -> tools/ingest.py -> 2source pages ->2atomic notes; no sharedindex run"
+}

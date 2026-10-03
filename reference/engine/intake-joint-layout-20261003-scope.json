@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "readiness": "research correction plan; no metric pose approved",
+  "baseline_commit": "4f1fe9da2ec177e1ff61668df66ca422e37b0b7c",
+  "runtime": "3.13.12",
+  "inputs_sha256": {
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "reference/engine/intake-joint-online-20261003-measurement.json": "bd127a3c7d5916df7ae77db7b38a3d79f7fdfd5046e0f9efbf7e31469cb82a43",
+    "reference/engine/intake-joint-online-20261003-evidence.json": "4196d0804e7b6126b7efb02c310e3d082211a5c1c303ccdb2107bc085684df3a",
+    "cad/engine/efi_intake.py": "36ccb7da5d29904894a451e360072fbdbcf08024e76f5225e2fe1bd7cc88ba30",
+    "cad/engine/upper_intake_clearance_candidate.py": "18fb70f90ab97a441be204f494b8d23585b6fd061e59c731b785ca75a34b9add",
+    "cad/engine/intake_cap_coordination.py": "d915eef8d603883f5f6978f6e6e3abc3cb80c8e2cc131064073ab2e7c89dfec4",
+    "cad/engine/intake_exterior_integration.py": "fbf275489cbdc54464763aeac149c5c08bced66e8f909aa9c96d1e1f5d197f5a",
+    "cad/engine/intake_runner_exterior_candidate.py": "f6f4679fdbde608cc66851a2b3e9d282a0e8e7c4c9ae0d04e1ebe0af2c7586f2",
+    "cad/engine/intake_runner_exterior_integration.py": "d4f48689f1e8e9a8d278ebab82dd6f33442ea6036681bc6a09c334b83f6b9324",
+    "cad/engine/fuel_injection.py": "5f82dd8f6f946014c87bde4adb4c24520283060dee380b336d2dcb2a7f93bc3e",
+    "cad/engine/intake_locating_dowel.py": "c764a0a60ed9fe01c02f05889ff124e33b88168821d8716f9a1c761f70996f81",
+    "reference/engine/intake-cap-frame-contract.json": "a5f9d64aa70f6a76f05a1a5cd284f63f7e8c8522af6faead8ae319965b41a772",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "cad/engine/manifold_lifting_eye.py": "725105651f569a137e84ecb41e6c3a653fb2c72808ba830bf841cea27bfbeb9e",
+    "cad/engine/rear_manifold_mounts_desktop_candidate.py": "0e21e1494b780cd60f92de0957f947de9fd14eb5fbaccaeed547eaac3e6902e7",
+    "cad/engine/intake_exterior_candidate.py": "23170d5314c8f7df295ec0c464e671a3f1b26752766411356db58554d653c558",
+    "cad/engine/regulator_vacuum.py": "b9d8a76f45d0cb8bbcd6839e82828ab5c86d36c1e13abe8bcfac6afebc8c6765",
+    "cad/engine/egr.py": "d026afe51bb007f74bb64c6d7ee3dbfc887bb4a19157e914c9b35dc3cccdcf54",
+    "docs/onboarding/QUALITY-STANDARD.md": "3b0d474c81da288d7c332c87a975cb17838c7876c11c6747f1452073fbf5d1af",
+    "docs/components/intake-runner-exterior-candidate.md": "c917e13fc517000a861bf5e1e66f001d5eb0d5f1bd55e9f005e7b0deb90c84d2",
+    "docs/components/intake-support-candidate.md": "9d1c859c00ff648702e536e0e35a923e7e37041b6855d92a67ec5ea8a51134ca"
+  },
+  "coordinate_contract": {
+    "units": "dimensionless until independent metric scale or explicitly approved estimate",
+    "origin": "short-gap terminal port center P1; inferred ACT/front end",
+    "u": "P1 toward P6; maps to world -X only after end identity review",
+    "v": "image-derived +90 degree normal to u; world Y sign unresolved until face registration",
+    "normal": "upper/lower joint normal; world +Z is inherited candidate convention",
+    "absolute_span_mm": null,
+    "world_origin_mm": null,
+    "gasket_thickness_mm": null,
+    "diameters_mm": null,
+    "old_pitch_is_factory_scale": false
+  },
+  "ports": [
+    {
+      "feature_id": "P1",
+      "normalized_uv": [
+        0.0,
+        0.0
+      ],
+      "row_station_source": 0.0,
+      "runner_number_hypothesis": 1,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    },
+    {
+      "feature_id": "P2",
+      "normalized_uv": [
+        0.1825740722105441,
+        -0.0018717615460068639
+      ],
+      "row_station_source": 0.18257417081571264,
+      "runner_number_hypothesis": 2,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    },
+    {
+      "feature_id": "P3",
+      "normalized_uv": [
+        0.3847673423800419,
+        -0.0019045595686770277
+      ],
+      "row_station_source": 0.38476744271302377,
+      "runner_number_hypothesis": 3,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    },
+    {
+      "feature_id": "P4",
+      "normalized_uv": [
+        0.5906421193608591,
+        -0.0016209670649119346
+      ],
+      "row_station_source": 0.590642204754071,
+      "runner_number_hypothesis": 4,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    },
+    {
+      "feature_id": "P5",
+      "normalized_uv": [
+        0.7931480461130584,
+        -0.0021906008070380393
+      ],
+      "row_station_source": 0.7931481615148105,
+      "runner_number_hypothesis": 5,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    },
+    {
+      "feature_id": "P6",
+      "normalized_uv": [
+        1.0000000000000002,
+        -3.6707025776557746e-19
+      ],
+      "row_station_source": 1.0,
+      "runner_number_hypothesis": 6,
+      "physical_occurrence": "efi-upper-intake / efi-lower-intake (features, not separate parts)"
+    }
+  ],
+  "holes": [
+    {
+      "feature_id": "H1",
+      "normalized_uv": [
+        -0.035112688510977035,
+        0.06224030449963175
+      ],
+      "pixel_center": [
+        1424.7677725118483,
+        672.8767772511849
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H2",
+      "normalized_uv": [
+        0.09133177308566413,
+        -0.0009811173945554652
+      ],
+      "pixel_center": [
+        1271.997624703088,
+        749.771971496437
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H3",
+      "normalized_uv": [
+        0.2530691194731687,
+        0.0003544461189121435
+      ],
+      "pixel_center": [
+        1076.320809248555,
+        748.679190751445
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H4",
+      "normalized_uv": [
+        0.28167669793690425,
+        -0.0018812746784241208
+      ],
+      "pixel_center": [
+        1041.7181208053692,
+        751.4765100671141
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H5",
+      "normalized_uv": [
+        0.48762526618437774,
+        -0.030503678705976686
+      ],
+      "pixel_center": [
+        792.6507177033493,
+        786.7703349282297
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H6",
+      "normalized_uv": [
+        0.6909590628879999,
+        -0.0019265092883860293
+      ],
+      "pixel_center": [
+        546.5617433414044,
+        752.8547215496368
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H7",
+      "normalized_uv": [
+        0.7193737171531933,
+        6.553211254598142e-06
+      ],
+      "pixel_center": [
+        512.1789772727273,
+        750.6079545454545
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H8",
+      "normalized_uv": [
+        0.8967311014130928,
+        -0.0011451515060056212
+      ],
+      "pixel_center": [
+        297.6128266033254,
+        752.5748218527316
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H9",
+      "normalized_uv": [
+        1.0839918687978414,
+        -0.060789138171125356
+      ],
+      "pixel_center": [
+        71.25454545454545,
+        825.3386363636364
+      ],
+      "role": "unresolved aperture"
+    }
+  ],
+  "stud_correspondence": [
+    {
+      "occurrence_id": "efi-upper-stud-1",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        341.376,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H1"
+      ],
+      "status": "proposed ordering; end and face registration pending"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-2",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        227.584,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H2"
+      ],
+      "status": "proposed ordering; end and face registration pending"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-3",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        113.792,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H3",
+        "H4"
+      ],
+      "status": "proposed ordering; paired role unresolved"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-4",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        0.0,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H5"
+      ],
+      "status": "proposed ordering; end and face registration pending"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-5",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        -113.792,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H6",
+        "H7"
+      ],
+      "status": "proposed ordering; paired role unresolved"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-6",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        -227.584,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H8"
+      ],
+      "status": "proposed ordering; end and face registration pending"
+    },
+    {
+      "occurrence_id": "efi-upper-stud-7",
+      "definition": "efi-upper-stud",
+      "current_parent": "intake-studs",
+      "current_position_cad_mm": [
+        -341.376,
+        -228,
+        371.5
+      ],
+      "candidate_hole_ids": [
+        "H9"
+      ],
+      "status": "proposed ordering; end and face registration pending"
+    }
+  ],
+  "primary_occurrences": [
+    {
+      "id": "efi-lower-intake",
+      "definition": "efi-lower-intake",
+      "parent": "intake-castings",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "efi-upper-intake",
+      "definition": "efi-upper-intake",
+      "parent": "intake-castings",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "efi-upper-intake-gasket",
+      "definition": "efi-upper-intake-gasket",
+      "parent": "intake-castings",
+      "position_cad_mm": [
+        0,
+        0,
+        0
+      ],
+      "rotation_cad_deg": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "threshold_ratio_range": [
+    0.8934103342337698,
+    0.8940192676375394
+  ],
+  "uncertainty": "threshold range is extraction repeatability only; uncalibrated photo/perspective, replacement transfer, end/face identification and physical scale remain systematic unknowns",
+  "checks": {
+    "feature_counts": "PASS 6 ports, 9 apertures",
+    "stable_stud_ids": "PASS 7 existing occurrences; no invented fasteners",
+    "metric_scale": "UNKNOWN",
+    "paired_hole_roles": "UNKNOWN",
+    "CAD_export_installed_motion_browser": "NOT RUN"
+  }
+}

@@ -4,7 +4,7 @@
 
 ## Current checkout and integration ownership
 
-Latest reviewed merge: [PR121](https://github.com/0xZakk/truck/pull/121), `c651b16acc2699d9875ae547f0cde1456693ad73` (CI17s/15sPASS). Focused branch: `engine/pump-functional-review-20261003`. Root alone edits shared manifests/builders/viewer and serializes integration. Preserve unrelated untracked electrical merge audits, aborted v4 reports and timing rear-flange review. Do not broad-add files.
+Latest reviewed merge: [PR122](https://github.com/0xZakk/truck/pull/122), `7f1723898920a8ae87093a3e5a60456fb4b714f8` (CI17s/18sPASS). Focused branch: `engine/source-driven-candidates-20261003`. Root alone edits shared manifests/builders/viewer and serializes integration. Preserve unrelated untracked electrical merge audits, aborted v4 reports and timing rear-flange review. Do not broad-add files.
 
 Latest installed-content checkpoint remains PR110; later commits preserve research/candidates. Canonical `inventory/engine/full-assembly.json`: **741 definitions /1,349 occurrences**, SHA256 `91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6`. Navigation passes1,349parts/1,548links. The last installed static audit covers5,287 comparisons at one pose, not continuous motion or production accuracy. Combined STEP roundtrip maximum bounds difference0.000351mm. Rear exhaust-neck blend is latest installed geometry. Electrical lessons and oil-pump learning corrections are installed; no later pump, carrier, sensor or duct candidate is installed.
 
@@ -17,8 +17,8 @@ Three assigned workers were running at the last checkpoint; do not infer that fr
 | Worker | Scope and current evidence | Owned prefix |
 |---|---|---|
 | `pump_functional_junction` | Functional candidate frozen:52 valid STEPs;51 meshes pass; spring bounds pass but topology fails.90 actualv4 pairs retain five clashes. No processes from export remain. Now Carter-only bolt-pattern/azimuth registration before shape changes. | `pump-source-registration-20261003` |
-| `act_second_view` | Multi-view free-station fit still fails held-outs; no numeric ACT pose accepted.13 frozen files verified. Now manufacturer gasket evidence for unequal upper-port stations and joint hole pattern. | `intake-joint-online-20261003` |
-| `airbox_screw_finish` | HO2S primary research frozen;9 authored hashes verified, root inspected Bosch photographs.22mm hex and explicit length endpoint recorded. Now target thread and bounded exterior dimension contract. | `ho2s-dimensions-20261003` |
+| `act_second_view` | Multi-view free-station fit still fails held-outs; no numeric ACT pose accepted.13 frozen files verified. Gasket6/9 evidence merged; coordinated layout plan frozen. Root approved isolated candidate using existing endpoint span as explicit estimated scale, source-derived unequal spacing and protected neighbor datums; no installed approval. | `intake-joint-candidate-20261003` |
+| `airbox_screw_finish` | HO2S primary research frozen;9 authored hashes verified, root inspected Bosch photographs.22mm hex and explicit length endpoint recorded. Dimension contract reviewed; root approved isolated source-compared exterior specimen with22mm primary hex and all other dimensions qualified estimates, no pipe/route placement. | `ho2s-specimen-20261003` |
 
 Root approved the new pump **estimated**3mm functional backing contract after inspecting Carter rear/side views. This does not erase the historical14mm-slab FAIL or establish factory wall thickness. Keep nominal98.43mm replacement mounting height and98.552mm conversion sensitivity distinct. Do not carve pump geometry around an estimated carrier to obtain clearance.
 
@@ -43,4 +43,6 @@ CAD environment: `.venv-cad`, Python3.13/build123d0.10/OCP7.8.1.1. Renderer uses
 
 Historical state is preserved in `docs/history/engine-state-through-20261003-pr120.md`. Read it only for a specific missing fact; current contracts and actual files/processes take precedence.
 
-Pump preservation: root verified69 authored/135 generated/839 guarded hashes and streamed204-member archive; package ledger `reference/engine/pump-functional-20261003-package.json`. Publication pending. Do not install the five-clash/open-spring candidate.
+Pump preservation: root verified69 authored/135 generated/839 guarded hashes and streamed204-member archive; package ledger `reference/engine/pump-functional-20261003-package.json`. Published/server-verified release402605936. Do not install the five-clash/open-spring candidate.
+
+Root spring diagnostic: native float64 mesh defects persist for vertex rounding9..5, ruling out GLB/rounding as sole cause. `pump-spring-manifold-20261003` preserves unchanged STEP and measured0.025mm bounds gate. Alternate Delabella and flap diagnostics finished: a watertight result still has3 components,17.8% volume deficit and0.266mm affected-region surface discrepancy. Rejected; no accepted export. Root jobs56494/61410/54251 completed. Next inspect/reconstruct the illustrative sweep separately, preserving failed evidence.

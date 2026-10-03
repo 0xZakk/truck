@@ -49,3 +49,5 @@ The ACT host source contract identifies the [[notes/act-host-online-20261002-fro
 Bosch supplies [[notes/ho2s-online-20261003-exterior|identified oxygen-sensor exterior features]], an explicit [[notes/ho2s-online-20261003-length-endpoints|length endpoint distinction]], and [[notes/ho2s-online-20261003-internals|family-level internal evidence]]. Target thread, probe reach and installed pipe host remain unresolved.
 
 The independent [[notes/intake-joint-online-20261003-application|Fel-Pro application record]] and [[notes/intake-joint-online-20261003-pattern|six-port/nine-aperture gasket pattern]] support a coordinated joint correction. Image proportions do not establish physical scale or identify the two extra aperture functions.
+
+The later [[notes/ho2s-dimensions-20261003-interchange-limit|NTK interchange record]] is a guide-qualified bridge, not a Bosch drawing. [[notes/ho2s-dimensions-20261003-photo-uncertainty|Photo-scaled exterior estimates]] provide a reproducible isolated specimen contract while preserving unresolved thread and connector dimensions.

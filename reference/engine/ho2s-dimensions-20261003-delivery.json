@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "issue": 82,
+  "readiness": "pre-CAD estimated exterior dimension contract; no CAD/installation",
+  "files": {
+    "docs/components/ho2s-dimensions-20261003-contract.md": {
+      "sha256": "851d19f0a599673ad986b4180c7db63629c8f48855326eeedea0cd624909519c",
+      "bytes": 12784
+    },
+    "kb/notes/ho2s-dimensions-20261003-interchange-limit.md": {
+      "sha256": "20be2414279cc1f2e29373f7348f7fa49da49cf03c04193c51f5ba2b9f2f63c7",
+      "bytes": 1126
+    },
+    "kb/notes/ho2s-dimensions-20261003-photo-uncertainty.md": {
+      "sha256": "40c5768339d9738a01e0b1874d7b11ed1cdfcc6b1048fc1ff7049a550c201d11",
+      "bytes": 1264
+    },
+    "kb/sources/ho2s-dimensions-20261003-ntk-interchange.md": {
+      "sha256": "9facbe663210b604ce530d92acb61df1d36cc6f76d9c81e00b07b4b9dab663aa",
+      "bytes": 1284
+    },
+    "kb/sources/ho2s-dimensions-20261003-photo-scale.md": {
+      "sha256": "12ea8df3f17e94a2ee96d47cbb63b09cc67ba6c131a9d3e4fd10af3a06b93d5b",
+      "bytes": 1438
+    },
+    "reference/engine/ho2s-dimensions-20261003-evidence.json": {
+      "sha256": "e6ab300676c04da59986ec7532eca170e572ba1035087f89e75a7e3daac16ddb",
+      "bytes": 3306
+    },
+    "reference/engine/ho2s-dimensions-20261003-landmarks.json": {
+      "sha256": "2217934cd42f2020be3928c9c1fdc3f9f9f5cabc76f66de5148c0025861bbf46",
+      "bytes": 12308
+    },
+    "reference/engine/ho2s-dimensions-20261003-observations.txt": {
+      "sha256": "253bb4795bdf8c4d77707b773d26d6ec3e26afca2ee7542914372522f452bfc5",
+      "bytes": 2056
+    },
+    "reference/engine/ho2s-dimensions-20261003-projection.json": {
+      "sha256": "93e2add02ef4feb2ab5626026884ca1d1aebbe137bff1a261c4de330e9636ea6",
+      "bytes": 15766
+    },
+    "reference/engine/ho2s-dimensions-20261003-projection.log": {
+      "sha256": "b600df5b95f5f89740c45ed3e752f112b915fb19517d9b8dc396253e809f91cf",
+      "bytes": 1077
+    },
+    "reference/engine/ho2s-dimensions-20261003-projection.py": {
+      "sha256": "aaf3fc3a13786746f243c1dbc34ad0909f4a1c5892a09e5328d6900475460587",
+      "bytes": 2413
+    }
+  },
+  "checks": {
+    "projection_arithmetic": "PASS22features;double-scale and3mmpitch rejected;1.25vs1.5notdiscriminated",
+    "KB": "PASS4files",
+    "JSON": "PASS",
+    "prior_frozen_9_files": "UNCHANGED",
+    "actual_source_pixels": "PASS Bosch photos andNTKPDF258/529",
+    "CAD": "N/A notstarted",
+    "installed_fit": "NOT RUN",
+    "browser": "NOT RUN"
+  },
+  "original_images_or_pdf_distributed": false,
+  "next_action": "Root review then explicitly estimated isolated exterior specimen, with no manufacturing thread or installed-fit claim; contact key/fit dimensions stay unbound or named educational assumptions",
+  "running_processes": []
+}

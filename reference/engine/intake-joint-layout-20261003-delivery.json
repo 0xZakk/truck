@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "readiness": "research; no CAD or metric pose",
+  "files_sha256": {
+    "scripts/intake-joint-layout-20261003-audit.py": "a6aa7d9086783fd3dc9e3b3097d736da275b007084f4dce85c18dc248b023376",
+    "reference/engine/intake-joint-layout-20261003-scope.json": "a1b17509ee9a375f155f4c811af0c046cf7c6ece4aa2f4eddc9d261737774449",
+    "docs/components/intake-joint-layout-20261003-contract.md": "b7d2e98f6485d3125545beffceafb2a9b345991599db88379d1fdf7ee7545e9b"
+  },
+  "checks": {
+    "syntax": "PASS ast.parse",
+    "replay": "PASS byte-identical read-only audit output",
+    "CAD_installed_browser": "NOT RUN"
+  },
+  "root_review": "pending",
+  "originals_included": false
+}
