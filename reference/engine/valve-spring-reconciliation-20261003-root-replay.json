@@ -1,0 +1,78 @@
+{
+  "scope": "Saved STEP/GLB replay only; source end form and installed context remain open",
+  "build_report_sha256": "cc95ec6067ba67b2213c4049b6b34c9dc775f685268c099f0d8a441271cb3770",
+  "states": {
+    "intake-free": {
+      "step_sha256": "ca2d4397c174a307d09ed241f49b9023f468bd060ef3347d6e389ab1867ef836",
+      "glb_sha256": "2f26c011d43f72ccfc4f2fad3ec81b2516647e3a94c9eb34b2b5c66cc4e8c473",
+      "volume_mm3": 9962.795561188996,
+      "volume_relative_error": 2.3798829903490128e-07,
+      "quadrature_error": 6.734823240837515e-08,
+      "axis_preserving_bounds_delta_mm": 5.2425099283937016e-06,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "intake-closed": {
+      "step_sha256": "e5039fcfd7e8f8fe4a149dcc90a525527b7f7023f72785af5e2b88646edb33f4",
+      "glb_sha256": "643a3afbde641a367e37931461e71e1b79dc778cad6eb592a54127c2577dbdfb",
+      "volume_mm3": 9962.795721070363,
+      "volume_relative_error": 2.2194046106670415e-07,
+      "quadrature_error": 7.47248754183238e-08,
+      "axis_preserving_bounds_delta_mm": 0.0022498060773763484,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "intake-peak": {
+      "step_sha256": "8500124e2c741f092eb9158efc00d0fb6025882158c47b0767f7c913f6a910d9",
+      "glb_sha256": "e8ff9ce8b71110aeafe7d76583458a2981c9f1648f900b3dafa6c13942214d27",
+      "volume_mm3": 9962.795702985735,
+      "volume_relative_error": 2.2375567677445257e-07,
+      "quadrature_error": 7.29835248138289e-08,
+      "axis_preserving_bounds_delta_mm": 0.004322781278670362,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "exhaust-free": {
+      "step_sha256": "2429d3a56cdaf20f292e0f999bcd300bec83168236ecf77aca38ae64e2479667",
+      "glb_sha256": "5ade3d82d5a8c42ecf71f21a2c7b0dfc4bb40345da4e5055a95716c13b0c5741",
+      "volume_mm3": 8801.270191503747,
+      "volume_relative_error": 2.9550890655683875e-07,
+      "quadrature_error": 3.2812054167931045e-08,
+      "axis_preserving_bounds_delta_mm": 0.002106149813439373,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "exhaust-closed": {
+      "step_sha256": "7b1021aacb828a41d430809e14cfd2029f03d9de12194f85aa02d70fe4c66016",
+      "glb_sha256": "c7ceb690316bde044b91504942e469ce311553fdf08a91c77f125f51161c0de4",
+      "volume_mm3": 8801.270200449031,
+      "volume_relative_error": 2.944925439898983e-07,
+      "quadrature_error": 3.5493183373616626e-08,
+      "axis_preserving_bounds_delta_mm": 0.0007825797875540275,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "exhaust-peak": {
+      "step_sha256": "6b6ba73bb845d2fd4e41a68f8a68c1b3bd5492b57712f7e84eefd26b676c02f9",
+      "glb_sha256": "229301c44c34ad1494c4ac5836af1cc44732525a48b645edab446dd2851de650",
+      "volume_mm3": 8801.270080497232,
+      "volume_relative_error": 3.081214590384658e-07,
+      "quadrature_error": 4.1227387655984246e-08,
+      "axis_preserving_bounds_delta_mm": 0.000807502506148694,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    }
+  }
+}
