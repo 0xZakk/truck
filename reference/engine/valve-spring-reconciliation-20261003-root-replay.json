@@ -1,6 +1,6 @@
 {
   "scope": "Saved STEP/GLB replay only; source end form and installed context remain open",
-  "build_report_sha256": "cc95ec6067ba67b2213c4049b6b34c9dc775f685268c099f0d8a441271cb3770",
+  "build_report_sha256": "04c0e964e3ac397053e35cabada04921e28fca55d560b532a5d2c7e990ecb610",
   "states": {
     "intake-free": {
       "step_sha256": "ca2d4397c174a307d09ed241f49b9023f468bd060ef3347d6e389ab1867ef836",
@@ -69,6 +69,18 @@
       "volume_relative_error": 3.081214590384658e-07,
       "quadrature_error": 4.1227387655984246e-08,
       "axis_preserving_bounds_delta_mm": 0.000807502506148694,
+      "one_percent_scale_negative_rejected": true,
+      "watertight": true,
+      "winding_consistent": true,
+      "valid_single_solid": true
+    },
+    "exhaust-v4peak": {
+      "step_sha256": "6082dccd828b482536b6330cec712ff13ffec1cae2c0a7050223c46b4815364d",
+      "glb_sha256": "552fe5988cc81d39955b781df6b1403781a9219fad78dc891fe1f066c430b99b",
+      "volume_mm3": 8801.270092701496,
+      "volume_relative_error": 3.0673481143334696e-07,
+      "quadrature_error": 4.144519062161864e-08,
+      "axis_preserving_bounds_delta_mm": 0.0018107317601128159,
       "one_percent_scale_negative_rejected": true,
       "watertight": true,
       "winding_consistent": true,

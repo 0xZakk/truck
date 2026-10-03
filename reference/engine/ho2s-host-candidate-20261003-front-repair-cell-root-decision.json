@@ -1,0 +1,14 @@
+{
+  "proposal_sha256": "07ce04944145c79799854157f4b08a0c2680b926d4201a018badf5d94f98fdcc",
+  "decision": "Approved bounded partitioned proof attempt",
+  "conditions": [
+    "98disjointcells cover complete old/newbounds",
+    "Unchanged202certified maskmembers and exactendplanes",
+    "Global outside-mask delta sum <=0.001mm3; not percell tolerance",
+    "Independent partition-volume conservation <=0.001mm3 for both inputs",
+    "Sequential child processes120second bound; matchinghash resume only",
+    "Timeout or missing/invalid volume remains incomplete",
+    "Collector/gas separate amendment checks remain required"
+  ],
+  "installed_acceptance": false
+}
