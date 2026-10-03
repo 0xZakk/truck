@@ -1,0 +1,94 @@
+{
+  "baseline": "4f1fe9da2ec177e1ff61668df66ca422e37b0b7c",
+  "files": [
+    {
+      "path": "docs/components/intake-joint-online-20261003-contract.md",
+      "sha256": "2f84cf320e0aeb4dd5f68d51d428122444f0b38db6f69ed149b6edeebb5821c3",
+      "bytes": 1751
+    },
+    {
+      "path": "docs/components/intake-joint-online-20261003-delivery.md",
+      "sha256": "4b6b4e22322da16ff62f35241e6157e86987611507687987d13f21018a9469a1",
+      "bytes": 7463
+    },
+    {
+      "path": "reference/engine/intake-joint-online-20261003-catalog-capture.txt",
+      "sha256": "87ebf358eaa204092e4fd52084810f2fb053a02d18718f0d87ffee1f440ebcd9",
+      "bytes": 559
+    },
+    {
+      "path": "reference/engine/intake-joint-online-20261003-photo-capture.txt",
+      "sha256": "f9c3a83a6b17fc6413796fb956f8832faafdf32f293530de421c41f8927b54e2",
+      "bytes": 770
+    },
+    {
+      "path": "reference/engine/intake-joint-online-20261003-landmarks.png",
+      "sha256": "14d839d1368b4b34e327d29e3199e104dcb4e1c42c2abd1852d9d70d0f3202a0",
+      "bytes": 50252
+    },
+    {
+      "path": "reference/engine/intake-joint-online-20261003-evidence.json",
+      "sha256": "4196d0804e7b6126b7efb02c310e3d082211a5c1c303ccdb2107bc085684df3a",
+      "bytes": 2677
+    },
+    {
+      "path": "reference/engine/intake-joint-online-20261003-measurement.json",
+      "sha256": "bd127a3c7d5916df7ae77db7b38a3d79f7fdfd5046e0f9efbf7e31469cb82a43",
+      "bytes": 18219
+    },
+    {
+      "path": "scripts/intake-joint-online-20261003-measure.py",
+      "sha256": "664dd6efeae8193312c9c6b7fef7adad1318a61d87ddca7415a638d0bf24e33d",
+      "bytes": 4363
+    },
+    {
+      "path": "kb/sources/intake-joint-online-20261003-felpro-catalog.md",
+      "sha256": "18519c1d083fe0d1aaa4162fb914b09d6e6108a1756c61ba7db8fbf68f427249",
+      "bytes": 1143
+    },
+    {
+      "path": "kb/sources/intake-joint-online-20261003-ms93838-photo.md",
+      "sha256": "a2db4574e1e814772f1a65954ff4b52411f321ff40ac7d7fa2461de75166f8e5",
+      "bytes": 1340
+    },
+    {
+      "path": "kb/notes/intake-joint-online-20261003-pattern.md",
+      "sha256": "ed91c9d603cf64935c1c9b38f03a540f3de9117024bad004e8497d670f96c5e1",
+      "bytes": 1653
+    },
+    {
+      "path": "kb/notes/intake-joint-online-20261003-application.md",
+      "sha256": "f10e40a64c9daa6a09ef54420d8551d981e3ddb70f4228d87a5a6b7aa0722e26",
+      "bytes": 1058
+    },
+    {
+      "path": "kb/.raw/intake-joint-online-20261003-felpro-catalog.txt",
+      "sha256": "87ebf358eaa204092e4fd52084810f2fb053a02d18718f0d87ffee1f440ebcd9",
+      "bytes": 559
+    },
+    {
+      "path": "kb/.raw/intake-joint-online-20261003-ms93838-photo.txt",
+      "sha256": "f9c3a83a6b17fc6413796fb956f8832faafdf32f293530de421c41f8927b54e2",
+      "bytes": 770
+    }
+  ],
+  "checks": {
+    "manufacturer_application_pages": "VISUALLY INSPECTED",
+    "actual_product_photo": "VISUALLY INSPECTED",
+    "6port_9smallhole_topology": "PASS180/210/235",
+    "4port_bad_extraction": "REJECTED150",
+    "script_input_hashes": "PASS",
+    "json_python_syntax": "PASS",
+    "kb_links_no_H1": "PASS",
+    "metric_scale": "NOT VERIFIED"
+  },
+  "runtime": {
+    "python": "3.13.12 (main, Apr  6 2026, 11:54:17) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "Pillow": "12.2.0",
+    "matplotlib": "3.10.9"
+  },
+  "original_images_pdf_excluded": true,
+  "no_CAD_or_shared_change": true
+}

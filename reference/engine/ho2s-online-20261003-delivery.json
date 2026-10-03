@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "research-only HO2S manufacturer evidence; noCAD/pose",
+  "baseline_commit": "6b14e88527295d56ef234113ccc3065c57db4e3b",
+  "authored_files_sha256": {
+    "docs/components/ho2s-online-20261003-contract.md": "0427f810d2f2e18852d83f48c0896a276328d2e8f07843161cb3ba53133ddc8c",
+    "kb/notes/ho2s-online-20261003-exterior.md": "633ff9a5a4c20a89cba46ca0ff9bd172bf37f28d60710859cde6520f408beb37",
+    "kb/notes/ho2s-online-20261003-internals.md": "f67e13f0c69d6e52e194026bee8746ceb6753fdfdb779b89b41fccae827fa2a8",
+    "kb/notes/ho2s-online-20261003-length-endpoints.md": "6c6b438b68bc8e291438c39ab83be2fa0706a97966486e7ca4071ab25decefaa",
+    "kb/sources/ho2s-online-20261003-bosch-architecture.md": "4c8649a79584ae06f6ac2bc117ee7e324366c5f4737e71e9ee236bd9a0048353",
+    "kb/sources/ho2s-online-20261003-bosch-catalog.md": "3ebf2408e54926c7c191613b976ee4bc0f48afbffd5355522bc3f4d87f86338c",
+    "kb/sources/ho2s-online-20261003-bosch-product.md": "75189a5d15d0145decba0d32fc98dcf13af412f98cee14e704b706995b1e5076",
+    "reference/engine/ho2s-online-20261003-evidence.json": "eb5d092130706b6017366e9d89fb4166c20c40a623f9a98d92aeefb66a8dcd45",
+    "reference/engine/ho2s-online-20261003-observations.txt": "73a653e24cffe0524ee2ba3d38d89cd3e8d370631a0202402f2698ec6163b3f8"
+  },
+  "checks": {
+    "JSON": "PASS",
+    "KB_links_frontmatter_noH1": "PASS sixfiles",
+    "source_pixels": "PASS threeproductphotos and selectedcatalog/brochurepages",
+    "originals_distributed": false,
+    "CAD": "N/A research",
+    "browser": "NOT RUN",
+    "integration": "NOT RUN"
+  },
+  "next": "Root review; dimensions not supplied by targetprimarysources remain explicitgaps",
+  "running_processes": []
+}

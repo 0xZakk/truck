@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "issue": 82,
+  "baseline_commit": "6b14e88527295d56ef234113ccc3065c57db4e3b",
+  "readiness": "research",
+  "scope": "Identified HO2S replacement exterior and dimensional/topology evidence; noCAD/pose",
+  "sources": [
+    {
+      "id": "us-product",
+      "url": "https://www.boschautoparts.com/p/premium-oxygen-o2-sensors-15718-",
+      "capture_sha256": "45f419c500a46b56f015c4ed2eb761fc6c68b5b0ab388d9eb18ac14c68412c59",
+      "capture_bytes": 235531,
+      "locator": "embedded productResponse JSON; product.partId15718; attrb.baseAttributes/otherAttributes; images",
+      "evidence_class": "manufacturer replacement data",
+      "claims": [
+        "Hex22mm",
+        "4male terminals",
+        "heated narrow-band",
+        "18.9in sealing surface to connector end"
+      ],
+      "actual_pixels_reviewed": false,
+      "original_distributed": false
+    },
+    {
+      "id": "photo-front",
+      "url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/large/0258005718PHFRWHCO0000NA_lg.jpg",
+      "capture_sha256": "f62548abc6838fcb6f7c03abb67fee2a5c6cf4fdf176b896bb653de9339f108e",
+      "capture_bytes": 191743,
+      "locator": "Linked by US productResponse.images.imageLargeURL",
+      "evidence_class": "identified manufacturer photograph",
+      "claims": [
+        "Marked0258005718",
+        "hex/thread/annular seat ring",
+        "slotted rounded tip",
+        "connector seal/latch and four round-ended contacts"
+      ],
+      "actual_pixels_reviewed": true,
+      "original_distributed": false
+    },
+    {
+      "id": "photo-rear",
+      "url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/large/0258005718PHREWHCO0000NA_lg.jpg",
+      "capture_sha256": "621c5a930b53a86a9560ae53033bf04771cec8c5a647b84a618b3e39d787ccde",
+      "capture_bytes": 166830,
+      "locator": "Linked by US productResponse.images.imageLargeURL",
+      "evidence_class": "identified manufacturer photograph",
+      "claims": [
+        "Stepped rear shell",
+        "four separate wire exits",
+        "connector rear/latch"
+      ],
+      "actual_pixels_reviewed": true,
+      "original_distributed": false
+    },
+    {
+      "id": "photo-right",
+      "url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/large/0258005718PHRIWHCO0000NA_lg.jpg",
+      "capture_sha256": "1773573055fbf53cd0d7f742e5f51ab869dc9a564f2066786fe02391619a92b2",
+      "capture_bytes": 154958,
+      "locator": "Linked by US productResponse.images.imageLargeURL",
+      "evidence_class": "identified manufacturer photograph",
+      "claims": [
+        "Side silhouette",
+        "thread/seat ring/slotted tip",
+        "folded lead is not installed route"
+      ],
+      "actual_pixels_reviewed": true,
+      "original_distributed": false
+    },
+    {
+      "id": "catalog",
+      "url": "https://www.boschautopartes.mx/o/commerce-media/accounts/-1/attachments/9509184?download=true",
+      "capture_sha256": "61f18dc3a4ab95f49be03fe2c0d93a1fe9b90a49dc5bfe6ca55e23e345146e35",
+      "capture_bytes": 10024101,
+      "locator": "PDF3lengths, PDF18product row, PDF27ten-digit cross-reference",
+      "evidence_class": "manufacturer catalog",
+      "claims": [
+        "0258005718\u219215718",
+        "18.9in/481mm catalog length",
+        "heated/four wires",
+        "longer harness substitute15719"
+      ],
+      "actual_pixels_reviewed": true,
+      "original_distributed": false,
+      "identical_current_attachment_url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/Catalog_Oxygen_Sensors.pdf",
+      "identical_attachment_sha256": "61f18dc3a4ab95f49be03fe2c0d93a1fe9b90a49dc5bfe6ca55e23e345146e35"
+    },
+    {
+      "id": "thimble-family",
+      "url": "https://www.boschautoparts.com/documents/647135/1488055/Oxygen%20Sensors%20Trade%20Brochure.pdf",
+      "capture_sha256": "3a0b6916532d7ac5420b3e9b9fa873508cfa4f3c91631226083d20f6aead1f68",
+      "capture_bytes": 2895397,
+      "locator": "PDF3cutaway",
+      "evidence_class": "manufacturer family reference only",
+      "claims": [
+        "Separate ceramic/heater/protection tube/metal shell/electrode-filter/connection regions",
+        "Not15718internal dimensions; perforated cap differs from target slots"
+      ],
+      "actual_pixels_reviewed": true,
+      "original_distributed": false
+    },
+    {
+      "id": "switching-faq",
+      "url": "https://www.boschautoparts.com/spark-plugs2/-/asset_publisher/rodyfaqs/content/how-does-a-bosch-switching-type-oxygen-o2-sensor-function-premium",
+      "capture_sha256": "efb880538d70176f49eca8c3221728bd5d52a2523d4c599ce6967ae05a911a22",
+      "capture_bytes": 218616,
+      "locator": "FAQ question and answer",
+      "evidence_class": "manufacturer switching-family function",
+      "claims": [
+        "zirconia Nernst-cell operation, not specific ceramic shape"
+      ],
+      "actual_pixels_reviewed": false,
+      "original_distributed": false
+    },
+    {
+      "id": "regional-indexed",
+      "url": "https://ap-ecat.boschaftermarket.com/MY/en_MY/products/0258005718",
+      "capture_sha256": null,
+      "capture_status": "Direct502; web-search indexed manufacturer fields only,2026-10-03",
+      "claims": {
+        "overall_length_mm": 511,
+        "wires": 4,
+        "contacts": "round",
+        "type": "heated switching"
+      },
+      "actual_pixels_reviewed": false,
+      "evidence_class": "indexed manufacturer metadata; direct verification pending",
+      "original_distributed": false
+    }
+  ],
+  "dependencies_sha256": {
+    "docs/components/engine-sensor-coverage.md": "2dc495c5a526b1bdeb9c47ed1de12e0579a5819953810ac2412461f16450ebdb",
+    "inventory/engine/engine-sensor-coverage-evidence.json": "e211fa651f152c5e96fde0fc389e4a6df13f40bf9da8978c570671ef54f3a4d9",
+    "docs/KNOWLEDGE-BASE-WORKFLOW.md": "dde29d45492a919e0532aff46be9c18ed0cba8e0dd73e686537ea65697be890d"
+  },
+  "accepted_replacement_dimensions": {
+    "hex_mm": 22,
+    "sealing_surface_to_connector_end_in": 18.9
+  },
+  "retained_distinct_length_values": {
+    "catalog_mm": 481,
+    "regional_overall_mm": 511,
+    "exact_conversion_of_decimal_inches_mm": 480.06,
+    "difference_is_not_probe_reach": true
+  },
+  "unknown_dimensions": [
+    "thread pitch/class",
+    "engagement",
+    "probe below-seat reach",
+    "seat ring dimensions/construction",
+    "body diameters/lengths",
+    "hex height",
+    "connector dimensions",
+    "contact sizes/cavity mapping",
+    "internal stack",
+    "pipe/bung host",
+    "installed lead route"
+  ],
+  "rejected_transfers": [
+    "RetailM18x1.5 to accepted targetthread without primarysource",
+    "511minus481 as30mmprobe reach",
+    "LSM11motorsportdrawing",
+    "Familybrochure perforated tip in place of identified slots",
+    "Displaybundle as installedretention",
+    "Genericmanifold placement despite missing exhaustpipe host"
+  ],
+  "capture_pipeline": {
+    "authored_observations": "reference/engine/ho2s-online-20261003-observations.txt",
+    "ingest_command": "python3 tools/ingest.py reference/engine/ho2s-online-20261003-observations.txt --type local --title \"HO2S online 20261003 manufacturer observations\"",
+    "originals_committed": false,
+    "shared_semantic_index_run": false
+  },
+  "visual_review": {
+    "photo_views": [
+      "front",
+      "rear",
+      "right"
+    ],
+    "pdf_pages_1_based": {
+      "catalog": [
+        3,
+        18,
+        27
+      ],
+      "brochure": [
+        3
+      ]
+    },
+    "CAD_render": "N/A noCAD"
+  },
+  "failures_preserved": [
+    "Sandbox DNS failures; network-enabled publicreads succeeded",
+    "Regional502 directfetch; indexed-onlyfields labeled",
+    "WebPDF screenshot cache failure; publicPDF local raster recovered"
+  ],
+  "model_effort_usage": "unavailable"
+}

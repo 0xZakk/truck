@@ -1,0 +1,89 @@
+{
+  "baseline": "4f1fe9da2ec177e1ff61668df66ca422e37b0b7c",
+  "files": [
+    {
+      "path": "docs/components/act-host-registration-20261003-contract.md",
+      "sha256": "adb07a12cd7e2e94087978cddef38ff5d0109b190dd09893c9aa617180372de7",
+      "bytes": 3675
+    },
+    {
+      "path": "docs/components/act-host-registration-20261003-delivery.md",
+      "sha256": "af1871c13505bb999c3ddd4b5060c293c9ecf1fdcf88830023d2aa7dc965545e",
+      "bytes": 8272
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-fit.json",
+      "sha256": "4cc5685e809dbc51c737a56e4b1d8900ad5fd1fbfdac1c542bd4393754acce5b",
+      "bytes": 325738
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-rejected-extraction.json",
+      "sha256": "6826320c173519e81384ff88954b54e6e2e359446cdcae67a17d32acced5db4b",
+      "bytes": 878
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-fit-review.json",
+      "sha256": "9e1a40468903b6b86fca62b8bf976329831043a97548c6de8249d99c681783ce",
+      "bytes": 9521
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-free.json",
+      "sha256": "11c2059621d46d487c4da2c6b940f95adca82d62fdf04db4b9e641ed6e085af0",
+      "bytes": 272443
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-free.png",
+      "sha256": "57e31bb391254914deaa242b265109363d143c5c005847405d7d3d3c18747fa4",
+      "bytes": 139377
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-free-review.json",
+      "sha256": "b006c81dfd6fc93b88625e03fc179e4fefa4a2593579d39142c21c01039eb3be",
+      "bytes": 9573
+    },
+    {
+      "path": "reference/engine/act-host-registration-20261003-fit.png",
+      "sha256": "e01745c71bbaf19ca540232c782253022dece5ab92ef925de43bca5757dbf57a",
+      "bytes": 141385
+    },
+    {
+      "path": "scripts/act-host-registration-20261003-free.py",
+      "sha256": "1b2fcb38ddc9257068268270ca99b6931b2a66ed40b8ff1c2d2a5fc1c4f85d87",
+      "bytes": 3816
+    },
+    {
+      "path": "scripts/act-host-registration-20261003-fit.py",
+      "sha256": "c6e883701dd2e8fa917b33f2ad29c035d1baacfc61cb3cc78869a2bd67dc4176",
+      "bytes": 8490
+    },
+    {
+      "path": "scripts/act-host-registration-20261003-review.py",
+      "sha256": "1099c63f92eecd3f4550690470811388ac7010ee47cf7a9f5fa5261c762455a6",
+      "bytes": 4817
+    },
+    {
+      "path": "kb/notes/act-host-registration-20261003-upper-spacing.md",
+      "sha256": "b7f9e47c84b38159005ed7361cd0720e7b85580aae0f1b8f7db71d4ce5cf9ef9",
+      "bytes": 1504
+    }
+  ],
+  "checks": {
+    "fit_report_script_hash": "PASS",
+    "free_report_script_hash": "PASS",
+    "withheld_hole_negative_control": "PASS",
+    "python_syntax": "PASS",
+    "json_syntax": "PASS",
+    "kb_link_targets_no_H1": "PASS",
+    "actual_source_overlay": "INSPECTED",
+    "metric_pose": "FAIL"
+  },
+  "runtime": {
+    "python": "3.13.12 (main, Apr  6 2026, 11:54:17) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "Pillow": "12.2.0",
+    "matplotlib": "3.10.9"
+  },
+  "no_original_images_distributed": true,
+  "no_cad_or_installed_transform": true
+}

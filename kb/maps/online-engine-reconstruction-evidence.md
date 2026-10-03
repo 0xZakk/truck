@@ -41,3 +41,11 @@ The ACT host source contract identifies the [[notes/act-host-online-20261002-fro
 [[notes/airbox-host-online-20261002-mount-stack|Airbox mounting stacks]] separates body attachment from box isolation. [[notes/airbox-host-online-20261002-screw-envelope|Body-screw dimensions]] supports an identified replacement specimen; [[notes/airbox-host-online-20261002-cuff-datums|Duct cuff datums]] records source clocking and stop requirements. [[notes/pump-junction-online-20261002-functional-rear|Pump sealing regions]] and [[notes/pump-junction-online-20261002-junction|Peripheral inlet topology]] distinguish functional interfaces from an arbitrary protected slab.
 
 [[notes/act-host-secondview-20261003-boss-registration|A physically identified lower-intake specimen]] now supplies multiple views for ACT registration; casting identity and sensor resemblance are distinguished from fitted dimensions.
+
+## October 3 dimensional follow-up
+
+[[notes/act-host-registration-20261003-upper-spacing|The intake upper-port stations need independent evidence]] records a failed multi-view pose fit and a repeatable shorter first-gap observation. It does not supply accepted millimeter coordinates.
+
+Bosch supplies [[notes/ho2s-online-20261003-exterior|identified oxygen-sensor exterior features]], an explicit [[notes/ho2s-online-20261003-length-endpoints|length endpoint distinction]], and [[notes/ho2s-online-20261003-internals|family-level internal evidence]]. Target thread, probe reach and installed pipe host remain unresolved.
+
+The independent [[notes/intake-joint-online-20261003-application|Fel-Pro application record]] and [[notes/intake-joint-online-20261003-pattern|six-port/nine-aperture gasket pattern]] support a coordinated joint correction. Image proportions do not establish physical scale or identify the two extra aperture functions.
