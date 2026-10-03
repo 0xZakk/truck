@@ -1,0 +1,176 @@
+{
+  "physical1987_view1": {
+    "manual_pixels": {
+      "sockets": [
+        [
+          327,
+          348
+        ],
+        [
+          479,
+          422
+        ],
+        [
+          676,
+          506
+        ],
+        [
+          902,
+          611
+        ],
+        [
+          1155,
+          720
+        ],
+        [
+          1437,
+          841
+        ]
+      ],
+      "regulator_base": [
+        484,
+        374
+      ],
+      "socket_pick_px": 12,
+      "feature_transverse_projection_px": 45,
+      "other_features": {
+        "mount_front": [
+          410,
+          422
+        ],
+        "mount_middle": [
+          810,
+          590
+        ],
+        "mount_rear": [
+          1329,
+          829
+        ],
+        "front_loop_tip": [
+          325,
+          294
+        ],
+        "rear_return_mouth": [
+          1356,
+          689
+        ],
+        "rear_supply_mouth": [
+          1496,
+          788
+        ]
+      },
+      "label": "Physical 1987 comparison, view 1"
+    },
+    "projection_direction": [
+      0.913913377042923,
+      0.40590927466861354
+    ],
+    "rational_1d_coefficients": [
+      176.16613313044243,
+      -7.818442988514877,
+      -0.05671541263479023
+    ],
+    "socket_rms_px": 6.611169625317635,
+    "regulator_station_in_injector_gaps": 0.8753614237667621,
+    "pick_and_projection_sensitivity_95percent": [
+      0.6438457014590325,
+      1.0978249201989319
+    ],
+    "method_limit": "Heuristic along-row projection, not metric registration or statistical confidence. Off-row feature has perspective bias; no 3-D pose inferred.",
+    "other_projected_stations_NOT_3D": {
+      "mount_front": 0.6241938116568115,
+      "mount_middle": 2.6476844755109337,
+      "mount_rear": 4.6777347792179,
+      "front_loop_tip": -0.09111398518045917,
+      "rear_return_mouth": 4.578212693703363,
+      "rear_supply_mouth": 5.0823934480581885
+    }
+  },
+  "Ford1994_V5855F": {
+    "manual_pixels": {
+      "sockets": [
+        [
+          367,
+          320
+        ],
+        [
+          309,
+          286
+        ],
+        [
+          258,
+          259
+        ],
+        [
+          197,
+          229
+        ],
+        [
+          139,
+          204
+        ],
+        [
+          88,
+          177
+        ]
+      ],
+      "regulator_base": [
+        331,
+        298
+      ],
+      "socket_pick_px": 9,
+      "feature_transverse_projection_px": 16,
+      "other_features": {
+        "mount_front": [
+          349,
+          304
+        ],
+        "mount_middle": [
+          237,
+          251
+        ],
+        "mount_rear": [
+          97,
+          182
+        ],
+        "front_loop_tip": [
+          405,
+          344
+        ],
+        "rear_mouth_A": [
+          65,
+          95
+        ],
+        "rear_mouth_B": [
+          94,
+          97
+        ]
+      },
+      "label": "Exact-year Ford exploded diagram"
+    },
+    "projection_direction": [
+      -0.8899170668085488,
+      -0.4561223675757078
+    ],
+    "rational_1d_coefficients": [
+      65.22875511036104,
+      0.22499817751212756,
+      0.007377268355171344
+    ],
+    "socket_rms_px": 2.152504098362386,
+    "regulator_station_in_injector_gaps": 0.6446049296344638,
+    "pick_and_projection_sensitivity_95percent": [
+      0.3753028765081885,
+      0.8912623329588616
+    ],
+    "method_limit": "Heuristic along-row projection, not metric registration or statistical confidence. Off-row feature has perspective bias; no 3-D pose inferred.",
+    "other_projected_stations_NOT_3D": {
+      "mount_front": 0.3549434806964948,
+      "mount_middle": 2.2907632250481362,
+      "mount_rear": 4.81011004409066,
+      "front_loop_tip": -0.6862336322571397,
+      "rear_mouth_A": 5.939568334363457,
+      "rear_mouth_B": 5.4946427433287806
+    }
+  }
+}
