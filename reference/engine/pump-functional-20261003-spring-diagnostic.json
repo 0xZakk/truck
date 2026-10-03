@@ -1,0 +1,39 @@
+{
+  "scope": "Historical original GLB diagnostics only; no accepted new spring asset",
+  "historical_vertices": 116896,
+  "historical_faces": 233788,
+  "support_bounds_error_mm": 0.05299867755904586,
+  "trials": [
+    {
+      "merge_digits_mm": 6,
+      "vertices": 116896,
+      "watertight": false,
+      "winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 34,
+      "degenerate_faces": 52
+    },
+    {
+      "merge_digits_mm": 5,
+      "vertices": 116896,
+      "watertight": false,
+      "winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 34,
+      "degenerate_faces": 52
+    },
+    {
+      "merge_digits_mm": 4,
+      "vertices": 116896,
+      "watertight": false,
+      "winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 34,
+      "degenerate_faces": 52
+    }
+  ],
+  "inputs": {
+    "cad/engine/generated/pump-height-20261002-ports-trial3/nominal-water-pump-seal-spring.glb": "047c27bbfdab4610f84431b945c912087af13a5c64d82c23bf7ccc1c3cf951c1",
+    "scripts/pump-functional-20261003-spring-diagnostic.py": "a9b83f3a6a8c63716a376fbca0830d39d0435dd9a1d52c6646d32ee8d53eff01"
+  }
+}

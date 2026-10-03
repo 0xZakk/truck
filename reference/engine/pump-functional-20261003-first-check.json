@@ -1,0 +1,122 @@
+{
+  "status": "CHECKS COMPLETE; inspect every metric",
+  "scope": "independent functional regions; finite paths/walls not pressure proof",
+  "checks": {
+    "seal_land_face": {
+      "missing_mm2": 0.0
+    },
+    "seal_backing": {
+      "missing_mm3": 0.0
+    },
+    "dry_boss_1": {
+      "missing_mm3": 343.74690331778834
+    },
+    "dry_bore_1": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_1": {
+      "missing_mm2": 0.0
+    },
+    "dry_boss_2": {
+      "missing_mm3": 398.2140580434095
+    },
+    "dry_bore_2": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_2": {
+      "missing_mm2": 0.0
+    },
+    "dry_boss_3": {
+      "missing_mm3": 428.9635898454153
+    },
+    "dry_bore_3": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_3": {
+      "missing_mm2": 0.1521506556707449
+    },
+    "dry_boss_4": {
+      "missing_mm3": 321.8097126029265
+    },
+    "dry_bore_4": {
+      "obstruction_mm3": 0.0
+    },
+    "bolt_seat_4": {
+      "missing_mm2": 0.0
+    },
+    "fifth_aperture": {
+      "obstruction_mm3": 0.0
+    },
+    "rotor": {
+      "actual_impeller_outside_swept_envelope_mm3": 0.0,
+      "housing_swept_overlap_mm3": 0.0,
+      "housing_clearance_guard_overlap_mm3": 0.0,
+      "radial_clearance_guard_mm": 0.5,
+      "analytic_source": "cad/engine/water_pump.py build impeller disk/six boxes"
+    },
+    "inlet_path": {
+      "obstruction_mm3": 0.0
+    },
+    "heater_path": {
+      "obstruction_mm3": 0.0
+    },
+    "housing_tube": {
+      "overlap_mm3": 0.0
+    },
+    "dry_axial_bore": {
+      "obstruction_mm3": 0.0
+    },
+    "wall_join": {
+      "missing_mm3": 9.537854748213748,
+      "witness_volume_mm3": 27.07425094177746
+    },
+    "wall_bend": {
+      "missing_mm3": 0.0,
+      "witness_volume_mm3": 62.798214575750386
+    },
+    "wall_round": {
+      "missing_mm3": 0.0,
+      "witness_volume_mm3": 55.294648697592486
+    },
+    "wall_mouth": {
+      "missing_mm3": 0.0,
+      "witness_volume_mm3": 55.2920306906506
+    },
+    "valid": {
+      "housing": true,
+      "housing_solids": 1,
+      "tube": true
+    }
+  },
+  "controls": {
+    "backing_notch_missing_mm3": 42.089211887233,
+    "shifted_face_missing_mm2": 2902.749772490504,
+    "blocked_inlet_mm3": 18.315832657343535,
+    "plugged_bore_mm3": 813.2326743082559
+  },
+  "inputs": {
+    "cad/engine/generated/pump-functional-20261003/water-pump-housing.step": "c98b935592f7bf08baa75ae2d98ab7813037863c219f4ec1855e3163f85169b2",
+    "cad/engine/generated/pump-functional-20261003/heater-pump-return-elbow.step": "889edf87a7b1cd1ede2785b12002e45a3c225ad71e2f2e953a7181c87417b035",
+    "cad/engine/generated/pump-functional-20261003/region-seal_land_face.step": "8d1d6332351b1490f308c8b306cab04309cfd249d7feae66f886778020379fe2",
+    "cad/engine/generated/pump-functional-20261003/region-seal_backing.step": "2e2f729791160570d3bf3722e98a677fc9a3ce84693e38bd9fca918398e04fc3",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_1.step": "90281c3125748b6cc170f3c6f0b277ea09ffcb2510e8136077ac5d16c29ddaa1",
+    "cad/engine/generated/pump-functional-20261003/region-dry_bore_1.step": "dcecfcc06222528d0e7535366fe376d8343b07e315ea59be87fa9831c68f158b",
+    "cad/engine/generated/pump-functional-20261003/region-bolt_seat_1.step": "ae68a817b1388d9a1c45d337c707aefc8d11cebfc2fefc664a4af9666c390da1",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_2.step": "c6c460b92c87d86d605e61358d5c11a6c6a8e45290c1381777ec87cbf019d117",
+    "cad/engine/generated/pump-functional-20261003/region-dry_bore_2.step": "f667880eb3469a06d8e469790ad77e4f1c4067b83ab4ad910e16c71ab69063d1",
+    "cad/engine/generated/pump-functional-20261003/region-bolt_seat_2.step": "7c6b639b0a5536665bd5227ba68c44fe83422edb6bff10721735a032b13d9b35",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_3.step": "73142c23f393c97851cd66799226e4e449cf95437b84439652e6199cab31a64f",
+    "cad/engine/generated/pump-functional-20261003/region-dry_bore_3.step": "4002db55c27d48fe18d30da9cd8ad40f7c543c03396d5ecfd8f06b3087186fd8",
+    "cad/engine/generated/pump-functional-20261003/region-bolt_seat_3.step": "b0c95f03a48679bd4bec18485eb312111cb4ea719057eece63a2b6b8c826fa78",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_4.step": "558887eead3868d99d6ca4bdf5364bff25fa176d74fa009beeef43f457790d20",
+    "cad/engine/generated/pump-functional-20261003/region-dry_bore_4.step": "1f3f4d47445597915bb59f648df2019e251817f482d8888cc4aff3e161ff311f",
+    "cad/engine/generated/pump-functional-20261003/region-bolt_seat_4.step": "378ecd698b5603834871f329a401a7751aad79e80fc6d31778dc728b0f516ae1",
+    "cad/engine/generated/pump-functional-20261003/region-fifth_aperture.step": "d034373923fabb6fabc975d4a9a1b5db018c6064620f244eb6d9e3599effa588",
+    "cad/engine/generated/pump-functional-20261003/region-rotor-sweep.step": "19d88dfa424dd47c22719a18ef7d57fe8a8daa3bce274554ad9cbe89d278ea00",
+    "cad/engine/generated/pump-functional-20261003/region-rotor-clearance.step": "ae7f8a9d0b7bf0beb69e50426a4e59b12cd971616595abf45f823525185daf96",
+    "scripts/pump-functional-20261003-check.py": "8b9f5ec4270fef5881289fb2c747b24dac330d354ab15cbd28e6e33baf4fce33",
+    "cad/engine/pump_functional_20261003.py": "932465e9a3b55cf4cdd578a6dc8032448f338cd70b9b4936da97c2e84f6cd891",
+    "reference/engine/pump-functional-20261003-build.json": "ecf16cfaa683deed3cda42fe2260f0f75d5c85f9376361e4d9e92e95b756a22a",
+    "cad/engine/water_pump.py": "594f1d1b5797c69a158b21b2f56d01681f5a5d2640a31c8588065d694008504e"
+  }
+}

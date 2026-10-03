@@ -1,0 +1,30 @@
+{
+  "relative_mesh_attempt": {
+    "session_id": 62200,
+    "pid": 47133,
+    "elapsed_at_stop": "20:14",
+    "cpu_percent": 100.0,
+    "resident_kib": 1489872,
+    "last_output": "water-pump-seal-bellows True 0.0002143383026123047",
+    "unfinished_part": "water-pump-seal-spring",
+    "signal": "TERM",
+    "exit_code": 143,
+    "approved_budget_minutes": 20,
+    "partial_assets": "47 successful unchanged non-spring assets; four final rebuilt assets exported separately",
+    "reason": "Active native relative mesher exceeded bounded performance budget without spring output; no blind restart.",
+    "preserved_report": "reference/engine/pump-functional-20261003-relative-mesh-partial.json",
+    "preserved_log": "reference/engine/pump-functional-20261003-relative-mesh-interrupted.log"
+  },
+  "next_attempt": {
+    "method": "Focused spring-only absolute0.01mm/angular0.06rad tessellation",
+    "measured_bounds_gate_mm": 0.025,
+    "topology_gate": "watertight and winding consistent",
+    "hole_fill": false,
+    "vertex_sculpting": false,
+    "runtime_budget_minutes": 5,
+    "session_id": 29543,
+    "elapsed_seconds": 39.18554045818746,
+    "exit_code": 0,
+    "result": "bounds PASS0.000418491mm; topology FAIL; no running process"
+  }
+}

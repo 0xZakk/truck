@@ -1,0 +1,21 @@
+{
+  "missing_face_area_mm2": 0.1521506556707449,
+  "bounds": [
+    [
+      389.0,
+      -86.91263641780598,
+      173.09876776251028
+    ],
+    [
+      389.0,
+      -86.7,
+      175.6773620903504
+    ]
+  ],
+  "above_0_1mm_stock_volume": 0.0042176875372525804,
+  "above_expected_volume": 0.015215065567210737,
+  "below_0_1mm_stock_volume": 0.015215065567210737,
+  "below_expected_volume": 0.015215065567210737,
+  "inlet_face_intersection_area": 0.0,
+  "conclusion": "Inspect metrics: stock above and below proves a covered annular outer rim, not missing load-bearing volume. Preserve declared face FAIL; actual screw seat is a distinct check."
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Root preservation review of failed functional-region pump candidate",
+  "delivery_sha256": "5003936ae17bc0aba6b4adcc3e3d360bc10050a420b614b229b47cec3228771f",
+  "verified_hashes": {
+    "authored": 69,
+    "generated": 135,
+    "guarded_inputs": 839,
+    "mismatches": 0
+  },
+  "reviewed": [
+    "Parametric source and independent functional-region definitions",
+    "Handoff local checks, negative controls, five actual-neighbor conflicts and source limitations",
+    "Actual authored exterior/context render",
+    "Spring runtime and rejected bound/topology diagnostics"
+  ],
+  "verdict": "Preserve for further coordinated revision; reject installation",
+  "gates": {
+    "local_functional_regions": "PASS scoped finite witnesses",
+    "whole_candidate_mesh": "FAIL spring topology",
+    "installed_neighbors": "FAIL five conflicts",
+    "source_shape": "NOT VERIFIED camera registration ongoing",
+    "browser": "NOT RUN"
+  },
+  "archive": "reference/engine/pump-functional-20261003-package.json"
+}

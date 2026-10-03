@@ -1,0 +1,26 @@
+{
+  "hub_pulley_named_seat": {
+    "water-pump-drive-hub": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0,
+      "done": true
+    },
+    "water-pump-pulley": {
+      "area_mm2": 2982.9343706018744,
+      "missing_mm2": 0.0,
+      "done": true
+    }
+  },
+  "entire_rear_slice_added_mm3": 14985.908690615834,
+  "entire_rear_slice_removed_mm3": 565.2485552045121,
+  "protected_joint_footprint_added_mm3": 1990.4818408006315,
+  "protected_joint_footprint_removed_mm3": 565.2485552045144,
+  "limitation": "Initial contract said exact fullrearX<=389. Port additions are assessed explicitly; jointfootprint result does not erase broader failure. Inherited bearing outerR23.9 vsboreR24 andshaftR8 vsbearingbore8.05 leave estimated radialgaps; no pressed-fit support PASS.",
+  "inputs": {
+    "cad/engine/generated/pump-functional-20261003/water-pump-housing.step": "631a26eaa3684c51240d600dd177933149d419849b96745ee648d3be4af1eca4",
+    "cad/engine/generated/pump-functional-20261003/water-pump-drive-hub.step": "9a108317cf32b819b011642a76c1a6f81cddf87c20fa02a7ed7c7ae2ea4cecaa",
+    "cad/engine/generated/pump-functional-20261003/water-pump-pulley.step": "6b6338ad8ba6615f397f098c30ff5c90fe36b3cc594532723a792463cc8e49d1",
+    "cad/engine/generated/waterpump-heater-source-candidate/housing.step": "3720356363bbded1d700a7a708ca51376c12fabb64890952d7f4d1a1ffd52a82",
+    "scripts/pump-functional-20261003-seats.py": "6f7d62133f677f662a85b42c3fbe891082e30abe986f6cac5d48623206ddc710"
+  }
+}
