@@ -1,0 +1,29 @@
+{
+  "scope": "Root actual-image orientation review; source-comparison working orientation, not owner variant identification",
+  "sources": [
+    {
+      "path": "/tmp/intake-return-interface-20261003-rail6.webp",
+      "sha256": "f3182c2e04a5ab45e6d9fd411a1e1e53c518ee2d00973f298d029f6b44dedc5e"
+    },
+    {
+      "path": "/tmp/intake-return-interface-20261003-rail1.webp",
+      "sha256": "94bce34481d25306085a0f1fb27481c64f5b07ee5fccb151ed16560469cfddf8"
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/648486791.png",
+      "sha256": "9814a5092224f5ccc83ecebc96fe32ed5d7d761a02d20fb5b64fc569c0dccebb"
+    }
+  ],
+  "observations": [
+    "Physical rail views1 and6 show plate crossing rail with front mounting ear on injector-cup side and regulator/long return on opposite side. This uses visible plate connectivity, not projected chord signs alone.",
+    "Ford V5855-F supports front regulator, front loop and rear paired connectors; perspective is not a calibrated metric side measurement."
+  ],
+  "decision": "Use plus hypothesis for next isolated source-comparison candidate: railY\u2212163, protected tabsY\u2212178, regulatorY\u2212139. Keep minus historical.",
+  "limits": [
+    "Specimen identified1987; transfer to1994 remains comparison evidence.",
+    "No dimension, exact transverse offset or owner part identity proved.",
+    "No vacuum hose on detached specimens; no supported hose route inferred.",
+    "Source pixels excluded from Git and archive. URLs retained in intake-return-interface-20261003-evidence.json."
+  ],
+  "installation_acceptance": false
+}

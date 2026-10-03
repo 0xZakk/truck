@@ -1,6 +1,6 @@
 # Engine integration — 2026-10-03 resumed
 
-Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR128, `1ba1593ba3509c1378a4e6fa08e44070f558e866`. Current branch `engine/functional-fit-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
+Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR129, `c5f9d81a877a9d53c2a45984a20f4f2736785796`. PR129 preserves source reconciliation and rejected fuel candidates; it changes no canonical geometry. Current branch `engine/pressure-spring-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
 
 ## Installed versus candidate
 
