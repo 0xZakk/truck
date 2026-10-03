@@ -288,3 +288,12 @@ Published after [PR119](https://github.com/0xZakk/truck/pull/119) merged at `16f
 This is a catalog-sized isolated replacement screw with explicit estimated head/thread/point details and preserved failed constructions. It is not installed: four body coordinates, pilot/clip and sheet stack remain unresolved. See `docs/components/airbox-screw-online-20261002-handoff.md` for build, local geometry checks and limits.
 
 Published after [PR120](https://github.com/0xZakk/truck/pull/120) merged at `1d4e43d3a90a5769396deca5da2dbce0e1e64834` (CI23s/23sPASS): [airbox screw release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-airbox-screw), ID402597976. Server digest and byte count match the frozen56-member archive.
+
+
+## Functional-region pump candidate — publication pending
+
+`reference/engine/pump-functional-20261003-package.json` records a204-member authored supplement,53,260,199bytes, SHA256 `65e8271ec74edacafb6adbe4c6e4da8afd1f9b7cc525abde5e11b7b6192b2046`. Root independently verified all69 authored files,135 generated assets and839 guarded inputs, then streamed the archive without extraction. Source originals are excluded.
+
+Restore the pump-height and accessory-v4 predecessor chains above first. Download `pump-functional-20261003-authored.tar.gz` once published, verify its hash, and extract at the repository root after preserving newer work. The archive includes authored source snapshots as well as assets; do not overwrite newer code blindly. Follow `docs/components/pump-functional-20261003-delivery.md`. The ledger's guarded inputs define exact baseline dependencies; independent source access is still required for photo review.
+
+This is a failed installation candidate:52 valid STEP solids,51 passing meshes and one spring topology failure, with five actual-v4 clashes. Functional interface checks do not establish source accuracy, motion, service access or browser acceptance. Publication pending; no installed change.

@@ -4,7 +4,7 @@
 
 ## Current checkout and integration ownership
 
-Latest reviewed merge: [PR120](https://github.com/0xZakk/truck/pull/120), `1d4e43d3a90a5769396deca5da2dbce0e1e64834` (CI23s/23sPASS). Focused branch: `engine/pump-sensor-evidence-20261003`. Root alone edits shared manifests/builders/viewer and serializes integration. Preserve unrelated untracked electrical merge audits, aborted v4 reports and timing rear-flange review. Do not broad-add files.
+Latest reviewed merge: [PR121](https://github.com/0xZakk/truck/pull/121), `c651b16acc2699d9875ae547f0cde1456693ad73` (CI17s/15sPASS). Focused branch: `engine/pump-functional-review-20261003`. Root alone edits shared manifests/builders/viewer and serializes integration. Preserve unrelated untracked electrical merge audits, aborted v4 reports and timing rear-flange review. Do not broad-add files.
 
 Latest installed-content checkpoint remains PR110; later commits preserve research/candidates. Canonical `inventory/engine/full-assembly.json`: **741 definitions /1,349 occurrences**, SHA256 `91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6`. Navigation passes1,349parts/1,548links. The last installed static audit covers5,287 comparisons at one pose, not continuous motion or production accuracy. Combined STEP roundtrip maximum bounds difference0.000351mm. Rear exhaust-neck blend is latest installed geometry. Electrical lessons and oil-pump learning corrections are installed; no later pump, carrier, sensor or duct candidate is installed.
 
@@ -42,3 +42,5 @@ Engine parent#1; active components include#32 timing/rods,#47water pump,#73oil p
 CAD environment: `.venv-cad`, Python3.13/build123d0.10/OCP7.8.1.1. Renderer uses system NumPy/Matplotlib; cached semantic model works with `HF_HUB_OFFLINE=1`. Model/effort/usage measurements unavailable; do not invent billing. Common exporter maps mmXYZ to meter(X,Z,−Y). Run only affected checks and verify actual inputs; never lower thresholds to accept a candidate.
 
 Historical state is preserved in `docs/history/engine-state-through-20261003-pr120.md`. Read it only for a specific missing fact; current contracts and actual files/processes take precedence.
+
+Pump preservation: root verified69 authored/135 generated/839 guarded hashes and streamed204-member archive; package ledger `reference/engine/pump-functional-20261003-package.json`. Publication pending. Do not install the five-clash/open-spring candidate.

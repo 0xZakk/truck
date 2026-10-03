@@ -1,0 +1,54 @@
+{
+  "settings": {
+    "linear_mm": 0.003,
+    "angular_rad": 0.025,
+    "vertex_merge_digits_mm": 5,
+    "bounds_gate_mm": 0.025
+  },
+  "parts": {
+    "water-pump-shaft": {
+      "path": "cad/engine/generated/pump-functional-20261003/water-pump-shaft.glb",
+      "sha256": "839d7803954d0c44843b350350f2283933ca9b1d278b7ed142a64cbb0af4b0e3",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0001494884490966797,
+      "vertices": 1006,
+      "faces": 2008,
+      "step_sha256": "0652548708ef9dcc6987d207e5088c30b3acd34bf1d23d3485b6817b228101ff"
+    },
+    "water-pump-housing": {
+      "path": "cad/engine/generated/pump-functional-20261003/water-pump-housing.glb",
+      "sha256": "e248be5e6902402100ce41b20af427230f9c8c4b7627b1ebec486bd4397dc5cb",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.555020103287234e-05,
+      "vertices": 76733,
+      "faces": 153510,
+      "step_sha256": "631a26eaa3684c51240d600dd177933149d419849b96745ee648d3be4af1eca4"
+    },
+    "water-pump-pulley": {
+      "path": "cad/engine/generated/pump-functional-20261003/water-pump-pulley.glb",
+      "sha256": "367ee1407afab29b457f684be138ceb500722a7193f0d9db721e936f1b9c183d",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0014591217041015625,
+      "vertices": 8048,
+      "faces": 16112,
+      "step_sha256": "6b6338ad8ba6615f397f098c30ff5c90fe36b3cc594532723a792463cc8e49d1"
+    },
+    "heater-pump-return-elbow": {
+      "path": "cad/engine/generated/pump-functional-20261003/heater-pump-return-elbow.glb",
+      "sha256": "a72fa48d931644f9765725ceb39e8427c34abf8ff2d2fa55c51316068691280b",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00011462662212124997,
+      "vertices": 297007,
+      "faces": 594014,
+      "step_sha256": "f9430be0526ada2407b1ad695cb76d1358adee768a2f30f457c8239d46736a57"
+    }
+  },
+  "inputs": {
+    "reference/engine/pump-functional-20261003-build.json": "4103c657b7d4a1aba1ca9aaba1a8b48d08274e2a63d1a9594aa5a495e4f32a33",
+    "scripts/pump-functional-20261003-tail-mesh.py": "4e425ada5dcc321165b79b4519b6b2f46b4482901a206811918c39a5e0c1239a"
+  }
+}
