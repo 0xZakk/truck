@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-cover-candidate-20261003-inlet-analytic-study.py", line 14, in <module>
+    r={'scope':'Frozen candidate, analytical first-span axis; radius5 is a diagnostic, not source-specified passage','input_sha256':sha(p),'script_sha256':sha(Path(__file__)),'source_module_sha256':sha(Path(c.__file__)),'tube_outside_declared_lumen':vol(t.cut(l)),'original_axis_R1_obstruction':vol(h.intersect(tube(1))),'original_axis_R5_obstruction':vol(h.intersect(t)),'after_axis_R1_obstruction':vol(q.intersect(tube(1))),'after_loft_probe_obstruction':vol(q.intersect(probe)),'valid':q.is_valid,'solids':len(q.solids()),'removed_stock':vol(h.cut(q)),'added_stock':vol(q.cut(h)),'path':str(out.relative_to(R)),'sha256':sha(out)}
+                                                                                                                                                                                                                                                          ~~~^^^^^^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-cover-candidate-20261003-inlet-analytic-study.py", line 9, in <lambda>
+    vol=lambda s:sum(abs(solid_volume(q,'adaptive')) for q in c.norm(s).solids()) if s else 0
+                 ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/scripts/pump-cover-candidate-20261003-inlet-analytic-study.py", line 9, in <genexpr>
+    vol=lambda s:sum(abs(solid_volume(q,'adaptive')) for q in c.norm(s).solids()) if s else 0
+                         ~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/zacharyfleischmann/projects/truck/truck-build/cad/engine/cad_metrics.py", line 35, in solid_volume
+    raise ValueError(f'Volume integration did not converge: {error}')
+ValueError: Volume integration did not converge: 0.004009368968054883

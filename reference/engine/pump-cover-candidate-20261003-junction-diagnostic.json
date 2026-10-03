@@ -1,0 +1,109 @@
+{
+  "status": "COMPLETE",
+  "stages": [
+    {
+      "stage": "outer_front",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 8,
+        "2": 12
+      }
+    },
+    {
+      "stage": "cut_main_cavity_first",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 11,
+        "2": 16
+      }
+    },
+    {
+      "stage": "port_wall",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 8,
+        "2": 15
+      }
+    },
+    {
+      "stage": "port_wall_minus_cavity",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "2": 30,
+        "1": 8
+      }
+    },
+    {
+      "stage": "fuse_port_wall",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 16,
+        "2": 54
+      }
+    },
+    {
+      "stage": "heater_backing",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 17,
+        "2": 128
+      }
+    },
+    {
+      "stage": "inlet_lumen",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 20,
+        "2": 130
+      }
+    },
+    {
+      "stage": "heater_small",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 21,
+        "2": 144
+      }
+    },
+    {
+      "stage": "heater_socket",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 22,
+        "2": 146
+      }
+    },
+    {
+      "stage": "dry_bore",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 22,
+        "2": 146
+      }
+    },
+    {
+      "stage": "final",
+      "valid": true,
+      "solids": 1,
+      "edge_unique_faces_counts": {
+        "1": 31,
+        "2": 259
+      }
+    }
+  ],
+  "output": {
+    "path": "cad/engine/generated/pump-cover-candidate-20261003/housing-sequential-diagnostic.step",
+    "sha256": "9f1feca22ee365354bb140791da960e051785637a3473fdec65d4d7eba9d25af"
+  },
+  "script_sha256": "71e69964932344071b015f631a6088faa90e4ceba11b285879f3fa9868dcb120"
+}

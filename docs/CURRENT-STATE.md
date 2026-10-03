@@ -1,6 +1,6 @@
 # Engine integration — 2026-10-03 resumed
 
-Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR126, `5584306a595f87b60b29eca9ea82b527ade5ae98`. Current branch `engine/resume-integrations-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
+Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR127, `5c5a11d18607efd31d554aff90d5fe3b97a3b094`. Current branch `engine/component-fit-followup-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
 
 ## Installed versus candidate
 
@@ -14,10 +14,10 @@ Live registry confirmed three newly dispatched workers; prior modeling processes
 
 | Owner | Scope | Current action |
 |---|---|---|
-| resume_pump_fit | pump-cover-candidate-20261003 | Diagnose source registration versus block deck.59parts/788neighbor comparisons had14clashes. New block land crosses head/deck; no clearance-driven carving authorized. |
-| resume_fuel_fit | fuel-rail-candidate-20261003 | Preserve both source-contract transverse hypotheses. r2 geometry exists; prior flow report is stale after failed bypass-control union. Repair and rerun checks against actual STEP. |
-| resume_exhaust_fit | ho2s-host-candidate-20261003 | Resume approved conditional Walker pipe/spherical receivers and finite gas junction; inspect saved outputs before rebuild. |
-| root | intake-gasket-outline-20261003 | Diagnose failed tessellation of full traced gasket before actual land/contact validation. |
+| resume_pump_fit | pump-cover-candidate-20261003 | Ford nominal254mm deck rejects current photo frame (~290mm implied). Separate analytic inlet successor clears sampled flow and preserves protected regions; root reviewed actual mesh and38input hashes. Coupled59part pose retains14clashes; independent front datum needed. |
+| resume_fuel_fit | fuel-rail-candidate-20261003 | r4 both signs tested85,280pairs: plus4/minus17overlaps. Approved tabs and straight hose socket remove two collision classes. Hose mesh seam and regulator external pressure enclosure FAIL; source-backed shell-clamp amendment under review. Neither sign selected. |
+| resume_exhaust_fit | ho2s-host-candidate-20261003 | Attempt16 reports minwall1.44446mm, open gas branches, receiver seats and negative controls. Root review pending. Front manifold mesh defect inherited; four other meshes pass. Context audit underway; do not install yet. |
+| root | intake-gasket-outline-20261003 | PR127merged: full traced gasket validSTEP/watertightGLB, six1mm diagnostic sealing bands covered. Estimated scale and overhang retained; not installed. Knowledge base391notes embedded; selected semantic links reviewed, not bulk-applied. |
 
 Workers own their prefixes only; root reviews significant interface amendments before coupled CAD. Use public source research where evidence is missing. Source dimensions, replacement comparisons, estimates and unknowns remain distinct. Existing contracts are under `docs/components/`; original source images/manuals are excluded from commits/releases.
 

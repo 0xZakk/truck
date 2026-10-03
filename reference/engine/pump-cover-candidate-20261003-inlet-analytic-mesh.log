@@ -1,0 +1,21 @@
+{
+  "scope": "Isolated own-axis inlet diagnostic; candidate datums remain failed",
+  "path": "cad/engine/generated/pump-cover-candidate-20261003/housing-inlet-analytic-diagnostic.glb",
+  "sha256": "00e6926ceab72736e54f8ab5c6b52a600676a0d8a4d6789858ab317a5624c8a0",
+  "watertight": true,
+  "winding": true,
+  "components": 1,
+  "finite": true,
+  "cad_bounds_error_mm": 2.772133395723131e-05,
+  "bounds_gate_mm": 0.025,
+  "settings": {
+    "linear_mm": 0.003,
+    "angular_rad": 0.025,
+    "merge_digits_mm": 5
+  },
+  "inputs": {
+    "cad/engine/generated/pump-cover-candidate-20261003/housing-inlet-analytic-diagnostic.step": "6ed6ec9a8d107e78e3cfbdef8133b02a3af781cab5785b9859b30c6a85817029",
+    "reference/engine/pump-cover-candidate-20261003-inlet-analytic-study.json": "38236a53e2efd49d5f18d899e924cd275dbbd57bae250d91a3176b1b5960fe54",
+    "scripts/pump-cover-candidate-20261003-inlet-analytic-mesh.py": "b7b3cefbd0e40d945aa0a9d9c204998ca62eb1b0f357f430ed6727b76745615b"
+  }
+}

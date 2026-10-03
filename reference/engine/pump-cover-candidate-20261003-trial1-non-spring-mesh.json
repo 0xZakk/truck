@@ -1,0 +1,594 @@
+{
+  "settings": {
+    "linear_mm": 0.003,
+    "angular_rad": 0.025,
+    "vertex_merge_digits_mm": 5,
+    "bounds_gate_mm": 0.025
+  },
+  "parts": {
+    "water-pump-drive-hub": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-drive-hub.glb",
+      "sha256": "90f95a3f868ca5007142b2d8e449a64a4fc8ad07c8c7e0f1ae1d617aabefc04c",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00039904788889089104,
+      "vertices": 7042,
+      "faces": 14100,
+      "step_sha256": "693a0340679931ae7b5c2a001739d1fbf8f22cbd86f3572925d987ebf5400dbd"
+    },
+    "water-pump-bearing": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-bearing.glb",
+      "sha256": "f99d88c198746203ee0f76899d0f423b8162b8ec4885f339c1485cdfb8337a2e",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.000274021186015716,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "285222e88d3ed83bf7ddb27887285585e9d9824a79bf4de79ed178ccd64f50ef"
+    },
+    "water-pump-slinger": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-slinger.glb",
+      "sha256": "622da671025f325849f6a42cab4327c3e43f18eb5b41956c5e454f70361da7f6",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0001971073523918676,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "0975580297f8dd805db16c4a77678ca3144bd8357b3655afbea779f506431a92"
+    },
+    "water-pump-pulley-bolt-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley-bolt-1.glb",
+      "sha256": "3dc7d28ded15cc7b29ad4c4d1bc581ac551f131217ab0fb3a4f4c9198be73cf2",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3418197625014727e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "d18b6576c449f547fe0cfab3eb979a8700d17c6b84e42e2b13d274a88af6a61b"
+    },
+    "water-pump-pulley-bolt-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley-bolt-2.glb",
+      "sha256": "4f7c946e9f3f3c0c4e65ddabc66fd20900a0e05282b9a1631e19dc3f416c13c6",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3418197625014727e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "d4d925d9428f0823fdcfea627074a942690e334080809a0334339a135afad64b"
+    },
+    "water-pump-pulley-bolt-3": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley-bolt-3.glb",
+      "sha256": "549c8fa5fddefa301175c0a681dd58f58e620a18171a7e77aeba4c68d77cd334",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3418197625014727e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "9ad3e3a105180c0216825850a083966e12cb5dc87a6e7fd894c2d38c105857b4"
+    },
+    "water-pump-pulley-bolt-4": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley-bolt-4.glb",
+      "sha256": "6211b6e4b066a42c0fe06a1af1207089b233482e0afae5f18eed947016d5d8bb",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3418197625014727e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "7dc00c001537317cfe9c95d91ecf2511ba93a6eb8a789e8d70508abc5f2141f6"
+    },
+    "fan-clutch-input-shaft": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-input-shaft.glb",
+      "sha256": "0f9e383b8232e0ed55f7166609bd052c0fb0b8d4814562ddcd1e36822c1a0665",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 2.3670196469538496e-05,
+      "vertices": 2024,
+      "faces": 4044,
+      "step_sha256": "95aadb0c3d8d057fdafa62c5f42b76e935d7836a855cfc7d7e35d506a7ad3f39"
+    },
+    "fan-clutch-housing": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-housing.glb",
+      "sha256": "01b068344ab05d76b0005c0859693972eb5b2cbe5138a4d087285ab665e3527c",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0010291309729950626,
+      "vertices": 9054,
+      "faces": 18124,
+      "step_sha256": "554346d6a5f2308cfb3cba377531ce795461ea71449c27785850d8c43dc38cdf"
+    },
+    "fan-clutch-bearing": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-bearing.glb",
+      "sha256": "b6c79d26bf838b47127bb99c1fc8b913ab2ff840d92379f452520dfca1360cb3",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0002548761740968075,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "ad4ee0f5627eed52773390397655b76bb43ab68c4438554c6e553acf480a5308"
+    },
+    "fan-clutch-shaft-seal": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-shaft-seal.glb",
+      "sha256": "a61c9d68de4f11fffebf8212b2aaa758d9e456a9522c15440e36d411d6f1da44",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0002548761740968075,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "27546f5d9e5bddd0498ef387b37f17e5a55d296c55db8db9766fa318a3de7df7"
+    },
+    "fan-clutch-drive-rotor": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-drive-rotor.glb",
+      "sha256": "895e36f1621140bed2437a9f163173ae5ba69344bef107c8759e1f56e64b4591",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0009059257880608129,
+      "vertices": 10060,
+      "faces": 20120,
+      "step_sha256": "93c6951fbf56e356237d5b6ab79af39b6f57e5938d821fea7a84c294f004cf1d"
+    },
+    "fan-clutch-reservoir-partition": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-reservoir-partition.glb",
+      "sha256": "1ab32427cf6451a7b70722d0fb5b06f612d1b1dbd5da747e92351abd353bd276",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0009616680518433895,
+      "vertices": 13083,
+      "faces": 26174,
+      "step_sha256": "aeff8e3b5c2688133e684fed738653e0ab25604e459e8a1c39ef53fccd776a44"
+    },
+    "fan-clutch-front-cover": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-front-cover.glb",
+      "sha256": "279e01ef4dfdf51731d8c3aeb829bdc5448332735e227cbfb3750378978e9bdf",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0010291309729950626,
+      "vertices": 2308,
+      "faces": 4616,
+      "step_sha256": "e9a7c57e64d271457dc7efce8392332d1bbe314fa81cc603b72cd221e09f6bd2"
+    },
+    "fan-clutch-control-valve": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-control-valve.glb",
+      "sha256": "850665d441dcd45e3a6b350a5757a0dd2a407e8787d8159057f5158f571a690a",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.972198492694588e-05,
+      "vertices": 1520,
+      "faces": 3036,
+      "step_sha256": "452275d6f2c30c6a106319464decb81848b44459c34ce31e6a7699f3ab12f256"
+    },
+    "fan-clutch-thermal-spring": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/fan-clutch-thermal-spring.glb",
+      "sha256": "470013add9c17a9719d7692c3095a7aa56922a063c504a3b10d79154d95c83b8",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 2.5920867983586504e-05,
+      "vertices": 724,
+      "faces": 1444,
+      "step_sha256": "caee3a234d2eda67a38ec9526dc550f6407cdfd09108e6cc4f2bcd743a5ba89a"
+    },
+    "cooling-fan-spider": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-spider.glb",
+      "sha256": "83c8f21956db7f0c8f762ddbdb9a1c3da9a18828d6b35edc9974418a1e25f961",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.747131341289787e-05,
+      "vertices": 19646,
+      "faces": 39364,
+      "step_sha256": "51c971b74c9ff74703cf9e333a0c666c69bf8065bddedcca62e8ff3bc8390179"
+    },
+    "cooling-fan-blade-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-1.glb",
+      "sha256": "cfde596f6381abec40d66eecc8bd37a108df9f86dc2874445284644ec1c3eb77",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00034963397237675053,
+      "vertices": 4171,
+      "faces": 8346,
+      "step_sha256": "96672160aff6dc873a20d65215686d817d8cb53e8750d769fa2e9588d5a99fab"
+    },
+    "cooling-fan-rivet-1-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-1-1.glb",
+      "sha256": "1b24e78b0dfca53dc284566fbb3bd7cdd376d1f779341f5b59d0e6621b29e7a3",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.243059482040735e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "8384f18b78f775e5f6d45da705b5995175011b01376f719b9995a489716d76fd"
+    },
+    "cooling-fan-rivet-1-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-1-2.glb",
+      "sha256": "cb2b07504dae8ca8921ff7c193f6b90ddf8a2e1b2f619fef4bce6f87277e898a",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.815233199906288e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "36ea04f98a79771e144556f0ed399d8b78230cac6076aa56d6697e427ac851e2"
+    },
+    "cooling-fan-blade-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-2.glb",
+      "sha256": "4a42b39111eb7445c7e5ca5be335cd2aab87ee738f152a3e7c9dee7d1c79bb7d",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0005861599925083283,
+      "vertices": 4218,
+      "faces": 8440,
+      "step_sha256": "491e9fcd129b905c7071b7361b0c1c4c22b01380eaa9b571f1aa53fbdee14122"
+    },
+    "cooling-fan-rivet-2-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-2-1.glb",
+      "sha256": "3569111e6c274799731fef0e94ae5a2a1a21091a4aa41078c13e1db00e80b56d",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.6605680811117054e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "33a1525fe1531b08eed79aadb54ac7a65abfc0a879324cedde977ca6d1d34422"
+    },
+    "cooling-fan-rivet-2-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-2-2.glb",
+      "sha256": "8bb8ea793ea6584fb287cc9050baa8a9a73831f434d77c48b91b775c2bada4de",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.102247342847477e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "2facbdfd62e1cb8f2af0cbcbd0fda0b8417c3e34cc86a7bbc32e412dfd91fe1f"
+    },
+    "cooling-fan-blade-3": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-3.glb",
+      "sha256": "bef888a4d3178b23aca65da2ab509b8c8b346c99a97deca4d5b2251ef763f13a",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.000941341024315534,
+      "vertices": 4185,
+      "faces": 8374,
+      "step_sha256": "431b2f5b9f9a5e3c579cb88d30b4e75a5f67c6d160edd293777d53e08483b77e"
+    },
+    "cooling-fan-rivet-3-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-3-1.glb",
+      "sha256": "b4a018582f2943bd14c56d2d11672ad49f5b27ba0b44747a3fec6ca88769d0bb",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.563138702451397e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "74368d7f35928b4cf5c2f80688352eb1b4f85f990e6b91d48ca296c30f637795"
+    },
+    "cooling-fan-rivet-3-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-3-2.glb",
+      "sha256": "97154f1cb34648338aa25b756156cee8e71e3a665d2dc4b20aa5c4cfc422d412",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.520120897666402e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "965bc825c75437dcfe1558688a576b159633dc83addea69826e42bac2035443f"
+    },
+    "cooling-fan-blade-4": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-4.glb",
+      "sha256": "e7355827943097b073e7dc379f24065005bdb942cf5f1337c95145376d95714c",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00031092004809352147,
+      "vertices": 4149,
+      "faces": 8302,
+      "step_sha256": "3aeda2f8ea4b1739f465e8614c4f89de09d8540e0818b8cfaafeb05004e3e5f1"
+    },
+    "cooling-fan-rivet-4-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-4-1.glb",
+      "sha256": "c2452937694d1a9fac58be0835a65b521c3c795eb5bff85da09efd5a9b052e57",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.751888474174848e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "84b26a2babd456ea2eaa2ee18b44edc7b89ecf2c8a226e01833592903d8edd2a"
+    },
+    "cooling-fan-rivet-4-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-4-2.glb",
+      "sha256": "a93f15cc0d277123682f4a7ec9de6f261a8b4856388dc328ecc18a17732df645",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.711604719886964e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "a11fe65ba679ae9a60f6cfe08d16c6b9392443470db1928e8d3057273a7bca48"
+    },
+    "cooling-fan-blade-5": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-5.glb",
+      "sha256": "cb897c7ac595623489861e3dd8758488876b4d2695079ef025963b596a118b29",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.971818952981266e-05,
+      "vertices": 4144,
+      "faces": 8292,
+      "step_sha256": "5dd65553dd3cc64384743d20eea33a5d370331a1e7a06e2e00e8b52997171634"
+    },
+    "cooling-fan-rivet-5-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-5-1.glb",
+      "sha256": "df4d0ddc944451316e1945d6f66b922f64b203bcb4c2976864b79a55067ba1d1",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.401082171374583e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "d677f47bebf677125bc21afd913d7cc143a4e8d15ce319d9bb0a759713e00374"
+    },
+    "cooling-fan-rivet-5-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-5-2.glb",
+      "sha256": "33c6f3ac9a719629111e3dba39f1064f1c0b57f69e9d067158fb5d323fd740e2",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 5.2559560970166785e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "af7cd9cada196074c54670ce9b97e61bf1179c68d6e37cc301385bcb56a709aa"
+    },
+    "cooling-fan-blade-6": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-6.glb",
+      "sha256": "adfef78f8296f2a213b8d20f176e8396e69a664a2806457fcd9347a08aaa3ae0",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0003755117993762269,
+      "vertices": 4140,
+      "faces": 8284,
+      "step_sha256": "984fe1f3689922b176877699afb039a97e644218f4b02741417b96b763ec46b5"
+    },
+    "cooling-fan-rivet-6-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-6-1.glb",
+      "sha256": "e721488d732dcd60148764001ed35a017bccb71f1d1edc31016d48854f2ac033",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.643875718102208e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "8a47a916be86ecb785b901baa34b7f1c17f118df8595e49f10f4259818aaf801"
+    },
+    "cooling-fan-rivet-6-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-6-2.glb",
+      "sha256": "bf409c9a2b61711f71d2dcd57a79830eb4a9354bd795687f4d1a7123bc71a150",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.7290866817206734e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "6f579fc5a809a5862abe1410a92c9460071f819ca6b7ecdbe83abf98d3a226ff"
+    },
+    "cooling-fan-blade-7": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-blade-7.glb",
+      "sha256": "76e62ebf37790e6778ac3b12fcf9b36cc7b45334fde0b09025326e94474149ba",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.971818952981266e-05,
+      "vertices": 4176,
+      "faces": 8356,
+      "step_sha256": "26edd8cec24dd6e5c1249c62407cbdaf524a4dfa649b8e26c2d6a278d482f41c"
+    },
+    "cooling-fan-rivet-7-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-7-1.glb",
+      "sha256": "e1dda25037faacb5493b4187daf9dbcea1d30ee47cd2c66b9d398eb9f65625e5",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.644368317485714e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "c5f72e3896f80f6ea3b76ffaddf54c92046425de1e8762582c3abe2706ab401a"
+    },
+    "cooling-fan-rivet-7-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-rivet-7-2.glb",
+      "sha256": "05930868d2fbcdc2a89ed0cec250b183ce49d111ef08209bd9be70c893964842",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 4.6811282260250664e-05,
+      "vertices": 3018,
+      "faces": 6032,
+      "step_sha256": "ed478a949128c40c284328c597b9c74b6aa8d7f100e049798533fcd30b1c408b"
+    },
+    "cooling-fan-bolt-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-bolt-1.glb",
+      "sha256": "3956679dddafd516e9fcd4b9bd4f7cf37d25c22a28b1c6a4dafe9fe962338d1b",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.1615753180649335e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "0b5195a778c12defde60236479862f0c5e42554e5a5a55e131c6db1793df4856"
+    },
+    "cooling-fan-bolt-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-bolt-2.glb",
+      "sha256": "01a8085817acbd5f0cae3c9e9e5c5b6e369b925d38b54d9e8f5346e18ec34734",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.1615753180649335e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "5d9136886ee53fd36021f7f0ba281ae56a59d72ffee233e6e8e94f3f6b8da298"
+    },
+    "cooling-fan-bolt-3": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-bolt-3.glb",
+      "sha256": "614e8149279e0feb20c79227125b64156e97b232d6199a3411bb1b79282300d3",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.1615753180649335e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "87dfbb8884cd706581d8ef98db2ab948c8ee07e54f1f82dec48a840f70f3836e"
+    },
+    "cooling-fan-bolt-4": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/cooling-fan-bolt-4.glb",
+      "sha256": "762813b3865253242a07ff31ee45d6c7147a78affd52d3af6abfccc6b60df937",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.1615753180649335e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "1ded03dac0424c72de98b6560ea02a565d36c99d616b16003ac3d1dc0c02e1ca"
+    },
+    "water-pump-seal-carrier": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-seal-carrier.glb",
+      "sha256": "23553ad844cd7df12cf6d588f81137b463055559cb598210bddf06f9368b1649",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.0002723284140984106,
+      "vertices": 3018,
+      "faces": 6036,
+      "step_sha256": "c6ce008c97db8d50aa72be009e4c2577121377d5fbfe8c06c45a071472286ad6"
+    },
+    "water-pump-seal-stationary-face": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-seal-stationary-face.glb",
+      "sha256": "0de8955af71780dd13fdd2fdb1ed4c29b54fd7a2cd90ba43e73d36eec04ebda6",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00020998195566335198,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "e0e395772583bc0ad02e11e0b06d1a452a23c78dc8aadfab00bc51a208df90e5"
+    },
+    "water-pump-seal-rotating-face": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-seal-rotating-face.glb",
+      "sha256": "de54dba2c88f1827a76d16251f53516a70af939cebb9876995e77d0a37a21674",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00020998195566335198,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "e8aa9c569561e7cc3b6d44ad2b43dc591d54d2d4e71896cccd326c3769886f15"
+    },
+    "water-pump-seal-shaft-collar": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-seal-shaft-collar.glb",
+      "sha256": "bccde58a93d0085a85ff8d5f53d6ac9a7ec555fad8fc0ec76e3efc87eb938db2",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00010901168741384026,
+      "vertices": 2012,
+      "faces": 4024,
+      "step_sha256": "e186865ed7c7ebc990d422f58812d724ac6daf97a3ae2924d98edc75da0d5871"
+    },
+    "water-pump-seal-bellows": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-seal-bellows.glb",
+      "sha256": "84c78279f4c78c0606b8c240c3e2f8a6fc4160edeb7f5cddbd030965d7d4b4b6",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00011985973276296136,
+      "vertices": 6036,
+      "faces": 12072,
+      "step_sha256": "4bf65b94d40c8cddbaaf466ed74e06c6fd861fee0c37c1277241b4ca58d1b12c"
+    },
+    "water-pump-shaft": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-shaft.glb",
+      "sha256": "04bd1ff1f8228ce97003aa07eed06344bc09620ebc2766b58482676c03c4fca2",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 9.495540700754646e-05,
+      "vertices": 1006,
+      "faces": 2008,
+      "step_sha256": "53fd645ce08d80acec8b93ff6d0990a454e345c528e482065fdb3de14e95de78"
+    },
+    "water-pump-pulley": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-pulley.glb",
+      "sha256": "508c6d5d87bcaabe6829aa17587c7d19ee10a8d58e2a8a6d091a278832ac66be",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.000853245697840066,
+      "vertices": 8048,
+      "faces": 16112,
+      "step_sha256": "aacd580787fd4d49e99ec9804ba0f7b6e70a0fef354db3f66c9457c58ba0597d"
+    },
+    "heater-pump-return-elbow": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/heater-pump-return-elbow.glb",
+      "sha256": "b30ba54ac4e454f1cc36df9eaa7552e19212a4a6d8e94397d3089456b1afd298",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.00011301244609285277,
+      "vertices": 297435,
+      "faces": 594870,
+      "step_sha256": "001c140282346c0f716c3a500122e29e9c4680836d551bd1d8589417a7ec986a"
+    },
+    "water-pump-housing": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-housing.glb",
+      "sha256": "ce01b3c6cc56cce7fb89ddd89a42b8d475a0723e43eb8fb1301e7b0ab0dde9ab",
+      "watertight": false,
+      "winding": true,
+      "cad_bounds_error_mm": 2.772133457540349e-05,
+      "vertices": 91430,
+      "faces": 183318,
+      "step_sha256": "94c820da43c064e69a5c48ee0848d8d341ac640fab4a05f0afc0c463f39d9d76"
+    },
+    "water-pump-gasket": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-gasket.glb",
+      "sha256": "97cf3ecf6011ee035cc89e6074520c07e462d64a59387d94453b39556538e458",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 9.797341907358259e-05,
+      "vertices": 9824,
+      "faces": 19668,
+      "step_sha256": "6be76159ddb1382c25b863e786d3e9d914d168f669f68b05bb727da75f0c7cce"
+    },
+    "water-pump-impeller": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-impeller.glb",
+      "sha256": "336f6bcd68a9b0e1a88255a6c84ee900e0c51b62713d8dbce241cd5c2d99b697",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 0.000575239209524625,
+      "vertices": 2060,
+      "faces": 4120,
+      "step_sha256": "7ba4f29235170bc9ce386737f2d6bb375db4c51a4895e3c099caab3eca1a34d5"
+    },
+    "water-pump-mounting-screw-1": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-1.glb",
+      "sha256": "7b7a2b08ce5694c5b84692ed2403c3b83ddc1887eaf7615e5e43b531978793f9",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3780593860701629e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "5b1f02d48b59efcbd29d8c6f03b35c2ccb89ac4176aa2b00b6ac713e33538560"
+    },
+    "water-pump-mounting-screw-2": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-2.glb",
+      "sha256": "50af3302d7acb14ba60daaba2b5fbe3998e57e0b331ba958ff59d473bbce0668",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3780593860701629e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "58928260dc144008f07aeedd6c7656e6000b49d3c5034155d7eb1082f2ddf7a0"
+    },
+    "water-pump-mounting-screw-3": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-3.glb",
+      "sha256": "f6faa8f837e841bc34c064c0c9e923cbddf05cf8573ad0b442bb0d0d7cccd674",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3780593860701629e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "a4e7e8455f91563537ca9308c6dfffd44992afed59aec6fb7ea26ac62799ceab"
+    },
+    "water-pump-mounting-screw-4": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/water-pump-mounting-screw-4.glb",
+      "sha256": "ab3f9049fb155df8b5bb1de4668841fdc03296828855834b34a2fc12da541430",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 1.3780593860701629e-05,
+      "vertices": 1018,
+      "faces": 2032,
+      "step_sha256": "a536bf3b0b137f011cf7baae2c9db5abfd608ec3ccb9125030d2c33513b8659e"
+    },
+    "block": {
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/block.glb",
+      "sha256": "cd0b44853882699372cf5ccc51af17f797e04a9c6ba4565274e2e359fe70cf8e",
+      "watertight": true,
+      "winding": true,
+      "cad_bounds_error_mm": 9.338815266346501e-05,
+      "vertices": 453957,
+      "faces": 908370,
+      "step_sha256": "511e9cc0ade4a47c0dcb16a4e47ae4383e1fe2aa017fd49738189eb84e02062a"
+    }
+  },
+  "inputs": {
+    "reference/engine/pump-cover-candidate-20261003-build.json": "b836c1ee27140dca0b79b997de3ad7b1d7cf3bc7fc64fec2ad79fda41b2974ca",
+    "scripts/pump-cover-candidate-20261003-mesh.py": "37b456e179b045c83a4a0b1c31c78369767ddea617cb45154596346a7d66b22e"
+  }
+}

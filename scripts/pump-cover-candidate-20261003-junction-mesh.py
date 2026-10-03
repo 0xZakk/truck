@@ -1,0 +1,6 @@
+from pathlib import Path
+import json,hashlib,numpy as np,trimesh,build123d as b
+from OCP.BRepTools import BRepTools
+R=Path(__file__).resolve().parents[1];p=R/'cad/engine/generated/pump-cover-candidate-20261003/housing-sequential-diagnostic.step';s=b.import_step(p);BRepTools.Clean_s(s.wrapped);v,f=s.tessellate(.003,.025);m=trimesh.Trimesh(np.array([tuple(x)for x in v]),np.array(f),process=True);m.merge_vertices(digits_vertex=5);g=trimesh.Trimesh(m.vertices[:,[0,2,1]]*[1,1,-1]/1000,m.faces);gp=p.with_suffix('.glb');g.export(gp);gg=trimesh.load(gp,force='mesh');vv=gg.vertices[:,[0,2,1]]*[1,-1,1]*1000;err=float(np.max(abs(np.array([vv.min(0),vv.max(0)])-np.array([list(s.bounding_box().min),list(s.bounding_box().max)]))))
+r={'step_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'glb_sha256':hashlib.sha256(gp.read_bytes()).hexdigest(),'watertight':gg.is_watertight,'winding':gg.is_winding_consistent,'components':len(gg.split(only_watertight=False)),'bounds_error_mm':err,'bounds_gate_mm':.025,'faces':len(gg.faces),'construction':'Equivalent owner-only sequential cavity/port cuts before fusion; no dimension or neighbor mask changed.','settings':{'linear_mm':.003,'angular_rad':.025,'merge_digits_mm':5}}
+(R/'reference/engine/pump-cover-candidate-20261003-junction-mesh.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

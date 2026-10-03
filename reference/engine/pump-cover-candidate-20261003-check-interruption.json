@@ -1,0 +1,37 @@
+{
+  "process_pid": 52204,
+  "session": 42271,
+  "observed_elapsed": "06:01",
+  "observed_cpu": "05:57.37",
+  "observed_cpu_percent": 99.2,
+  "termination": "SIGTERM after bounded six-minute diagnostic; exit143",
+  "last_completed": "four actual screw seats and socket/floor checks",
+  "pending_stage": "rotor dictionary, first operation actualimpeller.cut(exact tangent swept envelope)",
+  "preserved_script": "scripts/pump-cover-candidate-20261003-check-first-attempt.py",
+  "preserved_report": "reference/engine/pump-cover-candidate-20261003-check-interrupted.json",
+  "reason": "Rechecking exact containment through a common rigid transform is redundant; functional frozen exact containment0mm3 is preserved with unchanged source mesh/STEP and manifest hashes. Newhousing/block intersections still computed freshly; all788affected actual pairs already computed. No geometry/gate changed.",
+  "next": "Resume namedchecks with explicit inherited rigid containment provenance, stage markers and unchanged actual rotor/guard checks.",
+  "control_note": "Initial sandbox kill was denied; exact-PID escalated SIGTERM subsequently issued. Replacement check had already started; old process remained at pending rotor and did not overwrite completed replacement metrics. Both handles retained.",
+  "second_obsolete_run": {
+    "session": 18520,
+    "pid": 61221,
+    "elapsed": "05:11",
+    "cpu": "05:10.42",
+    "percent": 99.7,
+    "exit": 143,
+    "stage": "fresh rotor housing/block intersections, prior4facejunction housing",
+    "reason": "Superseded by sequential own-cavity construction that removes CADfourfaceedge and passes unchanged meshgate",
+    "preserved_report": "reference/engine/pump-cover-candidate-20261003-check-trial1-second.json"
+  },
+  "later_diagnosis": {
+    "session": 86077,
+    "pid": 72227,
+    "observed_elapsed": "05:00",
+    "observed_cpu": "04:56.41",
+    "exit": 143,
+    "stage": "housing_guard_overlap_mm3",
+    "checker_defect": "Python method-call precedence applied T to one guard component inside a union then applied T again to whole union. Same error existed in heaterprobe. Corrected explicit parentheses apply one transform to entire untransformed union.",
+    "impact": "No result from erroneous guard/probe accepted. ActualCAD and788pairaudit unaffected. Rotorhousing/block intersections0 already computed.",
+    "qualification": "Initial explanations of earlier slow stage were hypotheses, not identified kernel call. The earlier four-face CAD edge was independently real and corrected; slow-query causation cannot be assigned solely to that defect."
+  }
+}

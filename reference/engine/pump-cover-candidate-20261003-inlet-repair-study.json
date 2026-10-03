@@ -1,0 +1,37 @@
+{
+  "scope": "Independent own-lumen cutters; frozen optionB pose; no neighbor masks",
+  "inputs": {
+    "cad/engine/generated/pump-cover-candidate-20261003/water-pump-housing.step": "29318b02a494fb131f60b41471bbb9f43100484fab1b39009e0859a0323f3159",
+    "scripts/pump-cover-candidate-20261003-inlet-repair-study.py": "25b822776085f98a5b8f3239824de5f14c7384b621020c2e041841c9c43295e2",
+    "cad/engine/pump_cover_candidate_20261003.py": "df82f5e70e46fc8eb52ddd0ef418612a30b50ab20c188357a70be8313aad6b4a"
+  },
+  "lumen": {
+    "valid": true,
+    "volume": 146202.69498209486,
+    "solids": 1
+  },
+  "attempts": {
+    "whole_lumen": {
+      "valid": true,
+      "solids": 1,
+      "tool_volume": 146202.69498209486,
+      "original_tool_overlap": 0,
+      "probe_obstruction": 16.243314526969243,
+      "stock_removed": 0,
+      "stock_added": 0,
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/housing-inlet-study-whole_lumen.step",
+      "sha256": "cfb0b71c62ddadb2118c51571d411dd0c78172b4cbfd3fcc30953d49bfc8c956"
+    },
+    "first_span": {
+      "valid": true,
+      "solids": 1,
+      "tool_volume": 24401.539606431674,
+      "original_tool_overlap": 0,
+      "probe_obstruction": 16.243314526969243,
+      "stock_removed": 0,
+      "stock_added": 0,
+      "path": "cad/engine/generated/pump-cover-candidate-20261003/housing-inlet-study-first_span.step",
+      "sha256": "7e10cf78c5087fb52ec329d26803930c1695ef8b0132f3a0d47590d6d5f7cf14"
+    }
+  }
+}
