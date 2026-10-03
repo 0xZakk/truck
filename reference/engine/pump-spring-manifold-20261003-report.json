@@ -1,0 +1,98 @@
+{
+  "status": "DIAGNOSTIC COMPLETE; not installed",
+  "settings": {
+    "absolute_linear_deflection_mm": 0.01,
+    "angular_rad": 0.06,
+    "measured_bounds_gate_mm": 0.025,
+    "no_shape_change": true,
+    "no_hole_filling": true
+  },
+  "ordinary_loose_bounds": [
+    [
+      406.1300825470494,
+      -47.89999916699156,
+      154.09999990000318
+    ],
+    [
+      412.2302681176556,
+      -16.100000833006014,
+      185.8999829769274
+    ]
+  ],
+  "corrected_conservative_bounds": [
+    [
+      406.93000000000006,
+      -47.89999916699156,
+      154.09999990000318
+    ],
+    [
+      411.43000000000006,
+      -16.100000833006014,
+      185.8999829769274
+    ]
+  ],
+  "clip_provenance": "water_pump_mechanical_seal_candidate.py spring clips local15.5..20; world440 +98.43\u2212147. Both actual planar faces verified; full STEP inside slab. Transverse AddOptimal bound retained.",
+  "inputs": {
+    "cad/engine/generated/pump-functional-20261003/water-pump-seal-spring.step": "f5a387b4d3f2532235c33258e66d706f0dc53eda7fbb22354ce11d3fac7f9a99",
+    "scripts/pump-spring-manifold-20261003-diagnostic.py": "6e59280de4f1082bef2746e75d290beb6db53459753a1424a10dfdbbf9f459ed",
+    "cad/engine/water_pump_mechanical_seal_candidate.py": "63bf8b89e98d88112a6976afc768a3906eee8cbdd4ebb70f9a43d9362fcbbb9e"
+  },
+  "precision_trials": [
+    {
+      "digits_vertex": 9,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 88,
+      "raw_degenerate": 150,
+      "boundary": 15,
+      "nonmanifold": 6,
+      "watertight": false,
+      "winding": true,
+      "faces": 1041242
+    },
+    {
+      "digits_vertex": 8,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 88,
+      "raw_degenerate": 150,
+      "boundary": 15,
+      "nonmanifold": 6,
+      "watertight": false,
+      "winding": true,
+      "faces": 1041242
+    },
+    {
+      "digits_vertex": 7,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 88,
+      "raw_degenerate": 150,
+      "boundary": 15,
+      "nonmanifold": 6,
+      "watertight": false,
+      "winding": true,
+      "faces": 1041242
+    },
+    {
+      "digits_vertex": 6,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 88,
+      "raw_degenerate": 150,
+      "boundary": 15,
+      "nonmanifold": 6,
+      "watertight": false,
+      "winding": true,
+      "faces": 1041242
+    },
+    {
+      "digits_vertex": 5,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 88,
+      "raw_degenerate": 150,
+      "boundary": 15,
+      "nonmanifold": 6,
+      "watertight": false,
+      "winding": true,
+      "faces": 1041242
+    }
+  ],
+  "elapsed_seconds": 43.54449633322656
+}

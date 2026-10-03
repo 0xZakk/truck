@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "source_url": "https://test-cdn-qa-private-endpoint.azureedge.net/autopartqausstgcdntest/Assets/large/0258005718PHRIWHCO0000NA_lg.jpg",
+  "source_sha256": "1773573055fbf53cd0d7f742e5f51ab869dc9a564f2066786fe02391619a92b2",
+  "image_pixels": [
+    1400,
+    1400
+  ],
+  "pixel_coordinates": "origin top-left; X right,Ydown; manual picks on actual pixels, no source image distributed",
+  "assumptions": {
+    "hex_across_flats_mm": 22,
+    "hex_projected_span_px": 302,
+    "hex_span_pick_error_px": 6,
+    "hex_roll_range_degrees": [
+      0,
+      30
+    ],
+    "sensor_relative_scale_factor": [
+      0.95,
+      1.05
+    ],
+    "sensor_axis_out_of_plane_degrees_max": 20,
+    "connector_relative_scale_factor": [
+      0.85,
+      1.15
+    ],
+    "connector_axis_out_of_plane_degrees_max": 35,
+    "note": "Camera/depth ranges are analyst-selected sensitivity cases, not inferred camera calibration or statistical confidence. Connector is allowed a separate scale/depth range; no metric claim from its display distance."
+  },
+  "anchor_landmarks_px": [
+    [
+      1010,
+      770
+    ],
+    [
+      1010,
+      1072
+    ]
+  ],
+  "features": [
+    {
+      "id": "body_od",
+      "label": "Main cylindrical shell OD",
+      "span_px": 250,
+      "pick_error_px": 5,
+      "proposed_candidate_mm": 20,
+      "landmarks_px": [
+        [
+          800,
+          798
+        ],
+        [
+          800,
+          1048
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "body_length",
+      "label": "Main cylinder between rear collar and hex neck",
+      "span_px": 384,
+      "pick_error_px": 10,
+      "proposed_candidate_mm": 30,
+      "landmarks_px": [
+        [
+          590,
+          925
+        ],
+        [
+          974,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "hex_height",
+      "label": "Hex axial thickness",
+      "span_px": 66,
+      "pick_error_px": 6,
+      "proposed_candidate_mm": 5.2,
+      "landmarks_px": [
+        [
+          983,
+          925
+        ],
+        [
+          1049,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "seat_od",
+      "label": "Annular seat ring OD",
+      "span_px": 270,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 21.5,
+      "landmarks_px": [
+        [
+          1073,
+          783
+        ],
+        [
+          1073,
+          1053
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "seat_stack",
+      "label": "Visible ring axial envelope, not compressed thickness",
+      "span_px": 26,
+      "pick_error_px": 6,
+      "proposed_candidate_mm": 2,
+      "landmarks_px": [
+        [
+          1058,
+          925
+        ],
+        [
+          1084,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "thread_major",
+      "label": "Thread crest envelope diameter",
+      "span_px": 215,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 18,
+      "landmarks_px": [
+        [
+          1122,
+          813
+        ],
+        [
+          1122,
+          1028
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "thread_span",
+      "label": "Visible threaded axial envelope",
+      "span_px": 91,
+      "pick_error_px": 10,
+      "proposed_candidate_mm": 7.5,
+      "landmarks_px": [
+        [
+          1087,
+          925
+        ],
+        [
+          1178,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "pitch",
+      "label": "Mean crest separation, only two complete intervals",
+      "span_px": 16.5,
+      "pick_error_px": 2,
+      "proposed_candidate_mm": 1.5,
+      "landmarks_px": [
+        [
+          1104,
+          814
+        ],
+        [
+          1122,
+          813
+        ],
+        [
+          1137,
+          814
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "probe_od",
+      "label": "Protective nose outside diameter",
+      "span_px": 145,
+      "pick_error_px": 6,
+      "proposed_candidate_mm": 11.5,
+      "landmarks_px": [
+        [
+          1250,
+          849
+        ],
+        [
+          1250,
+          994
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "probe_length",
+      "label": "Nose exposed beyond thread envelope",
+      "span_px": 213,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 17.5,
+      "landmarks_px": [
+        [
+          1178,
+          925
+        ],
+        [
+          1391,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "below_seat_reach",
+      "label": "Selected visible ring plane to nose tip",
+      "span_px": 311,
+      "pick_error_px": 10,
+      "proposed_candidate_mm": 25,
+      "landmarks_px": [
+        [
+          1080,
+          925
+        ],
+        [
+          1391,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "rear_collar_od",
+      "label": "Rear large collar envelope diameter",
+      "span_px": 260,
+      "pick_error_px": 7,
+      "proposed_candidate_mm": 20.5,
+      "landmarks_px": [
+        [
+          550,
+          793
+        ],
+        [
+          550,
+          1053
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "rear_neck_od",
+      "label": "Rear reducer diameter",
+      "span_px": 210,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 16.5,
+      "landmarks_px": [
+        [
+          430,
+          819
+        ],
+        [
+          430,
+          1029
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "rear_neck_length",
+      "label": "Rear reducer axial span",
+      "span_px": 131,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 10,
+      "landmarks_px": [
+        [
+          377,
+          925
+        ],
+        [
+          508,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "wire_exit_od",
+      "label": "Rear metal wire-exit cylinder OD",
+      "span_px": 156,
+      "pick_error_px": 7,
+      "proposed_candidate_mm": 12.5,
+      "landmarks_px": [
+        [
+          300,
+          845
+        ],
+        [
+          300,
+          1001
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "wire_exit_length",
+      "label": "Rear metal wire-exit cylinder axial span",
+      "span_px": 123,
+      "pick_error_px": 8,
+      "proposed_candidate_mm": 10,
+      "landmarks_px": [
+        [
+          251,
+          925
+        ],
+        [
+          374,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "above_seat_length",
+      "label": "Wire-exit plane to selected ring plane",
+      "span_px": 836,
+      "pick_error_px": 12,
+      "proposed_candidate_mm": 66,
+      "landmarks_px": [
+        [
+          244,
+          925
+        ],
+        [
+          1080,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "shell_total",
+      "label": "Metal tip to wire-exit plane overall span",
+      "span_px": 1147,
+      "pick_error_px": 10,
+      "proposed_candidate_mm": 91,
+      "landmarks_px": [
+        [
+          244,
+          925
+        ],
+        [
+          1391,
+          925
+        ]
+      ],
+      "direction": "axial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "wire_od",
+      "label": "Visible insulated individual wire OD",
+      "span_px": 16,
+      "pick_error_px": 3,
+      "proposed_candidate_mm": 1.3,
+      "landmarks_px": [
+        [
+          170,
+          939
+        ],
+        [
+          170,
+          955
+        ]
+      ],
+      "direction": "radial",
+      "family": "sensor",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "connector_length",
+      "label": "Housing back to mouth along projected centerline",
+      "span_px": 542.859097740841,
+      "pick_error_px": 20,
+      "proposed_candidate_mm": 44,
+      "landmarks_px": [
+        [
+          725,
+          625
+        ],
+        [
+          1235,
+          439
+        ]
+      ],
+      "direction": "axial",
+      "family": "connector",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "connector_od",
+      "label": "Shroud transverse projected span",
+      "span_px": 199.81241202688085,
+      "pick_error_px": 15,
+      "proposed_candidate_mm": 17,
+      "landmarks_px": [
+        [
+          1145,
+          369
+        ],
+        [
+          1218,
+          555
+        ]
+      ],
+      "direction": "radial",
+      "family": "connector",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    },
+    {
+      "id": "latch_height",
+      "label": "Approximate latch above local shroud surface",
+      "span_px": 50,
+      "pick_error_px": 15,
+      "proposed_candidate_mm": 4,
+      "landmarks_px": [
+        [
+          975,
+          344
+        ],
+        [
+          989,
+          392
+        ]
+      ],
+      "direction": "radial",
+      "family": "connector",
+      "evidence_class": "inferred from identified manufacturer photograph; conditional camera sensitivity"
+    }
+  ],
+  "additional_unknowns": [
+    "ring compressed thickness",
+    "thread form/class/tolerance",
+    "exact bearing plane",
+    "protective cap wall/slot width/hidden slot count",
+    "exit insert thickness",
+    "lead cover installed route",
+    "connector axial insertion depth/contact protrusion/seal compression/cavity-key sizes"
+  ],
+  "proposed_thread_designation": "M18x1.5 only as explicit visual/modeling assumption; primary target thread not proven",
+  "front_contact_note": "Round contacts and colored seal are source-observed, but no pin/cavity dimension or circuit assignment accepted. Do not invent mating harness fit."
+}
