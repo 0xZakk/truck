@@ -35,3 +35,7 @@ These notes are evidence inputs, not an installed-accuracy claim. Candidate geom
 Ford’s hardware catalog now supplies the nominal exterior dimensions of the identified dowel; [[notes/oilpump-dowel-20261002-nominal-dimensions|dowel dimensions]] keeps its bore, split form and truck applicability unresolved.
 
 The ACT host source contract identifies the [[notes/act-host-online-20261002-front-runner|front terminal lower-intake runner]] while leaving numerical pose and thread engagement unresolved.
+
+## Host interfaces and functional regions
+
+[[notes/airbox-host-online-20261002-mount-stack|Airbox mounting stacks]] separates body attachment from box isolation. [[notes/airbox-host-online-20261002-screw-envelope|Body-screw dimensions]] supports an identified replacement specimen; [[notes/airbox-host-online-20261002-cuff-datums|Duct cuff datums]] records source clocking and stop requirements. [[notes/pump-junction-online-20261002-functional-rear|Pump sealing regions]] and [[notes/pump-junction-online-20261002-junction|Peripheral inlet topology]] distinguish functional interfaces from an arbitrary protected slab.

@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "issue": 80,
+  "scope": "Research/interface contract only; no installed pose, CAD or shared manifest edits",
+  "baseline_commit": "7f7788ce5d9b87865138f9fff412a5d023bfb369",
+  "sources": [
+    {
+      "id": "ford1994",
+      "url": "https://charm.li/Ford/1994/F%20150%202WD%20Pickup%20L6-300%204.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Fuel%20Delivery%20and%20Air%20Induction/Air%20Cleaner%20Housing/Service%20and%20Repair/",
+      "figure": "190226466; items2,3,6,9 and notesA\u2013C",
+      "class": "Ford service illustration, exact year/engine/2WD; calibration not individually established",
+      "sha256": "9e0ad3b5ca853b081ea9257f9da5ac20d165d25d9b6e0be34c28383b6fffdb39",
+      "access": "Existing authorized local exact-year capture inspected; public landing page fetch cache failed. Original excluded; reproduction requires authorized manual or reachable public mirror."
+    },
+    {
+      "id": "auveco13019",
+      "url": "https://www.fairburyfastener.com/_files/ugd/1834b0_2637648212cc41fba6db253893568e59.pdf",
+      "page_pdf_1_based": 2,
+      "page_printed": 102,
+      "class": "Manufacturer-authored replacement catalog hosted by distributor; copyright2018, PDF created2019",
+      "sha256": "63d4664d8a29511145df4b95176130ecb76d95b87d59b859e826f2de48d133a8",
+      "access": "Public PDF fetched and page raster inspected; no original redistributed."
+    },
+    {
+      "id": "salvage",
+      "url": "https://www.ebay.com/itm/257361997805",
+      "class": "Seller-identified1992\u201396 F1504.9 comparison specimen; not exact owner application proof",
+      "images": [
+        {
+          "listing_photo": 9,
+          "url": "https://i.ebayimg.com/images/g/Li0AAeSwBAhpkg0E/s-l1600.webp",
+          "sha256": "a06895fd108b3f824fae56b0a70aa467f22afb3bc7621fba7397758d32c3bf7b"
+        },
+        {
+          "listing_photo": 12,
+          "url": "https://i.ebayimg.com/images/g/fAoAAeSwG1Jpkg0K/s-l1600.webp",
+          "sha256": "8b541811240e79df78657bf6a0a5237d4341183991384680c0d018a21aca84db"
+        },
+        {
+          "listing_photo": 18,
+          "url": "https://i.ebayimg.com/images/g/fGcAAeSwr35pkg0P/s-l1600.webp",
+          "sha256": "9bb003d64d6492925947a823e500a40edee94f379d63dc5ade6588fdd20c9499"
+        },
+        {
+          "listing_photo": 24,
+          "url": "https://i.ebayimg.com/images/g/LPwAAeSwMdJpkg1M/s-l1600.webp",
+          "sha256": "5e645566775c9fe19b9b4d0a2aafa08193a09c1ff3136b8ca51047feb94e6dd9"
+        }
+      ]
+    },
+    {
+      "id": "excluded1996",
+      "url": "https://www.diesel-dave.com/vehic/manual/stj/stj3c007.htm",
+      "image_url": "https://www.diesel-dave.com/vehic/manual/stj/images/a24045a.gif",
+      "sha256": "c892a87034aab91b207edd9395f8fc79f0d8bb9bb2c7c7db70b96a08b8113b74",
+      "class": "1996 California automatic single-duct variant; rejected for target attachment counts and cuff topology"
+    }
+  ],
+  "dependencies_sha256": {
+    "docs/components/air-cleaner-duct-reconciliation-contract.md": "2af9fcd7a6c13742d07ac14ea1fa81ebd425dd1f014e985c44d5d71f41e12c70",
+    "reference/engine/online-airbox-research.json": "f33e0c4adfedec7e01cfa52791bfd8633e0c306b91039e1a0b41a6c3bf460a01",
+    "reference/engine/air-cleaner-candidate-review.json": "8ed316485a3718b3c0a39df7ef5c49faef355c59ee96cd7db7cee45ffd690215",
+    "reference/engine/airbox-refined-20261002-delivery.json": "9fa01dd616297916bc85a93c3db392060820b6b1af09b16434d4ac8d1beb354d"
+  },
+  "hardware": [
+    {
+      "candidate_id": "air-cleaner-box-mount-screw",
+      "quantity": 2,
+      "ford_number": "N611062-S2",
+      "dimension_status": "unknown",
+      "source": "ford1994",
+      "role": "box-to-bracket screw/washer tap assembly; do not substitute body screw"
+    },
+    {
+      "candidate_id": "air-cleaner-box-mount-grommet",
+      "quantity": 2,
+      "ford_base": "17C431",
+      "dimension_status": "unknown; exact prefix/suffix and internal sleeve unestablished",
+      "source": "ford1994"
+    },
+    {
+      "candidate_id": "air-cleaner-body-bracket-screw",
+      "quantity": 4,
+      "ford_number": "N610959-S2",
+      "replacement": "Auveco13019",
+      "source": [
+        "ford1994",
+        "auveco13019"
+      ],
+      "dimensions_mm": {
+        "nominal_tapping_diameter": 6.3,
+        "pitch": 1.81,
+        "length": 19,
+        "washer_head_od": 11.5,
+        "hex_across_flats": 8
+      },
+      "unknown": [
+        "head height",
+        "point length",
+        "root diameter and exact thread form",
+        "receiving clip/pilot dimensions",
+        "engaged sheet stack"
+      ]
+    },
+    {
+      "candidate_id": "air-cleaner-body-bracket",
+      "quantity": 1,
+      "ford_base": "9647",
+      "dimension_status": "formed topology supported; metric geometry and complete service number unknown"
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "box-isolation",
+      "count": 2,
+      "datums": [
+        "box mounting seat",
+        "grommet axis",
+        "bracket seat"
+      ],
+      "value": null,
+      "source": "ford1994+salvage"
+    },
+    {
+      "id": "bracket-body",
+      "count": 4,
+      "datums": [
+        "left fender attachment family",
+        "radiator-support attachment family"
+      ],
+      "value": null,
+      "source": "ford1994",
+      "caution": "Do not assign individual photographed holes or protruding studs to each service screw without an exact mapping."
+    },
+    {
+      "id": "duct-throttle",
+      "count": 2,
+      "requirement": "end face meets stop flange for360degrees; arrows align with throttle locators",
+      "insertion_mm": null,
+      "source": "ford1994"
+    },
+    {
+      "id": "duct-lid",
+      "count": 2,
+      "clocking_tolerance_degrees": 2,
+      "diameter_mm": null,
+      "source": "ford1994",
+      "requirement": "hose arrows align with air-cleaner cover arrow; no measured end spacing"
+    },
+    {
+      "id": "fresh-inlet",
+      "count": 1,
+      "ford_base": "9A675",
+      "role": "body-side fresh intake to lower housing, separate from paired clean-air9R504 outlets",
+      "dimensions_mm": null
+    }
+  ],
+  "inherited_cad_not_measurement": {
+    "box_tip_local": {
+      "x": -198,
+      "y": [
+        -37,
+        37
+      ],
+      "z": 30,
+      "od": 60,
+      "id": 54,
+      "axis": "-X"
+    },
+    "throttle_tip_world_canonical_v3": {
+      "x": 255.5,
+      "y": [
+        -2,
+        52
+      ],
+      "z": 490,
+      "od": 48,
+      "id": 40,
+      "axis": "+X"
+    },
+    "box_world_frame": null,
+    "status": "Existing estimated mouth dimensions cannot establish fit or override source stop/clock requirements."
+  },
+  "excluded_inferences": [
+    "Pixel scaling from noncoplanar screw head to entire bracket",
+    "1996 California automatic single duct/three mount conversion",
+    "Seller generic1.5inch/10.5cm package values as part dimensions",
+    "F6TZ9647EA1996F350 bracket identity as exact1994",
+    "19mm body screw length as grommet screw length",
+    "Closed clearance as proof of seated airtight cuff"
+  ],
+  "next_supported_step": "After root review: isolated replacement screw envelope candidate and separately parameterized bracket topology with unknown datum coordinates; no installed bracket/duct placement. Obtain public donor bracket orthogonal dimensioned images or OEM body-hole drawing before world registration.",
+  "checks": {
+    "source_pixels": "PASS; service callouts, catalogrow and salvage marking inspected",
+    "metric_body_pose": "UNRESOLVED",
+    "CAD": "N/A research only",
+    "browser": "NOT RUN; no integration",
+    "negative_controls": [
+      {
+        "input": "1996 California automatic single-duct figure",
+        "expected": "reject target topology/count transfer",
+        "result": "PASS manual source comparison"
+      },
+      {
+        "input": "box screw=N610959-S2",
+        "expected": "reject swapped identity; box usesN611062-S2",
+        "result": "PASS explicit separate ledger rows"
+      },
+      {
+        "input": "body screw=M6x1 machine thread",
+        "expected": "reject; catalog states6.3x1.81 tapping family",
+        "result": "PASS catalog heading/row comparison"
+      }
+    ],
+    "KB_links": "PASS; 6 files, prefixed links resolve, no H1, content IDs unique filenames"
+  },
+  "capture_pipeline": {
+    "command": "python3 tools/ingest.py <bounded-observations.txt> --type local --title \"Airbox host online 20261002 observations\"",
+    "pdf_direct_ingest": "Failed: system pypdf missing; Poppler text/raster read succeeded. Ingested short authored observations instead; source originals excluded.",
+    "raw_committed": false,
+    "semantic_links": "Root-owned; not run by worker"
+  },
+  "authored_files_sha256": {
+    "kb/notes/airbox-host-online-20261002-cuff-datums.md": "63000c18d025e4f8caa398e34223b180b50f9a913d542e6123d996f7ff73b7c3",
+    "kb/notes/airbox-host-online-20261002-mount-stack.md": "56b0d38ad200503de4ae9bb6a6d42375046051b9f73db0ea856fda0f3232b97f",
+    "kb/notes/airbox-host-online-20261002-screw-envelope.md": "55323db6817218d3bee03695a5dad110eb61ba6df3afcfdf5ab03a44c834c698",
+    "kb/sources/airbox-host-online-20261002-screw.md": "df7c161229c6344f124e7ff0380d76ed0b5c8b2020344cc03a8a727277e6c369",
+    "kb/sources/airbox-host-online-20261002-service.md": "83e98ee97e93b0ab5354e08235e4c841b4468d3297b5f567e902fa0babed48e9",
+    "kb/sources/airbox-host-online-20261002-specimen.md": "732a0228fd3f8d5cb68e371660500c6bf55e246b5cbf28e2c926006c856a5fd2",
+    "docs/components/airbox-host-online-20261002-contract.md": "a465b28bad2db4e0e75fda970d6e3eaa65f9cc55143909bae0ea5d0804c5757a"
+  }
+}
