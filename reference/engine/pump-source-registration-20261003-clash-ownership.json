@@ -1,0 +1,115 @@
+{
+  "status": "READ ONLY ownership diagnostic; no clearance edits",
+  "scope": "Five frozen actualv4 overlap witnesses vs declared pump protection regions. Region intersections may overlap; protected_union avoids double counting. No source shape inferred from a conflict.",
+  "rows": [
+    {
+      "a": "timing-cover",
+      "b": "water-pump-housing",
+      "total_mm3": 746.749982030308,
+      "in_seal_backing_mm3": 152.8266797381727,
+      "in_individual_bosses_mm3": [
+        72.05214315973775,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "in_protected_union_mm3": 223.2533262903081,
+      "outside_protected_union_mm3": 523.4966557510348,
+      "axis_depth_bins_mm3": {
+        "mount_backing_X375_378": 269.9819477303036,
+        "rear_body_X378_389": 476.7680345239174,
+        "forward_X389_500": 0.0
+      }
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "thermactor-engine-bolt-1",
+      "total_mm3": 427.7297169797184,
+      "in_seal_backing_mm3": 0.0,
+      "in_individual_bosses_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "in_protected_union_mm3": 0.0,
+      "outside_protected_union_mm3": 427.7297169797184,
+      "axis_depth_bins_mm3": {
+        "mount_backing_X375_378": 0.0,
+        "rear_body_X378_389": 426.1400126222342,
+        "forward_X389_500": 1.5897043303870473
+      }
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "alternator-thermactor-common-carrier",
+      "total_mm3": 3012.3003937033304,
+      "in_seal_backing_mm3": 0.0,
+      "in_individual_bosses_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "in_protected_union_mm3": 0.0,
+      "outside_protected_union_mm3": 3012.3003937033304,
+      "axis_depth_bins_mm3": {
+        "mount_backing_X375_378": 0.0,
+        "rear_body_X378_389": 2432.1177267145094,
+        "forward_X389_500": 580.1826693445304
+      }
+    },
+    {
+      "a": "water-pump-housing",
+      "b": "timing-cover-mounting-screw-3",
+      "total_mm3": 19.265671474864522,
+      "in_seal_backing_mm3": 0.0,
+      "in_individual_bosses_mm3": [
+        19.265671474864522,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "in_protected_union_mm3": 19.265671474864522,
+      "outside_protected_union_mm3": 0.0,
+      "axis_depth_bins_mm3": {
+        "mount_backing_X375_378": 0.0,
+        "rear_body_X378_389": 19.265671474864522,
+        "forward_X389_500": 0.0
+      }
+    },
+    {
+      "a": "heater-pump-return-elbow",
+      "b": "alternator-thermactor-common-carrier",
+      "total_mm3": 217.13510561615317,
+      "in_seal_backing_mm3": 0.0,
+      "in_individual_bosses_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "in_protected_union_mm3": 0.0,
+      "outside_protected_union_mm3": 217.13510561615317,
+      "axis_depth_bins_mm3": {
+        "mount_backing_X375_378": 0.0,
+        "rear_body_X378_389": 0.0,
+        "forward_X389_500": 217.13510561615317
+      }
+    }
+  ],
+  "inputs": {
+    "reference/engine/pump-functional-20261003-neighbors.json": "02360b93a94465b7f8303e24c325b5a2451090420fb4064ae8e496b8043d487a",
+    "scripts/pump-source-registration-20261003-clash-ownership.py": "422eb75b11dacc89a3dcbeb20bd45a6f17f5c5da94cebd83221e83b99a86639a",
+    "cad/engine/generated/pump-functional-20261003/region-seal_backing.step": "a35a119881b698f2134d772fc1024b01b67c4cd564ee4c4517bf83204acb62b8",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_1.step": "d2083a2ab06935f5f0cb7ea1bfdeaa1d4a66b8f1f7071d0429c21c20084ffa9a",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_2.step": "5ebe33c54ac64f1b82b0af02102a83d590ea571d940f5400291d81f7b6095845",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_3.step": "ae18e76c941132ae541f2cc709f5e5b04020475a737e777c141374fcc2fb3eee",
+    "cad/engine/generated/pump-functional-20261003/region-dry_boss_4.step": "da0c5f94bc296f8fa1e787c673c119b2bd15264bf91b2954869a7408c4ffbc29",
+    "cad/engine/generated/pump-functional-20261003/overlap-10.step": "749d8fc18eaa4f2613ed3b86cd42a68214de41f984eca64502c21e19e91593e7",
+    "cad/engine/generated/pump-functional-20261003/overlap-38.step": "6ac73b0c010465f2d3479daab1f43edc7a08e5c9ab0286bb99485081a1bd7c71",
+    "cad/engine/generated/pump-functional-20261003/overlap-45.step": "464884f5b1ca0aa19c2fcfe96df4592219bfa3e3b6d0bd70f63f79911aef730c",
+    "cad/engine/generated/pump-functional-20261003/overlap-52.step": "5973f6cc28a55100e3d315e593556b6eeac733f0a14eec8756b782bd3b150ee7",
+    "cad/engine/generated/pump-functional-20261003/overlap-81.step": "49cfee1af61f7951a3f31e5a95ecf2cf43efe9cb8abdd4080036d2dbe4c4e695"
+  }
+}

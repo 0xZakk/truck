@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "flange_pad_outer_radius_mm": 33,
+  "upper_runner_outer_radius_mm": 32,
+  "upper_runner_inner_radius_mm": 25,
+  "reason": "Explicit estimated 1mm pad lip avoids coincident flange/runner skins. Constant-section upper sweep avoids failed variable loft. No source center, scale, protected interface or acceptance threshold changed.",
+  "evidence_class": "educational construction estimate; not measured Ford geometry"
+}

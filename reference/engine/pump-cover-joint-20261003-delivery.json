@@ -1,0 +1,143 @@
+{
+  "status": "Frozen research; contract pending root review; no CAD",
+  "baseline": "0e9d513794e7bab3dfcab45c7da06a669bb44878",
+  "authored": [
+    {
+      "path": "docs/components/pump-cover-joint-20261003-contract.md",
+      "bytes": 11150,
+      "sha256": "cca311fc4fe161b0435edabcafc0f4514a794be3ff7229bc70f9411c3bdb264f"
+    },
+    {
+      "path": "docs/components/pump-cover-joint-20261003-delivery.md",
+      "bytes": 6210,
+      "sha256": "05162b63c254096090ce9d8d3d0a30d163108a8e94d89f9d5507a94e5a3f855f"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-datum-options.png",
+      "bytes": 218260,
+      "sha256": "d27ec8357ec704e457e33e17a584dfe65ccaef577b265671cd950b87c01eeba5"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-datums.json",
+      "bytes": 7030,
+      "sha256": "34c901e75423d43487233b6f9cb8d4ca2c2a5400be23ff831153720196abc619"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-datums.log",
+      "bytes": 7030,
+      "sha256": "34c901e75423d43487233b6f9cb8d4ca2c2a5400be23ff831153720196abc619"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-fit.log",
+      "bytes": 4537,
+      "sha256": "00143efd214153ecb9b40a5def60cb79464b4af6889532efb063508af3e1f275"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-joint-fit.json",
+      "bytes": 4537,
+      "sha256": "00143efd214153ecb9b40a5def60cb79464b4af6889532efb063508af3e1f275"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-measure.log",
+      "bytes": 4394,
+      "sha256": "7cf9818526dec1d48f9520088053a5d7e1290a76a7f3bfe5da5f1e920cbdcec5"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-measurements.json",
+      "bytes": 10333,
+      "sha256": "f559e00fca01f22279e4fb789833751dce39b3fedec8f4130849b68f5918c2bc"
+    },
+    {
+      "path": "reference/engine/pump-cover-joint-20261003-review.png",
+      "bytes": 244607,
+      "sha256": "638c8efbffe00c72786682fe16fd27eb07a22c977cedb1bd8dde6f991a6a8b6b"
+    },
+    {
+      "path": "scripts/pump-cover-joint-20261003-datums.py",
+      "bytes": 6185,
+      "sha256": "a77f47a9e5861b572ab72475ef26178250a1ae0e8060071ee370c66cdf9017e1"
+    },
+    {
+      "path": "scripts/pump-cover-joint-20261003-fit.py",
+      "bytes": 4608,
+      "sha256": "e204edb42cffe3cf562012f998ac9115e03a6d16d875975890096a140336568e"
+    },
+    {
+      "path": "scripts/pump-cover-joint-20261003-freeze.py",
+      "bytes": 2012,
+      "sha256": "aae18299164532759b99a0d0c233604c8806deb24e0ef7ea10376218aaf7030c"
+    },
+    {
+      "path": "scripts/pump-cover-joint-20261003-measure.py",
+      "bytes": 9773,
+      "sha256": "8487a0596d44bb90c5e03493889d6549578317d9ac0e5888c70e8154731b4dfd"
+    }
+  ],
+  "guarded_inputs": [
+    {
+      "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-002.jpg",
+      "sha256": "ce5b60d4b135469698c7f563f5ffd7e1796497c57efa40c84be2e3506f4ff623"
+    },
+    {
+      "path": "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg",
+      "sha256": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494"
+    },
+    {
+      "path": "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45829-manufacturer.jpg",
+      "sha256": "4b8131456bde2907a9dde0697bdc087e7f860242afd9caa9195f074394c3cb6f"
+    },
+    {
+      "path": "cad/engine/pump_functional_20261003.py",
+      "sha256": "0f2bc385d98d06a0b4719a94af6ad3dc32a44830520a4f93dda4b146f5501e28"
+    },
+    {
+      "path": "cad/engine/timing_cover_front_joint_candidate.py",
+      "sha256": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8"
+    },
+    {
+      "path": "cad/engine/timing_cover_joint_candidate.py",
+      "sha256": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567"
+    },
+    {
+      "path": "cad/engine/timing_cover_seven_fastener_candidate.py",
+      "sha256": "fa39342ab3f2db82c8fd90f71bf63b7b2f580396ede2f118133d10189049de55"
+    },
+    {
+      "path": "cad/engine/water_pump_gasket_topology_candidate.py",
+      "sha256": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b"
+    },
+    {
+      "path": "cad/engine/water_pump_joint_candidate.py",
+      "sha256": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a"
+    },
+    {
+      "path": "inventory/engine/corrected-engine-stage-v4.json",
+      "sha256": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9"
+    },
+    {
+      "path": "reference/engine/atk-dff8-block-front.jpg",
+      "sha256": "70616ce77f9adbee7ff6415545bdace98b786ba405e20524a8b9b9ce7d87ae45"
+    },
+    {
+      "path": "reference/engine/felpro-13816.jpg",
+      "sha256": "360a98ae9e5c4293781663ee5d24151109292d6bd8d819271ab62dcbeed9bc4d"
+    },
+    {
+      "path": "reference/engine/pump-functional-20261003-delivery.json",
+      "sha256": "5003936ae17bc0aba6b4adcc3e3d360bc10050a420b614b229b47cec3228771f"
+    },
+    {
+      "path": "reference/engine/pump-source-registration-20261003-delivery.json",
+      "sha256": "38b09bd74100353a8c612a5fc008a0f1b2f471fec48280db84b8db75602cf48a"
+    }
+  ],
+  "distribution": "Author-created scripts/reports/plots only. Source photographs listed as guardedinputs are EXCLUDED from Git and releases.",
+  "environment": {
+    "python": "3.13.12 (main, Apr  6 2026, 11:54:17) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9"
+  },
+  "live_handles": []
+}
