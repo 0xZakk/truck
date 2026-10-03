@@ -51,3 +51,9 @@ Bosch supplies [[notes/ho2s-online-20261003-exterior|identified oxygen-sensor ex
 The independent [[notes/intake-joint-online-20261003-application|Fel-Pro application record]] and [[notes/intake-joint-online-20261003-pattern|six-port/nine-aperture gasket pattern]] support a coordinated joint correction. Image proportions do not establish physical scale or identify the two extra aperture functions.
 
 The later [[notes/ho2s-dimensions-20261003-interchange-limit|NTK interchange record]] is a guide-qualified bridge, not a Bosch drawing. [[notes/ho2s-dimensions-20261003-photo-uncertainty|Photo-scaled exterior estimates]] provide a reproducible isolated specimen contract while preserving unresolved thread and connector dimensions.
+
+## Fuel rail and exhaust host evidence
+
+[[notes/intake-return-interface-20261003-topology|Exact-year Ford rail topology]] corroborates an earlier photographed assembly: the regulator belongs toward the front, with an adjacent return run and paired rear connections. It contradicts the current centered regulator; dimensions remain estimates pending the coordinated layout.
+
+[[notes/ho2s-host-online-20261003-conditional-application|Walker45166 application is conditional on non-California emissions]]. Its [[notes/ho2s-host-online-20261003-spherical-joints|spherical inlet joints and loose retainers]] require receiver reconciliation. The [[notes/ho2s-host-online-20261003-common-pipe-bung|sensor belongs in the common pipe]], with numeric bung pose and thread still unresolved.

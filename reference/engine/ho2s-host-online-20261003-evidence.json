@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "baseline": "0e9d513794e7bab3dfcab45c7da06a669bb44878",
+  "scope": "conditional replacement host research; no CAD/pose",
+  "sources": [
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-finder.html",
+      "url": "https://www.walkerexhaust.com/find-my-part.html",
+      "sha256": "053bc44a1532637599c1fe9748919d5c3ad530e7e862f24d5096009121bf01ea",
+      "bytes": 48041,
+      "role": "official catalog entry point",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-api.js",
+      "url": "https://www.walkerexhaust.com/etc.clientlibs/clientlibs/fmmp-base/libs/catalog-api-vue.min.2b4c1e0827b91160e3f075e8f1ffa23c.js",
+      "sha256": "684d587f88d4eb164a307d76660548e6368fb11978f2ae059ddc4dd9edb522a5",
+      "bytes": 101705,
+      "role": "public endpoint discovery; inspected as text, not executed",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-search.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.fuzzysearch?brand=walker&locale=en_US&country_code=US&part_number=45166",
+      "sha256": "9fbe40ed31ddd96b065ccfad06a27b905d8e76d6367f69a0c44d8879f20b023b",
+      "bytes": 201,
+      "role": "manufacturer brand/part identity",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-product.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.product?brand=walker&locale=en_US&country_code=US&part_number=45166&brand_code=BDCN&brand_codes=BDCN",
+      "sha256": "05e54d306b89e992eabd285ee07e237bb8b35006b83ab39c081db1d1e8603cfc",
+      "bytes": 9740,
+      "role": "manufacturer dimensions, features and qualified application",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-applications.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.applications?brand=walker&locale=en_US&country_code=US&part_number=45166&brand_code=BDCN&brand_codes=BDCN",
+      "sha256": "a77d176b3f2ae006220af99f107ed12f0a98f5d82a6fd3e30ac20125666f8cca",
+      "bytes": 2213,
+      "role": "manufacturer grouped year/model application",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-1994-parts.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.partslist?brand=walker&locale=en_US&country_code=US&year_id=1994&make_id=54&model_id=666&vehicle_group_ids=2%2C8&catalogId=walker-exhaust",
+      "sha256": "ff5adc4924b39ef23d9440ef32303fa0fc782a59e604ee666400b3adb7ee77ef",
+      "bytes": 183180,
+      "role": "exact-year primary application row and downstream qualifier distinctions",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-1994-converters.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.partslist?brand=walker&locale=en_US&country_code=US&year_id=1994&make_id=54&model_id=666&vehicle_group_ids=2%2C8&catalogId=converters-allotherstates",
+      "sha256": "d86b6c2afcc57658e876334b7021935cd4a15e8abdb77b9ba7528459d76fde7c",
+      "bytes": 21883,
+      "role": "current separate universal converter rows; not transferred to front pipe",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-ford-interchange.json",
+      "url": "https://www.walkerexhaust.com/driv/partfinder/api.catalog.partsearch?brand=walker&locale=en_US&country_code=US&part_number=E8TZ5F250C&brand_codes=walker",
+      "sha256": "09f273bf580bd198f46d94da14f0a300ca6feaaa6623a1ecc42b7fb0a211c9d7",
+      "bytes": 469,
+      "role": "typed Ford Y-pipe mapping versus generic converter mapping",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-45166.jpg",
+      "url": "https://s3.amazonaws.com/vsdam-driv/Repositories/FE0812619C5046AF853EC6520F0004E0/4bb25ec3-bcee-42dc-81e4-cae7c08103b2/4bb25ec3-bcee-42dc-81e4-cae7c08103b2.jpg",
+      "sha256": "e6cfe4bfc69c89420de1b315a61e37b1a5bb1725812897fbfcd872d0614c9256",
+      "bytes": 115315,
+      "role": "actual product photograph; two listed primary entries have identical URL",
+      "redistributed": false
+    },
+    {
+      "capture_name": "ho2s-host-online-20261003-walker-vintage.pdf",
+      "url": "https://www.drivparts.com/content/dam/marketing/North-America/catalogs/walker/pdf/walker-vintage-master.pdf",
+      "sha256": "1eea635209cff063e6955ffa157f902ac4f1b3b8c8f21969f2929bf01b090dc8",
+      "bytes": 22898236,
+      "role": "PDF937/printed935, diagram13143; actual pixels reviewed",
+      "redistributed": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/150757959.png",
+      "sha256": "312a780c47e5095c1a0f5565c15c7dc8de7cfdb9676efcd0acabeb9b78b07e6e",
+      "bytes": 9977,
+      "role": "exact-year service host/topology evidence; original access separate",
+      "redistributed": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Powertrain%20Management/Computers%20and%20Control%20Systems/Sensors%20and%20Switches%20-%20Computers%20and%20Control%20Systems/Oxygen%20Sensor/Service%20and%20Repair/index.html",
+      "sha256": "fc32891a4c8026f9d26e33f2a048c594d24967ca0025e6f62387677bcf8f3fae",
+      "bytes": 4645,
+      "role": "exact-year service host/topology evidence; original access separate",
+      "redistributed": false
+    },
+    {
+      "path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Exhaust%20System/Exhaust%20Manifold/Service%20and%20Repair/index.html",
+      "sha256": "4d6a4eab38ff073fcaf1738d8dfd87fb35e587fed8f0a9778eaebcd04ee4a1ed",
+      "bytes": 8097,
+      "role": "exact-year service host/topology evidence; original access separate",
+      "redistributed": false
+    }
+  ],
+  "manufacturer_dimensions": {
+    "outlet_od": {
+      "inch": 2.5,
+      "mm": 63.5
+    },
+    "wall": {
+      "inch": 0.06,
+      "mm": 1.524
+    },
+    "length": {
+      "inch": 46.875,
+      "mm": 1190.625,
+      "endpoints": "unspecified; do not assume centerline or extreme-bounds length"
+    }
+  },
+  "derived_nominal_outlet_id_mm": 60.452,
+  "topology": {
+    "inlets": 2,
+    "outlets": 1,
+    "inlet_joint": "loose two-bolt flange retaining spherical flare",
+    "bung_region": "visible common-trunk boss downstream of branch convergence, near bend; identification supported by exact-year pipe-mounted HO2S source",
+    "inlet_to_front_rear_manifold_assignment": "unknown in isolated product view"
+  },
+  "applicability": {
+    "year": 1994,
+    "model": "F-150",
+    "engine": "4.9L L6",
+    "emissions": "without California Emissions System",
+    "transmission": "no qualifier shown; M5OD-R2 not independently verified",
+    "drivetrain": "no qualifier shown on45166 row",
+    "body_wheelbase": "no qualifier shown on45166 row; downstream pipes have separate qualifiers",
+    "owner_emissions_status": "unknown; no installation approval"
+  },
+  "unknowns": [
+    "inlet bore/OD",
+    "sphere radius/flare section",
+    "flange hole spacing/diameter/clocking/thickness",
+    "3D inlet axes and center spacing",
+    "bend radii/stations",
+    "bung bore/pitch/seat/projection/axis",
+    "outlet length endpoint convention",
+    "installed pipe/harness/heatshield/support pose"
+  ],
+  "conflicts": [
+    "specific structured application/universal_part=0 versus generic universal marketing",
+    "historical converter15739 all-emissions note versus current45166 explicitly non-California",
+    "historical138in/current139in intermediate-pipe branch; not pipe dimension proof"
+  ],
+  "access_notes": [
+    "Web PDF fetch failed403; ordinary public curl succeeded with original bytes, no authentication or challenge workaround",
+    "Initial product request without manufacturer-returned brand code failed400; correct public parameters succeeded",
+    "Current15739 product request400 is unresolved, not proof of discontinuation"
+  ],
+  "prior_specimen": {
+    "ledger": "reference/engine/ho2s-specimen-20261003-delivery.json",
+    "archive_sha256": "9a4a62c92886a32351da0fcaec3a7e72e94b9722c9ff8aaf1b8e47f785361257",
+    "unchanged_required": true
+  },
+  "root_caption_followup_only": [
+    "Sensor front view: Front oblique / protective cap",
+    "Connector axial view: Axial connector mouth"
+  ],
+  "originals_distributed": false
+}

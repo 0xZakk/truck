@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "readiness": "conditional host research; noCAD/installation",
+  "baseline": "0e9d513794e7bab3dfcab45c7da06a669bb44878",
+  "files": {
+    "docs/components/ho2s-host-online-20261003-contract.md": {
+      "sha256": "cd68ac912db88ede1fef3f7c4072638417628c82bfc7746e28f3a4472ee5ab32",
+      "bytes": 11859
+    },
+    "kb/notes/ho2s-host-online-20261003-common-pipe-bung.md": {
+      "sha256": "cabdf93c7135d9ed069c99cda8b22f8d399b102316d04a4c9d2ffd4d5091dc32",
+      "bytes": 1392
+    },
+    "kb/notes/ho2s-host-online-20261003-conditional-application.md": {
+      "sha256": "d6f94ed0403da9b0dcd3a5b2d70c3fc40f155078e4bbf8f115a9f8097ebaab50",
+      "bytes": 1298
+    },
+    "kb/notes/ho2s-host-online-20261003-spherical-joints.md": {
+      "sha256": "6f1a3143c2ff99d9832082822321db31337b0db5e45c7adc27cc3c20177b3627",
+      "bytes": 1210
+    },
+    "kb/sources/ho2s-host-online-20261003-ford-service.md": {
+      "sha256": "3c08cbad19517734383b076c651af54cddb9c829b8da058380c0b32b531e9568",
+      "bytes": 1467
+    },
+    "kb/sources/ho2s-host-online-20261003-walker-catalog.md": {
+      "sha256": "c95ffc30b851b3f4ec53bd3c00a08501b22aa3be70e89e6080a949bb4076a8c1",
+      "bytes": 1884
+    },
+    "kb/sources/ho2s-host-online-20261003-walker-vintage.md": {
+      "sha256": "b1a173d46e3d64aed18519cbf469c9e0439855dfcbddad9209d1ad61894ca393",
+      "bytes": 1290
+    },
+    "reference/engine/ho2s-host-online-20261003-evidence.json": {
+      "sha256": "8315a7e32469f5053ccd2b1a677fc26ade0ce8758c594d67f8b4491c5ad4e3ee",
+      "bytes": 8580
+    },
+    "reference/engine/ho2s-host-online-20261003-landmarks.json": {
+      "sha256": "d1fa73af4fbc4baa8d3a094fd6dafb1fc22b4f9e2af94e9c7ad1d9f7e7fbc688",
+      "bytes": 893
+    },
+    "reference/engine/ho2s-host-online-20261003-observations.txt": {
+      "sha256": "671ea278653ee74c7356b2c4c735666d5216f33ea9406f668204a211134bcb2b",
+      "bytes": 3459
+    }
+  },
+  "checks": {
+    "JSON": "PASS",
+    "KB_frontmatter_noH1_links": "PASS sixfiles",
+    "metric_conversions": "PASS",
+    "source_pixels": "PASS Walker45166, PDF937/printed935 and Ford150757959",
+    "prior107members_and_archive_unchanged": true,
+    "CAD": "N/A research",
+    "installation": "NOT RUN",
+    "browser": "NOT RUN"
+  },
+  "running_processes": [],
+  "next": "Root review before any new estimated host CAD contract"
+}
