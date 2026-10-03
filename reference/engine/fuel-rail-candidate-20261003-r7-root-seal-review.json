@@ -1,0 +1,76 @@
+{
+  "scope": "Independent saved seal geometry and report-input replay; not regulator installation or physical pressure acceptance",
+  "context_input_hashes_verified": 779,
+  "flow_input_hashes_verified": 10,
+  "free_volume_mm3": 52.74069851832344,
+  "installed_volume_mm3": 52.7406985182846,
+  "analytic_free_volume_mm3": 52.74069851832126,
+  "installed_bounds_mm": [
+    10.600000100000017,
+    10.600000000000023,
+    1.5329964590979444
+  ],
+  "free_sha256": "f63b1214e32339afedc5d8bc2d27b9136eee0343d8d30f68876ef13e2c042df2",
+  "installed_sha256": "62a369e321ec0827766a7f0b26c5539b3a578d270617c534add1c8d851914d3b",
+  "context_failures": [
+    {
+      "part": "regulator-vacuum-hose",
+      "neighbor": "efi-upper-intake",
+      "placement": "frozen intake candidate",
+      "aabb_distance_lower_mm": 0.0,
+      "IsDone": true,
+      "null": false,
+      "valid": true,
+      "solid_count": 2,
+      "face_count": 20,
+      "overlap_mm3": 2894.915890744621,
+      "status": "OVERLAP"
+    },
+    {
+      "part": "fuel-supply-rail",
+      "neighbor": "front-manifold-lifting-eye",
+      "placement": "installed",
+      "aabb_distance_lower_mm": 0.0,
+      "IsDone": true,
+      "null": false,
+      "valid": true,
+      "solid_count": 2,
+      "face_count": 13,
+      "overlap_mm3": 542.8173268685292,
+      "status": "OVERLAP"
+    },
+    {
+      "part": "fuel-supply-rail",
+      "neighbor": "fuel-return-tube",
+      "placement": "coordinated fuel candidate",
+      "aabb_distance_lower_mm": 0.0,
+      "IsDone": true,
+      "null": false,
+      "valid": true,
+      "solid_count": 1,
+      "face_count": 4,
+      "overlap_mm3": 0.35705436009895364,
+      "status": "OVERLAP"
+    },
+    {
+      "part": "fuel-supply-rail",
+      "neighbor": "regulator-screw-3",
+      "placement": "coordinated fuel candidate",
+      "aabb_distance_lower_mm": 0.0,
+      "IsDone": true,
+      "null": false,
+      "valid": true,
+      "solid_count": 1,
+      "face_count": 4,
+      "overlap_mm3": 3.0518358684246407,
+      "status": "OVERLAP"
+    }
+  ],
+  "context_report_sha256": "e82ad162f5a3f6a554c0cefcf1021b502d6dfb691f2c89a2cc7260168edb3930",
+  "flow_report_sha256": "8ce51b69725ce150b8205efd9ab2c505b26585c66b906ee3cfcd1bc559b0cd10",
+  "limits": [
+    "Ideal contact geometry does not validate material, preload, tolerances or physical retention.",
+    "Four context failures remain; full pressure boundary negative controls pending review.",
+    "Filter media absent; frame alone is not a completed filter."
+  ]
+}
