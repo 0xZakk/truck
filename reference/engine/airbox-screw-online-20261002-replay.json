@@ -1,0 +1,158 @@
+{
+  "status": "PASS independent saved-STEP replay and tapered-profile control",
+  "inputs": {
+    "reference/engine/airbox-screw-online-20261002-validation.json": "7b686d882d3c067cc9666e9df6dc8eb3d4a06d8e01a010834959fbecb18db5d2",
+    "cad/engine/generated/airbox-screw-online-20261002/air-cleaner-body-bracket-screw.step": "793886d93aca780fd515e49480c4295a6925a5a7dbc9b33cd7419ab2f25d17ca",
+    "scripts/check-airbox-screw-online-20261002-replay.py": "777ac3dddf1b58b4c42f0ee2867e09b1d32b04fcc19f306302b8ed6748d5d864",
+    "cad/engine/generated/airbox-screw-online-20261002/attempt1-air-cleaner-body-bracket-screw.step": "c2b8add4f52118278fb0bc5466739af0f79592bc34d437555518fa16606183a5"
+  },
+  "valid": true,
+  "solids": 1,
+  "body_thread_probes_passed": 80,
+  "tip_thread_probes": [
+    {
+      "theta": 0.0,
+      "z": 16.29,
+      "radius": 2.0303295000000006,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 0.0,
+      "z": 17.195,
+      "radius": 1.3774172499999997,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 0.0,
+      "z": 18.1,
+      "radius": 0.7245049999999992,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 0.7853981633974483,
+      "z": 16.51625,
+      "radius": 1.8671014375000001,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 0.7853981633974483,
+      "z": 17.42125,
+      "radius": 1.2141891874999995,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 0.7853981633974483,
+      "z": 18.32625,
+      "radius": 0.5612769374999985,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 1.5707963267948966,
+      "z": 16.7425,
+      "radius": 1.7038733750000001,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 1.5707963267948966,
+      "z": 17.6475,
+      "radius": 1.0509611249999995,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 1.5707963267948966,
+      "z": 18.552500000000002,
+      "radius": 0.3980488749999984,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 2.356194490192345,
+      "z": 16.96875,
+      "radius": 1.5406453125,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 2.356194490192345,
+      "z": 17.87375,
+      "radius": 0.8877330624999994,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 2.356194490192345,
+      "z": 18.778750000000002,
+      "radius": 0.2348208124999982,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 3.141592653589793,
+      "z": 17.195,
+      "radius": 1.3774172499999997,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 3.141592653589793,
+      "z": 18.1,
+      "radius": 0.7245049999999992,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 3.9269908169872414,
+      "z": 17.42125,
+      "radius": 1.2141891874999995,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 3.9269908169872414,
+      "z": 18.32625,
+      "radius": 0.5612769374999985,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 4.71238898038469,
+      "z": 17.6475,
+      "radius": 1.0509611249999995,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 4.71238898038469,
+      "z": 18.552500000000002,
+      "radius": 0.3980488749999984,
+      "expected_inside": false,
+      "actual_inside": false
+    },
+    {
+      "theta": 5.497787143782138,
+      "z": 17.87375,
+      "radius": 0.8877330624999994,
+      "expected_inside": true,
+      "actual_inside": true
+    },
+    {
+      "theta": 5.497787143782138,
+      "z": 18.778750000000002,
+      "radius": 0.2348208124999982,
+      "expected_inside": false,
+      "actual_inside": false
+    }
+  ],
+  "outside_taper_envelope_probes": 936,
+  "smooth_point_rejected": true,
+  "original_smooth_tip_attempt_rejected": true,
+  "scope": "Sampled material alternation in saved STEP, not manufacturing gauge or receiving-pilot acceptance."
+}
