@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "readiness": "frozen educational estimate before CAD",
+  "span_mm": 568.96,
+  "origin_mm": [
+    284.48,
+    -228,
+    360
+  ],
+  "e_u": [
+    -1,
+    0,
+    0
+  ],
+  "e_v": [
+    0,
+    -1,
+    0
+  ],
+  "port_stations": [
+    0.0,
+    0.18257417081571264,
+    0.38476744271302377,
+    0.590642204754071,
+    0.7931481615148105,
+    1.0
+  ],
+  "holes": [
+    {
+      "feature_id": "H1",
+      "normalized_uv": [
+        -0.035112688510977035,
+        0.06224030449963175
+      ],
+      "pixel_center": [
+        1424.7677725118483,
+        672.8767772511849
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H2",
+      "normalized_uv": [
+        0.09133177308566413,
+        -0.0009811173945554652
+      ],
+      "pixel_center": [
+        1271.997624703088,
+        749.771971496437
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H3",
+      "normalized_uv": [
+        0.2530691194731687,
+        0.0003544461189121435
+      ],
+      "pixel_center": [
+        1076.320809248555,
+        748.679190751445
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H4",
+      "normalized_uv": [
+        0.28167669793690425,
+        -0.0018812746784241208
+      ],
+      "pixel_center": [
+        1041.7181208053692,
+        751.4765100671141
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H5",
+      "normalized_uv": [
+        0.48762526618437774,
+        -0.030503678705976686
+      ],
+      "pixel_center": [
+        792.6507177033493,
+        786.7703349282297
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H6",
+      "normalized_uv": [
+        0.6909590628879999,
+        -0.0019265092883860293
+      ],
+      "pixel_center": [
+        546.5617433414044,
+        752.8547215496368
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H7",
+      "normalized_uv": [
+        0.7193737171531933,
+        6.553211254598142e-06
+      ],
+      "pixel_center": [
+        512.1789772727273,
+        750.6079545454545
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H8",
+      "normalized_uv": [
+        0.8967311014130928,
+        -0.0011451515060056212
+      ],
+      "pixel_center": [
+        297.6128266033254,
+        752.5748218527316
+      ],
+      "role": "unresolved aperture"
+    },
+    {
+      "feature_id": "H9",
+      "normalized_uv": [
+        1.0839918687978414,
+        -0.060789138171125356
+      ],
+      "pixel_center": [
+        71.25454545454545,
+        825.3386363636364
+      ],
+      "role": "unresolved aperture"
+    }
+  ],
+  "port_bore_diameter_mm": 50,
+  "gasket_port_diameter_mm": 51,
+  "small_aperture_diameter_mm": 11,
+  "casting_outer_port_radius_mm": 32,
+  "flange_web_halfwidth_mm": 12,
+  "ear_radius_mm": 11,
+  "lower_face_z_mm": 360,
+  "gasket_thickness_mm": 1.5,
+  "upper_face_z_mm": 361.5,
+  "flange_thickness_mm": 10,
+  "stud_hole_hypothesis": [
+    "H1",
+    "H2",
+    "H4",
+    "H5",
+    "H6",
+    "H8",
+    "H9"
+  ],
+  "unresolved_studs": [
+    "efi-upper-stud-3",
+    "efi-upper-stud-5"
+  ],
+  "notes": [
+    "Span 2*284.48 verified from current compact PORTS endpoints; old 113.792 pitch is not factory scale.",
+    "Port row straightened; terminal centers unchanged. Photo normalized longitudinal ratios drive interior shifts.",
+    "Front ear points away from head in actual casting view1, so photo v maps -Y. Central hole points toward head.",
+    "50 mm port bore and51 mm gasket opening are rounded photo-scale estimates: approximately105px/1209.8px*568.96=49.4mm; not factory measurements.",
+    "11mm small apertures similarly approximate image ratio; stud size/engagement unknown, existing studs illustrative hypotheses only.",
+    "Flange thickness/stack inherited estimates; outline pads/web/ear sizes estimated from topology, not traced contour.",
+    "Upper plenum and throttle/EGR/vacuum frames retained; lower head/injector/rail features retained."
+  ],
+  "source_layout_sha256": "a1b17509ee9a375f155f4c811af0c046cf7c6ece4aa2f4eddc9d261737774449"
+}

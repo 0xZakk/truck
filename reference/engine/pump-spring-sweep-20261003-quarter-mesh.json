@@ -1,0 +1,54 @@
+{
+  "status": "DIAGNOSTIC COMPLETE; not installed",
+  "settings": {
+    "absolute_linear_deflection_mm": 0.01,
+    "angular_rad": 0.06,
+    "measured_bounds_gate_mm": 0.025,
+    "no_shape_change": true,
+    "no_hole_filling": true
+  },
+  "ordinary_loose_bounds": [
+    [
+      406.68004122336,
+      -47.900000099995005,
+      154.09999990000333
+    ],
+    [
+      411.6799587766396,
+      -16.099999899999716,
+      185.90000010000017
+    ]
+  ],
+  "corrected_conservative_bounds": [
+    [
+      406.93000000000006,
+      -47.900000099995005,
+      154.09999990000333
+    ],
+    [
+      411.43000000000006,
+      -16.099999899999716,
+      185.90000010000017
+    ]
+  ],
+  "clip_provenance": "water_pump_mechanical_seal_candidate.py spring clips local15.5..20; world440 +98.43\u2212147. Both actual planar faces verified; full STEP inside slab. Transverse AddOptimal bound retained.",
+  "inputs": {
+    "cad/engine/generated/pump-spring-sweep-20261003/spring-quarter.step": "e14d9ebe432b7cdd608ad9b3a553a408c64d4874c57c5e2d1ff665b5b4fc4545",
+    "scripts/pump-spring-sweep-20261003-quarter-mesh.py": "e81f7d0abf0aaa56fece7df62a0ceb1dad407b880dff622bdbe2fc061032a60f",
+    "cad/engine/water_pump_mechanical_seal_candidate.py": "63bf8b89e98d88112a6976afc768a3906eee8cbdd4ebb70f9a43d9362fcbbb9e"
+  },
+  "precision_trials": [
+    {
+      "digits_vertex": 8,
+      "raw_boundary": 0,
+      "raw_nonmanifold": 65,
+      "raw_degenerate": 0,
+      "boundary": 66,
+      "nonmanifold": 4,
+      "watertight": false,
+      "winding": true,
+      "faces": 1313404
+    }
+  ],
+  "elapsed_seconds": 8.556312999688089
+}

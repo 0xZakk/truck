@@ -1,0 +1,30 @@
+{
+  "source": "Carter W9046M manufacturer BOT rear photograph",
+  "url": "https://carterengineered.com/media/catalog/product/cache/042b824725fef6b5874008901410270a/W/9/W9046M_BOT_1_1.jpg",
+  "image_path": "reference/engine/pump-junction-online-20261002-captures/full-W9046M_BOT_1_1.jpg",
+  "sha256": "81ad70c2137a4b0abf09176f2f43b173aebb799406258d59ebea04877bab0e27",
+  "size_pixels": [2000,2000],
+  "pixel_axes": "x right, y down; mathematical fit flips pixel y upward",
+  "white_hole_threshold": 220,
+  "white_component_area_range": [1000,6000],
+  "white_component_roi_rule": "bbox y_start>1100, x_start>300, x_stop<1300",
+  "bolt_centroid_uncertainty_px": 2,
+  "fifth_dark_roi_xyxy": [510,1230,620,1350],
+  "shaft_dark_roi_xyxy": [715,1515,840,1650],
+  "dark_threshold": 60,
+  "fifth_centroid_uncertainty_px": 3,
+  "shaft_centroid_uncertainty_px": 5,
+  "manual_points": {
+    "heater_visible_root_cuff_axis": {"xy":[713,1180],"uncertainty_px":15,"note":"Axis center immediately before broadened collar. Not a known mounting plane; axial parallax and collar occlusion."},
+    "heater_terminal_opening_center": {"xy":[420,78],"uncertainty_px":10,"note":"Visible elliptical open end center; projection only."},
+    "inlet_terminal_rim_center": {"xy":[1666,1654],"uncertainty_px":15,"note":"Foreshortened distal rim silhouette; no factory plane or axial datum inferred."}
+  },
+  "inlet_straight_axis_columns": [1470,1490,1510,1530,1550,1570,1590,1610],
+  "inlet_axis_y_roi": [1450,1830],
+  "heater_straight_axis_rows": [1080,1090,1100,1110,1120,1130,1140,1150,1160,1170],
+  "heater_axis_x_roi": [620,850],
+  "outline_columns": [1100,1150,1200,1250,1300,1350,1400,1450,1500,1550,1600],
+  "outline_y_roi": [1300,1920],
+  "outline_threshold_sensitivity": [180,200,220,240],
+  "evidence_class": "Photo measurements in pixels; candidate dimensions remain estimates; no conversion to factory millimeters."
+}

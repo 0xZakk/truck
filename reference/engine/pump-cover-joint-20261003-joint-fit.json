@@ -1,0 +1,157 @@
+{
+  "status": "RESEARCH; proposed shared block-face hypothesis, not CAD acceptance",
+  "method": "Joint projective camera (8DOF) and proper planar cover similarity (4DOF) fitted to four pump and seven cover hole centers (22scalarobservations); fifth aperture withheld. Pump pattern fixes metric gauge only by prior estimate. No clearance or neighbor inputs in objective.",
+  "camera_normalization": {
+    "model_units": 150,
+    "image_units": 1000
+  },
+  "parameters": [
+    0.27993782906205433,
+    0.023318183080354712,
+    0.5578004338211604,
+    0.028709609810740153,
+    -0.2885385334782033,
+    0.916067984702442,
+    -0.00047756275280333167,
+    -0.01004203932616221,
+    -0.05980169540826988,
+    0.09846014202060056,
+    0.044558660047182744,
+    -0.06201796652623429
+  ],
+  "cover_similarity": {
+    "scale": 0.9419513083341202,
+    "rotation_deg": 5.641350588039102,
+    "offset_candidate_mm": [
+      6.683799007077411,
+      -9.302694978935143
+    ],
+    "axes_candidate_mm": [
+      [
+        -104.41614458470609,
+        -26.782499077680406
+      ],
+      [
+        -51.49106871797288,
+        2.979670598371407
+      ],
+      [
+        -8.695226980350808,
+        82.87674802612082
+      ],
+      [
+        79.73774563703047,
+        185.8645075889227
+      ],
+      [
+        200.93398351181875,
+        159.7771873575385
+      ],
+      [
+        235.93663246358489,
+        83.78747318181532
+      ],
+      [
+        211.05763323562292,
+        3.413876311482721
+      ]
+    ],
+    "axis_gap_mm": 25.861698764251393,
+    "head_R8_75_plus_boss_R11_5_nominal_margin": 5.611698764251393,
+    "tool_R10_5_plus_boss_R11_5_nominal_margin": 3.8616987642513934
+  },
+  "fit": {
+    "success": true,
+    "nfev": 5,
+    "pump_residuals_px": [
+      1.2536449134445837,
+      1.0952585431747262,
+      1.5008789327121679,
+      1.4619451917014947
+    ],
+    "cover_residuals_px": [
+      1.0716213056211437,
+      0.5207976463579573,
+      1.2899193459169467,
+      0.1853006826416414,
+      0.7152185032640251,
+      1.0298820502963923,
+      0.25835514944699733
+    ],
+    "radius_rms_px": 1.040887329543761,
+    "heldout_fifth_prediction_px": [
+      523.1916253605863,
+      455.34240328473726
+    ],
+    "heldout_fifth_error_px": 2.0414695369860882,
+    "leave_one_cover_out_errors_px": [
+      2.9906061996139788,
+      0.7737870093531761,
+      1.7733703978214856,
+      0.4903037458460886,
+      1.4533036660120544,
+      1.786141803563854,
+      0.8396574914232716
+    ]
+  },
+  "controls": {
+    "swapped_pump_sides": {
+      "training_rms_px": 45.560153532566,
+      "heldout_fifth_error_px": 145.8970087681574
+    },
+    "fifth_shift20": {
+      "training_rms_px": 0.7360184891715355,
+      "heldout_fifth_error_px": 18.88127599934268
+    }
+  },
+  "pixel_selection_sensitivity": {
+    "trials": 400,
+    "seed": 473204,
+    "columns": [
+      "gap_mm",
+      "scale",
+      "rotation_deg",
+      "offset_y",
+      "offset_z",
+      "heldout_fifth_px"
+    ],
+    "p2_5_p50_p97_5": [
+      [
+        24.604360767340193,
+        0.9235368232512664,
+        5.086667935088801,
+        4.996582889881905,
+        -11.729265854394267,
+        0.6660635354559175
+      ],
+      [
+        25.96652332460006,
+        0.9418813076221383,
+        5.643174601764276,
+        6.717477362028551,
+        -9.324097849902223,
+        2.2752906256464804
+      ],
+      [
+        27.336442630769202,
+        0.9574346467870603,
+        6.224853323681188,
+        8.737112292951986,
+        -6.678610222421358,
+        4.0573044864395005
+      ]
+    ],
+    "limit": "Not calibrated confidence; unknown lens, planar distortion and pump scale absent."
+  },
+  "limits": [
+    "Proper source-pattern similarity prevents carving and maintains gasket proportions; camera homography is NOT a CAD deformation.",
+    "Forward crank/cam hubs excluded because depth differs; current crank/pump registration remains unverified.",
+    "A lower-pump/cover gap can be source-supported proportionally while absolute shaft layout remains unresolved.",
+    "No independent millimeter anchor found; Carter axialheight is not a transverse ATK scale.",
+    "Do not apply estimated coordinate changes to shared assembly before coordinated crank/seal/gear/pan/accessory review."
+  ],
+  "input_sha256": {
+    "reference/engine/pump-cover-joint-20261003-measurements.json": "f559e00fca01f22279e4fb789833751dce39b3fedec8f4130849b68f5918c2bc",
+    "scripts/pump-cover-joint-20261003-fit.py": "e204edb42cffe3cf562012f998ac9115e03a6d16d875975890096a140336568e"
+  }
+}

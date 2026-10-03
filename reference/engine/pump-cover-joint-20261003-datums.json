@@ -1,0 +1,212 @@
+{
+  "readiness": "CONTRACT REVIEW ONLY; no CAD",
+  "frame": {
+    "crank_center_yz": [
+      0,
+      0
+    ],
+    "pan_orientation": "horizontal engine datum; source terminal trace waviness retained, no5.64degree pan tilt",
+    "axial_planes_preserved_as_estimates": {
+      "block": 373,
+      "pump_back": 375,
+      "pump_seat": 389,
+      "pump_hub_seat": 473.43,
+      "cover_back": 373.8,
+      "cover_screw_seat": 379.8
+    },
+    "absolute_crank_location_in_source_gasket": "Inherited Dorman-aperture estimate588.537374,930.475109 reference pixels, with unbounded parallax. Not independently fixed by ATK hub."
+  },
+  "options": [
+    {
+      "id": "A_fixed_pump_pattern_scale",
+      "global_scale_relative_pump_rectification": 1.0,
+      "status": "Preserve current estimated pump transverse scale; shrink cover to source relative size. FAIL sampled cam+wall envelope.",
+      "pump_center_yz_mm": [
+        -20.87078412978328,
+        182.23694219926156
+      ],
+      "pump_center_delta_from_old_mm": [
+        11.129215870216719,
+        12.236942199261563
+      ],
+      "pump_clock_delta_deg": -5.641350588039102,
+      "pump_mounting_axes_yz_mm": [
+        [
+          -19.74510282241753,
+          115.30210193207151
+        ],
+        [
+          45.72740320713469,
+          181.9890643326056
+        ],
+        [
+          -86.22916264327294,
+          194.01880784471066
+        ],
+        [
+          2.4266236053972463,
+          245.1514937181332
+        ]
+      ],
+      "pump_mounting_offsets_from_new_center_mm": [
+        [
+          1.1256813073657526,
+          -66.93484026719005
+        ],
+        [
+          66.59818733691797,
+          -0.2478778666559549
+        ],
+        [
+          -65.35837851348967,
+          11.781865645449102
+        ],
+        [
+          23.297407735180528,
+          62.91455151887163
+        ]
+      ],
+      "cover_axes_yz_mm": [
+        [
+          -112.28013944528008,
+          -6.473894004109649
+        ],
+        [
+          -56.68573978980139,
+          17.94153403376171
+        ],
+        [
+          -6.243197219755727,
+          93.24476736803832
+        ],
+        [
+          91.88528282524476,
+          187.04066637097958
+        ],
+        [
+          209.93011960373528,
+          149.1659668765072
+        ],
+        [
+          237.29336568563582,
+          70.1034924780289
+        ],
+        [
+          204.63404684637428,
+          -7.435198311893027
+        ]
+      ],
+      "pump_lower_to_cover3_axis_gap_mm": 25.861698764251415,
+      "sampled_cam_envelope_margin_mm": -1.9241676715367326,
+      "pump_gasket_base_R59_scaled_estimate_mm": 59.0,
+      "pump_old_dry_boss_radius_scaled_for_reference_only_mm": 11.5,
+      "cover_source_scale_mm_per_1600reference_px": 0.24701073881370442,
+      "rigid_pump_occurrence_transform": "X unchanged; transverse local offsets rotate by clock delta only for internals/hardware; casting/gasket mounting footprint uses declared global-scale ratio separately."
+    },
+    {
+      "id": "B_fixed_cover_global_scale",
+      "global_scale_relative_pump_rectification": 1.0616260003593405,
+      "status": "Preferred educational hypothesis. Preserve prior source-traced cover scale and engine crank/pan frame; derive enlarged pump mounting footprint and coupled pose. Not scale sourced hardware.",
+      "pump_center_yz_mm": [
+        -22.156967080065026,
+        193.4674760647184
+      ],
+      "pump_center_delta_from_old_mm": [
+        9.843032919934974,
+        23.467476064718397
+      ],
+      "pump_clock_delta_deg": -5.641350588039102,
+      "pump_mounting_axes_yz_mm": [
+        [
+          -20.961914536047047,
+          122.40770930717007
+        ],
+        [
+          48.54540017360929,
+          193.20432247656282
+        ],
+        [
+          -91.54312105131291,
+          205.97541096666762
+        ],
+        [
+          2.5761667125754433,
+          260.2591997580997
+        ]
+      ],
+      "pump_mounting_offsets_from_new_center_mm": [
+        [
+          1.1950525440179796,
+          -71.05976675754833
+        ],
+        [
+          70.70236725367431,
+          -0.2631535881555749
+        ],
+        [
+          -69.38615397124788,
+          12.507934901949227
+        ],
+        [
+          24.73313379264047,
+          66.79172369338133
+        ]
+      ],
+      "cover_axes_yz_mm": [
+        [
+          -119.19951535908172,
+          -6.8728541983332425
+        ],
+        [
+          -60.17905521045717,
+          19.04719901657343
+        ],
+        [
+          -6.627940493863827,
+          98.99106943536768
+        ],
+        [
+          97.5478052976514,
+          198.56723454396885
+        ],
+        [
+          222.86727322987147,
+          158.35846880484021
+        ],
+        [
+          251.91680672464793,
+          74.42369033067094
+        ],
+        [
+          217.24482469086223,
+          -7.893399845733515
+        ]
+      ],
+      "pump_lower_to_cover3_axis_gap_mm": 27.45545182159033,
+      "sampled_cam_envelope_margin_mm": 2.354363175535933,
+      "pump_gasket_base_R59_scaled_estimate_mm": 62.63593402120109,
+      "pump_old_dry_boss_radius_scaled_for_reference_only_mm": 12.208699004132416,
+      "cover_source_scale_mm_per_1600reference_px": 0.26223302269259874,
+      "rigid_pump_occurrence_transform": "X unchanged; transverse local offsets rotate by clock delta only for internals/hardware; casting/gasket mounting footprint uses declared global-scale ratio separately."
+    }
+  ],
+  "envelope_check": {
+    "scope": "360samples at1degree around currentcam(95.109821,76.087857),R86.947=sourcecomparisontip83.947+clearance1+wall2 against raw45point outerarch. No lowerbridge, actualsolid, support, pan or motion check.",
+    "why_prior_margin_differs": "This uses one currentcam and rawtrace; older report included two cam hypotheses plus current parameter construction."
+  },
+  "dependencies": [
+    "Full52pump occurrences and new source-compared housing/gasket",
+    "Block pump seat/cavity/fifth opening/four dry sockets, coolant jacket and cylinder1 clearance",
+    "Four pump fasteners: retain diameters/length, relocate to newaxes",
+    "Cover7 axes/seat contact/main gasket/2692seal and gear clearance: preserve optionB geometry provisionally and freshly verify",
+    "Pan-front terminal contacts and fixedhorizontalplane; source trace terminalwaviness",
+    "Pump pulley/fan/belt path and accessorycarrier/thermactor supports",
+    "Heater hose/inlet/radiator routing; no stationary downstream endpoint silently translated",
+    "Impeller sweep/shaft/bearing/seal internal coaxes, fullprotectedregions attached to revisedpumpframe"
+  ],
+  "input_sha256": {
+    "reference/engine/pump-cover-joint-20261003-joint-fit.json": "00143efd214153ecb9b40a5def60cb79464b4af6889532efb063508af3e1f275",
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "scripts/pump-cover-joint-20261003-datums.py": "a77f47a9e5861b572ab72475ef26178250a1ae0e8060071ee370c66cdf9017e1"
+  }
+}

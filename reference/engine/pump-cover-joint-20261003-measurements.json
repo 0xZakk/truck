@@ -1,0 +1,379 @@
+{
+  "status": "RESEARCH; source-led proposed layout only, not installed or factory measured",
+  "coordinate_class": "Rectified units inherit existing estimated pump pattern; no independent metric anchor",
+  "source": {
+    "url": "https://www.ebay.com/itm/146111774717",
+    "image_url": "https://i.ebayimg.com/images/g/bBwAAOSw8FVnEovT/s-l1200.jpg",
+    "part": "ATK DFF8; seller Titan Engines; remanufactured Ford300/4.9L1987-1996 listing",
+    "view": "Oblique engine front; pump and timing cover absent; gear hubs forward of block face",
+    "pixel_dimensions": [
+      1200,
+      1200
+    ],
+    "source_pixels_excluded": true
+  },
+  "landmarks": {
+    "pump_order_bottom_right_left_top_pixels": [
+      [
+        532.0,
+        716.0
+      ],
+      [
+        658.0,
+        590.0
+      ],
+      [
+        405.0,
+        567.0
+      ],
+      [
+        576.0,
+        470.0
+      ]
+    ],
+    "pump_world_candidate_mm": [
+      [
+        -24.3,
+        103.5
+      ],
+      [
+        34.3,
+        176.3
+      ],
+      [
+        -98.2,
+        175.3
+      ],
+      [
+        -15.0,
+        234.9
+      ]
+    ],
+    "fifth_pixels": [
+      522.0,
+      457.0
+    ],
+    "fifth_candidate_mm": [
+      -42.9,
+      239.0
+    ],
+    "cover_order_source_gasket_1_to_7_pixels": [
+      [
+        359.0,
+        946.0
+      ],
+      [
+        462.0,
+        901.0
+      ],
+      [
+        557.0,
+        758.0
+      ],
+      [
+        745.0,
+        581.0
+      ],
+      [
+        969.0,
+        654.0
+      ],
+      [
+        1017.0,
+        806.0
+      ],
+      [
+        953.0,
+        951.0
+      ]
+    ],
+    "cover_current_world_mm": [
+      [
+        -119.19951535908172,
+        -6.8728541983332425
+      ],
+      [
+        -60.17905521045717,
+        19.04719901657343
+      ],
+      [
+        -6.627940493863827,
+        98.99106943536768
+      ],
+      [
+        97.5478052976514,
+        198.56723454396885
+      ],
+      [
+        222.86727322987147,
+        158.35846880484021
+      ],
+      [
+        251.91680672464793,
+        74.42369033067094
+      ],
+      [
+        217.24482469086223,
+        -7.893399845733515
+      ]
+    ],
+    "forward_crank_cam_hub_pixels_NOT_COPLANAR": [
+      [
+        596.0,
+        990.0
+      ],
+      [
+        802.0,
+        800.0
+      ]
+    ],
+    "selection_uncertainty_px_each_coordinate": 2,
+    "forward_hub_selection_uncertainty_px": 4
+  },
+  "homography_candidate_pump_plane_to_image": [
+    [
+      1.9128862189182538,
+      0.17774469729372727,
+      557.5356198881904
+    ],
+    [
+      0.20794936626633234,
+      -1.8943029111342007,
+      913.6803021655908
+    ],
+    [
+      3.731241843748051e-05,
+      -3.756817843576462e-05,
+      1.0
+    ]
+  ],
+  "held_out_fifth": {
+    "normal_fifth_residual_px": 1.4991766401075481,
+    "swapped_side_holes_fifth_residual_px": 101.85467588715234,
+    "fifth_shift_20px_residual_px": 18.508507836150716
+  },
+  "common_face": {
+    "cover_rectified_candidate_mm": [
+      [
+        -101.81779052137668,
+        -26.845118712306295
+      ],
+      [
+        -50.610730591204735,
+        2.073305300597482
+      ],
+      [
+        -8.953487381534948,
+        82.57556749771715
+      ],
+      [
+        79.19588516364111,
+        185.54695724375387
+      ],
+      [
+        201.14427334980437,
+        158.63210839725292
+      ],
+      [
+        235.81024677301636,
+        80.27003123018675
+      ],
+      [
+        210.71276933649338,
+        -0.5267830225979827
+      ]
+    ],
+    "normalized_cover_relative_pump_center_over_side_bolt_span": [
+      [
+        -0.526911714744124,
+        -1.48558122886967
+      ],
+      [
+        -0.14045434401780682,
+        -1.267335187702392
+      ],
+      [
+        0.17393099082603372,
+        -0.6597882473265279
+      ],
+      [
+        0.8391903279455074,
+        0.11733218480827973
+      ],
+      [
+        1.7595293110271844,
+        -0.08579296498354275
+      ],
+      [
+        2.02115184825294,
+        -0.6771880255070943
+      ],
+      [
+        1.8317423184887267,
+        -1.2869579369562747
+      ]
+    ],
+    "normalizing_side_bolt_span_candidate_mm": 132.50377353117156,
+    "current_axis_gap_mm": 18.238205559349677,
+    "source_conditional_axis_gap_candidate_mm": 25.94893687786261,
+    "source_gap_over_pump_side_span": 0.19583545574842148
+  },
+  "proposed_cover_similarity": {
+    "scale": 0.9390978468410368,
+    "rotation_deg": 5.380909860071184,
+    "row_vector_rotation_matrix": [
+      [
+        0.9955932648957756,
+        0.09377660099497317
+      ],
+      [
+        -0.09377660099497315,
+        0.9955932648957755
+      ]
+    ],
+    "offset_candidate_mm": [
+      6.89273289950485,
+      -10.182420758948055
+    ],
+    "axes_candidate_mm": [
+      [
+        -103.94872467277304,
+        -27.105614510693343
+      ],
+      [
+        -51.04964523053632,
+        2.3262459318815623
+      ],
+      [
+        -8.021811503605134,
+        81.78652691499843
+      ],
+      [
+        80.60907558025129,
+        184.06048674811132
+      ],
+      [
+        201.3187027821209,
+        157.50322916546025
+      ],
+      [
+        235.8705900261657,
+        81.58587027856969
+      ],
+      [
+        210.7029791472154,
+        1.5693234062757586
+      ]
+    ],
+    "residuals_candidate_mm": [
+      2.1467972467293297,
+      0.5065817047367234,
+      1.2209033469908155,
+      2.0510245459317775,
+      1.1422757752973107,
+      1.3172219666593663,
+      2.096129292045681
+    ],
+    "rms_candidate_mm": 1.603402443827304,
+    "rms_reprojected_pixels": 3.0201954394256383,
+    "leave_one_out_residuals_candidate_mm": [
+      3.7228045455376226,
+      0.7075040683276163,
+      1.5166471470721756,
+      2.65963307037447,
+      1.6039275448730053,
+      1.880713541553513,
+      2.9169700876731324
+    ],
+    "gap_candidate_mm": 27.137692129900245,
+    "nominal_radial_margin_to_R11_5_pump_R8_75_cover_head_mm": 6.887692129900245,
+    "nominal_radial_margin_to_R11_5_pump_R10_5_tool_mm": 5.137692129900245,
+    "method": "Proper similarity fitted to seven source holes in the pump-rectified block face. No overlap witness or clearance term in fit."
+  },
+  "sensitivity": {
+    "seed": 473203,
+    "trials": 2000,
+    "columns": [
+      "raw_gap",
+      "similarity_gap",
+      "scale",
+      "rotation_deg",
+      "offset_y",
+      "offset_z",
+      "fit_rms"
+    ],
+    "p2_5_p50_p97_5": [
+      [
+        23.8939878023713,
+        24.000716740285714,
+        0.8893052424218033,
+        3.489570746669059,
+        4.119434480071087,
+        -19.323211252600554,
+        1.4229082815205625
+      ],
+      [
+        26.03237541740279,
+        27.46589383934656,
+        0.9406449054036405,
+        5.315732774334882,
+        7.010712264599391,
+        -10.478574270079122,
+        3.10737635139379
+      ],
+      [
+        28.254339991493346,
+        31.139698759389734,
+        0.999811206791364,
+        7.274169420310081,
+        10.137521578397394,
+        -2.227061684703323,
+        7.473447390139997
+      ]
+    ],
+    "limits": "Pixel selection only, not statistical confidence, no lens/flatness/pump-pattern calibration uncertainty."
+  },
+  "noncoplanar_diagnostic_NOT_METRIC": {
+    "forward_hubs_pseudo_rectified": [
+      [
+        24.45638549071708,
+        -38.84389911762388
+      ],
+      [
+        121.8130362210895,
+        72.61646943807175
+      ]
+    ],
+    "old_crank_marker_reprojected_pixels": [
+      557.5356198881904,
+      913.6803021655908
+    ],
+    "forbidden_inference": "Do not translate crank/pump from hub pixel displacement. Forward hub depth and camera calibration unknown."
+  },
+  "caveats": [
+    "Pump anchor geometry inherits Fel-Pro photo ratios and estimated R59 scale.",
+    "Four anchor perfect fit is not independent evidence. Fifth aperture is held out.",
+    "Seven cover holes may carry source-photo perspective; similarity residual and leave-one-out retained.",
+    "No seal mounting bore is exposed in this block photograph; visible shaft bore, gear OD and pump ellipse are not interchangeable dimensional references.",
+    "Carter98.43mm axial mounting height is not a scale for transverse ATK block face.",
+    "Proposed smaller/rotated cover gasket registration is not a shell/gear/pan feasibility PASS.",
+    "Earlier preliminary identification omitted coverhole1(359,946); final seven-hole correspondence excludes accessory lugs(268,762),(313,644)."
+  ],
+  "inputs_sha256": {
+    "cad/engine/timing_cover_joint_candidate.py": "3e5f96c5cd07692a1dedd28bb1e30042f06d29ca0f8da1892c01d737541ff567",
+    "cad/engine/timing_cover_front_joint_candidate.py": "821d652c8b745b94952235f561261d9af31a0ef7bb5ef4459e3f4fc4dbe158e8",
+    "cad/engine/timing_cover_seven_fastener_candidate.py": "fa39342ab3f2db82c8fd90f71bf63b7b2f580396ede2f118133d10189049de55",
+    "cad/engine/water_pump_gasket_topology_candidate.py": "519d8c90f5ce3b9b12e124392c85ceacc6e7f14ae7c3cf47c5606707dbf9253b",
+    "cad/engine/water_pump_joint_candidate.py": "d4051521547f6f987fda09703e5109d4f1ede21b0ac8d4328344dd18b54d038a",
+    "cad/engine/pump_functional_20261003.py": "0f2bc385d98d06a0b4719a94af6ad3dc32a44830520a4f93dda4b146f5501e28",
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "reference/engine/atk-dff8-block-front.jpg": "70616ce77f9adbee7ff6415545bdace98b786ba405e20524a8b9b9ce7d87ae45",
+    "reference/engine/felpro-13816.jpg": "360a98ae9e5c4293781663ee5d24151109292d6bd8d819271ab62dcbeed9bc4d",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/tcs45829-manufacturer.jpg": "4b8131456bde2907a9dde0697bdc087e7f860242afd9caa9195f074394c3cb6f",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-002.jpg": "ce5b60d4b135469698c7f563f5ffd7e1796497c57efa40c84be2e3506f4ff623",
+    "cad/engine/generated/timing-cover-joint-candidate/reference/dorman-635109-009.jpg": "6f750ec99b082aafdec86431947032b2ed36006ebb0a1510750a7f0f09d41494",
+    "reference/engine/pump-functional-20261003-delivery.json": "5003936ae17bc0aba6b4adcc3e3d360bc10050a420b614b229b47cec3228771f",
+    "reference/engine/pump-source-registration-20261003-delivery.json": "38b09bd74100353a8c612a5fc008a0f1b2f471fec48280db84b8db75602cf48a",
+    "scripts/pump-cover-joint-20261003-measure.py": "8487a0596d44bb90c5e03493889d6549578317d9ac0e5888c70e8154731b4dfd"
+  }
+}

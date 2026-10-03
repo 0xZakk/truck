@@ -1,0 +1,1764 @@
+{
+  "status": "PASS isolated estimated exterior only",
+  "regions": {
+    "main-shell": {
+      "frame": "sensor",
+      "color": [
+        0.5,
+        0.46,
+        0.34,
+        1
+      ],
+      "meaning": "Hollow outer shell; internal ceramic/heater omitted",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 1790.7078125462212,
+      "mesh_volume_mm3": 1790.235874814561,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -10.0,
+          -10.0,
+          -38.5
+        ],
+        [
+          10.0,
+          10.0,
+          -8.5
+        ]
+      ],
+      "bounds_error_mm": 0.001976490020751953,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/main-shell.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/main-shell.glb"
+    },
+    "mounting-shell": {
+      "frame": "sensor",
+      "color": [
+        0.5,
+        0.46,
+        0.34,
+        1
+      ],
+      "meaning": "Hex/neck and estimated visible right-hand thread",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 3584.245650947094,
+      "mesh_volume_mm3": 3583.972148840357,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -12.701705922173824,
+          -11.000000000000004,
+          -8.5
+        ],
+        [
+          12.701705922174325,
+          11.000000000000002,
+          7.500000100000184
+        ]
+      ],
+      "bounds_error_mm": 4.6193599700927734e-07,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/mounting-shell.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/mounting-shell.glb"
+    },
+    "seat-ring": {
+      "frame": "sensor",
+      "color": [
+        0.63,
+        0.65,
+        0.66,
+        1
+      ],
+      "meaning": "Visible annulus, not compressed sealing proof",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 159.04312808798687,
+      "mesh_volume_mm3": 159.0012125657669,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -10.75,
+          -10.75,
+          -2.0
+        ],
+        [
+          10.75,
+          10.75,
+          0.0
+        ]
+      ],
+      "bounds_error_mm": 0.0021249130368232727,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/seat-ring.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/seat-ring.glb"
+    },
+    "slotted-protective-cap": {
+      "frame": "sensor",
+      "color": [
+        0.32,
+        0.34,
+        0.31,
+        1
+      ],
+      "meaning": "Rounded hollow four-slot educational cap",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 431.1706300895356,
+      "mesh_volume_mm3": 430.94652573691354,
+      "removed_degenerate_duplicate_faces": 2,
+      "mesh_cleanup_volume_delta_mm3": 2.8421709430404007e-13,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -5.7500001,
+          -5.7500001,
+          7.4999999
+        ],
+        [
+          5.7500001,
+          5.7500001,
+          25.0
+        ]
+      ],
+      "bounds_error_mm": 3.725290298461914e-07,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/slotted-protective-cap.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/slotted-protective-cap.glb"
+    },
+    "rear-stepped-closure": {
+      "frame": "sensor",
+      "color": [
+        0.63,
+        0.65,
+        0.66,
+        1
+      ],
+      "meaning": "Metal collar/reducer/wire exit",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 1387.274955947697,
+      "mesh_volume_mm3": 1386.8139786184313,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -10.25,
+          -10.25,
+          -65.0
+        ],
+        [
+          10.250000000000123,
+          10.25,
+          -38.5
+        ]
+      ],
+      "bounds_error_mm": 0.002026274800300598,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/rear-stepped-closure.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/rear-stepped-closure.glb"
+    },
+    "exit-insulator": {
+      "frame": "sensor",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Visible pale face; hidden thickness estimated",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 162.5617118600098,
+      "mesh_volume_mm3": 162.51886902154294,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -5.25,
+          -5.25,
+          -66.0
+        ],
+        [
+          5.25,
+          5.25,
+          -64.0
+        ]
+      ],
+      "bounds_error_mm": 0.0010375641286373138,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/exit-insulator.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/exit-insulator.glb"
+    },
+    "exit-collar-1": {
+      "frame": "sensor",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible wire collar; material and seal performance unverified",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 0.639314105005546,
+      "mesh_volume_mm3": 0.6391456149557339,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.0,
+          -3.0,
+          -66.2
+        ],
+        [
+          -0.6000000000000001,
+          -0.6000000000000001,
+          -66.0
+        ]
+      ],
+      "bounds_error_mm": 0.00023722834885120392,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-1.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-1.glb"
+    },
+    "sensor-lead-1": {
+      "frame": "sensor",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Cut insulated lead stub; no pin mapping or conductor",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 18.58252054598363,
+      "mesh_volume_mm3": 18.577623157066892,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -2.45,
+          -2.45,
+          -78.0
+        ],
+        [
+          -1.15,
+          -1.15,
+          -64.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012849345803278567,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-1.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-1.glb"
+    },
+    "exit-collar-2": {
+      "frame": "sensor",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible wire collar; material and seal performance unverified",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 0.6393141050055459,
+      "mesh_volume_mm3": 0.639145614955734,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          0.6000000000000001,
+          -3.0,
+          -66.2
+        ],
+        [
+          3.0,
+          -0.6000000000000001,
+          -66.0
+        ]
+      ],
+      "bounds_error_mm": 0.00023722834885120392,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-2.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-2.glb"
+    },
+    "sensor-lead-2": {
+      "frame": "sensor",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Cut insulated lead stub; no pin mapping or conductor",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 18.582520545983627,
+      "mesh_volume_mm3": 18.577623157066895,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          1.15,
+          -2.45,
+          -78.0
+        ],
+        [
+          2.45,
+          -1.15,
+          -64.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012849345803278567,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-2.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-2.glb"
+    },
+    "exit-collar-3": {
+      "frame": "sensor",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible wire collar; material and seal performance unverified",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 0.639314105005546,
+      "mesh_volume_mm3": 0.639145614955734,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.0,
+          0.6000000000000001,
+          -66.2
+        ],
+        [
+          -0.6000000000000001,
+          3.0,
+          -66.0
+        ]
+      ],
+      "bounds_error_mm": 0.00023722834885120392,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-3.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-3.glb"
+    },
+    "sensor-lead-3": {
+      "frame": "sensor",
+      "color": [
+        0.075,
+        0.085,
+        0.085,
+        1
+      ],
+      "meaning": "Cut insulated lead stub; no pin mapping or conductor",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 18.582520545983627,
+      "mesh_volume_mm3": 18.577623157066895,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -2.45,
+          1.15,
+          -78.0
+        ],
+        [
+          -1.15,
+          2.45,
+          -64.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012849345803278567,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-3.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-3.glb"
+    },
+    "exit-collar-4": {
+      "frame": "sensor",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible wire collar; material and seal performance unverified",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 0.639314105005546,
+      "mesh_volume_mm3": 0.639145614955734,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          0.6000000000000001,
+          0.6000000000000001,
+          -66.2
+        ],
+        [
+          3.0,
+          3.0,
+          -66.0
+        ]
+      ],
+      "bounds_error_mm": 0.00023722834885120392,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-4.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/exit-collar-4.glb"
+    },
+    "sensor-lead-4": {
+      "frame": "sensor",
+      "color": [
+        0.38,
+        0.42,
+        0.42,
+        1
+      ],
+      "meaning": "Cut insulated lead stub; no pin mapping or conductor",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 18.582520545983627,
+      "mesh_volume_mm3": 18.577623157066892,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          1.15,
+          1.15,
+          -78.0
+        ],
+        [
+          2.45,
+          2.45,
+          -64.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012849345803278567,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-4.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-4.glb"
+    },
+    "connector-housing": {
+      "frame": "connector",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Open mouth and open latch; no mating fit",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 3492.1528507332946,
+      "mesh_volume_mm3": 3491.6654443117864,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -8.5,
+          -8.5,
+          0.0
+        ],
+        [
+          8.5,
+          11.0,
+          44.0
+        ]
+      ],
+      "bounds_error_mm": 0.0016088634729385376,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-housing.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-housing.glb"
+    },
+    "connector-support-face": {
+      "frame": "connector",
+      "color": [
+        0.61,
+        0.47,
+        0.23,
+        1
+      ],
+      "meaning": "Estimated contact carrier face",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 437.68668849814594,
+      "mesh_volume_mm3": 437.5713369809907,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -7.0,
+          -7.0,
+          32.0
+        ],
+        [
+          7.0,
+          7.0,
+          35.0
+        ]
+      ],
+      "bounds_error_mm": 0.0013837292790412903,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-support-face.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-support-face.glb"
+    },
+    "connector-mouth-seal": {
+      "frame": "connector",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible colored ring; no sealing guarantee",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 31.219576995049266,
+      "mesh_volume_mm3": 31.21134913328018,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -7.0,
+          -7.0,
+          35.0
+        ],
+        [
+          7.0,
+          7.0,
+          36.0
+        ]
+      ],
+      "bounds_error_mm": 0.0013837292790412903,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-mouth-seal.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-mouth-seal.glb"
+    },
+    "connector-divider": {
+      "frame": "connector",
+      "color": [
+        0.52,
+        0.12,
+        0.055,
+        1
+      ],
+      "meaning": "Visible central colored feature; function unconfirmed",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 54.00000000000001,
+      "mesh_volume_mm3": 54.0,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -0.45,
+          -6.0,
+          35.0
+        ],
+        [
+          0.45,
+          6.0,
+          40.0
+        ]
+      ],
+      "bounds_error_mm": 8.940696716308594e-07,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-divider.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-divider.glb"
+    },
+    "connector-rear-insert": {
+      "frame": "connector",
+      "color": [
+        0.075,
+        0.085,
+        0.085,
+        1
+      ],
+      "meaning": "Estimated rear lead carrier, hidden thickness unknown",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 290.5141580595884,
+      "mesh_volume_mm3": 290.5104974246229,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -7.0,
+          -5.5,
+          0.0
+        ],
+        [
+          7.0,
+          5.5,
+          2.0
+        ]
+      ],
+      "bounds_error_mm": 2.1606683731079102e-07,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-rear-insert.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-rear-insert.glb"
+    },
+    "connector-contact-1": {
+      "frame": "connector",
+      "color": [
+        0.61,
+        0.47,
+        0.23,
+        1
+      ],
+      "meaning": "Estimated round-ended male contact, cut hidden termination",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 14.033596313113456,
+      "mesh_volume_mm3": 14.029860897683205,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.8,
+          -3.8,
+          34.0
+        ],
+        [
+          -2.1999999999999997,
+          -2.2,
+          41.0000001
+        ]
+      ],
+      "bounds_error_mm": 0.00015808008611184476,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-1.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-1.glb"
+    },
+    "connector-lead-1": {
+      "frame": "connector",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Cut lead stub, not electrical continuity",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 15.927874753700252,
+      "mesh_volume_mm3": 15.923676991771623,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.65,
+          -3.65,
+          -10.0
+        ],
+        [
+          -2.35,
+          -2.35,
+          2.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012848861515513121,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-1.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-1.glb"
+    },
+    "connector-contact-2": {
+      "frame": "connector",
+      "color": [
+        0.61,
+        0.47,
+        0.23,
+        1
+      ],
+      "meaning": "Estimated round-ended male contact, cut hidden termination",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 14.033596313113456,
+      "mesh_volume_mm3": 14.029860897683198,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          2.2,
+          -3.8,
+          34.0
+        ],
+        [
+          3.8000000000000003,
+          -2.2,
+          41.0000001
+        ]
+      ],
+      "bounds_error_mm": 0.00015808008611184476,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-2.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-2.glb"
+    },
+    "connector-lead-2": {
+      "frame": "connector",
+      "color": [
+        0.85,
+        0.85,
+        0.76,
+        1
+      ],
+      "meaning": "Cut lead stub, not electrical continuity",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 15.927874753700252,
+      "mesh_volume_mm3": 15.923676991771623,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          2.35,
+          -3.65,
+          -10.0
+        ],
+        [
+          3.65,
+          -2.35,
+          2.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012848861515513121,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-2.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-2.glb"
+    },
+    "connector-contact-3": {
+      "frame": "connector",
+      "color": [
+        0.61,
+        0.47,
+        0.23,
+        1
+      ],
+      "meaning": "Estimated round-ended male contact, cut hidden termination",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 14.033596313113456,
+      "mesh_volume_mm3": 14.029860897683205,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.8,
+          2.2,
+          34.0
+        ],
+        [
+          -2.1999999999999997,
+          3.8,
+          41.0000001
+        ]
+      ],
+      "bounds_error_mm": 0.00015808008611184476,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-3.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-3.glb"
+    },
+    "connector-lead-3": {
+      "frame": "connector",
+      "color": [
+        0.075,
+        0.085,
+        0.085,
+        1
+      ],
+      "meaning": "Cut lead stub, not electrical continuity",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 15.927874753700252,
+      "mesh_volume_mm3": 15.923676991771623,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          -3.65,
+          2.35,
+          -10.0
+        ],
+        [
+          -2.35,
+          3.65,
+          2.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012848861515513121,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-3.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-3.glb"
+    },
+    "connector-contact-4": {
+      "frame": "connector",
+      "color": [
+        0.61,
+        0.47,
+        0.23,
+        1
+      ],
+      "meaning": "Estimated round-ended male contact, cut hidden termination",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 14.033596313113456,
+      "mesh_volume_mm3": 14.029860897683198,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          2.2,
+          2.2,
+          34.0
+        ],
+        [
+          3.8000000000000003,
+          3.8,
+          41.0000001
+        ]
+      ],
+      "bounds_error_mm": 0.00015808008611184476,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-4.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-contact-4.glb"
+    },
+    "connector-lead-4": {
+      "frame": "connector",
+      "color": [
+        0.38,
+        0.42,
+        0.42,
+        1
+      ],
+      "meaning": "Cut lead stub, not electrical continuity",
+      "valid": true,
+      "solid_count": 1,
+      "cad_volume_mm3": 15.927874753700252,
+      "mesh_volume_mm3": 15.923676991771623,
+      "removed_degenerate_duplicate_faces": 0,
+      "mesh_cleanup_volume_delta_mm3": 0.0,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "bounds_mm": [
+        [
+          2.35,
+          2.35,
+          -10.0
+        ],
+        [
+          3.65,
+          3.65,
+          2.0
+        ]
+      ],
+      "bounds_error_mm": 0.00012848861515513121,
+      "step": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-4.step",
+      "glb": "cad/engine/generated/ho2s-specimen-20261003/connector-lead-4.glb"
+    }
+  },
+  "parameters": {
+    "hex_af_primary": 22.0,
+    "body_od_est": 20.0,
+    "body_wall_est": 1.0,
+    "thread_major_est": 18.0,
+    "thread_root_est": 16.2,
+    "pitch_est": 1.5,
+    "thread_length_est": 7.5,
+    "crest_halfwidth_est": 0.08,
+    "profile_halfwidth_est": 0.65,
+    "cap_od_est": 11.5,
+    "cap_wall_est": 0.8,
+    "cap_tip_z_est": 25.0,
+    "slot_count_est": 4,
+    "slot_width_est": 0.7,
+    "slot_z_start_est": 8.5,
+    "slot_z_end_est": 21.5,
+    "wire_od_est": 1.3,
+    "connector_od_est": 17.0,
+    "connector_length_est": 44.0,
+    "pin_od_est": 1.6,
+    "pin_square_est": 6.0
+  },
+  "thread_probes": [
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        1.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        2.25
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        3.0
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        3.75
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        4.5
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        8.75,
+        0.0,
+        5.25
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        1.6875
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        2.4375
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        3.1875
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        3.9375
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        4.6875
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382291,
+        6.18718433538229,
+        5.4375
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        1.875
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        2.625
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        3.375
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        4.125
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        4.875
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        5.357829746269671e-16,
+        8.75,
+        5.625
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        2.0625
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        2.8125
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        3.5625
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        4.3125
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        5.0625
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.18718433538229,
+        6.187184335382291,
+        5.8125
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        2.25
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        3.0
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        3.75
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        4.5
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        5.25
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -8.75,
+        1.0715659492539341e-15,
+        6.0
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        2.4375
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        3.1875
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        3.9375
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        4.6875
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        5.4375
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -6.187184335382292,
+        -6.18718433538229,
+        6.1875
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        2.625
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        3.375
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        4.125
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        4.875
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        5.625
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        -1.607348923880901e-15,
+        -8.75,
+        6.375
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        2.8125
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        3.5625
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        4.3125
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        5.0625
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        5.8125
+      ],
+      "expected": true,
+      "actual": true
+    },
+    {
+      "point_mm": [
+        6.187184335382289,
+        -6.187184335382292,
+        6.5625
+      ],
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "slot_void_probes": [
+    {
+      "point_mm": [
+        5.1,
+        0.0,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.3,
+        0.0,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.5,
+        0.0,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.1,
+        0.0,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.3,
+        0.0,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.5,
+        0.0,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.1,
+        0.0,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.3,
+        0.0,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        5.5,
+        0.0,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.1228493378257504e-16,
+        5.1,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.245314017740486e-16,
+        5.3,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.3677786976552215e-16,
+        5.5,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.1228493378257504e-16,
+        5.1,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.245314017740486e-16,
+        5.3,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.3677786976552215e-16,
+        5.5,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.1228493378257504e-16,
+        5.1,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.245314017740486e-16,
+        5.3,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        3.3677786976552215e-16,
+        5.5,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.1,
+        6.245698675651501e-16,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.3,
+        6.490628035480972e-16,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.5,
+        6.735557395310443e-16,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.1,
+        6.245698675651501e-16,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.3,
+        6.490628035480972e-16,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.5,
+        6.735557395310443e-16,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.1,
+        6.245698675651501e-16,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.3,
+        6.490628035480972e-16,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -5.5,
+        6.735557395310443e-16,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.36854801347725e-16,
+        -5.1,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.735942053221457e-16,
+        -5.3,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.0103336092965664e-15,
+        -5.5,
+        10
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.36854801347725e-16,
+        -5.1,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.735942053221457e-16,
+        -5.3,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.0103336092965664e-15,
+        -5.5,
+        15
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.36854801347725e-16,
+        -5.1,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -9.735942053221457e-16,
+        -5.3,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    },
+    {
+      "point_mm": [
+        -1.0103336092965664e-15,
+        -5.5,
+        20
+      ],
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "smooth_thread_rejected": true,
+  "closed_cap_rejected": true,
+  "blocked_mouth_rejected": true,
+  "additional_material_void_hex_probes": true,
+  "same_frame_pairs_tested": 169,
+  "overlaps_over_point1_mm3": [],
+  "asset_hashes": {
+    "cad/engine/generated/ho2s-specimen-20261003/main-shell.step": "219e4ed2312d29349418830214173e48f4662834f288e8c72cdefcb943d828ca",
+    "cad/engine/generated/ho2s-specimen-20261003/main-shell.glb": "e09072ffb52064f944666ba0986f7fc2e6f61ff3c1d8dd242fe94158bd685550",
+    "cad/engine/generated/ho2s-specimen-20261003/mounting-shell.step": "21562dca6c8318c8448635b39838f26a853237e0036724d93f01b26373364628",
+    "cad/engine/generated/ho2s-specimen-20261003/mounting-shell.glb": "b7a08fbf990da084e0c147c7de11aed763fe75fde388335a1f5bd2a7e1791bdf",
+    "cad/engine/generated/ho2s-specimen-20261003/seat-ring.step": "0614decc39d6565623ca501da851760fdfd94e83caf86c8dd91761453017d1e3",
+    "cad/engine/generated/ho2s-specimen-20261003/seat-ring.glb": "93d5ad4c97a1dba38a0f47c88f09093de9d1860a4bef3c3b0070af2aeba140e8",
+    "cad/engine/generated/ho2s-specimen-20261003/slotted-protective-cap.step": "501f08c7a0943fabbbda2ca61f16a7e0c129469f18165334cd55362a6e87d282",
+    "cad/engine/generated/ho2s-specimen-20261003/slotted-protective-cap.glb": "7b51dfb6c30c2c14a9a1c93d051b3105db2ed519cb83073f2a497ad10334610d",
+    "cad/engine/generated/ho2s-specimen-20261003/rear-stepped-closure.step": "0dd9e6da88e5120ea851f5cd0b1bd16ea7763e6d0533ee01ca2239bc789af500",
+    "cad/engine/generated/ho2s-specimen-20261003/rear-stepped-closure.glb": "48230f74f6a42052a11687813413d34f752e24b8df3892bf653afff1a05e931b",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-insulator.step": "16ffa24ea0a633c14ca23b74c33db01a882e520f4635a61e0b3a0d6f030150e4",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-insulator.glb": "3d9c789711b19b43d0121aeb37c82d79150fab634227ddcabc87ed6d0aca5dc8",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-1.step": "76a98ad75063782b35f2645d342a7b78e14d1906cfece4aaa6d1cde871a8a674",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-1.glb": "fbd8d97e7cd651da6e0f6de77aaaab30e995e2050a2d5b0f6663f8ffe0e00854",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-1.step": "89992e84b99ce18a09b987a75c698fccae31a6ed9625052dc57c9dae8976dba8",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-1.glb": "bffb0805f50019a9a4870477709db582a7fe383ec79ed4720244978dbf42d0bf",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-2.step": "ac657c74336bc05bda9bded83222f52382a62b6df6726b261baad2c038bfdca2",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-2.glb": "66cf43898b6ba352d2fb574e9c6391959da976970edd98807c4184dd725ecc90",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-2.step": "c10471fce831907aa693a1d31e14c7561ba14d6bee344a44edeb9b14f0bcbf59",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-2.glb": "2461086d3cdf2fea980a7616afd0faf6d1f5285f3de14aba1ad5a32ee9db3b05",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-3.step": "885dee3b76d184b8e4a520e5467e7f87600deecf832d0898efb37d15548cd425",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-3.glb": "8198658f86756b44fd3494332e7fb6c5fdfd78f7da4f32caa1daf617ce7760bf",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-3.step": "afa27a8c9e4d5ca9bda07729854d7307316e189e1838d612c1aa57c99be83a25",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-3.glb": "2d756896027d2919327a190a542d9d8cd2bfd7e527086d14eb871d5c56ecda04",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-4.step": "2408e1b9c88ee06d4dc63a3a8dcc5e4ef19fd34be9bb1a8348c65cc7f1a89e16",
+    "cad/engine/generated/ho2s-specimen-20261003/exit-collar-4.glb": "a48112ea2af62a714685b17d8b7727da9e12da0af9d2bd02d68feec1236988bb",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-4.step": "48500330ba9e11e3fc06aa25e304b9cac9b71028a9c54ca3dc22f785ba2f533c",
+    "cad/engine/generated/ho2s-specimen-20261003/sensor-lead-4.glb": "0596da914d4965acc6f6b067d1fc8c5f411d3ee61ec02ef83f8418ba7adc9c0a",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-housing.step": "97f0b0e783d1f71d05265465cef99b358dff75fc3f932ebae5b51746c0e7f231",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-housing.glb": "3d54e389550b82daad1b3967eb3d590f71cad2fee015b8eca6d1aa35f880ce25",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-support-face.step": "74c447d3ed8fd8173eb6c9deb49922f06c048fddbac682f3bcadfe40b84490de",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-support-face.glb": "16a32455a2b499ebbbe19ddb78d50d32ccbc0e01d15ce9a0c14c8818f89aa1d4",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-mouth-seal.step": "fa0c9190559f29145b3424c951006d1f14063c505c51f04de4660eaadb74bcc7",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-mouth-seal.glb": "54f717f72e489b0ff1f0e4aad32a0785af4fd7f2911e395e84e83ec48da91f1b",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-divider.step": "4de1356e037051a99bab55419e24bb73223f991f767e119aa1d2ab0eb249bca0",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-divider.glb": "a42520a89656d1795f9ed96411c6816da94d33119e0a5517336d56480a270522",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-rear-insert.step": "b0088a1c1de2ab4282a37f09955b64bead8c3864f6695bae844835fe3c204670",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-rear-insert.glb": "f8e965b32e34ac6d86ddef5532665354ba73b972da13e74635edfd2666886f60",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-1.step": "38651bba1ff0cff331b062932e72874c9d11af01394bd45595d55d79a9653bcf",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-1.glb": "96039121a714009cccda55eb8a97b6a4f09d61af81f8c81ab0859660d6b533f8",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-1.step": "b423c798f58b26b47d49de78204cbb4854f10cca84b288b5abc38af1df1e223f",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-1.glb": "8086dcbb362341d70d9b1557835a749ca6354246c8f2ee429cc5d690e621c2bf",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-2.step": "09da7e2ba2bb5330ee5c1162487aac39ebefc6f2d412fc73fcac775c09db0f6a",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-2.glb": "6d314f53dd6b7815432d7c41f313c8b12fb854092f0163bd238d6373f4e295ae",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-2.step": "74dc59b229d94b65d0b2f8383e7630da5582eb272b92f7ca7def2dedb03dd896",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-2.glb": "abd37649e226339137957b19c20bf28ef478729b37b9cc45bfcd434308ad56b8",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-3.step": "1a75a5de369b36699b4829a1cb28145ddb9f902c7e2b3cb3160d78c5ec0f8c31",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-3.glb": "0a2862cd542785cd1fad7364d591749b40c455e9d4e1c2f6572038f324b3e54a",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-3.step": "562f8e338ed5da0afd8284be3cb3c5c04513c9c5036aeab6ba10e38695aea513",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-3.glb": "4309468c30a741d4d224ffb2554d02f7059cb0aebabdce3b267a254537b45527",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-4.step": "2ed4a391a953eac4c8b2a6abeedc6f87df4b9193cd440af431a1bd4639322baf",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-contact-4.glb": "560ab7973e48495409df3bb1800fc3d7fba1ba536293cc9e75385d0699a1e7e0",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-4.step": "f3f646d2bc0f38bccc0c4edd79c03c37a412f8b6835b958ddf7dde11d2207ba5",
+    "cad/engine/generated/ho2s-specimen-20261003/connector-lead-4.glb": "f960b419e23b3f9b0da11c633f5c1a50b90472637a089297d4d4a7739d24143d",
+    "cad/engine/generated/ho2s-specimen-20261003/control-closed-cap.step": "61d8b38688abef8e3d4c3f18132951f004a4a288ea0eca708283f5d3889b390b",
+    "cad/engine/generated/ho2s-specimen-20261003/control-blocked-mouth.step": "f971cf53f06c6d7aaa3ecd2efa2d3141923f791e86455dbc8757131e5f72ea61",
+    "cad/engine/generated/ho2s-specimen-20261003/control-smooth-thread.step": "ee6da841aedd9c443e3fc85ff4d431704cee6d25ca4e2fe670c070f8576a61c9"
+  },
+  "inputs": {
+    "scripts/check-ho2s-specimen-20261003.py": "625fde4c60166e84db8743df0aa021a2bb404cd2a193d437680085d16a3b9b3a",
+    "cad/engine/ho2s_specimen_20261003.py": "d3c5825732762bf9bee4c7c42356bea32241758dfe6eb1f216a60aafc2fb5afb",
+    "cad/engine/pan_fastener_thread_candidate.py": "041a7d6136e60cc310def6f79c5314ae7b9e15836e2ffe9401b7cc4f242cada0",
+    "reference/engine/ho2s-specimen-20261003-pre-cad.json": "96d63da11f61fdf64a777b1431113903f5c991a1d8e1e6e2de2adee6137c766b",
+    "docs/components/ho2s-specimen-20261003-contract.md": "3e3a1aa4497883874ced76fb26cf98c31d46baa5ed7c6838aad77a6eb80756fd",
+    "reference/engine/ho2s-specimen-20261003-contract-amendment.json": "27c098726451dfe7adec50f73046392baf1ba1a8003f295e377621fa3b21fb5e",
+    "cad/requirements-engine-lock.txt": "a4886fb6c207af256d744c80a6e6634e2e17ed53de33b5ee15d0a8f8e263ba44"
+  },
+  "environment": {
+    "python": "3.13.12",
+    "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+    "packages": {
+      "build123d": "0.10.0",
+      "cadquery-ocp": "7.8.1.1.post1",
+      "trimesh": "4.7.4",
+      "numpy": "2.5.3"
+    }
+  },
+  "limits": "Sampled profiles/passages, inferred material regions; no thread gauge, gas response, electrical continuity, complete hidden BOM, installation, flow, service or browser acceptance."
+}

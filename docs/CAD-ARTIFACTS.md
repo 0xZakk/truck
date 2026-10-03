@@ -299,3 +299,20 @@ Restore the pump-height and accessory-v4 predecessor chains above first. Downloa
 This is a failed installation candidate:52 valid STEP solids,51 passing meshes and one spring topology failure, with five actual-v4 clashes. Functional interface checks do not establish source accuracy, motion, service access or browser acceptance. Publication pending; no installed change.
 
 Published after [PR122](https://github.com/0xZakk/truck/pull/122) merged at `7f1723898920a8ae87093a3e5a60456fb4b714f8` (CI17s/18sPASS): [functional-region pump release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-pump-functional), ID402605936. Server SHA256 and byte count match the204-member archive. This supersedes pending fields in frozen package records.
+
+
+## October 3 intake, HO2S and spring successors — publication pending
+
+These are isolated candidates and failed-interface evidence, not installed updates. Source photographs/manual originals are excluded. Verify archive SHA256, inspect member lists, preserve newer files, then extract from the repository root. Each ledger binds exact source snapshots and generated assets; dependency restoration remains necessary where stated in its handoff.
+
+| Archive | Ledger | SHA256 |
+|---|---|---|
+| `ho2s-specimen-20261003-authored.tar.gz` | `reference/engine/ho2s-specimen-20261003-delivery.json` | `9a4a62c92886a32351da0fcaec3a7e72e94b9722c9ff8aaf1b8e47f785361257` |
+| `intake-joint-candidate-20261003-authored.tar.gz` | `reference/engine/intake-joint-candidate-20261003-package.json` | `c997b3d4001100d7b0fd016a59f1ca9e18cf31bfa77433b2fff076f0169dd466` |
+| `intake-joint-validation-20261003-authored.tar.gz` | `reference/engine/intake-joint-validation-20261003-package.json` | `2749461a731e592ce329e37b6903f3dfb7dd0a3628a12b12d8f5d7f9a480ecf2` |
+| `pump-spring-sweep-20261003-authored.tar.gz` | `reference/engine/pump-spring-sweep-20261003-package.json` | `7d7068495159fd7a1f2d100e74ae2cebb7e9963eacc53d7832e61c60cf9f436a` |
+| `pump-source-registration-20261003-authored.tar.gz` | `reference/engine/pump-source-registration-20261003-package.json` | `de0748835346bfcd708fae0da5659b4d63b866d1cfa24d51b8ecc53f413f787e` |
+
+Root streamed all members and verified hashes. HO2S has107 members/2,307,725bytes; intake43/8,171,258; validation19/3,637,005; spring23/3,369,167; pump registration18/1,753,082. Registration includes an authored projection array excluded from Git. Spring requires the unchanged original STEP from the functional-pump release above. Intake validation requires its candidate and canonical STEP baseline. HO2S includes its source/build dependencies; inspect before overwriting newer repository files.
+
+HO2S remains an estimated exterior specimen without internals/host/continuous leads. Intake retains incompatible old stud positions and a new return-line clash, incomplete silhouette/detail and one unresolved Boolean comparison. Spring repairs mesh topology for an illustrative seal coil, not factory construction or pump fit. Pump registration is source research, not an accepted interface. Browser/integration acceptance remains open for all.
