@@ -318,3 +318,9 @@ Root streamed all members and verified hashes. HO2S has107 members/2,307,725byte
 HO2S remains an estimated exterior specimen without internals/host/continuous leads. Intake retains incompatible old stud positions and a new return-line clash, incomplete silhouette/detail and one unresolved Boolean comparison. Spring repairs mesh topology for an illustrative seal coil, not factory construction or pump fit. Pump registration is source research, not an accepted interface. Browser/integration acceptance remains open for all.
 
 Published after [PR124](https://github.com/0xZakk/truck/pull/124) merged at `aca7a20a98804563f90647c98d2ddfd89dcca184` (CI17s/18sPASS): [intake, sensor and spring release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-intake-sensor-spring), ID402624102. All five server-reported SHA256 values and byte counts match the frozen ledgers above. This supersedes publication-pending fields without changing frozen files.
+
+## Source-outline intake gasket successor
+
+Private release [studies-2026-10-03-intake-gasket-outline](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-intake-gasket-outline) preserves the corrected full-outline gasket candidate. Download `intake-gasket-outline-20261003.tar.gz`, verify SHA256 `46460c73e1906db743a7c4579c7d393a5d8ddb0e41d3aafc00caa9d6811673df`, then extract from repository root. Manifest: `reference/engine/intake-gasket-outline-20261003-package.json`; all four members and server checksum/bytes verified. No source pixels or originals included.
+
+The mesh/STEP and illustrative contact bands pass; full-footprint casting support and production seal requirements remain unresolved. This is not an installed engine change. Reproduction and exact source dependencies: `docs/components/intake-gasket-outline-20261003.md`.

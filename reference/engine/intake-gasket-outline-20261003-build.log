@@ -1,0 +1,46 @@
+{
+  "readiness": "isolated candidate; not installed",
+  "inputs_sha256": {
+    "reference/engine/intake-gasket-outline-20261003-contour.json": "0e484692a3804a29280e4414767f816e9cfa9cc243d9f7f6b9c9681a0a76c978",
+    "cad/engine/intake-joint-candidate-20261003-parameters.json": "4ee45b936aac6200273e8675af2e14f75e843c2cc74b36ad7d9cb7e3d5c5658e",
+    "scripts/intake-gasket-outline-20261003-build.py": "077912fc547d32f4d7d167de8c5324aa64c58f67369f3bf4b4ba9794275e4c17"
+  },
+  "valid": true,
+  "solids": 1,
+  "roundtrip_valid": true,
+  "roundtrip_solids": 1,
+  "roundtrip_volume_delta_mm3": 5.500987754203379e-08,
+  "roundtrip_bounds_error_mm": 1.716671249596402e-11,
+  "mesh_watertight": true,
+  "mesh_components": 1,
+  "mesh_winding": true,
+  "mesh_volume_positive": true,
+  "mesh_bounds_error_mm": 1.430511474609375e-05,
+  "triangles": 10568,
+  "source_limits": [
+    "threshold sensitivity is not factory tolerance",
+    "568.96mm span/1.5mm thickness inherited estimates",
+    "single photo perspective remains uncalibrated",
+    "aperture circles are prior estimates; mismatch is not silently fixed"
+  ],
+  "mating_face_support": {
+    "efi-lower-intake": {
+      "missing_volume_mm3": 174.79946379281677,
+      "missing_area_mm2": 1747.9946379281675,
+      "result_valid": true,
+      "host_sha256": "a8cc3b2f9c51c47ce53d9d396949d5a7dc147f6c194784fa0e988a2c51142ad6",
+      "status": "FAIL"
+    },
+    "efi-upper-intake": {
+      "missing_volume_mm3": 174.7994637928685,
+      "missing_area_mm2": 1747.9946379286848,
+      "result_valid": true,
+      "host_sha256": "0ce4f5985bda1cd07c66eecd185103ef49a17f15ecf0fa6500df8a017a4f7f92",
+      "status": "FAIL"
+    }
+  },
+  "artifacts": {
+    "cad/engine/generated/intake-gasket-outline-20261003/efi-upper-intake-gasket.step": "9f5f7a5aea89d803089a27e12cc003cf552e3c586d66b209209d10211040a2fb",
+    "cad/engine/generated/intake-gasket-outline-20261003/efi-upper-intake-gasket.glb": "5ff22b6beebb3d860a69cb14d9998f34e8591da3c8b9863557c9e5eaba4211e4"
+  }
+}
