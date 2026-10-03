@@ -15,6 +15,7 @@ The modeled pump's mounting and pulley faces are147mm apart; its earlier143mm re
 ## Related Concepts
 
 - [[notes/online-heater-hub-datum|Hub height uses mounting faces]]
+- [[notes/pump-deck-height-20261003-preserve-nominal-deck|Ford's deck height constrains the transverse registration separately]]
 
 ## Source
 
