@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-03",
+  "baseline": "1ba1593ba3509c1378a4e6fa08e44070f558e866",
+  "branch": "engine/functional-fit-20261003",
+  "status": "PARTIAL dimensional evidence; six inherited rod-bolt/block conflicts remain unresolved",
+  "input_sha256": {
+    "docs/components/rod-fastener-architecture-contract.md": "571679fac62a7c25e5c008274c61284b5e15aa07f87abcdd18138fb62dae4ffa",
+    "reference/engine/rod-fastener-architecture-evidence.json": "e94773df57178ce9c3cab2341d761f329e5d6e8e92a51f5bc04ea9b956137d04",
+    "reference/engine/online-rod-research.json": "8b2c2166d120e35764c31f2c90ee3503ce1ab1be6ec28d34a91faed6699ae186",
+    "docs/components/rod-bolt-source-datum-audit.md": "84c61726945389b1f2539f576c70219c52b4e1fd4ef7b52e8406a98a301455a2",
+    "reference/engine/rod-bolt-source-datum-review.json": "8085b5aaf2bd189ad077b3269c75df017c42b328a482503ecec26029707274ba",
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": "62477dbe354f5f4209de4f4293cd83db3646d06011f7be9bdd3ea82e49754990",
+    "cad/engine/first_assembly.py": "ecc1e01abc623d00aef1b5bdc3d47105ccf43b6d6bb1761e4317015d75ad9c5f",
+    "inventory/engine/dimensions.json": "6a39abadf62a0b625d708ca162d56fe6656b7323f3be1f7d629bce697cd28de2"
+  },
+  "sources": [
+    {
+      "id": "dorman-autograde",
+      "author": "Dorman Products",
+      "url": "https://images.carid.com/dorman/info/pdf/dorman-auto-grade-catalog.pdf",
+      "sha256": "2a6a6e148e4ab98553ad700b9e680cb243c3b3668e635506323071dda1124f5f",
+      "pdf_pages": [
+        576,
+        578
+      ],
+      "printed_pages": [
+        350,
+        352
+      ],
+      "actual_raster_review": true,
+      "compact_capture": {
+        "application": "FORD TRUCK L6 4.9L (300 CID), 1994-65: bolt635-027, nut635-002; 1996-95: bolt dash, nut635-002",
+        "nut": "635-002 Type2, 3/8-24 thread, 9/16-inch hex, Ford OE C9AZ-6212-B",
+        "bolt_dimension_table": "635-027 is absent. 635-025 is listed for C9AZ6214B and must not be substituted."
+      },
+      "class": "Manufacturer-authored replacement catalog; explicit year/family covers1994, no VIN-specific row or owner identity."
+    },
+    {
+      "id": "dorman-current-nut",
+      "author": "Dorman Products",
+      "url": "https://www.dormanproducts.com/p-3711-635-002.aspx",
+      "retrieval": "Web text reviewed 2026-10-03; not byte-captured",
+      "compact_capture": "635-002 Type2 connecting rod nut, 3/8-24 x9/16 inch; current public page omits height and Ford OE cross shown in older catalog.",
+      "class": "Primary replacement-product corroboration; broad application summary alone is not exact truck fitment."
+    },
+    {
+      "id": "ford-csg1993",
+      "author": "Ford Power Products",
+      "url": "https://generator-info.com/Engine%20Manuals/Ford/194-203%20Ford%20CSG649%20CSG649P%20300CID%20Parts%20manual%20%28Apr1993%29.pdf",
+      "sha256": "e9ff1a3aeb3d5e580c599c88d07ee8b0f6ea187bd2290e0a2d4d359b740ba1b6",
+      "pdf_page": 7,
+      "printed_page": 7,
+      "actual_raster_review": true,
+      "compact_capture": "CSG649/CSG649P300CID: ref4 E3TZ6200E rod qty6; ref5 C9AZ6212B nut3/8-24 qty12; ref6 C4OZ6214B bolt qty12; year70/.",
+      "class": "Primary-author industrial analogy, April1993. Not a1994truck individual-bolt identity proof."
+    },
+    {
+      "id": "arp2026",
+      "author": "ARP",
+      "url": "https://arpcatalog.com/49/",
+      "retrieval": "Web text reviewed2026-10-03",
+      "compact_capture": "4.9Linline6 kit152-6002 styleM;240-300 kit152-6001 styleG; manufacturer requires head-style verification.",
+      "class": "Replacement family application only. Existing2019 actualimage review provides qualitative styleM silhouette, not dimensions."
+    },
+    {
+      "id": "arp-dimensional-table",
+      "author": "ARP",
+      "url": "https://arpcatalog.com/43/",
+      "retrieval": "Full web table reviewed2026-10-03",
+      "compact_capture": "Aftermarket SAE rod-bolt table has thread,UHL,threadlength,griplength,headheight,wrenchsize,collardiameter, but does not include152-6002 or152-6001.",
+      "class": "Rejected analogy: generic cap-screw dimensions cannot supply press-fit kit geometry."
+    }
+  ],
+  "numerical_interface_proposal": {
+    "scope": "Future explicitly Dorman replacement-reference paired fastener/rod-seat candidate; root review required before geometry",
+    "thread_nominal_diameter_mm": 9.524999999999999,
+    "thread_tpi": 24,
+    "thread_pitch_mm": 1.0583333333333333,
+    "nut_nominal_across_flats_mm": 14.2875,
+    "derived_regular_hex_circumradius_mm": 8.248891971046778,
+    "current_estimated_shank_mm": 8,
+    "current_estimated_hole_mm": 8.4,
+    "current_nut_across_flats_mm": 12.124355652982143,
+    "nominal_thread_minus_current_shank_mm": 1.5249999999999986,
+    "nut_af_delta_mm": 2.163144347017857,
+    "do_not_infer": [
+      "9.525mm is nominal thread size, not press-shoulder diameter or matching bore.",
+      "The hex circumradius is a derived construction aid, not an actual chamfer/corner measurement.",
+      "No nut height, bearing-face size, seatZ, fit allowance or tolerance supplied.",
+      "Do not use a standard generic nut height as a measured rod-nut height."
+    ]
+  },
+  "five_capture_groups": [
+    {
+      "group": "Head outline, plan/orientation and height",
+      "status": "UNRESOLVED",
+      "known": "ExistingARPstyleM rounded silhouette only. Dorman635027head unknown."
+    },
+    {
+      "group": "Under-head radius and paired seat",
+      "status": "UNRESOLVED",
+      "known": "ARPpress-fit instructions require radius clearance; no numeric radius, seatZ or footprint."
+    },
+    {
+      "group": "Press/grip/thread/nut stack",
+      "status": "PARTIAL",
+      "known": "ApplicableDorman635002thread3/8-24,nuthex9/16; nutheight andbolt profile absent."
+    },
+    {
+      "group": "Bolt centers and rod shoulder/boss forging",
+      "status": "UNRESOLVED",
+      "known": "CurrentY\u00b134.5,boss14wide44high are assumptions."
+    },
+    {
+      "group": "Crankcase near witness",
+      "status": "UNRESOLVED",
+      "known": "ExistingR98 cavity estimate. New source does not dimension it."
+    }
+  ],
+  "rejected_or_unverified_leads": [
+    "FordpartsGiant engine-filter page includes16-bolt and8-rod quantities despite6-cylinder title; do not use aggregatedE6TZ6214A/E8AZ6214Arows as exact application.",
+    "HistoricalFordC4OZ6214B3/8-24x2-1/8 indexed description not raster-verified; source download returned challengeHTML. Do not adopt length.",
+    "Dorman635025/C9AZ6214B is not635027/C4OZ6214B. Similar number/length does not establish interchange.",
+    "No applicable publicSTEP or complete dimensioned1526002/635027 drawing retrieved in focusedsearch. This is not proof none exists."
+  ],
+  "retrieval_limits": [
+    "ARPkit directdownload yielded challengeHTML; do not bypass.",
+    "Coulsonwwwcertificate mismatch; canonicalhost returned159bytes, notPDF. AlternateFord1993mirror retrieved successfully."
+  ],
+  "geometry_changed": false,
+  "installed_acceptance": false,
+  "next_actions": [
+    "RootreviewDormanp576and578andacceptreplacement-reference thread/hex as scoped claims.",
+    "Obtain public archived Dorman635027 dimensionaldatasheet or ARP1526002 engineeringdrawing identifying includedbolt/nutnumbers and pressfitseat, rather than substituting genericARPtable.",
+    "Require pairedseat/shoulder,bossdatums and blocksection evidence before six-conflict repair.",
+    "No blockcut,headshrink,boltflip or hardwareclocking solely toclear."
+  ]
+}

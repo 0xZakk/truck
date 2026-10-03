@@ -1,0 +1,206 @@
+{
+  "status": "ROOT REVIEW REQUIRED BEFORE CAD",
+  "purpose": "Remove local sweep fold by zero endpoint curvature, without neighbor-driven routing",
+  "outer_radius_mm": 6,
+  "inner_radius_mm": 4.1,
+  "socket_unchanged": [
+    [
+      0,
+      -75,
+      460
+    ],
+    [
+      0,
+      -55,
+      460
+    ]
+  ],
+  "sole_control_change": {
+    "from": [
+      80,
+      -90,
+      460
+    ],
+    "to": [
+      0,
+      -115,
+      460
+    ]
+  },
+  "sampling": 10001,
+  "variants": {
+    "plus": {
+      "r5_failed": {
+        "controls_mm": [
+          [
+            174.136,
+            -139.0,
+            420.0
+          ],
+          [
+            174.136,
+            -139.0,
+            444.0
+          ],
+          [
+            145.0,
+            -120.0,
+            460.0
+          ],
+          [
+            80.0,
+            -90.0,
+            460.0
+          ],
+          [
+            0.0,
+            -95.0,
+            460.0
+          ],
+          [
+            0.0,
+            -75.0,
+            460.0
+          ]
+        ],
+        "sampled_min_radius_mm": 5.799731904219892,
+        "t_at_min": 0.9871000000000001,
+        "endpoint_second_derivative": [
+          1600.0,
+          500.0,
+          0.0
+        ],
+        "sampled_r_le_6_count": 173
+      },
+      "proposed_C2": {
+        "controls_mm": [
+          [
+            174.136,
+            -139.0,
+            420.0
+          ],
+          [
+            174.136,
+            -139.0,
+            444.0
+          ],
+          [
+            145.0,
+            -120.0,
+            460.0
+          ],
+          [
+            0.0,
+            -115.0,
+            460.0
+          ],
+          [
+            0.0,
+            -95.0,
+            460.0
+          ],
+          [
+            0.0,
+            -75.0,
+            460.0
+          ]
+        ],
+        "sampled_min_radius_mm": 16.234881045984235,
+        "t_at_min": 0.0511,
+        "endpoint_second_derivative": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sampled_r_le_6_count": 0
+      }
+    },
+    "minus": {
+      "r5_failed": {
+        "controls_mm": [
+          [
+            174.136,
+            -187.0,
+            420.0
+          ],
+          [
+            174.136,
+            -187.0,
+            444.0
+          ],
+          [
+            145.0,
+            -170.0,
+            460.0
+          ],
+          [
+            80.0,
+            -90.0,
+            460.0
+          ],
+          [
+            0.0,
+            -95.0,
+            460.0
+          ],
+          [
+            0.0,
+            -75.0,
+            460.0
+          ]
+        ],
+        "sampled_min_radius_mm": 5.850728023067764,
+        "t_at_min": 0.9886,
+        "endpoint_second_derivative": [
+          1600.0,
+          500.0,
+          0.0
+        ],
+        "sampled_r_le_6_count": 141
+      },
+      "proposed_C2": {
+        "controls_mm": [
+          [
+            174.136,
+            -187.0,
+            420.0
+          ],
+          [
+            174.136,
+            -187.0,
+            444.0
+          ],
+          [
+            145.0,
+            -170.0,
+            460.0
+          ],
+          [
+            0.0,
+            -115.0,
+            460.0
+          ],
+          [
+            0.0,
+            -95.0,
+            460.0
+          ],
+          [
+            0.0,
+            -75.0,
+            460.0
+          ]
+        ],
+        "sampled_min_radius_mm": 15.641353118690683,
+        "t_at_min": 0.0516,
+        "endpoint_second_derivative": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sampled_r_le_6_count": 0
+      }
+    }
+  },
+  "evidence": "Geometric estimate; C2 Bezier endpoint from last three collinear equally spaced controls. No factory route or forming limit claim. Global self-intersection/export/context still required."
+}

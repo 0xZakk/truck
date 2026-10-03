@@ -1,0 +1,7 @@
+# Rod-fastener public-evidence reconciliation contract
+
+Engine #21/#22 rotating-core evidence follow-up, assigned by root; research only. Baseline `1ba1593ba3509c1378a4e6fa08e44070f558e866`, branch `engine/functional-fit-20261003`, verified at start. Worker owns only `rod-fastener-reconciliation-20261003*` in docs/reference/scripts and no shared CAD or Git. Root owns integration. Existing rod-fastener architecture audit, numerical witness and source-ledger inputs remain frozen.
+
+Research applicable manufacturer replacement bolts/nuts or identified OEM assembly for 1994 Ford 300/4.9L. Resolve, where evidence allows, head outline/orientation/height, seat/radius, press/grip/thread profile, rod shoulder/boss coordinates, and crankcase surface near collision witness. Distinguish exact truck application, replacement family application and industrial/historical analogy. Existing actual style-M image review in `reference/engine/online-rod-research.json` supersedes the older report's missing-photo status but does not establish dimensions.
+
+Preserve journal, pin, bearing, rod-length and motion datums. No block cut, hardware shrink or bolt reversal to clear a collision. Any numerical interface amendment requires source evidence and root review before modeling. Inspect actual source pages where layout matters; retain URL/page/hash and compact extracts, exclude manufacturer pixels/raw PDFs from delivery. Declare unresolved dimensions explicitly and leave reproducible targeted next actions.

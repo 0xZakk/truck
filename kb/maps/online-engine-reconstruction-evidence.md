@@ -54,6 +54,8 @@ The later [[notes/ho2s-dimensions-20261003-interchange-limit|NTK interchange rec
 
 ## Fuel rail and exhaust host evidence
 
+The [[notes/fuel-regulator-seal-20261003-offset-inlet|regulator's larger offset stem carries the visible service seal]]. Manufacturer replacement photographs corroborate the service illustration; the present central-return seal is not supported. Port/gasket architecture must be corrected before choosing free or installed seal dimensions.
+
 Ford's primary family table supplies a [[notes/pump-deck-height-20261003-preserve-nominal-deck|nominal 254 mm deck-height constraint]]. It rejects raising the block deck to accommodate the current photo registration; the transverse pump/cover frame still needs an independent datum. This complements the replacement pump's axial mounting-height evidence rather than replacing it.
 
 [[notes/intake-return-interface-20261003-topology|Exact-year Ford rail topology]] corroborates an earlier photographed assembly: the regulator belongs toward the front, with an adjacent return run and paired rear connections. It contradicts the current centered regulator; dimensions remain estimates pending the coordinated layout.

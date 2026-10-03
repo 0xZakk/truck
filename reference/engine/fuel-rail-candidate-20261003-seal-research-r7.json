@@ -1,0 +1,77 @@
+{
+  "readiness": "research; no numeric seal contract approved",
+  "primary_manufacturer_page": "https://www.ds.ind.br/pt/produtos/regulador-de-pressao/1125",
+  "manufacturer_transfer": {
+    "product": "DS1125 replacement",
+    "crossrefs": [
+      "PR18",
+      "CM4763",
+      "F4TZ9C968A"
+    ],
+    "application": "F1504.9 gasoline1987\u201394 as listed by DS",
+    "seal_dimensions": "Not published in reviewed page"
+  },
+  "photos": [
+    {
+      "id": "ds1125-view1",
+      "url": "https://www.ds.ind.br/cache/media/gallery/a4/a0/42/1-regulador-de-pressao-1125-360-image-800x800.jpg",
+      "sha256": "6f6f23f5947bbce9674b0859c13ee55b63dd423b53c2a6f68a3e4a189ca6c71c",
+      "bytes": 21626,
+      "actual_pixels_reviewed": true,
+      "redistribute": false
+    },
+    {
+      "id": "ds1125-view2",
+      "url": "https://www.ds.ind.br/cache/media/gallery/a4/a0/42/2-regulador-de-pressao-1125-360-image-800x800.jpg",
+      "sha256": "7650321524a8a8572da3e3436c116692466a2176a84fbbb66ad88c8338c66a7b",
+      "bytes": 20777,
+      "actual_pixels_reviewed": true,
+      "redistribute": false
+    },
+    {
+      "id": "ds1125-view3",
+      "url": "https://www.ds.ind.br/cache/media/gallery/a4/a0/42/3-regulador-de-pressao-1125-360-image-800x800.jpg",
+      "sha256": "6997b08371af8ea1558119f532311c72662d54d275079ce5699297642cf12745",
+      "bytes": 23658,
+      "actual_pixels_reviewed": true,
+      "redistribute": false
+    }
+  ],
+  "manual_images": [
+    {
+      "repository_relative_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/651252932.png",
+      "sha256": "64516ef9d32d58266f47172770debc434003dda987540afdc39743de32528bde",
+      "redistribute": false,
+      "actual_pixels_reviewed": true
+    },
+    {
+      "repository_relative_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/651545921.png",
+      "sha256": "77fdb9c26f02a393f8375aa7f435e78538d08bc1395c0840641f6f4bd8cd8435",
+      "redistribute": false,
+      "actual_pixels_reviewed": true
+    },
+    {
+      "repository_relative_path": "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/182380006.png",
+      "sha256": "32910850077f69201a25d0b260cf0a04c9b75577457f53618339c9d80af698d7",
+      "redistribute": false,
+      "actual_pixels_reviewed": true
+    }
+  ],
+  "observations": [
+    "Service underside label attaches O-ring to larger offset port; singular service O-ring and separate two-port gasket.",
+    "Typical cutaway has two supply-side groove illustrations; this does not establish two actual rings.",
+    "Manufacturer underside visibly shows one green ring on larger offset stem and a separate smaller bare tube.",
+    "No calibrated image scale or factory numerical dimensions inferred."
+  ],
+  "design_reference": {
+    "url": "https://www.parker.com/content/dam/Parker-com/Literature/O-Ring-Division-Literature/ORD-5700.pdf",
+    "sections": "3.6\u20133.7, printed3-9",
+    "transfer_limit": "Generic seal design screening; not Ford/regulator dimensions or material validation"
+  },
+  "failed_or_rejected_leads": [
+    "Ford36.5mm-ID ring listing lacks target applicability",
+    "PR15/PR22 do not establish4.9L target",
+    "Initial sandbox network DNS failed; public photos fetched read-only after approved network access",
+    "Unsupported inheritedCS.5mm proposal rejected before geometry"
+  ]
+}

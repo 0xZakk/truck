@@ -1,0 +1,36 @@
+{
+  "scope": "Research; no raw PDFs, source pixels, shared CAD, KB maps or indexes",
+  "files": [
+    {
+      "path": "docs/components/rod-fastener-reconciliation-20261003-contract.md",
+      "sha256": "ba4a3c7bd651ddfca3d9a0587a273fdd95cb21da7afb8738764379d0dd965c47",
+      "bytes": 1502
+    },
+    {
+      "path": "docs/components/rod-fastener-reconciliation-20261003-handoff.md",
+      "sha256": "3a7d749d5ea2f2959e85c882407cd0ae69a2269dde0128ecce112de9308df3b5",
+      "bytes": 8958
+    },
+    {
+      "path": "scripts/engine/rod-fastener-reconciliation-20261003.py",
+      "sha256": "783f9b5331ea9e674284d4ebfee08d85fa26594d6a05b612bbe52312eff94cca",
+      "bytes": 6639
+    },
+    {
+      "path": "reference/engine/rod-fastener-reconciliation-20261003-report.json",
+      "sha256": "df9be26f72b9e6ad2ea6ae3acd867b8e9aab2921345e0fd617e29c13428b28ad",
+      "bytes": 7497
+    }
+  ],
+  "input_hash_checks": {
+    "docs/components/rod-fastener-architecture-contract.md": true,
+    "reference/engine/rod-fastener-architecture-evidence.json": true,
+    "reference/engine/online-rod-research.json": true,
+    "docs/components/rod-bolt-source-datum-audit.md": true,
+    "reference/engine/rod-bolt-source-datum-review.json": true,
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": true,
+    "cad/engine/first_assembly.py": true,
+    "inventory/engine/dimensions.json": true
+  },
+  "status": "PASS"
+}

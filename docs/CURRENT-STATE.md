@@ -1,6 +1,6 @@
 # Engine integration — 2026-10-03 resumed
 
-Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR127, `5c5a11d18607efd31d554aff90d5fe3b97a3b094`. Current branch `engine/component-fit-followup-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
+Engine unfinished; goal verified ACTIVE after user resume. Latest merged main is PR128, `1ba1593ba3509c1378a4e6fa08e44070f558e866`. Current branch `engine/functional-fit-20261003`. Root owns shared geometry, manifests, viewer and Git. Preserve unrelated local audits/candidates. Prior modeling cycle made concrete progress through source/candidate preservation in PR124/125 and measured CAD experiment PR126; none establishes engine completion.
 
 ## Installed versus candidate
 
@@ -14,10 +14,10 @@ Live registry confirmed three newly dispatched workers; prior modeling processes
 
 | Owner | Scope | Current action |
 |---|---|---|
-| resume_pump_fit | pump-cover-candidate-20261003 | Ford nominal254mm deck rejects current photo frame (~290mm implied). Separate analytic inlet successor clears sampled flow and preserves protected regions; root reviewed actual mesh and38input hashes. Coupled59part pose retains14clashes; independent front datum needed. |
-| resume_fuel_fit | fuel-rail-candidate-20261003 | r4 both signs tested85,280pairs: plus4/minus17overlaps. Approved tabs and straight hose socket remove two collision classes. Hose mesh seam and regulator external pressure enclosure FAIL; source-backed shell-clamp amendment under review. Neither sign selected. |
-| resume_exhaust_fit | ho2s-host-candidate-20261003 | Attempt16 reports minwall1.44446mm, open gas branches, receiver seats and negative controls. Root review pending. Front manifold mesh defect inherited; four other meshes pass. Context audit underway; do not install yet. |
-| root | intake-gasket-outline-20261003 | PR127merged: full traced gasket validSTEP/watertightGLB, six1mm diagnostic sealing bands covered. Estimated scale and overhang retained; not installed. Knowledge base391notes embedded; selected semantic links reviewed, not bulk-applied. |
+| resume_pump_fit | valve-spring-reconciliation-20261003 | Manufacturer intake/exhaust specifications audited; current spring geometry and volume conservation need correction. Inferred end-form comparison now proceeds to continuous transitions and global contact checks; no installed change. |
+| resume_fuel_fit | fuel-rail-candidate-20261003 | r6 hose rejected: exported STEP contained only a socket fragment, invalidating its apparent clearance improvement. r6b complete hose independently replayed; both779-input context guards match. Export/coverage pass but full hose collides with upper intake by2894.916/3968.147mm³ in the two hypotheses. Source-led routing review continues; installation rejected. Lower regulator seal architecture remains unresolved. |
+| resume_exhaust_fit | ho2s-host-candidate-20261003 | Corrected runner mesh passes, but inherited outlet-neck opening fails wall integrity. Root reviewed and authorized a separate estimated additive transition at Z205…230, preserving gas and outlet interfaces; new CAD and checks pending. |
+| root | integration and independent review | Viewer HTTP200 verified19:47UTC. Reviewed exhaust neck contract and actual section; spring continuous-transition study dispatched. Canonical installation remains unchanged. |
 
 Workers own their prefixes only; root reviews significant interface amendments before coupled CAD. Use public source research where evidence is missing. Source dimensions, replacement comparisons, estimates and unknowns remain distinct. Existing contracts are under `docs/components/`; original source images/manuals are excluded from commits/releases.
 
@@ -27,7 +27,7 @@ Workers own their prefixes only; root reviews significant interface amendments b
 
 ## Checks, preview and tracking
 
-Viewer restarted on127.0.0.1:8001 via scripts/serve.py, process session26022; HTTP200 verified18:39UTC. This is a checkpoint, not perpetual liveness. Browser interaction acceptance remains NOT RUN after earlier browser security denial; do not bypass it. Native text-to-cad viewer worked for the isolated plug, not the engine website.
+Viewer restarted on127.0.0.1:8001 via scripts/serve.py, process session26022; HTTP200 verified19:47UTC. This is a checkpoint, not perpetual liveness. Browser interaction acceptance remains NOT RUN after earlier browser security denial; do not bypass it. Native text-to-cad viewer worked for the isolated plug, not the engine website.
 
 Navigation lastPASS1,349parts/1,548links. Whole-model counts/static passes do not prove factory fidelity or dynamic acceptance. Recheck input hashes before reusing reports. Use `.venv-cad` and existing exporter mmXYZ→meter(X,Z,-Y); plugin runtime differs and is optional, not a silent kernel replacement.
 

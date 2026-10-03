@@ -1,0 +1,113 @@
+{
+  "scope": "Research only; no CAD or installed geometry changes",
+  "requested_baseline": "5c5a11d",
+  "observed_start_head": "0d318ea9a78bbc2b23041193c3090e7fd54343fd",
+  "branch": "engine/component-fit-followup-20261003",
+  "input_sha256": {
+    "inventory/engine/dimensions.json": "6a39abadf62a0b625d708ca162d56fe6656b7323f3be1f7d629bce697cd28de2",
+    "inventory/engine/first-assembly.json": "4854f483564d736233759416e9aa877946429f54dfc57797d2d2bf3bc9b8455a",
+    "cad/engine/first_assembly.py": "ecc1e01abc623d00aef1b5bdc3d47105ccf43b6d6bb1761e4317015d75ad9c5f",
+    "cad/engine/full_engine.py": "219d8997299613a0b4b3c42e7af17665a09313aa48d947030eca2069114c116c",
+    "reference/engine/ford-nominal-core-20261003-audit.json": "6810a690748dd2781f1c529ff94f3afa09f520824a0d340d919819193934f750",
+    "kb/sources/silvolite-efi-ford-300-piston-dimensions-40-40.md": "4ee31e35dc3a31aadb27ae71d23af0939d2499089740867ed3fa00b0d38d4030",
+    "kb/sources/pump-deck-height-20261003-ford-nominal.md": "95ebdef5e9ea847cc2b2dbce7dcb48c4a67f1ee13fb37ff1cd4716f99517ea88"
+  },
+  "sources": [
+    {
+      "id": "uem-2020",
+      "url": "https://www.uempistons.com/themes/UEM/images/Silv-O-Lite%2012.20.20.pdf",
+      "sha256": "e4cae4c7b6aefacf612ac24318686da51e4a803d4ca3ca2a126ed4468baab114",
+      "pdf_page": 40,
+      "printed_page": 38,
+      "actual_raster_review": true,
+      "rows": [
+        "1186",
+        "1186H"
+      ],
+      "application": "Ford L6-300, 4.9L; 1987\u201396; VIN Y; EFI truck",
+      "compression_height_in": 1.776,
+      "pin_diameter_in": 0.9752,
+      "pin_offset": "specified offset, amount and direction absent",
+      "dish": "D-shaped recess .310 inch deep",
+      "bore_in": 4.0,
+      "limitation": "Replacement piston reference; not proof of owner-installed or original-equipment piston."
+    },
+    {
+      "id": "uem-supplement",
+      "url": "https://uempistons.com/sites/default/files/Supplement_Catalog.pdf",
+      "sha256": "f38a45d485e87b164d70534fd763c854c7e4af545b6c5ccf3641b101e0fddef4",
+      "pdf_page": 13,
+      "printed_page": 11,
+      "actual_raster_review": true,
+      "row": "1186H",
+      "application": "L6, 4.9L, 1987\u20131996, Ford Inline 6-Cylinder, bore 4.000 inch",
+      "limitation": "Confirms application only. No compression-height column. Page footer date 12/1/23."
+    },
+    {
+      "id": "ford-nominal",
+      "url": "https://www.trackey.ford.com/download/pdfs/EngineDimensions.pdf",
+      "sha256": "0e81983110834897b86bbb06023f5f1df4381ab9e9174c35a18a425f4430049c",
+      "pdf_page": 1,
+      "row": "300 I-6, 1965\u201396",
+      "compression_height_in": 1.757,
+      "rod_length_mean_in": 6.21,
+      "stroke_in": 3.98,
+      "deck_height_in": 10.0,
+      "limitation": "Broad family nominal table; supplies no production tolerance or exact 1994 VIN Y piston identification."
+    }
+  ],
+  "recommendation": "Retain 45.1104 mm compression height as the exact-application UEM 1186/1186H replacement reference. Do not relabel it as factory or owner-measured. Ford family nominal 44.6278 mm remains a distinct comparison.",
+  "formula": "below_deck = 254 - stroke/2 - rod_length - compression_height",
+  "assumptions": [
+    "Crank axis z=0, positive z toward deck.",
+    "Idealized zero pin offset, aligned cylinder and crank axes.",
+    "Rigid nominal dimensions; no tolerances supplied or inferred."
+  ],
+  "cases": [
+    {
+      "case": "Current replacement reference",
+      "deck_mm": 254.0,
+      "stroke_mm": 101.092,
+      "rod_mm": 157.7,
+      "compression_height_mm": 45.1104,
+      "tdc_crown_z_mm": 253.3564,
+      "below_deck_mm": 0.6436
+    },
+    {
+      "case": "Replacement + Ford mean rod",
+      "deck_mm": 254.0,
+      "stroke_mm": 101.092,
+      "rod_mm": 157.73399999999998,
+      "compression_height_mm": 45.1104,
+      "tdc_crown_z_mm": 253.3904,
+      "below_deck_mm": 0.6096
+    },
+    {
+      "case": "Ford nominal stack",
+      "deck_mm": 254.0,
+      "stroke_mm": 101.092,
+      "rod_mm": 157.73399999999998,
+      "compression_height_mm": 44.6278,
+      "tdc_crown_z_mm": 252.9078,
+      "below_deck_mm": 1.0922
+    },
+    {
+      "case": "Ford piston + current rod",
+      "deck_mm": 254.0,
+      "stroke_mm": 101.092,
+      "rod_mm": 157.7,
+      "compression_height_mm": 44.6278,
+      "tdc_crown_z_mm": 252.8738,
+      "below_deck_mm": 1.1262
+    }
+  ],
+  "compression_height_difference_mm": 0.4826,
+  "current_rod_minus_ford_mean_mm": -0.034,
+  "limitations": [
+    "Actual offset pin amount/direction unknown.",
+    "Rod identity and owner piston identity unverified.",
+    "Below-deck arithmetic is not piston-to-head clearance or measured deck clearance.",
+    "Dish volume, chamber volume, gasket compressed thickness, thermal expansion and compression ratio are not validated here.",
+    "No causal explanation for the broad Ford versus UEM dimension difference is asserted."
+  ]
+}

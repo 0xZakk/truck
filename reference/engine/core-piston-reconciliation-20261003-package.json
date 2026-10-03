@@ -1,0 +1,40 @@
+{
+  "scope": "Research-only piston evidence; no raw PDFs, source pixels, shared CAD, map or index",
+  "files": [
+    {
+      "path": "docs/components/core-piston-reconciliation-20261003-contract.md",
+      "sha256": "19c372689ab4170a8483aa1e65e42961ca9918b2db7a52a9c69a596f786f0752",
+      "bytes": 1343
+    },
+    {
+      "path": "docs/components/core-piston-reconciliation-20261003-handoff.md",
+      "sha256": "b91c59aefba8c5156846f39fdc55c326e0eaf108daaa44f780f039f3e1d48778",
+      "bytes": 7356
+    },
+    {
+      "path": "scripts/engine/core-piston-reconciliation-20261003.py",
+      "sha256": "9dcc61e60e44a9f8f58ed68bd00c258fcac8d150b5671b290bb46a801ad6f2da",
+      "bytes": 5878
+    },
+    {
+      "path": "reference/engine/core-piston-reconciliation-20261003-report.json",
+      "sha256": "dfca5c52ce778d9c00475f15acbcc0385f962dee0ed5dfb3a4e73607ef7441ca",
+      "bytes": 4893
+    },
+    {
+      "path": "reference/engine/core-piston-reconciliation-20261003-comparison.png",
+      "sha256": "ce4a20ac4bf1b96641acba5410054cf837f08c501130178b3d75554df133efae",
+      "bytes": 58728
+    }
+  ],
+  "input_hash_checks": {
+    "inventory/engine/dimensions.json": true,
+    "inventory/engine/first-assembly.json": true,
+    "cad/engine/first_assembly.py": true,
+    "cad/engine/full_engine.py": true,
+    "reference/engine/ford-nominal-core-20261003-audit.json": true,
+    "kb/sources/silvolite-efi-ford-300-piston-dimensions-40-40.md": true,
+    "kb/sources/pump-deck-height-20261003-ford-nominal.md": true
+  },
+  "status": "PASS"
+}

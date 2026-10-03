@@ -1,0 +1,30 @@
+{
+  "scope": "Independent manufacturer catalog application and nut dimensional review only",
+  "report": "reference/engine/rod-fastener-reconciliation-20261003-report.json",
+  "report_sha256": "df9be26f72b9e6ad2ea6ae3acd867b8e9aab2921345e0fd617e29c13428b28ad",
+  "input_hash_checks": {
+    "docs/components/rod-fastener-architecture-contract.md": true,
+    "reference/engine/rod-fastener-architecture-evidence.json": true,
+    "reference/engine/online-rod-research.json": true,
+    "docs/components/rod-bolt-source-datum-audit.md": true,
+    "reference/engine/rod-bolt-source-datum-review.json": true,
+    "inventory/engine/engine-corrected-rod-bolt-conflict-validation.json": true,
+    "cad/engine/first_assembly.py": true,
+    "inventory/engine/dimensions.json": true
+  },
+  "actual_raster_review": [
+    "DormanPDF576/printed350",
+    "DormanPDF578/printed352"
+  ],
+  "accepted_claims": [
+    "FordTruckL6 4.9L1965\u20131994 maps to635-027bolt and635-002nut",
+    "635-002 nominalthread3/8-24 andhex9/16in; OEcrossC9AZ6212B"
+  ],
+  "limits": [
+    "Not owner-original identity",
+    "635-027bolt dimensions absent from shown dimensionaltable;635-025 not substitute",
+    "Nominal thread9.525mm is not press/grip diameter",
+    "Nutheight, pairedseat, boltcenters and crankcase contour unresolved"
+  ],
+  "geometry_authorization": "No geometry change from this partial dimensional evidence alone."
+}

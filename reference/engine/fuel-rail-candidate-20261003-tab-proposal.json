@@ -1,0 +1,86 @@
+{
+  "status": "ROOT REVIEW REQUIRED BEFORE CAD",
+  "source": "physical1987_view1; earlier comparison not exact1994",
+  "source_sha256": "94bce34481d25306085a0f1fb27481c64f5b07ee5fccb151ed16560469cfddf8",
+  "manual_middle_ear_outline_px": [
+    [
+      790,
+      560
+    ],
+    [
+      808,
+      558
+    ],
+    [
+      831,
+      575
+    ],
+    [
+      829,
+      589
+    ],
+    [
+      817,
+      612
+    ],
+    [
+      805,
+      618
+    ],
+    [
+      790,
+      612
+    ],
+    [
+      782,
+      600
+    ],
+    [
+      786,
+      582
+    ],
+    [
+      790,
+      560
+    ]
+  ],
+  "manual_pick_uncertainty_px": 6,
+  "method": "Manual image-space outline. No metric/projective registration; occluded root uncertain. Authored source polygon shown at left, independent numerical model proposal at right.",
+  "proposed_tabs": {
+    "x_centers_mm": [
+      -250,
+      -40,
+      220
+    ],
+    "x_half_width_mm": 9,
+    "y_interval_mm": [
+      -186,
+      -163
+    ],
+    "z_interval_mm": [
+      364,
+      370
+    ],
+    "lower_corner_radius_mm": 2,
+    "bore_radius_mm": 3.4,
+    "hole_y_mm": -178
+  },
+  "protected_regions": {
+    "seat_band_box_xy_mm": [
+      16,
+      12
+    ],
+    "seat_center_y_mm": -178,
+    "washer_outer_radius_mm": 7,
+    "washer_z_mm": [
+      370,
+      371.5
+    ],
+    "bolt_and_hardware": "unchanged"
+  },
+  "evidence_limits": [
+    "Only one-sided rounded silhouette is source supported. Numerical width, depth, corner radius and inherited6mm thickness remain model estimates.",
+    "Tab outline must preserve exact existing seat geometry, bolt axis and entire washer contact circle in next CAD Boolean verification.",
+    "No return path or sign changes. Minus conflicts remain."
+  ]
+}

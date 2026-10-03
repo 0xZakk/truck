@@ -333,3 +333,14 @@ The [reviewed pump archive](https://github.com/0xZakk/truck/releases/tag/studies
 Restore predecessor dependencies listed in `reference/engine/pump-cover-candidate-20261003-resume-package.json`, verify the archive checksum and member paths, preserve newer local work, then extract at the repository root. The archive includes authored snapshots; do not overwrite newer source blindly. Follow `docs/components/pump-cover-candidate-20261003-handoff.md` for individual checks.
 
 This is not an installed engine update. The separate analytic inlet successor clears the sampled inlet paths and preserves checked local features. The coupled photo frame still conflicts with Ford nominal deck height; fourteen neighbor clashes and service/motion/source gaps remain. Root independently checked38 report input hashes and the actual mesh review.
+
+## Rejected fuel-rail candidates, October 3
+
+The [r2–r6 preservation archive](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-03-fuel-rail-failed-candidates) retains failed candidates for reproduction. **Do not install these as accepted parts.** The r6 hose lost almost its entire tube during a Boolean operation; its apparent clearance improvement is invalid. Later r6b/r7 work is excluded.
+
+```sh
+gh release download studies-2026-10-03-fuel-rail-failed-candidates --repo 0xZakk/truck --pattern fuel-rail-candidate-20261003-r2-r6.tar.gz --dir /tmp
+shasum -a 256 /tmp/fuel-rail-candidate-20261003-r2-r6.tar.gz
+```
+
+Expected SHA256: `6da265f6825d8796bb727f2957f0174ccdb7f296294ff202ac92250fac61658a`; 133,086,577 bytes, 894 members. Inspect members and preserve newer local files before extracting from the repository root. The embedded delivery ledger identifies all inputs and hashes; the publication record is `reference/engine/fuel-rail-candidate-20261003-r2-r6-publication.json`. Only authored geometry/checks/renders are included; source photographs, purchased manuals and owner photos are excluded.
