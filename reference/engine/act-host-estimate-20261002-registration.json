@@ -1,0 +1,206 @@
+{
+  "scope": "Pre-CAD registration sensitivity, NOT installed candidate",
+  "baseline": "7f7788ce5d9b87865138f9fff412a5d023bfb369",
+  "inputs": {
+    "manuals/factory-service-manual/1994 Ford F 150 2WD Pickup L6-300 4.9L/images/DM05Q313/ford10/147826554.png": "c489ec4aacfbbbf094facd4bc00e9136275cb0ac528a1e08661ffb4997c271ed",
+    "cad/engine/generated/efi-lower-intake.step": "2f12556c1254b98914428b0f4b65330ad2336cbab116b10e2d9ced1802655066",
+    "cad/engine/efi_intake.py": "36ccb7da5d29904894a451e360072fbdbcf08024e76f5225e2fe1bd7cc88ba30",
+    "inventory/engine/full-assembly.json": "91950c89dc12c17d1169ec77eed16efa71919c6832061346582ee02b81599ad6",
+    "inventory/engine/corrected-engine-stage-v4.json": "9da33ca507e31cf6d906d4ee2c92b87a64ba01db7abea8f14b72f244631f9fe9",
+    "reference/engine/act-online-20261002-delivery.json": "64b8b3d578e4c076d701c1024729aaf6262229bca6cedc5241de7ea86889357d",
+    "reference/engine/act-host-online-20261002-evidence.json": "cce312fa410da35d807cd5d1cce6a166d1696390404bac287670191d23012d38",
+    "docs/components/act-host-estimate-20261002-contract.md": "184f749a791d6abc098bd32a29709714013729481aa047f972926f3743dc12bf"
+  },
+  "pixel_landmarks": {
+    "A_previous_upper_port": [
+      49.0,
+      127.0
+    ],
+    "B_terminal_upper_port": [
+      147.0,
+      196.0
+    ],
+    "P_boss": [
+      267.0,
+      241.0
+    ],
+    "T_depicted_probe_end": [
+      420.0,
+      156.0
+    ],
+    "C_connector_center": [
+      478.0,
+      103.0
+    ]
+  },
+  "pixel_pick_sensitivity_each_coordinate": 4,
+  "consecutive_runner_correspondence": "Assumption, not measured dimension;113.792mm projectpitch is provisional",
+  "projected_basis_result": {
+    "boss_relative_to_B_in_projected_pitch_units": [
+      1.034806822137139,
+      -0.2694048033414548
+    ],
+    "nominal_pitch_scaled_values_NOT_world_mm": [
+      117.75273790462931,
+      -30.656111381830822
+    ],
+    "all1024_corner_min": [
+      0.8576172443926595,
+      -0.4651792715090167,
+      -25.09951666833866
+    ],
+    "all1024_corner_max": [
+      1.248033161323069,
+      -0.08116600922644909,
+      -1.611604411346328
+    ],
+    "correspondence_line_vs_depicted_axis_nominal_deg": -13.366248400639442,
+    "quantity_order": [
+      "longitudinal_pitch_units",
+      "perpendicular_pitch_units",
+      "axis_line_angle_deg"
+    ]
+  },
+  "camera_nullspace": {
+    "frame": "Abstract imageU,imageV,viewDepth; no world-camera calibration",
+    "axis_family": [
+      {
+        "out_of_image_plane_angle_deg": -60,
+        "unit_axis_camera_coordinates": [
+          0.369104941446328,
+          -0.33728554994233423,
+          -0.8660254037844386
+        ],
+        "normalized_projection_error": 1.5700924586837752e-16
+      },
+      {
+        "out_of_image_plane_angle_deg": -30,
+        "unit_axis_camera_coordinates": [
+          0.6393085119097756,
+          -0.5841957091589328,
+          -0.49999999999999994
+        ],
+        "normalized_projection_error": 1.5700924586837752e-16
+      },
+      {
+        "out_of_image_plane_angle_deg": 0,
+        "unit_axis_camera_coordinates": [
+          0.7382098828926559,
+          -0.6745710998846683,
+          0.0
+        ],
+        "normalized_projection_error": 1.5700924586837752e-16
+      },
+      {
+        "out_of_image_plane_angle_deg": 30,
+        "unit_axis_camera_coordinates": [
+          0.6393085119097756,
+          -0.5841957091589328,
+          0.49999999999999994
+        ],
+        "normalized_projection_error": 1.5700924586837752e-16
+      },
+      {
+        "out_of_image_plane_angle_deg": 60,
+        "unit_axis_camera_coordinates": [
+          0.369104941446328,
+          -0.33728554994233423,
+          0.8660254037844386
+        ],
+        "normalized_projection_error": 1.5700924586837752e-16
+      }
+    ],
+    "first_last_axis_separation_deg": 119.99999999999999,
+    "center_family_NOT_depth_bounds": [
+      {
+        "camera_coordinates": [
+          267,
+          241,
+          -40
+        ],
+        "pixel_projection": [
+          267,
+          241
+        ]
+      },
+      {
+        "camera_coordinates": [
+          267,
+          241,
+          -20
+        ],
+        "pixel_projection": [
+          267,
+          241
+        ]
+      },
+      {
+        "camera_coordinates": [
+          267,
+          241,
+          0
+        ],
+        "pixel_projection": [
+          267,
+          241
+        ]
+      },
+      {
+        "camera_coordinates": [
+          267,
+          241,
+          20
+        ],
+        "pixel_projection": [
+          267,
+          241
+        ]
+      },
+      {
+        "camera_coordinates": [
+          267,
+          241,
+          40
+        ],
+        "pixel_projection": [
+          267,
+          241
+        ]
+      }
+    ],
+    "interpretation": "Identical projected positions/directions permit different depths/axes; sampled angles and depths are mathematical demonstrations, not Ford uncertaintybounds"
+  },
+  "controls": {
+    "all_axis_normalized_projection_errors_below_1e_12": true,
+    "image_plane_shift_10px_detected": true,
+    "negative_control_pixel_residual": 10.0
+  },
+  "actual_host": {
+    "bounds_min_mm": [
+      -367.0000001,
+      -256.0000001,
+      252.4999999
+    ],
+    "bounds_max_mm": [
+      367.0000001,
+      -135.5,
+      364.0
+    ],
+    "valid": true,
+    "solid_count": 1,
+    "existing_front_runner_center_x_mm": 284.48,
+    "receiver_present_in_declared_source_module": false,
+    "no_geometry_changed": true
+  },
+  "verdict": {
+    "topological_station": "supported front terminal lower runner",
+    "metric_port_pose": "NOT VERIFIED; no independent camera/depth datum",
+    "registration_sensitivity": "PASS reproducible ambiguity demonstration",
+    "CAD_export": "NOT RUN: no justified numeric pose constructed",
+    "host_wall_guard_air_exposure": "NOT RUN",
+    "thread_fit_seal": "NOT VERIFIED",
+    "wrench_removal": "NOT RUN",
+    "actual_neighbor_collisions": "NOT RUN; canonical/v4 hashes bound only, no arbitrary positioned object",
+    "readiness": "Research sensitivity; root may explicitly authorize a separate axis/depth design assumption, but it would not be photo-derived metric evidence"
+  }
+}

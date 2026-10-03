@@ -1,0 +1,17 @@
+{
+  "scope": "Authored registration sensitivity figure/logs only; no CAD acceptance",
+  "asset": "truck-host-research-20261003.tar.gz",
+  "sha256": "dcb1631f446b177c7d3741145695bbcf5f91ab8d632a8e97230b8ff9ea1e2830",
+  "size_bytes": 103132,
+  "members": {
+    "cad/engine/generated/act-host-estimate-20261002-registration/act-host-estimate-20261002-initial-render-failure.log": "53da6cb200f33626d93cd73545d9793da1cf666895308c45c92af9ccb97cb8f3",
+    "cad/engine/generated/act-host-estimate-20261002-registration/act-host-estimate-20261002-run.log": "e9e9e980e2844d33bd277807b9819ce3b0eb84b377ac37c5d318da7fcdfb9c0c",
+    "cad/engine/generated/act-host-estimate-20261002-registration/act-host-estimate-20261002-sensitivity.png": "e8f6e5eedb408e0144cae472eb3a7c619fc34fe45b8f214010caca77fae96266"
+  },
+  "source_ledger": "reference/engine/act-host-estimate-20261002-delivery.json",
+  "source_ledger_sha256": "c65f7b3b1a502aaf1a2ef2ac733257954a40d6c35708eb12cf066b3530cab7fc",
+  "verification": "PASS exact3members",
+  "publication": "NOT RUN",
+  "source_originals_included": false,
+  "reproduction": "Repository scripts/contracts/reports are required alongside archive. Numerical CAD-host replay requires the hash-bound installed neck-core STEP and separately authorized manual source. Archive preservation verification needs neither source pixels nor CAD."
+}

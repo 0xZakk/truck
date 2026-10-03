@@ -270,3 +270,10 @@ The refined duct supplement `truck-airbox-refined-20261002.tar.gz` contains31 au
 The failed coordinated pump-height supplement `truck-pump-height-20261002.tar.gz` contains584 authored files,16,788,862bytes, SHA256 `a1ddb616c29bbaacd1671235832a1d079b841923fb2f6f16448f718770ab4a41`. Restore the predecessor chain enumerated in `reference/engine/pump-height-20261002-package.json`;810 external dependencies are bound to nine metadata records. All failed trials, final selected assets and actual renders are retained. This candidate FAILS integration, rear-stock preservation and aggregate mesh checks; no installation.
 
 Both archives were independently streamed by root and matched exact member hashes. Source originals are excluded. Package handoffs describe reproduction. Publication remains pending until a verified note.
+
+Both supplements were published after [PR118](https://github.com/0xZakk/truck/pull/118) merged at `4f1fe9da2ec177e1ff61668df66ca422e37b0b7c` (CI16s/17sPASS). [Source-candidate release](https://github.com/0xZakk/truck/releases/tag/studies-2026-10-02-source-candidates), ID401907524, has matching server-reported hashes and byte counts for both archives. This supersedes publication-pending fields in frozen metadata.
+
+
+## Host research illustration — publication pending
+
+`reference/engine/host-research-20261003-package.json` binds three authored ACT registration illustration/log outputs in `truck-host-research-20261003.tar.gz` (103,132bytes; SHA256 `dcb1631f446b177c7d3741145695bbcf5f91ab8d632a8e97230b8ff9ea1e2830`). The numerical study establishes single-view ambiguity, not an installed pose. Repository scripts/contracts/reports and the separately hash-bound installed host STEP/manual are required for full numerical replay; archive integrity verification is independent of those originals. Manufacturer/manual pixels are excluded.
